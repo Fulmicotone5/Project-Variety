@@ -17,6 +17,7 @@
 		add_technology_researched = currency_standards
 		add_technology_researched = cotton_gin
 		add_technology_researched = lathe
+		add_technology_researched = banking
 		
 
 		set_tax_level = medium
