@@ -1,0 +1,83 @@
+namespace = fm_fru
+fm_fru.1 = {
+	type = country_event
+	placement = ROOT
+	title = fm_fru.1.t
+	desc = fm_fru.1.d
+	flavor = fm_fru.1.f
+	duration = 3
+	event_image = {
+		video = "europenorthamerica_russian_serfs"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	immediate = {
+		ig:ig_armed_forces = {
+			leader = {
+				set_ideology = ideology:ideology_authoritarian
+			}
+		}
+	}
+	option = {
+		name = fm_fru.1.a
+		default_option = yes
+	}
+}
+fm_fru.2 = {
+	type = country_event
+	placement = ROOT
+	title = fm_fru.2.t
+	desc = fm_fru.2.d
+	flavor = fm_fru.2.f
+	duration = 3
+	event_image = {
+		video = "votp_monarch_holding_court"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	option = {
+		name = fm_fru.2.a
+		default_option = yes
+		add_journal_entry = {
+			type = je_fru_ethn
+		}
+		s:STATE_NORMANDY = {
+			add_claim = ROOT 
+		}
+		s:STATE_PICARDY = {
+			add_claim = ROOT 
+		}
+		s:STATE_FRENCH_LOW_COUNTRIES = {
+			add_claim = ROOT 
+		}
+		ruler = {
+			set_ideology = ideology:ideology_ethno_nationalist
+		}
+		ig:ig_devout = {
+			leader = {
+				set_ideology = ideology:ideology_ethno_nationalist
+			}
+		}
+		ig:ig_armed_forces = {
+			leader = {
+				set_ideology = ideology:ideology_ethno_nationalist
+			}
+		}
+		change_tag = FRE
+	}
+	option = {
+		name = fm_fru.2.b
+		add_journal_entry = {
+			type = je_occ_int
+		}
+		annex_with_incorporation = c:BOU
+		ruler = {
+			set_ideology = ideology:ideology_reformer
+		}
+		ig:ig_armed_forces = {
+			leader = {
+				set_ideology = ideology:ideology_reformer
+			}
+		}
+	}
+}

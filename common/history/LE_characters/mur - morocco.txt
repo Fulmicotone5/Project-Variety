@@ -1,0 +1,20 @@
+CHARACTERS = {
+	c:MUR ?= {
+		create_character = {
+			first_name = "Abū"
+			last_name = "al-Hasan"
+			historical = yes
+			ruler = yes
+			age = 40
+			culture = cu:berber
+			religion = rel:sunni
+			female = no
+			interest_group = ig:ig_devout
+			ideology = ideology_royalist
+			traits = {
+				meticulous
+				ambitious
+			}
+		}
+	}
+}

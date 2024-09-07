@@ -1,0 +1,25 @@
+COUNTRIES = {
+	c:SAT = {
+		effect_starting_technology_tier_2_tech = yes
+		effect_starting_politics_traditional = yes
+
+		# Laws
+		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_freedom_of_conscience
+		activate_law = law_type:law_no_womens_rights
+		activate_law = law_type:law_per_capita_based_taxation
+		activate_law = law_type:law_hereditary_bureaucrats
+		activate_law = law_type:law_national_supremacy
+		activate_law = law_type:law_protectionism
+		activate_law = law_type:law_agrarianism
+		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_no_colonial_affairs
+		activate_law = law_type:law_no_police
+		activate_law = law_type:law_peasant_levies
+		activate_law = law_type:law_poor_laws
+		activate_law = law_type:law_censorship
+		activate_law = law_type:law_national_guard
+		activate_law = law_type:law_serfdom
+	}
+}

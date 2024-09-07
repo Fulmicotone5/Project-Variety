@@ -1,0 +1,40 @@
+building_olive_plantation = {
+	building_group = bg_olive_plantations
+	texture = "gfx/interface/icons/building_icons/olives.dds"
+	required_construction = construction_cost_low
+
+	unlocking_technologies = {
+		enclosure
+	}
+
+	city_type = farm
+	levels_per_mesh = 5
+	
+	production_method_groups = {
+		pmg_base_building_olive_plantation
+		pmg_train_automation_building_olive_plantation
+	}
+	ownership_type = self
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_plantations.dds"
+}
+building_spice_plantation = {
+	building_group = bg_spice_plantations
+	texture = "gfx/interface/icons/building_icons/c_spice.dds"
+	required_construction = construction_cost_low
+
+	unlocking_technologies = {
+		enclosure
+	}
+
+	city_type = farm
+	levels_per_mesh = 5
+	
+	production_method_groups = {
+		pmg_base_building_spice_plantation
+		pmg_train_automation_building_spice_plantation
+	}
+	ownership_type = self
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_plantations.dds"
+}

@@ -1,0 +1,19 @@
+goods_is_agricultural = {
+	OR = {
+		this = g:opium
+		this = g:grain
+		this = g:sugar
+		this = g:tea
+		this = g:coffee
+		this = g:wine
+		this = g:fruit
+		this = g:dye
+		this = g:tobacco
+		this = g:fabric
+		this = g:meat
+		this = g:silk
+		this = g:rubber
+		this = g:olive
+		this = g:spice
+	}
+}

@@ -1,0 +1,409 @@
+namespace = fm_yua
+fm_yua.1 = {
+	type = country_event
+	placement = ROOT
+	title = fm_yua.1.t
+	desc = fm_yua.1.d
+	flavor = fm_yua.1.f
+	duration = 3
+	event_image = {
+		video = "ep1_clandestine_meeting"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	option = {
+		name = fm_yua.1.b
+		add_journal_entry = {
+			type = je_yue_dict
+		}
+		hidden_effect = {
+			trigger_event = {
+				id = fm_yua.3
+				days = 10
+			}
+			trigger_event = {
+				id = fm_yua.4
+				days = 100
+			}
+			trigger_event = {
+				id = fm_yua.5
+				days = 300
+			}
+			trigger_event = {
+				id = fm_yua.6
+				days = 500
+			}
+		}
+	}
+}
+
+fm_yua.2 = {
+	type = country_event
+	placement = ROOT
+	title = fm_yua.2.t
+	desc = fm_yua.2.d
+	flavor = fm_yua.2.f
+	duration = 3
+	event_image = {
+		video = "ep1_printing_press"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	option = {
+		name = fm_yua.2.a
+		add_radicals = {
+			value = 0.4
+			pop_type = academics
+		}
+		add_radicals = {
+			value = 0.1
+			pop_type = bureaucrats
+		}
+	}
+}
+
+fm_yua.3 = {
+	type = country_event
+	placement = ROOT
+	title = fm_yua.3.t
+	desc = fm_yua.3.d
+	flavor = fm_yua.3.f
+	duration = 3
+	event_image = {
+		video = "southamerica_aristocrats"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	option = {
+		name = fm_yua.3.a
+		set_variable = {
+			name = yua_col_disc
+			value = 0
+		}
+	}
+}
+
+fm_yua.4 = {
+	type = country_event
+	placement = ROOT
+	title = fm_yua.4.t
+	desc = fm_yua.4.d
+	flavor = fm_yua.4.f
+	duration = 3
+	event_image = {
+		video = "europenorthamerica_capitalists_meeting"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	option = {
+		name = fm_yua.4.a
+		set_variable = {
+			name = yua_int_disc
+			value = 0
+		}
+	}
+}
+
+fm_yua.5 = {
+	type = country_event
+	placement = ROOT
+	title = fm_yua.5.t
+	desc = fm_yua.5.d
+	flavor = fm_yua.5.f
+	duration = 3
+	event_image = {
+		video = "ep1_clandestine_meeting"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	option = {
+		name = fm_yua.5.a
+		set_variable = {
+			name = yua_mos_disc
+			value = 0
+		}
+	}
+}
+
+fm_yua.6 = {
+	type = country_event
+	placement = ROOT
+	title = fm_yua.6.t
+	desc = fm_yua.6.d
+	flavor = fm_yua.6.f
+	duration = 3
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	option = {
+		name = fm_yua.6.a
+		set_variable = {
+			name = yua_prot
+			value = 0
+		}
+		add_journal_entry = {
+			type = je_yua_kor
+		}
+	}
+}
+
+fm_yua.7 = {
+	type = country_event
+	placement = ROOT
+	title = fm_yua.7.t
+	desc = fm_yua.7.d
+	flavor = fm_yua.7.f
+	duration = 3
+	event_image = {
+		video = "ep1_clandestine_meeting"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	immediate = {
+		random_interest_group = {
+			limit
+			{
+				is_interest_group_type = ig_armed_forces
+				exist = leader
+			}
+			leader = {
+				save_scope_as = armed_forces_leader
+			}
+		}
+		random_interest_group = {
+			limit
+			{
+				is_interest_group_type = ig_landowners
+				exist = leader
+			}
+			leader = {
+				save_scope_as = landowners_leader
+			}
+		}
+		random_interest_group = {
+			limit
+			{
+				is_interest_group_type = ig_petty_bourgeoisie
+				exist = leader
+			}
+			leader = {
+				save_scope_as = petty_leader
+			}
+		}
+	}
+	option = {
+		name = fm_yua.7.a
+		add_loyalists = {
+			value = 0.5
+			pop_type = academics
+		}
+		add_loyalists = {
+			value = 0.4
+			pop_type = bureaucrats
+		}
+		hidden_effect = {
+			scope:landowners_leader = {
+				set_ideology = ideology:ideology_positivist
+			}
+			scope:petty_leader = {
+				set_ideology = ideology:ideology_positivist
+			}
+			scope:armed_forces_leader = {
+				set_ideology = ideology:ideology_positivist
+			}
+		}
+		set_variable = {
+			name = yua_yua_authpot
+			value = 0
+		}
+	}
+}
+
+fm_yua.8 = {
+	type = country_event
+	placement = ROOT
+	title = fm_yua.8.t
+	desc = fm_yua.8.d
+	flavor = fm_yua.8.f
+	duration = 3
+	event_image = {
+		video = "ep1_transfer_of_authority"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	immediate = {
+		change_tag = YUU
+	}
+	option = {
+		name = fm_yua.8.a
+		add_loyalists = {
+			value = 0.5
+			pop_type = aristocrats
+		}
+		add_loyalists = {
+			value = 0.5
+			pop_type = soldiers
+		}
+		add_radicals = {
+			value = 0.4
+			pop_type = academics
+		}
+		add_radicals = {
+			value = 0.2
+			pop_type = bureaucrats
+		}
+		add_radicals = {
+			value = 0.2
+			pop_type = engineers
+		}
+	}
+}
+
+fm_yua.9 = {
+	type = country_event
+	placement = ROOT
+	title = fm_yua.9.t
+	desc = fm_yua.9.d
+	flavor = fm_yua.9.f
+	duration = 3
+	event_image = {
+		video = "unspecific_world_fair"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	option = {
+		name = fm_yua.9.a
+		add_loyalists = {
+			value = 0.5
+			pop_type = academics
+		}
+		add_loyalists = {
+			value = 0.5
+			pop_type = bureaucrats
+		}
+		add_loyalists = {
+			value = 0.5
+			pop_type = clerks
+		}
+		add_loyalists = {
+			value = 0.5
+			pop_type = engineers
+		}
+	}
+}
+
+fm_yua.10 = {
+	type = country_event
+	placement = ROOT
+	title = fm_yua.10.t
+	desc = fm_yua.10.d
+	flavor = fm_yua.10.f
+	duration = 1
+	event_image = {
+		video = "europenorthamerica_opium_smoker"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+	option = {
+		name = fm_yua.10.a
+		default_option = yes
+		c:YUA = {
+			trigger_event = {
+				id = fm_yua.11
+				days = 60
+			}
+		}
+		hidden_effect = {
+			create_diplomatic_pact = {
+				country = c:YUA
+				type = tributary
+			}
+		}
+		create_unidirectional_truce = {
+			country = c:YUA
+			months = 1200
+		}
+		c:YUA = {
+			create_diplomatic_catalyst = {
+				type = catalyst_event_positive
+				target = c:KOR
+			}
+		}
+		ai_chance = {
+			base = 100
+		}
+	}
+	option = {
+		name = fm_yua.10.b
+		c:YUA = {
+			trigger_event = {
+				id = fm_yua.12
+				days = 60
+			}
+			custom_tooltip = {
+				text = yue_inde
+			}
+		}
+		create_unidirectional_truce = {
+			country = c:YUA
+			months = 120
+		}
+	}
+}
+
+fm_yua.11 = {
+	type = country_event
+	placement = ROOT
+	title = fm_yua.11.t
+	desc = fm_yua.11.d
+	flavor = fm_yua.11.f
+	duration = 1
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+	option = {
+		name = fm_yua.11.a
+		set_variable = {
+			name = yua_subj
+			value = 0
+		}
+		c:KOR = {
+			create_diplomatic_catalyst = {
+				type = catalyst_event_positive
+				target = c:YUA
+			}
+		}
+	}
+}
+
+fm_yua.12 = {
+	type = country_event
+	placement = ROOT
+	title = fm_yua.12.t
+	desc = fm_yua.12.d
+	flavor = fm_yua.12.f
+	duration = 1
+	event_image = {
+		video = "ep1_transfer_of_authority"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+	option = {
+		name = fm_yua.12.a
+		make_independent = yes
+		set_variable = {
+			name = yua_subj
+			value = 0
+		}
+		c:YUA = {
+			create_diplomatic_catalyst = {
+				type = catalyst_event_negative
+				target = c:KOR
+			}
+		}
+	}
+}

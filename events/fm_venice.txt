@@ -1,0 +1,90 @@
+namespace = fm_venice
+# start event
+fm_venice.1 = {
+	type = country_event
+	placement = root
+	title = fm_venice.1.t
+	desc = fm_venice.1.d
+	flavor = fm_venice.1.f
+	duration = 3
+	event_image = {
+		video = "europenorthamerica_art_gallery"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	trigger = {
+	}
+	immediate = {
+		set_variable = {
+			name = fm_venice_var
+			value = 0
+		}
+		add_journal_entry = {
+			type = je_venice_main
+		}
+	}
+	option = {
+		name = fm_venice.1.a
+		add_journal_entry = {
+			type = je_venice_adriatic
+		}
+		add_journal_entry = {
+			type = je_venice_resources
+		}
+		add_journal_entry = {
+			type = je_venice_black
+		}
+		add_journal_entry = {
+			type = je_venice_cape
+		}
+		add_journal_entry = {
+			type = je_venice_east
+		}
+		add_journal_entry = {
+			type = je_venice_mediterranean
+		}
+		add_journal_entry = {
+			type = je_venice_panama
+		}
+		s:STATE_LOMBARDY = {
+			add_claim = c:VEN
+		}
+		s:STATE_SOUTH_TYROL = {
+			add_claim = c:VEN
+		}
+		s:STATE_ALBANIA = {
+			add_claim = c:VEN
+		}
+		s:STATE_DALMATIA = {
+			add_claim = c:VEN
+		}
+		s:STATE_EASTERN_THRACE = {
+			add_claim = c:VEN
+		}
+		s:STATE_CRIMEA = {
+			add_claim = c:VEN
+		}
+	}
+}
+
+fm_venice.2 = {
+	type = country_event
+	placement = ROOT
+	title = fm_venice.2.t
+	desc = fm_venice.2.d
+	flavor = fm_venice.2.f
+	duration = 3
+	event_image = {
+		video = "unspecific_steam_ship"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+	trigger = {
+	}
+	option = {
+		name = fm_venice.2.a
+		add_journal_entry = {
+			type = je_venice_main_r
+		}
+	}
+}

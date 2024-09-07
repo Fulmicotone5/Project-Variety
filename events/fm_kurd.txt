@@ -1,0 +1,131 @@
+namespace = fm_kur
+fm_kur.1 = {
+	type = country_event
+	placement = root
+	title = fm_kur.1.t
+	desc = fm_kur.1.d
+	flavor = fm_kur.1.f
+	duration = 3
+	event_image = {
+		video = "ep1_ca_mountain_pass_military"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	trigger = {
+	}
+	immediate = {
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_DIYARBAKIR
+			}
+			save_scope_as = secession_state_kur
+		}
+		create_country = {
+			tag = KUR
+			origin = ROOT
+			state = scope:secession_state_kur
+		}
+		random_state = {
+			limit = {
+				state_region = s:STATE_ERZURUM
+			}
+			set_state_owner = c:KUR
+		}
+	}
+	option = {
+		name = fm_kur.1.a
+		default_option = yes
+		root ={
+			create_diplomatic_play = {
+				name = annex_war
+				target_country = c:KUR
+				war = yes
+				type = dp_annex_war
+			}
+		}
+		hidden_effect = {
+			c:KUR = {
+				add_modifier = {
+					name = modifier_kur_two
+					months = 160
+				}
+				trigger_event = {
+					id = fm_kur.2
+				}
+			}
+		}
+	}
+	option = {
+		name = fm_kur.1.b
+		root ={
+			create_diplomatic_play = {
+				name = annex_war
+				target_country = c:KUR
+				war = no
+				type = dp_annex_war
+			}
+		}
+		play_as = c:KUR
+		c:KUR = {
+			add_modifier = {
+				name = modifier_kur
+				months = 160
+			}
+			trigger_event = {
+				id = fm_kur.2
+			}
+		}
+	}
+}
+
+fm_kur.2 = {
+	type = country_event
+	placement = root
+	title = fm_kur.2.t
+	desc = fm_kur.2.d
+	flavor = fm_kur.2.f
+	duration = 1
+	event_image = {
+		video = "asia_poor_people_moving"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	option = {
+		name = fm_kur.2.a
+		default_option = yes
+		s:STATE_ALEPPO = {
+			add_claim = ROOT
+		}
+		s:STATE_MOSUL = {
+			add_claim = ROOT
+		}
+		s:STATE_KHORASAN = {
+			add_claim = ROOT
+		}
+		s:STATE_URMIA = {
+			add_claim = ROOT
+		}
+		s:STATE_PERSIAN_KURDISTAN = {
+			add_claim = ROOT
+		}
+		s:STATE_TRABZON = {
+			add_claim = ROOT
+		}
+		s:STATE_KARS = {
+			add_claim = ROOT
+		}
+		s:STATE_ADANA = {
+			add_claim = ROOT
+		}
+		s:STATE_DEIR_EZ_ZOR = {
+			add_claim = ROOT
+		}
+		s:STATE_URMIA = {
+			add_claim = ROOT
+		}
+		activate_law = law_type:law_homesteading
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_national_militia
+	}
+}
+	

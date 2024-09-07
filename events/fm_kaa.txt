@@ -1,0 +1,151 @@
+namespace = fm_kaa
+fm_kaa.1 = {
+	type = country_event
+	placement = ROOT
+	title = fm_kaa.1.t
+	desc = fm_kaa.1.d
+	flavor = fm_kaa.1.f
+	duration = 3
+	event_image = {
+		video = "europenorthamerica_london_center"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+	option = {
+		name = fm_kaa.1.a
+		default_option = yes
+		add_journal_entry = {
+			type = winds_of_ch_kaa
+		}
+	}
+}
+fm_kaa.2 = {
+	type = country_event
+	placement = ROOT
+	title = fm_kaa.2.t
+	desc = fm_kaa.2.d
+	flavor = fm_kaa.2.f
+	duration = 3
+	event_image = {
+		video = "unspecific_politicians_arguing"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	trigger = {
+	}
+	option = {
+		name = fm_kaa.2.a
+		default_option = yes
+		add_journal_entry = {
+			type = je_ara_esp
+		}
+		s:STATE_ASTURIAS = {
+			add_claim = ROOT
+		}
+		s:STATE_GALICIA = {
+			add_claim = ROOT
+		}
+		s:STATE_CASTILE = {
+			add_claim = ROOT
+		}
+		s:STATE_TOLEDO = {
+			add_claim = ROOT
+		}
+		s:STATE_BADAJOZ = {
+			add_claim = ROOT
+		}
+		s:STATE_ANDALUSIA = {
+			add_claim = ROOT
+		}
+		s:STATE_GRANADA = {
+			add_claim = ROOT
+		}
+	}
+	option = {
+		name = fm_kaa.2.b
+		default_option = yes
+		add_journal_entry = {
+			type = je_ara_occ
+		}
+		s:STATE_AQUITAINE = {
+			add_claim = ROOT
+		}
+		s:STATE_LANGUEDOC = {
+			add_claim = ROOT
+		}
+		s:STATE_GUYENNE = {
+			add_claim = ROOT
+		}
+		s:STATE_AUVERGNE_LIMOUSIN = {
+			add_claim = ROOT
+		}
+		s:STATE_PROVENCE = {
+			add_claim = ROOT
+		}
+		s:STATE_RHONE = {
+			add_claim = ROOT
+		}
+	}
+}
+
+fm_kaa.3 = { #esp
+	type = country_event
+	placement = ROOT
+	title = fm_kaa.3.t
+	desc = fm_kaa.3.d
+	flavor = fm_kaa.3.f
+	duration = 3
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	trigger = {
+	}
+	option = {
+		name = fm_kaa.3.a
+		default_option = yes
+		add_loyalists = {
+			strata = rich
+			value = 0.2
+		}
+		add_loyalists = {
+			strata = middle
+			value = 0.15
+		}
+		add_loyalists = {
+			strata = poor
+			value = 0.1
+		}
+	}
+}
+fm_kaa.4 = { #ara occ
+	type = country_event
+	placement = ROOT
+	title = fm_kaa.4.t
+	desc = fm_kaa.4.d
+	flavor = fm_kaa.4.f
+	duration = 3
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	option = {
+		name = fm_kaa.4.a
+		default_option = yes
+		add_primary_culture = cu:occitan
+		add_loyalists = {
+			strata = rich
+			value = 0.2
+		}
+		add_loyalists = {
+			strata = middle
+			value = 0.15
+		}
+		add_loyalists = {
+			strata = poor
+			value = 0.1
+		}
+	}
+}

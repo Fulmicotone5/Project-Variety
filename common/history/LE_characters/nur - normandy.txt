@@ -1,0 +1,20 @@
+CHARACTERS = {
+	c:NUR ?= {
+		create_character = {
+			first_name = "Charles"
+			last_name = "d_Artois"
+			historical = yes
+			religion = rel:protestant
+			ruler = yes
+			female = no
+			birth_date = 1795.4.12
+			culture = cu:french
+			interest_group = ig:ig_landowners
+			ideology = ideology_royalist
+			traits = {
+				reserved 
+				bigoted
+			}
+		}
+	}
+}

@@ -1,0 +1,23 @@
+namespace = fm_bye
+# start event
+fm_bye.1 = {
+	type = country_event
+	placement = ROOT
+	title = fm_bye.1.t
+	desc = fm_bye.1.d
+	flavor = fm_bye.1.f
+	duration = 3
+	event_image = {
+		video = "ep1_clandestine_meeting"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	trigger = {
+	}
+	option = {
+		name = fm_bye.1.a
+		c:BYE = {
+			make_independent = yes
+		}
+	}
+}

@@ -1,0 +1,135 @@
+je_por_main = {
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	group = je_group_historical_content
+	immediate = {
+		set_variable = {
+			name = fm_por_progress
+			value = 0
+		}
+	}
+	timeout = 1000
+	fail = {
+		scope:journal_entry = {
+			is_goal_complete = yes
+		}
+	}
+	on_fail = {
+		c:BRZ = {
+			make_independent = yes
+		}
+		c:EIC = {
+			make_independent = yes
+		}
+		remove_modifier = diplomatic_plays_blocked
+		remove_modifier = modifier_por_one
+	}
+	on_timeout = {
+		remove_modifier = diplomatic_plays_blocked
+		remove_modifier = modifier_por_one
+		trigger_event = {
+			id = fm_por.2
+		}
+	}
+	on_weekly_pulse = {
+		effect = {
+			if = {
+				limit = {
+					c:BRZ = {
+						is_subject_of = c:PUR
+						liberty_desire >= 50
+					}
+				}
+				change_variable = {
+					name = fm_por_progress
+					add = 1
+				}
+			}
+			if = {
+				limit = {
+					c:EIC = {
+						is_subject_of = c:PUR
+						liberty_desire >= 50
+					}
+				}
+				change_variable = {
+					name = fm_por_progress
+					add = 1
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+						state_region = s:STATE_NORTH_ANGOLA
+						turmoil >= 0.3
+					}
+				}
+				change_variable = {
+					name = fm_por_progress
+					add = 1
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+						state_region = s:STATE_SOUTH_ANGOLA
+						turmoil >= 0.3
+					}
+				}
+				change_variable = {
+					name = fm_por_progress
+					add = 1
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+						state_region = s:STATE_ALENTEJO
+						turmoil >= 0.2
+					}
+				}
+				change_variable = {
+					name = fm_por_progress
+					add = 1
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+						state_region = s:STATE_BEIRA
+						turmoil >= 0.2
+					}
+				}
+				change_variable = {
+					name = fm_por_progress
+					add = 1
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+						state_region = s:STATE_ESTREMADURA
+						turmoil >= 0.2
+					}
+				}
+				change_variable = {
+					name = fm_por_progress
+					add = 1
+				}
+			}
+			clamp_variable = {
+				name = fm_por_progress
+				max = 400
+				min = 0
+			}
+		}
+	}
+	current_value = {
+		value = root.var:fm_por_progress
+	}
+	goal_add_value = {
+		value = 400
+	}
+	progressbar = yes
+	weight = 100
+	should_be_pinned_by_default = yes
+}

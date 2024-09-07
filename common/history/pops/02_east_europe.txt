@@ -1,0 +1,590 @@
+﻿POPS = {
+	s:STATE_MOSCOW = {
+		region_state:SMO = {
+			create_pop = {
+				culture = russian
+				size = 3182734
+			}
+		}
+	}
+	s:STATE_ORYOL = {
+		region_state:SMO = {
+			create_pop = {
+				culture = russian
+				size = 2027590
+			}
+			create_pop = {
+				culture = ashkenazi
+				size = 23410
+			}
+			create_pop = {
+				culture = polish
+				size = 5122
+			}
+		}
+	}
+	s:STATE_SMOLENSK = {
+		region_state:SMO = {
+			create_pop = {
+				culture = russian
+				size = 1781596
+			}
+			create_pop = {
+				culture = ashkenazi
+				size = 1996
+			}
+			create_pop = {
+				culture = polish
+				size = 84000
+			}
+		}
+	}
+	s:STATE_TVER = {
+		region_state:SMO = {
+			create_pop = {
+				culture = russian
+				size = 1339596
+			}
+			create_pop = {
+				culture = finnish
+				size = 59996
+			}
+		}
+	}
+	s:STATE_KURSK = {
+		region_state:ORE = {
+			create_pop = {
+				culture = russian
+				size = 1865492
+			}
+			create_pop = {
+				culture = ukrainian
+				size = 396871
+			}
+		}
+	}
+	s:STATE_ROSTOV = {
+		region_state:DON = {
+			create_pop = {
+				culture = ukrainian
+				size = 356600
+			}
+			create_pop = {
+				culture = greek
+				size = 4000
+			}
+			create_pop = {
+				culture = russian
+				size = 2136004
+			}
+		}
+	}
+	s:STATE_SILESIA = {
+		region_state:BOH = {
+			create_pop = {
+				culture = north_german
+				size = 598008
+			}
+			create_pop = {
+				culture = ashkenazi
+				size = 16004
+			}
+			create_pop = {
+				culture = czech
+				size = 149008
+			}
+			create_pop = {
+				culture = polish
+				size = 212800
+			}
+			create_pop = {
+				culture = north_german
+				religion = protestant
+				size = 228400
+			}
+		}
+		region_state:LOT = {
+			create_pop = {
+				culture = north_german
+				size = 396987
+			}
+		}
+		region_state:WRS = {
+			create_pop = {
+				culture = polish
+				size = 62800
+			}
+		}
+	}
+	s:STATE_WEST_PRUSSIA = {
+		region_state:PUM = {
+			create_pop = {
+				culture = north_german
+				size = 952400
+			}
+			create_pop = {
+				culture = ashkenazi
+				size = 2200
+			}
+			create_pop = {
+				culture = polish
+				religion = protestant
+				size = 144000
+			}
+			create_pop = {
+				culture = polish
+				size = 188400
+			}
+			create_pop = {
+				culture = north_german
+				religion = catholic
+				size = 38004
+			}
+		}
+	}
+	s:STATE_EAST_PRUSSIA = {
+		region_state:PUM = {
+			create_pop = {
+				culture = north_german
+				size = 629796
+			}
+			create_pop = {
+				culture = ashkenazi
+				size = 2600
+			}
+			create_pop = {
+				culture = lithuanian
+				size = 117196
+			}
+			create_pop = {
+				culture = north_german
+				religion = catholic
+				size = 81200
+			}
+			create_pop = {
+				culture = polish
+				size = 28000
+			}
+		}
+	}
+	s:STATE_POSEN = {
+		region_state:PUM = {
+			create_pop = {
+				culture = north_german
+				size = 540400
+			}
+			create_pop = {
+				culture = ashkenazi
+				size = 16000
+			}
+			create_pop = {
+				culture = polish
+				size = 871204
+			}
+			create_pop = {
+				culture = north_german
+				religion = catholic
+				size = 141160
+			}
+		}
+	}
+	s:STATE_WEST_GALICIA = {
+		region_state:KRK = {
+			create_pop = {
+				culture = polish
+				size = 1740004
+			}
+			create_pop = {
+				culture = ukrainian
+				size = 152000
+			}
+			create_pop = {
+				culture = ashkenazi
+				size = 136000
+			}
+		}
+	}
+	s:STATE_CENTRAL_HUNGARY = {
+		region_state:HUN = {
+			create_pop = {
+				culture = hungarian
+				size = 989200
+			}
+			create_pop = {
+				culture = hungarian
+				religion = protestant
+				size = 932400
+			}
+			create_pop = {
+				culture = south_german
+				size = 149596
+			}
+			create_pop = {
+				culture = hungarian
+				religion = jewish
+				size = 71996
+			}
+			create_pop = {
+				culture = slovak
+				size = 31996
+			}
+		}
+	}
+	s:STATE_BEKES = {
+		region_state:HUN = {
+			create_pop = {
+				culture = hungarian
+				size = 189292
+			}
+			create_pop = {
+				culture = ashkenazi
+				size = 19996
+			}
+			create_pop = {
+				culture = hungarian
+				religion = protestant
+				size = 288000
+			}
+			create_pop = {
+				culture = south_german
+				size = 144796
+			}
+			create_pop = {
+				culture = romanian
+				size = 730400
+			}
+			create_pop = {
+				culture = serb
+				size = 117004
+			}
+			create_pop = {
+				culture = croat
+				size = 20000
+			}
+			create_pop = {
+				culture = hungarian
+				religion = jewish
+				size = 16004
+			}
+		}
+	}
+	s:STATE_TRANSDANUBIA = {
+		region_state:HUN = {
+			create_pop = {
+				culture = hungarian
+				size = 1375796
+			}
+			create_pop = {
+				culture = croat
+				size = 60000
+			}
+			create_pop = {
+				culture = hungarian
+				religion = protestant
+				size = 316400
+			}
+			create_pop = {
+				culture = south_german
+				size = 379204
+			}
+			create_pop = {
+				culture = south_german
+				religion = protestant
+				size = 1100
+			}
+			create_pop = {
+				culture = slovak
+				size = 128000
+			}
+			create_pop = {
+				culture = hungarian
+				religion = jewish
+				size = 35996
+			}
+			create_pop = {
+				culture = slovene
+				size = 59996
+			}
+		}
+	}
+	s:STATE_DELVIDEK = {
+		region_state:HUN = {
+			create_pop = {
+				culture = south_german
+				size = 197200
+			}
+			create_pop = {
+				culture = hungarian
+				size = 160000
+			}
+			create_pop = {
+				culture = slovak
+				size = 40000
+			}
+			create_pop = {
+				culture = serb
+				size = 284196
+			}
+			create_pop = {
+				culture = croat
+				size = 36000
+			}
+			create_pop = {
+				culture = romanian
+				size = 44000
+			}
+		}
+	}
+	s:STATE_BANAT = {
+		region_state:HUN = {
+			create_pop = {
+				culture = south_german
+				size = 312640
+			}
+			create_pop = {
+				culture = serb
+				size = 444620
+			}
+			create_pop = {
+				culture = hungarian
+				size = 157228
+			}
+			create_pop = {
+				culture = bulgarian
+				size = 62296
+			}
+			create_pop = {
+				culture = hungarian
+				religion = jewish
+				size = 732
+			}
+			create_pop = {
+				culture = ashkenazi
+				size = 1932
+			}
+			create_pop = {
+				culture = romanian
+				size = 145256
+			}
+			create_pop = {
+				culture = hungarian
+				religion = protestant
+				size = 64956
+			}
+		}
+	}
+	s:STATE_WEST_SLOVAKIA = {
+		region_state:SLV = {
+			create_pop = {
+				culture = hungarian
+				size = 37000
+			}
+			create_pop = {
+				culture = south_german
+				size = 52800
+			}
+			create_pop = {
+				culture = slovak
+				size = 1940796
+			}
+			create_pop = {
+				culture = ukrainian
+				size = 44000
+			}
+			create_pop = {
+				culture = hungarian
+				religion = protestant
+				size = 212396
+			}
+			create_pop = {
+				culture = ashkenazi
+				size = 60400
+			}
+			create_pop = {
+				culture = polish
+				size = 8000
+			}
+		}
+	}
+	s:STATE_EAST_SLOVAKIA = {
+		region_state:SLV = {
+			create_pop = {
+				culture = hungarian
+				size = 50848
+			}
+			create_pop = {
+				culture = slovak
+				size = 906000
+			}
+			create_pop = {
+				culture = polish
+				size = 4000
+			}
+			create_pop = {
+				culture = ukrainian
+				size = 64000
+			}
+			create_pop = {
+				culture = hungarian
+				religion = protestant
+				size = 68452
+			}
+			create_pop = {
+				culture = ashkenazi
+				size = 40400
+			}
+			create_pop = {
+				culture = romanian
+				size = 60000
+			}
+			create_pop = {
+				culture = south_german
+				size = 40080
+			}
+		}
+	}
+	s:STATE_SOUTHERN_TRANSYLVANIA = {
+		region_state:HUN = {
+			create_pop = {
+				culture = hungarian
+				religion = protestant
+				size = 132004
+			}
+			create_pop = {
+				culture = hungarian
+				size = 60004
+			}
+			create_pop = {
+				culture = romanian
+				size = 732000
+			}
+			create_pop = {
+				culture = south_german
+				size = 1792
+			}
+			create_pop = {
+				culture = ashkenazi
+				size = 32800
+			}
+			create_pop = {
+				culture = north_german
+				size = 87996
+			}
+		}
+	}
+	s:STATE_NORTHERN_TRANSYLVANIA = {
+		region_state:HUN = {
+			create_pop = {
+				culture = hungarian
+				size = 388000
+			}
+			create_pop = {
+				culture = south_german
+				size = 3008
+			}
+			create_pop = {
+				culture = north_german
+				size = 164000
+			}
+			create_pop = {
+				culture = romanian
+				size = 642000
+			}
+			create_pop = {
+				culture = ashkenazi
+				size = 2800
+			}
+		}
+	}
+	s:STATE_MOLDAVIA = {
+		region_state:MOL = {
+			create_pop = {
+				culture = polish
+				size = 20008
+			}
+			create_pop = {
+				culture = romanian
+				size = 144000
+			}
+			create_pop = {
+				culture = ashkenazi
+				size = 20004
+			}
+			create_pop = {
+				culture = hungarian
+				size = 11996
+			}
+			create_pop = {
+				culture = ukrainian
+				size = 74400
+			}
+			create_pop = {
+				culture = south_german
+				size = 32000
+			}
+		}
+		region_state:MOL = { # Ballpark estimate: 1,358,409 total for 1836, guessing that its recorded 1859 census marked a 7.77% growth over 1836 or that 1836 is 92.79% of the 1859 census, drawn from a trendline of Transylvanian censuses 1784-1850
+			create_pop = {
+				culture = romanian
+				size = 1241552
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = romanian
+				size = 116857
+			}
+		}
+	}
+	s:STATE_WALLACHIA = { # Ballpark estimate: 2,227,865 total for 1836, guessing that its recorded 1859 census marked a 7.77% growth over 1836 or that 1836 is 92.79% of the 1859 census, drawn from a trendline of Transylvanian censuses 1784-1850
+		region_state:BUL = {
+			create_pop = {
+				culture = romanian
+				size = 1807689
+			}
+			create_pop = {
+				culture = bulgarian
+				size = 320176
+			}
+		}
+	}
+	s:STATE_BESSARABIA = {
+		region_state:MOL = {
+			create_pop = {
+				culture = romanian
+				size = 508396
+			}
+			create_pop = {
+				culture = bulgarian
+				size = 12000
+			}
+			create_pop = {
+				culture = ashkenazi
+				size = 95996
+			}
+			create_pop = {
+				culture = ukrainian
+				size = 340000
+			}
+		}
+	}
+	s:STATE_EAST_GALICIA = {
+		region_state:GAL = {
+			create_pop = {
+				culture = polish
+				size = 832800
+			}
+			create_pop = {
+				culture = ukrainian
+				size = 544404
+			}
+			create_pop = {
+				culture = south_german
+				size = 20004
+			}
+			create_pop = {
+				culture = ashkenazi
+				size = 180000
+			}
+		}
+	}
+}

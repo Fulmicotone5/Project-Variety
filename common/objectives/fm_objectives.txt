@@ -1,0 +1,38 @@
+objective_rising = {
+	enabled_background = "gfx/interface/icons/objectives/rising_po.dds"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	
+	recommended_tags = { FRU ENG LOT CAS KAR SWU SAE BOH BAY FUN WRS SHW SOK BUD TOU LIT COH SER IRE LLO PUM HEN DCQ FLA ARM BUL ZUR }
+
+}
+objectives_ruler_med = {
+	enabled_background = "gfx/interface/icons/objectives/mediterr.dds"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	recommended_tags = { BIZ TOR CTH KAA PUP MUR HAK EGE }	
+
+
+}	
+objective_new_world = {
+	enabled_background = "gfx/interface/icons/objectives/new_world.dds"
+	icon = "gfx/interface/icons/objectives/egalitarian_society.dds"
+	
+	recommended_tags = { AMC DKT BRZ YUA MAX FLU AGA VNA }	
+	
+}
+
+objective_crumbling = {
+	enabled_background = "gfx/interface/icons/objectives/crumbling_po.dds"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	
+	recommended_tags = { KOR JAP SHN YUE GUC NCL TAC CHO }	
+
+}
+
+objective_colonial = {
+	enabled_background = "gfx/interface/icons/objectives/col_po.dds"
+	icon = "gfx/interface/icons/objectives/economic_dominance.dds"
+	
+	recommended_tags = { NED PUR VEN DKE }
+	
+}

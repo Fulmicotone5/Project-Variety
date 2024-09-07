@@ -1,0 +1,22 @@
+CHARACTERS = {
+	c:ARM ?= {
+		create_character = {
+			first_name = Alexander
+			last_name = Melikyan
+			historical = yes
+			female = no
+			ruler = yes
+			birth_date = 1800.1.11
+			culture = cu:armenian
+			ig_leader = yes
+			interest_group = ig_intelligentsia
+
+			ideology = ideology_humanitarian_royalist
+			traits = {
+				inspirational_orator
+				literary
+				ambitious
+			}
+		}
+	}
+}

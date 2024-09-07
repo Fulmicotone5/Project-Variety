@@ -1,0 +1,66 @@
+je_a_kingdom_for_ngp_pum = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	group = je_group_historical_content
+	is_shown_when_inactive = {
+		exists = c:PUM
+		c:PUM ?= THIS
+	}
+	possible = {
+		has_technology_researched = nationalism
+	}
+	immediate = {
+		trigger_event = {
+			id = fm_pom.2
+		}
+	}
+	complete = {
+		owns_entire_state_region = STATE_MECKLENBURG
+		owns_entire_state_region = STATE_POMERANIA
+		owns_entire_state_region = STATE_BRANDENBURG
+		owns_entire_state_region = STATE_ANHALT
+		owns_entire_state_region = STATE_POSEN
+		owns_entire_state_region = STATE_EAST_PRUSSIA
+		owns_entire_state_region = STATE_WEST_PRUSSIA
+		owns_entire_state_region = STATE_SILESIA
+	}
+	fail = {
+		NOT = {
+			has_law = law_type:law_monarchy
+		}
+	}
+	on_complete = {
+		trigger_event = {
+			id = fm_pom.3
+		}
+		change_tag = PRO
+	}
+	should_be_pinned_by_default = yes
+}
+je_ngf_pum = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	group = je_group_historical_content
+	complete = {
+				owns_entire_state_region = STATE_SCHLESWIG_HOLSTEIN
+				owns_entire_state_region = STATE_ELBE
+				owns_entire_state_region = STATE_HANNOVER
+				owns_entire_state_region = STATE_WESTPHALIA
+				owns_entire_state_region = STATE_BRUNSWICK
+				owns_entire_state_region = STATE_HESSE
+				owns_entire_state_region = STATE_RUHR
+				owns_entire_state_region = STATE_RHINELAND
+				owns_entire_state_region = STATE_NORTH_RHINE
+				owns_entire_state_region = STATE_SAXONY
+			}
+			fail = {
+				NOT = {
+					has_law = law_type:law_monarchy
+				}
+			}
+	on_complete = {
+		change_tag = NGF
+		trigger_event = {
+			id = fm_pom.4
+		}
+	}
+	should_be_pinned_by_default = yes
+}

@@ -1,0 +1,109 @@
+je_cape_fm = {
+	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+	group = je_group_foreign_affairs
+	fail = {
+		OR = {
+			NOT = {
+				owns_treaty_port_in = STATE_CAPE_COLONY
+				owns_entire_state_region = STATE_CAPE_COLONY
+			}
+			any_state = {
+				has_building = building_suez_canal
+			}
+		}
+	}
+	on_fail = {
+		remove_modifier = modifier_ven_two
+		add_journal_entry = {
+			type = je_cape_fm_two
+		}
+	}
+	transferable = yes
+	weight = 5000
+	should_be_pinned_by_default = yes
+}
+
+je_cape_fm_two = {
+	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+	group = je_group_foreign_affairs
+	is_shown_when_inactive = {
+		has_technology_researched = colonization
+		NOT = {
+			c:VEN ?= THIS
+		}
+	}
+
+	possible = {
+		has_technology_researched = colonization
+	}
+	complete = {
+		OR = {
+			owns_treaty_port_in = STATE_CAPE_COLONY
+			owns_entire_state_region = STATE_CAPE_COLONY
+		}
+	}
+	fail = {
+		any_state = {
+			has_building = building_suez_canal
+		}
+	}
+	on_complete = {
+		add_modifier = {
+			name = modifier_ven_two
+		}
+		add_journal_entry = {
+			type = je_cape_fm
+		}
+	}
+	transferable = yes
+	weight = 5000
+	should_be_pinned_by_default = yes
+}
+
+je_suez_fm = {
+	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+	group = je_group_foreign_affairs
+	is_shown_when_inactive = {
+		has_technology_researched = colonization
+		NOT = {
+			c:VEN ?= THIS
+		}
+	}
+
+	possible = {
+		has_technology_researched = civilizing_mission
+	}
+	complete = {
+		has_building = building_suez_canal
+	}
+	on_complete = {
+		add_modifier = {
+			name = modifier_ven_three
+		}
+		add_journal_entry = {
+			type = je_suez_fm_two
+		}
+	}
+	transferable = no
+	weight = 5000
+	should_be_pinned_by_default = yes
+}
+
+je_suez_fm_two = {
+	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+	group = je_group_foreign_affairs
+	fail = {
+		NOT = {
+			has_building = building_suez_canal
+		}
+	}
+	on_fail = {
+		remove_modifier = modifier_ven_three
+		add_journal_entry = {
+			type = je_suez_fm
+		}
+	}
+	transferable = no
+	weight = 5000
+	should_be_pinned_by_default = yes
+}

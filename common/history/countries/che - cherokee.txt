@@ -1,0 +1,30 @@
+﻿COUNTRIES = {
+	c:CHE = {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_conservative = yes
+
+		set_tax_level = medium
+		
+		# Estatuto Real de 1834 was in effect; the Constitution of 1812 was not restored until August of 1836
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_landed_voting
+		activate_law = law_type:law_state_religion
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_national_supremacy
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_interventionism
+		activate_law = law_type:law_land_based_taxation	
+		activate_law = law_type:law_no_schools
+		activate_law = law_type:law_no_health_system
+		activate_law = law_type:law_oligarchy
+		activate_law = law_type:law_no_police
+		activate_law = law_type:law_peasant_levies
+		#activate_law = law_type:law_no_colonial_affairs = {
+			
+		}
+
+		ig:ig_devout = {
+			add_ruling_interest_group = yes
+		}
+	}
+}

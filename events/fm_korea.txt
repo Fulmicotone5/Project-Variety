@@ -1,0 +1,477 @@
+namespace = fm_kor
+fm_kor.1 = {
+	type = country_event
+	placement = root
+	title = fm_kor.1.t
+	desc = fm_kor.1.d
+	flavor = fm_kor.1.f
+	duration = 3
+	event_image = {
+		video = "ep1_donghak_rebellion"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	trigger = {
+	}
+	immediate = {
+		ruler = {
+			set_character_immortal = yes
+		}
+		set_variable = {
+			name = fm_kor_var
+			value = 0
+		}
+		add_journal_entry = {
+			type = je_kor_main
+		}
+	}
+	option = {
+		name = fm_kor.1.a
+		add_journal_entry = {
+			type = je_kor_navy
+		}
+		add_journal_entry = {
+			type = je_kor_autoc
+		}
+		add_journal_entry = {
+			type = je_kor_manc
+		}
+		add_journal_entry = {
+			type = je_kor_age
+		}
+		add_journal_entry = {
+			type = je_kor_rac
+		}
+	}
+}
+
+fm_kor.2 = {
+	type = country_event
+	placement = root
+	title = fm_kor.2.t
+	desc = fm_kor.2.d
+	flavor = fm_kor.2.f
+	duration = 3
+	event_image = {
+		video = "africa_diplomats_negotiating"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+	immediate = {
+		c:MCH = {
+			heir = {
+				save_scope_as = royal_marriage_character
+			}
+		}
+		c:KOR = {
+			ruler = {
+				save_scope_as = korea_ruler
+			}
+		}
+	}
+	option = {
+		name = fm_kor.2.a
+		default_option = yes
+		scope:korea_ruler = {
+			set_variable = is_married
+		}
+		scope:royal_marriage_character = {
+			set_variable = is_married
+		}
+		create_diplomatic_pact = {
+			country = c:MCH
+			type = personal_union
+		}
+		create_bidirectional_truce = {
+			country = c:MCH
+			months = 160
+		}
+		add_primary_culture = cu:manchu
+		change_relations = {
+			country = c:MCH
+			value = 20
+		}
+		add_modifier = {
+			# influence mult
+			name = royal_marriage
+			months = normal_modifier_time
+		}
+		set_variable = {
+			name = kor_man_solved
+			value = 0
+		}
+		c:MCH = {
+			create_diplomatic_catalyst = {  
+				type = catalyst_event_positive
+				target = c:KOR
+			}
+		}
+		ai_chance = {
+			base = 90
+		}
+	}
+	option = {
+		name = fm_kor.2.b
+		c:MCH = {
+			make_independent = yes
+		}
+		create_diplomatic_play = {
+			target_country = c:MCH
+			war = yes
+			type = dp_annex_war
+			add_war_goal = {
+				holder = c:MCH
+				type = independence
+				target_country = c:KOR
+			}
+		}
+		change_relations = {
+			country = c:MCH
+			value = -50
+		}
+		set_variable = {
+			name = kor_man_solved
+			value = 0
+		}
+		c:KOR = {
+			create_diplomatic_catalyst = {  
+				type = catalyst_event_negative
+				target = c:MCH
+			}
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+fm_kor.3 = {
+	type = country_event
+	placement = root
+	title = fm_kor.3.t
+	desc = fm_kor.3.d
+	flavor = fm_kor.3.f
+	duration = 3
+	event_image = {
+		video = "unspecific_steam_ship"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	immediate = {
+		random_scope_state = {
+			limit = {
+				is_incorporated = yes
+				has_building = building_military_shipyards
+			}
+			save_scope_as = building_state
+		}
+	}
+	option = {
+		name = fm_kor.3.a
+		scope:building_state = {
+			create_building = {
+				building = "building_naval_base"
+				level = 20
+				reserves = 1
+			}
+		}
+		set_variable = {
+			name = kor_nav
+			value = 0
+		}
+	}
+}
+
+fm_kor.4 = {
+	type = country_event
+	placement = root
+	title = fm_kor.4.t
+	desc = fm_kor.4.d
+	flavor = fm_kor.4.f
+	duration = 3
+	event_image = {
+		video = "africa_diplomats_negotiating"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	immediate = {
+		c:NED = {
+			create_diplomatic_catalyst = {  
+				type = catalyst_event_negative
+				target = c:KOR
+			}
+		}
+	}
+
+	option = {
+		name = fm_kor.4.a
+		default_option = yes
+		change_relations = {
+			country = c:KOR
+			value = 25
+		}
+		c:KOR = {
+			create_diplomatic_catalyst = {  
+				type = catalyst_event_positive
+				target = c:NED
+			}
+		}
+		ai_chance = {
+			base = 90
+		}
+	}
+	option = {
+		name = fm_kor.4.b
+		create_diplomatic_play = {
+			target_country = c:KOR
+			war = no
+			type = dp_humiliation
+			add_war_goal = {
+				holder = c:KOR
+				type = war_reparations
+				target_country = c:NED
+			}
+		}
+		change_relations = {
+			country = c:KOR
+			value = -50
+		}
+		hidden_effect = {
+			c:KOR = {
+				trigger_event = {
+					id = fm_kor.5
+					popup = yes
+				}
+			}
+		}
+		c:KOR = {
+			create_diplomatic_catalyst = {  
+				type = catalyst_event_negative
+				target = c:NED
+			}
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+fm_kor.5 = {
+	type = country_event
+	placement = root
+	title = fm_kor.5.t
+	desc = fm_kor.5.d
+	flavor = fm_kor.5.f
+	duration = 1
+	event_image = {
+		video = "votp_gunboat_diplomacy"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+	option = {
+		name = fm_kor.5.a
+		default_option = yes
+		add_radicals = {
+			value = 0.1
+			strata = poor
+		}
+		add_radicals = {
+			value = 0.3
+			pop_type = aristocrats
+		}
+	}
+}
+
+fm_kor.6 = {
+	type = country_event
+	placement = root
+	title = fm_kor.6.t
+	desc = fm_kor.6.d
+	flavor = fm_kor.6.f
+	duration = 1
+	event_image = {
+		texture = "gfx/event_pictures/coronation_korea.dds"
+	}
+	immediate = {
+		c:KOR = {
+			ruler = {
+				save_scope_as = korea_ruler
+			}
+		}
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	option = {
+		name = fm_kor.6.a
+		default_option = yes
+		add_loyalists = {
+			value = 0.1
+			strata = poor
+		}
+		add_loyalists = {
+			value = 0.2
+			pop_type = aristocrats
+		}
+		set_variable = {
+			name = kor_coronation
+		}
+	}
+}
+
+fm_kor.7 = {
+	type = country_event
+	placement = root
+	title = fm_kor.7.t
+	desc = fm_kor.7.d
+	flavor = fm_kor.7.f
+	duration = 1
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	immediate = {
+		ruler = {
+			set_character_immortal = no
+		}
+	}
+	option = {
+		name = fm_kor.7.a
+		default_option = yes
+		add_loyalists = {
+			value = 0.2
+			strata = poor
+		}
+		add_loyalists = {
+			value = 0.3
+			strata = middle
+		}
+		add_loyalists = {
+			value = 0.25
+			strata = rich
+		}
+		ruler = {
+			add_modifier = {
+				name = modifier_kor_four
+			}
+			add_trait = imperious
+			add_trait = cautious
+			add_trait = experienced_political_operator
+		}
+	}
+}
+
+fm_kor.8 = {
+	type = country_event
+	placement = root
+	title = fm_kor.8.t
+	desc = fm_kor.8.d
+	flavor = fm_kor.8.f
+	duration = 1
+	event_image = {
+		video = "ep1_transfer_of_authority"
+	}
+	immediate = {
+		random_interest_group = {
+			limit = {
+				is_interest_group_type = ig_armed_forces
+			}
+			save_scope_as = coup_ig
+		}
+		set_variable = {
+			name = fm_kor_coup
+		}
+		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_national_guard
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_dedicated_police
+		c:KOR = {
+			ruler = {
+				save_scope_as = korea_ruler
+			}
+		}
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	option = {
+		name = fm_kor.8.a
+		default_option = yes
+		scope:coup_ig = {
+			leader = {
+				set_character_as_ruler = yes
+			}
+		}
+		add_loyalists = {
+			value = 0.1
+			strata = poor
+		}
+		add_loyalists = {
+			value = 0.2
+			pop_type = soldiers
+		}
+		add_loyalists = {
+			value = 0.5
+			pop_type = officers
+		}
+		add_radicals = {
+			value = 0.25
+			strata = rich
+		}
+		add_radicals = {
+			value = 0.1
+			strata = middle
+		}
+		add_radicals = {
+			value = 0.35
+			pop_type = aristocrats
+		}
+		every_interest_group = {
+			limit = {
+				is_interest_group_type = ig_armed_forces
+			}
+			add_modifier = {
+				name = modifier_kor_five
+				months = long_modifier_time
+				is_decaying = yes
+			}
+		}
+	}
+}
+fm_kor.9 = {
+	type = country_event
+	placement = root
+	title = fm_kor.9.t
+	desc = fm_kor.9.d
+	flavor = fm_kor.9.f
+	duration = 1
+	event_image = {
+		video = "unspecific_trains"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+	option = {
+		name = fm_kor.9.a
+		default_option = yes
+		add_loyalists = {
+			value = 0.1
+			strata = poor
+		}
+		add_loyalists = {
+			value = 0.05
+			strata = middle
+		}
+		add_loyalists = {
+			value = 0.05
+			strata = rich
+		}
+		add_modifier = {
+			name = modifier_kor_six
+		}
+		add_modifier = {
+			name = modifier_kor_seven
+			months = 24
+		}
+	}
+}

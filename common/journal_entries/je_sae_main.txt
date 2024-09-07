@@ -1,0 +1,22 @@
+je_sae_main = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	group = je_group_historical_content
+	complete = {
+		owns_entire_state_region = STATE_KERMAN
+		owns_entire_state_region = STATE_LARISTAN
+		owns_entire_state_region = STATE_SISTAN
+		owns_entire_state_region = STATE_TABRIZ
+		owns_entire_state_region = STATE_URMIA
+		owns_entire_state_region = STATE_ELIZAVETPOL
+		owns_entire_state_region = STATE_ARMENIA
+		owns_entire_state_region = STATE_GREATER_CAUCASUS
+		owns_entire_state_region = STATE_KARS
+	}
+	on_complete = {
+		trigger_event = {
+			id = fm_sae.1
+		}
+	}
+	weight = 100
+	should_be_pinned_by_default = yes
+}

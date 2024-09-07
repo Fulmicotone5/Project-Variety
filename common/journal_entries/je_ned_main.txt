@@ -1,0 +1,23 @@
+je_ned_main = {
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+	group = je_group_historical_content
+	scripted_button = je_ned_butt
+	scripted_button = je_ned_butt_two
+	timeout = 3650
+	complete = {
+		gold_reserves > 0
+	}
+	on_complete = {
+		remove_modifier = modifier_ned_one
+	}
+	on_timeout = {
+		remove_modifier = modifier_ned_one
+		add_modifier = {
+			name = modifier_ned_two
+			months = 60
+		}
+	}
+
+	weight = 100
+	should_be_pinned_by_default = yes
+}

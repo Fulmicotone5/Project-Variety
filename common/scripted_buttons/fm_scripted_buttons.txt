@@ -1,0 +1,3945 @@
+je_ye_button_one = {
+	name = "je_ye_button_one"
+	desc = "je_ye_button_one_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 100
+	}
+	possible = {
+		custom_tooltip = {
+			text = noauth
+			NOT = {
+				has_variable = yua_auth
+			}
+			NOT = {
+				has_variable = nevbuy
+			}
+		}
+	}
+	effect = {
+		random_state = {
+			limit = {
+				state_region = s:STATE_OREGON
+			}
+			set_state_owner = ROOT
+		}
+		random_state = {
+			limit = {
+				state_region = s:STATE_IDAHO
+			}
+			set_state_owner = ROOT
+		}
+		random_state = {
+			limit = {
+				state_region = s:STATE_WASHINGTON
+			}
+			set_state_owner = ROOT
+		}
+		add_modifier = {
+			name = modifier_yua_one
+			months = 60
+		}
+		set_variable = {
+			name = nevbuy
+		}
+		hidden_effect = {
+			s:STATE_OREGON = {
+				remove_homeland = cu:nez_perce
+				remove_homeland = cu:dakota
+				add_homeland = cu:han
+				add_homeland = cu:yue
+				add_homeland = cu:min
+				add_homeland = cu:manchu
+			}
+			s:STATE_IDAHO = {
+				remove_homeland = cu:nez_perce
+				remove_homeland = cu:paiute
+				remove_homeland = cu:dakota
+				add_homeland = cu:han
+				add_homeland = cu:yue
+				add_homeland = cu:min
+				add_homeland = cu:manchu
+			}
+			s:STATE_WASHINGTON = {
+				remove_homeland = cu:salish
+				remove_homeland = cu:nez_perce
+				remove_homeland = cu:dakota
+				add_homeland = cu:han
+				add_homeland = cu:yue
+				add_homeland = cu:min
+				add_homeland = cu:manchu
+			}
+		}
+	}
+}
+
+je_ye_button_col = {
+	name = "je_ye_button_col"
+	desc = "je_ye_button_col_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 100
+	}
+	possible = {
+		custom_tooltip = {
+			text = yua_col_disc_text
+			has_variable = yua_col_disc
+		}
+		NOT = {
+			has_modifier = modifier_yua_col
+		}
+	}
+	effect = {
+		activate_law = law_type:law_frontier_colonization
+		hidden_effect = {
+			add_modifier = {
+				name = modifier_yua_col
+			}
+			s:STATE_NEVADA = {
+				add_claim = c:YUA
+			}
+			s:STATE_UTAH = {
+				add_claim = c:YUA
+			}
+		}
+	}
+}
+
+je_ye_button_migr = {
+	name = "je_ye_button_migr"
+	desc = "je_ye_button_migr_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 100
+	}
+	possible = {
+		custom_tooltip = {
+			text = yua_exp_text
+			has_variable = exp_yua
+		}
+		NOT = {
+			has_modifier = modifier_yua_col_two
+		}
+	}
+	effect = {
+		add_modifier = {
+			name = modifier_yua_col_two
+			months = 36
+			is_decaying = yes
+		}
+		trigger_event = {
+			id = fm_yua.2
+		}
+	}
+}
+
+je_ye_button_int = {
+	name = "je_ye_button_int"
+	desc = "je_ye_button_int_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 100
+	}
+	possible = {
+		custom_tooltip = {
+			text = yua_col_disc_text
+			has_variable = yua_int_disc
+		}
+		NOT = {
+			has_modifier = modifier_yua_int
+		}
+	}
+	effect = {
+		hidden_effect = {
+			add_journal_entry = {
+				type = je_yue_ass
+			}
+		}
+		add_modifier = {
+			name = modifier_yua_int
+		}
+	}
+}
+
+je_ye_button_mos = {
+	name = "je_ye_button_mos"
+	desc = "je_ye_button_mos_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 100
+	}
+	possible = {
+		custom_tooltip = {
+			text = yua_col_disc_text
+			has_variable = yua_mos_disc
+		}
+		NOT = {
+			has_modifier = modifier_yua_mos
+		}
+	}
+	effect = {
+		add_modifier = {
+			name = modifier_yua_mos
+		}
+	}
+}
+
+je_chi_button_hubei = {
+	name = "je_chi_claim_hubei_b"
+	desc = "je_chi_claim_hubei_b_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 100
+	}
+	possible = {
+		NOT = {
+			has_modifier = modifier_chu_claim
+		}
+		custom_tooltip = {
+			text = sc_claimed_t
+			NOT = {
+				has_variable = hubei_claimed
+			}
+		}
+		OR = {
+			NOT = {
+				owns_entire_state_region = STATE_WESTERN_HUBEI
+			}
+			NOT = {
+				owns_entire_state_region = STATE_EASTERN_HUBEI
+			}
+			NOT = {
+				owns_entire_state_region = STATE_HUNAN
+			}
+		}
+	}
+	effect = {
+		add_modifier = {
+			name = modifier_chu_claim
+			months = 60
+		}
+		set_variable = {
+			name = hubei_claimed
+		}
+		hidden_effect = {
+			trigger_event = {
+				id = fm_chi_cl.1
+				days = 1825
+			}
+		}
+	}
+}
+
+je_chi_button_wu = {
+	name = "je_chi_claim_wu_b"
+	desc = "je_chi_claim_hubei_b_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 100
+	}
+	possible = {
+		NOT = {
+			has_modifier = modifier_chu_claim
+		}
+		custom_tooltip = {
+			text = sc_claimed_t
+			NOT = {
+				has_variable = wu_claimed
+			}
+		}
+		OR = {
+			NOT = {
+				owns_entire_state_region = STATE_NANJING
+			}
+			NOT = {
+				owns_entire_state_region = STATE_SUZHOU
+			}
+			NOT = {
+				owns_entire_state_region = STATE_ZHEJIANG
+			}
+			NOT = {
+				owns_entire_state_region = STATE_TONKIN
+			}
+			NOT = {
+				owns_entire_state_region = STATE_GUANGDONG
+			}
+		}
+	}
+	effect = {
+		add_modifier = {
+			name = modifier_chu_claim
+			months = 60
+		}
+		set_variable = {
+			name = wu_claimed
+		}
+		hidden_effect = {
+			trigger_event = {
+				id = fm_chi_cl.2
+				days = 1825
+			}
+		}
+	}
+}
+
+je_chi_button_wei = {
+	name = "je_chi_claim_wei_b"
+	desc = "je_chi_claim_hubei_b_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 100
+	}
+	possible = {
+		NOT = {
+			has_modifier = modifier_chu_claim
+		}
+		custom_tooltip = {
+			text = sc_claimed_t
+			NOT = {
+				has_variable = wei_claimed
+			}
+		}
+		OR = {
+			NOT = {
+				owns_entire_state_region = STATE_JIANGSU
+			}
+			NOT = {
+				owns_entire_state_region = STATE_SHENGJING
+			}
+			NOT = {
+				owns_entire_state_region = STATE_XIAN
+			}
+			NOT = {
+				owns_entire_state_region = STATE_NINGXIA
+			}
+			NOT = {
+				owns_entire_state_region = STATE_GANSU
+			}
+		}
+	}
+	effect = {
+		add_modifier = {
+			name = modifier_chu_claim
+			months = 60
+		}
+		set_variable = {
+			name = wei_claimed
+		}
+		hidden_effect = {
+			trigger_event = {
+				id = fm_chi_cl.3
+				days = 1825
+			}
+		}
+	}
+}
+
+je_chi_button_beij = {
+	name = "je_chi_claim_beij_b"
+	desc = "je_chi_claim_hubei_b_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 100
+	}
+	possible = {
+		NOT = {
+			has_modifier = modifier_chu_claim
+		}
+		custom_tooltip = {
+			text = sc_claimed_t
+			NOT = {
+				has_variable = beij_claimed
+			}
+		}
+		OR = {
+			NOT = {
+				owns_entire_state_region = STATE_BEIJING
+			}
+			NOT = {
+				owns_entire_state_region = STATE_SHENGJING
+			}
+		}
+	}
+	effect = {
+		add_modifier = {
+			name = modifier_chu_claim
+			months = 60
+		}
+		set_variable = {
+			name = beij_claimed
+		}
+		hidden_effect = {
+			trigger_event = {
+				id = fm_chi_cl.6
+				days = 1825
+			}
+		}
+	}
+}
+
+je_chi_button_sc = {
+	name = "je_chi_claim_sc_b"
+	desc = "je_chi_claim_hubei_b_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 100
+	}
+	possible = {
+		NOT = {
+			has_modifier = modifier_chu_claim
+		}
+		custom_tooltip = {
+			text = sc_claimed_t
+			NOT = {
+				has_variable = sc_claimed
+			}
+		}
+		OR = {
+			NOT = {
+				owns_entire_state_region = STATE_GUANGDONG
+			}
+			NOT = {
+				owns_entire_state_region = STATE_TONKIN
+			}
+			NOT = {
+				owns_entire_state_region = STATE_GUANGXI
+			}
+		}
+	}
+	effect = {
+		add_modifier = {
+			name = modifier_chu_claim
+			months = 60
+		}
+		set_variable = {
+			name = sc_claimed
+		}
+		hidden_effect = {
+			trigger_event = {
+				id = fm_chi_cl.7
+				days = 1825
+			}
+		}
+	}
+}
+
+je_chi_button_ss = {
+	name = "je_chi_claim_ss_b"
+	desc = "je_chi_claim_hubei_b_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 100
+	}
+	possible = {
+		NOT = {
+			has_modifier = modifier_chu_claim
+		}
+		custom_tooltip = {
+			text = sc_claimed_t
+			NOT = {
+				has_variable = ss_claimed
+			}
+		}
+		OR = {
+			NOT = {
+				owns_entire_state_region = STATE_YUNNAN
+			}
+			NOT = {
+				owns_entire_state_region = STATE_GUIZHOU
+			}
+		}
+	}
+	effect = {
+		add_modifier = {
+			name = modifier_chu_claim
+			months = 60
+		}
+		set_variable = {
+			name = ss_claimed
+		}
+		hidden_effect = {
+			trigger_event = {
+				id = fm_chi_cl.4
+				days = 1825
+			}
+		}
+	}
+}
+
+je_chi_button_ns = {
+	name = "je_chi_claim_ns_b"
+	desc = "je_chi_claim_hubei_b_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 100
+	}
+	possible = {
+		NOT = {
+			has_modifier = modifier_chu_claim
+		}
+		custom_tooltip = {
+			text = sc_claimed_t
+			NOT = {
+				has_variable = ns_claimed
+			}
+		}
+		OR = {
+			NOT = {
+				owns_entire_state_region = STATE_SICHUAN
+			}
+			NOT = {
+				owns_entire_state_region = STATE_CHONGQING
+			}
+		}
+	}
+	effect = {
+		add_modifier = {
+			name = modifier_chu_claim
+			months = 60
+		}
+		set_variable = {
+			name = ns_claimed
+		}
+		hidden_effect = {
+			trigger_event = {
+				id = fm_chi_cl.5
+				days = 1825
+			}
+		}
+	}
+}
+
+je_chi_button_ncp = {
+	name = "je_chi_claim_ncp_b"
+	desc = "je_chi_claim_hubei_b_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 100
+	}
+	possible = {
+		NOT = {
+			has_modifier = modifier_chu_claim
+		}
+		custom_tooltip = {
+			text = sc_claimed_t
+			NOT = {
+				has_variable = ncp_claimed
+			}
+		}
+		OR = {
+			NOT = {
+				owns_entire_state_region = STATE_JIANGSU
+			}
+			NOT = {
+				owns_entire_state_region = STATE_SHANDONG
+			}
+			NOT = {
+				owns_entire_state_region = STATE_ZHILI
+			}
+		}
+	}
+	effect = {
+		add_modifier = {
+			name = modifier_chu_claim
+			months = 60
+		}
+		set_variable = {
+			name = ncp_claimed
+		}
+		hidden_effect = {
+			trigger_event = {
+				id = fm_chi_cl.8
+				days = 1825
+			}
+		}
+	}
+}
+
+je_chi_button_scp = {
+	name = "je_chi_claim_scp_b"
+	desc = "je_chi_claim_hubei_b_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 100
+	}
+	possible = {
+		NOT = {
+			has_modifier = modifier_chu_claim
+		}
+		custom_tooltip = {
+			text = sc_claimed_t
+			NOT = {
+				has_variable = scp_claimed
+			}
+		}
+		OR = {
+			NOT = {
+				owns_entire_state_region = STATE_NORTHERN_ANHUI
+			}
+			NOT = {
+				owns_entire_state_region = STATE_HENAN
+			}
+		}
+	}
+	effect = {
+		add_modifier = {
+			name = modifier_chu_claim
+			months = 60
+		}
+		set_variable = {
+			name = scp_claimed
+		}
+		hidden_effect = {
+			trigger_event = {
+				id = fm_chi_cl.9
+				days = 1825
+			}
+		}
+	}
+}
+
+je_chi_button_plat = {
+	name = "je_chi_claim_plat_b"
+	desc = "je_chi_claim_hubei_b_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 100
+	}
+	possible = {
+		NOT = {
+			has_modifier = modifier_chu_claim
+		}
+		custom_tooltip = {
+			text = sc_claimed_t
+			NOT = {
+				has_variable = plat_claimed
+			}
+		}
+		OR = {
+			NOT = {
+				owns_entire_state_region = STATE_XIAN
+			}
+			NOT = {
+				owns_entire_state_region = STATE_NINGXIA
+			}
+			NOT = {
+				owns_entire_state_region = STATE_GANSU
+			}
+		}
+	}
+	effect = {
+		add_modifier = {
+			name = modifier_chu_claim
+			months = 60
+		}
+		set_variable = {
+			name = plat_claimed
+		}
+		hidden_effect = {
+			trigger_event = {
+				id = fm_chi_cl.10
+				days = 1825
+			}
+		}
+	}
+}
+
+je_chi_button_shsr = {
+	name = "je_chi_claim_shsr_b"
+	desc = "je_chi_claim_hubei_b_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 100
+	}
+	possible = {
+		NOT = {
+			has_modifier = modifier_chu_claim
+		}
+		custom_tooltip = {
+			text = sc_claimed_t
+			NOT = {
+				has_variable = shsr_claimed
+			}
+		}
+		OR = {
+			NOT = {
+				owns_entire_state_region = STATE_NANJING
+			}
+			NOT = {
+				owns_entire_state_region = STATE_SOUTHERN_ANHUI
+			}
+			NOT = {
+				owns_entire_state_region = STATE_SUZHOU
+			}
+			NOT = {
+				owns_entire_state_region = STATE_ZHEJIANG
+			}
+		}
+	}
+	effect = {
+		add_modifier = {
+			name = modifier_chu_claim
+			months = 60
+		}
+		set_variable = {
+			name = shsr_claimed
+		}
+		hidden_effect = {
+			trigger_event = {
+				id = fm_chi_cl.11
+				days = 1825
+			}
+		}
+	}
+}
+
+je_chi_button_shir = {
+	name = "je_chi_claim_shir_b"
+	desc = "je_chi_claim_hubei_b_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 100
+	}
+	possible = {
+		NOT = {
+			has_modifier = modifier_chu_claim
+		}
+		custom_tooltip = {
+			text = sc_claimed_t
+			NOT = {
+				has_variable = shir_claimed
+			}
+		}
+		OR = {
+			NOT = {
+				owns_entire_state_region = STATE_FUJIAN
+			}
+			NOT = {
+				owns_entire_state_region = STATE_SHAOZHOU
+			}
+			NOT = {
+				owns_entire_state_region = STATE_JIANGXI
+			}
+		}
+	}
+	effect = {
+		add_modifier = {
+			name = modifier_chu_claim
+			months = 60
+		}
+		set_variable = {
+			name = shir_claimed
+		}
+		hidden_effect = {
+			trigger_event = {
+				id = fm_chi_cl.12
+				days = 1825
+			}
+		}
+	}
+}
+
+je_anatolia_depo = {
+	name = "je_anatolia_depo"
+	desc = "je_anatolia_depo_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 100
+	}
+	possible = {
+		NOT = {
+			has_modifier = modifier_eastrome_four
+		}
+	}
+	effect = {
+		change_infamy = 15
+		add_modifier = {
+			name = modifier_eastrome_four
+		}
+		hidden_effect = {
+			every_scope_state = {
+				limit = {
+					OR = {
+						state_region = s:STATE_HUDAVENDIGAR
+						state_region = s:STATE_AYDIN
+						state_region = s:STATE_KONYA
+						state_region = s:STATE_KASTAMONU
+						state_region = s:STATE_ANKARA
+						state_region = s:STATE_TRABZON
+						state_region = s:STATE_ERZURUM
+						state_region = s:STATE_DIYARBAKIR
+						state_region = s:STATE_EAST_AEGEAN_ISLANDS
+						state_region = s:STATE_ADANA
+					}
+				}
+				kill_population_percent_in_state = {
+					percent = 0.35
+					culture = cu:turkish
+				}
+			}
+		}
+		if = {
+			limit = {
+				exists = c:BYZ
+			}
+			root = {
+				random_state = {
+					limit = {
+						state_region = s:STATE_HUDAVENDIGAR
+					}
+					random_scope_pop = {
+						limit = {
+							culture = cu:turkish
+							is_pop_type = peasants
+						}
+						move_pop = s:STATE_ERZURUM.region_state:BYZ
+						change_poptype = pop_type:slaves
+					}
+				}
+				random_state = {
+					limit = {
+						state_region = s:STATE_AYDIN
+					}
+					random_scope_pop = {
+						limit = {
+							culture = cu:turkish
+							is_pop_type = peasants
+						}
+						move_pop = s:STATE_ERZURUM.region_state:BYZ
+						change_poptype = pop_type:slaves
+					}
+				}
+				random_state = {
+					limit = {
+						state_region = s:STATE_KONYA
+					}
+					random_scope_pop = {
+						limit = {
+							culture = cu:turkish
+							is_pop_type = peasants
+						}
+						move_pop = s:STATE_ERZURUM.region_state:BYZ
+						change_poptype = pop_type:slaves
+					}
+				}
+				random_state = {
+					limit = {
+						state_region = s:STATE_KASTAMONU
+					}
+					random_scope_pop = {
+						limit = {
+							culture = cu:turkish
+							is_pop_type = peasants
+						}
+						move_pop = s:STATE_ERZURUM.region_state:BYZ
+						change_poptype = pop_type:slaves
+					}
+				}
+				random_state = {
+					limit = {
+						state_region = s:STATE_ANKARA
+					}
+					random_scope_pop = {
+						limit = {
+							culture = cu:turkish
+							is_pop_type = peasants
+						}
+						move_pop = s:STATE_ERZURUM.region_state:BYZ
+						change_poptype = pop_type:slaves
+					}
+				}
+				random_state = {
+					limit = {
+						state_region = s:STATE_TRABZON
+					}
+					random_scope_pop = {
+						limit = {
+							culture = cu:turkish
+							is_pop_type = peasants
+						}
+						move_pop = s:STATE_ERZURUM.region_state:BYZ
+						change_poptype = pop_type:slaves
+					}
+				}
+				random_state = {
+					limit = {
+						state_region = s:STATE_DIYARBAKIR
+					}
+					random_scope_pop = {
+						limit = {
+							culture = cu:turkish
+							is_pop_type = peasants
+						}
+						move_pop = s:STATE_ERZURUM.region_state:BYZ
+						change_poptype = pop_type:slaves
+					}
+				}
+				random_state = {
+					limit = {
+						state_region = s:STATE_ADANA
+					}
+					random_scope_pop = {
+						limit = {
+							culture = cu:turkish
+							is_pop_type = peasants
+						}
+						move_pop = s:STATE_ERZURUM.region_state:BYZ
+						change_poptype = pop_type:slaves
+					}
+				}
+				random_state = {
+					limit = {
+						state_region = s:STATE_ERZURUM
+					}
+					random_scope_pop = {
+						limit = {
+							culture = cu:turkish
+							is_pop_type = peasants
+						}
+						change_poptype = pop_type:slaves
+					}
+				}
+				hidden_effect = {
+					random_state = {
+						limit = {
+							state_region = s:STATE_EASTERN_THRACE
+						}
+						random_scope_pop = {
+							limit = {
+								culture = cu:greek
+								is_pop_type = peasants
+							}
+							move_pop = s:STATE_AYDIN.region_state:BYZ
+						}
+					}
+					random_state = {
+						limit = {
+							state_region = s:STATE_THESSALIA
+						}
+						random_scope_pop = {
+							limit = {
+								culture = cu:greek
+								is_pop_type = peasants
+							}
+							move_pop = s:STATE_KONYA.region_state:BYZ
+						}
+					}
+					random_state = {
+						limit = {
+							state_region = s:STATE_ATTICA
+						}
+						random_scope_pop = {
+							limit = {
+								culture = cu:greek
+								is_pop_type = peasants
+							}
+							move_pop = s:STATE_KASTAMONU.region_state:BYZ
+						}
+					}
+					random_state = {
+						limit = {
+							state_region = s:STATE_NORTHERN_THRACE
+						}
+						random_scope_pop = {
+							limit = {
+								culture = cu:greek
+								is_pop_type = peasants
+							}
+							move_pop = s:STATE_ANKARA.region_state:BYZ
+						}
+					}
+					random_state = {
+						limit = {
+							state_region = s:STATE_WESTERN_THRACE
+						}
+						random_scope_pop = {
+							limit = {
+								culture = cu:greek
+								is_pop_type = peasants
+							}
+							move_pop = s:STATE_DIYARBAKIR.region_state:BYZ
+						}
+					}
+					random_state = {
+						limit = {
+							state_region = s:STATE_PELOPONNESE
+						}
+						random_scope_pop = {
+							limit = {
+								culture = cu:greek
+								is_pop_type = peasants
+							}
+							move_pop = s:STATE_ADANA.region_state:BYZ
+						}
+					}
+					random_state = {
+						limit = {
+							state_region = s:STATE_HUDAVENDIGAR
+						}
+						random_scope_pop = {
+							limit = {
+								culture = cu:greek
+								is_pop_type = peasants
+							}
+							move_pop = s:STATE_TRABZON.region_state:BYZ
+						}
+					}
+					random_state = {
+						limit = {
+							state_region = s:STATE_HUDAVENDIGAR
+						}
+						random_scope_pop = {
+							limit = {
+								culture = cu:greco_roman
+								is_pop_type = peasants
+							}
+							move_pop = s:STATE_KONYA.region_state:BYZ
+						}
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				exists = c:BIZ
+			}
+			root = {
+				random_state = {
+					limit = {
+						state_region = s:STATE_HUDAVENDIGAR
+					}
+					random_scope_pop = {
+						limit = {
+							culture = cu:turkish
+							is_pop_type = peasants
+						}
+						move_pop = s:STATE_ERZURUM.region_state:BIZ
+						change_poptype = pop_type:slaves
+					}
+				}
+				random_state = {
+					limit = {
+						state_region = s:STATE_AYDIN
+					}
+					random_scope_pop = {
+						limit = {
+							culture = cu:turkish
+							is_pop_type = peasants
+						}
+						move_pop = s:STATE_ERZURUM.region_state:BIZ
+						change_poptype = pop_type:slaves
+					}
+				}
+				random_state = {
+					limit = {
+						state_region = s:STATE_KONYA
+					}
+					random_scope_pop = {
+						limit = {
+							culture = cu:turkish
+							is_pop_type = peasants
+						}
+						move_pop = s:STATE_ERZURUM.region_state:BIZ
+						change_poptype = pop_type:slaves
+					}
+				}
+				random_state = {
+					limit = {
+						state_region = s:STATE_KASTAMONU
+					}
+					random_scope_pop = {
+						limit = {
+							culture = cu:turkish
+							is_pop_type = peasants
+						}
+						move_pop = s:STATE_ERZURUM.region_state:BIZ
+						change_poptype = pop_type:slaves
+					}
+				}
+				random_state = {
+					limit = {
+						state_region = s:STATE_ANKARA
+					}
+					random_scope_pop = {
+						limit = {
+							culture = cu:turkish
+							is_pop_type = peasants
+						}
+						move_pop = s:STATE_ERZURUM.region_state:BIZ
+						change_poptype = pop_type:slaves
+					}
+				}
+				random_state = {
+					limit = {
+						state_region = s:STATE_TRABZON
+					}
+					random_scope_pop = {
+						limit = {
+							culture = cu:turkish
+							is_pop_type = peasants
+						}
+						move_pop = s:STATE_ERZURUM.region_state:BIZ
+						change_poptype = pop_type:slaves
+					}
+				}
+				random_state = {
+					limit = {
+						state_region = s:STATE_DIYARBAKIR
+					}
+					random_scope_pop = {
+						limit = {
+							culture = cu:turkish
+							is_pop_type = peasants
+						}
+						move_pop = s:STATE_ERZURUM.region_state:BIZ
+						change_poptype = pop_type:slaves
+					}
+				}
+				random_state = {
+					limit = {
+						state_region = s:STATE_ADANA
+					}
+					random_scope_pop = {
+						limit = {
+							culture = cu:turkish
+							is_pop_type = peasants
+						}
+						move_pop = s:STATE_ERZURUM.region_state:BIZ
+						change_poptype = pop_type:slaves
+					}
+				}
+				random_state = {
+					limit = {
+						state_region = s:STATE_ERZURUM
+					}
+					random_scope_pop = {
+						limit = {
+							culture = cu:turkish
+							is_pop_type = peasants
+						}
+						change_poptype = pop_type:slaves
+					}
+				}
+				hidden_effect = {
+					random_state = {
+						limit = {
+							state_region = s:STATE_EASTERN_THRACE
+						}
+						random_scope_pop = {
+							limit = {
+								culture = cu:greek
+								is_pop_type = peasants
+							}
+							move_pop = s:STATE_KONYA.region_state:BIZ
+						}
+					}
+					random_state = {
+						limit = {
+							state_region = s:STATE_THESSALIA
+						}
+						random_scope_pop = {
+							limit = {
+								culture = cu:greek
+								is_pop_type = peasants
+							}
+							move_pop = s:STATE_AYDIN.region_state:BIZ
+						}
+					}
+					random_state = {
+						limit = {
+							state_region = s:STATE_THESSALIA
+						}
+						random_scope_pop = {
+							limit = {
+								culture = cu:greco_roman
+								is_pop_type = peasants
+							}
+							move_pop = s:STATE_AYDIN.region_state:BIZ
+						}
+					}
+					random_state = {
+						limit = {
+							state_region = s:STATE_ATTICA
+						}
+						random_scope_pop = {
+							limit = {
+								culture = cu:greek
+								is_pop_type = peasants
+							}
+							move_pop = s:STATE_KASTAMONU.region_state:BIZ
+						}
+					}
+					random_state = {
+						limit = {
+							state_region = s:STATE_ATTICA
+						}
+						random_scope_pop = {
+							limit = {
+								culture = cu:greco_roman
+								is_pop_type = peasants
+							}
+							move_pop = s:STATE_KASTAMONU.region_state:BIZ
+						}
+					}
+					random_state = {
+						limit = {
+							state_region = s:STATE_NORTHERN_THRACE
+						}
+						random_scope_pop = {
+							limit = {
+								culture = cu:greek
+								is_pop_type = peasants
+							}
+							move_pop = s:STATE_ANKARA.region_state:BIZ
+						}
+					}
+					random_state = {
+						limit = {
+							state_region = s:STATE_NORTHERN_THRACE
+						}
+						random_scope_pop = {
+							limit = {
+								culture = cu:greco_roman
+								is_pop_type = peasants
+							}
+							move_pop = s:STATE_ANKARA.region_state:BIZ
+						}
+					}
+					random_state = {
+						limit = {
+							state_region = s:STATE_MACEDONIA
+						}
+						random_scope_pop = {
+							limit = {
+								culture = cu:greco_roman
+								is_pop_type = peasants
+							}
+							move_pop = s:STATE_TRABZON.region_state:BIZ
+						}
+					}
+					random_state = {
+						limit = {
+							state_region = s:STATE_WESTERN_THRACE
+						}
+						random_scope_pop = {
+							limit = {
+								culture = cu:greek
+								is_pop_type = peasants
+							}
+							move_pop = s:STATE_DIYARBAKIR.region_state:BIZ
+						}
+					}
+					random_state = {
+						limit = {
+							state_region = s:STATE_WESTERN_THRACE
+						}
+						random_scope_pop = {
+							limit = {
+								culture = cu:greco_roman
+								is_pop_type = peasants
+							}
+							move_pop = s:STATE_DIYARBAKIR.region_state:BIZ
+						}
+					}
+					random_state = {
+						limit = {
+							state_region = s:STATE_PELOPONNESE
+						}
+						random_scope_pop = {
+							limit = {
+								culture = cu:greek
+								is_pop_type = peasants
+							}
+							move_pop = s:STATE_ADANA.region_state:BIZ
+						}
+					}
+					random_state = {
+						limit = {
+							state_region = s:STATE_HUDAVENDIGAR
+						}
+						random_scope_pop = {
+							limit = {
+								culture = cu:greek
+								is_pop_type = peasants
+							}
+							move_pop = s:STATE_TRABZON.region_state:BIZ
+						}
+					}
+					random_state = {
+						limit = {
+							state_region = s:STATE_HUDAVENDIGAR
+						}
+						random_scope_pop = {
+							limit = {
+								culture = cu:greco_roman
+								is_pop_type = peasants
+							}
+							move_pop = s:STATE_AYDIN.region_state:BIZ
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+je_anatolia_int_rel = {
+	name = "je_anatolia_int_rel"
+	desc = "je_anatolia_int_rel_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 100
+	}
+	possible = {
+		NOT = {
+			has_modifier = modifier_eastrome_three
+		}
+	}
+	effect = {
+		add_modifier = {
+			name = modifier_eastrome_three
+			months = very_long_modifier_time
+		}
+		every_scope_state = {
+			limit = {
+				OR = {
+					state_region = s:STATE_HUDAVENDIGAR
+					state_region = s:STATE_AYDIN
+					state_region = s:STATE_KONYA
+					state_region = s:STATE_KASTAMONU
+					state_region = s:STATE_ANKARA
+					state_region = s:STATE_TRABZON
+					state_region = s:STATE_ERZURUM
+					state_region = s:STATE_DIYARBAKIR
+					state_region = s:STATE_EAST_AEGEAN_ISLANDS
+					state_region = s:STATE_ADANA
+				}
+			}
+			convert_population = {
+				target = root.religion
+				value = 0.15
+			}
+		}
+	}
+}
+
+je_anatolia_int_erz = {
+	name = "je_anatolia_int_erz"
+	desc = "je_anatolia_int_erz_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 100
+	}
+	possible = {
+		has_modifier = modifier_eastrome_four
+		has_modifier = modifier_eastrome_three
+		custom_tooltip = {
+			text = abar_int
+			NOT = {
+				has_variable = erz_conv
+			}
+			owns_entire_state_region = STATE_ERZURUM
+			owns_entire_state_region = STATE_DIYARBAKIR
+			owns_entire_state_region = STATE_ADANA
+		}
+	}
+	effect = {
+		s:STATE_DIYARBAKIR = {
+			remove_homeland = cu:turkish
+			add_homeland = cu:greco_roman
+		}
+		s:STATE_ADANA = {
+			remove_homeland = cu:turkish
+			add_homeland = cu:greco_roman
+		}
+		set_variable = {
+			name = erz_conv
+		}
+	}
+}
+
+je_buy_louisiana = {
+	name = "je_buy_louisiana"
+	desc = "je_buy_louisiana_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 0
+	}
+	possible = {
+		custom_tooltip = {
+			text = luoi_text
+			NOT = {
+				has_modifier = modifier_fru_one
+			}
+			NOT = {
+				has_variable = variable_louisiana
+			}
+		}
+	}
+	effect = {
+		set_variable = {
+			name = variable_louisiana
+		}
+		if = {
+			limit = {
+				exists = c:FRU
+				c:LOI = {
+					is_subject_of = c:FRU
+				}
+			}
+			c:FRU = {
+				trigger_event = {
+					id = fm_france.1
+					days = 30
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				exists = c:FRE
+				c:LOI = {
+					is_subject_of = c:FRE
+				}
+			}
+			c:FRE = {
+				trigger_event = {
+					id = fm_france.1
+					days = 30
+				}
+			}
+		}
+	}
+}
+je_buy_louisiana_amc = {
+	name = "je_buy_louisiana_amc"
+	desc = "je_buy_louisiana_amc_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 100
+	}
+	possible = {
+		custom_tooltip = {
+			text = luoi_text
+			NOT = {
+				has_modifier = modifier_fru_one
+			}
+			NOT = {
+				has_variable = variable_louisiana_amc
+			}
+		}
+	}
+	effect = {
+		set_variable = {
+			name = variable_louisiana_amc
+		}
+		if = {
+			limit = {
+				exists = c:FRU
+				c:LOI = {
+					is_subject_of = c:FRU
+				}
+			}
+			c:FRU = {
+				trigger_event = {
+					id = fm_luoi_amc.1
+					days = 30
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				exists = c:FRE
+				c:LOI = {
+					is_subject_of = c:FRE
+				}
+			}
+			c:FRE = {
+				trigger_event = {
+					id = fm_luoi_amc.1
+					days = 30
+				}
+			}
+		}
+	}
+}
+
+je_buy_louisiana_flu = {
+	name = "je_buy_louisiana_flu"
+	desc = "je_buy_louisiana_flu_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 100
+	}
+	possible = {
+		custom_tooltip = {
+			text = luoi_text
+			NOT = {
+				has_modifier = modifier_fru_one
+			}
+			NOT = {
+				has_variable = variable_louisiana_flu
+			}
+		}
+	}
+	effect = {
+		set_variable = {
+			name = variable_louisiana_flu
+		}
+		if = {
+			limit = {
+				exists = c:FRU
+				c:LOI = {
+					is_subject_of = c:FRU
+				}
+			}
+			c:FRU = {
+				trigger_event = {
+					id = fm_luoi_flu.3
+					days = 30
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				exists = c:FRE
+				c:LOI = {
+					is_subject_of = c:FRE
+				}
+			}
+			c:FRE = {
+				trigger_event = {
+					id = fm_luoi_flu.3
+					days = 30
+				}
+			}
+		}
+	}
+}
+
+je_buy_louisiana_mex = {
+	name = "je_buy_louisiana_mex"
+	desc = "je_buy_louisiana_mex_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 100
+	}
+	possible = {
+		custom_tooltip = {
+			text = luoi_text
+			NOT = {
+				has_modifier = modifier_fru_one
+			}
+			NOT = {
+				has_variable = variable_louisiana_mex
+			}
+		}
+	}
+	effect = {
+		set_variable = {
+			name = variable_louisiana_mex
+		}
+		if = {
+			limit = {
+				exists = c:FRU
+				c:LOI = {
+					is_subject_of = c:FRU
+				}
+			}
+			c:FRU = {
+				trigger_event = {
+					id = fm_luoi_mex.1
+					days = 30
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				exists = c:FRE
+				c:LOI = {
+					is_subject_of = c:FRE
+				}
+			}
+			c:FRE = {
+				trigger_event = {
+					id = fm_luoi_mex.1
+					days = 30
+				}
+			}
+		}
+	}
+}
+
+je_dakota_tribes_ctf = {
+	name = "je_dakota_tribes_ctf"
+	desc = "je_dakota_tribes_ctf_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 0
+	}
+	possible = {
+		OR = {
+			has_law = law_type:law_racial_segregation
+			has_law = law_type:law_cultural_exclusion
+		}
+		NOT = {
+			has_modifier = modifier_dak_three
+		}
+		exists = c:CTF
+	}
+	effect = {
+		add_modifier = {
+			name = modifier_dak_three
+			months = 24
+		}
+		root = {
+			trigger_event = {
+				id = fm_dakota.6
+				days = 730
+			}
+		}
+	}
+}
+
+je_dakota_tribes_cru = {
+	name = "je_dakota_tribes_cru"
+	desc = "je_dakota_tribes_cru_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 0
+	}
+	possible = {
+		OR = {
+			has_law = law_type:law_racial_segregation
+			has_law = law_type:law_cultural_exclusion
+		}
+		NOT = {
+			has_modifier = modifier_dak_three
+		}
+		exists = c:CRU
+	}
+	effect = {
+		add_modifier = {
+			name = modifier_dak_three
+			months = 24
+		}
+		root = {
+			trigger_event = {
+				id = fm_dakota.7
+				days = 730
+			}
+		}
+	}
+}
+
+je_dakota_tribes_sio = {
+	name = "je_dakota_tribes_sio"
+	desc = "je_dakota_tribes_sio_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 0
+	}
+	possible = {
+		OR = {
+			has_law = law_type:law_racial_segregation
+			has_law = law_type:law_cultural_exclusion
+		}
+		NOT = {
+			has_modifier = modifier_dak_three
+		}
+		exists = c:SIO
+	}
+	effect = {
+		add_modifier = {
+			name = modifier_dak_three
+			months = 24
+		}
+		root = {
+			trigger_event = {
+				id = fm_dakota.8
+				days = 730
+			}
+		}
+	}
+}
+
+je_dakota_tribes_lkt = {
+	name = "je_dakota_tribes_lkt"
+	desc = "je_dakota_tribes_lkt_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 100
+	}
+	possible = {
+		OR = {
+			has_law = law_type:law_racial_segregation
+			has_law = law_type:law_cultural_exclusion
+		}
+		NOT = {
+			has_modifier = modifier_dak_three
+		}
+		exists = c:LKT
+	}
+	effect = {
+		add_modifier = {
+			name = modifier_dak_three
+			months = 24
+		}
+		root = {
+			trigger_event = {
+				id = fm_dakota.5
+				days = 730
+			}
+		}
+	}
+}
+
+je_ind_rem_but = {
+	name = "je_ind_rem_but"
+	desc = "je_ind_rem_but_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 100
+	}
+	possible = {
+		custom_tooltip = {
+			text = variable_indi_app_text
+			NOT = {
+				has_variable = variable_indi_app
+			}
+		}
+	}
+	effect = {
+		set_variable = {
+			name = variable_indi_app
+		}
+	}
+}
+
+je_int_ala = {
+	name = "je_int_ala"
+	desc = "je_int_ala_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 100
+	}
+	possible = {
+		owns_entire_state_region = STATE_ALABAMA
+		NOT = {
+			has_modifier = modifier_ind_four
+		}
+		NOT = {
+			any_scope_state = {
+				AND= {
+					state_region = s:STATE_ALABAMA
+					is_incorporated = yes
+				}
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = {
+			text = ind_dep_warning
+			every_scope_state = {
+				limit = {
+					state_region = s:STATE_ALABAMA
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:cherokee
+				}
+				set_state_type = incorporated
+			}
+		}
+		add_modifier = {
+			name = modifier_ind_four
+			months = 12
+		}
+	}
+}
+je_int_missi = {
+	name = "je_int_missi"
+	desc = "je_int_ala_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 100
+	}
+	possible = {
+		owns_entire_state_region = STATE_MISSISSIPPI
+		NOT = {
+			has_modifier = modifier_ind_four
+		}
+		NOT = {
+			any_scope_state = {
+				AND= {
+					state_region = s:STATE_MISSISSIPPI
+					is_incorporated = yes
+				}
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = {
+			text = ind_dep_warning
+			every_scope_state = {
+				limit = {
+					state_region = s:STATE_MISSISSIPPI
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:cherokee
+				}
+				set_state_type = incorporated
+			}
+		}
+		add_modifier = {
+			name = modifier_ind_four
+			months = 12
+		}
+	}
+}
+je_int_ten = {
+	name = "je_int_ten"
+	desc = "je_int_ala_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 100
+	}
+	possible = {
+		owns_entire_state_region = STATE_TENNESSEE
+		NOT = {
+			has_modifier = modifier_ind_four
+		}
+		NOT = {
+			any_scope_state = {
+				AND= {
+					state_region = s:STATE_TENNESSEE
+					is_incorporated = yes
+				}
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = {
+			text = ind_dep_warning
+			every_scope_state = {
+				limit = {
+					state_region = s:STATE_TENNESSEE
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:cherokee
+				}
+				set_state_type = incorporated
+			}
+		}
+		add_modifier = {
+			name = modifier_ind_four
+			months = 12
+		}
+	}
+}
+
+je_int_ark = {
+	name = "je_int_ark"
+	desc = "je_int_ala_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 100
+	}
+	possible = {
+		owns_entire_state_region = STATE_ARKANSAS
+		NOT = {
+			has_modifier = modifier_ind_four
+		}
+		NOT = {
+			any_scope_state = {
+				AND= {
+					state_region = s:STATE_ARKANSAS
+					is_incorporated = yes
+				}
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = {
+			text = ind_dep_warning
+			every_scope_state = {
+				limit = {
+					state_region = s:STATE_ARKANSAS
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:cherokee
+				}
+				set_state_type = incorporated
+			}
+		}
+		add_modifier = {
+			name = modifier_ind_four
+			months = 12
+		}
+	}
+}
+je_int_okl = {
+	name = "je_int_okl"
+	desc = "je_int_ala_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 100
+	}
+	possible = {
+		owns_entire_state_region = STATE_OKLAHOMA
+		NOT = {
+			has_modifier = modifier_ind_four
+		}
+		NOT = {
+			any_scope_state = {
+				AND= {
+					state_region = s:STATE_OKLAHOMA
+					is_incorporated = yes
+				}
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = {
+			text = ind_dep_warning
+			every_scope_state = {
+				limit = {
+					state_region = s:STATE_OKLAHOMA
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:cherokee
+				}
+				set_state_type = incorporated
+			}
+		}
+		add_modifier = {
+			name = modifier_ind_four
+			months = 12
+		}
+	}
+}
+je_int_mis = {
+	name = "je_int_mis"
+	desc = "je_int_ala_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 100
+	}
+	possible = {
+		owns_entire_state_region = STATE_MISSOURI
+		NOT = {
+			has_modifier = modifier_ind_four
+		}
+		NOT = {
+			any_scope_state = {
+				AND= {
+					state_region = s:STATE_MISSOURI
+					is_incorporated = yes
+				}
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = {
+			text = ind_dep_warning
+			every_scope_state = {
+				limit = {
+					state_region = s:STATE_MISSOURI
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:caddoan
+				}
+				set_state_type = incorporated
+			}
+		}
+		add_modifier = {
+			name = modifier_ind_four
+			months = 12
+		}
+	}
+}
+je_int_kan = {
+	name = "je_int_kan"
+	desc = "je_int_ala_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 100
+	}
+	possible = {
+		owns_entire_state_region = STATE_KANSAS
+		NOT = {
+			has_modifier = modifier_ind_four
+		}
+		NOT = {
+			any_scope_state = {
+				AND= {
+					state_region = s:STATE_KANSAS
+					is_incorporated = yes
+				}
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = {
+			text = ind_dep_warning
+			every_scope_state = {
+				limit = {
+					state_region = s:STATE_KANSAS
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:caddoan
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:paiute
+				}
+				set_state_type = incorporated
+			}
+		}
+		add_modifier = {
+			name = modifier_ind_four
+			months = 12
+		}
+	}
+}
+
+je_int_lak = {
+	name = "je_int_lak"
+	desc = "je_int_ala_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 100
+	}
+	possible = {
+		owns_entire_state_region = STATE_MONTANA
+		owns_entire_state_region = STATE_WYOMING
+		NOT = {
+			has_modifier = modifier_ind_four
+		}
+		NOT = {
+			any_scope_state = {
+				AND= {
+					state_region = s:STATE_MONTANA
+					is_incorporated = yes
+				}
+			}
+		}
+		NOT = {
+			any_scope_state = {
+				AND= {
+					state_region = s:STATE_WYOMING
+					is_incorporated = yes
+				}
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = {
+			text = ind_dep_warning
+			every_scope_state = {
+				limit = {
+					state_region = s:STATE_MONTANA
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:dakota
+				}
+				set_state_type = incorporated
+			}
+			every_scope_state = {
+				limit = {
+					state_region = s:STATE_WYOMING
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:dakota
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:paiute
+				}
+				set_state_type = incorporated
+			}
+		}
+		add_modifier = {
+			name = modifier_ind_four
+			months = 12
+		}
+	}
+}
+je_int_ntd = {
+	name = "je_int_ntd"
+	desc = "je_int_ala_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 100
+	}
+	possible = {
+		owns_entire_state_region = STATE_NORTH_DAKOTA
+		NOT = {
+			has_modifier = modifier_ind_four
+		}
+		NOT = {
+			any_scope_state = {
+				AND= {
+					state_region = s:STATE_NORTH_DAKOTA
+					is_incorporated = yes
+				}
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = {
+			text = ind_dep_warning
+			every_scope_state = {
+				limit = {
+					state_region = s:STATE_NORTH_DAKOTA
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:dakota
+				}
+				set_state_type = incorporated
+			}
+		}
+		add_modifier = {
+			name = modifier_ind_four
+			months = 12
+		}
+	}
+}
+je_int_std = {
+	name = "je_int_std"
+	desc = "je_int_ala_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 100
+	}
+	possible = {
+		owns_entire_state_region = STATE_SOUTH_DAKOTA
+		NOT = {
+			has_modifier = modifier_ind_four
+		}
+		NOT = {
+			any_scope_state = {
+				AND= {
+					state_region = s:STATE_SOUTH_DAKOTA
+					is_incorporated = yes
+				}
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = {
+			text = ind_dep_warning
+			every_scope_state = {
+				limit = {
+					state_region = s:STATE_SOUTH_DAKOTA
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:dakota
+				}
+				set_state_type = incorporated
+			}
+		}
+		add_modifier = {
+			name = modifier_ind_four
+			months = 12
+		}
+	}
+}
+je_int_min = {
+	name = "je_int_min"
+	desc = "je_int_ala_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 100
+	}
+	possible = {
+		owns_entire_state_region = STATE_MINNESOTA
+		NOT = {
+			has_modifier = modifier_ind_four
+		}
+		NOT = {
+			any_scope_state = {
+				AND= {
+					state_region = s:STATE_MINNESOTA
+					is_incorporated = yes
+				}
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = {
+			text = ind_dep_warning
+			every_scope_state = {
+				limit = {
+					state_region = s:STATE_MINNESOTA
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:dakota
+				}
+				set_state_type = incorporated
+			}
+		}
+		add_modifier = {
+			name = modifier_ind_four
+			months = 12
+		}
+	}
+}
+je_int_iow = {
+	name = "je_int_iow"
+	desc = "je_int_ala_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 100
+	}
+	possible = {
+		owns_entire_state_region = STATE_IOWA
+		NOT = {
+			has_modifier = modifier_ind_four
+		}
+		NOT = {
+			any_scope_state = {
+				AND= {
+					state_region = s:STATE_IOWA
+					is_incorporated = yes
+				}
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = {
+			text = ind_dep_warning
+			every_scope_state = {
+				limit = {
+					state_region = s:STATE_IOWA
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:dakota
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:caddoan
+				}
+				set_state_type = incorporated
+			}
+		}
+		add_modifier = {
+			name = modifier_ind_four
+			months = 12
+		}
+	}
+}
+je_int_neb = {
+	name = "je_int_neb"
+	desc = "je_int_ala_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 100
+	}
+	possible = {
+		owns_entire_state_region = STATE_NEBRASKA
+		NOT = {
+			has_modifier = modifier_ind_four
+		}
+		NOT = {
+			any_scope_state = {
+				AND= {
+					state_region = s:STATE_NEBRASKA
+					is_incorporated = yes
+				}
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = {
+			text = ind_dep_warning
+			every_scope_state = {
+				limit = {
+					state_region = s:STATE_NEBRASKA
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:dakota
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:caddoan
+				}
+				set_state_type = incorporated
+			}
+		}
+		add_modifier = {
+			name = modifier_ind_four
+			months = 12
+		}
+	}
+}
+
+je_int_tex = {
+	name = "je_int_tex"
+	desc = "je_int_ala_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 100
+	}
+	possible = {
+		owns_entire_state_region = STATE_TEXAS
+		NOT = {
+			has_modifier = modifier_ind_four
+		}
+		NOT = {
+			any_scope_state = {
+				AND= {
+					state_region = s:STATE_TEXAS
+					is_incorporated = yes
+				}
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = {
+			text = ind_dep_warning
+			every_scope_state = {
+				limit = {
+					state_region = s:STATE_TEXAS
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:comanche
+				}
+				set_state_type = incorporated
+			}
+		}
+		add_modifier = {
+			name = modifier_ind_four
+			months = 12
+		}
+	}
+}
+je_int_nme = {
+	name = "je_int_nme"
+	desc = "je_int_ala_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 100
+	}
+	possible = {
+		owns_entire_state_region = STATE_NEW_MEXICO
+		NOT = {
+			has_modifier = modifier_ind_four
+		}
+		NOT = {
+			any_scope_state = {
+				AND= {
+					state_region = s:STATE_NEW_MEXICO
+					is_incorporated = yes
+				}
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = {
+			text = ind_dep_warning
+			every_scope_state = {
+				limit = {
+					state_region = s:STATE_NEW_MEXICO
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:comanche
+				}
+				set_state_type = incorporated
+			}
+		}
+		add_modifier = {
+			name = modifier_ind_four
+			months = 12
+		}
+	}
+}
+
+je_int_che = {
+	name = "je_int_che"
+	desc = "je_int_ala_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 100
+	}
+	possible = {
+		owns_entire_state_region = STATE_WEST_VIRGINIA
+		owns_entire_state_region = STATE_KENTUCKY
+		NOT = {
+			has_modifier = modifier_ind_four
+		}
+		NOT = {
+			any_scope_state = {
+				AND= {
+					state_region = s:STATE_WEST_VIRGINIA
+					is_incorporated = yes
+				}
+			}
+		}
+		NOT = {
+			any_scope_state = {
+				AND= {
+					state_region = s:STATE_KENTUCKY
+					is_incorporated = yes
+				}
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = {
+			text = ind_dep_warning
+			every_scope_state = {
+				limit = {
+					state_region = s:STATE_WEST_VIRGINIA
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:cherokee
+				}
+				set_state_type = incorporated
+			}
+			every_scope_state = {
+				limit = {
+					state_region = s:STATE_KENTUCKY
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:cherokee
+				}
+				set_state_type = incorporated
+			}
+		}
+		add_modifier = {
+			name = modifier_ind_four
+			months = 12
+		}
+	}
+}
+je_int_ohi = {
+	name = "je_int_ohi"
+	desc = "je_int_ala_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 100
+	}
+	possible = {
+		owns_entire_state_region = STATE_OHIO
+		NOT = {
+			has_modifier = modifier_ind_four
+		}
+		NOT = {
+			any_scope_state = {
+				AND= {
+					state_region = s:STATE_OHIO
+					is_incorporated = yes
+				}
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = {
+			text = ind_dep_warning
+			every_scope_state = {
+				limit = {
+					state_region = s:STATE_OHIO
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:algonquian
+				}
+				set_state_type = incorporated
+			}
+		}
+		add_modifier = {
+			name = modifier_ind_four
+			months = 12
+		}
+	}
+}
+je_int_mich = {
+	name = "je_int_mich"
+	desc = "je_int_ala_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 100
+	}
+	possible = {
+		owns_entire_state_region = STATE_MICHIGAN
+		NOT = {
+			has_modifier = modifier_ind_four
+		}
+		NOT = {
+			any_scope_state = {
+				AND= {
+					state_region = s:STATE_MICHIGAN
+					is_incorporated = yes
+				}
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = {
+			text = ind_dep_warning
+			every_scope_state = {
+				limit = {
+					state_region = s:STATE_MICHIGAN
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:algonquian
+				}
+				set_state_type = incorporated
+			}
+		}
+		add_modifier = {
+			name = modifier_ind_four
+			months = 12
+		}
+	}
+}
+je_int_indiana = {
+	name = "je_int_indiana"
+	desc = "je_int_ala_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 100
+	}
+	possible = {
+		owns_entire_state_region = STATE_INDIANA
+		NOT = {
+			has_modifier = modifier_ind_four
+		}
+		NOT = {
+			any_scope_state = {
+				AND= {
+					state_region = s:STATE_INDIANA
+					is_incorporated = yes
+				}
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = {
+			text = ind_dep_warning
+			every_scope_state = {
+				limit = {
+					state_region = s:STATE_INDIANA
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:algonquian
+				}
+				set_state_type = incorporated
+			}
+		}
+		add_modifier = {
+			name = modifier_ind_four
+			months = 12
+		}
+	}
+}
+je_int_illi = {
+	name = "je_int_illi"
+	desc = "je_int_ala_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 100
+	}
+	possible = {
+		owns_entire_state_region = STATE_ILLINOIS
+		NOT = {
+			has_modifier = modifier_ind_four
+		}
+		NOT = {
+			any_scope_state = {
+				AND= {
+					state_region = s:STATE_ILLINOIS
+					is_incorporated = yes
+				}
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = {
+			text = ind_dep_warning
+			every_scope_state = {
+				limit = {
+					state_region = s:STATE_ILLINOIS
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:algonquian
+				}
+				set_state_type = incorporated
+			}
+		}
+		add_modifier = {
+			name = modifier_ind_four
+			months = 12
+		}
+	}
+}
+je_int_wis = {
+	name = "je_int_wis"
+	desc = "je_int_ala_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 100
+	}
+	possible = {
+		owns_entire_state_region = STATE_WISCONSIN
+		NOT = {
+			has_modifier = modifier_ind_four
+		}
+		NOT = {
+			any_scope_state = {
+				AND= {
+					state_region = s:STATE_WISCONSIN
+					is_incorporated = yes
+				}
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = {
+			text = ind_dep_warning
+			every_scope_state = {
+				limit = {
+					state_region = s:STATE_WISCONSIN
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:algonquian
+				}
+				set_state_type = incorporated
+			}
+		}
+		add_modifier = {
+			name = modifier_ind_four
+			months = 12
+		}
+	}
+}
+
+je_int_ari = {
+	name = "je_int_ari"
+	desc = "je_int_ala_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 100
+	}
+	possible = {
+		owns_entire_state_region = STATE_ARIZONA
+		NOT = {
+			has_modifier = modifier_ind_four
+		}
+		NOT = {
+			any_scope_state = {
+				AND= {
+					state_region = s:STATE_ARIZONA
+					is_incorporated = yes
+				}
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = {
+			text = ind_dep_warning
+			every_scope_state = {
+				limit = {
+					state_region = s:STATE_ARIZONA
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:navajo
+				}
+				set_state_type = incorporated
+			}
+		}
+		add_modifier = {
+			name = modifier_ind_four
+			months = 12
+		}
+	}
+}
+je_int_nev = {
+	name = "je_int_nev"
+	desc = "je_int_ala_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 100
+	}
+	possible = {
+		owns_entire_state_region = STATE_NEVADA
+		NOT = {
+			has_modifier = modifier_ind_four
+		}
+		NOT = {
+			any_scope_state = {
+				AND= {
+					state_region = s:STATE_NEVADA
+					is_incorporated = yes
+				}
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = {
+			text = ind_dep_warning
+			every_scope_state = {
+				limit = {
+					state_region = s:STATE_NEVADA
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:navajo
+				}
+				set_state_type = incorporated
+			}
+		}
+		add_modifier = {
+			name = modifier_ind_four
+			months = 12
+		}
+	}
+}
+
+je_int_utah = {
+	name = "je_int_utah"
+	desc = "je_int_ala_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 100
+	}
+	possible = {
+		owns_entire_state_region = STATE_UTAH
+		NOT = {
+			has_modifier = modifier_ind_four
+		}
+		NOT = {
+			any_scope_state = {
+				AND= {
+					state_region = s:STATE_UTAH
+					is_incorporated = yes
+				}
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = {
+			text = ind_dep_warning
+			every_scope_state = {
+				limit = {
+					state_region = s:STATE_UTAH
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:paiute
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:navajo
+				}
+				set_state_type = incorporated
+			}
+		}
+		add_modifier = {
+			name = modifier_ind_four
+			months = 12
+		}
+	}
+}
+
+je_int_colo = {
+	name = "je_int_colo"
+	desc = "je_int_ala_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 100
+	}
+	possible = {
+		owns_entire_state_region = STATE_COLORADO
+		NOT = {
+			has_modifier = modifier_ind_four
+		}
+		NOT = {
+			any_scope_state = {
+				AND= {
+					state_region = s:STATE_COLORADO
+					is_incorporated = yes
+				}
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = {
+			text = ind_dep_warning
+			every_scope_state = {
+				limit = {
+					state_region = s:STATE_COLORADO
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:paiute
+				}
+				set_state_type = incorporated
+			}
+		}
+		add_modifier = {
+			name = modifier_ind_four
+			months = 12
+		}
+	}
+}
+
+je_int_cree = {
+	name = "je_int_cree"
+	desc = "je_int_ala_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 100
+	}
+	possible = {
+		owns_entire_state_region = STATE_ONTARIO
+		owns_entire_state_region = STATE_MANITOBA
+		NOT = {
+			has_modifier = modifier_ind_four
+		}
+		NOT = {
+			any_scope_state = {
+				AND= {
+					state_region = s:STATE_ONTARIO
+					is_incorporated = yes
+				}
+			}
+		}
+		NOT = {
+			any_scope_state = {
+				AND= {
+					state_region = s:STATE_MANITOBA
+					is_incorporated = yes
+				}
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = {
+			text = ind_dep_warning
+			every_scope_state = {
+				limit = {
+					state_region = s:STATE_ONTARIO
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:cree
+				}
+				set_state_type = incorporated
+			}
+			every_scope_state = {
+				limit = {
+					state_region = s:STATE_MANITOBA
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:cree
+				}
+				set_state_type = incorporated
+			}
+		}
+		add_modifier = {
+			name = modifier_ind_four
+			months = 12
+		}
+	}
+}
+je_int_atha = {
+	name = "je_int_atha"
+	desc = "je_int_ala_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 100
+	}
+	possible = {
+		owns_entire_state_region = STATE_NUNAVUT
+		owns_entire_state_region = STATE_NORTHWEST_TERRITORIES
+		NOT = {
+			has_modifier = modifier_ind_four
+		}
+		NOT = {
+			any_scope_state = {
+				AND= {
+					state_region = s:STATE_NUNAVUT
+					is_incorporated = yes
+				}
+			}
+		}
+		NOT = {
+			any_scope_state = {
+				AND= {
+					state_region = s:STATE_NORTHWEST_TERRITORIES
+					is_incorporated = yes
+				}
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = {
+			text = ind_dep_warning
+			every_scope_state = {
+				limit = {
+					state_region = s:STATE_NUNAVUT
+				}
+				kill_population_percent_in_state = {
+					percent = 0.05
+					culture = cu:inuit
+				}
+				set_state_type = incorporated
+			}
+			every_scope_state = {
+				limit = {
+					state_region = s:STATE_NORTHWEST_TERRITORIES
+				}
+				kill_population_percent_in_state = {
+					percent = 0.20
+					culture = cu:athabaskan
+				}
+				set_state_type = incorporated
+			}
+		}
+		add_modifier = {
+			name = modifier_ind_four
+			months = 12
+		}
+	}
+}
+je_int_sali = {
+	name = "je_int_sali"
+	desc = "je_int_ala_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 100
+	}
+	possible = {
+		owns_entire_state_region = STATE_ALASKA
+		owns_entire_state_region = STATE_BRITISH_COLUMBIA
+		owns_entire_state_region = STATE_YUKON_TERRITORY
+		NOT = {
+			has_modifier = modifier_ind_four
+		}
+		NOT = {
+			any_scope_state = {
+				AND= {
+					state_region = s:STATE_ALASKA
+					is_incorporated = yes
+				}
+			}
+		}
+		NOT = {
+			any_scope_state = {
+				AND= {
+					state_region = s:STATE_BRITISH_COLUMBIA
+					is_incorporated = yes
+				}
+			}
+		}
+		NOT = {
+			any_scope_state = {
+				AND= {
+					state_region = s:STATE_YUKON_TERRITORY
+					is_incorporated = yes
+				}
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = {
+			text = ind_dep_warning
+			every_scope_state = {
+				limit = {
+					state_region = s:STATE_YUKON_TERRITORY
+				}
+				kill_population_percent_in_state = {
+					percent = 0.55
+					culture = cu:salish
+				}
+				set_state_type = incorporated
+			}
+			every_scope_state = {
+				limit = {
+					state_region = s:STATE_ALASKA
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:salish
+				}
+				kill_population_percent_in_state = {
+					percent = 0.55
+					culture = cu:athabaskan
+				}
+				set_state_type = incorporated
+			}
+			every_scope_state = {
+				limit = {
+					state_region = s:STATE_BRITISH_COLUMBIA
+				}
+				kill_population_percent_in_state = {
+					percent = 0.85
+					culture = cu:salish
+				}
+				kill_population_percent_in_state = {
+					percent = 0.85
+					culture = cu:athabaskan
+				}
+				set_state_type = incorporated
+			}
+		}
+		add_modifier = {
+			name = modifier_ind_four
+			months = 12
+		}
+	}
+}
+je_int_siou = {
+	name = "je_int_siou"
+	desc = "je_int_ala_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 100
+	}
+	possible = {
+		owns_entire_state_region = STATE_ALBERTA
+		owns_entire_state_region = STATE_SASKATCHEWAN
+		NOT = {
+			has_modifier = modifier_ind_four
+		}
+		NOT = {
+			any_scope_state = {
+				AND= {
+					state_region = s:STATE_ALBERTA
+					is_incorporated = yes
+				}
+			}
+		}
+		NOT = {
+			any_scope_state = {
+				AND= {
+					state_region = s:STATE_SASKATCHEWAN
+					is_incorporated = yes
+				}
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = {
+			text = ind_dep_warning
+			every_scope_state = {
+				limit = {
+					state_region = s:STATE_ALBERTA
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:siouan
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:metis
+				}
+				set_state_type = incorporated
+			}
+			every_scope_state = {
+				limit = {
+					state_region = s:STATE_SASKATCHEWAN
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:siouan
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:cree
+				}
+				set_state_type = incorporated
+			}
+		}
+		add_modifier = {
+			name = modifier_ind_four
+			months = 12
+		}
+	}
+}
+
+je_amc_swu = {
+	name = "je_amc_swu"
+	desc = "je_amc_swu_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 10
+		modifier = {
+			trigger = {
+				game_date > 1836.4.11
+			}
+			add = 90
+		}	
+	}
+	possible = {
+		custom_tooltip = {
+			text = text_amc
+			NOT = {
+				has_variable = var_amc_one
+			}
+		}
+	}
+	effect = {
+		c:SWU = {
+			trigger_event = {
+				id = fm_swu.1
+				days = 30
+			}
+		}
+		add_modifier = {
+			name = modifier_amc_one
+			months = 1
+		}
+		set_variable = {
+			name = var_amc_one
+		}
+	}
+}
+
+je_amc_dec_nd = {
+	name = "je_amc_dec_nd"
+	desc = "je_amc_dec_nd_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 100	
+	}
+	possible = {
+		custom_tooltip = {
+			text = text_amc_two
+			NOT = {
+				has_variable = var_amc_two
+			}
+		}
+	}
+	effect = {
+		root ={
+			create_diplomatic_play = {
+				name = amc_war
+				target_country = c:SWU
+				war = yes
+				type = dp_independence
+				add_war_goal = {
+					holder = c:SWU
+					target_country = c:AMC
+					type = reduce_autonomy
+				}
+			}
+		}
+		add_modifier = {
+			name = modifier_amc_seven
+			months = 6
+			is_decaying = yes
+		}
+		set_variable = {
+			name = var_amc_two
+		}
+	}
+}
+
+je_pun_warrome = {
+	name = "je_pun_warrome"
+	desc = "je_pun_warrome_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 100	
+	}
+	possible = {
+		root = {
+			is_at_war = no
+		}
+		c:CTH = {
+			is_at_war = no
+			}
+		NOT = {
+			root = {
+				has_truce_with = c:CTH
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = c:CTH
+			}
+			root ={
+				create_diplomatic_play = {
+					target_country = c:CTH
+					war = yes
+					type = dp_return_state
+					target_state = s:STATE_SICILY.region_state:CTH
+					add_war_goal = { holder = c:PUP target_state = s:STATE_SARDINIA.region_state:CTH type = return_state }
+					add_war_goal = { holder = c:PUP target_state = s:STATE_CORSICA.region_state:CTH type = return_state }
+					add_war_goal = { holder = c:CTH target_state = s:STATE_CAMPANIA.region_state:PUP type = return_state }
+					add_war_goal = { holder = c:CTH target_state = s:STATE_APULIA.region_state:PUP type = return_state }
+					add_war_goal = { holder = c:CTH target_state = s:STATE_CALABRIA.region_state:PUP type = return_state }
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				exists = c:PHO
+			}
+			root ={
+				create_diplomatic_play = {
+					target_country = c:PHO
+					war = yes
+					type = dp_return_state
+					target_state = s:STATE_SICILY.region_state:PHO
+					add_war_goal = { holder = c:PUP target_state = s:STATE_SARDINIA.region_state:PHO type = return_state }
+					add_war_goal = { holder = c:PUP target_state = s:STATE_CORSICA.region_state:PHO type = return_state }
+					add_war_goal = { holder = c:PHO target_state = s:STATE_CAMPANIA.region_state:PUP type = return_state }
+					add_war_goal = { holder = c:PHO target_state = s:STATE_APULIA.region_state:PUP type = return_state }
+					add_war_goal = { holder = c:PHO target_state = s:STATE_CALABRIA.region_state:PUP type = return_state }
+				}
+			}
+		}
+	}
+}
+
+je_pun_warrome_two = {
+	name = "je_pun_warrome"
+	desc = "je_pun_warrome_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 100	
+	}
+	possible = {
+		root = {
+			is_at_war = no
+		}
+		c:PHO = {
+			is_at_war = no
+			}
+		NOT = {
+			root = {
+				has_truce_with = c:PHO
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = c:CTH
+			}
+			root ={
+				create_diplomatic_play = {
+					target_country = c:CTH
+					war = yes
+					type = dp_return_state
+					target_state = s:STATE_SICILY.region_state:CTH
+					add_war_goal = { holder = c:PUP target_state = s:STATE_SARDINIA.region_state:CTH type = return_state }
+					add_war_goal = { holder = c:PUP target_state = s:STATE_CORSICA.region_state:CTH type = return_state }
+					add_war_goal = { holder = c:CTH target_state = s:STATE_CAMPANIA.region_state:PUP type = return_state }
+					add_war_goal = { holder = c:CTH target_state = s:STATE_APULIA.region_state:PUP type = return_state }
+					add_war_goal = { holder = c:CTH target_state = s:STATE_CALABRIA.region_state:PUP type = return_state }
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				exists = c:PHO
+			}
+			root ={
+				create_diplomatic_play = {
+					target_country = c:PHO
+					war = yes
+					type = dp_return_state
+					target_state = s:STATE_SICILY.region_state:PHO
+					add_war_goal = { holder = c:PUP target_state = s:STATE_SARDINIA.region_state:PHO type = return_state }
+					add_war_goal = { holder = c:PUP target_state = s:STATE_CORSICA.region_state:PHO type = return_state }
+					add_war_goal = { holder = c:PHO target_state = s:STATE_CAMPANIA.region_state:PUP type = return_state }
+					add_war_goal = { holder = c:PHO target_state = s:STATE_APULIA.region_state:PUP type = return_state }
+					add_war_goal = { holder = c:PHO target_state = s:STATE_CALABRIA.region_state:PUP type = return_state }
+				}
+			}
+		}
+	}
+}
+
+je_pun_warcth = {
+	name = "je_pun_warcth"
+	desc = "je_pun_warcth_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 100	
+	}
+	possible = {
+		root = {
+			is_at_war = no
+		}
+		c:PUP = {
+			is_at_war = no
+			}
+		NOT = {
+			root = {
+				has_truce_with = c:PUP
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = c:CTH
+			}
+			root ={
+				create_diplomatic_play = {
+					target_country = c:PUP
+					war = yes
+					type = dp_return_state
+					target_state = s:STATE_APULIA.region_state:PUP
+					add_war_goal = { holder = c:CTH target_state = s:STATE_CALABRIA.region_state:PUP type = return_state }
+					add_war_goal = { holder = c:CTH target_state = s:STATE_CAMPANIA.region_state:PUP type = return_state }
+					add_war_goal = { holder = c:PUP target_state = s:STATE_SICILY.region_state:CTH type = return_state }
+					add_war_goal = { holder = c:PUP target_state = s:STATE_SARDINIA.region_state:CTH type = return_state }
+					add_war_goal = { holder = c:PUP target_state = s:STATE_CORSICA.region_state:CTH type = return_state }
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				exists = c:PHO
+			}
+			root ={
+				create_diplomatic_play = {
+					target_country = c:PUP
+					war = yes
+					type = dp_return_state
+					target_state = s:STATE_APULIA.region_state:PUP
+					add_war_goal = { holder = c:PHO target_state = s:STATE_CALABRIA.region_state:PUP type = return_state }
+					add_war_goal = { holder = c:PHO target_state = s:STATE_CAMPANIA.region_state:PUP type = return_state }
+					add_war_goal = { holder = c:PUP target_state = s:STATE_SICILY.region_state:PHO type = return_state }
+					add_war_goal = { holder = c:PUP target_state = s:STATE_SARDINIA.region_state:PHO type = return_state }
+					add_war_goal = { holder = c:PUP target_state = s:STATE_CORSICA.region_state:PHO type = return_state }
+				}
+			}
+		}
+	}
+}
+
+je_ned_butt = {
+	name = "je_ned_butt"
+	desc = "je_ned_butt_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 100
+	}
+	possible = {
+		custom_tooltip = {
+			text = text_je_ned_butt
+			NOT = {
+				has_variable = var_je_ned_butt
+			}
+		}
+	}
+	effect = {
+		activate_law = law_type:law_no_social_security
+		add_modifier = {
+			name = modifier_ned_three
+			months = 25
+			is_decaying = yes
+		}
+		set_variable = {
+			name = var_je_ned_butt
+		}
+		add_radicals = {
+			value = 0.25
+			strata = poor
+		}
+		add_radicals = {
+			value = 0.5
+			pop_type = academics
+		}
+		add_radicals = {
+			value = 0.35
+			pop_type = bureaucrats
+		}
+	}
+}
+je_ned_butt_two = {
+	name = "je_ned_butt_two"
+	desc = "je_ned_butt_two_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 0
+	}
+	possible = {
+		custom_tooltip = {
+			text = text_je_ned_butt_two
+			NOT = {
+				has_variable = var_je_ned_butt_two
+			}
+			exists = c:VOC
+		}
+	}
+	effect = {
+		c:VOC = {
+			make_independent = yes
+		}
+		c:NED= {
+			create_unidirectional_truce = {
+				country = c:VOC
+				months = 120
+			}
+		}	
+		add_modifier = {
+			name = modifier_ned_four
+			months = 14
+			is_decaying = yes
+		}
+		set_variable = {
+			name = var_je_ned_butt_two
+		}
+	}
+}
+
+je_fru_orl = {
+	name = "je_fru_orl"
+	desc = "je_fru_orl_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 0	
+	}
+	possible = {
+		custom_tooltip = {
+			text = je_fru_butt
+			NOT = {
+				has_variable = je_fru_orl_var
+			}
+		}
+	}
+	effect = {
+		add_modifier = {
+			name = modifier_fru_four
+			months = 60
+		}
+		set_variable = {
+			name = je_fru_orl_var
+		}
+	}
+}
+je_fru_anj = {
+	name = "je_fru_anj"
+	desc = "je_fru_anj_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 0	
+	}
+	possible = {
+		custom_tooltip = {
+			text = je_fru_butt
+			NOT = {
+				has_variable = je_fru_anj_var
+			}
+		}
+	}
+	effect = {
+		add_modifier = {
+			name = modifier_fru_five
+			months = 60
+		}
+		set_variable = {
+			name = je_fru_anj_var
+		}
+	}
+}
+je_fru_poi = {
+	name = "je_fru_poi"
+	desc = "je_fru_poi_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 0	
+	}
+	possible = {
+		custom_tooltip = {
+			text = je_fru_butt
+			NOT = {
+				has_variable = je_fru_poi_var
+			}
+		}
+	}
+	effect = {
+		add_modifier = {
+			name = modifier_fru_six
+			months = 60
+		}
+		set_variable = {
+			name = je_fru_poi_var
+		}
+	}
+}
+
+je_bribe_pope = {
+	name = "je_bribe_pope"
+	desc = "je_bribe_pope_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 0
+		modifier = {
+			trigger = {
+				game_date > 1836.4.11
+			}
+			add = 100
+		}
+	}
+	possible = {
+		custom_tooltip = {
+			text = je_fru_butt
+			NOT = {
+				has_variable = je_bribe_pope_var
+			}
+		}
+	}
+	effect = {
+		add_modifier = {
+			name = modifier_occ_one
+			months = 60
+		}
+		set_variable = {
+			name = je_bribe_pope_var
+		}
+		root = {
+			create_diplomatic_pact = {
+				country = c:HSE
+				type = guarantee_independence
+			}
+		}
+	}
+}
+
+je_ann_acq = {
+	name = "je_ann_acq"
+	desc = "je_ann_acq_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 0
+		modifier = {
+			trigger = {
+				game_date > 1840.4.11
+			}
+			add = 40
+		}	
+		modifier = {
+			trigger = {
+				game_date > 1844.4.11
+			}
+			add = 60
+		}	
+	}
+	possible = {
+		c:DCQ = {
+			relations:root >= relations_threshold:amicable
+		}
+		custom_tooltip = {
+			text = je_fru_butt
+			NOT = {
+				has_variable = tutt_cos
+			}
+		}
+	}
+	effect = {
+		set_variable = {
+			name = tutt_cos
+		}
+		add_modifier = {
+			name = modifier_occ_two
+			months = 60
+		}
+		change_tag = OCC
+		hidden_effect = {
+			annex_with_incorporation = c:DCQ
+		}
+		if = {
+			limit = {
+				exists = c:FRU
+			}
+			change_relations = {
+				country = c:FRU
+				value = -50
+			}
+		}
+		else_if = {
+			limit = {
+				exists = c:FRE
+			}
+			change_relations = {
+				country = c:FRE
+				value = -50
+			}
+		}
+	}
+}
+
+je_ann_tou = {
+	name = "je_ann_tou"
+	desc = "je_ann_tou_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 0
+		modifier = {
+			trigger = {
+				game_date > 1839.4.11
+			}
+			add = 30
+		}	
+		modifier = {
+			trigger = {
+				game_date > 1842.4.11
+			}
+			add = 30
+		}	
+	}
+	possible = {
+		c:TOU = {
+			relations:root >= relations_threshold:amicable
+		}
+		custom_tooltip = {
+			text = je_fru_butt
+			NOT = {
+				has_variable = tutt_cos
+			}
+		}
+	}
+	effect = {
+		set_variable = {
+			name = tutt_cos
+		}
+		add_modifier = {
+			name = modifier_occ_three
+			months = 60
+		}
+		change_tag = OCC
+		hidden_effect = {
+			annex_with_incorporation = c:TOU
+		}
+		if = {
+			limit = {
+				exists = c:FRU
+			}
+			change_relations = {
+				country = c:FRU
+				value = -50
+			}
+		}
+		else_if = {
+			limit = {
+				exists = c:FRE
+			}
+			change_relations = {
+				country = c:FRE
+				value = -50
+			}
+		}
+	}
+}
+
+je_bourb = {
+	name = "je_bourb"
+	desc = "je_bourb_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 100
+	}
+	possible = {
+		custom_tooltip = {
+			text = text_je_ned_butt
+			NOT = {
+				has_variable = bou_occ
+			}
+		}
+		custom_tooltip = {
+			text = bouexi
+					exists = c:BOU
+		}
+		root = {
+			is_at_war = no
+		}
+	}
+	effect = {
+		set_variable = {
+			name = bou_occ
+		}
+		if = {
+			limit = {
+				exists = c:BOU
+			}
+			create_diplomatic_play = {
+				target_country = c:BOU
+				war = yes
+				type = dp_annex_war
+			}
+		}
+		hidden_effect = {
+			change_infamy = -20
+		}
+	}
+}
+je_inde = {
+	name = "je_inde"
+	desc = "je_inde_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 0
+		modifier = {
+			trigger = {
+				game_date > 1849.1.1
+			}
+			add = 100
+		}
+	}
+	possible = {
+		custom_tooltip = {
+			text = text_je_ned_butt
+			NOT = {
+				has_variable = je_inde_occ
+			}
+		}
+		root = {
+			is_at_war = no
+		}
+	}
+	effect = {
+		set_variable = {
+			name = je_inde_occ
+		}
+		if = {
+			limit = {
+				exists = c:FRU
+			}
+			c:FRU = {
+				trigger_event = {
+					id = fm_fru_oc.1
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				exists = c:FRE
+			}
+			c:FRE = {
+				trigger_event = {
+					id = fm_fru_oc.2
+				}
+			}
+		}
+	}
+}
+
+je_inde_bud = {
+	name = "je_inde"
+	desc = "je_inde_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		base = 0
+		modifier = {
+			trigger = {
+				game_date > 1836.4.4
+			}
+			add = 100
+		}
+	}
+	possible = {
+		root = {
+			is_at_war = no
+			is_subject = yes
+		}
+		NOT = {
+			has_variable = var_matr
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = c:FRU
+			}
+			create_diplomatic_play = {
+				target_country = c:FRU
+				war = yes
+				type = dp_independence
+				add_war_goal = { holder = c:FRU target_country = c:BUD type = annex_country }
+			}
+		}
+		else_if = {
+			limit = {
+				exists = c:FRE
+			}
+			create_diplomatic_play = {
+				target_country = c:FRE
+				war = yes
+				type = dp_independence
+				add_war_goal = { holder = c:FRE target_country = c:BUD type = annex_country }
+			}
+		}
+	}
+}

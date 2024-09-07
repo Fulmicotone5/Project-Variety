@@ -1,0 +1,49 @@
+pm_cannery_oil = {
+	texture = "gfx/interface/icons/production_method_icons/canneries.dds"
+	
+	unlocking_technologies = {
+		distillation
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			# x20 = -400
+			goods_input_olive_add = 5	
+			goods_input_grain_add = -10		# x30 =  600
+			goods_input_glass_add = 10		# x40 =  400
+			
+			# output goods
+			goods_output_groceries_add = 25	# x30 =  900
+		}
+
+		level_scaled = {
+			# profit = 300 (20.8)
+			building_employment_machinists_add = 250	# x1.5 = 750 laborer wages
+		}
+	}
+}
+pm_spice_conservation = {
+	texture = "gfx/interface/icons/production_method_icons/sweeteners.dds"
+	
+	unlocking_technologies = {
+		distillation
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			# x20 = -400
+			goods_input_spice_add = 10
+			goods_input_grain_add = -25	# x30 =  600
+			
+			# output goods
+			goods_output_groceries_add = 30	# x30 =  900
+		}
+
+		level_scaled = {
+			# profit = 300 (20.8)
+			building_employment_machinists_add = 350	# x1.5 = 750 laborer wages
+		}
+	}
+}

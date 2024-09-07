@@ -1,0 +1,20 @@
+CHARACTERS = {
+	c:PUM ?= {
+		create_character = {
+			first_name = Sigismund
+			last_name = Greifen
+			historical = yes
+			female = no
+			ruler = yes
+			birth_date = 1805.1.11
+			culture = cu:north_roman
+			ig_leader = yes
+			interest_group = ig_armed_forces
+
+			ideology = ideology_royalist
+			traits = {
+				ambitious
+			}
+		}
+	}
+}

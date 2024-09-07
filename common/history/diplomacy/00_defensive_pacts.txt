@@ -1,0 +1,26 @@
+﻿DIPLOMACY = {
+	c:KAA ?= {
+		create_diplomatic_pact = {
+			country = c:NAV
+			type = defensive_pact
+		}	
+	}
+	c:NEA ?= {
+		create_diplomatic_pact = {
+			country = c:SPO
+			type = defensive_pact
+		}	
+	}
+	c:IRE ?= {
+		create_diplomatic_pact = {
+			country = c:WLS
+			type = defensive_pact
+		}	
+	}
+	c:MZV ?= {
+		create_diplomatic_pact = {
+			country = c:LBL
+			type = defensive_pact
+		}	
+	}
+}

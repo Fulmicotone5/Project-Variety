@@ -1,0 +1,189 @@
+je_england_main = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	group = je_group_historical_content
+	is_shown_when_inactive = {
+		exists = c:ENG
+		c:ENG ?= THIS
+	}
+	possible = {
+		has_technology_researched = nationalism
+	}
+	immediate = {
+		trigger_event = {
+			id = fm_england.2
+		}
+	}
+	fail = {
+		OR = {
+			NOT = {
+				has_law = law_type:law_monarchy
+			}
+			custom_tooltip = {
+				text = eng_auto
+				has_variable = fmeng_autocracy
+			}
+		}
+	}
+	complete = {
+		owns_entire_state_region = STATE_WALES
+		owns_entire_state_region = STATE_LOWLANDS
+		owns_entire_state_region = STATE_HIGHLANDS
+	}
+	on_complete = {
+		trigger_event = {
+			id = fm_england.4
+		}
+	}
+	weight = 100
+	should_be_pinned_by_default = yes
+}
+
+je_actuni = {
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+	group = je_group_historical_content
+	complete = {
+		ROOT = {
+			is_in_same_power_bloc = c:IRE
+			is_power_bloc_leader = yes
+		}
+		c:IRE = {
+			relations:ROOT > relations_threshold:amicable
+		}
+		has_law = law_type:law_racial_segregation
+		has_technology_researched = pan-nationalism
+	}
+	on_complete = {
+		annex_with_incorporation = c:IRE
+		trigger_event = {
+			id = fm_england.5
+		}
+		change_tag = UKK
+	}
+	fail = {
+		OR = {
+			NOT = {
+				has_law = law_type:law_monarchy
+			}
+			custom_tooltip = {
+				text = nofmire
+				NOT = {
+					exists = c:IRE
+				}
+			}
+			owns_entire_state_region = STATE_ULSTER
+			owns_entire_state_region = STATE_MUNSTER
+			owns_entire_state_region = STATE_CONNAUGHT
+			owns_entire_state_region = STATE_LEINSTER
+			c:IRE = {
+				is_subject_of = ROOT
+			}
+		}
+	}
+	should_be_pinned_by_default = yes
+}
+
+je_eng_cen = {
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	group = je_group_historical_content
+	timeout = 4000
+	complete = {
+		has_law = law_type:law_autocracy
+		has_law = law_type:law_appointed_bureaucrats
+		has_law = law_type:law_professional_army
+		has_law = law_type:law_national_supremacy
+		NOT = {
+			has_law = law_type:law_serfdom
+		}
+	}
+	on_complete = {
+		ig:ig_petty_bourgeoisie = {
+			remove_modifier = modifier_england_two
+		}
+		if = {
+			limit = {
+				exists = c:NUR
+			}
+			annex_with_incorporation = c:NUR
+		}
+		hidden_effect = {
+			s:STATE_BRITTANY = {
+				add_claim = ROOT
+			}
+			s:STATE_FRENCH_LOW_COUNTRIES = {
+				add_claim = ROOT
+			}
+			s:STATE_PICARDY = {
+				add_claim = ROOT
+			}
+			s:STATE_ILE_DE_FRANCE = {
+				add_claim = ROOT
+			}
+			s:STATE_ORLEANS = {
+				add_claim = ROOT
+			}
+			s:STATE_POITOU = {
+				add_claim = ROOT
+			}
+			s:STATE_MAINE_ANJOU = {
+				add_claim = ROOT
+			}
+		}
+		add_journal_entry = {
+			type = je_eng_reclaim
+		}
+	}
+	fail = {
+		NOT = {
+			has_law = law_type:law_monarchy
+		}
+	}
+	should_be_pinned_by_default = yes
+}
+
+je_eng_reclaim = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	group = je_group_historical_content
+	complete = {
+		owns_entire_state_region = STATE_ILE_DE_FRANCE
+		any_scope_state = {
+			count >= 6
+			AND = {
+				region = sr:region_france
+				owner = ROOT
+			}
+		}
+		has_technology_researched = pan-nationalism
+	}
+	on_complete = {
+		change_tag = EAF
+		trigger_event = {
+			id = fm_england.3
+		}
+		add_journal_entry = {
+			type = je_french_int
+		}
+	}
+	fail = {
+		NOT = {
+			has_law = law_type:law_monarchy
+		}
+	}
+	should_be_pinned_by_default = yes
+}
+
+je_french_int = {
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	group = je_group_historical_content
+	complete = {
+		has_law = law_type:law_racial_segregation
+		OR = {
+			has_law = law_type:law_freedom_of_conscience
+			has_law = law_type:law_total_separation
+		}
+	}
+	on_complete = {
+		add_primary_culture = cu:french
+	}
+	weight = 100
+	should_be_pinned_by_default = yes
+}

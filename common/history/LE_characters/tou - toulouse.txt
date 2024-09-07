@@ -1,0 +1,18 @@
+CHARACTERS = {
+	c:TOU ?= {
+		create_character = {
+			first_name = "Maximin"
+			last_name = "de_tolouse"
+			historical = yes
+			ruler = yes
+			female = no
+			birth_date = 1790.9.10
+			culture = cu:occitan
+			interest_group = ig_landowners
+			ideology = ideology_royalist
+			traits = {
+				imperious
+			}
+		}
+	}
+}

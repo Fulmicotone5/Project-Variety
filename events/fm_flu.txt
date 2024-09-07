@@ -1,0 +1,141 @@
+namespace = fm_flu
+fm_flu.2 = {
+	type = country_event
+	placement = ROOT
+	title = fm_flu.2.t
+	desc = fm_flu.2.d
+	flavor = fm_flu.2.f
+	duration = 3
+	event_image = {
+		video = "southamerica_aristocrats"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	option = {
+		name = fm_flu.2.a
+		default_option = yes
+		add_modifier = {
+			name = modifier_fru_one
+			months = 60
+			is_decaying = yes
+		}
+		remove_variable = variable_louisiana_flu
+		if = {
+			limit = {
+				exists = c:FRU
+			}
+			root = {
+				create_diplomatic_catalyst = {
+					type = catalyst_event_negative
+					target = c:FRU
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				exists = c:FRE
+			}
+			root = {
+				create_diplomatic_catalyst = {
+					type = catalyst_event_negative
+					target = c:FRE
+				}
+			}
+		}
+	}
+}
+fm_flu.3 = {
+	type = country_event
+	placement = ROOT
+	title = fm_flu.3.t
+	desc = fm_flu.3.d
+	flavor = fm_flu.3.f
+	duration = 3
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+	option = {
+		name = fm_flu.3.a
+		default_option = yes
+		add_modifier = {
+			name = modifier_fru_two
+			months = 60
+		}
+		root = {
+			annex = c:LOI
+		}
+	}
+}
+fm_flu.1 = { 
+	type = country_event
+	placement = ROOT
+	title = fm_flu.1.t
+	desc = fm_flu.1.d
+	flavor = fm_flu.1.f
+	duration = 3
+	event_image = {
+		video = "rp1_brazilian_city"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	trigger = {
+	}
+	option = {
+		name = fm_flu.1.a
+		default_option = yes
+		s:STATE_BAHAMAS = {
+			add_claim = ROOT 
+		}
+		s:STATE_PUERTO_RICO = {
+			add_claim = ROOT 
+		}
+		s:STATE_MIRANDA = {
+			add_claim = ROOT 
+		}
+		s:STATE_BOLIVAR = {
+			add_claim = ROOT 
+		}
+		s:STATE_GUAYANA = {
+			add_claim = ROOT 
+		}
+	}
+}
+
+fm_flu.4 = { 
+	type = country_event
+	placement = ROOT
+	title = fm_flu.4.t
+	desc = fm_flu.4.d
+	flavor = fm_flu.4.f
+	duration = 3
+	event_image = {
+		video = "ep1_transfer_of_authority"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	trigger = {
+	}
+	option = {
+		name = fm_flu.4.a
+		default_option = yes
+		add_loyalists = {
+			strata = poor
+			value = 0.10
+		}
+		add_loyalists = {
+			strata = middle
+			value = 0.15
+		}
+		add_loyalists = {
+			strata = rich
+			value = 0.20
+		}
+		add_modifier = {
+			name = modifier_vna_one
+			months = 60
+		}
+	}
+}

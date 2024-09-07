@@ -1,0 +1,42 @@
+namespace = fm_luoi_amc
+
+fm_luoi_amc.1 = { #loui mac
+	type = country_event
+	placement = ROOT
+	title = fm_luoi_amc.1.t
+	desc = fm_luoi_amc.1.d
+	flavor = fm_luoi_amc.1.f
+	duration = 3
+	event_image = {
+		video = "southamerica_aristocrats"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+	option = {
+		name = fm_luoi_amc.1.a
+		default_option = yes
+		c:AMC = {
+			trigger_event = fm_amc.2 
+		}
+	}
+	option = {
+		name = fm_luoi_amc.1.b
+		c:AMC = {
+			trigger_event = fm_amc.3
+		}
+		add_modifier = {
+			name = modifier_fru_three
+			months = 60
+		}
+		ai_chance = {
+			value = 0
+			if = {
+				limit = {
+					gold_reserves < 0
+				}
+				add = 100
+			}
+		}
+	}
+}
+

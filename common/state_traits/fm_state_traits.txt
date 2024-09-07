@@ -1,0 +1,7 @@
+state_trait_new_holland_whaling = {
+	icon = "gfx/interface/icons/state_trait_icons/resources_whales.dds"
+	
+	modifier = {
+		building_group_bg_whaling_throughput_add = 0.2
+	}
+}

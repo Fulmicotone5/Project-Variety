@@ -1,0 +1,77 @@
+je_rhineland_main = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	group = je_group_historical_content
+	is_shown_when_inactive = {
+		exists = c:RHU
+		c:RHU ?= THIS
+	}
+	possible = {
+		exists = c:RHU
+		c:RHU ?= THIS
+	}
+	immediate = {
+		s:STATE_SCHLESWIG_HOLSTEIN = {
+			add_claim = c:RHU
+		}
+		s:STATE_ELBE = {
+			add_claim = c:RHU
+		}
+		s:STATE_HANNOVER = {
+			add_claim = c:RHU
+		}
+		s:STATE_MECKLENBURG = {
+			add_claim = c:RHU
+		}
+		s:STATE_ANHALT = {
+			add_claim = c:RHU
+		}
+		s:STATE_SAXONY = {
+			add_claim = c:RHU
+		}
+		s:STATE_FRANCONIA = {
+			add_claim = c:RHU
+		}
+		s:STATE_BAVARIA = {
+			add_claim = c:RHU
+		}
+		s:STATE_BADEN = {
+			add_claim = c:RHU
+		}
+		s:STATE_WURTTEMBERG = {
+			add_claim = c:RHU
+		}
+		s:STATE_EAST_SWITZERLAND = {
+			add_claim = c:RHU
+		}
+		s:STATE_TYROL = {
+			add_claim = c:RHU
+		}
+		s:STATE_SCHLESWIG_HOLSTEIN = {
+			add_claim = c:RHU
+		}
+	}
+	complete = {
+		owns_entire_state_region = STATE_HANNOVER
+		owns_entire_state_region = STATE_ELBE
+		owns_entire_state_region = STATE_SCHLESWIG_HOLSTEIN
+		owns_entire_state_region = STATE_MECKLENBURG
+		owns_entire_state_region = STATE_ANHALT
+		owns_entire_state_region = STATE_SAXONY
+		owns_entire_state_region = STATE_FRANCONIA
+		owns_entire_state_region = STATE_BAVARIA
+		owns_entire_state_region = STATE_BADEN
+		owns_entire_state_region = STATE_WURTTEMBERG
+		has_technology_researched = pan-nationalism
+		OR = {
+			has_law = law_type:law_racial_segregation
+			has_law = law_type:law_cultural_exclusion
+		}
+	}
+	on_complete = {
+		change_tag = SRC
+		trigger_event = {
+			id = fm_rhi.2
+		}
+	}
+	should_be_pinned_by_default = yes
+}

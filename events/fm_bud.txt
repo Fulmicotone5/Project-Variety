@@ -1,0 +1,32 @@
+namespace = fm_bud
+fm_bud.1 = {
+	type = country_event
+	placement = root
+	title = fm_bud.1.t
+	desc = fm_bud.1.d
+	flavor = fm_bud.1.f
+	duration = 3
+	event_image = {
+		video = "votp_monarch_holding_court"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	option = {
+		name = fm_bud.1.a
+		default_option = yes
+		change_tag = KBG
+		add_loyalists = {
+			strata = rich
+			value = 0.25
+		}
+		add_loyalists = {
+			strata = middle
+			value = 0.2
+		}
+		add_loyalists = {
+			strata = poor
+			value = 0.15
+		}
+	}
+}

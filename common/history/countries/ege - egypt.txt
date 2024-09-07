@@ -1,0 +1,33 @@
+COUNTRIES = {
+	c:EGE ?= {
+		effect_starting_technology_tier_2_tech = yes
+		effect_starting_politics_traditional = yes
+		
+		add_taxed_goods = g:tobacco
+		add_taxed_goods = g:coffee
+		add_taxed_goods = g:luxury_furniture
+
+		set_tariffs_import_priority = g:iron
+		
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy 
+		activate_law = law_type:law_state_religion
+		activate_law = law_type:law_per_capita_based_taxation
+		activate_law = law_type:law_national_supremacy
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_professional_army
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_protectionism
+
+		set_institution_investment_level = {
+			institution = institution_schools
+			level = 2
+		}	
+		ig:ig_armed_forces = {
+			add_ruling_interest_group = yes
+		}
+		add_journal_entry = {
+			type = je_suez_fm
+		}
+	}
+}

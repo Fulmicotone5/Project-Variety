@@ -1,0 +1,154 @@
+﻿DIPLOMACY = {
+	c:LIT ?= {
+		create_diplomatic_pact = {
+			country = c:BYE
+			type = dominion
+		}
+		create_diplomatic_pact = {
+			country = c:COH
+			type = dominion
+		}
+	}
+	c:SWU ?= {
+		create_diplomatic_pact = {
+			country = c:NOR
+			type = personal_union
+		}
+		create_diplomatic_pact = {
+			country = c:AMC
+			type = dominion
+		}
+	}
+	c:FUN ?= {
+		create_diplomatic_pact = {
+			country = c:NOV
+			type = personal_union
+		}
+	}
+	c:KOR ?= {
+		create_diplomatic_pact = {
+			country = c:YUA
+			type = tributary
+		}
+		create_diplomatic_pact = {
+			country = c:MCH
+			type = tributary
+		}
+		create_diplomatic_pact = {
+			country = c:KOC
+			type = vassal
+		}
+	}
+	c:EGE ?= {
+		create_diplomatic_pact = {
+			country = c:SIU
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:SUD
+			type = tributary
+		}
+	}
+	c:NED ?= {
+		create_diplomatic_pact = {
+			country = c:VOC
+			type = dominion
+		}
+	}
+	c:TOR ?= {
+		create_diplomatic_pact = {
+			country = c:AZB
+			type = protectorate
+		}
+	}
+	c:BAY ?= {
+		create_diplomatic_pact = {
+			country = c:AUS
+			type = protectorate
+		}
+		create_diplomatic_pact = {
+			country = c:WUR
+			type = dominion
+		}
+		create_diplomatic_pact = {
+			country = c:BAD
+			type = dominion
+		}
+	}
+
+	c:CAS ?= {
+	}
+	c:SCA ?= {
+		create_diplomatic_pact = {
+			country = c:NOR
+			type = personal_union
+		}
+	}
+	c:PUR ?= {
+		create_diplomatic_pact = {
+			country = c:BRZ
+			type = protectorate
+		}
+		create_diplomatic_pact = {
+			country = c:EIC
+			type = dominion
+		}
+	}
+	c:DAI ?= {
+		create_diplomatic_pact = {
+			country = c:CAM
+			type = tributary
+		}
+	}
+	c:ENG = {
+		create_diplomatic_pact = {
+			country = c:NUR
+			type = dominion
+		}
+		create_diplomatic_pact = {
+			country = c:FOU
+			type = dominion
+		}
+	}
+	c:FRU ?= {
+		create_diplomatic_pact = {
+			country = c:ORL
+			type = protectorate
+		}
+		create_diplomatic_pact = {
+			country = c:ANJ
+			type = protectorate
+		}
+		create_diplomatic_pact = {
+			country = c:POI
+			type = protectorate
+		}
+		create_diplomatic_pact = {
+			country = c:BOU
+			type = protectorate
+		}
+		create_diplomatic_pact = {
+			country = c:DCQ
+			type = protectorate
+		}	
+		create_diplomatic_pact = {
+			country = c:TOU
+			type = protectorate
+		}
+		create_diplomatic_pact = {
+			country = c:BUD
+			type = protectorate
+		}
+		create_diplomatic_pact = {
+			country = c:LOI
+			type = dominion
+		}
+	}
+	c:EGE ?= {
+		create_diplomatic_pact = {
+			country = c:HDJ
+			type = tributary
+		}
+	}
+
+}

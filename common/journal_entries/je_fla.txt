@@ -1,0 +1,125 @@
+je_fla = {
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	group = je_group_historical_content
+	immediate = {
+		c:BUD = {
+			ruler = {
+				set_character_immortal = yes
+			}
+			heir = {
+				set_character_immortal = yes
+			}
+		}
+		c:FLA = {
+			ruler = {
+				set_character_immortal = yes
+			}
+		}
+	}
+	timeout = 4000
+	complete = {
+		OR = {
+			AND = {
+				c:BUD = {
+					is_subject = no
+					relations:ROOT > relations_threshold:cordial
+					is_ai = yes
+				}
+				ROOT= {
+					is_in_same_power_bloc = c:BUD
+					is_power_bloc_leader = yes
+				}
+			}
+			AND = {
+				c:BUD = {
+					is_subject = no
+					relations:ROOT >= relations_threshold:amicable
+					is_ai = yes
+				}
+				has_law = law_type:law_racial_segregation
+			}
+		}
+	}
+	fail = {
+		OR = {
+			c:BUD = {
+                is_subject_of = ROOT
+            }
+			custom_tooltip = {
+				text = nobud
+				NOT = {
+					exists = c:BUD
+				}
+			}
+			custom_tooltip = {
+				text = flamarr
+				ruler = {
+					has_variable = is_married
+				}
+			}
+		}
+	}
+	on_complete = {
+		create_diplomatic_pact = {
+			country = c:BUD
+			type = personal_union
+		}
+		trigger_event = {
+			id = fm_fla.1
+		}
+		hidden_effect = {
+			c:BUD = {
+				ruler = {
+					set_character_immortal = no
+				}
+				heir = {
+					set_character_immortal = no
+				}
+				set_variable = {
+					name = var_matr
+				}
+			}
+			c:FLA = {
+				ruler = {
+					set_character_immortal = no
+				}
+			}
+		}
+	}
+	on_fail = {
+		hidden_effect = {
+			c:BUD = {
+				ruler = {
+					set_character_immortal = no
+				}
+				heir = {
+					set_character_immortal = no
+				}
+			}
+			c:FLA = {
+				ruler = {
+					set_character_immortal = no
+				}
+			}
+		}
+	}
+	on_timeout = {
+		hidden_effect = {
+			c:BUD = {
+				ruler = {
+					set_character_immortal = no
+				}
+				heir = {
+					set_character_immortal = no
+				}
+			}
+			c:FLA = {
+				ruler = {
+					set_character_immortal = no
+				}
+			}
+		}
+	}
+	weight = 100
+	should_be_pinned_by_default = yes
+}

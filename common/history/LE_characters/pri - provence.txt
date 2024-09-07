@@ -1,0 +1,18 @@
+CHARACTERS = {
+	c:PRI ?= {
+		create_character = {
+			first_name = "Pascal"
+			last_name = "de_tolouse"
+			historical = yes
+			ruler = yes
+			female = no
+			birth_date = 1799.3.11
+			culture = cu:occitan
+			interest_group = ig_landowners
+			ideology = ideology_royalist
+			traits = {
+				arrogant
+			}
+		}
+	}
+}

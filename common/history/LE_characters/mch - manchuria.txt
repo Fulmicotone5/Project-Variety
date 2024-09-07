@@ -1,0 +1,34 @@
+CHARACTERS = {
+	c:MCH ?= {
+		create_character = {
+			first_name = "Songgotu"
+			last_name = "Na Namgung"
+			historical = yes
+			ruler = yes
+			age = 40
+			culture = cu:manchu
+			religion = rel:confucian
+			female = no
+			interest_group = ig:ig_devout
+			ideology = ideology_royalist
+			traits = {
+				meticulous
+			}
+		}
+		create_character = {
+			first_name = "Xingzhen"
+			last_name = "Na Namgung"
+			historical = yes
+			heir = yes
+			age = 10
+			culture = cu:manchu
+			religion = rel:confucian
+			female = yes
+			interest_group = ig:ig_devout
+			ideology = ideology_traditionalist
+			traits = {
+				reserved
+			}
+		}
+	}
+}

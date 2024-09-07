@@ -1,0 +1,12 @@
+﻿l_english:
+ dp_unify_poland:0 "Unify Poland"
+ dp_unify_poland_tooltip:1 "#header Start a $dp_unify_poland$ [concept_diplomatic_play]#!\n$TOOLTIP_DELIMITER$\n$dp_unify_poland_desc$"
+ dp_unify_poland_desc:0 "Sets the initiating [concept_war_goal] to annex all lesser polish countries."
+ PUL_tt:0 "[SCOPE.sCountry('target_country').GetName] can form Poland
+ dp_unify_jugo:0 "Unify the Balkans"
+ dp_unify_jugo_tooltip:1 "#header Start a $dp_unify_yugo$ [concept_diplomatic_play]#!\n$TOOLTIP_DELIMITER$\n$dp_unify_jugo_desc$"
+ dp_unify_jugo_desc:0 "Sets the initiating [concept_war_goal] to unify the balkan region."
+ YUG_tt:0 "[SCOPE.sCountry('target_country').GetName] can form Yugoslavia
+
+
+

@@ -1,0 +1,62 @@
+﻿
+DIPLOMACY = {
+	c:EGE= {
+		create_bidirectional_truce = {
+			country = c:TOR
+			months = 10
+		}
+	}	
+}
+
+DIPLOMACY = {
+	c:FRU= {
+		create_unidirectional_truce = {
+			country = c:DKT
+			months = 120
+		}
+	}	
+}
+
+DIPLOMACY = {
+	c:CTH= {
+		create_bidirectional_truce = {
+			country = c:HAK
+			months = 5
+		}
+	}	
+}
+
+DIPLOMACY = {
+	c:KOR= {
+		create_unidirectional_truce = {
+			country = c:YUA
+			months = 76
+		}
+	}	
+}
+
+DIPLOMACY = {
+	c:KOR= {
+		create_bidirectional_truce = {
+			country = c:MCH
+			months = 17
+		}
+	}	
+}
+
+DIPLOMACY = {
+	c:SIA= {
+		create_bidirectional_truce = {
+			country = c:DAI
+			months = 36
+		}
+	}	
+}
+DIPLOMACY = {
+	c:BOH = {
+		create_bidirectional_truce = {
+			country = c:BAY
+			months = 4
+		}
+	}
+}

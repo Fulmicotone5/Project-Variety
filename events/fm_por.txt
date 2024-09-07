@@ -1,0 +1,45 @@
+namespace = fm_por
+fm_por.1 = {
+	type = country_event
+	placement = ROOT
+	title = fm_por.1.t
+	desc = fm_por.1.d
+	flavor = fm_por.1.f
+	duration = 1
+	event_image = {
+		video = "asia_sepoy_mutiny"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	option = {
+		name = fm_por.1.a
+		default_option = yes
+		add_journal_entry = {
+			type = je_por_main
+		}
+	}
+}
+fm_por.2 = {
+	type = country_event
+	placement = ROOT
+	title = fm_por.2.t
+	desc = fm_por.2.d
+	flavor = fm_por.2.f
+	duration = 3
+	event_image = {
+		video = "middleeast_police_breaking_door"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	trigger = {
+	}
+	option = {
+		name = fm_por.2.a
+		default_option = yes
+		add_modifier = {
+			name = modifier_por_two
+			months = 60
+			is_decaying = yes
+		}
+	}
+}

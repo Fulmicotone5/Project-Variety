@@ -1,0 +1,380 @@
+namespace = fm_chi_cl
+fm_chi_cl.1 = { #claim central plains
+	type = country_event
+	placement = ROOT
+	title = fm_chi_cl.1.t
+	desc = fm_chi_cl.1.d
+	flavor = fm_chi_cl.1.f
+	duration = 3
+	event_image = {
+		video = "southamerica_public_figure_assassination"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	trigger = {
+	}
+	immediate = {
+		
+	}
+	option = {
+		name = fm_chi_cl.1.a
+		s:STATE_WESTERN_HUBEI = {
+			add_claim = ROOT
+		}
+		s:STATE_EASTERN_HUBEI = {
+			add_claim = ROOT
+		}
+		s:STATE_HUNAN = {
+			add_claim = ROOT
+		}
+	}
+}
+fm_chi_cl.2 = { #claim wu
+	type = country_event
+	placement = ROOT
+	title = fm_chi_cl.2.t
+	desc = fm_chi_cl.2.d
+	flavor = fm_chi_cl.2.f
+	duration = 3
+	event_image = {
+		video = "ep1_printing_press"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	trigger = {
+	}
+	immediate = {
+		
+	}
+	option = {
+		name = fm_chi_cl.2.a
+		s:STATE_NANJING = {
+			add_claim = ROOT
+		}
+		s:STATE_SUZHOU = {
+			add_claim = ROOT
+		}
+		s:STATE_ZHEJIANG = {
+			add_claim = ROOT
+		}
+		s:STATE_TONKIN = {
+			add_claim = ROOT
+		}
+		s:STATE_GUANGDONG = {
+			add_claim = ROOT
+		}
+	}
+}
+fm_chi_cl.3 = { #claim wei
+	type = country_event
+	placement = ROOT
+	title = fm_chi_cl.3.t
+	desc = fm_chi_cl.3.d
+	flavor = fm_chi_cl.3.f
+	duration = 3
+	event_image = {
+		video = "ep1_printing_press"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	trigger = {
+	}
+	immediate = {
+		
+	}
+	option = {
+		name = fm_chi_cl.1.a
+		s:STATE_JIANGSU = {
+			add_claim = ROOT
+		}
+		s:STATE_SHENGJING = {
+			add_claim = ROOT
+		}
+		s:STATE_XIAN = {
+			add_claim = ROOT
+		}
+		s:STATE_NINGXIA = {
+			add_claim = ROOT
+		}
+		s:STATE_GANSU = {
+			add_claim = ROOT
+		}
+		s:STATE_BEIJING = {
+			add_claim = ROOT
+		}
+		s:STATE_ZHILI = {
+			add_claim = ROOT
+		}
+	}
+}
+
+fm_chi_cl.4 = { #claim south shu
+	type = country_event
+	placement = ROOT
+	title = fm_chi_cl.4.t
+	desc = fm_chi_cl.4.d
+	flavor = fm_chi_cl.4.f
+	duration = 3
+	event_image = {
+		video = "unspecific_politicians_arguing"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	trigger = {
+	}
+	immediate = {
+		
+	}
+	option = {
+		name = fm_chi_cl.4.a
+		s:STATE_YUNNAN = {
+			add_claim = ROOT
+		}
+		s:STATE_GUIZHOU = {
+			add_claim = ROOT
+		}
+	}
+}
+
+fm_chi_cl.5 = { #claim north shu
+	type = country_event
+	placement = ROOT
+	title = fm_chi_cl.5.t
+	desc = fm_chi_cl.5.d
+	flavor = fm_chi_cl.5.f
+	duration = 3
+	event_image = {
+		video = "asia_union_leader"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/tutorial_icon.dds"
+	trigger = {
+	}
+	immediate = {
+		
+	}
+	option = {
+		name = fm_chi_cl.5.a
+		s:STATE_SICHUAN = {
+			add_claim = ROOT
+		}
+		s:STATE_CHONGQING = {
+			add_claim = ROOT
+		}
+	}
+}
+
+fm_chi_cl.6 = { #claim beijing
+	type = country_event
+	placement = ROOT
+	title = fm_chi_cl.6.t
+	desc = fm_chi_cl.6.d
+	flavor = fm_chi_cl.6.f
+	duration = 3
+	event_image = {
+		video = "southamerica_election"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	trigger = {
+	}
+	immediate = {
+		
+	}
+	option = {
+		name = fm_chi_cl.6.a
+		s:STATE_BEIJING = {
+			add_claim = ROOT
+		}
+		s:STATE_SHENGJING = {
+			add_claim = ROOT
+		}
+	}
+}
+
+fm_chi_cl.7 = { #claim south coast
+	type = country_event
+	placement = ROOT
+	title = fm_chi_cl.7.t
+	desc = fm_chi_cl.7.d
+	flavor = fm_chi_cl.7.f
+	duration = 3
+	event_image = {
+		video = "asia_union_leader"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/tutorial_icon.dds"
+	trigger = {
+	}
+	immediate = {
+		
+	}
+	option = {
+		name = fm_chi_cl.7.a
+		s:STATE_GUANGDONG = {
+			add_claim = ROOT
+		}
+		s:STATE_TONKIN = {
+			add_claim = ROOT
+		}
+		s:STATE_GUANGXI = {
+			add_claim = ROOT
+		}
+	}
+}
+
+fm_chi_cl.8 = { #claim north chinese plains
+	type = country_event
+	placement = ROOT
+	title = fm_chi_cl.8.t
+	desc = fm_chi_cl.8.d
+	flavor = fm_chi_cl.8.f
+	duration = 3
+	event_image = {
+		video = "asia_union_leader"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/tutorial_icon.dds"
+	trigger = {
+	}
+	immediate = {
+		
+	}
+	option = {
+		name = fm_chi_cl.8.a
+		s:STATE_JIANGSU = {
+			add_claim = ROOT
+		}
+		s:STATE_SHANDONG = {
+			add_claim = ROOT
+		}
+		s:STATE_ZHILI = {
+			add_claim = ROOT
+		}
+	}
+}
+
+fm_chi_cl.9 = { #claim south chinese plains
+	type = country_event
+	placement = ROOT
+	title = fm_chi_cl.9.t
+	desc = fm_chi_cl.9.d
+	flavor = fm_chi_cl.9.f
+	duration = 3
+	event_image = {
+		video = "unspecific_armored_train"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	trigger = {
+	}
+	immediate = {
+		
+	}
+	option = {
+		name = fm_chi_cl.9.a
+		s:STATE_NORTHERN_ANHUI = {
+			add_claim = ROOT
+		}
+		s:STATE_HENAN = {
+			add_claim = ROOT
+		}
+	}
+}
+
+fm_chi_cl.10 = { #claim plateau
+	type = country_event
+	placement = ROOT
+	title = fm_chi_cl.10.t
+	desc = fm_chi_cl.10.d
+	flavor = fm_chi_cl.10.f
+	duration = 3
+	event_image = {
+		video = "rp1_social_banditry"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	trigger = {
+	}
+	immediate = {
+		
+	}
+	option = {
+		name = fm_chi_cl.10.a
+		s:STATE_XIAN = {
+			add_claim = ROOT
+		}
+		s:STATE_NINGXIA = {
+			add_claim = ROOT
+		}
+		s:STATE_GANSU = {
+			add_claim = ROOT
+		}
+	}
+}
+
+fm_chi_cl.11 = { #claim sshr
+	type = country_event
+	placement = ROOT
+	title = fm_chi_cl.11.t
+	desc = fm_chi_cl.11.d
+	flavor = fm_chi_cl.11.f
+	duration = 3
+	event_image = {
+		video = "rp1_social_banditry"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	trigger = {
+	}
+	immediate = {
+		
+	}
+	option = {
+		name = fm_chi_cl.11.a
+		s:STATE_NANJING = {
+			add_claim = ROOT
+		}
+		s:STATE_SOUTHERN_ANHUI = {
+			add_claim = ROOT
+		}
+		s:STATE_SUZHOU = {
+			add_claim = ROOT
+		}
+		s:STATE_ZHEJIANG = {
+			add_claim = ROOT
+		}
+	}
+}
+
+fm_chi_cl.12 = { #claim ishr
+	type = country_event
+	placement = ROOT
+	title = fm_chi_cl.12.t
+	desc = fm_chi_cl.12.d
+	flavor = fm_chi_cl.12.f
+	duration = 3
+	event_image = {
+		video = "asia_union_leader"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/tutorial_icon.dds"
+	trigger = {
+	}
+	immediate = {
+		
+	}
+	option = {
+		name = fm_chi_cl.12.a
+		s:STATE_FUJIAN = {
+			add_claim = ROOT
+		}
+		s:STATE_SHAOZHOU = {
+			add_claim = ROOT
+		}
+		s:STATE_JIANGXI = {
+			add_claim = ROOT
+		}
+	}
+}
+

@@ -1,0 +1,18 @@
+CHARACTERS = {
+	c:POI ?= {
+		create_character = {
+			first_name = "Ferdinand-Philippe"
+			last_name = "Valois"
+			historical = yes
+			ruler = yes
+			female = no
+			birth_date = 1800.5.2
+			culture = cu:french
+			interest_group = ig_landowners
+			ideology = ideology_royalist
+			traits = {
+				arrogant
+			}
+		}
+	}
+}

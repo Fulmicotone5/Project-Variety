@@ -1,0 +1,179 @@
+je_buy_salas = {
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	group = je_group_historical_content
+	is_shown_when_inactive = {
+		exist = c:YUA
+		c:YUA ?= THIS
+	}
+	scripted_button = je_ye_button_one
+	possible = {
+		owns_entire_state_region = STATE_NEVADA
+		custom_tooltip = {
+			text = depeffo
+		}
+	}
+	complete = {
+		owns_entire_state_region = STATE_IDAHO
+		owns_entire_state_region = STATE_WASHINGTON
+		owns_entire_state_region = STATE_OREGON
+	}
+	weight = 100
+	should_be_pinned_by_default = yes
+}
+
+je_yue_dict = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	group = je_group_historical_content
+	complete = {
+		has_law = law_type:law_presidential_republic
+		OR = {
+			has_law = law_type:law_autocracy
+			has_law = law_type:law_oligarchy
+		}
+	}
+	on_complete = {
+		trigger_event = {
+			id = fm_yua.8
+		}
+		remove_modifier = modifier_yua_base_two
+		remove_modifier = diplomatic_plays_blocked
+		set_variable = {
+			name = yua_auth
+			value = 0
+		}
+		hidden_effect = {
+			activate_law = law_type:law_elected_bureaucrats
+			activate_law = law_type:law_national_militia
+			activate_law = law_type:law_local_police
+			activate_law = law_type:law_no_colonial_affairs
+		}
+	}
+	fail = {
+		custom_tooltip = {
+			text = yue_auth
+			has_variable = yua_yua_authpot
+		}
+	}
+	should_be_pinned_by_default = yes
+}
+
+je_yue_laws = {
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	group = je_group_historical_content
+	scripted_button = je_ye_button_col
+	scripted_button = je_ye_button_migr
+	scripted_button = je_ye_button_int
+	scripted_button = je_ye_button_mos
+	complete = {
+		total_population >= 18000000
+	}
+	on_complete = {
+		trigger_event = {
+			id = fm_yua.9
+		}
+		hidden_effect = {
+			remove_modifier = modifier_yua_col
+			remove_modifier = modifier_yua_mos
+		}
+		hidden_effect = {
+			every_state_region = {
+				limit = {
+					any_scope_state = {
+						NOT = {
+							is_homeland_of_country_cultures = ROOT
+						}
+						owner = ROOT 
+					}
+				}
+				add_homeland = cu:han
+				add_homeland = cu:yue
+				add_homeland = cu:min
+				add_homeland = cu:manchu
+			}
+		}
+	}
+	fail = {
+		custom_tooltip = {
+			text = yua_tooltip
+			has_variable = yua_auth
+		}
+	}
+	on_fail = {
+		hidden_effect = {
+			remove_modifier = modifier_yua_col
+			remove_modifier = modifier_yua_mos
+		}
+	}
+	should_be_pinned_by_default = yes
+}
+
+je_yue_ass = {
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	group = je_group_historical_content
+	complete = {
+		NOT = {
+			has_modifier = modifier_yua_int
+		}
+	}
+	fail = {
+		NOT = {
+			has_law = law_type:law_state_atheism
+		}
+	}
+	on_fail = {
+		remove_modifier = modifier_yua_int
+	}
+	should_be_pinned_by_default = yes
+}
+
+je_yua_kor = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	group = je_group_historical_content
+	complete = {
+		custom_tooltip = {
+			text = yua_subj_text
+			has_variable = yua_subj
+		}
+	}
+	on_complete = {
+		remove_variable = yua_prot
+	}
+	fail = {
+		game_date >= 1842.4.3
+	}
+	on_fail = {
+		c:YUA = {
+			make_independent = yes			
+		}
+		remove_variable = yua_prot
+	}
+	should_be_pinned_by_default = yes
+}
+
+je_auth_for = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	group = je_group_historical_content
+	is_shown_when_inactive = {
+		exist = c:YUA
+		c:YUA ?= THIS
+	}
+	possible = {
+		custom_tooltip = {
+			text = auth_for_one
+			game_date >= 1843.2.12
+		}
+	}
+	complete = {
+		custom_tooltip = {
+			text = auth_for_two
+			game_date >= 1843.2.24
+		}
+	}
+	on_complete = {
+		trigger_event = {
+			id = fm_yua.7
+		}
+	}
+	weight = 100
+	should_be_pinned_by_default = yes
+}

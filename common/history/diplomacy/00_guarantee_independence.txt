@@ -1,0 +1,54 @@
+﻿DIPLOMACY = {
+	c:NED ?= {
+		create_diplomatic_pact = {
+			country = c:KOR
+			type = guarantee_independence
+		}
+		create_diplomatic_pact = {
+			country = c:HEN
+			type = guarantee_independence
+		}	
+		create_diplomatic_pact = {
+			country = c:AGA
+			type = guarantee_independence
+		}	
+	}
+	c:FRU ?= {
+		create_diplomatic_pact = {
+			country = c:CAT
+			type = guarantee_independence
+		}	
+		create_diplomatic_pact = {
+			country = c:FLU
+			type = guarantee_independence
+		}
+		create_diplomatic_pact = {
+			country = c:HSE
+			type = guarantee_independence
+		}
+	}
+	c:PUR ?= {
+		create_diplomatic_pact = {
+			country = c:AGA
+			type = guarantee_independence
+		}
+	}
+	c:CAS ?= {
+		create_diplomatic_pact = {
+			country = c:PUP
+			type = guarantee_independence
+		}	
+	}
+	c:KAA ?= {
+		create_diplomatic_pact = {
+			country = c:GRA
+			type = guarantee_independence
+		}	
+	}	
+	c:ENG ?= {
+		create_diplomatic_pact = {
+			country = c:BRI
+			type = guarantee_independence
+		}	
+	}
+}

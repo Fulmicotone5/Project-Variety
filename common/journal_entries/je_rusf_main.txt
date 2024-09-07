@@ -1,0 +1,286 @@
+je_rusf_main = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	group = je_group_historical_content
+	complete = {
+		OR = {
+			any_scope_state = {
+				state_region = s:STATE_KAZAN
+				turmoil >= 0.35
+			}
+			has_technology_researched = nationalism
+		}
+	}
+	on_complete = {
+		trigger_event = {
+			id = fm_rusf.3
+		}
+	}
+	should_be_pinned_by_default = yes
+}
+
+je_rusf_two = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	group = je_group_historical_content
+	complete = {
+		OR = {
+			AND = {
+				owns_entire_state_region = STATE_PERM
+				owns_entire_state_region = STATE_SAMARA
+				owns_entire_state_region = STATE_UFA
+				owns_entire_state_region = STATE_VYATKA
+			}
+			c:DPR = {
+				is_subject_of = ROOT
+			}
+			c:POC = {
+				is_subject_of = ROOT
+			}
+		}
+	}
+	on_complete = {
+		if = {
+			limit = {
+				c:DPR = {
+					is_subject_of = ROOT
+				}
+			}
+			annex = c:DPR
+		}
+		if = {
+			limit = {
+				c:POC = {
+					is_subject_of = ROOT
+				}
+			}
+			annex = c:POC
+		}
+		trigger_event = {
+			id = fm_rusf.2
+		}
+		hidden_effect = {
+			change_tag = RUI
+		}
+	}
+	should_be_pinned_by_default = yes
+}
+
+je_ural_rep = {
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	group = je_group_historical_content
+	on_monthly_pulse = {
+		effect = {
+			change_variable = {
+				name = ural_rep
+				add = 1
+			}
+		}
+	}
+	complete = {
+		scope:journal_entry = {
+			is_goal_complete = yes
+		}
+	}
+	on_complete = {
+		remove_modifier = modifier_rui_three
+		trigger_event = {
+			id = fm_rusf.6
+		}
+	}
+	current_value = {
+		value = root.var:ural_rep
+	}
+	goal_add_value = {
+		value = 6
+	}
+	progressbar = yes
+	weight = 10
+	should_be_pinned_by_default = yes
+}
+
+je_tobolsk_rep = {
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	group = je_group_historical_content
+	on_monthly_pulse = {
+		effect = {
+			change_variable = {
+				name = tob_rep
+				add = 1
+			}
+		}
+	}
+	complete = {
+		scope:journal_entry = {
+			is_goal_complete = yes
+		}
+	}
+	on_complete = {
+		remove_modifier = modifier_rui_six
+		trigger_event = {
+			id = fm_rusf.7
+		}
+	}
+	current_value = {
+		value = root.var:tob_rep
+	}
+	goal_add_value = {
+		value = 8
+	}
+	progressbar = yes
+	weight = 9
+	should_be_pinned_by_default = yes
+}
+
+je_tomsk_rep = {
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	group = je_group_historical_content
+	on_monthly_pulse = {
+		effect = {
+			change_variable = {
+				name = tomsk_rep
+				add = 1
+			}
+		}
+	}
+	complete = {
+		scope:journal_entry = {
+			is_goal_complete = yes
+		}
+	}
+	on_complete = {
+		remove_modifier = modifier_rui_seven
+		trigger_event = {
+			id = fm_rusf.8
+		}
+	}
+	current_value = {
+		value = root.var:tomsk_rep
+	}
+	goal_add_value = {
+		value = 11
+	}
+	progressbar = yes
+	weight = 10
+	should_be_pinned_by_default = yes
+}
+
+je_irk_rep = {
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	group = je_group_historical_content
+	on_monthly_pulse = {
+		effect = {
+			change_variable = {
+				name = irk_rep
+				add = 1
+			}
+		}
+	}
+	complete = {
+		scope:journal_entry = {
+			is_goal_complete = yes
+		}
+	}
+	on_complete = {
+		remove_modifier = modifier_rui_eight
+		trigger_event = {
+			id = fm_rusf.9
+		}
+	}
+	current_value = {
+		value = root.var:irk_rep
+	}
+	goal_add_value = {
+		value = 12
+	}
+	progressbar = yes
+	weight = 10
+	should_be_pinned_by_default = yes
+}
+je_mis_mil = {
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+	group = je_group_historical_content
+	on_monthly_pulse = {
+		effect = {
+			change_variable = {
+				name = mil_esp
+				add = 1
+			}
+		}
+	}
+	complete = {
+		scope:journal_entry = {
+			is_goal_complete = yes
+		}
+	}
+	on_complete = {
+		remove_modifier = modifier_rui_four
+		trigger_event = {
+			id = fm_rusf.10
+		}
+	}
+	current_value = {
+		value = root.var:mil_esp
+	}
+	goal_add_value = {
+		value = 16
+	}
+	progressbar = yes
+	weight = 10
+	should_be_pinned_by_default = yes
+}
+je_mis_ind = {
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+	group = je_group_historical_content
+	on_monthly_pulse = {
+		effect = {
+			change_variable = {
+				name = ind_esp
+				add = 1
+			}
+		}
+	}
+	complete = {
+		scope:journal_entry = {
+			is_goal_complete = yes
+		}
+	}
+	on_complete = {
+		remove_modifier = modifier_rui_five
+		trigger_event = {
+			id = fm_rusf.11
+		}
+	}
+	current_value = {
+		value = root.var:ind_esp
+	}
+	goal_add_value = {
+		value = 12
+	}
+	progressbar = yes
+	weight = 10
+	should_be_pinned_by_default = yes
+}
+je_backward_c = {
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+	group = je_group_historical_content
+	complete = {
+		any_scope_building = {
+			is_building_type = building_university
+			occupancy >= 0.9
+			level >= 5
+		}
+		literacy_rate >= 0.3
+		NOT = {
+			has_law = law_type:law_serfdom
+		}
+		has_technology_researched = railways
+		has_technology_researched = general_staff
+		has_technology_researched = dialectics
+	}
+	on_complete = {
+		remove_modifier = modifier_rui_nine
+		trigger_event = {
+			id = fm_rusf.12
+		}
+	}
+	should_be_pinned_by_default = yes
+}

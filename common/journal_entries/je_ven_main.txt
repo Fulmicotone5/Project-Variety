@@ -1,0 +1,332 @@
+je_venice_main = {
+	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+	group = je_group_historical_content
+	complete = {
+		scope:journal_entry = {
+			is_goal_complete = yes
+		}
+	}
+	on_complete = {
+		trigger_event = {
+			id = fm_venice.2
+		}
+		add_modifier = {
+			name = modifier_ven_five
+		}
+		add_journal_entry = {
+			type = je_venice_main_r
+		}
+	}
+	current_value = {
+		value = var:fm_venice_var
+	}
+	goal_add_value = {
+		add = 6
+	}
+	progressbar = yes
+	weight = 10000
+	should_be_pinned_by_default = yes
+}
+
+je_venice_adriatic = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	group = je_group_historical_content
+	complete = {
+		owns_entire_state_region = STATE_DALMATIA
+		owns_entire_state_region = STATE_ALBANIA
+	}
+	on_complete = {
+		custom_tooltip = je_venice_advance
+		change_variable = {
+			name = fm_venice_var
+			add = 1
+		}
+	}
+	transferable = no
+	weight = 5000
+	should_be_pinned_by_default = yes
+}
+
+je_venice_resources = {
+	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+	group = je_group_historical_content
+	complete = {
+		owns_entire_state_region = STATE_LOMBARDY
+		owns_entire_state_region = STATE_SOUTH_TYROL
+	}
+	on_complete = {
+		custom_tooltip = je_venice_advance
+		change_variable = {
+			name = fm_venice_var
+			add = 1
+		}
+	}
+	transferable = no
+	weight = 5000
+	should_be_pinned_by_default = yes
+}
+
+je_venice_black = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	group = je_group_historical_content
+	complete = {
+		OR = {
+			owns_treaty_port_in = STATE_CHERSON
+			owns_treaty_port_in = STATE_BESSARABIA
+			owns_treaty_port_in = STATE_DOBRUDJA
+		}
+		OR = {
+			owns_treaty_port_in = STATE_ROSTOV
+			owns_treaty_port_in = STATE_KUBAN
+			owns_treaty_port_in = STATE_TAURIDA
+		}
+		OR = {
+			owns_entire_state_region = STATE_EASTERN_THRACE
+			owns_treaty_port_in = STATE_AYDIN
+		}
+		owns_entire_state_region = STATE_CRIMEA
+	}
+	on_complete = {
+		custom_tooltip = je_venice_advance
+		add_modifier = {
+			name = modifier_ven_one
+		}
+		add_journal_entry = {
+			type = je_venice_black_r
+		}
+		change_variable = {
+			name = fm_venice_var
+			add = 1
+		}
+	}
+	transferable = no
+	weight = 5000
+	should_be_pinned_by_default = yes
+}
+
+je_venice_black_r = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	group = je_group_historical_content
+	fail = {
+		NOT = {
+			AND = {
+				owns_treaty_port_in = STATE_CHERSON
+				owns_treaty_port_in = STATE_BESSARABIA
+				owns_treaty_port_in = STATE_DOBRUDJA
+			}
+			AND = {
+				owns_treaty_port_in = STATE_ROSTOV
+				owns_treaty_port_in = STATE_KUBAN
+				owns_treaty_port_in = STATE_TAURIDA
+			}
+			AND = {
+				owns_entire_state_region = STATE_EASTERN_THRACE
+				owns_treaty_port_in = STATE_AYDIN
+			}
+			owns_entire_state_region = STATE_CRIMEA
+		}
+	}
+	on_fail = {
+		remove_modifier = modifier_ven_one
+		add_journal_entry = {
+			type = je_venice_black
+		}
+	}
+	transferable = no
+	weight = 5000
+	should_be_pinned_by_default = yes
+}
+
+je_venice_east = {
+	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+	group = je_group_historical_content
+	complete = {
+		sr:region_japan = {
+			any_scope_state = {
+				is_treaty_port = yes
+				owner = c:VEN
+			}
+		}
+		OR = {
+			owns_treaty_port_in = STATE_ZHILI
+			owns_treaty_port_in = STATE_BEIJING
+		}
+	}
+	on_complete = {
+		custom_tooltip = je_venice_advance
+		change_variable = {
+			name = fm_venice_var
+			add = 1
+		}
+	}
+	should_be_pinned_by_default = yes
+}
+
+je_venice_cape = {
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	group = je_group_historical_content
+	complete = {
+		OR = {
+			owns_treaty_port_in = STATE_CAPE_COLONY
+			owns_entire_state_region = STATE_CAPE_COLONY
+		}
+	}
+	fail = {
+		any_state = {
+			has_building = building_suez_canal
+		}
+	}
+	on_complete = {
+		custom_tooltip = je_venice_advance
+		add_modifier = {
+			name = modifier_ven_two
+		}
+		change_variable = {
+			name = fm_venice_var
+			add = 1
+		}
+		add_journal_entry = {
+			type = je_venice_cape_r
+		}
+	}
+	transferable = no
+	weight = 5000
+	should_be_pinned_by_default = yes
+}
+
+je_venice_cape_r = {
+	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+	group = je_group_historical_content
+	fail = {
+		OR = {
+			NOT = {
+				owns_treaty_port_in = STATE_CAPE_COLONY
+				owns_entire_state_region = STATE_CAPE_COLONY
+			}
+			any_state = {
+				has_building = building_suez_canal
+			}
+		}
+	}
+	on_fail = {
+		remove_modifier = modifier_ven_two
+		add_journal_entry = {
+			type = je_venice_cape
+		}
+	}
+	transferable = no
+	weight = 5000
+	should_be_pinned_by_default = yes
+}
+
+je_venice_mediterranean = {
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	group = je_group_historical_content
+	complete = {
+		owns_treaty_port_in = STATE_GRANADA
+		has_building = building_suez_canal
+	}
+	on_complete = {
+		custom_tooltip = je_venice_advance
+		add_modifier = {
+			name = modifier_ven_three
+		}
+		change_variable = {
+			name = fm_venice_var
+			add = 1
+		}
+		add_journal_entry = {
+			type = je_venice_mediterranean_r
+		}
+	}
+	transferable = no
+	weight = 5000
+	should_be_pinned_by_default = yes
+}
+
+je_venice_mediterranean_r = {
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	group = je_group_historical_content
+	fail = {
+		NOT = {
+			AND = {
+				owns_treaty_port_in = STATE_GRANADA
+				has_building = building_suez_canal
+			}
+		}
+	}
+	on_fail = {
+		remove_modifier = modifier_ven_three
+		add_journal_entry = {
+			type = je_venice_mediterranean
+		}
+	}
+	transferable = no
+	weight = 5000
+	should_be_pinned_by_default = yes
+}
+
+je_venice_panama = {
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	group = je_group_historical_content
+	complete = {
+		has_building = building_panama_canal
+	}
+	on_complete = {
+		custom_tooltip = je_venice_advance
+		add_modifier = {
+			name = modifier_ven_four
+		}
+		change_variable = {
+			name = fm_venice_var
+			add = 1
+		}
+		add_journal_entry = {
+			type = je_venice_panama_r
+		}
+	}
+	should_be_pinned_by_default = yes
+}
+
+je_venice_panama_r = {
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	group = je_group_historical_content
+	fail = {
+		NOT = {
+			has_building = building_panama_canal
+		}
+	}
+	on_fail = {
+		remove_modifier = modifier_ven_four
+		add_journal_entry = {
+			type = je_venice_panama
+		}
+	}
+	should_be_pinned_by_default = yes
+}
+
+je_venice_main_r = {
+	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+	group = je_group_historical_content
+	fail = {
+		NOT = {
+			owns_entire_state_region = STATE_LOMBARDY
+			AND = {
+				owns_entire_state_region = STATE_EASTERN_THRACE
+				owns_treaty_port_in = STATE_AYDIN
+			}
+			owns_entire_state_region = STATE_CAPE_COLONY
+			owns_treaty_port_in = STATE_GRANADA
+			has_building = building_suez_canal
+			has_building = building_panama_canal
+			OR = {
+				owns_treaty_port_in = STATE_ZHILI
+				owns_treaty_port_in = STATE_BEIJING
+			}
+		}
+	}
+	on_fail = {
+		remove_modifier = modifier_ven_five
+	}
+	should_be_pinned_by_default = yes
+}

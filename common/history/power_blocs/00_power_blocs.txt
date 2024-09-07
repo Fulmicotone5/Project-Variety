@@ -1,0 +1,76 @@
+﻿# POWER_BLOCS = {  example by yours truly, Fulmi
+#	c:PRU = {
+#		create_power_bloc = {
+#			name =  ZOLLVEREIN
+#			map_color = { 147 130 110 }
+#			founding_date = 1834.01.01
+#			identity = identity_trade_league
+#			principle = principle_internal_trade_1
+#			member = c:LUB # add the members like this
+#			member = c:BRA # 
+# subjects are automatically part of the bloc
+#		}
+#		if = {
+#			limit = {
+# has_dlc_feature = power_bloc_features
+#			}
+#			power_bloc = {
+#				add_principle = principle_police_coordination_1
+#			}
+#		}
+#	}
+#}
+POWER_BLOCS = {
+	c:HEN = {
+		create_power_bloc = {
+			name = pact_of_the_rhine
+			map_color = {
+				147
+				130
+				110
+			}
+			founding_date = 1834.01.01
+			identity = identity_military_treaty_organization
+			principle = principle_defensive_cooperation_3
+			member = c:HAM
+			member = c:BRE
+			member = c:OLD
+			member = c:BRA
+			member = c:SCM
+			member = c:LIP
+			member = c:WEI
+			member = c:SCW
+			member = c:COB
+			member = c:MEI
+			member = c:HEK
+			member = c:HES
+			member = c:MUN
+			member = c:WLD
+			member = c:NAS
+			member = c:CLN
+			member = c:SAA
+			member = c:FRM
+			member = c:STA
+		}
+		power_bloc = {
+			add_principle = principle_market_unification_3
+		}
+	}
+	c:FRU = {
+		create_power_bloc = {
+			name = french_kingdom
+			map_color = {
+				9 51 189
+			}
+			founding_date = 1700.01.01
+			identity = identity_sovereign_empire
+			principle = principle_vassalization_1
+			member = c:PRI
+			member = c:HSE
+
+		}
+		power_bloc = {
+			add_principle = principle_market_unification_3
+		}
+	}
+}

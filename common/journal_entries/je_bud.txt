@@ -1,0 +1,34 @@
+je_bud_main = {
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	group = je_group_historical_content
+	immediate = {
+		s:STATE_RHONE = {
+			add_claim = ROOT 
+		}
+		s:STATE_SAVOY = {
+			add_claim = ROOT 
+		}
+		s:STATE_WEST_SWITZERLAND = {
+			add_claim = ROOT 
+		}
+		s:STATE_PROVENCE = {
+			add_claim = ROOT 
+		}
+	}
+	scripted_button = je_inde_bud
+	complete = {
+		root = {
+			is_subject = no
+		}
+		owns_entire_state_region = STATE_RHONE
+		owns_entire_state_region = STATE_SAVOY
+		owns_entire_state_region = STATE_WEST_SWITZERLAND
+	}
+	on_complete = {
+		trigger_event = {
+			id = fm_bud.1
+		}
+	}
+	weight = 100
+	should_be_pinned_by_default = yes
+}

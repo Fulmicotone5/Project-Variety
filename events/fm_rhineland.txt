@@ -1,0 +1,60 @@
+namespace = fm_rhi
+fm_rhi.1 = {
+	type = country_event
+	placement = ROOT
+	title = fm_rhi.1.t
+	desc = fm_rhi.1.d
+	flavor = fm_rhi.1.f
+	duration = 3
+	event_image = {
+		video = "southamerica_aristocrats"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+	option = {
+		name = fm_rhi.1.a
+		default_option = yes
+	}
+}
+
+fm_rhi.2= {
+	type = country_event
+	placement = ROOT
+	title = fm_rhi.2.t
+	desc = fm_rhi.2.d
+	flavor = fm_rhi.2.f
+	duration = 3
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	trigger = {
+	}
+	option = {
+		name = fm_rhi.2.a
+		default_option = yes
+		add_modifier = {
+			name = unification_prestige
+			months = very_long_modifier_time
+		}
+		add_loyalists = {
+			value = very_large_radicals
+			pop_type = soldiers
+		}
+		add_loyalists = {
+			strata = poor
+			value = large_radicals
+		}
+		add_loyalists = {
+			strata = middle
+			value = very_large_radicals
+		}
+		add_loyalists = {
+			strata = rich
+			value = large_radicals
+		}
+		add_primary_culture = cu:alemannic
+		add_primary_culture = cu:south_german
+	}
+}

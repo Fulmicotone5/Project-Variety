@@ -1,0 +1,68 @@
+namespace = fm_vna
+fm_vna.1 = { 
+	type = country_event
+	placement = ROOT
+	title = fm_vna.1.t
+	desc = fm_vna.1.d
+	flavor = fm_vna.1.f
+	duration = 3
+	event_image = {
+		video = "rp1_brazilian_city"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	trigger = {
+	}
+	option = {
+		name = fm_vna.1.a
+		default_option = yes
+		s:STATE_BAHAMAS = {
+			add_claim = ROOT 
+		}
+		s:STATE_PUERTO_RICO = {
+			add_claim = ROOT 
+		}
+		s:STATE_FLORIDA = {
+			add_claim = ROOT 
+		}
+		s:STATE_GEORGIA = {
+			add_claim = ROOT 
+		}
+	}
+}
+
+fm_vna.2 = { 
+	type = country_event
+	placement = ROOT
+	title = fm_vna.2.t
+	desc = fm_vna.2.d
+	flavor = fm_vna.2.f
+	duration = 3
+	event_image = {
+		video = "ep1_transfer_of_authority"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	trigger = {
+	}
+	option = {
+		name = fm_vna.2.a
+		default_option = yes
+		add_loyalists = {
+			strata = poor
+			value = 0.10
+		}
+		add_loyalists = {
+			strata = middle
+			value = 0.15
+		}
+		add_loyalists = {
+			strata = rich
+			value = 0.20
+		}
+		add_modifier = {
+			name = modifier_vna_one
+			months = 60
+		}
+	}
+}

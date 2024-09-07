@@ -1,0 +1,37 @@
+namespace = fall_papacy
+fall_papacy.1 = {
+	type = country_event
+	placement = ROOT
+	title = fall_papacy.1.t
+	desc = fall_papacy.1.d
+	flavor = fall_papacy.1.f
+	duration = 3
+	event_image = {
+		video = "unspecific_fire"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+	trigger = {
+	}
+	option = {
+		name = fall_papacy.1.a
+		default_option = yes
+		activate_law = law_type:law_parliamentary_republic
+		activate_law = law_type:law_wealth_voting
+		every_interest_group = {
+			limit = {
+				is_interest_group_type = ig_devout
+			}
+			add_modifier = {
+				name = modifier_clergy_decline
+				months = normal_modifier_time
+			}
+		}
+		s:STATE_LAZIO = {
+			add_claim = c:PUP
+		}
+		trigger_event = {
+			id = papal_to_rome.3
+		}
+	}
+}

@@ -1,0 +1,254 @@
+﻿POPS = {
+	s:STATE_SAN_SALVADOR = {
+		region_state:UCA = {
+			create_pop = {
+				culture = central_american
+				size = 428204
+			}
+		}
+	}
+	s:STATE_GUATEMALA = {
+		region_state:UCA = {
+			create_pop = {
+				culture = central_american
+				size = 164404
+			}
+			create_pop = {
+				culture = mayan
+				size = 312000
+			}
+		}
+	}
+	s:STATE_HONDURAS = {
+		region_state:UCA = {
+			create_pop = {
+				culture = central_american
+				size = 385204
+			}
+			create_pop = {
+				culture = miskito # Cape of Gracias a Dios Miskito
+				size = 3000
+			}
+		}
+	}
+	s:STATE_NICARAGUA = {
+		region_state:UCA = {
+			create_pop = {
+				culture = central_american
+				size = 284000
+			}
+			create_pop = {
+				culture = miskito # Miskito pop. across the 'borders'
+				size = 4000
+			}
+		}
+		region_state:MKT = {
+			create_pop = {
+				culture = miskito # Tawira Miskito
+				size = 30000
+			}
+			create_pop = {
+				culture = miskito
+				religion = protestant
+				size = 10000
+			}
+			create_pop = {
+				culture = afro_caribbean # Miskito Sambu
+				size = 20000
+			}
+			create_pop = {
+				culture = afro_caribeno
+				size = 500
+			}
+			create_pop = {
+				culture = british
+				size = 500
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = afro_caribeno
+				size = 1000
+			}
+		}
+	}
+	s:STATE_COSTA_RICA = {
+		region_state:UCA = {
+			create_pop = {
+				culture = central_american
+				size = 83992
+			}
+		}
+	}
+	s:STATE_PANAMA = {
+		region_state:CUL = {
+			create_pop = {
+				culture = central_american
+				size = 87792
+			}
+			create_pop = {
+				culture = afro_caribeno
+				size = 28300
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = afro_caribeno
+				size = 4100
+			}
+			create_pop = {
+				culture = north_andean
+				size = 4000
+			}
+			create_pop = {
+				culture = cariban
+				size = 4000
+			}
+		}
+	}
+	# Haitian and Dominican population numbers are based off 1850 numbers from "La población de América Latina" by Nicolás Sánchez-Albornoz, scaled back 8,5% to account for approx. population growth.
+	s:STATE_HAITI = {
+		region_state:HAE = {
+			create_pop = { # Includes mulatto population.
+				culture = afro_antillean
+				size = 830824
+			}
+			create_pop = { # Spanish speaking population mainly inhabiting the area surrounding Hincha. Black.
+				culture = afro_caribeno
+				size = 13543
+			}
+			create_pop = { # Spanish speaking population mainly inhabiting the area surrounding Hincha. Mulatto.
+				culture = caribeno
+				size = 25120
+			}
+			create_pop = { # Spanish speaking population mainly inhabiting the area surrounding Hincha. White.
+				culture = spanish
+				size = 121
+			}
+			create_pop = { # Polish population centered mainly on Cazale. About 400 Poles stayed behind in Haiti after the war.
+				culture = polish
+				size = 390
+			}
+		}
+	}
+	s:STATE_SANTO_DOMINGO = {
+		region_state:HAE = {
+			create_pop = { # Haitians.
+				culture = afro_antillean
+				size = 114007
+			}
+			create_pop = { # Mulatto.
+				culture = caribeno
+				size = 800626
+			}
+			create_pop = { # A small number of protestants existed in the early 19th century.
+				culture = caribeno
+				size = 1013
+			}
+			create_pop = { # Black.
+				culture = afro_caribeno
+				size = 219896
+			}
+			create_pop = { # White.
+				culture = spanish
+				size = 3834
+			}
+		}
+	}
+	s:STATE_PUERTO_RICO = {
+		region_state:VEN = {
+			create_pop = {
+				culture = americano
+				size = 182500
+			}
+			create_pop = {
+				culture = afro_caraibico
+				size = 168400
+			}
+			create_pop = {
+				culture = venetian
+				size = 5904
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = afro_caraibico
+				size = 42000
+			}		
+		}
+	}
+	s:STATE_BAHAMAS = {
+		region_state:VEN = {
+			create_pop = {
+				culture = venetian
+				size = 1200
+			}
+			create_pop = {
+				culture = americano
+				size = 18200
+			}
+			create_pop = {
+				culture = afro_caraibico
+				pop_type = slaves
+				size = 100400
+			}
+			create_pop = {
+				culture = afro_caraibico
+				size = 9400
+			}
+		}
+	}
+	s:STATE_WEST_INDIES = {
+		region_state:CAS = {
+			create_pop = {
+				culture = spanish
+				size = 2200
+			}
+			create_pop = {
+				culture = afro_caribeno
+				size = 116104
+			}
+		}
+		region_state:NED = {
+			create_pop = {
+				culture = afro_caribeno
+				size = 134768
+			}
+			create_pop = {
+				culture = dutch
+				size = 4396
+			}
+		}
+	}
+	s:STATE_JAMAICA = {
+		region_state:FRU = {
+			create_pop = {
+				culture = afro_antillean
+				size = 358596
+			}
+			create_pop = {
+				culture = french
+				size = 23040
+			}
+		}
+	}
+	s:STATE_CUBA = {
+		region_state:CAS = {
+			# 896400
+			create_pop = {
+				culture = caribeno
+				size = 461304 # est. "white" population in 1836 of 483308, minus the explicit Spanish pops below
+			}
+			create_pop = {
+				culture = afro_caribeno
+				size = 152011
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = afro_caribeno
+				size = 288786
+			}			
+			create_pop = {
+				culture = spanish
+				size = 22004
+			}
+		}
+	}
+}

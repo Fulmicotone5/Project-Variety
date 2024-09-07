@@ -1,0 +1,38 @@
+namespace = fm_holy
+fm_holy.1 = { #return inq
+	type = country_event
+	placement = ROOT
+	title = fm_holy.1.t
+	desc = fm_holy.1.d
+	flavor = fm_holy.1.f
+	duration = 3
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/tutorial_icon.dds"
+	option = {
+		name = fm_holy.1.a
+		default_option = yes
+		add_loyalists = {
+			religion = rel:catholic
+			value = 0.5
+		}
+		add_loyalists = {
+			value = 0.35
+			pop_type = clergymen
+		}
+		add_loyalists = {
+			strata = poor
+			value = 0.1
+		}
+		add_modifier = {
+			name = modifier_rome_nine
+		}
+		add_modifier = {
+			name = modifier_rome_ten
+			months = long_modifier_time
+			is_decaying = yes
+		}
+	}
+}

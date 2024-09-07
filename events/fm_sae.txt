@@ -1,0 +1,177 @@
+namespace = fm_sae
+# start event
+fm_sae.1 = {
+	type = country_event
+	placement = ROOT
+	title = fm_sae.1.t
+	desc = fm_sae.1.d
+	flavor = fm_sae.1.f
+	duration = 3
+	event_image = {
+		video = "africa_leader_arguing"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	immediate = {
+		random_interest_group = {
+			limit
+			{
+				is_interest_group_type = ig_intelligentsia
+				exist = leader
+			}
+			leader = {
+				save_scope_as = intelligentsia_leader
+			}
+		}
+	}
+	option = {
+		name = fm_sae.1.a
+		add_loyalists = {
+			strata = rich
+			value = 0.2
+		}
+		add_loyalists = {
+			strata = middle
+			value = 0.15
+		}
+		add_loyalists = {
+			strata = poor
+			value = 0.1
+		}
+		s:STATE_DIYARBAKIR = {
+			add_claim = ROOT 
+		}
+		s:STATE_ADANA = {
+			add_claim = ROOT 
+		}
+		s:STATE_ERZURUM = {
+			add_claim = ROOT 
+		}
+		s:STATE_TRABZON = {
+			add_claim = ROOT 
+		}
+		s:STATE_ANKARA = {
+			add_claim = ROOT 
+		}
+		s:STATE_KONYA = {
+			add_claim = ROOT 
+		}
+		s:STATE_LOWER_EGYPT = {
+			add_claim = ROOT 
+		}
+		s:STATE_UPPER_EGYPT = {
+			add_claim = ROOT 
+		}
+		s:STATE_MIDDLE_EGYPT = {
+			add_claim = ROOT 
+		}
+		s:STATE_MATRUH = {
+			add_claim = ROOT 
+		}
+		s:STATE_SINAI = {
+			add_claim = ROOT 
+		}
+		s:STATE_TRANSJORDAN = {
+			add_claim = ROOT 
+		}
+		s:STATE_PALESTINE = {
+			add_claim = ROOT 
+		}
+		s:STATE_LEBANON = {
+			add_claim = ROOT 
+		}
+		s:STATE_SYRIA = {
+			add_claim = ROOT 
+		}
+		s:STATE_ALEPPO = {
+			add_claim = ROOT 
+		}
+	}
+	option = {
+		name = fm_sae.1.b
+		add_loyalists = {
+			strata = rich
+			value = 0.2
+		}
+		add_loyalists = {
+			strata = middle
+			value = 0.15
+		}
+		add_loyalists = {
+			strata = poor
+			value = 0.1
+		}
+		s:STATE_ABU_DHABI = {
+			add_claim = ROOT 
+		}
+		s:STATE_OMAN = {
+			add_claim = ROOT 
+		}
+		s:STATE_BALUCHISTAN = {
+			add_claim = ROOT 
+		}
+		s:STATE_SINDH = {
+			add_claim = ROOT 
+		}
+		s:STATE_QUETTA = {
+			add_claim = ROOT 
+		}
+		s:STATE_NORTHERN_BALUCHISTAN = {
+			add_claim = ROOT 
+		}
+		s:STATE_KANDAHAR = {
+			add_claim = ROOT 
+		}
+		s:STATE_HERAT = {
+			add_claim = ROOT 
+		}
+		s:STATE_CENTRAL_HIGHLANDS = {
+			add_claim = ROOT 
+		}
+		s:STATE_KABUL = {
+			add_claim = ROOT 
+		}
+		s:STATE_PASHTUNISTAN = {
+			add_claim = ROOT 
+		}
+		s:STATE_BALKH = {
+			add_claim = ROOT 
+		}
+		s:STATE_KHIVA = {
+			add_claim = ROOT 
+		}
+		s:STATE_TURKMENIA = {
+			add_claim = ROOT 
+		}
+		s:STATE_MERZ = {
+			add_claim = ROOT 
+		}
+		s:STATE_KERMAN = {
+			add_claim = ROOT 
+		}
+		s:STATE_UZBEKIA = {
+			add_claim = ROOT 
+		}
+		s:STATE_TAJIKISTAN = {
+			add_claim = ROOT 
+		}
+		s:STATE_KIRGHIZIA = {
+			add_claim = ROOT 
+		}
+		s:STATE_FERGANA = {
+			add_claim = ROOT 
+		}
+		s:STATE_SYRDARYA = {
+			add_claim = ROOT 
+		}
+		s:STATE_JETISY = {
+			add_claim = ROOT 
+		}
+		s:STATE_TIANSHAN = {
+			add_claim = ROOT 
+		}
+		s:STATE_DZUNGARIA = {
+			add_claim = ROOT 
+		}
+	}
+}

@@ -1,0 +1,13 @@
+﻿l_english:
+ ideology_nationalist:0 "Racial Superiority"
+ ideology_nationalist_desc:0 "This group believes that their national culture is superior to the others, and therefore it will resist any attempt to give an equal treatment to people of different ethnicity."
+ ideology_indian:0 "Life in Harmony"
+ ideology_indian_desc:0 "The lives of our ancestors, as well as ours, are based on the complete harmony with the Nature, and this group will resist any attempt to distrupt this harmony."
+ ideology_anarcho_capitalism:0 "Anarcho-Capitalist"
+ ideology_anarcho_capitalism_desc:0 "This leader opposes the state and seek to privatize any useful service the government presently provides, such as education, infrastructure, or the enforcement of law. He sees capitalism and the "free market" as the basis for a free and prosperous society."
+
+ ideology_anarcho_capitalism_ig:0 "Anarcho-Capitalism"
+ ideology_anarcho_capitalism_ig_desc:0 "This group opposes the state and seek to privatize any useful service the government presently provides, such as education, infrastructure, or the enforcement of law. It sees capitalism and the "free market" as the basis for a free and prosperous society."
+ ideology_middle_class:0 "English Middle Class"
+ ideology_middle_class_desc:0 "This group has fought against any form of centralization of the political power for centuries, and it will not stop now."
+ ig_middle_class:0 "English Bourgeoisie"

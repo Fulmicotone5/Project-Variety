@@ -1,0 +1,53 @@
+je_marinid = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	group = je_group_historical_content
+	complete = {
+				owns_entire_state_region = STATE_ANDALUSIA
+				owns_entire_state_region = STATE_GRANADA
+				owns_entire_state_region = STATE_BADAJOZ
+				owns_entire_state_region = STATE_VALENCIA
+				owns_entire_state_region = STATE_TOLEDO
+			}
+	on_complete = {
+		add_modifier = {
+			name = modifier_marinid
+		}
+		hidden_effect = {
+			s:STATE_ANDALUSIA = {
+				add_homeland = cu:berber
+				add_homeland = cu:maghrebi
+			}
+			s:STATE_VALENCIA = {
+				add_homeland = cu:berber
+				add_homeland = cu:maghrebi
+
+			}
+			s:STATE_ARAGON = {
+				add_homeland = cu:berber
+				add_homeland = cu:maghrebi
+
+			}
+			s:STATE_CASTILE = {
+				add_homeland = cu:berber
+				add_homeland = cu:maghrebi
+
+			}
+			s:STATE_GRANADA = {
+				add_homeland = cu:berber
+				add_homeland = cu:maghrebi
+
+			}
+			s:STATE_TOLEDO = {
+				add_homeland = cu:berber
+				add_homeland = cu:maghrebi
+
+			}
+			s:STATE_BADAJOZ = {
+				add_homeland = cu:berber
+				add_homeland = cu:maghrebi
+
+			}
+		}
+	}
+	should_be_pinned_by_default = yes
+}

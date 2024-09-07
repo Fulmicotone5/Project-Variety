@@ -1,0 +1,173 @@
+je_amc_main = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	group = je_group_historical_content
+	immediate = {
+		set_variable = {
+			name = amc_progress
+			value = 0
+		}
+	}
+	scripted_button = je_amc_swu
+	complete = {
+		OR = {
+			scope:journal_entry = {
+				is_goal_complete = yes
+			}
+			c:AMC = {
+				is_subject = no
+			}
+		}
+	}
+	on_complete = {
+		add_journal_entry = {
+			type = je_amc_inde
+		}
+		remove_modifier = diplomatic_plays_blocked
+		remove_variable = amc_progress
+	}
+	on_timeout = {
+		trigger_event = {
+			id = fm_amc.11
+		}
+		hidden_effect = {
+			c:SWU = {
+				trigger_event = {
+					id = fm_swu.5
+				}
+			}
+		}
+		remove_modifier = diplomatic_plays_blocked
+		remove_variable = amc_progress
+	}
+	on_monthly_pulse = {
+		effect = {
+			if = {
+				limit = {
+					any_scope_building = {
+						is_building_type = building_artillery_foundries
+						occupancy > 0.1
+						level >= 1
+					}
+				}
+				change_variable = {
+					name = amc_progress
+					add = 1
+				}
+			}
+			if = {
+				limit = {
+					highest_secession_progress < 0.5
+				}
+				change_variable = {
+					name = amc_progress
+					add = 1
+				}
+			}
+			if = {
+				limit = {
+					army_size >= 40
+				}
+				change_variable = {
+					name = amc_progress
+					add = 1
+				}
+			}
+			if = {
+				limit = {
+					has_law = law_type:law_closed_borders
+				}
+				change_variable = {
+					name = amc_progress
+					add = 1
+				}
+			}
+			if = {
+				limit = {
+					has_law = law_type:law_protectionism
+				}
+				change_variable = {
+					name = amc_progress
+					add = 1
+				}
+			}
+			if = {
+				limit = {
+					has_law = law_type:law_elected_bureaucrats
+				}
+				change_variable = {
+					name = amc_progress
+					add = 1
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						has_law = law_local_police
+						has_law = law_dedicated_police
+					}
+				}
+				change_variable = {
+					name = amc_progress
+					add = 1
+				}
+			}
+			clamp_variable = {
+				name = amc_progress
+				max = 150
+				min = 0
+			}
+		}
+		random_events = {
+			50 = 0
+			30 = fm_amc.5
+			10 = fm_amc.7
+			10 = fm_amc.8
+			10 = fm_amc.9
+			}
+	}
+
+	timeout = 2000
+
+	current_value = {
+		value = root.var:amc_progress
+	}
+	goal_add_value = {
+		value = 150
+	}
+	progressbar = yes
+	weight = 100
+	should_be_pinned_by_default = yes
+}
+
+je_amc_inde = {
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+	group = je_group_historical_content
+
+	timeout = 730
+	scripted_button = je_amc_dec_nd
+
+	complete = {
+		c:AMC = {
+			is_subject = no
+		}
+	}
+	on_complete = {
+		trigger_event = {
+			id = fm_amc.10
+		}
+	}
+	on_timeout = {
+		trigger_event = {
+			id = fm_amc.11
+		}
+		hidden_effect = {
+			c:SWU = {
+				trigger_event = {
+					id = fm_swu.5
+				}
+			}
+		}
+	}
+	weight = 100
+	should_be_pinned_by_default = yes
+}

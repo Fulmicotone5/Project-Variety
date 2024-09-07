@@ -1,0 +1,59 @@
+namespace = fm_occ
+# start event
+fm_occ.1 = {
+	type = country_event
+	placement = ROOT
+	title = fm_occ.1.t
+	desc = fm_occ.1.d
+	flavor = fm_occ.1.f
+	duration = 3
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	option = {
+		name = fm_occ.1.a
+		add_loyalists = {
+			strata = rich
+			value = 0.2
+		}
+		add_loyalists = {
+			strata = middle
+			value = 0.15
+		}
+		add_loyalists = {
+			strata = poor
+			value = 0.1
+		}
+	}
+}
+
+fm_occ.2 = {
+	type = country_event
+	placement = ROOT
+	title = fm_occ.2.t
+	desc = fm_occ.2.d
+	flavor = fm_occ.2.f
+	duration = 3
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	option = {
+		name = fm_occ.2.a
+		add_loyalists = {
+			culture = cu:occitan
+			value = 0.2
+		}
+		s:STATE_PROVENCE = {
+			add_claim = ROOT 
+		}
+		s:STATE_RHONE = {
+			add_claim = ROOT 
+		}
+	}
+}

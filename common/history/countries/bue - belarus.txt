@@ -1,0 +1,28 @@
+COUNTRIES = {
+	c:BYE = {
+		effect_starting_technology_tier_2_tech = yes
+		effect_starting_politics_conservative = yes
+		set_ruling_interest_groups = {
+			ig_landowners
+		}
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_state_religion
+		activate_law = law_type:law_national_supremacy
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_censorship
+		activate_law = law_type:law_per_capita_based_taxation
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_peasant_levies
+		activate_law = law_type:law_serfdom
+		add_journal_entry = {
+			type = je_council_bye
+		}
+		add_modifier = {
+			name = diplomatic_plays_blocked
+		}
+		trigger_event = {
+			id = fm_bye.1
+			days = 200
+		}
+	}
+}

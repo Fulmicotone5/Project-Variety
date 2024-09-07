@@ -1,0 +1,29 @@
+CHARACTERS = {
+	c:BOH ?= {
+		create_character = {
+			first_name = Alexander			# Picks a random first and last name from the culture, combines those together to make one name
+			last_name = Vratislav_z_Mitrovic
+			historical = yes
+			heir = yes
+			female = no
+			ruler = yes
+			is_general = yes 
+			culture = cu:czech
+			religion = rel:protestant
+			dna = dna_mazzini			# Generate random dna from a random ethnicity in the culture				# A random age base on AGE_GENERATION_STARTVAL + ( random_int % ( AGE_GENERATION_DICE_ROLL_MAGNITUDE + 1 ) )
+			interest_group = ig_armed_forces
+			ideology = ideology_royalist
+			birth_date = 1793.3.30
+			commander_rank = default		# commander rank if this character would be a military commander
+			traits = {
+				ambitious
+				meticulous
+				cruel
+				basic_offensive_planner
+			}
+			on_created = {
+				set_variable = is_married
+			}
+		}
+	}
+}

@@ -1,0 +1,195 @@
+je_council_lit = {
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	group = je_group_historical_content
+	complete = {
+		custom_tooltip = {
+			text = fm_lit
+			has_variable = variable_lit_fm
+		}
+	}
+	on_complete = {
+		remove_modifier = diplomatic_plays_blocked
+		hidden_effect = {
+			add_journal_entry = {
+				type = je_lit_req
+			}
+			s:STATE_PSKOV = {
+				add_claim = ROOT
+			}
+			s:STATE_VITEBSK = {
+				add_claim = ROOT
+			}
+			s:STATE_MOGILEV = {
+				add_claim = ROOT
+			}
+			s:STATE_MINSK = {
+				add_claim = ROOT
+			}
+			s:STATE_CHERNIHIV = {
+				add_claim = ROOT
+			}
+			s:STATE_KIEV = {
+				add_claim = ROOT
+			}
+			s:STATE_VOLHYNIA = {
+				add_claim = ROOT
+			}
+			s:STATE_SMOLENSK = {
+				add_claim = ROOT
+			}
+			s:STATE_ORYOL = {
+				add_claim = ROOT
+			}
+			s:STATE_KURSK = {
+				add_claim = ROOT
+			}
+			s:STATE_KHARKOV = {
+				add_claim = ROOT
+			}
+			s:STATE_CHERSON = {
+				add_claim = ROOT
+			}
+			s:STATE_TAURIDA = {
+				add_claim = ROOT
+			}
+		}
+	}
+	transferable = yes
+	weight = 5000
+	should_be_pinned_by_default = yes
+}
+je_lit_req = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	group = je_group_historical_content
+	complete = {
+		owns_entire_state_region = STATE_PSKOV
+		owns_entire_state_region = STATE_VITEBSK
+		owns_entire_state_region = STATE_MOGILEV
+		owns_entire_state_region = STATE_MINSK
+		owns_entire_state_region = STATE_CHERNIHIV
+		owns_entire_state_region = STATE_KIEV
+		owns_entire_state_region = STATE_VOLHYNIA
+		owns_entire_state_region = STATE_SMOLENSK
+		owns_entire_state_region = STATE_ORYOL
+		owns_entire_state_region = STATE_KURSK
+		owns_entire_state_region = STATE_KHARKOV
+		owns_entire_state_region = STATE_CHERSON
+		owns_entire_state_region = STATE_TAURIDA
+	}
+	on_complete = {
+		hidden_effect = {
+			change_tag = GDL
+		}
+		add_primary_culture = cu:byelorussian
+	}
+	transferable = yes
+	weight = 5000
+	should_be_pinned_by_default = yes
+}
+
+je_council_bye = {
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	group = je_group_historical_content
+	complete = {
+		custom_tooltip = {
+			text = fm_lit
+			root = {
+				is_subject = no
+			}
+		}
+	}
+	on_complete = {
+		remove_modifier = diplomatic_plays_blocked
+	}
+	transferable = yes
+	weight = 5000
+	should_be_pinned_by_default = yes
+}
+
+je_council_cos = {
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	group = je_group_historical_content
+	complete = {
+		custom_tooltip = {
+			text = fm_lit
+			root = {
+				is_subject = no
+			}
+		}
+	}
+	on_complete = {
+		remove_modifier = diplomatic_plays_blocked
+	}
+	transferable = yes
+	weight = 5000
+	should_be_pinned_by_default = yes
+}
+
+je_slava_ukr = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	group = je_group_historical_content
+	is_shown_when_inactive = {
+		exists = c:COH
+		c:COH ?= THIS
+	}
+	possible = {
+		has_technology_researched = nationalism
+	}
+	immediate = {
+		s:STATE_EAST_GALICIA = {
+			add_claim = ROOT
+		}
+		s:STATE_VOLHYNIA = {
+			add_claim = ROOT
+		}
+		s:STATE_KIEV = {
+			add_claim = ROOT
+		}
+		s:STATE_BESSARABIA = {
+			add_claim = ROOT
+		}
+		s:STATE_CHERSON = {
+			add_claim = ROOT
+		}
+		s:STATE_KHARKOV = {
+			add_claim = ROOT
+		}
+		s:STATE_TAURIDA = {
+			add_claim = ROOT
+		}
+		s:STATE_CHERNIHIV = {
+			add_claim = ROOT
+		}
+		s:STATE_KURSK = {
+			add_claim = ROOT
+		}
+		s:STATE_ROSTOV = {
+			add_claim = ROOT
+		}
+		s:STATE_CRIMEA = {
+			add_claim = ROOT
+		}
+	}
+	complete = {
+		owns_entire_state_region = STATE_EAST_GALICIA
+		owns_entire_state_region = STATE_VOLHYNIA
+		owns_entire_state_region = STATE_KIEV
+		owns_entire_state_region = STATE_BESSARABIA
+		owns_entire_state_region = STATE_CHERSON
+		owns_entire_state_region = STATE_KHARKOV
+		owns_entire_state_region = STATE_TAURIDA
+		owns_entire_state_region = STATE_CHERNIHIV
+		owns_entire_state_region = STATE_KURSK
+		owns_entire_state_region = STATE_ROSTOV
+		owns_entire_state_region = STATE_CRIMEA
+	}
+	on_complete = {
+		change_tag = UKR
+		trigger_event = {
+			id = fm_coh.2
+		}
+	}
+	transferable = yes
+	weight = 5000
+	should_be_pinned_by_default = yes
+}

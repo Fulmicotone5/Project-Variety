@@ -1,0 +1,54 @@
+namespace = fm_fla
+fm_fla.1 = {
+	type = country_event
+	placement = root
+	title = fm_fla.1.t
+	desc = fm_fla.1.d
+	flavor = fm_fla.1.f
+	duration = 3
+	event_image = {
+		video = "unspecific_world_fair"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+	immediate = {
+		c:BUD = {
+			heir = {
+				save_scope_as = royal_marriage_character
+			}
+		}
+		c:FLA = {
+			ruler = {
+				save_scope_as = fla_ruler
+			}
+		}
+	}
+	option = {
+		name = fm_fla.1.a
+		default_option = yes
+		scope:fla_ruler = {
+			set_variable = is_married
+		}
+		scope:royal_marriage_character = {
+			set_variable = is_married
+		}
+		add_primary_culture = cu:burgundian
+		add_modifier = {
+			# influence mult
+			name = royal_marriage
+			months = normal_modifier_time
+		}
+		add_loyalists = {
+			strata = rich
+			value = 0.2
+		}
+		add_loyalists = {
+			strata = middle
+			value = 0.15
+		}
+		add_loyalists = {
+			strata = poor
+			value = 0.2
+		}
+	}
+}

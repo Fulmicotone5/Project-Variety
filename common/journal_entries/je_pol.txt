@@ -1,0 +1,94 @@
+je_pol = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	group = je_group_historical_content
+	is_shown_when_inactive = {
+		exists = c:PUL
+		c:PUL ?= THIS
+	}
+	possible = {
+		exists = c:PUL
+		c:PUL ?= THIS
+	}
+	timeout = 1000
+	complete = {
+		OR = {
+			AND = {
+				ROOT = {
+					is_in_same_power_bloc = c:LIT
+					is_power_bloc_leader = yes
+				}
+				c:LIT = {
+					relations:ROOT > relations_threshold:cordial
+				}
+			}
+			AND = {
+				c:LIT = {
+					is_subject_of = ROOT
+					relations:ROOT > relations_threshold:cordial
+				}
+			}
+		}
+	}
+	fail = {
+		OR = {
+			NOT = {
+				has_law = law_type:law_monarchy
+			}
+			owns_entire_state_region = STATE_BREST
+			owns_entire_state_region = STATE_VILNIUS
+			owns_entire_state_region = STATE_KAUNAS
+			owns_entire_state_region = STATE_COURLAND
+			owns_entire_state_region = STATE_RIGA
+			custom_tooltip = {
+				text = no_lit
+				NOT = {
+					exists = c:LIT
+				}
+			}
+			c:LIT = {
+				is_ai = no
+			}
+		}
+	}
+	on_complete = {
+		trigger_event = {
+			id = fm_pol.1
+		}
+		change_tag = PLC
+		add_primary_culture = cu:lithuanian
+		hidden_effect = {
+			annex_with_incorporation = c:LIT
+		}
+	}
+	on_fail = {
+		trigger_event = {
+			id = fm_pol.2
+		}
+	}
+	on_timeout = {
+		trigger_event = {
+			id = fm_pol.2
+		}
+	}
+	should_be_pinned_by_default = yes
+}
+je_zapa = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	group = je_group_historical_content
+	complete = {
+		owns_entire_state_region = STATE_BOHEMIA
+		owns_entire_state_region = STATE_MORAVIA
+		owns_entire_state_region = STATE_WEST_SLOVAKIA
+		owns_entire_state_region = STATE_EAST_SLOVAKIA
+		owns_entire_state_region = STATE_POSEN
+		owns_entire_state_region = STATE_EAST_PRUSSIA
+		owns_entire_state_region = STATE_WEST_PRUSSIA
+		owns_entire_state_region = STATE_SILESIA
+	}
+	on_complete = {
+		change_tag = ZAP
+		trigger_event = {
+			id = fm_pol.3
+		}
+	}
+}

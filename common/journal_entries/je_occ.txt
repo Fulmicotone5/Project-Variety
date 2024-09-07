@@ -1,0 +1,64 @@
+je_occ_tou = {
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	group = je_group_historical_content
+	scripted_button = je_bribe_pope
+	scripted_button = je_ann_acq
+	complete = {
+		custom_tooltip = {
+			text = occ_found
+			has_variable = tutt_cos
+		}
+	}
+	on_complete = {
+		trigger_event = {
+			id = fm_occ.1
+		}
+		add_journal_entry = {
+			type = je_occ_main
+		}
+	}
+	weight = 100
+	should_be_pinned_by_default = yes
+}
+
+je_occ_acq = {
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	group = je_group_historical_content
+	scripted_button = je_bribe_pope
+	scripted_button = je_ann_tou
+	complete = {
+		custom_tooltip = {
+			text = occ_found
+			has_variable = tutt_cos
+		}
+	}
+	on_complete = {
+		trigger_event = {
+			id = fm_occ.1
+		}
+		add_journal_entry = {
+			type = je_occ_main
+		}
+	}
+	weight = 100
+	should_be_pinned_by_default = yes
+}
+
+je_occ_main = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	group = je_group_historical_content
+	scripted_button = je_bourb
+	scripted_button = je_inde
+	complete = {
+		root = {
+			is_subject = no
+		}
+	}
+	on_complete = {
+		trigger_event = {
+			id = fm_occ.2
+		}
+	}
+	weight = 100
+	should_be_pinned_by_default = yes
+}

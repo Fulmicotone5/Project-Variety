@@ -1,0 +1,108 @@
+je_grv_VNA = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	group = je_group_historical_content
+	is_shown_when_inactive = {
+		exists = c:VNA
+		c:VNA ?= THIS
+	}
+
+	possible = {
+		has_technology_researched = nationalism
+	}
+	immediate = {
+		trigger_event = {
+			id = fm_vna.1
+		}
+	}
+	timeout = 3650
+	complete = {
+		owns_entire_state_region = STATE_BAHAMAS
+		owns_entire_state_region = STATE_PUERTO_RICO
+		OR = {
+			AND = {
+				owns_entire_state_region = STATE_FLORIDA
+				custom_tooltip = {
+					text = no_ex_flo
+					NOT = {
+						exists = c:FLU
+					}
+				}
+			}
+			c:FLU = {
+				is_subject_of = ROOT
+				relations:ROOT > relations_threshold:cordial
+			}
+		}
+	}
+	on_complete = {
+		if = {
+			limit = {
+				c:FLU = {
+					is_subject_of = ROOT
+				}
+			}
+			annex_with_incorporation = c:FLU
+		}
+		change_tag = GRV
+		trigger_event = {
+			id = fm_vna.2
+		}
+	}
+	weight = 100
+	should_be_pinned_by_default = yes
+}
+
+je_grv_FLU = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	group = je_group_historical_content
+	is_shown_when_inactive = {
+		exists = c:FLU
+		c:FLU ?= THIS
+	}
+
+	possible = {
+		has_technology_researched = nationalism
+	}
+	immediate = {
+		trigger_event = {
+			id = fm_flu.1
+		}
+	}
+	timeout = 3650
+	complete = {
+		owns_entire_state_region = STATE_BAHAMAS
+		owns_entire_state_region = STATE_PUERTO_RICO
+		OR = {
+			AND = {
+				owns_entire_state_region = STATE_MIRANDA
+				owns_entire_state_region = STATE_BOLIVAR
+				custom_tooltip = {
+					text = no_ex_vna
+					NOT = {
+						exists = c:VNA
+					}
+				}
+			}
+			c:VNA = {
+				is_subject_of = ROOT
+				relations:ROOT > relations_threshold:cordial
+			}
+		}
+	}
+	on_complete = {
+		if = {
+			limit = {
+				c:VNA = {
+					is_subject_of = ROOT
+				}
+			}
+			annex_with_incorporation = c:VNA
+		}
+		change_tag = GRV
+		trigger_event = {
+			id = fm_flu.4
+		}
+	}
+	weight = 100
+	should_be_pinned_by_default = yes
+}

@@ -1,0 +1,154 @@
+namespace = fm_pol
+fm_pol.1 = {
+	type = country_event
+	placement = ROOT
+	title = fm_pol.1.t
+	desc = fm_pol.1.d
+	flavor = fm_pol.1.f
+	duration = 3
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	trigger = {
+	}
+	option = {
+		default_option = yes
+		name = fm_pol.1.a
+		s:STATE_POSEN = {
+			add_claim = ROOT
+		}
+		s:STATE_VOLHYNIA = {
+			add_claim = ROOT
+		}
+		s:STATE_MINSK = {
+			add_claim = ROOT
+		}
+		s:STATE_MOGILEV = {
+			add_claim = ROOT
+		}
+		s:STATE_VITEBSK = {
+			add_claim = ROOT
+		}
+		s:STATE_PSKOV = {
+			add_claim = ROOT
+		}
+		s:STATE_TARTU = {
+			add_claim = ROOT
+		}
+		s:STATE_TALINN = {
+			add_claim = ROOT
+		}
+		s:STATE_KIEV = {
+			add_claim = ROOT
+		}
+		s:STATE_WEST_PRUSSIA = {
+			add_claim = ROOT
+		}
+		s:STATE_EAST_PRUSSIA = {
+			add_claim = ROOT
+		}
+		s:STATE_CHERSON = {
+			add_claim = ROOT
+		}
+		s:STATE_CHERNIHIV = {
+			add_claim = ROOT
+		}
+		s:STATE_KHARKOV = {
+			add_claim = ROOT
+		}
+		s:STATE_TAURIDA = {
+			add_claim = ROOT
+		}
+	}
+}
+
+fm_pol.2 = {
+	type = country_event
+	placement = ROOT
+	title = fm_pol.2.t
+	desc = fm_pol.2.d
+	flavor = fm_pol.2.f
+	duration = 3
+	event_image = {
+		video = "europenorthamerica_political_extremism"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	immediate = {
+		activate_law = law_type:law_parliamentary_republic
+		activate_law = law_type:law_wealth_voting
+	}
+	option = {
+		default_option = yes
+		name = fm_pol.2.a
+		add_loyalists = {
+			value = 0.25
+			culture = cu:polish
+		}
+		add_journal_entry = {
+			type = je_zapa
+		}
+		s:STATE_POSEN = {
+			add_claim = ROOT
+		}
+		s:STATE_EAST_PRUSSIA  = {
+			add_claim = ROOT
+		}
+		s:STATE_WEST_PRUSSIA = {
+			add_claim = ROOT
+		}
+		s:STATE_SILESIA = {
+			add_claim = ROOT
+		}
+		s:STATE_BOHEMIA = {
+			add_claim = ROOT
+		}
+		s:STATE_MORAVIA = {
+			add_claim = ROOT
+		}
+		s:STATE_WEST_SLOVAKIA = {
+			add_claim = ROOT
+		}
+		s:STATE_EAST_SLOVAKIA = {
+			add_claim = ROOT
+		}
+	}
+}
+
+fm_pol.3 = {
+	type = country_event
+	placement = ROOT
+	title = fm_pol.3.t
+	desc = fm_pol.3.d
+	flavor = fm_pol.3.f
+	duration = 3
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	immediate = {
+		activate_law = law_type:law_parliamentary_republic
+		activate_law = law_type:law_wealth_voting
+	}
+	option = {
+		default_option = yes
+		name = fm_pol.3.a
+		add_primary_culture = cu:czech
+		add_primary_culture = cu:slovak
+		add_loyalists = {
+			strata = rich
+			value = 0.25
+		}
+		add_loyalists = {
+			strata = middle
+			value = 0.2
+		}
+		add_loyalists = {
+			strata = poor
+			value = 0.15
+		}
+	}
+}

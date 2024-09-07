@@ -1,0 +1,40 @@
+COUNTRIES = {
+	c:HAU = {
+		set_next_election_date = 1836.12.7
+
+		set_tax_level = low
+		
+		effect_starting_technology_tier_1_tech = yes
+		
+		set_market_capital = STATE_SANTA_FE
+		
+		effect_starting_politics_liberal = yes
+		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_racial_segregation
+		activate_law = law_type:law_protectionism
+		activate_law = law_type:law_agrarianism
+		activate_law = law_type:law_frontier_colonization
+		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_no_workers_rights
+		activate_law = law_type:law_per_capita_based_taxation
+		activate_law = law_type:law_national_militia
+		activate_law = law_type:law_no_womens_rights 
+		activate_law = law_type:law_state_religion
+		activate_law = law_type:law_landed_voting
+		
+		set_institution_investment_level = {
+			institution = institution_colonial_affairs
+			level = 2
+		}
+		
+		set_institution_investment_level = {
+			institution = institution_schools
+			level = 2
+		}
+		ig:ig_rural_folk = {
+			add_ruling_interest_group = yes
+		}
+		
+	}
+}

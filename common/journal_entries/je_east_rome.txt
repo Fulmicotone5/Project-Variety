@@ -1,0 +1,157 @@
+je_east_rome = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	group = je_group_historical_content
+
+	immediate = {
+		ig:ig_devout = {
+			leader = {
+				set_ideology = ideology:ideology_abolitionist
+			}
+		}
+		ig:ig_armed_forces = {
+			leader = {
+				set_ideology = ideology:ideology_abolitionist
+			}
+		}
+	}
+	timeout = 3000
+	on_timeout = {
+		hidden_effect = {
+			trigger_event = {
+				id = fm_east_rome.2
+			}
+		}
+		remove_modifier = modifier_eastrome_one
+	}
+	complete = {
+		has_law = law_type:law_racial_segregation
+		NOT = {
+			has_law = law_type:law_serfdom
+		}
+	}
+	on_complete = {
+		change_tag = BYZ
+		add_primary_culture = cu:greek
+		remove_modifier = modifier_eastrome_one
+		hidden_effect = {
+			trigger_event = {
+				id = fm_east_rome.3
+			}
+		}
+	}
+	fail = {
+		OR = {
+			any_scope_state = {
+					owner = ROOT
+					turmoil >= 0.45
+			}
+			NOT = {
+				has_law = law_type:law_monarchy
+			}
+		}
+	}
+	on_fail = {
+		change_tag = GRE
+		add_primary_culture = cu:greek
+		remove_primary_culture = cu:greco_roman
+		hidden_effect = {
+			activate_law = law_type:law_parliamentary_republic
+			activate_law = law_type:law_wealth_voting
+			activate_law = law_type:law_homesteading
+		}
+		remove_modifier = modifier_eastrome_one
+		hidden_effect = {
+			trigger_event = {
+				id = fm_east_rome.4
+			}
+		}
+	}
+	weight = 100
+	should_be_pinned_by_default = yes
+}
+
+je_east_rome_ott = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	group = je_group_historical_content
+
+	complete = {
+		owns_entire_state_region = STATE_HUDAVENDIGAR
+		owns_entire_state_region = STATE_AYDIN
+		owns_entire_state_region = STATE_KONYA
+		owns_entire_state_region = STATE_KASTAMONU
+		owns_entire_state_region = STATE_ANKARA
+		owns_entire_state_region = STATE_TRABZON
+		owns_entire_state_region = STATE_ERZURUM
+		owns_entire_state_region = STATE_DIYARBAKIR
+		owns_entire_state_region = STATE_EAST_AEGEAN_ISLANDS
+		custom_tooltip = {
+			text = je_ott_fall_ro
+			NOT = {
+				exists = c:TOR
+			}
+		}
+	}
+	on_complete = {
+		trigger_event = {
+			id = fm_east_rome.5
+		}
+	}
+	should_be_pinned_by_default = yes
+}
+
+je_anatolia_int = {
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	group = je_group_historical_content
+	scripted_button = je_anatolia_depo
+	scripted_button = je_anatolia_int_rel
+	scripted_button = je_anatolia_int_erz
+
+	timeout = 365
+
+	complete = {
+		s:STATE_ADANA = {
+			is_homeland = cu:greco_roman
+		}
+		s:STATE_DIYARBAKIR = {
+			is_homeland = cu:greco_roman
+		}
+	}
+	on_complete = {
+		add_modifier = {
+			name = modifier_eastrome_two
+			months = long_modifier_time
+			is_decaying = yes
+		}
+		hidden_effect = {
+			s:STATE_HUDAVENDIGAR = {
+				remove_homeland = cu:turkish
+				add_homeland = cu:greek
+			}
+			s:STATE_AYDIN = {
+				remove_homeland = cu:turkish
+				add_homeland = cu:greek
+			}
+			s:STATE_KONYA = {
+				remove_homeland = cu:turkish
+				add_homeland = cu:greek
+			}
+			s:STATE_KASTAMONU = {
+				remove_homeland = cu:turkish
+				add_homeland = cu:greek
+			}
+			s:STATE_ANKARA = {
+				remove_homeland = cu:turkish
+				add_homeland = cu:greek
+			}
+			s:STATE_TRABZON = {
+				remove_homeland = cu:turkish
+				add_homeland = cu:greek
+			}
+			s:STATE_EAST_AEGEAN_ISLANDS = {
+				remove_homeland = cu:turkish
+				add_homeland = cu:greek
+			}
+		}
+	}
+	should_be_pinned_by_default = yes
+}

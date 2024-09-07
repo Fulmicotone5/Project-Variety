@@ -1,0 +1,153 @@
+namespace = fm_pom
+# start event
+fm_pom.1 = {
+	type = country_event
+	placement = ROOT
+	title = fm_pom.1.t
+	desc = fm_pom.1.d
+	flavor = fm_pom.1.f
+	duration = 3
+	event_image = {
+		video = "europenorthamerica_london_center"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	option = {
+		name = fm_pom.1.a
+	}
+}
+
+fm_pom.2 = {
+	# to germania
+	type = country_event
+	placement = ROOT
+	title = fm_pom.2.t
+	desc = fm_pom.2.d
+	flavor = fm_pom.2.f
+	duration = 3
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	trigger = {
+	}
+	option = {
+		default_option = yes
+		name = fm_pom.2.a
+		s:STATE_BRANDENBURG = {
+			add_claim = ROOT
+		}
+		s:STATE_ANHALT = {
+			add_claim = ROOT
+		}
+		s:STATE_SILESIA = {
+			add_claim = ROOT
+		}
+		s:STATE_POMERANIA = {
+			add_claim = ROOT
+		}
+		s:STATE_SAXONY = {
+			add_claim = ROOT
+		}
+		s:STATE_MECKLENBURG = {
+			add_claim = ROOT
+		}
+	}
+}
+
+fm_pom.3 = {
+	# the next step
+	type = country_event
+	placement = ROOT
+	title = fm_pom.3.t
+	desc = fm_pom.3.d
+	flavor = fm_pom.3.f
+	duration = 3
+	event_image = {
+		video = "votp_monarch_holding_court"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	trigger = {
+	}
+	option = {
+		name = fm_pom.3.a
+		default_option = yes
+		add_journal_entry = {
+			type = je_ngf_pum
+		}
+		s:STATE_SCHLESWIG_HOLSTEIN = {
+			add_claim = ROOT
+		}
+		s:STATE_ELBE = {
+			add_claim = ROOT
+		}
+		s:STATE_HANNOVER = {
+			add_claim = ROOT
+		}
+		s:STATE_WESTPHALIA = {
+			add_claim = ROOT
+		}
+		s:STATE_HESSE = {
+			add_claim = ROOT
+		}
+		s:STATE_RUHR = {
+			add_claim = ROOT
+		}
+		s:STATE_NORTH_RHINE = {
+			add_claim = ROOT
+		}
+		s:STATE_RHINELAND = {
+			add_claim = ROOT
+		}
+		s:STATE_BRUNSWICK = {
+			add_claim = ROOT
+		}
+		s:STATE_SILESIA = {
+			add_claim = ROOT
+		}
+	}
+}
+
+fm_pom.4 = {
+	# NGF
+	type = country_event
+	placement = ROOT
+	title = fm_pom.4.t
+	desc = fm_pom.4.d
+	flavor = fm_pom.4.f
+	duration = 3
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	trigger = {
+	}
+	option = {
+		name = fm_pom.4.a
+		default_option = yes
+		add_loyalists = {
+			value = very_large_radicals
+			pop_type = academics
+		}
+		add_loyalists = {
+			value = large_radicals
+			strata = middle
+		}
+		add_loyalists = {
+			value = large_radicals
+			strata = poor
+		}
+		add_modifier = {
+			name = modifier_loth_twelwe
+			months = long_modifier_time
+			is_decaying = yes
+		}
+		set_variable = {
+			name = pomvar
+		}
+	}
+}

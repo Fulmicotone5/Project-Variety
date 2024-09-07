@@ -1,0 +1,437 @@
+﻿revive_the_roman_empire = {
+	is_shown = {
+		OR = {
+			country_has_primary_culture = cu:south_roman
+			country_has_primary_culture = cu:greco_roman
+		}
+		NOT = {
+			has_variable = rome_formed
+		}
+	}
+	possible = {
+		owns_entire_state_region = STATE_LAZIO
+		owns_entire_state_region = STATE_EASTERN_THRACE
+		owns_entire_state_region = STATE_PALESTINE
+		owns_entire_state_region = STATE_LOWER_EGYPT
+		owns_entire_state_region = STATE_MATRUH
+		any_scope_state = {
+			count >= 13
+			AND = {
+				region = sr:region_balkans
+				owner = ROOT
+			}
+		}
+		any_scope_state = {
+			count >= 7
+			AND = {
+				region = sr:region_anatolia
+				owner = ROOT
+			}
+		}
+		
+		any_scope_state = {
+			count >= 9
+			AND = {
+				region = sr:region_italy
+				owner = ROOT
+			}
+		}
+		any_scope_state = {
+			count >= 4
+			AND = {
+				region = sr:region_north_africa
+				owner = ROOT
+			}
+		}
+		has_law = law_type:law_monarchy
+		OR = {
+			has_law = law_type:law_autocracy
+			has_law = law_type:law_oligarchy
+		}
+		has_technology_researched = pan-nationalism
+	}
+	when_taken = {
+		change_tag = RMP
+		add_primary_culture = cu:greek
+		add_primary_culture = cu:south_roman
+		add_primary_culture = cu:greco_roman
+		add_primary_culture = cu:albanian
+		add_primary_culture = cu:serb
+		add_primary_culture = cu:bulgarian
+		add_primary_culture = cu:croat
+		add_primary_culture = cu:bosniak
+		set_variable = {
+			name = rome_formed
+		}
+	}
+	ai_chance = {
+		base = 100
+	}
+}
+
+revive_the_carolingian_empire = {
+	is_shown = {
+		exists = c:LOT
+		c:LOT ?= THIS
+		NOT = {
+			has_variable = cerol_formed
+		}
+	}
+	possible = {
+		has_law = law_type:law_monarchy
+		OR = {
+			has_law = law_type:law_autocracy
+			has_law = law_type:law_oligarchy
+		}
+		has_technology_researched = pan-nationalism
+		owns_entire_state_region = STATE_LAZIO
+		owns_entire_state_region = STATE_ILE_DE_FRANCE
+		owns_entire_state_region = STATE_HESSE
+		owns_entire_state_region = STATE_BAVARIA
+		any_scope_state = {
+			count >= 8
+			AND = {
+				region = sr:region_north_germany
+				owner = ROOT
+			}
+		}
+		any_scope_state = {
+			count >= 9
+			AND = {
+				region = sr:region_south_germany
+				owner = ROOT
+			}
+		}
+		any_scope_state = {
+			count >= 6
+			AND = {
+				region = sr:region_rhine
+				owner = ROOT
+			}
+		}
+		any_scope_state = {
+			count >= 10
+			AND = {
+				region = sr:region_france
+				owner = ROOT
+			}
+		}
+		any_scope_state = {
+			count >= 9
+			AND = {
+				region = sr:region_italy
+				owner = ROOT
+			}
+		}
+		any_scope_state = {
+			count >= 6
+			AND = {
+				region = sr:region_occitania
+				owner = ROOT
+			}
+		}
+	}
+	when_taken = {
+		change_tag = URA
+		add_primary_culture = cu:burgundian
+		add_primary_culture = cu:south_german
+		add_primary_culture = cu:french
+		set_variable = {
+			name = cerol_formed
+		}
+	}
+	ai_chance = {
+		base = 100
+	}
+}
+
+RUI_six_decision = {
+	is_shown = {
+		exist = c:RUI
+		c:RUI ?= THIS
+		NOT = {
+			has_variable = irk_rep
+		}
+	}
+	when_taken = {
+		add_journal_entry = {
+			type = je_irk_rep
+		}
+		set_variable = {
+			name = irk_rep
+			value = 0
+		}
+		add_modifier = {
+			name = modifier_rui_eight
+		}
+	}
+	ai_chance = {
+		base = 100
+	}
+}
+
+RUI_five_decision = {
+	is_shown = {
+		exist = c:RUI
+		c:RUI ?= THIS
+		NOT = {
+			has_variable = tomsk_rep
+		}
+	}
+	when_taken = {
+		add_journal_entry = {
+			type = je_tomsk_rep
+		}
+		set_variable = {
+			name = tomsk_rep
+			value = 0
+		}
+		add_modifier = {
+			name = modifier_rui_seven
+		}
+	}
+	ai_chance = {
+		base = 100
+	}
+}
+
+RUI_four_decision = {
+	is_shown = {
+		exist = c:RUI
+		c:RUI ?= THIS
+		NOT = {
+			has_variable = tob_rep
+		}
+	}
+	when_taken = {
+		add_journal_entry = {
+			type = je_tobolsk_rep
+		}
+		set_variable = {
+			name = tob_rep
+			value = 0
+		}
+		add_modifier = {
+			name = modifier_rui_six
+		}
+	}
+	ai_chance = {
+		base = 100
+	}
+}
+
+RUI_one_decision = {
+	is_shown = {
+		exist = c:RUI
+		c:RUI ?= THIS
+		NOT = {
+			has_variable = ural_rep
+		}
+	}
+	when_taken = {
+		add_journal_entry = {
+			type = je_ural_rep
+		}
+		set_variable = {
+			name = ural_rep
+			value = 0
+		}
+		add_modifier = {
+			name = modifier_rui_three
+		}
+	}
+	ai_chance = {
+		base = 100
+	}
+}
+
+RUI_two_decision = {
+	is_shown = {
+		exist = c:RUI
+		c:RUI ?= THIS
+		NOT = {
+			has_variable = mil_esp
+		}
+	}
+	when_taken = {
+		add_journal_entry = {
+			type = je_mis_mil
+		}
+		set_variable = {
+			name = mil_esp
+			value = 0
+		}
+		add_modifier = {
+			name = modifier_rui_four
+		}
+	}
+	ai_chance = {
+		base = 100
+	}
+}
+
+RUI_three_decision = {
+	is_shown = {
+		exist = c:RUI
+		c:RUI ?= THIS
+		NOT = {
+			has_variable = ind_esp
+		}
+	}
+	when_taken = {
+		add_journal_entry = {
+			type = je_mis_ind
+		}
+		set_variable = {
+			name = ind_esp
+			value = 0
+		}
+		add_modifier = {
+			name = modifier_rui_five
+		}
+	}
+	ai_chance = {
+		base = 100
+	}
+}
+
+YUA_decision = {
+	is_shown = {
+		exist = c:YUA
+		c:YUA ?= THIS
+		NOT = {
+			has_variable = exp_yua
+		}
+	}
+	when_taken = {
+		set_variable = {
+			name = exp_yua
+			value = 0
+		}
+		add_modifier = {
+			name = modifier_yua_exp
+		}
+	}
+	ai_chance = {
+		base = 0
+	}
+}
+
+YUA_decision_two = {
+	is_shown = {
+		exist = c:YUA
+		c:YUA ?= THIS
+		has_variable = exp_yua
+	}
+	when_taken = {
+		remove_variable = exp_yua
+		remove_modifier = modifier_yua_exp
+	}
+	ai_chance = {
+		base = 100
+	}
+}
+
+YUA_decision_three = {
+	is_shown = {
+		has_modifier = modifier_yua_int
+	}
+	when_taken = {
+		remove_modifier = modifier_yua_int
+	}
+	ai_chance = {
+		base = 0
+	}
+}
+
+YUA_decision_four = {
+	is_shown = {
+		has_variable = yua_prot
+	}
+	when_taken = {
+		add_modifier = {
+			name = modifier_yua_three
+			months = 4
+		}
+		remove_variable = yua_prot
+		hidden_effect = {
+			c:KOR = {
+				trigger_event = {
+					id = fm_yua.10
+					days = 60
+				}
+			}
+		}
+	}
+	ai_chance = {
+		base = 100
+	}
+}
+
+KOR_decision_one = {
+	is_shown = {
+		exist = c:KOR
+		c:KOR ?= THIS
+		NOT = {
+			has_variable = fm_kor_aband
+		}
+	}
+	when_taken = {
+		add_modifier = {
+			name = modifier_kor_two
+			months = 12
+		}
+		set_variable = {
+			name = fm_kor_aband
+			value = 0
+		}
+		hidden_effect = {
+			trigger_event = {
+				id = fm_kor.3
+				days = 365
+			}
+			c:NED = {
+				trigger_event = {
+					id = fm_kor.4
+					days = 90
+				}
+			}
+		}
+	}
+	ai_chance = {
+		base = 100
+	}
+}
+
+KOR_decision_two = {
+	is_shown = {
+		exist = c:KOR
+		c:KOR ?= THIS
+		game_date >= 1840.9.8
+		NOT = {
+			has_variable = fm_kor_deccor
+		}
+		NOT = {
+			has_variable = fm_kor_coup
+		}
+	}
+	when_taken = {
+		add_modifier = {
+			name = modifier_kor_three
+			months = 12
+		}
+		set_variable = {
+			name = fm_kor_deccor
+			value = 0
+		}
+		hidden_effect = {
+			trigger_event = {
+				id = fm_kor.6
+				days = 365
+			}
+		}
+	}
+	ai_chance = {
+		base = 100
+	}
+}

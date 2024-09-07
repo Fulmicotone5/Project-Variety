@@ -1,0 +1,89 @@
+
+default_building_olive_plantation = {
+	texture = "gfx/interface/icons/production_method_icons/plantation_production.dds"
+
+	building_modifiers = {
+		workforce_scaled = {
+			# output goods
+			goods_output_olive_add = 20
+		}
+
+		level_scaled = {
+			# profit
+			building_employment_laborers_add = 4000
+			building_employment_farmers_add = 1000
+		}
+	}
+}
+automatic_irrigation_building_olive_plantation = {
+	texture = "gfx/interface/icons/production_method_icons/automatic_irrigation.dds"
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 5
+		}
+	}
+		
+	unlocking_technologies = {
+		pumpjacks
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# output goods
+			goods_input_engines_add = 5
+			goods_output_olive_add = 40
+		}
+
+		level_scaled = {
+			# profit
+			building_employment_laborers_add = 3000
+			building_employment_farmers_add = 1500
+			building_employment_machinists_add = 500
+		}
+	}
+}
+default_building_spice_plantation = {
+	texture = "gfx/interface/icons/production_method_icons/plantation_production.dds"
+
+	building_modifiers = {
+		workforce_scaled = {
+			# output goods
+			goods_output_spice_add = 20
+		}
+
+		level_scaled = {
+			# profit
+			building_employment_laborers_add = 4000
+			building_employment_farmers_add = 1000
+		}
+	}
+}
+automatic_irrigation_building_spice_plantation = {
+	texture = "gfx/interface/icons/production_method_icons/automatic_irrigation.dds"
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 5
+		}
+	}
+		
+	unlocking_technologies = {
+		pumpjacks
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# output goods
+			goods_input_engines_add = 5
+			goods_output_spice_add = 40
+		}
+
+		level_scaled = {
+			# profit
+			building_employment_laborers_add = 3000
+			building_employment_farmers_add = 1500
+			building_employment_machinists_add = 500
+		}
+	}
+}

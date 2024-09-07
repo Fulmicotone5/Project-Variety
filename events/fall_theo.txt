@@ -1,0 +1,35 @@
+
+namespace = fall_theo
+fall_theo.1 = {
+	type = country_event
+	placement = ROOT
+	title = fall_theocracy.1.t
+	desc = fall_theocracy.1.d
+	flavor = fall_theocracy.1.f
+	duration = 3
+	event_image = {
+		video = "europenorthamerica_political_extremism"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	trigger = {
+	}
+	option = {
+		default_option = yes
+		name = fall_theocracy.1.a
+		change_tag = PRO
+		every_interest_group = {
+			limit = {
+				is_interest_group_type = ig_devout
+			}
+			add_modifier = {
+				name = modifier_loth_two
+				months = long_modifier_time
+				is_decaying = yes
+			}
+		}
+		trigger_event = {
+			id = lotharingia.12
+		}
+	}
+}

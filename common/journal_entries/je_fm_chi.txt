@@ -1,0 +1,80 @@
+je_chi_wu = {
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	group = je_group_historical_content
+	is_shown_when_inactive = {
+		exist = c:KWO
+		c:KWO ?= THIS
+	}
+	scripted_button = je_chi_button_wu
+	scripted_button = je_chi_button_hubei
+	scripted_button = je_chi_button_ss
+	scripted_button = je_chi_button_ns
+	scripted_button = je_chi_button_scp
+	scripted_button = je_chi_button_ncp
+	scripted_button = je_chi_button_beij
+	scripted_button = je_chi_button_plat
+	possible = {
+		has_technology_researched = standing_army
+	}
+	complete = {
+		custom_tooltip = {
+			text = chi_uni_tex
+			exists = c:CHU
+		}
+	}
+	weight = 100
+	should_be_pinned_by_default = yes
+}
+je_chi_shu = {
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	group = je_group_historical_content
+	is_shown_when_inactive = {
+		exist = c:SHU
+		c:SHU ?= THIS
+	}
+	scripted_button = je_chi_button_hubei
+	scripted_button = je_chi_button_sc
+	scripted_button = je_chi_button_shir
+	scripted_button = je_chi_button_shsr
+	scripted_button = je_chi_button_scp
+	scripted_button = je_chi_button_ncp
+	scripted_button = je_chi_button_beij
+	scripted_button = je_chi_button_plat
+	possible = {
+		has_technology_researched = standing_army
+	}
+	complete = {
+		custom_tooltip = {
+			text = chi_uni_tex
+			exists = c:CHU
+		}
+	}
+	weight = 100
+	should_be_pinned_by_default = yes
+}
+je_chi_wei = {
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	group = je_group_historical_content
+	is_shown_when_inactive = {
+		exist = c:WER
+		c:WER ?= THIS
+	}
+	scripted_button = je_chi_button_wei
+	scripted_button = je_chi_button_hubei 
+	scripted_button = je_chi_button_ns
+	scripted_button = je_chi_button_ss
+	scripted_button = je_chi_button_shsr
+	scripted_button = je_chi_button_shir
+	scripted_button = je_chi_button_sc
+	possible = {
+		has_technology_researched = standing_army
+	}
+	complete = {
+		custom_tooltip = {
+			text = chi_uni_tex
+			exists = c:CHU
+		}
+	}
+	weight = 100
+	should_be_pinned_by_default = yes
+}

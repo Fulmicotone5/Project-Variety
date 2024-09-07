@@ -1,0 +1,214 @@
+﻿MILITARY_FORMATIONS = {
+	c:AMC = {
+
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_new_england
+			name = "New Holland Army"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_NEW_YORK
+				count = 5
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				service_type = conscript
+				state_region = s:STATE_NEW_YORK
+				count = 15
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_PENNSYLVANIA
+				count = 5
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				service_type = conscript
+				state_region = s:STATE_PENNSYLVANIA
+				count = 15
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_MASSACHUSETTS
+				count = 5
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_mobile_artillery
+				state_region = s:STATE_MAINE
+				count = 5
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_mobile_artillery
+				state_region = s:STATE_RHODE_ISLAND
+				count = 5
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_mobile_artillery
+				state_region = s:STATE_VERMONT
+				count = 5
+			}
+		}
+
+		create_military_formation = {
+			type = fleet
+			hq_region = sr:region_new_england
+			name = "Navy Yard, New Holland"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_man_o_war
+				state_region = s:STATE_NEW_YORK
+				count = 5
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigate
+				state_region = s:STATE_NEW_YORK
+				count = 5
+			}
+		}
+
+		create_military_formation = {
+			type = fleet
+			hq_region = sr:region_new_england
+			name = "Navy Yard, Oranje"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_man_o_war
+				state_region = s:STATE_MASSACHUSETTS
+				count = 3
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigate
+				state_region = s:STATE_MASSACHUSETTS
+				count = 3
+			}
+		}
+	}
+
+	c:UCA = {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_central_america
+			name = "American Army"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_GUATEMALA
+				count = 20
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_HONDURAS
+				count = 20
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_hussars
+				state_region = s:STATE_NICARAGUA
+				count = 25
+			}
+		}
+	}
+	c:DKT = {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_great_plains
+			name = "Defence Army"
+
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_SOUTH_DAKOTA
+				count = 20
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_hussars
+				state_region = s:STATE_MINNESOTA
+				count = 20
+			}
+		}
+	}
+	c:MAX = {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_mexico
+			name = "Ejército Mexicano"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_RIO_GRANDE
+				count = 20
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_CHIHUAHUA
+				count = 10
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_hussars
+				state_region = s:STATE_DURANGO
+				count = 15
+			}
+			save_scope_as = mexican_army
+		}
+		create_character = {
+			# General Santa Anna, caudillo supreme
+			first_name = Antonio
+			last_name = Lopez_de_Santa_Anna
+			historical = yes
+			birth_date = 1794.2.21
+			dna = dna_antonio_lopez
+			hq = region_mexico
+			ig_leader = yes # Both general and IG leader
+			is_general = yes # Both general and IG leader
+			interest_group = ig_armed_forces
+			ideology = ideology_moderate
+			commander_rank = commander_rank_2
+			traits = {
+				ambitious
+			}
+			on_created = {
+				set_variable = {
+					name = is_santa_anna
+				}				
+			}
+			save_scope_as = antonio_gen
+		}
+
+		scope:antonio_gen = {
+			transfer_to_formation = scope:mexican_army
+		}
+
+		create_military_formation = {
+			type = fleet
+			hq_region = sr:region_mexico
+			name = "Armada de México"
+
+			combat_unit = { # Libertad
+				type = unit_type:combat_unit_type_frigate
+				state_region = s:STATE_RIO_GRANDE
+				count = 10
+			}
+		}
+	}
+	c:FOU = {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_dixie
+			name = "Four Colonies Army"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_NORTH_CAROLINA
+				count = 20
+			}
+		}
+	}
+}

@@ -1,0 +1,101 @@
+namespace = fm_fru_oc
+fm_fru_oc.1 = {
+	type = country_event
+	placement = ROOT
+	title = fm_fru_oc.1.t
+	desc = fm_fru_oc.1.d
+	flavor = fm_fru_oc.1.f
+	duration = 3
+	event_image = {
+		video = "europenorthamerica_before_the_battle"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	option = {
+		name = fm_fru_oc.1.a
+		default_option = yes
+		create_diplomatic_play = {
+			target_country = c:OCC
+			war = yes
+			type = dp_annex_subject
+			add_initiator_backers = {
+				c:ORL
+			}
+			add_initiator_backers = {
+				c:BOU
+			}
+			add_war_goal = {
+				holder = c:OCC
+				type = independence
+				target_country = C:FRU
+			}
+		}
+		c:OCC = {
+			remove_variable = je_inde_occ
+		}
+	}
+	option = {
+		name = fm_fru_oc.1.b
+		default_option = yes
+		c:OCC = {
+			make_independent = yes
+		}
+		change_relations = {
+			country = c:OCC
+			value = 50
+		}
+		add_radicals = {
+			value = 0.3
+			strata = rich
+		}
+	}
+}
+
+fm_fru_oc.2 = {
+	type = country_event
+	placement = ROOT
+	title = fm_fru_oc.1.t
+	desc = fm_fru_oc.1.d
+	flavor = fm_fru_oc.1.f
+	duration = 3
+	event_image = {
+		video = "europenorthamerica_before_the_battle"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	option = {
+		name = fm_fru_oc.1.a
+		default_option = yes
+		create_diplomatic_play = {
+			target_country = c:OCC
+			war = yes
+			type = dp_annex_subject
+			add_initiator_backers = {
+				c:BOU
+			}
+			add_war_goal = {
+				holder = c:OCC
+				type = independence
+				target_country = C:FRE
+			}
+		}
+		c:OCC = {
+			remove_variable = je_inde_occ
+		}
+	}
+	option = {
+		name = fm_fru_oc.1.b
+		default_option = yes
+		c:OCC = {
+			make_independent = yes
+		}
+		change_relations = {
+			country = c:OCC
+			value = 50
+		}
+		add_radicals = {
+			value = 0.3
+			strata = rich
+		}
+	}
+}

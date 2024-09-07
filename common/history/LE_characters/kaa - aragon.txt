@@ -1,0 +1,34 @@
+CHARACTERS = {
+	c:KAA ?= {
+		create_character = {
+			first_name = "Philippe"
+			last_name = "d_aquitaine"
+			historical = yes
+			ruler = yes
+			female = no
+			birth_date = 1802.10.5
+			culture = cu:occitan
+			interest_group = ig_rural_folk
+			ideology = ideology_royalist
+			traits = {
+				ambitious
+				meticulous
+			}
+		}
+		create_character = {
+			first_name = "Alexandre"
+			last_name = "d_aquitaine"
+			historical = yes
+			heir = yes
+			female = no
+			birth_date = 1820.8.1
+			culture = cu:occitan
+			interest_group = ig_rural_folk
+			ideology = ideology_royalist
+			traits = {
+				ambitious
+				basic_diplomat
+			}
+		}
+	}
+}

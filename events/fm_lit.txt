@@ -1,0 +1,23 @@
+namespace = fm_lit
+# start event
+fm_lit.1 = {
+	type = country_event
+	placement = ROOT
+	title = fm_lit.1.t
+	desc = fm_lit.1.d
+	flavor = fm_lit.1.f
+	duration = 3
+	event_image = {
+		video = "ep1_clandestine_meeting"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	trigger = {
+	}
+	option = {
+		name = fm_lit.1.a
+		set_variable = {
+			name = variable_lit_fm
+		}
+	}
+}

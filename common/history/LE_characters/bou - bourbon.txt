@@ -1,0 +1,19 @@
+CHARACTERS = {
+	c:BOU ?= {
+		create_character = {
+			first_name = "Henri"
+			last_name = "de_Bourbon"
+			historical = yes
+			ruler = yes
+			dna = dna_henri_count_of_chambord
+			birth_date = 1812.9.29
+			culture = cu:french
+			interest_group = ig_landowners
+			ideology = ideology_legitimist
+			traits = {
+				arrogant
+				basic_political_operator
+			}
+		}
+	}
+}

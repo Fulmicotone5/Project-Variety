@@ -1,0 +1,652 @@
+﻿MILITARY_FORMATIONS = {
+	c:COH = {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_dnieper
+			name = "Cossack Army"
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_VOLHYNIA
+				count = 20
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_lancers
+				state_region = s:STATE_KIEV
+				count = 20
+			}
+		}
+	}
+	c:JAP = {
+		create_military_formation = {
+			type = fleet
+			hq_region = sr:region_japan
+			name = "Japanese Imperial Navy"
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigate
+				state_region = s:STATE_CHUBU
+				count = 15
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigate
+				state_region = s:STATE_KANTO
+				count = 5
+			}
+		}
+	}
+	c:MCH = {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_manchuria
+			name = "Manchurian Standard Army"
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_SOUTHERN_MANCHURIA
+				count = 20
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_NORTHERN_MANCHURIA
+				count = 10
+			}
+		}
+	}
+	c:KOR = {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_manchuria
+			name = "Korean Imperial Army"
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_SEOUL
+				count = 40
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_mobile_artillery
+				state_region = s:STATE_PYONGYANG
+				count = 40
+			}
+		}
+	}
+	c:JAV = {
+		create_military_formation = {
+			type = fleet
+			hq_region = sr:region_indonesia
+			name = "Koloniale Marine"
+			combat_unit = {
+				# Nothing the size of a frigate
+				type = unit_type:combat_unit_type_frigate
+				state_region = s:STATE_EAST_JAVA
+				count = 1
+			}
+		}
+	}
+	c:YUN = {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_south_china
+			name = "Yunnan Army"
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_YUNNAN
+				count = 15
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_cannon_artillery
+				state_region = s:STATE_YUNNAN
+				count = 10
+			}
+		}
+	}
+	c:GUC = {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_south_china
+			name = "Guyang Army"
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_GUIZHOU
+				count = 15
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_cuirassiers
+				state_region = s:STATE_GUIZHOU
+				count = 10
+			}
+		}
+	}
+	c:GNG = {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_south_china
+			name = "Da Cheng Army"
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_JIANGXI
+				count = 20
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_cuirassiers
+				state_region = s:STATE_GUANGXI
+				count = 10
+			}
+		}
+	}
+	c:YUE = {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_south_china
+			name = "Yue Army"
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_FUJIAN
+				count = 20
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_cannon_artillery
+				state_region = s:STATE_SHAOZHOU
+				count = 10
+			}
+		}
+	}
+	c:TAC = {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_south_china
+			name = "Taizhou Army"
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_ZHEJIANG
+				count = 15
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_cannon_artillery
+				state_region = s:STATE_ZHEJIANG
+				count = 10
+			}
+		}
+	}
+	c:NCL = {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_south_china
+			name = "Nanjing Army"
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_NANJING
+				count = 15
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_cannon_artillery
+				state_region = s:STATE_SUZHOU
+				count = 10
+			}
+		}
+	}
+	c:HNA = {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_south_china
+			name = "Hunan Army"
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_WESTERN_HUBEI
+				count = 25
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_EASTERN_HUBEI
+				count = 25
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_HUNAN
+				count = 25
+			}
+		}
+	}
+	c:CHO = {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_south_china
+			name = "Chongqing Army"
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_CHONGQING
+				count = 20
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_cuirassiers
+				state_region = s:STATE_CHONGQING
+				count = 10
+			}
+		}
+	}
+	c:SIH = {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_south_china
+			name = "Sichuan Army"
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_SICHUAN
+				count = 20
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_cannon_artillery
+				state_region = s:STATE_QINGHAI
+				count = 10
+			}
+		}
+	}
+	c:TIB = {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_himalayas
+			name = "Tibetan Army"
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_LHASA
+				count = 10
+			}
+		}
+	}
+	c:XIN = {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_central_asia
+			name = "Tibetan Army"
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_DZUNGARIA
+				count = 10
+			}
+		}
+	}
+	c:MGL = {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_north_china
+			name = "Mongolian Horde"
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_GANSU
+				count = 25
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_cuirassiers
+				state_region = s:STATE_HINGGAN
+				count = 10
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_cuirassiers
+				state_region = s:STATE_ALXA
+				count = 10
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_cuirassiers
+				state_region = s:STATE_URGA
+				count = 5
+			}
+		}
+	}
+	c:AHU = {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_north_china
+			name = "Anhui Army"
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_NORTHERN_ANHUI
+				count = 15
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_cuirassiers
+				state_region = s:STATE_SOUTHERN_ANHUI
+				count = 15
+			}
+		}
+	}
+	c:XIB = {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_north_china
+			name = "Xibei Army"
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_NINGXIA
+				count = 15
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_cuirassiers
+				state_region = s:STATE_XIAN
+				count = 15
+			}
+		}
+	}
+	c:SHN = {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_north_china
+			name = "Shanxi Army"
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_SHANXI
+				count = 20
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_cannon_artillery
+				state_region = s:STATE_HENAN
+				count = 10
+			}
+		}
+	}
+	c:ZHI = {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_north_china
+			name = "Zhili Army"
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_BEIJING
+				count = 15
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_cuirassiers
+				state_region = s:STATE_ZHILI
+				count = 5
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_cannon_artillery
+				state_region = s:STATE_ZHILI
+				count = 10
+			}
+		}
+	}
+	c:SHA = {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_north_china
+			name = "Shandong Army"
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_SHANDONG
+				count = 15
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_cannon_artillery
+				state_region = s:STATE_JIANGSU
+				count = 15
+			}
+		}
+	}
+	c:OMA = {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_persia
+			name = "Oman Army"
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_OMAN
+				count = 15
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_lancers
+				state_region = s:STATE_LARISTAN
+				count = 15
+			}
+		}
+		create_military_formation = {
+			type = fleet
+			hq_region = sr:region_persia
+			name = "Oman Navy"
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigate
+				state_region = s:STATE_OMAN
+				count = 3
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_man_o_war
+				state_region = s:STATE_LARISTAN
+				count = 3
+			}
+		}
+	}
+	c:SAE = {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_persia
+			name = "Persian Royal Army"
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_BAGHDAD
+				count = 25
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_lancers
+				state_region = s:STATE_BASRA
+				count = 25
+			}
+		}
+	}
+	c:TOR ?= {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_anatolia
+			name = "Ankara Ordusu"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_ANKARA
+				count = 5
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_ANKARA
+				count = 5
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_hussars
+				state_region = s:STATE_ANKARA
+				count = 5
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_cannon_artillery
+				state_region = s:STATE_ANKARA
+				count = 5
+			}
+			save_scope_as = hassar_ordusu
+		}
+
+		create_character = { # TOR, General
+			is_general = yes
+			first_name = Omer_Lutfi
+			last_name = Pasha
+			historical = yes
+			culture = cu:serb
+			religion = sunni
+			interest_group = ig_armed_forces
+			ideology = ideology_royalist
+			birth_date = 1806.9.24
+			commander_rank = commander_rank_2
+			hq = region_arabic
+			traits = {
+				meticulous
+				charismatic
+				experienced_offensive_planner
+			}
+			save_scope_as = lutfin_gen
+		}
+
+		scope:lutfin_gen = {
+			transfer_to_formation = scope:hassar_ordusu
+		}		
+
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_anatolia
+			name = "Konya Ordusu"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_KONYA
+				count = 5
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_KONYA
+				count = 10
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_AYDIN
+				count = 5
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_hussars
+				state_region = s:STATE_KONYA
+				count = 5
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_cannon_artillery
+				state_region = s:STATE_AYDIN
+				count = 5
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_hussars
+				state_region = s:STATE_AYDIN
+				count = 5
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_cannon_artillery
+				state_region = s:STATE_KONYA
+				count = 5
+			}
+
+			save_scope_as = romearm
+		}
+
+		create_character = { # TOR, General
+			is_general = yes
+			first_name = Hafiz_Osman
+			last_name = Pasha
+			historical = yes
+			interest_group = ig_armed_forces
+			ideology = ideology_royalist
+			birth_date = 1790.2.11 # Unsure of birth date, approxiamate age based on portraits.
+			hq = region_caucasus
+			traits = {
+				reckless
+				basic_defensive_strategist
+			}
+			save_scope_as = hafizo_gen
+		}
+
+		scope:hafizo_gen = {
+			transfer_to_formation = scope:romearm
+		}
+
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_anatolia
+			name = Anadolu_Ordusu
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_DIYARBAKIR
+				count = 10
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_ERZURUM
+				count = 5
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_KARS
+				count = 5
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_ERZURUM
+				count = 5
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_AYDIN
+				count = 5
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_hussars
+				state_region = s:STATE_KONYA
+				count = 5
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_cannon_artillery
+				state_region = s:STATE_KASTAMONU
+				count = 5
+			}
+		}
+
+		create_military_formation = {
+			type = fleet
+			hq_region = sr:region_anatolia
+			name = Donanmay_Humyn
+
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_man_o_war
+				state_region = s:STATE_KONYA
+				count = 5
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_man_o_war
+				state_region = s:STATE_AYDIN
+				count = 5
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigate
+				state_region = s:STATE_KONYA
+				count = 5
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigate
+				state_region = s:STATE_ADANA
+				count = 5
+			}
+		}
+	}
+	c:SIU ?= {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_arabic
+			name = "Syrian Army"
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_ALEPPO
+				count = 10
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_lancers
+				state_region = s:STATE_SYRIA
+				count = 5
+			}
+		}
+	}
+}

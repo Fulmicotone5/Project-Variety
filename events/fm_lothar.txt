@@ -1,0 +1,1045 @@
+namespace = lotharingia
+# start event
+lotharingia.1 = {
+	type = country_event
+	placement = ROOT
+	title = lotharingia.1.t
+	desc = lotharingia.1.d
+	flavor = lotharingia.1.f
+	duration = 3
+	event_image = {
+		video = "europenorthamerica_judaism"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/tutorial_icon.dds"
+	trigger = {
+	}
+	immediate = {
+		random_interest_group = {
+			limit
+			{
+				is_interest_group_type = ig_devout
+				exist = leader
+			}
+			leader = {
+				save_scope_as = devout_leader
+			}
+		}
+	}
+	option = {
+		name = lotharingia.1.a
+		hidden_effect = {
+			scope:devout_leader = {
+				set_ideology = ideology:ideology_theocrat
+			}
+		}
+	}
+	after = {
+		add_journal_entry = {
+			type = je_sax_main
+		}
+	}
+}
+
+lotharingia.2 = {
+	type = country_event
+	placement = ROOT
+	title = lotharingia.2.t
+	desc = lotharingia.2.d
+	flavor = lotharingia.2.f
+	duration = 3
+	event_image = {
+		video = "unspecific_politicians_arguing"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	trigger = {
+	}
+	immediate = {
+		random_interest_group = {
+			limit
+			{
+				is_interest_group_type = ig_landowners
+				exist = leader
+			}
+			leader = {
+				save_scope_as = landowners_leader
+			}
+		}
+		random_interest_group = {
+			limit
+			{
+				is_interest_group_type = ig_devout
+				exist = leader
+			}
+			leader = {
+				save_scope_as = devout_leader
+			}
+		}
+	}
+	option = {
+		name = lotharingia.2.a
+		scope:devout_leader = {
+			set_ideology = ideology:ideology_ethno_nationalist
+		}
+		add_loyalists = {
+			value = large_radicals
+			pop_type = clergymen
+		}
+		trigger_event = {
+			id = lotharingia.3
+		}
+	}
+	option = {
+		default_option = yes
+		name = lotharingia.2.b
+		scope:landowners_leader = {
+			set_ideology = ideology:ideology_royalist
+		}
+		every_interest_group = {
+			limit = {
+				OR = {
+					is_interest_group_type = ig_landowners
+					is_interest_group_type = ig_intelligentsia
+				}
+			}
+			add_modifier = {
+				name = modifier_loth_one
+				months = normal_modifier_time
+				is_decaying = yes
+			}
+		}
+		add_loyalists = {
+			value = large_radicals
+			pop_type = aristocrats
+		}
+		add_loyalists = {
+			value = large_radicals
+			pop_type = bureaucrats
+		}
+		trigger_event = {
+			id = lotharingia.4
+		}
+	}
+	option = {
+		name = lotharingia.2.c
+		add_loyalists = {
+			value = large_radicals
+			pop_type = soldiers
+		}
+		add_loyalists = {
+			value = very_large_radicals
+			pop_type = officers
+		}
+		add_loyalists = {
+			value = medium_radicals
+			pop_type = aristocrats
+		}
+		trigger_event = {
+			id = lotharingia.5
+		}
+	}
+}
+
+lotharingia.3 = {
+	#gods chosen
+	type = country_event
+	placement = ROOT
+	title = lotharingia.3.t
+	desc = lotharingia.3.d
+	flavor = lotharingia.3.f
+	duration = 3
+	event_image = {
+		video = "southamerica_christianity"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/tutorial_icon.dds"
+	trigger = {
+	}
+	option = {
+		default_option = yes
+		name = lotharingia.3.a
+		every_interest_group = {
+			limit = {
+				is_interest_group_type = ig_devout
+			}
+			add_modifier = {
+				name = modifier_loth_three
+				months = normal_modifier_time
+				is_decaying = yes
+			}
+		}
+	}
+	after = {
+		add_journal_entry = {
+			type = je_gods_chosen_people
+		}
+	}
+}
+
+lotharingia.4 = {
+	# to germania
+	type = country_event
+	placement = ROOT
+	title = lotharingia.4.t
+	desc = lotharingia.4.d
+	flavor = lotharingia.4.f
+	duration = 3
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	trigger = {
+	}
+	immediate = {
+		random_interest_group = {
+			limit
+			{
+				is_interest_group_type = ig_landowners
+				exist = leader
+			}
+			leader = {
+				save_scope_as = landowners_leader
+			}
+		}
+	}
+	option = {
+		default_option = yes
+		name = lotharingia.4.a
+		s:STATE_POSEN = {
+			add_claim = c:LOT
+		}
+		s:STATE_WEST_PRUSSIA = {
+			add_claim = c:LOT
+		}
+		s:STATE_EAST_PRUSSIA = {
+			add_claim = c:LOT
+		}
+		s:STATE_SILESIA = {
+			add_claim = c:LOT
+		}
+		s:STATE_POMERANIA = {
+			add_claim = c:LOT
+		}
+		s:STATE_SAXONY = {
+			add_claim = c:LOT
+		}
+		s:STATE_MECKLENBURG = {
+			add_claim = c:LOT
+		}
+	}
+	after = {
+		add_journal_entry = {
+			type = je_a_kingdom_for_ngp
+		}
+	}
+}
+
+lotharingia.5 = {
+	# to carolingian
+	type = country_event
+	placement = ROOT
+	title = lotharingia.5.t
+	desc = lotharingia.5.d
+	flavor = lotharingia.5.f
+	duration = 3
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	trigger = {
+	}
+	immediate = {
+		random_interest_group = {
+			limit
+			{
+				is_interest_group_type = ig_armed_forces
+				exist = leader
+			}
+			leader = {
+				save_scope_as = armed_forces_leader
+			}
+		}
+	}
+	option = {
+		default_option = yes
+		name = lotharingia.5.a
+		scope:armed_forces_leader = {
+			set_ideology = ideology:ideology_authoritarian
+			add_modifier = modifier_charles
+		}
+		every_interest_group = {
+			limit = {
+				is_interest_group_type = ig_armed_forces
+			}
+			add_modifier = {
+				name = modifier_loth_six
+				months = long_modifier_time
+			}
+		}
+		every_interest_group = {
+			limit = {
+				is_interest_group_type = ig_devout
+			}
+			add_modifier = {
+				name = modifier_loth_seven
+				months = normal_modifier_time
+				is_decaying = yes
+			}
+		}
+		every_interest_group = {
+			limit = {
+				is_interest_group_type = ig_landowners
+			}
+			add_modifier = {
+				name = modifier_loth_eight
+				months = normal_modifier_time
+				is_decaying = yes
+			}
+		}
+		s:STATE_POSEN = {
+			add_claim = c:LOT
+		}
+		s:STATE_WEST_PRUSSIA = {
+			add_claim = c:LOT
+		}
+		s:STATE_EAST_PRUSSIA = {
+			add_claim = c:LOT
+		}
+		s:STATE_BRUNSWICK = {
+			add_claim = c:LOT
+		}
+		s:STATE_WESTPHALIA = {
+			add_claim = c:LOT
+		}
+		s:STATE_HESSE = {
+			add_claim = c:LOT
+		}
+		s:STATE_RUHR = {
+			add_claim = c:LOT
+		}
+		s:STATE_NORTH_RHINE = {
+			add_claim = c:LOT
+		}
+		s:STATE_RHINELAND = {
+			add_claim = c:LOT
+		}
+		s:STATE_ALSACE_LORRAINE = {
+			add_claim = c:LOT
+		}
+	}
+	after = {
+		add_journal_entry = {
+			type = je_charlemagne_legacy
+		}
+	}
+}
+
+lotharingia.6 = {
+	# to anointed
+	type = country_event
+	placement = ROOT
+	title = lotharingia.6.t
+	desc = lotharingia.6.d
+	flavor = lotharingia.6.f
+	duration = 3
+	event_image = {
+		video = "middleeast_islam"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/tutorial_icon.dds"
+	trigger = {
+	}
+	option = {
+		default_option = yes
+		name = lotharingia.6.a
+		s:STATE_SCHLESWIG_HOLSTEIN = {
+			add_claim = c:LOT
+		}
+		s:STATE_ELBE = {
+			add_claim = c:LOT
+		}
+		s:STATE_HANNOVER = {
+			add_claim = c:LOT
+		}
+		s:STATE_BRUNSWICK = {
+			add_claim = c:LOT
+		}
+		s:STATE_WESTPHALIA = {
+			add_claim = c:LOT
+		}
+		s:STATE_HESSE = {
+			add_claim = c:LOT
+		}
+		s:STATE_WURTTEMBERG = {
+			add_claim = c:LOT
+		}
+		s:STATE_BADEN = {
+			add_claim = c:LOT
+		}
+		s:STATE_FRANCONIA = {
+			add_claim = c:LOT
+		}
+		s:STATE_BAVARIA = {
+			add_claim = c:LOT
+		}
+		s:STATE_TYROL = {
+			add_claim = c:LOT
+		}
+		s:STATE_AUSTRIA = {
+			add_claim = c:LOT
+		}
+		s:STATE_SLOVENIA = {
+			add_claim = c:LOT
+		}
+	}
+	after = {
+		add_journal_entry = {
+			type = je_our_land
+		}
+	}
+}
+
+lotharingia.7 = {
+	#anointed
+	type = country_event
+	placement = ROOT
+	title = lotharingia.7.t
+	desc = lotharingia.7.d
+	flavor = lotharingia.7.f
+	duration = 3
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/tutorial_icon.dds"
+	trigger = {
+	}
+	option = {
+		name = lotharingia.7.a
+		default_option = yes
+		add_primary_culture = cu:south_german
+		add_loyalists = {
+			value = very_large_radicals
+			pop_type = clergymen
+		}
+		add_loyalists = {
+			strata = poor
+			value = very_large_radicals
+		}
+		add_modifier = {
+			name = modifier_loth_four
+		}
+		add_modifier = {
+			name = modifier_loth_five
+		}
+	}
+	after = {
+		add_journal_entry = {
+			type = je_a_divine_mission
+		}
+	}
+}
+
+lotharingia.8 = {
+	# to carolingian empire
+	type = country_event
+	placement = ROOT
+	title = lotharingia.8.t
+	desc = lotharingia.8.d
+	flavor = lotharingia.8.f
+	duration = 3
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	trigger = {
+	}
+	immediate = {
+		random_interest_group = {
+			limit
+			{
+				is_interest_group_type = ig_armed_forces
+				exist = leader
+			}
+			leader = {
+				save_scope_as = armed_forces_leader
+			}
+		}
+	}
+	option = {
+		default_option = yes
+		name = lotharingia.8.a
+		every_interest_group = {
+			limit = {
+				is_interest_group_type = ig_armed_forces
+			}
+			add_modifier = {
+				name = modifier_loth_nine
+				months = long_modifier_time
+			}
+			add_loyalists = {
+				strata = middle
+				value = very_large_radicals
+			}
+			add_loyalists = {
+				strata = poor
+				value = large_radicals
+			}
+			add_radicals = {
+				value = medium_radicals
+				pop_type = clergymen
+			}
+		}
+		s:STATE_POSEN = {
+			add_claim = c:LOT
+		}
+		s:STATE_WEST_PRUSSIA = {
+			add_claim = c:LOT
+		}
+		s:STATE_EAST_PRUSSIA = {
+			add_claim = c:LOT
+		}
+		s:STATE_BRUNSWICK = {
+			add_claim = c:LOT
+		}
+		s:STATE_WESTPHALIA = {
+			add_claim = c:LOT
+		}
+		s:STATE_HESSE = {
+			add_claim = c:LOT
+		}
+		s:STATE_RUHR = {
+			add_claim = c:LOT
+		}
+		s:STATE_NORTH_RHINE = {
+			add_claim = c:LOT
+		}
+		s:STATE_RHINELAND = {
+			add_claim = c:LOT
+		}
+		s:STATE_ALSACE_LORRAINE = {
+			add_claim = c:LOT
+		}
+		s:STATE_ISTRIA = {
+			add_claim = c:LOT
+		}
+		s:STATE_SLOVENIA = {
+			add_claim = c:LOT
+		}
+		s:STATE_SOUTH_TYROL = {
+			add_claim = c:LOT
+		}
+		s:STATE_VENETIA = {
+			add_claim = c:LOT
+		}
+		s:STATE_LOMBARDY = {
+			add_claim = c:LOT
+		}
+		s:STATE_PIEDMONT = {
+			add_claim = c:LOT
+		}
+		s:STATE_ROMAGNA = {
+			add_claim = c:LOT
+		}
+		s:STATE_EMILIA = {
+			add_claim = c:LOT
+		}
+		s:STATE_UMBRIA = {
+			add_claim = c:LOT
+		}
+		s:STATE_ABRUZZO = {
+			add_claim = c:LOT
+		}
+		s:STATE_LAZIO = {
+			add_claim = c:LOT
+		}
+		s:STATE_TUSCANY = {
+			add_claim = c:LOT
+		}
+		s:STATE_WEST_SWITZERLAND = {
+			add_claim = c:LOT
+		}
+		s:STATE_EAST_SWITZERLAND = {
+			add_claim = c:LOT
+		}
+		s:STATE_FRANCONIA = {
+			add_claim = c:LOT
+		}
+		s:STATE_WURTTEMBERG = {
+			add_claim = c:LOT
+		}
+		s:STATE_BADEN = {
+			add_claim = c:LOT
+		}
+		s:STATE_BAVARIA = {
+			add_claim = c:LOT
+		}
+		s:STATE_TYROL = {
+			add_claim = c:LOT
+		}
+		s:STATE_AUSTRIA = {
+			add_claim = c:LOT
+		}
+		s:STATE_STYRIA = {
+			add_claim = c:LOT
+		}
+		s:STATE_SCHLESWIG_HOLSTEIN = {
+			add_claim = c:LOT
+		}
+		s:STATE_ELBE = {
+			add_claim = c:LOT
+		}
+		s:STATE_HANNOVER = {
+			add_claim = c:LOT
+		}
+		s:STATE_FRIESLAND = {
+			add_claim = c:LOT
+		}
+		s:STATE_GELRE = {
+			add_claim = c:LOT
+		}
+		s:STATE_HOLLAND = {
+			add_claim = c:LOT
+		}
+		s:STATE_FLANDERS = {
+			add_claim = c:LOT
+		}
+		s:STATE_WALLONIA = {
+			add_claim = c:LOT
+		}
+		s:STATE_FRENCH_LOW_COUNTRIES = {
+			add_claim = c:LOT
+		}
+		s:STATE_LORRAINE = {
+			add_claim = c:LOT
+		}
+		s:STATE_FRANCHE_COMTE = {
+			add_claim = c:LOT
+		}
+		s:STATE_SAVOY = {
+			add_claim = c:LOT
+		}
+		s:STATE_CHAMPAGNE = {
+			add_claim = c:LOT
+		}
+		s:STATE_PICARDY = {
+			add_claim = c:LOT
+		}
+		s:STATE_NORMANDY = {
+			add_claim = c:LOT
+		}
+		s:STATE_ILE_DE_FRANCE = {
+			add_claim = c:LOT
+		}
+		s:STATE_BURGUNDY = {
+			add_claim = c:LOT
+		}
+		s:STATE_RHONE = {
+			add_claim = c:LOT
+		}
+		s:STATE_PROVENCE = {
+			add_claim = c:LOT
+		}
+		s:STATE_ORLEANS = {
+			add_claim = c:LOT
+		}
+		s:STATE_BRITTANY = {
+			add_claim = c:LOT
+		}
+		s:STATE_MAINE_ANJOU = {
+			add_claim = c:LOT
+		}
+		s:STATE_POITOU = {
+			add_claim = c:LOT
+		}
+		s:STATE_AUVERGNE_LIMOUSIN = {
+			add_claim = c:LOT
+		}
+		s:STATE_LANGUEDOC = {
+			add_claim = c:LOT
+		}
+		s:STATE_GUYENNE = {
+			add_claim = c:LOT
+		}
+		s:STATE_AQUITAINE = {
+			add_claim = c:LOT
+		}
+		s:STATE_CATALONIA = {
+			add_claim = c:LOT
+		}
+		s:STATE_ARAGON = {
+			add_claim = c:LOT
+		}
+		s:STATE_NAVARRA = {
+			add_claim = c:LOT
+		}
+	}
+	after = {
+		add_journal_entry = {
+			type = je_restore_the_ce
+		}
+	}
+}
+
+lotharingia.9 = {
+	type = country_event
+	placement = ROOT
+	title = lotharingia.9.t
+	desc = lotharingia.9.d
+	flavor = lotharingia.9.f
+	duration = 3
+	event_image = {
+		texture = "gfx/event_pictures/coronation.dds"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	trigger = {
+	}
+	immediate = {
+		random_interest_group = {
+			limit
+			{
+				is_interest_group_type = ig_armed_forces
+				exist = leader
+			}
+			leader = {
+				save_scope_as = armed_forces_leader
+			}
+		}
+	}
+	option = {
+		name = lotharingia.9.a
+		default_option = yes
+		add_loyalists = {
+			value = very_large_radicals
+			pop_type = soldiers
+		}
+		add_loyalists = {
+			strata = poor
+			value = very_large_radicals
+		}
+		add_primary_culture = cu:south_german
+		add_primary_culture = cu:north_roman
+		add_primary_culture = cu:burgundian
+		add_primary_culture = cu:french
+		add_primary_culture = cu:francoprovencal
+		add_primary_culture = cu:breton
+		add_primary_culture = cu:occitan
+		add_primary_culture = cu:venetian
+		add_primary_culture = cu:dutch
+		change_tag = URA
+	}
+}
+
+lotharingia.10 = {
+	#King of Prussia coronation
+	type = country_event
+	placement = ROOT
+	title = lotharingia.10.t
+	desc = lotharingia.10.d
+	flavor = lotharingia.10.f
+	duration = 3
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	immediate = {
+		ig:ig_landowners = {
+			leader = {
+				set_character_as_ruler = yes
+			}
+		}
+	}
+	option = {
+		name = lotharingia.10.a
+		add_loyalists = {
+			value = medium_radicals
+			strata = poor
+		}
+		add_loyalists = {
+			value = very_large_radicals
+			strata = rich
+		}
+		add_loyalists = {
+			value = very_large_radicals
+			pop_type = aristocrats
+		}
+		add_radicals = {
+			value = very_large_radicals
+			strata = middle
+		}
+		trigger_event = {
+			id = lotharingia.12
+		}
+	}
+}
+
+lotharingia.11 = {
+	# proclamation of the republic
+	type = country_event
+	placement = ROOT
+	title = lotharingia.11.t
+	desc = lotharingia.11.d
+	flavor = lotharingia.11.f
+	duration = 3
+	event_image = {
+		video = "europenorthamerica_springtime_of_nations"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	option = {
+		name = lotharingia.11.a
+		default_option = yes
+		activate_law = law_type:law_parliamentary_republic
+		activate_law = law_type:law_census_voting
+		change_tag = PRO
+		every_interest_group = {
+			limit = {
+				OR = {
+					is_interest_group_type = ig_petty_bourgeoisie
+					is_interest_group_type = ig_intelligentsia
+					is_interest_group_type = ig_industrialists
+				}
+			}
+			add_modifier = {
+				name = modifier_loth_ten
+				months = normal_modifier_time
+				is_decaying = yes
+			}
+		}
+		every_interest_group = {
+			limit = {
+				OR = {
+					is_interest_group_type = ig_devout
+					is_interest_group_type = ig_landowners
+				}
+			}
+			add_modifier = {
+				name = modifier_loth_eleven
+				months = normal_modifier_time
+				is_decaying = yes
+			}
+		}
+		add_radicals = {
+			strata = rich
+			value = very_large_radicals
+		}
+		add_loyalists = {
+			strata = middle
+			value = large_radicals
+		}
+		add_loyalists = {
+			strata = poor
+			value = large_radicals
+		}
+		trigger_event = {
+			id = lotharingia.12
+		}
+	}
+}
+
+lotharingia.12 = {
+	# the next step
+	type = country_event
+	placement = ROOT
+	title = lotharingia.12.t
+	desc = lotharingia.12.d
+	flavor = lotharingia.12.f
+	duration = 3
+	event_image = {
+		video = "europenorthamerica_before_the_battle"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	trigger = {
+	}
+	option = {
+		name = lotharingia.12.a
+		default_option = yes
+		s:STATE_SCHLESWIG_HOLSTEIN = {
+			add_claim = c:PRO
+		}
+		s:STATE_ELBE = {
+			add_claim = c:PRO
+		}
+		s:STATE_HANNOVER = {
+			add_claim = c:PRO
+		}
+		s:STATE_WESTPHALIA = {
+			add_claim = c:PRO
+		}
+		s:STATE_HESSE = {
+			add_claim = c:PRO
+		}
+		s:STATE_RUHR = {
+			add_claim = c:PRO
+		}
+		s:STATE_NORTH_RHINE = {
+			add_claim = c:PRO
+		}
+		s:STATE_RHINELAND = {
+			add_claim = c:PRO
+		}
+		s:STATE_BRUNSWICK = {
+			add_claim = c:PRO
+		}
+		s:STATE_ALSACE_LORRAINE = {
+			add_claim = c:PRO
+		}
+		add_journal_entry = {
+			type = je_ngf
+		}
+	}
+	option = {
+		name = lotharingia.12.b
+		s:STATE_SCHLESWIG_HOLSTEIN = {
+			add_claim = c:PRO
+		}
+		s:STATE_ELBE = {
+			add_claim = c:PRO
+		}
+		s:STATE_HANNOVER = {
+			add_claim = c:PRO
+		}
+		s:STATE_WESTPHALIA = {
+			add_claim = c:PRO
+		}
+		s:STATE_HESSE = {
+			add_claim = c:PRO
+		}
+		s:STATE_RUHR = {
+			add_claim = c:PRO
+		}
+		s:STATE_NORTH_RHINE = {
+			add_claim = c:PRO
+		}
+		s:STATE_RHINELAND = {
+			add_claim = c:PRO
+		}
+		s:STATE_BRUNSWICK = {
+			add_claim = c:PRO
+		}
+		s:STATE_BADEN = {
+			add_claim = c:PRO
+		}
+		s:STATE_WURTTEMBERG = {
+			add_claim = c:PRO
+		}
+		s:STATE_FRANCONIA = {
+			add_claim = c:PRO
+		}
+		s:STATE_BAVARIA = {
+			add_claim = c:PRO
+		}
+		s:STATE_TYROL = {
+			add_claim = c:PRO
+		}
+		s:STATE_STYRIA = {
+			add_claim = c:PRO
+		}
+		s:STATE_AUSTRIA = {
+			add_claim = c:PRO
+		}
+		add_journal_entry = {
+			type = je_german_conf
+		}
+	}
+}
+
+lotharingia.13 = {
+	# NGF
+	type = country_event
+	placement = ROOT
+	title = lotharingia.13.t
+	desc = lotharingia.13.d
+	flavor = lotharingia.13.f
+	duration = 3
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	trigger = {
+	}
+	option = {
+		name = lotharingia.13.a
+		default_option = yes
+		add_loyalists = {
+			value = very_large_radicals
+			pop_type = academics
+		}
+		add_loyalists = {
+			value = large_radicals
+			strata = middle
+		}
+		add_loyalists = {
+			value = large_radicals
+			strata = poor
+		}
+		add_modifier = {
+			name = modifier_loth_twelwe
+			months = long_modifier_time
+			is_decaying = yes
+		}
+	}
+}
+
+lotharingia.14 = {
+	# German Confederation
+	type = country_event
+	placement = ROOT
+	title = lotharingia.14.t
+	desc = lotharingia.14.d
+	flavor = lotharingia.14.f
+	duration = 3
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	trigger = {
+	}
+	option = {
+		name = lotharingia.14.a
+		default_option = yes
+		add_loyalists = {
+			value = very_large_radicals
+			pop_type = academics
+		}
+		add_loyalists = {
+			value = very_large_radicals
+			strata = middle
+		}
+		add_loyalists = {
+			value = large_radicals
+			strata = poor
+		}
+		add_modifier = {
+			name = modifier_loth_twelwe
+			months = long_modifier_time
+			is_decaying = yes
+		}
+		add_modifier = {
+			name = modifier_loth_thirteen
+			months = long_modifier_time
+			is_decaying = yes
+		}
+		add_modifier = {
+			name = modifier_loth_fourteen
+			months = long_modifier_time
+			is_decaying = yes
+		}
+		add_modifier = {
+			name = modifier_loth_fifteen
+			months = long_modifier_time
+			is_decaying = yes
+		}
+		add_primary_culture = cu:south_german
+
+	}
+}

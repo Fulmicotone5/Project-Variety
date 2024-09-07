@@ -1,0 +1,228 @@
+namespace = fm_dakota
+fm_dakota.1 = {
+	type = country_event
+	placement = ROOT
+	title = fm_dakota.1.t
+	desc = fm_dakota.1.d
+	flavor = fm_dakota.1.f
+	duration = 3
+	event_image = {
+		video = "europenorthamerica_native_american"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+	option = {
+		name = fm_dakota.1.a
+		default_option = yes
+		add_journal_entry = {
+			type = je_dakota_main
+		}
+	}
+}
+
+fm_dakota.2 = {
+	type = country_event
+	placement = ROOT
+	title = fm_dakota.2.t
+	desc = fm_dakota.2.d
+	flavor = fm_dakota.2.f
+	duration = 3
+	event_image = {
+		video = "southamerica_aristocrats"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	option = {
+		name = fm_dakota.2.a
+		default_option = yes
+		add_modifier = {
+			name = modifier_fru_one
+			months = 60
+			is_decaying = yes
+		}
+		remove_variable = variable_louisiana
+		if = {
+			limit = {
+				exists = c:FRU
+			}
+			root = {
+				create_diplomatic_catalyst = {
+					type = catalyst_event_negative
+					target = c:FRU
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				exists = c:FRE
+			}
+			root = {
+				create_diplomatic_catalyst = {
+					type = catalyst_event_negative
+					target = c:FRE
+				}
+			}
+		}
+	}
+}
+fm_dakota.3 = {
+	type = country_event
+	placement = ROOT
+	title = fm_dakota.3.t
+	desc = fm_dakota.3.d
+	flavor = fm_dakota.3.f
+	duration = 3
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+	option = {
+		name = fm_dakota.3.a
+		default_option = yes
+		add_modifier = {
+			name = modifier_fru_two
+			months = 60
+		}
+		root = {
+			annex = c:LOI
+		}
+	}
+}
+fm_dakota.4 = {
+	type = country_event
+	placement = ROOT
+	title = fm_dakota.4.t
+	desc = fm_dakota.4.d
+	flavor = fm_dakota.4.f
+	duration = 3
+	event_image = {
+		video = "ep1_clandestine_meeting"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	immediate = {
+		ig:ig_rural_folk = {
+			leader = {
+				set_ideology = ideology:ideology_anarcho_capitalism
+				save_scope_as = rural_folk_leader
+			}
+		}
+	}
+	option = {
+		name = fm_dakota.4.a
+		default_option = yes
+		if = {
+			limit = {
+				has_modifier = modifier_dak_one
+			}
+			remove_modifier = modifier_dak_one
+		}
+	}
+	option = {
+		name = fm_dakota.4.b
+		ig:ig_rural_folk = {
+			leader = {
+				kill_character = yes
+			}
+		}
+		set_variable = {
+			name = anarcho_kill
+		}
+	}
+}
+fm_dakota.5 = {
+	type = country_event
+	placement = ROOT
+	title = fm_dakota.5.t
+	desc = fm_dakota.5.d
+	flavor = fm_dakota.5.f
+	duration = 3
+	event_image = {
+		video = "ep1_redcoats"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	
+	option = {
+		name = fm_dakota.5.a
+		default_option = yes
+		root ={
+			create_diplomatic_play = {
+				name = annex_war
+				target_country = c:LKT
+				war = yes
+				type = dp_annex_war
+					add_war_goal = { holder = c:LKT target_state = s:STATE_SOUTH_DAKOTA.region_state:DKT type = return_state }
+					add_war_goal = { holder = c:LKT target_state = s:STATE_NORTH_DAKOTA.region_state:DKT type = return_state }
+			}
+		}
+	}
+}
+
+fm_dakota.6 = {
+	type = country_event
+	placement = ROOT
+	title = fm_dakota.6.t
+	desc = fm_dakota.6.d
+	flavor = fm_dakota.6.f
+	duration = 3
+	event_image = {
+		video = "europenorthamerica_native_american"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+	
+	option = {
+		name = fm_dakota.6.a
+		default_option = yes
+		root ={
+			annex_with_incorporation = c:CTF
+		}
+	}
+}
+
+fm_dakota.7 = {
+	type = country_event
+	placement = ROOT
+	title = fm_dakota.7.t
+	desc = fm_dakota.7.d
+	flavor = fm_dakota.7.f
+	duration = 3
+	event_image = {
+		video = "europenorthamerica_native_american"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+	
+	option = {
+		name = fm_dakota.7.a
+		default_option = yes
+		root ={
+			annex_with_incorporation = c:CRU
+		}
+	}
+}
+
+fm_dakota.8 = {
+	type = country_event
+	placement = ROOT
+	title = fm_dakota.8.t
+	desc = fm_dakota.8.d
+	flavor = fm_dakota.8.f
+	duration = 3
+	event_image = {
+		video = "europenorthamerica_native_american"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+	
+	option = {
+		name = fm_dakota.8.a
+		default_option = yes
+		root ={
+			annex_with_incorporation = c:SIO
+		}
+	}
+}

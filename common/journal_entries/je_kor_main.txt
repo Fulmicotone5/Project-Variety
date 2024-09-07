@@ -1,0 +1,269 @@
+je_kor_main = {
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	group = je_group_historical_content
+	timeout = 3000
+
+	complete = {
+		scope:journal_entry = {
+			is_goal_complete = yes
+		}
+	}
+	fail = {
+		NOT = {
+			has_law = law_type:law_monarchy
+		}
+	}
+
+	on_complete = {
+		trigger_event = {
+			id = fm_kor.7
+		}
+		remove_modifier = diplomatic_plays_blocked
+	}
+
+	on_timeout = {
+		trigger_event = {
+			id = fm_kor.8
+		}
+		remove_modifier = diplomatic_plays_blocked
+	}
+
+	on_fail = {
+		trigger_event = {
+			id = fm_kor.8
+		}
+		remove_modifier = diplomatic_plays_blocked
+	}
+
+	current_value = {
+		value = var:fm_kor_var
+	}
+
+	goal_add_value = {
+		add = 5
+	}
+
+	progressbar = yes
+
+	transferable = yes
+
+	weight = 10000
+	should_be_pinned_by_default = yes
+}
+
+je_kor_autoc = {
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	group = je_group_historical_content
+
+	complete = {
+		OR = {
+			has_law = law_type:law_oligarchy
+			has_law = law_type:law_autocracy
+		}
+	}
+
+	on_complete = {
+		custom_tooltip = je_korea_advance
+		change_variable = {
+			name = fm_kor_var
+			add = 1
+		}
+		hidden_effect = {
+			trigger_event = {
+				id = fm_kor.2
+				days = 60
+				popup = yes
+			}
+		}
+	}
+	fail = {
+		custom_tooltip = {
+			text = fm_kor_mil
+			has_variable = fm_kor_coup
+		}
+	}
+	transferable = yes
+
+	weight = 10000
+	should_be_pinned_by_default = yes
+}
+
+je_kor_rac = {
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	group = je_group_historical_content
+
+	complete = {
+		OR = {
+			has_law = law_type:law_local_police
+			has_law = law_type:law_dedicated_police
+		}
+		institution_investment_level = {
+			institution = institution_police
+			value = 2
+		}
+		any_scope_state = {
+			state_region = s:STATE_SEOUL
+			turmoil <= 0.25
+		}
+	}
+
+	on_complete = {
+		custom_tooltip = je_korea_advance
+		change_variable = {
+			name = fm_kor_var
+			add = 1
+		}
+			add_modifier = {
+				name = modifier_kor_one
+				months = 60
+		}
+	}
+
+	fail = {
+		custom_tooltip = {
+			text = fm_kor_mil
+			has_variable = fm_kor_coup
+		}
+	}
+
+	transferable = yes
+
+	weight = 10000
+	should_be_pinned_by_default = yes
+}
+
+je_kor_manc = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	group = je_group_historical_content
+
+	complete = {
+		custom_tooltip = {
+			text = kor_manc
+			has_variable = kor_man_solved
+		}
+	}
+
+	on_complete = {
+		custom_tooltip = je_korea_advance
+		change_variable = {
+			name = fm_kor_var
+			add = 1
+		}
+	}
+
+	fail = {
+		custom_tooltip = {
+			text = fm_kor_mil
+			has_variable = fm_kor_coup
+		}
+	}
+
+	transferable = yes
+
+	weight = 10000
+	should_be_pinned_by_default = yes
+}
+
+je_kor_age = {
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	group = je_group_historical_content
+
+	complete = {
+		custom_tooltip = {
+			text = kor_cor
+			has_variable = kor_coronation
+		}
+	}
+
+	on_complete = {
+		custom_tooltip = je_korea_advance
+		change_variable = {
+			name = fm_kor_var
+			add = 1
+		}
+	}
+
+	fail = {
+		custom_tooltip = {
+			text = fm_kor_mil
+			has_variable = fm_kor_coup
+		}
+	}
+
+	transferable = yes
+
+	weight = 10000
+	should_be_pinned_by_default = yes
+}
+
+je_kor_navy = {
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	group = je_group_historical_content
+
+	complete = {
+		custom_tooltip = {
+			text = kor_navy
+			has_variable = kor_nav
+		}
+	}
+
+	on_complete = {
+		custom_tooltip = je_korea_advance
+		change_variable = {
+			name = fm_kor_var
+			add = 1
+		}
+	}
+	transferable = yes
+
+	weight = 10000
+	should_be_pinned_by_default = yes
+}
+
+je_kor_rail = {
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+	group = je_group_historical_content
+	is_shown_when_inactive = {
+		exist = c:KOR
+		c:KOR ?= THIS
+	}
+	possible = {
+		has_technology_researched = railways
+	}
+	complete = {
+		any_scope_state = {
+			state_region = s:STATE_SEOUL
+			has_building = building_railway
+		}
+		any_scope_state = {
+			state_region = s:STATE_BUSAN
+			has_building = building_railway
+		}
+		any_scope_state = {
+			state_region = s:STATE_YANGHO
+			has_building = building_railway
+		}
+		any_scope_state = {
+			state_region = s:STATE_SARIWON
+			has_building = building_railway
+		}
+		any_scope_state = {
+			state_region = s:STATE_PYONGYANG
+			has_building = building_railway
+		}
+	}
+	on_complete = {
+		trigger_event = {
+			id = fm_kor.9
+		}
+	}
+	weight = 100
+	should_be_pinned_by_default = yes
+}
+

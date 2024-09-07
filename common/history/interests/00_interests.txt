@@ -1,0 +1,121 @@
+﻿INTERESTS = {
+	c:SWU ?= {
+		add_declared_interest = region_north_germany
+	}
+	c:BAV ?= {
+		add_declared_interest = region_north_germany	
+	}
+	c:WUR ?= {
+		add_declared_interest = region_north_germany
+	}
+	c:BAD ?= {
+		add_declared_interest = region_north_germany	
+	}
+	c:HAN ?= {
+		add_declared_interest = region_south_germany	
+	}	
+	c:LOT ?= {
+		add_declared_interest = region_south_germany	
+	}		
+	c:TOR ?= {	
+		add_declared_interest = region_dnieper
+		add_declared_interest = region_nile_basin
+		add_declared_interest = region_persia
+		add_declared_interest = region_italy
+		add_declared_interest = region_arabic
+	}
+	c:IRE ?= {	
+		add_declared_interest = region_england
+		add_declared_interest = region_france
+	}
+	c:BIZ ?= {
+		add_declared_interest = region_france
+		add_declared_interest = region_balkans
+		add_declared_interest = region_north_germany
+		add_declared_interest = region_south_germany
+		add_declared_interest = region_italy
+		add_declared_interest = region_anatolia
+		add_declared_interest = region_persia
+		add_declared_interest = region_arabic
+		add_declared_interest = region_baltic
+		add_declared_interest = region_japan
+		add_declared_interest = region_manchuria
+		add_declared_interest = region_rhine
+	}
+	c:EGE ?= {
+		add_declared_interest = region_north_africa
+		add_declared_interest = region_niger
+		add_declared_interest = region_zanj
+		add_declared_interest = region_congo
+	}	
+	c:AGA ?= {	
+		add_declared_interest = region_brazil
+	}
+	c:CAS ?= {	
+		add_declared_interest = region_occitania
+		add_declared_interest = region_italy
+		add_declared_interest = region_baltic
+	}		
+	c:FRU ?= {
+		add_declared_interest = region_england
+		add_declared_interest = region_nile_basin
+		add_declared_interest = region_north_germany
+		add_declared_interest = region_south_germany
+		add_declared_interest = region_iberia
+		add_declared_interest = region_baltic
+		add_declared_interest = region_balkans
+		add_declared_interest = region_russia
+		add_declared_interest = region_senegal
+		add_declared_interest = region_danubia
+	}
+	c:BRZ ?= {
+		add_declared_interest = region_andes
+		add_declared_interest = region_gran_colombia
+	}		
+	c:AMC ?= {
+		add_declared_interest = region_canada
+		add_declared_interest = region_great_plains
+		add_declared_interest = region_central_america
+		add_declared_interest = region_caribbean
+		add_declared_interest = region_mexico
+		add_declared_interest = region_brazil
+		add_declared_interest = region_pacific_coast
+		add_declared_interest = region_gran_colombia
+		add_declared_interest = region_oceania
+	}		
+	c:AUS ?= {	
+		add_declared_interest = region_north_germany
+		add_declared_interest = region_anatolia
+		add_declared_interest = region_rhine
+		add_declared_interest = region_occitania
+		add_declared_interest = region_arabic
+		add_declared_interest = region_iberia
+		add_declared_interest = region_dnieper
+	}
+	c:NED ?= {
+		add_declared_interest = region_baltic	
+		add_declared_interest = region_north_germany
+		add_declared_interest = region_france
+	}
+	c:VEN ?= {
+		add_declared_interest = region_baltic
+		add_declared_interest = region_france	
+		add_declared_interest = region_italy
+		add_declared_interest = region_england
+		add_declared_interest = region_danubia
+	}
+	c:PUR ?= {
+		add_declared_interest = region_senegal
+		add_declared_interest = region_italy
+	}
+	c:DKE ?= {
+		add_declared_interest = region_niger
+	}
+	c:MAX ?= {
+		add_declared_interest = region_great_plains
+	}
+}	
+
+
+
+

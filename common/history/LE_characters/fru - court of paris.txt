@@ -1,0 +1,36 @@
+CHARACTERS = {
+	c:FRU ?= {
+		create_character = {
+			first_name = "Louis"
+			last_name = "de_Bourbon"
+			historical = yes
+			ruler = yes
+			dna = dna_louis_antoine_duke_of_angouleme
+			birth_date = 1775.8.6
+			culture = cu:french
+			interest_group = ig_landowners
+			ideology = ideology_royalist
+			traits = {
+				basic_offensive_planner 
+				bigoted
+			}
+			on_created = {
+				set_variable = is_married
+			}
+		}
+		create_character = {
+			first_name = "Jean"
+			last_name = "de_Bourbon"
+			historical = yes
+			heir = yes
+			dna = dna_infante_juan_count_of_morizon
+			birth_date = 1822.5.15
+			culture = cu:french
+			interest_group = ig_armed_forces
+			ideology = ideology_market_liberal
+			traits = {
+				reserved
+			}
+		}
+	}
+}

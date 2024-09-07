@@ -1,0 +1,96 @@
+NEconomy = {
+	ECONOMY_OF_SCALE_NATIONALIZED_FRACTION_MULT = 0.2
+}
+NDiplomacy = {
+	DEFAULT_TRUCE_MONTHS = 48
+	SWAY_FORCED_PACT_MONTHS = 60
+	OBLIGATION_FORCED_PACT_MONTHS = 60
+	RECENTLY_CONQUERED_DURATION_MONTHS = 60
+	RECENTLY_LIBERATED_DURATION_MONTHS = 60
+	WAR_GOAL_INFAMY_ANNEX_COUNTRY = 3.5
+	INFAMY_THRESHOLD_INFAMOUS = 50			# Above this, countries are considered infamous and get related penalties
+	INFAMY_THRESHOLD_NOTORIOUS = 80		# Above this, countries are considered notorious and get related penalties
+	INFAMY_THRESHOLD_PARIAH = 125			# Above this, countries are considered pariah and get related penalties
+	BASE_YEARLY_INFAMY_DECAY_RATE = 7.5
+	WAR_GOAL_INFAMY_MAKE_PROTECTORATE = 3
+}
+NWar = {
+	DEVASTATION_MAX = 100.0
+	DEVASTATION_INCREASE_RATE = 0.1 # Per day, scales with level of occupation
+	DEVASTATION_DECAY_RATE = -0.05 # Per day, when there are no occupations
+	DEVASTATION_FROM_BATTLES = 0.15 # For each battle
+}
+NPowerBlocs = {
+	MAX_PRINCIPLES = 4					# Max number of principles that a Power Bloc can have
+	INITIAL_PRINCIPLE_LEVELS = 4		# Max total levels of principles that a Power Bloc can have during formation
+	FORMATION_COOLDOWN_MONTHS = 24		# Cooldown in months between the attempts to form Power Blocs
+	JOIN_COOLDOWN_MONTHS = 6			# If a Country leaves a Power Bloc they cannot re-join before X months
+	LEAVE_COOLDOWN_MONTHS = 6			# If a Country joins a Power Bloc they cannot leave within X months
+	MIN_MEMBERS = 2 					# This is the minimum number of members that the bloc needs to have to be considered active. Members include the leader.
+	LEVERAGE_LOBBY_CLOUT_FACTOR = 500 	# Leverage gain is increased or decreased by the Lobby's total Clout * this factor
+	INVITE_ACTION_NAME = "invite_to_power_bloc"
+	JOIN_ACTION_NAME = "join_power_bloc"
+	MAX_MANDATE_PROGRESS = 4000			# When mandate progress reaches this value, the power bloc gains one mandate
+	MAX_MANDATES = 4				# This is the maximum number of mandates that can be accumulated at once
+	PRINCIPLE_SELECTION_COOLDOWN_DAYS = 90	# Once a principle is selected, it cannot be changed for this many days. Upgrading is unaffected by the cooldown, but resets it.
+	POWER_STRUGGLE_PRESTIGE_THRESHOLD_START = 1.2 	# If a power bloc member has more prestige than leader's prestige X this - power struggle starts with the member becoming contender
+	POWER_STRUGGLE_PRESTIGE_THRESHOLD_FAIL = 1.15 	# If a contender has less prestige than leader's prestige X this - power struggle fails
+	POWER_STRUGGLE_DURATION_SUCCESS_MONTHS = 12 	# Power struggle succeeds after this months
+	POWER_STRUGGLE_DURATION_FACTOR_FOR_FOUNDER = 0.75 	# Power struggle succeeds after this X POWER_STRUGGLE_DURATION_SUCCESS_MONTHS if the contender is the founder of the power bloc
+	COHESION_WEEKLY_DRIFT_MAX = 1		# At most, Cohesion will drift by +/- this value each week
+	COHESION_TARGET_MAX = 100			# The highest value Cohesion can reach
+	POWER_BLOC_INFLUENCE_COST = 500		# Cost in Influence to form / be the leader of a Power Bloc
+	MAX_LEVERAGE = 1000					# How much "raw" Leverage can be split between parties (the country itself + each Power Bloc)
+	LEVERAGE_WEEKLY_DRIFT_FACTOR = 0.02	# The delta between current Leverage and Target Leverage will be multiplied by this to determine the weekly Leverage drift
+	LEVERAGE_WEEKLY_DRIFT_MIN = 1		# At minimum, Leverage will drift by +/- this value each week, up/down to the target
+	LEVERAGE_INIT_STARTING_POWER_BLOC_UNCLAIMED_LEVERAGE_FACTOR = 0.5	# During initialization, a Power Bloc claims this fraction of a member's unclaimed leverage resulting from Leverage Resistance and 'lost leverage' in other Power Blocs' multipliers below 
+	LEVERAGE_INIT_OTHER_BLOC_MEMBER_FACTOR = 0.3	# During initialization, multiply calculated target leverage by this if country is member of another bloc
+	LEVERAGE_INIT_NO_BLOC_FACTOR = 0.5				# During initialization, multiply calculated target leverage by this if country is not a member of any power bloc
+	COUNTRY_POPULATION_LEVERAGE_RESISTANCE_MODIFIER_DIVISOR = 1000000 		# Population divided by this is multiplied by country_leverage_resistance_per_population to give a certain amount of leverage per million people
+	COUNTRY_POPULATION_LEVERAGE_RESISTANCE_MODIFIER_MAX_MULTIPLIER = 100	# Max multiplier given by population. With the value above at 1 000 000, this means the cap for leverage resistance is at 100 000 000.
+}
+
+NGraphics = {
+	DYNAMIC_TERRAIN_ROAD_WIDTH = 2		# was 2.5
+}
+
+NCamera = {
+    FOV	= 55	# still the same, don't touch (changes the zoom steps)
+    ZNEAR = 1
+    ZFAR = 10000
+
+	EDGE_SCROLLING_PIXELS = 10 # how many pixels from window edge that will trigger edge scrolling
+
+    SCROLL_SPEED = 0.06 	# higher values = faster camera. NOTE that this is tweakables from settings as well
+    ZOOM_RATE = 0.2 		# Zoom when right-mouse down
+	#						0	1	2	3		4		5		6		7		8		9		10		11		12		13		14		15
+	ZOOM_STEPS 			= { 15	25	40	50		75		85		200		210		340		350		550		575		600		650		700		2500	} #9 is the game changer
+	ZOOM_STEPS_TILT 	= { 35	40	45	50		55		55		60 		60		65		65		80		80		80		80		80		85		} # angle of the visual
+	ZOOM_STEPS_MIN_TILT = { 35	35	35	35		35		38		40		40		45		50		50		50		50		50		50		50		}
+	ZOOM_STEPS_MAX_TILT = { 89	89	89	89		89		89		89		89		89		89		89		89		89		89		89		89		}
+
+	MAX_PAN_TO_ZOOM_STEP = 8					# The camera will lower to this height (but only if above it) when panning to characters/provinces etc. ( 300 is optimal)
+
+	# Debug defines
+	DEBUG_GAMEPAD_LOWSPEED 		= 25.0
+	DEBUG_GAMEPAD_NORMALSPEED 	= 100.0
+	DEBUG_GAMEPAD_HIGHSPEED 	= 300.0
+	DEBUG_GAMEPAD_SENSITIVITY 	= 2.0
+}
+
+NCities = {
+	GRID_SCALE = 0.7			# was 1.1
+	MESH_SCALE = 0.6			# was 1.0
+
+	CITY_RIVER_DISTANCE_BIAS = 0.3	# Higher values = more river avoidance was 0.75
+	FARM_RIVER_DISTANCE_BIAS = 0.75
+	MINE_RIVER_DISTANCE_BIAS = 0.75
+	PORT_RIVER_DISTANCE_BIAS = 0.3	# was 0.75
+	WOOD_RIVER_DISTANCE_BIAS = 0.75
+
+	CITY_ROAD_DISTANCE_BIAS = 0.10		# was -1.0
+	FARM_ROAD_DISTANCE_BIAS = 0.10		# was 0.25
+	MINE_ROAD_DISTANCE_BIAS = 0.10		# was 0.25
+	PORT_ROAD_DISTANCE_BIAS = 0.10		# was -1.00
+	WOOD_ROAD_DISTANCE_BIAS = 0.10		# was 0.25
+}

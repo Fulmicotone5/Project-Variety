@@ -1,0 +1,155 @@
+﻿POPS = {
+	s:STATE_URAL = {
+		region_state:PMA = {
+			create_pop = {
+				culture = russian
+				size = 1677296
+			}
+		}
+	}
+	s:STATE_TOMSK = {
+		region_state:PMA = {
+			create_pop = {
+				culture = russian
+				size = 1570008
+			}
+		}
+	}
+	s:STATE_TOBOLSK = {
+		region_state:PMA = {
+			create_pop = {
+				culture = russian
+				size = 952000
+			}
+			create_pop = {
+				culture = siberian
+				size = 13980
+			}
+		}
+	}
+	s:STATE_TUVA = {
+		region_state:TUV = {
+			create_pop = {
+				culture = tuvan
+				size = 30000
+			}
+		}
+	}
+	s:STATE_UPPER_YENISEYSK = {
+		region_state:PMA = {
+			create_pop = {
+				culture = siberian
+				size = 31780
+			}
+			create_pop = {
+				culture = russian
+				size = 852
+			}
+		}
+	}
+	s:STATE_OB = {
+		region_state:PMA = {
+			create_pop = {
+				culture = russian
+				size = 20776
+			}
+		}
+	}
+	s:STATE_CHUKOTKA = {
+		region_state:SIB = {
+			create_pop = {
+				culture = inuit
+				size = 3580
+			}
+			create_pop = {
+				culture = siberian
+				size = 6044
+			}
+		}
+	}
+	s:STATE_KOLYMA = {
+		#DONE
+		region_state:SIB = {
+			create_pop = {
+				culture = siberian
+				size = 43280
+			}
+		}
+	}
+	s:STATE_KAMCHATKA = {
+		region_state:KOC = {
+			create_pop = {
+				culture = siberian
+				size = 5600
+			}
+			create_pop = {
+				culture = korean
+				size = 3400
+			}
+		}
+	}
+	s:STATE_OKHOTSK = {
+		region_state:KOC = {
+			create_pop = {
+				culture = siberian
+				size = 49400
+			}
+			create_pop = {
+				culture = korean
+				size = 2400
+			}
+		}
+	}
+	s:STATE_YAKUTSK = {
+		region_state:SIB = {
+			create_pop = {
+				culture = siberian
+				size = 56096
+			}
+		}
+	}
+	s:STATE_BURYATIA = {
+		region_state:SIB = {
+			create_pop = {
+				culture = russian
+				size = 422000
+			}
+		}
+	}
+	s:STATE_TRANS_BAIKAL = {
+		region_state:SIB = {
+			create_pop = {
+				culture = russian
+				size = 122000
+			}
+			create_pop = {
+				culture = manchu
+				size = 85996
+			}
+			create_pop = {
+				culture = mongol
+				size = 36000
+			}
+			create_pop = {
+				culture = siberian
+				size = 17996
+			}
+		}
+	}
+	s:STATE_IRKUTSK = {
+		region_state:SIB = {
+			create_pop = {
+				culture = russian
+				size = 388408
+			}
+			create_pop = {
+				culture = mongol
+				size = 116004
+			}
+			create_pop = {
+				culture = siberian
+				size = 4996
+			}
+		}
+	}
+}

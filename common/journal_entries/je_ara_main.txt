@@ -1,0 +1,82 @@
+je_ara_main = {
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	group = je_group_historical_content
+	complete = {
+		has_law = law_type:law_racial_segregation
+	}
+	on_complete = {
+		add_primary_culture = cu:catalan
+		add_primary_culture = cu:basque
+		s:STATE_CATALONIA = {
+			add_claim = ROOT
+		}
+		s:STATE_NAVARRA = {
+			add_claim = ROOT
+		}
+	}
+	should_be_pinned_by_default = yes
+}
+
+winds_of_ch_kaa = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	group = je_group_historical_content
+	complete = {
+		has_technology_researched = nationalism
+	}
+	on_complete = {
+		trigger_event = {
+			id = fm_kaa.2
+		}
+	}
+	should_be_pinned_by_default = yes
+}
+
+je_ara_esp = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	group = je_group_historical_content
+	complete = {
+		owns_entire_state_region = STATE_ASTURIAS
+		owns_entire_state_region = STATE_GALICIA
+		owns_entire_state_region = STATE_CASTILE
+		owns_entire_state_region = STATE_TOLEDO
+		owns_entire_state_region = STATE_BADAJOZ
+		owns_entire_state_region = STATE_ANDALUSIA
+		owns_entire_state_region = STATE_GRANADA
+		has_law = law_type:law_monarchy
+	}
+	on_complete = {
+		change_tag = ESP
+		trigger_event = {
+			id = fm_kaa.3
+		}
+	}
+	weight = 100
+	should_be_pinned_by_default = yes
+}
+
+je_ara_occ = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	group = je_group_historical_content
+	complete = {
+		owns_entire_state_region = STATE_AQUITAINE
+		owns_entire_state_region = STATE_LANGUEDOC
+		owns_entire_state_region = STATE_GUYENNE
+		owns_entire_state_region = STATE_AUVERGNE_LIMOUSIN
+		has_technology_researched = pan-nationalism
+		NOT = {
+			has_law = law_type:law_national_supremacy
+		}
+		NOT = {
+			has_law = law_type:law_ethnostate
+		}
+		has_law = law_type:law_monarchy
+	}
+	on_complete = {
+		change_tag = NOC
+		trigger_event = {
+			id = fm_kaa.4
+		}
+	}
+	weight = 100
+	should_be_pinned_by_default = yes
+}

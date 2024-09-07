@@ -1,0 +1,24 @@
+CHARACTERS = {
+	c:KOR ?= {
+		create_character = {
+			first_name = "Yong-sun"
+			last_name = "Yi"
+			historical = yes
+			age = 35
+			culture = cu:korean
+			religion = rel:confucian
+			ig_leader = yes
+			female = no
+			interest_group = ig:ig_devout
+			ideology = ideology_royalist
+			traits = {
+				imperious
+				direct
+				basic_political_operator
+			}
+			on_created = {
+				set_variable = is_married
+			}
+		}
+	}
+}

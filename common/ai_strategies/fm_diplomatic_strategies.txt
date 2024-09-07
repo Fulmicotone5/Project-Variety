@@ -1,0 +1,1356 @@
+ai_strategy_unify_poland = {
+	icon = "gfx/interface/icons/ai_strategy_icons/unification.dds"
+	type = diplomatic
+	will_form_power_bloc = {
+		always = yes
+	}
+	undesirable_infamy_level = {
+		value = 80
+	}
+	unacceptable_infamy_level = {
+		value = 120
+	}
+	ideological_opinion_effect_mult = 0.5
+	wargoal_maneuvers_fraction = {
+		value = 0.2
+	}
+	diplomatic_play_neutrality = {
+		value = 0
+	}
+	diplomatic_play_boldness = {
+		value = 100
+	}
+	obligation_value = {
+		value = 20
+	}
+	recklessness = {
+		value = 2
+	}
+	aggression = {
+		value = 0.5
+		if = {
+			limit = {
+				scope:target_country = {
+					can_form_nation = PUL
+				}
+			}
+			add = 200
+		}
+		if = {
+			limit = {
+				scope:target_country = {
+					any_scope_state = {
+						OR = {
+							state_region = s:STATE_GREATER_POLAND
+							state_region = s:STATE_LESSER_POLAND
+							state_region = s:STATE_EAST_GALICIA
+							state_region = s:STATE_WEST_GALICIA
+							state_region = s:STATE_MAZOVIA
+						}
+					}
+				}
+			}
+			add = 200
+		}
+	}
+	building_group_weights = {
+		bg_army = 1.5
+	}
+	state_value = {
+		if = {
+			limit = {
+				scope:target_state = {
+					state_region = {
+						is_homeland = cu:polish
+					}
+				}
+				can_reach_target_state = yes
+			}
+			add = 500
+		}
+	}
+	wargoal_scores = {
+		annex_country = {
+			if = {
+				limit = {
+					can_reach_target_country = yes
+				}
+				add = 300
+			}
+		}
+	}
+	secret_goal_scores = {
+		befriend = {
+			if = {
+				limit = {
+					NOT = {
+						scope:target_country = {
+							is_subject_of = root
+						}
+					} 
+				}
+				add = 50
+				if = {
+					limit = {
+						can_reach_target_country = no
+					}
+					add = 150
+				}
+			}
+		}
+		conquer = {
+			if = {
+				limit = {
+					NOT = {
+						scope:target_country = {
+							is_subject_of = root
+						}
+					}
+					scope:target_country = {
+						any_scope_state = {
+							OR = {
+								state_region = s:STATE_GREATER_POLAND
+								state_region = s:STATE_LESSER_POLAND
+								state_region = s:STATE_EAST_GALICIA
+								state_region = s:STATE_WEST_GALICIA
+								state_region = s:STATE_MAZOVIA
+							}
+						}
+					}
+					can_reach_target_country = yes
+				}
+				add = 500
+			}
+		}
+	}
+	possible = {
+		is_subject = no
+		country_has_primary_culture = cu:polish
+	}
+	weight = {
+		value = 25
+		add = {
+			value = army_size
+			multiply = 10
+		}
+		if = {
+			limit = {
+				NOT = {
+					is_country_type = unrecognized
+				}
+			}
+			multiply = 10
+		}
+		else_if = {
+			limit = {
+				country_rank = rank_value:unrecognized_major_power
+			}
+			multiply = 5
+		}
+		else_if = {
+			limit = {
+				country_rank = rank_value:unrecognized_regional_power
+			}
+			multiply = 3
+		}
+	}
+}
+
+ai_strategy_unify_ethiopia = {
+	icon = "gfx/interface/icons/ai_strategy_icons/unification.dds"
+	type = diplomatic
+	will_form_power_bloc = {
+		always = yes
+	}
+	undesirable_infamy_level = {
+		value = 80
+	}
+	unacceptable_infamy_level = {
+		value = 120
+	}
+	ideological_opinion_effect_mult = 0.5
+	wargoal_maneuvers_fraction = {
+		value = 0.2
+	}
+	diplomatic_play_neutrality = {
+		value = 0
+	}
+	diplomatic_play_boldness = {
+		value = 50
+	}
+	obligation_value = {
+		value = 0
+		if = {
+			limit = {
+				scope:target_country = {
+					has_journal_entry = je_age_of_princes
+				}
+			}
+			add = 25
+		}
+	}
+	recklessness = {
+		value = 1
+	}
+	aggression = {
+		value = 0.5
+		if = {
+			limit = {
+				scope:target_country = {
+					can_form_nation = ETH
+				}
+			}
+			add = 50
+		}
+		if = {
+			limit = {
+				scope:target_country = {
+					any_scope_state = {
+						OR = {
+							state_region = s:STATE_AMHARA
+							state_region = s:STATE_GONDER
+						}
+					}
+				}
+			}
+			add = 20
+		}
+		# Less aggressive against countries we're just antagonistic against, rather than belligerent/domineering
+		if = {
+			limit = {
+				has_attitude = {
+					who = scope:target_country
+					attitude = antagonistic
+				}
+			}
+			multiply = 0.25
+		}
+	}
+	building_group_weights = {
+		bg_army = 1.5
+	}
+	state_value = {
+		if = {
+			limit = {
+				scope:target_state = {
+					state_region = {
+						OR = {
+							is_homeland = cu:amhara
+							is_homeland = cu:oromo
+							is_homeland = cu:tigray
+						}
+					}
+				}
+				can_reach_target_state = yes
+			}
+			add = 100
+		}
+	}
+	wargoal_scores = {
+		annex_country = {
+			if = {
+				limit = {
+					scope:target_country = {
+						has_journal_entry = je_age_of_princes
+					}
+					can_reach_target_country = yes
+				}
+				add = 300
+			}
+		}
+	}
+	secret_goal_scores = {
+		befriend = {
+			if = {
+				limit = {
+					NOT = {
+						scope:target_country = {
+							is_subject_of = root
+						}
+					}
+					scope:target_country = {
+						any_scope_state = {
+							OR = {
+								state_region = s:STATE_AMHARA
+								state_region = s:STATE_GONDER
+							}
+						}
+					}
+				}
+				add = 150
+				if = {
+					limit = {
+						can_reach_target_country = no
+					}
+					add = 150
+				}
+			}
+		}
+		conquer = {
+			if = {
+				limit = {
+					NOT = {
+						scope:target_country = {
+							is_subject_of = root
+						}
+					}
+					scope:target_country = {
+						any_scope_state = {
+							OR = {
+								state_region = s:STATE_AMHARA
+								state_region = s:STATE_GONDER
+							}
+						}
+					}
+					can_reach_target_country = yes
+				}
+				add = 500
+			}
+		}
+	}
+	possible = {
+		is_subject = no
+		has_journal_entry = je_age_of_princes
+	}
+	weight = {
+		value = 25
+		add = {
+			value = army_size
+			multiply = 10
+		}
+		if = {
+			limit = {
+				NOT = {
+					is_country_type = unrecognized
+				}
+			}
+			multiply = 10
+		}
+		else_if = {
+			limit = {
+				country_rank = rank_value:unrecognized_major_power
+			}
+			multiply = 5
+		}
+		else_if = {
+			limit = {
+				country_rank = rank_value:unrecognized_regional_power
+			}
+			multiply = 3
+		}
+		# Delay the Ethiopian Thunderdome a bit
+		if = {
+			limit = {
+				NOT = {
+					has_technology_researched = centralization
+				}
+			}
+			multiply = 0.1
+		}
+	}
+}
+
+ai_strategy_unify_jugo = {
+	icon = "gfx/interface/icons/ai_strategy_icons/unification.dds"
+	type = diplomatic
+	will_form_power_bloc = {
+		always = yes
+	}
+	undesirable_infamy_level = {
+		value = 80
+	}
+	unacceptable_infamy_level = {
+		value = 120
+	}
+	ideological_opinion_effect_mult = {
+		value = 0.5
+	}
+	wargoal_maneuvers_fraction = {
+		value = 0.2
+	}
+	diplomatic_play_neutrality = {
+		value = 0
+	}
+	diplomatic_play_boldness = {
+		value = 50
+	}
+	obligation_value = {
+		value = 0
+	}
+	recklessness = {
+		value = 0.5
+	}
+	aggression = {
+		value = 0.5
+		if = {
+			limit = {
+				scope:target_country = {
+					can_form_nation = YUG
+				}
+			}
+			add = 200
+		}
+	}
+	building_group_weights = {
+		bg_army = 1.5
+	}
+	state_value = {
+		if = {
+			limit = {
+				scope:target_state = {
+					OR = {
+						state_region = s:STATE_DELVIDEK
+						state_region = s:STATE_BANAT
+						state_region = s:STATE_DALMATIA
+						state_region = s:STATE_CROATIA
+						state_region = s:STATE_NORTHERN_SERBIA
+						state_region = s:STATE_SOUTHERN_SERBIA
+						state_region = s:STATE_SKOPIA
+						state_region = s:STATE_BOSNIA
+						state_region = s:STATE_SLAVONIA
+						state_region = s:STATE_ALBANIA
+						state_region = s:STATE_MONTENEGRO
+						state_region = s:STATE_SLOVENIA
+					}
+				}
+				can_reach_target_state = yes
+			}
+			add = 100
+		}
+	}
+	wargoal_scores = {
+		annex_country = {
+			if = {
+				limit = {
+					can_reach_target_country = yes
+				}
+				add = 300
+			}
+		}
+	}
+	secret_goal_scores = {
+		befriend = {
+			if = {
+				limit = {
+					can_reach_target_country = no
+				}
+				add = 150
+			}
+		}
+		conquer = {
+			if = {
+				limit = {
+					NOT = {
+						scope:target_country = {
+							is_subject_of = root
+						}
+					}
+					can_reach_target_country = yes
+				}
+				add = 500
+			}
+		}
+	}
+	possible = {
+		is_subject = no
+		can_form_nation = YUG
+	}
+	weight = {
+		value = 25
+		add = {
+			value = army_size
+			multiply = 10
+		}
+		if = {
+			limit = {
+				NOT = {
+					is_country_type = unrecognized
+				}
+			}
+			multiply = 10
+		}
+		else_if = {
+			limit = {
+				country_rank = rank_value:unrecognized_major_power
+			}
+			multiply = 3
+		}
+		else_if = {
+			limit = {
+				country_rank = rank_value:unrecognized_regional_power
+			}
+			multiply = 5
+		}
+		# Delay the Ethiopian Thunderdome a bit
+		if = {
+			limit = {
+				NOT = {
+					has_technology_researched = nationalism
+				}
+			}
+			multiply = 0.1
+		}
+	}
+}
+
+ai_strategy_unify_wei = {
+	icon = "gfx/interface/icons/ai_strategy_icons/unification.dds"
+	type = diplomatic
+	will_form_power_bloc = {
+		always = yes
+	}
+	undesirable_infamy_level = {
+		value = 80
+	}
+	unacceptable_infamy_level = {
+		value = 120
+	}
+	ideological_opinion_effect_mult = {
+		value = 0.5
+	}
+	wargoal_maneuvers_fraction = {
+		value = 0.2
+	}
+	diplomatic_play_neutrality = {
+		value = 0
+	}
+	diplomatic_play_boldness = {
+		value = 50
+	}
+	obligation_value = {
+		value = 0
+	}
+	recklessness = {
+		value = 0.5
+	}
+	aggression = {
+		value = 0.5
+		if = {
+			limit = {
+				scope:target_country = {
+					can_form_nation = WER
+				}
+			}
+			add = 60
+		}
+		# Less aggressive against countries we're just antagonistic against, rather than belligerent/domineering
+		if = {
+			limit = {
+				has_attitude = {
+					who = scope:target_country
+					attitude = antagonistic
+				}
+			}
+			multiply = 0.25
+		}
+	}
+	building_group_weights = {
+		bg_army = 1.5
+	}
+	state_value = {
+		if = {
+			limit = {
+				scope:target_state = {
+					OR = {
+						state_region = s:STATE_BEIJING
+						state_region = s:STATE_SHENGJING
+						state_region = s:STATE_ZHILI
+						state_region = s:STATE_SHANDONG
+						state_region = s:STATE_JIANGSU
+						state_region = s:STATE_NORTHERN_ANHUI
+						state_region = s:STATE_HENAN
+						state_region = s:STATE_SHANXI
+						state_region = s:STATE_XIAN
+						state_region = s:STATE_NINGXIA
+						state_region = s:STATE_GANSU
+					}
+				}
+				can_reach_target_state = yes
+			}
+			add = 500
+		}
+	}
+	wargoal_scores = {
+		annex_country = {
+			if = {
+				limit = {
+					can_reach_target_country = yes
+				}
+				add = 300
+			}
+		}
+	}
+	secret_goal_scores = {
+		befriend = {
+			if = {
+				limit = {
+					can_reach_target_country = no
+				}
+				add = 150
+			}
+		}
+		conquer = {
+			if = {
+				limit = {
+					NOT = {
+						scope:target_country = {
+							is_subject_of = root
+						}
+					}
+					can_reach_target_country = yes
+				}
+				add = 500
+			}
+		}
+	}
+	possible = {
+		is_subject = no
+		country_has_primary_culture = cu:han
+	}
+	weight = {
+		value = 25
+		add = {
+			value = army_size
+			multiply = 10
+		}
+		if = {
+			limit = {
+				NOT = {
+					is_country_type = unrecognized
+				}
+			}
+			multiply = 10
+		}
+		else_if = {
+			limit = {
+				country_rank = rank_value:unrecognized_major_power
+			}
+			multiply = 3
+		}
+		else_if = {
+			limit = {
+				country_rank = rank_value:unrecognized_regional_power
+			}
+			multiply = 5
+		}
+	}
+}
+
+ai_strategy_unify_han = {
+	icon = "gfx/interface/icons/ai_strategy_icons/unification.dds"
+	type = diplomatic
+	will_form_power_bloc = {
+		always = yes
+	}
+	undesirable_infamy_level = {
+		value = 80
+	}
+	unacceptable_infamy_level = {
+		value = 120
+	}
+	ideological_opinion_effect_mult = {
+		value = 0.5
+	}
+	wargoal_maneuvers_fraction = {
+		value = 0.2
+	}
+	diplomatic_play_neutrality = {
+		value = 0
+	}
+	diplomatic_play_boldness = {
+		value = 50
+	}
+	obligation_value = {
+		value = 0
+	}
+	recklessness = {
+		value = 0.5
+	}
+	aggression = {
+		value = 0.5
+		if = {
+			limit = {
+				scope:target_country = {
+					can_form_nation = SHU
+				}
+			}
+			add = 60
+		}
+		# Less aggressive against countries we're just antagonistic against, rather than belligerent/domineering
+		if = {
+			limit = {
+				has_attitude = {
+					who = scope:target_country
+					attitude = antagonistic
+				}
+			}
+			multiply = 0.25
+		}
+	}
+	building_group_weights = {
+		bg_army = 1.5
+	}
+	state_value = {
+		if = {
+			limit = {
+				scope:target_state = {
+					OR = {
+						state_region = s:STATE_YUNNAN
+						state_region = s:STATE_CHONGQING
+						state_region = s:STATE_GUIZHOU
+						state_region = s:STATE_SICHUAN
+						state_region = s:STATE_QINGHAI
+						state_region = s:STATE_TONKIN
+					}
+				}
+				can_reach_target_state = yes
+			}
+			add = 500
+		}
+	}
+	wargoal_scores = {
+		annex_country = {
+			if = {
+				limit = {
+					can_reach_target_country = yes
+				}
+				add = 300
+			}
+		}
+	}
+	secret_goal_scores = {
+		befriend = {
+			if = {
+				limit = {
+					can_reach_target_country = no
+				}
+				add = 150
+			}
+		}
+		conquer = {
+			if = {
+				limit = {
+					NOT = {
+						scope:target_country = {
+							is_subject_of = root
+						}
+					}
+					can_reach_target_country = yes
+				}
+				add = 500
+			}
+		}
+	}
+	possible = {
+		is_subject = no
+		country_has_primary_culture = cu:han
+		country_has_primary_culture = cu:yi
+	}
+	weight = {
+		value = 25
+		add = {
+			value = army_size
+			multiply = 10
+		}
+		if = {
+			limit = {
+				NOT = {
+					is_country_type = unrecognized
+				}
+			}
+			multiply = 10
+		}
+		else_if = {
+			limit = {
+				country_rank = rank_value:unrecognized_major_power
+			}
+			multiply = 3
+		}
+		else_if = {
+			limit = {
+				country_rank = rank_value:unrecognized_regional_power
+			}
+			multiply = 5
+		}
+	}
+}
+
+ai_strategy_hen = {
+	icon = "gfx/interface/icons/ai_strategy_icons/unification.dds"
+	type = diplomatic
+	will_form_power_bloc = {
+		OR = {
+			global_country_ranking <= 3
+			AND = {
+				country_rank >= rank_value:great_power
+				has_technology_researched = nationalism
+			}
+		}
+	}
+	undesirable_infamy_level = {
+		value = 80
+	}
+	unacceptable_infamy_level = {
+		value = 120
+	}
+	ideological_opinion_effect_mult = {
+		value = 0.5
+	}
+	wargoal_maneuvers_fraction = {
+		value = 0.2
+	}
+	diplomatic_play_neutrality = {
+		value = 0
+	}
+	diplomatic_play_boldness = {
+		value = 70
+	}
+	obligation_value = {
+		value = 0
+	}
+	recklessness = {
+		value = 1
+	}
+	aggression = {
+		value = 0.5
+		if = {
+			limit = {
+				scope:target_country = {
+					can_form_nation = RHU
+				}
+			}
+			add = 100
+		}
+	}
+	building_group_weights = {
+		bg_army = 1.5
+	}
+	state_value = {
+		if = {
+			limit = {
+				scope:target_state = {
+					OR = {
+						state_region = s:STATE_RUHR
+						state_region = s:STATE_NORTH_RHINE
+						state_region = s:STATE_ALSACE_LORRAINE
+						state_region = s:STATE_ELBE
+						state_region = s:STATE_WESTPHALIA
+						state_region = s:STATE_RHINELAND
+						state_region = s:STATE_HANNOVER
+						state_region = s:STATE_BRUNSWICK
+						state_region = s:STATE_HESSE
+					}
+				}
+				can_reach_target_state = yes
+			}
+			add = 500
+		}
+	}
+	wargoal_scores = {
+		annex_country = {
+			if = {
+				limit = {
+					can_reach_target_country = yes
+				}
+				add = 300
+			}
+		}
+	}
+	secret_goal_scores = {
+		befriend = {
+			if = {
+				limit = {
+					can_reach_target_country = no
+				}
+				add = 150
+			}
+		}
+		conquer = {
+			if = {
+				limit = {
+					NOT = {
+						scope:target_country = {
+							is_subject_of = root
+						}
+					}
+					can_reach_target_country = yes
+				}
+				add = 500
+			}
+		}
+	}
+	possible = {
+		is_subject = no
+		c:HEN ?= THIS
+	}
+	weight = {
+		value = 25
+		add = {
+			value = army_size
+			multiply = 10
+		}
+		if = {
+			limit = {
+				NOT = {
+					is_country_type = unrecognized
+				}
+			}
+			multiply = 10
+		}
+		else_if = {
+			limit = {
+				country_rank = rank_value:unrecognized_major_power
+			}
+			multiply = 3
+		}
+		else_if = {
+			limit = {
+				country_rank = rank_value:unrecognized_regional_power
+			}
+			multiply = 5
+		}
+	}
+}
+
+ai_strategy_unify_wu = {
+	icon = "gfx/interface/icons/ai_strategy_icons/unification.dds"
+	type = diplomatic
+	will_form_power_bloc = {
+		always = yes
+	}
+	undesirable_infamy_level = {
+		value = 80
+	}
+	unacceptable_infamy_level = {
+		value = 120
+	}
+	ideological_opinion_effect_mult = {
+		value = 0.5
+	}
+	wargoal_maneuvers_fraction = {
+		value = 0.2
+	}
+	diplomatic_play_neutrality = {
+		value = 0
+	}
+	diplomatic_play_boldness = {
+		value = 50
+	}
+	obligation_value = {
+		value = 0
+	}
+	recklessness = {
+		value = 0.5
+	}
+	aggression = {
+		value = 0.5
+		if = {
+			limit = {
+				scope:target_country = {
+					can_form_nation = KWO
+				}
+			}
+			add = 60
+		}
+		# Less aggressive against countries we're just antagonistic against, rather than belligerent/domineering
+		if = {
+			limit = {
+				has_attitude = {
+					who = scope:target_country
+					attitude = antagonistic
+				}
+			}
+			multiply = 0.25
+		}
+	}
+	building_group_weights = {
+		bg_army = 1.5
+	}
+	state_value = {
+		if = {
+			limit = {
+				scope:target_state = {
+					OR = {
+						state_region = s:STATE_TONKIN
+						state_region = s:STATE_GUANGXI
+						state_region = s:STATE_GUANGDONG
+						state_region = s:STATE_SHAOZHOU
+						state_region = s:STATE_FUJIAN
+						state_region = s:STATE_ZHEJIANG
+						state_region = s:STATE_SUZHOU
+						state_region = s:STATE_NANJING
+						state_region = s:STATE_SOUTHERN_ANHUI
+						state_region = s:STATE_JIANGXI
+					}
+				}
+				can_reach_target_state = yes
+			}
+			add = 500
+		}
+	}
+	wargoal_scores = {
+		annex_country = {
+			if = {
+				limit = {
+					can_reach_target_country = yes
+				}
+				add = 300
+			}
+		}
+	}
+	secret_goal_scores = {
+		befriend = {
+			if = {
+				limit = {
+					can_reach_target_country = no
+				}
+				add = 150
+			}
+		}
+		conquer = {
+			if = {
+				limit = {
+					NOT = {
+						scope:target_country = {
+							is_subject_of = root
+						}
+					}
+					can_reach_target_country = yes
+				}
+				add = 500
+			}
+		}
+	}
+	possible = {
+		is_subject = no
+		country_has_primary_culture = cu:han
+		country_has_primary_culture = cu:min
+		country_has_primary_culture = cu:yue
+	}
+	weight = {
+		value = 25
+		add = {
+			value = army_size
+			multiply = 10
+		}
+		if = {
+			limit = {
+				NOT = {
+					is_country_type = unrecognized
+				}
+			}
+			multiply = 10
+		}
+		else_if = {
+			limit = {
+				country_rank = rank_value:unrecognized_major_power
+			}
+			multiply = 3
+		}
+		else_if = {
+			limit = {
+				country_rank = rank_value:unrecognized_regional_power
+			}
+			multiply = 5
+		}
+	}
+}
+
+ai_strategy_unify_inde = {
+	icon = "gfx/interface/icons/ai_strategy_icons/unification.dds"
+	type = diplomatic
+	will_form_power_bloc = {
+		always = yes
+	}
+	undesirable_infamy_level = {
+		value = 80
+	}
+	unacceptable_infamy_level = {
+		value = 120
+	}
+	ideological_opinion_effect_mult = 0.5
+	wargoal_maneuvers_fraction = {
+		value = 0.2
+	}
+	diplomatic_play_neutrality = {
+		value = 0
+	}
+	diplomatic_play_boldness = {
+		value = 50
+	}
+	obligation_value = {
+		value = 0
+	}
+	recklessness = {
+		value = 1.2
+	}
+	aggression = {
+		value = 0.5
+		if = {
+			limit = {
+				scope:target_country = {
+					can_form_nation = BHT
+				}
+			}
+			add = 20
+		}
+		if = {
+			limit = {
+				scope:target_country = {
+					any_scope_state = {
+						state_region = {
+							OR = {
+								is_homeland = cu:assamese
+								is_homeland = cu:avadhi
+								is_homeland = cu:baluchi
+								is_homeland = cu:bengali
+								is_homeland = cu:bihari
+								is_homeland = cu:gujarati
+								is_homeland = cu:kanauji
+								is_homeland = cu:kannada
+								is_homeland = cu:malayalam
+								is_homeland = cu:marathi
+								is_homeland = cu:oriya
+								is_homeland = cu:panjabi
+								is_homeland = cu:pashtun
+								is_homeland = cu:rajput
+								is_homeland = cu:sindi
+								is_homeland = cu:tamil
+								is_homeland = cu:telegu
+							}
+						}
+					}
+				}
+			}
+			add = 15
+		}
+	}
+	building_group_weights = {
+		bg_army = 1.5
+	}
+	state_value = {
+		if = {
+			limit = {
+				scope:target_state = {
+					state_region = {
+						OR = {
+							is_homeland = cu:assamese
+							is_homeland = cu:avadhi
+							is_homeland = cu:baluchi
+							is_homeland = cu:bengali
+							is_homeland = cu:bihari
+							is_homeland = cu:gujarati
+							is_homeland = cu:kanauji
+							is_homeland = cu:kannada
+							is_homeland = cu:malayalam
+							is_homeland = cu:marathi
+							is_homeland = cu:oriya
+							is_homeland = cu:panjabi
+							is_homeland = cu:pashtun
+							is_homeland = cu:rajput
+							is_homeland = cu:sindi
+							is_homeland = cu:tamil
+							is_homeland = cu:telegu
+						}
+					}
+				}
+				can_reach_target_state = yes
+			}
+			add = 100
+		}
+	}
+	wargoal_scores = {
+		annex_country = {
+			if = {
+				limit = {
+					can_reach_target_country = yes
+				}
+				add = 300
+			}
+		}
+	}
+	secret_goal_scores = {
+		befriend = {
+			if = {
+				limit = {
+					can_reach_target_country = no
+				}
+				add = 150
+			}
+		}
+		conquer = {
+			if = {
+				limit = {
+					NOT = {
+						scope:target_country = {
+							is_subject_of = root
+						}
+					}
+					scope:target_country = {
+						any_scope_state = {
+							state_region = {
+								OR = {
+									is_homeland = cu:assamese
+									is_homeland = cu:avadhi
+									is_homeland = cu:baluchi
+									is_homeland = cu:bengali
+									is_homeland = cu:bihari
+									is_homeland = cu:gujarati
+									is_homeland = cu:kanauji
+									is_homeland = cu:kannada
+									is_homeland = cu:malayalam
+									is_homeland = cu:marathi
+									is_homeland = cu:oriya
+									is_homeland = cu:panjabi
+									is_homeland = cu:pashtun
+									is_homeland = cu:rajput
+									is_homeland = cu:sindi
+									is_homeland = cu:tamil
+									is_homeland = cu:telegu
+								}
+							}
+						}
+					}
+					can_reach_target_country = yes
+				}
+				add = 500
+			}
+		}
+	}
+	possible = {
+		is_subject = no
+		can_form_nation = BHT
+	}
+	weight = {
+		value = 25
+		add = {
+			value = army_size
+			multiply = 10
+		}
+		if = {
+			limit = {
+				NOT = {
+					is_country_type = unrecognized
+				}
+			}
+			multiply = 10
+		}
+		else_if = {
+			limit = {
+				country_rank = rank_value:unrecognized_major_power
+			}
+			multiply = 5
+		}
+		else_if = {
+			limit = {
+				country_rank = rank_value:unrecognized_regional_power
+			}
+			multiply = 3
+		}
+	}
+}
+
+ai_strategy_conservative_agenda_chi = {
+	icon = "gfx/interface/icons/ai_strategy_icons/conservative_agenda.dds"
+	type = political
+	revolution_aversion = {
+		value = 25
+	}
+	min_law_chance_to_pass = {
+		value = 15
+		if = {
+			limit = {
+				ai_has_reasons_to_not_oppose_law = yes
+			}
+			multiply = 0.5
+		}
+	}
+	max_progressiveness = {
+		value = 1000
+	}
+	max_regressiveness = {
+		value = 25
+	}
+	change_law_chance = {
+		value = 15
+		if = {
+			limit = {
+				any_interest_group = {
+					is_insurrectionary = yes
+				}
+			}
+			add = 5
+		}
+		if = {
+			limit = {
+				OR = {
+					has_journal_entry = je_government_petition
+					has_journal_entry = je_law_imposition
+				}
+			}
+			add = 25
+		}
+	}
+	pro_interest_groups = {
+		ig_rural_folk
+		ig_devout
+	}
+	anti_interest_groups = {
+		ig_landowners
+		ig_industrialists
+		ig_petty_bourgeoisie
+		ig_armed_forces
+	}
+	institution_scores = {
+		institution_colonial_affairs = {
+			value = 150
+		}
+		institution_social_security = {
+			value = 50
+		}
+		institution_workplace_safety = {
+			value = 50
+		}
+		institution_schools = {
+			value = 100
+		}
+		institution_police = {
+			value = 150
+		}
+		institution_health_system = {
+			value = 100
+		}
+		institution_home_affairs = {
+			value = 150
+		}
+	}
+	possible = {
+		OR = {
+			country_has_primary_culture = cu:han
+			country_has_primary_culture = cu:min
+			country_has_primary_culture = cu:yue
+			country_has_primary_culture = cu:yi
+		}
+	}
+	weight = {
+		value = 50
+		if = {
+			limit = {
+				exists = ruler
+				ruler = {
+					OR = {
+						has_ideology = ideology:ideology_traditionalist
+						has_monarchist_ideology = yes
+					}
+				}
+			}
+			add = 10
+		}
+		if = {
+			limit = {
+				has_radical_leftist_government = yes
+			}
+			multiply = 1.5
+		}
+	}
+}

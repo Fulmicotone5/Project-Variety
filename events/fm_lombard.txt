@@ -1,0 +1,215 @@
+namespace = lombard
+# start event
+lombard.1 = {
+	type = country_event
+	placement = ROOT
+	title = lombard.1.t
+	desc = lombard.1.d
+	flavor = lombard.1.f
+	duration = 3
+	event_image = {
+		texture = "gfx/event_pictures/Popecathedral.dds"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+	trigger = {
+	}
+	option = {
+		name = lombard.1.a
+	}
+	after = {
+		add_journal_entry = {
+			type = je_lom_main
+		}
+	}
+}
+
+lombard.2 = {
+	type = country_event
+	placement = ROOT
+	title = lombard.2.t
+	desc = lombard.2.d
+	flavor = lombard.2.f
+	duration = 3
+	event_image = {
+		video = "unspecific_politicians_arguing"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	trigger = {
+	}
+	immediate = {
+		random_interest_group = {
+			limit
+			{
+				is_interest_group_type = ig_intelligentsia
+				exist = leader
+			}
+			leader = {
+				save_scope_as = intelligentsia_leader
+			}
+		}
+	}
+	option = {
+		name = lombard.2.a
+		default_option = yes
+		add_radicals = {
+			value = large_radicals
+			strata = poor
+		}
+		every_interest_group = {
+			limit = {
+				is_interest_group_type = ig_intelligentsia
+			}
+			add_modifier = {
+				name = modifier_lom_one
+				months = normal_modifier_time
+				is_decaying = yes
+			}
+		}
+		add_loyalists = {
+			value = large_radicals
+			pop_type = bureaucrats
+		}
+		add_loyalists = {
+			value = very_large_radicals
+			pop_type = academics
+		}
+		every_interest_group = {
+			limit = {
+				OR = {
+					is_interest_group_type = ig_petty_bourgeoisie
+					is_interest_group_type = ig_landowners
+				}
+			}
+			add_modifier = {
+				name = modifier_lom_two
+				months = normal_modifier_time
+				is_decaying = yes
+			}
+		}
+		add_radicals = {
+			value = large_radicals
+			pop_type = shopkeepers
+		}
+		add_radicals = {
+			value = medium_radicals
+			pop_type = clerks
+		}
+		add_radicals = {
+			value = very_large_radicals
+			pop_type = aristocrats
+		}
+		s:STATE_VENETIA = {
+			add_claim = c:LLO
+		}
+		s:STATE_ISTRIA = {
+			add_claim = c:LLO
+		}
+		s:STATE_EMILIA = {
+			add_claim = c:LLO
+		}
+		s:STATE_ROMAGNA = {
+			add_claim = c:LLO
+		}
+		s:STATE_TUSCANY = {
+			add_claim = c:LLO
+		}
+		add_journal_entry = {
+			type = je_lom_ita
+		}
+	}
+}
+
+lombard.3 = {
+	type = country_event
+	placement = ROOT
+	title = lombard.3.t
+	desc = lombard.3.d
+	flavor = lombard.3.f
+	duration = 3
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	trigger = {
+	}
+	option = {
+		name = lombard.3.a
+		default_option = yes
+		every_interest_group = {
+			limit = {
+				is_interest_group_type = ig_intelligentsia
+			}
+			add_modifier = {
+				name = modifier_lom_three
+				months = normal_modifier_time
+				is_decaying = yes
+			}
+		}
+		add_modifier = {
+			name = modifier_lom_four
+			months = long_modifier_time
+		}
+		add_loyalists = {
+			strata = middle
+			value = very_large_radicals
+		}
+		add_loyalists = {
+			strata = poor
+			value = very_large_radicals
+		}
+		s:STATE_LAZIO = {
+			add_claim = c:ITF
+		}
+		add_journal_entry = {
+			type = je_lom_rome
+		}
+	}
+	add_journal_entry = {
+		type = je_lom_rome
+	}
+}
+
+lombard.4 = {
+	type = country_event
+	placement = ROOT
+	title = lombard.4.t
+	desc = lombard.4.d
+	flavor = lombard.4.f
+	duration = 3
+	event_image = {
+		texture = "gfx/event_pictures/porta_pia.dds"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	trigger = {
+	}
+	option = {
+		name = lombard.4.a
+		default_option = yes
+		every_interest_group = {
+			limit = {
+				is_interest_group_type = ig_armed_forces
+			}
+			add_modifier = {
+				name = modifier_rome_two
+				months = normal_modifier_time
+				is_decaying = yes
+			}
+		}
+		add_loyalists = {
+			strata = middle
+			value = large_radicals
+		}
+		add_loyalists = {
+			strata = poor
+			value = large_radicals
+		}
+		add_loyalists = {
+			pop_type = soldiers
+			value = very_large_radicals
+		}
+	}
+}

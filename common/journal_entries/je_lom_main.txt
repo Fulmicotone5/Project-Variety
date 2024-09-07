@@ -1,0 +1,86 @@
+je_lom_main = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	group = je_group_historical_content
+	complete = {
+		has_technology_researched = nationalism
+	}
+	on_complete = {
+		trigger_event = {
+			id = lombard.2
+		}
+	}
+	should_be_pinned_by_default = yes
+}
+
+je_lom_ita = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	group = je_group_historical_content
+	complete = {
+		OR = {
+			AND = {
+				owns_entire_state_region = STATE_PIEDMONT
+				owns_entire_state_region = STATE_LOMBARDY
+				owns_entire_state_region = STATE_VENETIA
+				owns_entire_state_region = STATE_ISTRIA
+				owns_entire_state_region = STATE_EMILIA
+				owns_entire_state_region = STATE_ROMAGNA
+				owns_entire_state_region = STATE_TUSCANY
+			}
+			c:VEN = {
+				is_subject_of = ROOT
+				relations:ROOT > relations_threshold:cordial
+			}
+		}
+	}
+	on_complete = {
+		if = {
+			limit = {
+				c:VEN = {
+					is_subject_of = ROOT
+				}
+			}
+			annex = c:VEN
+		}
+		trigger_event = {
+			id = lombard.3
+		}
+		activate_law = law_type:law_census_voting
+		change_tag = ITF
+		hidden_effect = {
+			every_country = {
+				every_scope_pop = {
+					limit = {
+						culture = cu:venetian
+					}
+					change_pop_culture = {
+						target = cu:north_roman
+						value = 1
+					}
+				}
+			}
+			s:STATE_VENETIA = {
+				remove_homeland = cu:venetian
+				add_homeland = cu:north_roman
+			}
+			s:STATE_ISTRIA = {
+				remove_homeland = cu:venetian
+				add_homeland = cu:north_roman
+			}
+		}
+	}
+	should_be_pinned_by_default = yes
+}
+
+je_lom_rome = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	group = je_group_historical_content
+	complete = {
+		owns_entire_state_region = STATE_LAZIO
+	}
+	on_complete = {
+		trigger_event = {
+			id = lombard.4
+		}
+	}
+	should_be_pinned_by_default = yes
+}

@@ -1,0 +1,891 @@
+namespace = fm_amc
+fm_amc.1 = {
+	#swed says no
+	type = country_event
+	placement = ROOT
+	title = fm_amc.1.t
+	desc = fm_amc.1.d
+	flavor = fm_amc.1.f
+	duration = 3
+	event_image = {
+		video = "unspecific_politicians_arguing"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+	option = {
+		name = fm_amc.1.a
+		default_option = yes
+		c:AMC = {
+			create_diplomatic_catalyst = {
+				type = catalyst_event_negative
+				target = c:SWU
+			}
+		}
+		custom_tooltip = {
+			text = amcinde_one
+			change_variable = {
+				name = amc_progress
+				add = 30
+			}
+		}
+		add_radicals = {
+			strata = middle
+			value = 0.2
+		}
+		add_radicals = {
+			pop_type = aristocrats
+			value = 0.25
+		}
+		add_radicals = {
+			pop_type = bureaucrats
+			value = 0.05
+		}
+		add_radicals = {
+			pop_type = capitalists
+			value = 0.15
+		}
+		add_radicals = {
+			pop_type = officers
+			value = 0.25
+		}
+		add_radicals = {
+			pop_type = soldiers
+			value = 0.2
+		}
+		add_radicals = {
+			pop_type = academics
+			value = 0.15
+		}
+		set_variable = {
+			name = no_amc
+		}
+	}
+}
+
+fm_amc.2 = {
+	type = country_event
+	placement = ROOT
+	title = fm_amc.2.t
+	desc = fm_amc.2.d
+	flavor = fm_amc.2.f
+	duration = 3
+	event_image = {
+		video = "southamerica_aristocrats"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+	option = {
+		name = fm_amc.2.a
+		default_option = yes
+		add_modifier = {
+			name = modifier_fru_one
+			months = 60
+			is_decaying = yes
+		}
+		remove_variable = variable_louisiana_amc
+		if = {
+			limit = {
+				exists = c:FRU
+			}
+			root = {
+				create_diplomatic_catalyst = {
+					type = catalyst_event_negative
+					target = c:FRU
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				exists = c:FRE
+			}
+			root = {
+				create_diplomatic_catalyst = {
+					type = catalyst_event_negative
+					target = c:FRE
+				}
+			}
+		}
+	}
+}
+
+fm_amc.3 = {
+	type = country_event
+	placement = ROOT
+	title = fm_amc.3.t
+	desc = fm_amc.3.d
+	flavor = fm_amc.3.f
+	duration = 3
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+	option = {
+		name = fm_amc.3.a
+		default_option = yes
+		add_modifier = {
+			name = modifier_fru_two
+			months = 60
+		}
+		root = {
+			annex = c:LOI
+		}
+	}
+}
+
+fm_amc.4 = {
+	#swed says yes
+	type = country_event
+	placement = ROOT
+	title = fm_amc.4.t
+	desc = fm_amc.4.d
+	flavor = fm_amc.4.f
+	duration = 3
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+	option = {
+		name = fm_amc.4.a
+		default_option = yes
+		c:AMC = {
+			create_diplomatic_catalyst = {
+				type = catalyst_event_positive
+				target = c:SWU
+			}
+		}
+		custom_tooltip = {
+			text = amcinde_two
+			change_variable = {
+				name = amc_progress
+				add = -25
+			}
+		}
+		add_loyalists = {
+			strata = rich
+			value = 0.05
+		}
+		add_loyalists = {
+			pop_type = aristocrats
+			value = 0.1
+		}
+		add_loyalists = {
+			pop_type = bureaucrats
+			value = 0.15
+		}
+		add_loyalists = {
+			pop_type = academics
+			value = 0.25
+		}
+		add_radicals = {
+			pop_type = capitalists
+			value = 0.1
+		}
+		add_radicals = {
+			pop_type = officers
+			value = 0.1
+		}
+		add_radicals = {
+			pop_type = soldiers
+			value = 0.1
+		}
+		set_variable = {
+			name = yes_amc
+		}
+	}
+}
+
+fm_amc.5 = {
+	#oranje brännvin party
+	type = country_event
+	placement = root
+	title = fm_amc.5.t
+	desc = fm_amc.5.d
+	flavor = fm_amc.5.f
+	duration = 2
+	event_image = {
+		video = "unspecific_temperance_movement"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	trigger = {
+		NOT = {
+			has_variable = var_brann
+		}
+	}
+	immediate = {
+		set_variable = {
+			name = var_brann
+		}
+	}
+	option = {
+		name = fm_amc.5.a
+		default_option = yes
+		c:SWU = {
+			trigger_event = {
+				id = fm_swu.2
+			}
+		}
+		custom_tooltip = {
+			text = amcinde_two
+			change_variable = {
+				name = amc_progress
+				add = -15
+			}
+		}
+		add_loyalists = {
+			strata = rich
+			value = 0.05
+		}
+		add_loyalists = {
+			pop_type = aristocrats
+			value = 0.05
+		}
+		add_loyalists = {
+			pop_type = bureaucrats
+			value = 0.05
+		}
+		add_loyalists = {
+			pop_type = capitalists
+			value = 0.1
+		}
+		add_radicals = {
+			strata = middle
+			value = 0.05
+		}
+		add_radicals = {
+			pop_type = officers
+			value = 0.05
+		}
+		add_radicals = {
+			pop_type = academics
+			value = 0.05
+		}
+		add_radicals = {
+			pop_type = engineers
+			value = 0.05
+		}
+		add_modifier = {
+			name = modifier_amc_two
+			months = 12
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				trigger = {
+					has_variable = yes_amc
+				}
+				add = 80
+			}
+		}
+	}
+	option = {
+		name = fm_amc.5.b
+		c:SWU = {
+			trigger_event = {
+				id = fm_swu.3
+			}
+		}
+		custom_tooltip = {
+			text = amcinde_one
+			change_variable = {
+				name = amc_progress
+				add = 10
+			}
+		}
+		add_radicals = {
+			strata = rich
+			value = 0.1
+		}
+		add_radicals = {
+			pop_type = aristocrats
+			value = 0.05
+		}
+		add_radicals = {
+			pop_type = bureaucrats
+			value = 0.1
+		}
+		add_radicals = {
+			pop_type = capitalists
+			value = 0.15
+		}
+		add_loyalists = {
+			pop_type = officers
+			value = 0.15
+		}
+		add_radicals = {
+			pop_type = soldiers
+			value = 0.1
+		}
+		add_loyalists = {
+			strata = middle
+			value = 0.05
+		}
+		hidden_effect = {
+			trigger_event = {
+				id = fm_amc.6
+				days = 45
+			}
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				trigger = {
+					has_variable = no_amc
+				}
+				add = 80
+			}
+		}
+	}
+}
+
+fm_amc.6 = {
+	#relocation
+	type = country_event
+	placement = root
+	title = fm_amc.6.t
+	desc = fm_amc.6.d
+	flavor = fm_amc.6.f
+	duration = 2
+	event_image = {
+		video = "unspecific_factory_closed"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+	immediate = {
+		random_scope_state = {
+			limit = {
+				is_incorporated = yes
+				has_building = building_food_industry
+			}
+			save_scope_as = building_remove_state
+		}
+	}
+	option = {
+		name = fm_amc.6.a
+		default_option = yes
+		scope:building_remove_state = {
+			remove_building = building_food_industry
+		}
+		custom_tooltip = {
+			text = amcinde_one
+			change_variable = {
+				name = amc_progress
+				add = 10
+			}
+		}
+		c:SWU = {
+			trigger_event = {
+				id = fm_swu.4
+			}
+		}
+		add_radicals = {
+			pop_type = capitalists
+			value = 0.1
+		}
+		add_radicals = {
+			strata = middle
+			value = 0.05
+		}
+		add_radicals = {
+			pop_type = officers
+			value = 0.05
+		}
+		add_radicals = {
+			pop_type = academics
+			value = 0.05
+		}
+	}
+}
+
+fm_amc.7 = {
+	# guy shot
+	type = country_event
+	placement = root
+	title = fm_amc.7.t
+	desc = fm_amc.7.d
+	flavor = fm_amc.7.f
+	duration = 2
+	event_image = {
+		video = "southamerica_public_figure_assassination"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	trigger = {
+		NOT = {
+			has_variable = var_shot_amc
+		}
+	}
+	immediate = {
+		set_variable = {
+			name = var_shot_amc
+		}
+		ig:ig_landowners = {
+			leader = {
+				save_scope_as = landowners_leader
+			}
+		}
+	}
+	option = {
+		name = fm_amc.7.a
+		default_option = yes
+		ig:ig_landowners = {
+			leader = {
+				add_trait = scarred
+				add_trait = cautious
+			}
+			add_modifier = {
+				name = modifier_amc_five
+				months = 60
+				is_decaying = yes
+			}
+		}
+		custom_tooltip = {
+			text = amcinde_two
+			change_variable = {
+				name = amc_progress
+				add = -15
+			}
+		}
+		add_loyalists = {
+			strata = rich
+			value = 0.05
+		}
+		add_loyalists = {
+			pop_type = aristocrats
+			value = 0.15
+		}
+		add_loyalists = {
+			pop_type = bureaucrats
+			value = 0.05
+		}
+		add_loyalists = {
+			pop_type = capitalists
+			value = 0.05
+		}
+		add_radicals = {
+			strata = middle
+			value = 0.05
+		}
+		add_radicals = {
+			pop_type = officers
+			value = 0.05
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				trigger = {
+					has_variable = yes_amc
+				}
+				add = 80
+			}
+		}
+	}
+	option = {
+		name = fm_amc.7.b
+		ig:ig_landowners = {
+			leader = {
+				kill_character = yes
+			}
+			add_modifier = {
+				name = modifier_amc_six
+				months = 60
+				is_decaying = yes
+			}
+		}
+		custom_tooltip = {
+			text = amcinde_one
+			change_variable = {
+				name = amc_progress
+				add = 20
+			}
+		}
+		add_radicals = {
+			strata = rich
+			value = 0.1
+		}
+		add_radicals = {
+			pop_type = aristocrats
+			value = 0.2
+		}
+		add_radicals = {
+			pop_type = bureaucrats
+			value = 0.1
+		}
+		add_radicals = {
+			pop_type = capitalists
+			value = 0.05
+		}
+		add_loyalists = {
+			pop_type = officers
+			value = 0.15
+		}
+		add_radicals = {
+			pop_type = soldiers
+			value = 0.1
+		}
+		add_loyalists = {
+			strata = middle
+			value = 0.05
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				trigger = {
+					has_variable = no_amc
+				}
+				add = 80
+			}
+		}
+	}
+}
+
+fm_amc.8 = {
+	# protest
+	type = country_event
+	placement = root
+	title = fm_amc.8.t
+	desc = fm_amc.8.d
+	flavor = fm_amc.8.f
+	duration = 2
+	event_image = {
+		video = "unspecific_vandalized_storefront"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	trigger = {
+		NOT = {
+			has_variable = var_protest_amc
+		}
+	}
+	immediate = {
+		set_variable = {
+			name = var_protest_amc
+		}
+	}
+	option = {
+		name = fm_amc.8.a
+		default_option = yes
+		every_scope_state = {
+			limit = {
+				OR = {
+					state_region = s:STATE_NEW_YORK
+					state_region = s:STATE_NEW_JERSEY
+				}
+			}
+			kill_population_percent_in_state = {
+				percent = 0.05
+				culture = cu:swedish_colonial
+			}
+		}
+		custom_tooltip = {
+			text = amcinde_two
+			change_variable = {
+				name = amc_progress
+				add = -15
+			}
+		}
+		add_loyalists = {
+			strata = rich
+			value = 0.05
+		}
+		add_loyalists = {
+			pop_type = aristocrats
+			value = 0.1
+		}
+		add_radicals = {
+			pop_type = bureaucrats
+			value = 0.1
+		}
+		add_radicals = {
+			pop_type = capitalists
+			value = 0.05
+		}
+		add_radicals = {
+			strata = middle
+			value = 0.25
+		}
+		add_radicals = {
+			strata = poor
+			value = 0.2
+		}
+		add_radicals = {
+			pop_type = academics
+			value = 0.25
+		}
+		add_radicals = {
+			pop_type = soldiers
+			value = 0.2
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				trigger = {
+					has_variable = yes_amc
+				}
+				add = 80
+			}
+		}
+	}
+	option = {
+		name = fm_amc.8.b
+		add_modifier = {
+			name = modifier_amc_eight
+			months = 24
+			is_decaying = yes
+		}
+		custom_tooltip = {
+			text = amcinde_one
+			change_variable = {
+				name = amc_progress
+				add = 20
+			}
+		}
+		add_radicals = {
+			strata = rich
+			value = 0.1
+		}
+		add_radicals = {
+			pop_type = aristocrats
+			value = 0.1
+		}
+		add_radicals = {
+			pop_type = bureaucrats
+			value = 0.1
+		}
+		add_radicals = {
+			pop_type = capitalists
+			value = 0.1
+		}
+		add_loyalists = {
+			pop_type = officers
+			value = 0.1
+		}
+		add_loyalists = {
+			strata = middle
+			value = 0.1
+		}
+		add_loyalists = {
+			strata = poor
+			value = 0.15
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				trigger = {
+					has_variable = no_amc
+				}
+				add = 80
+			}
+		}
+	}
+}
+
+fm_amc.9 = {
+	# sec soc
+	type = country_event
+	placement = root
+	title = fm_amc.9.t
+	desc = fm_amc.9.d
+	flavor = fm_amc.9.f
+	duration = 2
+	event_image = {
+		video = "votp_conspiring"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_fire.dds"
+	trigger = {
+		NOT = {
+			has_variable = var_sec_amc
+		}
+	}
+	immediate = {
+		set_variable = {
+			name = var_sec_amc
+		}
+	}
+	option = {
+		name = fm_amc.9.a
+		default_option = yes
+		custom_tooltip = {
+			text = amcinde_two
+			change_variable = {
+				name = amc_progress
+				add = -10
+			}
+		}
+		add_loyalists = {
+			strata = rich
+			value = 0.05
+		}
+		add_loyalists = {
+			pop_type = aristocrats
+			value = 0.15
+		}
+		add_loyalists = {
+			pop_type = bureaucrats
+			value = 0.1
+		}
+		add_radicals = {
+			strata = middle
+			value = 0.1
+		}
+		add_radicals = {
+			pop_type = academics
+			value = 0.2
+		}
+		add_radicals = {
+			pop_type = soldiers
+			value = 0.15
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				trigger = {
+					has_variable = yes_amc
+				}
+				add = 80
+			}
+		}
+	}
+	option = {
+		name = fm_amc.9.b
+		add_modifier = {
+			name = modifier_amc_nine
+			months = 60
+		}
+		custom_tooltip = {
+			text = amcinde_one
+			change_variable = {
+				name = amc_progress
+				add = 15
+			}
+		}
+		add_radicals = {
+			strata = rich
+			value = 0.05
+		}
+		add_radicals = {
+			pop_type = aristocrats
+			value = 0.05
+		}
+		add_radicals = {
+			pop_type = bureaucrats
+			value = 0.05
+		}
+		add_loyalists = {
+			pop_type = officers
+			value = 0.1
+		}
+		add_loyalists = {
+			strata = middle
+			value = 0.1
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				trigger = {
+					has_variable = no_amc
+				}
+				add = 80
+			}
+		}
+	}
+}
+
+fm_amc.10 = {
+	# after war
+	type = country_event
+	placement = ROOT
+	title = fm_amc.10.t
+	desc = fm_amc.10.d
+	flavor = fm_amc.10.f
+	duration = 3
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	option = {
+		name = fm_amc.10.a
+		default_option = yes
+		add_loyalists = {
+			value = very_large_radicals
+			pop_type = soldiers
+		}
+		add_loyalists = {
+			strata = poor
+			value = very_large_radicals
+		}
+		add_loyalists = {
+			strata = middle
+			value = very_large_radicals
+		}
+		add_loyalists = {
+			strata = rich
+			value = 0.05
+		}
+		s:STATE_QUEBEC = {
+		add_claim = c:AMC
+		}
+		s:STATE_NEWFOUNDLAND = {
+			add_claim = c:AMC
+		}
+		s:STATE_NEW_BRUNSWICK = {
+			add_claim = c:AMC
+		}
+	}
+}
+
+fm_amc.11 = {
+	type = country_event
+	placement = ROOT
+	title = fm_amc.11.t
+	desc = fm_amc.11.d
+	flavor = fm_amc.11.f
+	duration = 3
+	event_image = {
+		video = "europenorthamerica_rich_and_poor"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+	option = {
+		name = fm_amc.11.a
+		default_option = yes
+		c:AMC = {
+			create_diplomatic_catalyst = {
+				type = catalyst_event_positive
+				target = c:SWU
+			}
+		}
+		add_radicals = {
+			strata = middle
+			value = 0.05
+		}
+		add_loyalists = {
+			pop_type = aristocrats
+			value = 0.25
+		}
+		add_loyalists = {
+			pop_type = bureaucrats
+			value = 0.25
+		}
+		add_loyalists = {
+			pop_type = academics
+			value = 0.25
+		}
+		add_radicals = {
+			pop_type = capitalists
+			value = 0.1
+		}
+		add_radicals = {
+			pop_type = officers
+			value = 0.1
+		}
+		add_radicals = {
+			pop_type = soldiers
+			value = 0.2
+		}
+	}
+}

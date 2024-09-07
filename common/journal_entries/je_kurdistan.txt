@@ -1,0 +1,40 @@
+je_kurdistan = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	group = je_group_historical_content
+	is_shown_when_inactive = {
+		owns_entire_state_region = STATE_DIYARBAKIR
+		owns_entire_state_region = STATE_ERZURUM
+		NOT = {
+			c:KUR ?= THIS
+		}
+	}
+
+	possible = {
+		owns_entire_state_region = STATE_DIYARBAKIR 
+		owns_entire_state_region = STATE_ERZURUM
+		NOT = {
+			c:KUR ?= THIS
+		}
+	}
+	immediate = {
+	}
+	fail = {
+		OR = {
+			any_scope_state = {
+				state_region = s:STATE_DIYARBAKIR
+				turmoil >= 0.35
+			}
+			any_scope_state = {
+				state_region = s:STATE_ERZURUM
+				turmoil >= 0.3
+			}
+		}
+	}
+	on_fail = {
+		trigger_event = {
+			id = fm_kur.1
+		}
+	}
+	weight = 100
+	should_be_pinned_by_default = yes
+}

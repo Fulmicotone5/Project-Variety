@@ -1,0 +1,23 @@
+CHARACTERS = {
+	c:LLO ?= {
+		create_character = {
+			first_name = Felice
+			last_name = Iannarella
+			historical = yes
+			female = no
+			ruler = yes
+			dna = dna_Iannarella
+			birth_date = 1805.1.11
+			culture = cu:north_roman
+			ig_leader = yes
+			interest_group = ig_landowners
+
+			ideology = ideology_republican
+			traits = {
+				inspirational_orator
+				literary
+				ambitious
+			}
+		}
+	}
+}

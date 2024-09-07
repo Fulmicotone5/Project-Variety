@@ -1,0 +1,85 @@
+je_ire_main = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	group = je_group_historical_content
+	is_shown_when_inactive = {
+		exists = c:IRE
+		c:IRE ?= THIS
+	}
+	possible = {
+		has_technology_researched = nationalism
+	}
+	immediate = {
+		s:STATE_BRITTANY = {
+			add_claim = ROOT
+		}
+		s:STATE_HIGHLANDS = {
+			add_claim = ROOT
+		}
+		s:STATE_LOWLANDS = {
+			add_claim = ROOT
+		}
+		s:STATE_WALES = {
+			add_claim = ROOT
+		}
+	}
+	timeout = 3650
+	complete = {
+		owns_entire_state_region = STATE_BRITTANY
+		OR = {
+			AND = {
+				owns_entire_state_region = STATE_HIGHLANDS
+				owns_entire_state_region = STATE_LOWLANDS
+			}
+			AND = {
+				ROOT= {
+					is_in_same_power_bloc = c:SCO
+					is_power_bloc_leader = yes
+				}
+			}
+			AND = {
+				c:SCO = {
+					is_subject_of = ROOT
+					relations:ROOT > relations_threshold:cordial
+				}
+			}
+		}
+		OR = {
+			AND = {
+				owns_entire_state_region = STATE_WALES
+			}
+			AND = {
+				ROOT = {
+					is_in_same_power_bloc = c:WLS
+					is_power_bloc_leader = yes
+				}
+			}
+			AND = {
+				c:WLS = {
+					is_subject_of = ROOT
+					relations:ROOT > relations_threshold:cordial
+				}
+			}
+		}
+	}
+	on_complete = {
+		hidden_effect = {
+			if = {
+				limit = {
+					exists = c:WLS
+				}
+				annex_with_incorporation = c:WLS
+			}
+			if = {
+				limit = {
+					exists = c:SCO
+				}
+				annex_with_incorporation = c:SCO
+			}
+		}
+		trigger_event = {
+			id = fm_ire.2
+		}
+		change_tag = CEU
+	}
+	should_be_pinned_by_default = yes
+}

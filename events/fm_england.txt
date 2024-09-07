@@ -1,0 +1,251 @@
+namespace = fm_england
+fm_england.1 = {
+	type = country_event
+	placement = ROOT
+	title = fm_england.1.t
+	desc = fm_england.1.d
+	flavor = fm_england.1.f
+	duration = 3
+	event_image = {
+		video = "europenorthamerica_rich_and_poor"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+	option = {
+		name = fm_england.1.a
+		default_option = yes
+	}
+}
+
+fm_england.2 = {
+	type = country_event
+	placement = ROOT
+	title = fm_england.2.t
+	desc = fm_england.2.d
+	flavor = fm_england.2.f
+	duration = 3
+	event_image = {
+		video = "unspecific_politicians_arguing"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	option = {
+		name = fm_england.2.a
+		default_option = yes
+		s:STATE_WALES = {
+			add_claim = ROOT
+		}
+		s:STATE_LOWLANDS = {
+			add_claim = ROOT
+		}
+		s:STATE_HIGHLANDS = {
+			add_claim = ROOT
+		}
+	}
+	option = {
+		name = fm_england.2.b
+		set_variable = {
+			name = fmeng_autocracy
+		}
+		add_journal_entry = {
+			type = je_eng_cen
+		}
+	}
+}
+
+fm_england.3 = {
+	type = country_event
+	placement = ROOT
+	title = fm_england.3.t
+	desc = fm_england.3.d
+	flavor = fm_england.3.f
+	duration = 3
+	event_image = {
+		video = "votp_monarch_holding_court"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	option = {
+		name = fm_england.3.a
+		default_option = yes
+		add_loyalists = {
+			strata = rich
+			value = 0.2
+		}
+		add_loyalists = {
+			strata = middle
+			value = 0.15
+		}
+		add_loyalists = {
+			strata = poor
+			value = 0.1
+		}
+		s:STATE_AQUITAINE = {
+			add_claim = ROOT
+		}
+		s:STATE_AUVERGNE_LIMOUSIN = {
+			add_claim = ROOT
+		}
+		s:STATE_LANGUEDOC = {
+			add_claim = ROOT
+		}
+		s:STATE_GUYENNE = {
+			add_claim = ROOT
+		}
+	}
+}
+
+fm_england.4 = {
+	type = country_event
+	placement = ROOT
+	title = fm_england.4.t
+	desc = fm_england.4.d
+	flavor = fm_england.4.f
+	duration = 3
+	event_image = {
+		video = "southamerica_aristocrats"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	immediate = {
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_LOWLANDS
+			}
+			save_scope_as = secession_state_sco
+		}
+		create_country = {
+			tag = SCO
+			origin = ROOT
+			state = scope:secession_state_sco
+		}
+		random_state = {
+			limit = {
+				state_region = s:STATE_HIGHLANDS
+			}
+			set_state_owner = c:SCO
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_WALES
+			}
+			save_scope_as = secession_state_wls
+		}
+		create_country = {
+			tag = WLS
+			origin = ROOT
+			state = scope:secession_state_wls
+		}
+	}
+	option = {
+		name = fm_england.4.a
+		default_option = yes
+		add_journal_entry = {
+			type = je_actuni
+		}
+		every_interest_group = {
+			limit = {
+				is_interest_group_type = ig_petty_bourgeoisie
+			}
+			leader = {
+				set_ideology = ideology:ideology_reformer
+			}
+		}
+		create_diplomatic_pact = {
+			country = c:SCO
+			type = dominion
+		}
+		create_diplomatic_pact = {
+			country = c:WLS
+			type = dominion
+		}
+	}
+	option = {
+		name = fm_england.4.c
+		change_tag = GBI
+		add_primary_culture = cu:scottish
+		add_primary_culture = cu:welsh
+		annex_with_incorporation = c:SCO
+		annex_with_incorporation = c:WLS
+		add_loyalists = {
+			value = 0.1
+			culture = cu:scottish
+		}
+		add_loyalists = {
+			value = 0.1
+			culture = cu:welsh
+		}
+	}
+	option = {
+		name = fm_england.4.b
+		annex = c:SCO
+		annex = c:WLS
+		every_state = {
+            limit = {
+                OR = {
+                    state_region = s:STATE_LOWLANDS
+                    state_region = s:STATE_HIGHLANDS 
+                }
+            }
+            add_radicals_in_state = {
+                value = 0.15
+				culture = cu:scottish
+            }
+        }
+		every_state = {
+            limit = {
+                state_region = s:STATE_WALES 
+            }
+            add_radicals_in_state = {
+                value = 0.20
+				culture = cu:welsh
+            }
+        }
+		s:STATE_ULSTER = {
+			add_claim = ROOT
+		}
+		s:STATE_MUNSTER = {
+			add_claim = ROOT
+		}
+		s:STATE_CONNAUGHT = {
+			add_claim = ROOT
+		}
+		s:STATE_LEINSTER = {
+			add_claim = ROOT
+		}
+	}
+}
+
+fm_england.5 = {
+	type = country_event
+	placement = ROOT
+	title = fm_england.5.t
+	desc = fm_england.5.d
+	flavor = fm_england.5.f
+	duration = 3
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	trigger = {
+	}
+	option = {
+		name = fm_england.5.a
+		add_primary_culture = cu:scottish
+		add_primary_culture = cu:welsh
+		add_primary_culture = cu:irish
+		add_loyalists = {
+			strata = rich
+			value = 0.2
+		}
+		add_loyalists = {
+			strata = middle
+			value = 0.15
+		}
+		add_loyalists = {
+			strata = poor
+			value = 0.15
+		}
+	}
+}

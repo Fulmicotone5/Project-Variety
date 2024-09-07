@@ -1,0 +1,480 @@
+je_indian_removal_ac = {
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	group = je_group_internal_affairs
+	is_shown_when_inactive = {
+		has_technology_researched = colonization
+		NOT = {
+			c:DKT ?= THIS
+		}
+		NOT = {
+			c:LOB ?= THIS
+		}
+	}
+	scripted_button = je_ind_rem_but
+	possible = {
+		OR = {
+			any_scope_state = {
+				count >= 1
+				AND = {
+					region = sr:region_new_england
+					owner = ROOT
+				}
+			}
+			any_scope_state = {
+				count >= 1
+				AND = {
+					region = sr:region_the_midwest
+					owner = ROOT
+				}
+			}
+			any_scope_state = {
+				count >= 1
+				AND = {
+					region = sr:region_canada
+					owner = ROOT
+				}
+			}
+			any_scope_state = {
+				count >= 1
+				AND = {
+					region = sr:region_pacific_coast
+					owner = ROOT
+				}
+			}
+			any_scope_state = {
+				count >= 1
+				AND = {
+					region = sr:region_great_plains
+					owner = ROOT
+				}
+			}
+			any_scope_state = {
+				count >= 1
+				AND = {
+					region = sr:region_dixie
+					owner = ROOT
+				}
+			}
+		}
+	}
+	immediate = {
+		trigger_event = {
+			id = fm_ind.1
+		}
+		random_scope_culture = {
+			limit = {
+				is_primary_culture_of = root
+			}
+			save_scope_as = ind_int_culture
+		}
+	}
+	timeout = 1825
+	complete = {
+		custom_tooltip = {
+			text = tooltip_has_indrem
+			has_variable = variable_indi_app
+		}
+	}
+	on_complete = {
+		add_modifier = {
+			name = modifier_ind_two
+		}
+		trigger_event = {
+			id = fm_ind.2
+		}
+	}
+	on_timeout = {
+		add_modifier = {
+			name = modifier_ind_one
+		}
+		trigger_event = {
+			id = fm_ind.3
+		}
+	}
+	weight = 100
+	should_be_pinned_by_default = yes
+}
+
+je_int_newsouth = {
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	group = je_group_internal_affairs
+	is_shown_when_inactive = {
+		has_variable = variable_indi_app
+	}
+	scripted_button = je_int_ala
+	scripted_button = je_int_missi
+	scripted_button = je_int_ten
+	possible = {
+		OR = {
+			owns_entire_state_region = STATE_ALABAMA
+			owns_entire_state_region = STATE_MISSISSIPPI
+			owns_entire_state_region = STATE_TENNESSEE
+		}
+	}
+	complete = {
+		any_scope_state = {
+			AND= {
+				state_region = s:STATE_ALABAMA
+				is_incorporated = yes
+			}
+		}
+		any_scope_state = {
+			AND= {
+				state_region = s:STATE_MISSISSIPPI
+				is_incorporated = yes
+			}
+		}
+		any_scope_state = {
+			AND= {
+				state_region = s:STATE_TENNESSEE
+				is_incorporated = yes
+			}
+		}
+	}
+	weight = 100
+	should_be_pinned_by_default = yes
+}
+je_int_louisiana = {
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	group = je_group_internal_affairs
+	is_shown_when_inactive = {
+		has_variable = variable_indi_app
+	}
+	scripted_button = je_int_ark
+	scripted_button = je_int_okl
+	scripted_button = je_int_mis
+	scripted_button = je_int_kan
+	possible = {
+		OR = {
+		owns_entire_state_region = STATE_ARKANSAS
+		owns_entire_state_region = STATE_OKLAHOMA
+		owns_entire_state_region = STATE_MISSOURI
+		owns_entire_state_region = STATE_KANSAS
+		}
+	}
+	complete = {
+		any_scope_state = {
+			AND= {
+				state_region = s:STATE_ARKANSAS
+				is_incorporated = yes
+			}
+		}
+		any_scope_state = {
+			AND= {
+				state_region = s:STATE_OKLAHOMA
+				is_incorporated = yes
+			}
+		}
+		any_scope_state = {
+			AND= {
+				state_region = s:STATE_MISSOURI
+				is_incorporated = yes
+			}
+		}
+		any_scope_state = {
+			AND= {
+				state_region = s:STATE_KANSAS
+				is_incorporated = yes
+			}
+		}
+	}
+	weight = 100
+	should_be_pinned_by_default = yes
+}
+
+je_int_dakota = {
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	group = je_group_internal_affairs
+	is_shown_when_inactive = {
+		has_variable = variable_indi_app
+	}
+	scripted_button = je_int_lak
+	scripted_button = je_int_ntd
+	scripted_button = je_int_std
+	scripted_button = je_int_min
+	scripted_button = je_int_iow
+	scripted_button = je_int_neb
+	possible = {
+		OR = {
+		owns_entire_state_region = STATE_NORTH_DAKOTA
+		owns_entire_state_region = STATE_SOUTH_DAKOTA
+		owns_entire_state_region = STATE_MINNESOTA
+		owns_entire_state_region = STATE_IOWA
+		owns_entire_state_region = STATE_NEBRASKA
+		owns_entire_state_region = STATE_MONTANA
+		owns_entire_state_region = STATE_WYOMING
+		}
+	}
+	complete = {
+		any_scope_state = {
+			AND= {
+				state_region = s:STATE_NORTH_DAKOTA
+				is_incorporated = yes
+			}
+		}
+		any_scope_state = {
+			AND= {
+				state_region = s:STATE_SOUTH_DAKOTA
+				is_incorporated = yes
+			}
+		}
+		any_scope_state = {
+			AND= {
+				state_region = s:STATE_MINNESOTA
+				is_incorporated = yes
+			}
+		}
+		any_scope_state = {
+			AND= {
+				state_region = s:STATE_IOWA
+				is_incorporated = yes
+			}
+		}
+		any_scope_state = {
+			AND= {
+				state_region = s:STATE_NEBRASKA
+				is_incorporated = yes
+			}
+		}
+		any_scope_state = {
+			AND= {
+				state_region = s:STATE_MONTANA
+				is_incorporated = yes
+			}
+		}
+		any_scope_state = {
+			AND= {
+				state_region = s:STATE_WYOMING
+				is_incorporated = yes
+			}
+		}
+	}
+	weight = 100
+	should_be_pinned_by_default = yes
+}
+je_int_comanche = {
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	group = je_group_internal_affairs
+	is_shown_when_inactive = {
+		has_variable = variable_indi_app
+	}
+	scripted_button = je_int_tex
+	scripted_button = je_int_nme
+	possible = {
+		OR = {
+		owns_entire_state_region = STATE_TEXAS
+		owns_entire_state_region = STATE_NEW_MEXICO
+		}
+	}
+	complete = {
+		any_scope_state = {
+			AND= {
+				state_region = s:STATE_TEXAS
+				is_incorporated = yes
+			}
+		}
+		any_scope_state = {
+			AND= {
+				state_region = s:STATE_NEW_MEXICO
+				is_incorporated = yes
+			}
+		}
+	}
+	weight = 100
+	should_be_pinned_by_default = yes
+}
+je_int_midwest = {
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	group = je_group_internal_affairs
+	is_shown_when_inactive = {
+		has_variable = variable_indi_app
+	}
+	scripted_button = je_int_che
+	scripted_button = je_int_ohi
+	scripted_button = je_int_mich
+	scripted_button = je_int_indiana
+	scripted_button = je_int_illi
+	scripted_button = je_int_wis
+	possible = {
+		OR = {
+		owns_entire_state_region = STATE_WEST_VIRGINIA
+		owns_entire_state_region = STATE_KENTUCKY
+		owns_entire_state_region = STATE_OHIO
+		owns_entire_state_region = STATE_MICHIGAN
+		owns_entire_state_region = STATE_INDIANA
+		owns_entire_state_region = STATE_ILLINOIS
+		owns_entire_state_region = STATE_WISCONSIN
+		}
+	}
+	complete = {
+		any_scope_state = {
+			AND= {
+				state_region = s:STATE_WEST_VIRGINIA
+				is_incorporated = yes
+			}
+		}
+		any_scope_state = {
+			AND= {
+				state_region = s:STATE_KENTUCKY
+				is_incorporated = yes
+			}
+		}
+		any_scope_state = {
+			AND= {
+				state_region = s:STATE_OHIO
+				is_incorporated = yes
+			}
+		}
+		any_scope_state = {
+			AND= {
+				state_region = s:STATE_MICHIGAN
+				is_incorporated = yes
+			}
+		}
+		any_scope_state = {
+			AND= {
+				state_region = s:STATE_INDIANA
+				is_incorporated = yes
+			}
+		}
+		any_scope_state = {
+			AND= {
+				state_region = s:STATE_ILLINOIS
+				is_incorporated = yes
+			}
+		}
+		any_scope_state = {
+			AND= {
+				state_region = s:STATE_WISCONSIN
+				is_incorporated = yes
+			}
+		}
+	}
+	weight = 100
+	should_be_pinned_by_default = yes
+}
+je_int_grebas = {
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	group = je_group_internal_affairs
+	is_shown_when_inactive = {
+		has_variable = variable_indi_app
+	}
+	scripted_button = je_int_ari
+	scripted_button = je_int_nev
+	scripted_button = je_int_utah
+	scripted_button = je_int_colo
+	possible = {
+		OR = {
+		owns_entire_state_region = STATE_ARIZONA
+		owns_entire_state_region = STATE_NEVADA
+		owns_entire_state_region = STATE_UTAH
+		owns_entire_state_region = STATE_COLORADO
+		}
+	}
+	complete = {
+		any_scope_state = {
+			AND= {
+				state_region = s:STATE_ARIZONA
+				is_incorporated = yes
+			}
+		}
+		any_scope_state = {
+			AND= {
+				state_region = s:STATE_NEVADA
+				is_incorporated = yes
+			}
+		}
+		any_scope_state = {
+			AND= {
+				state_region = s:STATE_UTAH
+				is_incorporated = yes
+			}
+		}
+		any_scope_state = {
+			AND= {
+				state_region = s:STATE_COLORADO
+				is_incorporated = yes
+			}
+		}
+	}
+	weight = 100
+	should_be_pinned_by_default = yes
+}
+
+je_north = {
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	group = je_group_internal_affairs
+	is_shown_when_inactive = {
+		has_variable = variable_indi_app
+	}
+	scripted_button = je_int_cree
+	scripted_button = je_int_atha
+	scripted_button = je_int_sali
+	scripted_button = je_int_siou
+	possible = {
+		OR = {
+			owns_entire_state_region = STATE_ALASKA
+			owns_entire_state_region = STATE_BRITISH_COLUMBIA
+			owns_entire_state_region = STATE_ONTARIO
+			owns_entire_state_region = STATE_NUNAVUT
+		}
+	}
+	complete = {
+		any_scope_state = {
+			AND= {
+				state_region = s:STATE_ALASKA
+				is_incorporated = yes
+			}
+		}
+		any_scope_state = {
+			AND= {
+				state_region = s:STATE_BRITISH_COLUMBIA
+				is_incorporated = yes
+			}
+		}
+		any_scope_state = {
+			AND= {
+				state_region = s:STATE_ONTARIO
+				is_incorporated = yes
+			}
+		}
+		any_scope_state = {
+			AND= {
+				state_region = s:STATE_NUNAVUT
+				is_incorporated = yes
+			}
+		}
+		any_scope_state = {
+			AND= {
+				state_region = s:STATE_YUKON_TERRITORY
+				is_incorporated = yes
+			}
+		}
+		any_scope_state = {
+			AND= {
+				state_region = s:STATE_NORTHWEST_TERRITORIES
+				is_incorporated = yes
+			}
+		}
+		any_scope_state = {
+			AND= {
+				state_region = s:STATE_MANITOBA
+				is_incorporated = yes
+			}
+		}
+		any_scope_state = {
+			AND= {
+				state_region = s:STATE_SASKATCHEWAN
+				is_incorporated = yes
+			}
+		}
+		any_scope_state = {
+			AND= {
+				state_region = s:STATE_ALBERTA
+				is_incorporated = yes
+			}
+		}
+	}
+	weight = 100
+	should_be_pinned_by_default = yes
+}

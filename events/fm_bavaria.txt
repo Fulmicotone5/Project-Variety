@@ -1,0 +1,370 @@
+namespace = fm_bavaria
+fm_bavaria.1 = {
+	type = country_event
+	placement = ROOT
+	title = fm_bavaria.1.t
+	desc = fm_bavaria.1.d
+	flavor = fm_bavaria.1.f
+	duration = 1
+	event_image = {
+		video = "europenorthamerica_art_gallery"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+	trigger = {
+	}
+	immediate = {
+		hidden_effect = {
+			trigger_event = {
+				id = fm_bavaria.2
+				days = 100
+			}
+			ruler = {
+				set_character_immortal = yes
+			}
+		}
+	}
+	option = {
+		name = fm_bavaria.1.a
+	}
+}
+
+fm_bavaria.2 = {
+	type = country_event
+	placement = ROOT
+	title = fm_bavaria.2.t
+	desc = fm_bavaria.2.d
+	flavor = fm_bavaria.2.f
+	duration = 1
+	event_image = {
+		texture = "gfx/event_pictures/funeral.dds"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	trigger = {
+	}
+	immediate = {
+		ruler = {
+			set_character_immortal = no
+			kill_character = yes
+		}
+	}
+	option = {
+		name = fm_bavaria.2.a
+	}
+}
+
+fm_bavaria.3 = {
+	type = country_event
+	placement = ROOT
+	title = fm_bavaria.3.t
+	desc = fm_bavaria.3.d
+	flavor = fm_bavaria.3.f
+	duration = 1
+	event_image = {
+		video = "europenorthamerica_before_the_battle"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_fire.dds"
+	trigger = {
+	}
+	option = {
+		name = fm_bavaria.3.a
+		default_option = yes
+		create_diplomatic_play = {
+			allow_negotiated_peace = no
+			target_country = c:WUR
+			war = yes
+			type = dp_annex_subject
+			add_war_goal = {
+				holder = c:WUR
+				type = independence
+				target_country = c:BAY
+			}
+		}
+		create_diplomatic_play = {
+			allow_negotiated_peace = no
+			target_country = c:BAD
+			war = yes
+			type = dp_annex_subject
+			add_war_goal = {
+				holder = c:BAD
+				type = independence
+				target_country = c:BAY
+			}
+		}
+		add_journal_entry = {
+			type = je_ari_rev
+		}
+	}
+}
+
+fm_bavaria.4 = {
+	# after revolt
+	type = country_event
+	placement = ROOT
+	title = fm_bavaria.4.t
+	desc = fm_bavaria.4.d
+	flavor = fm_bavaria.4.f
+	duration = 1
+	event_image = {
+		video = "votp_hostile_court"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	trigger = {
+	}
+	immediate = {
+		ruler = {
+			save_scope_as = ruler_scope
+		}
+	}
+
+option = {
+	name = fm_bavaria.4.a
+	default_option = yes
+	add_modifier = {
+		name = modifier_bav_two
+		months = normal_modifier_time
+		is_decaying = yes
+	}
+	add_radicals = {
+		value = medium_radicals
+		pop_type = aristocrats
+	}
+	add_journal_entry = {
+		type = je_bav_nat
+	}
+}
+option = {
+	name = fm_bavaria.4.b
+	add_modifier = {
+		name = modifier_bav_one
+		months = normal_modifier_time
+		is_decaying = yes
+	}
+	activate_law = law_type:law_autocracy
+	add_radicals = {
+		value = very_large_radicals
+		pop_type = aristocrats
+	}
+	scope:ruler_scope = {
+		add_trait = cruel
+	}
+	add_journal_entry = {
+		type = je_bav_nat
+	}
+}
+}
+
+fm_bavaria.5 = { # kings dilemma
+	type = country_event
+	placement = ROOT
+	title = fm_bavaria.5.t
+	desc = fm_bavaria.5.d
+	flavor = fm_bavaria.5.f
+	duration = 3
+	event_image = {
+		video = "southamerica_aristocrats"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	trigger = {
+	}
+	option = {
+		name = fm_bavaria.5.a
+		default_option = yes
+		annex = c:AUS
+		s:STATE_BOHEMIA = {
+			add_claim = c:BAY
+		}
+		s:STATE_MORAVIA = {
+			add_claim = c:BAY
+		}
+		s:STATE_TRANSDANUBIA = {
+			add_claim = c:BAY
+		}
+		s:STATE_SLOVENIA = {
+			add_claim = c:BAY
+		}
+		s:STATE_SOUTH_TYROL = {
+			add_claim = c:BAY
+		}
+		add_journal_entry = {
+			type = je_sgf
+		}
+	}
+	option = {
+		name = fm_bavaria.5.b
+		add_journal_entry = {
+			type = je_ger_conf
+		}
+		s:STATE_POSEN = {
+			add_claim = c:BAY
+		}
+		s:STATE_SCHLESWIG_HOLSTEIN = {
+			add_claim = c:BAY
+		}
+		s:STATE_ELBE = {
+			add_claim = c:BAY
+		}
+		s:STATE_HANNOVER = {
+			add_claim = c:BAY
+		}
+		s:STATE_WESTPHALIA = {
+			add_claim = c:BAY
+		}
+		s:STATE_HESSE = {
+			add_claim = c:BAY
+		}
+		s:STATE_RUHR = {
+			add_claim = c:BAY
+		}
+		s:STATE_NORTH_RHINE = {
+			add_claim = c:BAY
+		}
+		s:STATE_RHINELAND = {
+			add_claim = c:BAY
+		}
+		s:STATE_BRUNSWICK = {
+			add_claim = c:BAY
+		}
+		s:STATE_SAXONY = {
+			add_claim = c:BAY
+		}
+		s:STATE_ANHALT = {
+			add_claim = c:BAY
+		}
+		s:STATE_BRANDENBURG = {
+			add_claim = c:BAY
+		}
+		s:STATE_MECKLENBURG = {
+			add_claim = c:BAY
+		}
+		s:STATE_POMERANIA = {
+			add_claim = c:BAY
+		}
+		s:STATE_WEST_PRUSSIA = {
+			add_claim = c:BAY
+		}
+		s:STATE_EAST_PRUSSIA = {
+			add_claim = c:BAY
+		}
+	}
+}
+
+fm_bavaria.6 = {
+	# SGF
+	type = country_event
+	placement = ROOT
+	title = fm_bavaria.6.t
+	desc = fm_bavaria.6.d
+	flavor = fm_bavaria.6.f
+	duration = 3
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	trigger = {
+	}
+	option = {
+		name = fm_bavaria.6.a
+		default_option = yes
+		add_loyalists = {
+			value = medium_radicals
+			culture = cu:south_german
+		}
+		add_loyalists = {
+			value = large_radicals
+			strata = middle
+		}
+		add_loyalists = {
+			value = large_radicals
+			strata = poor
+		}
+		add_modifier = {
+			name = modifier_bav_five
+			months = long_modifier_time
+			is_decaying = yes
+		}
+		hidden_effect = {
+			add_journal_entry = {
+				type = je_carp
+			}
+			s:STATE_WEST_SLOVAKIA = {
+				add_claim = c:SGF
+			}
+			s:STATE_EAST_SLOVAKIA = {
+				add_claim = c:SGF
+			}
+			s:STATE_BEKES = {
+				add_claim = c:SGF
+			}
+			s:STATE_CENTRAL_HUNGARY = {
+				add_claim = c:SGF
+			}
+			s:STATE_BANAT = {
+				add_claim = c:SGF
+			}
+			s:STATE_DELVIDEK = {
+				add_claim = c:SGF
+			}
+			s:STATE_SOUTHERN_TRANSYLVANIA = {
+				add_claim = c:SGF
+			}
+			s:STATE_NORTHERN_TRANSYLVANIA = {
+				add_claim = c:SGF
+			}
+		}
+	}
+}
+fm_bavaria.7 = {
+	# German Confederation BAV
+	type = country_event
+	placement = ROOT
+	title = fm_bavaria.7.t
+	desc = fm_bavaria.7.d
+	flavor = fm_bavaria.7.f
+	duration = 3
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	trigger = {
+	}
+	option = {
+		name = fm_bavaria.7.a
+		default_option = yes
+		add_loyalists = {
+			value = very_large_radicals
+			pop_type = academics
+		}
+		add_loyalists = {
+			value = very_large_radicals
+			strata = middle
+		}
+		add_loyalists = {
+			value = large_radicals
+			strata = poor
+		}
+		add_modifier = {
+			name = modifier_loth_twelwe
+			months = long_modifier_time
+			is_decaying = yes
+		}
+		add_modifier = {
+			name = modifier_bav_three
+			months = long_modifier_time
+			is_decaying = yes
+		}
+		add_modifier = {
+			name = modifier_bav_four
+			months = long_modifier_time
+			is_decaying = yes
+		}
+		add_primary_culture = cu:north_german
+
+	}
+}

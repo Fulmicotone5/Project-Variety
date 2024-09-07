@@ -1,0 +1,864 @@
+﻿AI = {
+	c:SWU = {
+		random_list = {	
+			75 = { set_strategy = ai_strategy_resource_expansion }
+			25 = { set_strategy = ai_strategy_industrial_expansion }
+		}		
+		set_strategy = ai_strategy_maintain_power_balance
+		random_list = {
+			50 = { set_strategy = ai_strategy_conservative_agenda }
+			50 = { set_strategy = ai_strategy_progressive_agenda }
+		}
+	}
+	c:NED = {
+		random_list = {	
+			20 = { set_strategy = ai_strategy_resource_expansion }
+			80 = { set_strategy = ai_strategy_industrial_expansion }
+		}		
+		set_strategy = ai_strategy_territorial_expansion
+		random_list = {
+			50 = { set_strategy = ai_strategy_conservative_agenda }
+			50 = { set_strategy = ai_strategy_progressive_agenda }
+		}
+	}
+	c:LOT = {
+		random_list = {	
+			40 = { set_strategy = ai_strategy_resource_expansion }
+			60 = { set_strategy = ai_strategy_industrial_expansion }
+		}		
+		set_strategy = ai_strategy_territorial_expansion
+		random_list = {
+			80 = { set_strategy = ai_strategy_conservative_agenda }
+			20 = { set_strategy = ai_strategy_progressive_agenda }
+		}
+	}
+	c:SAR = {
+		set_strategy = ai_strategy_industrial_expansion		
+		set_strategy = ai_strategy_maintain_power_balance
+		set_strategy = ai_strategy_progressive_agenda
+	}
+	c:BRZ = {
+		random_list = {
+			75 = { set_strategy = ai_strategy_resource_expansion }
+			25 = { set_strategy = ai_strategy_plantation_economy }
+		}		
+		set_strategy = ai_strategy_maintain_power_balance
+		set_strategy = ai_strategy_progressive_agenda
+	}
+	c:AGA = {
+		random_list = {
+			75 = { set_strategy = ai_strategy_industrial_expansion }
+			25 = { set_strategy = ai_strategy_plantation_economy }
+		}	
+		random_list = {
+			75 = { set_strategy = ai_strategy_maintain_power_balance }
+			25 = { set_strategy = ai_strategy_territorial_expansion }
+		}
+		random_list = {
+			75 = { set_strategy = ai_strategy_conservative_agenda }
+			25 = { set_strategy = ai_strategy_progressive_agenda }
+		}
+	}	
+	c:FLU = {
+		random_list = {
+			25 = { set_strategy = ai_strategy_industrial_expansion }
+			75 = { set_strategy = ai_strategy_plantation_economy }
+		}	
+		random_list = {
+			75 = { set_strategy = ai_strategy_maintain_power_balance }
+			25 = { set_strategy = ai_strategy_territorial_expansion }
+		}
+		random_list = {
+			75 = { set_strategy = ai_strategy_conservative_agenda }
+			25 = { set_strategy = ai_strategy_progressive_agenda }
+		}
+	}	
+	c:NEA = {
+		random_list = {	
+			75 = { set_strategy = ai_strategy_resource_expansion }
+			25 = { set_strategy = ai_strategy_industrial_expansion }
+		}	
+		set_strategy = ai_strategy_maintain_power_balance
+		random_list = {
+			75 = { set_strategy = ai_strategy_conservative_agenda }
+			25 = { set_strategy = ai_strategy_progressive_agenda }
+		}
+	}	
+	c:FUN = {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_maintain_power_balance
+		set_strategy = ai_strategy_conservative_agenda
+	}	
+	c:AUS = {
+		random_list = {	
+			50 = { set_strategy = ai_strategy_agricultural_expansion }
+			25 = { set_strategy = ai_strategy_resource_expansion }
+			25 = { set_strategy = ai_strategy_industrial_expansion }
+		}	
+		set_strategy = ai_strategy_maintain_power_balance
+		random_list = {
+			75 = { set_strategy = ai_strategy_conservative_agenda }
+			25 = { set_strategy = ai_strategy_progressive_agenda }
+		}
+	}
+	c:BUD = {
+		random_list = {	
+			50 = { set_strategy = ai_strategy_industrial_expansion }
+			25 = { set_strategy = ai_strategy_agricultural_expansion }
+			25 = { set_strategy = ai_strategy_resource_expansion }		
+		}	
+		set_strategy = ai_strategy_territorial_expansion
+		random_list = {	
+			50 = { set_strategy = ai_strategy_progressive_agenda }
+			50 = { set_strategy = ai_strategy_conservative_agenda }	
+		}				
+	}
+	c:DCQ = {
+		random_list = {	
+			25 = { set_strategy = ai_strategy_industrial_expansion }
+			50 = { set_strategy = ai_strategy_agricultural_expansion }
+			25 = { set_strategy = ai_strategy_resource_expansion }		
+		}	
+		set_strategy = ai_strategy_territorial_expansion
+		random_list = {	
+			30 = { set_strategy = ai_strategy_progressive_agenda }
+			70 = { set_strategy = ai_strategy_conservative_agenda }	
+		}				
+	}
+	c:RUS = {
+		random_list = {	
+			55 = { set_strategy = ai_strategy_agricultural_expansion }
+			35 = { set_strategy = ai_strategy_placate_population }
+			10 = { set_strategy = ai_strategy_resource_expansion }
+		}			
+		set_strategy = ai_strategy_colonial_expansion
+		set_strategy = ai_strategy_conservative_agenda
+	}	
+	c:TOR = {
+		random_list = {	
+			50 = { set_strategy = ai_strategy_agricultural_expansion }
+			25 = { set_strategy = ai_strategy_resource_expansion }
+			25 = { set_strategy = ai_strategy_industrial_expansion }
+		}			
+		random_list = {	
+			75 = { set_strategy = ai_strategy_maintain_power_balance }
+			25 = { set_strategy = ai_strategy_territorial_expansion }
+		}			
+		set_strategy = ai_strategy_progressive_agenda # To try and complete tanzimat
+	}	
+	c:HEN = {
+		random_list = {	
+			25 = { set_strategy = ai_strategy_agricultural_expansion }
+			25 = { set_strategy = ai_strategy_resource_expansion }
+			50 = { set_strategy = ai_strategy_industrial_expansion }
+		}			
+		random_list = {	
+			55 = { set_strategy = ai_strategy_maintain_power_balance }
+			45 = { set_strategy = ai_strategy_hen }
+		}			
+		set_strategy = ai_strategy_progressive_agenda
+	}	
+	c:ENG = {
+		set_strategy = ai_strategy_industrial_expansion
+		set_strategy = ai_strategy_economic_imperialism
+		set_strategy = ai_strategy_progressive_agenda
+	}
+	c:USA = {
+		random_list = {	
+			50 = { set_strategy = ai_strategy_industrial_expansion }
+			25 = { set_strategy = ai_strategy_resource_expansion }
+			25 = { set_strategy = ai_strategy_plantation_economy }
+		}		
+		set_strategy = ai_strategy_economic_imperialism
+		set_strategy = ai_strategy_conservative_agenda
+	}
+	c:EGE = {
+		random_list = {	
+			75 = { set_strategy = ai_strategy_plantation_economy }
+			25 = { set_strategy = ai_strategy_industrial_expansion }
+		}		
+		set_strategy = ai_strategy_territorial_expansion
+		set_strategy = ai_strategy_conservative_agenda
+	}	
+	c:CHU = {
+		random_list = {	
+			75 = { set_strategy = ai_strategy_placate_population }
+			25 = { set_strategy = ai_strategy_agricultural_expansion }
+		}			
+		set_strategy = ai_strategy_armed_isolationism
+		set_strategy = ai_strategy_maintain_mandate_of_heaven
+	}
+	c:JAP = {
+		random_list = {	
+			75 = { set_strategy = ai_strategy_placate_population }
+			25 = { set_strategy = ai_strategy_agricultural_expansion }
+		}			
+		set_strategy = ai_strategy_armed_isolationism
+		set_strategy = ai_strategy_conservative_agenda
+	}	
+	c:WRS = {
+		random_list = {	
+			20 = { set_strategy = ai_strategy_resource_expansion }
+			80 = { set_strategy = ai_strategy_industrial_expansion }
+		}		
+		set_strategy = ai_strategy_unify_poland
+		random_list = {
+			50 = { set_strategy = ai_strategy_conservative_agenda }
+			50 = { set_strategy = ai_strategy_progressive_agenda }
+		}
+	}	
+	c:PLK = {
+		random_list = {	
+			20 = { set_strategy = ai_strategy_resource_expansion }
+			80 = { set_strategy = ai_strategy_industrial_expansion }
+		}		
+		set_strategy = ai_strategy_unify_poland
+		random_list = {
+			50 = { set_strategy = ai_strategy_conservative_agenda }
+			50 = { set_strategy = ai_strategy_progressive_agenda }
+		}
+	}	
+	c:MZV = {
+		random_list = {	
+			20 = { set_strategy = ai_strategy_resource_expansion }
+			80 = { set_strategy = ai_strategy_industrial_expansion }
+		}		
+		set_strategy = ai_strategy_unify_poland
+		random_list = {
+			50 = { set_strategy = ai_strategy_conservative_agenda }
+			50 = { set_strategy = ai_strategy_progressive_agenda }
+		}
+	}	
+	c:LBL = {
+		random_list = {	
+			20 = { set_strategy = ai_strategy_resource_expansion }
+			80 = { set_strategy = ai_strategy_industrial_expansion }
+		}		
+		set_strategy = ai_strategy_unify_poland
+		random_list = {
+			50 = { set_strategy = ai_strategy_conservative_agenda }
+			50 = { set_strategy = ai_strategy_progressive_agenda }
+		}
+	}	
+	c:GAL = {
+		random_list = {	
+			20 = { set_strategy = ai_strategy_resource_expansion }
+			80 = { set_strategy = ai_strategy_industrial_expansion }
+		}		
+		set_strategy = ai_strategy_unify_poland
+		random_list = {
+			50 = { set_strategy = ai_strategy_conservative_agenda }
+			50 = { set_strategy = ai_strategy_progressive_agenda }
+		}
+	}	
+	c:KRK = {
+		random_list = {	
+			20 = { set_strategy = ai_strategy_resource_expansion }
+			80 = { set_strategy = ai_strategy_industrial_expansion }
+		}		
+		set_strategy = ai_strategy_unify_poland
+		random_list = {
+			50 = { set_strategy = ai_strategy_conservative_agenda }
+			50 = { set_strategy = ai_strategy_progressive_agenda }
+		}
+	}	
+	c:AWS = {
+		random_list = {	
+			50 = { set_strategy = ai_strategy_agricultural_expansion }
+			25 = { set_strategy = ai_strategy_resource_expansion }
+			25 = { set_strategy = ai_strategy_industrial_expansion }
+		}			
+		set_strategy = ai_strategy_unify_ethiopia
+		random_list = {	
+			75 = { set_strategy = ai_strategy_conservative_agenda }
+			25 = { set_strategy = ai_strategy_progressive_agenda }
+		}			
+	}	
+	c:TGR = {
+		random_list = {	
+			50 = { set_strategy = ai_strategy_agricultural_expansion }
+			25 = { set_strategy = ai_strategy_resource_expansion }
+			25 = { set_strategy = ai_strategy_industrial_expansion }
+		}			
+		set_strategy = ai_strategy_unify_ethiopia
+		random_list = {	
+			75 = { set_strategy = ai_strategy_conservative_agenda }
+			25 = { set_strategy = ai_strategy_progressive_agenda }
+		}			
+	}
+	c:WLO = {
+		random_list = {	
+			50 = { set_strategy = ai_strategy_agricultural_expansion }
+			25 = { set_strategy = ai_strategy_resource_expansion }
+			25 = { set_strategy = ai_strategy_industrial_expansion }
+		}			
+		set_strategy = ai_strategy_unify_ethiopia
+		random_list = {	
+			75 = { set_strategy = ai_strategy_conservative_agenda }
+			25 = { set_strategy = ai_strategy_progressive_agenda }
+		}			
+	}
+	c:BGM = {
+		random_list = {	
+			50 = { set_strategy = ai_strategy_agricultural_expansion }
+			25 = { set_strategy = ai_strategy_resource_expansion }
+			25 = { set_strategy = ai_strategy_industrial_expansion }
+		}			
+		set_strategy = ai_strategy_unify_ethiopia
+		random_list = {	
+			75 = { set_strategy = ai_strategy_conservative_agenda }
+			25 = { set_strategy = ai_strategy_progressive_agenda }
+		}			
+	}
+	c:GJM = {
+		random_list = {	
+			50 = { set_strategy = ai_strategy_agricultural_expansion }
+			25 = { set_strategy = ai_strategy_resource_expansion }
+			25 = { set_strategy = ai_strategy_industrial_expansion }
+		}			
+		set_strategy = ai_strategy_unify_ethiopia
+		random_list = {	
+			75 = { set_strategy = ai_strategy_conservative_agenda }
+			25 = { set_strategy = ai_strategy_progressive_agenda }
+		}			
+	}
+	c:WLG = {
+		random_list = {	
+			50 = { set_strategy = ai_strategy_agricultural_expansion }
+			25 = { set_strategy = ai_strategy_resource_expansion }
+			25 = { set_strategy = ai_strategy_industrial_expansion }
+		}			
+		set_strategy = ai_strategy_unify_ethiopia
+		random_list = {	
+			75 = { set_strategy = ai_strategy_conservative_agenda }
+			25 = { set_strategy = ai_strategy_progressive_agenda }
+		}			
+	}
+	c:SHW = {
+		random_list = {	
+			50 = { set_strategy = ai_strategy_agricultural_expansion }
+			25 = { set_strategy = ai_strategy_resource_expansion }
+			25 = { set_strategy = ai_strategy_industrial_expansion }
+		}			
+		set_strategy = ai_strategy_unify_ethiopia
+		random_list = {	
+			75 = { set_strategy = ai_strategy_conservative_agenda }
+			25 = { set_strategy = ai_strategy_progressive_agenda }
+		}			
+	}
+	c:KFA = {
+		random_list = {	
+			50 = { set_strategy = ai_strategy_agricultural_expansion }
+			25 = { set_strategy = ai_strategy_resource_expansion }
+			25 = { set_strategy = ai_strategy_industrial_expansion }
+		}			
+		set_strategy = ai_strategy_unify_ethiopia
+		random_list = {	
+			75 = { set_strategy = ai_strategy_conservative_agenda }
+			25 = { set_strategy = ai_strategy_progressive_agenda }
+		}			
+	}
+	c:SDM = {
+		random_list = {	
+			50 = { set_strategy = ai_strategy_agricultural_expansion }
+			25 = { set_strategy = ai_strategy_resource_expansion }
+			25 = { set_strategy = ai_strategy_industrial_expansion }
+		}			
+		set_strategy = ai_strategy_unify_ethiopia
+		random_list = {	
+			75 = { set_strategy = ai_strategy_conservative_agenda }
+			25 = { set_strategy = ai_strategy_progressive_agenda }
+		}			
+	}
+	c:BRN = {
+		random_list = {	
+			50 = { set_strategy = ai_strategy_agricultural_expansion }
+			25 = { set_strategy = ai_strategy_resource_expansion }
+			25 = { set_strategy = ai_strategy_industrial_expansion }
+		}			
+		set_strategy = ai_strategy_unify_ethiopia
+		random_list = {	
+			75 = { set_strategy = ai_strategy_conservative_agenda }
+			25 = { set_strategy = ai_strategy_progressive_agenda }
+		}			
+	}
+	c:HAR = {
+		random_list = {	
+			50 = { set_strategy = ai_strategy_agricultural_expansion }
+			25 = { set_strategy = ai_strategy_resource_expansion }
+			25 = { set_strategy = ai_strategy_industrial_expansion }
+		}			
+		set_strategy = ai_strategy_unify_ethiopia
+		random_list = {	
+			75 = { set_strategy = ai_strategy_conservative_agenda }
+			25 = { set_strategy = ai_strategy_progressive_agenda }
+		}			
+	}
+	c:AHU = {
+		random_list = {	
+			50 = { set_strategy = ai_strategy_agricultural_expansion }
+			25 = { set_strategy = ai_strategy_resource_expansion }
+			25 = { set_strategy = ai_strategy_industrial_expansion }
+		}			
+		set_strategy = ai_strategy_unify_wei
+		set_strategy = ai_strategy_conservative_agenda_chi			
+	}
+	c:SHA = {
+		random_list = {	
+			50 = { set_strategy = ai_strategy_agricultural_expansion }
+			25 = { set_strategy = ai_strategy_resource_expansion }
+			25 = { set_strategy = ai_strategy_industrial_expansion }
+		}			
+		set_strategy = ai_strategy_unify_wei
+		set_strategy = ai_strategy_conservative_agenda_chi				
+	}
+	c:ZHI = {
+		random_list = {	
+			50 = { set_strategy = ai_strategy_agricultural_expansion }
+			25 = { set_strategy = ai_strategy_resource_expansion }
+			25 = { set_strategy = ai_strategy_industrial_expansion }
+		}			
+		set_strategy = ai_strategy_unify_wei
+		set_strategy = ai_strategy_conservative_agenda_chi				
+	}
+	c:SHN = {
+		random_list = {	
+			50 = { set_strategy = ai_strategy_agricultural_expansion }
+			25 = { set_strategy = ai_strategy_resource_expansion }
+			25 = { set_strategy = ai_strategy_industrial_expansion }
+		}			
+		set_strategy = ai_strategy_unify_wei
+		set_strategy = ai_strategy_conservative_agenda_chi			
+	}
+	c:XIB = {
+		random_list = {	
+			50 = { set_strategy = ai_strategy_agricultural_expansion }
+			25 = { set_strategy = ai_strategy_resource_expansion }
+			25 = { set_strategy = ai_strategy_industrial_expansion }
+		}			
+		set_strategy = ai_strategy_unify_wei
+		set_strategy = ai_strategy_conservative_agenda_chi			
+	}
+	c:CHO = {
+		random_list = {	
+			50 = { set_strategy = ai_strategy_agricultural_expansion }
+			25 = { set_strategy = ai_strategy_resource_expansion }
+			25 = { set_strategy = ai_strategy_industrial_expansion }
+		}			
+		set_strategy = ai_strategy_unify_han
+		set_strategy = ai_strategy_conservative_agenda_chi			
+	}
+	c:SIH = {
+		random_list = {	
+			50 = { set_strategy = ai_strategy_agricultural_expansion }
+			25 = { set_strategy = ai_strategy_resource_expansion }
+			25 = { set_strategy = ai_strategy_industrial_expansion }
+		}			
+		set_strategy = ai_strategy_unify_han
+		set_strategy = ai_strategy_conservative_agenda_chi			
+	}
+	c:YUN = {
+		random_list = {	
+			50 = { set_strategy = ai_strategy_agricultural_expansion }
+			25 = { set_strategy = ai_strategy_resource_expansion }
+			25 = { set_strategy = ai_strategy_industrial_expansion }
+		}			
+		set_strategy = ai_strategy_unify_han
+		set_strategy = ai_strategy_conservative_agenda_chi			
+	}
+	c:GUC = {
+		random_list = {	
+			50 = { set_strategy = ai_strategy_agricultural_expansion }
+			25 = { set_strategy = ai_strategy_resource_expansion }
+			25 = { set_strategy = ai_strategy_industrial_expansion }
+		}			
+		set_strategy = ai_strategy_unify_han
+		set_strategy = ai_strategy_conservative_agenda_chi			
+	}
+	c:GNG = {
+		random_list = {	
+			50 = { set_strategy = ai_strategy_agricultural_expansion }
+			25 = { set_strategy = ai_strategy_resource_expansion }
+			25 = { set_strategy = ai_strategy_industrial_expansion }
+		}			
+		set_strategy = ai_strategy_unify_wu
+		set_strategy = ai_strategy_conservative_agenda_chi			
+	}
+	c:YUE = {
+		random_list = {	
+			50 = { set_strategy = ai_strategy_agricultural_expansion }
+			25 = { set_strategy = ai_strategy_resource_expansion }
+			25 = { set_strategy = ai_strategy_industrial_expansion }
+		}			
+		set_strategy = ai_strategy_unify_wu
+		set_strategy = ai_strategy_conservative_agenda_chi			
+	}
+	c:TAC = {
+		random_list = {	
+			50 = { set_strategy = ai_strategy_agricultural_expansion }
+			25 = { set_strategy = ai_strategy_resource_expansion }
+			25 = { set_strategy = ai_strategy_industrial_expansion }
+		}			
+		set_strategy = ai_strategy_unify_wu
+		set_strategy = ai_strategy_conservative_agenda_chi			
+	}
+	c:NCL = {
+		random_list = {	
+			50 = { set_strategy = ai_strategy_agricultural_expansion }
+			25 = { set_strategy = ai_strategy_resource_expansion }
+			25 = { set_strategy = ai_strategy_industrial_expansion }
+		}			
+		set_strategy = ai_strategy_unify_wu
+		set_strategy = ai_strategy_conservative_agenda_chi			
+	}
+	c:HNA = {
+		random_list = {	
+			50 = { set_strategy = ai_strategy_agricultural_expansion }
+			25 = { set_strategy = ai_strategy_resource_expansion }
+			25 = { set_strategy = ai_strategy_industrial_expansion }
+		}			
+		set_strategy = ai_strategy_armed_isolationism
+		set_strategy = ai_strategy_conservative_agenda		
+	}
+	c:SLO = {
+		random_list = {	
+			50 = { set_strategy = ai_strategy_agricultural_expansion }
+			25 = { set_strategy = ai_strategy_resource_expansion }
+			25 = { set_strategy = ai_strategy_industrial_expansion }
+		}			
+		set_strategy = ai_strategy_unify_jugo
+		random_list = {	
+			75 = { set_strategy = ai_strategy_conservative_agenda }
+			25 = { set_strategy = ai_strategy_progressive_agenda }
+		}			
+	}
+	c:CRO = {
+		random_list = {	
+			50 = { set_strategy = ai_strategy_agricultural_expansion }
+			25 = { set_strategy = ai_strategy_resource_expansion }
+			25 = { set_strategy = ai_strategy_industrial_expansion }
+		}			
+		set_strategy = ai_strategy_unify_jugo
+		random_list = {	
+			75 = { set_strategy = ai_strategy_conservative_agenda }
+			25 = { set_strategy = ai_strategy_progressive_agenda }
+		}			
+	}
+	c:BUS = {
+		random_list = {	
+			50 = { set_strategy = ai_strategy_agricultural_expansion }
+			25 = { set_strategy = ai_strategy_resource_expansion }
+			25 = { set_strategy = ai_strategy_industrial_expansion }
+		}			
+		set_strategy = ai_strategy_unify_jugo
+		random_list = {	
+			75 = { set_strategy = ai_strategy_conservative_agenda }
+			25 = { set_strategy = ai_strategy_progressive_agenda }
+		}			
+	}
+	c:SER = {
+		random_list = {	
+			50 = { set_strategy = ai_strategy_agricultural_expansion }
+			25 = { set_strategy = ai_strategy_resource_expansion }
+			25 = { set_strategy = ai_strategy_industrial_expansion }
+		}			
+		set_strategy = ai_strategy_unify_jugo
+		random_list = {	
+			75 = { set_strategy = ai_strategy_conservative_agenda }
+			25 = { set_strategy = ai_strategy_progressive_agenda }
+		}			
+	}
+	c:MON = {
+		random_list = {	
+			50 = { set_strategy = ai_strategy_agricultural_expansion }
+			25 = { set_strategy = ai_strategy_resource_expansion }
+			25 = { set_strategy = ai_strategy_industrial_expansion }
+		}			
+		set_strategy = ai_strategy_unify_jugo
+		random_list = {	
+			75 = { set_strategy = ai_strategy_conservative_agenda }
+			25 = { set_strategy = ai_strategy_progressive_agenda }
+		}			
+	}
+	c:ALB = {
+		random_list = {	
+			50 = { set_strategy = ai_strategy_agricultural_expansion }
+			25 = { set_strategy = ai_strategy_resource_expansion }
+			25 = { set_strategy = ai_strategy_industrial_expansion }
+		}			
+		set_strategy = ai_strategy_unify_jugo
+		random_list = {	
+			75 = { set_strategy = ai_strategy_conservative_agenda }
+			25 = { set_strategy = ai_strategy_progressive_agenda }
+		}			
+	}
+	c:TRA = {
+		random_list = {	
+			50 = { set_strategy = ai_strategy_agricultural_expansion }
+			25 = { set_strategy = ai_strategy_resource_expansion }
+			25 = { set_strategy = ai_strategy_industrial_expansion }
+		}			
+		set_strategy = ai_strategy_unify_inde
+		random_list = {	
+			75 = { set_strategy = ai_strategy_conservative_agenda }
+			25 = { set_strategy = ai_strategy_progressive_agenda }
+		}			
+	}
+	c:MYS = {
+		random_list = {	
+			50 = { set_strategy = ai_strategy_agricultural_expansion }
+			25 = { set_strategy = ai_strategy_resource_expansion }
+			25 = { set_strategy = ai_strategy_industrial_expansion }
+		}			
+		set_strategy = ai_strategy_unify_inde
+		random_list = {	
+			75 = { set_strategy = ai_strategy_conservative_agenda }
+			25 = { set_strategy = ai_strategy_progressive_agenda }
+		}			
+	}
+	c:BER = {
+		random_list = {	
+			50 = { set_strategy = ai_strategy_agricultural_expansion }
+			25 = { set_strategy = ai_strategy_resource_expansion }
+			25 = { set_strategy = ai_strategy_industrial_expansion }
+		}			
+		set_strategy = ai_strategy_unify_inde
+		random_list = {	
+			75 = { set_strategy = ai_strategy_conservative_agenda }
+			25 = { set_strategy = ai_strategy_progressive_agenda }
+		}			
+	}
+	c:ORI = {
+		random_list = {	
+			50 = { set_strategy = ai_strategy_agricultural_expansion }
+			25 = { set_strategy = ai_strategy_resource_expansion }
+			25 = { set_strategy = ai_strategy_industrial_expansion }
+		}			
+		set_strategy = ai_strategy_unify_inde
+		random_list = {	
+			75 = { set_strategy = ai_strategy_conservative_agenda }
+			25 = { set_strategy = ai_strategy_progressive_agenda }
+		}			
+	}
+	c:HYD = {
+		random_list = {	
+			50 = { set_strategy = ai_strategy_agricultural_expansion }
+			25 = { set_strategy = ai_strategy_resource_expansion }
+			25 = { set_strategy = ai_strategy_industrial_expansion }
+		}			
+		set_strategy = ai_strategy_unify_inde
+		random_list = {	
+			75 = { set_strategy = ai_strategy_conservative_agenda }
+			25 = { set_strategy = ai_strategy_progressive_agenda }
+		}			
+	}
+	c:BAS = {
+		random_list = {	
+			50 = { set_strategy = ai_strategy_agricultural_expansion }
+			25 = { set_strategy = ai_strategy_resource_expansion }
+			25 = { set_strategy = ai_strategy_industrial_expansion }
+		}			
+		set_strategy = ai_strategy_unify_inde
+		random_list = {	
+			75 = { set_strategy = ai_strategy_conservative_agenda }
+			25 = { set_strategy = ai_strategy_progressive_agenda }
+		}			
+	}
+	c:NAG = {
+		random_list = {	
+			50 = { set_strategy = ai_strategy_agricultural_expansion }
+			25 = { set_strategy = ai_strategy_resource_expansion }
+			25 = { set_strategy = ai_strategy_industrial_expansion }
+		}			
+		set_strategy = ai_strategy_unify_inde
+		random_list = {	
+			75 = { set_strategy = ai_strategy_conservative_agenda }
+			25 = { set_strategy = ai_strategy_progressive_agenda }
+		}			
+	}
+	c:MNP = {
+		random_list = {	
+			50 = { set_strategy = ai_strategy_agricultural_expansion }
+			25 = { set_strategy = ai_strategy_resource_expansion }
+			25 = { set_strategy = ai_strategy_industrial_expansion }
+		}			
+		set_strategy = ai_strategy_unify_inde
+		random_list = {	
+			75 = { set_strategy = ai_strategy_conservative_agenda }
+			25 = { set_strategy = ai_strategy_progressive_agenda }
+		}			
+	}
+	c:BGL = {
+		random_list = {	
+			50 = { set_strategy = ai_strategy_agricultural_expansion }
+			25 = { set_strategy = ai_strategy_resource_expansion }
+			25 = { set_strategy = ai_strategy_industrial_expansion }
+		}			
+		set_strategy = ai_strategy_unify_inde
+		random_list = {	
+			75 = { set_strategy = ai_strategy_conservative_agenda }
+			25 = { set_strategy = ai_strategy_progressive_agenda }
+		}			
+	}
+	c:AWA = {
+		random_list = {	
+			50 = { set_strategy = ai_strategy_agricultural_expansion }
+			25 = { set_strategy = ai_strategy_resource_expansion }
+			25 = { set_strategy = ai_strategy_industrial_expansion }
+		}			
+		set_strategy = ai_strategy_unify_inde
+		random_list = {	
+			75 = { set_strategy = ai_strategy_conservative_agenda }
+			25 = { set_strategy = ai_strategy_progressive_agenda }
+		}			
+	}
+	c:BUN = {
+		random_list = {	
+			50 = { set_strategy = ai_strategy_agricultural_expansion }
+			25 = { set_strategy = ai_strategy_resource_expansion }
+			25 = { set_strategy = ai_strategy_industrial_expansion }
+		}			
+		set_strategy = ai_strategy_unify_inde
+		random_list = {	
+			75 = { set_strategy = ai_strategy_conservative_agenda }
+			25 = { set_strategy = ai_strategy_progressive_agenda }
+		}			
+	}
+	c:BHO = {
+		random_list = {	
+			50 = { set_strategy = ai_strategy_agricultural_expansion }
+			25 = { set_strategy = ai_strategy_resource_expansion }
+			25 = { set_strategy = ai_strategy_industrial_expansion }
+		}			
+		set_strategy = ai_strategy_unify_inde
+		random_list = {	
+			75 = { set_strategy = ai_strategy_conservative_agenda }
+			25 = { set_strategy = ai_strategy_progressive_agenda }
+		}			
+	}
+	c:GWA = {
+		random_list = {	
+			50 = { set_strategy = ai_strategy_agricultural_expansion }
+			25 = { set_strategy = ai_strategy_resource_expansion }
+			25 = { set_strategy = ai_strategy_industrial_expansion }
+		}			
+		set_strategy = ai_strategy_unify_inde
+		random_list = {	
+			75 = { set_strategy = ai_strategy_conservative_agenda }
+			25 = { set_strategy = ai_strategy_progressive_agenda }
+		}			
+	}
+	c:IND = {
+		random_list = {	
+			50 = { set_strategy = ai_strategy_agricultural_expansion }
+			25 = { set_strategy = ai_strategy_resource_expansion }
+			25 = { set_strategy = ai_strategy_industrial_expansion }
+		}			
+		set_strategy = ai_strategy_unify_inde
+		random_list = {	
+			75 = { set_strategy = ai_strategy_conservative_agenda }
+			25 = { set_strategy = ai_strategy_progressive_agenda }
+		}			
+	}
+	c:MEW = {
+		random_list = {	
+			50 = { set_strategy = ai_strategy_agricultural_expansion }
+			25 = { set_strategy = ai_strategy_resource_expansion }
+			25 = { set_strategy = ai_strategy_industrial_expansion }
+		}			
+		set_strategy = ai_strategy_unify_inde
+		random_list = {	
+			75 = { set_strategy = ai_strategy_conservative_agenda }
+			25 = { set_strategy = ai_strategy_progressive_agenda }
+		}			
+	}
+	c:KUT = {
+		random_list = {	
+			50 = { set_strategy = ai_strategy_agricultural_expansion }
+			25 = { set_strategy = ai_strategy_resource_expansion }
+			25 = { set_strategy = ai_strategy_industrial_expansion }
+		}			
+		set_strategy = ai_strategy_unify_inde
+		random_list = {	
+			75 = { set_strategy = ai_strategy_conservative_agenda }
+			25 = { set_strategy = ai_strategy_progressive_agenda }
+		}			
+	}
+	c:SIN = {
+		random_list = {	
+			50 = { set_strategy = ai_strategy_agricultural_expansion }
+			25 = { set_strategy = ai_strategy_resource_expansion }
+			25 = { set_strategy = ai_strategy_industrial_expansion }
+		}			
+		set_strategy = ai_strategy_unify_inde
+		random_list = {	
+			75 = { set_strategy = ai_strategy_conservative_agenda }
+			25 = { set_strategy = ai_strategy_progressive_agenda }
+		}			
+	}
+	c:JOD = {
+		random_list = {	
+			50 = { set_strategy = ai_strategy_agricultural_expansion }
+			25 = { set_strategy = ai_strategy_resource_expansion }
+			25 = { set_strategy = ai_strategy_industrial_expansion }
+		}			
+		set_strategy = ai_strategy_unify_inde
+		random_list = {	
+			75 = { set_strategy = ai_strategy_conservative_agenda }
+			25 = { set_strategy = ai_strategy_progressive_agenda }
+		}			
+	}
+	c:JAS = {
+		random_list = {	
+			50 = { set_strategy = ai_strategy_agricultural_expansion }
+			25 = { set_strategy = ai_strategy_resource_expansion }
+			25 = { set_strategy = ai_strategy_industrial_expansion }
+		}			
+		set_strategy = ai_strategy_unify_inde
+		random_list = {	
+			75 = { set_strategy = ai_strategy_conservative_agenda }
+			25 = { set_strategy = ai_strategy_progressive_agenda }
+		}			
+	}
+	c:BIK = {
+		random_list = {	
+			50 = { set_strategy = ai_strategy_agricultural_expansion }
+			25 = { set_strategy = ai_strategy_resource_expansion }
+			25 = { set_strategy = ai_strategy_industrial_expansion }
+		}			
+		set_strategy = ai_strategy_unify_inde
+		random_list = {	
+			75 = { set_strategy = ai_strategy_conservative_agenda }
+			25 = { set_strategy = ai_strategy_progressive_agenda }
+		}			
+	}
+	c:JAI = {
+		random_list = {	
+			50 = { set_strategy = ai_strategy_agricultural_expansion }
+			25 = { set_strategy = ai_strategy_resource_expansion }
+			25 = { set_strategy = ai_strategy_industrial_expansion }
+		}			
+		set_strategy = ai_strategy_unify_inde
+		random_list = {	
+			75 = { set_strategy = ai_strategy_conservative_agenda }
+			25 = { set_strategy = ai_strategy_progressive_agenda }
+		}			
+	}
+	c:PAN = {
+		random_list = {	
+			50 = { set_strategy = ai_strategy_agricultural_expansion }
+			25 = { set_strategy = ai_strategy_resource_expansion }
+			25 = { set_strategy = ai_strategy_industrial_expansion }
+		}			
+		set_strategy = ai_strategy_unify_inde
+		random_list = {	
+			75 = { set_strategy = ai_strategy_conservative_agenda }
+			25 = { set_strategy = ai_strategy_progressive_agenda }
+		}			
+	}
+}
+
+
+
+
+

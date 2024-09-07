@@ -1,0 +1,37 @@
+﻿COUNTRIES = {
+	c:BAY = {
+		effect_starting_technology_tier_2_tech = yes
+		effect_starting_politics_conservative = yes
+		add_technology_researched = intensive_agriculture
+		add_technology_researched = atmospheric_engine
+		add_technology_researched = dialectics
+		add_technology_researched = empiricism
+		add_technology_researched = central_banking
+		add_technology_researched = pharmaceuticals
+		add_technology_researched = mechanical_tools
+		add_technology_researched = egalitarianism
+		add_technology_researched = canneries
+		add_technology_researched = corporate_charters
+		add_technology_researched = central_archives
+		add_technology_researched = realism
+		add_technology_researched = percussion_cap
+		add_technology_progress = {
+			technology = nationalism
+			progress = 3000
+		}
+
+
+		activate_law = law_type:law_public_schools
+
+		set_institution_investment_level = {
+			institution = institution_schools
+			level = 3
+		}
+		ig:ig_landowners = {
+			add_ruling_interest_group = yes
+		}
+		trigger_event = {
+			id = fm_bavaria.1
+		}
+	}
+}

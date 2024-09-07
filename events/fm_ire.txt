@@ -1,0 +1,52 @@
+namespace = fm_ire
+# start event
+fm_ire.1 = {
+	type = country_event
+	placement = ROOT
+	title = fm_ire.1.t
+	desc = fm_ire.1.d
+	flavor = fm_ire.1.f
+	duration = 3
+	event_image = {
+		video = "ep1_transfer_of_authority"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	option = {
+		name = fm_ire.1.a
+	}
+}
+
+fm_ire.2 = {
+	type = country_event
+	placement = ROOT
+	title = fm_ire.2.t
+	desc = fm_ire.2.d
+	flavor = fm_ire.2.f
+	duration = 3
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	option = {
+		name = fm_ire.2.a
+		add_primary_culture = cu:scottish
+		add_primary_culture = cu:breton
+		add_primary_culture = cu:welsh
+		add_loyalists = {
+			strata = rich
+			value = 0.2
+		}
+		add_loyalists = {
+			strata = middle
+			value = 0.15
+		}
+		add_loyalists = {
+			strata = poor
+			value = 0.1
+		}
+	}
+}

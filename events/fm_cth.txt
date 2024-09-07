@@ -1,0 +1,254 @@
+namespace = fm_cth
+fm_cth.1 = {
+	type = country_event
+	placement = ROOT
+	title = fm_cth.1.t
+	desc = fm_cth.1.d
+	flavor = fm_cth.1.f
+	duration = 3
+	event_image = {
+		video = "unspecific_politicians_arguing"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	immediate = {
+		s:STATE_APULIA = {
+			add_claim = ROOT
+		}
+		s:STATE_CALABRIA = {
+			add_claim = ROOT
+		}
+		s:STATE_CAMPANIA = {
+			add_claim = ROOT
+		}
+	}
+	option = {
+		name = fm_cth.1.a
+		default_option = yes
+		add_journal_entry = {
+			type = je_punic_cth
+		}
+	}
+}
+fm_cth.2 = {#punic won
+	type = country_event
+	placement = ROOT
+	title = fm_cth.2.t
+	desc = fm_cth.2.d
+	flavor = fm_cth.2.f
+	duration = 3
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	trigger = {
+	}
+	option = {
+		name = fm_cth.2.a
+		default_option = yes
+		add_loyalists = {
+			strata = rich
+			value = 0.2
+		}
+		add_loyalists = {
+			strata = middle
+			value = 0.15
+		}
+		add_loyalists = {
+			strata = poor
+			value = 0.1
+		}
+		add_modifier = {
+			name = modifier_rome_eleven
+		}
+		hidden_effect = {
+			add_modifier = {
+				name = modifier_rome_thirteen
+				months = 120
+				is_decaying = yes
+			}
+		}
+	}
+}
+
+fm_cth.3 = { #punic lost
+	type = country_event
+	placement = ROOT
+	title = fm_cth.3.t
+	desc = fm_cth.3.d
+	flavor = fm_cth.3.f
+	duration = 3
+	event_image = {
+		video = "middleeast_battlefield_trenches"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+	trigger = {
+	}
+	option = {
+		name = fm_cth.3.a
+		default_option = yes
+		add_radicals = {
+			strata = rich
+			value = 0.2
+		}
+		add_radicals = {
+			strata = middle
+			value = 0.15
+		}
+		add_radicals = {
+			strata = poor
+			value = 0.1
+		}
+		add_modifier = {
+			name = modifier_rome_twelwe
+		}
+	}
+}
+fm_cth.4 = {
+	type = country_event
+	placement = ROOT
+	title = fm_cth.4.t
+	desc = fm_cth.4.d
+	flavor = fm_cth.4.f
+	duration = 3
+	event_image = {
+		video = "votp_french_algeria"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	option = {
+		name = fm_cth.4.a
+		default_option = yes
+		add_journal_entry = {
+			type = je_cth_main
+		}
+	}
+}
+fm_cth.5 = {
+	type = country_event
+	placement = ROOT
+	title = fm_cth.5.t
+	desc = fm_cth.5.d
+	flavor = fm_cth.5.f
+	duration = 3
+	event_image = {
+		video = "asia_poor_people_moving"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	option = {
+		name = fm_cth.5.a
+		default_option = yes
+		s:STATE_CONSTANTINE = {
+			add_claim = ROOT
+		}
+		s:STATE_ALGIERS = {
+			add_claim = ROOT
+		}
+		s:STATE_ORAN = {
+			add_claim = ROOT
+		}
+		s:STATE_AL_RIF = {
+			add_claim = ROOT
+		}
+		s:STATE_FEZ = {
+			add_claim = ROOT
+		}
+		s:STATE_ANDALUSIA = {
+			add_claim = ROOT
+		}
+		s:STATE_GRANADA = {
+			add_claim = ROOT
+		}
+		s:STATE_VALENCIA = {
+			add_claim = ROOT
+		}
+		s:STATE_BALEARES = {
+			add_claim = ROOT
+		}
+		set_variable = {
+			name = fm_cth_varone
+		}
+	}
+}
+
+fm_cth.6 = {
+	type = country_event
+	placement = ROOT
+	title = fm_cth.6.t
+	desc = fm_cth.6.d
+	flavor = fm_cth.6.f
+	duration = 3
+	event_image = {
+		video = "votp_agitator_speaking"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	option = {
+		name = fm_cth.6.a
+		default_option = yes
+		s:STATE_CYPRUS = {
+			add_claim = ROOT
+		}
+		s:STATE_ALEPPO = {
+			add_claim = ROOT
+		}
+		s:STATE_SYRIA = {
+			add_claim = ROOT
+		}
+		s:STATE_LEBANON = {
+			add_claim = ROOT
+		}
+		s:STATE_PALESTINE = {
+			add_claim = ROOT
+		}
+		s:STATE_TRANSJORDAN = {
+			add_claim = ROOT
+		}
+		s:STATE_TRIPOLI = {
+			add_claim = ROOT
+		}
+		s:STATE_LIBYA = {
+			add_claim = ROOT
+		}
+	}
+}
+
+fm_cth.7 = {
+	type = country_event
+	placement = ROOT
+	title = fm_cth.7.t
+	desc = fm_cth.7.d
+	flavor = fm_cth.7.f
+	duration = 3
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	trigger = {
+	}
+	option = {
+		name = fm_cth.7.a
+		default_option = yes
+		add_loyalists = {
+			strata = rich
+			value = 0.25
+		}
+		add_loyalists = {
+			strata = middle
+			value = 0.2
+		}
+		add_loyalists = {
+			strata = poor
+			value = 0.15
+		}
+		add_modifier = {
+			name = modifier_cth_one
+			months = 120
+			is_decaying = yes
+		}
+	}
+}

@@ -1,0 +1,398 @@
+je_bav_pro = {
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	group = je_group_historical_content
+	complete = {
+		c:BAY = {
+			is_subject_of = ROOT
+		}
+		has_law = law_type:law_monarchy
+	}
+	on_complete = {
+		trigger_event = {
+			id = fm_bohem.4
+		}
+	}
+	fail = {
+		game_date > 1837.6.1
+	}
+	should_be_pinned_by_default = yes
+}
+
+je_disf_king = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	group = je_group_historical_content
+	complete = {
+		has_law = law_type:law_racial_segregation
+		OR = {
+			has_law = law_type:law_freedom_of_conscience
+			has_law = law_type:law_total_separation
+		}
+		NOT = {
+			has_law = law_type:law_serfdom
+		}
+		owns_entire_state_region = STATE_AUSTRIA
+		owns_entire_state_region = STATE_STYRIA
+		has_technology_researched = egalitarianism
+		has_technology_researched = nationalism
+	}
+	on_complete = {
+		remove_modifier = modifier_boh_one
+		change_tag = BBA
+		add_primary_culture = cu:south_german
+		trigger_event = {
+			id = fm_bohem.7
+		}
+	}
+	fail = {
+		NOT = {
+			has_law = law_type:law_monarchy
+		}
+	}
+	should_be_pinned_by_default = yes
+}
+
+je_boh_mor = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	group = je_group_historical_content
+	complete = {
+		owns_entire_state_region = STATE_WEST_GALICIA
+		owns_entire_state_region = STATE_WEST_SLOVAKIA
+		owns_entire_state_region = STATE_EAST_SLOVAKIA
+		owns_entire_state_region = STATE_TRANSDANUBIA
+		owns_entire_state_region = STATE_CENTRAL_HUNGARY
+		owns_entire_state_region = STATE_BEKES
+		owns_entire_state_region = STATE_BANAT
+		owns_entire_state_region = STATE_DELVIDEK
+		owns_entire_state_region = STATE_AUSTRIA
+		owns_entire_state_region = STATE_STYRIA
+		has_law = law_type:law_ethnostate
+		OR = {
+			has_law = law_type:law_freedom_of_conscience
+			has_law = law_type:law_total_separation
+		}
+	}
+	on_complete = {
+		change_tag = GRM
+		trigger_event = {
+			id = fm_bohem.8
+		}
+		custom_tooltip = {
+			text = je_moravian_culture
+			every_country = {
+				every_scope_pop = {
+					limit = {
+						culture = cu:czech
+					}
+					change_pop_culture = {
+						target = cu:moravian
+						value = 1
+					}
+				}
+				every_scope_pop = {
+					limit = {
+						culture = cu:slovak
+					}
+					change_pop_culture = {
+						target = cu:moravian
+						value = 1
+					}
+				}
+				every_scope_pop = {
+					limit = {
+						culture = cu:sorb
+					}
+					change_pop_culture = {
+						target = cu:moravian
+						value = 1
+					}
+				}
+			}
+		}
+		add_primary_culture = cu:moravian
+		add_primary_culture = cu:slovak
+		add_primary_culture = cu:sorb
+		hidden_effect = {
+			s:STATE_BOHEMIA = {
+				remove_homeland = cu:south_german
+				add_homeland = cu:moravian
+			}
+			s:STATE_MORAVIA = {
+				remove_homeland = cu:south_german
+				add_homeland = cu:moravian
+			}
+			s:STATE_SILESIA = {
+				add_homeland = cu:moravian
+			}
+			s:STATE_WEST_SLOVAKIA = {
+				remove_homeland = cu:hungarian
+				add_homeland = cu:moravian
+			}
+			s:STATE_EAST_SLOVAKIA = {
+				remove_homeland = cu:hungarian
+				add_homeland = cu:moravian
+			}
+			s:STATE_WEST_GALICIA = {
+				remove_homeland = cu:polish
+				add_homeland = cu:moravian
+			}
+			s:STATE_BEKES = {
+				remove_homeland = cu:romanian
+				remove_homeland = cu:hungarian
+				add_homeland = cu:moravian
+			}
+			s:STATE_CENTRAL_HUNGARY = {
+				remove_homeland = cu:hungarian
+				add_homeland = cu:moravian
+			}
+			s:STATE_BANAT = {
+				remove_homeland = cu:romanian
+				remove_homeland = cu:hungarian
+				add_homeland = cu:moravian
+			}
+			s:STATE_DELVIDEK = {
+				remove_homeland = cu:hungarian
+				add_homeland = cu:moravian
+			}
+			s:STATE_TRANSDANUBIA = {
+				remove_homeland = cu:south_german
+				remove_homeland = cu:hungarian
+				add_homeland = cu:moravian
+			}
+			s:STATE_STYRIA = {
+				add_homeland = cu:moravian
+			}
+			s:STATE_AUSTRIA = {
+				add_homeland = cu:moravian
+			}
+		}
+	}
+	should_be_pinned_by_default = yes
+}
+
+je_boh_dan = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	group = je_group_historical_content
+	complete = {
+		owns_entire_state_region = STATE_WEST_SLOVAKIA
+		owns_entire_state_region = STATE_EAST_SLOVAKIA
+		owns_entire_state_region = STATE_TRANSDANUBIA
+		owns_entire_state_region = STATE_CENTRAL_HUNGARY
+		owns_entire_state_region = STATE_BEKES
+		owns_entire_state_region = STATE_BANAT
+		owns_entire_state_region = STATE_DELVIDEK
+		owns_entire_state_region = STATE_AUSTRIA
+		owns_entire_state_region = STATE_SOUTHERN_TRANSYLVANIA
+		owns_entire_state_region = STATE_NORTHERN_TRANSYLVANIA
+		NOT = {
+			has_law = law_type:law_serfdom
+		}
+		OR = {
+			has_law = law_type:law_freedom_of_conscience
+			has_law = law_type:law_total_separation
+		}
+		OR = {
+			has_law = law_type:law_racial_segregation
+			has_law = law_type:law_cultural_exclusion
+		}
+		has_technology_researched = pan-nationalism
+	}
+	fail = {
+		NOT = {
+			has_law = law_type:law_monarchy
+		}
+	}
+	on_complete = {
+		change_tag = DKI
+		trigger_event = {
+			id = fm_bohem.6
+		}
+		hidden_effect = {
+			every_country = {
+				every_scope_pop = {
+					limit = {
+						culture = cu:hungarian
+					}
+					change_pop_culture = {
+						target = cu:danubian
+						value = 1
+					}
+				}
+				every_scope_pop = {
+					limit = {
+						culture = cu:romanian
+					}
+					change_pop_culture = {
+						target = cu:danubian
+						value = 1
+					}
+				}
+			}
+			add_primary_culture = cu:danubian
+			s:STATE_WALLACHIA = {
+				add_homeland = cu:danubian
+			}
+			s:STATE_DOBRUDJA = {
+				add_homeland = cu:danubian
+			}
+			s:STATE_NORTHERN_TRANSYLVANIA = {
+				add_homeland = cu:danubian
+			}
+			s:STATE_SOUTHERN_TRANSYLVANIA = {
+				add_homeland = cu:danubian
+			}
+			s:STATE_MOLDAVIA = {
+				add_homeland = cu:danubian
+			}
+			s:STATE_BESSARABIA = {
+				add_homeland = cu:danubian
+			}
+			s:STATE_BEKES = {
+				add_homeland = cu:danubian
+			}
+			s:STATE_CENTRAL_HUNGARY = {
+				add_homeland = cu:danubian
+			}
+			s:STATE_BANAT = {
+				add_homeland = cu:danubian
+			}
+			s:STATE_DELVIDEK = {
+				add_homeland = cu:danubian
+			}
+			s:STATE_TRANSDANUBIA = {
+				add_homeland = cu:danubian
+			}
+			s:STATE_AUSTRIA = {
+				add_homeland = cu:danubian
+			}
+		}
+	}
+	should_be_pinned_by_default = yes
+}
+
+je_ethno_boh = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	group = je_group_historical_content
+	fail = {
+		NOT = {
+			has_law = law_type:law_ethnostate
+		}
+	}
+	on_fail = {
+		remove_modifier = modifier_mor_one
+		remove_modifier = modifier_mor_two
+	}
+	should_be_pinned_by_default = yes
+}
+
+je_carp = {
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	group = je_group_historical_content
+	complete = {
+		owns_entire_state_region = STATE_WEST_SLOVAKIA
+		owns_entire_state_region = STATE_EAST_SLOVAKIA
+		owns_entire_state_region = STATE_TRANSDANUBIA
+		owns_entire_state_region = STATE_CENTRAL_HUNGARY
+		owns_entire_state_region = STATE_BEKES
+		owns_entire_state_region = STATE_BANAT
+		owns_entire_state_region = STATE_DELVIDEK
+		owns_entire_state_region = STATE_SOUTHERN_TRANSYLVANIA
+		owns_entire_state_region = STATE_NORTHERN_TRANSYLVANIA
+	}
+	on_complete = {
+		add_modifier = modifier_carp
+	}
+	should_be_pinned_by_default = yes
+}
+
+je_ari_rev = {
+	icon = "gfx/interface/icons/event_icons/event_fire.dds"
+	group = je_group_historical_content
+	complete = {
+		owns_entire_state_region = STATE_BADEN
+		owns_entire_state_region = STATE_WURTTEMBERG
+	}
+	on_complete = {
+		trigger_event = {
+			id = fm_bavaria.4
+		}
+	}
+	should_be_pinned_by_default = yes
+}
+
+je_bav_nat = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	group = je_group_historical_content
+	complete = {
+		has_technology_researched = nationalism
+		has_law = law_type:law_monarchy
+	}
+	on_complete = {
+		trigger_event = {
+			id = fm_bavaria.5
+		}
+	}
+	should_be_pinned_by_default = yes
+}
+
+je_sgf = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	group = je_group_historical_content
+	complete = {
+		owns_entire_state_region = STATE_BOHEMIA
+		owns_entire_state_region = STATE_MORAVIA
+		owns_entire_state_region = STATE_TRANSDANUBIA
+		owns_entire_state_region = STATE_SLOVENIA
+		owns_entire_state_region = STATE_SOUTH_TYROL
+	}
+	on_complete = {
+		change_tag = SGF
+		trigger_event = {
+			id = fm_bavaria.6
+		}
+	}
+	should_be_pinned_by_default = yes
+}
+
+je_ger_conf = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	group = je_group_historical_content
+	complete = {
+		owns_entire_state_region = STATE_AUSTRIA
+		owns_entire_state_region = STATE_STYRIA
+		owns_entire_state_region = STATE_WESTPHALIA
+		owns_entire_state_region = STATE_BRUNSWICK
+		owns_entire_state_region = STATE_HESSE
+		owns_entire_state_region = STATE_RUHR
+		owns_entire_state_region = STATE_RHINELAND
+		owns_entire_state_region = STATE_NORTH_RHINE
+	}
+	OR = {
+		AND = {
+			owns_entire_state_region = STATE_SAXONY
+			owns_entire_state_region = STATE_ANHALT
+			owns_entire_state_region = STATE_BRANDENBURG
+			owns_entire_state_region = STATE_MECKLENBURG
+			owns_entire_state_region = STATE_POMERANIA
+		}
+		c:LOT = {
+			is_subject_of = ROOT
+			relations:ROOT > relations_threshold:cordial
+		}
+		has_technology_researched = pan-nationalism
+	}
+	on_complete = {
+		if = {
+			limit = {
+				c:LOT = {
+					is_subject_of = ROOT
+				}
+			}
+			annex = c:LOT
+		}
+		change_tag = GRO
+		trigger_event = {
+			id = fm_bavaria.7
+		}
+	}
+	should_be_pinned_by_default = yes
+}

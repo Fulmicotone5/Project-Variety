@@ -1,0 +1,484 @@
+namespace = fm_bohem
+# start event
+fm_bohem.1 = {
+	type = country_event
+	placement = ROOT
+	title = fm_bohem.1.t
+	desc = fm_bohem.1.d
+	flavor = fm_bohem.1.f
+	duration = 1
+	event_image = {
+		video = "europenorthamerica_london_center"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	trigger = {
+	}
+	immediate = {
+		trigger_event = {
+			id = fm_bohem.2
+			days = 20
+		}
+	}
+	option = {
+		name = fm_bohem.1.a
+	}
+}
+
+fm_bohem.2 = {
+	# to je matter of bav
+	type = country_event
+	placement = ROOT
+	title = fm_bohem.2.t
+	desc = fm_bohem.2.d
+	flavor = fm_bohem.2.f
+	duration = 2
+	event_image = {
+		video = "southamerica_aristocrats"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	trigger = {
+	}
+	immediate = {
+		trigger_event = {
+			id = fm_bohem.3
+			days = 90
+		}
+	}
+	option = {
+		name = fm_bohem.2.a
+		default_option = yes
+		add_journal_entry = {
+			type = je_bav_pro
+		}
+	}
+}
+
+fm_bohem.3 = {
+	# big choice
+	type = country_event
+	placement = ROOT
+	title = fm_bohem.3.t
+	desc = fm_bohem.3.d
+	flavor = fm_bohem.3.f
+	duration = 1
+	event_image = {
+		video = "europenorthamerica_before_the_battle"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	trigger = {
+	}
+	immediate = {
+	}
+	option = {
+		name = fm_bohem.3.a
+		default_option = yes
+		trigger_event = {
+			id = fm_bohem.5
+		}
+		create_bidirectional_truce = { country = c:BAY months = 16 }
+		hidden_effect = {
+			c:BAY = {
+				trigger_event = fm_bavaria.3
+			}
+		}
+		ai_chance = {
+			base = 100
+		}
+	}
+	option = {
+		name = fm_bohem.3.b
+		create_diplomatic_play = {
+			target_country = c:BAY
+			war = yes
+			type = dp_make_protectorate
+			add_war_goal = {
+				holder = c:BAY
+				type = conquer_state
+				target_state = s:STATE_BOHEMIA.region_state:BOH
+			}
+		}
+		hidden_effect = {
+			change_infamy = -36
+		}
+	}
+}
+
+fm_bohem.4 = {
+	# after bav proct
+	type = country_event
+	placement = ROOT
+	title = fm_bohem.4.t
+	desc = fm_bohem.4.d
+	flavor = fm_bohem.4.f
+	duration = 1
+	event_image = {
+		video = "unspecific_vandalized_storefront"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	trigger = {
+	}
+	immediate = {
+		annex = c:BAY
+		annex = c:WUR
+		annex = c:BAD
+	}
+	option = {
+		name = fm_bohem.4.a
+		add_loyalists = {
+			value = very_large_radicals
+			pop_type = aristocrats
+		}
+		every_state = {
+			limit = {
+				OR = {
+					state_region = s:STATE_BAVARIA
+					state_region = s:STATE_FRANCONIA
+					state_region = s:STATE_TYROL
+					state_region = s:STATE_BADEN
+					state_region = s:STATE_WURTTEMBERG
+				}
+			}
+			add_radicals_in_state = {
+				value = 0.15
+			}
+		}
+		s:STATE_AUSTRIA = {
+			add_claim = c:BOH
+		}
+		s:STATE_STYRIA = {
+			add_claim = c:BOH
+		}
+		add_modifier = {
+			name = modifier_boh_one
+		}
+		add_journal_entry = {
+			type = je_disf_king
+		}
+
+	}
+}
+
+fm_bohem.5 = {
+	# after no protect
+	type = country_event
+	placement = ROOT
+	title = fm_bohem.5.t
+	desc = fm_bohem.5.d
+	flavor = fm_bohem.5.f
+	duration = 1
+	event_image = {
+		video = "votp_monarch_holding_court"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	trigger = {
+	}
+	immediate = {
+		random_interest_group = {
+			limit
+			{
+				is_interest_group_type = ig_rural_folk
+				exist = leader
+			}
+			leader = {
+				save_scope_as = rural_folk_leader
+			}
+		}
+		random_interest_group = {
+			limit
+			{
+				is_interest_group_type = ig_landowners
+				exist = leader
+			}
+			leader = {
+				save_scope_as = landowners_leader
+			}
+		}
+		random_interest_group = {
+			limit
+			{
+				is_interest_group_type = ig_armed_forces
+				exist = leader
+			}
+			leader = {
+				save_scope_as = armed_forces_leader
+			}
+		}
+		random_interest_group = {
+			limit
+			{
+				is_interest_group_type = ig_industrialists
+				exist = leader
+			}
+			leader = {
+				save_scope_as = industrialists_leader
+			}
+		}
+	}
+	option = {
+		name = fm_bohem.5.a
+		add_journal_entry = {
+			type = je_boh_mor
+		}
+		s:STATE_SILESIA = {
+			add_claim = c:BOH
+		}
+		s:STATE_WEST_SLOVAKIA = {
+			add_claim = c:BOH
+		}
+		s:STATE_EAST_SLOVAKIA = {
+			add_claim = c:BOH
+		}
+		s:STATE_WEST_GALICIA = {
+			add_claim = c:BOH
+		}
+		s:STATE_BEKES = {
+			add_claim = c:BOH
+		}
+		s:STATE_CENTRAL_HUNGARY = {
+			add_claim = c:BOH
+		}
+		s:STATE_BANAT = {
+			add_claim = c:BOH
+		}
+		s:STATE_DELVIDEK = {
+			add_claim = c:BOH
+		}
+		s:STATE_TRANSDANUBIA = {
+			add_claim = c:BOH
+		}
+		s:STATE_STYRIA = {
+			add_claim = c:BOH
+		}
+		s:STATE_AUSTRIA = {
+			add_claim = c:BOH
+		}
+		scope:landowners_leader = {
+			set_ideology = ideology:ideology_ethno_nationalist
+		}
+		scope:rural_folk_leader = {
+			set_ideology = ideology:ideology_ethno_nationalist
+		}
+		scope:armed_forces_leader = {
+			set_ideology = ideology:ideology_ethno_nationalist
+		}
+		scope:industrialists_leader = {
+			set_ideology = ideology:ideology_ethno_nationalist
+		}
+		add_modifier = {
+			name = modifier_boh_two
+			months = 60
+			is_decaying = yes
+		}
+	}
+	option = {
+		name = fm_bohem.5.b
+		add_journal_entry = {
+			type = je_boh_dan
+		}
+		s:STATE_WEST_SLOVAKIA = {
+			add_claim = c:BOH
+		}
+		s:STATE_EAST_SLOVAKIA = {
+			add_claim = c:BOH
+		}
+		s:STATE_BEKES = {
+			add_claim = c:BOH
+		}
+		s:STATE_CENTRAL_HUNGARY = {
+			add_claim = c:BOH
+		}
+		s:STATE_BANAT = {
+			add_claim = c:BOH
+		}
+		s:STATE_DELVIDEK = {
+			add_claim = c:BOH
+		}
+		s:STATE_TRANSDANUBIA = {
+			add_claim = c:BOH
+		}
+		s:STATE_SOUTHERN_TRANSYLVANIA = {
+			add_claim = c:BOH
+		}
+		s:STATE_AUSTRIA = {
+			add_claim = c:BOH
+		}
+		s:STATE_NORTHERN_TRANSYLVANIA = {
+			add_claim = c:BOH
+		}
+		add_modifier = {
+			name = modifier_boh_two
+			months = 96
+			is_decaying = yes
+		}
+	}
+}
+fm_bohem.6 = {
+	# Great Moravia
+	type = country_event
+	placement = ROOT
+	title = fm_bohem.6.t
+	desc = fm_bohem.6.d
+	flavor = fm_bohem.6.f
+	duration = 3
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	trigger = {
+	}
+	immediate = {
+		ruler = {
+			save_scope_as = ruler_scope
+		}
+	}
+	option = {
+		name = fm_bohem.6.a
+		default_option = yes
+		scope:ruler_scope = {
+		add_modifier = {
+			name = modifier_dan_one
+		}
+		add_trait = experienced_political_operator
+		add_trait = inspirational_orator
+		add_trait = celebrity_commander
+	}
+		add_loyalists = {
+			value = very_large_radicals
+			pop_type = soldiers
+		}
+		add_loyalists = {
+			strata = poor
+			value = large_radicals
+		}
+		add_loyalists = {
+			value = large_radicals
+			culture = cu:danubian
+		}
+		s:STATE_WALLACHIA = {
+			add_claim = ROOT
+		}
+		s:STATE_MOLDAVIA = {
+			add_claim = ROOT
+		}
+		s:STATE_BESSARABIA = {
+			add_claim = ROOT
+		}
+		s:STATE_DOBRUDJA = {
+			add_claim = ROOT
+		}
+	}
+}
+
+fm_bohem.7 = { # integration of Bavaria
+	type = country_event
+	placement = ROOT
+	title = fm_bohem.7.t
+	desc = fm_bohem.7.d
+	flavor = fm_bohem.7.f
+	duration = 3
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	trigger = {
+	}
+	immediate = {
+		ruler = {
+			save_scope_as = ruler_scope
+		}
+	}
+	option = {
+		name = fm_bohem.7.a
+		default_option = yes
+		add_loyalists = {
+			value = very_large_radicals
+			culture = cu:south_german
+		}
+		add_journal_entry = {
+			type = je_carp
+		}
+		hidden_effect = {
+			s:STATE_WEST_SLOVAKIA = {
+				add_claim = c:BBA
+			}
+			s:STATE_EAST_SLOVAKIA = {
+				add_claim = c:BBA
+			}
+			s:STATE_BEKES = {
+				add_claim = c:BBA
+			}
+			s:STATE_CENTRAL_HUNGARY = {
+				add_claim = c:BBA
+			}
+			s:STATE_BANAT = {
+				add_claim = c:BBA
+			}
+			s:STATE_DELVIDEK = {
+				add_claim = c:BBA
+			}
+			s:STATE_TRANSDANUBIA = {
+				add_claim = c:BBA
+			}
+			s:STATE_SOUTHERN_TRANSYLVANIA = {
+				add_claim = c:BBA
+			}
+			s:STATE_NORTHERN_TRANSYLVANIA = {
+				add_claim = c:BBA
+			}
+		}
+	}
+}
+
+fm_bohem.8 = {
+	# Great Moravia
+	type = country_event
+	placement = ROOT
+	title = fm_bohem.8.t
+	desc = fm_bohem.8.d
+	flavor = fm_bohem.8.f
+	duration = 3
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	trigger = {
+	}
+	immediate = {
+		ruler = {
+			save_scope_as = ruler_scope
+		}
+	}
+	option = {
+		name = fm_bohem.8.a
+		default_option = yes
+		add_modifier = {
+			name = modifier_mor_one
+		}
+		add_modifier = {
+			name = modifier_mor_two
+		}
+		add_loyalists = {
+			value = very_large_radicals
+			pop_type = soldiers
+		}
+		add_loyalists = {
+			strata = poor
+			value = large_radicals
+		}
+		add_loyalists = {
+			value = very_large_radicals
+			culture = cu:moravian
+		}
+		add_journal_entry = {
+			type = je_ethno_boh
+		}
+	}
+}

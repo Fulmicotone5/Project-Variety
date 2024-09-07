@@ -1,0 +1,18 @@
+CHARACTERS = {
+	c:DCQ ?= {
+		create_character = {
+			first_name = "Frederic"
+			last_name = "d_aquitaine"
+			historical = yes
+			ruler = yes
+			female = no
+			birth_date = 1797.5.12
+			culture = cu:occitan
+			interest_group = ig_landowners
+			ideology = ideology_royalist
+			traits = {
+				direct
+			}
+		}
+	}
+}

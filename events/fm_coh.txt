@@ -1,0 +1,44 @@
+namespace = fm_coh
+# start event
+fm_coh.1 = {
+	type = country_event
+	placement = ROOT
+	title = fm_coh.1.t
+	desc = fm_coh.1.d
+	flavor = fm_coh.1.f
+	duration = 3
+	event_image = {
+		video = "ep1_clandestine_meeting"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	trigger = {
+	}
+	option = {
+		name = fm_coh.1.a
+		c:COH = {
+			make_independent = yes
+		}
+	}
+}
+
+fm_coh.2 = {
+	type = country_event
+	placement = ROOT
+	title = fm_coh.2.t
+	desc = fm_coh.2.d
+	flavor = fm_coh.2.f
+	duration = 3
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	option = {
+		name = fm_coh.2.a
+		add_loyalists = {
+			value = 0.3
+			culture = cu:ukrainian
+		}
+	}
+}

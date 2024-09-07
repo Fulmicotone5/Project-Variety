@@ -1,0 +1,103 @@
+CHARACTERS = {
+	c:YUA ?= {
+		create_character = {
+			first_name = "Zheng"
+			last_name = "Nie"
+			historical = yes
+			ruler = yes
+			age = 40
+			culture = cu:min
+			religion = rel:atheist
+			ig_leader = yes
+			female = no
+			interest_group = ig:ig_intelligentsia
+			ideology = ideology_positivist
+			traits = {
+				reserved
+				meticulous
+				sickly
+			}
+			on_created = {
+				set_variable = is_married
+			}
+		}
+
+		create_character = {
+			first_name = "Liao"
+			last_name = "Peng"
+			ruler = yes
+			age = 38
+			culture = cu:han
+			religion = rel:atheist
+			ig_leader = yes
+			female = no
+			interest_group = ig:ig_rural_folk
+			ideology = ideology_positivist
+			traits = {
+			}
+			on_created = {
+				set_variable = is_married
+			}
+		}	
+
+		create_character = {
+			first_name = "Huang"
+			last_name = "Cui"
+			age = 35
+			culture = cu:yue
+			religion = rel:atheist
+			ig_leader = yes
+			female = no
+			interest_group = ig_landowners
+			ideology = ideology_authoritarian
+			traits = {
+				persistent
+			}
+		}
+
+		create_character = {
+			first_name = "Xue"
+			last_name = "Huiyin"
+			age = 35
+			culture = cu:min
+			religion = rel:atheist
+			ig_leader = yes
+			female = no
+			interest_group = ig_armed_forces
+			ideology = ideology_authoritarian
+			traits = {
+				persistent
+				direct
+			}
+		}
+		create_character = {
+			first_name = "Huang"
+			last_name = "Shu"
+			age = 28
+			culture = cu:han
+			religion = rel:atheist
+			ig_leader = yes
+			female = no
+			interest_group = ig_petty_bourgeoisie
+			ideology = ideology_authoritarian
+			traits = {
+				direct
+			}
+		}
+
+		create_character = {
+			first_name = "Tan"
+			last_name = "Nie"
+			age = 38
+			culture = cu:han
+			religion = rel:atheist
+			ig_leader = yes
+			female = no
+			interest_group = ig_industrialists
+			ideology = ideology_market_liberal
+			traits = {
+				direct
+			}
+		}
+	}
+}

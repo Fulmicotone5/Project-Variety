@@ -1,0 +1,345 @@
+je_cas_main = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	group = je_group_historical_content
+	is_shown_when_inactive = {
+		exists = c:CAS
+		c:CAS ?= THIS
+	}
+	possible = {
+		has_technology_researched = nationalism
+	}
+	immediate = {
+		trigger_event = {
+			id = fm_cas.2
+		}
+	}
+	complete = {
+		owns_entire_state_region = STATE_ANDALUSIA
+		owns_entire_state_region = STATE_GRANADA
+		owns_entire_state_region = STATE_CATALONIA
+		owns_entire_state_region = STATE_NAVARRA
+		OR = {
+			AND = {
+				owns_entire_state_region = STATE_ARAGON
+				owns_entire_state_region = STATE_VALENCIA
+			}
+			AND = {
+				if = {
+					limit = {
+						exists = c:KAA
+					}
+				}
+				ROOT = {
+					is_in_same_power_bloc = c:KAA
+					is_power_bloc_leader = yes
+				}
+			}
+			AND = {
+				if = {
+					limit = {
+						exists = c:KAA
+					}
+				}
+				c:KAA = {
+					is_subject_of = ROOT
+					relations:ROOT > relations_threshold:cordial
+				}
+			}
+		}
+	}
+	fail = {
+		NOT = {
+			has_law = law_type:law_monarchy
+		}
+	}
+	on_complete = {
+		change_tag = ESP
+		trigger_event = {
+			id = fm_cas.3
+		}
+		add_journal_entry = {
+			type = fm_cata
+		}
+		add_journal_entry = {
+			type = fm_basq
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					c:GRA = {
+						OR = {
+							is_subject_of = ROOT
+							is_in_same_power_bloc = root
+						}
+					}
+				}
+				annex = c:GRA
+			}
+			if = {
+				limit = {
+					c:KAA = {
+						OR = {
+							is_subject_of = ROOT
+							is_in_same_power_bloc = root
+						}
+					}
+				}
+				annex = c:KAA
+			}
+			if = {
+				limit = {
+					c:NAV = {
+						OR = {
+							is_subject_of = ROOT
+							is_in_same_power_bloc = root
+						}
+					}
+				}
+				annex = c:NAV
+			}
+			if = {
+				limit = {
+					c:CAT = {
+						OR = {
+							is_subject_of = ROOT
+							is_in_same_power_bloc = root
+						}
+					}
+				}
+				annex = c:CAT
+			}
+		}
+	}
+	weight = 100
+	should_be_pinned_by_default = yes
+}
+
+fm_cata = {
+	icon = "gfx/interface/icons/event_icons/event_fire.dds"
+	group = je_group_historical_content
+	immediate = {
+		set_variable = {
+			name = cata_progress
+			value = 0
+		}
+	}
+	complete = {
+		scope:journal_entry = {
+			is_goal_complete = yes
+		}
+	}
+	fail = {
+		any_scope_state = {
+			state_region = s:STATE_CATALONIA
+			turmoil >= 0.4
+		}
+		any_scope_state = {
+			state_region = s:STATE_VALENCIA
+			turmoil >= 0.2
+		}
+	}
+	on_complete = {
+		add_primary_culture = cu:catalan
+	}
+	on_fail = {
+		trigger_event = {
+			id = fm_cas.4
+		}
+	}
+	on_monthly_pulse = {
+		effect = {
+			if = {
+				limit = {
+					OR = {
+						has_law = law_type:law_racial_segregation
+						has_law = law_type:law_cultural_exclusion
+						has_law = law_type:law_multicultural
+					}
+				}
+				change_variable = {
+					name = cata_progress
+					add = 1
+				}
+			}
+		}
+	}
+	current_value = {
+		value = root.var:cata_progress
+	}
+	goal_add_value = {
+		value = 120
+	}
+	progressbar = yes
+	weight = 100
+	should_be_pinned_by_default = yes
+}
+
+fm_basq = {
+	icon = "gfx/interface/icons/event_icons/event_fire.dds"
+	group = je_group_historical_content
+	immediate = {
+		set_variable = {
+			name = basq_progress
+			value = 0
+		}
+	}
+	complete = {
+		scope:journal_entry = {
+			is_goal_complete = yes
+		}
+	}
+	fail = {
+		any_scope_state = {
+			state_region = s:STATE_NAVARRA
+			turmoil >= 0.4
+		}
+	}
+	on_complete = {
+		add_primary_culture = cu:basque
+	}
+	on_fail = {
+		trigger_event = {
+			id = fm_cas.5
+		}
+	}
+	on_monthly_pulse = {
+		effect = {
+			if = {
+				limit = {
+					OR = {
+						has_law = law_type:law_racial_segregation
+						has_law = law_type:law_cultural_exclusion
+						has_law = law_type:law_multicultural
+					}
+				}
+				change_variable = {
+					name = basq_progress
+					add = 1
+				}
+			}
+		}
+	}
+	current_value = {
+		value = root.var:basq_progress
+	}
+	goal_add_value = {
+		value = 120
+	}
+	progressbar = yes
+	weight = 100
+	should_be_pinned_by_default = yes
+}
+
+je_inqui = {
+	icon = "gfx/interface/icons/event_icons/tutorial_icon.dds"
+	group = je_group_historical_content
+	complete = {
+		owns_entire_state_region = STATE_GALICIA
+		has_law = law_type:law_theocracy
+		has_law = law_type:law_state_religion
+	}
+	on_complete = {
+		trigger_event = {
+			id = fm_cas.6
+		}
+	}
+	fail = {
+		custom_tooltip = {
+			text = noesp
+			exists = c:ESP
+		}
+	}
+	weight = 100
+	should_be_pinned_by_default = yes
+}
+
+je_reclaim_holy = {
+	icon = "gfx/interface/icons/event_icons/tutorial_icon.dds"
+	group = je_group_historical_content
+	immediate = {
+		s:STATE_PALESTINE = {
+			add_claim = ROOT
+		}
+		s:STATE_EASTERN_THRACE = {
+			add_claim = ROOT
+		}
+		s:STATE_ALEPPO = {
+			add_claim = ROOT
+		}
+		s:STATE_MATRUH = {
+			add_claim = ROOT
+		}
+	}
+	complete = {
+		any_country = {
+			owns_entire_state_region = STATE_PALESTINE
+			country_has_state_religion = rel:catholic
+		}
+		any_country = {
+			owns_entire_state_region = STATE_EASTERN_THRACE
+			country_has_state_religion = rel:catholic
+		}
+		any_country = {
+			owns_entire_state_region = STATE_ALEPPO
+			country_has_state_religion = rel:catholic
+		}
+		any_country = {
+			owns_entire_state_region = STATE_MATRUH
+			country_has_state_religion = rel:catholic
+		}
+		any_country = {
+			owns_entire_state_region = STATE_LAZIO
+			country_has_state_religion = rel:catholic
+		}
+		any_country = {
+			owns_entire_state_region = STATE_GALICIA
+			country_has_state_religion = rel:catholic
+		}
+	}
+	on_complete = {
+		trigger_event = {
+			id = fm_holy.1
+		}
+	}
+	fail = {
+		OR = {
+			NOT = {
+				has_law = law_type:law_theocracy
+			}
+			NOT = {
+				has_law = law_type:law_state_religion
+			}
+		}
+	}
+	weight = 100
+	should_be_pinned_by_default = yes
+}
+
+je_remove_av = {
+	icon = "gfx/interface/icons/event_icons/tutorial_icon.dds"
+	group = je_group_historical_content
+	complete = {
+		custom_tooltip = {
+			text = je_one_church_see_not_real
+			NOT = {
+				exists = c:HSE
+			}
+		}
+	}
+	on_complete = {
+		trigger_event = {
+			id = fm_cas.7
+		}
+	}
+	fail = {
+		OR = {
+			NOT = {
+				has_law = law_type:law_theocracy
+			}
+			NOT = {
+				has_law = law_type:law_state_religion
+			}
+		}
+	}
+	should_be_pinned_by_default = yes
+}
