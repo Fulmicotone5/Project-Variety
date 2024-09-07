@@ -768,7 +768,7 @@
 		region_state:PMA = {
 			create_pop = {
 				culture = russian
-				size = 383492
+				size = 126784
 			}
 		}
 	}

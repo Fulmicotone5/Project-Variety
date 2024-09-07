@@ -43,7 +43,7 @@
 			}
 			create_pop = {
 				culture = russian
-				size = 852
+				size = 27852
 			}
 		}
 	}
@@ -111,24 +111,24 @@
 	s:STATE_BURYATIA = {
 		region_state:SIB = {
 			create_pop = {
-				culture = russian
-				size = 422000
+				culture = mongol
+				size = 122000
+			}
+			create_pop = {
+				culture = siberian
+				size = 16096
 			}
 		}
 	}
 	s:STATE_TRANS_BAIKAL = {
 		region_state:SIB = {
 			create_pop = {
-				culture = russian
-				size = 122000
-			}
-			create_pop = {
 				culture = manchu
 				size = 85996
 			}
 			create_pop = {
 				culture = mongol
-				size = 36000
+				size = 76000
 			}
 			create_pop = {
 				culture = siberian
@@ -139,16 +139,12 @@
 	s:STATE_IRKUTSK = {
 		region_state:SIB = {
 			create_pop = {
-				culture = russian
-				size = 388408
-			}
-			create_pop = {
 				culture = mongol
-				size = 116004
+				size = 26004
 			}
 			create_pop = {
 				culture = siberian
-				size = 4996
+				size = 34996
 			}
 		}
 	}
