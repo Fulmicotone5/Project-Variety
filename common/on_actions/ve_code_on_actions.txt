@@ -1,0 +1,19 @@
+﻿on_monthly_pulse_country = {
+	events = {
+		dev.4
+		dev.8
+	}
+}
+
+on_half_yearly_pulse_country = {
+	events = {
+		dev.7
+	}
+}
+
+on_yearly_pulse_country = {
+	events = {
+		dev.5
+		dev.6
+	}
+}

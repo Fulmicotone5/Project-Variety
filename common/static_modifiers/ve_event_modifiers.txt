@@ -1,0 +1,67 @@
+ve_bad_reputation = {
+	icon = gfx/interface/icon_splendor_tiny.dds
+	country_prestige_mult = -0.1
+}
+
+ve_new_thinkers = {
+	icon = gfx/interface/icon_splendor_tiny.dds
+	country_tech_spread_mult = 0.2
+}
+
+ve_no_art_worth_preserving = {
+	icon = gfx/interface/icon_splendor_tiny.dds
+	country_prestige_add = -100
+}
+
+ve_focus_production = {
+	icon = gfx/interface/icon_splendor_tiny.dds
+	country_production_tech_research_speed_mult = 0.01
+}
+
+ve_focus_society = {
+	icon = gfx/interface/icon_splendor_tiny.dds
+	country_society_tech_research_speed_mult = 0.1
+}
+
+ve_focus_military = {
+	icon = gfx/interface/icon_splendor_tiny.dds
+	country_military_tech_research_speed_mult = 0.01
+}
+
+ve_weak_bureaucracy = {
+	icon = gfx/interface/icon_splendor_tiny.dds
+	country_bureaucracy_add = -200
+}
+
+ve_support_new_model_bureaucracy = {
+	icon = gfx/interface/icon_splendor_tiny.dds
+	state_pop_support_law_appointed_bureaucrats_mult = 0.25
+	state_pop_support_law_elected_bureaucrats_mult = 0.25
+}
+
+ve_military_theory = {
+	icon = gfx/interface/icon_splendor_tiny.dds
+	country_military_tech_research_speed_mult = 0.01
+}
+
+ve_economy_improvements = {
+	icon = gfx/interface/icon_splendor_tiny.dds
+	state_construction_mult = 0.1
+}
+
+ve_inefficient_production = {
+	icon = gfx/interface/icon_splendor_tiny.dds
+	building_production_mult = -0.2
+}
+
+ve_successful_bureaucracy = {
+	icon = gfx/interface/icon_splendor_tiny.dds
+	country_bureaucracy_add = 100
+	state_tax_capacity_mult = 0.1
+}
+
+ve_corruption = {
+	icon = gfx/interface/icon_splendor_tiny.dds
+	country_bureaucracy_add = -200
+	state_tax_capacity_mult = -0.1
+}

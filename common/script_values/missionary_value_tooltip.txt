@@ -1,0 +1,303 @@
+max_missionary_power_250k = {
+	value = 0.05	#Base Power
+	if = {
+		limit = {
+			always = yes
+		}
+		add = 0.007
+	}
+	if = {
+		limit = {
+			always = yes
+		}
+		add = 0.007
+	}
+	if = {
+		limit = {
+			always = yes
+		}
+		add = 0.007
+	}
+	else_if = {
+		limit = {
+			always = yes
+		}
+		add = 0.003
+	}
+	if = {
+		limit = {
+			always = yes
+		}
+		add = 0.007
+	}
+	if = {
+		limit = {
+			always = yes
+		}
+		add = 0.007
+	}
+	else_if = {
+		limit = {
+			always = yes
+		}
+		add = 0.006
+	}
+	else_if = {
+		limit = {
+			always = yes
+		}
+		add = 0.005
+	}
+	else_if = {
+		limit = {
+			always = yes
+		}
+		add = 0.004
+	}
+	else_if = {
+		limit = {
+			always = yes
+		}
+		add = 0.003
+	}
+	else_if = {
+		limit = {
+			always = yes
+		}
+		add = 0.002
+	}
+	else_if = {
+		limit = {
+			always = yes
+		}
+		add = 0.001
+	}
+	if = {
+		limit = {
+			always = yes
+		}
+		add = 0.001
+	}
+	if = {
+		limit = {
+			always = yes
+		}
+		add = 0.0025
+	}
+	if = {
+		limit = {
+			country_has_state_religion = rel:protestant
+		}
+		if = {
+			limit = {
+				always = yes
+			}
+			add = 0.0015
+		}
+	}
+	else_if = {
+		limit = {
+			country_has_state_religion = rel:catholic
+		}
+		if = {
+			limit = {
+				always = yes
+			}
+			add = 0.002
+		}
+	}
+	else_if = {
+		limit = {
+			country_has_state_religion = rel:orthodox
+		}
+		if = {
+			limit = {
+				always = yes
+			}
+			add = 0.0025
+		}
+	}
+	else_if = {
+		limit = {
+			country_has_state_religion = rel:oriental_orthodox
+		}
+		if = {
+			limit = {
+				always = yes
+			}
+			add = 0.0025
+		}
+	}
+	else_if = {
+		limit = {
+			country_has_state_religion = rel:shiite
+		}
+		if = {
+			limit = {
+				always = yes
+			}
+			add = 0.0033
+		}
+	}
+	else_if = {
+		limit = {
+			country_has_state_religion = rel:hindu
+		}
+		if = {
+			limit = {
+				always = yes
+			}
+			add = 0.0025
+		}
+	}
+	else_if = {
+		limit = {
+			country_has_state_religion = rel:animist
+		}
+		if = {
+			limit = {
+				always = yes
+			}
+			add = 0.0025
+		}
+	}
+}
+
+max_cultural_missionary_power_250k = {
+	value = 0.05	#Base Power
+	if = {
+		limit = {
+			always = yes
+		}
+		add = 0.007
+	}
+	if = {
+		limit = {
+			always = yes
+		}
+		add = 0.007
+	}
+	if = {
+		limit = {
+			always = yes
+		}
+		add = 0.0025
+	}
+	if = {
+		limit = {
+			always = yes
+		}
+		add = 0.009
+	}
+	else_if = {
+		limit = {
+			always = yes
+		}
+		add = 0.007
+	}
+	else_if = {
+		limit = {
+			always = yes
+		}
+		add = 0.005
+	}
+	else_if = {
+		limit = {
+			always = yes
+		}
+		add = 0.003
+	}
+	if = {
+		limit = {
+			always = yes
+		}
+		add = 0.007
+	}
+	else_if = {
+		limit = {
+			always = yes
+		}
+		add = 0.006
+	}
+	else_if = {
+		limit = {
+			always = yes
+		}
+		add = 0.005
+	}
+	else_if = {
+		limit = {
+			always = yes
+		}
+		add = 0.004
+	}
+	else_if = {
+		limit = {
+			always = yes
+		}
+		add = 0.003
+	}
+	else_if = {
+		limit = {
+			always = yes
+		}
+		add = 0.002
+	}
+	else_if = {
+		limit = {
+			always = yes
+		}
+		add = 0.001
+	}
+	if = {
+		limit = {
+			country_has_state_religion = rel:animist
+		}
+		if = {
+			limit = {
+				always = yes
+			}
+			add = 0.0025
+		}
+	}
+	else_if = {
+		limit = {
+			country_has_state_religion = rel:protestant
+		}
+		if = {
+			limit = {
+				always = yes
+			}
+			add = 0.0025
+		}
+	}
+	else_if = {
+		limit = {
+			country_has_state_religion = rel:oriental_orthodox
+		}
+		if = {
+			limit = {
+				always = yes
+			}
+			add = 0.0025
+		}
+	}
+	else_if = {
+		limit = {
+			exists = c:RUS
+			this = c:RUS
+		}
+		if = {
+			limit = {
+				always = yes
+			}
+			add = 0.0035
+		}
+	}
+	if = {
+		limit = {
+			always = yes
+		}
+		add = 0.001
+	}
+}

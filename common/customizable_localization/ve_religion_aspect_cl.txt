@@ -1,0 +1,4183 @@
+﻿religion_aspect_1 = {
+	type = country
+	random_valid = no
+	text = {
+		trigger = {
+			country_has_state_religion = rel:catholic
+			piety_cost_trigger = yes
+		}
+		localization_key = catholic_aspect_1
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:catholic
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = catholic_aspect_1_mdf
+				}
+			}
+		}
+		localization_key = catholic_aspect_1_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:protestant
+			piety_cost_trigger = yes
+		}
+		localization_key = protestant_aspect_1
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:protestant
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = protestant_aspect_1_mdf
+				}
+			}
+		}
+		localization_key = protestant_aspect_1_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:orthodox
+			piety_cost_trigger = yes
+		}
+		localization_key = orthodox_aspect_1
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:orthodox
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = orthodox_aspect_1_mdf
+				}
+			}
+		}
+		localization_key = orthodox_aspect_1_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:oriental_orthodox
+			piety_cost_trigger = yes
+		}
+		localization_key = oriental_orthodox_aspect_1
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:oriental_orthodox
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = coptic_aspect_1_mdf
+				}
+			}
+		}
+		localization_key = oriental_orthodox_aspect_1_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sunni
+			piety_cost_trigger = yes
+		}
+		localization_key = sunni_aspect_1
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sunni
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = sunni_aspect_1_mdf
+				}
+			}
+		}
+		localization_key = sunni_aspect_1_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:shiite
+			piety_cost_trigger = yes
+		}
+		localization_key = shiite_aspect_1
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:shiite
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = shia_aspect_1_mdf
+				}
+			}
+		}
+		localization_key = shiite_aspect_1_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:jewish
+			piety_cost_trigger = yes
+		}
+		localization_key = jewish_aspect_1
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:jewish
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = jewish_aspect_1_mdf
+				}
+			}
+		}
+		localization_key = jewish_aspect_1_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:mahayana
+			piety_cost_trigger = yes
+		}
+		localization_key = mahayana_aspect_1
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:mahayana
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = mahayana_aspect_1_mdf
+				}
+			}
+		}
+		localization_key = mahayana_aspect_1_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:gelugpa
+			piety_cost_trigger = yes
+		}
+		localization_key = gelugpa_aspect_1
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:gelugpa
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = mahayana_aspect_1_mdf
+				}
+			}
+		}
+		localization_key = gelugpa_aspect_1_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:theravada
+			piety_cost_trigger = yes
+		}
+		localization_key = theravada_aspect_1
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:theravada
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = mahayana_aspect_1_mdf
+				}
+			}
+		}
+		localization_key = theravada_aspect_1_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:shinto
+			piety_cost_trigger = yes
+		}
+		localization_key = shinto_aspect_1
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:shinto
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = mahayana_aspect_1_mdf
+				}
+			}
+		}
+		localization_key = shinto_aspect_1_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:confucian
+			piety_cost_trigger = yes
+		}
+		localization_key = confucian_aspect_1
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:confucian
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = mahayana_aspect_1_mdf
+				}
+			}
+		}
+		localization_key = confucian_aspect_1_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:hindu
+			piety_cost_trigger = yes
+		}
+		localization_key = hindu_aspect_1
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:hindu
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = hindu_aspect_1_mdf
+				}
+			}
+		}
+		localization_key = hindu_aspect_1_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sikh
+			piety_cost_trigger = yes
+		}
+		localization_key = sikh_aspect_1
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sikh
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = sikh_aspect_1_mdf
+				}
+			}
+		}
+		localization_key = sikh_aspect_1_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:zoroastrian
+			piety_cost_trigger = yes
+		}
+		localization_key = sikh_aspect_1
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:zoroastrian
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = sikh_aspect_1_mdf
+				}
+			}
+		}
+		localization_key = sikh_aspect_1_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:baal
+			piety_cost_trigger = yes
+		}
+		localization_key = sikh_aspect_1
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:baal
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = sikh_aspect_1_mdf
+				}
+			}
+		}
+		localization_key = sikh_aspect_1_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:animist
+			piety_cost_trigger = yes
+		}
+		localization_key = animist_aspect_1
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:animist
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = animist_aspect_1_mdf
+				}
+			}
+		}
+		localization_key = animist_aspect_1_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:atheist
+			piety_cost_trigger = yes
+		}
+		localization_key = atheist_aspect_1
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:atheist
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = atheist_aspect_1_mdf
+				}
+			}
+		}
+		localization_key = atheist_aspect_1_black
+	}
+}
+
+religion_aspect_2 = {
+	type = country
+	random_valid = no
+	text = {
+		trigger = {
+			country_has_state_religion = rel:catholic
+			piety_cost_trigger = yes
+		}
+		localization_key = catholic_aspect_2
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:catholic
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = catholic_aspect_2_mdf
+				}
+			}
+		}
+		localization_key = catholic_aspect_2_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:protestant
+			piety_cost_trigger = yes
+		}
+		localization_key = protestant_aspect_2
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:protestant
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = protestant_aspect_2_mdf
+				}
+			}
+		}
+		localization_key = protestant_aspect_2_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:orthodox
+			piety_cost_trigger = yes
+		}
+		localization_key = orthodox_aspect_2
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:orthodox
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = orthodox_aspect_2_mdf
+				}
+			}
+		}
+		localization_key = orthodox_aspect_2_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:oriental_orthodox
+			piety_cost_trigger = yes
+		}
+		localization_key = oriental_orthodox_aspect_2
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:oriental_orthodox
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = coptic_aspect_2_mdf
+				}
+			}
+		}
+		localization_key = oriental_orthodox_aspect_2_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sunni
+			piety_cost_trigger = yes
+		}
+		localization_key = sunni_aspect_2
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sunni
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = sunni_aspect_2_mdf
+				}
+			}
+		}
+		localization_key = sunni_aspect_2_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:shiite
+			piety_cost_trigger = yes
+		}
+		localization_key = shiite_aspect_2
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:shiite
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = shia_aspect_2_mdf
+				}
+			}
+		}
+		localization_key = shiite_aspect_2_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:jewish
+			piety_cost_trigger = yes
+		}
+		localization_key = jewish_aspect_2
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:jewish
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = jewish_aspect_2_mdf
+				}
+			}
+		}
+		localization_key = jewish_aspect_2_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:mahayana
+			piety_cost_trigger = yes
+		}
+		localization_key = mahayana_aspect_2
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:mahayana
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = mahayana_aspect_2_mdf
+				}
+			}
+		}
+		localization_key = mahayana_aspect_2_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:gelugpa
+			piety_cost_trigger = yes
+		}
+		localization_key = gelugpa_aspect_2
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:gelugpa
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = mahayana_aspect_2_mdf
+				}
+			}
+		}
+		localization_key = gelugpa_aspect_2_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:theravada
+			piety_cost_trigger = yes
+		}
+		localization_key = theravada_aspect_2
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:theravada
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = mahayana_aspect_2_mdf
+				}
+			}
+		}
+		localization_key = theravada_aspect_2_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:shinto
+			piety_cost_trigger = yes
+		}
+		localization_key = shinto_aspect_2
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:shinto
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = mahayana_aspect_2_mdf
+				}
+			}
+		}
+		localization_key = shinto_aspect_2_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:confucian
+			piety_cost_trigger = yes
+		}
+		localization_key = confucian_aspect_2
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:confucian
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = mahayana_aspect_2_mdf
+				}
+			}
+		}
+		localization_key = confucian_aspect_2_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:hindu
+			piety_cost_trigger = yes
+		}
+		localization_key = hindu_aspect_2
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:hindu
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = hindu_aspect_2_mdf
+				}
+			}
+		}
+		localization_key = hindu_aspect_2_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sikh
+			piety_cost_trigger = yes
+		}
+		localization_key = sikh_aspect_2
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sikh
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = sikh_aspect_2_mdf
+				}
+			}
+		}
+		localization_key = sikh_aspect_2_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:zoroastrian
+			piety_cost_trigger = yes
+		}
+		localization_key = sikh_aspect_2
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:zoroastrian
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = sikh_aspect_2_mdf
+				}
+			}
+		}
+		localization_key = sikh_aspect_2_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:baal
+			piety_cost_trigger = yes
+		}
+		localization_key = sikh_aspect_2
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:baal
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = sikh_aspect_2_mdf
+				}
+			}
+		}
+		localization_key = sikh_aspect_2_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:animist
+			piety_cost_trigger = yes
+		}
+		localization_key = animist_aspect_2
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:animist
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = animist_aspect_2_mdf
+				}
+			}
+		}
+		localization_key = animist_aspect_2_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:atheist
+			piety_cost_trigger = yes
+		}
+		localization_key = atheist_aspect_2
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:atheist
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = atheist_aspect_2_mdf
+				}
+			}
+		}
+		localization_key = atheist_aspect_2_black
+	}
+}
+
+religion_aspect_3 = {
+	type = country
+	random_valid = no
+	text = {
+		trigger = {
+			country_has_state_religion = rel:catholic
+			piety_cost_trigger = yes
+		}
+		localization_key = catholic_aspect_3
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:catholic
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = catholic_aspect_3_mdf
+				}
+			}
+		}
+		localization_key = catholic_aspect_3_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:protestant
+			piety_cost_trigger = yes
+		}
+		localization_key = protestant_aspect_3
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:protestant
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = protestant_aspect_3_mdf
+				}
+			}
+		}
+		localization_key = protestant_aspect_3_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:orthodox
+			piety_cost_trigger = yes
+		}
+		localization_key = orthodox_aspect_3
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:orthodox
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = orthodox_aspect_3_mdf
+				}
+			}
+		}
+		localization_key = orthodox_aspect_3_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:oriental_orthodox
+			piety_cost_trigger = yes
+		}
+		localization_key = oriental_orthodox_aspect_3
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:oriental_orthodox
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = coptic_aspect_3_mdf
+				}
+			}
+		}
+		localization_key = oriental_orthodox_aspect_3_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sunni
+			piety_cost_trigger = yes
+		}
+		localization_key = sunni_aspect_3
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sunni
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = sunni_aspect_3_mdf
+				}
+			}
+		}
+		localization_key = sunni_aspect_3_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:shiite
+			piety_cost_trigger = yes
+		}
+		localization_key = shiite_aspect_3
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:shiite
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = shia_aspect_3_mdf
+				}
+			}
+		}
+		localization_key = shiite_aspect_3_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:jewish
+			piety_cost_trigger = yes
+		}
+		localization_key = jewish_aspect_3
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:jewish
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = jewish_aspect_3_mdf
+				}
+			}
+		}
+		localization_key = jewish_aspect_3_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:mahayana
+			piety_cost_trigger = yes
+		}
+		localization_key = mahayana_aspect_3
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:mahayana
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = mahayana_aspect_3_mdf
+				}
+			}
+		}
+		localization_key = mahayana_aspect_3_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:gelugpa
+			piety_cost_trigger = yes
+		}
+		localization_key = gelugpa_aspect_3
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:gelugpa
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = mahayana_aspect_3_mdf
+				}
+			}
+		}
+		localization_key = gelugpa_aspect_3_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:theravada
+			piety_cost_trigger = yes
+		}
+		localization_key = theravada_aspect_3
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:theravada
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = mahayana_aspect_3_mdf
+				}
+			}
+		}
+		localization_key = theravada_aspect_3_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:shinto
+			piety_cost_trigger = yes
+		}
+		localization_key = shinto_aspect_3
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:shinto
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = mahayana_aspect_3_mdf
+				}
+			}
+		}
+		localization_key = shinto_aspect_3_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:confucian
+			piety_cost_trigger = yes
+		}
+		localization_key = confucian_aspect_3
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:confucian
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = mahayana_aspect_3_mdf
+				}
+			}
+		}
+		localization_key = confucian_aspect_3_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:hindu
+			piety_cost_trigger = yes
+		}
+		localization_key = hindu_aspect_3
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:hindu
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = hindu_aspect_3_mdf
+				}
+			}
+		}
+		localization_key = hindu_aspect_3_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sikh
+			piety_cost_trigger = yes
+		}
+		localization_key = sikh_aspect_3
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sikh
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = sikh_aspect_3_mdf
+				}
+			}
+		}
+		localization_key = sikh_aspect_3_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:animist
+			piety_cost_trigger = yes
+		}
+		localization_key = animist_aspect_3
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:animist
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = animist_aspect_3_mdf
+				}
+			}
+		}
+		localization_key = animist_aspect_3_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:atheist
+			piety_cost_trigger = yes
+		}
+		localization_key = atheist_aspect_3
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:atheist
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = atheist_aspect_3_mdf
+				}
+			}
+		}
+		localization_key = atheist_aspect_3_black
+	}
+}
+
+religion_aspect_4 = {
+	type = country
+	random_valid = no
+	text = {
+		trigger = {
+			country_has_state_religion = rel:catholic
+			piety_cost_trigger = yes
+		}
+		localization_key = catholic_aspect_4
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:catholic
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = catholic_aspect_4_mdf
+				}
+			}
+		}
+		localization_key = catholic_aspect_4_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:protestant
+			piety_cost_trigger = yes
+		}
+		localization_key = protestant_aspect_4
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:protestant
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = protestant_aspect_4_mdf
+				}
+			}
+		}
+		localization_key = protestant_aspect_4_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:orthodox
+			piety_cost_trigger = yes
+		}
+		localization_key = orthodox_aspect_4
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:orthodox
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = orthodox_aspect_4_mdf
+				}
+			}
+		}
+		localization_key = orthodox_aspect_4_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:oriental_orthodox
+			piety_cost_trigger = yes
+		}
+		localization_key = oriental_orthodox_aspect_4
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:oriental_orthodox
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = coptic_aspect_4_mdf
+				}
+			}
+		}
+		localization_key = oriental_orthodox_aspect_4_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sunni
+			piety_cost_trigger = yes
+		}
+		localization_key = sunni_aspect_4
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sunni
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = sunni_aspect_4_mdf
+				}
+			}
+		}
+		localization_key = sunni_aspect_4_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:shiite
+			piety_cost_trigger = yes
+		}
+		localization_key = shiite_aspect_4
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:shiite
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = shia_aspect_4_mdf
+				}
+			}
+		}
+		localization_key = shiite_aspect_4_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:jewish
+			piety_cost_trigger = yes
+		}
+		localization_key = jewish_aspect_4
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:jewish
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = jewish_aspect_4_mdf
+				}
+			}
+		}
+		localization_key = jewish_aspect_4_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:mahayana
+			piety_cost_trigger = yes
+		}
+		localization_key = mahayana_aspect_4
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:mahayana
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = mahayana_aspect_4_mdf
+				}
+			}
+		}
+		localization_key = mahayana_aspect_4_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:gelugpa
+			piety_cost_trigger = yes
+		}
+		localization_key = gelugpa_aspect_4
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:gelugpa
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = mahayana_aspect_4_mdf
+				}
+			}
+		}
+		localization_key = gelugpa_aspect_4_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:theravada
+			piety_cost_trigger = yes
+		}
+		localization_key = theravada_aspect_4
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:theravada
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = mahayana_aspect_4_mdf
+				}
+			}
+		}
+		localization_key = theravada_aspect_4_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:shinto
+			piety_cost_trigger = yes
+		}
+		localization_key = shinto_aspect_4
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:shinto
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = mahayana_aspect_4_mdf
+				}
+			}
+		}
+		localization_key = shinto_aspect_4_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:confucian
+			piety_cost_trigger = yes
+		}
+		localization_key = confucian_aspect_4
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:confucian
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = mahayana_aspect_4_mdf
+				}
+			}
+		}
+		localization_key = confucian_aspect_4_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:hindu
+			piety_cost_trigger = yes
+		}
+		localization_key = hindu_aspect_4
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:hindu
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = hindu_aspect_4_mdf
+				}
+			}
+		}
+		localization_key = hindu_aspect_4_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sikh
+			piety_cost_trigger = yes
+		}
+		localization_key = sikh_aspect_4
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sikh
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = sikh_aspect_4_mdf
+				}
+			}
+		}
+		localization_key = sikh_aspect_4_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:animist
+			piety_cost_trigger = yes
+		}
+		localization_key = animist_aspect_4
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:animist
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = animist_aspect_4_mdf
+				}
+			}
+		}
+		localization_key = animist_aspect_4_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:atheist
+			piety_cost_trigger = yes
+		}
+		localization_key = atheist_aspect_4
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:atheist
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = atheist_aspect_4_mdf
+				}
+			}
+		}
+		localization_key = atheist_aspect_4_black
+	}
+}
+
+religion_aspect_5 = {
+	type = country
+	random_valid = no
+	text = {
+		trigger = {
+			country_has_state_religion = rel:catholic
+			piety_cost_trigger = yes
+		}
+		localization_key = catholic_aspect_5
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:catholic
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = catholic_aspect_5_mdf
+				}
+			}
+		}
+		localization_key = catholic_aspect_5_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:protestant
+			piety_cost_trigger = yes
+		}
+		localization_key = protestant_aspect_5
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:protestant
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = protestant_aspect_5_mdf
+				}
+			}
+		}
+		localization_key = protestant_aspect_5_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:orthodox
+			piety_cost_trigger = yes
+		}
+		localization_key = orthodox_aspect_5
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:orthodox
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = orthodox_aspect_5_mdf
+				}
+			}
+		}
+		localization_key = orthodox_aspect_5_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:oriental_orthodox
+			piety_cost_trigger = yes
+		}
+		localization_key = oriental_orthodox_aspect_5
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:oriental_orthodox
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = coptic_aspect_5_mdf
+				}
+			}
+		}
+		localization_key = oriental_orthodox_aspect_5_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sunni
+			piety_cost_trigger = yes
+		}
+		localization_key = sunni_aspect_5
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sunni
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = sunni_aspect_5_mdf
+				}
+			}
+		}
+		localization_key = sunni_aspect_5_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:shiite
+			piety_cost_trigger = yes
+		}
+		localization_key = shiite_aspect_5
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:shiite
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = shia_aspect_5_mdf
+				}
+			}
+		}
+		localization_key = shiite_aspect_5_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:jewish
+			piety_cost_trigger = yes
+		}
+		localization_key = jewish_aspect_5
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:jewish
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = jewish_aspect_5_mdf
+				}
+			}
+		}
+		localization_key = jewish_aspect_5_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:mahayana
+			piety_cost_trigger = yes
+		}
+		localization_key = mahayana_aspect_5
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:mahayana
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = mahayana_aspect_5_mdf
+				}
+			}
+		}
+		localization_key = mahayana_aspect_5_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:gelugpa
+			piety_cost_trigger = yes
+		}
+		localization_key = gelugpa_aspect_5
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:gelugpa
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = mahayana_aspect_5_mdf
+				}
+			}
+		}
+		localization_key = gelugpa_aspect_5_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:theravada
+			piety_cost_trigger = yes
+		}
+		localization_key = theravada_aspect_5
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:theravada
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = mahayana_aspect_5_mdf
+				}
+			}
+		}
+		localization_key = theravada_aspect_5_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:shinto
+			piety_cost_trigger = yes
+		}
+		localization_key = shinto_aspect_5
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:shinto
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = mahayana_aspect_5_mdf
+				}
+			}
+		}
+		localization_key = shinto_aspect_5_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:confucian
+			piety_cost_trigger = yes
+		}
+		localization_key = confucian_aspect_5
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:confucian
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = mahayana_aspect_5_mdf
+				}
+			}
+		}
+		localization_key = confucian_aspect_5_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:hindu
+			piety_cost_trigger = yes
+		}
+		localization_key = hindu_aspect_5
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:hindu
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = hindu_aspect_5_mdf
+				}
+			}
+		}
+		localization_key = hindu_aspect_5_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sikh
+			piety_cost_trigger = yes
+		}
+		localization_key = sikh_aspect_5
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sikh
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = sikh_aspect_5_mdf
+				}
+			}
+		}
+		localization_key = sikh_aspect_5_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:animist
+			piety_cost_trigger = yes
+		}
+		localization_key = animist_aspect_5
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:animist
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = animist_aspect_5_mdf
+				}
+			}
+		}
+		localization_key = animist_aspect_5_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:atheist
+			piety_cost_trigger = yes
+		}
+		localization_key = atheist_aspect_5
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:atheist
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = atheist_aspect_5_mdf
+				}
+			}
+		}
+		localization_key = atheist_aspect_5_black
+	}
+}
+
+religion_aspect_6 = {
+	type = country
+	random_valid = no
+	text = {
+		trigger = {
+			country_has_state_religion = rel:catholic
+			piety_cost_trigger = yes
+		}
+		localization_key = catholic_aspect_6
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:catholic
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = catholic_aspect_6_mdf
+				}
+			}
+		}
+		localization_key = catholic_aspect_6_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:protestant
+			piety_cost_trigger = yes
+		}
+		localization_key = protestant_aspect_6
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:protestant
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = protestant_aspect_6_mdf
+				}
+			}
+		}
+		localization_key = protestant_aspect_6_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:orthodox
+			piety_cost_trigger = yes
+		}
+		localization_key = orthodox_aspect_6
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:orthodox
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = orthodox_aspect_6_mdf
+				}
+			}
+		}
+		localization_key = orthodox_aspect_6_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:oriental_orthodox
+			piety_cost_trigger = yes
+		}
+		localization_key = oriental_orthodox_aspect_6
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:oriental_orthodox
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = coptic_aspect_6_mdf
+				}
+			}
+		}
+		localization_key = oriental_orthodox_aspect_6_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sunni
+			piety_cost_trigger = yes
+		}
+		localization_key = sunni_aspect_6
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sunni
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = sunni_aspect_6_mdf
+				}
+			}
+		}
+		localization_key = sunni_aspect_6_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:shiite
+			piety_cost_trigger = yes
+		}
+		localization_key = shiite_aspect_6
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:shiite
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = shia_aspect_6_mdf
+				}
+			}
+		}
+		localization_key = shiite_aspect_6_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:jewish
+			piety_cost_trigger = yes
+		}
+		localization_key = jewish_aspect_6
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:jewish
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = jewish_aspect_6_mdf
+				}
+			}
+		}
+		localization_key = jewish_aspect_6_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:mahayana
+			piety_cost_trigger = yes
+		}
+		localization_key = mahayana_aspect_6
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:mahayana
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = mahayana_aspect_6_mdf
+				}
+			}
+		}
+		localization_key = mahayana_aspect_6_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:gelugpa
+			piety_cost_trigger = yes
+		}
+		localization_key = gelugpa_aspect_6
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:gelugpa
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = mahayana_aspect_6_mdf
+				}
+			}
+		}
+		localization_key = gelugpa_aspect_6_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:theravada
+			piety_cost_trigger = yes
+		}
+		localization_key = theravada_aspect_6
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:theravada
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = mahayana_aspect_6_mdf
+				}
+			}
+		}
+		localization_key = theravada_aspect_6_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:shinto
+			piety_cost_trigger = yes
+		}
+		localization_key = shinto_aspect_6
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:shinto
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = mahayana_aspect_6_mdf
+				}
+			}
+		}
+		localization_key = shinto_aspect_6_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:confucian
+			piety_cost_trigger = yes
+		}
+		localization_key = confucian_aspect_6
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:confucian
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = mahayana_aspect_6_mdf
+				}
+			}
+		}
+		localization_key = confucian_aspect_6_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:hindu
+			piety_cost_trigger = yes
+		}
+		localization_key = hindu_aspect_6
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:hindu
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = hindu_aspect_6_mdf
+				}
+			}
+		}
+		localization_key = hindu_aspect_6_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sikh
+			piety_cost_trigger = yes
+		}
+		localization_key = sikh_aspect_6
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sikh
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = sikh_aspect_6_mdf
+				}
+			}
+		}
+		localization_key = sikh_aspect_6_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:animist
+			piety_cost_trigger = yes
+		}
+		localization_key = animist_aspect_6
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:animist
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = animist_aspect_6_mdf
+				}
+			}
+		}
+		localization_key = animist_aspect_6_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:atheist
+			piety_cost_trigger = yes
+		}
+		localization_key = atheist_aspect_6
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:atheist
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = atheist_aspect_6_mdf
+				}
+			}
+		}
+		localization_key = atheist_aspect_6_black
+	}
+}
+
+religion_aspect_7 = {
+	type = country
+	random_valid = no
+	text = {
+		trigger = {
+			country_has_state_religion = rel:catholic
+			piety_cost_trigger = yes
+		}
+		localization_key = catholic_aspect_7
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:catholic
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = catholic_aspect_7_mdf
+				}
+			}
+		}
+		localization_key = catholic_aspect_7_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:protestant
+			piety_cost_trigger = yes
+		}
+		localization_key = protestant_aspect_7
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:protestant
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = protestant_aspect_7_mdf
+				}
+			}
+		}
+		localization_key = protestant_aspect_7_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:orthodox
+			piety_cost_trigger = yes
+		}
+		localization_key = orthodox_aspect_7
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:orthodox
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = orthodox_aspect_7_mdf
+				}
+			}
+		}
+		localization_key = orthodox_aspect_7_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:oriental_orthodox
+			piety_cost_trigger = yes
+		}
+		localization_key = oriental_orthodox_aspect_7
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:oriental_orthodox
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = coptic_aspect_7_mdf
+				}
+			}
+		}
+		localization_key = oriental_orthodox_aspect_7_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sunni
+			piety_cost_trigger = yes
+		}
+		localization_key = sunni_aspect_7
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sunni
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = sunni_aspect_7_mdf
+				}
+			}
+		}
+		localization_key = sunni_aspect_7_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:shiite
+			piety_cost_trigger = yes
+		}
+		localization_key = shiite_aspect_7
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:shiite
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = shia_aspect_7_mdf
+				}
+			}
+		}
+		localization_key = shiite_aspect_7_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:jewish
+			piety_cost_trigger = yes
+		}
+		localization_key = jewish_aspect_7
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:jewish
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = jewish_aspect_7_mdf
+				}
+			}
+		}
+		localization_key = jewish_aspect_7_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:mahayana
+			piety_cost_trigger = yes
+		}
+		localization_key = mahayana_aspect_7
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:mahayana
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = mahayana_aspect_7_mdf
+				}
+			}
+		}
+		localization_key = mahayana_aspect_7_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:gelugpa
+			piety_cost_trigger = yes
+		}
+		localization_key = gelugpa_aspect_7
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:gelugpa
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = mahayana_aspect_7_mdf
+				}
+			}
+		}
+		localization_key = gelugpa_aspect_7_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:theravada
+			piety_cost_trigger = yes
+		}
+		localization_key = theravada_aspect_7
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:theravada
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = mahayana_aspect_7_mdf
+				}
+			}
+		}
+		localization_key = theravada_aspect_7_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:shinto
+			piety_cost_trigger = yes
+		}
+		localization_key = shinto_aspect_7
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:shinto
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = mahayana_aspect_7_mdf
+				}
+			}
+		}
+		localization_key = shinto_aspect_7_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:confucian
+			piety_cost_trigger = yes
+		}
+		localization_key = confucian_aspect_7
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:confucian
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = mahayana_aspect_7_mdf
+				}
+			}
+		}
+		localization_key = confucian_aspect_7_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:hindu
+			piety_cost_trigger = yes
+		}
+		localization_key = hindu_aspect_7
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:hindu
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = hindu_aspect_7_mdf
+				}
+			}
+		}
+		localization_key = hindu_aspect_7_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sikh
+			piety_cost_trigger = yes
+		}
+		localization_key = sikh_aspect_7
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sikh
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = sikh_aspect_7_mdf
+				}
+			}
+		}
+		localization_key = sikh_aspect_7_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:animist
+			piety_cost_trigger = yes
+		}
+		localization_key = animist_aspect_7
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:animist
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = animist_aspect_7_mdf
+				}
+			}
+		}
+		localization_key = animist_aspect_7_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:atheist
+			piety_cost_trigger = yes
+		}
+		localization_key = atheist_aspect_7
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:atheist
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = atheist_aspect_7_mdf
+				}
+			}
+		}
+		localization_key = atheist_aspect_7_black
+	}
+}
+
+religion_aspect_8 = {
+	type = country
+	random_valid = no
+	text = {
+		trigger = {
+			country_has_state_religion = rel:catholic
+			piety_cost_trigger = yes
+		}
+		localization_key = catholic_aspect_8
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:catholic
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = catholic_aspect_8_mdf
+				}
+			}
+		}
+		localization_key = catholic_aspect_8_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:protestant
+			piety_cost_trigger = yes
+		}
+		localization_key = protestant_aspect_8
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:protestant
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = protestant_aspect_8_mdf
+				}
+			}
+		}
+		localization_key = protestant_aspect_8_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:orthodox
+			piety_cost_trigger = yes
+		}
+		localization_key = orthodox_aspect_8
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:orthodox
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = orthodox_aspect_8_mdf
+				}
+			}
+		}
+		localization_key = orthodox_aspect_8_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:oriental_orthodox
+			piety_cost_trigger = yes
+		}
+		localization_key = oriental_orthodox_aspect_8
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:oriental_orthodox
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = coptic_aspect_8_mdf
+				}
+			}
+		}
+		localization_key = oriental_orthodox_aspect_8_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sunni
+			piety_cost_trigger = yes
+		}
+		localization_key = sunni_aspect_8
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sunni
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = sunni_aspect_8_mdf
+				}
+			}
+		}
+		localization_key = sunni_aspect_8_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:shiite
+			piety_cost_trigger = yes
+		}
+		localization_key = shiite_aspect_8
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:shiite
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = shia_aspect_8_mdf
+				}
+			}
+		}
+		localization_key = shiite_aspect_8_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:jewish
+			piety_cost_trigger = yes
+		}
+		localization_key = jewish_aspect_8
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:jewish
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = jewish_aspect_8_mdf
+				}
+			}
+		}
+		localization_key = jewish_aspect_8_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:mahayana
+			piety_cost_trigger = yes
+		}
+		localization_key = mahayana_aspect_8
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:mahayana
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = mahayana_aspect_8_mdf
+				}
+			}
+		}
+		localization_key = mahayana_aspect_8_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:gelugpa
+			piety_cost_trigger = yes
+		}
+		localization_key = gelugpa_aspect_8
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:gelugpa
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = mahayana_aspect_8_mdf
+				}
+			}
+		}
+		localization_key = gelugpa_aspect_8_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:theravada
+			piety_cost_trigger = yes
+		}
+		localization_key = theravada_aspect_8
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:theravada
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = mahayana_aspect_8_mdf
+				}
+			}
+		}
+		localization_key = theravada_aspect_8_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:shinto
+			piety_cost_trigger = yes
+		}
+		localization_key = shinto_aspect_8
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:shinto
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = mahayana_aspect_8_mdf
+				}
+			}
+		}
+		localization_key = shinto_aspect_8_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:confucian
+			piety_cost_trigger = yes
+		}
+		localization_key = confucian_aspect_8
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:confucian
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = mahayana_aspect_8_mdf
+				}
+			}
+		}
+		localization_key = confucian_aspect_8_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:hindu
+			piety_cost_trigger = yes
+		}
+		localization_key = hindu_aspect_8
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:hindu
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = hindu_aspect_8_mdf
+				}
+			}
+		}
+		localization_key = hindu_aspect_8_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sikh
+			piety_cost_trigger = yes
+		}
+		localization_key = sikh_aspect_8
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sikh
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = sikh_aspect_8_mdf
+				}
+			}
+		}
+		localization_key = sikh_aspect_8_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:animist
+			piety_cost_trigger = yes
+		}
+		localization_key = animist_aspect_8
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:animist
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = animist_aspect_8_mdf
+				}
+			}
+		}
+		localization_key = animist_aspect_8_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:atheist
+			piety_cost_trigger = yes
+		}
+		localization_key = atheist_aspect_8
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:atheist
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = atheist_aspect_8_mdf
+				}
+			}
+		}
+		localization_key = atheist_aspect_8_black
+	}
+}
+
+religion_aspect_9 = {
+	#Passive Bonuses
+	type = country
+	random_valid = no
+	text = {
+		trigger = {
+			country_has_state_religion = rel:catholic
+		}
+		localization_key = catholic_aspect_9
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:protestant
+		}
+		localization_key = protestant_aspect_9
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:orthodox
+		}
+		localization_key = orthodox_aspect_9
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:oriental_orthodox
+		}
+		localization_key = oriental_orthodox_aspect_9
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sunni
+		}
+		localization_key = sunni_aspect_9
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:shiite
+		}
+		localization_key = shiite_aspect_9
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:jewish
+		}
+		localization_key = jewish_aspect_9
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:mahayana
+		}
+		localization_key = mahayana_aspect_9
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:gelugpa
+		}
+		localization_key = gelugpa_aspect_9
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:theravada
+		}
+		localization_key = theravada_aspect_9
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:shinto
+		}
+		localization_key = shinto_aspect_9
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:confucian
+		}
+		localization_key = confucian_aspect_9
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:hindu
+		}
+		localization_key = hindu_aspect_9
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sikh
+		}
+		localization_key = sikh_aspect_9
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:animist
+		}
+		localization_key = animist_aspect_9
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:atheist
+		}
+		localization_key = atheist_aspect_9
+	}
+}
+
+holy_site_1 = {
+	#HOLY SITES
+	type = country
+	random_valid = no
+	text = {
+		trigger = {
+			country_has_state_religion = rel:catholic
+			owns_entire_state_region = STATE_LAZIO
+		}
+		localization_key = catholic_site_1
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:catholic
+			NOT = {
+				owns_entire_state_region = STATE_LAZIO
+			}
+		}
+		localization_key = catholic_site_1_red
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:protestant
+			owns_entire_state_region = STATE_ANHALT
+		}
+		localization_key = protestant_site_1
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:protestant
+			NOT = {
+				owns_entire_state_region = STATE_ANHALT
+			}
+		}
+		localization_key = protestant_site_1_red
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:orthodox
+			owns_entire_state_region = STATE_LAZIO
+		}
+		localization_key = orthodox_site_1
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:orthodox
+			NOT = {
+				owns_entire_state_region = STATE_LAZIO
+			}
+		}
+		localization_key = orthodox_site_1_red
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:oriental_orthodox
+			owns_entire_state_region = STATE_ARMENIA
+		}
+		localization_key = oriental_orthodox_site_1
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:oriental_orthodox
+			NOT = {
+				owns_entire_state_region = STATE_ARMENIA
+			}
+		}
+		localization_key = oriental_orthodox_site_1_red
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sunni
+			owns_entire_state_region = STATE_SYRIA
+		}
+		localization_key = sunni_site_1
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sunni
+			NOT = {
+				owns_entire_state_region = STATE_SYRIA
+			}
+		}
+		localization_key = sunni_site_1_red
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:shiite
+			owns_entire_state_region = STATE_SYRIA
+		}
+		localization_key = shiite_site_1
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:shiite
+			NOT = {
+				owns_entire_state_region = STATE_SYRIA
+			}
+		}
+		localization_key = shiite_site_1_red
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:jewish
+			owns_entire_state_region = STATE_SINAI
+		}
+		localization_key = jewish_site_1
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:jewish
+			NOT = {
+				owns_entire_state_region = STATE_SINAI
+			}
+		}
+		localization_key = jewish_site_1_red
+	}
+	text = {
+		trigger = {
+			OR = {
+				country_has_state_religion = rel:mahayana
+				country_has_state_religion = rel:gelugpa
+				country_has_state_religion = rel:theravada
+				country_has_state_religion = rel:shinto
+				country_has_state_religion = rel:confucian
+			}
+			owns_entire_state_region = STATE_CENTRAL_INDIA
+		}
+		localization_key = mahayana_site_1
+	}
+	text = {
+		trigger = {
+			OR = {
+				country_has_state_religion = rel:mahayana
+				country_has_state_religion = rel:gelugpa
+				country_has_state_religion = rel:theravada
+				country_has_state_religion = rel:shinto
+				country_has_state_religion = rel:confucian
+			}
+			NOT = {
+				owns_entire_state_region = STATE_CENTRAL_INDIA
+			}
+		}
+		localization_key = mahayana_site_1_red
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:hindu
+			owns_entire_state_region = STATE_RAJPUTANA
+		}
+		localization_key = hindu_site_1
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:hindu
+			NOT = {
+				owns_entire_state_region = STATE_RAJPUTANA
+			}
+		}
+		localization_key = hindu_site_1_red
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sikh
+			owns_entire_state_region = STATE_PUNJAB
+		}
+		localization_key = sikh_site_1
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sikh
+			NOT = {
+				owns_entire_state_region = STATE_PUNJAB
+			}
+		}
+		localization_key = sikh_site_1_red
+	}
+}
+
+holy_site_2 = {
+	type = country
+	random_valid = no
+	text = {
+		trigger = {
+			country_has_state_religion = rel:catholic
+			owns_entire_state_region = STATE_NORTH_RHINE
+		}
+		localization_key = catholic_site_2
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:catholic
+			NOT = {
+				owns_entire_state_region = STATE_NORTH_RHINE
+			}
+		}
+		localization_key = catholic_site_2_red
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:protestant
+			owns_entire_state_region = STATE_NORTH_RHINE
+		}
+		localization_key = protestant_site_2
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:protestant
+			NOT = {
+				owns_entire_state_region = STATE_NORTH_RHINE
+			}
+		}
+		localization_key = protestant_site_2_red
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:orthodox
+			owns_entire_state_region = STATE_EASTERN_THRACE
+		}
+		localization_key = orthodox_site_2
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:orthodox
+			NOT = {
+				owns_entire_state_region = STATE_EASTERN_THRACE
+			}
+		}
+		localization_key = orthodox_site_2_red
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:oriental_orthodox
+			owns_entire_state_region = STATE_DONGOLA
+		}
+		localization_key = oriental_orthodox_site_2
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:oriental_orthodox
+			NOT = {
+				owns_entire_state_region = STATE_DONGOLA
+			}
+		}
+		localization_key = oriental_orthodox_site_2_red
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sunni
+			owns_entire_state_region = STATE_HEDJAZ
+		}
+		localization_key = sunni_site_2
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sunni
+			NOT = {
+				owns_entire_state_region = STATE_HEDJAZ
+			}
+		}
+		localization_key = sunni_site_2_red
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:shiite
+			owns_entire_state_region = STATE_ISFAHAN
+		}
+		localization_key = shiite_site_2
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:shiite
+			NOT = {
+				owns_entire_state_region = STATE_ISFAHAN
+			}
+		}
+		localization_key = shiite_site_2_red
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:jewish
+			owns_entire_state_region = STATE_LOWER_EGYPT
+		}
+		localization_key = jewish_site_2
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:jewish
+			NOT = {
+				owns_entire_state_region = STATE_LOWER_EGYPT
+			}
+		}
+		localization_key = jewish_site_2_red
+	}
+	text = {
+		trigger = {
+			OR = {
+				country_has_state_religion = rel:mahayana
+				country_has_state_religion = rel:gelugpa
+				country_has_state_religion = rel:theravada
+				country_has_state_religion = rel:shinto
+				country_has_state_religion = rel:confucian
+			}
+			owns_entire_state_region = STATE_SHANDONG
+		}
+		localization_key = mahayana_site_2
+	}
+	text = {
+		trigger = {
+			OR = {
+				country_has_state_religion = rel:mahayana
+				country_has_state_religion = rel:gelugpa
+				country_has_state_religion = rel:theravada
+				country_has_state_religion = rel:shinto
+				country_has_state_religion = rel:confucian
+			}
+			NOT = {
+				owns_entire_state_region = STATE_SHANDONG
+			}
+		}
+		localization_key = mahayana_site_2_red
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:hindu
+			owns_entire_state_region = STATE_BIHAR
+		}
+		localization_key = hindu_site_2
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:hindu
+			NOT = {
+				owns_entire_state_region = STATE_BIHAR
+			}
+		}
+		localization_key = hindu_site_2_red
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sikh
+			owns_entire_state_region = STATE_AWADH
+		}
+		localization_key = sikh_site_2
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sikh
+			NOT = {
+				owns_entire_state_region = STATE_AWADH
+			}
+		}
+		localization_key = sikh_site_2_red
+	}
+}
+
+holy_site_3 = {
+	type = country
+	random_valid = no
+	text = {
+		trigger = {
+			country_has_state_religion = rel:catholic
+			owns_entire_state_region = STATE_GALICIA
+		}
+		localization_key = catholic_site_3
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:catholic
+			NOT = {
+				owns_entire_state_region = STATE_GALICIA
+			}
+		}
+		localization_key = catholic_site_3_red
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:protestant
+			owns_entire_state_region = STATE_BOHEMIA
+		}
+		localization_key = protestant_site_3
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:protestant
+			NOT = {
+				owns_entire_state_region = STATE_BOHEMIA
+			}
+		}
+		localization_key = protestant_site_3_red
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:orthodox
+			owns_entire_state_region = STATE_LOWER_EGYPT
+		}
+		localization_key = orthodox_site_3
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:orthodox
+			NOT = {
+				owns_entire_state_region = STATE_LOWER_EGYPT
+			}
+		}
+		localization_key = orthodox_site_3_red
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:oriental_orthodox
+			owns_entire_state_region = STATE_LOWER_EGYPT
+		}
+		localization_key = oriental_orthodox_site_3
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:oriental_orthodox
+			NOT = {
+				owns_entire_state_region = STATE_LOWER_EGYPT
+			}
+		}
+		localization_key = oriental_orthodox_site_3_red
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sunni
+			owns_entire_state_region = STATE_HEDJAZ
+		}
+		localization_key = sunni_site_3
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sunni
+			NOT = {
+				owns_entire_state_region = STATE_HEDJAZ
+			}
+		}
+		localization_key = sunni_site_3_red
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:shiite
+			owns_entire_state_region = STATE_HEDJAZ
+		}
+		localization_key = shiite_site_3
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:shiite
+			NOT = {
+				owns_entire_state_region = STATE_HEDJAZ
+			}
+		}
+		localization_key = shiite_site_3_red
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:jewish
+			owns_entire_state_region = STATE_GONDER
+		}
+		localization_key = jewish_site_3
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:jewish
+			NOT = {
+				owns_entire_state_region = STATE_GONDER
+			}
+		}
+		localization_key = jewish_site_3_red
+	}
+	text = {
+		trigger = {
+			OR = {
+				country_has_state_religion = rel:mahayana
+				country_has_state_religion = rel:gelugpa
+				country_has_state_religion = rel:theravada
+				country_has_state_religion = rel:shinto
+				country_has_state_religion = rel:confucian
+			}
+			owns_entire_state_region = STATE_BURMA
+		}
+		localization_key = mahayana_site_3
+	}
+	text = {
+		trigger = {
+			OR = {
+				country_has_state_religion = rel:mahayana
+				country_has_state_religion = rel:gelugpa
+				country_has_state_religion = rel:theravada
+				country_has_state_religion = rel:shinto
+				country_has_state_religion = rel:confucian
+			}
+			NOT = {
+				owns_entire_state_region = STATE_BURMA
+			}
+		}
+		localization_key = mahayana_site_3_red
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:hindu
+			owns_entire_state_region = STATE_AWADH
+		}
+		localization_key = hindu_site_3
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:hindu
+			NOT = {
+				owns_entire_state_region = STATE_AWADH
+			}
+		}
+		localization_key = hindu_site_3_red
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sikh
+			owns_entire_state_region = STATE_CENTRAL_INDIA
+		}
+		localization_key = sikh_site_3
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sikh
+			NOT = {
+				owns_entire_state_region = STATE_CENTRAL_INDIA
+			}
+		}
+		localization_key = sikh_site_3_red
+	}
+}
+
+holy_site_4 = {
+	type = country
+	random_valid = no
+	text = {
+		trigger = {
+			country_has_state_religion = rel:catholic
+			owns_entire_state_region = STATE_ILE_DE_FRANCE
+		}
+		localization_key = catholic_site_4
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:catholic
+			NOT = {
+				owns_entire_state_region = STATE_ILE_DE_FRANCE
+			}
+		}
+		localization_key = catholic_site_4_red
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:protestant
+			owns_entire_state_region = STATE_HOME_COUNTIES
+		}
+		localization_key = protestant_site_4
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:protestant
+			NOT = {
+				owns_entire_state_region = STATE_HOME_COUNTIES
+			}
+		}
+		localization_key = protestant_site_4_red
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:orthodox
+			owns_entire_state_region = STATE_ALEPPO
+		}
+		localization_key = orthodox_site_4
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:orthodox
+			NOT = {
+				owns_entire_state_region = STATE_ALEPPO
+			}
+		}
+		localization_key = orthodox_site_4_red
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:oriental_orthodox
+			owns_entire_state_region = STATE_ALEPPO
+		}
+		localization_key = oriental_orthodox_site_4
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:oriental_orthodox
+			NOT = {
+				owns_entire_state_region = STATE_ALEPPO
+			}
+		}
+		localization_key = oriental_orthodox_site_4_red
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sunni
+			owns_entire_state_region = STATE_BAGHDAD
+		}
+		localization_key = sunni_site_4
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sunni
+			NOT = {
+				owns_entire_state_region = STATE_BAGHDAD
+			}
+		}
+		localization_key = sunni_site_4_red
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:shiite
+			owns_entire_state_region = STATE_BAGHDAD
+		}
+		localization_key = shiite_site_4
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:shiite
+			NOT = {
+				owns_entire_state_region = STATE_BAGHDAD
+			}
+		}
+		localization_key = shiite_site_4_red
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:jewish
+			owns_entire_state_region = STATE_PALESTINE
+		}
+		localization_key = jewish_site_4
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:jewish
+			NOT = {
+				owns_entire_state_region = STATE_PALESTINE
+			}
+		}
+		localization_key = jewish_site_4_red
+	}
+	text = {
+		trigger = {
+			OR = {
+				country_has_state_religion = rel:mahayana
+				country_has_state_religion = rel:gelugpa
+				country_has_state_religion = rel:theravada
+				country_has_state_religion = rel:shinto
+				country_has_state_religion = rel:confucian
+			}
+			owns_entire_state_region = STATE_KANSAI
+		}
+		localization_key = mahayana_site_4
+	}
+	text = {
+		trigger = {
+			OR = {
+				country_has_state_religion = rel:mahayana
+				country_has_state_religion = rel:gelugpa
+				country_has_state_religion = rel:theravada
+				country_has_state_religion = rel:shinto
+				country_has_state_religion = rel:confucian
+			}
+			NOT = {
+				owns_entire_state_region = STATE_KANSAI
+			}
+		}
+		localization_key = mahayana_site_4_red
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:hindu
+			owns_entire_state_region = STATE_MADRAS
+		}
+		localization_key = hindu_site_4
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:hindu
+			NOT = {
+				owns_entire_state_region = STATE_MADRAS
+			}
+		}
+		localization_key = hindu_site_4_red
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sikh
+			owns_entire_state_region = STATE_CIRCARS
+		}
+		localization_key = sikh_site_4
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sikh
+			NOT = {
+				owns_entire_state_region = STATE_CIRCARS
+			}
+		}
+		localization_key = sikh_site_4_red
+	}
+}
+
+holy_site_5 = {
+	type = country
+	random_valid = no
+	text = {
+		trigger = {
+			country_has_state_religion = rel:catholic
+			owns_entire_state_region = STATE_PALESTINE
+		}
+		localization_key = catholic_site_5
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:catholic
+			NOT = {
+				owns_entire_state_region = STATE_PALESTINE
+			}
+		}
+		localization_key = catholic_site_5_red
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:protestant
+			owns_entire_state_region = STATE_PALESTINE
+		}
+		localization_key = protestant_site_5
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:protestant
+			NOT = {
+				owns_entire_state_region = STATE_PALESTINE
+			}
+		}
+		localization_key = protestant_site_5_red
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:orthodox
+			owns_entire_state_region = STATE_PALESTINE
+		}
+		localization_key = orthodox_site_5
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:orthodox
+			NOT = {
+				owns_entire_state_region = STATE_PALESTINE
+			}
+		}
+		localization_key = orthodox_site_5_red
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:oriental_orthodox
+			owns_entire_state_region = STATE_PALESTINE
+		}
+		localization_key = oriental_orthodox_site_5
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:oriental_orthodox
+			NOT = {
+				owns_entire_state_region = STATE_PALESTINE
+			}
+		}
+		localization_key = oriental_orthodox_site_5_red
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sunni
+			owns_entire_state_region = STATE_PALESTINE
+		}
+		localization_key = sunni_site_5
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sunni
+			NOT = {
+				owns_entire_state_region = STATE_PALESTINE
+			}
+		}
+		localization_key = sunni_site_5_red
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:shiite
+			owns_entire_state_region = STATE_PALESTINE
+		}
+		localization_key = shiite_site_5
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:shiite
+			NOT = {
+				owns_entire_state_region = STATE_PALESTINE
+			}
+		}
+		localization_key = shiite_site_5_red
+	}
+	text = {
+		trigger = {
+			OR = {
+				country_has_state_religion = rel:mahayana
+				country_has_state_religion = rel:gelugpa
+				country_has_state_religion = rel:theravada
+				country_has_state_religion = rel:shinto
+				country_has_state_religion = rel:confucian
+			}
+			owns_entire_state_region = STATE_HIMALAYAS
+		}
+		localization_key = mahayana_site_5
+	}
+	text = {
+		trigger = {
+			OR = {
+				country_has_state_religion = rel:mahayana
+				country_has_state_religion = rel:gelugpa
+				country_has_state_religion = rel:theravada
+				country_has_state_religion = rel:shinto
+				country_has_state_religion = rel:confucian
+			}
+			NOT = {
+				owns_entire_state_region = STATE_HIMALAYAS
+			}
+		}
+		localization_key = mahayana_site_5_red
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:hindu
+			owns_entire_state_region = STATE_GUJARAT
+		}
+		localization_key = hindu_site_5
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:hindu
+			NOT = {
+				owns_entire_state_region = STATE_GUJARAT
+			}
+		}
+		localization_key = hindu_site_5_red
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sikh
+			owns_entire_state_region = STATE_MYSORE
+		}
+		localization_key = sikh_site_5
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sikh
+			NOT = {
+				owns_entire_state_region = STATE_MYSORE
+			}
+		}
+		localization_key = sikh_site_5_red
+	}
+}
+
+religion_aspect_text_1 = {
+	type = country
+	random_valid = no
+	text = {
+		trigger = {
+			country_has_state_religion = rel:catholic
+		}
+		localization_key = catholic_aspect_text_1
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:protestant
+		}
+		localization_key = protestant_aspect_text_1
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:orthodox
+		}
+		localization_key = orthodox_aspect_text_1
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:oriental_orthodox
+		}
+		localization_key = oriental_orthodox_aspect_text_1
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sunni
+		}
+		localization_key = sunni_aspect_text_1
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:shiite
+		}
+		localization_key = shiite_aspect_text_1
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:jewish
+		}
+		localization_key = jewish_aspect_text_1
+	}
+	text = {
+		trigger = {
+			OR = {
+				country_has_state_religion = rel:mahayana
+				country_has_state_religion = rel:gelugpa
+				country_has_state_religion = rel:theravada
+				country_has_state_religion = rel:shinto
+				country_has_state_religion = rel:confucian
+			}
+		}
+		localization_key = mahayana_aspect_text_1
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:hindu
+		}
+		localization_key = hindu_aspect_text_1
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sikh
+		}
+		localization_key = sikh_aspect_text_1
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:animist
+		}
+		localization_key = animist_aspect_text_1
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:atheist
+		}
+		localization_key = atheist_aspect_text_1
+	}
+}
+
+religion_aspect_text_2 = {
+	type = country
+	random_valid = no
+	text = {
+		trigger = {
+			country_has_state_religion = rel:catholic
+		}
+		localization_key = catholic_aspect_text_2
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:protestant
+		}
+		localization_key = protestant_aspect_text_2
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:orthodox
+		}
+		localization_key = orthodox_aspect_text_2
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:oriental_orthodox
+		}
+		localization_key = oriental_orthodox_aspect_text_2
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sunni
+		}
+		localization_key = sunni_aspect_text_2
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:shiite
+		}
+		localization_key = shiite_aspect_text_2
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:jewish
+		}
+		localization_key = jewish_aspect_text_2
+	}
+	text = {
+		trigger = {
+			OR = {
+				country_has_state_religion = rel:mahayana
+				country_has_state_religion = rel:gelugpa
+				country_has_state_religion = rel:theravada
+				country_has_state_religion = rel:shinto
+				country_has_state_religion = rel:confucian
+			}
+		}
+		localization_key = mahayana_aspect_text_2
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:hindu
+		}
+		localization_key = hindu_aspect_text_2
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sikh
+		}
+		localization_key = sikh_aspect_text_2
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:animist
+		}
+		localization_key = animist_aspect_text_2
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:atheist
+		}
+		localization_key = atheist_aspect_text_2
+	}
+}
+
+religion_aspect_text_3 = {
+	type = country
+	random_valid = no
+	text = {
+		trigger = {
+			country_has_state_religion = rel:catholic
+		}
+		localization_key = catholic_aspect_text_3
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:protestant
+		}
+		localization_key = protestant_aspect_text_3
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:orthodox
+		}
+		localization_key = orthodox_aspect_text_3
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:oriental_orthodox
+		}
+		localization_key = oriental_orthodox_aspect_text_3
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sunni
+		}
+		localization_key = sunni_aspect_text_3
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:shiite
+		}
+		localization_key = shiite_aspect_text_3
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:jewish
+		}
+		localization_key = jewish_aspect_text_3
+	}
+	text = {
+		trigger = {
+			OR = {
+				country_has_state_religion = rel:mahayana
+				country_has_state_religion = rel:gelugpa
+				country_has_state_religion = rel:theravada
+				country_has_state_religion = rel:shinto
+				country_has_state_religion = rel:confucian
+			}
+		}
+		localization_key = mahayana_aspect_text_3
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:hindu
+		}
+		localization_key = hindu_aspect_text_3
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sikh
+		}
+		localization_key = sikh_aspect_text_3
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:animist
+		}
+		localization_key = animist_aspect_text_3
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:atheist
+		}
+		localization_key = atheist_aspect_text_3
+	}
+}
+
+religion_aspect_text_4 = {
+	type = country
+	random_valid = no
+	text = {
+		trigger = {
+			country_has_state_religion = rel:catholic
+		}
+		localization_key = catholic_aspect_text_4
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:protestant
+		}
+		localization_key = protestant_aspect_text_4
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:orthodox
+		}
+		localization_key = orthodox_aspect_text_4
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:oriental_orthodox
+		}
+		localization_key = oriental_orthodox_aspect_text_4
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sunni
+		}
+		localization_key = sunni_aspect_text_4
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:shiite
+		}
+		localization_key = shiite_aspect_text_4
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:jewish
+		}
+		localization_key = jewish_aspect_text_4
+	}
+	text = {
+		trigger = {
+			OR = {
+				country_has_state_religion = rel:mahayana
+				country_has_state_religion = rel:gelugpa
+				country_has_state_religion = rel:theravada
+				country_has_state_religion = rel:shinto
+				country_has_state_religion = rel:confucian
+			}
+		}
+		localization_key = mahayana_aspect_text_4
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:hindu
+		}
+		localization_key = hindu_aspect_text_4
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sikh
+		}
+		localization_key = sikh_aspect_text_4
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:animist
+		}
+		localization_key = animist_aspect_text_4
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:atheist
+		}
+		localization_key = atheist_aspect_text_4
+	}
+}
+
+religion_aspect_text_5 = {
+	type = country
+	random_valid = no
+	text = {
+		trigger = {
+			country_has_state_religion = rel:catholic
+		}
+		localization_key = catholic_aspect_text_5
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:protestant
+		}
+		localization_key = protestant_aspect_text_5
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:orthodox
+		}
+		localization_key = orthodox_aspect_text_5
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:oriental_orthodox
+		}
+		localization_key = oriental_orthodox_aspect_text_5
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sunni
+		}
+		localization_key = sunni_aspect_text_5
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:shiite
+		}
+		localization_key = shiite_aspect_text_5
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:jewish
+		}
+		localization_key = jewish_aspect_text_5
+	}
+	text = {
+		trigger = {
+			OR = {
+				country_has_state_religion = rel:mahayana
+				country_has_state_religion = rel:gelugpa
+				country_has_state_religion = rel:theravada
+				country_has_state_religion = rel:shinto
+				country_has_state_religion = rel:confucian
+			}
+		}
+		localization_key = mahayana_aspect_text_5
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:hindu
+		}
+		localization_key = hindu_aspect_text_5
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sikh
+		}
+		localization_key = sikh_aspect_text_5
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:animist
+		}
+		localization_key = animist_aspect_text_5
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:atheist
+		}
+		localization_key = atheist_aspect_text_5
+	}
+}
+
+religion_aspect_text_6 = {
+	type = country
+	random_valid = no
+	text = {
+		trigger = {
+			country_has_state_religion = rel:catholic
+		}
+		localization_key = catholic_aspect_text_6
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:protestant
+		}
+		localization_key = protestant_aspect_text_6
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:orthodox
+		}
+		localization_key = orthodox_aspect_text_6
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:oriental_orthodox
+		}
+		localization_key = oriental_orthodox_aspect_text_6
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sunni
+		}
+		localization_key = sunni_aspect_text_6
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:shiite
+		}
+		localization_key = shiite_aspect_text_6
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:jewish
+		}
+		localization_key = jewish_aspect_text_6
+	}
+	text = {
+		trigger = {
+			OR = {
+				country_has_state_religion = rel:mahayana
+				country_has_state_religion = rel:gelugpa
+				country_has_state_religion = rel:theravada
+				country_has_state_religion = rel:shinto
+				country_has_state_religion = rel:confucian
+			}
+		}
+		localization_key = mahayana_aspect_text_6
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:hindu
+		}
+		localization_key = hindu_aspect_text_6
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sikh
+		}
+		localization_key = sikh_aspect_text_6
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:animist
+		}
+		localization_key = animist_aspect_text_6
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:atheist
+		}
+		localization_key = atheist_aspect_text_6
+	}
+}
+
+religion_aspect_text_7 = {
+	type = country
+	random_valid = no
+	text = {
+		trigger = {
+			country_has_state_religion = rel:catholic
+		}
+		localization_key = catholic_aspect_text_7
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:protestant
+		}
+		localization_key = protestant_aspect_text_7
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:orthodox
+		}
+		localization_key = orthodox_aspect_text_7
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:oriental_orthodox
+		}
+		localization_key = oriental_orthodox_aspect_text_7
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sunni
+		}
+		localization_key = sunni_aspect_text_7
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:shiite
+		}
+		localization_key = shiite_aspect_text_7
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:jewish
+		}
+		localization_key = jewish_aspect_text_7
+	}
+	text = {
+		trigger = {
+			OR = {
+				country_has_state_religion = rel:mahayana
+				country_has_state_religion = rel:gelugpa
+				country_has_state_religion = rel:theravada
+				country_has_state_religion = rel:shinto
+				country_has_state_religion = rel:confucian
+			}
+		}
+		localization_key = mahayana_aspect_text_7
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:hindu
+		}
+		localization_key = hindu_aspect_text_7
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sikh
+		}
+		localization_key = sikh_aspect_text_7
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:animist
+		}
+		localization_key = animist_aspect_text_7
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:atheist
+		}
+		localization_key = atheist_aspect_text_7
+	}
+}
+
+religion_aspect_text_8 = {
+	type = country
+	random_valid = no
+	text = {
+		trigger = {
+			country_has_state_religion = rel:catholic
+		}
+		localization_key = catholic_aspect_text_8
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:protestant
+		}
+		localization_key = protestant_aspect_text_8
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:orthodox
+		}
+		localization_key = orthodox_aspect_text_8
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:oriental_orthodox
+		}
+		localization_key = oriental_orthodox_aspect_text_8
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sunni
+		}
+		localization_key = sunni_aspect_text_8
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:shiite
+		}
+		localization_key = shiite_aspect_text_8
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:jewish
+		}
+		localization_key = jewish_aspect_text_8
+	}
+	text = {
+		trigger = {
+			OR = {
+				country_has_state_religion = rel:mahayana
+				country_has_state_religion = rel:gelugpa
+				country_has_state_religion = rel:theravada
+				country_has_state_religion = rel:shinto
+				country_has_state_religion = rel:confucian
+			}
+		}
+		localization_key = mahayana_aspect_text_8
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:hindu
+		}
+		localization_key = hindu_aspect_text_8
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:sikh
+		}
+		localization_key = sikh_aspect_text_8
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:animist
+		}
+		localization_key = animist_aspect_text_8
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:atheist
+		}
+		localization_key = atheist_aspect_text_8
+	}
+}

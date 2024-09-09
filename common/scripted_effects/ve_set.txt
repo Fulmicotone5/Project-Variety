@@ -1,0 +1,1044 @@
+#This file contains the effects of the mechanics that countries should have at the start of the game and after it starts
+set_missionary_cultural_missionary = {
+	if = {
+		limit = {
+			NOT = {
+				has_variable = avaible_culture_missionaries
+			}
+		}
+		set_variable = {
+			name = avaible_culture_missionaries
+			value = ve_set_citizenship_law_effects
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = total_culture_missionaries
+			}
+		}
+		set_variable = {
+			name = ve_total_culture_missionaries
+			value = ve_set_citizenship_law_effects
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = avaible_missionaries
+			}
+		}
+		set_variable = {
+			name = ve_avaible_missionaries
+			value = ve_set_religion_law_effects
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = total_missionaries
+			}
+		}
+		set_variable = {
+			name = ve_total_missionaries
+			value = ve_set_religion_law_effects
+		}
+	}
+}
+
+set_point_system = {
+	if = {
+		limit = {
+			NOT = {
+				has_variable = victoria_universalis_system_on
+			}
+		}
+		set_variable = victoria_universalis_system_on
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = culture_reform_value
+			}
+		}
+		set_variable = {
+			name = culture_reform_value
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = culture_reform_point
+			}
+		}
+		set_variable = {
+			name = culture_reform_point
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = piety_bar_point
+			}
+		}
+		set_variable = {
+			name = piety_bar_point
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = selected_reform_value
+			}
+		}
+		set_variable = {
+			name = selected_reform_value
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = idea_point_pool
+			}
+		}
+		set_variable = {
+			name = idea_point_pool
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = ve_splender_points
+			}
+		}
+		set_variable = {
+			name = ve_splender_points
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = ve_triggered_objectives
+			}
+		}
+		set_variable = {
+			name = ve_triggered_objectives
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = national_idea_pool
+			}
+		}
+		set_variable = {
+			name = national_idea_pool
+			value = 0
+		}
+	}
+}
+
+set_idea_buttons = {
+	if = {
+		limit = {
+			NOT = {
+				has_variable = idea_10_bar_point
+			}
+		}
+		set_variable = {
+			name = idea_10_bar_point
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = idea_1_bar_point
+			}
+		}
+		set_variable = {
+			name = idea_1_bar_point
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = idea_2_bar_point
+			}
+		}
+		set_variable = {
+			name = idea_2_bar_point
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = idea_3_bar_point
+			}
+		}
+		set_variable = {
+			name = idea_3_bar_point
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = idea_4_bar_point
+			}
+		}
+		set_variable = {
+			name = idea_4_bar_point
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = idea_5_bar_point
+			}
+		}
+		set_variable = {
+			name = idea_5_bar_point
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = idea_6_bar_point
+			}
+		}
+		set_variable = {
+			name = idea_6_bar_point
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = idea_7_bar_point
+			}
+		}
+		set_variable = {
+			name = idea_7_bar_point
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = idea_8_bar_point
+			}
+		}
+		set_variable = {
+			name = idea_8_bar_point
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = idea_9_bar_point
+			}
+		}
+		set_variable = {
+			name = idea_9_bar_point
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = idea_11_bar_point
+			}
+		}
+		set_variable = {
+			name = idea_11_bar_point
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = idea_12_bar_point
+			}
+		}
+		set_variable = {
+			name = idea_12_bar_point
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = idea_13_bar_point
+			}
+		}
+		set_variable = {
+			name = idea_13_bar_point
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = idea_14_bar_point
+			}
+		}
+		set_variable = {
+			name = idea_14_bar_point
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = idea_15_bar_point
+			}
+		}
+		set_variable = {
+			name = idea_15_bar_point
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = idea_group_cap
+			}
+		}
+		set_variable = {
+			name = idea_group_cap
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = idea_group_unlocked
+			}
+		}
+		set_variable = {
+			name = idea_group_unlocked
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = unlock_an_idea_group
+			}
+		}
+		set_variable = {
+			name = unlock_an_idea_group
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = idea_point_pool
+			}
+		}
+		set_variable = {
+			name = idea_point_pool
+			value = 0
+		}
+	}
+}
+
+set_ideas = {
+	if = {
+		limit = {
+			NOT = {
+				has_variable = innovative_idea
+			}
+		}
+		set_variable = {
+			name = innovative_idea
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = economic_idea
+			}
+		}
+		set_variable = {
+			name = economic_idea
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = administrative_idea
+			}
+		}
+		set_variable = {
+			name = administrative_idea
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = ethnocentrism_idea
+			}
+		}
+		set_variable = {
+			name = ethnocentrism_idea
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = politics_idea
+			}
+		}
+		set_variable = {
+			name = politics_idea
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = diplomatic_idea
+			}
+		}
+		set_variable = {
+			name = diplomatic_idea
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = trade_idea
+			}
+		}
+		set_variable = {
+			name = trade_idea
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = qualification_idea
+			}
+		}
+		set_variable = {
+			name = qualification_idea
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = humanist_idea
+			}
+		}
+		set_variable = {
+			name = humanist_idea
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = syndicalism_idea
+			}
+		}
+		set_variable = {
+			name = syndicalism_idea
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = offensive_idea
+			}
+		}
+		set_variable = {
+			name = offensive_idea
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = defensive_idea
+			}
+		}
+		set_variable = {
+			name = defensive_idea
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = naval_idea
+			}
+		}
+		set_variable = {
+			name = naval_idea
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = militarization_idea
+			}
+		}
+		set_variable = {
+			name = militarization_idea
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = imperialist_idea
+			}
+		}
+		set_variable = {
+			name = imperialist_idea
+			value = 0
+		}
+	}
+}
+
+set_national_idea = {
+	if = {
+		limit = {
+			NOR = {
+				this = c:GBR
+				this = c:FRA
+				this = c:GER
+				this = c:SGF
+				this = c:NGF
+				this = c:PRU
+				this = c:AUS
+				this = c:RUS
+				this = c:TUR
+				this = c:CHI
+				this = c:JAP
+				this = c:USA
+			}
+		}
+		set_variable = generic_idea_country
+	}
+}
+
+religion_passive_bonuses = {
+	if = {
+		limit = {
+			country_has_state_religion = rel:catholic
+		}
+		add_modifier = {
+			name = catholic_pasive_mdf
+			months = -1
+		}
+	}
+	else_if = {
+		limit = {
+			country_has_state_religion = rel:protestant
+		}
+		add_modifier = {
+			name = protestant_pasive_mdf
+			months = -1
+		}
+	}
+	else_if = {
+		limit = {
+			country_has_state_religion = rel:orthodox
+		}
+		add_modifier = {
+			name = orthodox_pasive_mdf
+			months = -1
+		}
+	}
+	else_if = {
+		limit = {
+			country_has_state_religion = rel:oriental_orthodox
+		}
+		add_modifier = {
+			name = coptic_pasive_mdf
+			months = -1
+		}
+	}
+	else_if = {
+		limit = {
+			country_has_state_religion = rel:sunni
+		}
+		add_modifier = {
+			name = sunni_pasive_mdf
+			months = -1
+		}
+	}
+	else_if = {
+		limit = {
+			country_has_state_religion = rel:shiite
+		}
+		add_modifier = {
+			name = shia_pasive_mdf
+			months = -1
+		}
+	}
+	else_if = {
+		limit = {
+			country_has_state_religion = rel:jewish
+		}
+		add_modifier = {
+			name = jewish_pasive_mdf
+			months = -1
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				country_has_state_religion = rel:mahayana
+				country_has_state_religion = rel:gelugpa
+				country_has_state_religion = rel:theravada
+				country_has_state_religion = rel:shinto
+				country_has_state_religion = rel:confucian
+			}
+		}
+		add_modifier = {
+			name = mahayana_pasive_mdf
+			months = -1
+		}
+	}
+	else_if = {
+		limit = {
+			country_has_state_religion = rel:hindu
+		}
+		add_modifier = {
+			name = hindu_pasive_mdf
+			months = -1
+		}
+	}
+	else_if = {
+		limit = {
+			country_has_state_religion = rel:sikh
+		}
+		add_modifier = {
+			name = sikh_pasive_mdf
+			months = -1
+		}
+	}
+	else_if = {
+		limit = {
+			country_has_state_religion = rel:animist
+		}
+		add_modifier = {
+			name = animist_pasive_mdf
+			months = -1
+		}
+	}
+	else_if = {
+		limit = {
+			country_has_state_religion = rel:atheist
+		}
+		add_modifier = {
+			name = atheist_pasive_mdf
+			months = -1
+		}
+	}
+}
+
+national_idea_traditions = {
+	if = {
+		limit = {
+			exists = c:GBR
+			this = c:GBR
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_modifier = gbr_idea_tradition_1
+					has_modifier = gbr_idea_tradition_2
+				}
+			}
+			add_modifier = {
+				name = gbr_idea_tradition_1
+				months = -1
+			}
+			add_modifier = {
+				name = gbr_idea_tradition_2
+				months = -1
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_modifier = fra_idea_tradition_1
+					has_modifier = fra_idea_tradition_2
+				}
+			}
+			add_modifier = {
+				name = fra_idea_tradition_1
+				months = -1
+			}
+			add_modifier = {
+				name = fra_idea_tradition_2
+				months = -1
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			exists = c:GER
+			this = c:GER
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_modifier = ger_idea_tradition_1
+					has_modifier = ger_idea_tradition_2
+				}
+			}
+			add_modifier = {
+				name = ger_idea_tradition_1
+				months = -1
+			}
+			add_modifier = {
+				name = ger_idea_tradition_2
+				months = -1
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			exists = c:PRU
+			this = c:PRU
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_modifier = ger_idea_tradition_1
+					has_modifier = ger_idea_tradition_2
+				}
+			}
+			add_modifier = {
+				name = ger_idea_tradition_1
+				months = -1
+			}
+			add_modifier = {
+				name = ger_idea_tradition_2
+				months = -1
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			exists = c:NGF
+			this = c:NGF
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_modifier = ger_idea_tradition_1
+					has_modifier = ger_idea_tradition_2
+				}
+			}
+			add_modifier = {
+				name = ger_idea_tradition_1
+				months = -1
+			}
+			add_modifier = {
+				name = ger_idea_tradition_2
+				months = -1
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			exists = c:SGF
+			this = c:SGF
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_modifier = ger_idea_tradition_1
+					has_modifier = ger_idea_tradition_2
+				}
+			}
+			add_modifier = {
+				name = ger_idea_tradition_1
+				months = -1
+			}
+			add_modifier = {
+				name = ger_idea_tradition_2
+				months = -1
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			exists = c:AUS
+			this = c:AUS
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_modifier = aus_idea_tradition_1
+					has_modifier = aus_idea_tradition_2
+				}
+			}
+			add_modifier = {
+				name = aus_idea_tradition_1
+				months = -1
+			}
+			add_modifier = {
+				name = aus_idea_tradition_2
+				months = -1
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			exists = c:RUS
+			this = c:RUS
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_modifier = rus_idea_tradition_1
+					has_modifier = rus_idea_tradition_2
+				}
+			}
+			add_modifier = {
+				name = rus_idea_tradition_1
+				months = -1
+			}
+			add_modifier = {
+				name = rus_idea_tradition_2
+				months = -1
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			exists = c:TUR
+			this = c:TUR
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_modifier = tur_idea_tradition_1
+					has_modifier = tur_idea_tradition_2
+				}
+			}
+			add_modifier = {
+				name = tur_idea_tradition_1
+				months = -1
+			}
+			add_modifier = {
+				name = tur_idea_tradition_2
+				months = -1
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			exists = c:CHI
+			this = c:CHI
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_modifier = qng_idea_tradition_1
+					has_modifier = qng_idea_tradition_2
+				}
+			}
+			add_modifier = {
+				name = qng_idea_tradition_1
+				months = -1
+			}
+			add_modifier = {
+				name = qng_idea_tradition_2
+				months = -1
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			exists = c:JAP
+			this = c:JAP
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_modifier = jap_idea_tradition_1
+					has_modifier = jap_idea_tradition_2
+				}
+			}
+			add_modifier = {
+				name = jap_idea_tradition_1
+				months = -1
+			}
+			add_modifier = {
+				name = jap_idea_tradition_2
+				months = -1
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			exists = c:USA
+			this = c:USA
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_modifier = usa_idea_tradition_1
+					has_modifier = usa_idea_tradition_2
+				}
+			}
+			add_modifier = {
+				name = usa_idea_tradition_1
+				months = -1
+			}
+			add_modifier = {
+				name = usa_idea_tradition_2
+				months = -1
+			}
+		}
+	}
+	else = {
+		if = {
+			limit = {
+				NOT = {
+					has_modifier = generic_idea_tradition_1
+					has_modifier = generic_idea_tradition_2
+				}
+			}
+			add_modifier = {
+				name = generic_idea_tradition_1
+				months = -1
+			}
+			add_modifier = {
+				name = generic_idea_tradition_2
+				months = -1
+			}
+		}
+	}
+}
+
+ve_idea_cap_effects = {
+	if = {
+		limit = {
+			year >= 1846
+			NOT = {
+				has_variable = idea_cap_2_setted
+			}
+		}
+		set_variable = idea_cap_2_setted
+		change_variable = {
+			name = idea_group_cap
+			add = 1
+		}
+	}
+	if = {
+		limit = {
+			year >= 1856
+			NOT = {
+				has_variable = idea_cap_3_setted
+			}
+		}
+		set_variable = idea_cap_3_setted
+		change_variable = {
+			name = idea_group_cap
+			add = 1
+		}
+	}
+	if = {
+		limit = {
+			year >= 1866
+			NOT = {
+				has_variable = idea_cap_4_setted
+			}
+		}
+		set_variable = idea_cap_4_setted
+		change_variable = {
+			name = idea_group_cap
+			add = 1
+		}
+	}
+	if = {
+		limit = {
+			year >= 1876
+			NOT = {
+				has_variable = idea_cap_5_setted
+			}
+		}
+		set_variable = idea_cap_5_setted
+		change_variable = {
+			name = idea_group_cap
+			add = 1
+		}
+	}
+	if = {
+		limit = {
+			year >= 1886
+			NOT = {
+				has_variable = idea_cap_6_setted
+			}
+		}
+		set_variable = idea_cap_6_setted
+		change_variable = {
+			name = idea_group_cap
+			add = 1
+		}
+	}
+	if = {
+		limit = {
+			year >= 1896
+			NOT = {
+				has_variable = idea_cap_7_setted
+			}
+		}
+		set_variable = idea_cap_7_setted
+		change_variable = {
+			name = idea_group_cap
+			add = 1
+		}
+	}
+	if = {
+		limit = {
+			year >= 1906
+			NOT = {
+				has_variable = idea_cap_8_setted
+			}
+		}
+		set_variable = idea_cap_8_setted
+		change_variable = {
+			name = idea_group_cap
+			add = 1
+		}
+	}
+}

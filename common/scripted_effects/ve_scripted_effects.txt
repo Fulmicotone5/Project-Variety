@@ -1,0 +1,880 @@
+﻿national_idea_mdf = {
+	if = {
+		limit = {
+			exists = c:GBR
+			this = c:GBR
+		}
+		british_ideas = yes
+	}
+	else_if = {
+		limit = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		french_ideas = yes
+	}
+	else_if = {
+		limit = {
+			exists = c:SGF
+			this = c:SGF
+		}
+		german_ideas = yes
+	}
+	else_if = {
+		limit = {
+			exists = c:GER
+			this = c:GER
+		}
+		german_ideas = yes
+	}
+	else_if = {
+		limit = {
+			exists = c:PRU
+			this = c:PRU
+		}
+		german_ideas = yes
+	}
+	else_if = {
+		limit = {
+			exists = c:NGF
+			this = c:NGF
+		}
+		german_ideas = yes
+	}
+	else_if = {
+		limit = {
+			exists = c:AUS
+			this = c:AUS
+		}
+		austrian_ideas = yes
+	}
+	else_if = {
+		limit = {
+			exists = c:RUS
+			this = c:RUS
+		}
+		russian_ideas = yes
+	}
+	else_if = {
+		limit = {
+			exists = c:TUR
+			this = c:TUR
+		}
+		turkish_ideas = yes
+	}
+	else_if = {
+		limit = {
+			exists = c:CHI
+			this = c:CHI
+		}
+		chinese_ideas = yes
+	}
+	else_if = {
+		limit = {
+			exists = c:JAP
+			this = c:JAP
+		}
+		japanese_ideas = yes
+	}
+	else_if = {
+		limit = {
+			exists = c:USA
+			this = c:USA
+		}
+		american_ideas = yes
+	}
+	else = {
+		generic_ideas = yes
+	}
+}
+
+cancel_national_idea_mdf = {
+	if = {
+		limit = {
+			exists = c:GBR
+			this = c:GBR
+		}
+		cancel_british_ideas = yes
+	}
+	else_if = {
+		limit = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		cancel_french_ideas = yes
+	}
+	else_if = {
+		limit = {
+			exists = c:SGF
+			this = c:SGF
+		}
+		cancel_german_ideas = yes
+	}
+	else_if = {
+		limit = {
+			exists = c:GER
+			this = c:GER
+		}
+		cancel_german_ideas = yes
+	}
+	else_if = {
+		limit = {
+			exists = c:PRU
+			this = c:PRU
+		}
+		cancel_german_ideas = yes
+	}
+	else_if = {
+		limit = {
+			exists = c:NGF
+			this = c:NGF
+		}
+		cancel_german_ideas = yes
+	}
+	else_if = {
+		limit = {
+			exists = c:AUS
+			this = c:AUS
+		}
+		cancel_austrian_ideas = yes
+	}
+	else_if = {
+		limit = {
+			exists = c:RUS
+			this = c:RUS
+		}
+		cancel_russian_ideas = yes
+	}
+	else_if = {
+		limit = {
+			exists = c:TUR
+			this = c:TUR
+		}
+		cancel_turkish_ideas = yes
+	}
+	else_if = {
+		limit = {
+			exists = c:CHI
+			this = c:CHI
+		}
+		cancel_chinese_ideas = yes
+	}
+	else_if = {
+		limit = {
+			exists = c:JAP
+			this = c:JAP
+		}
+		cancel_japanese_ideas = yes
+	}
+	else_if = {
+		limit = {
+			exists = c:USA
+			this = c:USA
+		}
+		cancel_american_ideas = yes
+	}
+	else = {
+		cancel_generic_ideas = yes
+	}
+}
+
+idea_cost = {
+	change_variable = {
+		name = idea_point_pool
+		subtract = 300
+	}
+}
+
+splendor_cost = {
+	change_variable = {
+		name = ve_splender_points
+		subtract = 800
+	}
+}
+
+reform_limiter = {
+	if = {
+		limit = {
+			var:selected_reform_value == 7
+		}
+		set_variable = {
+			name = culture_reform_point
+			value = 750
+		}
+		set_variable = stop_getting_reform_point
+	}
+}
+
+reform_bar_effects = {
+	if = {
+		limit = {
+			var:culture_reform_value == 7
+		}
+		add_modifier = {
+			name = bar_supremacy_mdf_7
+			months = -1
+		}
+		if = {
+			limit = {
+				has_modifier = bar_supremacy_mdf_6
+			}
+			remove_modifier = bar_supremacy_mdf_6
+		}
+	}
+	else_if = {
+		limit = {
+			var:culture_reform_value == 6
+		}
+		add_modifier = {
+			name = bar_supremacy_mdf_6
+			months = -1
+		}
+		if = {
+			limit = {
+				has_modifier = bar_supremacy_mdf_7
+			}
+			remove_modifier = bar_supremacy_mdf_7
+		}
+		else_if = {
+			limit = {
+				has_modifier = bar_supremacy_mdf_5
+			}
+			remove_modifier = bar_supremacy_mdf_5
+		}
+	}
+	else_if = {
+		limit = {
+			var:culture_reform_value == 5
+		}
+		add_modifier = {
+			name = bar_supremacy_mdf_5
+			months = -1
+		}
+		if = {
+			limit = {
+				has_modifier = bar_supremacy_mdf_6
+			}
+			remove_modifier = bar_supremacy_mdf_6
+		}
+		else_if = {
+			limit = {
+				has_modifier = bar_supremacy_mdf_4
+			}
+			remove_modifier = bar_supremacy_mdf_4
+		}
+	}
+	else_if = {
+		limit = {
+			var:culture_reform_value == 4
+		}
+		add_modifier = {
+			name = bar_supremacy_mdf_4
+			months = -1
+		}
+		if = {
+			limit = {
+				has_modifier = bar_supremacy_mdf_5
+			}
+			remove_modifier = bar_supremacy_mdf_5
+		}
+		else_if = {
+			limit = {
+				has_modifier = bar_supremacy_mdf_3
+			}
+			remove_modifier = bar_supremacy_mdf_3
+		}
+	}
+	else_if = {
+		limit = {
+			var:culture_reform_value == 3
+		}
+		add_modifier = {
+			name = bar_supremacy_mdf_3
+			months = -1
+		}
+		if = {
+			limit = {
+				has_modifier = bar_supremacy_mdf_4
+			}
+			remove_modifier = bar_supremacy_mdf_4
+		}
+		else_if = {
+			limit = {
+				has_modifier = bar_supremacy_mdf_2
+			}
+			remove_modifier = bar_supremacy_mdf_2
+		}
+	}
+	else_if = {
+		limit = {
+			var:culture_reform_value == 2
+		}
+		add_modifier = {
+			name = bar_supremacy_mdf_2
+			months = -1
+		}
+		if = {
+			limit = {
+				has_modifier = bar_supremacy_mdf_3
+			}
+			remove_modifier = bar_supremacy_mdf_3
+		}
+		else_if = {
+			limit = {
+				has_modifier = bar_supremacy_mdf_1
+			}
+			remove_modifier = bar_supremacy_mdf_1
+		}
+	}
+	else_if = {
+		limit = {
+			var:culture_reform_value == 1
+		}
+		add_modifier = {
+			name = bar_supremacy_mdf_1
+			months = -1
+		}
+		if = {
+			limit = {
+				has_modifier = bar_supremacy_mdf_2
+			}
+			remove_modifier = bar_supremacy_mdf_2
+		}
+	}
+	else_if = {
+		limit = {
+			var:culture_reform_value == 0
+		}
+		if = {
+			limit = {
+				has_modifier = bar_supremacy_mdf_1
+			}
+			remove_modifier = bar_supremacy_mdf_1
+		}
+		else_if = {
+			limit = {
+				has_modifier = bar_intellectual_mdf_1
+			}
+			remove_modifier = bar_intellectual_mdf_1
+		}
+	}
+	else_if = {
+		limit = {
+			var:culture_reform_value == -1
+		}
+		add_modifier = {
+			name = bar_intellectual_mdf_1
+			months = -1
+		}
+		if = {
+			limit = {
+				has_modifier = bar_intellectual_mdf_2
+			}
+			remove_modifier = bar_intellectual_mdf_2
+		}
+	}
+	else_if = {
+		limit = {
+			var:culture_reform_value == -2
+		}
+		add_modifier = {
+			name = bar_intellectual_mdf_2
+			months = -1
+		}
+		if = {
+			limit = {
+				has_modifier = bar_intellectual_mdf_1
+			}
+			remove_modifier = bar_intellectual_mdf_1
+		}
+		else_if = {
+			limit = {
+				has_modifier = bar_intellectual_mdf_3
+			}
+			remove_modifier = bar_intellectual_mdf_3
+		}
+	}
+	else_if = {
+		limit = {
+			var:culture_reform_value == -3
+		}
+		add_modifier = {
+			name = bar_intellectual_mdf_3
+			months = -1
+		}
+		if = {
+			limit = {
+				has_modifier = bar_intellectual_mdf_2
+			}
+			remove_modifier = bar_intellectual_mdf_2
+		}
+		else_if = {
+			limit = {
+				has_modifier = bar_intellectual_mdf_4
+			}
+			remove_modifier = bar_intellectual_mdf_4
+		}
+	}
+	else_if = {
+		limit = {
+			var:culture_reform_value == -4
+		}
+		add_modifier = {
+			name = bar_intellectual_mdf_4
+			months = -1
+		}
+		if = {
+			limit = {
+				has_modifier = bar_intellectual_mdf_3
+			}
+			remove_modifier = bar_intellectual_mdf_3
+		}
+		else_if = {
+			limit = {
+				has_modifier = bar_intellectual_mdf_5
+			}
+			remove_modifier = bar_intellectual_mdf_5
+		}
+	}
+	else_if = {
+		limit = {
+			var:culture_reform_value == -5
+		}
+		add_modifier = {
+			name = bar_intellectual_mdf_5
+			months = -1
+		}
+		if = {
+			limit = {
+				has_modifier = bar_intellectual_mdf_4
+			}
+			remove_modifier = bar_intellectual_mdf_4
+		}
+		else_if = {
+			limit = {
+				has_modifier = bar_intellectual_mdf_6
+			}
+			remove_modifier = bar_intellectual_mdf_6
+		}
+	}
+	else_if = {
+		limit = {
+			var:culture_reform_value == -6
+		}
+		add_modifier = {
+			name = bar_intellectual_mdf_6
+			months = -1
+		}
+		if = {
+			limit = {
+				has_modifier = bar_intellectual_mdf_5
+			}
+			remove_modifier = bar_intellectual_mdf_5
+		}
+		else_if = {
+			limit = {
+				has_modifier = bar_intellectual_mdf_7
+			}
+			remove_modifier = bar_intellectual_mdf_7
+		}
+	}
+	else_if = {
+		limit = {
+			var:culture_reform_value == -7
+		}
+		add_modifier = {
+			name = bar_intellectual_mdf_7
+			months = -1
+		}
+		if = {
+			limit = {
+				has_modifier = bar_intellectual_mdf_6
+			}
+			remove_modifier = bar_intellectual_mdf_6
+		}
+	}
+}
+
+balance_missionaries = {
+	if = {
+		limit = {
+			avaible_missionaries < 0
+		}
+		every_scope_state = {
+			limit = {
+				has_modifier = ve_missionary_mdf
+			}
+			remove_modifier = ve_missionary_mdf
+			remove_variable = selected_state_religion
+		}
+		set_variable = {
+			name = avaible_missionaries
+			value = total_missionaries
+		}
+	}
+}
+
+call_missionaries_effect = {
+	every_scope_state = {
+		limit = {
+			has_modifier = ve_missionary_mdf
+		}
+		remove_modifier = ve_missionary_mdf
+		remove_variable = selected_state_religion
+	}
+	set_variable = {
+		name = avaible_missionaries
+		value = total_missionaries
+	}
+}
+
+balance_cultural_missionaries = {
+	if = {
+		limit = {
+			avaible_culture_missionaries < 0
+		}
+		every_scope_state = {
+			limit = {
+				has_modifier = ve_diffusionist_mdf
+			}
+			remove_modifier = ve_diffusionist_mdf
+			remove_variable = selected_state_culture
+		}
+		set_variable = {
+			name = avaible_culture_missionaries
+			value = total_culture_missionaries
+		}
+	}
+}
+
+call_cultural_missionaries_effect = {
+	every_scope_state = {
+		limit = {
+			has_modifier = ve_diffusionist_mdf
+		}
+		remove_modifier = ve_diffusionist_mdf
+		remove_variable = selected_state_culture
+	}
+	set_variable = {
+		name = avaible_culture_missionaries
+		value = total_culture_missionaries
+	}
+}
+
+prevent_annex_foreign_missionary = {
+	if = {
+		limit = {
+			avaible_missionaries > total_missionaries
+		}
+		call_missionaries_effect = yes
+	}
+	else_if = {
+		limit = {
+			total_missionaries < my_script_value
+		}
+		call_missionaries_effect = yes
+	}
+}
+
+prevent_annex_foreign_missionary = {
+	if = {
+		limit = {
+			avaible_missionaries > total_missionaries
+		}
+		call_missionaries_effect = yes
+	}
+	else_if = {
+		limit = {
+			total_missionaries < my_script_value
+		}
+		call_missionaries_effect = yes
+	}
+}
+
+prevent_annex_foreign_missionary = {
+	if = {
+		limit = {
+			avaible_missionaries > total_missionaries
+		}
+		call_missionaries_effect = yes
+	}
+	else_if = {
+		limit = {
+			total_missionaries < my_script_value
+		}
+		call_missionaries_effect = yes
+	}
+}
+
+prevent_annex_foreign_missionary = {
+	if = {
+		limit = {
+			avaible_missionaries > total_missionaries
+		}
+		call_missionaries_effect = yes
+	}
+	else_if = {
+		limit = {
+			total_missionaries < my_script_value
+		}
+		call_missionaries_effect = yes
+	}
+}
+
+prevent_annex_foreign_missionary = {
+	if = {
+		limit = {
+			avaible_missionaries > total_missionaries
+		}
+		call_missionaries_effect = yes
+	}
+	else_if = {
+		limit = {
+			total_missionaries < my_script_value
+		}
+		call_missionaries_effect = yes
+	}
+}
+
+prevent_annex_foreign_missionary = {
+	if = {
+		limit = {
+			avaible_missionaries > total_missionaries
+		}
+		call_missionaries_effect = yes
+	}
+	else_if = {
+		limit = {
+			total_missionaries < active_missionary_value
+		}
+		call_missionaries_effect = yes
+	}
+}
+
+prevent_annex_foreign_cultural_missionary = {
+	if = {
+		limit = {
+			avaible_culture_missionaries > total_culture_missionaries
+		}
+		call_cultural_missionaries_effect = yes
+	}
+	else_if = {
+		limit = {
+			total_culture_missionaries < active_cultural_missionary_value
+		}
+		call_cultural_missionaries_effect = yes
+	}
+}
+
+ve_law_change_effects = {
+	if = {
+		limit = {
+			NOT = {
+				has_variable = ethnocentrism_idea_5_var
+			}
+		}
+		if = {
+			limit = {
+				has_law = law_type:law_state_religion
+				total_missionaries != 3
+			}
+			set_variable = {
+				name = total_missionaries
+				value = 3
+			}
+			call_missionaries_effect = yes
+		}
+		else_if = {
+			limit = {
+				has_law = law_type:law_freedom_of_conscience
+				total_missionaries != 1
+			}
+			set_variable = {
+				name = total_missionaries
+				value = 1
+			}
+			call_missionaries_effect = yes
+		}
+		else_if = {
+			limit = {
+				has_law = law_type:law_state_atheism
+				total_missionaries != 3
+			}
+			set_variable = {
+				name = total_missionaries
+				value = 3
+			}
+			call_missionaries_effect = yes
+		}
+		else_if = {
+			limit = {
+				has_law = law_type:law_total_separation
+				total_missionaries != 0
+			}
+			set_variable = {
+				name = total_missionaries
+				value = 0
+			}
+			call_missionaries_effect = yes
+		}
+		if = {
+			limit = {
+				has_law = law_type:law_ethnostate
+				total_culture_missionaries != 4
+			}
+			set_variable = {
+				name = total_culture_missionaries
+				value = 4
+			}
+			call_cultural_missionaries_effect = yes
+		}
+		else_if = {
+			limit = {
+				has_law = law_type:law_national_supremacy
+				total_culture_missionaries != 3
+			}
+			set_variable = {
+				name = total_culture_missionaries
+				value = 3
+			}
+			call_cultural_missionaries_effect = yes
+		}
+		else_if = {
+			limit = {
+				has_law = law_type:law_racial_segregation
+				total_culture_missionaries != 2
+			}
+			set_variable = {
+				name = total_culture_missionaries
+				value = 2
+			}
+			call_cultural_missionaries_effect = yes
+		}
+		else_if = {
+			limit = {
+				has_law = law_type:law_cultural_exclusion
+				total_culture_missionaries != 1
+			}
+			set_variable = {
+				name = total_culture_missionaries
+				value = 1
+			}
+			call_cultural_missionaries_effect = yes
+		}
+		else_if = {
+			limit = {
+				has_law = law_type:law_multicultural
+				total_culture_missionaries != 0
+			}
+			set_variable = {
+				name = total_culture_missionaries
+				value = 0
+			}
+			call_cultural_missionaries_effect = yes
+		}
+	}
+	else_if = {
+		limit = {
+			has_variable = ethnocentrism_idea_5_var
+		}
+		if = {
+			limit = {
+				has_law = law_type:law_state_religion
+				total_missionaries != 5
+			}
+			set_variable = {
+				name = total_missionaries
+				value = 5
+			}
+			call_missionaries_effect = yes
+		}
+		else_if = {
+			limit = {
+				has_law = law_type:law_freedom_of_conscience
+				total_missionaries != 3
+			}
+			set_variable = {
+				name = total_missionaries
+				value = 3
+			}
+			call_missionaries_effect = yes
+		}
+		else_if = {
+			limit = {
+				has_law = law_type:law_state_atheism
+				total_missionaries != 5
+			}
+			set_variable = {
+				name = total_missionaries
+				value = 5
+			}
+			call_missionaries_effect = yes
+		}
+		else_if = {
+			limit = {
+				has_law = law_type:law_total_separation
+				total_missionaries != 0
+			}
+			set_variable = {
+				name = total_missionaries
+				value = 0
+			}
+			call_missionaries_effect = yes
+		}
+		if = {
+			limit = {
+				has_law = law_type:law_ethnostate
+				total_culture_missionaries != 6
+			}
+			set_variable = {
+				name = total_culture_missionaries
+				value = 6
+			}
+			call_cultural_missionaries_effect = yes
+		}
+		else_if = {
+			limit = {
+				has_law = law_type:law_national_supremacy
+				total_culture_missionaries != 5
+			}
+			set_variable = {
+				name = total_culture_missionaries
+				value = 5
+			}
+			call_cultural_missionaries_effect = yes
+		}
+		else_if = {
+			limit = {
+				has_law = law_type:law_racial_segregation
+				total_culture_missionaries != 4
+			}
+			set_variable = {
+				name = total_culture_missionaries
+				value = 4
+			}
+			call_cultural_missionaries_effect = yes
+		}
+		else_if = {
+			limit = {
+				has_law = law_type:law_cultural_exclusion
+				total_culture_missionaries != 3
+			}
+			set_variable = {
+				name = total_culture_missionaries
+				value = 3
+			}
+			call_cultural_missionaries_effect = yes
+		}
+		else_if = {
+			limit = {
+				has_law = law_type:law_multicultural
+				total_culture_missionaries != 0
+			}
+			set_variable = {
+				name = total_culture_missionaries
+				value = 0
+			}
+			call_cultural_missionaries_effect = yes
+		}
+	}
+}

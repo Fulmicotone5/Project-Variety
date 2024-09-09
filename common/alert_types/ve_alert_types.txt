@@ -1,0 +1,111 @@
+﻿can_unlock_ideas = {
+	script_context = player_country
+	texture = "gfx/interface/intelligensia.dds"
+	valid = {
+		idea_cost_trigger = yes
+		var:national_idea_pool < 56
+	}
+	type = alert
+}
+
+max_piety = {
+	script_context = player_country
+	texture = "gfx/interface/catholic.dds"
+	valid = {
+		piety_cost_trigger = yes
+	}
+	type = alert
+}
+
+max_culture_reform_point = {
+	script_context = player_country
+	texture = "gfx/interface/monarch_cultures_icon.dds"
+	valid = {
+		culture_cost_trigger = yes
+		NOR = {
+			has_variable = supremacy_7_on
+			has_variable = intellectual_7_on
+		}
+	}
+	type = alert
+}
+
+can_unlock_age_bonus = {
+	script_context = player_country
+	texture = "gfx/interface/icon_splendor_tiny.dds"
+	valid = {
+		splendor_cost_trigger = yes
+		trigger_if = {
+			limit = {
+				has_global_variable = ve_age_1_started
+			}
+			NOT = {
+				AND = {
+					has_modifier = age_1_bonus_1
+					has_modifier = age_1_bonus_2
+					has_modifier = age_1_bonus_3
+					has_modifier = age_1_bonus_4
+					has_modifier = age_1_bonus_5
+					has_modifier = age_1_bonus_6
+				}
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				has_global_variable = ve_age_2_started
+			}
+			NOT = {
+				AND = {
+					has_modifier = age_2_bonus_1
+					has_modifier = age_2_bonus_2
+					has_modifier = age_2_bonus_3
+					has_modifier = age_2_bonus_4
+					has_modifier = age_2_bonus_5
+					has_modifier = age_2_bonus_6
+				}
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				has_global_variable = ve_age_3_started
+			}
+			NOT = {
+				AND = {
+					has_modifier = age_3_bonus_1
+					has_modifier = age_3_bonus_2
+					has_modifier = age_3_bonus_3
+					has_modifier = age_3_bonus_4
+					has_modifier = age_3_bonus_5
+					has_modifier = age_3_bonus_6
+				}
+			}
+		}
+	}
+	type = alert
+}
+
+can_use_missionary = {
+	script_context = player_country
+	valid = {
+		has_variable = avaible_missionaries
+		avaible_missionaries >= 1
+		NOT = {
+			has_law = law_type:law_total_separation
+		}
+	}
+	type = important_action
+	alert_group = ve_missionary_group
+}
+
+can_use_culture_missionary = {
+	script_context = player_country
+	valid = {
+		has_variable = avaible_culture_missionaries
+		avaible_culture_missionaries >= 1
+		NOT = {
+			has_law = law_type:law_multicultural
+		}
+	}
+	type = important_action
+	alert_group = ve_missionary_group
+}

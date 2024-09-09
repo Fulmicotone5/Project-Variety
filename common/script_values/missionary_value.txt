@@ -1,0 +1,2311 @@
+﻿missionary_power_250k = {
+	value = 0.05	#Base Power
+	if = {
+		limit = {
+			owner = {
+				has_variable = ethnocentrism_idea_5_var
+			}
+		}
+		add = 0.007
+	}
+	if = {
+		limit = {
+			owner = {
+				has_law = law_type:law_state_religion
+			}
+		}
+		add = 0.007
+	}
+	if = {
+		limit = {
+			owner = {
+				has_law = law_type:law_religious_schools
+			}
+		}
+		add = 0.007
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_law = law_type:law_freedom_of_conscience
+			}
+		}
+		add = 0.003
+	}
+	if = {
+		limit = {
+			owner = {
+				has_law = law_type:law_theocracy
+			}
+		}
+		add = 0.007
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_7
+			}
+		}
+		add = 0.007
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_6
+			}
+		}
+		add = 0.006
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_5
+			}
+		}
+		add = 0.005
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_4
+			}
+		}
+		add = 0.004
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_3
+			}
+		}
+		add = 0.003
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_2
+			}
+		}
+		add = 0.002
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_1
+			}
+		}
+		add = 0.001
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = age_2_bonus_6
+			}
+		}
+		add = 0.001
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = ethnocentrism_idea_2_mdf
+			}
+		}
+		add = 0.0025
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = wittenberg_hs_mdf
+			}
+		}
+		add = 0.0015
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = catholic_pasive_mdf
+			}
+		}
+		add = 0.002
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = orthodox_aspect_7_mdf
+			}
+		}
+		add = 0.0025
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = coptic_aspect_4_mdf
+			}
+		}
+		add = 0.0025
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = shia_aspect_3_mdf
+			}
+		}
+		add = 0.0033
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = hindu_aspect_6_mdf
+			}
+		}
+		add = 0.0025
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = animist_aspect_6_mdf
+			}
+		}
+		add = 0.0025
+	}
+}
+
+missionary_power_500k = {
+	value = 0.03	#Base Power
+	if = {
+		limit = {
+			owner = {
+				has_variable = ethnocentrism_idea_5_var
+			}
+		}
+		add = 0.007
+	}
+	if = {
+		limit = {
+			owner = {
+				has_law = law_type:law_state_religion
+			}
+		}
+		add = 0.007
+	}
+	if = {
+		limit = {
+			owner = {
+				has_law = law_type:law_religious_schools
+			}
+		}
+		add = 0.007
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_law = law_type:law_freedom_of_conscience
+			}
+		}
+		add = 0.003
+	}
+	if = {
+		limit = {
+			owner = {
+				has_law = law_type:law_theocracy
+			}
+		}
+		add = 0.007
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_7
+			}
+		}
+		add = 0.007
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_6
+			}
+		}
+		add = 0.006
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_5
+			}
+		}
+		add = 0.005
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_4
+			}
+		}
+		add = 0.004
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_3
+			}
+		}
+		add = 0.003
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_2
+			}
+		}
+		add = 0.002
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_1
+			}
+		}
+		add = 0.001
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = age_2_bonus_6
+			}
+		}
+		add = 0.001
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = ethnocentrism_idea_2_mdf
+			}
+		}
+		add = 0.0025
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = wittenberg_hs_mdf
+			}
+		}
+		add = 0.0015
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = catholic_pasive_mdf
+			}
+		}
+		add = 0.002
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = orthodox_aspect_7_mdf
+			}
+		}
+		add = 0.0025
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = coptic_aspect_4_mdf
+			}
+		}
+		add = 0.0025
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = shia_aspect_3_mdf
+			}
+		}
+		add = 0.0033
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = hindu_aspect_6_mdf
+			}
+		}
+		add = 0.0025
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = animist_aspect_6_mdf
+			}
+		}
+		add = 0.0025
+	}
+}
+
+missionary_power_750k = {
+	value = 0.02	#Base Power
+	if = {
+		limit = {
+			owner = {
+				has_variable = ethnocentrism_idea_5_var
+			}
+		}
+		add = 0.007
+	}
+	if = {
+		limit = {
+			owner = {
+				has_law = law_type:law_state_religion
+			}
+		}
+		add = 0.007
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_law = law_type:law_freedom_of_conscience
+			}
+		}
+		add = 0.003
+	}
+	if = {
+		limit = {
+			owner = {
+				has_law = law_type:law_theocracy
+			}
+		}
+		add = 0.007
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_7
+			}
+		}
+		add = 0.007
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_6
+			}
+		}
+		add = 0.006
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_5
+			}
+		}
+		add = 0.005
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_4
+			}
+		}
+		add = 0.004
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_3
+			}
+		}
+		add = 0.003
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_2
+			}
+		}
+		add = 0.002
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_1
+			}
+		}
+		add = 0.001
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = age_2_bonus_6
+			}
+		}
+		add = 0.001
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = ethnocentrism_idea_2_mdf
+			}
+		}
+		add = 0.0025
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = wittenberg_hs_mdf
+			}
+		}
+		add = 0.0015
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = catholic_pasive_mdf
+			}
+		}
+		add = 0.002
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = orthodox_aspect_7_mdf
+			}
+		}
+		add = 0.0025
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = coptic_aspect_4_mdf
+			}
+		}
+		add = 0.0025
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = shia_aspect_3_mdf
+			}
+		}
+		add = 0.0033
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = hindu_aspect_6_mdf
+			}
+		}
+		add = 0.0025
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = animist_aspect_6_mdf
+			}
+		}
+		add = 0.0025
+	}
+}
+
+missionary_power_1m = {
+	value = 0.01	#Base Power
+	if = {
+		limit = {
+			owner = {
+				has_variable = ethnocentrism_idea_5_var
+			}
+		}
+		add = 0.007
+	}
+	if = {
+		limit = {
+			owner = {
+				has_law = law_type:law_state_religion
+			}
+		}
+		add = 0.007
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_law = law_type:law_freedom_of_conscience
+			}
+		}
+		add = 0.003
+	}
+	if = {
+		limit = {
+			owner = {
+				has_law = law_type:law_theocracy
+			}
+		}
+		add = 0.007
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_7
+			}
+		}
+		add = 0.007
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_6
+			}
+		}
+		add = 0.006
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_5
+			}
+		}
+		add = 0.005
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_4
+			}
+		}
+		add = 0.004
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_3
+			}
+		}
+		add = 0.003
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_2
+			}
+		}
+		add = 0.002
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_1
+			}
+		}
+		add = 0.001
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = age_2_bonus_6
+			}
+		}
+		add = 0.001
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = ethnocentrism_idea_2_mdf
+			}
+		}
+		add = 0.0025
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = wittenberg_hs_mdf
+			}
+		}
+		add = 0.0015
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = catholic_pasive_mdf
+			}
+		}
+		add = 0.002
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = orthodox_aspect_7_mdf
+			}
+		}
+		add = 0.0025
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = coptic_aspect_4_mdf
+			}
+		}
+		add = 0.0025
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = shia_aspect_3_mdf
+			}
+		}
+		add = 0.0033
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = hindu_aspect_6_mdf
+			}
+		}
+		add = 0.0025
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = animist_aspect_6_mdf
+			}
+		}
+		add = 0.0025
+	}
+}
+
+missionary_power_5m = {
+	value = 0.007	#Base Power
+	if = {
+		limit = {
+			owner = {
+				has_variable = ethnocentrism_idea_5_var
+			}
+		}
+		add = 0.007
+	}
+	if = {
+		limit = {
+			owner = {
+				has_law = law_type:law_religious_schools
+			}
+		}
+		add = 0.007
+	}
+	if = {
+		limit = {
+			owner = {
+				has_law = law_type:law_state_religion
+			}
+		}
+		add = 0.007
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_law = law_type:law_freedom_of_conscience
+			}
+		}
+		add = 0.003
+	}
+	if = {
+		limit = {
+			owner = {
+				has_law = law_type:law_theocracy
+			}
+		}
+		add = 0.007
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_7
+			}
+		}
+		add = 0.007
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_6
+			}
+		}
+		add = 0.006
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_5
+			}
+		}
+		add = 0.005
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_4
+			}
+		}
+		add = 0.004
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_3
+			}
+		}
+		add = 0.003
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_2
+			}
+		}
+		add = 0.002
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_1
+			}
+		}
+		add = 0.001
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = age_2_bonus_6
+			}
+		}
+		add = 0.001
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = ethnocentrism_idea_2_mdf
+			}
+		}
+		add = 0.0025
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = wittenberg_hs_mdf
+			}
+		}
+		add = 0.0015
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = catholic_pasive_mdf
+			}
+		}
+		add = 0.002
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = orthodox_aspect_7_mdf
+			}
+		}
+		add = 0.0025
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = coptic_aspect_4_mdf
+			}
+		}
+		add = 0.0025
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = shia_aspect_3_mdf
+			}
+		}
+		add = 0.0033
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = hindu_aspect_6_mdf
+			}
+		}
+		add = 0.0025
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = animist_aspect_6_mdf
+			}
+		}
+		add = 0.0025
+	}
+}
+
+missionary_power_10m = {
+	value = 0.005	#Base Power
+	if = {
+		limit = {
+			owner = {
+				has_variable = ethnocentrism_idea_5_var
+			}
+		}
+		add = 0.007
+	}
+	if = {
+		limit = {
+			owner = {
+				has_law = law_type:law_religious_schools
+			}
+		}
+		add = 0.007
+	}
+	if = {
+		limit = {
+			owner = {
+				has_law = law_type:law_state_religion
+			}
+		}
+		add = 0.007
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_law = law_type:law_freedom_of_conscience
+			}
+		}
+		add = 0.003
+	}
+	if = {
+		limit = {
+			owner = {
+				has_law = law_type:law_theocracy
+			}
+		}
+		add = 0.007
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_7
+			}
+		}
+		add = 0.007
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_6
+			}
+		}
+		add = 0.006
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_5
+			}
+		}
+		add = 0.005
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_4
+			}
+		}
+		add = 0.004
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_3
+			}
+		}
+		add = 0.003
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_2
+			}
+		}
+		add = 0.002
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_1
+			}
+		}
+		add = 0.001
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = age_2_bonus_6
+			}
+		}
+		add = 0.001
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = ethnocentrism_idea_2_mdf
+			}
+		}
+		add = 0.0025
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = wittenberg_hs_mdf
+			}
+		}
+		add = 0.0015
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = catholic_pasive_mdf
+			}
+		}
+		add = 0.002
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = orthodox_aspect_7_mdf
+			}
+		}
+		add = 0.0025
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = coptic_aspect_4_mdf
+			}
+		}
+		add = 0.0025
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = shia_aspect_3_mdf
+			}
+		}
+		add = 0.0033
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = hindu_aspect_6_mdf
+			}
+		}
+		add = 0.0025
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = animist_aspect_6_mdf
+			}
+		}
+		add = 0.0025
+	}
+}
+
+missionary_power_10mplus = {
+	value = 0.0025	#Base Power
+	if = {
+		limit = {
+			owner = {
+				has_variable = ethnocentrism_idea_5_var
+			}
+		}
+		add = 0.007
+	}
+	if = {
+		limit = {
+			owner = {
+				has_law = law_type:law_religious_schools
+			}
+		}
+		add = 0.007
+	}
+	if = {
+		limit = {
+			owner = {
+				has_law = law_type:law_state_religion
+			}
+		}
+		add = 0.007
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_law = law_type:law_freedom_of_conscience
+			}
+		}
+		add = 0.003
+	}
+	if = {
+		limit = {
+			owner = {
+				has_law = law_type:law_theocracy
+			}
+		}
+		add = 0.007
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_7
+			}
+		}
+		add = 0.007
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_6
+			}
+		}
+		add = 0.006
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_5
+			}
+		}
+		add = 0.005
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_4
+			}
+		}
+		add = 0.004
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_3
+			}
+		}
+		add = 0.003
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_2
+			}
+		}
+		add = 0.002
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_1
+			}
+		}
+		add = 0.001
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = age_2_bonus_6
+			}
+		}
+		add = 0.001
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = ethnocentrism_idea_2_mdf
+			}
+		}
+		add = 0.0025
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = wittenberg_hs_mdf
+			}
+		}
+		add = 0.0015
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = catholic_pasive_mdf
+			}
+		}
+		add = 0.002
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = orthodox_aspect_7_mdf
+			}
+		}
+		add = 0.0025
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = coptic_aspect_4_mdf
+			}
+		}
+		add = 0.0025
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = shia_aspect_3_mdf
+			}
+		}
+		add = 0.0033
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = hindu_aspect_6_mdf
+			}
+		}
+		add = 0.0025
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = animist_aspect_6_mdf
+			}
+		}
+		add = 0.0025
+	}
+}
+
+active_missionary_value = {
+	value = 0
+	every_scope_state = {
+		limit = {
+			has_modifier = ve_missionary_mdf
+		}
+		add = 1
+	}
+}
+
+active_cultural_missionary_value = {
+	value = 0
+	every_scope_state = {
+		limit = {
+			has_modifier = ve_diffusionist_mdf
+		}
+		add = 1
+	}
+}
+
+cultural_missionary_power_250k = {
+	value = 0.05	#Base Power
+	if = {
+		limit = {
+			owner = {
+				has_variable = ethnocentrism_idea_5_var
+			}
+		}
+		add = 0.007
+	}
+	if = {
+		limit = {
+			owner = {
+				has_law = law_type:law_public_schools
+			}
+		}
+		add = 0.007
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = ethnocentrism_idea_2_mdf
+			}
+		}
+		add = 0.0025
+	}
+	if = {
+		limit = {
+			owner = {
+				has_law = law_type:law_ethnostate
+			}
+		}
+		add = 0.009
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_law = law_type:law_national_supremacy
+			}
+		}
+		add = 0.007
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_law = law_type:law_racial_segregation
+			}
+		}
+		add = 0.005
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_law = law_type:law_cultural_exclusion
+			}
+		}
+		add = 0.003
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_7
+			}
+		}
+		add = 0.007
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_6
+			}
+		}
+		add = 0.006
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_5
+			}
+		}
+		add = 0.005
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_4
+			}
+		}
+		add = 0.004
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_3
+			}
+		}
+		add = 0.003
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_2
+			}
+		}
+		add = 0.002
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_1
+			}
+		}
+		add = 0.001
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = animist_aspect_6_mdf
+			}
+		}
+		add = 0.0025
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = protestant_aspect_8_mdf
+			}
+		}
+		add = 0.0025
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = coptic_aspect_8_mdf
+			}
+		}
+		add = 0.0025
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = age_2_bonus_6
+			}
+		}
+		add = 0.001
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = age_2_bonus_11
+			}
+		}
+		add = 0.0025
+	}
+}
+
+cultural_missionary_power_500k = {
+	value = 0.03	#Base Power
+	if = {
+		limit = {
+			owner = {
+				has_variable = ethnocentrism_idea_5_var
+			}
+		}
+		add = 0.007
+	}
+	if = {
+		limit = {
+			owner = {
+				has_law = law_type:law_public_schools
+			}
+		}
+		add = 0.007
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = ethnocentrism_idea_2_mdf
+			}
+		}
+		add = 0.0025
+	}
+	if = {
+		limit = {
+			owner = {
+				has_law = law_type:law_ethnostate
+			}
+		}
+		add = 0.009
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_law = law_type:law_national_supremacy
+			}
+		}
+		add = 0.007
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_law = law_type:law_racial_segregation
+			}
+		}
+		add = 0.005
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_law = law_type:law_cultural_exclusion
+			}
+		}
+		add = 0.003
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_7
+			}
+		}
+		add = 0.007
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_6
+			}
+		}
+		add = 0.006
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_5
+			}
+		}
+		add = 0.005
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_4
+			}
+		}
+		add = 0.004
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_3
+			}
+		}
+		add = 0.003
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_2
+			}
+		}
+		add = 0.002
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_1
+			}
+		}
+		add = 0.001
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = animist_aspect_6_mdf
+			}
+		}
+		add = 0.0025
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = protestant_aspect_8_mdf
+			}
+		}
+		add = 0.0025
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = coptic_aspect_8_mdf
+			}
+		}
+		add = 0.0025
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = age_2_bonus_6
+			}
+		}
+		add = 0.001
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = age_2_bonus_11
+			}
+		}
+		add = 0.0025
+	}
+}
+
+cultural_missionary_power_750k = {
+	value = 0.02	#Base Power
+	if = {
+		limit = {
+			owner = {
+				has_variable = ethnocentrism_idea_5_var
+			}
+		}
+		add = 0.007
+	}
+	if = {
+		limit = {
+			owner = {
+				has_law = law_type:law_public_schools
+			}
+		}
+		add = 0.007
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = ethnocentrism_idea_2_mdf
+			}
+		}
+		add = 0.0025
+	}
+	if = {
+		limit = {
+			owner = {
+				has_law = law_type:law_ethnostate
+			}
+		}
+		add = 0.009
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_law = law_type:law_national_supremacy
+			}
+		}
+		add = 0.007
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_law = law_type:law_racial_segregation
+			}
+		}
+		add = 0.005
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_law = law_type:law_cultural_exclusion
+			}
+		}
+		add = 0.003
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_7
+			}
+		}
+		add = 0.007
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_6
+			}
+		}
+		add = 0.006
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_5
+			}
+		}
+		add = 0.005
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_4
+			}
+		}
+		add = 0.004
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_3
+			}
+		}
+		add = 0.003
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_2
+			}
+		}
+		add = 0.002
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_1
+			}
+		}
+		add = 0.001
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = animist_aspect_6_mdf
+			}
+		}
+		add = 0.0025
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = protestant_aspect_8_mdf
+			}
+		}
+		add = 0.0025
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = coptic_aspect_8_mdf
+			}
+		}
+		add = 0.0025
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = age_2_bonus_6
+			}
+		}
+		add = 0.001
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = age_2_bonus_11
+			}
+		}
+		add = 0.0025
+	}
+}
+
+cultural_missionary_power_1m = {
+	value = 0.01	#Base Power
+	if = {
+		limit = {
+			owner = {
+				has_variable = ethnocentrism_idea_5_var
+			}
+		}
+		add = 0.007
+	}
+	if = {
+		limit = {
+			owner = {
+				has_law = law_type:law_public_schools
+			}
+		}
+		add = 0.007
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = ethnocentrism_idea_2_mdf
+			}
+		}
+		add = 0.0025
+	}
+	if = {
+		limit = {
+			owner = {
+				has_law = law_type:law_ethnostate
+			}
+		}
+		add = 0.009
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_law = law_type:law_national_supremacy
+			}
+		}
+		add = 0.007
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_law = law_type:law_racial_segregation
+			}
+		}
+		add = 0.005
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_law = law_type:law_cultural_exclusion
+			}
+		}
+		add = 0.003
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_7
+			}
+		}
+		add = 0.007
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_6
+			}
+		}
+		add = 0.006
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_5
+			}
+		}
+		add = 0.005
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_4
+			}
+		}
+		add = 0.004
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_3
+			}
+		}
+		add = 0.003
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_2
+			}
+		}
+		add = 0.002
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_1
+			}
+		}
+		add = 0.001
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = animist_aspect_6_mdf
+			}
+		}
+		add = 0.0025
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = protestant_aspect_8_mdf
+			}
+		}
+		add = 0.0025
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = coptic_aspect_8_mdf
+			}
+		}
+		add = 0.0025
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = age_2_bonus_6
+			}
+		}
+		add = 0.001
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = age_2_bonus_11
+			}
+		}
+		add = 0.0025
+	}
+}
+
+cultural_missionary_power_5m = {
+	value = 0.007	#Base Power
+	if = {
+		limit = {
+			owner = {
+				has_variable = ethnocentrism_idea_5_var
+			}
+		}
+		add = 0.007
+	}
+	if = {
+		limit = {
+			owner = {
+				has_law = law_type:law_public_schools
+			}
+		}
+		add = 0.007
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = ethnocentrism_idea_2_mdf
+			}
+		}
+		add = 0.0025
+	}
+	if = {
+		limit = {
+			owner = {
+				has_law = law_type:law_ethnostate
+			}
+		}
+		add = 0.009
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_law = law_type:law_national_supremacy
+			}
+		}
+		add = 0.007
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_law = law_type:law_racial_segregation
+			}
+		}
+		add = 0.005
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_law = law_type:law_cultural_exclusion
+			}
+		}
+		add = 0.003
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_7
+			}
+		}
+		add = 0.007
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_6
+			}
+		}
+		add = 0.006
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_5
+			}
+		}
+		add = 0.005
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_4
+			}
+		}
+		add = 0.004
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_3
+			}
+		}
+		add = 0.003
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_2
+			}
+		}
+		add = 0.002
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_1
+			}
+		}
+		add = 0.001
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = animist_aspect_6_mdf
+			}
+		}
+		add = 0.0025
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = protestant_aspect_8_mdf
+			}
+		}
+		add = 0.0025
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = coptic_aspect_8_mdf
+			}
+		}
+		add = 0.0025
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = age_2_bonus_6
+			}
+		}
+		add = 0.001
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = age_2_bonus_11
+			}
+		}
+		add = 0.0025
+	}
+}
+
+cultural_missionary_power_10m = {
+	value = 0.005	#Base Power
+	if = {
+		limit = {
+			owner = {
+				has_variable = ethnocentrism_idea_5_var
+			}
+		}
+		add = 0.007
+	}
+	if = {
+		limit = {
+			owner = {
+				has_law = law_type:law_public_schools
+			}
+		}
+		add = 0.007
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = ethnocentrism_idea_2_mdf
+			}
+		}
+		add = 0.0025
+	}
+	if = {
+		limit = {
+			owner = {
+				has_law = law_type:law_ethnostate
+			}
+		}
+		add = 0.009
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_law = law_type:law_national_supremacy
+			}
+		}
+		add = 0.007
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_law = law_type:law_racial_segregation
+			}
+		}
+		add = 0.005
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_law = law_type:law_cultural_exclusion
+			}
+		}
+		add = 0.003
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_7
+			}
+		}
+		add = 0.007
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_6
+			}
+		}
+		add = 0.006
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_5
+			}
+		}
+		add = 0.005
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_4
+			}
+		}
+		add = 0.004
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_3
+			}
+		}
+		add = 0.003
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_2
+			}
+		}
+		add = 0.002
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_1
+			}
+		}
+		add = 0.001
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = animist_aspect_6_mdf
+			}
+		}
+		add = 0.0025
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = protestant_aspect_8_mdf
+			}
+		}
+		add = 0.0025
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = coptic_aspect_8_mdf
+			}
+		}
+		add = 0.0025
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = age_2_bonus_6
+			}
+		}
+		add = 0.001
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = age_2_bonus_11
+			}
+		}
+		add = 0.0025
+	}
+}
+
+cultural_missionary_power_10mplus = {
+	value = 0.0025	#Base Power
+	if = {
+		limit = {
+			owner = {
+				has_variable = ethnocentrism_idea_5_var
+			}
+		}
+		add = 0.007
+	}
+	if = {
+		limit = {
+			owner = {
+				has_law = law_type:law_public_schools
+			}
+		}
+		add = 0.007
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = ethnocentrism_idea_2_mdf
+			}
+		}
+		add = 0.0025
+	}
+	if = {
+		limit = {
+			owner = {
+				has_law = law_type:law_ethnostate
+			}
+		}
+		add = 0.009
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_law = law_type:law_national_supremacy
+			}
+		}
+		add = 0.007
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_law = law_type:law_racial_segregation
+			}
+		}
+		add = 0.005
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_law = law_type:law_cultural_exclusion
+			}
+		}
+		add = 0.003
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_7
+			}
+		}
+		add = 0.007
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_6
+			}
+		}
+		add = 0.006
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_5
+			}
+		}
+		add = 0.005
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_4
+			}
+		}
+		add = 0.004
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_3
+			}
+		}
+		add = 0.003
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_2
+			}
+		}
+		add = 0.002
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_modifier = bar_supremacy_mdf_1
+			}
+		}
+		add = 0.001
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = animist_aspect_6_mdf
+			}
+		}
+		add = 0.0025
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = protestant_aspect_8_mdf
+			}
+		}
+		add = 0.0025
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = coptic_aspect_8_mdf
+			}
+		}
+		add = 0.0025
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = age_2_bonus_6
+			}
+		}
+		add = 0.001
+	}
+	if = {
+		limit = {
+			owner = {
+				has_modifier = age_2_bonus_11
+			}
+		}
+		add = 0.0025
+	}
+}
+
+example_svalue = {
+	base = 0
+	if = {
+		limit = {
+			owner = {
+				has_variable = text_var
+			}
+		}
+		add = 10000
+	}
+}

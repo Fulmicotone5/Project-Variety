@@ -1,0 +1,179 @@
+namespace = economic_flavor
+economic_flavor.1 = {
+	type = country_event
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/military_parade"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	title = economic_flavor.1.t
+	desc = economic_flavor.1.desc
+	duration = 3
+	cooldown = {
+		months = normal_modifier_time
+	}
+	trigger = {
+		has_variable = can_go_economic
+		has_modifier = economic_idea_7_mdf
+		NOT = {
+			has_modifier = ve_economy_improvements
+		}
+	}
+	option = {
+		name = economic_flavor.1.a
+		default_option = yes
+		add_modifier = {
+			name = ve_economy_improvements
+			months = normal_modifier_time
+		}
+	}
+}
+
+economic_flavor.2 = {
+	type = country_event
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/military_parade"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	title = economic_flavor.1.t
+	desc = economic_flavor.1.desc
+	duration = 3
+	cooldown = {
+		months = normal_modifier_time
+	}
+	trigger = {
+		has_variable = can_go_economic
+		NOT = {
+			has_modifier = ve_inefficient_production
+		}
+	}
+	option = {
+		name = economic_flavor.1.a
+		default_option = yes
+		capital = {
+			add_modifier = {
+				name = ve_inefficient_production
+				months = normal_modifier_time
+			}
+		}
+	}
+}
+
+economic_flavor.3 = {
+	type = country_event
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/military_parade"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	title = economic_flavor.1.t
+	desc = economic_flavor.1.desc
+	duration = 3
+	cooldown = {
+		months = normal_modifier_time
+	}
+	trigger = {
+		has_variable = can_go_economic
+		NAND = {
+			has_modifier = ve_successful_bureaucracy
+			has_modifier = ve_corruption
+		}
+	}
+	option = {
+		name = economic_flavor.1.a
+		default_option = yes
+		add_modifier = {
+			name = ve_successful_bureaucracy
+			months = normal_modifier_time
+		}
+	}
+}
+
+economic_flavor.4 = {
+	type = country_event
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/military_parade"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	title = economic_flavor.1.t
+	desc = economic_flavor.1.desc
+	duration = 3
+	cooldown = {
+		months = normal_modifier_time
+	}
+	trigger = {
+		has_variable = can_go_economic
+		NAND = {
+			has_modifier = ve_corruption
+			has_modifier = ve_successful_bureaucracy
+		}
+	}
+	option = {
+		name = economic_flavor.1.a
+		default_option = yes
+		add_modifier = {
+			name = ve_corruption
+			months = normal_modifier_time
+		}
+	}
+}
+
+economic_flavor.5 = {
+	type = country_event
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/military_parade"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	title = economic_flavor.1.t
+	desc = economic_flavor.1.desc
+	placement = scope:ve_eco_low_market_access
+	duration = 3
+	cooldown = {
+		months = normal_modifier_time
+	}
+	trigger = {
+		has_variable = can_go_economic
+		has_technology_researched = railways
+		NOT = {
+			has_modifier = ve_corruption
+		}
+	}
+	immediate = {
+		random_scope_state = {
+			limit = {
+				market_access > 0.6
+			}
+			save_scope_as = ve_eco_low_market_access
+		}
+	}
+	option = {
+		name = economic_flavor.1.a
+		default_option = yes
+		add_treasury = 10000
+		scope:ve_eco_low_market_access = {
+			create_building = {
+				building = "building_railway"
+				level = 3
+			}
+			add_loyalists = {
+				value = 0.25
+			}
+		}
+	}
+	option = {
+		name = economic_flavor.1.a
+		scope:ve_eco_low_market_access = {
+			add_radicals = {
+				value = 0.25
+			}
+		}
+	}
+}

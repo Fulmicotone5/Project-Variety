@@ -1,0 +1,1177 @@
+ve_monthly_points = {
+	change_variable = {
+		name = piety_bar_point
+		add = monthly_piety_points
+	}
+	change_variable = {
+		name = idea_point_pool
+		add = monthly_idea_points
+	}
+	change_variable = {
+		name = culture_reform_point
+		add = monthly_culture_reform_point
+	}
+	change_variable = {
+		name = ve_splender_points
+		add = monthly_splender_points
+	}
+}
+
+ve_holy_site_effects = {
+	if = {
+		limit = {
+			country_has_state_religion = rel:catholic
+		}
+		if = {
+			limit = {
+				owns_entire_state_region = STATE_LAZIO
+				NOT = {
+					has_modifier = roma_hs_mdf
+				}
+			}
+			add_modifier = {
+				name = roma_hs_mdf
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					owns_entire_state_region = STATE_LAZIO
+				}
+			}
+			if = {
+				limit = {
+					has_modifier = roma_hs_mdf
+				}
+				remove_modifier = roma_hs_mdf
+			}
+		}
+		if = {
+			limit = {
+				owns_entire_state_region = STATE_GALICIA
+				NOT = {
+					has_modifier = santiago_hs_mdf
+				}
+			}
+			add_modifier = {
+				name = santiago_hs_mdf
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					owns_entire_state_region = STATE_GALICIA
+				}
+			}
+			if = {
+				limit = {
+					has_modifier = santiago_hs_mdf
+				}
+				remove_modifier = santiago_hs_mdf
+			}
+		}
+		if = {
+			limit = {
+				owns_entire_state_region = STATE_ILE_DE_FRANCE
+				NOT = {
+					has_modifier = notre_dame_hs_mdf
+				}
+			}
+			add_modifier = {
+				name = notre_dame_hs_mdf
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					owns_entire_state_region = STATE_ILE_DE_FRANCE
+				}
+			}
+			if = {
+				limit = {
+					has_modifier = notre_dame_hs_mdf
+				}
+				remove_modifier = notre_dame_hs_mdf
+			}
+		}
+		if = {
+			limit = {
+				owns_entire_state_region = STATE_PALESTINE
+				NOT = {
+					has_modifier = jerusalem_hs_mdf
+				}
+			}
+			add_modifier = {
+				name = jerusalem_hs_mdf
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					owns_entire_state_region = STATE_PALESTINE
+				}
+			}
+			if = {
+				limit = {
+					has_modifier = jerusalem_hs_mdf
+				}
+				remove_modifier = jerusalem_hs_mdf
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			country_has_state_religion = rel:protestant
+		}
+		if = {
+			limit = {
+				owns_entire_state_region = STATE_ANHALT
+				NOT = {
+					has_modifier = wittenberg_hs_mdf
+				}
+			}
+			add_modifier = {
+				name = wittenberg_hs_mdf
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					owns_entire_state_region = STATE_ANHALT
+				}
+			}
+			if = {
+				limit = {
+					has_modifier = wittenberg_hs_mdf
+				}
+				remove_modifier = wittenberg_hs_mdf
+			}
+		}
+		if = {
+			limit = {
+				owns_entire_state_region = STATE_BOHEMIA
+				NOT = {
+					has_modifier = prag_hs_mdf
+				}
+			}
+			add_modifier = {
+				name = prag_hs_mdf
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					owns_entire_state_region = STATE_BOHEMIA
+				}
+			}
+			if = {
+				limit = {
+					has_modifier = prag_hs_mdf
+				}
+				remove_modifier = prag_hs_mdf
+			}
+		}
+		if = {
+			limit = {
+				owns_entire_state_region = STATE_HOME_COUNTIES
+				NOT = {
+					has_modifier = canterbury_hs_mdf
+				}
+			}
+			add_modifier = {
+				name = canterbury_hs_mdf
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					owns_entire_state_region = STATE_HOME_COUNTIES
+				}
+			}
+			if = {
+				limit = {
+					has_modifier = canterbury_hs_mdf
+				}
+				remove_modifier = canterbury_hs_mdf
+			}
+		}
+		if = {
+			limit = {
+				owns_entire_state_region = STATE_PALESTINE
+				NOT = {
+					has_modifier = jerusalem_hs_mdf
+				}
+			}
+			add_modifier = {
+				name = jerusalem_hs_mdf
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					owns_entire_state_region = STATE_PALESTINE
+				}
+			}
+			if = {
+				limit = {
+					has_modifier = jerusalem_hs_mdf
+				}
+				remove_modifier = jerusalem_hs_mdf
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			country_has_state_religion = rel:orthodox
+		}
+		if = {
+			limit = {
+				owns_entire_state_region = STATE_LAZIO
+				NOT = {
+					has_modifier = roma_hs_mdf
+				}
+			}
+			add_modifier = {
+				name = roma_hs_mdf
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					owns_entire_state_region = STATE_LAZIO
+				}
+			}
+			if = {
+				limit = {
+					has_modifier = roma_hs_mdf
+				}
+				remove_modifier = roma_hs_mdf
+			}
+		}
+		if = {
+			limit = {
+				owns_entire_state_region = STATE_EASTERN_THRACE
+				NOT = {
+					has_modifier = constantinople_hs_mdf
+				}
+			}
+			add_modifier = {
+				name = constantinople_hs_mdf
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					owns_entire_state_region = STATE_EASTERN_THRACE
+				}
+			}
+			if = {
+				limit = {
+					has_modifier = constantinople_hs_mdf
+				}
+				remove_modifier = constantinople_hs_mdf
+			}
+		}
+		if = {
+			limit = {
+				owns_entire_state_region = STATE_HEDJAZ
+				NOT = {
+					has_modifier = hedjaz_hs_mdf
+				}
+			}
+			add_modifier = {
+				name = hedjaz_hs_mdf
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					owns_entire_state_region = STATE_HEDJAZ
+				}
+			}
+			if = {
+				limit = {
+					has_modifier = hedjaz_hs_mdf
+				}
+				remove_modifier = hedjaz_hs_mdf
+			}
+		}
+		if = {
+			limit = {
+				owns_entire_state_region = STATE_LOWER_EGYPT
+				NOT = {
+					has_modifier = alexandria_hs_mdf
+				}
+			}
+			add_modifier = {
+				name = alexandria_hs_mdf
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					owns_entire_state_region = STATE_LOWER_EGYPT
+				}
+			}
+			if = {
+				limit = {
+					has_modifier = alexandria_hs_mdf
+				}
+				remove_modifier = alexandria_hs_mdf
+			}
+		}
+		if = {
+			limit = {
+				owns_entire_state_region = STATE_ALEPPO
+				NOT = {
+					has_modifier = antioch_hs_mdf
+				}
+			}
+			add_modifier = {
+				name = antioch_hs_mdf
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					owns_entire_state_region = STATE_ALEPPO
+				}
+			}
+			if = {
+				limit = {
+					has_modifier = antioch_hs_mdf
+				}
+				remove_modifier = antioch_hs_mdf
+			}
+		}
+		if = {
+			limit = {
+				owns_entire_state_region = STATE_PALESTINE
+				NOT = {
+					has_modifier = jerusalem_hs_mdf
+				}
+			}
+			add_modifier = {
+				name = jerusalem_hs_mdf
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					owns_entire_state_region = STATE_PALESTINE
+				}
+			}
+			if = {
+				limit = {
+					has_modifier = jerusalem_hs_mdf
+				}
+				remove_modifier = jerusalem_hs_mdf
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			country_has_state_religion = rel:oriental_orthodox
+		}
+		if = {
+			limit = {
+				owns_entire_state_region = STATE_ARMENIA
+				NOT = {
+					has_modifier = yerevan_hs_mdf
+				}
+			}
+			add_modifier = {
+				name = yerevan_hs_mdf
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					owns_entire_state_region = STATE_ARMENIA
+				}
+			}
+			if = {
+				limit = {
+					has_modifier = yerevan_hs_mdf
+				}
+				remove_modifier = yerevan_hs_mdf
+			}
+		}
+		if = {
+			limit = {
+				owns_entire_state_region = STATE_DONGOLA
+				NOT = {
+					has_modifier = aksum_hs_mdf
+				}
+			}
+			add_modifier = {
+				name = aksum_hs_mdf
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					owns_entire_state_region = STATE_DONGOLA
+				}
+			}
+			if = {
+				limit = {
+					has_modifier = aksum_hs_mdf
+				}
+				remove_modifier = aksum_hs_mdf
+			}
+		}
+		if = {
+			limit = {
+				owns_entire_state_region = STATE_LOWER_EGYPT
+				NOT = {
+					has_modifier = yerevan_hs_mdf
+				}
+			}
+			add_modifier = {
+				name = yerevan_hs_mdf
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					owns_entire_state_region = STATE_LOWER_EGYPT
+				}
+			}
+			if = {
+				limit = {
+					has_modifier = yerevan_hs_mdf
+				}
+				remove_modifier = yerevan_hs_mdf
+			}
+		}
+		if = {
+			limit = {
+				owns_entire_state_region = STATE_ALEPPO
+				NOT = {
+					has_modifier = antioch_hs_mdf
+				}
+			}
+			add_modifier = {
+				name = antioch_hs_mdf
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					owns_entire_state_region = STATE_ALEPPO
+				}
+			}
+			if = {
+				limit = {
+					has_modifier = antioch_hs_mdf
+				}
+				remove_modifier = antioch_hs_mdf
+			}
+		}
+		if = {
+			limit = {
+				owns_entire_state_region = STATE_PALESTINE
+				NOT = {
+					has_modifier = jerusalem_hs_mdf
+				}
+			}
+			add_modifier = {
+				name = jerusalem_hs_mdf
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					owns_entire_state_region = STATE_PALESTINE
+				}
+			}
+			if = {
+				limit = {
+					has_modifier = jerusalem_hs_mdf
+				}
+				remove_modifier = jerusalem_hs_mdf
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			country_has_state_religion = rel:sunni
+		}
+		if = {
+			limit = {
+				owns_entire_state_region = STATE_SYRIA
+				NOT = {
+					has_modifier = damascus_hs_mdf
+				}
+			}
+			add_modifier = {
+				name = damascus_hs_mdf
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					owns_entire_state_region = STATE_SYRIA
+				}
+			}
+			if = {
+				limit = {
+					has_modifier = damascus_hs_mdf
+				}
+				remove_modifier = damascus_hs_mdf
+			}
+		}
+		if = {
+			limit = {
+				owns_entire_state_region = STATE_EASTERN_THRACE
+				NOT = {
+					has_modifier = constantinople_hs_mdf
+				}
+			}
+			add_modifier = {
+				name = constantinople_hs_mdf
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					owns_entire_state_region = STATE_EASTERN_THRACE
+				}
+			}
+			if = {
+				limit = {
+					has_modifier = constantinople_hs_mdf
+				}
+				remove_modifier = constantinople_hs_mdf
+			}
+		}
+		if = {
+			limit = {
+				owns_entire_state_region = STATE_BAGHDAD
+				NOT = {
+					has_modifier = baghdad_hs_mdf
+				}
+			}
+			add_modifier = {
+				name = baghdad_hs_mdf
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					owns_entire_state_region = STATE_BAGHDAD
+				}
+			}
+			if = {
+				limit = {
+					has_modifier = baghdad_hs_mdf
+				}
+				remove_modifier = baghdad_hs_mdf
+			}
+		}
+		if = {
+			limit = {
+				owns_entire_state_region = STATE_PALESTINE
+				NOT = {
+					has_modifier = jerusalem_hs_mdf
+				}
+			}
+			add_modifier = {
+				name = jerusalem_hs_mdf
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					owns_entire_state_region = STATE_PALESTINE
+				}
+			}
+			if = {
+				limit = {
+					has_modifier = jerusalem_hs_mdf
+				}
+				remove_modifier = jerusalem_hs_mdf
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			country_has_state_religion = rel:shiite
+		}
+		if = {
+			limit = {
+				owns_entire_state_region = STATE_SYRIA
+				NOT = {
+					has_modifier = damascus_hs_mdf
+				}
+			}
+			add_modifier = {
+				name = damascus_hs_mdf
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					owns_entire_state_region = STATE_SYRIA
+				}
+			}
+			if = {
+				limit = {
+					has_modifier = damascus_hs_mdf
+				}
+				remove_modifier = damascus_hs_mdf
+			}
+		}
+		if = {
+			limit = {
+				owns_entire_state_region = STATE_ISFAHAN
+				NOT = {
+					has_modifier = maidane_naqshe_jahan_hs_mdf
+				}
+			}
+			add_modifier = {
+				name = maidane_naqshe_jahan_hs_mdf
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					owns_entire_state_region = STATE_ISFAHAN
+				}
+			}
+			if = {
+				limit = {
+					has_modifier = maidane_naqshe_jahan_hs_mdf
+				}
+				remove_modifier = maidane_naqshe_jahan_hs_mdf
+			}
+		}
+		if = {
+			limit = {
+				owns_entire_state_region = STATE_BAGHDAD
+				NOT = {
+					has_modifier = baghdad_hs_mdf
+				}
+			}
+			add_modifier = {
+				name = baghdad_hs_mdf
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					owns_entire_state_region = STATE_BAGHDAD
+				}
+			}
+			if = {
+				limit = {
+					has_modifier = baghdad_hs_mdf
+				}
+				remove_modifier = baghdad_hs_mdf
+			}
+		}
+		if = {
+			limit = {
+				owns_entire_state_region = STATE_PALESTINE
+				NOT = {
+					has_modifier = jerusalem_hs_mdf
+				}
+			}
+			add_modifier = {
+				name = jerusalem_hs_mdf
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					owns_entire_state_region = STATE_PALESTINE
+				}
+			}
+			if = {
+				limit = {
+					has_modifier = jerusalem_hs_mdf
+				}
+				remove_modifier = jerusalem_hs_mdf
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			country_has_state_religion = rel:jewish
+		}
+		if = {
+			limit = {
+				owns_entire_state_region = STATE_SINAI
+				NOT = {
+					has_modifier = sinai_hs_mdf
+				}
+			}
+			add_modifier = {
+				name = sinai_hs_mdf
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					owns_entire_state_region = STATE_SINAI
+				}
+			}
+			if = {
+				limit = {
+					has_modifier = sinai_hs_mdf
+				}
+				remove_modifier = sinai_hs_mdf
+			}
+		}
+		if = {
+			limit = {
+				owns_entire_state_region = STATE_LOWER_EGYPT
+				NOT = {
+					has_modifier = alexandria_hs_mdf
+				}
+			}
+			add_modifier = {
+				name = alexandria_hs_mdf
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					owns_entire_state_region = STATE_LOWER_EGYPT
+				}
+			}
+			if = {
+				limit = {
+					has_modifier = alexandria_hs_mdf
+				}
+				remove_modifier = alexandria_hs_mdf
+			}
+		}
+		if = {
+			limit = {
+				owns_entire_state_region = STATE_GONDER
+				NOT = {
+					has_modifier = sinai_hs_msemien_hs_mdfdf
+				}
+			}
+			add_modifier = {
+				name = sinai_hs_msemien_hs_mdfdf
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					owns_entire_state_region = STATE_GONDER
+				}
+			}
+			if = {
+				limit = {
+					has_modifier = semien_hs_mdf
+				}
+				remove_modifier = semien_hs_mdf
+			}
+		}
+		if = {
+			limit = {
+				owns_entire_state_region = STATE_PALESTINE
+				NOT = {
+					has_modifier = jerusalem_hs_mdf
+				}
+			}
+			add_modifier = {
+				name = jerusalem_hs_mdf
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					owns_entire_state_region = STATE_PALESTINE
+				}
+			}
+			if = {
+				limit = {
+					has_modifier = jerusalem_hs_mdf
+				}
+				remove_modifier = jerusalem_hs_mdf
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				country_has_state_religion = rel:mahayana
+				country_has_state_religion = rel:gelugpa
+				country_has_state_religion = rel:theravada
+				country_has_state_religion = rel:shinto
+				country_has_state_religion = rel:confucian
+			}
+		}
+		if = {
+			limit = {
+				owns_entire_state_region = STATE_CENTRAL_INDIA
+				NOT = {
+					has_modifier = sanchi_hs_mdf
+				}
+			}
+			add_modifier = {
+				name = sanchi_hs_mdf
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					owns_entire_state_region = STATE_CENTRAL_INDIA
+				}
+			}
+			if = {
+				limit = {
+					has_modifier = sanchi_hs_mdf
+				}
+				remove_modifier = sanchi_hs_mdf
+			}
+		}
+		if = {
+			limit = {
+				owns_entire_state_region = STATE_SHANDONG
+				NOT = {
+					has_modifier = yanzhou_hs_mdf
+				}
+			}
+			add_modifier = {
+				name = yanzhou_hs_mdf
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					owns_entire_state_region = STATE_SHANDONG
+				}
+			}
+			if = {
+				limit = {
+					has_modifier = yanzhou_hs_mdf
+				}
+				remove_modifier = yanzhou_hs_mdf
+			}
+		}
+		if = {
+			limit = {
+				owns_entire_state_region = STATE_BURMA
+				NOT = {
+					has_modifier = pagan_hs_mdf
+				}
+			}
+			add_modifier = {
+				name = pagan_hs_mdf
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					owns_entire_state_region = STATE_BURMA
+				}
+			}
+			if = {
+				limit = {
+					has_modifier = pagan_hs_mdf
+				}
+				remove_modifier = pagan_hs_mdf
+			}
+		}
+		if = {
+			limit = {
+				owns_entire_state_region = STATE_KANSAI
+				NOT = {
+					has_modifier = ise_grand_shrine_hs_mdf
+				}
+			}
+			add_modifier = {
+				name = ise_grand_shrine_hs_mdf
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					owns_entire_state_region = STATE_KANSAI
+				}
+			}
+			if = {
+				limit = {
+					has_modifier = ise_grand_shrine_hs_mdf
+				}
+				remove_modifier = ise_grand_shrine_hs_mdf
+			}
+		}
+		if = {
+			limit = {
+				owns_entire_state_region = STATE_HIMALAYAS
+				NOT = {
+					has_modifier = lumbini_hs_mdf
+				}
+			}
+			add_modifier = {
+				name = lumbini_hs_mdf
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					owns_entire_state_region = STATE_HIMALAYAS
+				}
+			}
+			if = {
+				limit = {
+					has_modifier = lumbini_hs_mdf
+				}
+				remove_modifier = lumbini_hs_mdf
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			country_has_state_religion = rel:hindu
+		}
+		if = {
+			limit = {
+				owns_entire_state_region = STATE_RAJPUTANA
+				NOT = {
+					has_modifier = mathura_hs_mdf
+				}
+			}
+			add_modifier = {
+				name = mathura_hs_mdf
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					owns_entire_state_region = STATE_RAJPUTANA
+				}
+			}
+			if = {
+				limit = {
+					has_modifier = mathura_hs_mdf
+				}
+				remove_modifier = mathura_hs_mdf
+			}
+		}
+		if = {
+			limit = {
+				owns_entire_state_region = STATE_BIHAR
+				NOT = {
+					has_modifier = varanasi_hs_mdfv
+				}
+			}
+			add_modifier = {
+				name = varanasi_hs_mdf
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					owns_entire_state_region = STATE_BIHAR
+				}
+			}
+			if = {
+				limit = {
+					has_modifier = varanasi_hs_mdf
+				}
+				remove_modifier = varanasi_hs_mdf
+			}
+		}
+		if = {
+			limit = {
+				owns_entire_state_region = STATE_MADRAS
+				NOT = {
+					has_modifier = great_living_chola_temples_hs_mdf
+				}
+			}
+			add_modifier = {
+				name = great_living_chola_temples_hs_mdf
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					owns_entire_state_region = STATE_MADRAS
+				}
+			}
+			if = {
+				limit = {
+					has_modifier = great_living_chola_temples_hs_mdf
+				}
+				remove_modifier = great_living_chola_temples_hs_mdf
+			}
+		}
+		if = {
+			limit = {
+				owns_entire_state_region = STATE_GUJARAT
+				NOT = {
+					has_modifier = dwarka_hs_mdf
+				}
+			}
+			add_modifier = {
+				name = dwarka_hs_mdf
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					owns_entire_state_region = STATE_GUJARAT
+				}
+			}
+			if = {
+				limit = {
+					has_modifier = dwarka_hs_mdf
+				}
+				remove_modifier = dwarka_hs_mdf
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			country_has_state_religion = rel:sikh
+		}
+		if = {
+			limit = {
+				owns_entire_state_region = STATE_PUNJAB
+				NOT = {
+					has_modifier = harmandir_sahib_hs_mdf
+				}
+			}
+			add_modifier = {
+				name = harmandir_sahib_hs_mdf
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					owns_entire_state_region = STATE_PUNJAB
+				}
+			}
+			if = {
+				limit = {
+					has_modifier = harmandir_sahib_hs_mdf
+				}
+				remove_modifier = harmandir_sahib_hs_mdf
+			}
+		}
+		if = {
+			limit = {
+				owns_entire_state_region = STATE_AWADH
+				NOT = {
+					has_modifier = kashi_vishwanath_temple_hs_mdf
+				}
+			}
+			add_modifier = {
+				name = kashi_vishwanath_temple_hs_mdf
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					owns_entire_state_region = STATE_AWADH
+				}
+			}
+			if = {
+				limit = {
+					has_modifier = kashi_vishwanath_temple_hs_mdf
+				}
+				remove_modifier = kashi_vishwanath_temple_hs_mdf
+			}
+		}
+		if = {
+			limit = {
+				owns_entire_state_region = STATE_CENTRAL_INDIA
+				NOT = {
+					has_modifier = khajuraho_hs_mdf
+				}
+			}
+			add_modifier = {
+				name = khajuraho_hs_mdf
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					owns_entire_state_region = STATE_CENTRAL_INDIA
+				}
+			}
+			if = {
+				limit = {
+					has_modifier = khajuraho_hs_mdf
+				}
+				remove_modifier = khajuraho_hs_mdf
+			}
+		}
+		if = {
+			limit = {
+				owns_entire_state_region = STATE_CIRCARS
+				NOT = {
+					has_modifier = sun_temple_in_konarak_hs_mdf
+				}
+			}
+			add_modifier = {
+				name = sun_temple_in_konarak_hs_mdf
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					owns_entire_state_region = STATE_CIRCARS
+				}
+			}
+			if = {
+				limit = {
+					has_modifier = sun_temple_in_konarak_hs_mdf
+				}
+				remove_modifier = sun_temple_in_konarak_hs_mdf
+			}
+		}
+	}
+}

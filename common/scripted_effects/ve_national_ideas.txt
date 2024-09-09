@@ -1,0 +1,1440 @@
+british_ideas = {
+	if = {
+		limit = {
+			var:national_idea_pool >= 3
+			NOT = {
+				has_modifier = gbr_idea_1
+			}
+		}
+		add_modifier = {
+			name = gbr_idea_1
+			months = -1
+		}
+	}
+	if = {
+		limit = {
+			var:national_idea_pool >= 6
+			NOT = {
+				has_modifier = gbr_idea_2
+			}
+		}
+		add_modifier = {
+			name = gbr_idea_2
+			months = -1
+		}
+	}
+	if = {
+		limit = {
+			var:national_idea_pool >= 9
+			NOT = {
+				has_modifier = gbr_idea_3
+			}
+		}
+		add_modifier = {
+			name = gbr_idea_3
+			months = -1
+		}
+	}
+	if = {
+		limit = {
+			var:national_idea_pool >= 12
+			NOT = {
+				has_modifier = gbr_idea_4
+			}
+		}
+		add_modifier = {
+			name = gbr_idea_4
+			months = -1
+		}
+	}
+	if = {
+		limit = {
+			var:national_idea_pool >= 15
+			NOT = {
+				has_modifier = gbr_idea_5
+			}
+		}
+		add_modifier = {
+			name = gbr_idea_5
+			months = -1
+		}
+	}
+	if = {
+		limit = {
+			var:national_idea_pool >= 18
+			NOT = {
+				has_modifier = gbr_idea_6
+			}
+		}
+		add_modifier = {
+			name = gbr_idea_6
+			months = -1
+		}
+	}
+	if = {
+		limit = {
+			var:national_idea_pool >= 21
+			NOT = {
+				has_modifier = gbr_idea_7
+			}
+		}
+		add_modifier = {
+			name = gbr_idea_7
+			months = -1
+		}
+		add_modifier = {
+			name = gbr_idea_bonus
+			months = -1
+		}
+	}
+}
+
+french_ideas = {
+	if = {
+		limit = {
+			var:national_idea_pool >= 3
+			NOT = {
+				has_modifier = fra_idea_1
+			}
+		}
+		add_modifier = {
+			name = fra_idea_1
+			months = -1
+		}
+	}
+	if = {
+		limit = {
+			var:national_idea_pool >= 6
+			NOT = {
+				has_modifier = fra_idea_2
+			}
+		}
+		add_modifier = {
+			name = fra_idea_2
+			months = -1
+		}
+	}
+	if = {
+		limit = {
+			var:national_idea_pool >= 9
+			NOT = {
+				has_modifier = fra_idea_3
+			}
+		}
+		add_modifier = {
+			name = fra_idea_3
+			months = -1
+		}
+	}
+	if = {
+		limit = {
+			var:national_idea_pool >= 12
+			NOT = {
+				has_modifier = fra_idea_4
+			}
+		}
+		add_modifier = {
+			name = fra_idea_4
+			months = -1
+		}
+	}
+	if = {
+		limit = {
+			var:national_idea_pool >= 15
+			NOT = {
+				has_modifier = fra_idea_5
+			}
+		}
+		add_modifier = {
+			name = fra_idea_5
+			months = -1
+		}
+	}
+	if = {
+		limit = {
+			var:national_idea_pool >= 18
+			NOT = {
+				has_modifier = fra_idea_6
+			}
+		}
+		add_modifier = {
+			name = fra_idea_6
+			months = -1
+		}
+	}
+	if = {
+		limit = {
+			var:national_idea_pool >= 21
+			NOT = {
+				has_modifier = fra_idea_7
+			}
+		}
+		add_modifier = {
+			name = fra_idea_7
+			months = -1
+		}
+		add_modifier = {
+			name = fra_idea_bonus
+			months = -1
+		}
+	}
+}
+
+german_ideas = {
+	if = {
+		limit = {
+			var:national_idea_pool >= 3
+			NOT = {
+				has_modifier = ger_idea_1
+			}
+		}
+		add_modifier = {
+			name = ger_idea_1
+			months = -1
+		}
+	}
+	if = {
+		limit = {
+			var:national_idea_pool >= 6
+			NOT = {
+				has_modifier = ger_idea_2
+			}
+		}
+		add_modifier = {
+			name = ger_idea_2
+			months = -1
+		}
+	}
+	if = {
+		limit = {
+			var:national_idea_pool >= 9
+			NOT = {
+				has_modifier = ger_idea_3
+			}
+		}
+		add_modifier = {
+			name = ger_idea_3
+			months = -1
+		}
+	}
+	if = {
+		limit = {
+			var:national_idea_pool >= 12
+			NOT = {
+				has_modifier = ger_idea_4
+			}
+		}
+		add_modifier = {
+			name = ger_idea_4
+			months = -1
+		}
+	}
+	if = {
+		limit = {
+			var:national_idea_pool >= 15
+			NOT = {
+				has_modifier = ger_idea_5
+			}
+		}
+		add_modifier = {
+			name = ger_idea_5
+			months = -1
+		}
+	}
+	if = {
+		limit = {
+			var:national_idea_pool >= 18
+			NOT = {
+				has_modifier = ger_idea_6
+			}
+		}
+		add_modifier = {
+			name = ger_idea_6
+			months = -1
+		}
+	}
+	if = {
+		limit = {
+			var:national_idea_pool >= 21
+			NOT = {
+				has_modifier = ger_idea_7
+			}
+		}
+		add_modifier = {
+			name = ger_idea_7
+			months = -1
+		}
+		add_modifier = {
+			name = ger_idea_bonus
+			months = -1
+		}
+	}
+}
+
+austrian_ideas = {
+	if = {
+		limit = {
+			var:national_idea_pool >= 3
+			NOT = {
+				has_modifier = aus_idea_1
+			}
+		}
+		add_modifier = {
+			name = aus_idea_1
+			months = -1
+		}
+	}
+	if = {
+		limit = {
+			var:national_idea_pool >= 6
+			NOT = {
+				has_modifier = aus_idea_2
+			}
+		}
+		add_modifier = {
+			name = aus_idea_2
+			months = -1
+		}
+	}
+	if = {
+		limit = {
+			var:national_idea_pool >= 9
+			NOT = {
+				has_modifier = aus_idea_3
+			}
+		}
+		add_modifier = {
+			name = aus_idea_3
+			months = -1
+		}
+	}
+	if = {
+		limit = {
+			var:national_idea_pool >= 12
+			NOT = {
+				has_modifier = aus_idea_4
+			}
+		}
+		add_modifier = {
+			name = aus_idea_4
+			months = -1
+		}
+	}
+	if = {
+		limit = {
+			var:national_idea_pool >= 15
+			NOT = {
+				has_modifier = aus_idea_5
+			}
+		}
+		add_modifier = {
+			name = aus_idea_5
+			months = -1
+		}
+	}
+	if = {
+		limit = {
+			var:national_idea_pool >= 18
+			NOT = {
+				has_modifier = aus_idea_6
+			}
+		}
+		add_modifier = {
+			name = aus_idea_6
+			months = -1
+		}
+	}
+	if = {
+		limit = {
+			var:national_idea_pool >= 21
+			NOT = {
+				has_modifier = aus_idea_7
+			}
+		}
+		add_modifier = {
+			name = aus_idea_7
+			months = -1
+		}
+		add_modifier = {
+			name = aus_idea_bonus
+			months = -1
+		}
+	}
+}
+
+russian_ideas = {
+	if = {
+		limit = {
+			var:national_idea_pool >= 3
+			NOT = {
+				has_modifier = rus_idea_1
+			}
+		}
+		add_modifier = {
+			name = rus_idea_1
+			months = -1
+		}
+	}
+	if = {
+		limit = {
+			var:national_idea_pool >= 6
+			NOT = {
+				has_modifier = rus_idea_2
+			}
+		}
+		add_modifier = {
+			name = rus_idea_2
+			months = -1
+		}
+	}
+	if = {
+		limit = {
+			var:national_idea_pool >= 9
+			NOT = {
+				has_modifier = rus_idea_3
+			}
+		}
+		add_modifier = {
+			name = rus_idea_3
+			months = -1
+		}
+	}
+	if = {
+		limit = {
+			var:national_idea_pool >= 12
+			NOT = {
+				has_modifier = rus_idea_4
+			}
+		}
+		add_modifier = {
+			name = rus_idea_4
+			months = -1
+		}
+	}
+	if = {
+		limit = {
+			var:national_idea_pool >= 15
+			NOT = {
+				has_modifier = rus_idea_5
+			}
+		}
+		add_modifier = {
+			name = rus_idea_5
+			months = -1
+		}
+	}
+	if = {
+		limit = {
+			var:national_idea_pool >= 18
+			NOT = {
+				has_modifier = rus_idea_6
+			}
+		}
+		add_modifier = {
+			name = rus_idea_6
+			months = -1
+		}
+	}
+	if = {
+		limit = {
+			var:national_idea_pool >= 21
+			NOT = {
+				has_modifier = rus_idea_7
+			}
+		}
+		add_modifier = {
+			name = rus_idea_7
+			months = -1
+		}
+		add_modifier = {
+			name = rus_idea_bonus
+			months = -1
+		}
+	}
+}
+
+turkish_ideas = {
+	if = {
+		limit = {
+			var:national_idea_pool >= 3
+			NOT = {
+				has_modifier = tur_idea_1
+			}
+		}
+		add_modifier = {
+			name = tur_idea_1
+			months = -1
+		}
+	}
+	if = {
+		limit = {
+			var:national_idea_pool >= 6
+			NOT = {
+				has_modifier = tur_idea_2
+			}
+		}
+		add_modifier = {
+			name = tur_idea_2
+			months = -1
+		}
+	}
+	if = {
+		limit = {
+			var:national_idea_pool >= 9
+			NOT = {
+				has_modifier = tur_idea_3
+			}
+		}
+		add_modifier = {
+			name = tur_idea_3
+			months = -1
+		}
+	}
+	if = {
+		limit = {
+			var:national_idea_pool >= 12
+			NOT = {
+				has_modifier = tur_idea_4
+			}
+		}
+		add_modifier = {
+			name = tur_idea_4
+			months = -1
+		}
+	}
+	if = {
+		limit = {
+			var:national_idea_pool >= 15
+			NOT = {
+				has_modifier = tur_idea_5
+			}
+		}
+		add_modifier = {
+			name = tur_idea_5
+			months = -1
+		}
+	}
+	if = {
+		limit = {
+			var:national_idea_pool >= 18
+			NOT = {
+				has_modifier = tur_idea_6
+			}
+		}
+		add_modifier = {
+			name = tur_idea_6
+			months = -1
+		}
+	}
+	if = {
+		limit = {
+			var:national_idea_pool >= 21
+			NOT = {
+				has_modifier = tur_idea_7
+			}
+		}
+		add_modifier = {
+			name = tur_idea_7
+			months = -1
+		}
+		add_modifier = {
+			name = tur_idea_bonus
+			months = -1
+		}
+	}
+}
+
+chinese_ideas = {
+	if = {
+		limit = {
+			var:national_idea_pool >= 3
+			NOT = {
+				has_modifier = qng_idea_1
+			}
+		}
+		add_modifier = {
+			name = qng_idea_1
+			months = -1
+		}
+	}
+	if = {
+		limit = {
+			var:national_idea_pool >= 6
+			NOT = {
+				has_modifier = qng_idea_2
+			}
+		}
+		add_modifier = {
+			name = qng_idea_2
+			months = -1
+		}
+	}
+	if = {
+		limit = {
+			var:national_idea_pool >= 9
+			NOT = {
+				has_modifier = qng_idea_3
+			}
+		}
+		add_modifier = {
+			name = qng_idea_3
+			months = -1
+		}
+	}
+	if = {
+		limit = {
+			var:national_idea_pool >= 12
+			NOT = {
+				has_modifier = qng_idea_4
+			}
+		}
+		add_modifier = {
+			name = qng_idea_4
+			months = -1
+		}
+	}
+	if = {
+		limit = {
+			var:national_idea_pool >= 15
+			NOT = {
+				has_modifier = qng_idea_5
+			}
+		}
+		add_modifier = {
+			name = qng_idea_5
+			months = -1
+		}
+	}
+	if = {
+		limit = {
+			var:national_idea_pool >= 18
+			NOT = {
+				has_modifier = qng_idea_6
+			}
+		}
+		add_modifier = {
+			name = qng_idea_6
+			months = -1
+		}
+	}
+	if = {
+		limit = {
+			var:national_idea_pool >= 21
+			NOT = {
+				has_modifier = qng_idea_7
+			}
+		}
+		add_modifier = {
+			name = qng_idea_7
+			months = -1
+		}
+		add_modifier = {
+			name = qng_idea_bonus
+			months = -1
+		}
+	}
+}
+
+japanese_ideas = {
+	if = {
+		limit = {
+			var:national_idea_pool >= 3
+			NOT = {
+				has_modifier = jap_idea_1
+			}
+		}
+		add_modifier = {
+			name = jap_idea_1
+			months = -1
+		}
+	}
+	if = {
+		limit = {
+			var:national_idea_pool >= 6
+			NOT = {
+				has_modifier = jap_idea_2
+			}
+		}
+		add_modifier = {
+			name = jap_idea_2
+			months = -1
+		}
+	}
+	if = {
+		limit = {
+			var:national_idea_pool >= 9
+			NOT = {
+				has_modifier = jap_idea_3
+			}
+		}
+		add_modifier = {
+			name = jap_idea_3
+			months = -1
+		}
+	}
+	if = {
+		limit = {
+			var:national_idea_pool >= 12
+			NOT = {
+				has_modifier = jap_idea_4
+			}
+		}
+		add_modifier = {
+			name = jap_idea_4
+			months = -1
+		}
+	}
+	if = {
+		limit = {
+			var:national_idea_pool >= 15
+			NOT = {
+				has_modifier = jap_idea_5
+			}
+		}
+		add_modifier = {
+			name = jap_idea_5
+			months = -1
+		}
+	}
+	if = {
+		limit = {
+			var:national_idea_pool >= 18
+			NOT = {
+				has_modifier = jap_idea_6
+			}
+		}
+		add_modifier = {
+			name = jap_idea_6
+			months = -1
+		}
+	}
+	if = {
+		limit = {
+			var:national_idea_pool >= 21
+			NOT = {
+				has_modifier = jap_idea_7
+			}
+		}
+		add_modifier = {
+			name = jap_idea_7
+			months = -1
+		}
+		add_modifier = {
+			name = jap_idea_bonus
+			months = -1
+		}
+	}
+}
+
+american_ideas = {
+	if = {
+		limit = {
+			var:national_idea_pool >= 3
+			NOT = {
+				has_modifier = usa_idea_1
+			}
+		}
+		add_modifier = {
+			name = usa_idea_1
+			months = -1
+		}
+	}
+	if = {
+		limit = {
+			var:national_idea_pool >= 6
+			NOT = {
+				has_modifier = usa_idea_2
+			}
+		}
+		add_modifier = {
+			name = usa_idea_2
+			months = -1
+		}
+	}
+	if = {
+		limit = {
+			var:national_idea_pool >= 9
+			NOT = {
+				has_modifier = usa_idea_3
+			}
+		}
+		add_modifier = {
+			name = usa_idea_3
+			months = -1
+		}
+	}
+	if = {
+		limit = {
+			var:national_idea_pool >= 12
+			NOT = {
+				has_modifier = usa_idea_4
+			}
+		}
+		add_modifier = {
+			name = usa_idea_4
+			months = -1
+		}
+	}
+	if = {
+		limit = {
+			var:national_idea_pool >= 15
+			NOT = {
+				has_modifier = usa_idea_5
+			}
+		}
+		add_modifier = {
+			name = usa_idea_5
+			months = -1
+		}
+	}
+	if = {
+		limit = {
+			var:national_idea_pool >= 18
+			NOT = {
+				has_modifier = usa_idea_6
+			}
+		}
+		add_modifier = {
+			name = usa_idea_6
+			months = -1
+		}
+	}
+	if = {
+		limit = {
+			var:national_idea_pool >= 21
+			NOT = {
+				has_modifier = usa_idea_7
+			}
+		}
+		add_modifier = {
+			name = usa_idea_7
+			months = -1
+		}
+		add_modifier = {
+			name = usa_idea_bonus
+			months = -1
+		}
+	}
+}
+
+generic_ideas = {
+	if = {
+		limit = {
+			var:national_idea_pool >= 3
+			NOT = {
+				has_modifier = generic_idea_1
+			}
+		}
+		add_modifier = {
+			name = generic_idea_1
+			months = -1
+		}
+	}
+	if = {
+		limit = {
+			var:national_idea_pool >= 6
+			NOT = {
+				has_modifier = generic_idea_2
+			}
+		}
+		add_modifier = {
+			name = generic_idea_2
+			months = -1
+		}
+	}
+	if = {
+		limit = {
+			var:national_idea_pool >= 9
+			NOT = {
+				has_modifier = generic_idea_3
+			}
+		}
+		add_modifier = {
+			name = generic_idea_3
+			months = -1
+		}
+	}
+	if = {
+		limit = {
+			var:national_idea_pool >= 12
+			NOT = {
+				has_modifier = generic_idea_4
+			}
+		}
+		add_modifier = {
+			name = generic_idea_4
+			months = -1
+		}
+	}
+	if = {
+		limit = {
+			var:national_idea_pool >= 15
+			NOT = {
+				has_modifier = generic_idea_5
+			}
+		}
+		add_modifier = {
+			name = generic_idea_5
+			months = -1
+		}
+	}
+	if = {
+		limit = {
+			var:national_idea_pool >= 18
+			NOT = {
+				has_modifier = generic_idea_6
+			}
+		}
+		add_modifier = {
+			name = generic_idea_6
+			months = -1
+		}
+	}
+	if = {
+		limit = {
+			var:national_idea_pool >= 21
+			NOT = {
+				has_modifier = generic_idea_7
+			}
+		}
+		add_modifier = {
+			name = generic_idea_7
+			months = -1
+		}
+		add_modifier = {
+			name = generic_idea_bonus
+			months = -1
+		}
+	}
+}
+
+#Cancel National Ideas
+cancel_british_ideas = {
+	if = {
+		limit = {
+			var:national_idea_pool < 3
+			has_modifier = gbr_idea_1
+		}
+		remove_modifier = gbr_idea_1
+	}
+	if = {
+		limit = {
+			var:national_idea_pool < 6
+			has_modifier = gbr_idea_2
+		}
+		remove_modifier = gbr_idea_2
+	}
+	if = {
+		limit = {
+			var:national_idea_pool < 9
+			has_modifier = gbr_idea_3
+		}
+		remove_modifier = gbr_idea_3
+	}
+	if = {
+		limit = {
+			var:national_idea_pool < 12
+			has_modifier = gbr_idea_4
+		}
+		remove_modifier = gbr_idea_4
+	}
+	if = {
+		limit = {
+			var:national_idea_pool < 15
+			has_modifier = gbr_idea_5
+		}
+		remove_modifier = gbr_idea_5
+	}
+	if = {
+		limit = {
+			var:national_idea_pool < 18
+			has_modifier = gbr_idea_6
+		}
+		remove_modifier = gbr_idea_6
+	}
+	if = {
+		limit = {
+			var:national_idea_pool < 21
+			has_modifier = gbr_idea_7
+		}
+		remove_modifier = gbr_idea_7
+		remove_modifier = gbr_idea_bonus
+	}
+}
+
+cancel_french_ideas = {
+	if = {
+		limit = {
+			var:national_idea_pool < 3
+			has_modifier = fra_idea_1
+		}
+		remove_modifier = fra_idea_1
+	}
+	if = {
+		limit = {
+			var:national_idea_pool < 6
+			has_modifier = fra_idea_2
+		}
+		remove_modifier = fra_idea_2
+	}
+	if = {
+		limit = {
+			var:national_idea_pool < 9
+			has_modifier = fra_idea_3
+		}
+		remove_modifier = fra_idea_3
+	}
+	if = {
+		limit = {
+			var:national_idea_pool < 12
+			has_modifier = fra_idea_4
+		}
+		remove_modifier = fra_idea_4
+	}
+	if = {
+		limit = {
+			var:national_idea_pool < 15
+			has_modifier = fra_idea_5
+		}
+		remove_modifier = fra_idea_5
+	}
+	if = {
+		limit = {
+			var:national_idea_pool < 18
+			has_modifier = fra_idea_6
+		}
+		remove_modifier = fra_idea_6
+	}
+	if = {
+		limit = {
+			var:national_idea_pool < 21
+			has_modifier = fra_idea_7
+		}
+		remove_modifier = fra_idea_7
+		remove_modifier = fra_idea_bonus
+	}
+}
+
+cancel_german_ideas = {
+	if = {
+		limit = {
+			var:national_idea_pool < 3
+			has_modifier = ger_idea_1
+		}
+		remove_modifier = ger_idea_1
+	}
+	if = {
+		limit = {
+			var:national_idea_pool < 6
+			has_modifier = ger_idea_2
+		}
+		remove_modifier = ger_idea_2
+	}
+	if = {
+		limit = {
+			var:national_idea_pool < 9
+			has_modifier = ger_idea_3
+		}
+		remove_modifier = ger_idea_3
+	}
+	if = {
+		limit = {
+			var:national_idea_pool < 12
+			has_modifier = ger_idea_4
+		}
+		remove_modifier = ger_idea_4
+	}
+	if = {
+		limit = {
+			var:national_idea_pool < 15
+			has_modifier = ger_idea_5
+		}
+		remove_modifier = ger_idea_5
+	}
+	if = {
+		limit = {
+			var:national_idea_pool < 18
+			has_modifier = ger_idea_6
+		}
+		remove_modifier = ger_idea_6
+	}
+	if = {
+		limit = {
+			var:national_idea_pool < 21
+			has_modifier = ger_idea_7
+		}
+		remove_modifier = ger_idea_7
+		remove_modifier = ger_idea_bonus
+	}
+}
+
+cancel_austrian_ideas = {
+	if = {
+		limit = {
+			var:national_idea_pool < 3
+			has_modifier = aus_idea_1
+		}
+		remove_modifier = aus_idea_1
+	}
+	if = {
+		limit = {
+			var:national_idea_pool < 6
+			has_modifier = aus_idea_2
+		}
+		remove_modifier = aus_idea_2
+	}
+	if = {
+		limit = {
+			var:national_idea_pool < 9
+			has_modifier = aus_idea_3
+		}
+		remove_modifier = aus_idea_3
+	}
+	if = {
+		limit = {
+			var:national_idea_pool < 12
+			has_modifier = aus_idea_4
+		}
+		remove_modifier = aus_idea_4
+	}
+	if = {
+		limit = {
+			var:national_idea_pool < 15
+			has_modifier = aus_idea_5
+		}
+		remove_modifier = aus_idea_5
+	}
+	if = {
+		limit = {
+			var:national_idea_pool < 18
+			has_modifier = aus_idea_6
+		}
+		remove_modifier = aus_idea_6
+	}
+	if = {
+		limit = {
+			var:national_idea_pool < 21
+			has_modifier = aus_idea_7
+		}
+		remove_modifier = aus_idea_7
+		remove_modifier = aus_idea_bonus
+	}
+}
+
+cancel_russian_ideas = {
+	if = {
+		limit = {
+			var:national_idea_pool < 3
+			has_modifier = rus_idea_1
+		}
+		remove_modifier = rus_idea_1
+	}
+	if = {
+		limit = {
+			var:national_idea_pool < 6
+			has_modifier = rus_idea_2
+		}
+		remove_modifier = rus_idea_2
+	}
+	if = {
+		limit = {
+			var:national_idea_pool < 9
+			has_modifier = rus_idea_3
+		}
+		remove_modifier = rus_idea_3
+	}
+	if = {
+		limit = {
+			var:national_idea_pool < 12
+			has_modifier = rus_idea_4
+		}
+		remove_modifier = rus_idea_4
+	}
+	if = {
+		limit = {
+			var:national_idea_pool < 15
+			has_modifier = rus_idea_5
+		}
+		remove_modifier = rus_idea_5
+	}
+	if = {
+		limit = {
+			var:national_idea_pool < 18
+			has_modifier = rus_idea_6
+		}
+		remove_modifier = rus_idea_6
+	}
+	if = {
+		limit = {
+			var:national_idea_pool < 21
+			has_modifier = rus_idea_7
+		}
+		remove_modifier = rus_idea_7
+		remove_modifier = rus_idea_bonus
+	}
+}
+
+cancel_turkish_ideas = {
+	if = {
+		limit = {
+			var:national_idea_pool < 3
+			has_modifier = tur_idea_1
+		}
+		remove_modifier = tur_idea_1
+	}
+	if = {
+		limit = {
+			var:national_idea_pool < 6
+			has_modifier = tur_idea_2
+		}
+		remove_modifier = tur_idea_2
+	}
+	if = {
+		limit = {
+			var:national_idea_pool < 9
+			has_modifier = tur_idea_3
+		}
+		remove_modifier = tur_idea_3
+	}
+	if = {
+		limit = {
+			var:national_idea_pool < 12
+			has_modifier = tur_idea_4
+		}
+		remove_modifier = tur_idea_4
+	}
+	if = {
+		limit = {
+			var:national_idea_pool < 15
+			has_modifier = tur_idea_5
+		}
+		remove_modifier = tur_idea_5
+	}
+	if = {
+		limit = {
+			var:national_idea_pool < 18
+			has_modifier = tur_idea_6
+		}
+		remove_modifier = tur_idea_6
+	}
+	if = {
+		limit = {
+			var:national_idea_pool < 21
+			has_modifier = tur_idea_7
+		}
+		remove_modifier = tur_idea_7
+		remove_modifier = tur_idea_bonus
+	}
+}
+
+cancel_chinese_ideas = {
+	if = {
+		limit = {
+			var:national_idea_pool < 3
+			has_modifier = qng_idea_1
+		}
+		remove_modifier = qng_idea_1
+	}
+	if = {
+		limit = {
+			var:national_idea_pool < 6
+			has_modifier = qng_idea_2
+		}
+		remove_modifier = qng_idea_2
+	}
+	if = {
+		limit = {
+			var:national_idea_pool < 9
+			has_modifier = qng_idea_3
+		}
+		remove_modifier = qng_idea_3
+	}
+	if = {
+		limit = {
+			var:national_idea_pool < 12
+			has_modifier = qng_idea_4
+		}
+		remove_modifier = qng_idea_4
+	}
+	if = {
+		limit = {
+			var:national_idea_pool < 15
+			has_modifier = qng_idea_5
+		}
+		remove_modifier = qng_idea_5
+	}
+	if = {
+		limit = {
+			var:national_idea_pool < 18
+			has_modifier = qng_idea_6
+		}
+		remove_modifier = qng_idea_6
+	}
+	if = {
+		limit = {
+			var:national_idea_pool < 21
+			has_modifier = qng_idea_7
+		}
+		remove_modifier = qng_idea_7
+		remove_modifier = qng_idea_bonus
+	}
+}
+
+cancel_japanese_ideas = {
+	if = {
+		limit = {
+			var:national_idea_pool < 3
+			has_modifier = jap_idea_1
+		}
+		remove_modifier = jap_idea_1
+	}
+	if = {
+		limit = {
+			var:national_idea_pool < 6
+			has_modifier = jap_idea_2
+		}
+		remove_modifier = jap_idea_2
+	}
+	if = {
+		limit = {
+			var:national_idea_pool < 9
+			has_modifier = jap_idea_3
+		}
+		remove_modifier = jap_idea_3
+	}
+	if = {
+		limit = {
+			var:national_idea_pool < 12
+			has_modifier = jap_idea_4
+		}
+		remove_modifier = jap_idea_4
+	}
+	if = {
+		limit = {
+			var:national_idea_pool < 15
+			has_modifier = jap_idea_5
+		}
+		remove_modifier = jap_idea_5
+	}
+	if = {
+		limit = {
+			var:national_idea_pool < 18
+			has_modifier = jap_idea_6
+		}
+		remove_modifier = jap_idea_6
+	}
+	if = {
+		limit = {
+			var:national_idea_pool < 21
+			has_modifier = jap_idea_7
+		}
+		remove_modifier = jap_idea_7
+		remove_modifier = jap_idea_bonus
+	}
+}
+
+cancel_american_ideas = {
+	if = {
+		limit = {
+			var:national_idea_pool < 3
+			has_modifier = usa_idea_1
+		}
+		remove_modifier = usa_idea_1
+	}
+	if = {
+		limit = {
+			var:national_idea_pool < 6
+			has_modifier = usa_idea_2
+		}
+		remove_modifier = usa_idea_2
+	}
+	if = {
+		limit = {
+			var:national_idea_pool < 9
+			has_modifier = usa_idea_3
+		}
+		remove_modifier = usa_idea_3
+	}
+	if = {
+		limit = {
+			var:national_idea_pool < 12
+			has_modifier = usa_idea_4
+		}
+		remove_modifier = usa_idea_4
+	}
+	if = {
+		limit = {
+			var:national_idea_pool < 15
+			has_modifier = usa_idea_5
+		}
+		remove_modifier = usa_idea_5
+	}
+	if = {
+		limit = {
+			var:national_idea_pool < 18
+			has_modifier = usa_idea_6
+		}
+		remove_modifier = usa_idea_6
+	}
+	if = {
+		limit = {
+			var:national_idea_pool < 21
+			has_modifier = usa_idea_7
+		}
+		remove_modifier = usa_idea_7
+		remove_modifier = usa_idea_bonus
+	}
+}
+
+cancel_generic_ideas = {
+	if = {
+		limit = {
+			var:national_idea_pool < 3
+			has_modifier = generic_idea_1
+		}
+		remove_modifier = generic_idea_1
+	}
+	if = {
+		limit = {
+			var:national_idea_pool < 6
+			has_modifier = generic_idea_2
+		}
+		remove_modifier = generic_idea_2
+	}
+	if = {
+		limit = {
+			var:national_idea_pool < 9
+			has_modifier = generic_idea_3
+		}
+		remove_modifier = generic_idea_3
+	}
+	if = {
+		limit = {
+			var:national_idea_pool < 12
+			has_modifier = generic_idea_4
+		}
+		remove_modifier = generic_idea_4
+	}
+	if = {
+		limit = {
+			var:national_idea_pool < 15
+			has_modifier = generic_idea_5
+		}
+		remove_modifier = generic_idea_5
+	}
+	if = {
+		limit = {
+			var:national_idea_pool < 18
+			has_modifier = generic_idea_6
+		}
+		remove_modifier = generic_idea_6
+	}
+	if = {
+		limit = {
+			var:national_idea_pool < 21
+			has_modifier = generic_idea_7
+		}
+		remove_modifier = generic_idea_7
+		remove_modifier = generic_idea_bonus
+	}
+}

@@ -1,0 +1,276 @@
+namespace = innovative_flavor
+innovative_flavor.1 = {
+	type = country_event
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/military_parade"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	title = innovative_flavor.1.t
+	desc = innovative_flavor.1.desc
+	duration = 3
+	#dlc = dlc004
+	cooldown = {
+		months = normal_modifier_time
+	}
+	trigger = {
+		has_variable = can_go_innovative
+		root.infamy >= infamy_threshold:infamous
+		NOT = {
+			has_modifier = ve_bad_reputation
+		}
+	}
+	option = {
+		name = innovative_flavor.1.a
+		default_option = yes
+		add_modifier = {
+			name = ve_bad_reputation
+			months = normal_modifier_time
+		}
+	}
+}
+
+innovative_flavor.2 = {
+	type = country_event
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/military_parade"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	title = innovative_flavor.1.t
+	desc = innovative_flavor.1.desc
+	duration = 3
+	cooldown = {
+		months = normal_modifier_time
+	}
+	trigger = {
+		has_variable = can_go_innovative
+		root.infamy < infamy_threshold:infamous
+		NOT = {
+			has_modifier = ve_new_thinkers
+		}
+	}
+	option = {
+		name = innovative_flavor.1.a
+		default_option = yes
+		add_modifier = {
+			name = ve_new_thinkers
+			months = normal_modifier_time
+		}
+	}
+}
+
+innovative_flavor.3 = {
+	type = country_event
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/military_parade"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	title = innovative_flavor.1.t
+	desc = innovative_flavor.1.desc
+	duration = 3
+	cooldown = {
+		months = normal_modifier_time
+	}
+	trigger = {
+		has_variable = can_go_innovative
+		NOT = {
+			has_modifier = ve_new_thinkers
+		}
+	}
+	option = {
+		name = innovative_flavor.1.a
+		default_option = yes
+		add_modifier = {
+			name = ve_new_thinkers
+			months = normal_modifier_time
+		}
+	}
+}
+
+innovative_flavor.4 = {
+	type = country_event
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/military_parade"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	title = innovative_flavor.1.t
+	desc = innovative_flavor.1.desc
+	duration = 3
+	cooldown = {
+		months = normal_modifier_time
+	}
+	trigger = {
+		has_variable = can_go_innovative
+		year >= 1845
+		market_capital.market = {
+			mg:fine_art = {
+				market_goods_cheaper < 0.3
+			}
+		}
+		NOT = {
+			has_modifier = ve_no_art_worth_preserving
+		}
+	}
+	option = {
+		name = innovative_flavor.1.a
+		default_option = yes
+		add_modifier = {
+			name = ve_no_art_worth_preserving
+			months = normal_modifier_time
+		}
+	}
+}
+
+innovative_flavor.5 = {
+	type = country_event
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/military_parade"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	title = innovative_flavor.1.t
+	desc = innovative_flavor.1.desc
+	duration = 3
+	cooldown = {
+		months = normal_modifier_time
+	}
+	trigger = {
+		has_variable = can_go_innovative
+		NOR = {
+			has_modifier = ve_focus_production
+			has_modifier = ve_focus_society
+			has_modifier = ve_focus_military
+		}
+	}
+	option = {
+		name = innovative_flavor.1.a
+		default_option = yes
+		add_modifier = {
+			name = ve_focus_production
+			months = normal_modifier_time
+		}
+	}
+	option = {
+		name = innovative_flavor.1.a
+		add_modifier = {
+			name = ve_focus_society
+			months = normal_modifier_time
+		}
+	}
+	option = {
+		name = innovative_flavor.1.a
+		add_modifier = {
+			name = ve_focus_military
+			months = normal_modifier_time
+		}
+	}
+}
+
+innovative_flavor.6 = {
+	type = country_event
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/military_parade"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	title = innovative_flavor.1.t
+	desc = innovative_flavor.1.desc
+	duration = 3
+	cooldown = {
+		months = normal_modifier_time
+	}
+	trigger = {
+		has_variable = can_go_innovative
+		ig:ig_landowners = {
+			is_powerful = yes
+		}
+		has_law = law_type:law_hereditary_bureaucrats
+		NOT = {
+			has_modifier = ve_weak_bureaucracy
+		}
+	}
+	option = {
+		name = innovative_flavor.1.a
+		default_option = yes
+		add_modifier = {
+			name = ve_weak_bureaucracy
+			months = normal_modifier_time
+		}
+		capital = {
+			add_modifier = {
+				name = ve_support_new_model_bureaucracy
+				months = -1
+			}
+		}
+	}
+}
+
+innovative_flavor.7 = {
+	type = country_event
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/military_parade"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	title = innovative_flavor.1.t
+	desc = innovative_flavor.1.desc
+	duration = 3
+	cooldown = {
+		months = normal_modifier_time
+	}
+	trigger = {
+		has_variable = can_go_innovative
+	}
+	option = {
+		name = innovative_flavor.1.a
+		default_option = yes
+		change_variable = {
+			name = idea_point_value
+			add = 200
+		}
+		change_variable = {
+			name = splender_points_value
+			add = 50
+		}
+	}
+}
+
+innovative_flavor.8 = {
+	type = country_event
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/military_parade"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	title = innovative_flavor.1.t
+	desc = innovative_flavor.1.desc
+	duration = 3
+	cooldown = {
+		months = normal_modifier_time
+	}
+	trigger = {
+		has_variable = can_go_innovative
+		NOT = {
+			has_modifier = ve_military_theory
+		}
+	}
+	option = {
+		name = innovative_flavor.1.a
+		default_option = yes
+		add_modifier = {
+			name = ve_military_theory
+			months = normal_modifier_time
+		}
+	}
+}

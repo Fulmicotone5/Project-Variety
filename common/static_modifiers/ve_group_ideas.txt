@@ -1,0 +1,582 @@
+﻿innovative_idea_1_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	country_prestige_mult = 0.075
+}
+
+innovative_idea_2_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	country_weekly_innovation_mult = 0.05
+}
+
+innovative_idea_3_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	building_university_throughput_add = 0.15
+}
+
+innovative_idea_4_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	country_bureaucracy_add = 300
+}
+
+innovative_idea_5_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	country_tech_spread_mult = 0.1
+	state_education_access_wealth_add = 0.002
+}
+
+innovative_idea_6_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	state_urbanization_per_level_mult = -0.15
+	state_construction_mult = 0.05
+}
+
+innovative_idea_7_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	country_production_tech_research_speed_mult = 0.05
+	country_military_tech_research_speed_mult = 0.05
+	country_society_tech_research_speed_mult = 0.05
+}
+
+diplomatic_idea_1_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	country_influence_mult = 0.1
+}
+
+diplomatic_idea_2_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	country_max_declared_interests_add = 2
+}
+
+diplomatic_idea_3_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	country_infamy_decay_mult = 0.2
+}
+
+diplomatic_idea_4_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	country_improve_relations_speed_mult = 0.15
+	country_damage_relations_speed_mult = 0.15
+}
+
+diplomatic_idea_5_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	country_convoys_capacity_mult = 0.1
+}
+
+diplomatic_idea_6_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	country_production_tech_research_speed_mult = 0.075
+}
+
+diplomatic_idea_7_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	country_diplomatic_play_maneuvers_add = 25
+}
+
+offensive_idea_1_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	unit_army_offense_add = 5
+}
+
+offensive_idea_2_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	battle_offense_owned_province_mult = 0.1
+	unit_offense_developed_add = 2
+}
+
+offensive_idea_3_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	unit_offense_hazardous_add = 5
+	unit_provinces_captured_mult = 0.1
+}
+
+offensive_idea_4_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	unit_recovery_rate_add = 0.1
+	unit_offense_hazardous_add = 5
+}
+
+offensive_idea_5_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	unit_offense_forested_add = 5
+}
+
+offensive_idea_6_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	unit_offense_water_mult = 0.075
+}
+
+offensive_idea_7_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	unit_army_offense_mult = 0.1
+}
+
+economic_idea_1_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	state_tax_waste_add = -0.1
+}
+
+economic_idea_2_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	state_construction_mult = 0.05
+}
+
+economic_idea_3_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	country_minting_mult = 0.1
+}
+
+economic_idea_4_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	country_loan_interest_rate_mult = -0.05
+}
+
+economic_idea_5_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	state_tax_collection_mult = 0.06
+}
+
+economic_idea_6_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	country_production_tech_research_speed_mult = 0.05
+}
+
+economic_idea_7_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	building_group_bg_agriculture_throughput_add = 0.1
+	building_group_bg_ranching_throughput_add = 0.1
+	building_group_bg_plantations_throughput_add = 0.1
+	state_construction_mult = 0.1
+}
+
+trade_idea_1_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	country_trade_route_competitiveness_mult = 0.35
+}
+
+trade_idea_2_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	country_subsidies_bg_trade = yes
+	country_minting_mult = 0.1
+}
+
+trade_idea_3_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	country_trade_route_cost_mult = -0.35
+}
+
+trade_idea_4_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	market_land_trade_capacity_add = 25
+}
+
+trade_idea_5_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	tariff_import_add = 0.15
+	tariff_export_add = 0.15
+}
+
+trade_idea_6_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	state_capitalists_investment_pool_efficiency_mult = 0.15
+	interest_group_ig_industrialists_approval_add = 1
+}
+
+trade_idea_7_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	country_trade_route_quantity_mult = 0.35
+}
+
+defensive_idea_1_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	unit_supply_consumption_mult = -0.05
+}
+
+defensive_idea_2_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	unit_morale_damage_mult = 0.1
+	unit_morale_recovery_mult = 0.1
+}
+
+defensive_idea_3_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	country_war_exhaustion_casualties_mult = -0.1
+	country_military_wages_mult = -0.1
+}
+
+defensive_idea_4_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	unit_army_defense_mult = 0.1
+}
+
+defensive_idea_5_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	unit_kill_rate_add = 0.08
+}
+
+defensive_idea_6_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	unit_defense_forested_add = 10
+	unit_defense_hazardous_add = 10
+}
+
+defensive_idea_7_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	battle_defense_owned_province_mult = 0.15
+	unit_provinces_lost_mult = -0.15
+}
+
+administrative_idea_1_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	country_bureaucracy_add = 150
+}
+
+administrative_idea_2_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	country_society_tech_spread_mult = 0.1
+}
+
+administrative_idea_3_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	state_radicals_from_discrimination_mult = -0.1
+}
+
+administrative_idea_4_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	country_authority_add = 250
+	state_decree_cost_mult = -0.2
+}
+
+administrative_idea_5_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	country_government_wages_mult = -0.2
+	building_group_bg_service_throughput_add = 0.2
+}
+
+administrative_idea_6_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	country_consumption_tax_cost_mult = -0.2
+}
+
+administrative_idea_7_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	state_bureaucracy_population_base_cost_factor_mult = -0.15
+	country_bureaucracy_add = 250
+	state_tax_capacity_mult = 0.15
+}
+
+qualification_idea_1_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	state_migration_push_mult = -0.25
+}
+
+qualification_idea_2_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	state_education_access_wealth_add = 0.002
+}
+
+qualification_idea_3_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	country_society_tech_research_speed_mult = 0.075
+}
+
+qualification_idea_4_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	building_arts_academy_throughput_add = 0.2
+	building_university_throughput_add = 0.2
+}
+
+qualification_idea_5_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	state_pop_qualifications_mult = 0.35
+}
+
+qualification_idea_6_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	state_rich_standard_of_living_add = 1
+	state_middle_standard_of_living_add = 2
+}
+
+qualification_idea_7_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	goods_output_liquor_mult = 0.1
+	goods_output_wine_mult = 0.1
+	goods_output_fabric_mult = 0.1
+	goods_output_fruit_mult = 0.1
+	goods_output_sugar_mult = 0.1
+	goods_output_radio_mult = 0.1
+	goods_output_silk_mult = 0.1
+	goods_output_electricity_mult = 0.1
+	goods_output_oil_mult = 0.1
+}
+
+naval_idea_1_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	unit_convoy_requirements_mult = -0.1
+	state_port_range_add = 20
+}
+
+naval_idea_2_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	unit_navy_defense_mult = 0.1
+}
+
+naval_idea_3_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	unit_convoy_raiding_mult = 0.25
+}
+
+naval_idea_4_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	country_ignores_landing_craft_penalty_bool = yes
+}
+
+naval_idea_5_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	building_naval_base_throughput_add = 0.1
+	building_port_throughput_add = 0.1
+}
+
+naval_idea_6_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	country_prestige_from_navy_power_projection_mult = 0.1
+}
+
+naval_idea_7_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	unit_navy_offense_mult = 0.15
+}
+
+ethnocentrism_idea_1_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	country_authority_mult = 0.05
+}
+
+ethnocentrism_idea_2_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	state_conversion_mult = 0.25
+	state_assimilation_mult = 0.25
+}
+
+ethnocentrism_idea_3_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	state_accepted_birth_rate_mult = 0.02
+}
+
+ethnocentrism_idea_4_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	state_loyalists_from_sol_change_accepted_religion_mult = 0.05
+	state_loyalists_from_sol_change_accepted_culture_mult = 0.05
+}
+
+ethnocentrism_idea_5_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	#Missionary Power
+}
+
+ethnocentrism_idea_6_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	state_education_access_add = 0.02
+}
+
+ethnocentrism_idea_7_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	#adds missionary
+}
+
+humanist_idea_1_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	country_tech_spread_add = 15
+}
+
+humanist_idea_2_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	state_loyalists_from_sol_change_mult = 0.1
+	state_turmoil_effects_mult = -0.05
+}
+
+humanist_idea_3_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	country_agitator_slots_add = 1
+	state_radicals_from_discrimination_mult = -0.2
+}
+
+humanist_idea_4_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	state_education_access_wealth_add = 0.002
+}
+
+humanist_idea_5_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	state_infrastructure_mult = 0.1
+}
+
+humanist_idea_6_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	country_improve_relations_speed_mult = 0.15
+}
+
+humanist_idea_7_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	state_migration_pull_mult = 0.2
+	country_mass_migration_attraction_mult = 0.25
+}
+
+militarization_idea_1_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	country_legitimacy_headofstate_add = 5
+}
+
+militarization_idea_2_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	state_conscription_rate_mult = 0.1
+	country_prestige_from_army_power_projection_mult = 0.03
+}
+
+militarization_idea_3_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	country_suppression_ig_attraction_mult = -0.25
+	country_military_wages_mult = -0.1
+}
+
+militarization_idea_4_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	country_military_tech_research_speed_mult = 0.05
+}
+
+militarization_idea_5_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	country_infamy_generation_mult = -0.15
+}
+
+militarization_idea_6_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	building_training_rate_mult = 0.2
+	country_military_goods_cost_mult = -0.1
+}
+
+militarization_idea_7_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	military_formation_movement_speed_mult = 0.15
+	military_formation_mobilization_speed_mult = 0.15
+}
+
+politics_idea_1_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	country_legitimacy_base_add = 10
+}
+
+politics_idea_2_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	# country_revolution_secession_speed_add = -0.1
+	country_agitator_slots_add = 1
+}
+
+politics_idea_3_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	country_law_enactment_time_mult = -0.15
+}
+
+politics_idea_4_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	political_movement_radicalism_mult = -0.05
+	state_turmoil_effects_mult = -0.05
+}
+
+politics_idea_5_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	country_law_enactment_success_add = 0.1
+}
+
+politics_idea_6_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	interest_group_approval_add = 2
+}
+
+politics_idea_7_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	country_authority_add = 250
+	country_promotion_ig_attraction_mult = 0.5
+}
+
+syndicalism_idea_1_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	state_working_adult_ratio_add = 0.03
+}
+
+syndicalism_idea_2_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	state_construction_mult = 0.05
+	building_minimum_wage_mult = 0.05
+}
+
+syndicalism_idea_3_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	state_mortality_mult = -0.02
+}
+
+syndicalism_idea_4_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	state_birth_rate_mult = 0.03
+}
+
+syndicalism_idea_5_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	state_pop_support_law_command_economy_mult = 0.1
+	state_pop_support_law_cooperative_ownership_mult = 0.1
+	state_farmers_investment_pool_efficiency_mult = 0.15
+	state_shopkeepers_investment_pool_efficiency_mult = 0.15
+	state_laborers_investment_pool_efficiency_mult = 0.05
+}
+
+syndicalism_idea_6_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	interest_group_ig_trade_unions_approval_add = 5
+	interest_group_ig_trade_unions_pol_str_mult = 0.15
+	state_working_adult_ratio_add = 0.05
+	building_minimum_wage_mult = 0.05
+}
+
+syndicalism_idea_7_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	building_minimum_wage_mult = 0.1
+	building_group_bg_manufacturing_throughput_add = 0.15
+}
+
+imperialist_idea_1_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	country_prestige_add = 50
+}
+
+imperialist_idea_2_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	state_non_homeland_colony_growth_speed_mult = 0.1
+}
+
+imperialist_idea_3_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	country_resource_depletion_chance_mult = -0.1
+	country_resource_discovery_chance_mult = 0.1
+}
+
+imperialist_idea_4_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	state_turmoil_effects_mult = -0.1
+}
+
+imperialist_idea_5_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	country_max_declared_interests_mult = 0.1
+}
+
+imperialist_idea_6_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	state_colony_growth_creation_mult = 0.1
+	building_group_bg_mining_throughput_add = 0.1
+}
+
+imperialist_idea_7_mdf = {
+	icon = gfx/interface/icon_ideas.dds
+	country_radicals_from_conquest_mult = -0.25
+	building_group_bg_oil_extraction_throughput_add = 0.1
+}

@@ -1,0 +1,121 @@
+﻿GLOBAL = {
+	random_country = {
+		set_global_variable = ve_age_1_started		#Victorian Age - 1936
+		set_global_variable = {
+			name = idea_point_value_pool
+			value = 0
+		}
+		set_global_variable = {
+			name = culture_point_value_pool
+			value = 0
+		}
+		set_global_variable = {
+			name = 1_string
+			value = flag:1
+		}
+		add_to_global_variable_list = {
+			name = idea_index
+			target = global_var:1_string
+		}
+		set_global_variable = {
+			name = 1_value
+			value = 1
+		}
+		set_global_variable = {
+			name = 2_string
+			value = flag:2
+		}
+		add_to_global_variable_list = {
+			name = idea_index
+			target = global_var:2_string
+		}
+		set_global_variable = {
+			name = 2_value
+			value = 2
+		}
+		set_global_variable = {
+			name = 3_string
+			value = flag:3
+		}
+		add_to_global_variable_list = {
+			name = idea_index
+			target = global_var:3_string
+		}
+		set_global_variable = {
+			name = 3_value
+			value = 3
+		}
+		set_global_variable = {
+			name = 4_string
+			value = flag:4
+		}
+		add_to_global_variable_list = {
+			name = idea_index
+			target = global_var:4_string
+		}
+		set_global_variable = {
+			name = 4_value
+			value = 4
+		}
+		set_global_variable = {
+			name = 5_string
+			value = flag:5
+		}
+		add_to_global_variable_list = {
+			name = idea_index
+			target = global_var:5_string
+		}
+		set_global_variable = {
+			name = 5_value
+			value = 5
+		}
+		set_global_variable = {
+			name = 6_string
+			value = flag:6
+		}
+		add_to_global_variable_list = {
+			name = idea_index
+			target = global_var:6_string
+		}
+		set_global_variable = {
+			name = 6_value
+			value = 6
+		}
+		set_global_variable = {
+			name = 7_string
+			value = flag:7
+		}
+		add_to_global_variable_list = {
+			name = idea_index
+			target = global_var:7_string
+		}
+		set_global_variable = {
+			name = 7_value
+			value = 7
+		}
+		set_global_variable = {
+			name = 1_string
+			value = flag:1
+		}
+		add_to_global_variable_list = {
+			name = idea_pic_index
+			target = global_var:1_string
+		}
+		set_global_variable = {
+			name = 1_value
+			value = 1
+		}
+	}
+	every_country = {
+		set_missionary_cultural_missionary = yes
+		ve_law_change_effects = yes
+		set_point_system = yes
+		set_idea_buttons = yes
+		set_ideas = yes
+		set_national_idea = yes
+		religion_passive_bonuses = yes
+		national_idea_traditions = yes
+		ve_holy_site_effects = yes
+		set_variable = ve_1936_countries
+	}
+}

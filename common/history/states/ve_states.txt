@@ -1,0 +1,167 @@
+﻿STATES = {
+	s:STATE_MINSK = {
+		add_to_global_variable_list = {
+			name = adm_ideas
+			target = this
+		}
+		set_variable = {
+			name = idea_group
+			value = flag:innovative_idea
+		}
+		add_to_list = exclude_state_region
+	}
+	s:STATE_LOUISIANA = {
+		add_to_global_variable_list = {
+			name = adm_ideas
+			target = this
+		}
+		set_variable = {
+			name = idea_group
+			value = flag:economic_idea
+		}
+		add_to_list = exclude_state_region
+	}
+	s:STATE_NEW_YORK = {
+		add_to_global_variable_list = {
+			name = adm_ideas
+			target = this
+		}
+		set_variable = {
+			name = idea_group
+			value = flag:administrative_idea
+		}
+		add_to_list = exclude_state_region
+	}
+	s:STATE_VIRGINIA = {
+		add_to_global_variable_list = {
+			name = adm_ideas
+			target = this
+		}
+		set_variable = {
+			name = idea_group
+			value = flag:ethnocentrism_idea
+		}
+		add_to_list = exclude_state_region
+	}
+	s:STATE_LOWER_EGYPT = {
+		add_to_global_variable_list = {
+			name = adm_ideas
+			target = this
+		}
+		set_variable = {
+			name = idea_group
+			value = flag:politics_idea
+		}
+		add_to_list = exclude_state_region
+	}
+	s:STATE_HOME_COUNTIES = {
+		add_to_global_variable_list = {
+			name = dip_ideas
+			target = this
+		}
+		set_variable = {
+			name = idea_group
+			value = flag:diplomatic_idea
+		}
+		add_to_list = exclude_state_region
+	}
+	s:STATE_LANCASHIRE = {
+		add_to_global_variable_list = {
+			name = dip_ideas
+			target = this
+		}
+		set_variable = {
+			name = idea_group
+			value = flag:trade_idea
+		}
+		add_to_list = exclude_state_region
+	}
+	s:STATE_PROVENCE = {
+		add_to_global_variable_list = {
+			name = dip_ideas
+			target = this
+		}
+		set_variable = {
+			name = idea_group
+			value = flag:qualification_idea
+		}
+		add_to_list = exclude_state_region
+	}
+	s:STATE_NORMANDY = {
+		add_to_global_variable_list = {
+			name = dip_ideas
+			target = this
+		}
+		set_variable = {
+			name = idea_group
+			value = flag:humanist_idea
+		}
+		add_to_list = exclude_state_region
+	}
+	s:STATE_ANDALUSIA = {
+		add_to_global_variable_list = {
+			name = dip_ideas
+			target = this
+		}
+		set_variable = {
+			name = idea_group
+			value = flag:syndicalism_idea
+		}
+		add_to_list = exclude_state_region
+	}
+	s:STATE_HOLLAND = {
+		add_to_global_variable_list = {
+			name = mil_ideas
+			target = this
+		}
+		set_variable = {
+			name = idea_group
+			value = flag:offensive_idea
+		}
+		add_to_list = exclude_state_region
+	}
+	s:STATE_BALUCHISTAN = {
+		add_to_global_variable_list = {
+			name = mil_ideas
+			target = this
+		}
+		set_variable = {
+			name = idea_group
+			value = flag:defensive_idea
+		}
+		add_to_list = exclude_state_region
+	}
+	s:STATE_SOUTH_BENGAL = {
+		add_to_global_variable_list = {
+			name = mil_ideas
+			target = this
+		}
+		set_variable = {
+			name = idea_group
+			value = flag:naval_idea
+		}
+		add_to_list = exclude_state_region
+	}
+	s:STATE_DOBRUDJA = {
+		add_to_global_variable_list = {
+			name = mil_ideas
+			target = this
+		}
+		set_variable = {
+			name = idea_group
+			value = flag:militarization_idea
+		}
+		add_to_list = exclude_state_region
+	}
+	s:STATE_BASRA = {
+		add_to_global_variable_list = {
+			name = mil_ideas
+			target = this
+		}
+		set_variable = {
+			name = idea_group
+			value = flag:imperialist_idea
+		}
+		add_to_list = exclude_state_region
+	}
+}

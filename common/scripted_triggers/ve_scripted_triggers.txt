@@ -1,0 +1,259 @@
+﻿age_1_obj_triggers = {
+	AND = {
+		root.average_sol >= 12
+		AND = {
+			has_law = law_type:law_slavery_banned
+			NOT = {
+				has_law = law_type:law_serfdom
+			}
+		}
+		government_legitimacy >= 75
+		taking_loans = no
+		ig:ig_intelligentsia = {
+			is_in_government = yes
+			ig_clout >= 0.15
+		}
+		pop_type_percent_country = {
+			pop_type = peasants
+			percent < 0.5
+		}
+		num_declared_interests >= 8
+	}
+}
+
+age_2_obj_triggers = {
+	AND = {
+		OR = {
+			has_law = law_type:law_colonial_resettlement
+			has_law = law_type:law_colonial_exploitation
+		}
+		any_subject_or_below = {
+			OR = {
+				has_diplomatic_pact = {
+					who = ROOT
+					type = puppet
+				}
+				has_diplomatic_pact = {
+					who = ROOT
+					type = dominion
+				}
+			}
+			count >= 2
+		}
+		any_scope_state = {
+			owner = ROOT
+			state_population > 250000
+			has_building = building_railway
+		}
+		navy_size >= 120
+		leading_producer_of = g:coal
+		literacy_rate >= 0.5
+		total_population > 100000000
+	}
+}
+
+age_3_obj_triggers = {
+	AND = {
+		NOT = {
+			has_law = law_type:law_monarchy
+		}
+		OR = {
+			institution_investment_level = {
+				institution = institution_colonial_affairs
+				value = 5
+			}
+			institution_investment_level = {
+				institution = institution_social_security
+				value = 5
+			}
+			institution_investment_level = {
+				institution = institution_workplace_safety
+				value = 5
+			}
+			institution_investment_level = {
+				institution = institution_schools
+				value = 5
+			}
+			institution_investment_level = {
+				institution = institution_police
+				value = 5
+			}
+			institution_investment_level = {
+				institution = institution_health_system
+				value = 5
+			}
+			institution_investment_level = {
+				institution = institution_home_affairs
+				value = 5
+			}
+		}
+		army_size >= 350
+		leading_producer_of = g:oil
+		NOT = {
+			any_scope_state = {
+				owner = ROOT
+				any_scope_building = {
+					is_building_type = building_barracks
+					OR = {
+						has_active_production_method = pm_irregular_infantry
+						has_active_production_method = pm_line_infantry
+						has_active_production_method = pm_skirmish_infantry
+						has_active_production_method = pm_trench_infantry
+						has_active_production_method = pm_squad_infantry
+					}
+					OR = {
+						has_active_production_method = pm_no_artillery
+						has_active_production_method = pm_cannon_artillery
+						has_active_production_method = pm_mobile_artillery
+						has_active_production_method = pm_shrapnel_artillery
+					}
+				}
+			}
+		}
+		GDP >= 1000000000
+		global_country_ranking = 1
+	}
+}
+
+golden_age_3_obj_trigger = {
+	trigger_if = {
+		limit = {
+			has_global_variable = ve_age_1_started
+		}
+		calc_true_if = {
+			amount >= 4
+			root.average_sol >= 12
+			AND = {
+				has_law = law_type:law_slavery_banned
+				NOT = {
+					has_law = law_type:law_serfdom
+				}
+			}
+			government_legitimacy >= 75
+			taking_loans = no
+			ig:ig_intelligentsia = {
+				is_in_government = yes
+				ig_clout >= 0.15
+			}
+			pop_type_percent_country = {
+				pop_type = peasants
+				percent < 0.5
+			}
+			num_declared_interests >= 8
+		}
+	}
+	trigger_else_if = {
+		limit = {
+			has_global_variable = ve_age_2_started
+		}
+		calc_true_if = {
+			amount >= 4
+			OR = {
+				has_law = law_type:law_colonial_resettlement
+				has_law = law_type:law_colonial_exploitation
+			}
+			any_subject_or_below = {
+				OR = {
+					has_diplomatic_pact = {
+						who = ROOT
+						type = puppet
+					}
+					has_diplomatic_pact = {
+						who = ROOT
+						type = dominion
+					}
+				}
+				count >= 2
+			}
+			any_scope_state = {
+				owner = ROOT
+				state_population > 250000
+				has_building = building_railway
+			}
+			navy_size >= 120
+			leading_producer_of = g:coal
+			literacy_rate >= 0.5
+			total_population > 100000000
+		}
+	}
+	trigger_else_if = {
+		limit = {
+			has_global_variable = ve_age_3_started
+		}
+		calc_true_if = {
+			amount >= 4
+			NOT = {
+				has_law = law_type:law_monarchy
+			}
+			OR = {
+				institution_investment_level = {
+					institution = institution_colonial_affairs
+					value = 5
+				}
+				institution_investment_level = {
+					institution = institution_social_security
+					value = 5
+				}
+				institution_investment_level = {
+					institution = institution_workplace_safety
+					value = 5
+				}
+				institution_investment_level = {
+					institution = institution_schools
+					value = 5
+				}
+				institution_investment_level = {
+					institution = institution_police
+					value = 5
+				}
+				institution_investment_level = {
+					institution = institution_health_system
+					value = 5
+				}
+				institution_investment_level = {
+					institution = institution_home_affairs
+					value = 5
+				}
+			}
+			army_size >= 350
+			leading_producer_of = g:oil
+			NOT = {
+				any_scope_state = {
+					owner = ROOT
+					any_scope_building = {
+						is_building_type = building_barracks
+						OR = {
+							has_active_production_method = pm_irregular_infantry
+							has_active_production_method = pm_line_infantry
+							has_active_production_method = pm_skirmish_infantry
+							has_active_production_method = pm_trench_infantry
+							has_active_production_method = pm_squad_infantry
+						}
+						OR = {
+							has_active_production_method = pm_no_artillery
+							has_active_production_method = pm_cannon_artillery
+							has_active_production_method = pm_mobile_artillery
+							has_active_production_method = pm_shrapnel_artillery
+						}
+					}
+				}
+			}
+			GDP >= 1000000000
+			global_country_ranking = 1
+		}
+	}
+}
+
+piety_cost_trigger = {
+	piety_value >= 125
+}
+
+splendor_cost_trigger = {
+	splender_points_value >= 800
+}
+idea_cost_trigger = {
+	idea_point_value >= 300
+}
+culture_cost_trigger = {
+	culture_reform_point_value >= 750
+}

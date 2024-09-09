@@ -1,0 +1,774 @@
+idea_1_tt_effects = {
+	switch = {
+		trigger = scope:idea_group
+		flag:innovative_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = innovative_idea_1_mdf
+				months = -1
+			}
+		}
+		flag:economic_idea = {
+			#custom_label = ve_gecici_10
+			add_modifier = {
+				name = economic_idea_1_mdf
+				months = -1
+			}
+		}
+		flag:administrative_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = administrative_idea_1_mdf
+				months = -1
+			}
+		}
+		flag:ethnocentrism_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = ethnocentrism_idea_1_mdf
+				months = -1
+			}
+		}
+		flag:politics_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = politics_idea_1_mdf
+				months = -1
+			}
+		}
+		flag:diplomatic_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = diplomatic_idea_1_mdf
+				months = -1
+			}
+		}
+		flag:trade_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = trade_idea_1_mdf
+				months = -1
+			}
+		}
+		flag:qualification_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = qualification_idea_1_mdf
+				months = -1
+			}
+		}
+		flag:humanist_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = humanist_idea_1_mdf
+				months = -1
+			}
+		}
+		flag:syndicalism_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = syndicalism_idea_1_mdf
+				months = -1
+			}
+		}
+		flag:offensive_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = offensive_idea_1_mdf
+				months = -1
+			}
+		}
+		flag:defensive_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = defensive_idea_1_mdf
+				months = -1
+			}
+		}
+		flag:naval_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = naval_idea_1_mdf
+				months = -1
+			}
+		}
+		flag:militarization_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = militarization_idea_1_mdf
+				months = -1
+			}
+		}
+		flag:imperialist_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = imperialist_idea_1_mdf
+				months = -1
+			}
+		}
+	}
+}
+
+idea_2_tt_effects = {
+	switch = {
+		trigger = scope:idea_group
+		flag:innovative_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = innovative_idea_2_mdf
+				months = -1
+			}
+		}
+		flag:economic_idea = {
+			#custom_label = ve_gecici_10
+			add_modifier = {
+				name = economic_idea_2_mdf
+				months = -1
+			}
+		}
+		flag:administrative_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = administrative_idea_2_mdf
+				months = -1
+			}
+		}
+		flag:ethnocentrism_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = ethnocentrism_idea_2_mdf
+				months = -1
+			}
+		}
+		flag:politics_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = politics_idea_2_mdf
+				months = -1
+			}
+		}
+		flag:diplomatic_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = diplomatic_idea_2_mdf
+				months = -1
+			}
+		}
+		flag:trade_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = trade_idea_2_mdf
+				months = -1
+			}
+		}
+		flag:qualification_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = qualification_idea_2_mdf
+				months = -1
+			}
+		}
+		flag:humanist_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = humanist_idea_2_mdf
+				months = -1
+			}
+		}
+		flag:syndicalism_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = syndicalism_idea_2_mdf
+				months = -1
+			}
+		}
+		flag:offensive_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = offensive_idea_2_mdf
+				months = -1
+			}
+		}
+		flag:defensive_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = defensive_idea_2_mdf
+				months = -1
+			}
+		}
+		flag:naval_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = naval_idea_2_mdf
+				months = -1
+			}
+		}
+		flag:militarization_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = militarization_idea_2_mdf
+				months = -1
+			}
+		}
+		flag:imperialist_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = imperialist_idea_2_mdf
+				months = -1
+			}
+		}
+	}
+}
+
+idea_3_tt_effects = {
+	switch = {
+		trigger = scope:idea_group
+		flag:innovative_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = innovative_idea_3_mdf
+				months = -1
+			}
+		}
+		flag:economic_idea = {
+			#custom_label = ve_gecici_10
+			add_modifier = {
+				name = economic_idea_3_mdf
+				months = -1
+			}
+		}
+		flag:administrative_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = administrative_idea_3_mdf
+				months = -1
+			}
+		}
+		flag:ethnocentrism_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = ethnocentrism_idea_3_mdf
+				months = -1
+			}
+		}
+		flag:politics_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = politics_idea_3_mdf
+				months = -1
+			}
+		}
+		flag:diplomatic_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = diplomatic_idea_3_mdf
+				months = -1
+			}
+		}
+		flag:trade_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = trade_idea_3_mdf
+				months = -1
+			}
+		}
+		flag:qualification_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = qualification_idea_3_mdf
+				months = -1
+			}
+		}
+		flag:humanist_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = humanist_idea_3_mdf
+				months = -1
+			}
+		}
+		flag:syndicalism_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = syndicalism_idea_3_mdf
+				months = -1
+			}
+		}
+		flag:offensive_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = offensive_idea_3_mdf
+				months = -1
+			}
+		}
+		flag:defensive_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = defensive_idea_3_mdf
+				months = -1
+			}
+		}
+		flag:naval_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = naval_idea_3_mdf
+				months = -1
+			}
+		}
+		flag:militarization_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = militarization_idea_3_mdf
+				months = -1
+			}
+		}
+		flag:imperialist_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = imperialist_idea_3_mdf
+				months = -1
+			}
+		}
+	}
+}
+
+idea_4_tt_effects = {
+	switch = {
+		trigger = scope:idea_group
+		flag:innovative_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = innovative_idea_4_mdf
+				months = -1
+			}
+		}
+		flag:economic_idea = {
+			#custom_label = ve_gecici_10
+			add_modifier = {
+				name = economic_idea_4_mdf
+				months = -1
+			}
+		}
+		flag:administrative_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = administrative_idea_4_mdf
+				months = -1
+			}
+		}
+		flag:ethnocentrism_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = ethnocentrism_idea_4_mdf
+				months = -1
+			}
+		}
+		flag:politics_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = politics_idea_4_mdf
+				months = -1
+			}
+		}
+		flag:diplomatic_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = diplomatic_idea_4_mdf
+				months = -1
+			}
+		}
+		flag:trade_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = trade_idea_4_mdf
+				months = -1
+			}
+		}
+		flag:qualification_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = qualification_idea_4_mdf
+				months = -1
+			}
+		}
+		flag:humanist_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = humanist_idea_4_mdf
+				months = -1
+			}
+		}
+		flag:syndicalism_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = syndicalism_idea_4_mdf
+				months = -1
+			}
+		}
+		flag:offensive_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = offensive_idea_4_mdf
+				months = -1
+			}
+		}
+		flag:defensive_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = defensive_idea_4_mdf
+				months = -1
+			}
+		}
+		flag:naval_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = naval_idea_4_mdf
+				months = -1
+			}
+		}
+		flag:militarization_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = militarization_idea_4_mdf
+				months = -1
+			}
+		}
+		flag:imperialist_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = imperialist_idea_4_mdf
+				months = -1
+			}
+		}
+	}
+}
+
+idea_5_tt_effects = {
+	switch = {
+		trigger = scope:idea_group
+		flag:innovative_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = innovative_idea_5_mdf
+				months = -1
+			}
+		}
+		flag:economic_idea = {
+			#custom_label = ve_gecici_10
+			add_modifier = {
+				name = economic_idea_5_mdf
+				months = -1
+			}
+		}
+		flag:administrative_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = administrative_idea_5_mdf
+				months = -1
+			}
+		}
+		flag:ethnocentrism_idea = {
+			#custom_label = ve_gecici_9
+			custom_tooltip = {
+				text = ethnocentrism_idea_5_tt
+			}
+		}
+		flag:politics_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = politics_idea_5_mdf
+				months = -1
+			}
+		}
+		flag:diplomatic_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = diplomatic_idea_5_mdf
+				months = -1
+			}
+		}
+		flag:trade_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = trade_idea_5_mdf
+				months = -1
+			}
+		}
+		flag:qualification_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = qualification_idea_5_mdf
+				months = -1
+			}
+		}
+		flag:humanist_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = humanist_idea_5_mdf
+				months = -1
+			}
+		}
+		flag:syndicalism_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = syndicalism_idea_5_mdf
+				months = -1
+			}
+		}
+		flag:offensive_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = offensive_idea_5_mdf
+				months = -1
+			}
+		}
+		flag:defensive_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = defensive_idea_5_mdf
+				months = -1
+			}
+		}
+		flag:naval_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = naval_idea_5_mdf
+				months = -1
+			}
+		}
+		flag:militarization_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = militarization_idea_5_mdf
+				months = -1
+			}
+		}
+		flag:imperialist_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = imperialist_idea_5_mdf
+				months = -1
+			}
+		}
+	}
+}
+
+idea_6_tt_effects = {
+	switch = {
+		trigger = scope:idea_group
+		flag:innovative_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = innovative_idea_6_mdf
+				months = -1
+			}
+		}
+		flag:economic_idea = {
+			#custom_label = ve_gecici_10
+			add_modifier = {
+				name = economic_idea_6_mdf
+				months = -1
+			}
+		}
+		flag:administrative_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = administrative_idea_6_mdf
+				months = -1
+			}
+		}
+		flag:ethnocentrism_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = ethnocentrism_idea_6_mdf
+				months = -1
+			}
+		}
+		flag:politics_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = politics_idea_6_mdf
+				months = -1
+			}
+		}
+		flag:diplomatic_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = diplomatic_idea_6_mdf
+				months = -1
+			}
+		}
+		flag:trade_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = trade_idea_6_mdf
+				months = -1
+			}
+		}
+		flag:qualification_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = qualification_idea_6_mdf
+				months = -1
+			}
+		}
+		flag:humanist_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = humanist_idea_6_mdf
+				months = -1
+			}
+		}
+		flag:syndicalism_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = syndicalism_idea_6_mdf
+				months = -1
+			}
+		}
+		flag:offensive_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = offensive_idea_6_mdf
+				months = -1
+			}
+		}
+		flag:defensive_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = defensive_idea_6_mdf
+				months = -1
+			}
+		}
+		flag:naval_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = naval_idea_6_mdf
+				months = -1
+			}
+		}
+		flag:militarization_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = militarization_idea_6_mdf
+				months = -1
+			}
+		}
+		flag:imperialist_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = imperialist_idea_6_mdf
+				months = -1
+			}
+		}
+	}
+}
+
+idea_7_tt_effects = {
+	switch = {
+		trigger = scope:idea_group
+		flag:innovative_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = innovative_idea_7_mdf
+				months = -1
+			}
+		}
+		flag:economic_idea = {
+			#custom_label = ve_gecici_10
+			add_modifier = {
+				name = economic_idea_7_mdf
+				months = -1
+			}
+		}
+		flag:administrative_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = administrative_idea_7_mdf
+				months = -1
+			}
+		}
+		flag:ethnocentrism_idea = {
+			#custom_label = ve_gecici_9
+			custom_tooltip = {
+				text = ethnocentrism_idea_7_tt
+			}
+		}
+		flag:politics_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = politics_idea_7_mdf
+				months = -1
+			}
+		}
+		flag:diplomatic_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = diplomatic_idea_7_mdf
+				months = -1
+			}
+		}
+		flag:trade_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = trade_idea_7_mdf
+				months = -1
+			}
+		}
+		flag:qualification_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = qualification_idea_7_mdf
+				months = -1
+			}
+		}
+		flag:humanist_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = humanist_idea_7_mdf
+				months = -1
+			}
+		}
+		flag:syndicalism_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = syndicalism_idea_7_mdf
+				months = -1
+			}
+		}
+		flag:offensive_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = offensive_idea_7_mdf
+				months = -1
+			}
+		}
+		flag:defensive_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = defensive_idea_7_mdf
+				months = -1
+			}
+		}
+		flag:naval_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = naval_idea_7_mdf
+				months = -1
+			}
+		}
+		flag:militarization_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = militarization_idea_7_mdf
+				months = -1
+			}
+		}
+		flag:imperialist_idea = {
+			#custom_label = ve_gecici_9
+			add_modifier = {
+				name = imperialist_idea_7_mdf
+				months = -1
+			}
+		}
+	}
+}

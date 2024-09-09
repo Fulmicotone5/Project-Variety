@@ -1,0 +1,2639 @@
+types ve_gui_panel_types
+{
+    type ve_panel_age_bonusses = vbox {
+		layoutpolicy_horizontal = expanding
+		layoutpolicy_vertical = expanding
+				vbox = {
+					layoutpolicy_horizontal = expanding
+					layoutpolicy_vertical = expanding
+					vbox = {	#Up
+						spacing =  10
+						layoutpolicy_horizontal = expanding
+						hbox = {	#Age Info
+							layoutpolicy_horizontal = fixed
+							using = main_bg
+							margin = {
+								200
+								20
+							}
+							hbox = {	#Sections - AGE 1	
+								visible = "[GetScriptedGui('ve_age_1').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								vbox = {	#Middle Section
+									spacing = 10
+									vbox = {
+										header_pattern = {
+											layoutpolicy_horizontal = expanding
+											blockoverride
+											"header_text"
+											{
+												text = "ve_age_of_victoria_title"
+												default_format = "#tooltip_header"
+											}
+											blockoverride
+											"button_close"
+											{
+												visible = no
+											}
+										}
+										hbox = {											
+											vbox = {	#Left Age
+												spacing = 50
+												layoutpolicy_vertical = fixed
+												widget = {								
+												}							
+												widget = {
+													size = { 75 75 }
+													tooltip = "ve_victorian_age_icon_p_tt"
+													icon = {
+														size = { 100% 100% }
+														texture = "gfx/interface/ve_age/victorian_age_icon.dds"
+														using = default_fade_in_out
+													}
+												}
+												widget = {
+													size = { 75 75 }
+													tooltip = "ve_imperialism_age_icon_n_tt"
+													icon = {
+														size = { 100% 100% }
+														texture = "gfx/interface/ve_age/imperialism_age_icon_black.dds"
+														using = default_fade_in_out
+													}
+												}
+											}
+											vbox = {
+												icon = {
+													texture = "gfx/interface/ve_age/victoria_age.dds"
+													size = {
+														700
+														300
+													}
+													using = frame_small_mask
+												}
+												hbox = {
+													button = {
+														using = default_button_action
+														size = { 100% 40 }
+														text = "ve_golden_age"
+														onclick = "[GetScriptedGui('ve_golden_age').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+														enabled = "[GetScriptedGui('ve_golden_age').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+														tooltip = "[GetScriptedGui('ve_golden_age').BuildTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+														using = tooltip_below
+													}
+												}
+											}
+											vbox = {	#Right Ages
+												spacing = 50
+												layoutpolicy_vertical = fixed
+					
+												widget = {
+													
+												}
+												widget = {
+													size = { 75 75 }
+													tooltip = "ve_great_war_age_icon_n_tt"
+													icon = {
+														size = { 100% 100% }
+														texture = "gfx/interface/ve_age/the_great_wars_age_icon_black.dds"
+														using = default_fade_in_out
+													}
+												}
+											}
+										}										
+									}
+									vbox = {
+										spacing = 15
+										textbox = {
+											text = "ve_age_of_victoria_desc"
+											default_format = "#tooltip_header"
+											using = fontsize_x
+											align = nobaseline
+											elide = left
+											minimumsize = {
+												100
+												-1
+											}
+											maximumsize = {
+												700
+												-1
+											}
+											multiline = yes
+											autoresize = yes
+										}
+										hbox = {
+											spacing = 10
+											tooltip = "ve_age_splendor_tt"
+											margin = {
+												15 5
+											}
+											using = main_bg
+											textbox = {
+												text = "ve_splendor"
+												using = fontsize_xxl
+												align = center|nobaseline
+												autoresize = yes
+											}
+											textbox = {
+												text = "[GetPlayer.MakeScope.Var('ve_splender_points').GetValue]"
+												default_format = "#positive_value"
+												using = fontsize_xxl
+												align = center|nobaseline
+												autoresize = yes
+											}
+										}
+									}
+									
+								}
+								
+							}
+							hbox = {	#Sections - AGE 2	
+								visible = "[GetScriptedGui('ve_age_2').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								vbox = {	#Middle Section
+									spacing = 10
+									vbox = {
+										header_pattern = {
+											layoutpolicy_horizontal = expanding
+											blockoverride
+											"header_text"
+											{
+												text = "ve_imperialism_age_title"
+												default_format = "#tooltip_header"
+											}
+											blockoverride
+											"button_close"
+											{
+												visible = no
+											}
+										}
+										hbox = {											
+											vbox = {	#Left Age
+												spacing = 50
+												layoutpolicy_vertical = fixed
+												widget = {								
+												}							
+												widget = {
+													size = { 75 75 }
+													tooltip = "ve_victorian_age_icon_n_tt"
+													icon = {
+														size = { 100% 100% }
+														texture = "gfx/interface/ve_age/victorian_age_icon_black.dds"
+														using = default_fade_in_out
+													}
+												}
+												widget = {
+													size = { 75 75 }
+													tooltip = "ve_imperialism_age_icon_p_tt"
+													icon = {
+														size = { 100% 100% }
+														texture = "gfx/interface/ve_age/imperialism_age_icon.dds"
+														using = default_fade_in_out
+													}
+												}
+											}
+											vbox = {
+												icon = {
+													texture = "gfx/interface/ve_age/imperialism_age.dds"
+													size = {
+														700
+														300
+													}
+													using = frame_small_mask
+												}
+												hbox = {
+													button = {
+														using = default_button_action
+														size = { 100% 40 }
+														text = "ve_golden_age"
+														tooltip = "[GetScriptedGui('ve_golden_age').BuildTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+														onclick = "[GetScriptedGui('ve_golden_age').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+														enabled = "[GetScriptedGui('ve_golden_age').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+														using = tooltip_below
+													}
+												}
+											}
+											vbox = {	#Right Ages
+												spacing = 50
+												layoutpolicy_vertical = fixed
+					
+												widget = {
+													
+												}
+												widget = {
+													size = { 75 75 }
+													tooltip = "ve_great_war_age_icon_n_tt"
+													icon = {
+														size = { 100% 100% }
+														texture = "gfx/interface/ve_age/the_great_wars_age_icon_black.dds"
+														using = default_fade_in_out
+													}
+												}
+											}
+										}										
+									}
+									vbox = {
+										spacing = 15
+										textbox = {
+											text = "ve_imperialism_age_desc"
+											default_format = "#tooltip_header"
+											using = fontsize_x
+											align = nobaseline
+											elide = left
+											minimumsize = {
+												100
+												-1
+											}
+											maximumsize = {
+												700
+												-1
+											}
+											multiline = yes
+											autoresize = yes
+										}
+										hbox = {
+											spacing = 10
+											margin = {
+												15 5
+											}
+											using = main_bg
+											tooltip = "ve_age_splendor_tt"
+											textbox = {
+												text = "ve_splendor"
+												using = fontsize_xxl
+												align = center|nobaseline
+												autoresize = yes
+											}
+											textbox = {
+												text = "[GetPlayer.MakeScope.Var('ve_splender_points').GetValue]"
+												default_format = "#positive_value"
+												using = fontsize_xxl
+												align = center|nobaseline
+												autoresize = yes
+											}
+										}
+									}
+									
+								}
+								
+							}
+							hbox = {	#Sections - AGE 3
+								visible = "[GetScriptedGui('ve_age_3').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								vbox = {	#Middle Section
+									spacing = 10
+									vbox = {
+										header_pattern = {
+											layoutpolicy_horizontal = expanding
+											blockoverride
+											"header_text"
+											{
+												text = "ve_great_wars_age_title"
+												default_format = "#tooltip_header"
+											}
+											blockoverride
+											"button_close"
+											{
+												visible = no
+											}
+										}
+										hbox = {											
+											vbox = {	#Left Age
+												spacing = 50
+												layoutpolicy_vertical = fixed
+												widget = {								
+												}							
+												widget = {
+													size = { 75 75 }
+													tooltip = "ve_victorian_age_icon_n_tt"
+													icon = {
+														size = { 100% 100% }
+														texture = "gfx/interface/ve_age/victorian_age_icon_black.dds"
+														using = default_fade_in_out
+													}
+												}
+												widget = {
+													size = { 75 75 }
+													tooltip = "ve_imperialism_age_icon_n_tt"
+													icon = {
+														size = { 100% 100% }
+														texture = "gfx/interface/ve_age/imperialism_age_icon_black.dds"
+														using = default_fade_in_out
+													}
+												}
+											}
+											vbox = {
+												icon = {
+													texture = "gfx/interface/ve_age/the_great_wars_age.dds"
+													size = {
+														700
+														300
+													}
+													using = frame_small_mask
+												}
+												hbox = {
+													button = {
+														using = default_button_action
+														size = { 100% 40 }
+														text = "ve_golden_age"
+														onclick = "[GetScriptedGui('ve_golden_age').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+														enabled = "[GetScriptedGui('ve_golden_age').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+														tooltip = "[GetScriptedGui('ve_golden_age').BuildTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+														using = tooltip_below
+													}
+												}
+											}
+											vbox = {	#Right Ages
+												spacing = 50
+												layoutpolicy_vertical = fixed
+					
+												widget = {
+													
+												}
+												widget = {
+													size = { 75 75 }
+													tooltip = "ve_great_war_age_icon_p_tt"
+													icon = {
+														size = { 100% 100% }
+														texture = "gfx/interface/ve_age/the_great_wars_age_icon.dds"
+														using = default_fade_in_out
+													}
+												}
+											}
+										}										
+									}
+									vbox = {
+										spacing = 15
+										textbox = {
+											text = "ve_great_wars_age_desc"
+											default_format = "#tooltip_header"
+											using = fontsize_x
+											align = nobaseline
+											elide = left
+											minimumsize = {
+												100
+												-1
+											}
+											maximumsize = {
+												700
+												-1
+											}
+											multiline = yes
+											autoresize = yes
+										}
+										hbox = {
+											spacing = 10
+											margin = {
+												15 5
+											}
+											using = main_bg
+											textbox = {
+												text = "ve_splendor"
+												using = fontsize_xxl
+												align = center|nobaseline
+												autoresize = yes
+											}
+											textbox = {
+												text = "[GetPlayer.MakeScope.Var('ve_splender_points').GetValue]"
+												default_format = "#positive_value"
+												using = fontsize_xxl
+												align = center|nobaseline
+												autoresize = yes
+											}
+										}
+									}
+									
+								}
+								
+							}
+						}
+						hbox = {	#Age Bonuses - AGE 1
+							layoutpolicy_horizontal = fixed
+							visible = "[GetScriptedGui('ve_age_1').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+							spacing = 10
+							using = main_bg
+							margin = { 25 15 }
+							button_icon_square = {
+								size = {
+									100
+									100
+								}
+								blockoverride
+								"icon"
+								{
+									texture = "gfx/interface/ve_age/authority_icon.dds"
+								}
+								onclick = "[GetScriptedGui('ve_age_bonus_1').Execute(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('ve_age_bonus_1').IsValid(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								visible = "[GetScriptedGui('ve_age_bonus_1').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_1').BuildTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = tooltip_above
+							}
+							icon = {
+								texture = "gfx/interface/ve_age/authority_icon.dds"
+								visible = "[Not(GetScriptedGui('ve_age_bonus_1').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End ))]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_1').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = ve_shimmer
+								background = {
+									texture = "gfx/interface/age_cannot_unlock.dds"
+									size = {
+										100
+										100
+									}
+								}
+								size = {
+									100
+									100
+								}
+							}
+							button_icon_square = {
+								size = {
+									100
+									100
+								}
+								position = { 0 15 }
+								blockoverride
+								"icon"
+								{
+									texture = "gfx/interface/ve_age/take_loan_button.dds"
+								}
+								onclick = "[GetScriptedGui('ve_age_bonus_2').Execute(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('ve_age_bonus_2').IsValid(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								visible = "[GetScriptedGui('ve_age_bonus_2').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_2').BuildTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = tooltip_above
+							}
+							icon = {
+								texture = "gfx/interface/ve_age/take_loan_button.dds"
+								visible = "[Not(GetScriptedGui('ve_age_bonus_2').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End ))]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_2').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = ve_shimmer
+								background = {
+									texture = "gfx/interface/age_cannot_unlock.dds"
+									size = {
+									100
+									100
+								}
+								}
+								size = {
+									100
+									100
+								}
+							}
+							button_icon_square = {
+								size = {
+									100
+									100
+								}
+								blockoverride
+								"icon"
+								{
+									texture = "gfx/interface/ve_age/can_colony_boost_development.dds"
+								}
+								onclick = "[GetScriptedGui('ve_age_bonus_3').Execute(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('ve_age_bonus_3').IsValid(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								visible = "[GetScriptedGui('ve_age_bonus_3').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_3').BuildTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = tooltip_above
+							}
+							icon = {
+								texture = "gfx/interface/ve_age/can_colony_boost_development.dds"
+								visible = "[Not(GetScriptedGui('ve_age_bonus_3').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End ))]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_3').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = ve_shimmer
+								background = {
+									texture = "gfx/interface/age_cannot_unlock.dds"
+									size = {
+									100
+									100
+								}
+								}
+								size = {
+									100
+									100
+								}
+							}
+							button_icon_square = {
+								size = {
+									100
+									100
+								}
+								blockoverride
+								"icon"
+								{
+									texture = "gfx/interface/ve_age/diplomatic_upkeep.dds"
+								}
+								onclick = "[GetScriptedGui('ve_age_bonus_4').Execute(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('ve_age_bonus_4').IsValid(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								visible = "[GetScriptedGui('ve_age_bonus_4').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_4').BuildTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = tooltip_above
+							}
+							icon = {
+								texture = "gfx/interface/ve_age/diplomatic_upkeep.dds"
+								visible = "[Not(GetScriptedGui('ve_age_bonus_4').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End ))]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_4').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = ve_shimmer
+								background = {
+									texture = "gfx/interface/age_cannot_unlock.dds"
+									size = {
+									100
+									100
+								}
+								}
+								size = {
+									100
+									100
+								}
+							}
+							button_icon_square = {
+								size = {
+									100
+									100
+								}
+								blockoverride
+								"icon"
+								{
+									texture = "gfx/interface/ve_age/urbanization.dds"
+								}
+								onclick = "[GetScriptedGui('ve_age_bonus_5').Execute(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('ve_age_bonus_5').IsValid(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								visible = "[GetScriptedGui('ve_age_bonus_5').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_5').BuildTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = tooltip_above
+							}
+							icon = {
+								texture = "gfx/interface/ve_age/urbanization.dds"
+								visible = "[Not(GetScriptedGui('ve_age_bonus_5').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End ))]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_5').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = ve_shimmer
+								background = {
+									texture = "gfx/interface/age_cannot_unlock.dds"
+									size = {
+									100
+									100
+								}
+								}
+								size = {
+									100
+									100
+								}
+							}
+							button_icon_square = {
+								size = {
+									100
+									100
+								}
+								blockoverride
+								"icon"
+								{
+									texture = "gfx/interface/ve_age/local_tax_modifier.dds"
+								}
+								onclick = "[GetScriptedGui('ve_age_bonus_6').Execute(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('ve_age_bonus_6').IsValid(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								visible = "[GetScriptedGui('ve_age_bonus_6').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_6').BuildTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = tooltip_above
+							}
+							icon = {
+								texture = "gfx/interface/ve_age/local_tax_modifier.dds"
+								visible = "[Not(GetScriptedGui('ve_age_bonus_6').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End ))]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_6').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = ve_shimmer
+								background = {
+									texture = "gfx/interface/age_cannot_unlock.dds"
+									size = {
+									100
+									100
+								}
+								}
+								size = {
+									100
+									100
+								}
+							}
+							button_icon_square = {
+								size = {
+									100
+									100
+								}
+								blockoverride
+								"icon"
+								{
+									texture = "gfx/interface/ve_age/coal.dds"
+								}
+								onclick = "[GetScriptedGui('ve_age_bonus_7').Execute(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('ve_age_bonus_7').IsValid(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								visible = "[GetScriptedGui('ve_age_bonus_7').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_7').BuildTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = tooltip_above
+							}
+							icon = {
+								texture = "gfx/interface/ve_age/coal.dds"
+								visible = "[Not(GetScriptedGui('ve_age_bonus_7').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End ))]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_7').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = ve_shimmer
+								background = {
+									texture = "gfx/interface/age_cannot_unlock.dds"
+									size = {
+									100
+									100
+								}
+								}
+								size = {
+									100
+									100
+								}
+							}
+							button_icon_square = {
+								size = {
+									100
+									100
+								}
+								blockoverride
+								"icon"
+								{
+									texture = "gfx/interface/ve_age/global_ship_trade_power.dds"
+								}
+								onclick = "[GetScriptedGui('ve_age_bonus_8').Execute(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('ve_age_bonus_8').IsValid(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								visible = "[GetScriptedGui('ve_age_bonus_8').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_8').BuildTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = tooltip_above
+							}
+							icon = {
+								texture = "gfx/interface/ve_age/global_ship_trade_power.dds"
+								visible = "[Not(GetScriptedGui('ve_age_bonus_8').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End ))]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_8').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = ve_shimmer
+								background = {
+									texture = "gfx/interface/age_cannot_unlock.dds"
+									size = {
+									100
+									100
+								}
+								}
+								size = {
+									100
+									100
+								}
+							}
+							button_icon_square = {
+								size = {
+									100
+									100
+								}
+								blockoverride
+								"icon"
+								{
+									texture = "gfx/interface/ve_age/ab_allow_feudal_de_jure_law.dds"
+								}
+								onclick = "[GetScriptedGui('ve_age_bonus_9').Execute(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('ve_age_bonus_9').IsValid(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								visible = "[GetScriptedGui('ve_age_bonus_9').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_9').BuildTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = tooltip_above
+							}
+							icon = {
+								texture = "gfx/interface/ve_age/ab_allow_feudal_de_jure_law.dds"
+								visible = "[Not(GetScriptedGui('ve_age_bonus_9').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End ))]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_9').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = ve_shimmer
+								background = {
+									texture = "gfx/interface/age_cannot_unlock.dds"
+									size = {
+									100
+									100
+								}
+								}
+								size = {
+									100
+									100
+								}
+							}
+							button_icon_square = {
+								size = {
+									100
+									100
+								}
+								blockoverride
+								"icon"
+								{
+									texture = "gfx/interface/ve_age/population_radical.dds"
+								}
+								onclick = "[GetScriptedGui('ve_age_bonus_10').Execute(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('ve_age_bonus_10').IsValid(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								visible = "[GetScriptedGui('ve_age_bonus_10').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_10').BuildTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = tooltip_above
+							}
+							icon = {
+								texture = "gfx/interface/ve_age/population_radical.dds"
+								visible = "[Not(GetScriptedGui('ve_age_bonus_10').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End ))]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_10').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = ve_shimmer
+								background = {
+									texture = "gfx/interface/age_cannot_unlock.dds"
+									size = {
+									100
+									100
+								}
+								}
+								size = {
+									100
+									100
+								}
+							}
+							button_icon_square = {
+								size = {
+									100
+									100
+								}
+								blockoverride
+								"icon"
+								{
+									texture = "gfx/interface/ve_age/aggresive_exp_icon.dds"
+								}
+								onclick = "[GetScriptedGui('ve_age_bonus_11').Execute(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('ve_age_bonus_11').IsValid(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								visible = "[GetScriptedGui('ve_age_bonus_11').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_11').BuildTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = tooltip_above
+							}
+							icon = {
+								texture = "gfx/interface/ve_age/aggresive_exp_icon.dds"
+								visible = "[Not(GetScriptedGui('ve_age_bonus_11').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End ))]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_11').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = ve_shimmer
+								background = {
+									texture = "gfx/interface/age_cannot_unlock.dds"
+									size = {
+									100
+									100
+								}
+								}
+								size = {
+									100
+									100
+								}
+							}
+						}
+						hbox = {	#Age Bonuses - AGE 2
+							layoutpolicy_horizontal = fixed
+							visible = "[GetScriptedGui('ve_age_2').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+							spacing = 10
+							using = main_bg
+							margin = { 25 15 }
+							button_icon_square = {
+								size = {
+									100
+									100
+								}
+								blockoverride
+								"icon"
+								{
+									texture = "gfx/interface/ve_age/ig_suppress.dds"
+								}
+								onclick = "[GetScriptedGui('ve_age_bonus_1').Execute(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('ve_age_bonus_1').IsValid(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								visible = "[GetScriptedGui('ve_age_bonus_1').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_1').BuildTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = tooltip_above
+							}
+							icon = {
+								texture = "gfx/interface/ve_age/ig_suppress.dds"
+								visible = "[Not(GetScriptedGui('ve_age_bonus_1').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End ))]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_1').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = ve_shimmer
+								background = {
+									texture = "gfx/interface/age_cannot_unlock.dds"
+									size = {
+									100
+									100
+								}
+								}
+								size = {
+									100
+									100
+								}
+							}
+							button_icon_square = {
+								size = {
+									100
+									100
+								}
+								blockoverride
+								"icon"
+								{
+									texture = "gfx/interface/ve_age/global_trade_goods_size_modifier.dds"
+								}
+								onclick = "[GetScriptedGui('ve_age_bonus_2').Execute(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('ve_age_bonus_2').IsValid(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								visible = "[GetScriptedGui('ve_age_bonus_2').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_2').BuildTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = tooltip_above
+							}
+							icon = {
+								texture = "gfx/interface/ve_age/global_trade_goods_size_modifier.dds"
+								visible = "[Not(GetScriptedGui('ve_age_bonus_2').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End ))]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_2').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = ve_shimmer
+								background = {
+									texture = "gfx/interface/age_cannot_unlock.dds"
+									size = {
+									100
+									100
+								}
+								}
+								size = {
+									100
+									100
+								}
+							}
+							button_icon_square = {
+								size = {
+									100
+									100
+								}
+								blockoverride
+								"icon"
+								{
+									texture = "gfx/interface/ve_age/unrest_suppression_icon.dds"
+								}
+								onclick = "[GetScriptedGui('ve_age_bonus_3').Execute(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('ve_age_bonus_3').IsValid(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								visible = "[GetScriptedGui('ve_age_bonus_3').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_3').BuildTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = tooltip_above
+							}
+							icon = {
+								texture = "gfx/interface/ve_age/unrest_suppression_icon.dds"
+								visible = "[Not(GetScriptedGui('ve_age_bonus_3').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End ))]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_3').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = ve_shimmer
+								background = {
+									texture = "gfx/interface/age_cannot_unlock.dds"
+									size = {
+									100
+									100
+								}
+								}
+								size = {
+									100
+									100
+								}
+							}
+							button_icon_square = {
+								size = {
+									100
+									100
+								}
+								blockoverride
+								"icon"
+								{
+									texture = "gfx/interface/ve_ideas/global_unrest.dds"
+								}
+								onclick = "[GetScriptedGui('ve_age_bonus_4').Execute(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('ve_age_bonus_4').IsValid(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								visible = "[GetScriptedGui('ve_age_bonus_4').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_4').BuildTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = tooltip_above
+							}
+							icon = {
+								texture = "gfx/interface/ve_ideas/global_unrest.dds"
+								visible = "[Not(GetScriptedGui('ve_age_bonus_4').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End ))]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_4').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = ve_shimmer
+								background = {
+									texture = "gfx/interface/age_cannot_unlock.dds"
+									size = {
+									100
+									100
+								}
+								}
+								size = {
+									100
+									100
+								}
+							}
+							button_icon_square = {
+								size = {
+									100
+									100
+								}
+								blockoverride
+								"icon"
+								{
+									texture = "gfx/interface/ve_age/trade_efficiency.dds"
+								}
+								onclick = "[GetScriptedGui('ve_age_bonus_5').Execute(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('ve_age_bonus_5').IsValid(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								visible = "[GetScriptedGui('ve_age_bonus_5').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_5').BuildTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = tooltip_above
+							}
+							icon = {
+								texture = "gfx/interface/ve_age/trade_efficiency.dds"
+								visible = "[Not(GetScriptedGui('ve_age_bonus_5').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End ))]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_5').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = ve_shimmer
+								background = {
+									texture = "gfx/interface/age_cannot_unlock.dds"
+									size = {
+									100
+									100
+								}
+								}
+								size = {
+									100
+									100
+								}
+							}
+							button_icon_square = {
+								size = {
+									100
+									100
+								}
+								blockoverride
+								"icon"
+								{
+									texture = "gfx/interface/ve_age/global_missionary_strength.dds"
+								}
+								onclick = "[GetScriptedGui('ve_age_bonus_6').Execute(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('ve_age_bonus_6').IsValid(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								visible = "[GetScriptedGui('ve_age_bonus_6').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_6').BuildTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = tooltip_above
+							}
+							icon = {
+								texture = "gfx/interface/ve_age/global_missionary_strength.dds"
+								visible = "[Not(GetScriptedGui('ve_age_bonus_6').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End ))]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_6').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = ve_shimmer
+								background = {
+									texture = "gfx/interface/age_cannot_unlock.dds"
+									size = {
+									100
+									100
+								}
+								}
+								size = {
+									100
+									100
+								}
+							}
+							button_icon_square = {
+								size = {
+									100
+									100
+								}
+								blockoverride
+								"icon"
+								{
+									texture = "gfx/interface/ve_age/belgian_can_colony_boost_development.dds"
+								}
+								onclick = "[GetScriptedGui('ve_age_bonus_7').Execute(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('ve_age_bonus_7').IsValid(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								visible = "[GetScriptedGui('ve_age_bonus_7').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_7').BuildTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = tooltip_above
+							}
+							icon = {
+								texture = "gfx/interface/ve_age/belgian_can_colony_boost_development.dds"
+								visible = "[Not(GetScriptedGui('ve_age_bonus_7').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End ))]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_7').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = ve_shimmer
+								background = {
+									texture = "gfx/interface/age_cannot_unlock.dds"
+									size = {
+									100
+									100
+								}
+								}
+								size = {
+									100
+									100
+								}
+							}
+							button_icon_square = {
+								size = {
+									100
+									100
+								}
+								blockoverride
+								"icon"
+								{
+									texture = "gfx/interface/ve_age/privilege_gold_mint.dds"
+								}
+								onclick = "[GetScriptedGui('ve_age_bonus_8').Execute(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('ve_age_bonus_8').IsValid(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								visible = "[GetScriptedGui('ve_age_bonus_8').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_8').BuildTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = tooltip_above
+							}
+							icon = {
+								texture = "gfx/interface/ve_age/privilege_gold_mint.dds"
+								visible = "[Not(GetScriptedGui('ve_age_bonus_8').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End ))]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_8').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = ve_shimmer
+								background = {
+									texture = "gfx/interface/age_cannot_unlock.dds"
+									size = {
+									100
+									100
+								}
+								}
+								size = {
+									100
+									100
+								}
+							}
+							button_icon_square = {
+								size = {
+									100
+									100
+								}
+								blockoverride
+								"icon"
+								{
+									texture = "gfx/interface/ve_age/unitpanel_button_seize_colony.dds"
+								}
+								onclick = "[GetScriptedGui('ve_age_bonus_9').Execute(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('ve_age_bonus_9').IsValid(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								visible = "[GetScriptedGui('ve_age_bonus_9').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_9').BuildTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = tooltip_above
+							}
+							icon = {
+								texture = "gfx/interface/ve_age/unitpanel_button_seize_colony.dds"
+								visible = "[Not(GetScriptedGui('ve_age_bonus_9').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End ))]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_9').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = ve_shimmer
+								background = {
+									texture = "gfx/interface/age_cannot_unlock.dds"
+									size = {
+									100
+									100
+								}
+								}
+								size = {
+									100
+									100
+								}
+							}
+							button_icon_square = {
+								size = {
+									100
+									100
+								}
+								blockoverride
+								"icon"
+								{
+									texture = "gfx/interface/ve_age/tolerance_heathen.dds"
+								}
+								onclick = "[GetScriptedGui('ve_age_bonus_10').Execute(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('ve_age_bonus_10').IsValid(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								visible = "[GetScriptedGui('ve_age_bonus_10').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_10').BuildTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = tooltip_above
+							}
+							icon = {
+								texture = "gfx/interface/ve_age/tolerance_heathen.dds"
+								visible = "[Not(GetScriptedGui('ve_age_bonus_10').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End ))]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_10').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = ve_shimmer
+								background = {
+									texture = "gfx/interface/age_cannot_unlock.dds"
+									size = {
+									100
+									100
+								}
+								}
+								size = {
+									100
+									100
+								}
+							}
+							button_icon_square = {
+								size = {
+									100
+									100
+								}
+								blockoverride
+								"icon"
+								{
+									texture = "gfx/interface/ve_age/culture_conversion_cost.dds"
+								}
+								onclick = "[GetScriptedGui('ve_age_bonus_11').Execute(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('ve_age_bonus_11').IsValid(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								visible = "[GetScriptedGui('ve_age_bonus_11').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_11').BuildTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = tooltip_above
+							}
+							icon = {
+								texture = "gfx/interface/ve_age/culture_conversion_cost.dds"
+								visible = "[Not(GetScriptedGui('ve_age_bonus_11').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End ))]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_11').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = ve_shimmer
+								background = {
+									texture = "gfx/interface/age_cannot_unlock.dds"
+									size = {
+									100
+									100
+								}
+								}
+								size = {
+									100
+									100
+								}
+							}
+						}
+						hbox = {	#Age Bonuses - AGE 3
+							layoutpolicy_horizontal = fixed
+							visible = "[GetScriptedGui('ve_age_3').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+							spacing = 10
+							using = main_bg
+							margin = { 25 15 }
+							button_icon_square = {
+								size = {
+									100
+									100
+								}
+								blockoverride
+								"icon"
+								{
+									texture = "gfx/interface/ve_age/field_hospitals.dds"
+								}
+								onclick = "[GetScriptedGui('ve_age_bonus_1').Execute(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('ve_age_bonus_1').IsValid(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								visible = "[GetScriptedGui('ve_age_bonus_1').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_1').BuildTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = tooltip_above
+							}
+							icon = {
+								texture = "gfx/interface/ve_age/field_hospitals.dds"
+								visible = "[Not(GetScriptedGui('ve_age_bonus_1').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End ))]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_1').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = ve_shimmer
+								background = {
+									texture = "gfx/interface/age_cannot_unlock.dds"
+									size = {
+									100
+									100
+								}
+								}
+								size = {
+									100
+									100
+								}
+							}
+							button_icon_square = {
+								size = {
+									100
+									100
+								}
+								blockoverride
+								"icon"
+								{
+									texture = "gfx/interface/ve_age/improve_relation_modifier.dds"
+								}
+								onclick = "[GetScriptedGui('ve_age_bonus_2').Execute(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('ve_age_bonus_2').IsValid(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								visible = "[GetScriptedGui('ve_age_bonus_2').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_2').BuildTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = tooltip_above
+							}
+							icon = {
+								texture = "gfx/interface/ve_age/improve_relation_modifier.dds"
+								visible = "[Not(GetScriptedGui('ve_age_bonus_2').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End ))]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_2').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = ve_shimmer
+								background = {
+									texture = "gfx/interface/age_cannot_unlock.dds"
+									size = {
+									100
+									100
+								}
+								}
+								size = {
+									100
+									100
+								}
+							}
+							button_icon_square = {
+								size = {
+									100
+									100
+								}
+								blockoverride
+								"icon"
+								{
+									texture = "gfx/interface/ve_age/artillery.dds"
+								}
+								onclick = "[GetScriptedGui('ve_age_bonus_3').Execute(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('ve_age_bonus_3').IsValid(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								visible = "[GetScriptedGui('ve_age_bonus_3').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_3').BuildTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = tooltip_above
+							}
+							icon = {
+								texture = "gfx/interface/ve_age/artillery.dds"
+								visible = "[Not(GetScriptedGui('ve_age_bonus_3').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End ))]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_3').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = ve_shimmer
+								background = {
+									texture = "gfx/interface/age_cannot_unlock.dds"
+									size = {
+									100
+									100
+								}
+								}
+								size = {
+									100
+									100
+								}
+							}
+							button_icon_square = {
+								size = {
+									100
+									100
+								}
+								blockoverride
+								"icon"
+								{
+									texture = "gfx/interface/ve_age/war_exhaustion.dds"
+								}
+								onclick = "[GetScriptedGui('ve_age_bonus_4').Execute(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('ve_age_bonus_4').IsValid(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								visible = "[GetScriptedGui('ve_age_bonus_4').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_4').BuildTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = tooltip_above
+							}
+							icon = {
+								texture = "gfx/interface/ve_age/war_exhaustion.dds"
+								visible = "[Not(GetScriptedGui('ve_age_bonus_4').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End ))]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_4').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = ve_shimmer
+								background = {
+									texture = "gfx/interface/age_cannot_unlock.dds"
+									size = {
+									100
+									100
+								}
+								}
+								size = {
+									100
+									100
+								}
+							}
+							button_icon_square = {
+								size = {
+									100
+									100
+								}
+								blockoverride
+								"icon"
+								{
+									texture = "gfx/interface/ve_age/railways.dds"
+								}
+								onclick = "[GetScriptedGui('ve_age_bonus_5').Execute(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('ve_age_bonus_5').IsValid(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								visible = "[GetScriptedGui('ve_age_bonus_5').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_5').BuildTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = tooltip_above
+							}
+							icon = {
+								texture = "gfx/interface/ve_age/railways.dds"
+								visible = "[Not(GetScriptedGui('ve_age_bonus_5').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End ))]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_5').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = ve_shimmer
+								background = {
+									texture = "gfx/interface/age_cannot_unlock.dds"
+									size = {
+									100
+									100
+								}
+								}
+								size = {
+									100
+									100
+								}
+							}
+							button_icon_square = {
+								size = {
+									100
+									100
+								}
+								blockoverride
+								"icon"
+								{
+									texture = "gfx/interface/ve_age/icon_political_lens_decrees.dds"
+								}
+								onclick = "[GetScriptedGui('ve_age_bonus_6').Execute(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('ve_age_bonus_6').IsValid(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								visible = "[GetScriptedGui('ve_age_bonus_6').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_6').BuildTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = tooltip_above
+							}
+							icon = {
+								texture = "gfx/interface/ve_age/icon_political_lens_decrees.dds"
+								visible = "[Not(GetScriptedGui('ve_age_bonus_6').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End ))]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_6').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = ve_shimmer
+								background = {
+									texture = "gfx/interface/age_cannot_unlock.dds"
+									size = {
+									100
+									100
+								}
+								}
+								size = {
+									100
+									100
+								}
+							}
+							button_icon_square = {
+								size = {
+									100
+									100
+								}
+								blockoverride
+								"icon"
+								{
+									texture = "gfx/interface/ve_age/land_attrition.dds"
+								}
+								onclick = "[GetScriptedGui('ve_age_bonus_7').Execute(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('ve_age_bonus_7').IsValid(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								visible = "[GetScriptedGui('ve_age_bonus_7').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_7').BuildTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = tooltip_above
+							}
+							icon = {
+								texture = "gfx/interface/ve_age/land_attrition.dds"
+								visible = "[Not(GetScriptedGui('ve_age_bonus_7').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End ))]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_7').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = ve_shimmer
+								background = {
+									texture = "gfx/interface/age_cannot_unlock.dds"
+									size = {
+									100
+									100
+								}
+								}
+								size = {
+									100
+									100
+								}
+							}
+							button_icon_square = {
+								size = {
+									100
+									100
+								}
+								blockoverride
+								"icon"
+								{
+									texture = "gfx/interface/ve_age/defence.dds"
+								}
+								onclick = "[GetScriptedGui('ve_age_bonus_8').Execute(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('ve_age_bonus_8').IsValid(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								visible = "[GetScriptedGui('ve_age_bonus_8').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_8').BuildTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = tooltip_above
+							}
+							icon = {
+								texture = "gfx/interface/ve_age/defence.dds"
+								visible = "[Not(GetScriptedGui('ve_age_bonus_8').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End ))]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_8').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = ve_shimmer
+								background = {
+									texture = "gfx/interface/age_cannot_unlock.dds"
+									size = {
+									100
+									100
+								}
+								}
+								size = {
+									100
+									100
+								}
+							}
+							button_icon_square = {
+								size = {
+									100
+									100
+								}
+								blockoverride
+								"icon"
+								{
+									texture = "gfx/interface/ve_age/leader_land_manuever.dds"
+								}
+								onclick = "[GetScriptedGui('ve_age_bonus_9').Execute(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('ve_age_bonus_9').IsValid(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								visible = "[GetScriptedGui('ve_age_bonus_9').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_9').BuildTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = tooltip_above
+							}
+							icon = {
+								texture = "gfx/interface/ve_age/leader_land_manuever.dds"
+								visible = "[Not(GetScriptedGui('ve_age_bonus_9').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End ))]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_9').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = ve_shimmer
+								background = {
+									texture = "gfx/interface/age_cannot_unlock.dds"
+									size = {
+									100
+									100
+								}
+								}
+								size = {
+									100
+									100
+								}
+							}
+							button_icon_square = {
+								size = {
+									100
+									100
+								}
+								blockoverride
+								"icon"
+								{
+									texture = "gfx/interface/ve_age/landing_penalty.dds"
+								}
+								onclick = "[GetScriptedGui('ve_age_bonus_10').Execute(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('ve_age_bonus_10').IsValid(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								visible = "[GetScriptedGui('ve_age_bonus_10').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_10').BuildTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = tooltip_above
+							}
+							icon = {
+								texture = "gfx/interface/ve_age/landing_penalty.dds"
+								visible = "[Not(GetScriptedGui('ve_age_bonus_10').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End ))]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_10').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = ve_shimmer
+								background = {
+									texture = "gfx/interface/age_cannot_unlock.dds"
+									size = {
+									100
+									100
+								}
+								}
+								size = {
+									100
+									100
+								}
+							}
+							button_icon_square = {
+								size = {
+									100
+									100
+								}
+								blockoverride
+								"icon"
+								{
+									texture = "gfx/interface/ve_age/global_manpower_modifier.dds"
+								}
+								onclick = "[GetScriptedGui('ve_age_bonus_11').Execute(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('ve_age_bonus_11').IsValid(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								visible = "[GetScriptedGui('ve_age_bonus_11').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_11').BuildTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = tooltip_above
+							}
+							icon = {
+								texture = "gfx/interface/ve_age/global_manpower_modifier.dds"
+								visible = "[Not(GetScriptedGui('ve_age_bonus_11').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End ))]"
+								tooltip = "[GetScriptedGui('ve_age_bonus_11').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								using = ve_shimmer
+								background = {
+									texture = "gfx/interface/age_cannot_unlock.dds"
+									size = {
+									100
+									100
+								}
+								}
+								size = {
+									100
+									100
+								}
+							}
+						}
+						vbox = {	#Age Objectives - AGE 1
+							layoutpolicy_horizontal = expanding
+							visible = "[GetScriptedGui('ve_age_1').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+							spacing = 0
+							using = main_bg
+							margin = { 0 15 }
+							header_pattern = {
+								layoutpolicy_horizontal = expanding
+								blockoverride
+								"header_text"
+								{
+									text = "ve_obj_header"
+									default_format = "#tooltip_header"
+								}
+								blockoverride
+								"button_close"
+								{
+									visible = no
+								}
+							}
+							hbox = {	#Age Objective 1
+								layoutpolicy_horizontal = preferred								
+								enabled = "[GetScriptedGui('ve_age_obj_1').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+								tooltip = "[GetScriptedGui('ve_age_obj_1').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								margin = { 10 0 }
+								hbox = {
+									using = main_bg
+									icon = {
+										texture = "gfx/interface/ve_age/impoverished.dds"
+										size = {
+											120
+											120
+										}
+										background = {
+											texture = "gfx/interface/age_cannot_unlock.dds"
+											visible = "[Not(GetScriptedGui('ve_age_obj_1').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End))]"
+											size = {
+												120
+												120
+											}
+										}
+										background = {
+											texture = "gfx/interface/age_can_unlock.dds"
+											visible = "[GetScriptedGui('ve_age_obj_1').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+											size = {
+												120
+												120
+											}
+										}
+									}
+								}
+								vbox = {
+									using = main_bg
+									layoutpolicy_horizontal = expanding
+									layoutpolicy_vertical = expanding
+									margin = { 30 0 }
+									textbox = {
+										text = "ve_victorian_age_obj_title_1"
+										using = fontsize_xxl
+										align = left|nobaseline
+										parentanchor = left|hcenter
+									}
+									textbox = {
+										text = "ve_victorian_age_obj_desc_1"
+										using = fontsize_xl
+										align = left|nobaseline
+										parentanchor = left|hcenter
+									}
+								}
+							}
+							hbox = {	#Age Objective 2
+								layoutpolicy_horizontal = preferred
+								enabled = "[GetScriptedGui('ve_age_obj_2').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+								tooltip = "[GetScriptedGui('ve_age_obj_1').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								margin = { 10 0 }
+								hbox = {
+									using = main_bg
+									icon = {
+										texture = "gfx/interface/ve_age/ban_slavery.dds"										
+										size = {
+											120
+											120
+										}
+										background = {
+											texture = "gfx/interface/age_cannot_unlock.dds"
+											visible = "[Not(GetScriptedGui('ve_age_obj_2').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End))]"
+											size = {
+												120
+												120
+											}
+										}
+										background = {
+											texture = "gfx/interface/age_can_unlock.dds"
+											visible = "[GetScriptedGui('ve_age_obj_2').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+											size = {
+												120
+												120
+											}
+										}
+									}
+								}
+								vbox = {
+									using = main_bg
+									layoutpolicy_horizontal = expanding
+									layoutpolicy_vertical = expanding
+									margin = { 30 0 }
+									textbox = {
+										text = "ve_victorian_age_obj_title_2"
+										using = fontsize_xxl
+										align = left|nobaseline
+										parentanchor = left|hcenter
+									}
+									textbox = {
+										text = "ve_victorian_age_obj_desc_2"
+										using = fontsize_xl
+										align = left|nobaseline
+										parentanchor = left|hcenter
+									}
+								}
+							}
+							hbox = {	#Age Objective 3
+								layoutpolicy_horizontal = preferred
+								enabled = "[GetScriptedGui('ve_age_obj_3').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+								tooltip = "[GetScriptedGui('ve_age_obj_1').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								margin = { 10 0 }
+								hbox = {
+									using = main_bg
+									icon = {
+										texture = "gfx/interface/ve_age/legitimacy.dds"
+										size = {
+											120
+											120
+										}
+										background = {
+											texture = "gfx/interface/age_cannot_unlock.dds"
+											visible = "[Not(GetScriptedGui('ve_age_obj_3').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End))]"
+											size = {
+												120
+												120
+											}
+										}
+										background = {
+											texture = "gfx/interface/age_can_unlock.dds"
+											visible = "[GetScriptedGui('ve_age_obj_3').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+											size = {
+												120
+												120
+											}
+										}
+									}
+								}
+								vbox = {
+									using = main_bg
+									layoutpolicy_horizontal = expanding
+									layoutpolicy_vertical = expanding
+									margin = { 30 0 }
+									textbox = {
+										text = "ve_victorian_age_obj_title_3"
+										using = fontsize_xxl
+										align = left|nobaseline
+										parentanchor = left|hcenter
+									}
+									textbox = {
+										text = "ve_victorian_age_obj_desc_3"
+										using = fontsize_xl
+										align = left|nobaseline
+										parentanchor = left|hcenter
+									}
+								}
+							}
+							hbox = {	#Age Objective 4
+								layoutpolicy_horizontal = preferred
+								enabled = "[GetScriptedGui('ve_age_obj_4').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+								tooltip = "[GetScriptedGui('ve_age_obj_1').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								margin = { 10 0 }
+								hbox = {
+									using = main_bg
+									icon = {
+										texture = "gfx/interface/ve_age/ideology_leader_laissez_faire.dds"
+										size = {
+											120
+											120
+										}
+										background = {
+											texture = "gfx/interface/age_cannot_unlock.dds"
+											visible = "[Not(GetScriptedGui('ve_age_obj_4').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End))]"
+											size = {
+												120
+												120
+											}
+										}
+										background = {
+											texture = "gfx/interface/age_can_unlock.dds"
+											visible = "[GetScriptedGui('ve_age_obj_4').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+											size = {
+												120
+												120
+											}
+										}
+									}
+								}
+								vbox = {
+									using = main_bg
+									layoutpolicy_horizontal = expanding
+									layoutpolicy_vertical = expanding
+									margin = { 30 0 }
+									textbox = {
+										text = "ve_victorian_age_obj_title_4"
+										using = fontsize_xxl
+										align = left|nobaseline
+										parentanchor = left|hcenter
+									}
+									textbox = {
+										text = "ve_victorian_age_obj_desc_4"
+										using = fontsize_xl
+										align = left|nobaseline
+										parentanchor = left|hcenter
+									}
+								}
+							}
+							hbox = {	#Age Objective 5
+								layoutpolicy_horizontal = preferred
+								enabled = "[GetScriptedGui('ve_age_obj_5').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+								tooltip = "[GetScriptedGui('ve_age_obj_1').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								margin = { 10 0 }
+								hbox = {
+									using = main_bg
+									icon = {
+										texture = "gfx/interface/ve_age/intelligensia.dds"
+										size = {
+											120
+											120
+										}
+										background = {
+											texture = "gfx/interface/age_cannot_unlock.dds"
+											visible = "[Not(GetScriptedGui('ve_age_obj_5').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End))]"
+											size = {
+												120
+												120
+											}
+										}
+										background = {
+											texture = "gfx/interface/age_can_unlock.dds"
+											visible = "[GetScriptedGui('ve_age_obj_5').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+											size = {
+												120
+												120
+											}
+										}
+									}
+								}
+								vbox = {
+									using = main_bg
+									layoutpolicy_horizontal = expanding
+									layoutpolicy_vertical = expanding
+									margin = { 30 0 }
+									textbox = {
+										text = "ve_victorian_age_obj_title_5"
+										using = fontsize_xxl
+										align = left|nobaseline
+										parentanchor = left|hcenter
+									}
+									textbox = {
+										text = "ve_victorian_age_obj_desc_5"
+										using = fontsize_xl
+										align = left|nobaseline
+										parentanchor = left|hcenter
+									}
+								}
+							}
+							hbox = {	#Age Objective 6
+								layoutpolicy_horizontal = preferred
+								enabled = "[GetScriptedGui('ve_age_obj_6').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+								tooltip = "[GetScriptedGui('ve_age_obj_1').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								margin = { 10 0 }
+								hbox = {
+									using = main_bg
+									icon = {
+										texture = "gfx/interface/ve_age/urbanization.dds"
+										size = {
+											120
+											120
+										}
+										background = {
+											texture = "gfx/interface/age_cannot_unlock.dds"
+											visible = "[Not(GetScriptedGui('ve_age_obj_6').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End))]"
+											size = {
+												120
+												120
+											}
+										}
+										background = {
+											texture = "gfx/interface/age_can_unlock.dds"
+											visible = "[GetScriptedGui('ve_age_obj_6').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+											size = {
+												120
+												120
+											}
+										}
+									}
+								}
+								vbox = {
+									using = main_bg
+									layoutpolicy_horizontal = expanding
+									layoutpolicy_vertical = expanding
+									margin = { 30 0 }
+									textbox = {
+										text = "ve_victorian_age_obj_title_6"
+										using = fontsize_xxl
+										align = left|nobaseline
+										parentanchor = left|hcenter
+									}
+									textbox = {
+										text = "ve_victorian_age_obj_desc_6"
+										using = fontsize_xl
+										align = left|nobaseline
+										parentanchor = left|hcenter
+									}
+								}
+							}
+							hbox = {	#Age Objective 7
+								layoutpolicy_horizontal = preferred
+								enabled = "[GetScriptedGui('ve_age_obj_7').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+								tooltip = "[GetScriptedGui('ve_age_obj_1').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								margin = { 10 0 }
+								hbox = {
+									using = main_bg
+									icon = {
+										texture = "gfx/interface/ve_age/declare_interest.dds"
+										size = {
+											120
+											120
+										}
+										background = {
+											texture = "gfx/interface/age_cannot_unlock.dds"
+											visible = "[Not(GetScriptedGui('ve_age_obj_7').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End))]"
+											size = {
+												120
+												120
+											}
+										}
+										background = {
+											texture = "gfx/interface/age_can_unlock.dds"
+											visible = "[GetScriptedGui('ve_age_obj_7').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+											size = {
+												120
+												120
+											}
+										}
+									}
+								}
+								vbox = {
+									using = main_bg
+									layoutpolicy_horizontal = expanding
+									layoutpolicy_vertical = expanding
+									margin = { 30 0 }
+									textbox = {
+										text = "ve_victorian_age_obj_title_7"
+										using = fontsize_xxl
+										align = left|nobaseline
+										parentanchor = left|hcenter
+									}
+									textbox = {
+										text = "ve_victorian_age_obj_desc_7"
+										using = fontsize_xl
+										align = left|nobaseline
+										parentanchor = left|hcenter
+									}
+								}
+							}
+						}
+						vbox = {	#Age Objectives - AGE 2
+							layoutpolicy_horizontal = expanding
+							visible = "[GetScriptedGui('ve_age_2').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+							spacing = 0
+							using = main_bg
+							margin = { 0 15 }
+							header_pattern = {
+								layoutpolicy_horizontal = expanding
+								blockoverride
+								"header_text"
+								{
+									text = "ve_obj_header"
+									default_format = "#tooltip_header"
+								}
+								blockoverride
+								"button_close"
+								{
+									visible = no
+								}
+							}
+							hbox = {	#Age Objective 1
+								layoutpolicy_horizontal = preferred
+								enabled = "[GetScriptedGui('ve_age_obj_1').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+								tooltip = "[GetScriptedGui('ve_age_obj_1').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								margin = { 10 0 }
+								hbox = {
+									using = main_bg
+									icon = {
+										texture = "gfx/interface/ve_age/colonization_rights.dds"
+										size = {
+											120
+											120
+										}
+										background = {
+											texture = "gfx/interface/age_cannot_unlock.dds"
+											visible = "[Not(GetScriptedGui('ve_age_obj_1').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End))]"
+											size = {
+												120
+												120
+											}
+										}
+										background = {
+											texture = "gfx/interface/age_can_unlock.dds"
+											visible = "[GetScriptedGui('ve_age_obj_1').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+											size = {
+												120
+												120
+											}
+										}
+									}
+								}
+								vbox = {
+									using = main_bg
+									layoutpolicy_horizontal = expanding
+									layoutpolicy_vertical = expanding
+									margin = { 30 0 }
+									textbox = {
+										text = "ve_imperialism_age_obj_title_1"
+										using = fontsize_xxl
+										align = left|nobaseline
+										parentanchor = left|hcenter
+									}
+									textbox = {
+										text = "ve_imperialism_age_obj_desc_1"
+										using = fontsize_x
+										align = left|nobaseline
+										parentanchor = left|hcenter
+									}
+								}
+							}
+							hbox = {	#Age Objective 2
+								layoutpolicy_horizontal = preferred
+								enabled = "[GetScriptedGui('ve_age_obj_2').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+								tooltip = "[GetScriptedGui('ve_age_obj_1').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								margin = { 10 0 }
+								hbox = {
+									using = main_bg
+									icon = {
+										texture = "gfx/interface/ve_age/puppet.dds"
+										size = {
+											120
+											120
+										}
+										background = {
+											texture = "gfx/interface/age_cannot_unlock.dds"
+											visible = "[Not(GetScriptedGui('ve_age_obj_2').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End))]"
+											size = {
+												120
+												120
+											}
+										}
+										background = {
+											texture = "gfx/interface/age_can_unlock.dds"
+											visible = "[GetScriptedGui('ve_age_obj_2').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+											size = {
+												120
+												120
+											}
+										}
+									}
+								}
+								vbox = {
+									using = main_bg
+									layoutpolicy_horizontal = expanding
+									layoutpolicy_vertical = expanding
+									margin = { 30 0 }
+									textbox = {
+										text = "ve_imperialism_age_obj_title_2"
+										using = fontsize_xxl
+										align = left|nobaseline
+										parentanchor = left|hcenter
+									}
+									textbox = {
+										text = "ve_imperialism_age_obj_desc_2"
+										using = fontsize_x
+										align = left|nobaseline
+										parentanchor = left|hcenter
+									}
+								}
+							}
+							hbox = {	#Age Objective 3
+								layoutpolicy_horizontal = preferred
+								enabled = "[GetScriptedGui('ve_age_obj_3').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+								tooltip = "[GetScriptedGui('ve_age_obj_1').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								margin = { 10 0 }
+								hbox = {
+									using = main_bg
+									icon = {
+										texture = "gfx/interface/ve_age/railways.dds"
+										size = {
+											120
+											120
+										}
+										background = {
+											texture = "gfx/interface/age_cannot_unlock.dds"
+											visible = "[Not(GetScriptedGui('ve_age_obj_3').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End))]"
+											size = {
+												120
+												120
+											}
+										}
+										background = {
+											texture = "gfx/interface/age_can_unlock.dds"
+											visible = "[GetScriptedGui('ve_age_obj_3').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+											size = {
+												120
+												120
+											}
+										}
+									}
+								}
+								vbox = {
+									using = main_bg
+									layoutpolicy_horizontal = expanding
+									layoutpolicy_vertical = expanding
+									margin = { 30 0 }
+									textbox = {
+										text = "ve_imperialism_age_obj_title_3"
+										using = fontsize_xxl
+										align = left|nobaseline
+										parentanchor = left|hcenter
+									}
+									textbox = {
+										text = "ve_imperialism_age_obj_desc_3"
+										using = fontsize_x
+										align = left|nobaseline
+										parentanchor = left|hcenter
+									}
+								}
+							}
+							hbox = {	#Age Objective 4
+								layoutpolicy_horizontal = preferred
+								enabled = "[GetScriptedGui('ve_age_obj_4').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+								tooltip = "[GetScriptedGui('ve_age_obj_1').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								margin = { 10 0 }
+								hbox = {
+									using = main_bg
+									icon = {
+										texture = "gfx/interface/ve_age/military_shipbuilding_steam_2.dds"
+										size = {
+											120
+											120
+										}
+										background = {
+											texture = "gfx/interface/age_cannot_unlock.dds"
+											visible = "[Not(GetScriptedGui('ve_age_obj_4').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End))]"
+											size = {
+												120
+												120
+											}
+										}
+										background = {
+											texture = "gfx/interface/age_can_unlock.dds"
+											visible = "[GetScriptedGui('ve_age_obj_4').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+											size = {
+												120
+												120
+											}
+										}
+									}
+								}
+								vbox = {
+									using = main_bg
+									layoutpolicy_horizontal = expanding
+									layoutpolicy_vertical = expanding
+									margin = { 30 0 }
+									textbox = {
+										text = "ve_imperialism_age_obj_title_4"
+										using = fontsize_xxl
+										align = left|nobaseline
+										parentanchor = left|hcenter
+									}
+									textbox = {
+										text = "ve_imperialism_age_obj_desc_4"
+										using = fontsize_x
+										align = left|nobaseline
+										parentanchor = left|hcenter
+									}
+								}
+							}
+							hbox = {	#Age Objective 5
+								layoutpolicy_horizontal = preferred
+								enabled = "[GetScriptedGui('ve_age_obj_5').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+								tooltip = "[GetScriptedGui('ve_age_obj_1').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								margin = { 10 0 }
+								hbox = {
+									using = main_bg
+									icon = {
+										texture = "gfx/interface/ve_age/coal_mine.dds"
+										size = {
+											120
+											120
+										}
+										background = {
+											texture = "gfx/interface/age_cannot_unlock.dds"
+											visible = "[Not(GetScriptedGui('ve_age_obj_5').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End))]"
+											size = {
+												120
+												120
+											}
+										}
+										background = {
+											texture = "gfx/interface/age_can_unlock.dds"
+											visible = "[GetScriptedGui('ve_age_obj_5').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+											size = {
+												120
+												120
+											}
+										}
+									}
+								}
+								vbox = {
+									using = main_bg
+									layoutpolicy_horizontal = expanding
+									layoutpolicy_vertical = expanding
+									margin = { 30 0 }
+									textbox = {
+										text = "ve_imperialism_age_obj_title_5"
+										using = fontsize_xxl
+										align = left|nobaseline
+										parentanchor = left|hcenter
+									}
+									textbox = {
+										text = "ve_imperialism_age_obj_desc_5"
+										using = fontsize_x
+										align = left|nobaseline
+										parentanchor = left|hcenter
+									}
+								}
+							}
+							hbox = {	#Age Objective 6
+								layoutpolicy_horizontal = preferred
+								enabled = "[GetScriptedGui('ve_age_obj_6').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+								tooltip = "[GetScriptedGui('ve_age_obj_1').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								margin = { 10 0 }
+								hbox = {
+									using = main_bg
+									icon = {
+										texture = "gfx/interface/ve_age/literacy.dds"
+										size = {
+											120
+											120
+										}
+										background = {
+											texture = "gfx/interface/age_cannot_unlock.dds"
+											visible = "[Not(GetScriptedGui('ve_age_obj_6').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End))]"
+											size = {
+												120
+												120
+											}
+										}
+										background = {
+											texture = "gfx/interface/age_can_unlock.dds"
+											visible = "[GetScriptedGui('ve_age_obj_6').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+											size = {
+												120
+												120
+											}
+										}
+									}
+								}
+								vbox = {
+									using = main_bg
+									layoutpolicy_horizontal = expanding
+									layoutpolicy_vertical = expanding
+									margin = { 30 0 }
+									textbox = {
+										text = "ve_imperialism_age_obj_title_6"
+										using = fontsize_xxl
+										align = left|nobaseline
+										parentanchor = left|hcenter
+									}
+									textbox = {
+										text = "ve_imperialism_age_obj_desc_6"
+										using = fontsize_x
+										align = left|nobaseline
+										parentanchor = left|hcenter
+									}
+								}
+							}
+							hbox = {	#Age Objective 7
+								layoutpolicy_horizontal = preferred
+								enabled = "[GetScriptedGui('ve_age_obj_7').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+								tooltip = "[GetScriptedGui('ve_age_obj_1').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								margin = { 10 0 }
+								hbox = {
+									using = main_bg
+									icon = {
+										texture = "gfx/interface/ve_age/pop_type.dds"
+										size = {
+											120
+											120
+										}
+										background = {
+											texture = "gfx/interface/age_cannot_unlock.dds"
+											visible = "[Not(GetScriptedGui('ve_age_obj_7').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End))]"
+											size = {
+												120
+												120
+											}
+										}
+										background = {
+											texture = "gfx/interface/age_can_unlock.dds"
+											visible = "[GetScriptedGui('ve_age_obj_7').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+											size = {
+												120
+												120
+											}
+										}
+									}
+								}
+								vbox = {
+									using = main_bg
+									layoutpolicy_horizontal = expanding
+									layoutpolicy_vertical = expanding
+									margin = { 30 0 }
+									textbox = {
+										text = "ve_imperialism_age_obj_title_7"
+										using = fontsize_xxl
+										align = left|nobaseline
+										parentanchor = left|hcenter
+									}
+									textbox = {
+										text = "ve_imperialism_age_obj_desc_7"
+										using = fontsize_x
+										align = left|nobaseline
+										parentanchor = left|hcenter
+									}
+								}
+							}
+						}
+						vbox = {	#Age Objectives - AGE 3
+							layoutpolicy_horizontal = expanding
+							visible = "[GetScriptedGui('ve_age_3').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+							spacing = 0
+							using = main_bg
+							margin = { 0 15 }
+							header_pattern = {
+								layoutpolicy_horizontal = expanding
+								blockoverride
+								"header_text"
+								{
+									text = "ve_obj_header"
+									default_format = "#tooltip_header"
+								}
+								blockoverride
+								"button_close"
+								{
+									visible = no
+								}
+							}
+							hbox = {	#Age Objective 1
+								layoutpolicy_horizontal = preferred
+								enabled = "[GetScriptedGui('ve_age_obj_1').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+								tooltip = "[GetScriptedGui('ve_age_obj_1').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								margin = { 10 0 }
+								hbox = {
+									using = main_bg
+									icon = {
+										texture = "gfx/interface/ve_age/republican.dds"
+										size = {
+											120
+											120
+										}
+										background = {
+											texture = "gfx/interface/age_cannot_unlock.dds"
+											visible = "[Not(GetScriptedGui('ve_age_obj_1').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End))]"
+											size = {
+												120
+												120
+											}
+										}
+										background = {
+											texture = "gfx/interface/age_can_unlock.dds"
+											visible = "[GetScriptedGui('ve_age_obj_1').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+											size = {
+												120
+												120
+											}
+										}
+									}
+								}
+								vbox = {
+									using = main_bg
+									layoutpolicy_horizontal = expanding
+									layoutpolicy_vertical = expanding
+									margin = { 30 0 }
+									textbox = {
+										text = "ve_great_wars_age_obj_title_1"
+										using = fontsize_xxl
+										align = left|nobaseline
+										parentanchor = left|hcenter
+									}
+									textbox = {
+										text = "ve_great_wars_age_obj_desc_1"
+										using = fontsize_x
+										align = left|nobaseline
+										parentanchor = left|hcenter
+									}
+								}
+							}
+							hbox = {	#Age Objective 2
+								layoutpolicy_horizontal = preferred
+								enabled = "[GetScriptedGui('ve_age_obj_2').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+								tooltip = "[GetScriptedGui('ve_age_obj_1').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								margin = { 10 0 }
+								hbox = {
+									using = main_bg
+									icon = {
+										texture = "gfx/interface/ve_age/institution_level_icon.dds"
+										size = {
+											120
+											120
+										}
+										background = {
+											texture = "gfx/interface/age_cannot_unlock.dds"
+											visible = "[Not(GetScriptedGui('ve_age_obj_2').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End))]"
+											size = {
+												120
+												120
+											}
+										}
+										background = {
+											texture = "gfx/interface/age_can_unlock.dds"
+											visible = "[GetScriptedGui('ve_age_obj_2').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+											size = {
+												120
+												120
+											}
+										}
+									}
+								}
+								vbox = {
+									using = main_bg
+									layoutpolicy_horizontal = expanding
+									layoutpolicy_vertical = expanding
+									margin = { 30 0 }
+									textbox = {
+										text = "ve_great_wars_age_obj_title_2"
+										using = fontsize_xxl
+										align = left|nobaseline
+										parentanchor = left|hcenter
+									}
+									textbox = {
+										text = "ve_great_wars_age_obj_desc_2"
+										using = fontsize_x
+										align = left|nobaseline
+										parentanchor = left|hcenter
+									}
+								}
+							}
+							hbox = {	#Age Objective 3
+								layoutpolicy_horizontal = preferred
+								enabled = "[GetScriptedGui('ve_age_obj_3').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+								tooltip = "[GetScriptedGui('ve_age_obj_1').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								margin = { 10 0 }
+								hbox = {
+									using = main_bg
+									icon = {
+										texture = "gfx/interface/ve_age/building_barracks.dds"
+										size = {
+											120
+											120
+										}
+										background = {
+											texture = "gfx/interface/age_cannot_unlock.dds"
+											visible = "[Not(GetScriptedGui('ve_age_obj_3').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End))]"
+											size = {
+												120
+												120
+											}
+										}
+										background = {
+											texture = "gfx/interface/age_can_unlock.dds"
+											visible = "[GetScriptedGui('ve_age_obj_3').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+											size = {
+												120
+												120
+											}
+										}
+									}
+								}
+								vbox = {
+									using = main_bg
+									layoutpolicy_horizontal = expanding
+									layoutpolicy_vertical = expanding
+									margin = { 30 0 }
+									textbox = {
+										text = "ve_great_wars_age_obj_title_3"
+										using = fontsize_xxl
+										align = left|nobaseline
+										parentanchor = left|hcenter
+									}
+									textbox = {
+										text = "ve_great_wars_age_obj_desc_3"
+										using = fontsize_x
+										align = left|nobaseline
+										parentanchor = left|hcenter
+									}
+								}
+							}
+							hbox = {	#Age Objective 4
+								layoutpolicy_horizontal = preferred
+								enabled = "[GetScriptedGui('ve_age_obj_4').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+								tooltip = "[GetScriptedGui('ve_age_obj_1').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								margin = { 10 0 }
+								hbox = {
+									using = main_bg
+									icon = {
+										texture = "gfx/interface/ve_age/oil.dds"
+										size = {
+											120
+											120
+										}
+										background = {
+											texture = "gfx/interface/age_cannot_unlock.dds"
+											visible = "[Not(GetScriptedGui('ve_age_obj_4').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End))]"
+											size = {
+												120
+												120
+											}
+										}
+										background = {
+											texture = "gfx/interface/age_can_unlock.dds"
+											visible = "[GetScriptedGui('ve_age_obj_4').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+											size = {
+												120
+												120
+											}
+										}
+									}
+								}
+								vbox = {
+									using = main_bg
+									layoutpolicy_horizontal = expanding
+									layoutpolicy_vertical = expanding
+									margin = { 30 0 }
+									textbox = {
+										text = "ve_great_wars_age_obj_title_4"
+										using = fontsize_xxl
+										align = left|nobaseline
+										parentanchor = left|hcenter
+									}
+									textbox = {
+										text = "ve_great_wars_age_obj_desc_4"
+										using = fontsize_x
+										align = left|nobaseline
+										parentanchor = left|hcenter
+									}
+								}
+							}
+							hbox = {	#Age Objective 5
+								layoutpolicy_horizontal = preferred
+								enabled = "[GetScriptedGui('ve_age_obj_5').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+								tooltip = "[GetScriptedGui('ve_age_obj_1').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								margin = { 10 0 }
+								hbox = {
+									using = main_bg
+									icon = {
+										texture = "gfx/interface/ve_age/military_drill.dds"
+										size = {
+											120
+											120
+										}
+										background = {
+											texture = "gfx/interface/age_cannot_unlock.dds"
+											visible = "[Not(GetScriptedGui('ve_age_obj_5').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End))]"
+											size = {
+												120
+												120
+											}
+										}
+										background = {
+											texture = "gfx/interface/age_can_unlock.dds"
+											visible = "[GetScriptedGui('ve_age_obj_5').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+											size = {
+												120
+												120
+											}
+										}
+									}
+								}
+								vbox = {
+									using = main_bg
+									layoutpolicy_horizontal = expanding
+									layoutpolicy_vertical = expanding
+									margin = { 30 0 }
+									textbox = {
+										text = "ve_great_wars_age_obj_title_5"
+										using = fontsize_xxl
+										align = left|nobaseline
+										parentanchor = left|hcenter
+									}
+									textbox = {
+										text = "ve_great_wars_age_obj_desc_5"
+										using = fontsize_x
+										align = left|nobaseline
+										parentanchor = left|hcenter
+									}
+								}
+							}
+							hbox = {	#Age Objective 6
+								layoutpolicy_horizontal = preferred
+								enabled = "[GetScriptedGui('ve_age_obj_6').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+								tooltip = "[GetScriptedGui('ve_age_obj_1').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								margin = { 10 0 }
+								hbox = {
+									using = main_bg
+									icon = {
+										texture = "gfx/interface/ve_age/gdp.dds"
+										size = {
+											120
+											120
+										}
+										background = {
+											texture = "gfx/interface/age_cannot_unlock.dds"
+											visible = "[Not(GetScriptedGui('ve_age_obj_6').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End))]"
+											size = {
+												120
+												120
+											}
+										}
+										background = {
+											texture = "gfx/interface/age_can_unlock.dds"
+											visible = "[GetScriptedGui('ve_age_obj_6').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+											size = {
+												120
+												120
+											}
+										}
+									}
+								}
+								vbox = {
+									using = main_bg
+									layoutpolicy_horizontal = expanding
+									layoutpolicy_vertical = expanding
+									margin = { 30 0 }
+									textbox = {
+										text = "ve_great_wars_age_obj_title_6"
+										using = fontsize_xxl
+										align = left|nobaseline
+										parentanchor = left|hcenter
+									}
+									textbox = {
+										text = "ve_great_wars_age_obj_desc_6"
+										using = fontsize_x
+										align = left|nobaseline
+										parentanchor = left|hcenter
+									}
+								}
+							}
+							hbox = {	#Age Objective 7
+								layoutpolicy_horizontal = preferred
+								enabled = "[GetScriptedGui('ve_age_obj_7').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+								tooltip = "[GetScriptedGui('ve_age_obj_1').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								margin = { 10 0 }
+								hbox = {
+									using = main_bg
+									icon = {
+										texture = "gfx/interface/ve_age/power_rank_04.dds"
+										size = {
+											120
+											120
+										}
+										background = {
+											texture = "gfx/interface/age_cannot_unlock.dds"
+											visible = "[Not(GetScriptedGui('ve_age_obj_7').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End))]"
+											size = {
+												120
+												120
+											}
+										}
+										background = {
+											texture = "gfx/interface/age_can_unlock.dds"
+											visible = "[GetScriptedGui('ve_age_obj_7').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+											size = {
+												120
+												120
+											}
+										}
+									}
+								}
+								vbox = {
+									using = main_bg
+									layoutpolicy_horizontal = expanding
+									layoutpolicy_vertical = expanding
+									margin = { 30 0 }
+									textbox = {
+										text = "ve_great_wars_age_obj_title_7"
+										using = fontsize_xxl
+										align = left|nobaseline
+										parentanchor = left|hcenter
+									}
+									textbox = {
+										text = "ve_great_wars_age_obj_desc_7"
+										using = fontsize_x
+										align = left|nobaseline
+										parentanchor = left|hcenter
+									}
+								}
+							}
+						}
+					}
+					
+					
+					expand = {
+					}
+				}
+			
+		
+	}
+}

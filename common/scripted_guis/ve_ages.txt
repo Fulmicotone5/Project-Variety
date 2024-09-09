@@ -1,0 +1,1450 @@
+ve_golden_age = {
+	scope = country
+	is_valid = {
+		custom_tooltip = {
+			text = ve_golden_age_tt
+			NOT = {
+				has_variable = clicked_golden_age
+			}
+			golden_age_3_obj_trigger = yes
+		}
+	}
+	effect = {
+		set_variable = clicked_golden_age
+		add_modifier = {
+			name = golden_age_mdf
+			years = 20
+		}
+	}
+}
+
+ve_age_1 = {
+	scope = country
+	is_shown = {
+		NOT = {
+			has_global_variable = ve_age_2_started
+			has_global_variable = ve_age_3_started
+		}
+		has_global_variable = ve_age_1_started
+	}
+}
+
+ve_age_2 = {
+	scope = country
+	is_shown = {
+		NOT = {
+			has_global_variable = ve_age_1_started
+			has_global_variable = ve_age_3_started
+		}
+		has_global_variable = ve_age_2_started
+	}
+}
+
+ve_age_3 = {
+	scope = country
+	is_shown = {
+		NOT = {
+			has_global_variable = ve_age_1_started
+			has_global_variable = ve_age_2_started
+		}
+		has_global_variable = ve_age_3_started
+	}
+}
+
+ve_age_obj_1 = {
+	scope = country
+	is_valid = {
+		trigger_if = {
+			limit = {
+				has_global_variable = ve_age_1_started
+			}
+			root.average_sol >= 12
+		}
+		trigger_else_if = {
+			limit = {
+				has_global_variable = ve_age_2_started
+			}
+			hidden_trigger = {
+				OR = {
+					has_law = law_type:law_colonial_resettlement
+					has_law = law_type:law_colonial_exploitation
+				}
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				has_global_variable = ve_age_3_started
+			}
+			hidden_trigger = {
+				NOT = {
+					has_law = law_type:law_monarchy
+				}
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = {
+			text = ve_age_obj_efct_tt
+		}
+	}
+}
+
+ve_age_obj_2 = {
+	scope = country
+	is_valid = {
+		trigger_if = {
+			limit = {
+				has_global_variable = ve_age_1_started
+			}
+			hidden_trigger = {
+				has_law = law_type:law_slavery_banned
+				NOT = {
+					has_law = law_type:law_serfdom
+				}
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				has_global_variable = ve_age_2_started
+			}
+			any_subject_or_below = {
+				OR = {
+					has_diplomatic_pact = {
+						who = ROOT
+						type = puppet
+					}
+					has_diplomatic_pact = {
+						who = ROOT
+						type = dominion
+					}
+				}
+				count >= 2
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				has_global_variable = ve_age_3_started
+			}
+			OR = {
+				institution_investment_level = {
+					institution = institution_colonial_affairs
+					value = 5
+				}
+				institution_investment_level = {
+					institution = institution_social_security
+					value = 5
+				}
+				institution_investment_level = {
+					institution = institution_workplace_safety
+					value = 5
+				}
+				institution_investment_level = {
+					institution = institution_schools
+					value = 5
+				}
+				institution_investment_level = {
+					institution = institution_police
+					value = 5
+				}
+				institution_investment_level = {
+					institution = institution_health_system
+					value = 5
+				}
+				institution_investment_level = {
+					institution = institution_home_affairs
+					value = 5
+				}
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = {
+			text = ve_age_obj_efct_tt
+		}
+	}
+}
+
+ve_age_obj_3 = {
+	scope = country
+	is_valid = {
+		trigger_if = {
+			limit = {
+				has_global_variable = ve_age_1_started
+			}
+			government_legitimacy >= 75
+		}
+		trigger_else_if = {
+			limit = {
+				has_global_variable = ve_age_2_started
+			}
+			any_scope_state = {
+				owner = ROOT
+				state_population > 250000
+				has_building = building_railway
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				has_global_variable = ve_age_3_started
+			}
+			army_size >= 350
+		}
+	}
+	effect = {
+		custom_tooltip = {
+			text = ve_age_obj_efct_tt
+		}
+	}
+}
+
+ve_age_obj_4 = {
+	scope = country
+	is_valid = {
+		trigger_if = {
+			limit = {
+				has_global_variable = ve_age_1_started
+			}
+			taking_loans = no
+		}
+		trigger_else_if = {
+			limit = {
+				has_global_variable = ve_age_2_started
+			}
+			navy_size >= 120
+		}
+		trigger_else_if = {
+			limit = {
+				has_global_variable = ve_age_3_started
+			}
+			leading_producer_of = g:oil
+		}
+	}
+	effect = {
+		custom_tooltip = {
+			text = ve_age_obj_efct_tt
+		}
+	}
+}
+
+ve_age_obj_5 = {
+	scope = country
+	is_valid = {
+		trigger_if = {
+			limit = {
+				has_global_variable = ve_age_1_started
+			}
+			ig:ig_intelligentsia = {
+				is_in_government = yes
+				ig_clout >= 0.15
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				has_global_variable = ve_age_2_started
+			}
+			leading_producer_of = g:coal
+		}
+		trigger_else_if = {
+			limit = {
+				has_global_variable = ve_age_3_started
+			}
+			NOT = {
+				any_scope_state = {
+					owner = ROOT
+					any_scope_building = {
+						is_building_type = building_barracks
+						OR = {
+							has_active_production_method = pm_irregular_infantry
+							has_active_production_method = pm_line_infantry
+							has_active_production_method = pm_skirmish_infantry
+							has_active_production_method = pm_trench_infantry
+							has_active_production_method = pm_squad_infantry
+						}
+						OR = {
+							has_active_production_method = pm_no_artillery
+							has_active_production_method = pm_cannon_artillery
+							has_active_production_method = pm_mobile_artillery
+							has_active_production_method = pm_shrapnel_artillery
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = {
+			text = ve_age_obj_efct_tt
+		}
+	}
+}
+
+ve_age_obj_6 = {
+	scope = country
+	is_valid = {
+		trigger_if = {
+			limit = {
+				has_global_variable = ve_age_1_started
+			}
+			pop_type_percent_country = {
+				pop_type = peasants
+				percent < 0.5
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				has_global_variable = ve_age_2_started
+			}
+			literacy_rate >= 0.5
+		}
+		trigger_else_if = {
+			limit = {
+				has_global_variable = ve_age_3_started
+			}
+			GDP >= 1000000000
+		}
+	}
+	effect = {
+		custom_tooltip = {
+			text = ve_age_obj_efct_tt
+		}
+	}
+}
+
+ve_age_obj_7 = {
+	scope = country
+	is_valid = {
+		trigger_if = {
+			limit = {
+				has_global_variable = ve_age_1_started
+			}
+			num_declared_interests >= 8
+		}
+		trigger_else_if = {
+			limit = {
+				has_global_variable = ve_age_2_started
+			}
+			total_population > 100000000
+		}
+		trigger_else_if = {
+			limit = {
+				has_global_variable = ve_age_3_started
+			}
+			global_country_ranking = 1
+		}
+	}
+	effect = {
+		custom_tooltip = {
+			text = ve_age_obj_efct_tt
+		}
+	}
+}
+
+### Age Bonuses
+ve_age_bonus_1 = {
+	scope = country
+	is_shown = {
+		trigger_if = {
+			limit = {
+				has_global_variable = ve_age_1_started
+			}
+			NOT = {
+				has_modifier = age_1_bonus_1
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				has_global_variable = ve_age_2_started
+			}
+			NOT = {
+				has_modifier = age_2_bonus_1
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				has_global_variable = ve_age_3_started
+			}
+			NOT = {
+				has_modifier = age_3_bonus_1
+			}
+		}
+	}
+	is_valid = {
+		trigger_if = {
+			limit = {
+				has_global_variable = ve_age_1_started
+			}
+			custom_tooltip = {
+				text = splendor_default_bonus
+				splendor_cost_trigger = yes
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				has_global_variable = ve_age_2_started
+			}
+			custom_tooltip = {
+				text = splendor_default_bonus
+				splendor_cost_trigger = yes
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				has_global_variable = ve_age_3_started
+			}
+			custom_tooltip = {
+				text = splendor_default_bonus
+				splendor_cost_trigger = yes
+			}
+		}
+	}
+	effect = {
+		change_variable = {
+			name = ve_splender_points
+			subtract = 800
+		}
+		if = {
+			limit = {
+				has_global_variable = ve_age_1_started
+			}
+			add_modifier = {
+				name = age_1_bonus_1
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_global_variable = ve_age_2_started
+			}
+			add_modifier = {
+				name = age_2_bonus_1
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_global_variable = ve_age_3_started
+			}
+			add_modifier = {
+				name = age_3_bonus_1
+				months = -1
+			}
+		}
+	}
+}
+
+ve_age_bonus_2 = {
+	scope = country
+	is_shown = {
+		trigger_if = {
+			limit = {
+				has_global_variable = ve_age_1_started
+			}
+			NOT = {
+				has_modifier = age_1_bonus_2
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				has_global_variable = ve_age_2_started
+			}
+			NOT = {
+				has_modifier = age_2_bonus_2
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				has_global_variable = ve_age_3_started
+			}
+			NOT = {
+				has_modifier = age_3_bonus_2
+			}
+		}
+	}
+	is_valid = {
+		trigger_if = {
+			limit = {
+				has_global_variable = ve_age_1_started
+			}
+			custom_tooltip = {
+				text = splendor_default_bonus
+				splendor_cost_trigger = yes
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				has_global_variable = ve_age_2_started
+			}
+			custom_tooltip = {
+				text = splendor_default_bonus
+				splendor_cost_trigger = yes
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				has_global_variable = ve_age_3_started
+			}
+			custom_tooltip = {
+				text = splendor_default_bonus
+				splendor_cost_trigger = yes
+			}
+		}
+	}
+	effect = {
+		change_variable = {
+			name = ve_splender_points
+			subtract = 800
+		}
+		if = {
+			limit = {
+				has_global_variable = ve_age_1_started
+			}
+			add_modifier = {
+				name = age_1_bonus_2
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_global_variable = ve_age_2_started
+			}
+			add_modifier = {
+				name = age_2_bonus_2
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_global_variable = ve_age_3_started
+			}
+			add_modifier = {
+				name = age_3_bonus_2
+				months = -1
+			}
+		}
+	}
+}
+
+ve_age_bonus_3 = {
+	scope = country
+	is_shown = {
+		trigger_if = {
+			limit = {
+				has_global_variable = ve_age_1_started
+			}
+			NOT = {
+				has_modifier = age_1_bonus_3
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				has_global_variable = ve_age_2_started
+			}
+			NOT = {
+				has_modifier = age_2_bonus_3
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				has_global_variable = ve_age_3_started
+			}
+			NOT = {
+				has_modifier = age_3_bonus_3
+			}
+		}
+	}
+	is_valid = {
+		trigger_if = {
+			limit = {
+				has_global_variable = ve_age_1_started
+			}
+			custom_tooltip = {
+				text = splendor_default_bonus
+				splendor_cost_trigger = yes
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				has_global_variable = ve_age_2_started
+			}
+			custom_tooltip = {
+				text = splendor_default_bonus
+				splendor_cost_trigger = yes
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				has_global_variable = ve_age_3_started
+			}
+			custom_tooltip = {
+				text = splendor_default_bonus
+				splendor_cost_trigger = yes
+			}
+		}
+	}
+	effect = {
+		change_variable = {
+			name = ve_splender_points
+			subtract = 800
+		}
+		if = {
+			limit = {
+				has_global_variable = ve_age_1_started
+			}
+			add_modifier = {
+				name = age_1_bonus_3
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_global_variable = ve_age_2_started
+			}
+			add_modifier = {
+				name = age_2_bonus_3
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_global_variable = ve_age_3_started
+			}
+			add_modifier = {
+				name = age_3_bonus_3
+				months = -1
+			}
+		}
+	}
+}
+
+ve_age_bonus_4 = {
+	scope = country
+	is_shown = {
+		trigger_if = {
+			limit = {
+				has_global_variable = ve_age_1_started
+			}
+			NOT = {
+				has_modifier = age_1_bonus_4
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				has_global_variable = ve_age_2_started
+			}
+			NOT = {
+				has_modifier = age_2_bonus_4
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				has_global_variable = ve_age_3_started
+			}
+			NOT = {
+				has_modifier = age_3_bonus_4
+			}
+		}
+	}
+	is_valid = {
+		trigger_if = {
+			limit = {
+				has_global_variable = ve_age_1_started
+			}
+			custom_tooltip = {
+				text = splendor_default_bonus
+				splendor_cost_trigger = yes
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				has_global_variable = ve_age_2_started
+			}
+			custom_tooltip = {
+				text = splendor_default_bonus
+				splendor_cost_trigger = yes
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				has_global_variable = ve_age_3_started
+			}
+			custom_tooltip = {
+				text = splendor_default_bonus
+				splendor_cost_trigger = yes
+			}
+		}
+	}
+	effect = {
+		change_variable = {
+			name = ve_splender_points
+			subtract = 800
+		}
+		if = {
+			limit = {
+				has_global_variable = ve_age_1_started
+			}
+			add_modifier = {
+				name = age_1_bonus_4
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_global_variable = ve_age_2_started
+			}
+			add_modifier = {
+				name = age_2_bonus_4
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_global_variable = ve_age_3_started
+			}
+			add_modifier = {
+				name = age_3_bonus_4
+				months = -1
+			}
+		}
+	}
+}
+
+ve_age_bonus_5 = {
+	scope = country
+	is_shown = {
+		trigger_if = {
+			limit = {
+				has_global_variable = ve_age_1_started
+			}
+			NOT = {
+				has_modifier = age_1_bonus_5
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				has_global_variable = ve_age_2_started
+			}
+			NOT = {
+				has_modifier = age_2_bonus_5
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				has_global_variable = ve_age_3_started
+			}
+			NOT = {
+				has_modifier = age_3_bonus_5
+			}
+		}
+	}
+	is_valid = {
+		trigger_if = {
+			limit = {
+				has_global_variable = ve_age_1_started
+			}
+			custom_tooltip = {
+				text = splendor_default_bonus
+				splendor_cost_trigger = yes
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				has_global_variable = ve_age_2_started
+			}
+			custom_tooltip = {
+				text = splendor_default_bonus
+				splendor_cost_trigger = yes
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				has_global_variable = ve_age_3_started
+			}
+			custom_tooltip = {
+				text = splendor_default_bonus
+				splendor_cost_trigger = yes
+			}
+		}
+	}
+	effect = {
+		change_variable = {
+			name = ve_splender_points
+			subtract = 800
+		}
+		if = {
+			limit = {
+				has_global_variable = ve_age_1_started
+			}
+			add_modifier = {
+				name = age_1_bonus_5
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_global_variable = ve_age_2_started
+			}
+			add_modifier = {
+				name = age_2_bonus_5
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_global_variable = ve_age_3_started
+			}
+			add_modifier = {
+				name = age_3_bonus_5
+				months = -1
+			}
+		}
+	}
+}
+
+ve_age_bonus_6 = {
+	scope = country
+	is_shown = {
+		trigger_if = {
+			limit = {
+				has_global_variable = ve_age_1_started
+			}
+			NOT = {
+				has_modifier = age_1_bonus_6
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				has_global_variable = ve_age_2_started
+			}
+			NOT = {
+				has_modifier = age_2_bonus_6
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				has_global_variable = ve_age_3_started
+			}
+			NOT = {
+				has_modifier = age_3_bonus_6
+			}
+		}
+	}
+	is_valid = {
+		trigger_if = {
+			limit = {
+				has_global_variable = ve_age_1_started
+			}
+			custom_tooltip = {
+				text = splendor_default_bonus
+				splendor_cost_trigger = yes
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				has_global_variable = ve_age_2_started
+			}
+			custom_tooltip = {
+				text = splendor_default_bonus
+				splendor_cost_trigger = yes
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				has_global_variable = ve_age_3_started
+			}
+			custom_tooltip = {
+				text = splendor_default_bonus
+				splendor_cost_trigger = yes
+			}
+		}
+	}
+	effect = {
+		change_variable = {
+			name = ve_splender_points
+			subtract = 800
+		}
+		if = {
+			limit = {
+				has_global_variable = ve_age_1_started
+			}
+			add_modifier = {
+				name = age_1_bonus_6
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_global_variable = ve_age_2_started
+			}
+			add_modifier = {
+				name = age_2_bonus_6
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_global_variable = ve_age_3_started
+			}
+			add_modifier = {
+				name = age_3_bonus_6
+				months = -1
+			}
+		}
+	}
+}
+
+ve_age_bonus_7 = {
+	scope = country
+	is_shown = {
+		trigger_if = {
+			limit = {
+				has_global_variable = ve_age_1_started
+			}
+			NOT = {
+				has_modifier = age_1_bonus_7
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				has_global_variable = ve_age_2_started
+			}
+			NOT = {
+				has_modifier = age_2_bonus_7
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				has_global_variable = ve_age_3_started
+			}
+			NOT = {
+				has_modifier = age_3_bonus_7
+			}
+		}
+	}
+	is_valid = {
+		trigger_if = {
+			limit = {
+				has_global_variable = ve_age_1_started
+			}
+			custom_tooltip = {
+				text = ve_age_1_bonus_7_tt
+				splendor_cost_trigger = yes
+				exists = c:GBR
+				this = c:GBR
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				has_global_variable = ve_age_2_started
+			}
+			custom_tooltip = {
+				text = ve_age_2_bonus_7_tt
+				splendor_cost_trigger = yes
+				exists = c:BEL
+				this = c:BEL
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				has_global_variable = ve_age_3_started
+			}
+			custom_tooltip = {
+				text = ve_age_3_bonus_7_tt
+				splendor_cost_trigger = yes
+				global_country_ranking <= 5
+				NOT = {
+					has_modifier = age_3_bonus_8
+				}
+			}
+		}
+	}
+	effect = {
+		change_variable = {
+			name = ve_splender_points
+			subtract = 800
+		}
+		if = {
+			limit = {
+				has_global_variable = ve_age_1_started
+			}
+			add_modifier = {
+				name = age_1_bonus_7
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_global_variable = ve_age_2_started
+			}
+			add_modifier = {
+				name = age_2_bonus_7
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_global_variable = ve_age_3_started
+			}
+			add_modifier = {
+				name = age_3_bonus_7
+				months = -1
+			}
+		}
+	}
+}
+
+ve_age_bonus_8 = {
+	scope = country
+	is_shown = {
+		trigger_if = {
+			limit = {
+				has_global_variable = ve_age_1_started
+			}
+			NOT = {
+				has_modifier = age_1_bonus_8
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				has_global_variable = ve_age_2_started
+			}
+			NOT = {
+				has_modifier = age_2_bonus_8
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				has_global_variable = ve_age_3_started
+			}
+			NOT = {
+				has_modifier = age_3_bonus_8
+			}
+		}
+	}
+	is_valid = {
+		trigger_if = {
+			limit = {
+				has_global_variable = ve_age_1_started
+			}
+			custom_tooltip = {
+				text = ve_age_1_bonus_8_tt
+				splendor_cost_trigger = yes
+				exists = c:NET
+				this = c:NET
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				has_global_variable = ve_age_2_started
+			}
+			custom_tooltip = {
+				text = ve_age_2_bonus_8_tt
+				splendor_cost_trigger = yes
+				exists = c:USA
+				this = c:USA
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				has_global_variable = ve_age_3_started
+			}
+			custom_tooltip = {
+				text = ve_age_3_bonus_8_tt
+				splendor_cost_trigger = yes
+				global_country_ranking >= 5
+				NOT = {
+					has_modifier = age_3_bonus_7
+				}
+			}
+		}
+	}
+	effect = {
+		change_variable = {
+			name = ve_splender_points
+			subtract = 800
+		}
+		if = {
+			limit = {
+				has_global_variable = ve_age_1_started
+			}
+			add_modifier = {
+				name = age_1_bonus_8
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_global_variable = ve_age_2_started
+			}
+			add_modifier = {
+				name = age_2_bonus_8
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_global_variable = ve_age_3_started
+			}
+			add_modifier = {
+				name = age_3_bonus_8
+				months = -1
+			}
+		}
+	}
+}
+
+ve_age_bonus_9 = {
+	scope = country
+	is_shown = {
+		trigger_if = {
+			limit = {
+				has_global_variable = ve_age_1_started
+			}
+			NOT = {
+				has_modifier = age_1_bonus_9
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				has_global_variable = ve_age_2_started
+			}
+			NOT = {
+				has_modifier = age_2_bonus_9
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				has_global_variable = ve_age_3_started
+			}
+			NOT = {
+				has_modifier = age_3_bonus_9
+			}
+		}
+	}
+	is_valid = {
+		trigger_if = {
+			limit = {
+				has_global_variable = ve_age_1_started
+			}
+			custom_tooltip = {
+				text = ve_age_1_bonus_9_tt
+				splendor_cost_trigger = yes
+				OR = {
+					AND = {
+						exists = c:JAP
+						this = c:JAP
+					}
+					AND = {
+						exists = c:TUR
+						this = c:TUR
+					}
+				}
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				has_global_variable = ve_age_2_started
+			}
+			custom_tooltip = {
+				text = ve_age_2_bonus_9_tt
+				splendor_cost_trigger = yes
+				exists = c:FRA
+				this = c:FRA
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				has_global_variable = ve_age_3_started
+			}
+			custom_tooltip = {
+				text = ve_age_3_bonus_9_tt
+				splendor_cost_trigger = yes
+				exists = c:GER
+				this = c:GER
+			}
+		}
+	}
+	effect = {
+		change_variable = {
+			name = ve_splender_points
+			subtract = 800
+		}
+		if = {
+			limit = {
+				has_global_variable = ve_age_1_started
+			}
+			add_modifier = {
+				name = age_1_bonus_9
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_global_variable = ve_age_2_started
+			}
+			add_modifier = {
+				name = age_2_bonus_9
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_global_variable = ve_age_3_started
+			}
+			add_modifier = {
+				name = age_3_bonus_9
+				months = -1
+			}
+		}
+	}
+}
+
+ve_age_bonus_10 = {
+	scope = country
+	is_shown = {
+		trigger_if = {
+			limit = {
+				has_global_variable = ve_age_1_started
+			}
+			NOT = {
+				has_modifier = age_1_bonus_10
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				has_global_variable = ve_age_2_started
+			}
+			NOT = {
+				has_modifier = age_2_bonus_10
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				has_global_variable = ve_age_3_started
+			}
+			NOR = {
+				has_modifier = age_3_bonus_10
+				has_modifier = age_3_bonus_10_2
+			}
+		}
+	}
+	is_valid = {
+		trigger_if = {
+			limit = {
+				has_global_variable = ve_age_1_started
+			}
+			custom_tooltip = {
+				text = ve_age_1_bonus_10_tt
+				splendor_cost_trigger = yes
+				OR = {
+					country_has_primary_culture = cu:north_italian
+					country_has_primary_culture = cu:south_italian
+				}
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				has_global_variable = ve_age_2_started
+			}
+			custom_tooltip = {
+				text = ve_age_2_bonus_10_tt
+				splendor_cost_trigger = yes
+				exists = c:AUS
+				this = c:AUS
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				has_global_variable = ve_age_3_started
+			}
+			custom_tooltip = {
+				text = ve_age_3_bonus_10_tt
+				splendor_cost_trigger = yes
+				exists = c:GBR
+				this = c:GBR
+			}
+		}
+	}
+	effect = {
+		change_variable = {
+			name = ve_splender_points
+			subtract = 800
+		}
+		if = {
+			limit = {
+				has_global_variable = ve_age_1_started
+			}
+			add_modifier = {
+				name = age_1_bonus_10
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_global_variable = ve_age_2_started
+			}
+			add_modifier = {
+				name = age_2_bonus_10
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_global_variable = ve_age_3_started
+			}
+			if = {
+				limit = {
+					has_modifier = naval_idea_4_mdf
+				}
+				add_modifier = {
+					name = age_3_bonus_10_2
+					months = -1
+				}
+			}
+			else = {
+				add_modifier = {
+					name = age_3_bonus_10
+					months = -1
+				}
+			}
+		}
+	}
+}
+
+ve_age_bonus_11 = {
+	scope = country
+	is_shown = {
+		trigger_if = {
+			limit = {
+				has_global_variable = ve_age_1_started
+			}
+			NOT = {
+				has_modifier = age_1_bonus_11
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				has_global_variable = ve_age_2_started
+			}
+			NOT = {
+				has_modifier = age_2_bonus_11
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				has_global_variable = ve_age_3_started
+			}
+			NOT = {
+				has_modifier = age_3_bonus_11
+			}
+		}
+	}
+	is_valid = {
+		trigger_if = {
+			limit = {
+				has_global_variable = ve_age_1_started
+			}
+			custom_tooltip = {
+				text = ve_age_1_bonus_11_tt
+				splendor_cost_trigger = yes
+				OR = {
+					country_has_primary_culture = cu:north_german
+					country_has_primary_culture = cu:south_german
+				}
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				has_global_variable = ve_age_2_started
+			}
+			custom_tooltip = {
+				text = ve_age_2_bonus_11_tt
+				splendor_cost_trigger = yes
+				exists = c:RUS
+				this = c:RUS
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				has_global_variable = ve_age_3_started
+			}
+			custom_tooltip = {
+				text = ve_age_3_bonus_11_tt
+				splendor_cost_trigger = yes
+				exists = c:RUS
+				this = c:RUS
+			}
+		}
+	}
+	effect = {
+		change_variable = {
+			name = ve_splender_points
+			subtract = 800
+		}
+		if = {
+			limit = {
+				has_global_variable = ve_age_1_started
+			}
+			add_modifier = {
+				name = age_1_bonus_11
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_global_variable = ve_age_2_started
+			}
+			add_modifier = {
+				name = age_2_bonus_11
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_global_variable = ve_age_3_started
+			}
+			add_modifier = {
+				name = age_3_bonus_11
+				months = -1
+			}
+		}
+	}
+}
+
+enable_ve_system = {
+	scope = country
+	effect = {
+		if = {
+			limit = {
+				NOT = {
+					has_variable = victoria_universalis_system_on
+				}
+			}
+			set_missionary_cultural_missionary = yes
+			set_point_system = yes
+			set_idea_buttons = yes
+			set_ideas = yes
+			set_national_idea = yes
+			religion_passive_bonuses = yes
+			national_idea_traditions = yes
+			ve_idea_cap_effects = yes
+		}
+	}
+}
+
+ve_top_bar = {
+	scope = country
+	is_shown = {
+		has_variable = ve_top_bar_on
+	}
+	effect = {
+		if = {
+			limit = {
+				has_variable = ve_top_bar_on
+			}
+			remove_variable = ve_top_bar_on
+		}
+		else = {
+			set_variable = ve_top_bar_on
+		}
+	}
+}

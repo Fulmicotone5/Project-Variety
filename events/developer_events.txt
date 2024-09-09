@@ -1,0 +1,945 @@
+﻿namespace = dev
+dev.1 = {
+	#Point
+	type = country_event
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/military_parade"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	title = dev.1.t
+	desc = dev.1.desc
+	duration = 1
+	option = {
+		name = dev.1.a
+		default_option = yes
+		if = {
+			limit = {
+				NOT = {
+					has_variable = idea_point_pool
+				}
+			}
+			set_variable = {
+				name = idea_point_pool
+				value = 0
+			}
+		}
+		if = {
+			limit = {
+				idea_point_value < 999
+			}
+			change_variable = {
+				name = idea_point_pool
+				add = 300
+			}
+		}
+	}
+	option = {
+		name = dev.1.b
+		if = {
+			limit = {
+				NOT = {
+					has_variable = idea_point_pool
+				}
+			}
+			set_variable = {
+				name = idea_point_pool
+				value = 0
+			}
+		}
+		if = {
+			limit = {
+				idea_point_value > 0
+			}
+			change_variable = {
+				name = idea_point_pool
+				subtract = 300
+			}
+		}
+	}
+	option = {
+		name = dev.1.c
+		if = {
+			limit = {
+				NOT = {
+					has_variable = piety_bar_point
+				}
+			}
+			set_variable = {
+				name = piety_bar_point
+				value = 0
+			}
+		}
+		if = {
+			limit = {
+				piety_value < 200
+			}
+			change_variable = {
+				name = piety_bar_point
+				add = 125
+			}
+		}
+	}
+	option = {
+		name = dev.1.d
+		if = {
+			limit = {
+				NOT = {
+					has_variable = piety_bar_point
+				}
+			}
+			set_variable = {
+				name = piety_bar_point
+				value = 0
+			}
+		}
+		if = {
+			limit = {
+				piety_value > 0
+			}
+			change_variable = {
+				name = piety_bar_point
+				subtract = 125
+			}
+		}
+	}
+	option = {
+		name = dev.1.e
+		if = {
+			limit = {
+				NOT = {
+					has_variable = culture_reform_point
+				}
+			}
+			set_variable = {
+				name = culture_reform_point
+				value = 0
+			}
+		}
+		if = {
+			limit = {
+				culture_reform_point_value < 1000
+			}
+			change_variable = {
+				name = culture_reform_point
+				add = 750
+			}
+		}
+	}
+	option = {
+		name = dev.1.f
+		if = {
+			limit = {
+				NOT = {
+					has_variable = culture_reform_point
+				}
+			}
+			set_variable = {
+				name = culture_reform_point
+				value = 0
+			}
+		}
+		if = {
+			limit = {
+				culture_reform_point_value > 0
+			}
+			change_variable = {
+				name = culture_reform_point
+				subtract = 750
+			}
+		}
+	}
+	option = {
+		name = dev.1.g
+		if = {
+			limit = {
+				NOT = {
+					has_variable = ve_splender_points
+				}
+			}
+			set_variable = {
+				name = ve_splender_points
+				value = 0
+			}
+		}
+		if = {
+			limit = {
+				splender_points_value < 1000
+			}
+			change_variable = {
+				name = ve_splender_points
+				add = 800
+			}
+		}
+	}
+	option = {
+		name = dev.1.h
+		if = {
+			limit = {
+				NOT = {
+					has_variable = ve_splender_points
+				}
+			}
+			set_variable = {
+				name = ve_splender_points
+				value = 0
+			}
+		}
+		if = {
+			limit = {
+				splender_points_value > 0
+			}
+			change_variable = {
+				name = ve_splender_points
+				subtract = 800
+			}
+		}
+	}
+}
+
+dev.2 = {
+	#Developer Work Event - Not for users
+	type = country_event
+	event_image = {
+		video = "gfx/event_pictures/middleeast_oil_derricks.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/world_fair"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	title = dev.2.t
+	desc = dev.2.d
+	flavor = dev.1.f
+	duration = 0
+	trigger = {
+		literacy_rate <= 0.25
+	}
+	immediate = {
+		# random_country = {
+		# 	limit = {
+		# 		is_ai = no
+		# 	}
+		# 	religion = {
+		# 		save_scope_as = my_religion
+		# 	}
+		# }
+		# every_scope_state = {
+		# 	random_scope_pop = {
+		# 		limit = {
+		# 			pop_has_primary_culture = yes
+		# 		}
+		# 		culture = {
+		# 			save_scope_as = my_culture
+		# 		}
+		# 	}
+		# }
+	}
+	option = {
+		name = dev.2.a
+		default_option = yes
+		# set_global_variable = ve_age_2_started
+		# remove_global_variable = ve_age_1_started
+		# remove_global_variable = ve_age_3_started
+		# set_global_variable = age_2_started_trigger
+		# create_diplomatic_pact = {
+		# 	country = c:BRZ
+		# 	type = puppet
+		# }
+		# create_diplomatic_pact = {
+		# 	country = c:AGJ
+		# 	type = puppet
+		# }
+		# create_diplomatic_pact = {
+		# 	country = c:PRG
+		# 	type = puppet
+		# }
+		# create_diplomatic_pact = {
+		# 	country = c:URU
+		# 	type = puppet
+		# }
+		# annex = c:BRZ
+		# annex = c:AGJ
+		# annex = c:PRG
+		# annex = c:URU
+		# annex = c:ARJ
+		# annex = c:CHL
+		# annex = c:CLM
+		# annex = c:VNZ
+		set_global_variable = ve_age_3_started
+		remove_global_variable = ve_age_1_started
+		remove_global_variable = ve_age_2_started
+		# set_state_religion = rel:atheist
+	}
+	option = {
+		name = dev.2.b
+		default_option = yes
+		add_technology_researched = railways
+		# every_scope_state = {
+		# 	limit = {
+		# 		owner = ROOT
+		# 	}
+		# 	create_building = {
+		# 		building = building_railway
+		# 		level = 1
+		# 	}
+		# }
+	}
+	option = {
+		name = dev.2.c
+		ve_holy_site_effects = yes
+		# ve_ai_boost_idea = yes
+		# ve_ai_choose_idea = yes
+		# ve_ai_uses_religion = yes
+		# ve_ai_uses_culture = yes
+		# ve_ai_uses_age_bonuses = yes
+	}
+	option = {
+		name = dev.2.d
+		# every_scope_state = {
+		# 	limit = {
+		# 		has_variable = selected_state_religion
+		# 	}
+		# 	convert_population = {
+		# 		target = scope:my_religion
+		# 		value = 0.1
+		# 	}
+		# 	every_scope_pop = {
+		# 		limit = {
+		# 			pop_has_primary_culture = no
+		# 		}
+		# 		change_pop_culture = {
+		# 			value = 0.005
+		# 			target = scope:my_culture
+		# 		}
+		# 	}
+		# }
+		capital = {
+			convert_population = {
+				target = rel:orthodox
+				value = 0.5
+			}
+		}
+		c:TUR = {
+			trigger_event = {
+				id = dev.7
+			}
+		}
+		c:EGY = {
+			trigger_event = {
+				id = dev.7
+			}
+		}
+	}
+}
+
+dev.3 = {
+	#Game Difficulty
+	type = country_event
+	event_image = {
+		video = "gfx/event_pictures/unspecific_trains.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	title = dev.3.t
+	desc = dev.3.d
+	flavor = dev.3.f
+	duration = 1
+	popup = yes
+	immediate = {
+		set_global_variable = dev_3_triggered
+	}
+	trigger = {
+		is_ai = no
+		NOT = {
+			has_global_variable = dev_3_triggered
+		}
+	}
+	option = {
+		name = dev.3.a
+		if = {
+			limit = {
+				has_global_variable = ve_medium
+			}
+			remove_global_variable = ve_medium
+		}
+		if = {
+			limit = {
+				has_global_variable = ve_hard
+			}
+			remove_global_variable = ve_hard
+		}
+		set_global_variable = ve_easy
+	}
+	option = {
+		name = dev.3.b
+		default_option = yes
+		if = {
+			limit = {
+				has_global_variable = ve_easy
+			}
+			remove_global_variable = ve_easy
+		}
+		if = {
+			limit = {
+				has_global_variable = ve_hard
+			}
+			remove_global_variable = ve_hard
+		}
+		set_global_variable = ve_medium
+	}
+	option = {
+		name = dev.3.c
+		if = {
+			limit = {
+				has_global_variable = ve_easy
+			}
+			remove_global_variable = ve_easy
+		}
+		if = {
+			limit = {
+				has_global_variable = ve_medium
+			}
+			remove_global_variable = ve_medium
+		}
+		set_global_variable = ve_hard
+	}
+}
+
+dev.4 = {
+	#Monthly Event
+	type = country_event
+	event_image = {
+		video = "gfx/event_pictures/middleeast_oil_derricks.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/world_fair"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	title = dev.4.t
+	desc = dev.4.d
+	flavor = dev.4.f
+	duration = 0
+	hidden = yes
+	immediate = {
+		if = {
+			#For released countries
+			limit = {
+				NOT = {
+					has_variable = victoria_universalis_system_on
+				}
+			}
+			set_missionary_cultural_missionary = yes
+			set_point_system = yes
+			set_idea_buttons = yes
+			set_ideas = yes
+			set_national_idea = yes
+			religion_passive_bonuses = yes
+			national_idea_traditions = yes
+		}
+		ve_monthly_points = yes
+		ve_idea_cap_effects = yes
+		ve_holy_site_effects = yes
+		prevent_annex_foreign_missionary = yes
+		prevent_annex_foreign_cultural_missionary = yes
+		ve_law_change_effects = yes
+		ve_becoming_atheist = yes
+		if = {
+			#For AI
+			limit = {
+				is_ai = yes
+			}
+			ve_ai_choose_idea = yes
+			ve_ai_boost_idea = yes
+			ve_ai_uses_religion = yes
+			ve_ai_uses_culture = yes
+			ve_ai_uses_age_bonuses = yes
+		}
+		if = {
+			#For Released and Civil War Countries
+			limit = {
+				NOT = {
+					has_variable = ve_1936_countries
+				}
+			}
+			set_variable = ve_1936_countries
+			set_variable = {
+				name = idea_point_pool
+				value = global_var:idea_point_value_pool
+			}
+			set_variable = {
+				name = culture_reform_point
+				value = global_var:culture_point_value_pool
+			}
+		}
+	}
+	option = {
+		name = dev.4.a
+		default_option = yes
+	}
+}
+
+dev.5 = {
+	#Imperial Age 
+	type = country_event
+	event_image = {
+		video = "gfx/event_pictures/middleeast_oil_derricks.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/world_fair"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	title = dev.4.t
+	desc = dev.4.d
+	flavor = dev.4.f
+	duration = 0
+	hidden = yes
+	immediate = {
+		set_global_variable = ve_age_2_started
+		remove_global_variable = ve_age_1_started
+		remove_global_variable = ve_age_3_started
+		set_global_variable = age_2_started_trigger
+		every_country = {
+			set_variable = {
+				name = ve_splender_points
+				value = 0
+			}
+			if = {
+				limit = {
+					has_modifier = age_1_bonus_1
+				}
+				remove_modifier = age_1_bonus_1
+			}
+			if = {
+				limit = {
+					has_modifier = age_1_bonus_2
+				}
+				remove_modifier = age_1_bonus_2
+			}
+			if = {
+				limit = {
+					has_modifier = age_1_bonus_3
+				}
+				remove_modifier = age_1_bonus_3
+			}
+			if = {
+				limit = {
+					has_modifier = age_1_bonus_4
+				}
+				remove_modifier = age_1_bonus_4
+			}
+			if = {
+				limit = {
+					has_modifier = age_1_bonus_5
+				}
+				remove_modifier = age_1_bonus_5
+			}
+			if = {
+				limit = {
+					has_modifier = age_1_bonus_6
+				}
+				remove_modifier = age_1_bonus_6
+			}
+			if = {
+				limit = {
+					has_modifier = age_1_bonus_7
+				}
+				remove_modifier = age_1_bonus_7
+			}
+			if = {
+				limit = {
+					has_modifier = age_1_bonus_8
+				}
+				remove_modifier = age_1_bonus_8
+			}
+			if = {
+				limit = {
+					has_modifier = age_1_bonus_9
+				}
+				remove_modifier = age_1_bonus_9
+			}
+			if = {
+				limit = {
+					has_modifier = age_1_bonus_10
+				}
+				remove_modifier = age_1_bonus_10
+			}
+			if = {
+				limit = {
+					has_modifier = age_1_bonus_11
+				}
+				remove_modifier = age_1_bonus_11
+			}
+		}
+	}
+	trigger = {
+		is_ai = yes
+		year >= 1871
+		year < 1906
+		NOT = {
+			has_global_variable = age_2_started_trigger
+		}
+	}
+	option = {
+		name = dev.4.a
+		default_option = yes
+	}
+}
+
+dev.6 = {
+	#The Last Age
+	type = country_event
+	event_image = {
+		video = "gfx/event_pictures/middleeast_oil_derricks.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/world_fair"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	title = dev.4.t
+	desc = dev.4.d
+	flavor = dev.4.f
+	duration = 0
+	immediate = {
+		set_global_variable = ve_age_3_started
+		remove_global_variable = ve_age_1_started
+		remove_global_variable = ve_age_2_started
+		set_global_variable = age_3_started_trigger
+		every_country = {
+			set_variable = {
+				name = ve_splender_points
+				value = 0
+			}
+			if = {
+				limit = {
+					has_modifier = age_2_bonus_1
+				}
+				remove_modifier = age_2_bonus_1
+			}
+			if = {
+				limit = {
+					has_modifier = age_2_bonus_2
+				}
+				remove_modifier = age_2_bonus_2
+			}
+			if = {
+				limit = {
+					has_modifier = age_2_bonus_3
+				}
+				remove_modifier = age_2_bonus_3
+			}
+			if = {
+				limit = {
+					has_modifier = age_2_bonus_4
+				}
+				remove_modifier = age_2_bonus_4
+			}
+			if = {
+				limit = {
+					has_modifier = age_2_bonus_5
+				}
+				remove_modifier = age_2_bonus_5
+			}
+			if = {
+				limit = {
+					has_modifier = age_2_bonus_6
+				}
+				remove_modifier = age_2_bonus_6
+			}
+			if = {
+				limit = {
+					has_modifier = age_2_bonus_7
+				}
+				remove_modifier = age_2_bonus_7
+			}
+			if = {
+				limit = {
+					has_modifier = age_2_bonus_8
+				}
+				remove_modifier = age_2_bonus_8
+			}
+			if = {
+				limit = {
+					has_modifier = age_2_bonus_9
+				}
+				remove_modifier = age_2_bonus_9
+			}
+			if = {
+				limit = {
+					has_modifier = age_2_bonus_10
+				}
+				remove_modifier = age_2_bonus_10
+			}
+			if = {
+				limit = {
+					has_modifier = age_2_bonus_11
+				}
+				remove_modifier = age_2_bonus_11
+			}
+		}
+	}
+	trigger = {
+		is_ai = yes
+		year >= 1906
+		NOT = {
+			has_global_variable = age_3_started_trigger
+		}
+	}
+	option = {
+		name = dev.4.a
+		default_option = yes
+	}
+}
+
+dev.7 = {
+	#Missionary Mechanic
+	type = country_event
+	event_image = {
+		video = "gfx/event_pictures/middleeast_oil_derricks.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/world_fair"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	title = dev.7.t
+	desc = dev.7.d
+	flavor = dev.7.f
+	duration = 0
+	hidden = yes
+	immediate = {
+		religion = {
+			save_scope_as = ve_religion
+		}
+		every_scope_state = {
+			limit = {
+				has_variable = selected_state_religion
+				state_population <= 250000
+			}
+			convert_population = {
+				target = scope:ve_religion
+				value = missionary_power_250k
+			}
+		}
+		every_scope_state = {
+			#500k ve altı
+			limit = {
+				has_variable = selected_state_religion
+				state_population <= 500000
+				state_population > 250000
+			}
+			convert_population = {
+				target = scope:ve_religion
+				value = missionary_power_500k
+			}
+		}
+		every_scope_state = {
+			#750k ve altı
+			limit = {
+				has_variable = selected_state_religion
+				state_population <= 750000
+				state_population > 500000
+			}
+			convert_population = {
+				target = scope:ve_religion
+				value = missionary_power_750k
+			}
+		}
+		every_scope_state = {
+			#1m ve altı:	1000000
+			limit = {
+				has_variable = selected_state_religion
+				state_population <= 1000000
+				state_population > 750000
+			}
+			convert_population = {
+				target = scope:ve_religion
+				value = missionary_power_1m
+			}
+		}
+		every_scope_state = {
+			#5m ve altı:	5000000
+			limit = {
+				has_variable = selected_state_religion
+				state_population <= 5000000
+				state_population > 1000000
+			}
+			convert_population = {
+				target = scope:ve_religion
+				value = missionary_power_5m
+			}
+		}
+		every_scope_state = {
+			#10m ve altı:	10000000
+			limit = {
+				has_variable = selected_state_religion
+				state_population <= 10000000
+				state_population > 5000000
+			}
+			convert_population = {
+				target = scope:ve_religion
+				value = missionary_power_10m
+			}
+		}
+		every_scope_state = {
+			#10m+
+			limit = {
+				has_variable = selected_state_religion
+				state_population >= 10000000
+			}
+			convert_population = {
+				target = scope:ve_religion
+				value = missionary_power_10mplus
+			}
+		}
+		every_scope_state = {
+			random_scope_pop = {
+				limit = {
+					pop_has_primary_culture = yes
+				}
+				culture = {
+					save_scope_as = ve_culture
+				}
+			}
+		}
+		every_scope_state = {
+			limit = {
+				has_variable = selected_state_culture
+				state_population <= 250000
+			}
+			every_scope_pop = {
+				limit = {
+					pop_has_primary_culture = no
+				}
+				change_pop_culture = {
+					target = scope:ve_culture
+					value = cultural_missionary_power_250k
+				}
+			}
+		}
+		every_scope_state = {
+			limit = {
+				has_variable = selected_state_culture
+				state_population <= 500000
+				state_population > 250000
+			}
+			every_scope_pop = {
+				limit = {
+					pop_has_primary_culture = no
+				}
+				change_pop_culture = {
+					target = scope:ve_culture
+					value = cultural_missionary_power_500k
+				}
+			}
+		}
+		every_scope_state = {
+			limit = {
+				has_variable = selected_state_culture
+				state_population <= 750000
+				state_population > 500000
+			}
+			every_scope_pop = {
+				limit = {
+					pop_has_primary_culture = no
+				}
+				change_pop_culture = {
+					target = scope:ve_culture
+					value = cultural_missionary_power_750k
+				}
+			}
+		}
+		every_scope_state = {
+			limit = {
+				has_variable = selected_state_culture
+				state_population <= 1000000
+				state_population > 750000
+			}
+			every_scope_pop = {
+				limit = {
+					pop_has_primary_culture = no
+				}
+				change_pop_culture = {
+					target = scope:ve_culture
+					value = cultural_missionary_power_1m
+				}
+			}
+		}
+		every_scope_state = {
+			limit = {
+				has_variable = selected_state_culture
+				state_population <= 5000000
+				state_population > 1000000
+			}
+			every_scope_pop = {
+				limit = {
+					pop_has_primary_culture = no
+				}
+				change_pop_culture = {
+					target = scope:ve_culture
+					value = cultural_missionary_power_5m
+				}
+			}
+		}
+		every_scope_state = {
+			limit = {
+				has_variable = selected_state_culture
+				state_population <= 10000000
+				state_population > 5000000
+			}
+			every_scope_pop = {
+				limit = {
+					pop_has_primary_culture = no
+				}
+				change_pop_culture = {
+					target = scope:ve_culture
+					value = cultural_missionary_power_10m
+				}
+			}
+		}
+		every_scope_state = {
+			limit = {
+				has_variable = selected_state_culture
+				state_population >= 10000000
+			}
+			every_scope_pop = {
+				limit = {
+					pop_has_primary_culture = no
+				}
+				change_pop_culture = {
+					target = scope:ve_culture
+					value = cultural_missionary_power_10mplus
+				}
+			}
+		}
+	}
+	option = {
+		name = dev.2.c
+	}
+}
+
+dev.8 = {
+	type = country_event
+	event_image = {
+		video = "gfx/event_pictures/middleeast_oil_derricks.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/world_fair"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	title = dev.8.t
+	desc = dev.8.d
+	flavor = dev.8.f
+	duration = 1
+	hidden = yes
+	trigger = {
+		global_country_ranking = 1
+	}
+	immediate = {
+		change_global_variable = {
+			name = idea_point_value_pool
+			add = 13
+		}
+		change_global_variable = {
+			name = culture_point_value_pool
+			add = 7
+		}
+	}
+	option = {
+		name = dev.2.c
+	}
+}

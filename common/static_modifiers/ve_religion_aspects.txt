@@ -1,0 +1,628 @@
+catholic_pasive_mdf = {
+	icon = gfx/interface/catholic.dds
+	state_loyalists_from_sol_change_accepted_religion_mult = 0.05
+	state_conversion_mult = 0.2
+}
+
+catholic_aspect_1_mdf = {
+	icon = gfx/interface/catholic.dds
+	state_tax_collection_mult = 0.15
+}
+
+catholic_aspect_2_mdf = {
+	icon = gfx/interface/catholic.dds
+	country_prestige_mult = 0.1
+}
+
+catholic_aspect_3_mdf = {
+	icon = gfx/interface/catholic.dds
+	country_loan_interest_rate_mult = -0.15
+	state_capitalists_investment_pool_contribution_mult = 0.1
+}
+
+catholic_aspect_4_mdf = {
+	icon = gfx/interface/catholic.dds
+	unit_army_offense_add = 5
+	unit_army_offense_mult = 0.075
+}
+
+catholic_aspect_5_mdf = {
+	icon = gfx/interface/catholic.dds
+	country_influence_mult = 0.1
+	country_max_declared_interests_add = 2
+}
+
+catholic_aspect_6_mdf = {
+	icon = gfx/interface/catholic.dds
+	country_trade_route_cost_mult = -0.1
+	country_trade_route_quantity_mult = 0.2
+}
+
+catholic_aspect_7_mdf = {
+	icon = gfx/interface/catholic.dds
+	state_conscription_rate_mult = 0.15
+}
+
+catholic_aspect_8_mdf = {
+	icon = gfx/interface/catholic.dds
+	state_loyalists_from_sol_change_mult = 0.1
+}
+
+protestant_pasive_mdf = {
+	icon = gfx/interface/catholic.dds
+	state_tax_capacity_mult = 0.1
+	country_improve_relations_speed_mult = 0.1
+}
+
+protestant_aspect_1_mdf = {
+	icon = gfx/interface/catholic.dds
+	unit_morale_damage_mult = 0.1
+	unit_morale_protection_mult = 0.15
+}
+
+protestant_aspect_2_mdf = {
+	icon = gfx/interface/catholic.dds
+	state_migration_pull_mult = 0.1
+	state_mortality_wealth_mult = -0.01
+}
+
+protestant_aspect_3_mdf = {
+	icon = gfx/interface/catholic.dds
+	country_bureaucracy_mult = 0.05
+}
+
+protestant_aspect_4_mdf = {
+	icon = gfx/interface/catholic.dds
+	state_colony_growth_creation_mult = 0.03
+	state_colony_growth_speed_mult = 0.03
+}
+
+protestant_aspect_5_mdf = {
+	icon = gfx/interface/catholic.dds
+	country_trade_route_cost_mult = -0.1
+	country_trade_route_quantity_mult = 0.2
+}
+
+protestant_aspect_6_mdf = {
+	icon = gfx/interface/catholic.dds
+	state_education_access_add = 0.015
+}
+
+protestant_aspect_7_mdf = {
+	icon = gfx/interface/catholic.dds
+	country_tech_spread_mult = 0.1
+}
+
+protestant_aspect_8_mdf = {
+	icon = gfx/interface/catholic.dds
+	state_assimilation_mult = 0.1
+}
+
+orthodox_pasive_mdf = {
+	icon = gfx/interface/catholic.dds
+	state_loyalists_from_sol_change_accepted_religion_mult = 0.05
+	country_authority_mult = 0.05
+}
+
+orthodox_aspect_1_mdf = {
+	icon = gfx/interface/catholic.dds
+	state_construction_mult = 0.1
+	state_infrastructure_add = 10
+}
+
+orthodox_aspect_2_mdf = {
+	icon = gfx/interface/catholic.dds
+	state_birth_rate_mult = 0.015
+}
+
+orthodox_aspect_3_mdf = {
+	icon = gfx/interface/catholic.dds
+	country_production_tech_research_speed_mult = 0.03
+	country_military_tech_research_speed_mult = 0.03
+	country_society_tech_research_speed_mult = 0.03
+}
+
+orthodox_aspect_4_mdf = {
+	icon = gfx/interface/catholic.dds
+	unit_army_offense_mult = 0.05
+	state_conscription_rate_mult = 0.1
+}
+
+orthodox_aspect_5_mdf = {
+	icon = gfx/interface/catholic.dds
+	country_infamy_decay_mult = 0.1
+	country_improve_relations_speed_mult = 0.1
+}
+
+orthodox_aspect_6_mdf = {
+	icon = gfx/interface/catholic.dds
+	state_turmoil_effects_mult = -0.05
+}
+
+orthodox_aspect_7_mdf = {
+	icon = gfx/interface/catholic.dds
+	state_conversion_mult = 0.25
+	interest_group_ig_devout_approval_add = 1
+}
+
+orthodox_aspect_8_mdf = {
+	icon = gfx/interface/catholic.dds
+	state_tax_waste_add = -0.15
+}
+
+coptic_pasive_mdf = {
+	icon = gfx/interface/catholic.dds
+	state_loyalists_from_sol_change_accepted_religion_mult = 0.05
+	battle_defense_owned_province_mult = 0.15
+}
+
+coptic_aspect_1_mdf = {
+	icon = gfx/interface/catholic.dds
+	country_bureaucracy_investment_cost_factor_mult = -0.1
+}
+
+coptic_aspect_2_mdf = {
+	icon = gfx/interface/catholic.dds
+	state_conscription_rate_mult = 0.15
+	unit_morale_protection_mult = 0.1
+}
+
+coptic_aspect_3_mdf = {
+	icon = gfx/interface/catholic.dds
+	unit_army_offense_add = 5
+	unit_army_defense_add = 10
+}
+
+coptic_aspect_4_mdf = {
+	icon = gfx/interface/catholic.dds
+	state_conversion_mult = 0.25
+	interest_group_ig_devout_approval_add = 1
+}
+
+coptic_aspect_5_mdf = {
+	icon = gfx/interface/catholic.dds
+	country_authority_add = 100
+}
+
+coptic_aspect_6_mdf = {
+	icon = gfx/interface/catholic.dds
+	state_tax_collection_mult = 0.1
+}
+
+coptic_aspect_7_mdf = {
+	icon = gfx/interface/catholic.dds
+	country_revolution_progress_add = -0.1
+}
+
+coptic_aspect_8_mdf = {
+	icon = gfx/interface/catholic.dds
+	state_assimilation_mult = 0.25
+}
+
+sunni_pasive_mdf = {
+	icon = gfx/interface/catholic.dds
+	country_legitimacy_headofstate_add = 5
+	country_trade_route_cost_mult = -0.15
+}
+
+sunni_aspect_1_mdf = {
+	icon = gfx/interface/catholic.dds
+	country_society_tech_research_speed_mult = 0.15
+}
+
+sunni_aspect_2_mdf = {
+	icon = gfx/interface/catholic.dds
+	state_conscription_rate_mult = 0.1
+	unit_morale_recovery_mult = 0.15
+	unit_offense_mult = 0.05
+}
+
+sunni_aspect_3_mdf = {
+	icon = gfx/interface/catholic.dds
+	country_infamy_generation_mult = -0.1
+}
+
+sunni_aspect_4_mdf = {
+	icon = gfx/interface/catholic.dds
+	country_prestige_from_army_power_projection_mult = 0.05
+	unit_army_defense_mult = 0.15
+}
+
+sunni_aspect_5_mdf = {
+	icon = gfx/interface/catholic.dds
+	state_education_access_add = 0.05
+	building_university_throughput_add = 0.15
+}
+
+sunni_aspect_6_mdf = {
+	icon = gfx/interface/catholic.dds
+	country_bureaucracy_mult = 0.05
+	country_law_enactment_time_mult = -0.2
+	country_law_enactment_success_add = 0.05
+}
+
+sunni_aspect_7_mdf = {
+	icon = gfx/interface/catholic.dds
+	country_government_wages_mult = -0.15
+	state_tax_capacity_mult = 0.1
+}
+
+sunni_aspect_8_mdf = {
+	icon = gfx/interface/catholic.dds
+	tax_heathen_add = 1
+}
+
+shia_pasive_mdf = {
+	icon = gfx/interface/catholic.dds
+	country_legitimacy_headofstate_add = 5
+	unit_morale_damage_mult = 0.1
+}
+
+shia_aspect_1_mdf = {
+	icon = gfx/interface/catholic.dds
+	country_military_tech_research_speed_mult = 0.05
+}
+
+shia_aspect_2_mdf = {
+	icon = gfx/interface/catholic.dds
+	unit_supply_consumption_mult = -0.1
+	unit_morale_protection_mult = 0.1
+}
+
+shia_aspect_3_mdf = {
+	icon = gfx/interface/catholic.dds
+	state_conversion_mult = 0.33
+}
+
+shia_aspect_4_mdf = {
+	icon = gfx/interface/catholic.dds
+	country_diplomatic_play_maneuvers_add = 10
+	country_radicals_from_conquest_mult = -0.1
+}
+
+shia_aspect_5_mdf = {
+	icon = gfx/interface/catholic.dds
+	country_trade_route_cost_mult = -0.1
+}
+
+shia_aspect_6_mdf = {
+	icon = gfx/interface/catholic.dds
+	country_war_exhaustion_casualties_mult = -0.035
+	unit_defense_developed_add = 7
+}
+
+shia_aspect_7_mdf = {
+	icon = gfx/interface/catholic.dds
+	country_bureaucracy_mult = 0.05
+	country_law_enactment_time_mult = -0.1
+}
+
+shia_aspect_8_mdf = {
+	icon = gfx/interface/catholic.dds
+	country_prestige_from_army_power_projection_mult = 0.05
+}
+
+jewish_pasive_mdf = {
+	icon = gfx/interface/catholic.dds
+	state_loyalists_from_sol_change_accepted_religion_mult = 0.05
+	country_bureaucracy_mult = 0.05
+}
+
+jewish_aspect_1_mdf = {
+	icon = gfx/interface/catholic.dds
+	country_production_tech_research_speed_mult = 0.03
+	country_society_tech_research_speed_mult = 0.03
+}
+
+jewish_aspect_2_mdf = {
+	icon = gfx/interface/catholic.dds
+	country_influence_add = 150
+	country_diplomatic_play_maneuvers_add = 10
+}
+
+jewish_aspect_3_mdf = {
+	icon = gfx/interface/catholic.dds
+	unit_morale_recovery_mult = 0.1
+	building_output_building_arms_industry_mult = 0.1
+}
+
+jewish_aspect_4_mdf = {
+	icon = gfx/interface/catholic.dds
+	unit_navy_offense_add = 5
+	unit_army_offense_add = 5
+}
+
+jewish_aspect_5_mdf = {
+	icon = gfx/interface/catholic.dds
+	state_urbanization_per_level_mult = -0.1
+	state_accepted_birth_rate_mult = 0.015
+}
+
+jewish_aspect_6_mdf = {
+	icon = gfx/interface/catholic.dds
+	country_authority_add = 70
+	state_turmoil_effects_mult = -0.05
+}
+
+jewish_aspect_7_mdf = {
+	icon = gfx/interface/catholic.dds
+	country_loan_interest_rate_mult = -0.2
+	state_capitalists_investment_pool_contribution_mult = 0.2
+}
+
+jewish_aspect_8_mdf = {
+	icon = gfx/interface/catholic.dds
+	country_trade_route_quantity_mult = 0.1
+}
+
+mahayana_pasive_mdf = {
+	icon = gfx/interface/catholic.dds
+	country_production_tech_research_speed_mult = 0.05
+	state_loyalists_from_sol_change_accepted_religion_mult = 0.05
+}
+
+mahayana_aspect_1_mdf = {
+	icon = gfx/interface/catholic.dds
+	state_urbanization_per_level_mult = -0.1
+	state_infrastructure_from_population_add = 0.1
+}
+
+mahayana_aspect_2_mdf = {
+	icon = gfx/interface/catholic.dds
+	state_bureaucracy_population_base_cost_factor_mult = -0.05
+}
+
+mahayana_aspect_3_mdf = {
+	icon = gfx/interface/catholic.dds
+	country_legitimacy_govt_size_add = 10
+	country_law_enactment_time_mult = -0.1
+}
+
+mahayana_aspect_4_mdf = {
+	icon = gfx/interface/catholic.dds
+	unit_army_offense_add = 5
+	unit_army_defense_add = 5
+}
+
+mahayana_aspect_5_mdf = {
+	icon = gfx/interface/catholic.dds
+	country_society_tech_research_speed_mult = 0.05
+}
+
+mahayana_aspect_6_mdf = {
+	icon = gfx/interface/catholic.dds
+	country_infamy_decay_mult = 0.1
+	country_influence_mult = 0.1
+}
+
+mahayana_aspect_7_mdf = {
+	icon = gfx/interface/catholic.dds
+	state_education_access_add = 0.015
+}
+
+mahayana_aspect_8_mdf = {
+	icon = gfx/interface/catholic.dds
+	state_radicals_from_discrimination_mult = -0.1
+}
+
+hindu_pasive_mdf = {
+	icon = gfx/interface/catholic.dds
+	state_loyalists_from_sol_change_accepted_religion_mult = 0.05
+	country_war_exhaustion_casualties_mult = -0.05
+}
+
+hindu_aspect_1_mdf = {
+	icon = gfx/interface/catholic.dds
+	country_influence_mult = 0.1
+	country_improve_relations_speed_mult = 0.075
+}
+
+hindu_aspect_2_mdf = {
+	icon = gfx/interface/catholic.dds
+	state_construction_mult = 0.1
+	country_loan_interest_rate_mult = -0.1
+}
+
+hindu_aspect_3_mdf = {
+	icon = gfx/interface/catholic.dds
+	unit_army_offense_add = 5
+	battle_casualties_mult = -0.05
+}
+
+hindu_aspect_4_mdf = {
+	icon = gfx/interface/catholic.dds
+	country_infamy_decay_mult = 0.1
+	country_radicals_from_conquest_mult = -0.1
+}
+
+hindu_aspect_5_mdf = {
+	icon = gfx/interface/catholic.dds
+	state_tax_collection_mult = 0.1
+	country_trade_route_quantity_mult = 0.1
+}
+
+hindu_aspect_6_mdf = {
+	icon = gfx/interface/catholic.dds
+	battle_defense_owned_province_mult = 0.1
+	state_conversion_mult = 0.25
+}
+
+hindu_aspect_7_mdf = {
+	icon = gfx/interface/catholic.dds
+	country_bureaucracy_mult = 0.05
+	state_education_access_wealth_add = 0.02
+}
+
+hindu_aspect_8_mdf = {
+	icon = gfx/interface/catholic.dds
+	state_decree_cost_mult = -0.1
+}
+
+sikh_pasive_mdf = {
+	icon = gfx/interface/catholic.dds
+	country_authority_add = 100
+	unit_morale_damage_mult = 0.1
+}
+
+sikh_aspect_1_mdf = {
+	icon = gfx/interface/catholic.dds
+	political_movement_radicalism_mult = -0.25
+	interest_group_ig_devout_approval_add = 5
+}
+
+sikh_aspect_2_mdf = {
+	icon = gfx/interface/catholic.dds
+	country_production_tech_research_speed_mult = 0.05
+	state_shopkeepers_investment_pool_efficiency_mult = 0.1
+	state_farmers_investment_pool_efficiency_mult = 0.1
+	state_clergymen_investment_pool_efficiency_mult = 0.15	
+
+}
+
+sikh_aspect_3_mdf = {
+	icon = gfx/interface/catholic.dds
+	country_consumption_tax_cost_mult = -0.25
+	country_legitimacy_govt_leader_clout_add = 5
+}
+
+sikh_aspect_4_mdf = {
+	icon = gfx/interface/catholic.dds
+	country_prestige_mult = 0.05
+	country_influence_add = 150
+}
+
+sikh_aspect_5_mdf = {
+	icon = gfx/interface/catholic.dds
+	state_education_access_add = 0.1
+}
+
+sikh_aspect_6_mdf = {
+	icon = gfx/interface/catholic.dds
+	unit_morale_recovery_mult = 0.1
+	unit_advancement_speed_mult = 0.15
+	unit_offense_mult = 0.1
+}
+
+sikh_aspect_7_mdf = {
+	icon = gfx/interface/catholic.dds
+	state_construction_mult = 0.05
+	state_mortality_mult = -0.025
+}
+
+sikh_aspect_8_mdf = {
+	icon = gfx/interface/catholic.dds
+	country_infamy_generation_mult = -0.15
+}
+
+animist_pasive_mdf = {
+	icon = gfx/interface/catholic.dds
+	state_loyalists_from_sol_change_accepted_religion_mult = 0.05
+	building_training_rate_mult = 0.075
+}
+
+animist_aspect_1_mdf = {
+	icon = gfx/interface/catholic.dds
+	unit_defense_add = 10
+	battle_defense_owned_province_mult = 0.15
+}
+
+animist_aspect_2_mdf = {
+	icon = gfx/interface/catholic.dds
+	country_resource_discovery_chance_mult = 0.1
+	country_minting_mult = 0.1
+}
+
+animist_aspect_3_mdf = {
+	icon = gfx/interface/catholic.dds
+	country_war_exhaustion_casualties_mult = -0.05
+	unit_supply_consumption_mult = -0.1
+}
+
+animist_aspect_4_mdf = {
+	icon = gfx/interface/catholic.dds
+	country_authority_mult = 0.05
+	country_legitimacy_base_add = 10
+}
+
+animist_aspect_5_mdf = {
+	icon = gfx/interface/catholic.dds
+	country_military_wages_mult = 0.15
+}
+
+animist_aspect_6_mdf = {
+	icon = gfx/interface/catholic.dds
+	state_conversion_mult = 0.25
+	state_assimilation_mult = 0.25
+}
+
+animist_aspect_7_mdf = {
+	icon = gfx/interface/catholic.dds
+	state_tax_collection_mult = 0.15
+}
+
+animist_aspect_8_mdf = {
+	icon = gfx/interface/catholic.dds
+	interest_group_approval_add = 2
+}
+
+#Missionary
+ve_missionary_mdf = {
+	icon = gfx/interface/catholic.dds
+	state_radicals_from_discrimination_mult = 0.5
+}
+
+ve_diffusionist_mdf = {
+	icon = gfx/interface/catholic.dds
+	state_radicals_from_discrimination_mult = 0.5
+}
+
+atheist_pasive_mdf = {
+	icon = gfx/interface/catholic.dds
+	country_agitator_slots_add = 1
+	country_tech_spread_mult = 0.1
+}
+
+atheist_aspect_1_mdf = {
+	icon = gfx/interface/catholic.dds
+	state_conversion_mult = 1
+}
+
+atheist_aspect_2_mdf = {
+	icon = gfx/interface/catholic.dds
+	interest_group_ig_intelligentsia_pol_str_mult = 0.1
+	state_education_access_add = 0.15
+}
+
+atheist_aspect_3_mdf = {
+	icon = gfx/interface/catholic.dds
+	state_birth_rate_mult = 0.05
+}
+
+atheist_aspect_4_mdf = {
+	icon = gfx/interface/catholic.dds
+	country_bureaucracy_mult = 0.15
+}
+
+atheist_aspect_5_mdf = {
+	icon = gfx/interface/catholic.dds
+	tax_heathen_add = 1
+	state_tax_collection_mult = 0.1
+}
+
+atheist_aspect_6_mdf = {
+	icon = gfx/interface/catholic.dds
+	country_society_tech_research_speed_mult = 0.1
+}
+
+atheist_aspect_7_mdf = {
+	icon = gfx/interface/catholic.dds
+	state_atheist_standard_of_living_add = 1
+	political_movement_support_mult = 0.05
+}
+
+atheist_aspect_8_mdf = {
+	icon = gfx/interface/catholic.dds
+	state_migration_pull_mult = 0.1
+	state_migration_quota_mult = 0.1
+	state_migration_push_mult = -0.15
+}

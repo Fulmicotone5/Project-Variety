@@ -1,0 +1,526 @@
+gbr_idea_tradition_1 = {
+	icon = gfx/interface/intelligensia.dds
+	unit_navy_offense_add = 7
+}
+
+gbr_idea_tradition_2 = {
+	icon = gfx/interface/intelligensia.dds
+	unit_advancement_speed_mult = 0.1
+}
+
+gbr_idea_bonus = {
+	icon = gfx/interface/intelligensia.dds
+	country_prestige_from_navy_power_projection_mult = 0.2
+}
+
+gbr_idea_1 = {
+	icon = gfx/interface/intelligensia.dds
+	country_influence_mult = 0.1
+}
+
+gbr_idea_2 = {
+	icon = gfx/interface/intelligensia.dds
+	country_production_tech_research_speed_mult = 0.05
+	country_military_tech_research_speed_mult = 0.05
+	country_society_tech_research_speed_mult = 0.05
+}
+
+gbr_idea_3 = {
+	icon = gfx/interface/intelligensia.dds
+	country_trade_route_cost_mult = -0.2
+}
+
+gbr_idea_4 = {
+	icon = gfx/interface/intelligensia.dds
+	state_colony_growth_creation_mult = 0.15
+}
+
+gbr_idea_5 = {
+	icon = gfx/interface/intelligensia.dds
+	country_legitimacy_headofstate_add = 10
+}
+
+gbr_idea_6 = {
+	icon = gfx/interface/intelligensia.dds
+	state_infrastructure_mult = 0.15
+}
+
+gbr_idea_7 = {
+	icon = gfx/interface/intelligensia.dds
+	unit_army_offense_add = 10
+}
+
+fra_idea_tradition_1 = {
+	icon = gfx/interface/intelligensia.dds
+	country_influence_add = 150
+}
+
+fra_idea_tradition_2 = {
+	icon = gfx/interface/intelligensia.dds
+	political_movement_radicalism_mult = -0.1
+}
+
+fra_idea_bonus = {
+	icon = gfx/interface/intelligensia.dds
+	country_prestige_mult = 0.15
+}
+
+fra_idea_1 = {
+	icon = gfx/interface/intelligensia.dds
+	state_urbanization_add = 10	#Unutma
+}
+
+fra_idea_2 = {
+	icon = gfx/interface/intelligensia.dds
+	unit_morale_damage_mult = 0.2
+}
+
+fra_idea_3 = {
+	icon = gfx/interface/intelligensia.dds
+	state_radicals_from_discrimination_mult = -0.15
+}
+
+fra_idea_4 = {
+	icon = gfx/interface/intelligensia.dds
+	building_group_bg_manufacturing_throughput_add = 0.1
+}
+
+fra_idea_5 = {
+	icon = gfx/interface/intelligensia.dds
+	unit_army_offense_add = 10
+	building_training_rate_mult = 0.2
+}
+
+fra_idea_6 = {
+	icon = gfx/interface/intelligensia.dds
+	state_bureaucracy_population_base_cost_factor_mult = -0.1
+}
+
+fra_idea_7 = {
+	icon = gfx/interface/intelligensia.dds
+	country_max_declared_interests_mult = 0.25
+}
+
+ger_idea_tradition_1 = {
+	icon = gfx/interface/intelligensia.dds
+	unit_morale_damage_mult = 0.1
+}
+
+ger_idea_tradition_2 = {
+	icon = gfx/interface/intelligensia.dds
+	country_trade_route_quantity_mult = 0.1
+}
+
+ger_idea_bonus = {
+	icon = gfx/interface/intelligensia.dds
+	unit_army_offense_mult = 0.2
+}
+
+ger_idea_1 = {
+	icon = gfx/interface/intelligensia.dds
+	country_tech_spread_mult = 0.1
+	building_university_throughput_add = 0.1
+}
+
+ger_idea_2 = {
+	icon = gfx/interface/intelligensia.dds
+	country_legitimacy_headofstate_add = 10
+}
+
+ger_idea_3 = {
+	icon = gfx/interface/intelligensia.dds
+	country_infamy_decay_mult = 0.1
+}
+
+ger_idea_4 = {
+	icon = gfx/interface/intelligensia.dds
+	country_bureaucracy_mult = 0.1
+}
+
+ger_idea_5 = {
+	icon = gfx/interface/intelligensia.dds
+	state_accepted_birth_rate_mult = 0.02
+}
+
+ger_idea_6 = {
+	icon = gfx/interface/intelligensia.dds
+	unit_morale_recovery_mult = 0.1
+	building_training_rate_mult = 0.1
+}
+
+ger_idea_7 = {
+	icon = gfx/interface/intelligensia.dds
+	state_pop_qualifications_mult = 0.15
+}
+
+aus_idea_tradition_1 = {
+	icon = gfx/interface/intelligensia.dds
+	unit_morale_loss_mult = -0.1
+}
+
+aus_idea_tradition_2 = {
+	icon = gfx/interface/intelligensia.dds
+	country_improve_relations_speed_mult = 0.1
+}
+
+aus_idea_bonus = {
+	icon = gfx/interface/intelligensia.dds
+	country_legitimacy_govt_leader_clout_add = 15
+}
+
+aus_idea_1 = {
+	icon = gfx/interface/intelligensia.dds
+	country_infamy_generation_mult = -0.1
+}
+
+aus_idea_2 = {
+	icon = gfx/interface/intelligensia.dds
+	country_influence_add = 200
+	country_max_declared_interests_add = 1
+}
+
+aus_idea_3 = {
+	icon = gfx/interface/intelligensia.dds
+	unit_army_defense_add = 10
+	unit_morale_damage_mult = 0.05
+}
+
+aus_idea_4 = {
+	icon = gfx/interface/intelligensia.dds
+	state_infrastructure_mult = 0.1
+}
+
+aus_idea_5 = {
+	icon = gfx/interface/intelligensia.dds
+	country_loan_interest_rate_mult = -0.1
+	state_capitalists_investment_pool_efficiency_mult = 0.1
+}
+
+aus_idea_6 = {
+	icon = gfx/interface/intelligensia.dds
+	state_radicals_from_discrimination_mult = -0.2
+}
+
+aus_idea_7 = {
+	icon = gfx/interface/intelligensia.dds
+	country_military_wages_mult = -0.2
+	building_training_rate_mult = 0.1
+}
+
+rus_idea_tradition_1 = {
+	icon = gfx/interface/intelligensia.dds
+	state_bureaucracy_population_base_cost_factor_mult = -0.1
+}
+
+rus_idea_tradition_2 = {
+	icon = gfx/interface/intelligensia.dds
+	unit_supply_consumption_mult = -0.1
+}
+
+rus_idea_bonus = {
+	icon = gfx/interface/intelligensia.dds
+	country_legitimacy_base_add = 10
+}
+
+rus_idea_1 = {
+	icon = gfx/interface/intelligensia.dds
+	country_law_enactment_success_add = 0.1
+}
+
+rus_idea_2 = {
+	icon = gfx/interface/intelligensia.dds
+	country_military_tech_research_speed_mult = 0.075
+}
+
+rus_idea_3 = {
+	icon = gfx/interface/intelligensia.dds
+	country_resource_depletion_chance_mult = -0.2
+}
+
+rus_idea_4 = {
+	icon = gfx/interface/intelligensia.dds
+	state_conscription_rate_mult = 0.25
+	unit_offense_add = 5
+}
+
+rus_idea_5 = {
+	icon = gfx/interface/intelligensia.dds
+	country_infamy_generation_mult = -0.15
+}
+
+rus_idea_6 = {
+	icon = gfx/interface/intelligensia.dds
+	unit_morale_damage_mult = 0.1
+	unit_morale_loss_mult = -0.1
+}
+
+rus_idea_7 = {
+	icon = gfx/interface/intelligensia.dds
+	country_prestige_from_army_power_projection_mult = 0.15
+}
+
+tur_idea_tradition_1 = {
+	icon = gfx/interface/intelligensia.dds
+	country_law_enactment_time_mult = -0.1
+}
+
+tur_idea_tradition_2 = {
+	icon = gfx/interface/intelligensia.dds
+	state_radicals_from_discrimination_mult = -0.05
+}
+
+tur_idea_bonus = {
+	icon = gfx/interface/intelligensia.dds
+	state_conscription_rate_mult = 0.2
+}
+
+tur_idea_1 = {
+	icon = gfx/interface/intelligensia.dds
+	country_bureaucracy_mult = 0.1
+}
+
+tur_idea_2 = {
+	icon = gfx/interface/intelligensia.dds
+	country_tech_spread_mult = 0.1
+	state_education_access_add = 0.015
+}
+
+tur_idea_3 = {
+	icon = gfx/interface/intelligensia.dds
+	unit_morale_recovery_mult = 0.1
+	unit_army_offense_mult = 0.1
+}
+
+tur_idea_4 = {
+	icon = gfx/interface/intelligensia.dds
+	country_trade_route_quantity_mult = 0.1
+}
+
+tur_idea_5 = {
+	icon = gfx/interface/intelligensia.dds
+	market_land_trade_capacity_add = 10
+	building_railway_mine_throughput_add = 0.1
+}
+
+tur_idea_6 = {
+	icon = gfx/interface/intelligensia.dds
+	interest_group_in_government_approval_add = 2
+	state_decree_cost_mult = -0.2
+}
+
+tur_idea_7 = {
+	icon = gfx/interface/intelligensia.dds
+	country_infamy_decay_mult = 0.2
+}
+
+qng_idea_tradition_1 = {
+	icon = gfx/interface/intelligensia.dds
+	country_influence_mult = 0.15
+}
+
+qng_idea_tradition_2 = {
+	icon = gfx/interface/intelligensia.dds
+	market_land_trade_capacity_add = 10
+}
+
+qng_idea_bonus = {
+	icon = gfx/interface/intelligensia.dds
+	country_bureaucracy_investment_cost_factor_mult = -0.15
+}
+
+qng_idea_1 = {
+	icon = gfx/interface/intelligensia.dds
+	country_society_tech_spread_mult = 0.05
+}
+
+qng_idea_2 = {
+	icon = gfx/interface/intelligensia.dds
+	unit_morale_damage_mult = 0.1
+	unit_offense_developed_mult = 0.1
+}
+
+qng_idea_3 = {
+	icon = gfx/interface/intelligensia.dds
+	country_prestige_mult = 0.1
+}
+
+qng_idea_4 = {
+	icon = gfx/interface/intelligensia.dds
+	country_infamy_decay_mult = 0.1
+}
+
+qng_idea_5 = {
+	icon = gfx/interface/intelligensia.dds
+	state_infrastructure_mult = 0.15
+}
+
+qng_idea_6 = {
+	icon = gfx/interface/intelligensia.dds
+	unit_supply_consumption_mult = -0.25
+	unit_defense_hazardous_add = 10
+}
+
+qng_idea_7 = {
+	icon = gfx/interface/intelligensia.dds
+	state_urbanization_per_level_mult = -0.2
+}
+
+jap_idea_tradition_1 = {
+	icon = gfx/interface/intelligensia.dds
+	country_law_enactment_success_add = 0.1
+}
+
+jap_idea_tradition_2 = {
+	icon = gfx/interface/intelligensia.dds
+	country_production_tech_research_speed_mult = 0.05
+	country_military_tech_research_speed_mult = 0.05
+	country_society_tech_research_speed_mult = 0.05
+}
+
+jap_idea_bonus = {
+	icon = gfx/interface/intelligensia.dds
+	country_diplomatic_play_maneuvers_add = 15
+}
+
+jap_idea_1 = {
+	icon = gfx/interface/intelligensia.dds
+	country_authority_add = 100
+}
+
+jap_idea_2 = {
+	icon = gfx/interface/intelligensia.dds
+	state_education_access_add = 0.015
+}
+
+jap_idea_3 = {
+	icon = gfx/interface/intelligensia.dds
+	unit_morale_damage_mult = 0.1
+	unit_morale_loss_mult = -0.1
+}
+
+jap_idea_4 = {
+	icon = gfx/interface/intelligensia.dds
+	state_colony_growth_speed_mult = 0.1
+}
+
+jap_idea_5 = {
+	icon = gfx/interface/intelligensia.dds
+	country_radicals_from_conquest_mult = -0.1
+}
+
+jap_idea_6 = {
+	icon = gfx/interface/intelligensia.dds
+	state_bureaucracy_population_base_cost_factor_mult = -0.1
+}
+
+jap_idea_7 = {
+	icon = gfx/interface/intelligensia.dds
+	unit_army_offense_mult = 0.1
+	unit_provinces_captured_mult = 0.2
+}
+
+usa_idea_tradition_1 = {
+	icon = gfx/interface/intelligensia.dds
+	state_migration_pull_mult = 0.15
+}
+
+usa_idea_tradition_2 = {
+	icon = gfx/interface/intelligensia.dds
+	country_legitimacy_govt_total_votes_add = 8
+}
+
+usa_idea_bonus = {
+	icon = gfx/interface/intelligensia.dds
+	country_trade_route_quantity_mult = 0.15
+}
+
+usa_idea_1 = {
+	icon = gfx/interface/intelligensia.dds
+	state_radicals_from_discrimination_mult = -0.1
+}
+
+usa_idea_2 = {
+	icon = gfx/interface/intelligensia.dds
+	state_working_adult_ratio_add = 0.1
+}
+
+usa_idea_3 = {
+	icon = gfx/interface/intelligensia.dds
+	unit_morale_damage_mult = 0.1
+	unit_recovery_rate_add = 0.1
+}
+
+usa_idea_4 = {
+	icon = gfx/interface/intelligensia.dds
+	state_education_access_wealth_add = 0.002
+	state_mortality_wealth_mult = -0.05
+}
+
+usa_idea_5 = {
+	icon = gfx/interface/intelligensia.dds
+	country_trade_route_competitiveness_mult = 0.1
+}
+
+usa_idea_6 = {
+	icon = gfx/interface/intelligensia.dds
+	state_pop_qualifications_mult = 0.15
+}
+
+usa_idea_7 = {
+	icon = gfx/interface/intelligensia.dds
+	country_minting_mult = 0.2
+}
+
+generic_idea_tradition_1 = {
+	icon = gfx/interface/intelligensia.dds
+	country_influence_add = 100
+}
+
+generic_idea_tradition_2 = {
+	icon = gfx/interface/intelligensia.dds
+	political_movement_radicalism_mult = -0.1
+}
+
+generic_idea_bonus = {
+	icon = gfx/interface/intelligensia.dds
+	country_bureaucracy_mult = 0.1
+}
+
+generic_idea_1 = {
+	icon = gfx/interface/intelligensia.dds
+	country_tech_spread_add = 15
+}
+
+generic_idea_2 = {
+	icon = gfx/interface/intelligensia.dds
+	unit_army_defense_add = 7
+	unit_morale_loss_mult = -0.1
+}
+
+generic_idea_3 = {
+	icon = gfx/interface/intelligensia.dds
+	country_authority_mult = 0.1
+}
+
+generic_idea_4 = {
+	icon = gfx/interface/intelligensia.dds
+	state_education_access_add = 0.05
+}
+
+generic_idea_5 = {
+	icon = gfx/interface/intelligensia.dds
+	country_trade_route_cost_mult = -0.1
+}
+
+generic_idea_6 = {
+	icon = gfx/interface/intelligensia.dds
+	unit_offense_water_add = 7
+	unit_navy_offense_add = 7
+}
+
+generic_idea_7 = {
+	icon = gfx/interface/intelligensia.dds
+	battle_casualties_mult = -0.1
+	unit_morale_damage_mult = 0.1
+	unit_morale_recovery_mult = 0.1
+}

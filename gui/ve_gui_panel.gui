@@ -1,0 +1,245 @@
+types ve_gui_panel_types
+{
+	type ve_gui_panel = ve_panel_fullscreen_block_window
+	{
+		name = "ve_gui_panel"
+		visible = "[GetVariableSystem.Exists('ve_tab_var')]"
+		state = {
+			name = 1
+			trigger_on_create = yes
+			on_start = "[GetVariableSystem.Set('ve_last_tab', 've_ideas')]"
+		}
+		blockoverride
+		"animation_state_block"
+		{
+			state = {
+				name = _show
+				start_sound = {
+					soundeffect = "snapshot:/Dynamic/mute_world_80"
+				}
+				start_sound = {
+					soundeffect = "snapshot:/Dynamic/mute_vfx_war_100"
+				}
+			}
+		}
+		blockoverride
+		"window_header_name"
+		{
+			text = "VE_TEXT_MENU_TITLE"
+		}		
+		blockoverride
+		"fixed_top"
+		{
+			tab_buttons = {
+				blockoverride
+				"first_button"
+				{
+					text = "VE_IDEAS"
+				}
+				blockoverride
+				"first_button_click"
+				{
+					onclick = "[GetVariableSystem.Set('ve_last_tab', 've_ideas')]"
+					onclick = "[GetVariableSystem.Set('ve_tab_var', 've_ideas')]"
+				}
+				blockoverride
+				"first_button_visibility"
+				{
+					visible = "[GetVariableSystem.HasValue('ve_tab_var', 've_ideas')]"
+				}
+				blockoverride
+				"first_button_visibility_checked"
+				{
+					visible = "[Not( GetVariableSystem.HasValue('ve_tab_var', 've_ideas') )]"
+				}
+				blockoverride
+				"first_button_selected"
+				{
+					text = "VE_IDEAS"
+				}
+				blockoverride
+				"second_button"
+				{
+					text = "VE_RELIGION"
+				}
+				blockoverride
+				"second_button_click"
+				{
+					onclick = "[GetVariableSystem.Set('ve_tab_var', 've_religion')]"
+					onclick = "[GetVariableSystem.Set('ve_last_tab', 've_religion')]"
+				}
+				blockoverride
+				"second_button_visibility"
+				{
+					visible = "[GetVariableSystem.HasValue('ve_tab_var', 've_religion')]"
+				}
+				blockoverride
+				"second_button_visibility_checked"
+				{
+					visible = "[Not( GetVariableSystem.HasValue('ve_tab_var', 've_religion') )]"
+				}
+				blockoverride
+				"second_button_selected"
+				{
+					text = "VE_RELIGION"
+				}
+				blockoverride
+				"third_button"
+				{
+					text = "VE_CULTURE"
+				}
+				blockoverride
+				"third_button_click"
+				{
+					onclick = "[GetVariableSystem.Set('ve_tab_var', 've_culture')]"
+					onclick = "[GetVariableSystem.Set('ve_last_tab', 've_culture')]"
+				}
+				blockoverride
+				"third_button_visibility"
+				{
+					visible = "[GetVariableSystem.HasValue('ve_tab_var', 've_culture')]"
+				}
+				blockoverride
+				"third_button_visibility_checked"
+				{
+					visible = "[Not( GetVariableSystem.HasValue('ve_tab_var', 've_culture') )]"
+				}
+				blockoverride
+				"third_button_selected"
+				{
+					text = "VE_CULTURE"
+				}
+				blockoverride
+				"fourth_button"
+				{
+					text = "VE_AGE_BONUS"
+				}
+				blockoverride
+				"fourth_button_click"
+				{
+					onclick = "[GetVariableSystem.Set('ve_tab_var', 've_age_bonusses')]"
+					onclick = "[GetVariableSystem.Set('ve_last_tab', 've_age_bonusses')]"
+				}
+				blockoverride
+				"fourth_button_visibility"
+				{
+					visible = "[GetVariableSystem.HasValue('ve_tab_var', 've_age_bonusses')]"
+				}
+				blockoverride
+				"fourth_button_visibility_checked"
+				{
+					visible = "[Not( GetVariableSystem.HasValue('ve_tab_var', 've_age_bonusses') )]"
+				}
+				blockoverride
+				"fourth_button_selected"
+				{
+					text = "VE_AGE_BONUS"
+				}
+			}
+		}
+		blockoverride
+		"entire_content_area"
+		{
+			fullscreen_scrollarea = {
+				visible = "[GetVariableSystem.HasValue('ve_tab_var', 've_ideas')]"
+				blockoverride
+				"scrollarea_content"
+				{
+					ve_panel_ideas = {
+					}
+				}
+			}
+			fullscreen_scrollarea = {
+				visible = "[GetVariableSystem.HasValue('ve_tab_var', 've_religion')]"
+				blockoverride
+				"scrollarea_content"
+				{
+					ve_panel_religion = {
+					}
+				}
+			}
+			fullscreen_scrollarea = {
+				visible = "[GetVariableSystem.HasValue('ve_tab_var', 've_culture')]"
+				blockoverride
+				"scrollarea_content"
+				{
+					ve_panel_culture = {
+					}
+				}
+			}
+			fullscreen_scrollarea = {
+				visible = "[GetVariableSystem.HasValue('ve_tab_var', 've_age_bonusses')]"
+				blockoverride
+				"scrollarea_content"
+				{
+					ve_panel_age_bonusses = {
+					}
+				}
+			}
+		}
+	}
+	type ve_panel_fullscreen_block_window = fullscreen_block_window {
+		blockoverride "back_button_onclick" {
+			onclick = "[GetVariableSystem.Clear('ve_tab_var')]"
+		}
+		blockoverride "close_button_onclick" {
+			onclick = "[GetVariableSystem.Clear('ve_tab_var')]"
+		}
+	}
+}
+template ve_temptlate_gui_panel
+{
+	ve_gui_panel = {
+	}
+}
+template ve_shimmer {
+	modify_texture = {
+		name = "glow"
+		texture = "gfx/interface/animation/shimmer.dds"
+		blend_mode = colordodge
+		translate_uv = { 0 0 }
+		block "shimmer_visibility" {}
+	}
+
+	state = {
+		trigger_on_create = yes
+		name = show
+		next = shimmer
+		duration = 1
+
+		modify_texture = {
+			name = "glow"
+			translate_uv = { -1 -1 }
+		}
+	}
+
+	state = {
+		name = shimmer
+		next = pause
+		duration = 2
+		start_sound = {
+			soundeffect = "event:/SFX/UI/Global/shimmer"
+		}
+		
+		bezier = { 0 0.9 1 0.4 }
+
+		modify_texture = {
+			name = "glow"
+			translate_uv = { 1 1 }
+		}
+
+		block "shimmer_animation_properties" {}
+	}
+
+	state = {
+		name = pause
+		next = shimmer
+		duration = 0
+		delay = 3
+
+		modify_texture = {
+			name = "glow"
+			translate_uv = { -1 -1 }
+		}
+	}	
+}

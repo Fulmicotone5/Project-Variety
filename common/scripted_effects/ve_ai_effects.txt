@@ -1,0 +1,1675 @@
+ve_ai_choose_idea = {
+	if = {
+		limit = {
+			NOT = {
+				var:idea_group_cap == var:idea_group_unlocked
+			}
+		}
+		random_list = {
+			7 = {
+				if = {
+					limit = {
+						NOT = {
+							has_variable = can_go_innovative
+						}
+					}
+					set_variable = can_go_innovative
+					change_variable = {
+						name = idea_group_unlocked
+						add = 1
+					}
+					set_variable = {
+						name = innovative_idea
+						value = 0
+					}
+				}
+			}
+			7 = {
+				if = {
+					limit = {
+						NOT = {
+							has_variable = can_go_economic
+						}
+					}
+					set_variable = can_go_economic
+					change_variable = {
+						name = idea_group_unlocked
+						add = 1
+					}
+					set_variable = {
+						name = economic_idea
+						value = 0
+					}
+				}
+			}
+			7 = {
+				if = {
+					limit = {
+						NOT = {
+							has_variable = can_go_administrative
+						}
+					}
+					set_variable = can_go_administrative
+					change_variable = {
+						name = idea_group_unlocked
+						add = 1
+					}
+					set_variable = {
+						name = administrative_idea
+						value = 0
+					}
+				}
+			}
+			7 = {
+				if = {
+					limit = {
+						NOT = {
+							has_variable = can_go_ethnocentrism
+						}
+					}
+					set_variable = can_go_ethnocentrism
+					change_variable = {
+						name = idea_group_unlocked
+						add = 1
+					}
+					set_variable = {
+						name = ethnocentrism_idea
+						value = 0
+					}
+				}
+			}
+			7 = {
+				if = {
+					limit = {
+						NOT = {
+							has_variable = can_go_politics
+						}
+					}
+					set_variable = can_go_politics
+					change_variable = {
+						name = idea_group_unlocked
+						add = 1
+					}
+					set_variable = {
+						name = politics_idea
+						value = 0
+					}
+				}
+			}
+			7 = {
+				if = {
+					limit = {
+						NOT = {
+							has_variable = can_go_diplomatic
+						}
+					}
+					set_variable = can_go_diplomatic
+					change_variable = {
+						name = idea_group_unlocked
+						add = 1
+					}
+					set_variable = {
+						name = diplomatic_idea
+						value = 0
+					}
+				}
+			}
+			7 = {
+				if = {
+					limit = {
+						NOT = {
+							has_variable = can_go_trade
+						}
+					}
+					set_variable = can_go_trade
+					change_variable = {
+						name = idea_group_unlocked
+						add = 1
+					}
+					set_variable = {
+						name = trade_idea
+						value = 0
+					}
+				}
+			}
+			7 = {
+				if = {
+					limit = {
+						NOT = {
+							has_variable = can_go_qualification
+						}
+					}
+					set_variable = can_go_qualification
+					change_variable = {
+						name = idea_group_unlocked
+						add = 1
+					}
+					set_variable = {
+						name = qualification_idea
+						value = 0
+					}
+				}
+			}
+			7 = {
+				if = {
+					limit = {
+						NOT = {
+							has_variable = can_go_humanist
+						}
+					}
+					set_variable = can_go_humanist
+					change_variable = {
+						name = idea_group_unlocked
+						add = 1
+					}
+					set_variable = {
+						name = humanist_idea
+						value = 0
+					}
+				}
+			}
+			7 = {
+				if = {
+					limit = {
+						NOT = {
+							has_variable = can_go_syndicalism
+						}
+					}
+					set_variable = can_go_syndicalism
+					change_variable = {
+						name = idea_group_unlocked
+						add = 1
+					}
+					set_variable = {
+						name = syndicalism_idea
+						value = 0
+					}
+				}
+			}
+			6 = {
+				if = {
+					limit = {
+						NOT = {
+							has_variable = can_go_offensive
+						}
+					}
+					set_variable = can_go_offensive
+					change_variable = {
+						name = idea_group_unlocked
+						add = 1
+					}
+					set_variable = {
+						name = offensive_idea
+						value = 0
+					}
+				}
+			}
+			6 = {
+				if = {
+					limit = {
+						NOT = {
+							has_variable = can_go_defensive
+						}
+					}
+					set_variable = can_go_defensive
+					change_variable = {
+						name = idea_group_unlocked
+						add = 1
+					}
+					set_variable = {
+						name = defensive_idea
+						value = 0
+					}
+				}
+			}
+			6 = {
+				if = {
+					limit = {
+						NOT = {
+							has_variable = can_go_naval
+						}
+					}
+					set_variable = can_go_naval
+					change_variable = {
+						name = idea_group_unlocked
+						add = 1
+					}
+					set_variable = {
+						name = naval_idea
+						value = 0
+					}
+				}
+			}
+			6 = {
+				if = {
+					limit = {
+						NOT = {
+							has_variable = can_go_militarization
+						}
+					}
+					set_variable = can_go_militarization
+					change_variable = {
+						name = idea_group_unlocked
+						add = 1
+					}
+					set_variable = {
+						name = militarization_idea
+						value = 0
+					}
+				}
+			}
+			6 = {
+				if = {
+					limit = {
+						NOT = {
+							has_variable = can_go_imperialist
+						}
+					}
+					set_variable = can_go_imperialist
+					change_variable = {
+						name = idea_group_unlocked
+						add = 1
+					}
+					set_variable = {
+						name = imperialist_idea
+						value = 0
+					}
+				}
+			}
+		}
+	}
+}
+
+ve_ai_boost_idea = {
+	if = {
+		limit = {
+			idea_cost_trigger = yes
+			has_variable = can_go_innovative
+			NOT = {
+				has_variable = innovative_idea_completed
+			}
+		}
+		boost_inno_idea_effect = yes
+		national_idea_mdf = yes
+	}
+	if = {
+		limit = {
+			idea_cost_trigger = yes
+			has_variable = can_go_economic
+			NOT = {
+				has_variable = economic_idea_completed
+			}
+		}
+		boost_eco_idea_effect = yes
+		national_idea_mdf = yes
+	}
+	if = {
+		limit = {
+			idea_cost_trigger = yes
+			has_variable = can_go_administrative
+			NOT = {
+				has_variable = administrative_idea_completed
+			}
+		}
+		boost_adm_idea_effect = yes
+		national_idea_mdf = yes
+	}
+	if = {
+		limit = {
+			idea_cost_trigger = yes
+			has_variable = can_go_ethnocentrism
+			NOT = {
+				has_variable = ethnocentrism_idea_completed
+			}
+		}
+		boost_ethno_idea_effect = yes
+		national_idea_mdf = yes
+	}
+	if = {
+		limit = {
+			idea_cost_trigger = yes
+			has_variable = can_go_politics
+			NOT = {
+				has_variable = politics_idea_completed
+			}
+		}
+		boost_pol_idea_effect = yes
+		national_idea_mdf = yes
+	}
+	if = {
+		limit = {
+			idea_cost_trigger = yes
+			has_variable = can_go_diplomatic
+			NOT = {
+				has_variable = diplomatic_idea_completed
+			}
+		}
+		boost_dip_idea_effect = yes
+		national_idea_mdf = yes
+	}
+	if = {
+		limit = {
+			idea_cost_trigger = yes
+			has_variable = can_go_trade
+			NOT = {
+				has_variable = trade_idea_completed
+			}
+		}
+		boost_trade_idea_effect = yes
+		national_idea_mdf = yes
+	}
+	if = {
+		limit = {
+			idea_cost_trigger = yes
+			has_variable = can_go_qualification
+			NOT = {
+				has_variable = qualification_idea_completed
+			}
+		}
+		boost_quali_idea_effect = yes
+		national_idea_mdf = yes
+	}
+	if = {
+		limit = {
+			idea_cost_trigger = yes
+			has_variable = can_go_humanist
+			NOT = {
+				has_variable = humanist_idea_completed
+			}
+		}
+		boost_hum_idea_effect = yes
+		national_idea_mdf = yes
+	}
+	if = {
+		limit = {
+			idea_cost_trigger = yes
+			has_variable = can_go_syndicalism
+			NOT = {
+				has_variable = syndicalism_idea_completed
+			}
+		}
+		boost_synd_idea_effect = yes
+		national_idea_mdf = yes
+	}
+	if = {
+		limit = {
+			idea_cost_trigger = yes
+			has_variable = can_go_offensive
+			NOT = {
+				has_variable = offensive_idea_completed
+			}
+		}
+		boost_off_idea_effect = yes
+		national_idea_mdf = yes
+	}
+	if = {
+		limit = {
+			idea_cost_trigger = yes
+			has_variable = can_go_defensive
+			NOT = {
+				has_variable = defensive_idea_completed
+			}
+		}
+		boost_def_idea_effect = yes
+		national_idea_mdf = yes
+	}
+	if = {
+		limit = {
+			idea_cost_trigger = yes
+			has_variable = can_go_naval
+			NOT = {
+				has_variable = naval_idea_completed
+			}
+		}
+		boost_nav_idea_effect = yes
+		national_idea_mdf = yes
+	}
+	if = {
+		limit = {
+			idea_cost_trigger = yes
+			has_variable = can_go_militarization
+			NOT = {
+				has_variable = militarization_idea_completed
+			}
+		}
+		boost_mil_idea_effect = yes
+		national_idea_mdf = yes
+	}
+	if = {
+		limit = {
+			idea_cost_trigger = yes
+			has_variable = can_go_imperialist
+			NOT = {
+				has_variable = imperialist_idea_completed
+			}
+		}
+		boost_imp_idea_effect = yes
+		national_idea_mdf = yes
+	}
+}
+
+ve_ai_uses_religion = {
+	if = {
+		limit = {
+			piety_cost_trigger = yes
+		}
+		random_list = {
+			12 = {
+				if = {
+					limit = {
+						OR = {
+							has_modifier = catholic_aspect_1_mdf
+							has_modifier = protestant_aspect_1_mdf
+							has_modifier = orthodox_aspect_1_mdf
+							has_modifier = coptic_aspect_1_mdf
+							has_modifier = sunni_aspect_1_mdf
+							has_modifier = shia_aspect_1_mdf
+							has_modifier = jewish_aspect_1_mdf
+							has_modifier = mahayana_aspect_1_mdf
+							has_modifier = hindu_aspect_1_mdf
+							has_modifier = sikh_aspect_1_mdf
+							has_modifier = animist_aspect_1_mdf
+						}
+					}
+				}
+				else = {
+					ve_piety_aspect_cost = yes
+					ve_religion_aspect_1_effect = yes
+				}
+			}
+			12 = {
+				if = {
+					limit = {
+						OR = {
+							has_modifier = catholic_aspect_2_mdf
+							has_modifier = protestant_aspect_2_mdf
+							has_modifier = orthodox_aspect_2_mdf
+							has_modifier = coptic_aspect_2_mdf
+							has_modifier = sunni_aspect_2_mdf
+							has_modifier = shia_aspect_2_mdf
+							has_modifier = jewish_aspect_2_mdf
+							has_modifier = mahayana_aspect_2_mdf
+							has_modifier = hindu_aspect_2_mdf
+							has_modifier = sikh_aspect_2_mdf
+							has_modifier = animist_aspect_2_mdf
+						}
+					}
+				}
+				else = {
+					ve_piety_aspect_cost = yes
+					ve_religion_aspect_2_effect = yes
+				}
+			}
+			12 = {
+				if = {
+					limit = {
+						OR = {
+							has_modifier = catholic_aspect_3_mdf
+							has_modifier = protestant_aspect_3_mdf
+							has_modifier = orthodox_aspect_3_mdf
+							has_modifier = coptic_aspect_3_mdf
+							has_modifier = sunni_aspect_3_mdf
+							has_modifier = shia_aspect_3_mdf
+							has_modifier = jewish_aspect_3_mdf
+							has_modifier = mahayana_aspect_3_mdf
+							has_modifier = hindu_aspect_3_mdf
+							has_modifier = sikh_aspect_3_mdf
+							has_modifier = animist_aspect_3_mdf
+						}
+					}
+				}
+				else = {
+					ve_piety_aspect_cost = yes
+					ve_religion_aspect_3_effect = yes
+				}
+			}
+			12 = {
+				if = {
+					limit = {
+						OR = {
+							has_modifier = catholic_aspect_4_mdf
+							has_modifier = protestant_aspect_4_mdf
+							has_modifier = orthodox_aspect_4_mdf
+							has_modifier = coptic_aspect_4_mdf
+							has_modifier = sunni_aspect_4_mdf
+							has_modifier = shia_aspect_4_mdf
+							has_modifier = jewish_aspect_4_mdf
+							has_modifier = mahayana_aspect_4_mdf
+							has_modifier = hindu_aspect_4_mdf
+							has_modifier = sikh_aspect_4_mdf
+							has_modifier = animist_aspect_4_mdf
+						}
+					}
+				}
+				else = {
+					ve_piety_aspect_cost = yes
+					ve_religion_aspect_4_effect = yes
+				}
+			}
+			13 = {
+				if = {
+					limit = {
+						OR = {
+							has_modifier = catholic_aspect_5_mdf
+							has_modifier = protestant_aspect_5_mdf
+							has_modifier = orthodox_aspect_5_mdf
+							has_modifier = coptic_aspect_5_mdf
+							has_modifier = sunni_aspect_5_mdf
+							has_modifier = shia_aspect_5_mdf
+							has_modifier = jewish_aspect_5_mdf
+							has_modifier = mahayana_aspect_5_mdf
+							has_modifier = hindu_aspect_5_mdf
+							has_modifier = sikh_aspect_5_mdf
+							has_modifier = animist_aspect_5_mdf
+						}
+					}
+				}
+				else = {
+					ve_piety_aspect_cost = yes
+					ve_religion_aspect_5_effect = yes
+				}
+			}
+			13 = {
+				if = {
+					limit = {
+						OR = {
+							has_modifier = catholic_aspect_6_mdf
+							has_modifier = protestant_aspect_6_mdf
+							has_modifier = orthodox_aspect_6_mdf
+							has_modifier = coptic_aspect_6_mdf
+							has_modifier = sunni_aspect_6_mdf
+							has_modifier = shia_aspect_6_mdf
+							has_modifier = jewish_aspect_6_mdf
+							has_modifier = mahayana_aspect_6_mdf
+							has_modifier = hindu_aspect_6_mdf
+							has_modifier = sikh_aspect_6_mdf
+							has_modifier = animist_aspect_6_mdf
+						}
+					}
+				}
+				else = {
+					ve_piety_aspect_cost = yes
+					ve_religion_aspect_6_effect = yes
+				}
+			}
+			13 = {
+				if = {
+					limit = {
+						OR = {
+							has_modifier = catholic_aspect_7_mdf
+							has_modifier = protestant_aspect_7_mdf
+							has_modifier = orthodox_aspect_7_mdf
+							has_modifier = coptic_aspect_7_mdf
+							has_modifier = sunni_aspect_7_mdf
+							has_modifier = shia_aspect_7_mdf
+							has_modifier = jewish_aspect_7_mdf
+							has_modifier = mahayana_aspect_7_mdf
+							has_modifier = hindu_aspect_7_mdf
+							has_modifier = sikh_aspect_7_mdf
+							has_modifier = animist_aspect_7_mdf
+						}
+					}
+				}
+				else = {
+					ve_piety_aspect_cost = yes
+					ve_religion_aspect_7_effect = yes
+				}
+			}
+			13 = {
+				if = {
+					limit = {
+						OR = {
+							has_modifier = catholic_aspect_8_mdf
+							has_modifier = protestant_aspect_8_mdf
+							has_modifier = orthodox_aspect_8_mdf
+							has_modifier = coptic_aspect_8_mdf
+							has_modifier = sunni_aspect_8_mdf
+							has_modifier = shia_aspect_8_mdf
+							has_modifier = jewish_aspect_8_mdf
+							has_modifier = mahayana_aspect_8_mdf
+							has_modifier = hindu_aspect_8_mdf
+							has_modifier = sikh_aspect_8_mdf
+							has_modifier = animist_aspect_8_mdf
+						}
+					}
+				}
+				else = {
+					ve_piety_aspect_cost = yes
+					ve_religion_aspect_8_effect = yes
+				}
+			}
+		}
+	}
+}
+
+ve_ai_uses_culture = {
+	if = {
+		limit = {
+			culture_cost_trigger = yes
+			var:selected_reform_value == 0
+		}
+		random_list = {
+			50 = {
+				change_variable = {
+					#Eats Reform Point
+					name = culture_reform_point
+					subtract = 750
+				}
+				change_variable = {
+					#Increase Bar Value
+					name = culture_reform_value
+					add = 1
+				}
+				if = {
+					#A variable to chechk reforms. Max 7 reforms can be selected
+					limit = {
+						NOT = {
+							has_variable = selected_reform_value
+						}
+					}
+					set_variable = {
+						name = selected_reform_value
+						value = 1
+					}
+				}
+				else = {
+					change_variable = {
+						name = selected_reform_value
+						add = 1
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_modifier = national_supremacy_mdf_1
+						}
+					}
+					add_modifier = {
+						name = national_supremacy_mdf_1
+						months = -1
+					}
+				}
+				set_variable = go_next_reform_2
+				set_variable = disable_intellectualy_1
+				set_variable = supremacy_1_on
+				reform_limiter = yes
+				reform_bar_effects = yes
+			}
+			50 = {
+				change_variable = {
+					name = culture_reform_point
+					subtract = 750
+				}
+				change_variable = {
+					name = culture_reform_value
+					subtract = 1
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_variable = selected_reform_value
+						}
+					}
+					set_variable = {
+						name = selected_reform_value
+						value = 1
+					}
+				}
+				else = {
+					change_variable = {
+						name = selected_reform_value
+						add = 1
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_modifier = intellectual_nation_mdf_1
+						}
+					}
+					add_modifier = {
+						name = intellectual_nation_mdf_1
+						months = -1
+					}
+				}
+				set_variable = disable_supremacy_1
+				set_variable = intellectual_1_on
+				set_variable = go_next_reform_2
+				reform_limiter = yes
+				hidden_effect = {
+					reform_bar_effects = yes
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			culture_cost_trigger = yes
+			var:selected_reform_value == 1
+		}
+		random_list = {
+			50 = {
+				change_variable = {
+					name = culture_reform_point
+					subtract = 750
+				}
+				change_variable = {
+					name = culture_reform_value
+					add = 1
+				}
+				change_variable = {
+					name = selected_reform_value
+					add = 1
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_modifier = national_supremacy_mdf_2
+						}
+					}
+					add_modifier = {
+						name = national_supremacy_mdf_2
+						months = -1
+					}
+				}
+				set_variable = disable_intellectualy_2
+				set_variable = go_next_reform_3
+				set_variable = supremacy_2_on
+				reform_limiter = yes
+				hidden_effect = {
+					reform_bar_effects = yes
+				}
+			}
+			50 = {
+				change_variable = {
+					name = culture_reform_point
+					subtract = 750
+				}
+				change_variable = {
+					name = culture_reform_value
+					subtract = 1
+				}
+				change_variable = {
+					name = selected_reform_value
+					add = 1
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_modifier = intellectual_nation_mdf_2
+						}
+					}
+					add_modifier = {
+						name = intellectual_nation_mdf_2
+						months = -1
+					}
+				}
+				set_variable = disable_supremacy_2
+				set_variable = intellectual_2_on
+				set_variable = go_next_reform_3
+				reform_limiter = yes
+				hidden_effect = {
+					reform_bar_effects = yes
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			culture_cost_trigger = yes
+			var:selected_reform_value == 2
+		}
+		random_list = {
+			50 = {
+				change_variable = {
+					name = culture_reform_point
+					subtract = 750
+				}
+				change_variable = {
+					name = culture_reform_value
+					add = 1
+				}
+				change_variable = {
+					name = selected_reform_value
+					add = 1
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_modifier = national_supremacy_mdf_3
+						}
+					}
+					add_modifier = {
+						name = national_supremacy_mdf_3
+						months = -1
+					}
+				}
+				set_variable = disable_intellectualy_3
+				set_variable = go_next_reform_4
+				set_variable = supremacy_3_on
+				reform_limiter = yes
+				hidden_effect = {
+					reform_bar_effects = yes
+				}
+			}
+			50 = {
+				change_variable = {
+					name = culture_reform_point
+					subtract = 750
+				}
+				change_variable = {
+					name = culture_reform_value
+					subtract = 1
+				}
+				change_variable = {
+					name = selected_reform_value
+					add = 1
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_modifier = intellectual_nation_mdf_3
+						}
+					}
+					add_modifier = {
+						name = intellectual_nation_mdf_3
+						months = -1
+					}
+				}
+				set_variable = disable_supremacy_3
+				set_variable = intellectual_3_on
+				set_variable = go_next_reform_4
+				reform_limiter = yes
+				hidden_effect = {
+					reform_bar_effects = yes
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			culture_cost_trigger = yes
+			var:selected_reform_value == 3
+		}
+		random_list = {
+			50 = {
+				change_variable = {
+					name = culture_reform_point
+					subtract = 750
+				}
+				change_variable = {
+					name = culture_reform_value
+					add = 1
+				}
+				change_variable = {
+					name = selected_reform_value
+					add = 1
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_modifier = national_supremacy_mdf_4
+						}
+					}
+					add_modifier = {
+						name = national_supremacy_mdf_4
+						months = -1
+					}
+				}
+				set_variable = disable_intellectualy_4
+				set_variable = go_next_reform_5
+				set_variable = supremacy_4_on
+				reform_limiter = yes
+				hidden_effect = {
+					reform_bar_effects = yes
+				}
+			}
+			50 = {
+				change_variable = {
+					name = culture_reform_point
+					subtract = 750
+				}
+				change_variable = {
+					name = culture_reform_value
+					subtract = 1
+				}
+				change_variable = {
+					name = selected_reform_value
+					add = 1
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_modifier = intellectual_nation_mdf_4
+						}
+					}
+					add_modifier = {
+						name = intellectual_nation_mdf_4
+						months = -1
+					}
+				}
+				set_variable = disable_supremacy_4
+				set_variable = intellectual_4_on
+				set_variable = go_next_reform_5
+				reform_limiter = yes
+				hidden_effect = {
+					reform_bar_effects = yes
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			culture_cost_trigger = yes
+			var:selected_reform_value == 4
+		}
+		random_list = {
+			50 = {
+				change_variable = {
+					name = culture_reform_point
+					subtract = 750
+				}
+				change_variable = {
+					name = culture_reform_value
+					add = 1
+				}
+				change_variable = {
+					name = selected_reform_value
+					add = 1
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_modifier = national_supremacy_mdf_5
+						}
+					}
+					add_modifier = {
+						name = national_supremacy_mdf_5
+						months = -1
+					}
+				}
+				set_variable = disable_intellectualy_5
+				set_variable = go_next_reform_6
+				set_variable = supremacy_5_on
+				reform_limiter = yes
+				hidden_effect = {
+					reform_bar_effects = yes
+				}
+			}
+			50 = {
+				change_variable = {
+					name = culture_reform_point
+					subtract = 750
+				}
+				change_variable = {
+					name = culture_reform_value
+					subtract = 1
+				}
+				change_variable = {
+					name = selected_reform_value
+					add = 1
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_modifier = intellectual_nation_mdf_5
+						}
+					}
+					add_modifier = {
+						name = intellectual_nation_mdf_5
+						months = -1
+					}
+				}
+				set_variable = disable_supremacy_5
+				set_variable = intellectual_5_on
+				set_variable = go_next_reform_6
+				reform_limiter = yes
+				hidden_effect = {
+					reform_bar_effects = yes
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			culture_cost_trigger = yes
+			var:selected_reform_value == 5
+		}
+		random_list = {
+			50 = {
+				change_variable = {
+					name = culture_reform_point
+					subtract = 750
+				}
+				change_variable = {
+					name = culture_reform_value
+					add = 1
+				}
+				change_variable = {
+					name = selected_reform_value
+					add = 1
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_modifier = national_supremacy_mdf_6
+						}
+					}
+					add_modifier = {
+						name = national_supremacy_mdf_6
+						months = -1
+					}
+				}
+				set_variable = disable_intellectualy_6
+				set_variable = go_next_reform_7
+				set_variable = supremacy_6_on
+				reform_limiter = yes
+				hidden_effect = {
+					reform_bar_effects = yes
+				}
+			}
+			50 = {
+				change_variable = {
+					name = culture_reform_point
+					subtract = 750
+				}
+				change_variable = {
+					name = culture_reform_value
+					subtract = 1
+				}
+				change_variable = {
+					name = selected_reform_value
+					add = 1
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_modifier = intellectual_nation_mdf_6
+						}
+					}
+					add_modifier = {
+						name = intellectual_nation_mdf_6
+						months = -1
+					}
+				}
+				set_variable = disable_supremacy_6
+				set_variable = intellectual_6_on
+				set_variable = go_next_reform_7
+				reform_limiter = yes
+				hidden_effect = {
+					reform_bar_effects = yes
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			culture_cost_trigger = yes
+			var:selected_reform_value == 6
+		}
+		random_list = {
+			50 = {
+				change_variable = {
+					name = culture_reform_point
+					subtract = 750
+				}
+				change_variable = {
+					name = culture_reform_value
+					add = 1
+				}
+				change_variable = {
+					name = selected_reform_value
+					add = 1
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_modifier = national_supremacy_mdf_7
+						}
+					}
+					add_modifier = {
+						name = national_supremacy_mdf_7
+						months = -1
+					}
+				}
+				set_variable = disable_intellectualy_7
+				set_variable = supremacy_7_on
+				reform_limiter = yes
+				hidden_effect = {
+					reform_bar_effects = yes
+				}
+			}
+			50 = {
+				change_variable = {
+					name = culture_reform_point
+					subtract = 750
+				}
+				change_variable = {
+					name = culture_reform_value
+					subtract = 1
+				}
+				change_variable = {
+					name = selected_reform_value
+					add = 1
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_modifier = intellectual_nation_mdf_7
+						}
+					}
+					add_modifier = {
+						name = intellectual_nation_mdf_7
+						months = -1
+					}
+				}
+				set_variable = disable_supremacy_7
+				set_variable = intellectual_7_on
+				reform_limiter = yes
+				hidden_effect = {
+					reform_bar_effects = yes
+				}
+			}
+		}
+	}
+}
+
+ve_ai_uses_age_bonuses = {
+	if = {
+		limit = {
+			has_global_variable = ve_age_1_started
+		}
+		if = {
+			limit = {
+				splendor_cost_trigger = yes
+				NOT = {
+					has_variable = ai_special_bonus_taken_age_1
+				}
+				OR = {
+					this = c:GBR
+					this = c:NET
+					this = c:JAP
+					this = c:TUR
+					country_has_primary_culture = cu:north_italian
+					country_has_primary_culture = cu:south_italian
+					country_has_primary_culture = cu:north_german
+					country_has_primary_culture = cu:south_german
+				}
+			}
+			splendor_cost = yes
+			set_variable = ai_special_bonus_taken_age_1
+			if = {
+				limit = {
+					this = c:GBR
+				}
+				add_modifier = {
+					name = age_1_bonus_7
+					months = -1
+				}
+			}
+			else_if = {
+				limit = {
+					this = c:NET
+				}
+				add_modifier = {
+					name = age_1_bonus_8
+					months = -1
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						this = c:JAP
+						this = c:TUR
+					}
+				}
+				add_modifier = {
+					name = age_1_bonus_9
+					months = -1
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						country_has_primary_culture = cu:north_italian
+						country_has_primary_culture = cu:south_italian
+					}
+				}
+				add_modifier = {
+					name = age_1_bonus_10
+					months = -1
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						country_has_primary_culture = cu:north_german
+						country_has_primary_culture = cu:south_german
+					}
+				}
+				add_modifier = {
+					name = age_1_bonus_11
+					months = -1
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				splendor_cost_trigger = yes
+			}
+			random_list = {
+				17 = {
+					if = {
+						limit = {
+							has_modifier = age_1_bonus_1
+						}
+					}
+					else = {
+						splendor_cost = yes
+						add_modifier = {
+							name = age_1_bonus_1
+							months = -1
+						}
+					}
+				}
+				17 = {
+					if = {
+						limit = {
+							has_modifier = age_1_bonus_2
+						}
+					}
+					else = {
+						splendor_cost = yes
+						add_modifier = {
+							name = age_1_bonus_2
+							months = -1
+						}
+					}
+				}
+				17 = {
+					if = {
+						limit = {
+							has_modifier = age_1_bonus_3
+						}
+					}
+					else = {
+						splendor_cost = yes
+						add_modifier = {
+							name = age_1_bonus_3
+							months = -1
+						}
+					}
+				}
+				17 = {
+					if = {
+						limit = {
+							has_modifier = age_1_bonus_4
+						}
+					}
+					else = {
+						splendor_cost = yes
+						add_modifier = {
+							name = age_1_bonus_4
+							months = -1
+						}
+					}
+				}
+				16 = {
+					if = {
+						limit = {
+							has_modifier = age_1_bonus_5
+						}
+					}
+					else = {
+						splendor_cost = yes
+						add_modifier = {
+							name = age_1_bonus_5
+							months = -1
+						}
+					}
+				}
+				16 = {
+					if = {
+						limit = {
+							has_modifier = age_1_bonus_6
+						}
+					}
+					else = {
+						splendor_cost = yes
+						add_modifier = {
+							name = age_1_bonus_6
+							months = -1
+						}
+					}
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_global_variable = ve_age_2_started
+		}
+		if = {
+			limit = {
+				splendor_cost_trigger = yes
+				NOT = {
+					has_variable = ai_special_bonus_taken_age_2
+				}
+				OR = {
+					this = c:BEL
+					this = c:USA
+					this = c:FRA
+					this = c:AUS
+					this = c:RUS
+				}
+			}
+			splendor_cost = yes
+			set_variable = ai_special_bonus_taken_age_2
+			if = {
+				limit = {
+					this = c:BEL
+				}
+				add_modifier = {
+					name = age_2_bonus_7
+					months = -1
+				}
+			}
+			else_if = {
+				limit = {
+					this = c:USA
+				}
+				add_modifier = {
+					name = age_2_bonus_8
+					months = -1
+				}
+			}
+			else_if = {
+				limit = {
+					this = c:FRA
+				}
+				add_modifier = {
+					name = age_2_bonus_9
+					months = -1
+				}
+			}
+			else_if = {
+				limit = {
+					this = c:AUS
+				}
+				add_modifier = {
+					name = age_2_bonus_10
+					months = -1
+				}
+			}
+			else_if = {
+				limit = {
+					this = c:RUS
+				}
+				add_modifier = {
+					name = age_2_bonus_11
+					months = -1
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				splendor_cost_trigger = yes
+			}
+			random_list = {
+				17 = {
+					if = {
+						limit = {
+							has_modifier = age_2_bonus_1
+						}
+					}
+					else = {
+						splendor_cost = yes
+						add_modifier = {
+							name = age_2_bonus_1
+							months = -1
+						}
+					}
+				}
+				17 = {
+					if = {
+						limit = {
+							has_modifier = age_2_bonus_2
+						}
+					}
+					else = {
+						splendor_cost = yes
+						add_modifier = {
+							name = age_2_bonus_2
+							months = -1
+						}
+					}
+				}
+				17 = {
+					if = {
+						limit = {
+							has_modifier = age_2_bonus_3
+						}
+					}
+					else = {
+						splendor_cost = yes
+						add_modifier = {
+							name = age_2_bonus_3
+							months = -1
+						}
+					}
+				}
+				17 = {
+					if = {
+						limit = {
+							has_modifier = age_2_bonus_4
+						}
+					}
+					else = {
+						splendor_cost = yes
+						add_modifier = {
+							name = age_2_bonus_4
+							months = -1
+						}
+					}
+				}
+				16 = {
+					if = {
+						limit = {
+							has_modifier = age_2_bonus_5
+						}
+					}
+					else = {
+						splendor_cost = yes
+						add_modifier = {
+							name = age_2_bonus_5
+							months = -1
+						}
+					}
+				}
+				16 = {
+					if = {
+						limit = {
+							has_modifier = age_2_bonus_6
+						}
+					}
+					else = {
+						splendor_cost = yes
+						add_modifier = {
+							name = age_2_bonus_6
+							months = -1
+						}
+					}
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_global_variable = ve_age_3_started
+		}
+		if = {
+			limit = {
+				splendor_cost_trigger = yes
+				NOT = {
+					has_variable = ai_special_bonus_taken_age_3
+				}
+				OR = {
+					global_country_ranking <= 5
+					global_country_ranking >= 5
+					this = c:GER
+					this = c:GBR
+					this = c:RUS
+				}
+			}
+			splendor_cost = yes
+			set_variable = ai_special_bonus_taken_age_3
+			if = {
+				limit = {
+					global_country_ranking <= 5
+				}
+				add_modifier = {
+					name = age_3_bonus_7
+					months = -1
+				}
+			}
+			else_if = {
+				limit = {
+					global_country_ranking >= 5
+				}
+				add_modifier = {
+					name = age_3_bonus_8
+					months = -1
+				}
+			}
+			else_if = {
+				limit = {
+					this = c:GER
+				}
+				add_modifier = {
+					name = age_3_bonus_9
+					months = -1
+				}
+			}
+			else_if = {
+				limit = {
+					this = c:GBR
+				}
+				if = {
+					limit = {
+						has_modifier = naval_idea_4_mdf
+					}
+					add_modifier = {
+						name = age_3_bonus_10_2
+						months = -1
+					}
+				}
+				else = {
+					add_modifier = {
+						name = age_3_bonus_10
+						months = -1
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					this = c:RUS
+				}
+				add_modifier = {
+					name = age_3_bonus_11
+					months = -1
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				splendor_cost_trigger = yes
+			}
+			random_list = {
+				17 = {
+					if = {
+						limit = {
+							has_modifier = age_3_bonus_1
+						}
+					}
+					else = {
+						splendor_cost = yes
+						add_modifier = {
+							name = age_3_bonus_1
+							months = -1
+						}
+					}
+				}
+				17 = {
+					if = {
+						limit = {
+							has_modifier = age_3_bonus_2
+						}
+					}
+					else = {
+						splendor_cost = yes
+						add_modifier = {
+							name = age_3_bonus_2
+							months = -1
+						}
+					}
+				}
+				17 = {
+					if = {
+						limit = {
+							has_modifier = age_3_bonus_3
+						}
+					}
+					else = {
+						splendor_cost = yes
+						add_modifier = {
+							name = age_3_bonus_3
+							months = -1
+						}
+					}
+				}
+				17 = {
+					if = {
+						limit = {
+							has_modifier = age_3_bonus_4
+						}
+					}
+					else = {
+						splendor_cost = yes
+						add_modifier = {
+							name = age_3_bonus_4
+							months = -1
+						}
+					}
+				}
+				16 = {
+					if = {
+						limit = {
+							has_modifier = age_3_bonus_5
+						}
+					}
+					else = {
+						splendor_cost = yes
+						add_modifier = {
+							name = age_3_bonus_5
+							months = -1
+						}
+					}
+				}
+				16 = {
+					if = {
+						limit = {
+							has_modifier = age_3_bonus_6
+						}
+					}
+					else = {
+						splendor_cost = yes
+						add_modifier = {
+							name = age_3_bonus_6
+							months = -1
+						}
+					}
+				}
+			}
+		}
+	}
+}

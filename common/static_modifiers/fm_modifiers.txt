@@ -742,6 +742,7 @@ modifier_conscription_one = {
 	country_bureaucracy_mult = -0.05
 	state_turmoil_effects_mult = 0.05
 	state_conscription_rate_mult = 0.01
+	military_formation_mobilization_speed_mult = 0.05
 }
 modifier_conscription_two = {
 	icon = gfx/interface/icons/timed_modifier_icons/idea_extensive_conscription.dds
@@ -750,6 +751,7 @@ modifier_conscription_two = {
 	state_turmoil_effects_mult = 0.1
 	state_construction_mult = -0.05
 	state_conscription_rate_mult = 0.05
+	military_formation_mobilization_speed_mult = 0.1
 }
 modifier_conscription_three = {
 	icon = gfx/interface/icons/timed_modifier_icons/idea_service_by_requirement.dds
@@ -759,6 +761,7 @@ modifier_conscription_three = {
 	state_turmoil_effects_mult = 0.2
 	state_construction_mult = -0.1
 	state_conscription_rate_mult = 0.1
+	military_formation_mobilization_speed_mult = 0.15
 }
 modifier_conscription_four = {
 	icon = gfx/interface/icons/timed_modifier_icons/idea_all_adults_serve.dds
@@ -768,6 +771,7 @@ modifier_conscription_four = {
 	state_turmoil_effects_mult = 0.3
 	state_construction_mult = -0.2
 	state_conscription_rate_mult = 0.2
+	military_formation_mobilization_speed_mult = 0.2
 }
 modifier_conscription_five = {
 	icon = gfx/interface/icons/timed_modifier_icons/idea_scraping_the_barrel.dds
@@ -777,6 +781,7 @@ modifier_conscription_five = {
 	state_turmoil_effects_mult = 0.5
 	state_construction_mult = -0.25
 	state_conscription_rate_mult = 0.3
+	military_formation_mobilization_speed_mult = 0.25
 }
 modifier_fru_four = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
@@ -833,6 +838,7 @@ modifier_stateof = {
 	country_government_dividends_reinvestment_add = -1.0
 	country_revolution_progress_mult = -0.5
 	country_secession_progress_mult = -0.5
+	military_formation_mobilization_speed_mult = 0.25
 }
 modifier_stateof_ig = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
