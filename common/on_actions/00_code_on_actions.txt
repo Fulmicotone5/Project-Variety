@@ -385,6 +385,17 @@ on_monthly_pulse = {
 				months = 1
 			}
 		}
+		every_country = {
+			limit = {
+				is_at_war = no
+			}
+			if = {
+				limit = {
+					has_modifier = modifier_stateof
+				}
+				remove_modifier = modifier_stateof
+			}
+		}
 		
 		# Used to keep track of Council Republics for the purpose of the Red Scare.
 		# Our thanks to Brute for reporting this.

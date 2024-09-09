@@ -142,3 +142,5 @@
  modifier_occ_three:0 "Concessions to the Duke of Tolouse"
  modifier_occ_two:0 "Concessions to the Duke of Aquitaine"
  modifier_occ_one:0 "Pope`s Bribe"
+ modifier_stateof:0 "State of Emergency"
+ modifier_stateof_ig:0 "State of Emergency"

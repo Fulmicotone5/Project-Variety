@@ -1,0 +1,33 @@
+namespace = fm_stateof
+fm_stateof.1 = {
+	type = country_event
+	placement = root
+	title = fm_stateof.1.t
+	desc = fm_stateof.1.d
+	flavor = fm_stateof.1.f
+	duration = 1
+	event_image = {
+		video = "unspecific_politicians_arguing"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	immediate = {
+		
+	}
+	option = {
+		name = fm_stateof.1.a
+		default_option = yes
+		every_interest_group = {
+			limit = {
+				is_in_government = yes
+			}
+			add_modifier = {
+				name = modifier_stateof_ig
+				months = 13
+			}
+		}
+		add_radicals = {
+			value = 0.25
+		}
+	}
+}

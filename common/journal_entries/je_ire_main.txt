@@ -22,7 +22,6 @@ je_ire_main = {
 			add_claim = ROOT
 		}
 	}
-	timeout = 3650
 	complete = {
 		owns_entire_state_region = STATE_BRITTANY
 		OR = {
