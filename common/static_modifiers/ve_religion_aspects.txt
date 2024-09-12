@@ -13,7 +13,8 @@ catholic_aspect_1_mdf = {
 
 catholic_aspect_2_mdf = {
 	icon = gfx/interface/catholic.dds
-	country_prestige_mult = 0.5
+	country_authority_mult = 0.1
+	country_authority_add = 100
 }
 
 catholic_aspect_3_mdf = {
