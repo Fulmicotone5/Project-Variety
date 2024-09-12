@@ -361,7 +361,7 @@ dev.3 = {
 			limit = {
 				has_global_variable = ve_medium
 			}
-			remove_global_variable = ve_medium
+			remove_global_variable = 5
 		}
 		if = {
 			limit = {
@@ -572,8 +572,8 @@ dev.5 = {
 	}
 	trigger = {
 		is_ai = yes
-		year >= 1871
-		year < 1906
+		year >= 1861
+		year < 1886
 		NOT = {
 			has_global_variable = age_2_started_trigger
 		}
@@ -677,7 +677,7 @@ dev.6 = {
 	}
 	trigger = {
 		is_ai = yes
-		year >= 1906
+		year >= 1886
 		NOT = {
 			has_global_variable = age_3_started_trigger
 		}

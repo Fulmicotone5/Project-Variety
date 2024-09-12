@@ -439,7 +439,7 @@ pb_lead = {
 	country_bureaucracy_mult = -0.15
 	country_authority_mult = 0.05
 	state_tax_capacity_mult = -0.1
-	state_construction_mult = -0.1
+	state_construction_mult = -0.15
 	country_infamy_generation_mult = 0.25
 	country_prestige_add = 100
 }

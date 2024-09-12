@@ -1778,6 +1778,22 @@ texticon = {
   }
 }
 texticon = {
+  icon = baal_aspect_9
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_religion/baal_passive.dds"
+    fontsize = 50
+  }
+}
+texticon = {
+  icon = zoro_aspect_9
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_religion/zoro_passive.dds"
+    fontsize = 50
+  }
+}
+texticon = {
   icon = shiite_aspect_9
   iconsize = {
     offset = { 0 15 }
@@ -1829,7 +1845,7 @@ texticon = {
   icon = confucian_aspect_9
   iconsize = {
     offset = { 0 15 }
-    texture = "gfx/interface/ve_religion/mahayana_passive.dds"
+    texture = "gfx/interface/ve_religion/atheist_passive.dds"
     fontsize = 50
   }
 }
@@ -1863,6 +1879,264 @@ texticon = {
     offset = { 0 15 }
     texture = "gfx/interface/ve_religion/atheist_passive.dds"
     fontsize = 50
+  }
+}
+
+texticon = {
+  icon = baal_aspect_1
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_religion/war_exhaustion.dds"
+    fontsize = 45
+  }
+}
+texticon = {
+  icon = baal_aspect_1_black
+  iconsize = {
+    offset = { 0 15 }
+     texture = "gfx/interface/ve_religion/war_exhaustion_black.dds"
+    fontsize = 45
+  }
+}
+texticon = {
+  icon = baal_aspect_2
+  iconsize = {
+    offset = { 0 15 }
+     texture = "gfx/interface/ve_religion/local_institution_spread.dds"
+    fontsize = 45
+  }
+}
+texticon = {
+  icon = baal_aspect_2_black
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_religion/local_institution_spread_black.dds"
+    fontsize = 45
+  }
+}
+texticon = {
+  icon = baal_aspect_3
+  iconsize = {
+    offset = { 0 15 }
+     texture = "gfx/interface/ve_religion/morale_damage.dds"
+    fontsize = 45
+  }
+}
+texticon = {
+  icon = baal_aspect_3_black
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_religion/morale_damage_black.dds"
+    fontsize = 45
+  }
+}
+texticon = {
+  icon = baal_aspect_4
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_religion/tradeview_trade_range.dds"
+    fontsize = 45
+  }
+}
+texticon = {
+  icon = baal_aspect_4_black
+  iconsize = {
+    offset = { 0 15 }
+     texture = "gfx/interface/ve_religion/tradeview_trade_range_black.dds"
+    fontsize = 45
+  }
+}
+texticon = {
+  icon = baal_aspect_5
+  iconsize = {
+    offset = { 0 15 }
+     texture = "gfx/interface/ve_religion/bureaucracy_shortage.dds"
+    fontsize = 45
+  }
+}
+texticon = {
+  icon = baal_aspect_5_black
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_religion/bureaucracy_shortage_black.dds"
+    fontsize = 45
+  }
+}
+texticon = {
+  icon = baal_aspect_6
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_religion/can_colony_boost_development.dds"
+    fontsize = 45
+  }
+}
+texticon = {
+  icon = baal_aspect_6_black
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_religion/can_colony_boost_development_black.dds"
+    fontsize = 45
+  }
+}
+texticon = {
+  icon = baal_aspect_7
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_religion/diplomatic_reputation.dds"
+    fontsize = 45
+  }
+}
+texticon = {
+  icon = baal_aspect_7_black
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_religion/diplomatic_reputation_black.dds"
+    fontsize = 45
+  }
+}
+texticon = {
+  icon = baal_aspect_8
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_religion/global_manpower_modifier.dds"
+    fontsize = 45
+  }
+}
+texticon = {
+  icon = baal_aspect_8_black
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_religion/global_manpower_modifier_black.dds"
+    fontsize = 45
+  }
+}
+
+texticon = {
+  icon = zoro_aspect_1
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_religion/recover_army_morale_speed.dds"
+    fontsize = 45
+  }
+}
+texticon = {
+  icon = zoro_aspect_1_black
+  iconsize = {
+    offset = { 0 15 }
+     texture = "gfx/interface/ve_religion/recover_army_morale_speed_black.dds"
+    fontsize = 45
+  }
+}
+texticon = {
+  icon = zoro_aspect_2
+  iconsize = {
+    offset = { 0 15 }
+     texture = "gfx/interface/ve_religion/global_missionary_strength.dds"
+    fontsize = 45
+  }
+}
+texticon = {
+  icon = zoro_aspect_2_black
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_religion/global_missionary_strength_black.dds"
+    fontsize = 45
+  }
+}
+texticon = {
+  icon = zoro_aspect_3
+  iconsize = {
+    offset = { 0 15 }
+     texture = "gfx/interface/ve_religion/privilege_gold_mint.dds"
+    fontsize = 45
+  }
+}
+texticon = {
+  icon = zoro_aspect_3_black
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_religion/privilege_gold_mint_black.dds"
+    fontsize = 45
+  }
+}
+texticon = {
+  icon = zoro_aspect_4
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_religion/institution_growth.dds"
+    fontsize = 45
+  }
+}
+texticon = {
+  icon = zoro_aspect_4_black
+  iconsize = {
+    offset = { 0 15 }
+     texture = "gfx/interface/ve_religion/institution_growth_black.dds"
+    fontsize = 45
+  }
+}
+texticon = {
+  icon = zoro_aspect_5
+  iconsize = {
+    offset = { 0 15 }
+     texture = "gfx/interface/ve_religion/bureaucracy_shortage.dds"
+    fontsize = 45
+  }
+}
+texticon = {
+  icon = zoro_aspect_5_black
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_religion/bureaucracy_shortage_black.dds"
+    fontsize = 45
+  }
+}
+texticon = {
+  icon = zoro_aspect_6
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_religion/can_colony_boost_development.dds"
+    fontsize = 45
+  }
+}
+texticon = {
+  icon = zoro_aspect_6_black
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_religion/can_colony_boost_development_black.dds"
+    fontsize = 45
+  }
+}
+texticon = {
+  icon = zoro_aspect_7
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_religion/diplomatic_reputation.dds"
+    fontsize = 45
+  }
+}
+texticon = {
+  icon = zoro_aspect_7_black
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_religion/diplomatic_reputation_black.dds"
+    fontsize = 45
+  }
+}
+texticon = {
+  icon = zoro_aspect_8
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_religion/global_manpower_modifier.dds"
+    fontsize = 45
+  }
+}
+texticon = {
+  icon = zoro_aspect_8_black
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_religion/global_manpower_modifier_black.dds"
+    fontsize = 45
   }
 }
 
@@ -2766,7 +3040,7 @@ texticon = {
   icon = mahayana_aspect_1
   iconsize = {
     offset = { 0 15 }
-    texture = "gfx/interface/ve_religion/urbanization.dds"
+    texture = "gfx/interface/ve_religion/has_construction.dds"
     fontsize = 45
   }
 }
@@ -2774,7 +3048,7 @@ texticon = {
   icon = mahayana_aspect_1_black
   iconsize = {
     offset = { 0 15 }
-     texture = "gfx/interface/ve_religion/urbanization_black.dds"
+     texture = "gfx/interface/ve_religion/has_construction_black.dds"
     fontsize = 45
   }
 }
@@ -2830,7 +3104,7 @@ texticon = {
   icon = mahayana_aspect_5
   iconsize = {
     offset = { 0 15 }
-     texture = "gfx/interface/ve_religion/adm_tech_cost_modifier.dds"
+     texture = "gfx/interface/ve_religion/local_institution_spread.dds"
     fontsize = 45
   }
 }
@@ -2838,7 +3112,7 @@ texticon = {
   icon = mahayana_aspect_5_black
   iconsize = {
     offset = { 0 15 }
-    texture = "gfx/interface/ve_religion/adm_tech_cost_modifier_black.dds"
+    texture = "gfx/interface/ve_religion/local_institution_spread_black.dds"
     fontsize = 45
   }
 }
@@ -2878,7 +3152,7 @@ texticon = {
   icon = mahayana_aspect_8
   iconsize = {
     offset = { 0 15 }
-    texture = "gfx/interface/ve_religion/population_radical.dds"
+    texture = "gfx/interface/ve_religion/icon_political_lens_decrees.dds"
     fontsize = 45
   }
 }
@@ -2886,7 +3160,7 @@ texticon = {
   icon = mahayana_aspect_8_black
   iconsize = {
     offset = { 0 15 }
-    texture = "gfx/interface/ve_religion/population_radical_black.dds"
+    texture = "gfx/interface/ve_religion/icon_political_lens_decrees_black.dds"
     fontsize = 45
   }
 }
@@ -3294,7 +3568,7 @@ texticon = {
   icon = confucian_aspect_2
   iconsize = {
     offset = { 0 15 }
-     texture = "gfx/interface/ve_religion/bureaucracy.dds"
+     texture = "gfx/interface/ve_religion/global_missionary_strength.dds"
     fontsize = 45
   }
 }
@@ -3302,7 +3576,7 @@ texticon = {
   icon = confucian_aspect_2_black
   iconsize = {
     offset = { 0 15 }
-    texture = "gfx/interface/ve_religion/bureaucracy_black.dds"
+    texture = "gfx/interface/ve_religion/global_missionary_strength_black.dds"
     fontsize = 45
   }
 }
@@ -3310,7 +3584,7 @@ texticon = {
   icon = confucian_aspect_3
   iconsize = {
     offset = { 0 15 }
-     texture = "gfx/interface/ve_religion/legitimacy.dds"
+     texture = "gfx/interface/ve_religion/bureaucracy_shortage.dds"
     fontsize = 45
   }
 }
@@ -3318,7 +3592,7 @@ texticon = {
   icon = confucian_aspect_3_black
   iconsize = {
     offset = { 0 15 }
-    texture = "gfx/interface/ve_religion/legitimacy_black.dds"
+    texture = "gfx/interface/ve_religion/bureaucracy_shortage_black.dds"
     fontsize = 45
   }
 }
@@ -3326,7 +3600,7 @@ texticon = {
   icon = confucian_aspect_4
   iconsize = {
     offset = { 0 15 }
-    texture = "gfx/interface/ve_religion/discipline.dds"
+    texture = "gfx/interface/ve_religion/institution_growth.dds"
     fontsize = 45
   }
 }
@@ -3334,7 +3608,7 @@ texticon = {
   icon = confucian_aspect_4_black
   iconsize = {
     offset = { 0 15 }
-     texture = "gfx/interface/ve_religion/discipline_black.dds"
+     texture = "gfx/interface/ve_religion/institution_growth_black.dds"
     fontsize = 45
   }
 }
@@ -3342,7 +3616,7 @@ texticon = {
   icon = confucian_aspect_5
   iconsize = {
     offset = { 0 15 }
-     texture = "gfx/interface/ve_religion/adm_tech_cost_modifier.dds"
+     texture = "gfx/interface/ve_religion/tax_heathen.dds"
     fontsize = 45
   }
 }
@@ -3350,7 +3624,7 @@ texticon = {
   icon = confucian_aspect_5_black
   iconsize = {
     offset = { 0 15 }
-    texture = "gfx/interface/ve_religion/adm_tech_cost_modifier_black.dds"
+    texture = "gfx/interface/ve_religion/tax_heathen_black.dds"
     fontsize = 45
   }
 }
@@ -3358,7 +3632,7 @@ texticon = {
   icon = confucian_aspect_6
   iconsize = {
     offset = { 0 15 }
-    texture = "gfx/interface/ve_religion/aggresive_exp_icon.dds"
+    texture = "gfx/interface/ve_religion/local_institution_spread.dds"
     fontsize = 45
   }
 }
@@ -3366,7 +3640,7 @@ texticon = {
   icon = confucian_aspect_6_black
   iconsize = {
     offset = { 0 15 }
-    texture = "gfx/interface/ve_religion/aggresive_exp_icon_black.dds"
+    texture = "gfx/interface/ve_religion/local_institution_spread_black.dds"
     fontsize = 45
   }
 }
@@ -3374,7 +3648,7 @@ texticon = {
   icon = confucian_aspect_7
   iconsize = {
     offset = { 0 15 }
-    texture = "gfx/interface/ve_religion/institution_growth.dds"
+    texture = "gfx/interface/ve_religion/bureaucracy.dds"
     fontsize = 45
   }
 }
@@ -3382,7 +3656,7 @@ texticon = {
   icon = confucian_aspect_7_black
   iconsize = {
     offset = { 0 15 }
-    texture = "gfx/interface/ve_religion/institution_growth_black.dds"
+    texture = "gfx/interface/ve_religion/bureaucracy_black.dds"
     fontsize = 45
   }
 }
@@ -3390,7 +3664,7 @@ texticon = {
   icon = confucian_aspect_8
   iconsize = {
     offset = { 0 15 }
-    texture = "gfx/interface/ve_religion/population_radical.dds"
+    texture = "gfx/interface/ve_religion/global_manpower_modifier.dds"
     fontsize = 45
   }
 }
@@ -3398,7 +3672,7 @@ texticon = {
   icon = confucian_aspect_8_black
   iconsize = {
     offset = { 0 15 }
-    texture = "gfx/interface/ve_religion/population_radical_black.dds"
+    texture = "gfx/interface/ve_religion/global_manpower_modifier_black.dds"
     fontsize = 45
   }
 }

@@ -1602,6 +1602,7 @@ STATES = {
 		}
 		
 		add_homeland = cu:north_roman
+		add_claim = c:SNM
 	}
 	s:STATE_TUSCANY = {
 		create_state = {
@@ -1610,6 +1611,7 @@ STATES = {
 		}
 		
 		add_homeland = cu:north_roman
+		add_claim = c:SNM
 	}
 	s:STATE_ROMAGNA = {
 		create_state = {
@@ -1622,7 +1624,7 @@ STATES = {
 		}
 		
 		add_homeland = cu:north_roman
-		add_homeland = cu:south_roman
+		add_claim = c:SNM
 	}
 	s:STATE_LAZIO = {
 		create_state = {

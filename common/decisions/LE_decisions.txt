@@ -59,7 +59,6 @@
 		add_primary_culture = cu:serb
 		add_primary_culture = cu:bulgarian
 		add_primary_culture = cu:croat
-		add_primary_culture = cu:bosniak
 		set_variable = {
 			name = rome_formed
 		}

@@ -42,5 +42,8 @@ COUNTRIES = {
 		add_journal_entry = {
 			type = je_ned_main
 		}
+		add_modifier = {
+			name = modifier_ned_one
+		}
 	}
 }

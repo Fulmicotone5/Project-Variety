@@ -106,8 +106,7 @@ types ve_gui_panel_types
 											text = "ve_age_of_victoria_desc"
 											default_format = "#tooltip_header"
 											using = fontsize_x
-											align = nobaseline
-											elide = left
+											align = center|nobaseline
 											minimumsize = {
 												100
 												-1
@@ -235,8 +234,7 @@ types ve_gui_panel_types
 											text = "ve_imperialism_age_desc"
 											default_format = "#tooltip_header"
 											using = fontsize_x
-											align = nobaseline
-											elide = left
+											align = center|nobaseline
 											minimumsize = {
 												100
 												-1
@@ -364,8 +362,7 @@ types ve_gui_panel_types
 											text = "ve_great_wars_age_desc"
 											default_format = "#tooltip_header"
 											using = fontsize_x
-											align = nobaseline
-											elide = left
+											align = center|nobaseline
 											minimumsize = {
 												100
 												-1
@@ -484,7 +481,7 @@ types ve_gui_panel_types
 								blockoverride
 								"icon"
 								{
-									texture = "gfx/interface/ve_age/can_colony_boost_development.dds"
+									texture = "gfx/interface/ve_ideas/global_colonial_growth.dds"
 								}
 								onclick = "[GetScriptedGui('ve_age_bonus_3').Execute(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 								enabled = "[GetScriptedGui('ve_age_bonus_3').IsValid(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -493,7 +490,7 @@ types ve_gui_panel_types
 								using = tooltip_above
 							}
 							icon = {
-								texture = "gfx/interface/ve_age/can_colony_boost_development.dds"
+								texture = "gfx/interface/ve_ideas/global_colonial_growth.dds"
 								visible = "[Not(GetScriptedGui('ve_age_bonus_3').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End ))]"
 								tooltip = "[GetScriptedGui('ve_age_bonus_3').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 								using = ve_shimmer
@@ -616,7 +613,7 @@ types ve_gui_panel_types
 								blockoverride
 								"icon"
 								{
-									texture = "gfx/interface/ve_age/coal.dds"
+									texture = "gfx/interface/icons/goods_icons/coal.dds"
 								}
 								onclick = "[GetScriptedGui('ve_age_bonus_7').Execute(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 								enabled = "[GetScriptedGui('ve_age_bonus_7').IsValid(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -625,7 +622,7 @@ types ve_gui_panel_types
 								using = tooltip_above
 							}
 							icon = {
-								texture = "gfx/interface/ve_age/coal.dds"
+								texture = "gfx/interface/icons/goods_icons/coal.dds"
 								visible = "[Not(GetScriptedGui('ve_age_bonus_7').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End ))]"
 								tooltip = "[GetScriptedGui('ve_age_bonus_7').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 								using = ve_shimmer
@@ -649,7 +646,7 @@ types ve_gui_panel_types
 								blockoverride
 								"icon"
 								{
-									texture = "gfx/interface/ve_age/global_ship_trade_power.dds"
+									texture = "gfx/interface/ve_ideas/global_ship_trade_power.dds"
 								}
 								onclick = "[GetScriptedGui('ve_age_bonus_8').Execute(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 								enabled = "[GetScriptedGui('ve_age_bonus_8').IsValid(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -658,7 +655,7 @@ types ve_gui_panel_types
 								using = tooltip_above
 							}
 							icon = {
-								texture = "gfx/interface/ve_age/global_ship_trade_power.dds"
+								texture = "gfx/interface/ve_ideas/global_ship_trade_power.dds"
 								visible = "[Not(GetScriptedGui('ve_age_bonus_8').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End ))]"
 								tooltip = "[GetScriptedGui('ve_age_bonus_8').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 								using = ve_shimmer
@@ -682,7 +679,7 @@ types ve_gui_panel_types
 								blockoverride
 								"icon"
 								{
-									texture = "gfx/interface/ve_age/ab_allow_feudal_de_jure_law.dds"
+									texture = "gfx/interface/ve_ideas/ab_allow_feudal_de_jure_law.dds"
 								}
 								onclick = "[GetScriptedGui('ve_age_bonus_9').Execute(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 								enabled = "[GetScriptedGui('ve_age_bonus_9').IsValid(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -691,7 +688,7 @@ types ve_gui_panel_types
 								using = tooltip_above
 							}
 							icon = {
-								texture = "gfx/interface/ve_age/ab_allow_feudal_de_jure_law.dds"
+								texture = "gfx/interface/ve_ideas/ab_allow_feudal_de_jure_law.dds"
 								visible = "[Not(GetScriptedGui('ve_age_bonus_9').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End ))]"
 								tooltip = "[GetScriptedGui('ve_age_bonus_9').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 								using = ve_shimmer
@@ -715,7 +712,7 @@ types ve_gui_panel_types
 								blockoverride
 								"icon"
 								{
-									texture = "gfx/interface/ve_age/population_radical.dds"
+									texture = "gfx/interface/icons/generic_icons/population_radical.dds"
 								}
 								onclick = "[GetScriptedGui('ve_age_bonus_10').Execute(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 								enabled = "[GetScriptedGui('ve_age_bonus_10').IsValid(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -724,7 +721,7 @@ types ve_gui_panel_types
 								using = tooltip_above
 							}
 							icon = {
-								texture = "gfx/interface/ve_age/population_radical.dds"
+								texture = "gfx/interface/icons/generic_icons/population_radical.dds"
 								visible = "[Not(GetScriptedGui('ve_age_bonus_10').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End ))]"
 								tooltip = "[GetScriptedGui('ve_age_bonus_10').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 								using = ve_shimmer
@@ -748,7 +745,7 @@ types ve_gui_panel_types
 								blockoverride
 								"icon"
 								{
-									texture = "gfx/interface/ve_age/aggresive_exp_icon.dds"
+									texture = "gfx/interface/ve_ideas/aggresive_exp_icon.dds"
 								}
 								onclick = "[GetScriptedGui('ve_age_bonus_11').Execute(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 								enabled = "[GetScriptedGui('ve_age_bonus_11').IsValid(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -757,7 +754,7 @@ types ve_gui_panel_types
 								using = tooltip_above
 							}
 							icon = {
-								texture = "gfx/interface/ve_age/aggresive_exp_icon.dds"
+								texture = "gfx/interface/ve_ideas/aggresive_exp_icon.dds"
 								visible = "[Not(GetScriptedGui('ve_age_bonus_11').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End ))]"
 								tooltip = "[GetScriptedGui('ve_age_bonus_11').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 								using = ve_shimmer
@@ -986,7 +983,7 @@ types ve_gui_panel_types
 								blockoverride
 								"icon"
 								{
-									texture = "gfx/interface/ve_age/belgian_can_colony_boost_development.dds"
+									texture = "gfx/interface/ve_ideas/global_colonial_growth.dds"
 								}
 								onclick = "[GetScriptedGui('ve_age_bonus_7').Execute(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 								enabled = "[GetScriptedGui('ve_age_bonus_7').IsValid(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -995,7 +992,7 @@ types ve_gui_panel_types
 								using = tooltip_above
 							}
 							icon = {
-								texture = "gfx/interface/ve_age/belgian_can_colony_boost_development.dds"
+								texture = "gfx/interface/ve_ideas/global_colonial_growth.dds"
 								visible = "[Not(GetScriptedGui('ve_age_bonus_7').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End ))]"
 								tooltip = "[GetScriptedGui('ve_age_bonus_7').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 								using = ve_shimmer
@@ -1019,7 +1016,7 @@ types ve_gui_panel_types
 								blockoverride
 								"icon"
 								{
-									texture = "gfx/interface/ve_age/privilege_gold_mint.dds"
+									texture = "gfx/interface/ve_ideas/privilege_gold_mint.dds"
 								}
 								onclick = "[GetScriptedGui('ve_age_bonus_8').Execute(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 								enabled = "[GetScriptedGui('ve_age_bonus_8').IsValid(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -1028,7 +1025,7 @@ types ve_gui_panel_types
 								using = tooltip_above
 							}
 							icon = {
-								texture = "gfx/interface/ve_age/privilege_gold_mint.dds"
+								texture = "gfx/interface/ve_ideas/privilege_gold_mint.dds"
 								visible = "[Not(GetScriptedGui('ve_age_bonus_8').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End ))]"
 								tooltip = "[GetScriptedGui('ve_age_bonus_8').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 								using = ve_shimmer
@@ -1052,7 +1049,7 @@ types ve_gui_panel_types
 								blockoverride
 								"icon"
 								{
-									texture = "gfx/interface/ve_age/unitpanel_button_seize_colony.dds"
+									texture = "gfx/interface/ve_ideas/unitpanel_button_seize_colony.dds"
 								}
 								onclick = "[GetScriptedGui('ve_age_bonus_9').Execute(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 								enabled = "[GetScriptedGui('ve_age_bonus_9').IsValid(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -1061,7 +1058,7 @@ types ve_gui_panel_types
 								using = tooltip_above
 							}
 							icon = {
-								texture = "gfx/interface/ve_age/unitpanel_button_seize_colony.dds"
+								texture = "gfx/interface/ve_ideas/unitpanel_button_seize_colony.dds"
 								visible = "[Not(GetScriptedGui('ve_age_bonus_9').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End ))]"
 								tooltip = "[GetScriptedGui('ve_age_bonus_9').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 								using = ve_shimmer
@@ -1085,7 +1082,7 @@ types ve_gui_panel_types
 								blockoverride
 								"icon"
 								{
-									texture = "gfx/interface/ve_age/tolerance_heathen.dds"
+									texture = "gfx/interface/ve_ideas/tolerance_heathen.dds"
 								}
 								onclick = "[GetScriptedGui('ve_age_bonus_10').Execute(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 								enabled = "[GetScriptedGui('ve_age_bonus_10').IsValid(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -1094,7 +1091,7 @@ types ve_gui_panel_types
 								using = tooltip_above
 							}
 							icon = {
-								texture = "gfx/interface/ve_age/tolerance_heathen.dds"
+								texture = "gfx/interface/ve_ideas/tolerance_heathen.dds"
 								visible = "[Not(GetScriptedGui('ve_age_bonus_10').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End ))]"
 								tooltip = "[GetScriptedGui('ve_age_bonus_10').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 								using = ve_shimmer
@@ -1118,7 +1115,7 @@ types ve_gui_panel_types
 								blockoverride
 								"icon"
 								{
-									texture = "gfx/interface/ve_age/culture_conversion_cost.dds"
+									texture = "gfx/interface/ve_ideas/global_institution_spread.dds"
 								}
 								onclick = "[GetScriptedGui('ve_age_bonus_11').Execute(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 								enabled = "[GetScriptedGui('ve_age_bonus_11').IsValid(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -1127,7 +1124,7 @@ types ve_gui_panel_types
 								using = tooltip_above
 							}
 							icon = {
-								texture = "gfx/interface/ve_age/culture_conversion_cost.dds"
+								texture = "gfx/interface/ve_ideas/global_institution_spread.dds"
 								visible = "[Not(GetScriptedGui('ve_age_bonus_11').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End ))]"
 								tooltip = "[GetScriptedGui('ve_age_bonus_11').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 								using = ve_shimmer
@@ -1422,7 +1419,7 @@ types ve_gui_panel_types
 								blockoverride
 								"icon"
 								{
-									texture = "gfx/interface/ve_age/leader_land_manuever.dds"
+									texture = "gfx/interface/ve_ideas/leader_land_manuever.dds"
 								}
 								onclick = "[GetScriptedGui('ve_age_bonus_9').Execute(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 								enabled = "[GetScriptedGui('ve_age_bonus_9').IsValid(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -1431,7 +1428,7 @@ types ve_gui_panel_types
 								using = tooltip_above
 							}
 							icon = {
-								texture = "gfx/interface/ve_age/leader_land_manuever.dds"
+								texture = "gfx/interface/ve_ideas/leader_land_manuever.dds"
 								visible = "[Not(GetScriptedGui('ve_age_bonus_9').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End ))]"
 								tooltip = "[GetScriptedGui('ve_age_bonus_9').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 								using = ve_shimmer
@@ -1455,7 +1452,7 @@ types ve_gui_panel_types
 								blockoverride
 								"icon"
 								{
-									texture = "gfx/interface/ve_age/landing_penalty.dds"
+									texture = "gfx/interface/ve_ideas/landing_penalty.dds"
 								}
 								onclick = "[GetScriptedGui('ve_age_bonus_10').Execute(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 								enabled = "[GetScriptedGui('ve_age_bonus_10').IsValid(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -1464,7 +1461,7 @@ types ve_gui_panel_types
 								using = tooltip_above
 							}
 							icon = {
-								texture = "gfx/interface/ve_age/landing_penalty.dds"
+								texture = "gfx/interface/ve_ideas/landing_penalty.dds"
 								visible = "[Not(GetScriptedGui('ve_age_bonus_10').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End ))]"
 								tooltip = "[GetScriptedGui('ve_age_bonus_10').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 								using = ve_shimmer
@@ -1488,7 +1485,7 @@ types ve_gui_panel_types
 								blockoverride
 								"icon"
 								{
-									texture = "gfx/interface/ve_age/global_manpower_modifier.dds"
+									texture = "gfx/interface/ve_ideas/global_manpower_modifier.dds"
 								}
 								onclick = "[GetScriptedGui('ve_age_bonus_11').Execute(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 								enabled = "[GetScriptedGui('ve_age_bonus_11').IsValid(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -1497,7 +1494,7 @@ types ve_gui_panel_types
 								using = tooltip_above
 							}
 							icon = {
-								texture = "gfx/interface/ve_age/global_manpower_modifier.dds"
+								texture = "gfx/interface/ve_ideas/global_manpower_modifier.dds"
 								visible = "[Not(GetScriptedGui('ve_age_bonus_11').IsShown(GuiScope.SetRoot( GetPlayer.MakeScope ).End ))]"
 								tooltip = "[GetScriptedGui('ve_age_bonus_11').ExecuteTooltip(GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 								using = ve_shimmer
@@ -2284,7 +2281,7 @@ types ve_gui_panel_types
 								hbox = {
 									using = main_bg
 									icon = {
-										texture = "gfx/interface/ve_age/republican.dds"
+										texture = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_royalist.dds"
 										size = {
 											120
 											120

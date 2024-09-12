@@ -1610,7 +1610,7 @@ BMM = {
 MGB = {
 	color = { 209 63 44 }
 	
-	country_type = unrecognized
+	country_type = recognized
 	
 	tier = empire
 	

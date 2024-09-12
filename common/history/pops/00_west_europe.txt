@@ -417,12 +417,12 @@
 		region_state:NUR = {
 			create_pop = {
 				culture = french
-				size = 1470494
+				size = 1170494
 			}
 			create_pop = {
 				culture = french
 				religion = protestant
-				size = 1109745
+				size = 609745
 			}
 			create_pop = {
 				culture = breton
@@ -434,7 +434,7 @@
 			}
 			create_pop = {
 				culture = british
-				size = 8745
+				size = 568745
 			}
 		}
 	}

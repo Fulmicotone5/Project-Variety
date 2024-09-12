@@ -121,7 +121,7 @@ golden_age_3_obj_trigger = {
 			has_global_variable = ve_age_1_started
 		}
 		calc_true_if = {
-			amount >= 4
+			amount >= 5
 			root.average_sol >= 12
 			AND = {
 				has_law = law_type:law_slavery_banned
@@ -147,11 +147,8 @@ golden_age_3_obj_trigger = {
 			has_global_variable = ve_age_2_started
 		}
 		calc_true_if = {
-			amount >= 4
-			OR = {
-				has_law = law_type:law_colonial_resettlement
-				has_law = law_type:law_colonial_exploitation
-			}
+			amount >= 5
+			NOT = { has_law = law_type:law_no_colonial_affairs }
 			any_subject_or_below = {
 				OR = {
 					has_diplomatic_pact = {
@@ -163,7 +160,7 @@ golden_age_3_obj_trigger = {
 						type = dominion
 					}
 				}
-				count >= 2
+				count >= 3
 			}
 			any_scope_state = {
 				owner = ROOT
@@ -181,10 +178,8 @@ golden_age_3_obj_trigger = {
 			has_global_variable = ve_age_3_started
 		}
 		calc_true_if = {
-			amount >= 4
-			NOT = {
-				has_law = law_type:law_monarchy
-			}
+			amount >= 5
+			has_law = law_type:law_monarchy
 			OR = {
 				institution_investment_level = {
 					institution = institution_colonial_affairs

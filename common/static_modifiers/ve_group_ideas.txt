@@ -151,7 +151,7 @@ economic_idea_7_mdf = {
 
 trade_idea_1_mdf = {
 	icon = gfx/interface/icon_ideas.dds
-	country_trade_route_competitiveness_mult = 0.35
+	country_trade_route_competitiveness_mult = 0.1
 }
 
 trade_idea_2_mdf = {
@@ -304,7 +304,6 @@ qualification_idea_7_mdf = {
 	goods_output_fabric_mult = 0.1
 	goods_output_fruit_mult = 0.1
 	goods_output_sugar_mult = 0.1
-	goods_output_radio_mult = 0.1
 	goods_output_silk_mult = 0.1
 	goods_output_electricity_mult = 0.1
 	goods_output_oil_mult = 0.1
@@ -360,13 +359,15 @@ ethnocentrism_idea_2_mdf = {
 
 ethnocentrism_idea_3_mdf = {
 	icon = gfx/interface/icon_ideas.dds
-	state_accepted_birth_rate_mult = 0.02
+	state_accepted_birth_rate_mult = 0.05
 }
 
 ethnocentrism_idea_4_mdf = {
 	icon = gfx/interface/icon_ideas.dds
-	state_loyalists_from_sol_change_accepted_religion_mult = 0.05
-	state_loyalists_from_sol_change_accepted_culture_mult = 0.05
+	state_loyalists_from_sol_change_accepted_religion_mult = 0.5
+	state_loyalists_from_sol_change_accepted_culture_mult = 0.5
+	state_radicals_from_sol_change_accepted_religion_mult = -0.25
+	state_radicals_from_sol_change_accepted_culture_mult = -0.25
 }
 
 ethnocentrism_idea_5_mdf = {
@@ -376,7 +377,7 @@ ethnocentrism_idea_5_mdf = {
 
 ethnocentrism_idea_6_mdf = {
 	icon = gfx/interface/icon_ideas.dds
-	state_education_access_add = 0.02
+	state_education_access_add = 0.05
 }
 
 ethnocentrism_idea_7_mdf = {
@@ -463,7 +464,7 @@ militarization_idea_7_mdf = {
 
 politics_idea_1_mdf = {
 	icon = gfx/interface/icon_ideas.dds
-	country_legitimacy_base_add = 10
+	country_legitimacy_base_add = 5
 }
 
 politics_idea_2_mdf = {
@@ -479,8 +480,8 @@ politics_idea_3_mdf = {
 
 politics_idea_4_mdf = {
 	icon = gfx/interface/icon_ideas.dds
-	political_movement_radicalism_mult = -0.05
-	state_turmoil_effects_mult = -0.05
+	political_movement_radicalism_mult = -0.1
+	state_turmoil_effects_mult = -0.1
 }
 
 politics_idea_5_mdf = {
@@ -555,7 +556,6 @@ imperialist_idea_2_mdf = {
 
 imperialist_idea_3_mdf = {
 	icon = gfx/interface/icon_ideas.dds
-	country_resource_depletion_chance_mult = -0.1
 	country_resource_discovery_chance_mult = 0.1
 }
 
@@ -578,5 +578,5 @@ imperialist_idea_6_mdf = {
 imperialist_idea_7_mdf = {
 	icon = gfx/interface/icon_ideas.dds
 	country_radicals_from_conquest_mult = -0.25
-	building_group_bg_oil_extraction_throughput_add = 0.1
+	building_group_bg_oil_extraction_throughput_add = 0.2
 }

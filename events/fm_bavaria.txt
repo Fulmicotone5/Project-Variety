@@ -123,10 +123,12 @@ fm_bavaria.4 = {
 option = {
 	name = fm_bavaria.4.a
 	default_option = yes
-	add_modifier = {
-		name = modifier_bav_two
-		months = normal_modifier_time
-		is_decaying = yes
+	ig:ig_landowners = {
+		add_modifier = {
+			name = modifier_bav_two
+			months = normal_modifier_time
+			is_decaying = yes
+		}
 	}
 	add_radicals = {
 		value = medium_radicals

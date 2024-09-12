@@ -85,6 +85,7 @@ can_unlock_age_bonus = {
 }
 
 can_use_missionary = {
+	texture = "gfx/interface/icon_envoy_missionary.dds"
 	script_context = player_country
 	valid = {
 		has_variable = avaible_missionaries
@@ -98,6 +99,7 @@ can_use_missionary = {
 }
 
 can_use_culture_missionary = {
+	texture = "gfx/interface/icon2_diffusionist.dds"
 	script_context = player_country
 	valid = {
 		has_variable = avaible_culture_missionaries

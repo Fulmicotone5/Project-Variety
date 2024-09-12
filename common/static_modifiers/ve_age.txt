@@ -4,7 +4,7 @@ golden_age_mdf = {
 	unit_navy_offense_mult = 0.1
 	building_group_bg_manufacturing_throughput_add = 0.1
 	building_group_bg_mining_throughput_add = 0.1
-	#idea, piety ve kültür cost indirimi
+	state_construction_mult = 0.1
 }
 
 age_1_bonus_1 = {
@@ -19,22 +19,24 @@ age_1_bonus_2 = {
 
 age_1_bonus_3 = {
 	icon = gfx/interface/icon_splendor_tiny.dds
-	state_colony_growth_creation_mult = 0.1
+	state_colony_growth_creation_mult = 0.15
 }
 
 age_1_bonus_4 = {
 	icon = gfx/interface/icon_splendor_tiny.dds
 	country_max_declared_interests_add = 2
+	country_improve_relations_speed_mult = 0.35
 }
 
 age_1_bonus_5 = {
 	icon = gfx/interface/icon_splendor_tiny.dds
 	state_urbanization_per_level_mult = -0.1
+	state_construction_mult = 0.05
 }
 
 age_1_bonus_6 = {
 	icon = gfx/interface/icon_splendor_tiny.dds
-	country_consumption_tax_cost_mult = -0.1
+	country_consumption_tax_cost_mult = -0.15
 }
 
 age_1_bonus_7 = {
@@ -49,84 +51,98 @@ age_1_bonus_8 = {
 
 age_1_bonus_9 = {
 	icon = gfx/interface/icon_splendor_tiny.dds
-	country_law_enactment_success_add = 0.1
+	country_law_enactment_success_add = 0.05
+	country_law_enactment_time_mult = -0.1
 }
 
 age_1_bonus_10 = {
 	icon = gfx/interface/icon_splendor_tiny.dds
-	country_radicals_from_conquest_mult = -0.25
+	country_radicals_from_conquest_mult = -0.5
 }
 
 age_1_bonus_11 = {
 	icon = gfx/interface/icon_splendor_tiny.dds
-	country_infamy_decay_mult = 0.15
+	country_infamy_decay_mult = 0.1
 }
 
 age_2_bonus_1 = {
 	icon = gfx/interface/icon_splendor_tiny.dds
-	country_suppression_ig_attraction_mult = -0.25
+	country_suppression_ig_attraction_mult = -0.5
+	country_bolster_ig_attraction_mult = 0.5
 }
 
 age_2_bonus_2 = {
 	icon = gfx/interface/icon_splendor_tiny.dds
-	country_resource_discovery_chance_mult = 0.2
+	country_resource_discovery_chance_mult = 0.25
 }
 
 age_2_bonus_3 = {
 	icon = gfx/interface/icon_splendor_tiny.dds
 	country_agitator_slots_add = 2
+	country_revolution_progress_mult = -0.25
+	country_secession_progress_mult = -0.25
+	political_movement_radicalism_mult = -0.05
+	country_radicals_from_legitimacy_mult = -0.5
+	
 }
 
 age_2_bonus_4 = {
 	icon = gfx/interface/icon_splendor_tiny.dds
-	political_movement_radicalism_mult = -0.1
+	political_movement_radicalism_mult = -0.5
 }
 
 age_2_bonus_5 = {
 	icon = gfx/interface/icon_splendor_tiny.dds
-	country_trade_route_competitiveness_mult = 0.3
+	country_trade_route_competitiveness_mult = 0.35
 }
 
 age_2_bonus_6 = {
 	icon = gfx/interface/icon_splendor_tiny.dds
 	state_assimilation_mult = 0.2
 	state_conversion_mult = 0.2
+	state_accepted_birth_rate_mult = 0.05
 }
 
 age_2_bonus_7 = {
 	icon = gfx/interface/icon_splendor_tiny.dds
-	state_colony_growth_speed_mult = 0.2
+	state_colony_growth_speed_mult = 0.25
 }
 
 age_2_bonus_8 = {
 	icon = gfx/interface/icon_splendor_tiny.dds
-	country_minting_mult = 0.1
+	country_minting_mult = 0.15
 }
 
 age_2_bonus_9 = {
 	icon = gfx/interface/icon_splendor_tiny.dds
-	country_resource_depletion_chance_mult = -0.25
+	building_group_bg_manufacturing_unincorporated_throughput_add = 0.05
+	building_group_bg_plantations_unincorporated_throughput_add = 0.1
+	building_group_bg_rubber_unincorporated_throughput_add = 0.1
+	building_group_bg_logging_unincorporated_throughput_add = 0.1
+	building_group_bg_mining_unincorporated_throughput_add = 0.1
 }
 
 age_2_bonus_10 = {
 	icon = gfx/interface/icon_splendor_tiny.dds
-	state_radicals_from_discrimination_mult = -0.2
+	state_radicals_from_discrimination_mult = -0.8
+	state_radicals_from_sol_change_mult = -0.5
 }
 
 age_2_bonus_11 = {
 	icon = gfx/interface/icon_splendor_tiny.dds
-	state_assimilation_mult = 0.35
+	state_education_access_add = 0.1
 }
 
 age_3_bonus_1 = {
 	icon = gfx/interface/icon_splendor_tiny.dds
 	state_birth_rate_mult = 0.03
+	state_mortality_mult = -0.02
 }
 
 age_3_bonus_2 = {
 	icon = gfx/interface/icon_splendor_tiny.dds
-	country_damage_relations_speed_mult = 0.2
-	country_improve_relations_speed_mult = 0.2
+	country_damage_relations_speed_mult = 0.5
+	country_improve_relations_speed_mult = 1
 }
 
 age_3_bonus_3 = {
@@ -136,7 +152,7 @@ age_3_bonus_3 = {
 
 age_3_bonus_4 = {
 	icon = gfx/interface/icon_splendor_tiny.dds
-	country_war_exhaustion_casualties_mult = -0.1
+	country_war_exhaustion_casualties_mult = -0.5
 }
 
 age_3_bonus_5 = {
@@ -146,7 +162,7 @@ age_3_bonus_5 = {
 
 age_3_bonus_6 = {
 	icon = gfx/interface/icon_splendor_tiny.dds
-	state_decree_cost_mult = -0.2
+	state_decree_cost_mult = -0.25
 }
 
 age_3_bonus_7 = {
@@ -156,12 +172,13 @@ age_3_bonus_7 = {
 
 age_3_bonus_8 = {
 	icon = gfx/interface/icon_splendor_tiny.dds
-	battle_defense_owned_province_mult = 0.15
+	battle_defense_owned_province_mult = 0.1
 }
 
 age_3_bonus_9 = {
 	icon = gfx/interface/icon_splendor_tiny.dds
 	military_formation_movement_speed_mult = 0.15
+	military_formation_mobilization_speed_mult = 0.2
 }
 
 age_3_bonus_10 = {
@@ -173,7 +190,7 @@ age_3_bonus_10 = {
 age_3_bonus_10_2 = {
 	#If it has naval idea
 	icon = gfx/interface/icon_splendor_tiny.dds
-	unit_offense_water_add = 10
+	unit_offense_water_add = 15
 }
 
 age_3_bonus_11 = {

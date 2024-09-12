@@ -158,7 +158,7 @@
 			country_has_state_religion = rel:gelugpa
 			piety_cost_trigger = yes
 		}
-		localization_key = gelugpa_aspect_1
+		localization_key = mahayana_aspect_1
 	}
 	text = {
 		trigger = {
@@ -170,14 +170,14 @@
 				}
 			}
 		}
-		localization_key = gelugpa_aspect_1_black
+		localization_key = mahayana_aspect_1_black
 	}
 	text = {
 		trigger = {
 			country_has_state_religion = rel:theravada
 			piety_cost_trigger = yes
 		}
-		localization_key = theravada_aspect_1
+		localization_key = mahayana_aspect_1
 	}
 	text = {
 		trigger = {
@@ -189,14 +189,14 @@
 				}
 			}
 		}
-		localization_key = theravada_aspect_1_black
+		localization_key = mahayana_aspect_1_black
 	}
 	text = {
 		trigger = {
 			country_has_state_religion = rel:shinto
 			piety_cost_trigger = yes
 		}
-		localization_key = shinto_aspect_1
+		localization_key = mahayana_aspect_1
 	}
 	text = {
 		trigger = {
@@ -208,7 +208,7 @@
 				}
 			}
 		}
-		localization_key = shinto_aspect_1_black
+		localization_key = mahayana_aspect_1_black
 	}
 	text = {
 		trigger = {
@@ -223,7 +223,7 @@
 			OR = {
 				var:piety_bar_point < 125
 				NOT = {
-					has_modifier = mahayana_aspect_1_mdf
+					has_modifier = confucian_aspect_1_mdf
 				}
 			}
 		}
@@ -269,29 +269,10 @@
 	}
 	text = {
 		trigger = {
-			country_has_state_religion = rel:zoroastrian
-			piety_cost_trigger = yes
-		}
-		localization_key = sikh_aspect_1
-	}
-	text = {
-		trigger = {
-			country_has_state_religion = rel:zoroastrian
-			OR = {
-				var:piety_bar_point < 125
-				NOT = {
-					has_modifier = sikh_aspect_1_mdf
-				}
-			}
-		}
-		localization_key = sikh_aspect_1_black
-	}
-	text = {
-		trigger = {
 			country_has_state_religion = rel:baal
 			piety_cost_trigger = yes
 		}
-		localization_key = sikh_aspect_1
+		localization_key = baal_aspect_1
 	}
 	text = {
 		trigger = {
@@ -299,11 +280,30 @@
 			OR = {
 				var:piety_bar_point < 125
 				NOT = {
-					has_modifier = sikh_aspect_1_mdf
+					has_modifier = baal_aspect_1_mdf
 				}
 			}
 		}
-		localization_key = sikh_aspect_1_black
+		localization_key = baal_aspect_1_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:zoroastrian
+			piety_cost_trigger = yes
+		}
+		localization_key = zoro_aspect_1
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:zoroastrian
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = zoro_aspect_1_mdf
+				}
+			}
+		}
+		localization_key = zoro_aspect_1_black
 	}
 	text = {
 		trigger = {
@@ -505,7 +505,7 @@ religion_aspect_2 = {
 			country_has_state_religion = rel:gelugpa
 			piety_cost_trigger = yes
 		}
-		localization_key = gelugpa_aspect_2
+		localization_key = mahayana_aspect_2
 	}
 	text = {
 		trigger = {
@@ -517,14 +517,14 @@ religion_aspect_2 = {
 				}
 			}
 		}
-		localization_key = gelugpa_aspect_2_black
+		localization_key = mahayana_aspect_2_black
 	}
 	text = {
 		trigger = {
 			country_has_state_religion = rel:theravada
 			piety_cost_trigger = yes
 		}
-		localization_key = theravada_aspect_2
+		localization_key = mahayana_aspect_2
 	}
 	text = {
 		trigger = {
@@ -536,14 +536,14 @@ religion_aspect_2 = {
 				}
 			}
 		}
-		localization_key = theravada_aspect_2_black
+		localization_key = mahayana_aspect_2_black
 	}
 	text = {
 		trigger = {
 			country_has_state_religion = rel:shinto
 			piety_cost_trigger = yes
 		}
-		localization_key = shinto_aspect_2
+		localization_key = mahayana_aspect_2
 	}
 	text = {
 		trigger = {
@@ -555,7 +555,7 @@ religion_aspect_2 = {
 				}
 			}
 		}
-		localization_key = shinto_aspect_2_black
+		localization_key = mahayana_aspect_2_black
 	}
 	text = {
 		trigger = {
@@ -570,7 +570,7 @@ religion_aspect_2 = {
 			OR = {
 				var:piety_bar_point < 125
 				NOT = {
-					has_modifier = mahayana_aspect_2_mdf
+					has_modifier = confucian_aspect_2_mdf
 				}
 			}
 		}
@@ -616,29 +616,10 @@ religion_aspect_2 = {
 	}
 	text = {
 		trigger = {
-			country_has_state_religion = rel:zoroastrian
-			piety_cost_trigger = yes
-		}
-		localization_key = sikh_aspect_2
-	}
-	text = {
-		trigger = {
-			country_has_state_religion = rel:zoroastrian
-			OR = {
-				var:piety_bar_point < 125
-				NOT = {
-					has_modifier = sikh_aspect_2_mdf
-				}
-			}
-		}
-		localization_key = sikh_aspect_2_black
-	}
-	text = {
-		trigger = {
 			country_has_state_religion = rel:baal
 			piety_cost_trigger = yes
 		}
-		localization_key = sikh_aspect_2
+		localization_key = baal_aspect_2
 	}
 	text = {
 		trigger = {
@@ -646,11 +627,30 @@ religion_aspect_2 = {
 			OR = {
 				var:piety_bar_point < 125
 				NOT = {
-					has_modifier = sikh_aspect_2_mdf
+					has_modifier = baal_aspect_2_mdf
 				}
 			}
 		}
-		localization_key = sikh_aspect_2_black
+		localization_key = baal_aspect_2_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:zoroastrian
+			piety_cost_trigger = yes
+		}
+		localization_key = zoro_aspect_2
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:zoroastrian
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = zoro_aspect_2_mdf
+				}
+			}
+		}
+		localization_key = zoro_aspect_2_black
 	}
 	text = {
 		trigger = {
@@ -811,6 +811,44 @@ religion_aspect_3 = {
 	}
 	text = {
 		trigger = {
+			country_has_state_religion = rel:baal
+			piety_cost_trigger = yes
+		}
+		localization_key = baal_aspect_3
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:baal
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = baal_aspect_3_mdf
+				}
+			}
+		}
+		localization_key = baal_aspect_3_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:zoroastrian
+			piety_cost_trigger = yes
+		}
+		localization_key = zoro_aspect_3
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:zoroastrian
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = zoro_aspect_3_mdf
+				}
+			}
+		}
+		localization_key = zoro_aspect_3_black
+	}
+	text = {
+		trigger = {
 			country_has_state_religion = rel:jewish
 			piety_cost_trigger = yes
 		}
@@ -852,7 +890,7 @@ religion_aspect_3 = {
 			country_has_state_religion = rel:gelugpa
 			piety_cost_trigger = yes
 		}
-		localization_key = gelugpa_aspect_3
+		localization_key = mahayana_aspect_3
 	}
 	text = {
 		trigger = {
@@ -864,14 +902,14 @@ religion_aspect_3 = {
 				}
 			}
 		}
-		localization_key = gelugpa_aspect_3_black
+		localization_key = mahayana_aspect_3_black
 	}
 	text = {
 		trigger = {
 			country_has_state_religion = rel:theravada
 			piety_cost_trigger = yes
 		}
-		localization_key = theravada_aspect_3
+		localization_key = mahayana_aspect_3
 	}
 	text = {
 		trigger = {
@@ -883,14 +921,14 @@ religion_aspect_3 = {
 				}
 			}
 		}
-		localization_key = theravada_aspect_3_black
+		localization_key = mahayana_aspect_3_black
 	}
 	text = {
 		trigger = {
 			country_has_state_religion = rel:shinto
 			piety_cost_trigger = yes
 		}
-		localization_key = shinto_aspect_3
+		localization_key = mahayana_aspect_3
 	}
 	text = {
 		trigger = {
@@ -902,7 +940,7 @@ religion_aspect_3 = {
 				}
 			}
 		}
-		localization_key = shinto_aspect_3_black
+		localization_key = mahayana_aspect_3_black
 	}
 	text = {
 		trigger = {
@@ -917,7 +955,7 @@ religion_aspect_3 = {
 			OR = {
 				var:piety_bar_point < 125
 				NOT = {
-					has_modifier = mahayana_aspect_3_mdf
+					has_modifier = confucian_aspect_3_mdf
 				}
 			}
 		}
@@ -1120,6 +1158,44 @@ religion_aspect_4 = {
 	}
 	text = {
 		trigger = {
+			country_has_state_religion = rel:baal
+			piety_cost_trigger = yes
+		}
+		localization_key = baal_aspect_4
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:baal
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = baal_aspect_4_mdf
+				}
+			}
+		}
+		localization_key = baal_aspect_4_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:zoroastrian
+			piety_cost_trigger = yes
+		}
+		localization_key = zoro_aspect_4
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:zoroastrian
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = zoro_aspect_4_mdf
+				}
+			}
+		}
+		localization_key = zoro_aspect_4_black
+	}
+	text = {
+		trigger = {
 			country_has_state_religion = rel:jewish
 			piety_cost_trigger = yes
 		}
@@ -1161,7 +1237,7 @@ religion_aspect_4 = {
 			country_has_state_religion = rel:gelugpa
 			piety_cost_trigger = yes
 		}
-		localization_key = gelugpa_aspect_4
+		localization_key = mahayana_aspect_4
 	}
 	text = {
 		trigger = {
@@ -1173,14 +1249,14 @@ religion_aspect_4 = {
 				}
 			}
 		}
-		localization_key = gelugpa_aspect_4_black
+		localization_key = mahayana_aspect_4_black
 	}
 	text = {
 		trigger = {
 			country_has_state_religion = rel:theravada
 			piety_cost_trigger = yes
 		}
-		localization_key = theravada_aspect_4
+		localization_key = mahayana_aspect_4
 	}
 	text = {
 		trigger = {
@@ -1192,14 +1268,14 @@ religion_aspect_4 = {
 				}
 			}
 		}
-		localization_key = theravada_aspect_4_black
+		localization_key = mahayana_aspect_4_black
 	}
 	text = {
 		trigger = {
 			country_has_state_religion = rel:shinto
 			piety_cost_trigger = yes
 		}
-		localization_key = shinto_aspect_4
+		localization_key = mahayana_aspect_4
 	}
 	text = {
 		trigger = {
@@ -1211,7 +1287,7 @@ religion_aspect_4 = {
 				}
 			}
 		}
-		localization_key = shinto_aspect_4_black
+		localization_key = mahayana_aspect_4_black
 	}
 	text = {
 		trigger = {
@@ -1226,7 +1302,7 @@ religion_aspect_4 = {
 			OR = {
 				var:piety_bar_point < 125
 				NOT = {
-					has_modifier = mahayana_aspect_4_mdf
+					has_modifier = confucian_aspect_4_mdf
 				}
 			}
 		}
@@ -1429,6 +1505,44 @@ religion_aspect_5 = {
 	}
 	text = {
 		trigger = {
+			country_has_state_religion = rel:baal
+			piety_cost_trigger = yes
+		}
+		localization_key = baal_aspect_5
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:baal
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = baal_aspect_5_mdf
+				}
+			}
+		}
+		localization_key = baal_aspect_5_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:zoroastrian
+			piety_cost_trigger = yes
+		}
+		localization_key = zoro_aspect_5
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:zoroastrian
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = zoro_aspect_5_mdf
+				}
+			}
+		}
+		localization_key = zoro_aspect_5_black
+	}
+	text = {
+		trigger = {
 			country_has_state_religion = rel:jewish
 			piety_cost_trigger = yes
 		}
@@ -1470,7 +1584,7 @@ religion_aspect_5 = {
 			country_has_state_religion = rel:gelugpa
 			piety_cost_trigger = yes
 		}
-		localization_key = gelugpa_aspect_5
+		localization_key = mahayana_aspect_5
 	}
 	text = {
 		trigger = {
@@ -1482,14 +1596,14 @@ religion_aspect_5 = {
 				}
 			}
 		}
-		localization_key = gelugpa_aspect_5_black
+		localization_key = mahayana_aspect_5_black
 	}
 	text = {
 		trigger = {
 			country_has_state_religion = rel:theravada
 			piety_cost_trigger = yes
 		}
-		localization_key = theravada_aspect_5
+		localization_key = mahayana_aspect_5
 	}
 	text = {
 		trigger = {
@@ -1501,14 +1615,14 @@ religion_aspect_5 = {
 				}
 			}
 		}
-		localization_key = theravada_aspect_5_black
+		localization_key = mahayana_aspect_5_black
 	}
 	text = {
 		trigger = {
 			country_has_state_religion = rel:shinto
 			piety_cost_trigger = yes
 		}
-		localization_key = shinto_aspect_5
+		localization_key = mahayana_aspect_5
 	}
 	text = {
 		trigger = {
@@ -1520,7 +1634,7 @@ religion_aspect_5 = {
 				}
 			}
 		}
-		localization_key = shinto_aspect_5_black
+		localization_key = mahayana_aspect_5_black
 	}
 	text = {
 		trigger = {
@@ -1535,7 +1649,7 @@ religion_aspect_5 = {
 			OR = {
 				var:piety_bar_point < 125
 				NOT = {
-					has_modifier = mahayana_aspect_5_mdf
+					has_modifier = confucian_aspect_5_mdf
 				}
 			}
 		}
@@ -1640,6 +1754,44 @@ religion_aspect_6 = {
 			}
 		}
 		localization_key = catholic_aspect_6_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:baal
+			piety_cost_trigger = yes
+		}
+		localization_key = baal_aspect_6
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:baal
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = baal_aspect_6_mdf
+				}
+			}
+		}
+		localization_key = baal_aspect_6_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:zoroastrian
+			piety_cost_trigger = yes
+		}
+		localization_key = zoro_aspect_6
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:zoroastrian
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = zoro_aspect_6_mdf
+				}
+			}
+		}
+		localization_key = zoro_aspect_6_black
 	}
 	text = {
 		trigger = {
@@ -1779,7 +1931,7 @@ religion_aspect_6 = {
 			country_has_state_religion = rel:gelugpa
 			piety_cost_trigger = yes
 		}
-		localization_key = gelugpa_aspect_6
+		localization_key = mahayana_aspect_6
 	}
 	text = {
 		trigger = {
@@ -1791,14 +1943,14 @@ religion_aspect_6 = {
 				}
 			}
 		}
-		localization_key = gelugpa_aspect_6_black
+		localization_key = mahayana_aspect_6_black
 	}
 	text = {
 		trigger = {
 			country_has_state_religion = rel:theravada
 			piety_cost_trigger = yes
 		}
-		localization_key = theravada_aspect_6
+		localization_key = mahayana_aspect_6
 	}
 	text = {
 		trigger = {
@@ -1810,14 +1962,14 @@ religion_aspect_6 = {
 				}
 			}
 		}
-		localization_key = theravada_aspect_6_black
+		localization_key = mahayana_aspect_6_black
 	}
 	text = {
 		trigger = {
 			country_has_state_religion = rel:shinto
 			piety_cost_trigger = yes
 		}
-		localization_key = shinto_aspect_6
+		localization_key = mahayana_aspect_6
 	}
 	text = {
 		trigger = {
@@ -1829,7 +1981,7 @@ religion_aspect_6 = {
 				}
 			}
 		}
-		localization_key = shinto_aspect_6_black
+		localization_key = mahayana_aspect_6_black
 	}
 	text = {
 		trigger = {
@@ -1844,7 +1996,7 @@ religion_aspect_6 = {
 			OR = {
 				var:piety_bar_point < 125
 				NOT = {
-					has_modifier = mahayana_aspect_6_mdf
+					has_modifier = confucian_aspect_6_mdf
 				}
 			}
 		}
@@ -1971,6 +2123,44 @@ religion_aspect_7 = {
 	}
 	text = {
 		trigger = {
+			country_has_state_religion = rel:baal
+			piety_cost_trigger = yes
+		}
+		localization_key = baal_aspect_7
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:baal
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = baal_aspect_7_mdf
+				}
+			}
+		}
+		localization_key = baal_aspect_7_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:zoroastrian
+			piety_cost_trigger = yes
+		}
+		localization_key = zoro_aspect_7
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:zoroastrian
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = zoro_aspect_7_mdf
+				}
+			}
+		}
+		localization_key = zoro_aspect_7_black
+	}
+	text = {
+		trigger = {
 			country_has_state_religion = rel:orthodox
 			piety_cost_trigger = yes
 		}
@@ -2088,7 +2278,7 @@ religion_aspect_7 = {
 			country_has_state_religion = rel:gelugpa
 			piety_cost_trigger = yes
 		}
-		localization_key = gelugpa_aspect_7
+		localization_key = mahayana_aspect_7
 	}
 	text = {
 		trigger = {
@@ -2100,14 +2290,14 @@ religion_aspect_7 = {
 				}
 			}
 		}
-		localization_key = gelugpa_aspect_7_black
+		localization_key = mahayana_aspect_7_black
 	}
 	text = {
 		trigger = {
 			country_has_state_religion = rel:theravada
 			piety_cost_trigger = yes
 		}
-		localization_key = theravada_aspect_7
+		localization_key = mahayana_aspect_7
 	}
 	text = {
 		trigger = {
@@ -2119,14 +2309,14 @@ religion_aspect_7 = {
 				}
 			}
 		}
-		localization_key = theravada_aspect_7_black
+		localization_key = mahayana_aspect_7_black
 	}
 	text = {
 		trigger = {
 			country_has_state_religion = rel:shinto
 			piety_cost_trigger = yes
 		}
-		localization_key = shinto_aspect_7
+		localization_key = mahayana_aspect_7
 	}
 	text = {
 		trigger = {
@@ -2138,7 +2328,7 @@ religion_aspect_7 = {
 				}
 			}
 		}
-		localization_key = shinto_aspect_7_black
+		localization_key = mahayana_aspect_7_black
 	}
 	text = {
 		trigger = {
@@ -2153,7 +2343,7 @@ religion_aspect_7 = {
 			OR = {
 				var:piety_bar_point < 125
 				NOT = {
-					has_modifier = mahayana_aspect_7_mdf
+					has_modifier = confucian_aspect_7_mdf
 				}
 			}
 		}
@@ -2258,6 +2448,44 @@ religion_aspect_8 = {
 			}
 		}
 		localization_key = catholic_aspect_8_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:baal
+			piety_cost_trigger = yes
+		}
+		localization_key = baal_aspect_8
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:baal
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = baal_aspect_8_mdf
+				}
+			}
+		}
+		localization_key = baal_aspect_8_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:zoroastrian
+			piety_cost_trigger = yes
+		}
+		localization_key = zoro_aspect_8
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:zoroastrian
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = zoro_aspect_8_mdf
+				}
+			}
+		}
+		localization_key = zoro_aspect_8_black
 	}
 	text = {
 		trigger = {
@@ -2397,7 +2625,7 @@ religion_aspect_8 = {
 			country_has_state_religion = rel:gelugpa
 			piety_cost_trigger = yes
 		}
-		localization_key = gelugpa_aspect_8
+		localization_key = mahayana_aspect_8
 	}
 	text = {
 		trigger = {
@@ -2409,14 +2637,14 @@ religion_aspect_8 = {
 				}
 			}
 		}
-		localization_key = gelugpa_aspect_8_black
+		localization_key = mahayana_aspect_8_black
 	}
 	text = {
 		trigger = {
 			country_has_state_religion = rel:theravada
 			piety_cost_trigger = yes
 		}
-		localization_key = theravada_aspect_8
+		localization_key = mahayana_aspect_8
 	}
 	text = {
 		trigger = {
@@ -2428,14 +2656,14 @@ religion_aspect_8 = {
 				}
 			}
 		}
-		localization_key = theravada_aspect_8_black
+		localization_key = mahayana_aspect_8_black
 	}
 	text = {
 		trigger = {
 			country_has_state_religion = rel:shinto
 			piety_cost_trigger = yes
 		}
-		localization_key = shinto_aspect_8
+		localization_key = mahayana_aspect_8
 	}
 	text = {
 		trigger = {
@@ -2447,7 +2675,7 @@ religion_aspect_8 = {
 				}
 			}
 		}
-		localization_key = shinto_aspect_8_black
+		localization_key = mahayana_aspect_8_black
 	}
 	text = {
 		trigger = {
@@ -2462,7 +2690,7 @@ religion_aspect_8 = {
 			OR = {
 				var:piety_bar_point < 125
 				NOT = {
-					has_modifier = mahayana_aspect_8_mdf
+					has_modifier = confucian_aspect_8_mdf
 				}
 			}
 		}
@@ -2579,6 +2807,18 @@ religion_aspect_9 = {
 			country_has_state_religion = rel:sunni
 		}
 		localization_key = sunni_aspect_9
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:baal
+		}
+		localization_key = baal_aspect_9
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:zoroastrian
+		}
+		localization_key = zoro_aspect_9
 	}
 	text = {
 		trigger = {
@@ -2766,12 +3006,59 @@ holy_site_1 = {
 	}
 	text = {
 		trigger = {
+			country_has_state_religion = rel:baal
+			owns_entire_state_region = STATE_TUNISIA
+		}
+		localization_key = baal_site_1
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:baal
+			NOT = {
+				owns_entire_state_region = STATE_TUNISIA
+			}
+		}
+		localization_key = baal_site_1_red
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:zoroastrian
+			owns_entire_state_region = STATE_AZERBAIJAN
+		}
+		localization_key = zoro_site_1
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:zoroastrian
+			NOT = {
+				owns_entire_state_region = STATE_AZERBAIJAN
+			}
+		}
+		localization_key = zoro_site_1_red
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:confucian
+			owns_entire_state_region = STATE_SHANDONG
+		}
+		localization_key = conf_site_1
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:confucian
+			NOT = {
+				owns_entire_state_region = STATE_SHANDONG
+			}
+		}
+		localization_key = conf_site_1_red
+	}
+	text = {
+		trigger = {
 			OR = {
 				country_has_state_religion = rel:mahayana
 				country_has_state_religion = rel:gelugpa
 				country_has_state_religion = rel:theravada
 				country_has_state_religion = rel:shinto
-				country_has_state_religion = rel:confucian
 			}
 			owns_entire_state_region = STATE_CENTRAL_INDIA
 		}
@@ -2784,7 +3071,6 @@ holy_site_1 = {
 				country_has_state_religion = rel:gelugpa
 				country_has_state_religion = rel:theravada
 				country_has_state_religion = rel:shinto
-				country_has_state_religion = rel:confucian
 			}
 			NOT = {
 				owns_entire_state_region = STATE_CENTRAL_INDIA
@@ -2943,14 +3229,61 @@ holy_site_2 = {
 	}
 	text = {
 		trigger = {
+			country_has_state_religion = rel:baal
+			owns_entire_state_region = STATE_CONSTANTINE
+		}
+		localization_key = baal_site_2
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:baal
+			NOT = {
+				owns_entire_state_region = STATE_CONSTANTINE
+			}
+		}
+		localization_key = baal_site_2_red
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:zoroastrian
+			owns_entire_state_region = STATE_KHORASAN
+		}
+		localization_key = zoro_site_2
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:zoroastrian
+			NOT = {
+				owns_entire_state_region = STATE_KHORASAN
+			}
+		}
+		localization_key = zoro_site_2_red
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:confucian
+			owns_entire_state_region = STATE_SHANDONG
+		}
+		localization_key = conf_site_2
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:confucian
+			NOT = {
+				owns_entire_state_region = STATE_SHANDONG
+			}
+		}
+		localization_key = conf_site_2_red
+	}
+	text = {
+		trigger = {
 			OR = {
 				country_has_state_religion = rel:mahayana
 				country_has_state_religion = rel:gelugpa
 				country_has_state_religion = rel:theravada
 				country_has_state_religion = rel:shinto
-				country_has_state_religion = rel:confucian
 			}
-			owns_entire_state_region = STATE_SHANDONG
+			owns_entire_state_region = STATE_LHASA
 		}
 		localization_key = mahayana_site_2
 	}
@@ -2961,10 +3294,9 @@ holy_site_2 = {
 				country_has_state_religion = rel:gelugpa
 				country_has_state_religion = rel:theravada
 				country_has_state_religion = rel:shinto
-				country_has_state_religion = rel:confucian
 			}
 			NOT = {
-				owns_entire_state_region = STATE_SHANDONG
+				owns_entire_state_region = STATE_LHASA
 			}
 		}
 		localization_key = mahayana_site_2_red
@@ -3120,12 +3452,59 @@ holy_site_3 = {
 	}
 	text = {
 		trigger = {
+			country_has_state_religion = rel:baal
+			owns_entire_state_region = STATE_SYRIA
+		}
+		localization_key = baal_site_3
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:baal
+			NOT = {
+				owns_entire_state_region = STATE_SYRIA
+			}
+		}
+		localization_key = baal_site_3_red
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:zoroastrian
+			owns_entire_state_region = STATE_TABRIZ
+		}
+		localization_key = zoro_site_3
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:zoroastrian
+			NOT = {
+				owns_entire_state_region = STATE_TABRIZ
+			}
+		}
+		localization_key = zoro_site_3_red
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:confucian
+			owns_entire_state_region = STATE_BEIJING
+		}
+		localization_key = conf_site_3
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:confucian
+			NOT = {
+				owns_entire_state_region = STATE_BEIJING
+			}
+		}
+		localization_key = conf_site_3_red
+	}
+	text = {
+		trigger = {
 			OR = {
 				country_has_state_religion = rel:mahayana
 				country_has_state_religion = rel:gelugpa
 				country_has_state_religion = rel:theravada
 				country_has_state_religion = rel:shinto
-				country_has_state_religion = rel:confucian
 			}
 			owns_entire_state_region = STATE_BURMA
 		}
@@ -3138,7 +3517,6 @@ holy_site_3 = {
 				country_has_state_religion = rel:gelugpa
 				country_has_state_religion = rel:theravada
 				country_has_state_religion = rel:shinto
-				country_has_state_religion = rel:confucian
 			}
 			NOT = {
 				owns_entire_state_region = STATE_BURMA
@@ -3250,7 +3628,7 @@ holy_site_4 = {
 	text = {
 		trigger = {
 			country_has_state_religion = rel:sunni
-			owns_entire_state_region = STATE_BAGHDAD
+			owns_entire_state_region = STATE_ALEPPO
 		}
 		localization_key = sunni_site_4
 	}
@@ -3258,7 +3636,7 @@ holy_site_4 = {
 		trigger = {
 			country_has_state_religion = rel:sunni
 			NOT = {
-				owns_entire_state_region = STATE_BAGHDAD
+				owns_entire_state_region = STATE_ALEPPO
 			}
 		}
 		localization_key = sunni_site_4_red
@@ -3266,7 +3644,7 @@ holy_site_4 = {
 	text = {
 		trigger = {
 			country_has_state_religion = rel:shiite
-			owns_entire_state_region = STATE_BAGHDAD
+			owns_entire_state_region = STATE_ALEPPO
 		}
 		localization_key = shiite_site_4
 	}
@@ -3274,7 +3652,7 @@ holy_site_4 = {
 		trigger = {
 			country_has_state_religion = rel:shiite
 			NOT = {
-				owns_entire_state_region = STATE_BAGHDAD
+				owns_entire_state_region = STATE_ALEPPO
 			}
 		}
 		localization_key = shiite_site_4_red
@@ -3297,12 +3675,59 @@ holy_site_4 = {
 	}
 	text = {
 		trigger = {
+			country_has_state_religion = rel:baal
+			owns_entire_state_region = STATE_EGYPTIAN_DESERT
+		}
+		localization_key = baal_site_4
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:baal
+			NOT = {
+				owns_entire_state_region = STATE_EGYPTIAN_DESERT
+			}
+		}
+		localization_key = baal_site_4_red
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:zoroastrian
+			owns_entire_state_region = STATE_FARS
+		}
+		localization_key = zoro_site_4
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:zoroastrian
+			NOT = {
+				owns_entire_state_region = STATE_FARS
+			}
+		}
+		localization_key = zoro_site_4_red
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:confucian
+			owns_entire_state_region = STATE_SEOUL
+		}
+		localization_key = conf_site_4
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:confucian
+			NOT = {
+				owns_entire_state_region = STATE_SEOUL
+			}
+		}
+		localization_key = conf_site_4_red
+	}
+	text = {
+		trigger = {
 			OR = {
 				country_has_state_religion = rel:mahayana
 				country_has_state_religion = rel:gelugpa
 				country_has_state_religion = rel:theravada
 				country_has_state_religion = rel:shinto
-				country_has_state_religion = rel:confucian
 			}
 			owns_entire_state_region = STATE_KANSAI
 		}
@@ -3315,7 +3740,6 @@ holy_site_4 = {
 				country_has_state_religion = rel:gelugpa
 				country_has_state_religion = rel:theravada
 				country_has_state_religion = rel:shinto
-				country_has_state_religion = rel:confucian
 			}
 			NOT = {
 				owns_entire_state_region = STATE_KANSAI
@@ -3458,12 +3882,59 @@ holy_site_5 = {
 	}
 	text = {
 		trigger = {
+			country_has_state_religion = rel:baal
+			owns_entire_state_region = STATE_LEBANON
+		}
+		localization_key = baal_site_5
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:baal
+			NOT = {
+				owns_entire_state_region = STATE_LEBANON
+			}
+		}
+		localization_key = baal_site_5_red
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:zoroastrian
+			owns_entire_state_region = STATE_BIHAR
+		}
+		localization_key = zoro_site_5
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:zoroastrian
+			NOT = {
+				owns_entire_state_region = STATE_BIHAR
+			}
+		}
+		localization_key = zoro_site_5_red
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:confucian
+			owns_entire_state_region = STATE_NANJING
+		}
+		localization_key = conf_site_5
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:confucian
+			NOT = {
+				owns_entire_state_region = STATE_NANJING
+			}
+		}
+		localization_key = conf_site_5_red
+	}
+	text = {
+		trigger = {
 			OR = {
 				country_has_state_religion = rel:mahayana
 				country_has_state_religion = rel:gelugpa
 				country_has_state_religion = rel:theravada
 				country_has_state_religion = rel:shinto
-				country_has_state_religion = rel:confucian
 			}
 			owns_entire_state_region = STATE_HIMALAYAS
 		}
@@ -3476,7 +3947,6 @@ holy_site_5 = {
 				country_has_state_religion = rel:gelugpa
 				country_has_state_religion = rel:theravada
 				country_has_state_religion = rel:shinto
-				country_has_state_religion = rel:confucian
 			}
 			NOT = {
 				owns_entire_state_region = STATE_HIMALAYAS
@@ -3565,12 +4035,29 @@ religion_aspect_text_1 = {
 	}
 	text = {
 		trigger = {
+			country_has_state_religion = rel:baal
+		}
+		localization_key = baal_aspect_text_1
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:zoroastrian
+		}
+		localization_key = zoro_aspect_text_1
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:confucian
+		}
+		localization_key = confucian_aspect_text_1
+	}
+	text = {
+		trigger = {
 			OR = {
 				country_has_state_religion = rel:mahayana
 				country_has_state_religion = rel:gelugpa
 				country_has_state_religion = rel:theravada
 				country_has_state_religion = rel:shinto
-				country_has_state_religion = rel:confucian
 			}
 		}
 		localization_key = mahayana_aspect_text_1
@@ -3609,6 +4096,24 @@ religion_aspect_text_2 = {
 			country_has_state_religion = rel:catholic
 		}
 		localization_key = catholic_aspect_text_2
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:baal
+		}
+		localization_key = baal_aspect_text_2
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:zoroastrian
+		}
+		localization_key = zoro_aspect_text_2
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:confucian
+		}
+		localization_key = confucian_aspect_text_2
 	}
 	text = {
 		trigger = {
@@ -3653,7 +4158,6 @@ religion_aspect_text_2 = {
 				country_has_state_religion = rel:gelugpa
 				country_has_state_religion = rel:theravada
 				country_has_state_religion = rel:shinto
-				country_has_state_religion = rel:confucian
 			}
 		}
 		localization_key = mahayana_aspect_text_2
@@ -3692,6 +4196,24 @@ religion_aspect_text_3 = {
 			country_has_state_religion = rel:catholic
 		}
 		localization_key = catholic_aspect_text_3
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:baal
+		}
+		localization_key = baal_aspect_text_3
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:zoroastrian
+		}
+		localization_key = zoro_aspect_text_3
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:confucian
+		}
+		localization_key = confucian_aspect_text_3
 	}
 	text = {
 		trigger = {
@@ -3736,7 +4258,6 @@ religion_aspect_text_3 = {
 				country_has_state_religion = rel:gelugpa
 				country_has_state_religion = rel:theravada
 				country_has_state_religion = rel:shinto
-				country_has_state_religion = rel:confucian
 			}
 		}
 		localization_key = mahayana_aspect_text_3
@@ -3775,6 +4296,24 @@ religion_aspect_text_4 = {
 			country_has_state_religion = rel:catholic
 		}
 		localization_key = catholic_aspect_text_4
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:baal
+		}
+		localization_key = baal_aspect_text_4
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:zoroastrian
+		}
+		localization_key = zoro_aspect_text_4
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:confucian
+		}
+		localization_key = confucian_aspect_text_4
 	}
 	text = {
 		trigger = {
@@ -3819,7 +4358,6 @@ religion_aspect_text_4 = {
 				country_has_state_religion = rel:gelugpa
 				country_has_state_religion = rel:theravada
 				country_has_state_religion = rel:shinto
-				country_has_state_religion = rel:confucian
 			}
 		}
 		localization_key = mahayana_aspect_text_4
@@ -3858,6 +4396,24 @@ religion_aspect_text_5 = {
 			country_has_state_religion = rel:catholic
 		}
 		localization_key = catholic_aspect_text_5
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:baal
+		}
+		localization_key = baal_aspect_text_5
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:zoroastrian
+		}
+		localization_key = zoro_aspect_text_5
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:confucian
+		}
+		localization_key = confucian_aspect_text_5
 	}
 	text = {
 		trigger = {
@@ -3902,7 +4458,6 @@ religion_aspect_text_5 = {
 				country_has_state_religion = rel:gelugpa
 				country_has_state_religion = rel:theravada
 				country_has_state_religion = rel:shinto
-				country_has_state_religion = rel:confucian
 			}
 		}
 		localization_key = mahayana_aspect_text_5
@@ -3950,6 +4505,25 @@ religion_aspect_text_6 = {
 	}
 	text = {
 		trigger = {
+			country_has_state_religion = rel:baal
+		}
+		localization_key = baal_aspect_text_6
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:zoroastrian
+		}
+		localization_key = zoro_aspect_text_6
+		
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:confucian
+		}
+		localization_key = confucian_aspect_text_6
+	}
+	text = {
+		trigger = {
 			country_has_state_religion = rel:orthodox
 		}
 		localization_key = orthodox_aspect_text_6
@@ -3985,7 +4559,6 @@ religion_aspect_text_6 = {
 				country_has_state_religion = rel:gelugpa
 				country_has_state_religion = rel:theravada
 				country_has_state_religion = rel:shinto
-				country_has_state_religion = rel:confucian
 			}
 		}
 		localization_key = mahayana_aspect_text_6
@@ -4057,6 +4630,24 @@ religion_aspect_text_7 = {
 	}
 	text = {
 		trigger = {
+			country_has_state_religion = rel:baal
+		}
+		localization_key = baal_aspect_text_7
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:zoroastrian
+		}
+		localization_key = zoro_aspect_text_7
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:confucian
+		}
+		localization_key = confucian_aspect_text_7
+	}
+	text = {
+		trigger = {
 			country_has_state_religion = rel:jewish
 		}
 		localization_key = jewish_aspect_text_7
@@ -4068,7 +4659,6 @@ religion_aspect_text_7 = {
 				country_has_state_religion = rel:gelugpa
 				country_has_state_religion = rel:theravada
 				country_has_state_religion = rel:shinto
-				country_has_state_religion = rel:confucian
 			}
 		}
 		localization_key = mahayana_aspect_text_7
@@ -4122,6 +4712,24 @@ religion_aspect_text_8 = {
 	}
 	text = {
 		trigger = {
+			country_has_state_religion = rel:baal
+		}
+		localization_key = baal_aspect_text_8
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:zoroastrian
+		}
+		localization_key = zoro_aspect_text_8
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:confucian
+		}
+		localization_key = confucian_aspect_text_8
+	}
+	text = {
+		trigger = {
 			country_has_state_religion = rel:oriental_orthodox
 		}
 		localization_key = oriental_orthodox_aspect_text_8
@@ -4151,7 +4759,6 @@ religion_aspect_text_8 = {
 				country_has_state_religion = rel:gelugpa
 				country_has_state_religion = rel:theravada
 				country_has_state_religion = rel:shinto
-				country_has_state_religion = rel:confucian
 			}
 		}
 		localization_key = mahayana_aspect_text_8

@@ -595,6 +595,24 @@ religion_passive_bonuses = {
 	}
 	else_if = {
 		limit = {
+			country_has_state_religion = rel:baal
+		}
+		add_modifier = {
+			name = baal_pasive_mdf
+			months = -1
+		}
+	}
+	else_if = {
+		limit = {
+			country_has_state_religion = rel:zoroastrian
+		}
+		add_modifier = {
+			name = zoro_pasive_mdf
+			months = -1
+		}
+	}
+	else_if = {
+		limit = {
 			country_has_state_religion = rel:shiite
 		}
 		add_modifier = {
@@ -613,16 +631,40 @@ religion_passive_bonuses = {
 	}
 	else_if = {
 		limit = {
+			country_has_state_religion = rel:confucian
+		}
+		add_modifier = {
+			name = conf_pasive_mdf
+			months = -1
+		}
+	}
+	else_if = {
+		limit = {
 			OR = {
 				country_has_state_religion = rel:mahayana
-				country_has_state_religion = rel:gelugpa
-				country_has_state_religion = rel:theravada
 				country_has_state_religion = rel:shinto
-				country_has_state_religion = rel:confucian
 			}
 		}
 		add_modifier = {
 			name = mahayana_pasive_mdf
+			months = -1
+		}
+	}
+	else_if = {
+		limit = {
+			country_has_state_religion = rel:theravada
+		}
+		add_modifier = {
+			name = theravada_pasive_mdf
+			months = -1
+		}
+	}
+	else_if = {
+		limit = {
+			country_has_state_religion = rel:gelugpa
+		}
+		add_modifier = {
+			name = gelugpa_pasive_mdf
 			months = -1
 		}
 	}

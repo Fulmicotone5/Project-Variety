@@ -108,7 +108,7 @@ ve_aspect_button_1 = {
 					country_has_state_religion = rel:confucian
 				}
 				NOT = {
-					has_modifier = mahayana_aspect_1_mdf
+					has_modifier = confucian_aspect_1_mdf
 				}
 			}
 			trigger_else_if = {
@@ -121,18 +121,18 @@ ve_aspect_button_1 = {
 			}
 			trigger_else_if = {
 				limit = {
-					country_has_state_religion = rel:zoroastrian
+					country_has_state_religion = rel:baal
 				}
 				NOT = {
-					has_modifier = sikh_aspect_1_mdf
+					has_modifier = baal_aspect_1_mdf
 				}
 			}
 			trigger_else_if = {
 				limit = {
-					country_has_state_religion = rel:baal
+					country_has_state_religion = rel:zoroastrian
 				}
 				NOT = {
-					has_modifier = sikh_aspect_1_mdf
+					has_modifier = zoro_aspect_1_mdf
 				}
 			}
 			trigger_else_if = {
@@ -269,7 +269,7 @@ ve_aspect_button_2 = {
 					country_has_state_religion = rel:confucian
 				}
 				NOT = {
-					has_modifier = mahayana_aspect_2_mdf
+					has_modifier = confucian_aspect_2_mdf
 				}
 			}
 			trigger_else_if = {
@@ -282,18 +282,18 @@ ve_aspect_button_2 = {
 			}
 			trigger_else_if = {
 				limit = {
-					country_has_state_religion = rel:zoroastrian
+					country_has_state_religion = rel:baal
 				}
 				NOT = {
-					has_modifier = sikh_aspect_2_mdf
+					has_modifier = baal_aspect_2_mdf
 				}
 			}
 			trigger_else_if = {
 				limit = {
-					country_has_state_religion = rel:baal
+					country_has_state_religion = rel:zoroastrian
 				}
 				NOT = {
-					has_modifier = sikh_aspect_2_mdf
+					has_modifier = zoro_aspect_2_mdf
 				}
 			}
 			trigger_else_if = {
@@ -430,7 +430,7 @@ ve_aspect_button_3 = {
 					country_has_state_religion = rel:confucian
 				}
 				NOT = {
-					has_modifier = mahayana_aspect_3_mdf
+					has_modifier = confucian_aspect_3_mdf
 				}
 			}
 			trigger_else_if = {
@@ -447,6 +447,22 @@ ve_aspect_button_3 = {
 				}
 				NOT = {
 					has_modifier = animist_aspect_3_mdf
+				}
+			}
+			trigger_else_if = {
+				limit = {
+					country_has_state_religion = rel:baal
+				}
+				NOT = {
+					has_modifier = baal_aspect_3_mdf
+				}
+			}
+			trigger_else_if = {
+				limit = {
+					country_has_state_religion = rel:zoroastrian
+				}
+				NOT = {
+					has_modifier = zoro_aspect_3_mdf
 				}
 			}
 			trigger_else_if = {
@@ -575,7 +591,7 @@ ve_aspect_button_4 = {
 					country_has_state_religion = rel:confucian
 				}
 				NOT = {
-					has_modifier = mahayana_aspect_4_mdf
+					has_modifier = confucian_aspect_4_mdf
 				}
 			}
 			trigger_else_if = {
@@ -600,6 +616,22 @@ ve_aspect_button_4 = {
 				}
 				NOT = {
 					has_modifier = atheist_aspect_4_mdf
+				}
+			}
+			trigger_else_if = {
+				limit = {
+					country_has_state_religion = rel:baal
+				}
+				NOT = {
+					has_modifier = baal_aspect_4_mdf
+				}
+			}
+			trigger_else_if = {
+				limit = {
+					country_has_state_religion = rel:zoroastrian
+				}
+				NOT = {
+					has_modifier = zoro_aspect_4_mdf
 				}
 			}
 		}
@@ -720,7 +752,7 @@ ve_aspect_button_5 = {
 					country_has_state_religion = rel:confucian
 				}
 				NOT = {
-					has_modifier = mahayana_aspect_5_mdf
+					has_modifier = confucian_aspect_5_mdf
 				}
 			}
 			trigger_else_if = {
@@ -745,6 +777,22 @@ ve_aspect_button_5 = {
 				}
 				NOT = {
 					has_modifier = atheist_aspect_5_mdf
+				}
+			}
+			trigger_else_if = {
+				limit = {
+					country_has_state_religion = rel:baal
+				}
+				NOT = {
+					has_modifier = baal_aspect_5_mdf
+				}
+			}
+			trigger_else_if = {
+				limit = {
+					country_has_state_religion = rel:zoroastrian
+				}
+				NOT = {
+					has_modifier = zoro_aspect_5_mdf
 				}
 			}
 		}
@@ -865,7 +913,7 @@ ve_aspect_button_6 = {
 					country_has_state_religion = rel:confucian
 				}
 				NOT = {
-					has_modifier = mahayana_aspect_6_mdf
+					has_modifier = confucian_aspect_6_mdf
 				}
 			}
 			trigger_else_if = {
@@ -890,6 +938,22 @@ ve_aspect_button_6 = {
 				}
 				NOT = {
 					has_modifier = atheist_aspect_6_mdf
+				}
+			}
+			trigger_else_if = {
+				limit = {
+					country_has_state_religion = rel:baal
+				}
+				NOT = {
+					has_modifier = baal_aspect_6_mdf
+				}
+			}
+			trigger_else_if = {
+				limit = {
+					country_has_state_religion = rel:zoroastrian
+				}
+				NOT = {
+					has_modifier = zoro_aspect_5_mdf
 				}
 			}
 		}
@@ -1010,7 +1074,7 @@ ve_aspect_button_7 = {
 					country_has_state_religion = rel:confucian
 				}
 				NOT = {
-					has_modifier = mahayana_aspect_7_mdf
+					has_modifier = confucian_aspect_7_mdf
 				}
 			}
 			trigger_else_if = {
@@ -1035,6 +1099,22 @@ ve_aspect_button_7 = {
 				}
 				NOT = {
 					has_modifier = atheist_aspect_7_mdf
+				}
+			}
+			trigger_else_if = {
+				limit = {
+					country_has_state_religion = rel:baal
+				}
+				NOT = {
+					has_modifier = baal_aspect_7_mdf
+				}
+			}
+			trigger_else_if = {
+				limit = {
+					country_has_state_religion = rel:zoroastrian
+				}
+				NOT = {
+					has_modifier = zoro_aspect_7_mdf
 				}
 			}
 		}
@@ -1155,7 +1235,7 @@ ve_aspect_button_8 = {
 					country_has_state_religion = rel:confucian
 				}
 				NOT = {
-					has_modifier = mahayana_aspect_8_mdf
+					has_modifier = confucian_aspect_8_mdf
 				}
 			}
 			trigger_else_if = {
@@ -1180,6 +1260,22 @@ ve_aspect_button_8 = {
 				}
 				NOT = {
 					has_modifier = atheist_aspect_8_mdf
+				}
+			}
+			trigger_else_if = {
+				limit = {
+					country_has_state_religion = rel:baal
+				}
+				NOT = {
+					has_modifier = baal_aspect_8_mdf
+				}
+			}
+			trigger_else_if = {
+				limit = {
+					country_has_state_religion = rel:zoroastrian
+				}
+				NOT = {
+					has_modifier = zoro_aspect_8_mdf
 				}
 			}
 		}
@@ -1257,12 +1353,29 @@ ve_holy_site_1 = {
 		}
 		trigger_else_if = {
 			limit = {
+				country_has_state_religion = rel:baal
+			}
+			owns_entire_state_region = STATE_TUNISIA
+		}
+		trigger_else_if = {
+			limit = {
+				country_has_state_religion = rel:zoroastrian
+			}
+			owns_entire_state_region = STATE_AZERBAIJAN
+		}
+		trigger_else_if = {
+			limit = {
+				country_has_state_religion = rel:confucian
+			}
+			owns_entire_state_region = STATE_SHANDONG
+		}
+		trigger_else_if = {
+			limit = {
 				OR = {
 					country_has_state_religion = rel:mahayana
 					country_has_state_religion = rel:gelugpa
 					country_has_state_religion = rel:theravada
 					country_has_state_religion = rel:shinto
-					country_has_state_religion = rel:confucian
 				}
 			}
 			owns_entire_state_region = STATE_CENTRAL_INDIA
@@ -1305,7 +1418,7 @@ ve_holy_site_1 = {
 			}
 			add_modifier = {
 				name = roma_hs_mdf
-				months = 65
+				
 			}
 		}
 		else_if = {
@@ -1323,6 +1436,23 @@ ve_holy_site_1 = {
 			}
 			add_modifier = {
 				name = damascus_hs_mdf
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:zoroastrian
+			}
+			custom_tooltip = {
+				text = ve_holy_site_piety_tt
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:baal
+			}
+			add_modifier = {
+				name = thinissut_hs_mdf
 				months = -1
 			}
 		}
@@ -1351,11 +1481,19 @@ ve_holy_site_1 = {
 					country_has_state_religion = rel:gelugpa
 					country_has_state_religion = rel:theravada
 					country_has_state_religion = rel:shinto
-					country_has_state_religion = rel:confucian
 				}
 			}
 			add_modifier = {
 				name = sanchi_hs_mdf
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:confucian
+			}
+			add_modifier = {
+				name = shan_hs_mdf
 				months = -1
 			}
 		}
@@ -1427,15 +1565,32 @@ ve_holy_site_2 = {
 		}
 		trigger_else_if = {
 			limit = {
+				country_has_state_religion = rel:baal
+			}
+			owns_entire_state_region = STATE_CONSTANTINE
+		}
+		trigger_else_if = {
+			limit = {
+				country_has_state_religion = rel:zoroastrian
+			}
+			owns_entire_state_region = STATE_KHORASAN
+		}
+		trigger_else_if = {
+			limit = {
+				country_has_state_religion = rel:confucian
+			}
+			owns_entire_state_region = STATE_SHANDONG
+		}
+		trigger_else_if = {
+			limit = {
 				OR = {
 					country_has_state_religion = rel:mahayana
 					country_has_state_religion = rel:gelugpa
 					country_has_state_religion = rel:theravada
 					country_has_state_religion = rel:shinto
-					country_has_state_religion = rel:confucian
 				}
 			}
-			owns_entire_state_region = STATE_SHANDONG
+			owns_entire_state_region = STATE_LHASA
 		}
 		trigger_else_if = {
 			limit = {
@@ -1461,6 +1616,23 @@ ve_holy_site_2 = {
 		}
 		else_if = {
 			limit = {
+				country_has_state_religion = rel:baal
+			}
+			custom_tooltip = {
+				text = ve_holy_site_piety_tt
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:zoroastrian
+			}
+			add_modifier = {
+				name = burz_hs_mdf
+				
+			}
+		}
+		else_if = {
+			limit = {
 				country_has_state_religion = rel:protestant
 			}
 			custom_tooltip = {
@@ -1473,7 +1645,7 @@ ve_holy_site_2 = {
 			}
 			add_modifier = {
 				name = constantinople_hs_mdf
-				months = 65
+				
 			}
 		}
 		else_if = {
@@ -1519,11 +1691,19 @@ ve_holy_site_2 = {
 					country_has_state_religion = rel:gelugpa
 					country_has_state_religion = rel:theravada
 					country_has_state_religion = rel:shinto
-					country_has_state_religion = rel:confucian
 				}
 			}
 			add_modifier = {
-				name = yanzhou_hs_mdf
+				name = lhasa_hs_mdf
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:confucian
+			}
+			add_modifier = {
+				name = kong_hs_mdf
 				months = -1
 			}
 		}
@@ -1595,12 +1775,29 @@ ve_holy_site_3 = {
 		}
 		trigger_else_if = {
 			limit = {
+				country_has_state_religion = rel:baal
+			}
+			owns_entire_state_region = STATE_SYRIA
+		}
+		trigger_else_if = {
+			limit = {
+				country_has_state_religion = rel:zoroastrian
+			}
+			owns_entire_state_region = STATE_TABRIZ
+		}
+		trigger_else_if = {
+			limit = {
+				country_has_state_religion = rel:confucian
+			}
+			owns_entire_state_region = STATE_BEIJING
+		}
+		trigger_else_if = {
+			limit = {
 				OR = {
 					country_has_state_religion = rel:mahayana
 					country_has_state_religion = rel:gelugpa
 					country_has_state_religion = rel:theravada
 					country_has_state_religion = rel:shinto
-					country_has_state_religion = rel:confucian
 				}
 			}
 			owns_entire_state_region = STATE_BURMA
@@ -1643,7 +1840,7 @@ ve_holy_site_3 = {
 			}
 			add_modifier = {
 				name = alexandria_hs_mdf
-				months = 65
+				
 			}
 		}
 		else_if = {
@@ -1682,12 +1879,37 @@ ve_holy_site_3 = {
 		}
 		else_if = {
 			limit = {
+				country_has_state_religion = rel:baal
+			}
+			add_modifier = {
+				name = syriach_hs_mdf
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:zoroastrian
+			}
+			add_modifier = {
+				name = gush_hs_mdf
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:confucian
+			}
+			custom_tooltip = {
+				text = ve_holy_site_piety_tt
+			}
+		}
+		else_if = {
+			limit = {
 				OR = {
 					country_has_state_religion = rel:mahayana
 					country_has_state_religion = rel:gelugpa
 					country_has_state_religion = rel:theravada
 					country_has_state_religion = rel:shinto
-					country_has_state_religion = rel:confucian
 				}
 			}
 			add_modifier = {
@@ -1746,13 +1968,13 @@ ve_holy_site_4 = {
 			limit = {
 				country_has_state_religion = rel:sunni
 			}
-			owns_entire_state_region = STATE_BAGHDAD
+			owns_entire_state_region = STATE_ALEPPO
 		}
 		trigger_else_if = {
 			limit = {
 				country_has_state_religion = rel:shiite
 			}
-			owns_entire_state_region = STATE_BAGHDAD
+			owns_entire_state_region = STATE_ALEPPO
 		}
 		trigger_else_if = {
 			limit = {
@@ -1762,12 +1984,29 @@ ve_holy_site_4 = {
 		}
 		trigger_else_if = {
 			limit = {
+				country_has_state_religion = rel:baal
+			}
+			owns_entire_state_region = STATE_EGYPTIAN_DESERT
+		}
+		trigger_else_if = {
+			limit = {
+				country_has_state_religion = rel:zoroastrian
+			}
+			owns_entire_state_region = STATE_FARS
+		}
+		trigger_else_if = {
+			limit = {
+				country_has_state_religion = rel:confucian
+			}
+			owns_entire_state_region = STATE_SEOUL
+		}
+		trigger_else_if = {
+			limit = {
 				OR = {
 					country_has_state_religion = rel:mahayana
 					country_has_state_religion = rel:gelugpa
 					country_has_state_religion = rel:theravada
 					country_has_state_religion = rel:shinto
-					country_has_state_religion = rel:confucian
 				}
 			}
 			owns_entire_state_region = STATE_KANSAI
@@ -1810,7 +2049,7 @@ ve_holy_site_4 = {
 			}
 			add_modifier = {
 				name = antioch_hs_mdf
-				months = 65
+				
 			}
 		}
 		else_if = {
@@ -1851,12 +2090,38 @@ ve_holy_site_4 = {
 		}
 		else_if = {
 			limit = {
+				country_has_state_religion = rel:baal
+			}
+			add_modifier = {
+				name = hibis_hs_mdf
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:zoroastrian
+			}
+			add_modifier = {
+				name = farn_hs_mdf
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:confucian
+			}
+			add_modifier = {
+				name = seoul_hs_mdf
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
 				OR = {
 					country_has_state_religion = rel:mahayana
 					country_has_state_religion = rel:gelugpa
 					country_has_state_religion = rel:theravada
 					country_has_state_religion = rel:shinto
-					country_has_state_religion = rel:confucian
 				}
 			}
 			add_modifier = {
@@ -1926,12 +2191,29 @@ ve_holy_site_5 = {
 		}
 		trigger_else_if = {
 			limit = {
+				country_has_state_religion = rel:baal
+			}
+			owns_entire_state_region = STATE_LEBANON
+		}
+		trigger_else_if = {
+			limit = {
+				country_has_state_religion = rel:zoroastrian
+			}
+			owns_entire_state_region = STATE_BIHAR
+		}
+		trigger_else_if = {
+			limit = {
+				country_has_state_religion = rel:confucian
+			}
+			owns_entire_state_region = STATE_NANJING
+		}
+		trigger_else_if = {
+			limit = {
 				OR = {
 					country_has_state_religion = rel:mahayana
 					country_has_state_religion = rel:gelugpa
 					country_has_state_religion = rel:theravada
 					country_has_state_religion = rel:shinto
-					country_has_state_religion = rel:confucian
 				}
 			}
 			owns_entire_state_region = STATE_HIMALAYAS
@@ -1974,7 +2256,7 @@ ve_holy_site_5 = {
 			}
 			add_modifier = {
 				name = jerusalem_hs_mdf
-				months = 65
+				
 			}
 		}
 		else_if = {
@@ -2006,12 +2288,38 @@ ve_holy_site_5 = {
 		}
 		else_if = {
 			limit = {
+				country_has_state_religion = rel:baal
+			}
+			add_modifier = {
+				name = astarte_hs_mdf
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:zoroastrian
+			}
+			add_modifier = {
+				name = patna_hs_mdf
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:confucian
+			}
+			add_modifier = {
+				name = munm_hs_mdf
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
 				OR = {
 					country_has_state_religion = rel:mahayana
 					country_has_state_religion = rel:gelugpa
 					country_has_state_religion = rel:theravada
 					country_has_state_religion = rel:shinto
-					country_has_state_religion = rel:confucian
 				}
 			}
 			add_modifier = {

@@ -530,7 +530,7 @@ types topbar_components
 
 						icon = {
 							size = { @secondary_icon_size @secondary_icon_size }
-							texture = "gfx/interface/catholic.dds"
+							texture = "gfx/interface/icons/political_parties/religious.dds"
 							parentanchor = vcenter
 						}
 

@@ -1,6 +1,8 @@
 roma_hs_mdf = {
 	icon = gfx/interface/monument.dds
-	state_urbanization_per_level_mult = -0.1
+	country_law_enactment_time_mult = -0.05
+	country_prestige_mult = 0.05
+	country_authority_mult = 0.05
 }
 
 cologne_hs_mdf = {
@@ -16,11 +18,33 @@ santiago_hs_mdf = {
 notre_dame_hs_mdf = {
 	icon = gfx/interface/monument.dds
 	country_prestige_mult = 0.1
+	country_authority_mult = 0.05
 }
 
 jerusalem_hs_mdf = {
 	icon = gfx/interface/monument.dds
 	unit_morale_damage_mult = 0.15
+}
+
+burz_hs_mdf = {
+	icon = gfx/interface/monument.dds
+	country_prestige_mult = 0.05
+	political_movement_radicalism_mult = -0.1
+}
+
+gush_hs_mdf = {
+	icon = gfx/interface/monument.dds
+	unit_supply_consumption_mult = -0.05
+}
+
+farn_hs_mdf = {
+	icon = gfx/interface/monument.dds
+	country_influence_mult = 0.1
+}
+
+patna_hs_mdf = {
+	icon = gfx/interface/monument.dds
+	state_education_access_add = 0.05
 }
 
 wittenberg_hs_mdf = {
@@ -38,19 +62,43 @@ canterbury_hs_mdf = {
 	country_trade_route_quantity_mult = 0.15
 }
 
+shan_hs_mdf = {
+	icon = gfx/interface/monument.dds
+	country_influence_mult = 0.05
+}
+
+kong_hs_mdf= {
+	icon = gfx/interface/monument.dds
+	political_movement_radicalism_mult = -0.05
+}
+
+seoul_hs_mdf = {
+	icon = gfx/interface/monument.dds
+	country_prestige_mult = 0.05
+	country_authority_mult = 0.1
+}
+
+munm_hs_mdf = {
+	icon = gfx/interface/monument.dds
+	unit_supply_consumption_mult = -0.1
+}
+
 constantinople_hs_mdf = {
 	icon = gfx/interface/monument.dds
 	state_loyalists_from_sol_change_accepted_religion_mult = 0.1
+	country_prestige_mult = 0.05
+	country_authority_mult = 0.05
 }
 
 hedjaz_hs_mdf = {
 	icon = gfx/interface/monument.dds
 	state_loyalists_from_sol_change_accepted_religion_mult = 0.1
+	country_prestige_mult = 0.05
 }
 
 alexandria_hs_mdf = {
 	icon = gfx/interface/monument.dds
-	state_education_access_add = 0.015
+	state_education_access_add = 0.02
 }
 
 antioch_hs_mdf = {
@@ -65,7 +113,7 @@ yerevan_hs_mdf = {
 
 aksum_hs_mdf = {
 	icon = gfx/interface/monument.dds
-	country_infamy_generation_mult = -0.1
+	country_infamy_generation_mult = -0.05
 }
 
 medina_hs_mdf = {
@@ -75,12 +123,33 @@ medina_hs_mdf = {
 
 baghdad_hs_mdf = {
 	icon = gfx/interface/monument.dds
-	state_education_access_add = 0.015
+	state_education_access_add = 0.02
 }
 
 damascus_hs_mdf = {
 	icon = gfx/interface/monument.dds
 	country_authority_mult = 0.1
+}
+
+thinissut_hs_mdf = {
+	icon = gfx/interface/monument.dds
+	unit_supply_consumption_mult = -0.05
+}
+
+syriach_hs_mdf = {
+	icon = gfx/interface/monument.dds
+	state_education_access_add = 0.03
+}
+
+hibis_hs_mdf = {
+	icon = gfx/interface/monument.dds
+	country_infamy_generation_mult = -0.05
+	unit_offense_elevated_mult = 0.1
+}
+
+astarte_hs_mdf = {
+	icon = gfx/interface/monument.dds
+	country_society_tech_research_speed_mult = 0.05
 }
 
 maidane_naqshe_jahan_hs_mdf = {
@@ -103,6 +172,12 @@ sanchi_hs_mdf = {
 	country_influence_mult = 0.1
 }
 
+lhasa_hs_mdf = {
+	icon = gfx/interface/monument.dds
+	state_migration_push_mult = -0.25
+	political_movement_radicalism_mult = -0.1
+}
+
 yanzhou_hs_mdf = {
 	icon = gfx/interface/monument.dds
 	country_society_tech_research_speed_mult = 0.05
@@ -110,12 +185,13 @@ yanzhou_hs_mdf = {
 
 pagan_hs_mdf = {
 	icon = gfx/interface/monument.dds
-	country_infamy_decay_mult = 0.1
+	country_infamy_decay_mult = 0.05
 }
 
 ise_grand_shrine_hs_mdf = {
 	icon = gfx/interface/monument.dds
-	unit_morale_damage_mult = 0.1
+	unit_morale_damage_mult = 0.05
+	country_authority_mult = 0.05
 }
 
 lumbini_hs_mdf = {
@@ -130,7 +206,7 @@ mathura_hs_mdf = {
 
 varanasi_hs_mdf = {
 	icon = gfx/interface/monument.dds
-	state_education_access_add = 0.015
+	state_education_access_add = 0.02
 }
 
 ayodhya_hs_mdf = {
@@ -140,7 +216,7 @@ ayodhya_hs_mdf = {
 
 great_living_chola_temples_hs_mdf = {
 	icon = gfx/interface/monument.dds
-	state_construction_mult = 0.1
+	country_authority_mult = 0.1
 }
 
 dwarka_hs_mdf = {

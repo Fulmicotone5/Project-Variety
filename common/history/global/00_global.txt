@@ -52,7 +52,7 @@ GLOBAL = {
 	#Event Variables
 
 	set_global_variable = {
-		name = ve_medium
+		name = ve_hard
 	}
 	set_global_variable = {
 		name = number_of_mega_earthquakes

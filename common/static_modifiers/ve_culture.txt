@@ -1,6 +1,6 @@
 national_supremacy_mdf_1 = {
 	icon = gfx/interface/monarch_cultures_icon.dds
-	state_accepted_birth_rate_mult = 0.05
+	state_accepted_birth_rate_mult = 0.02
 }
 
 national_supremacy_mdf_2 = {
@@ -35,7 +35,7 @@ national_supremacy_mdf_7 = {
 
 intellectual_nation_mdf_1 = {
 	icon = gfx/interface/monarch_cultures_icon.dds
-	state_birth_rate_mult = 0.025
+	state_birth_rate_mult = 0.01
 }
 
 intellectual_nation_mdf_2 = {
@@ -65,7 +65,7 @@ intellectual_nation_mdf_6 = {
 
 intellectual_nation_mdf_7 = {
 	icon = gfx/interface/monarch_cultures_icon.dds
-	state_radicals_from_discrimination_mult = -0.5
+	state_radicals_from_discrimination_mult = -0.8
 }
 
 #Bar modifier

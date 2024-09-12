@@ -24188,6 +24188,16 @@ CTH_subject = {
 		instance = { scale = { 0.6 0.6 } position = { 0.5 0.5 } }
 	}
 }
+
+GSM = { # San Marino
+	pattern = "pattern_border_two_stripes.dds"
+		color1 = "blue_light"
+		color2 = "white"
+	textured_emblem = {
+		texture = "te_coa_san_marino.dds"
+		instance = { scale = { 0.6 0.6 } position = { 0.5 0.5 } }
+	}		
+}
 SNM = { # San Marino
 	pattern = "pattern_horizontal_split_01.tga"
 	color1 = "white"

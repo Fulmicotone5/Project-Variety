@@ -6599,6 +6599,14 @@ ZAP = { # Zapadoslavia
 	}
 }
 
+GSM = { # Greater San Marino
+	flag_definition = {	
+		coa = GSM
+		subject_canton = GSM
+		priority = 10
+	}
+}
+
 GAR = { # Greater Armenia
 	flag_definition = {	
 		coa = GAR

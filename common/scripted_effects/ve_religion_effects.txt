@@ -20,6 +20,12 @@ ve_becoming_atheist = {
 				has_modifier = hindu_pasive_mdf
 				has_modifier = sikh_pasive_mdf
 				has_modifier = animist_pasive_mdf
+				has_modifier = baal_pasive_mdf
+				has_modifier = zoro_pasive_mdf
+				has_modifier = mahayana_pasive_mdf
+				has_modifier = theravada_pasive_mdf
+				has_modifier = gelugpa_pasive_mdf
+				has_modifier = conf_pasive
 			}
 		}
 		remove_modifier = catholic_pasive_mdf
@@ -32,6 +38,12 @@ ve_becoming_atheist = {
 		remove_modifier = hindu_pasive_mdf
 		remove_modifier = sikh_pasive_mdf
 		remove_modifier = animist_pasive_mdf
+		remove_modifier = baal_pasive_mdf
+		remove_modifier = zoro_pasive_mdf
+		remove_modifier = conf_pasive
+		remove_modifier = mahayana_pasive_mdf
+		remove_modifier = theravada_pasive_mdf
+		remove_modifier = gelugpa_pasive_mdf
 		remove_modifier = catholic_aspect_1_mdf
 		remove_modifier = catholic_aspect_2_mdf
 		remove_modifier = catholic_aspect_3_mdf
@@ -112,6 +124,39 @@ ve_becoming_atheist = {
 		remove_modifier = animist_aspect_6_mdf
 		remove_modifier = animist_aspect_7_mdf
 		remove_modifier = animist_aspect_8_mdf
+		remove_modifier = baal_aspect_1_mdf
+		remove_modifier = baal_aspect_2_mdf
+		remove_modifier = baal_aspect_3_mdf
+		remove_modifier = baal_aspect_4_mdf
+		remove_modifier = baal_aspect_5_mdf
+		remove_modifier = baal_aspect_6_mdf
+		remove_modifier = baal_aspect_7_mdf
+		remove_modifier = baal_aspect_8_mdf
+		remove_modifier = zoro_aspect_1_mdf
+		remove_modifier = zoro_aspect_2_mdf
+		remove_modifier = zoro_aspect_3_mdf
+		remove_modifier = zoro_aspect_4_mdf
+		remove_modifier = zoro_aspect_5_mdf
+		remove_modifier = zoro_aspect_6_mdf
+		remove_modifier = zoro_aspect_7_mdf
+		remove_modifier = zoro_aspect_8_mdf
+		remove_modifier = confucian_aspect_1_mdf
+		remove_modifier = confucian_aspect_2_mdf
+		remove_modifier = confucian_aspect_3_mdf
+		remove_modifier = confucian_aspect_4_mdf
+		remove_modifier = confucian_aspect_5_mdf
+		remove_modifier = confucian_aspect_6_mdf
+		remove_modifier = confucian_aspect_7_mdf
+		remove_modifier = confucian_aspect_8_mdf
+		remove_modifier = mahayana_aspect_1_mdf
+		remove_modifier = mahayana_aspect_2_mdf
+		remove_modifier = mahayana_aspect_3_mdf
+		remove_modifier = mahayana_aspect_4_mdf
+		remove_modifier = mahayana_aspect_5_mdf
+		remove_modifier = mahayana_aspect_6_mdf
+		remove_modifier = mahayana_aspect_7_mdf
+		remove_modifier = mahayana_aspect_8_mdf
+
 	}
 }
 
@@ -229,7 +274,7 @@ ve_religion_aspect_1_effect = {
 			country_has_state_religion = rel:confucian
 		}
 		add_modifier = {
-			name = mahayana_aspect_1_mdf
+			name = confucian_aspect_1_mdf
 			months = 65
 		}
 	}
@@ -244,19 +289,19 @@ ve_religion_aspect_1_effect = {
 	}
 	else_if = {
 		limit = {
-			country_has_state_religion = rel:zoroastrian
+			country_has_state_religion = rel:baal
 		}
 		add_modifier = {
-			name = sikh_aspect_1_mdf
+			name = baal_aspect_1_mdf
 			months = 65
 		}
 	}
 	else_if = {
 		limit = {
-			country_has_state_religion = rel:baal
+			country_has_state_religion = rel:zoroastrian
 		}
 		add_modifier = {
-			name = sikh_aspect_1_mdf
+			name = zoro_aspect_1_mdf
 			months = 65
 		}
 	}
@@ -394,7 +439,7 @@ ve_religion_aspect_2_effect = {
 			country_has_state_religion = rel:confucian
 		}
 		add_modifier = {
-			name = mahayana_aspect_2_mdf
+			name = confucian_aspect_2_mdf
 			months = 65
 		}
 	}
@@ -409,19 +454,19 @@ ve_religion_aspect_2_effect = {
 	}
 	else_if = {
 		limit = {
-			country_has_state_religion = rel:zoroastrian
+			country_has_state_religion = rel:baal
 		}
 		add_modifier = {
-			name = sikh_aspect_2_mdf
+			name = baal_aspect_2_mdf
 			months = 65
 		}
 	}
 	else_if = {
 		limit = {
-			country_has_state_religion = rel:baal
+			country_has_state_religion = rel:zoroastrian
 		}
 		add_modifier = {
-			name = sikh_aspect_2_mdf
+			name = zoro_aspect_2_mdf
 			months = 65
 		}
 	}
@@ -479,6 +524,24 @@ ve_religion_aspect_3_effect = {
 		}
 		add_modifier = {
 			name = coptic_aspect_3_mdf
+			months = 65
+		}
+	}
+	else_if = {
+		limit = {
+			country_has_state_religion = rel:baal
+		}
+		add_modifier = {
+			name = baal_aspect_3_mdf
+			months = 65
+		}
+	}
+	else_if = {
+		limit = {
+			country_has_state_religion = rel:zoroastrian
+		}
+		add_modifier = {
+			name = zoro_aspect_3_mdf
 			months = 65
 		}
 	}
@@ -559,7 +622,7 @@ ve_religion_aspect_3_effect = {
 			country_has_state_religion = rel:confucian
 		}
 		add_modifier = {
-			name = mahayana_aspect_3_mdf
+			name = confucian_aspect_3_mdf
 			months = 65
 		}
 	}
@@ -649,6 +712,24 @@ ve_religion_aspect_4_effect = {
 	}
 	else_if = {
 		limit = {
+			country_has_state_religion = rel:baal
+		}
+		add_modifier = {
+			name = baal_aspect_4_mdf
+			months = 65
+		}
+	}
+	else_if = {
+		limit = {
+			country_has_state_religion = rel:zoroastrian
+		}
+		add_modifier = {
+			name = zoro_aspect_4_mdf
+			months = 65
+		}
+	}
+	else_if = {
+		limit = {
 			country_has_state_religion = rel:jewish
 		}
 		add_modifier = {
@@ -706,7 +787,7 @@ ve_religion_aspect_4_effect = {
 			country_has_state_religion = rel:confucian
 		}
 		add_modifier = {
-			name = mahayana_aspect_4_mdf
+			name = confucian_aspect_4_mdf
 			months = 65
 		}
 	}
@@ -796,6 +877,24 @@ ve_religion_aspect_5_effect = {
 	}
 	else_if = {
 		limit = {
+			country_has_state_religion = rel:baal
+		}
+		add_modifier = {
+			name = baal_aspect_5_mdf
+			months = 65
+		}
+	}
+	else_if = {
+		limit = {
+			country_has_state_religion = rel:zoroastrian
+		}
+		add_modifier = {
+			name = zoro_aspect_5_mdf
+			months = 65
+		}
+	}
+	else_if = {
+		limit = {
 			country_has_state_religion = rel:jewish
 		}
 		add_modifier = {
@@ -853,7 +952,7 @@ ve_religion_aspect_5_effect = {
 			country_has_state_religion = rel:confucian
 		}
 		add_modifier = {
-			name = mahayana_aspect_5_mdf
+			name = confucian_aspect_5_mdf
 			months = 65
 		}
 	}
@@ -934,6 +1033,24 @@ ve_religion_aspect_6_effect = {
 	}
 	else_if = {
 		limit = {
+			country_has_state_religion = rel:baal
+		}
+		add_modifier = {
+			name = baal_aspect_6_mdf
+			months = 65
+		}
+	}
+	else_if = {
+		limit = {
+			country_has_state_religion = rel:zoroastrian
+		}
+		add_modifier = {
+			name = zoro_aspect_6_mdf
+			months = 65
+		}
+	}
+	else_if = {
+		limit = {
 			country_has_state_religion = rel:shiite
 		}
 		add_modifier = {
@@ -1000,7 +1117,7 @@ ve_religion_aspect_6_effect = {
 			country_has_state_religion = rel:confucian
 		}
 		add_modifier = {
-			name = mahayana_aspect_6_mdf
+			name = confucian_aspect_6_mdf
 			months = 65
 		}
 	}
@@ -1090,6 +1207,24 @@ ve_religion_aspect_7_effect = {
 	}
 	else_if = {
 		limit = {
+			country_has_state_religion = rel:baal
+		}
+		add_modifier = {
+			name = baal_aspect_7_mdf
+			months = 65
+		}
+	}
+	else_if = {
+		limit = {
+			country_has_state_religion = rel:zoroastrian
+		}
+		add_modifier = {
+			name = zoro_aspect_7_mdf
+			months = 65
+		}
+	}
+	else_if = {
+		limit = {
 			country_has_state_religion = rel:jewish
 		}
 		add_modifier = {
@@ -1147,7 +1282,7 @@ ve_religion_aspect_7_effect = {
 			country_has_state_religion = rel:confucian
 		}
 		add_modifier = {
-			name = mahayana_aspect_7_mdf
+			name = confucian_aspect_7_mdf
 			months = 65
 		}
 	}
@@ -1237,6 +1372,33 @@ ve_religion_aspect_8_effect = {
 	}
 	else_if = {
 		limit = {
+			country_has_state_religion = rel:baal
+		}
+		add_modifier = {
+			name = baal_aspect_8_mdf
+			months = 65
+		}
+	}
+	else_if = {
+		limit = {
+			country_has_state_religion = rel:zoroastrian
+		}
+		add_modifier = {
+			name = zoro_aspect_8_mdf
+			months = 65
+		}
+	}
+	else_if = {
+		limit = {
+			country_has_state_religion = rel:confucian
+		}
+		add_modifier = {
+			name = confucian_aspect_8_mdf
+			months = 65
+		}
+	}
+	else_if = {
+		limit = {
 			country_has_state_religion = rel:jewish
 		}
 		add_modifier = {
@@ -1251,7 +1413,6 @@ ve_religion_aspect_8_effect = {
 				country_has_state_religion = rel:gelugpa
 				country_has_state_religion = rel:theravada
 				country_has_state_religion = rel:shinto
-				country_has_state_religion = rel:confucian
 			}
 		}
 		add_modifier = {

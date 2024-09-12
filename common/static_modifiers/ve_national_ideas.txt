@@ -234,7 +234,8 @@ rus_idea_2 = {
 
 rus_idea_3 = {
 	icon = gfx/interface/intelligensia.dds
-	country_resource_depletion_chance_mult = -0.2
+	building_group_bg_logging_unincorporated_throughput_add = 0.2
+	building_group_bg_mining_unincorporated_throughput_add = 0.2
 }
 
 rus_idea_4 = {
