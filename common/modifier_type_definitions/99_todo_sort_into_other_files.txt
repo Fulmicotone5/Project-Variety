@@ -2692,6 +2692,15 @@ state_laborers_investment_pool_efficiency_mult ={
 	}
 }
 
+state_laborers_investment_pool_contribution_add={
+	decimals=0
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+
 building_laborers_shares_add={
 	decimals=0
 	color=neutral
@@ -2939,6 +2948,50 @@ state_clergymen_investment_pool_efficiency_mult={
 	}
 }
 
+state_machinists_investment_pool_contribution_add={
+	decimals=0
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+
+state_engineers_investment_pool_contribution_add={
+	decimals=0
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+
+state_academics_investment_pool_contribution_add={
+	decimals=0
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+
+state_officers_investment_pool_contribution_add={
+	decimals=0
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+
+state_clerks_investment_pool_contribution_add={
+	decimals=0
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
 
 country_laborers_pol_str_mult={
 	decimals=1
