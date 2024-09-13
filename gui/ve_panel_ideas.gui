@@ -118,10 +118,6 @@ ve_gui_panel_types
 								# spacing = 20
 								hbox = {
 									widget = {
-										margin = {
-											30
-											15
-										}
 										size = {
 											90
 											90
@@ -170,10 +166,6 @@ ve_gui_panel_types
 										}
 									}
 									widget = {
-										margin = {
-											15
-											15
-										}
 										size = {
 											90
 											90
@@ -222,10 +214,6 @@ ve_gui_panel_types
 										}
 									}
 									widget = {
-										margin = {
-											15
-											15
-										}
 										size = {
 											90
 											90
@@ -274,10 +262,6 @@ ve_gui_panel_types
 										}
 									}
 									widget = {
-										margin = {
-											15
-											15
-										}
 										size = {
 											90
 											90
@@ -326,10 +310,6 @@ ve_gui_panel_types
 										}
 									}
 									widget = {
-										margin = {
-											15
-											15
-										}
 										size = {
 											90
 											90
@@ -378,10 +358,6 @@ ve_gui_panel_types
 										}
 									}
 									widget = {
-										margin = {
-											15
-											15
-										}
 										size = {
 											90
 											90
@@ -430,10 +406,6 @@ ve_gui_panel_types
 										}
 									}
 									widget = {
-										margin = {
-											15
-											15
-										}
 										size = {
 											90
 											90

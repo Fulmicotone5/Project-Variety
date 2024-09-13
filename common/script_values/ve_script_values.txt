@@ -1123,21 +1123,13 @@ monthly_piety_points = {
 	}
 }
 
-avaible_missionaries = {
-	add = var:avaible_missionaries
-}
+avaible_missionaries = var:avaible_missionaries
 
-total_missionaries = {
-	add = var:total_missionaries
-}
+total_missionaries = var:total_missionaries
 
-avaible_culture_missionaries = {
-	add = var:avaible_culture_missionaries
-}
+avaible_culture_missionaries = var:avaible_culture_missionaries
 
-total_culture_missionaries = {
-	add = var:total_culture_missionaries
-}
+total_culture_missionaries = var:total_culture_missionari
 
 ve_set_religion_law_effects = {
 	if = {

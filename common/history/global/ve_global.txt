@@ -1,6 +1,6 @@
 ﻿GLOBAL = {
 	random_country = {
-		set_global_variable = ve_age_1_started		#Victorian Age - 1936
+		set_global_variable = ve_age_1_started		# Age - 1936
 		set_global_variable = {
 			name = idea_point_value_pool
 			value = 0
