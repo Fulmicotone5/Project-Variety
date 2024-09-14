@@ -13646,57 +13646,7 @@ metis={
 	graphics = decentralised_americas
 }
 
-dakota={
-	color= hsv{ 0.63 0.30 0.52 }
-	religion = animist
-	traits = { indigenous_american_heritage north_american_group }
-	male_common_first_names={
-		Hehaka
-		Inkpaduta
-		Istahba
-		Mahpiya
-		Monkaushka
-		Sinte
-		Tamaha
-		Thahca
-		Thasunke
-		Thathanka
-		Thaoyate_Duta
-		Wanbdisapa
-		Wanata
-	}
-	female_common_first_names = {
-		Azayamankawin
-		Topahhdewin
-		Wakanmaniwin
-		Wakantakawin
-		Wakhan_Inazin_Win
-	}	
-	noble_last_names = {
-		Hakadah
-		Ohiya_S-a
-		Tamaha
-		Wakinyanduta
-		Wowinape
-	}
-	common_last_names={
-		Duta
-		Gleska
-		Huste
-		Iyotake
-		Kohkophapi
-		Kramarae
-		Luta
-		Pecan_Wakpa
-		Sapa
-		Thankja
-		Witko
-	}
-	ethnicities = {
-		1 = native_american
-	}
-	graphics = decentralised_americas
-}
+
 
 cherokee={
 	color= rgb{ 105 145 40 }
@@ -14083,6 +14033,7 @@ athabaskan={
 	}
 	graphics = decentralised_americas
 }
+
 salish={ # Tlingit and Haida merged together, forgive me
 	color= hsv{ 0.55 0.47 0.54 }
 	religion = animist
@@ -14129,6 +14080,7 @@ salish={ # Tlingit and Haida merged together, forgive me
 	}
 	graphics = decentralised_americas
 }
+
 nez_perce={ # Nez Perce
 	color= hsv{ 0.06 0.45 0.70 }
 	religion = animist
@@ -14167,57 +14119,7 @@ nez_perce={ # Nez Perce
 	}
 	graphics = decentralised_americas
 }
-siouan={
-	color= hsv{ 0.14 0.35 0.99 }
-	religion = animist
-	traits = { indigenous_american_heritage north_american_group }
-	male_common_first_names={
-		Hehaka
-		Inkpaduta
-		Istahba
-		Mahpiya
-		Monkaushka
-		Sinte
-		Tamaha
-		Thahca
-		Thasunke
-		Thathanka
-		Thaoyate_Duta
-		Wanbdisapa
-		Wanata
-	}
-	female_common_first_names = {
-		Pi_tamaka
-		Topahhdewin
-		Wakanmaniwin
-		Wakantakawin
-		Wakhan_Inazin_Win
-	}	
-	noble_last_names = {
-		Hakadah
-		Ohiya_S-a
-		Tamaha
-		Wakinyanduta
-		Wowinape
-	}
-	common_last_names={
-		Duta
-		Gleska
-		Huste
-		Iyotake
-		Kohkophapi
-		Kramarae
-		Luta
-		Pecan_Wakpa
-		Sapa
-		Thankja
-		Witko
-	}
-	ethnicities = {
-		1 = native_american
-	}
-	graphics = decentralised_americas
-}
+
 comanche={
 	color= hsv{ 0.08 0.5 0.37 }
 	religion = animist
@@ -14264,6 +14166,7 @@ comanche={
 	}
 	graphics = decentralised_americas
 }
+
 algonquian={
 	color= hsv{ 0.22 0.15 0.86 }
 	religion = animist
@@ -14303,6 +14206,7 @@ algonquian={
 	}
 	graphics = decentralised_americas
 }
+
 iroquoian={
 	color= rgb{ 233 116 10 }
 	religion = animist
@@ -14346,6 +14250,7 @@ iroquoian={
 	}
 	graphics = decentralised_americas
 }
+
 caddoan={ # Choctaw
 	color= hsv{ 0.16 0.65 0.85 }
 	religion = animist
@@ -14386,6 +14291,7 @@ caddoan={ # Choctaw
 	}
 	graphics = decentralised_americas
 }
+
 paiute={ # Ute and Shoshone
 	color= hsv{ 0.06 0.39 0.80 }
 	religion = animist
@@ -14444,6 +14350,7 @@ paiute={ # Ute and Shoshone
 	}
 	graphics = decentralised_americas
 }
+
 hokan={
 	color= hsv{ 0.94 0.27 0.87 }
 	religion = animist
@@ -14504,6 +14411,7 @@ hokan={
 	}
 	graphics = decentralised_americas
 }
+
 apache={
 	color= hsv{ 0.11 0.58 0.94 }
 	religion = animist
@@ -14542,6 +14450,7 @@ apache={
 	}
 	graphics = decentralised_americas
 }
+
 oodham={
 	color= hsv{ 0.94 0.63 0.58 }
 	religion = animist
@@ -14590,6 +14499,7 @@ oodham={
 	}
 	graphics = decentralised_americas
 }
+
 mixtec={
 	color={ 150 80 70 }
 	religion = animist
@@ -14685,6 +14595,7 @@ mixtec={
 	}
 	graphics = decentralised_americas
 }
+
 muisca={
 	color={ 125 12 52 }
 	religion = animist

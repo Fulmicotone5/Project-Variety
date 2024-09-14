@@ -3220,30 +3220,8 @@ SEQ = {
 
 	tier = principality
 	
-	cultures = { cherokee siouan }
+	cultures = { cherokee na_generic }
 	capital = STATE_OKLAHOMA
-}
-
-DKT = {
-	color = { 13 102 75 }
-
-	country_type = unrecognized
-
-	tier = kingdom
-	
-	cultures = { dakota }
-	capital = STATE_SOUTH_DAKOTA
-}
-
-LKT = {
-	color = { 198 114 168 }
-
-	country_type = decentralized
-
-	tier = principality
-	
-	cultures = { dakota }
-	capital = STATE_SOUTH_DAKOTA
 }
 
 NVJ = {
@@ -3264,7 +3242,7 @@ ARP = {
 
 	tier = principality
 	
-	cultures = { siouan }
+	cultures = { na_generic }
 	capital = STATE_COLORADO
 }
 
@@ -3286,7 +3264,7 @@ ABS = {
 
 	tier = principality
 	
-	cultures = { siouan }
+	cultures = { na_generic }
 	capital = STATE_MONTANA
 }
 
@@ -3297,7 +3275,7 @@ IRC = {
 
 	tier = principality
 	
-	cultures = { cree siouan }
+	cultures = { cree na_generic }
 	capital = STATE_SASKATCHEWAN
 }
 
@@ -3827,7 +3805,7 @@ APC = { # Apacheria
 BLF = { # Niitsitapi / Blackfoot Confederacy
 	color = hsv{ 0.63 0.68 0.60 }
 	
-	cultures = { siouan }
+	cultures = { na_generic }
 	
 	country_type = decentralized
 	
@@ -4079,7 +4057,7 @@ LOB = {
 
 	tier = city_state
 
-	cultures = { dakota }
+	cultures = { na_lakota }
 	capital = STATE_SOUTH_DAKOTA
 }
 
@@ -4189,7 +4167,7 @@ SIO = {
 
 	tier = principality
 
-	cultures = { siouan }
+	cultures = { na_generic }
 	capital = STATE_SASKATCHEWAN
 }
 
@@ -4994,7 +4972,7 @@ TIS = {
 
 	tier = empire
 	
-	cultures = { cherokee iroquoian siouan }
+	cultures = { cherokee iroquoian na_generic }
 	capital = STATE_OKLAHOMA
 }
 

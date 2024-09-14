@@ -1,0 +1,207 @@
+na_generic = {
+    color = hsv{ 0.5 0.5 0.5 }
+    religion = animist
+    traits = { indigenous_american_heritage north_american_group }
+    male_common_first_names = {
+        Hehaka
+        Inkpaduta
+        Istahba
+        Mahpiya
+        Monkaushka
+        Sinte
+        Tamaha
+        Thahca
+        Thasunke
+        Thathanka
+        Thaoyate_Duta
+        Wanbdisapa
+        Wanata
+    }
+    female_common_first_names = {
+        Azayamankawin
+        Topahhdewin
+        Wakanmaniwin
+        Wakantakawin
+        Wakhan_Inazin_Win
+    }
+    noble_last_names = {
+        Hakadah
+        Ohiya_S-a
+        Tamaha
+        Wakinyanduta
+        Wowinape
+    }
+    common_last_names = {
+        Duta
+        Gleska
+        Huste
+        Iyotake
+        Kohkophapi
+        Kramarae
+        Luta
+        Pecan_Wakpa
+        Sapa
+        Thankja
+        Witko
+    }
+    ethnicities = {
+        1 = native_american
+    }
+    graphics = decentralised_americas
+}
+
+na_santee_dakota = {
+    color = hsv{ 0.63 0.30 0.52 }
+    religion = na_wocekiye
+    traits = { north_american_group na_sioux_culture_group }
+    male_common_first_names = {
+        Hehaka
+        Inkpaduta
+        Istahba
+        Mahpiya
+        Monkaushka
+        Sinte
+        Tamaha
+        Thahca
+        Thasunke
+        Thathanka
+        Thaoyate_Duta
+        Wanbdisapa
+        Wanata
+    }
+    female_common_first_names = {
+        Azayamankawin
+        Topahhdewin
+        Wakanmaniwin
+        Wakantakawin
+        Wakhan_Inazin_Win
+    }
+    noble_last_names = {
+        Hakadah
+        Ohiya_S-a
+        Tamaha
+        Wakinyanduta
+        Wowinape
+    }
+    common_last_names = {
+        Duta
+        Gleska
+        Huste
+        Iyotake
+        Kohkophapi
+        Kramarae
+        Luta
+        Pecan_Wakpa
+        Sapa
+        Thankja
+        Witko
+    }
+    ethnicities = {
+        1 = na_sioux
+    }
+    graphics = decentralised_americas
+}
+
+na_yankton_yanktonai_dakota = {
+    color = hsv{ 0.60 0.35 0.52 }
+    religion = na_wocekiye
+    traits = { north_american_group na_sioux_culture_group }
+    male_common_first_names = {
+        Hehaka
+        Inkpaduta
+        Istahba
+        Mahpiya
+        Monkaushka
+        Sinte
+        Tamaha
+        Thahca
+        Thasunke
+        Thathanka
+        Thaoyate_Duta
+        Wanbdisapa
+        Wanata
+    }
+    female_common_first_names = {
+        Azayamankawin
+        Topahhdewin
+        Wakanmaniwin
+        Wakantakawin
+        Wakhan_Inazin_Win
+    }
+    noble_last_names = {
+        Hakadah
+        Ohiya_S-a
+        Tamaha
+        Wakinyanduta
+        Wowinape
+    }
+    common_last_names = {
+        Duta
+        Gleska
+        Huste
+        Iyotake
+        Kohkophapi
+        Kramarae
+        Luta
+        Pecan_Wakpa
+        Sapa
+        Thankja
+        Witko
+    }
+    ethnicities = {
+        1 = na_sioux
+    }
+    graphics = decentralised_americas
+}
+
+na_lakota = {
+    color = hsv{ 0.63 0.37 0.52 }
+    religion = na_lakota_spirituality
+    traits = { north_american_group na_sioux_culture_group }
+    male_common_first_names = {
+        Hehaka
+        Inkpaduta
+        Istahba
+        Mahpiya
+        Monkaushka
+        Sinte
+        Tamaha
+        Thahca
+        Thasunke
+        Thathanka
+        Thaoyate_Duta
+        Wanbdisapa
+        Wanata
+    }
+    female_common_first_names = {
+        Azayamankawin
+        Topahhdewin
+        Wakanmaniwin
+        Wakantakawin
+        Wakhan_Inazin_Win
+    }
+    noble_last_names = {
+        Hakadah
+        Ohiya_S-a
+        Tamaha
+        Wakinyanduta
+        Wowinape
+    }
+    common_last_names = {
+        Duta
+        Gleska
+        Huste
+        Iyotake
+        Kohkophapi
+        Kramarae
+        Luta
+        Pecan_Wakpa
+        Sapa
+        Thankja
+        Witko
+    }
+    ethnicities = {
+        1 = na_sioux
+    }
+    graphics = decentralised_americas
+}

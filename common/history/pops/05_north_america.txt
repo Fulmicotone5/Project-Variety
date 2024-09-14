@@ -146,7 +146,7 @@
 				size = 14560
 			}
 			create_pop = {
-				culture = dakota
+				culture = na_lakota
 				size = 15627
 			}
 		}
@@ -160,7 +160,7 @@
 				size = 14560
 			}
 			create_pop = {
-				culture = dakota
+				culture = na_lakota
 				size = 1627
 			}
 		}
@@ -180,7 +180,7 @@
 	s:STATE_WYOMING = {
 		region_state:LKT = {
 			create_pop = {
-				culture = dakota
+				culture = na_lakota
 				size = 682000
 			}
 		}
@@ -196,7 +196,7 @@
 				size = 182000
 			}
 			create_pop = {
-				culture = dakota
+				culture = na_lakota
 				size = 14000
 			}
 		}
@@ -204,7 +204,7 @@
 	s:STATE_MONTANA = {
 		region_state:LKT = {
 			create_pop = {
-				culture = dakota
+				culture = na_lakota
 				size = 636000
 			}
 		}
@@ -212,11 +212,11 @@
 	s:STATE_NORTH_DAKOTA = {
 		region_state:DKT = {
 			create_pop = {
-				culture = dakota
+				culture = na_yankton_yanktonai_dakota
 				size = 930000
 			}
 			create_pop = {
-				culture = siouan
+				culture = na_santee_dakota
 				size = 4000
 			}
 		}
@@ -224,15 +224,19 @@
 	s:STATE_SOUTH_DAKOTA = {
 		region_state:DKT = {
 			create_pop = {
-				culture = dakota
-				size = 934000
+				culture = na_yankton_yanktonai_dakota
+				size = 930000
+			}
+			create_pop = {
+				culture = na_santee_dakota
+				size = 4000
 			}
 		}
 	}
 	s:STATE_NEBRASKA = {
 		region_state:DKT = {
 			create_pop = {
-				culture = dakota
+				culture = na_lakota
 				size = 589000
 			}
 		}
@@ -248,7 +252,7 @@
 				size = 219000
 			}
 			create_pop = {
-				culture = dakota
+				culture = na_lakota
 				size = 15000
 			}
 		}
@@ -279,21 +283,12 @@
 			}
 			create_pop = {
 				culture = cherokee
-				size = 440136
+				size = 472771
 			}
 			create_pop = {
 				culture = cherokee
 				religion = catholic
-				size = 600
-			}
-			create_pop = {
-				culture = siouan
-				size = 32635
-			}
-			create_pop = {
-				culture = siouan
-				religion = catholic
-				size = 1635
+				size = 2235
 			}
 		}
 	}
@@ -340,7 +335,7 @@
 		}
 		region_state:DKT = {
 			create_pop = {
-				culture = dakota
+				culture = na_santee_dakota
 				size = 552000
 			}
 			create_pop = {
@@ -352,8 +347,12 @@
 	s:STATE_MINNESOTA = {
 		region_state:DKT = {
 			create_pop = {
-				culture = dakota
-				size = 922000
+				culture = na_santee_dakota
+				size = 820000
+			}
+			create_pop = {
+				culture = na_yankton_yanktonai_dakota
+				size = 102000
 			}
 		}
 	}
@@ -846,7 +845,7 @@
 	s:STATE_ALBERTA = {
 		region_state:SIO = {
 			create_pop = {
-				culture = siouan
+				culture = na_generic
 				size = 518200
 			}
 			create_pop = {
@@ -874,7 +873,7 @@
 	s:STATE_SASKATCHEWAN = {
 		region_state:SIO = {
 			create_pop = {
-				culture = siouan
+				culture = na_generic
 				size = 554648
 			}
 			create_pop = {

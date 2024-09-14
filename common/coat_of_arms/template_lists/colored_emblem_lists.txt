@@ -81,7 +81,7 @@ colored_emblem_texture_lists = {
 		}		
 		special_selection = {
 			trigger = { 
-				country_definition_has_culture = cu:siouan
+				country_definition_has_culture = cu:na_santee_dakota
 			}
 			30 = "ce_buffalo.dds"
 			30 = "ce_buffalo_02.dds"

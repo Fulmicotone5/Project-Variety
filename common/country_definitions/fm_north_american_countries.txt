@@ -1,0 +1,21 @@
+DKT = {
+    color = { 13 102 75 }
+
+    country_type = unrecognized
+
+    tier = kingdom
+
+    cultures = { na_santee_dakota na_yankton_yanktonai_dakota na_lakota }
+    capital = STATE_MINNESOTA
+}
+
+LKT = {
+    color = { 198 114 168 }
+
+    country_type = decentralized
+
+    tier = principality
+
+    cultures = { na_yankton_yanktonai_dakota na_lakota }
+    capital = STATE_SOUTH_DAKOTA
+}

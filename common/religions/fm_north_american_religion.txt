@@ -1,0 +1,15 @@
+na_wocekiye = {
+    texture = "gfx/interface/icons/religion_icons/animist.dds"
+    traits = {
+        animist
+    }
+    color = { 0.86 0.50 0.2 }
+}
+
+na_lakota_spirituality = {
+    texture = "gfx/interface/icons/religion_icons/animist.dds"
+    traits = {
+        animist
+    }
+    color = { 0.88 0.52 0.2 }
+}

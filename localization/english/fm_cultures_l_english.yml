@@ -19,3 +19,9 @@
  argentino:0 "Argentino"
  americano:0 "Americano"
  andalusian:0 "Andalusian"
+
+ na_generic:0 "Generic Unfinished Culture"
+ na_santee_dakota:0 "Santee"
+ na_yankton_yanktonai_dakota:0 "Yankton-Yanktonai"
+ na_lakota:0 "Lakota"
+ na_sioux_culture_group:0 "Sioux"
