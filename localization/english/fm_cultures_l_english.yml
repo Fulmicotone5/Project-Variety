@@ -1,21 +1,26 @@
 ﻿l_english:
 
+# Europe
  phoenician:1 "Phoenician"
  burgundian_culture_group:0 "Burgundian"
  burgundian:0 "Burgundian"
- burgundian_canadian:0 "Burgundian Canadian"
  north_roman:0 "Italian"
  south_roman:0 "Italo-Roman"
  greco_roman:0 "Greco-Roman"
  venetian:0 "Venetian"
- afro_caraibico:0 "Afro-Caraibico"
  moravian:0 "Moravian"
  danubian:0 "Danubian"
+ roman_culture:0 "Roman Culture"
+ andalusian:0 "Andalusian"
+
+# Middle East
+ marakh:0 "Marakh"
+
+# Americas
+ afro_caraibico:0 "Afro-Caraibico"
  swedish_colonial:0 "Amerikansk"
  dutch_colonial:0 "Amerikaans"
- marakh:0 "Marakh"
- roman_culture:0 "Roman Culture"
  american_settler:0 "American Settler"
  argentino:0 "Argentino"
  americano:0 "Americano"
- andalusian:0 "Andalusian"
+ african_slave:0 "African Slave"
