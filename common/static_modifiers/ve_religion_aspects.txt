@@ -19,7 +19,7 @@ catholic_aspect_2_mdf = {
 
 catholic_aspect_3_mdf = {
 	icon = gfx/interface/catholic.dds
-	country_loan_interest_rate_mult = -0.15
+	country_loan_interest_rate_mult = -0.1
 	state_capitalists_investment_pool_contribution_mult = 0.1
 }
 
@@ -331,7 +331,7 @@ zoro_aspect_2_mdf = {
 
 zoro_aspect_3_mdf = {
 	icon = gfx/interface/catholic.dds
-	country_loan_interest_rate_mult = -0.15
+	country_loan_interest_rate_mult = -0.1
 }
 
 zoro_aspect_4_mdf = {

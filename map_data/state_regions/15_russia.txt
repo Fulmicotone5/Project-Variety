@@ -113,7 +113,7 @@ STATE_KUOPIO = {
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     traits = { "state_trait_scandinavian_forests" }
     capped_resources = {
-        bg_logging = 62
+        bg_logging = 22
         bg_iron_mining = 11
     }
     naval_exit_id = 3000
@@ -359,7 +359,7 @@ STATE_ORYOL = {
     arable_land = 180
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_logging = 72
+        bg_logging = 32
         bg_coal_mining = 58
         bg_iron_mining = 16
     }

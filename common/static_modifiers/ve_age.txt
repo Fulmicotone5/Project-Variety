@@ -9,7 +9,7 @@ golden_age_mdf = {
 
 age_1_bonus_1 = {
 	icon = gfx/interface/icon_splendor_tiny.dds
-	country_authority_mult = 0.1
+	country_authority_mult = 0.2
 }
 
 age_1_bonus_2 = {

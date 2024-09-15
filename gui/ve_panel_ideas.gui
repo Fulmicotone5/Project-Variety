@@ -507,10 +507,6 @@ ve_gui_panel_types
 									autoresize = yes
 								}
 								widget = {	#Trad 1
-									margin = {
-										15
-										15
-									}
 									size = {
 										60
 										60
@@ -538,10 +534,6 @@ ve_gui_panel_types
 									}
 								}
 								widget = {	#Trad2
-									margin = {
-										15
-										15
-									}
 									size = {
 										60
 										60
@@ -590,10 +582,6 @@ ve_gui_panel_types
 									autoresize = yes
 								}
 								widget = {	#Bonus
-									margin = {
-										15
-										15
-									}
 									size = {
 										60
 										60
