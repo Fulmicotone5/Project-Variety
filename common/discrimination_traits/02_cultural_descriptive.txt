@@ -90,3 +90,6 @@ greek_culture = {
 
 swiss = {
 }
+
+african_slave = {
+}

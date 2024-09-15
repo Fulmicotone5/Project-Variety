@@ -48,6 +48,10 @@
 				religion = protestant
 				size = 1035
 			}
+			create_pop = {
+				culture = afro_amerikaans
+				size = 38264
+			}
 		}
 	}
 	s:STATE_VIRGINIA = {
@@ -72,6 +76,10 @@
 			create_pop = {
 				culture = swedish_colonial
 				size = 2867
+			}
+			create_pop = {
+				culture = afro_american
+				size = 16261
 			}
 		}
 		region_state:CHE = {
@@ -474,6 +482,10 @@
 				culture = british
 				size = 23786
 			}
+			create_pop = {
+				culture = afro_american
+				size = 180
+			}
 		}
 		region_state:CHE = {
 			create_pop = {
@@ -544,6 +556,10 @@
 				religion = protestant
 				size = 22489
 			}
+			create_pop = {
+				culture = afro_amerikaans
+				size = 3974
+			}
 		}
 	}
 	s:STATE_DELAWARE = {
@@ -559,6 +575,10 @@
 			create_pop = {
 				culture = swedish
 				size = 400
+			}
+			create_pop = {
+				culture = afro_amerikaans
+				size = 3888
 			}
 		}
 	}
@@ -586,6 +606,10 @@
 				religion = protestant
 				size = 14035
 			}
+			create_pop = {
+				culture = afro_amerikaans
+				size = 40573
+			}
 		}
 	}
 	s:STATE_NEW_JERSEY = {
@@ -601,6 +625,10 @@
 			create_pop = {
 				culture = swedish
 				size = 335
+			}
+			create_pop = {
+				culture = afro_amerikaans
+				size = 3915
 			}
 		}
 	}
@@ -642,6 +670,10 @@
 				culture = swedish
 				size = 43
 			}
+			create_pop = {
+				culture = afro_amerikaans
+				size = 3950
+			}
 		}
 	}
 	s:STATE_MASSACHUSETTS = {
@@ -657,6 +689,10 @@
 			create_pop = {
 				culture = swedish
 				size = 235
+			}
+			create_pop = {
+				culture = afro_amerikaans
+				size = 25037
 			}
 		}
 	}
@@ -674,6 +710,10 @@
 				culture = swedish
 				size = 200
 			}
+			create_pop = {
+				culture = afro_amerikaans
+				size = 3974
+			}
 		}
 	}
 	s:STATE_VERMONT = {
@@ -685,6 +725,10 @@
 			create_pop = {
 				culture = swedish_colonial
 				size = 145544
+			}
+			create_pop = {
+				culture = afro_amerikaans
+				size = 1027
 			}
 		}
 	}
@@ -701,6 +745,10 @@
 			create_pop = {
 				culture = swedish
 				size = 435
+			}
+			create_pop = {
+				culture = afro_amerikaans
+				size = 2974
 			}
 		}
 	}
@@ -719,6 +767,10 @@
 				culture = cherokee
 				religion = animist
 				size = 99500
+			}
+			create_pop = {
+				culture = afro_american
+				size = 28025
 			}
 		}
 	}
@@ -755,6 +807,10 @@
 			create_pop = {
 				culture = british
 				size = 93836
+			}
+			create_pop = {
+				culture = afro_american
+				size = 19367
 			}
 		}
 	}

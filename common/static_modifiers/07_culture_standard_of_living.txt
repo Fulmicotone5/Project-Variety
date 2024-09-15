@@ -2152,6 +2152,16 @@ afro_antillean_standard_of_living_modifier_negative = {
 	state_afro_antillean_standard_of_living_add = 1
 }
 
+afro_amerikaans_standard_of_living_modifier_positive = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	state_afro_amerikaans_standard_of_living_add = 1
+}
+
+afro_amerikaans_standard_of_living_modifier_negative = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	state_afro_amerikaans_standard_of_living_add = 1
+}
+
 akan_standard_of_living_modifier_positive = {
 	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
 	state_akan_standard_of_living_add = 1

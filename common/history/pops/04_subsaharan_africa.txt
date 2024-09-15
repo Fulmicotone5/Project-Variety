@@ -315,10 +315,6 @@
 				size = 170000
 			}
 			create_pop = {
-				culture = afro_american
-				size = 58996
-			}
-			create_pop = {
 				culture = kru
 				religion = protestant
 				size = 16400
