@@ -30,20 +30,9 @@ COUNTRIES = {
 		ig:ig_landowners = { # Mehmed Emin Rauf Pasha was Grand Vizier in 1836
 			add_ruling_interest_group = yes
 		}
-		trigger_event = {
-			id = sick_man.1
-		}
 		add_modifier = {
-			name = sick_man_of_europe
-			months = -1
-		}		
-		add_modifier = {
-			name = outmoded_bureaucracy
-			months = -1
-		}
-		add_modifier = {
-			name = cizye_tax
-			months = -1
+			name = sunni_aspect_8_mdf
+			months = 60
 		}
 	}
 }

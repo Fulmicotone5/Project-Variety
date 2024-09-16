@@ -37,15 +37,6 @@ ai_strategy_default = {
 	revolution_aversion = {
 		value = 5 
 		
-		# Ottomans should avoid getting into revolutions before they deal with Egypt
-		if = {
-			limit = { 
-				has_journal_entry = je_sick_man_syria 
-				game_date < 1845.1.1
-			}
-			add = 100
-		}	
-		
 		# Revolution aversion for July Monarchy
 		if = {
 			limit = { has_journal_entry = je_divided_monarchists }
@@ -82,70 +73,6 @@ ai_strategy_default = {
 	diplomatic_play_support = {
 		value = 0
 		
-		
-		### Ottomans vs Egypt - Great Powers pick sides
-		if = {
-			limit = {
-				OR = {
-					AND = {
-						scope:country = { c:TOR ?= this }
-						scope:enemy_country = { c:EGE ?= this }
-					}
-					AND = {
-						scope:country = { c:EGE ?= this }
-						scope:enemy_country = { c:TOR ?= this }
-					}				
-				}
-				c:TOR ?= {
-					OR = {
-						has_journal_entry = je_sick_man_syria
-						has_journal_entry = je_sick_man_egypt
-						has_journal_entry = je_veiled_protectorate
-					}
-				}
-			}
-
-			if = {
-				limit = {
-					has_variable = veiled_protectorate_support_ottomans
-					OR = {
-						AND = {
-							NOT = { exists = scope:is_initiator }
-							scope:enemy_country = { c:TOR ?= this }
-						}
-						AND = {
-							exists = scope:is_initiator
-							scope:country = { c:TOR ?= this }
-						}
-					}
-				}
-				
-				add = {
-					value = 100
-					desc = "veiled_protectorate_ottomans_support"
-				}
-			}
-			else_if = {
-				limit = {
-					has_variable = veiled_protectorate_support_egypt
-					OR = {
-						AND = {
-							NOT = { exists = scope:is_initiator }
-							scope:enemy_country = { c:EGE ?= this }
-						}
-						AND = {
-							exists = scope:is_initiator
-							scope:country = { c:EGE ?= this }
-						}
-					}
-				}
-				
-				add = {
-					value = 100
-					desc = "veiled_protectorate_egypt_support"
-				}
-			}							
-		}	
 		if = { # Donghak Rebellion - Japanese Behaviours - Pro-Government
 			limit = {
 				c:JAP ?= this
@@ -234,46 +161,10 @@ ai_strategy_default = {
 		}
 	}	
 	
-	# Added to base neutrality in diplomatic plays	
-	# Using this value in other strategies will function additively
-	diplomatic_play_neutrality = {
-		value = 50 
-		
-		# Ottomans should avoid unnecessary entanglements while trying to pursue the Tanzimat reforms
-		if = {
-			limit = {
-				has_journal_entry = je_sick_man_main
-			}
-			
-			add = 50
-		}
-	}
-	
 	# Added to base boldness in diplomatic plays	
 	# Using this value in other strategies will function additively
 	diplomatic_play_boldness = {
 		value = 50
-		
-		# Great Powers with the appropriate flags should get involved in Egypt vs Ottomans
-		if = {
-			limit = {
-				OR = {
-					has_variable = veiled_protectorate_support_ottomans
-					has_variable = veiled_protectorate_support_egypt
-				}	
-					
-				OR = {
-					scope:diplomatic_play.initiator = { c:TOR ?= this }
-					scope:diplomatic_play.target = { c:TOR ?= this }
-				}
-				OR = {
-					scope:diplomatic_play.initiator = { c:EGE ?= this }
-					scope:diplomatic_play.target = { c:EGE ?= this }
-				}
-			}
-			
-			add = 100
-		}		
 		
 		if = { # Isolationist Japan should tend to back down against market opening plays
 			limit = {
@@ -347,24 +238,6 @@ ai_strategy_default = {
 			}
 			
 			add = -0.1
-		}
-
-		# Ottomans should want Syria back
-		if = {
-			limit = {
-				has_journal_entry = je_sick_man_syria
-				scope:enemy_country = {
-					OR = {
-						owns_entire_state_region = STATE_ALEPPO
-						owns_entire_state_region = STATE_SYRIA
-						owns_entire_state_region = STATE_LEBANON
-						owns_entire_state_region = STATE_PALESTINE
-						owns_entire_state_region = STATE_TRANSJORDAN
-						owns_entire_state_region = STATE_ADANA
-					}
-				}
-			}
-			add = 0.25
 		}
 
 		# USA should Manifest a lot of Destiny
@@ -2201,19 +2074,7 @@ ai_strategy_default = {
 					}
 				}
 				add = 50
-			}
-			
-			if = {
-				limit = {
-					OR = {
-						has_journal_entry = je_sick_man_egypt
-						has_journal_entry = je_veiled_protectorate
-					}
-					exists = c:EGE
-					scope:target_country = c:EGE
-				}
-				add = 100
-			}			
+			}		
 
 			# Russian expansion into Central Asia
 			if = {
@@ -2619,39 +2480,6 @@ ai_strategy_default = {
 			}
 			add = 0.6
 		}		
-	
-		# Ottomans should be extremely confident against owners of Syria and Egypt when they have the relevant JE's
-		if = {
-			limit = {
-				OR = {
-					AND = {
-						has_journal_entry = je_sick_man_syria
-						scope:target_country = {
-							OR = {
-								owns_entire_state_region = STATE_ALEPPO
-								owns_entire_state_region = STATE_SYRIA
-								owns_entire_state_region = STATE_LEBANON
-								owns_entire_state_region = STATE_PALESTINE
-								owns_entire_state_region = STATE_TRANSJORDAN
-								owns_entire_state_region = STATE_ADANA
-							}
-						}
-					}
-					AND = {
-						has_journal_entry = je_sick_man_egypt
-						scope:target_country = {
-							OR = {
-								owns_entire_state_region = STATE_SINAI
-								owns_entire_state_region = STATE_UPPER_EGEPT
-								owns_entire_state_region = STATE_MIDDLE_EGEPT
-								owns_entire_state_region = STATE_LOWER_EGEPT
-							}
-						}
-					}
-				}
-			}
-			add = 10
-		}
 
 		# USA should be confident against owners of their Manifest Destiny states
 		if = {
@@ -2956,22 +2784,6 @@ ai_strategy_default = {
 				}
 			}
 			add = 5
-		}
-
-		# Ottomans should be very aggressive against owners of Syria and Egypt when they have the relevant JE's
-		if = {
-			limit = {
-				OR = {
-					has_journal_entry = je_sick_man_syria
-					has_journal_entry = je_sick_man_egypt
-					has_journal_entry = je_veiled_protectorate
-				}
-				exists = c:EGE
-				scope:target_country = {
-					THIS = c:EGE
-				}
-			}
-			add = 100
 		}
 
 		# USA should be extremely aggressive against owners of their Manifest Destiny states
@@ -3593,13 +3405,6 @@ ai_strategy_default = {
 			multiply = 0.33
 		}			
 
-		if = {
-			limit = { 
-				has_journal_entry = je_sick_man_army
-			}
-			min = 110
-		}		
-
 		max = 1000
 		min = 1
 	}
@@ -4017,22 +3822,6 @@ ai_strategy_default = {
 	# How important is it that the AI maintains an interest in a specific strategic region (added on top of region value calculations set in defines)
 	# Using this value in other strategies will function additively
 	strategic_region_scores = {
-		region_anatolia = {
-			if = {
-				limit = { # Certain Great Powers care about Egyptian-Ottoman conflict in the early game
-					OR = {
-						has_variable = veiled_protectorate_support_ottomans
-						has_variable = veiled_protectorate_support_egypt
-					}
-					OR = {
-						navy_size >= 25
-						is_adjacent_to_country = c:TOR
-						is_adjacent_to_country = c:EGE
-					}					
-				}
-				add = 1000
-			}
-		}	
 		region_caucasus = {
 			if = {
 				limit = {
@@ -4040,22 +3829,6 @@ ai_strategy_default = {
 					country_rank >= rank_value:major_power
 				}
 				add = 50
-			}
-		}
-		region_arabic = {
-			if = {
-				limit = { # Certain Great Powers care about Egyptian-Ottoman conflict in the early game
-					OR = {
-						has_variable = veiled_protectorate_support_ottomans
-						has_variable = veiled_protectorate_support_egypt
-					}
-					OR = {
-						navy_size >= 25
-						is_adjacent_to_country = c:TOR
-						is_adjacent_to_country = c:EGE
-					}					
-				}
-				add = 1000
 			}
 		}
 		region_oceania = {	
@@ -4090,21 +3863,7 @@ ai_strategy_default = {
 				add = -50
 			}				
 		}				
-		region_nile_basin = {
-			if = {
-				limit = { # Certain Great Powers care about Egyptian-Ottoman conflict in the early game
-					OR = {
-						has_variable = veiled_protectorate_support_ottomans
-						has_variable = veiled_protectorate_support_egypt
-					}
-					OR = {
-						navy_size >= 25
-						is_adjacent_to_country = c:TOR
-						is_adjacent_to_country = c:EGE
-					}					
-				}
-				add = 1000
-			}		
+		region_nile_basin = {	
 			if = {
 				limit = {
 					OR = {
@@ -4250,20 +4009,6 @@ ai_strategy_default = {
 			}
 		}
 		region_balkans = {
-			if = {
-				limit = { # Certain Great Powers care about Egyptian-Ottoman conflict in the early game
-					OR = {
-						has_variable = veiled_protectorate_support_ottomans
-						has_variable = veiled_protectorate_support_egypt
-					}
-					OR = {
-						navy_size >= 25
-						is_adjacent_to_country = c:TOR
-						is_adjacent_to_country = c:EGE
-					}					
-				}
-				add = 1000
-			}		
 			if = {
 				limit = {
 					country_is_in_europe = yes
