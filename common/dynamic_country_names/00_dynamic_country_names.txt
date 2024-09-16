@@ -2270,8 +2270,8 @@ GPO = {
 TOR = {
 	# Turkey
 	dynamic_country_name = {
-		name = dyn_c_ottoman_empire
-		adjective = dyn_c_ottoman_ca_adj
+		name = dyn_c_rum_empire
+		adjective = dyn_c_rum_ca_adj
 		is_main_tag_only = yes
 		priority = 0
 		trigger = {
@@ -2279,8 +2279,8 @@ TOR = {
 		}
 	}
 	dynamic_country_name = {
-		name = dyn_c_ottoman_ca
-		adjective = dyn_c_ottoman_ca_adj
+		name = dyn_c_rum_ca
+		adjective = dyn_c_rum_ca_adj
 		is_main_tag_only = yes
 		priority = 0
 		trigger = {
