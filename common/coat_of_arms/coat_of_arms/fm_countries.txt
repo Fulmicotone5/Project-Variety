@@ -7398,28 +7398,15 @@ CSA_subject_MAX = {
 }
 
 CRE = { # Crete
-	# 1898 Ottoman star in canton
 	
 	pattern = "pattern_solid.tga"
 	color1 = "blue"
 
 	colored_emblem = {
-		texture = "ce_solid.dds"
-		color1 = "red"
-		color2 = "red"
-		instance = { scale = { 0.5 0.5 } position = { 0.25 0.25 } }		
-	}
-	colored_emblem = {
 		texture = "ce_cross_england.dds"
 		color1 = "white"
 		color2 = "white"
 	}
-	colored_emblem = {
-		texture = "ce_star_05.dds"
-		color1 = "white"
-		color2 = "white"
-		instance = { position = { 0.21 0.21 } scale = { 0.4 0.4 } }
-	}	
 }
 
 CRE_variant = {
@@ -24356,43 +24343,16 @@ SNM_subject = {
 
 TOR = {
 	pattern = "pattern_solid.tga"
-	color1 = "red"
-	
-	colored_emblem = {
-		texture = "ce_crescent.dds"
-		color1 = "white"
-		color2 = "white"
-		instance = { scale = { 0.66 0.66 } position = { 0.32 0.5 } }	
+	color1 = {20 75 110}
+	textured_emblem={
+		texture="te_coa_eagle_rum.dds"
+		instance={
+			scale={ 1.0 1.0 }
+			position={ 0.5 0.5 }
+		}
 	}
-	
-	colored_emblem = {
-		texture = "ce_star_08.dds"
-		instance = { scale = { 0.36 0.36 } position = { 0.58 0.50 } }		
-		color1 = "white"
-		color2 = "white"		
-	}	
 }
-TOR_monarchy = {
-	# early 19th c. design without star
-	
-	pattern = "pattern_solid.tga"
-	color1 = "red"
-	
-	colored_emblem = {
-		texture = "ce_crescent.dds"
-		color1 = "white"
-		color2 = "white"
-		instance = { scale = { 0.66 0.66 } position = { 0.32 0.5 } }	
-	}
-	
-	colored_emblem = {
-		texture = "ce_star_08.dds"
-		instance = { scale = { 0.36 0.36 } position = { 0.58 0.50 } }		
-		color1 = "white"
-		color2 = "white"		
-	}	
-}
-TOR_republic = {
+TOR_republic = {	
 	# 1867 flag
 	
 	pattern = "pattern_solid.tga"
@@ -24429,75 +24389,17 @@ TOR_dictatorship = {
 		instance = { scale = { 0.3 0.3 } position = { 0.5 0.5 } }	
 	}		
 }
-TOR_theocracy = {	
+TOR_theocracy = {
 	pattern = "pattern_border_double.dds"
-	color1 = "red"
+	color1 = {20 75 110}
 	color2 = "white"
-	color3 = "red"
+	color3 = {20 75 110}
 	
 	colored_emblem = {
 		texture = "ce_shahada.dds"
 		color1 = "white"
 		color2 = "white"		
 		instance = { scale = { 0.9 1.1 } position = { 0.5 0.5 } }		
-	}	
-}
-TOR_subject = {
-	pattern = "pattern_solid.tga"
-	color1 = "red"
-	
-	colored_emblem = {
-		texture = "ce_crescent.dds"
-		color1 = "white"
-		color2 = "white"
-		instance = { scale = { 0.5 0.5 } position = { 0.70 0.5 } }	
-	}
-	colored_emblem = {
-		texture = "ce_star_08.dds"
-		instance = { scale = { 0.25 0.25 } position = { 0.87 0.50 } }		
-		color1 = "white"
-		color2 = "white"
-	}	
-	colored_emblem = {		
-		texture = "ce_solid.dds"
-		color1 = "white"
-		color2 = "white"
-        instance = { position = { 0.25 0.25 } scale = { 0.5 0.5 } }				
-	}		
-}
-TOR_republic_subject = {
-	
-	pattern = "pattern_solid.tga"
-	color1 = "red"
-	
-	colored_emblem = {
-		texture = "ce_crescent_star_turkey.dds"
-		color1 = "white"
-		color2 = "white"
-		instance = { scale = { 0.5 0.5 } position = { 0.75 0.5 } }	
-	}	
-}
-TOR_subject_GBR = {
-	pattern = "pattern_solid.tga"
-	color1 = "blue"
-	
-	colored_emblem = {
-		texture = "ce_frame_circle.dds"
-		color1 = "red"
-		color2 = "red"
-		instance = { scale = { 0.5 0.5 } position = { 0.75 0.5 } }		
-	}	
-	colored_emblem = {
-		texture = "ce_crescent.dds"
-		color1 = "white"
-		color2 = "white"
-		instance = { scale = { 0.45 0.45 } position = { 0.72 0.5 } }	
-	}
-	colored_emblem = {
-		texture = "ce_star_08.dds"	
-		color1 = "white"
-		color2 = "white"
-		instance = { scale = { 0.20 0.20 } position = { 0.83 0.50 } }			
 	}	
 }
 
@@ -25136,12 +25038,6 @@ SCR = {
 		color2 = "white"
 		instance = { scale = { 0.3 0.3 } position = { 0.15 0.20 } rotation = 180 }	
 	}
-
-	colored_emblem = {
-		texture = "ce_palm_tree.dds"
-		color1 = "white"
-		color2 = "white"
-		instance = { scale = { 0.7 0.6 } position = { 0.5 0.5 } }		
 	}
 }
 
