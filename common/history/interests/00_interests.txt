@@ -18,11 +18,9 @@
 		add_declared_interest = region_south_germany	
 	}		
 	c:TOR ?= {	
-		add_declared_interest = region_dnieper
 		add_declared_interest = region_nile_basin
-		add_declared_interest = region_persia
-		add_declared_interest = region_italy
 		add_declared_interest = region_arabic
+		add_declared_interest = region_balkans
 	}
 	c:IRE ?= {	
 		add_declared_interest = region_england

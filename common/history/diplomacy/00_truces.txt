@@ -9,6 +9,15 @@ DIPLOMACY = {
 }
 
 DIPLOMACY = {
+	c:SIU= {
+		create_bidirectional_truce = {
+			country = c:TOR
+			months = 10
+		}
+	}	
+}
+
+DIPLOMACY = {
 	c:FRU= {
 		create_unidirectional_truce = {
 			country = c:DKT
