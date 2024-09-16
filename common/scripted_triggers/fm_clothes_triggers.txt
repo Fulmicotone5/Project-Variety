@@ -461,7 +461,7 @@ arabic_military_fez_pop_trigger = {
 				}
 			}
 			AND = {
-				# Albanian characters serving either the Ottomans or Egyptians should wear that country's clothing.
+				# Albanian characters serving either the Rum or Egyptians should wear that country's clothing.
 				culture = cu:albanian
 				OR = {
 					home_country = {
@@ -496,7 +496,7 @@ arabic_clothes_trigger = {
 			}
 			culture = cu:circassian
 			AND = {
-				# Albanian characters serving either the Ottomans or Egyptians should wear that country's clothing.
+				# Albanian characters serving either the Rum or Egyptians should wear that country's clothing.
 				culture = cu:albanian
 				exists = home_country
 				OR = {
@@ -554,7 +554,7 @@ european_clothes_trigger = {
 				}
 				NOT = {
 					AND = {
-						# Albanian characters serving either the Ottomans or Egyptians should wear that country's clothing.
+						# Albanian characters serving either the Rum or Egyptians should wear that country's clothing.
 						culture = cu:albanian
 						exists = home_country
 						OR = {

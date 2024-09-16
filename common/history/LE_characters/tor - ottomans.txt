@@ -1,4 +1,4 @@
-﻿# NOTE: "Pasha" is a title, not a name. However, due to some Ottoman Turkish names lacking a last name, it is used in place of one
+﻿# NOTE: "Pasha" is a title, not a name. However, due to some Rum Turkish names lacking a last name, it is used in place of one
 
 CHARACTERS = {
 	c:TOR ?= {
@@ -12,7 +12,7 @@ CHARACTERS = {
 
 
 		create_character = {
-			# Mehmed Emin Rauf Pasha, Grand Vizier of the Ottoman Empire 1833-1839, 1842-1846, and in 1852
+			# Mehmed Emin Rauf Pasha, Grand Vizier of the Empire of Rum 1833-1839, 1842-1846, and in 1852
 			first_name = "Mehmet_Emin_Rauf"
 			last_name = "Pasha"
 			historical = yes
@@ -88,7 +88,7 @@ CHARACTERS = {
 		#}
 
 		create_character = {
-			# Mekkizade Mustafa Asim Efendi, Sheikh-ul-Islam of the Ottoman Empire from 1818-1819, 1823-1825, 1833-1846
+			# Mekkizade Mustafa Asim Efendi, Sheikh-ul-Islam of the Empire of Rum from 1818-1819, 1823-1825, 1833-1846
 			first_name = "Mustafa_Asim"
 			last_name = "Mekkizade"
 			historical = yes
