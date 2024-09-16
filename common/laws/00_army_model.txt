@@ -168,7 +168,6 @@ law_professional_army = {
 		
 		if = {
 			limit = { 
-				has_journal_entry = je_sick_man_army
 				has_law = law_type:law_peasant_levies
 			}
 			add = 1000
@@ -332,7 +331,6 @@ law_mass_conscription = {
 		
 		if = {
 			limit = { 
-				has_journal_entry = je_sick_man_army
 				has_law = law_type:law_peasant_levies
 			}
 			add = 1000

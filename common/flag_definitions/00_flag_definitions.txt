@@ -5639,7 +5639,7 @@ MOL = { # Moldavia
 		priority = 1
 	}
 	flag_definition = {
-		# Corner cantons with stars when ruled by the Ottoman Empire
+		# Corner cantons with stars when ruled by the Empire of Rum
 		coa = MOL_subject_TOR
 		subject_canton = MOL
 		priority = 2
@@ -8460,38 +8460,16 @@ TUG = { # Touggourt
 	}
 }
 
-TOR = { # Turkey
+TOR = { # Rum
 	flag_definition = {
 		coa = TOR
 		subject_canton = TOR
 		allow_overlord_canton = yes		
-		coa_with_overlord_canton = TOR_subject			
 		priority = 1
 	}	
 	flag_definition = {
-		coa = TOR_monarchy
-		subject_canton = TOR_monarchy
-		allow_overlord_canton = yes		
-		coa_with_overlord_canton = TOR_subject			
-		priority = 5
-		trigger = { 
-			coa_def_monarchy_flag_trigger = yes
-		}
-	}	
-	flag_definition = {
-		coa = TOR	
-		subject_canton = TOR
-		allow_overlord_canton = yes		
-		coa_with_overlord_canton = TOR_subject			
-		priority = 20
-		trigger = { 
-			coa_def_absolute_monarchy_flag_trigger = yes
-		}
-	}
-	flag_definition = {
 		coa = TOR_republic
 		allow_overlord_canton = yes		
-		coa_with_overlord_canton = TOR_republic_subject			
 		priority = 10
 		trigger = { 
 			coa_def_republic_flag_trigger = yes
@@ -8501,7 +8479,6 @@ TOR = { # Turkey
 		coa = TOR_dictatorship
 		subject_canton = TOR_dictatorship
 		allow_overlord_canton = yes		
-		coa_with_overlord_canton = TOR_republic_subject			
 		priority = 20
 		trigger = {
 			coa_def_dictatorship_flag_trigger = yes
@@ -8513,33 +8490,6 @@ TOR = { # Turkey
 		priority = 20
 		trigger = { 
 			coa_def_theocracy_flag_trigger = yes
-		}
-	}	
-	flag_definition = {
-		coa = TOR_subject_GBR
-		allow_overlord_canton = yes		
-		priority = 50
-		trigger = { 
-			coa_def_british_ensign_trigger = yes
-		}
-	}	
-	flag_definition = {
-		coa = TOR_subject	
-		allow_overlord_canton = yes	
-		overlord_canton_offset = { 0.01 0.015 }
-		overlord_canton_scale = { 0.48 0.47 }			
-		priority = 50
-		trigger = { 
-			coa_def_french_ensign_trigger = yes
-		}
-	}	
-	flag_definition = {
-		coa = TOR_subject_GBR
-		subject_canton = TOR
-		allow_overlord_canton = yes			
-		priority = 50
-		trigger = { 
-			coa_def_spanish_ensign_trigger = yes
 		}
 	}	
 }	
@@ -8902,7 +8852,7 @@ WAL = { # Wallachia
 		priority = 1
 	}
 	flag_definition = {
-		# Canton with stars when ruled by the Ottoman Empire
+		# Canton with stars when ruled by the Empire of Rum
 		coa = WAL_subject
 		subject_canton = WAL
 		priority = 2

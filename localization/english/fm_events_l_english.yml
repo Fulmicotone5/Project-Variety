@@ -568,7 +568,7 @@ fm_east_rome.4.f:0 "This morning every city of the empire, except for the capita
 fm_east_rome.4.a:0 "Long Live the Republic of Greece!"
 fm_east_rome.5.t:0 "The Reconquest of Anatolia"
 fm_east_rome.5.d:0 "We have finally claimed back our former lands in Anatolia"
-fm_east_rome.5.f:0 "We have conquered back those lands, but unfortunately centuries of ottoman occupation have deeply changed the demography of this region.\nThere are many ways to bring back christianity in this region, but many of them are morally questionable."
+fm_east_rome.5.f:0 "We have conquered back those lands, but unfortunately centuries of Rûmi occupation have deeply changed the demography of this region.\nThere are many ways to bring back christianity in this region, but many of them are morally questionable."
 fm_east_rome.5.a:0 "Choices are to be made"
 
 fm_england.1.t:0 "A Backward Country"
@@ -940,7 +940,7 @@ fm_fru_oc.1.b:0 "We do not have the time or the resources to fight to keep those
 
 fm_sae.1.t:0 "The Next Step"
 fm_sae.1.d:0 "The Parliament has reunited today to discuss the foreign policy the Empire will adopt for the time being"
-fm_sae.1.f:0 "Since the Ottoman Empire has greatly weakened, many politicians suggest to take advantage of that and expand our territories to the west.\nPoliticians such as [SCOPE.sCharacter('intelligentsia_leader').GetFullName] have greatly criticized this policy, since it would antagonize many Great Powers that have an interest in that region, and they suggest to alternatively focus on the east to try to reunite all [GetReligion('zoroastrian').GetName] people under our flag."
+fm_sae.1.f:0 "Since the Empire of Rûm has greatly weakened, many politicians suggest to take advantage of that and expand our territories to the west.\nPoliticians such as [SCOPE.sCharacter('intelligentsia_leader').GetFullName] have greatly criticized this policy, since it would antagonize many Great Powers that have an interest in that region, and they suggest to alternatively focus on the east to try to reunite all [GetReligion('zoroastrian').GetName] people under our flag."
 fm_sae.1.a:0 "If we do not take this chance, we might not get another one"
 fm_sae.1.b:0 "Our Country shall become the defender of the [GetReligion('zoroastrian').GetName] Faith!"
 
