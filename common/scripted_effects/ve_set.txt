@@ -550,6 +550,7 @@ set_national_idea = {
 				this = c:SAE
 				this = c:JAP
 				this = c:SAE
+				this = c:YUA
 			}
 		}
 		set_variable = generic_idea_country
@@ -910,6 +911,28 @@ national_idea_traditions = {
 			}
 			add_modifier = {
 				name = usa_idea_tradition_2
+				months = -1
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			exists = c:YUA
+			this = c:YUA
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_modifier = yua_idea_tradition_1
+					has_modifier = yua_idea_tradition_2
+				}
+			}
+			add_modifier = {
+				name = yua_idea_tradition_1
+				months = -1
+			}
+			add_modifier = {
+				name = yua_idea_tradition_2
 				months = -1
 			}
 		}

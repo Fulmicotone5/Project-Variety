@@ -53,6 +53,12 @@
 		}
 		american_ideas = yes
 	}
+	else_if = {
+		limit = {
+			has_variable = idea_yua
+		}
+		yuanpei_ideas = yes
+	}
 	else = {
 		generic_ideas = yes
 	}
@@ -112,6 +118,12 @@ cancel_national_idea_mdf = {
 			has_variable = idea_amc
 		}
 		cancel_american_ideas = yes
+	}
+	else_if = {
+		limit = {
+			has_variable = idea_yua
+		}
+		yuanpei_ideas = no
 	}
 	else = {
 		cancel_generic_ideas = yes

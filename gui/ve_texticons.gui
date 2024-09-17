@@ -3042,6 +3042,157 @@ texticon = {
   }
 }
 
+
+#Yuanpei's Haven
+texticon = {
+  icon = YUA_idea_icon_1_trad
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_national_ideas/engineering_university.dds"
+
+    fontsize = 50
+  }
+}
+texticon = {
+  icon = YUA_idea_icon_2_trad
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_national_ideas/bureaucracy.dds"
+
+    fontsize = 50
+  }
+}
+texticon = {
+  icon = YUA_idea_icon_bonus
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_national_ideas/bureaucracy_shortage.dds"
+
+    fontsize = 50
+  }
+}
+texticon = {
+  icon = YUA_idea_icon_bonus_black
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_national_ideas/bureaucracy_shortage_black.dds"
+    fontsize = 50
+  }
+}
+texticon = {
+  icon = YUA_idea_icon_1
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_national_ideas/local_institution_spread.dds"
+
+    fontsize = 50
+  }
+}
+texticon = {
+  icon = YUA_idea_icon_1_black
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_national_ideas/local_institution_spread_black.dds"
+    fontsize = 50
+  }
+}
+texticon = {
+  icon = YUA_idea_icon_2
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_national_ideas/technology_cost.dds"
+    fontsize = 50
+  }
+}
+texticon = {
+  icon = YUA_idea_icon_2_black
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_national_ideas/technology_cost_black.dds"
+    fontsize = 50
+  }
+}
+texticon = {
+  icon = YUA_idea_icon_3
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_national_ideas/privilege_gold_mint.dds"
+    fontsize = 50
+  }
+}
+texticon = {
+  icon = YUA_idea_icon_3_black
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_national_ideas/privilege_gold_mint.dds"
+    fontsize = 50
+  }
+}
+texticon = {
+  icon = YUA_idea_icon_4
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_national_ideas/capitalists_15.dds"
+    fontsize = 50
+  }
+}
+texticon = {
+  icon = YUA_idea_icon_4_black
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_national_ideas/capitalists_15_black.dds"
+    fontsize = 50
+  }
+}
+texticon = {
+  icon = YUA_idea_icon_5
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_national_ideas/local_production_efficiency.dds"
+    fontsize = 50
+  }
+}
+texticon = {
+  icon = YUA_idea_icon_5_black
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_national_ideas/local_production_efficiency_black.dds"
+    fontsize = 50
+  }
+}
+texticon = {
+  icon = YUA_idea_icon_6
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_national_ideas/railways.dds"
+    fontsize = 65
+  }
+}
+texticon = {
+  icon = YUA_idea_icon_6_black
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_national_ideas/railways_black.dds"
+    fontsize = 65
+  }
+}
+texticon = {
+  icon = YUA_idea_icon_7
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_national_ideas/urbanization.dds"
+    fontsize = 50
+  }
+}
+texticon = {
+  icon = YUA_idea_icon_7_black
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_national_ideas/urbanization_black.dds"
+    fontsize = 50
+  }
+}
+
 #RELIGON
 texticon = {
   icon = catholic_aspect_9

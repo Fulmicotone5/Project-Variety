@@ -81,10 +81,10 @@ ve_national_idea_1 = {
 		}
 		else_if = {
 			limit = {
-				has_variable = idea_amc
+				has_variable = idea_yua
 			}
 			add_modifier = {
-				name = usa_idea_1
+				name = yua_idea_1
 				months = -1
 			}
 		}
@@ -187,6 +187,15 @@ ve_national_idea_2 = {
 				months = -1
 			}
 		}
+		else_if = {
+			limit = {
+				has_variable = idea_yua
+			}
+			add_modifier = {
+				name = yua_idea_2
+				months = -1
+			}
+		}
 		else = {
 			add_modifier = {
 				name = generic_idea_2
@@ -283,6 +292,15 @@ ve_national_idea_3 = {
 			}
 			add_modifier = {
 				name = usa_idea_3
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_yua
+			}
+			add_modifier = {
+				name = yua_idea_3
 				months = -1
 			}
 		}
@@ -385,6 +403,15 @@ ve_national_idea_4 = {
 				months = -1
 			}
 		}
+		else_if = {
+			limit = {
+				has_variable = idea_yua
+			}
+			add_modifier = {
+				name = yua_idea_4
+				months = -1
+			}
+		}
 		else = {
 			add_modifier = {
 				name = generic_idea_4
@@ -481,6 +508,15 @@ ve_national_idea_5 = {
 			}
 			add_modifier = {
 				name = usa_idea_5
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_yua
+			}
+			add_modifier = {
+				name = yua_idea_5
 				months = -1
 			}
 		}
@@ -583,6 +619,15 @@ ve_national_idea_6 = {
 				months = -1
 			}
 		}
+		else_if = {
+			limit = {
+				has_variable = idea_yua
+			}
+			add_modifier = {
+				name = yua_idea_6
+				months = -1
+			}
+		}
 		else = {
 			add_modifier = {
 				name = generic_idea_6
@@ -679,6 +724,15 @@ ve_national_idea_7 = {
 			}
 			add_modifier = {
 				name = usa_idea_7
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_yua
+			}
+			add_modifier = {
+				name = yua_idea_7
 				months = -1
 			}
 		}
@@ -811,6 +865,19 @@ ve_national_idea_tradition = {
 				months = -1
 			}
 		}
+		else_if = {
+			limit = {
+				has_variable = idea_yua
+			}
+			add_modifier = {
+				name = yua_idea_tradition_1
+				months = -1
+			}
+			add_modifier = {
+				name = yua_idea_tradition_2
+				months = -1
+			}
+		}
 		else = {
 			add_modifier = {
 				name = generic_idea_tradition_1
@@ -905,6 +972,15 @@ ve_national_idea_bonus = {
 			}
 			add_modifier = {
 				name = usa_idea_bonus
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_yua
+			}
+			add_modifier = {
+				name = yua_idea_bonus
 				months = -1
 			}
 		}
