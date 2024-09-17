@@ -25038,7 +25038,6 @@ SCR = {
 		color2 = "white"
 		instance = { scale = { 0.3 0.3 } position = { 0.15 0.20 } rotation = 180 }	
 	}
-	}
 }
 
 SCR_communist = {
