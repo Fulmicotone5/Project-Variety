@@ -74,14 +74,24 @@ colored_emblem_texture_lists = {
 			90 = "ce_star_gunelve.dds"
 		}		
 		special_selection = {
-			trigger = { 
-				country_definition_has_culture = cu:cherokee
+			trigger = {
+				any_primary_culture = {
+					OR = {
+						def_na_cherokee_trigger = yes
+						def_na_muscogee_trigger = yes
+					}
+				}
 			}
 			40 = "ce_star_07.dds"
 		}		
 		special_selection = {
-			trigger = { 
-				country_definition_has_culture = cu:na_santee_dakota
+			trigger = {
+				any_primary_culture = {
+					OR = {
+						def_na_dakota_trigger = yes
+						def_na_cree_trigger = yes
+					}
+				}
 			}
 			30 = "ce_buffalo.dds"
 			30 = "ce_buffalo_02.dds"
@@ -89,8 +99,13 @@ colored_emblem_texture_lists = {
 			30 = "ce_thunderbird.dds"				
 		}	
 		special_selection = {
-			trigger = { 
-				country_definition_has_culture = cu:navajo
+			trigger = {
+				any_primary_culture = {
+					OR = {
+						def_na_comanche_navajo_paiute_trigger = yes
+						def_na_nez_perce_trigger = yes
+					}
+				}
 			}
 			30 = "ce_sun_xia.dds"
 		}		

@@ -1,0 +1,76 @@
+def_na_cherokee_trigger = {
+    has_discrimination_trait = cu:na_iroquois_culture_group
+}
+
+def_na_muscogee_trigger = {
+    has_discrimination_trait = cu:na_muscogean_culture_group
+}
+
+def_na_dakota_trigger = {
+    has_discrimination_trait = cu:na_sioux_culture_group
+}
+
+def_na_cree_trigger = {
+    OR = {
+        has_discrimination_trait = cu:na_algonquian_culture_group
+        has_discrimination_trait = cu:na_caddoan_culture_group
+        has_discrimination_trait = cu:na_athabaskan_culture_group
+    }
+}
+
+def_na_nez_perce_trigger = {
+    has_discrimination_trait = cu:na_shapwailutan
+}
+
+def_na_comanche_navajo_paiute_trigger = {
+    OR = {
+        has_discrimination_trait = cu:na_uto_aztecan_culture_group
+        has_discrimination_trait = cu:na_yuman_culture_group
+        has_discrimination_trait = cu:na_salishan_culture_group
+        has_discrimination_trait = cu:na_shapwailutan_culture_group
+        has_discrimination_trait = cu:na_tonkawa_culture_group
+        has_discrimination_trait = cu:na_coahuiltecan_culture_group
+    }
+}
+
+
+def_na_native_american_trigger = {
+    OR = {
+        culture = cu:na_cherokee
+        culture = cu:na_tuscarora_nottoway
+        culture = cu:na_haudenosaunee
+        culture = cu:na_chickasaw_choctaw
+        culture = cu:na_muscogee
+        culture = cu:na_santee_dakota
+        culture = cu:na_yankton_yanktonai_dakota
+        culture = cu:na_lakota
+        culture = cu:na_crow_hisatsa
+        culture = cu:na_assiniboine
+        culture = cu:na_stoney
+        culture = cu:na_omaha_ponca
+        culture = cu:na_chiwere_winnebago
+        culture = cu:na_kansa_osage
+        culture = cu:na_quapaw
+        culture = cu:na_mandan
+        culture = cu:na_cree_montagnais
+        culture = cu:na_ojibwe_potawatomi
+        culture = cu:na_blackfoot
+        culture = cu:na_arapahoan
+        culture = cu:na_miami_illinois
+        culture = cu:na_eastern_algonquian
+        culture = cu:na_shapwailutan
+        culture = cu:na_shoshone
+        culture = cu:na_paiute
+        culture = cu:na_colorado_numic
+        culture = cu:na_comanche
+        culture = cu:na_northern_uto_aztecan
+        culture = cu:na_southern_uto_aztecan
+        culture = cu:na_nahuan
+        culture = cu:na_piman
+        culture = cu:na_optan
+        culture = cu:na_cahita
+        culture = cu:na_corachol
+        culture = cu:na_yuman
+        culture = cu:na_caddoan
+    }
+}

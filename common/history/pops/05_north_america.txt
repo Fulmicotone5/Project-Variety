@@ -14,11 +14,11 @@
 	s:STATE_LOUISIANA = {
 		region_state:LOI = {
 			create_pop = {
-				culture = cherokee
+				culture = na_cherokee
 				size = 68392
 			}
 			create_pop = {
-				culture = cherokee
+				culture = na_cherokee
 				religion = catholic
 				size = 36892
 			}
@@ -39,12 +39,12 @@
 				size = 915544
 			}
 			create_pop = {
-				culture = cree
+				culture = na_cree_montagnais
 				religion = protestant
 				size = 11758
 			}
 			create_pop = {
-				culture = cherokee
+				culture = na_na_cherokee
 				religion = protestant
 				size = 1035
 			}
@@ -57,11 +57,11 @@
 	s:STATE_VIRGINIA = {
 		region_state:FOU = {
 			create_pop = {
-				culture = cherokee
+				culture = na_cherokee
 				size = 173597
 			}
 			create_pop = {
-				culture = cherokee
+				culture = na_cherokee
 				religion = protestant
 				size = 85597
 			}
@@ -84,7 +84,7 @@
 		}
 		region_state:CHE = {
 			create_pop = {
-				culture = cherokee
+				culture = na_cherokee
 				size = 28597
 			}
 		}
@@ -92,7 +92,7 @@
 	s:STATE_ALASKA = {
 		region_state:KOC = {
 			create_pop = {
-				culture = athabaskan
+				culture = na_cree_montagnais
 				size = 5780
 			}
 			create_pop = {
@@ -106,7 +106,7 @@
 		}
 		region_state:SAO = {
 			create_pop = {
-				culture = athabaskan
+				culture = na_cree_montagnais
 				size = 19780
 			}
 			create_pop = {
@@ -122,7 +122,7 @@
 	s:STATE_WASHINGTON = {
 		region_state:NZP = {
 			create_pop = {
-				culture = nez_perce
+				culture = na_shapwailutan
 				size = 170600
 			}
 			create_pop = {
@@ -134,11 +134,11 @@
 	s:STATE_OREGON = {
 		region_state:BNN = {
 			create_pop = {
-				culture = cu:nez_perce
+				culture = cu:na_shapwailutan
 				size = 24060
 			}
 			create_pop = {
-				culture = paiute
+				culture = na_paiute
 				size = 182000
 			}
 		}
@@ -146,11 +146,11 @@
 	s:STATE_IDAHO = {
 		region_state:BNN = {
 			create_pop = {
-				culture = paiute
+				culture = na_paiute
 				size = 120000
 			}
 			create_pop = {
-				culture = nez_perce
+				culture = na_shapwailutan
 				size = 14560
 			}
 			create_pop = {
@@ -160,11 +160,11 @@
 		}
 		region_state:NZP = {
 			create_pop = {
-				culture = paiute
+				culture = na_paiute
 				size = 12000
 			}
 			create_pop = {
-				culture = nez_perce
+				culture = na_shapwailutan
 				size = 14560
 			}
 			create_pop = {
@@ -176,11 +176,11 @@
 	s:STATE_COLORADO = {
 		region_state:UTE = {
 			create_pop = {
-				culture = paiute
+				culture = na_paiute
 				size = 394000
 			}
 			create_pop = {
-				culture = apache
+				culture = na_chickasaw_choctaw
 				size = 4000
 			}
 		}
@@ -194,13 +194,13 @@
 		}
 		region_state:BNN = {
 			create_pop = {
-				culture = paiute
+				culture = na_paiute
 				size = 12000
 			}
 		}
 		region_state:UTE = {
 			create_pop = {
-				culture = paiute
+				culture = na_paiute
 				size = 182000
 			}
 			create_pop = {
@@ -250,13 +250,13 @@
 		}
 		region_state:UTE = {
 			create_pop = {
-				culture = paiute
+				culture = na_paiute
 				size = 19000
 			}
 		}
 		region_state:LOI = {
 			create_pop = {
-				culture = caddoan
+				culture = na_caddoan
 				size = 219000
 			}
 			create_pop = {
@@ -268,17 +268,17 @@
 	s:STATE_KANSAS = {
 		region_state:LOI = {
 			create_pop = {
-				culture = caddoan
+				culture = na_caddoan
 				size = 448000
 			}
 		}
 		region_state:UTE = {
 			create_pop = {
-				culture = paiute
+				culture = na_paiute
 				size = 164000
 			}
 			create_pop = {
-				culture = caddoan
+				culture = na_caddoan
 				size = 4000
 			}
 		}
@@ -290,11 +290,11 @@
 				size = 5689
 			}
 			create_pop = {
-				culture = cherokee
+				culture = na_cherokee
 				size = 472771
 			}
 			create_pop = {
-				culture = cherokee
+				culture = na_cherokee
 				religion = catholic
 				size = 2235
 			}
@@ -307,20 +307,20 @@
 				size = 15689
 			}
 			create_pop = {
-				culture = cherokee
+				culture = na_cherokee
 				size = 370136
 			}
 			create_pop = {
-				culture = cherokee
+				culture = na_cherokee
 				religion = catholic
 				size = 2000
 			}
 			create_pop = {
-				culture = caddoan
+				culture = na_caddoan
 				size = 42635
 			}
 			create_pop = {
-				culture = caddoan
+				culture = na_caddoan
 				religion = catholic
 				size = 2635
 			}
@@ -329,7 +329,7 @@
 	s:STATE_MISSOURI = {
 		region_state:LOI = {
 			create_pop = {
-				culture = caddoan
+				culture = na_caddoan
 				size = 469642
 			}
 		}
@@ -337,7 +337,7 @@
 	s:STATE_IOWA = {
 		region_state:LOI = {
 			create_pop = {
-				culture = caddoan
+				culture = na_caddoan
 				size = 82000
 			}
 		}
@@ -347,7 +347,7 @@
 				size = 552000
 			}
 			create_pop = {
-				culture = caddoan
+				culture = na_caddoan
 				size = 88900
 			}
 		}
@@ -367,7 +367,7 @@
 	s:STATE_WISCONSIN = {
 		region_state:CTF = {
 			create_pop = {
-				culture = algonquian
+				culture = na_cree_montagnais
 				size = 558000
 			}
 		}
@@ -375,7 +375,7 @@
 	s:STATE_INDIANA = {
 		region_state:CTF = {
 			create_pop = {
-				culture = algonquian
+				culture = na_cree_montagnais
 				size = 331504
 			}
 		}
@@ -383,7 +383,7 @@
 	s:STATE_MICHIGAN = {
 		region_state:CTF = {
 			create_pop = {
-				culture = algonquian
+				culture = na_cree_montagnais
 				size = 523996
 			}
 		}
@@ -391,7 +391,7 @@
 	s:STATE_OHIO = {
 		region_state:CTF = {
 			create_pop = {
-				culture = algonquian
+				culture = na_cree_montagnais
 				size = 392200
 			}
 		}
@@ -399,7 +399,7 @@
 	s:STATE_KENTUCKY = {
 		region_state:CHE = {
 			create_pop = {
-				culture = cherokee
+				culture = na_cherokee
 				size = 279988
 				religion = animist
 			}
@@ -408,7 +408,7 @@
 	s:STATE_TENNESSEE = {
 		region_state:CHE = {
 			create_pop = {
-				culture = cherokee
+				culture = na_cherokee
 				size = 269604
 				religion = animist
 			}
@@ -417,7 +417,7 @@
 	s:STATE_MISSISSIPPI = {
 		region_state:CHE = {
 			create_pop = {
-				culture = cherokee
+				culture = na_cherokee
 				size = 372804
 			}
 		}
@@ -425,17 +425,17 @@
 	s:STATE_ALABAMA = {
 		region_state:CHE = {
 			create_pop = {
-				culture = cherokee
+				culture = na_cherokee
 				size = 201008
 			}
 		}
 		region_state:FLU = {
 			create_pop = {
-				culture = cherokee
+				culture = na_cherokee
 				size = 80008
 			}
 			create_pop = {
-				culture = cherokee
+				culture = na_cherokee
 				religion = catholic
 				size = 2308
 			}
@@ -448,11 +448,11 @@
 	s:STATE_FLORIDA = {
 		region_state:FLU = {
 			create_pop = {
-				culture = muskogean
+				culture = na_muscogee
 				size = 248000
 			}
 			create_pop = {
-				culture = muskogean
+				culture = na_muscogee
 				religion = catholic
 				size = 56000
 			}
@@ -469,11 +469,11 @@
 	s:STATE_GEORGIA = {
 		region_state:FOU = {
 			create_pop = {
-				culture = cherokee
+				culture = na_cherokee
 				size = 29836
 			}
 			create_pop = {
-				culture = cherokee
+				culture = na_cherokee
 				size = 1946
 				religion = protestant
 			}
@@ -488,17 +488,17 @@
 		}
 		region_state:CHE = {
 			create_pop = {
-				culture = cherokee
+				culture = na_cherokee
 				size = 18000
 			}
 		}
 		region_state:FLU = {
 			create_pop = {
-				culture = cherokee
+				culture = na_cherokee
 				size = 152836
 			}
 			create_pop = {
-				culture = cherokee
+				culture = na_cherokee
 				religion = catholic
 				size = 22836
 			}
@@ -511,14 +511,14 @@
 	s:STATE_WEST_VIRGINIA = {
 		region_state:CHE = {
 			create_pop = {
-				culture = cherokee
+				culture = na_cherokee
 				size = 160916
 				religion = animist
 			}
 		}
 		region_state:FOU = {
 			create_pop = {
-				culture = cherokee
+				culture = na_cherokee
 				size = 6916
 				religion = animist
 			}
@@ -551,7 +551,7 @@
 				size = 116
 			}
 			create_pop = {
-				culture = cherokee
+				culture = na_cherokee
 				religion = protestant
 				size = 22489
 			}
@@ -596,12 +596,12 @@
 				size = 1435
 			}
 			create_pop = {
-				culture = algonquian
+				culture = na_cree_montagnais
 				religion = protestant
 				size = 6758
 			}
 			create_pop = {
-				culture = cherokee
+				culture = na_cherokee
 				religion = protestant
 				size = 14035
 			}
@@ -634,7 +634,7 @@
 	s:STATE_ILLINOIS = {
 		region_state:CTF = {
 			create_pop = {
-				culture = algonquian
+				culture = na_cree_montagnais
 				size = 552400
 			}
 		}
@@ -758,12 +758,12 @@
 				size = 310567
 			}
 			create_pop = {
-				culture = cherokee
+				culture = na_cherokee
 				size = 143836
 				religion = protestant
 			}
 			create_pop = {
-				culture = cherokee
+				culture = na_cherokee
 				religion = animist
 				size = 99500
 			}
@@ -776,17 +776,17 @@
 	s:STATE_UTAH = {
 		region_state:UTE = {
 			create_pop = {
-				culture = paiute
+				culture = na_paiute
 				size = 41000
 			}
 		}
 		region_state:NVJ = {
 			create_pop = {
-				culture = navajo
+				culture = na_colorado_numic
 				size = 10000
 			}
 			create_pop = {
-				culture = paiute
+				culture = na_paiute
 				size = 11000
 			}
 		}
@@ -794,12 +794,12 @@
 	s:STATE_SOUTH_CAROLINA = {
 		region_state:FOU = {
 			create_pop = {
-				culture = cherokee
+				culture = na_cherokee
 				size = 453836
 				religion = animist
 			}
 			create_pop = {
-				culture = cherokee
+				culture = na_cherokee
 				size = 43836
 				religion = protestant
 			}
@@ -856,7 +856,7 @@
 	s:STATE_ONTARIO = {
 		region_state:CRU = {
 			create_pop = {
-				culture = cree
+				culture = na_cree_montagnais
 				size = 555200
 			}
 		}
@@ -881,7 +881,7 @@
 				size = 4000
 			}
 			create_pop = {
-				culture = cree
+				culture = na_cree_montagnais
 				size = 18204
 			}
 		}
@@ -921,7 +921,7 @@
 				size = 127396
 			}
 			create_pop = {
-				culture = athabaskan
+				culture = na_cree_montagnais
 				size = 55200
 			}
 		}
@@ -933,7 +933,7 @@
 				size = 554648
 			}
 			create_pop = {
-				culture = cree
+				culture = na_cree_montagnais
 				size = 22648
 			}
 		}
@@ -941,7 +941,7 @@
 	s:STATE_MANITOBA = {
 		region_state:CRU = {
 			create_pop = {
-				culture = cree
+				culture = na_cree_montagnais
 				size = 534848
 			}
 		}
@@ -949,7 +949,7 @@
 	s:STATE_YUKON_TERRITORY = {
 		region_state:SAO = {
 			create_pop = {
-				culture = athabaskan
+				culture = na_cree_montagnais
 				size = 12000
 			}
 			create_pop = {
@@ -961,7 +961,7 @@
 	s:STATE_NORTHWEST_TERRITORIES = {
 		region_state:ATB = {
 			create_pop = {
-				culture = athabaskan
+				culture = na_cree_montagnais
 				size = 16000
 			}
 		}
@@ -993,17 +993,17 @@
 	s:STATE_TEXAS = {
 		region_state:COM = {
 			create_pop = {
-				culture = comanche
+				culture = na_comanche
 				size = 745600
 			}
 			create_pop = {
-				culture = apache
+				culture = na_chickasaw_choctaw
 				size = 12000
 			}
 		}
 		region_state:MAX = {
 			create_pop = {
-				culture = comanche
+				culture = na_comanche
 				religion = catholic
 				size = 120
 			}
@@ -1016,11 +1016,11 @@
 	s:STATE_NEVADA = {
 		region_state:NVJ = {
 			create_pop = {
-				culture = navajo
+				culture = na_colorado_numic
 				size = 110000
 			}
 			create_pop = {
-				culture = paiute
+				culture = na_paiute
 				size = 8000
 			}
 		}
@@ -1028,17 +1028,17 @@
 	s:STATE_ARIZONA = {
 		region_state:NVJ = {
 			create_pop = {
-				culture = navajo
+				culture = na_colorado_numic
 				size = 124000
 			}
 			create_pop = {
-				culture = paiute
+				culture = na_paiute
 				size = 4000
 			}
 		}
 		region_state:MAX = {
 			create_pop = {
-				culture = navajo
+				culture = na_colorado_numic
 				size = 24000
 			}
 			create_pop = {
@@ -1048,17 +1048,17 @@
 		}
 		region_state:UTE = {
 			create_pop = {
-				culture = paiute
+				culture = na_paiute
 				size = 24000
 			}
 			create_pop = {
-				culture = navajo
+				culture = na_colorado_numic
 				size = 12000
 			}
 		}
 		region_state:APC = {
 			create_pop = {
-				culture = apache
+				culture = na_chickasaw_choctaw
 				size = 11000
 			}
 			create_pop = {
@@ -1070,7 +1070,7 @@
 	s:STATE_NEW_MEXICO = {
 		region_state:COM = {
 			create_pop = {
-				culture = comanche
+				culture = na_comanche
 				size = 256000
 			}
 			create_pop = {
@@ -1080,7 +1080,7 @@
 		}
 		region_state:MAX = {
 			create_pop = {
-				culture = comanche
+				culture = na_comanche
 				religion = catholic
 				size = 12000
 			}
@@ -1091,11 +1091,11 @@
 		}
 		region_state:UTE = {
 			create_pop = {
-				culture = paiute
+				culture = na_paiute
 				size = 39000
 			}
 			create_pop = {
-				culture = comanche
+				culture = na_comanche
 				size = 8000
 			}
 		}
@@ -1103,27 +1103,27 @@
 	s:STATE_CALIFORNIA = {
 		region_state:HOK = {
 			create_pop = {
-				culture = hokan
+				culture = na_yuman
 				size = 102700
 			}
 		}
 		region_state:NVJ = {
 			create_pop = {
-				culture = hokan
+				culture = na_yuman
 				size = 15700
 			}
 			create_pop = {
-				culture = navajo
+				culture = na_colorado_numic
 				size = 18700
 			}
 		}
 		region_state:BNN = {
 			create_pop = {
-				culture = hokan
+				culture = na_yuman
 				size = 22700
 			}
 			create_pop = {
-				culture = paiute
+				culture = na_paiute
 				size = 25700
 			}
 		}
@@ -1133,11 +1133,11 @@
 				size = 285234
 			}
 			create_pop = {
-				culture = hokan
+				culture = na_yuman
 				size = 12700
 			}
 			create_pop = {
-				culture = hokan
+				culture = na_yuman
 				religion = mahayana
 				size = 2700
 			}
@@ -1188,7 +1188,7 @@
 				size = 69087
 			}
 			create_pop = {
-				culture = oodham
+				culture = na_piman
 				size = 43637
 			}
 		}
@@ -1201,11 +1201,11 @@
 				size = 139895
 			}
 			create_pop = {
-				culture = oodham
+				culture = na_piman
 				size = 8000
 			}
 			create_pop = {
-				culture = apache
+				culture = na_chickasaw_choctaw
 				size = 16000
 			}
 		}
@@ -1218,11 +1218,11 @@
 				size = 121499
 			}
 			create_pop = {
-				culture = oodham
+				culture = na_piman
 				size = 27000
 			}
 			create_pop = {
-				culture = oodham
+				culture = na_piman
 				religion = catholic
 				size = 70004
 			}
@@ -1249,7 +1249,7 @@
 				size = 136199
 			}
 			create_pop = {
-				culture = oodham
+				culture = na_piman
 				size = 20000
 			}
 			create_pop = {
@@ -1266,7 +1266,7 @@
 				size = 113841
 			}
 			create_pop = {
-				culture = oodham
+				culture = na_piman
 				size = 20000
 			}
 			create_pop = {
@@ -1286,7 +1286,7 @@
 				size = 594909
 			}
 			create_pop = {
-				culture = nahua
+				culture = na_nahuan
 				size = 266461
 			}
 			create_pop = {
@@ -1335,7 +1335,7 @@
 				size = 39996
 			}
 			create_pop = {
-				culture = nahua
+				culture = na_nahuan
 				size = 689604
 			}
 			create_pop = {
@@ -1365,7 +1365,7 @@
 				size = 60846
 			}
 			create_pop = {
-				culture = nahua
+				culture = na_nahuan
 				size = 27381
 			}
 			create_pop = {
@@ -1390,7 +1390,7 @@
 				size = 187073
 			}
 			create_pop = {
-				culture = nahua
+				culture = na_nahuan
 				size = 84182
 			}
 			create_pop = {
@@ -1411,12 +1411,12 @@
 				size = 1011710
 			}
 			create_pop = {
-				culture = oodham
+				culture = na_piman
 				religion = catholic
 				size = 152078
 			}
 			create_pop = {
-				culture = oodham
+				culture = na_piman
 				size = 26373
 			}
 		}
@@ -1431,7 +1431,7 @@
 				size = 137347
 			}
 			create_pop = {
-				culture = nahua
+				culture = na_nahuan
 				size = 175961
 			}
 		}
@@ -1471,17 +1471,17 @@
 				size = 8264
 			}
 			create_pop = {
-				culture = oodham
+				culture = na_piman
 				size = 13300
 			}
 			create_pop = {
-				culture = hokan
+				culture = na_yuman
 				size = 1300
 			}
 		}
 		region_state:HOK = {
 			create_pop = {
-				culture = hokan
+				culture = na_yuman
 				size = 8264
 			}
 		}
