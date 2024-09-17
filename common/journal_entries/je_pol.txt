@@ -91,4 +91,5 @@ je_zapa = {
 			id = fm_pol.3
 		}
 	}
+	should_be_pinned_by_default = yes
 }

@@ -144,7 +144,6 @@
 			75 = { set_strategy = ai_strategy_maintain_power_balance }
 			25 = { set_strategy = ai_strategy_territorial_expansion }
 		}			
-		set_strategy = ai_strategy_progressive_agenda # To try and complete tanzimat
 	}	
 	c:HEN = {
 		random_list = {	

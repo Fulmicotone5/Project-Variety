@@ -847,7 +847,11 @@
 		region_state:BIZ = {
 			create_pop = {
 				culture = greek
-				size = 80404
+				size = 70404
+			}
+			create_pop = {
+				culture = greco_roman
+				size = 10023
 			}
 		}
 	}
@@ -863,7 +867,11 @@
 			}
 			create_pop = {
 				culture = greek
-				size = 82996
+				size = 73996
+			}
+			create_pop = {
+				culture = greco_roman
+				size = 7274
 			}
 		}
 	}

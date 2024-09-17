@@ -140,10 +140,12 @@ option = {
 }
 option = {
 	name = fm_bavaria.4.b
-	add_modifier = {
-		name = modifier_bav_one
-		months = normal_modifier_time
-		is_decaying = yes
+	ig:ig_landowners = {
+		add_modifier = {
+			name = modifier_bav_one
+			months = normal_modifier_time
+			is_decaying = yes
+		}
 	}
 	activate_law = law_type:law_autocracy
 	add_radicals = {

@@ -43,7 +43,8 @@ je_east_rome = {
 		OR = {
 			any_scope_state = {
 					owner = ROOT
-					turmoil >= 0.45
+					is_incorporated = yes
+					turmoil >= 0.35
 			}
 			NOT = {
 				has_law = law_type:law_monarchy

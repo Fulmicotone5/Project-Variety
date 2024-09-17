@@ -108,7 +108,7 @@
 					building={
 						type="building_manor_house"
 						country="c:PLK"
-						levels=2=10
+						levels=10
 						region="STATE_MAZOVIA"
 					}
 				}
