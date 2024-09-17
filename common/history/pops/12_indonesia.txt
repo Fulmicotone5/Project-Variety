@@ -687,7 +687,7 @@
 			}
 			create_pop = {
 				culture = bornean
-				religion = catholic
+				religion = mahayana
 				size = 112400
 			}
 			create_pop = {
@@ -720,7 +720,7 @@
 				size = 991604
 			}
 			create_pop = {
-				culture = spanish
+				culture = japanese
 				size = 796
 			}
 			create_pop = {

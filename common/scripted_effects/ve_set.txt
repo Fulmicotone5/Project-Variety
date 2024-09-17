@@ -529,18 +529,27 @@ set_national_idea = {
 	if = {
 		limit = {
 			NOR = {
-				this = c:GBR
-				this = c:FRA
-				this = c:GER
-				this = c:SGF
+				this = c:ENG
+				this = c:UKK
+				this = c:GBI
+				this = c:FRU
+				this = c:FRE
+				this = c:LOT
+				this = c:PRO
+				this = c:AEF
 				this = c:NGF
-				this = c:PRU
-				this = c:AUS
-				this = c:RUS
-				this = c:TUR
-				this = c:CHI
+				this = c:GRO
+				this = c:BOH
+				this = c:BBA
+				this = c:DKI
+				this = c:GRM
+				this = c:KAR
+				this = c:RUK
+				this = c:RUI
+				this = c:KOR
+				this = c:SAE
 				this = c:JAP
-				this = c:USA
+				this = c:SAE
 			}
 		}
 		set_variable = generic_idea_country
@@ -709,8 +718,8 @@ religion_passive_bonuses = {
 national_idea_traditions = {
 	if = {
 		limit = {
-			exists = c:GBR
-			this = c:GBR
+			exists = c:ENG
+			this = c:ENG
 		}
 		if = {
 			limit = {
@@ -731,8 +740,8 @@ national_idea_traditions = {
 	}
 	else_if = {
 		limit = {
-			exists = c:FRA
-			this = c:FRA
+			exists = c:FRU
+			this = c:FRU
 		}
 		if = {
 			limit = {
@@ -753,8 +762,8 @@ national_idea_traditions = {
 	}
 	else_if = {
 		limit = {
-			exists = c:GER
-			this = c:GER
+			exists = c:LOT
+			this = c:LOT
 		}
 		if = {
 			limit = {
@@ -775,74 +784,8 @@ national_idea_traditions = {
 	}
 	else_if = {
 		limit = {
-			exists = c:PRU
-			this = c:PRU
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_modifier = ger_idea_tradition_1
-					has_modifier = ger_idea_tradition_2
-				}
-			}
-			add_modifier = {
-				name = ger_idea_tradition_1
-				months = -1
-			}
-			add_modifier = {
-				name = ger_idea_tradition_2
-				months = -1
-			}
-		}
-	}
-	else_if = {
-		limit = {
-			exists = c:NGF
-			this = c:NGF
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_modifier = ger_idea_tradition_1
-					has_modifier = ger_idea_tradition_2
-				}
-			}
-			add_modifier = {
-				name = ger_idea_tradition_1
-				months = -1
-			}
-			add_modifier = {
-				name = ger_idea_tradition_2
-				months = -1
-			}
-		}
-	}
-	else_if = {
-		limit = {
-			exists = c:SGF
-			this = c:SGF
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_modifier = ger_idea_tradition_1
-					has_modifier = ger_idea_tradition_2
-				}
-			}
-			add_modifier = {
-				name = ger_idea_tradition_1
-				months = -1
-			}
-			add_modifier = {
-				name = ger_idea_tradition_2
-				months = -1
-			}
-		}
-	}
-	else_if = {
-		limit = {
-			exists = c:AUS
-			this = c:AUS
+			exists = c:BOH
+			this = c:BOH
 		}
 		if = {
 			limit = {
@@ -863,8 +806,8 @@ national_idea_traditions = {
 	}
 	else_if = {
 		limit = {
-			exists = c:RUS
-			this = c:RUS
+			exists = c:KAR
+			this = c:KAR
 		}
 		if = {
 			limit = {
@@ -885,8 +828,8 @@ national_idea_traditions = {
 	}
 	else_if = {
 		limit = {
-			exists = c:TUR
-			this = c:TUR
+			exists = c:SAE
+			this = c:SAE
 		}
 		if = {
 			limit = {
@@ -907,8 +850,8 @@ national_idea_traditions = {
 	}
 	else_if = {
 		limit = {
-			exists = c:CHI
-			this = c:CHI
+			exists = c:KOR
+			this = c:KOR
 		}
 		if = {
 			limit = {
@@ -951,8 +894,8 @@ national_idea_traditions = {
 	}
 	else_if = {
 		limit = {
-			exists = c:USA
-			this = c:USA
+			exists = c:AMC
+			this = c:AMC
 		}
 		if = {
 			limit = {

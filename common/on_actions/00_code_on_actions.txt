@@ -1634,6 +1634,11 @@ on_country_released_as_independent = {
 				}
 			}
 		}
+		scope:target = {
+			trigger_event = {
+				id = dev.4
+			}
+		}
 	}
 }
 
@@ -1641,6 +1646,11 @@ on_country_released_as_independent = {
 # scope:target = Released Country
 on_country_released_as_own_subject = {
 	effect = {
+		scope:target = {
+			trigger_event = {
+				id = dev.4
+			}
+		}
 		if = {
 			limit = {
 				c:NEN ?= scope:target
@@ -1767,6 +1777,11 @@ on_country_released_as_own_subject = {
 # scope:target = Released Country
 on_country_released_as_overlord_subject = {
 	effect = {
+		scope:target = {
+			trigger_event = {
+				id = dev.4
+			}
+		}
 		if = {
 			limit = {
 				scope:target = {

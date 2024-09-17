@@ -8059,6 +8059,7 @@ turkish={
 		Shakir
 		Talhosten
 		Vocibe
+		Karaman
 	}
 	common_last_names={
 		Akbas
@@ -10725,61 +10726,176 @@ malagasy={
 
 filipino={
 	color= hsv{ 0.18 0.56 0.86 }
-	religion = catholic
-	traits = { southeast_asian_heritage malay_culture }
+	religion = mahayana
+	traits = { southeast_asian_heritage yamato malay_culture }
 	obsessions = {
 		spice
 	}
 	male_common_first_names={
-		Andres
-		Antonio
-		Apolinario
-		Arcadio
-		Artemio
-		Deodato
-		Emilio
-		Hermano
-		Jacinto
-		JosE_
-		Ladislao
-		Leon_3
-		Manuel
-		Marcelo
-		Mariano
-		Santiago
-		Simeon_2
-		Teodoro
-		Valentine
+		Aritomo
+		Gentaro
+		Gonnohyoe
+		Goro
+		Hayao
+		Heihachiro
+		Hikonojo
+		Hiroshi
+		Hyoe
+		Iwao
+		Jinzaburo
+		Jiro
+		Kageaki
+		Kagenori
+		Kantaro
+		Kazushige
+		Keisuke
+		Kenkichi
+		Kiyotaka
+		Koichiro
+		Kotohito
+		Kozo
+		Kuranosuke
+		Maresuke
+		Masatake
+		Masujiro
+		Michisura
+		Mineo
+		Mitsue
+		Mitsuomi
+		Nariaki
+		Nobuyoshi
+		Rokuro
+		Sadao
+		Samata
+		Shichiro
+		Shigeru
+		Shigeto
+		Shinsaku
+		Shoin
+		Soroku
+		Sotokichi
+		Sukenori
+		Sukeyuki
+		Sumiyoshi
+		Tadakuni
+		Takamori
+		Takayoshi
+		Takeaki
+		Tamemoto
+		Taro
+		Taruhito
+		Tetsutaro
+		Tomasaburo
+		Tomonosuke
+		Toshimichi
+		Toshiyoshi
+		Tsugumichi
+		Yahachi
+		Yasukata
+		Yasuyoshi
+		Yoshida
+		Yoshifuru
+		Yoshika
+		Yoshimichi
+		Yoshinobu
+		Yoshinori
+		Yusaku
 	}
 	female_common_first_names = {
-		Brijida
-		Carmen
-		Catalina
-		Leona
-		Librada
-		Teodora
-		Trinidad
+		Asako
+		Chikako
+		Ginko
+		Gyokuran
+		Kaho
+		Kei
+		Kin
+		Kumehachi
+		Masako
+		Miki
+		Natsu
+		Nobu
+		Oi
+		Rengetsu
+		Sayoko
+		Teru
+		Toyoko
+		Tsuneko
 	}	
 	noble_last_names = {
-		Aguainaldo
-		Bonifacio
-		Burgos
-		Mangubat
+		Hayashi
+		Ito
+		Jutoku
+		Kujo
+		Matsudaira
+		Mitsune
+		Nabeshima
+		Togo
+		Tokugawa
 	}
 	common_last_names={
-		Arellano
-		Basa
-		del_Pilar
-		Diwa
-		Diaz_2
-		Dizon
-		Jacinto
-		Mabini
-		Mangali
-		Nakpil
-		Nocon
-		Plata
-		Rizal
+		Akiyama
+		Araki
+		Arichi
+		Arisugawa
+		Dewa
+		Enomoto
+		Hasegawa
+		Honjo
+		Ichinohe
+		Inoue
+		Itagaki
+		Kabayama
+		Kamimura
+		Kamio
+		Kanin
+		Kataoka
+		Kato
+		Katsu
+		Katsura
+		Kawakami
+		Kawamura
+		Kido
+		Kodama
+		Kuroda
+		Kuroki
+		Makino
+		Masaki
+		Minami
+		Muto
+		Nakamuta
+		Nire
+		Nogi
+		Nozu
+		Okada
+		Oku
+		Okubo
+		Omura
+		Osumi
+		Oyama
+		Saigo
+		Sakura
+		Sato
+		Shibayama
+		Shimamura
+		Shirakawa
+		Suzuki
+		Tachibana
+		Takashima
+		Takasugi
+		Tamon
+		Terauchi
+		Tsuboi
+		Ueda
+		Uehara
+		Ugaki
+		Uryu
+		Yamagata
+		Yamakawa
+		Yamamoto
+		Yamashita
+		Yamaya
+		Yashiro
+		Yui
 	}
 	ethnicities = {
 		1 = south_east_asian
@@ -12309,7 +12425,7 @@ polynesian={
 
 hawaiian={ # 
 	color= hsv{ 0.29 0.26 0.60 }
-	religion = protestant
+	religion = mahayana
 	traits = { polynesian_group indigenous_oceanic_heritage }
 	male_noble_first_names = {
 		Alapa_imaloiki _Aikanaka

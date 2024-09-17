@@ -817,34 +817,32 @@
 		region_state:JAP = {
 			create_pop = {
 				pop_type = clergy
-				culture = yankee
-				religion = protestant
+				culture = japanese
 				size = 100
 			}
 			create_pop = {
 				pop_type = capitalists
-				culture = yankee
-				religion = protestant
+				culture = japanese
 				size = 450
 			}
 			create_pop = {
 				pop_type = capitalists
-				culture = british
+				culture = korean
 				size = 500
 			}
 			create_pop = {
 				pop_type = capitalists
-				culture = russian
+				culture = han
 				size = 250
 			}
 			create_pop = {
 				culture = hawaiian
-				religion = protestant
+				religion = mahayana
 				size = 132304
 			}
 			create_pop = {
 				culture = hawaiian
-				religion = catholic
+				religion = animist
 				size = 8500
 			}
 			create_pop = {

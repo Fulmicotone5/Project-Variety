@@ -440,7 +440,7 @@ pb_lead = {
 	country_authority_mult = 0.05
 	state_tax_capacity_mult = -0.1
 	state_construction_mult = -0.15
-	country_infamy_generation_mult = 0.25
+	country_infamy_generation_mult = 0.15
 	country_prestige_add = 100
 }
 pb_cost = {
@@ -838,4 +838,24 @@ modifier_stateof_ig = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
 	interest_group_pol_str_mult = 0.5
 	interest_group_pop_attraction_mult = -1
+}
+
+repealed_corn_laws = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	interest_group_approval_add = -5
+}
+
+corn_law_proponent = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
+	character_popularity_add = -40
+}
+
+corn_law_leverage = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_aristocrats_pol_str_mult = 0.2
+}
+
+temporary_minimum_wages = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
+	building_minimum_wage_mult = 0.1
 }

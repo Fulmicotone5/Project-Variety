@@ -16,8 +16,8 @@ social_democrat_party = {
 			triggered_desc = {
 				desc = party_labour_party
 				trigger = {
-					exists = c:GBR
-					THIS = c:GBR
+					exists = c:UKK
+					THIS = c:UKK
 				}
 			}
 			triggered_desc = {

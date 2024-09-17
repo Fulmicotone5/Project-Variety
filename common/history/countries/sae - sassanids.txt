@@ -29,5 +29,8 @@ COUNTRIES = {
 		add_journal_entry = {
 			type = je_sae_main
 		}
+		set_variable = {
+			name = idea_sae
+		}
 	}
 }

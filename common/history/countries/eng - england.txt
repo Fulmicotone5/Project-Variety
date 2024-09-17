@@ -54,5 +54,8 @@ COUNTRIES = {
 		trigger_event = {
 			id = fm_england.1
 		}
+		set_variable = {
+			name = idea_eng
+		}
 	}
 }
