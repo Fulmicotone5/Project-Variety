@@ -406,8 +406,7 @@ dev.3 = {
 	}
 }
 
-dev.4 = {
-	#Monthly Event
+dev.4 = { #For released countries
 	type = country_event
 	event_image = {
 		video = "gfx/event_pictures/middleeast_oil_derricks.bk2"
@@ -422,7 +421,6 @@ dev.4 = {
 	hidden = yes
 	immediate = {
 		if = {
-			#For released countries
 			limit = {
 				NOT = {
 					has_variable = victoria_universalis_system_on
@@ -435,41 +433,6 @@ dev.4 = {
 			set_national_idea = yes
 			religion_passive_bonuses = yes
 			national_idea_traditions = yes
-		}
-		ve_monthly_points = yes
-		ve_idea_cap_effects = yes
-		ve_holy_site_effects = yes
-		prevent_annex_foreign_missionary = yes
-		prevent_annex_foreign_cultural_missionary = yes
-		ve_law_change_effects = yes
-		ve_becoming_atheist = yes
-		if = {
-			#For AI
-			limit = {
-				is_ai = yes
-			}
-			ve_ai_choose_idea = yes
-			ve_ai_boost_idea = yes
-			ve_ai_uses_religion = yes
-			ve_ai_uses_culture = yes
-			ve_ai_uses_age_bonuses = yes
-		}
-		if = {
-			#For Released and Civil War Countries
-			limit = {
-				NOT = {
-					has_variable = ve_1936_countries
-				}
-			}
-			set_variable = ve_1936_countries
-			set_variable = {
-				name = idea_point_pool
-				value = global_var:idea_point_value_pool
-			}
-			set_variable = {
-				name = culture_reform_point
-				value = global_var:culture_point_value_pool
-			}
 		}
 	}
 	option = {
@@ -941,5 +904,61 @@ dev.8 = {
 	}
 	option = {
 		name = dev.2.c
+	}
+}
+dev.9 = {
+	#Monthly Event
+	type = country_event
+	event_image = {
+		video = "gfx/event_pictures/middleeast_oil_derricks.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/world_fair"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	title = dev.9.t
+	desc = dev.9.d
+	flavor = dev.9.f
+	duration = 0
+	hidden = yes
+	immediate = {
+		ve_monthly_points = yes
+		ve_idea_cap_effects = yes
+		ve_holy_site_effects = yes
+		prevent_annex_foreign_missionary = yes
+		prevent_annex_foreign_cultural_missionary = yes
+		ve_law_change_effects = yes
+		ve_becoming_atheist = yes
+		if = {
+			#For AI
+			limit = {
+				is_ai = yes
+			}
+			ve_ai_choose_idea = yes
+			ve_ai_boost_idea = yes
+			ve_ai_uses_religion = yes
+			ve_ai_uses_culture = yes
+			ve_ai_uses_age_bonuses = yes
+		}
+		if = {
+			#For Released and Civil War Countries
+			limit = {
+				NOT = {
+					has_variable = ve_1936_countries
+				}
+			}
+			set_variable = ve_1936_countries
+			set_variable = {
+				name = idea_point_pool
+				value = global_var:idea_point_value_pool
+			}
+			set_variable = {
+				name = culture_reform_point
+				value = global_var:culture_point_value_pool
+			}
+		}
+	}
+	option = {
+		name = dev.9.a
+		default_option = yes
 	}
 }

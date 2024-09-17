@@ -1,6 +1,7 @@
 ﻿on_monthly_pulse_country = {
 	events = {
 		dev.8
+		dev.9
 	}
 }
 
