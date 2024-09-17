@@ -1,3 +1,5 @@
+# Overwritten for removed cultures
+
 headgear = {
     usage = game
     selection_behavior = weighted_random

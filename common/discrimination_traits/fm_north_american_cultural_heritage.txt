@@ -1,0 +1,3 @@
+na_native_american_heritage = {
+    heritage = yes
+}

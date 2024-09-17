@@ -1,0 +1,2169 @@
+# Based on major language groups and some sub-groups that are prominent
+
+na_santee_dakota = {
+    color = hsv{ 0.63 0.30 0.52 }
+    religion = na_wocekiye
+    traits = { na_native_american_heritage na_sioux_culture_group }
+    male_common_first_names = {
+        Hehaka
+        Inkpaduta
+        Istahba
+        Mahpiya
+        Monkaushka
+        Sinte
+        Tamaha
+        Thahca
+        Thasunke
+        Thathanka
+        Thaoyate_Duta
+        Wanbdisapa
+        Wanata
+    }
+    female_common_first_names = {
+        Azayamankawin
+        Topahhdewin
+        Wakanmaniwin
+        Wakantakawin
+        Wakhan_Inazin_Win
+    }
+    noble_last_names = {
+        Hakadah
+        Ohiya_S-a
+        Tamaha
+        Wakinyanduta
+        Wowinape
+    }
+    common_last_names = {
+        Duta
+        Gleska
+        Huste
+        Iyotake
+        Kohkophapi
+        Kramarae
+        Luta
+        Pecan_Wakpa
+        Sapa
+        Thankja
+        Witko
+    }
+    ethnicities = {
+        1 = na_sioux_ethnicity
+    }
+    graphics = decentralised_americas
+}
+
+na_yankton_yanktonai_dakota = {
+    color = hsv{ 0.60 0.35 0.52 }
+    religion = na_wocekiye
+    traits = { na_native_american_heritage na_sioux_culture_group }
+    male_common_first_names = {
+        Hehaka
+        Inkpaduta
+        Istahba
+        Mahpiya
+        Monkaushka
+        Sinte
+        Tamaha
+        Thahca
+        Thasunke
+        Thathanka
+        Thaoyate_Duta
+        Wanbdisapa
+        Wanata
+    }
+    female_common_first_names = {
+        Azayamankawin
+        Topahhdewin
+        Wakanmaniwin
+        Wakantakawin
+        Wakhan_Inazin_Win
+    }
+    noble_last_names = {
+        Hakadah
+        Ohiya_S-a
+        Tamaha
+        Wakinyanduta
+        Wowinape
+    }
+    common_last_names = {
+        Duta
+        Gleska
+        Huste
+        Iyotake
+        Kohkophapi
+        Kramarae
+        Luta
+        Pecan_Wakpa
+        Sapa
+        Thankja
+        Witko
+    }
+    ethnicities = {
+        1 = na_sioux_ethnicity
+    }
+    graphics = decentralised_americas
+}
+
+na_lakota = {
+    color = hsv{ 0.63 0.37 0.52 }
+    religion = na_lakota_spirituality
+    traits = { na_native_american_heritage na_sioux_culture_group }
+    male_common_first_names = {
+        Hehaka
+        Inkpaduta
+        Istahba
+        Mahpiya
+        Monkaushka
+        Sinte
+        Tamaha
+        Thahca
+        Thasunke
+        Thathanka
+        Thaoyate_Duta
+        Wanbdisapa
+        Wanata
+    }
+    female_common_first_names = {
+        Azayamankawin
+        Topahhdewin
+        Wakanmaniwin
+        Wakantakawin
+        Wakhan_Inazin_Win
+    }
+    noble_last_names = {
+        Hakadah
+        Ohiya_S-a
+        Tamaha
+        Wakinyanduta
+        Wowinape
+    }
+    common_last_names = {
+        Duta
+        Gleska
+        Huste
+        Iyotake
+        Kohkophapi
+        Kramarae
+        Luta
+        Pecan_Wakpa
+        Sapa
+        Thankja
+        Witko
+    }
+    ethnicities = {
+        1 = na_sioux_ethnicity
+    }
+    graphics = decentralised_americas
+}
+
+na_crow_hisatsa = {
+    color = hsv{ 0.63 0.37 0.52 }
+    religion = na_native_american_spirituality
+    traits = { na_native_american_heritage na_sioux_culture_group }
+    male_common_first_names = {
+        Hehaka
+        Inkpaduta
+        Istahba
+        Mahpiya
+        Monkaushka
+        Sinte
+        Tamaha
+        Thahca
+        Thasunke
+        Thathanka
+        Thaoyate_Duta
+        Wanbdisapa
+        Wanata
+    }
+    female_common_first_names = {
+        Azayamankawin
+        Topahhdewin
+        Wakanmaniwin
+        Wakantakawin
+        Wakhan_Inazin_Win
+    }
+    noble_last_names = {
+        Hakadah
+        Ohiya_S-a
+        Tamaha
+        Wakinyanduta
+        Wowinape
+    }
+    common_last_names = {
+        Duta
+        Gleska
+        Huste
+        Iyotake
+        Kohkophapi
+        Kramarae
+        Luta
+        Pecan_Wakpa
+        Sapa
+        Thankja
+        Witko
+    }
+    ethnicities = {
+        1 = na_sioux_ethnicity
+    }
+    graphics = decentralised_americas
+}
+
+na_assiniboine = {
+    color = hsv{ 0.63 0.37 0.52 }
+    religion = na_native_american_spirituality
+    traits = { na_native_american_heritage na_sioux_culture_group }
+    male_common_first_names = {
+        Hehaka
+        Inkpaduta
+        Istahba
+        Mahpiya
+        Monkaushka
+        Sinte
+        Tamaha
+        Thahca
+        Thasunke
+        Thathanka
+        Thaoyate_Duta
+        Wanbdisapa
+        Wanata
+    }
+    female_common_first_names = {
+        Azayamankawin
+        Topahhdewin
+        Wakanmaniwin
+        Wakantakawin
+        Wakhan_Inazin_Win
+    }
+    noble_last_names = {
+        Hakadah
+        Ohiya_S-a
+        Tamaha
+        Wakinyanduta
+        Wowinape
+    }
+    common_last_names = {
+        Duta
+        Gleska
+        Huste
+        Iyotake
+        Kohkophapi
+        Kramarae
+        Luta
+        Pecan_Wakpa
+        Sapa
+        Thankja
+        Witko
+    }
+    ethnicities = {
+        1 = na_sioux_ethnicity
+    }
+    graphics = decentralised_americas
+}
+
+na_stoney = {
+    color = hsv{ 0.63 0.37 0.52 }
+    religion = na_native_american_spirituality
+    traits = { na_native_american_heritage na_sioux_culture_group }
+    male_common_first_names = {
+        Hehaka
+        Inkpaduta
+        Istahba
+        Mahpiya
+        Monkaushka
+        Sinte
+        Tamaha
+        Thahca
+        Thasunke
+        Thathanka
+        Thaoyate_Duta
+        Wanbdisapa
+        Wanata
+    }
+    female_common_first_names = {
+        Azayamankawin
+        Topahhdewin
+        Wakanmaniwin
+        Wakantakawin
+        Wakhan_Inazin_Win
+    }
+    noble_last_names = {
+        Hakadah
+        Ohiya_S-a
+        Tamaha
+        Wakinyanduta
+        Wowinape
+    }
+    common_last_names = {
+        Duta
+        Gleska
+        Huste
+        Iyotake
+        Kohkophapi
+        Kramarae
+        Luta
+        Pecan_Wakpa
+        Sapa
+        Thankja
+        Witko
+    }
+    ethnicities = {
+        1 = na_sioux_ethnicity
+    }
+    graphics = decentralised_americas
+}
+
+na_chiwere_winnebago = {
+    color = hsv{ 0.63 0.37 0.52 }
+    religion = na_native_american_spirituality
+    traits = { na_native_american_heritage na_sioux_culture_group }
+    male_common_first_names = {
+        Hehaka
+        Inkpaduta
+        Istahba
+        Mahpiya
+        Monkaushka
+        Sinte
+        Tamaha
+        Thahca
+        Thasunke
+        Thathanka
+        Thaoyate_Duta
+        Wanbdisapa
+        Wanata
+    }
+    female_common_first_names = {
+        Azayamankawin
+        Topahhdewin
+        Wakanmaniwin
+        Wakantakawin
+        Wakhan_Inazin_Win
+    }
+    noble_last_names = {
+        Hakadah
+        Ohiya_S-a
+        Tamaha
+        Wakinyanduta
+        Wowinape
+    }
+    common_last_names = {
+        Duta
+        Gleska
+        Huste
+        Iyotake
+        Kohkophapi
+        Kramarae
+        Luta
+        Pecan_Wakpa
+        Sapa
+        Thankja
+        Witko
+    }
+    ethnicities = {
+        1 = na_sioux_ethnicity
+    }
+    graphics = decentralised_americas
+}
+
+na_omaha_ponca = {
+    color = hsv{ 0.63 0.37 0.52 }
+    religion = na_native_american_spirituality
+    traits = { na_native_american_heritage na_sioux_culture_group }
+    male_common_first_names = {
+        Hehaka
+        Inkpaduta
+        Istahba
+        Mahpiya
+        Monkaushka
+        Sinte
+        Tamaha
+        Thahca
+        Thasunke
+        Thathanka
+        Thaoyate_Duta
+        Wanbdisapa
+        Wanata
+    }
+    female_common_first_names = {
+        Azayamankawin
+        Topahhdewin
+        Wakanmaniwin
+        Wakantakawin
+        Wakhan_Inazin_Win
+    }
+    noble_last_names = {
+        Hakadah
+        Ohiya_S-a
+        Tamaha
+        Wakinyanduta
+        Wowinape
+    }
+    common_last_names = {
+        Duta
+        Gleska
+        Huste
+        Iyotake
+        Kohkophapi
+        Kramarae
+        Luta
+        Pecan_Wakpa
+        Sapa
+        Thankja
+        Witko
+    }
+    ethnicities = {
+        1 = na_sioux_ethnicity
+    }
+    graphics = decentralised_americas
+}
+
+na_kansa_osage = {
+    color = hsv{ 0.63 0.37 0.52 }
+    religion = na_native_american_spirituality
+    traits = { na_native_american_heritage na_sioux_culture_group }
+    male_common_first_names = {
+        Hehaka
+        Inkpaduta
+        Istahba
+        Mahpiya
+        Monkaushka
+        Sinte
+        Tamaha
+        Thahca
+        Thasunke
+        Thathanka
+        Thaoyate_Duta
+        Wanbdisapa
+        Wanata
+    }
+    female_common_first_names = {
+        Azayamankawin
+        Topahhdewin
+        Wakanmaniwin
+        Wakantakawin
+        Wakhan_Inazin_Win
+    }
+    noble_last_names = {
+        Hakadah
+        Ohiya_S-a
+        Tamaha
+        Wakinyanduta
+        Wowinape
+    }
+    common_last_names = {
+        Duta
+        Gleska
+        Huste
+        Iyotake
+        Kohkophapi
+        Kramarae
+        Luta
+        Pecan_Wakpa
+        Sapa
+        Thankja
+        Witko
+    }
+    ethnicities = {
+        1 = na_sioux_ethnicity
+    }
+    graphics = decentralised_americas
+}
+
+na_quapaw = {
+    color = hsv{ 0.63 0.37 0.52 }
+    religion = na_native_american_spirituality
+    traits = { na_native_american_heritage na_sioux_culture_group }
+    male_common_first_names = {
+        Hehaka
+        Inkpaduta
+        Istahba
+        Mahpiya
+        Monkaushka
+        Sinte
+        Tamaha
+        Thahca
+        Thasunke
+        Thathanka
+        Thaoyate_Duta
+        Wanbdisapa
+        Wanata
+    }
+    female_common_first_names = {
+        Azayamankawin
+        Topahhdewin
+        Wakanmaniwin
+        Wakantakawin
+        Wakhan_Inazin_Win
+    }
+    noble_last_names = {
+        Hakadah
+        Ohiya_S-a
+        Tamaha
+        Wakinyanduta
+        Wowinape
+    }
+    common_last_names = {
+        Duta
+        Gleska
+        Huste
+        Iyotake
+        Kohkophapi
+        Kramarae
+        Luta
+        Pecan_Wakpa
+        Sapa
+        Thankja
+        Witko
+    }
+    ethnicities = {
+        1 = na_sioux_ethnicity
+    }
+    graphics = decentralised_americas
+}
+
+na_mandan = {
+    color = hsv{ 0.63 0.37 0.52 }
+    religion = na_native_american_spirituality
+    traits = { na_native_american_heritage na_sioux_culture_group }
+    male_common_first_names = {
+        Hehaka
+        Inkpaduta
+        Istahba
+        Mahpiya
+        Monkaushka
+        Sinte
+        Tamaha
+        Thahca
+        Thasunke
+        Thathanka
+        Thaoyate_Duta
+        Wanbdisapa
+        Wanata
+    }
+    female_common_first_names = {
+        Azayamankawin
+        Topahhdewin
+        Wakanmaniwin
+        Wakantakawin
+        Wakhan_Inazin_Win
+    }
+    noble_last_names = {
+        Hakadah
+        Ohiya_S-a
+        Tamaha
+        Wakinyanduta
+        Wowinape
+    }
+    common_last_names = {
+        Duta
+        Gleska
+        Huste
+        Iyotake
+        Kohkophapi
+        Kramarae
+        Luta
+        Pecan_Wakpa
+        Sapa
+        Thankja
+        Witko
+    }
+    ethnicities = {
+        1 = na_sioux_ethnicity
+    }
+    graphics = decentralised_americas
+}
+
+na_cree_montagnais = {
+    color = hsv{ 0.22 0.15 0.86 }
+    religion = na_native_american_spirituality
+    traits = { na_native_american_heritage na_algonquian_culture_group }
+    male_common_first_names={
+        Alexis
+        Baptiste
+        Felix_2
+        Jacob
+        James
+        Joe
+        Louis
+        Maskipitonew
+        Samson
+    }
+    female_common_first_names = {
+        Amelia
+        Freda
+        Glecia
+        Georgina
+        Judy
+        Rosanna
+        Shirley
+        Tishynah Tuhbenahneequay Tekarihogen
+        Verna
+    }
+    noble_last_names = {
+        Ahenakew
+        Ahtahkakoop
+        Kahkewistahaw
+        Lathlin
+    }
+    common_last_names={
+        Assiniwi
+        Buffalo
+        Callahan
+        Crane
+        Decoteau
+        Douglas
+        Kiskiyew
+        Piche
+        Rain
+        Saddleback
+    }
+    ethnicities = {
+        1 = na_algonquian_ethnicity
+    }
+    graphics = decentralised_americas
+}
+
+na_ojibwe_potawatomi = {
+    color = hsv{ 0.22 0.15 0.86 }
+    religion = na_ojibwe_spirituality
+    traits = { na_native_american_heritage na_algonquian_culture_group }
+    male_common_first_names = {
+        Catecahassa Cottawamago Cheeseekau
+        Gakiiwegwanebi
+        Hokoleskwa
+        Kekewepelethy
+        Lalawethika Lawoughqua
+        MihS_ihkinaahkwa Moluntha Mahthela Muscquaconocah
+        Puckenshinwa Penagashea Pepquannakek Paxinosa Peteusha PepekitaakamhS_i
+        Quatawapea
+        Spemica_Lawba Shemanetoo
+        Wawahchepaehai Weyapiersenwah WeS_ihS_imo Wiliwi
+    }
+    female_common_first_names = {
+        Haayiitaapama
+        Methoataske MayataakwipiiwehS_i
+        Nonhelema
+        Peahchepeahso
+        WelepiiwehS_i
+    }
+    common_last_names = {
+        Chalahgawtha
+        Eskippakithiki
+        Hokolesqua
+        Kispokotha KaskE_
+        Mecoce
+        Opessa
+        Pekowi Peckuwe
+        ShipakA_kamithagI_
+        Thawikila
+    }
+    ethnicities = {
+        1 = na_algonquian_ethnicity
+    }
+    graphics = decentralised_americas
+}
+
+na_blackfoot = {
+    color = hsv{ 0.22 0.15 0.86 }
+    religion = na_blackfoot_spirituality
+    traits = { na_native_american_heritage na_algonquian_culture_group }
+    male_common_first_names = {
+        Catecahassa Cottawamago Cheeseekau
+        Gakiiwegwanebi
+        Hokoleskwa
+        Kekewepelethy
+        Lalawethika Lawoughqua
+        MihS_ihkinaahkwa Moluntha Mahthela Muscquaconocah
+        Puckenshinwa Penagashea Pepquannakek Paxinosa Peteusha PepekitaakamhS_i
+        Quatawapea
+        Spemica_Lawba Shemanetoo
+        Wawahchepaehai Weyapiersenwah WeS_ihS_imo Wiliwi
+    }
+    female_common_first_names = {
+        Haayiitaapama
+        Methoataske MayataakwipiiwehS_i
+        Nonhelema
+        Peahchepeahso
+        WelepiiwehS_i
+    }
+    common_last_names = {
+        Chalahgawtha
+        Eskippakithiki
+        Hokolesqua
+        Kispokotha KaskE_
+        Mecoce
+        Opessa
+        Pekowi Peckuwe
+        ShipakA_kamithagI_
+        Thawikila
+    }
+    ethnicities = {
+        1 = na_algonquian_ethnicity
+    }
+    graphics = decentralised_americas
+}
+
+na_arapahoan = {
+    color = hsv{ 0.22 0.15 0.86 }
+    religion = na_native_american_spirituality
+    traits = { na_native_american_heritage na_algonquian_culture_group }
+    male_common_first_names = {
+        Catecahassa Cottawamago Cheeseekau
+        Gakiiwegwanebi
+        Hokoleskwa
+        Kekewepelethy
+        Lalawethika Lawoughqua
+        MihS_ihkinaahkwa Moluntha Mahthela Muscquaconocah
+        Puckenshinwa Penagashea Pepquannakek Paxinosa Peteusha PepekitaakamhS_i
+        Quatawapea
+        Spemica_Lawba Shemanetoo
+        Wawahchepaehai Weyapiersenwah WeS_ihS_imo Wiliwi
+    }
+    female_common_first_names = {
+        Haayiitaapama
+        Methoataske MayataakwipiiwehS_i
+        Nonhelema
+        Peahchepeahso
+        WelepiiwehS_i
+    }
+    common_last_names = {
+        Chalahgawtha
+        Eskippakithiki
+        Hokolesqua
+        Kispokotha KaskE_
+        Mecoce
+        Opessa
+        Pekowi Peckuwe
+        ShipakA_kamithagI_
+        Thawikila
+    }
+    ethnicities = {
+        1 = na_algonquian_ethnicity
+    }
+    graphics = decentralised_americas
+}
+
+na_miami_illinois = {
+    color = hsv{ 0.22 0.15 0.86 }
+    religion = na_native_american_spirituality
+    traits = { na_native_american_heritage na_algonquian_culture_group }
+    male_common_first_names = {
+        Catecahassa Cottawamago Cheeseekau
+        Gakiiwegwanebi
+        Hokoleskwa
+        Kekewepelethy
+        Lalawethika Lawoughqua
+        MihS_ihkinaahkwa Moluntha Mahthela Muscquaconocah
+        Puckenshinwa Penagashea Pepquannakek Paxinosa Peteusha PepekitaakamhS_i
+        Quatawapea
+        Spemica_Lawba Shemanetoo
+        Wawahchepaehai Weyapiersenwah WeS_ihS_imo Wiliwi
+    }
+    female_common_first_names = {
+        Haayiitaapama
+        Methoataske MayataakwipiiwehS_i
+        Nonhelema
+        Peahchepeahso
+        WelepiiwehS_i
+    }
+    common_last_names = {
+        Chalahgawtha
+        Eskippakithiki
+        Hokolesqua
+        Kispokotha KaskE_
+        Mecoce
+        Opessa
+        Pekowi Peckuwe
+        ShipakA_kamithagI_
+        Thawikila
+    }
+    ethnicities = {
+        1 = na_algonquian_ethnicity
+    }
+    graphics = decentralised_americas
+}
+
+na_eastern_algonquian = {
+    color = hsv{ 0.22 0.15 0.86 }
+    religion = na_native_american_spirituality
+    traits = { na_native_american_heritage na_algonquian_culture_group }
+    male_common_first_names = {
+        Catecahassa Cottawamago Cheeseekau
+        Gakiiwegwanebi
+        Hokoleskwa
+        Kekewepelethy
+        Lalawethika Lawoughqua
+        MihS_ihkinaahkwa Moluntha Mahthela Muscquaconocah
+        Puckenshinwa Penagashea Pepquannakek Paxinosa Peteusha PepekitaakamhS_i
+        Quatawapea
+        Spemica_Lawba Shemanetoo
+        Wawahchepaehai Weyapiersenwah WeS_ihS_imo Wiliwi
+    }
+    female_common_first_names = {
+        Haayiitaapama
+        Methoataske MayataakwipiiwehS_i
+        Nonhelema
+        Peahchepeahso
+        WelepiiwehS_i
+    }
+    common_last_names = {
+        Chalahgawtha
+        Eskippakithiki
+        Hokolesqua
+        Kispokotha KaskE_
+        Mecoce
+        Opessa
+        Pekowi Peckuwe
+        ShipakA_kamithagI_
+        Thawikila
+    }
+    ethnicities = {
+        1 = na_algonquian_ethnicity
+    }
+    graphics = decentralised_americas
+}
+
+na_caddoan = {
+    color = hsv{ 0.22 0.15 0.86 }
+    religion = na_native_american_spirituality
+    traits = { na_native_american_heritage na_caddoan_culture_group }
+    male_common_first_names={
+        Apuckshunubbee
+        Benjamin
+        Greenwood
+        Hollis
+        James
+        Mushulatubbee
+        Pushmataha
+        Tuskaloosa
+    }
+    female_common_first_names = {
+        Owanah
+        Rosella
+        Samantha
+    }
+    noble_last_names = {
+        Cole
+        LeFlore
+        Smallwood
+        Roberts
+    }
+    common_last_names={
+        Anderson
+        Folsom
+        Hightower
+        Lomahaftewa
+        McCurtain
+        Oklahombi
+        Pickens
+        Pitchlynn
+    }
+    ethnicities = {
+        1 = na_caddoan_ethnicity
+    }
+    graphics = decentralised_americas
+}
+
+na_chickasaw_choctaw = {
+    color = hsv{ 0.22 0.15 0.86 }
+    religion = na_native_american_spirituality
+    traits = { na_native_american_heritage na_muskogean_culture_group }
+    male_common_first_names={
+        Hehaka
+        Inkpaduta
+        Istahba
+        Mahpiya
+        Monkaushka
+        Sinte
+        Tamaha
+        Thahca
+        Thasunke
+        Thathanka
+        Thaoyate_Duta
+        Wanbdisapa
+        Wanata
+    }
+    female_common_first_names = {
+        Azayamankawin
+        Topahhdewin
+        Wakanmaniwin
+        Wakantakawin
+        Wakhan_Inazin_Win
+    }
+    noble_last_names = {
+        Hakadah
+        Ohiya_S-a
+        Tamaha
+        Wakinyanduta
+        Wowinape
+    }
+    common_last_names={
+        Duta
+        Gleska
+        Huste
+        Iyotake
+        Kohkophapi
+        Kramarae
+        Luta
+        Pecan_Wakpa
+        Sapa
+        Thankja
+        Witko
+    }
+    ethnicities = {
+        1 = na_muskogean_ethnicity
+    }
+    graphics = decentralised_americas
+}
+
+na_muscogee = {
+    color = hsv{ 0.22 0.15 0.86 }
+    religion = na_native_american_spirituality
+    traits = { na_native_american_heritage na_muskogean_culture_group }
+    male_common_first_names={
+        Hehaka
+        Inkpaduta
+        Istahba
+        Mahpiya
+        Monkaushka
+        Sinte
+        Tamaha
+        Thahca
+        Thasunke
+        Thathanka
+        Thaoyate_Duta
+        Wanbdisapa
+        Wanata
+    }
+    female_common_first_names = {
+        Azayamankawin
+        Topahhdewin
+        Wakanmaniwin
+        Wakantakawin
+        Wakhan_Inazin_Win
+    }
+    noble_last_names = {
+        Hakadah
+        Ohiya_S-a
+        Tamaha
+        Wakinyanduta
+        Wowinape
+    }
+    common_last_names={
+        Duta
+        Gleska
+        Huste
+        Iyotake
+        Kohkophapi
+        Kramarae
+        Luta
+        Pecan_Wakpa
+        Sapa
+        Thankja
+        Witko
+    }
+    ethnicities = {
+        1 = na_muskogean_ethnicity
+    }
+    graphics = decentralised_americas
+}
+
+na_haudenosaunee  = {
+    color = hsv{ 0.22 0.15 0.86 }
+    religion = na_the_great_law_of_peace
+    traits = { na_native_american_heritage na_iroquois_culture_group }
+    male_common_first_names={
+        Akwiraron Akwirente
+        Domagaya
+        Ga-Na-Gua Guyasuta Ganio-dai-io Gyantwachia
+        Hadawa-ko Hayonhwonhish Honayawas Hutgohsodoneh
+        Kaintwakon
+        Skenandoa Sganyodaiyo Sakokwenionkwas Sagoyewatha Sayenqueraghta Sigwaahdohgwih Sosondowa
+        Tanacharison Thaonawyuthe Tejonihokarawa Taignoagny Tewahangarahken
+    }
+    female_common_first_names = {
+        Akat Alliquippa
+        Dehhewanis
+        Gahonnoneh Gowongo
+        Kaniehtiio Kateri Kawisenhawe
+        Lydia
+        Tekakwitha Tyonajanegen
+    }
+    noble_last_names = {
+        Abeel
+        Brant Blacksnake
+        Chaussi Cornplanter
+    }
+    common_last_names={
+        Bennett Buck Brant
+        Crants
+        Gibson
+        Heron Hubbard
+        Jemison
+        Lyons Longboat
+        Mohawk Montour
+        Pallan Parker Pierce Plummer
+        Seneca Steele
+        Watt
+    }
+    ethnicities = {
+        1 = na_iroquois_ethnicity
+    }
+    graphics = decentralised_americas
+}
+
+na_tuscarora_nottoway = {
+    color = hsv{ 0.22 0.15 0.86 }
+    religion = na_the_great_law_of_peace
+    traits = { na_native_american_heritage na_iroquois_culture_group }
+    male_common_first_names={
+        Akwiraron Akwirente
+        Domagaya
+        Ga-Na-Gua Guyasuta Ganio-dai-io Gyantwachia
+        Hadawa-ko Hayonhwonhish Honayawas Hutgohsodoneh
+        Kaintwakon
+        Skenandoa Sganyodaiyo Sakokwenionkwas Sagoyewatha Sayenqueraghta Sigwaahdohgwih Sosondowa
+        Tanacharison Thaonawyuthe Tejonihokarawa Taignoagny Tewahangarahken
+    }
+    female_common_first_names = {
+        Akat Alliquippa
+        Dehhewanis
+        Gahonnoneh Gowongo
+        Kaniehtiio Kateri Kawisenhawe
+        Lydia
+        Tekakwitha Tyonajanegen
+    }
+    noble_last_names = {
+        Abeel
+        Brant Blacksnake
+        Chaussi Cornplanter
+    }
+    common_last_names={
+        Bennett Buck Brant
+        Crants
+        Gibson
+        Heron Hubbard
+        Jemison
+        Lyons Longboat
+        Mohawk Montour
+        Pallan Parker Pierce Plummer
+        Seneca Steele
+        Watt
+    }
+    ethnicities = {
+        1 = na_iroquois_ethnicity
+    }
+    graphics = decentralised_americas
+}
+
+na_cherokee = {
+    color = hsv{ 0.22 0.15 0.86 }
+    religion = na_cherokee_spirituality
+    traits = { na_native_american_heritage na_iroquois_culture_group }
+    male_common_first_names={
+        Hehaka
+        Inkpaduta
+        Istahba
+        Mahpiya
+        Monkaushka
+        Sinte
+        Tamaha
+        Thahca
+        Thasunke
+        Thathanka
+        Thaoyate_Duta
+        Wanbdisapa
+        Wanata
+    }
+    female_common_first_names = {
+        Azayamankawin
+        Topahhdewin
+        Wakanmaniwin
+        Wakantakawin
+        Wakhan_Inazin_Win
+    }
+    noble_last_names = {
+        Hakadah
+        Ohiya_S-a
+        Tamaha
+        Wakinyanduta
+        Wowinape
+    }
+    common_last_names={
+        Duta
+        Gleska
+        Huste
+        Iyotake
+        Kohkophapi
+        Kramarae
+        Luta
+        Pecan_Wakpa
+        Sapa
+        Thankja
+        Witko
+    }
+    ethnicities = {
+        1 = na_iroquois_ethnicity
+    }
+    graphics = decentralised_americas
+}
+
+na_northern_athabaskan = {
+    color = hsv{ 0.22 0.15 0.86 }
+    religion = na_native_american_spirituality
+    traits = { na_native_american_heritage na_athabaskan_culture_group }
+    male_common_first_names={
+        Caubvick
+        David
+        Ernie
+        Germaine
+        Markoosie
+        Ipeelee
+        Jack
+        James
+        Jose_2
+        Kenojuak
+        Naalak
+        Peter
+        Pitseolak
+        Steve
+        Simeonie
+        Titus
+    }
+    female_common_first_names = {
+        Alacie
+        Beatrice
+        Josephine
+        Madeline
+        Mina
+        Mitiarjuk
+        Sheila
+    }
+    noble_last_names = {
+        Atagotaaluk
+        Tullaugaq
+    }
+    common_last_names={
+        Alakannuark
+        Arreak
+        Ashoona
+        Enuaraq
+        Evaloarjuk
+        Ipeelee
+        Irgittuq
+        Keenainak
+        Kunuk
+        Kusugak
+        Maksagak
+        Nappaaluk
+        Nutarak
+        Paniloo
+        Piugattuk
+        Pudluk
+        Tiktaalaaq
+        Ungallaq
+        Quissa
+        Sivuarapik
+    }
+    ethnicities = {
+        1 = na_athabaskan_ethnicity
+    }
+    graphics = decentralised_americas
+}
+
+na_pacific_athabaskan = {
+    color = hsv{ 0.22 0.15 0.86 }
+    religion = na_native_american_spirituality
+    traits = { na_native_american_heritage na_athabaskan_culture_group }
+    male_common_first_names={
+        Caubvick
+        David
+        Ernie
+        Germaine
+        Markoosie
+        Ipeelee
+        Jack
+        James
+        Jose_2
+        Kenojuak
+        Naalak
+        Peter
+        Pitseolak
+        Steve
+        Simeonie
+        Titus
+    }
+    female_common_first_names = {
+        Alacie
+        Beatrice
+        Josephine
+        Madeline
+        Mina
+        Mitiarjuk
+        Sheila
+    }
+    noble_last_names = {
+        Atagotaaluk
+        Tullaugaq
+    }
+    common_last_names={
+        Alakannuark
+        Arreak
+        Ashoona
+        Enuaraq
+        Evaloarjuk
+        Ipeelee
+        Irgittuq
+        Keenainak
+        Kunuk
+        Kusugak
+        Maksagak
+        Nappaaluk
+        Nutarak
+        Paniloo
+        Piugattuk
+        Pudluk
+        Tiktaalaaq
+        Ungallaq
+        Quissa
+        Sivuarapik
+    }
+    ethnicities = {
+        1 = na_athabaskan_ethnicity
+    }
+    graphics = decentralised_americas
+}
+
+na_apachean = {
+    color = hsv{ 0.22 0.15 0.86 }
+    religion = na_native_american_spirituality
+    traits = { na_native_american_heritage na_athabaskan_culture_group }
+    male_common_first_names={
+        Klaesh
+        Lomayumtewa
+        Tuba
+        Yukiuma
+        Barboncito
+        Digul_Chee
+        Ganado
+        Henry_Chee
+        Herrero
+        Jeremiah
+        Manuelito
+        Mariano
+        Narbona
+        Zarcillos
+    }
+    female_common_first_names = {
+        Dahteste
+        Grace
+        Nampeyo
+        Otellie
+        Amanda
+        Claudeen
+        Geraldine
+        Jacqueline
+        Maria
+        Pablita
+        Theresa
+    }
+    noble_last_names = {
+        Begaye
+        Katchongva
+        Naha
+        Sekaquaptewa
+        Begay
+        Dodge
+        Hastiin_Dagha
+        K-aayelii
+    }
+    common_last_names={
+        Banyacya
+        Chapella
+        Evehema
+        Honyestewa
+        Humetewa
+        Ishii
+        Loloma
+        Lomayesva
+        Zachai
+        Ch_ilhanjini
+        Da_ghaaii
+        Delagado
+        Grande
+        Largos
+        Martinez
+        Naat_aa
+        Redcloud
+        To_tso_nii
+        Zah
+    }
+    ethnicities = {
+        1 = na_athabaskan_ethnicity
+    }
+    graphics = decentralised_americas
+}
+
+na_shoshone = {
+    color = hsv{ 0.22 0.15 0.86 }
+    religion = na_native_american_spirituality
+    traits = { na_native_american_heritage na_uto_aztecan_culture_group }
+    male_common_first_names = {
+        Antonga
+        Arapeen
+        Canalla
+        Cameahwait
+        Colorow
+        Guero
+        Ignacio
+        Kanosh
+        Ouray
+        Owitze
+        Paseego
+        Pinquanah
+        Pocatello
+        Posey
+        Sanpitch
+        Sapiah
+        Sapinero
+        Severo
+        Tabby-To-Hwanah
+        Tse-Ne-Gat
+        Walkara
+        Washakie
+        Wirasuap
+    }
+    female_common_first_names = {
+        Chipeta
+        Nanawu
+        Pearl
+        Shawsheen
+        Wenega
+    }
+    noble_last_names = {
+        House
+        Timbimboo
+        Timpanog
+        Tussawehee
+        Umatilla
+    }
+    common_last_names = {
+        Box
+        Daggett
+        Estep
+        Manning
+        Rael
+        Teton
+        Trahant
+        Trudell
+    }
+    ethnicities = {
+        1 = na_uto_aztecan_ethnicity
+    }
+    graphics = decentralised_americas
+}
+
+na_paiute = {
+    color = hsv{ 0.22 0.15 0.86 }
+    religion = na_native_american_spirituality
+    traits = { na_native_american_heritage na_uto_aztecan_culture_group }
+    male_common_first_names = {
+        Antonga
+        Arapeen
+        Canalla
+        Cameahwait
+        Colorow
+        Guero
+        Ignacio
+        Kanosh
+        Ouray
+        Owitze
+        Paseego
+        Pinquanah
+        Pocatello
+        Posey
+        Sanpitch
+        Sapiah
+        Sapinero
+        Severo
+        Tabby-To-Hwanah
+        Tse-Ne-Gat
+        Walkara
+        Washakie
+        Wirasuap
+    }
+    female_common_first_names = {
+        Chipeta
+        Nanawu
+        Pearl
+        Shawsheen
+        Wenega
+    }
+    noble_last_names = {
+        House
+        Timbimboo
+        Timpanog
+        Tussawehee
+        Umatilla
+    }
+    common_last_names = {
+        Box
+        Daggett
+        Estep
+        Manning
+        Rael
+        Teton
+        Trahant
+        Trudell
+    }
+    ethnicities = {
+        1 = na_uto_aztecan_ethnicity
+    }
+    graphics = decentralised_americas
+}
+
+na_colorado_numic = {
+    color = hsv{ 0.22 0.15 0.86 }
+    religion = na_native_american_spirituality
+    traits = { na_native_american_heritage na_uto_aztecan_culture_group }
+    male_common_first_names = {
+        Antonga
+        Arapeen
+        Canalla
+        Cameahwait
+        Colorow
+        Guero
+        Ignacio
+        Kanosh
+        Ouray
+        Owitze
+        Paseego
+        Pinquanah
+        Pocatello
+        Posey
+        Sanpitch
+        Sapiah
+        Sapinero
+        Severo
+        Tabby-To-Hwanah
+        Tse-Ne-Gat
+        Walkara
+        Washakie
+        Wirasuap
+    }
+    female_common_first_names = {
+        Chipeta
+        Nanawu
+        Pearl
+        Shawsheen
+        Wenega
+    }
+    noble_last_names = {
+        House
+        Timbimboo
+        Timpanog
+        Tussawehee
+        Umatilla
+    }
+    common_last_names = {
+        Box
+        Daggett
+        Estep
+        Manning
+        Rael
+        Teton
+        Trahant
+        Trudell
+    }
+    ethnicities = {
+        1 = na_uto_aztecan_ethnicity
+    }
+    graphics = decentralised_americas
+}
+
+na_comanche = {
+    color = hsv{ 0.22 0.15 0.86 }
+    religion = na_native_american_spirituality
+    traits = { na_native_american_heritage na_uto_aztecan_culture_group }
+    male_common_first_names={
+        Esihabit
+        Huupi-pahati Hitetetsi
+        Isaviah Isananaka
+        Ketsumse
+        Mopechucope
+        Nocona
+        Puhihwitsikwasu Parosawano Pocheha-quehip Pahayoko
+        Quanah Quenah-evah
+        Tabby-nocca Tawaquenah
+        Waakakwasi Wulea-boo
+    }
+    female_common_first_names = {
+        Ahuhwuthtakum
+        Chony
+        Mahchettawookey
+        Naduah
+        Topsannah Toepay Tonarcy
+        Weakeah
+    }
+    noble_last_names = {
+        Hois
+        Kwahadi Kotsoteka
+        Nokoni
+        Penateka
+        Yamparika
+    }
+    common_last_names={
+        Esarosavit
+        Itehtah_o
+        Ketahtoh
+        Jupe
+        Motso Motsai
+        Pohee Pigianigwai Pahnaixte
+        Tenawa Tanima Tekapwai
+        Wahkoh Wohoi WahaToya Wia_ne
+    }
+    ethnicities = {
+        1 = na_uto_aztecan_ethnicity
+    }
+    graphics = decentralised_americas
+}
+
+na_northern_uto_aztecan = {
+    color = hsv{ 0.22 0.15 0.86 }
+    religion = na_native_american_spirituality
+    traits = { na_native_american_heritage na_uto_aztecan_culture_group }
+    male_common_first_names = {
+        Antonga
+        Arapeen
+        Canalla
+        Cameahwait
+        Colorow
+        Guero
+        Ignacio
+        Kanosh
+        Ouray
+        Owitze
+        Paseego
+        Pinquanah
+        Pocatello
+        Posey
+        Sanpitch
+        Sapiah
+        Sapinero
+        Severo
+        Tabby-To-Hwanah
+        Tse-Ne-Gat
+        Walkara
+        Washakie
+        Wirasuap
+    }
+    female_common_first_names = {
+        Chipeta
+        Nanawu
+        Pearl
+        Shawsheen
+        Wenega
+    }
+    noble_last_names = {
+        House
+        Timbimboo
+        Timpanog
+        Tussawehee
+        Umatilla
+    }
+    common_last_names = {
+        Box
+        Daggett
+        Estep
+        Manning
+        Rael
+        Teton
+        Trahant
+        Trudell
+    }
+    ethnicities = {
+        1 = na_uto_aztecan_ethnicity
+    }
+    graphics = decentralised_americas
+}
+
+na_southern_uto_aztecan = {
+    color = hsv{ 0.22 0.15 0.86 }
+    religion = na_native_american_spirituality
+    traits = { na_native_american_heritage na_uto_aztecan_culture_group }
+    male_common_first_names = {
+        Antonga
+        Arapeen
+        Canalla
+        Cameahwait
+        Colorow
+        Guero
+        Ignacio
+        Kanosh
+        Ouray
+        Owitze
+        Paseego
+        Pinquanah
+        Pocatello
+        Posey
+        Sanpitch
+        Sapiah
+        Sapinero
+        Severo
+        Tabby-To-Hwanah
+        Tse-Ne-Gat
+        Walkara
+        Washakie
+        Wirasuap
+    }
+    female_common_first_names = {
+        Chipeta
+        Nanawu
+        Pearl
+        Shawsheen
+        Wenega
+    }
+    noble_last_names = {
+        House
+        Timbimboo
+        Timpanog
+        Tussawehee
+        Umatilla
+    }
+    common_last_names = {
+        Box
+        Daggett
+        Estep
+        Manning
+        Rael
+        Teton
+        Trahant
+        Trudell
+    }
+    ethnicities = {
+        1 = na_uto_aztecan_ethnicity
+    }
+    graphics = decentralised_americas
+}
+
+na_nahuan = {
+    color = hsv{ 0.22 0.15 0.86 }
+    religion = na_native_american_spirituality
+    traits = { na_native_american_heritage na_uto_aztecan_culture_group }
+    male_common_first_names = {
+        Antonga
+        Arapeen
+        Canalla
+        Cameahwait
+        Colorow
+        Guero
+        Ignacio
+        Kanosh
+        Ouray
+        Owitze
+        Paseego
+        Pinquanah
+        Pocatello
+        Posey
+        Sanpitch
+        Sapiah
+        Sapinero
+        Severo
+        Tabby-To-Hwanah
+        Tse-Ne-Gat
+        Walkara
+        Washakie
+        Wirasuap
+    }
+    female_common_first_names = {
+        Chipeta
+        Nanawu
+        Pearl
+        Shawsheen
+        Wenega
+    }
+    noble_last_names = {
+        House
+        Timbimboo
+        Timpanog
+        Tussawehee
+        Umatilla
+    }
+    common_last_names = {
+        Box
+        Daggett
+        Estep
+        Manning
+        Rael
+        Teton
+        Trahant
+        Trudell
+    }
+    ethnicities = {
+        1 = na_uto_aztecan_ethnicity
+    }
+    graphics = decentralised_americas
+}
+
+na_piman = {
+    color = hsv{ 0.22 0.15 0.86 }
+    religion = na_native_american_spirituality
+    traits = { na_native_american_heritage na_uto_aztecan_culture_group }
+    male_common_first_names = {
+        Antonga
+        Arapeen
+        Canalla
+        Cameahwait
+        Colorow
+        Guero
+        Ignacio
+        Kanosh
+        Ouray
+        Owitze
+        Paseego
+        Pinquanah
+        Pocatello
+        Posey
+        Sanpitch
+        Sapiah
+        Sapinero
+        Severo
+        Tabby-To-Hwanah
+        Tse-Ne-Gat
+        Walkara
+        Washakie
+        Wirasuap
+    }
+    female_common_first_names = {
+        Chipeta
+        Nanawu
+        Pearl
+        Shawsheen
+        Wenega
+    }
+    noble_last_names = {
+        House
+        Timbimboo
+        Timpanog
+        Tussawehee
+        Umatilla
+    }
+    common_last_names = {
+        Box
+        Daggett
+        Estep
+        Manning
+        Rael
+        Teton
+        Trahant
+        Trudell
+    }
+    ethnicities = {
+        1 = na_uto_aztecan_ethnicity
+    }
+    graphics = decentralised_americas
+}
+
+na_optan = {
+    color = hsv{ 0.22 0.15 0.86 }
+    religion = na_native_american_spirituality
+    traits = { na_native_american_heritage na_uto_aztecan_culture_group }
+    male_common_first_names = {
+        Antonga
+        Arapeen
+        Canalla
+        Cameahwait
+        Colorow
+        Guero
+        Ignacio
+        Kanosh
+        Ouray
+        Owitze
+        Paseego
+        Pinquanah
+        Pocatello
+        Posey
+        Sanpitch
+        Sapiah
+        Sapinero
+        Severo
+        Tabby-To-Hwanah
+        Tse-Ne-Gat
+        Walkara
+        Washakie
+        Wirasuap
+    }
+    female_common_first_names = {
+        Chipeta
+        Nanawu
+        Pearl
+        Shawsheen
+        Wenega
+    }
+    noble_last_names = {
+        House
+        Timbimboo
+        Timpanog
+        Tussawehee
+        Umatilla
+    }
+    common_last_names = {
+        Box
+        Daggett
+        Estep
+        Manning
+        Rael
+        Teton
+        Trahant
+        Trudell
+    }
+    ethnicities = {
+        1 = na_uto_aztecan_ethnicity
+    }
+    graphics = decentralised_americas
+}
+
+na_cahita = {
+    color = hsv{ 0.22 0.15 0.86 }
+    religion = na_native_american_spirituality
+    traits = { na_native_american_heritage na_uto_aztecan_culture_group }
+    male_common_first_names = {
+        Antonga
+        Arapeen
+        Canalla
+        Cameahwait
+        Colorow
+        Guero
+        Ignacio
+        Kanosh
+        Ouray
+        Owitze
+        Paseego
+        Pinquanah
+        Pocatello
+        Posey
+        Sanpitch
+        Sapiah
+        Sapinero
+        Severo
+        Tabby-To-Hwanah
+        Tse-Ne-Gat
+        Walkara
+        Washakie
+        Wirasuap
+    }
+    female_common_first_names = {
+        Chipeta
+        Nanawu
+        Pearl
+        Shawsheen
+        Wenega
+    }
+    noble_last_names = {
+        House
+        Timbimboo
+        Timpanog
+        Tussawehee
+        Umatilla
+    }
+    common_last_names = {
+        Box
+        Daggett
+        Estep
+        Manning
+        Rael
+        Teton
+        Trahant
+        Trudell
+    }
+    ethnicities = {
+        1 = na_uto_aztecan_ethnicity
+    }
+    graphics = decentralised_americas
+}
+
+na_corachol = {
+    color = hsv{ 0.22 0.15 0.86 }
+    religion = na_native_american_spirituality
+    traits = { na_native_american_heritage na_uto_aztecan_culture_group }
+    male_common_first_names = {
+        Antonga
+        Arapeen
+        Canalla
+        Cameahwait
+        Colorow
+        Guero
+        Ignacio
+        Kanosh
+        Ouray
+        Owitze
+        Paseego
+        Pinquanah
+        Pocatello
+        Posey
+        Sanpitch
+        Sapiah
+        Sapinero
+        Severo
+        Tabby-To-Hwanah
+        Tse-Ne-Gat
+        Walkara
+        Washakie
+        Wirasuap
+    }
+    female_common_first_names = {
+        Chipeta
+        Nanawu
+        Pearl
+        Shawsheen
+        Wenega
+    }
+    noble_last_names = {
+        House
+        Timbimboo
+        Timpanog
+        Tussawehee
+        Umatilla
+    }
+    common_last_names = {
+        Box
+        Daggett
+        Estep
+        Manning
+        Rael
+        Teton
+        Trahant
+        Trudell
+    }
+    ethnicities = {
+        1 = na_uto_aztecan_ethnicity
+    }
+    graphics = decentralised_americas
+}
+
+na_yuman = {
+    color = hsv{ 0.22 0.15 0.86 }
+    religion = na_native_american_spirituality
+    traits = { na_native_american_heritage na_yuman_culture_group }
+    male_common_first_names={
+        Aurelio
+        Camilo
+        Estanislao
+        Kagama
+        Numaga
+        Pahninee
+        Tau-Gu
+        Tenaya
+        Tutsegabit
+        Virgil
+    }
+    female_common_first_names = {
+        Anna
+        Aurelia
+        Candida
+        Cayetana
+        Elena
+        Julia
+        Louisa
+        Mineru
+        Omesia
+        Pamahas
+    }
+    noble_last_names = {
+        Ahwahne
+        Chochenyo
+        Cucunuchi
+        Gashowu
+        Lakisamni
+        Okwanuchu
+        Tawalimnu
+        Winnemucca
+        Wukchumni
+        Ynitia
+    }
+    common_last_names={
+        Abinanti
+        Aguilar
+        Follis
+        Masten
+        Parker
+        Perez
+        Pico
+        Sandoval
+        Sarris
+        Telles
+        Teyoc
+        Thom
+        Tillohash
+    }
+    ethnicities = {
+        1 = na_yuman_ethnicity
+    }
+    graphics = decentralised_americas
+}
+
+na_salishan = {
+    color = hsv{ 0.22 0.15 0.86 }
+    religion = na_native_american_spirituality
+    traits = { na_native_american_heritage na_salishan_culture_group }
+    male_common_first_names={
+        Cumshewa
+        Cuneah
+        Dah-egin
+        Gush_X-een
+        Guujaaw
+        Hluugitgaa
+        Masset
+        Ninstints
+        Skaay
+        Skidegate
+        Tahaygen
+        Wiisheyksh
+        Xhuuyaa
+    }
+    female_common_first_names = {
+        Ansnaq
+        Jadal_q-eganga
+        Kung_Jaadee
+        Kwiigeliones
+        K-woiyang
+        Qawkuna
+        Skil_Kew_Wat
+    }
+    noble_last_names = {
+        Gispwudwada
+        Idinsaw
+        Taantakwaan
+        Y-akwa-lanas
+    }
+    common_last_names={
+        Daaxan
+        Hak
+        Ni-isyuus
+        Psday
+        Yahgulanaas
+    }
+    ethnicities = {
+        1 = na_salishan_ethnicity
+    }
+    graphics = decentralised_americas
+}
+
+na_shapwailutan = {
+    color = hsv{ 0.22 0.15 0.86 }
+    religion = na_native_american_spirituality
+    traits = { na_native_american_heritage na_shapwailutan_culture_group }
+    male_common_first_names = {
+        Catecahassa Cottawamago Cheeseekau
+        Gakiiwegwanebi
+        Hokoleskwa
+        Kekewepelethy
+        Lalawethika Lawoughqua
+        MihS_ihkinaahkwa Moluntha Mahthela Muscquaconocah
+        Puckenshinwa Penagashea Pepquannakek Paxinosa Peteusha PepekitaakamhS_i
+        Quatawapea
+        Spemica_Lawba Shemanetoo
+        Wawahchepaehai Weyapiersenwah WeS_ihS_imo Wiliwi
+    }
+    female_common_first_names = {
+        Haayiitaapama
+        Methoataske MayataakwipiiwehS_i
+        Nonhelema
+        Peahchepeahso
+        WelepiiwehS_i
+    }
+    common_last_names = {
+        Chalahgawtha
+        Eskippakithiki
+        Hokolesqua
+        Kispokotha KaskE_
+        Mecoce
+        Opessa
+        Pekowi Peckuwe
+        ShipakA_kamithagI_
+        Thawikila
+    }
+    ethnicities = {
+        1 = na_shapwailutan_ethnicity
+    }
+    graphics = decentralised_americas
+}
+
+na_tonkawa = {
+    color = hsv{ 0.22 0.15 0.86 }
+    religion = na_native_american_spirituality
+    traits = { na_native_american_heritage na_tonkawa_culture_group }
+    male_common_first_names = {
+        Catecahassa Cottawamago Cheeseekau
+        Gakiiwegwanebi
+        Hokoleskwa
+        Kekewepelethy
+        Lalawethika Lawoughqua
+        MihS_ihkinaahkwa Moluntha Mahthela Muscquaconocah
+        Puckenshinwa Penagashea Pepquannakek Paxinosa Peteusha PepekitaakamhS_i
+        Quatawapea
+        Spemica_Lawba Shemanetoo
+        Wawahchepaehai Weyapiersenwah WeS_ihS_imo Wiliwi
+    }
+    female_common_first_names = {
+        Haayiitaapama
+        Methoataske MayataakwipiiwehS_i
+        Nonhelema
+        Peahchepeahso
+        WelepiiwehS_i
+    }
+    common_last_names = {
+        Chalahgawtha
+        Eskippakithiki
+        Hokolesqua
+        Kispokotha KaskE_
+        Mecoce
+        Opessa
+        Pekowi Peckuwe
+        ShipakA_kamithagI_
+        Thawikila
+    }
+    ethnicities = {
+        1 = na_tonkawa_ethnicity
+    }
+    graphics = decentralised_americas
+}
+
+na_coahuiltecan = {
+    color = hsv{ 0.22 0.15 0.86 }
+    religion = na_native_american_spirituality
+    traits = { na_native_american_heritage na_coahuiltecan_culture_group }
+    male_common_first_names = {
+        Catecahassa Cottawamago Cheeseekau
+        Gakiiwegwanebi
+        Hokoleskwa
+        Kekewepelethy
+        Lalawethika Lawoughqua
+        MihS_ihkinaahkwa Moluntha Mahthela Muscquaconocah
+        Puckenshinwa Penagashea Pepquannakek Paxinosa Peteusha PepekitaakamhS_i
+        Quatawapea
+        Spemica_Lawba Shemanetoo
+        Wawahchepaehai Weyapiersenwah WeS_ihS_imo Wiliwi
+    }
+    female_common_first_names = {
+        Haayiitaapama
+        Methoataske MayataakwipiiwehS_i
+        Nonhelema
+        Peahchepeahso
+        WelepiiwehS_i
+    }
+    common_last_names = {
+        Chalahgawtha
+        Eskippakithiki
+        Hokolesqua
+        Kispokotha KaskE_
+        Mecoce
+        Opessa
+        Pekowi Peckuwe
+        ShipakA_kamithagI_
+        Thawikila
+    }
+    ethnicities = {
+        1 = na_coahuiltecan_ethnicity
+    }
+    graphics = decentralised_americas
+}

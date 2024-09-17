@@ -1,0 +1,3 @@
+﻿na_native_american_spirituality_heritage = {
+	heritage = yes
+}
