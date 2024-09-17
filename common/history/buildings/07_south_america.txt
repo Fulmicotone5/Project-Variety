@@ -1189,7 +1189,7 @@
 					building={
 						type="building_financial_district"
 						country="c:AGA"
-						levels=
+						levels=1
 						region="STATE_BUENOS_AIRES"
 					}
 				}
