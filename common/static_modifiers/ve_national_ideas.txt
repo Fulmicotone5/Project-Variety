@@ -493,19 +493,19 @@ yua_idea_1 = {
 
 yua_idea_2 = {
 	icon = gfx/interface/intelligensia.dds
-	country_production_tech_research_speed_mult = 0.05
-	country_military_tech_research_speed_mult = 0.05
-	country_society_tech_research_speed_mult = 0.05
+	country_production_tech_research_speed_mult = 0.03
+	country_military_tech_research_speed_mult = 0.03
+	country_society_tech_research_speed_mult = 0.03
 }
 
 yua_idea_3 = {
 	icon = gfx/interface/intelligensia.dds
-	country_government_dividends_efficiency_add = 0.15
+	country_government_dividends_efficiency_add = 0.05
 }
 
 yua_idea_4 = {
 	icon = gfx/interface/intelligensia.dds
-	state_capitalists_investment_pool_efficiency_mult = 0.15
+	state_capitalists_investment_pool_efficiency_mult = 0.05
 	state_shopkeepers_investment_pool_efficiency_mult = 0.15
 }
 
