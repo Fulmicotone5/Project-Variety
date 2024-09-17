@@ -36,5 +36,8 @@ COUNTRIES = {
 		trigger_event = {
 			id = fm_bohem.1
 		}
+		set_variable = {
+			name = idea_boh
+		}
 	}
 }

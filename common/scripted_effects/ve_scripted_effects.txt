@@ -1,85 +1,55 @@
 ﻿national_idea_mdf = {
 	if = {
 		limit = {
-			exists = c:GBR
-			this = c:GBR
+			has_variable = idea_eng
 		}
 		british_ideas = yes
 	}
 	else_if = {
 		limit = {
-			exists = c:FRA
-			this = c:FRA
+			has_variable = idea_fru
 		}
 		french_ideas = yes
 	}
 	else_if = {
 		limit = {
-			exists = c:SGF
-			this = c:SGF
+			has_variable = idea_lot
 		}
 		german_ideas = yes
 	}
 	else_if = {
 		limit = {
-			exists = c:GER
-			this = c:GER
-		}
-		german_ideas = yes
-	}
-	else_if = {
-		limit = {
-			exists = c:PRU
-			this = c:PRU
-		}
-		german_ideas = yes
-	}
-	else_if = {
-		limit = {
-			exists = c:NGF
-			this = c:NGF
-		}
-		german_ideas = yes
-	}
-	else_if = {
-		limit = {
-			exists = c:AUS
-			this = c:AUS
+			has_variable = idea_boh
 		}
 		austrian_ideas = yes
 	}
 	else_if = {
 		limit = {
-			exists = c:RUS
-			this = c:RUS
+			has_variable = idea_kar
 		}
 		russian_ideas = yes
 	}
 	else_if = {
 		limit = {
-			exists = c:TUR
-			this = c:TUR
+			has_variable = idea_sae
 		}
 		turkish_ideas = yes
 	}
 	else_if = {
 		limit = {
-			exists = c:CHI
-			this = c:CHI
+			has_variable = idea_kor
 		}
 		chinese_ideas = yes
 	}
 	else_if = {
 		limit = {
-			exists = c:JAP
-			this = c:JAP
+			has_variable = idea_jap
 		}
 		japanese_ideas = yes
 	}
 	else_if = {
 		limit = {
-			exists = c:USA
-			this = c:USA
+			has_variable = idea_amc
 		}
 		american_ideas = yes
 	}
@@ -91,85 +61,55 @@
 cancel_national_idea_mdf = {
 	if = {
 		limit = {
-			exists = c:GBR
-			this = c:GBR
+			has_variable = idea_eng
 		}
 		cancel_british_ideas = yes
 	}
 	else_if = {
 		limit = {
-			exists = c:FRA
-			this = c:FRA
+			has_variable = idea_fru
 		}
 		cancel_french_ideas = yes
 	}
 	else_if = {
 		limit = {
-			exists = c:SGF
-			this = c:SGF
+			has_variable = idea_lot
 		}
 		cancel_german_ideas = yes
 	}
 	else_if = {
 		limit = {
-			exists = c:GER
-			this = c:GER
-		}
-		cancel_german_ideas = yes
-	}
-	else_if = {
-		limit = {
-			exists = c:PRU
-			this = c:PRU
-		}
-		cancel_german_ideas = yes
-	}
-	else_if = {
-		limit = {
-			exists = c:NGF
-			this = c:NGF
-		}
-		cancel_german_ideas = yes
-	}
-	else_if = {
-		limit = {
-			exists = c:AUS
-			this = c:AUS
+			has_variable = idea_boh
 		}
 		cancel_austrian_ideas = yes
 	}
 	else_if = {
 		limit = {
-			exists = c:RUS
-			this = c:RUS
+			has_variable = idea_kar
 		}
 		cancel_russian_ideas = yes
 	}
 	else_if = {
 		limit = {
-			exists = c:TUR
-			this = c:TUR
+			has_variable = idea_sae
 		}
 		cancel_turkish_ideas = yes
 	}
 	else_if = {
 		limit = {
-			exists = c:CHI
-			this = c:CHI
+			has_variable = idea_kor
 		}
 		cancel_chinese_ideas = yes
 	}
 	else_if = {
 		limit = {
-			exists = c:JAP
-			this = c:JAP
+			has_variable = idea_jap
 		}
 		cancel_japanese_ideas = yes
 	}
 	else_if = {
 		limit = {
-			exists = c:USA
-			this = c:USA
+			has_variable = idea_amc
 		}
 		cancel_american_ideas = yes
 	}

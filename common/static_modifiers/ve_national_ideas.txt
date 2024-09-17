@@ -5,7 +5,7 @@ gbr_idea_tradition_1 = {
 
 gbr_idea_tradition_2 = {
 	icon = gfx/interface/intelligensia.dds
-	unit_advancement_speed_mult = 0.1
+	military_formation_mobilization_speed_mult = 0.2
 }
 
 gbr_idea_bonus = {
@@ -20,9 +20,9 @@ gbr_idea_1 = {
 
 gbr_idea_2 = {
 	icon = gfx/interface/intelligensia.dds
-	country_production_tech_research_speed_mult = 0.05
-	country_military_tech_research_speed_mult = 0.05
-	country_society_tech_research_speed_mult = 0.05
+	country_production_tech_research_speed_mult = 0.03
+	country_military_tech_research_speed_mult = 0.03
+	country_society_tech_research_speed_mult = 0.03
 }
 
 gbr_idea_3 = {
@@ -47,7 +47,7 @@ gbr_idea_6 = {
 
 gbr_idea_7 = {
 	icon = gfx/interface/intelligensia.dds
-	unit_army_offense_add = 10
+	unit_navy_offense_add = 15
 }
 
 fra_idea_tradition_1 = {
@@ -57,17 +57,17 @@ fra_idea_tradition_1 = {
 
 fra_idea_tradition_2 = {
 	icon = gfx/interface/intelligensia.dds
-	political_movement_radicalism_mult = -0.1
+	country_legitimacy_govt_size_add = 1
 }
 
 fra_idea_bonus = {
 	icon = gfx/interface/intelligensia.dds
-	country_prestige_mult = 0.15
+	country_improve_relations_speed_mult = 0.5
 }
 
 fra_idea_1 = {
 	icon = gfx/interface/intelligensia.dds
-	state_urbanization_add = 10	#Unutma
+	state_infrastructure_from_population_add = 0.5
 }
 
 fra_idea_2 = {
@@ -77,7 +77,7 @@ fra_idea_2 = {
 
 fra_idea_3 = {
 	icon = gfx/interface/intelligensia.dds
-	state_radicals_from_discrimination_mult = -0.15
+	state_radicals_from_discrimination_mult = -0.25
 }
 
 fra_idea_4 = {
@@ -98,7 +98,7 @@ fra_idea_6 = {
 
 fra_idea_7 = {
 	icon = gfx/interface/intelligensia.dds
-	country_max_declared_interests_mult = 0.25
+	country_tech_spread_mult = 0.1
 }
 
 ger_idea_tradition_1 = {
@@ -113,7 +113,7 @@ ger_idea_tradition_2 = {
 
 ger_idea_bonus = {
 	icon = gfx/interface/intelligensia.dds
-	unit_army_offense_mult = 0.2
+	unit_army_offense_mult = 0.05
 }
 
 ger_idea_1 = {
@@ -124,12 +124,12 @@ ger_idea_1 = {
 
 ger_idea_2 = {
 	icon = gfx/interface/intelligensia.dds
-	country_legitimacy_headofstate_add = 10
+	country_legitimacy_headofstate_add = 5
 }
 
 ger_idea_3 = {
 	icon = gfx/interface/intelligensia.dds
-	country_infamy_decay_mult = 0.1
+	country_infamy_decay_mult = 0.05
 }
 
 ger_idea_4 = {
@@ -150,7 +150,7 @@ ger_idea_6 = {
 
 ger_idea_7 = {
 	icon = gfx/interface/intelligensia.dds
-	state_pop_qualifications_mult = 0.15
+	state_pop_qualifications_mult = 0.1
 }
 
 aus_idea_tradition_1 = {
@@ -160,17 +160,17 @@ aus_idea_tradition_1 = {
 
 aus_idea_tradition_2 = {
 	icon = gfx/interface/intelligensia.dds
-	country_improve_relations_speed_mult = 0.1
+	country_improve_relations_speed_mult = 0.25
 }
 
 aus_idea_bonus = {
 	icon = gfx/interface/intelligensia.dds
-	country_legitimacy_govt_leader_clout_add = 15
+	country_legitimacy_govt_leader_clout_add = 10
 }
 
 aus_idea_1 = {
 	icon = gfx/interface/intelligensia.dds
-	country_infamy_generation_mult = -0.1
+	state_pop_qualifications_mult = 0.05
 }
 
 aus_idea_2 = {
@@ -181,7 +181,7 @@ aus_idea_2 = {
 
 aus_idea_3 = {
 	icon = gfx/interface/intelligensia.dds
-	unit_army_defense_add = 10
+	unit_army_defense_add = 5
 	unit_morale_damage_mult = 0.05
 }
 
@@ -192,8 +192,8 @@ aus_idea_4 = {
 
 aus_idea_5 = {
 	icon = gfx/interface/intelligensia.dds
-	country_loan_interest_rate_mult = -0.1
-	state_capitalists_investment_pool_efficiency_mult = 0.1
+	country_loan_interest_rate_mult = -0.05
+	state_capitalists_investment_pool_efficiency_mult = 0.05
 }
 
 aus_idea_6 = {
@@ -203,7 +203,7 @@ aus_idea_6 = {
 
 aus_idea_7 = {
 	icon = gfx/interface/intelligensia.dds
-	country_military_wages_mult = -0.2
+	unit_supply_consumption_mult = -0.1
 	building_training_rate_mult = 0.1
 }
 
@@ -219,17 +219,17 @@ rus_idea_tradition_2 = {
 
 rus_idea_bonus = {
 	icon = gfx/interface/intelligensia.dds
-	country_legitimacy_base_add = 10
+	country_legitimacy_base_add = 5
 }
 
 rus_idea_1 = {
 	icon = gfx/interface/intelligensia.dds
-	country_law_enactment_success_add = 0.1
+	country_law_enactment_success_add = 0.05
 }
 
 rus_idea_2 = {
 	icon = gfx/interface/intelligensia.dds
-	country_military_tech_research_speed_mult = 0.075
+	country_military_tech_research_speed_mult = 0.1
 }
 
 rus_idea_3 = {
@@ -240,13 +240,13 @@ rus_idea_3 = {
 
 rus_idea_4 = {
 	icon = gfx/interface/intelligensia.dds
-	state_conscription_rate_mult = 0.25
+	state_conscription_rate_mult = 0.1
 	unit_offense_add = 5
 }
 
 rus_idea_5 = {
 	icon = gfx/interface/intelligensia.dds
-	country_infamy_generation_mult = -0.15
+	country_infamy_generation_mult = -0.1
 }
 
 rus_idea_6 = {
@@ -267,12 +267,12 @@ tur_idea_tradition_1 = {
 
 tur_idea_tradition_2 = {
 	icon = gfx/interface/intelligensia.dds
-	state_radicals_from_discrimination_mult = -0.05
+	state_radicals_from_discrimination_mult = -0.15
 }
 
 tur_idea_bonus = {
 	icon = gfx/interface/intelligensia.dds
-	state_conscription_rate_mult = 0.2
+	unit_morale_damage_mult = 0.1
 }
 
 tur_idea_1 = {
@@ -282,14 +282,14 @@ tur_idea_1 = {
 
 tur_idea_2 = {
 	icon = gfx/interface/intelligensia.dds
-	country_tech_spread_mult = 0.1
-	state_education_access_add = 0.015
+	country_tech_spread_mult = 0.05
+	state_education_access_add = 0.03
 }
 
 tur_idea_3 = {
 	icon = gfx/interface/intelligensia.dds
 	unit_morale_recovery_mult = 0.1
-	unit_army_offense_mult = 0.1
+	unit_army_offense_mult = 0.05
 }
 
 tur_idea_4 = {
@@ -300,23 +300,23 @@ tur_idea_4 = {
 tur_idea_5 = {
 	icon = gfx/interface/intelligensia.dds
 	market_land_trade_capacity_add = 10
-	building_railway_mine_throughput_add = 0.1
+	country_trade_route_competitiveness_mult = 0.15
 }
 
 tur_idea_6 = {
 	icon = gfx/interface/intelligensia.dds
 	interest_group_in_government_approval_add = 2
-	state_decree_cost_mult = -0.2
+	state_decree_cost_mult = -0.1
 }
 
 tur_idea_7 = {
 	icon = gfx/interface/intelligensia.dds
-	country_infamy_decay_mult = 0.2
+	country_infamy_decay_mult = 0.1
 }
 
 qng_idea_tradition_1 = {
 	icon = gfx/interface/intelligensia.dds
-	country_influence_mult = 0.15
+	country_influence_mult = 0.1
 }
 
 qng_idea_tradition_2 = {
@@ -357,25 +357,24 @@ qng_idea_5 = {
 
 qng_idea_6 = {
 	icon = gfx/interface/intelligensia.dds
-	unit_supply_consumption_mult = -0.25
+	unit_supply_consumption_mult = -0.1
 	unit_defense_hazardous_add = 10
 }
 
 qng_idea_7 = {
 	icon = gfx/interface/intelligensia.dds
-	state_urbanization_per_level_mult = -0.2
+	state_construction_mult = 0.05
 }
 
 jap_idea_tradition_1 = {
 	icon = gfx/interface/intelligensia.dds
-	country_law_enactment_success_add = 0.1
+	country_law_enactment_success_add = 0.05
 }
 
 jap_idea_tradition_2 = {
 	icon = gfx/interface/intelligensia.dds
-	country_production_tech_research_speed_mult = 0.05
-	country_military_tech_research_speed_mult = 0.05
-	country_society_tech_research_speed_mult = 0.05
+	country_military_tech_research_speed_mult = 0.03
+	country_society_tech_research_speed_mult = 0.03
 }
 
 jap_idea_bonus = {
@@ -390,7 +389,7 @@ jap_idea_1 = {
 
 jap_idea_2 = {
 	icon = gfx/interface/intelligensia.dds
-	state_education_access_add = 0.015
+	state_education_access_add = 0.05
 }
 
 jap_idea_3 = {
@@ -406,7 +405,7 @@ jap_idea_4 = {
 
 jap_idea_5 = {
 	icon = gfx/interface/intelligensia.dds
-	country_radicals_from_conquest_mult = -0.1
+	country_radicals_from_conquest_mult = -0.15
 }
 
 jap_idea_6 = {
@@ -422,7 +421,7 @@ jap_idea_7 = {
 
 usa_idea_tradition_1 = {
 	icon = gfx/interface/intelligensia.dds
-	state_migration_pull_mult = 0.15
+	state_migration_quota_mult = 0.1
 }
 
 usa_idea_tradition_2 = {
@@ -437,12 +436,12 @@ usa_idea_bonus = {
 
 usa_idea_1 = {
 	icon = gfx/interface/intelligensia.dds
-	state_radicals_from_discrimination_mult = -0.1
+	state_radicals_from_discrimination_mult = -0.15
 }
 
 usa_idea_2 = {
 	icon = gfx/interface/intelligensia.dds
-	state_working_adult_ratio_add = 0.1
+	state_working_adult_ratio_add = 0.05
 }
 
 usa_idea_3 = {
@@ -453,8 +452,8 @@ usa_idea_3 = {
 
 usa_idea_4 = {
 	icon = gfx/interface/intelligensia.dds
-	state_education_access_wealth_add = 0.002
-	state_mortality_wealth_mult = -0.05
+	state_education_access_wealth_add = 0.001
+	state_mortality_wealth_mult = -0.001
 }
 
 usa_idea_5 = {
@@ -464,12 +463,12 @@ usa_idea_5 = {
 
 usa_idea_6 = {
 	icon = gfx/interface/intelligensia.dds
-	state_pop_qualifications_mult = 0.15
+	state_pop_qualifications_mult = 0.1
 }
 
 usa_idea_7 = {
 	icon = gfx/interface/intelligensia.dds
-	country_minting_mult = 0.2
+	country_minting_mult = 0.15
 }
 
 generic_idea_tradition_1 = {

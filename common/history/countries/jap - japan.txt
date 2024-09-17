@@ -65,5 +65,8 @@
 		}
 
 		add_journal_entry = { type = je_terakoya }
+		set_variable = {
+			name = idea_jap
+		}
 	}
 }

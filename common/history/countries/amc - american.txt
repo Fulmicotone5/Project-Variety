@@ -57,5 +57,8 @@ COUNTRIES = {
 		add_modifier = {
 			name = diplomatic_plays_blocked
 		}
+		set_variable = {
+			name = idea_amc
+		}
 	}
 }

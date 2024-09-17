@@ -41,5 +41,8 @@
 		trigger_event = {
 			id = fm_kor.1
 		}
+		set_variable = {
+			name = idea_kor
+		}
 	}
 }

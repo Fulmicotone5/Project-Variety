@@ -1516,11 +1516,11 @@ SLO = {
 }
 
 TOR = {
-	color = { 4 54 12 }
+	color = { 18 65 153 }
 	
 	country_type = recognized
 
-	tier = empire
+	tier = kingdom
 	
 	cultures = { turkish }
 	capital = STATE_ANKARA
@@ -2390,7 +2390,7 @@ PHI = {
 	
 	tier = kingdom
 	
-	cultures = { filipino spanish }
+	cultures = { filipino bornean }
 	capital = STATE_LUZON
 }
 

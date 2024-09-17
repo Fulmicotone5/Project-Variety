@@ -31,5 +31,8 @@ COUNTRIES = {
 		trigger_event = {
 			id = fm_rusf.1
 		}
+		set_variable = {
+			name = idea_kar
+		}
 	}
 }

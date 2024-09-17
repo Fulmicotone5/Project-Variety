@@ -9,8 +9,7 @@ ve_national_idea_1 = {
 	effect = {
 		if = {
 			limit = {
-				exists = c:GBR
-				this = c:GBR
+				has_variable = idea_eng
 			}
 			add_modifier = {
 				name = gbr_idea_1
@@ -19,8 +18,7 @@ ve_national_idea_1 = {
 		}
 		else_if = {
 			limit = {
-				exists = c:FRA
-				this = c:FRA
+				has_variable = idea_fru
 			}
 			add_modifier = {
 				name = fra_idea_1
@@ -29,8 +27,7 @@ ve_national_idea_1 = {
 		}
 		else_if = {
 			limit = {
-				exists = c:PRU
-				this = c:PRU
+				has_variable = idea_lot
 			}
 			add_modifier = {
 				name = ger_idea_1
@@ -39,38 +36,7 @@ ve_national_idea_1 = {
 		}
 		else_if = {
 			limit = {
-				exists = c:SGF
-				this = c:SGF
-			}
-			add_modifier = {
-				name = ger_idea_1
-				months = -1
-			}
-		}
-		else_if = {
-			limit = {
-				exists = c:NGF
-				this = c:NGF
-			}
-			add_modifier = {
-				name = ger_idea_1
-				months = -1
-			}
-		}
-		else_if = {
-			limit = {
-				exists = c:GER
-				this = c:GER
-			}
-			add_modifier = {
-				name = ger_idea_1
-				months = -1
-			}
-		}
-		else_if = {
-			limit = {
-				exists = c:AUS
-				this = c:AUS
+				has_variable = idea_boh
 			}
 			add_modifier = {
 				name = aus_idea_1
@@ -79,8 +45,7 @@ ve_national_idea_1 = {
 		}
 		else_if = {
 			limit = {
-				exists = c:RUS
-				this = c:RUS
+				has_variable = idea_kar
 			}
 			add_modifier = {
 				name = rus_idea_1
@@ -89,8 +54,7 @@ ve_national_idea_1 = {
 		}
 		else_if = {
 			limit = {
-				exists = c:TUR
-				this = c:TUR
+				has_variable = idea_sae
 			}
 			add_modifier = {
 				name = tur_idea_1
@@ -99,8 +63,7 @@ ve_national_idea_1 = {
 		}
 		else_if = {
 			limit = {
-				exists = c:CHI
-				this = c:CHI
+				has_variable = idea_kor
 			}
 			add_modifier = {
 				name = qng_idea_1
@@ -109,8 +72,7 @@ ve_national_idea_1 = {
 		}
 		else_if = {
 			limit = {
-				exists = c:JAP
-				this = c:JAP
+				has_variable = idea_jap
 			}
 			add_modifier = {
 				name = jap_idea_1
@@ -119,8 +81,7 @@ ve_national_idea_1 = {
 		}
 		else_if = {
 			limit = {
-				exists = c:USA
-				this = c:USA
+				has_variable = idea_amc
 			}
 			add_modifier = {
 				name = usa_idea_1
@@ -147,8 +108,7 @@ ve_national_idea_2 = {
 	effect = {
 		if = {
 			limit = {
-				exists = c:GBR
-				this = c:GBR
+				has_variable = idea_eng
 			}
 			add_modifier = {
 				name = gbr_idea_2
@@ -157,8 +117,7 @@ ve_national_idea_2 = {
 		}
 		else_if = {
 			limit = {
-				exists = c:FRA
-				this = c:FRA
+				has_variable = idea_fru
 			}
 			add_modifier = {
 				name = fra_idea_2
@@ -167,8 +126,7 @@ ve_national_idea_2 = {
 		}
 		else_if = {
 			limit = {
-				exists = c:PRU
-				this = c:PRU
+				has_variable = idea_lot
 			}
 			add_modifier = {
 				name = ger_idea_2
@@ -177,38 +135,7 @@ ve_national_idea_2 = {
 		}
 		else_if = {
 			limit = {
-				exists = c:SGF
-				this = c:SGF
-			}
-			add_modifier = {
-				name = ger_idea_2
-				months = -1
-			}
-		}
-		else_if = {
-			limit = {
-				exists = c:NGF
-				this = c:NGF
-			}
-			add_modifier = {
-				name = ger_idea_2
-				months = -1
-			}
-		}
-		else_if = {
-			limit = {
-				exists = c:GER
-				this = c:GER
-			}
-			add_modifier = {
-				name = ger_idea_2
-				months = -1
-			}
-		}
-		else_if = {
-			limit = {
-				exists = c:AUS
-				this = c:AUS
+				has_variable = idea_boh
 			}
 			add_modifier = {
 				name = aus_idea_2
@@ -217,8 +144,7 @@ ve_national_idea_2 = {
 		}
 		else_if = {
 			limit = {
-				exists = c:RUS
-				this = c:RUS
+				has_variable = idea_kar
 			}
 			add_modifier = {
 				name = rus_idea_2
@@ -227,8 +153,7 @@ ve_national_idea_2 = {
 		}
 		else_if = {
 			limit = {
-				exists = c:TUR
-				this = c:TUR
+				has_variable = idea_sae
 			}
 			add_modifier = {
 				name = tur_idea_2
@@ -237,8 +162,7 @@ ve_national_idea_2 = {
 		}
 		else_if = {
 			limit = {
-				exists = c:CHI
-				this = c:CHI
+				has_variable = idea_kor
 			}
 			add_modifier = {
 				name = qng_idea_2
@@ -247,8 +171,7 @@ ve_national_idea_2 = {
 		}
 		else_if = {
 			limit = {
-				exists = c:JAP
-				this = c:JAP
+				has_variable = idea_jap
 			}
 			add_modifier = {
 				name = jap_idea_2
@@ -257,8 +180,7 @@ ve_national_idea_2 = {
 		}
 		else_if = {
 			limit = {
-				exists = c:USA
-				this = c:USA
+				has_variable = idea_amc
 			}
 			add_modifier = {
 				name = usa_idea_2
@@ -285,8 +207,7 @@ ve_national_idea_3 = {
 	effect = {
 		if = {
 			limit = {
-				exists = c:GBR
-				this = c:GBR
+				has_variable = idea_eng
 			}
 			add_modifier = {
 				name = gbr_idea_3
@@ -295,8 +216,7 @@ ve_national_idea_3 = {
 		}
 		else_if = {
 			limit = {
-				exists = c:FRA
-				this = c:FRA
+				has_variable = idea_fru
 			}
 			add_modifier = {
 				name = fra_idea_3
@@ -305,8 +225,7 @@ ve_national_idea_3 = {
 		}
 		else_if = {
 			limit = {
-				exists = c:PRU
-				this = c:PRU
+				has_variable = idea_lot
 			}
 			add_modifier = {
 				name = ger_idea_3
@@ -315,38 +234,7 @@ ve_national_idea_3 = {
 		}
 		else_if = {
 			limit = {
-				exists = c:SGF
-				this = c:SGF
-			}
-			add_modifier = {
-				name = ger_idea_3
-				months = -1
-			}
-		}
-		else_if = {
-			limit = {
-				exists = c:NGF
-				this = c:NGF
-			}
-			add_modifier = {
-				name = ger_idea_3
-				months = -1
-			}
-		}
-		else_if = {
-			limit = {
-				exists = c:GER
-				this = c:GER
-			}
-			add_modifier = {
-				name = ger_idea_3
-				months = -1
-			}
-		}
-		else_if = {
-			limit = {
-				exists = c:AUS
-				this = c:AUS
+				has_variable = idea_boh
 			}
 			add_modifier = {
 				name = aus_idea_3
@@ -355,8 +243,7 @@ ve_national_idea_3 = {
 		}
 		else_if = {
 			limit = {
-				exists = c:RUS
-				this = c:RUS
+				has_variable = idea_kar
 			}
 			add_modifier = {
 				name = rus_idea_3
@@ -365,8 +252,7 @@ ve_national_idea_3 = {
 		}
 		else_if = {
 			limit = {
-				exists = c:TUR
-				this = c:TUR
+				has_variable = idea_sae
 			}
 			add_modifier = {
 				name = tur_idea_3
@@ -375,8 +261,7 @@ ve_national_idea_3 = {
 		}
 		else_if = {
 			limit = {
-				exists = c:CHI
-				this = c:CHI
+				has_variable = idea_kor
 			}
 			add_modifier = {
 				name = qng_idea_3
@@ -385,8 +270,7 @@ ve_national_idea_3 = {
 		}
 		else_if = {
 			limit = {
-				exists = c:JAP
-				this = c:JAP
+				has_variable = idea_jap
 			}
 			add_modifier = {
 				name = jap_idea_3
@@ -395,8 +279,7 @@ ve_national_idea_3 = {
 		}
 		else_if = {
 			limit = {
-				exists = c:USA
-				this = c:USA
+				has_variable = idea_amc
 			}
 			add_modifier = {
 				name = usa_idea_3
@@ -423,8 +306,7 @@ ve_national_idea_4 = {
 	effect = {
 		if = {
 			limit = {
-				exists = c:GBR
-				this = c:GBR
+				has_variable = idea_eng
 			}
 			add_modifier = {
 				name = gbr_idea_4
@@ -433,8 +315,7 @@ ve_national_idea_4 = {
 		}
 		else_if = {
 			limit = {
-				exists = c:FRA
-				this = c:FRA
+				has_variable = idea_fru
 			}
 			add_modifier = {
 				name = fra_idea_4
@@ -443,8 +324,7 @@ ve_national_idea_4 = {
 		}
 		else_if = {
 			limit = {
-				exists = c:PRU
-				this = c:PRU
+				has_variable = idea_lot
 			}
 			add_modifier = {
 				name = ger_idea_4
@@ -453,38 +333,7 @@ ve_national_idea_4 = {
 		}
 		else_if = {
 			limit = {
-				exists = c:SGF
-				this = c:SGF
-			}
-			add_modifier = {
-				name = ger_idea_4
-				months = -1
-			}
-		}
-		else_if = {
-			limit = {
-				exists = c:NGF
-				this = c:NGF
-			}
-			add_modifier = {
-				name = ger_idea_4
-				months = -1
-			}
-		}
-		else_if = {
-			limit = {
-				exists = c:GER
-				this = c:GER
-			}
-			add_modifier = {
-				name = ger_idea_4
-				months = -1
-			}
-		}
-		else_if = {
-			limit = {
-				exists = c:AUS
-				this = c:AUS
+				has_variable = idea_boh
 			}
 			add_modifier = {
 				name = aus_idea_4
@@ -493,8 +342,7 @@ ve_national_idea_4 = {
 		}
 		else_if = {
 			limit = {
-				exists = c:RUS
-				this = c:RUS
+				has_variable = idea_kar
 			}
 			add_modifier = {
 				name = rus_idea_4
@@ -503,8 +351,7 @@ ve_national_idea_4 = {
 		}
 		else_if = {
 			limit = {
-				exists = c:TUR
-				this = c:TUR
+				has_variable = idea_sae
 			}
 			add_modifier = {
 				name = tur_idea_4
@@ -513,8 +360,7 @@ ve_national_idea_4 = {
 		}
 		else_if = {
 			limit = {
-				exists = c:CHI
-				this = c:CHI
+				has_variable = idea_kor
 			}
 			add_modifier = {
 				name = qng_idea_4
@@ -523,8 +369,7 @@ ve_national_idea_4 = {
 		}
 		else_if = {
 			limit = {
-				exists = c:JAP
-				this = c:JAP
+				has_variable = idea_jap
 			}
 			add_modifier = {
 				name = jap_idea_4
@@ -533,8 +378,7 @@ ve_national_idea_4 = {
 		}
 		else_if = {
 			limit = {
-				exists = c:USA
-				this = c:USA
+				has_variable = idea_amc
 			}
 			add_modifier = {
 				name = usa_idea_4
@@ -561,8 +405,7 @@ ve_national_idea_5 = {
 	effect = {
 		if = {
 			limit = {
-				exists = c:GBR
-				this = c:GBR
+				has_variable = idea_eng
 			}
 			add_modifier = {
 				name = gbr_idea_5
@@ -571,8 +414,7 @@ ve_national_idea_5 = {
 		}
 		else_if = {
 			limit = {
-				exists = c:FRA
-				this = c:FRA
+				has_variable = idea_fru
 			}
 			add_modifier = {
 				name = fra_idea_5
@@ -581,8 +423,7 @@ ve_national_idea_5 = {
 		}
 		else_if = {
 			limit = {
-				exists = c:PRU
-				this = c:PRU
+				has_variable = idea_lot
 			}
 			add_modifier = {
 				name = ger_idea_5
@@ -591,38 +432,7 @@ ve_national_idea_5 = {
 		}
 		else_if = {
 			limit = {
-				exists = c:SGF
-				this = c:SGF
-			}
-			add_modifier = {
-				name = ger_idea_5
-				months = -1
-			}
-		}
-		else_if = {
-			limit = {
-				exists = c:NGF
-				this = c:NGF
-			}
-			add_modifier = {
-				name = ger_idea_5
-				months = -1
-			}
-		}
-		else_if = {
-			limit = {
-				exists = c:GER
-				this = c:GER
-			}
-			add_modifier = {
-				name = ger_idea_5
-				months = -1
-			}
-		}
-		else_if = {
-			limit = {
-				exists = c:AUS
-				this = c:AUS
+				has_variable = idea_boh
 			}
 			add_modifier = {
 				name = aus_idea_5
@@ -631,8 +441,7 @@ ve_national_idea_5 = {
 		}
 		else_if = {
 			limit = {
-				exists = c:RUS
-				this = c:RUS
+				has_variable = idea_kar
 			}
 			add_modifier = {
 				name = rus_idea_5
@@ -641,8 +450,7 @@ ve_national_idea_5 = {
 		}
 		else_if = {
 			limit = {
-				exists = c:TUR
-				this = c:TUR
+				has_variable = idea_sae
 			}
 			add_modifier = {
 				name = tur_idea_5
@@ -651,8 +459,7 @@ ve_national_idea_5 = {
 		}
 		else_if = {
 			limit = {
-				exists = c:CHI
-				this = c:CHI
+				has_variable = idea_kor
 			}
 			add_modifier = {
 				name = qng_idea_5
@@ -661,8 +468,7 @@ ve_national_idea_5 = {
 		}
 		else_if = {
 			limit = {
-				exists = c:JAP
-				this = c:JAP
+				has_variable = idea_jap
 			}
 			add_modifier = {
 				name = jap_idea_5
@@ -671,8 +477,7 @@ ve_national_idea_5 = {
 		}
 		else_if = {
 			limit = {
-				exists = c:USA
-				this = c:USA
+				has_variable = idea_amc
 			}
 			add_modifier = {
 				name = usa_idea_5
@@ -699,8 +504,7 @@ ve_national_idea_6 = {
 	effect = {
 		if = {
 			limit = {
-				exists = c:GBR
-				this = c:GBR
+				has_variable = idea_eng
 			}
 			add_modifier = {
 				name = gbr_idea_6
@@ -709,8 +513,7 @@ ve_national_idea_6 = {
 		}
 		else_if = {
 			limit = {
-				exists = c:FRA
-				this = c:FRA
+				has_variable = idea_fru
 			}
 			add_modifier = {
 				name = fra_idea_6
@@ -719,8 +522,7 @@ ve_national_idea_6 = {
 		}
 		else_if = {
 			limit = {
-				exists = c:PRU
-				this = c:PRU
+				has_variable = idea_lot
 			}
 			add_modifier = {
 				name = ger_idea_6
@@ -729,38 +531,7 @@ ve_national_idea_6 = {
 		}
 		else_if = {
 			limit = {
-				exists = c:SGF
-				this = c:SGF
-			}
-			add_modifier = {
-				name = ger_idea_6
-				months = -1
-			}
-		}
-		else_if = {
-			limit = {
-				exists = c:NGF
-				this = c:NGF
-			}
-			add_modifier = {
-				name = ger_idea_6
-				months = -1
-			}
-		}
-		else_if = {
-			limit = {
-				exists = c:GER
-				this = c:GER
-			}
-			add_modifier = {
-				name = ger_idea_6
-				months = -1
-			}
-		}
-		else_if = {
-			limit = {
-				exists = c:AUS
-				this = c:AUS
+				has_variable = idea_boh
 			}
 			add_modifier = {
 				name = aus_idea_6
@@ -769,8 +540,7 @@ ve_national_idea_6 = {
 		}
 		else_if = {
 			limit = {
-				exists = c:RUS
-				this = c:RUS
+				has_variable = idea_kar
 			}
 			add_modifier = {
 				name = rus_idea_6
@@ -779,8 +549,7 @@ ve_national_idea_6 = {
 		}
 		else_if = {
 			limit = {
-				exists = c:TUR
-				this = c:TUR
+				has_variable = idea_sae
 			}
 			add_modifier = {
 				name = tur_idea_6
@@ -789,8 +558,7 @@ ve_national_idea_6 = {
 		}
 		else_if = {
 			limit = {
-				exists = c:CHI
-				this = c:CHI
+				has_variable = idea_kor
 			}
 			add_modifier = {
 				name = qng_idea_6
@@ -799,8 +567,7 @@ ve_national_idea_6 = {
 		}
 		else_if = {
 			limit = {
-				exists = c:JAP
-				this = c:JAP
+				has_variable = idea_jap
 			}
 			add_modifier = {
 				name = jap_idea_6
@@ -809,8 +576,7 @@ ve_national_idea_6 = {
 		}
 		else_if = {
 			limit = {
-				exists = c:USA
-				this = c:USA
+				has_variable = idea_amc
 			}
 			add_modifier = {
 				name = usa_idea_6
@@ -837,8 +603,7 @@ ve_national_idea_7 = {
 	effect = {
 		if = {
 			limit = {
-				exists = c:GBR
-				this = c:GBR
+				has_variable = idea_eng
 			}
 			add_modifier = {
 				name = gbr_idea_7
@@ -847,8 +612,7 @@ ve_national_idea_7 = {
 		}
 		else_if = {
 			limit = {
-				exists = c:FRA
-				this = c:FRA
+				has_variable = idea_fru
 			}
 			add_modifier = {
 				name = fra_idea_7
@@ -857,8 +621,7 @@ ve_national_idea_7 = {
 		}
 		else_if = {
 			limit = {
-				exists = c:PRU
-				this = c:PRU
+				has_variable = idea_lot
 			}
 			add_modifier = {
 				name = ger_idea_7
@@ -867,38 +630,7 @@ ve_national_idea_7 = {
 		}
 		else_if = {
 			limit = {
-				exists = c:SGF
-				this = c:SGF
-			}
-			add_modifier = {
-				name = ger_idea_7
-				months = -1
-			}
-		}
-		else_if = {
-			limit = {
-				exists = c:NGF
-				this = c:NGF
-			}
-			add_modifier = {
-				name = ger_idea_7
-				months = -1
-			}
-		}
-		else_if = {
-			limit = {
-				exists = c:GER
-				this = c:GER
-			}
-			add_modifier = {
-				name = ger_idea_7
-				months = -1
-			}
-		}
-		else_if = {
-			limit = {
-				exists = c:AUS
-				this = c:AUS
+				has_variable = idea_boh
 			}
 			add_modifier = {
 				name = aus_idea_7
@@ -907,8 +639,7 @@ ve_national_idea_7 = {
 		}
 		else_if = {
 			limit = {
-				exists = c:RUS
-				this = c:RUS
+				has_variable = idea_kar
 			}
 			add_modifier = {
 				name = rus_idea_7
@@ -917,8 +648,7 @@ ve_national_idea_7 = {
 		}
 		else_if = {
 			limit = {
-				exists = c:TUR
-				this = c:TUR
+				has_variable = idea_sae
 			}
 			add_modifier = {
 				name = tur_idea_7
@@ -927,8 +657,7 @@ ve_national_idea_7 = {
 		}
 		else_if = {
 			limit = {
-				exists = c:CHI
-				this = c:CHI
+				has_variable = idea_kor
 			}
 			add_modifier = {
 				name = qng_idea_7
@@ -937,8 +666,7 @@ ve_national_idea_7 = {
 		}
 		else_if = {
 			limit = {
-				exists = c:JAP
-				this = c:JAP
+				has_variable = idea_jap
 			}
 			add_modifier = {
 				name = jap_idea_7
@@ -947,8 +675,7 @@ ve_national_idea_7 = {
 		}
 		else_if = {
 			limit = {
-				exists = c:USA
-				this = c:USA
+				has_variable = idea_amc
 			}
 			add_modifier = {
 				name = usa_idea_7
@@ -969,8 +696,7 @@ ve_national_idea_tradition = {
 	effect = {
 		if = {
 			limit = {
-				exists = c:GBR
-				this = c:GBR
+				has_variable = idea_eng
 			}
 			add_modifier = {
 				name = gbr_idea_tradition_1
@@ -983,8 +709,7 @@ ve_national_idea_tradition = {
 		}
 		else_if = {
 			limit = {
-				exists = c:FRA
-				this = c:FRA
+				has_variable = idea_fru
 			}
 			add_modifier = {
 				name = fra_idea_tradition_1
@@ -997,8 +722,7 @@ ve_national_idea_tradition = {
 		}
 		else_if = {
 			limit = {
-				exists = c:PRU
-				this = c:PRU
+				has_variable = idea_lot
 			}
 			add_modifier = {
 				name = ger_idea_tradition_1
@@ -1011,50 +735,7 @@ ve_national_idea_tradition = {
 		}
 		else_if = {
 			limit = {
-				exists = c:SGF
-				this = c:SGF
-			}
-			add_modifier = {
-				name = ger_idea_tradition_1
-				months = -1
-			}
-			add_modifier = {
-				name = ger_idea_tradition_2
-				months = -1
-			}
-		}
-		else_if = {
-			limit = {
-				exists = c:NGF
-				this = c:NGF
-			}
-			add_modifier = {
-				name = ger_idea_tradition_1
-				months = -1
-			}
-			add_modifier = {
-				name = ger_idea_tradition_2
-				months = -1
-			}
-		}
-		else_if = {
-			limit = {
-				exists = c:GER
-				this = c:GER
-			}
-			add_modifier = {
-				name = ger_idea_tradition_1
-				months = -1
-			}
-			add_modifier = {
-				name = ger_idea_tradition_2
-				months = -1
-			}
-		}
-		else_if = {
-			limit = {
-				exists = c:AUS
-				this = c:AUS
+				has_variable = idea_boh
 			}
 			add_modifier = {
 				name = aus_idea_tradition_1
@@ -1067,8 +748,7 @@ ve_national_idea_tradition = {
 		}
 		else_if = {
 			limit = {
-				exists = c:RUS
-				this = c:RUS
+				has_variable = idea_kar
 			}
 			add_modifier = {
 				name = rus_idea_tradition_1
@@ -1081,8 +761,7 @@ ve_national_idea_tradition = {
 		}
 		else_if = {
 			limit = {
-				exists = c:TUR
-				this = c:TUR
+				has_variable = idea_sae
 			}
 			add_modifier = {
 				name = tur_idea_tradition_1
@@ -1095,8 +774,7 @@ ve_national_idea_tradition = {
 		}
 		else_if = {
 			limit = {
-				exists = c:CHI
-				this = c:CHI
+				has_variable = idea_kor
 			}
 			add_modifier = {
 				name = qng_idea_tradition_1
@@ -1109,8 +787,7 @@ ve_national_idea_tradition = {
 		}
 		else_if = {
 			limit = {
-				exists = c:JAP
-				this = c:JAP
+				has_variable = idea_jap
 			}
 			add_modifier = {
 				name = jap_idea_tradition_1
@@ -1123,8 +800,7 @@ ve_national_idea_tradition = {
 		}
 		else_if = {
 			limit = {
-				exists = c:USA
-				this = c:USA
+				has_variable = idea_amc
 			}
 			add_modifier = {
 				name = usa_idea_tradition_1
@@ -1153,8 +829,7 @@ ve_national_idea_bonus = {
 	effect = {
 		if = {
 			limit = {
-				exists = c:GBR
-				this = c:GBR
+				has_variable = idea_eng
 			}
 			add_modifier = {
 				name = gbr_idea_bonus
@@ -1163,8 +838,7 @@ ve_national_idea_bonus = {
 		}
 		else_if = {
 			limit = {
-				exists = c:FRA
-				this = c:FRA
+				has_variable = idea_fru
 			}
 			add_modifier = {
 				name = fra_idea_bonus
@@ -1173,8 +847,7 @@ ve_national_idea_bonus = {
 		}
 		else_if = {
 			limit = {
-				exists = c:PRU
-				this = c:PRU
+				has_variable = idea_lot
 			}
 			add_modifier = {
 				name = ger_idea_bonus
@@ -1183,38 +856,7 @@ ve_national_idea_bonus = {
 		}
 		else_if = {
 			limit = {
-				exists = c:SGF
-				this = c:SGF
-			}
-			add_modifier = {
-				name = ger_idea_bonus
-				months = -1
-			}
-		}
-		else_if = {
-			limit = {
-				exists = c:NGF
-				this = c:NGF
-			}
-			add_modifier = {
-				name = ger_idea_bonus
-				months = -1
-			}
-		}
-		else_if = {
-			limit = {
-				exists = c:GER
-				this = c:GER
-			}
-			add_modifier = {
-				name = ger_idea_bonus
-				months = -1
-			}
-		}
-		else_if = {
-			limit = {
-				exists = c:AUS
-				this = c:AUS
+				has_variable = idea_boh
 			}
 			add_modifier = {
 				name = aus_idea_bonus
@@ -1223,8 +865,7 @@ ve_national_idea_bonus = {
 		}
 		else_if = {
 			limit = {
-				exists = c:RUS
-				this = c:RUS
+				has_variable = idea_kar
 			}
 			add_modifier = {
 				name = rus_idea_bonus
@@ -1233,8 +874,7 @@ ve_national_idea_bonus = {
 		}
 		else_if = {
 			limit = {
-				exists = c:TUR
-				this = c:TUR
+				has_variable = idea_sae
 			}
 			add_modifier = {
 				name = tur_idea_bonus
@@ -1243,8 +883,7 @@ ve_national_idea_bonus = {
 		}
 		else_if = {
 			limit = {
-				exists = c:CHI
-				this = c:CHI
+				has_variable = idea_kor
 			}
 			add_modifier = {
 				name = qng_idea_bonus
@@ -1253,8 +892,7 @@ ve_national_idea_bonus = {
 		}
 		else_if = {
 			limit = {
-				exists = c:JAP
-				this = c:JAP
+				has_variable = idea_jap
 			}
 			add_modifier = {
 				name = jap_idea_bonus
@@ -1263,8 +901,7 @@ ve_national_idea_bonus = {
 		}
 		else_if = {
 			limit = {
-				exists = c:USA
-				this = c:USA
+				has_variable = idea_amc
 			}
 			add_modifier = {
 				name = usa_idea_bonus

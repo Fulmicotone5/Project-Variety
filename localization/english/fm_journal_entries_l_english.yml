@@ -522,3 +522,8 @@ je_fla_reason:0 "Thanks to the diplomatic ability of the previous Flemish Dukes,
 
 je_bud_main:0 "The Kingdom of Burgundy"
 je_bud_main_reason:0 "The Grand Duchy of [ROOT.GetCountry.GetName] has been a vassal of the Kingdom of France for centuries, but now that the strength of [ROOT.GetCountry.GetName] greatly exceeds that of the King of France, we have no reason to continue to be subjects of the Crown of France.\nIf we become independent, we will be able to raise our title from that of Grand Duchy to that of Kingdom."
+
+ # Corn Laws
+ je_corn_laws:0 "Corn Laws"
+ je_corn_laws_reason:0 "Our prohibitive import tax on grains acts as a strong protectionist policy for the interests of the landowning class and will cause an upheaval if removed."
+

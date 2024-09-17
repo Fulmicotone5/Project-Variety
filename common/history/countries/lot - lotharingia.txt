@@ -37,5 +37,8 @@
 		trigger_event = {
 			id = lotharingia.1
 		}
+		set_variable = {
+			name = idea_lot
+		}
 	}
 }
