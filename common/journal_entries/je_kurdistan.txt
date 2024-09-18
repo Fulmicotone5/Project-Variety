@@ -34,6 +34,10 @@ je_kurdistan = {
 		trigger_event = {
 			id = fm_kur.1
 		}
+		set_variable = {
+			name = kurdistan_rev
+			months = 2
+		}
 	}
 	weight = 100
 	should_be_pinned_by_default = yes

@@ -347,7 +347,7 @@ BUILDINGS={
 		}
 	}
 	s:STATE_EGYPTIAN_DESERT={
-		region_state:EGE={
+		region_state:SUD={
 		}
 	}
 	s:STATE_MATRUH={

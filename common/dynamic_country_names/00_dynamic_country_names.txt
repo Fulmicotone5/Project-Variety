@@ -476,6 +476,34 @@ BEM = {
 	}
 }
 
+KEM = {
+	dynamic_country_name = {
+		name = dyn_kem
+		adjective = dyn_kem_adj
+		priority = 0
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_law = law_type:law_monarchy
+			}
+		}
+	}
+}
+
+REM = {
+	dynamic_country_name = {
+		name = dyn_rem
+		adjective = REM_ADJ
+		priority = 0
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_law = law_type:law_monarchy
+			}
+		}
+	}
+}
+
 GAR = {
 	dynamic_country_name = {
 		name = dyn_arm

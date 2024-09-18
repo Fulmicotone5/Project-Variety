@@ -6566,6 +6566,22 @@ GSM = { # Greater San Marino
 	}
 }
 
+KEM = { # Karamid
+	flag_definition = {	
+		coa = KEM
+		subject_canton = KEM
+		priority = 10
+	}
+}
+
+REM = { # rum
+	flag_definition = {	
+		coa = REM
+		subject_canton = REM
+		priority = 10
+	}
+}
+
 GAR = { # Greater Armenia
 	flag_definition = {	
 		coa = GAR

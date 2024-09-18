@@ -646,7 +646,14 @@
 			target = c:EGE.market
 		}			
 	}
-	
+	c:EGE ?= {
+		create_trade_route = {
+			goods = manowars
+			level = 6
+			direction = import
+			target = c:PUR.market
+		}			
+	}
 	
 	# Oldenburg
 	c:OLD ?= {

@@ -1,0 +1,1029 @@
+﻿namespace = rum
+
+rum.1 = {
+	type = country_event
+	placement = root
+	title = rum.1.t
+	desc = rum.1.d
+	flavor = rum.1.f
+
+	duration = 3
+
+	event_image = {
+		video = "unspecific_factory_closed"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+		set_variable = {
+			name = rum_var
+			value = 0
+		}
+		add_journal_entry = {
+			type = je_rum_main
+		}
+	}
+
+	option = {
+		name = rum.1.a
+		add_journal_entry = {
+			type = je_rum_economy
+		}
+		add_journal_entry = {
+			type = je_rum_education
+		}
+		add_journal_entry = {
+			type = je_rum_separatism
+		}
+		add_journal_entry = {
+			type = je_rum_army
+		}
+		add_journal_entry = {
+			type = je_rum_bureaucracy
+		}
+	}
+}
+rum.2 = {
+	type = country_event
+	placement = root
+	title = rum.2.t
+	desc = rum.2.desc
+	flavor = rum.2.f
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	duration = 3
+
+	event_image = {
+		video = "europenorthamerica_london_center"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	option = {
+		name = rum.2.a
+		add_journal_entry = {
+			type = je_rum_rome
+		}
+		s:STATE_EASTERN_THRACE = {
+			add_claim = ROOT
+		}
+		s:STATE_WESTERN_THRACE = {
+			add_claim = ROOT
+		}
+		s:STATE_NORTHERN_THRACE = {
+			add_claim = ROOT
+		}
+		s:STATE_PELOPONNESE = {
+			add_claim = ROOT
+		}
+		s:STATE_ATTICA = {
+			add_claim = ROOT
+		}
+		s:STATE_WEST_AEGEAN_ISLANDS = {
+			add_claim = ROOT
+		}
+		s:STATE_CRETE = {
+			add_claim = ROOT
+		}
+		s:STATE_CYPRUS = {
+			add_claim = ROOT
+		}
+		s:STATE_MACEDONIA = {
+			add_claim = ROOT
+		}
+		s:STATE_THESSALIA = {
+			add_claim = ROOT
+		}
+		s:STATE_HUDAVENDIGAR = {
+			add_claim = ROOT
+		}
+	}
+	option = {
+		name = rum.2.b
+		add_journal_entry = {
+			type = je_rum_kor
+		}
+		s:STATE_FARS = {
+			add_claim = ROOT
+		}
+		s:STATE_LARISTAN = {
+			add_claim = ROOT
+		}
+		s:STATE_KHORASAN = {
+			add_claim = ROOT
+		}
+		s:STATE_KHUZESTAN = {
+			add_claim = ROOT
+		}
+		s:STATE_ISFAHAN = {
+			add_claim = ROOT
+		}
+		s:STATE_MAZANDARAN = {
+			add_claim = ROOT
+		}
+		s:STATE_IRAKAJEMI = {
+			add_claim = ROOT
+		}
+		s:STATE_SEMNAN = {
+			add_claim = ROOT
+		}
+		s:STATE_TABRIZ = {
+			add_claim = ROOT
+		}
+		s:STATE_KERMAN = {
+			add_claim = ROOT
+		}
+    	s:STATE_URMIA = {
+			add_claim = ROOT
+		}
+		s:STATE_PERSIAN_KURDISTAN = {
+			add_claim = ROOT
+		}
+		s:STATE_LURISTAN = {
+			add_claim = ROOT
+		}
+		s:STATE_AZERBAIJAN = {
+			add_claim = ROOT
+		}
+		s:STATE_ELIZAVETPOL = {
+			add_claim = ROOT
+		}
+		s:STATE_KARS = {
+			add_claim = ROOT
+		}
+		s:STATE_ARMENIA = {
+			add_claim = ROOT
+		}
+		s:STATE_MOSUL = {
+			add_claim = ROOT
+		}
+		s:STATE_DEIR_EZ_ZOR = {
+			add_claim = ROOT
+		}
+    	s:STATE_BAGHDAD = {
+			add_claim = ROOT
+		}
+		s:STATE_BASRA = {
+			add_claim = ROOT
+		}
+		s:STATE_ALEPPO = {
+			add_claim = ROOT
+		}
+		s:STATE_SYRIA = {
+			add_claim = ROOT
+		}
+		s:STATE_LEBANON = {
+			add_claim = ROOT
+		}
+		s:STATE_PALESTINE = {
+			add_claim = ROOT
+		}
+		s:STATE_TRANSJORDAN = {
+			add_claim = ROOT
+		}
+		s:STATE_OMAN = {
+			add_claim = ROOT
+		}
+		s:STATE_ABU_DHABI = {
+			add_claim = ROOT
+		}
+	}
+}
+
+rum.3 = {
+	type = country_event
+	placement = root
+	title = rum.3.t
+	desc = rum.3.d
+	flavor = rum.3.f
+	duration = 1
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	immediate = {
+		change_tag = REM
+	}
+
+	option = {
+		name = rum.3.a
+		default_option = yes
+		add_loyalists = {
+			value = 0.1
+			strata = poor
+		}
+		add_loyalists = {
+			value = 0.2
+			strata = middle
+		}
+		add_loyalists = {
+			value = 0.25
+			strata = rich
+		}
+		add_primary_culture = cu:greek
+		add_primary_culture = cu:greco_roman
+		ruler = {
+			character_popularity_add = 50
+			add_trait = imperious
+			add_trait = arrogant
+			add_trait = tactful
+		}
+		s:STATE_LAZIO = {
+			add_claim = ROOT
+		}
+	}
+}
+
+rum.4 = {
+	type = country_event
+	placement = root
+	title = rum.4.t
+	desc = rum.4.d
+	flavor = rum.4.f
+	duration = 1
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	immediate = {
+		change_tag = KEM
+	}
+
+	option = {
+		name = rum.4.a
+		default_option = yes
+		add_loyalists = {
+			value = 0.2
+			strata = poor
+		}
+		add_loyalists = {
+			value = 0.3
+			strata = middle
+		}
+		add_loyalists = {
+			value = 0.25
+			strata = rich
+		}
+		ruler = {
+			character_popularity_add = 35
+			add_trait = arrogant
+			add_trait = tactful
+		}
+		add_primary_culture = cu:mashriqi
+		add_primary_culture = cu:assyrian
+	}
+}
+# Paranoia Event
+rum.5 = {
+	type = country_event
+	placement = scope:paranoia_state_scope
+	title = rum.5.t
+	desc = rum.5.d
+	flavor = rum.5.f
+
+	event_image = {
+		video = "middleeast_islam"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	
+	duration = 3
+
+	trigger = {
+		has_variable = rum_var
+		NOT = { 
+			has_variable = tanzimat_cooldown 
+		}
+		any_neighbouring_state = {
+			owner = { 
+				OR = { 
+					religion = rel:orthodox
+					religion = rel:catholic
+					religion = rel:protestant 
+				}
+				country_rank >= rank_value:major_power 
+			}
+		}
+		any_scope_state = {
+			is_incorporated = yes
+			any_scope_pop = {
+				religion = rel:sunni
+			}
+			any_scope_pop = {
+				OR = {
+					religion = rel:orthodox
+					religion = rel:catholic
+					religion = rel:oriental_orthodox
+					religion = rel:protestant
+				}
+			}
+		}
+	}
+	immediate = {
+		random_neighbouring_state = {
+			limit = {
+				owner = { 
+					OR = { 
+						religion = rel:orthodox
+						religion = rel:catholic
+						religion = rel:protestant 
+					}
+					country_rank >= rank_value:major_power 
+				}
+			}
+			owner = { save_scope_as = neighbor_country }
+		}
+		random_scope_state = {
+			limit = {
+				is_incorporated = yes
+				any_scope_pop = {
+					religion = rel:sunni
+				}
+				any_scope_pop = {
+					OR = {
+						religion = rel:orthodox
+						religion = rel:catholic
+						religion = rel:oriental_orthodox
+						religion = rel:protestant
+					}
+				}
+			}
+			save_scope_as = paranoia_state_scope
+			set_variable = {
+				name = paranoia_state_var
+				days = 360
+			}
+			random_scope_pop = {
+				limit = { 
+					OR = {
+						religion = rel:orthodox
+						religion = rel:catholic
+						religion = rel:oriental_orthodox
+						religion = rel:protestant
+					}
+				}
+				religion = {
+					save_scope_as = discriminated_religion_scope
+				}
+			}
+		}
+		set_variable = {
+			name = tanzimat_cooldown
+			months = 6
+		}
+	}
+	option = {
+		name = rum.5.a						
+        default_option = yes
+        scope:paranoia_state_scope = {
+			add_radicals_in_state = {
+				value = large_radicals
+				religion = scope:discriminated_religion_scope
+			}
+		}
+		custom_tooltip = tanzimat.5.tt1
+		hidden_effect = { 
+			random_list = {
+				75 = { 
+					trigger_event = { 
+						id = rum.6 days = 60
+					}
+				}
+				25 = {
+				}
+			}
+		}
+	}
+	option = {
+		name = rum.5.b
+		change_relations = {
+			country = scope:neighbor_country
+			value = -30
+		}
+		change_infamy = 5
+		scope:paranoia_state_scope = {
+			add_radicals_in_state = {
+				value = very_large_radicals
+				religion = scope:discriminated_religion_scope
+			}
+		}
+		custom_tooltip = tanzimat.5.tt2
+		hidden_effect = { 
+			random_list = {
+				5 = { 
+					trigger_event = {
+						id = rum.6 days = 60
+					}
+				}
+				95 = { 
+				}
+			}
+		}
+	}
+}
+# Mob Event
+rum.6 = {
+	type = country_event
+	placement = scope:mob_state_scope
+	title = rum.6.t
+	desc = rum.6.d
+	flavor = rum.6.f
+
+	event_image = {
+		video = "unspecific_vandalized_storefront"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_fire.dds"
+	
+	duration = 3
+
+	trigger = {
+		has_variable = rum_var
+		NOT = {
+			any_scope_state = {
+				has_variable = mob_state_var
+			}
+		}
+		any_scope_state = {
+			is_incorporated = yes
+			any_scope_pop = {
+				religion = rel:sunni
+			}
+			any_scope_pop = {
+				OR = {
+					religion = rel:orthodox
+					religion = rel:catholic
+					religion = rel:oriental_orthodox
+					religion = rel:protestant
+				}
+			}
+			has_variable = paranoia_state_var
+		}
+	}
+	immediate = {
+		random_scope_state = {
+			limit = {
+				is_incorporated = yes
+				any_scope_pop = {
+					religion = rel:sunni
+				}
+				any_scope_pop = {
+					OR = {
+						religion = rel:orthodox
+						religion = rel:catholic
+						religion = rel:oriental_orthodox
+						religion = rel:protestant
+					}
+				}
+				has_variable = paranoia_state_var
+			}
+			save_scope_as = mob_state_scope
+			set_variable = {
+				name = mob_state_var
+			}
+			rel:sunni = {
+				save_scope_as = mob_religion
+			}
+			random_scope_pop = {
+				limit = { 
+					OR = {
+						religion = rel:orthodox
+						religion = rel:catholic
+						religion = rel:oriental_orthodox
+						religion = rel:protestant
+					}
+				}
+				save_scope_as = mob_victim_pop_scope
+				culture = { save_scope_as = mob_victim_culture }
+			}
+		}
+	}
+	option = {
+		name = rum.6.a						
+        default_option = yes
+		add_modifier = { 
+			name = mobilizing_the_militia
+			multiplier = money_amount_multiplier_very_small
+			months = short_modifier_time
+		}
+		scope:mob_state_scope = {
+			add_radicals_in_state = {
+				value = very_large_radicals
+				culture = scope:mob_victim_culture
+			}
+			add_radicals_in_state = {
+				value = large_radicals
+				religion = scope:mob_religion
+			}
+		}
+		custom_tooltip = tanzimat.6.tt1
+		hidden_effect = { 
+			random_list = {
+				50 = { 
+					trigger_event = {
+						id = rum.7 days = 60
+					}
+				}
+				50 = { 
+					trigger_event = {
+						id = rum.8 days = 60
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = rum.6.b
+		add_modifier = { 
+			name = deploying_the_army
+			multiplier = money_amount_multiplier_very_small
+			months = short_modifier_time
+		}
+		scope:mob_state_scope = {
+			add_radicals_in_state = {
+				value = large_radicals
+				culture = scope:mob_victim_culture
+			}
+			add_radicals_in_state = {
+				value = large_radicals
+				religion = scope:mob_religion
+			}
+		}
+		custom_tooltip = tanzimat.6.tt2
+		hidden_effect = { 
+			random_list = {
+				20 = { 
+					trigger_event = {
+						id = rum.7 days = 60
+					}
+				}
+				80 = { 
+					trigger_event = { 
+						id = rum.8 days = 60
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = rum.6.c
+		scope:mob_state_scope = {
+			add_radicals_in_state = {
+				value = very_large_radicals
+				culture = scope:mob_victim_culture
+			}
+			add_radicals_in_state = {
+				value = large_radicals
+				religion = scope:mob_religion
+			}
+		}
+		custom_tooltip = tanzimat.6.tt3
+		hidden_effect = { 
+			random_list = {
+				80 = { 
+					trigger_event = { 
+						id = rum.7 days = 60
+					}
+				}
+				20 = { 
+					trigger_event = {
+						id = rum.8 days = 60
+					}
+				}
+			}
+		}
+	}
+}
+# Massacre Event
+rum.7 = {
+	type = country_event
+	placement = scope:massacre_state_scope
+	title = rum.7.t
+	desc = rum.7.d
+	flavor = rum.7.f
+
+	event_image = {
+		video = "middleeast_police_breaking_door"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+	
+	duration = 3
+
+	trigger = {
+		has_variable = rum_var
+		any_scope_state = {
+			is_incorporated = yes
+			any_scope_pop = {
+				religion = rel:sunni
+			}
+			any_scope_pop = {
+				OR = {
+					religion = rel:orthodox
+					religion = rel:catholic
+					religion = rel:oriental_orthodox
+					religion = rel:protestant
+				}
+			}
+			has_variable = mob_state_var
+		}
+	}
+	immediate = {
+		random_scope_state = {
+			limit = {
+				is_incorporated = yes
+				any_scope_pop = {
+					religion = rel:sunni
+				}
+				any_scope_pop = {
+					OR = {
+						religion = rel:orthodox
+						religion = rel:catholic
+						religion = rel:oriental_orthodox
+						religion = rel:protestant
+					}
+				}
+			}
+			save_scope_as = massacre_state_scope
+			rel:sunni = { save_scope_as = sunni_religion }
+			random_scope_pop = {
+				limit = { 
+					OR = {
+						religion = rel:orthodox
+						religion = rel:catholic
+						religion = rel:oriental_orthodox
+						religion = rel:protestant
+					}
+				}
+				religion = {
+					save_scope_as = massacre_victims
+				}
+			}
+		}
+	}
+	option = { # breaks up crowds by gunning down rioters
+		name = rum.7.a			
+        default_option = yes
+		create_incident = {
+			country = root
+			value = 20
+		}
+		scope:massacre_state_scope = {
+			add_radicals_in_state = {
+				value = large_radicals
+				religion = rel:sunni
+			}
+			add_radicals_in_state = {
+				value = large_radicals
+				religion = scope:massacre_victims
+			}
+		}
+	}
+	option = { # let it peter out
+		name = rum.7.b
+		scope:massacre_state_scope = {
+			add_radicals_in_state = {
+				value = very_large_radicals
+				religion = rel:sunni
+			}
+			add_radicals_in_state = {
+				value = medium_radicals
+				religion = scope:massacre_victims
+			}
+		}
+	}
+}
+# Order Restored Event
+rum.8 = {
+	type = country_event
+	placement = scope:orderrestored_state_scope
+	title = rum.8.t
+	desc = rum.8.d
+	flavor = rum.8.f
+
+	event_image = {
+		video = "middleeast_middleclass_cafe"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+	
+	duration = 3
+
+	trigger = {
+		has_variable = rum_var
+		any_scope_state = {
+			is_incorporated = yes
+			any_scope_pop = {
+				religion = rel:sunni
+			}
+			any_scope_pop = {
+				OR = {
+					religion = rel:orthodox
+					religion = rel:catholic
+					religion = rel:oriental_orthodox
+					religion = rel:protestant
+				}
+			}
+			has_variable = mob_state_var
+		}
+	}
+	immediate = {
+		random_scope_state = {
+			limit = {
+				is_incorporated = yes
+				any_scope_pop = {
+					religion = rel:sunni
+				}
+				any_scope_pop = {
+					OR = {
+						religion = rel:orthodox
+						religion = rel:catholic
+						religion = rel:oriental_orthodox
+						religion = rel:protestant
+					}
+				}
+			}
+			save_scope_as = orderrestored_state_scope
+			random_scope_pop = {
+				limit = { 
+					religion = rel:sunni 
+				}
+				culture = { save_scope_as = orderrestored_pop_scope }
+			}
+			random_scope_pop = {
+				limit = { 
+					OR = {
+						religion = rel:orthodox
+						religion = rel:catholic
+						religion = rel:oriental_orthodox
+						religion = rel:protestant
+					}
+				}
+				culture = { save_scope_as = orderrestored_victim_pop_scope }
+			}
+		}
+	}
+	option = { # situation is calming down
+		name = rum.8.a
+        default_option = yes
+		add_loyalists = {
+			value = 0.10
+			culture = scope:orderrestored_victim_pop_scope
+		}
+		add_loyalists = {
+			value = 0.05
+			culture = scope:orderrestored_pop_scope
+		}
+	}
+}
+# Land registration resisted
+rum.9 = {
+	type = country_event
+	placement = scope:peasant_state
+	title = rum.9.t
+	desc = rum.9.d
+	flavor = rum.9.f
+
+	event_image = {
+		video = "europenorthamerica_russian_serfs"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	duration = 3
+
+	trigger = {
+		has_variable = rum_var
+		NOT = {
+			has_variable = reformed_landcode
+		}
+		NOT = { 
+			has_variable = tanzimat_cooldown 
+		}
+		any_scope_state = {
+			is_incorporated = yes
+			any_scope_pop = {
+				is_pop_type = peasants 
+			}
+		}
+		any_scope_character = {
+			OR = {
+				has_role = general
+			}
+		}
+	}
+	immediate = {
+		set_variable = {
+			name = reformed_landcode
+		}
+		random_scope_state = {
+			limit = {
+				is_incorporated = yes
+				any_scope_pop = {
+					is_pop_type = peasants 
+				}
+			}
+			random_scope_pop = {
+					limit = { 
+						is_pop_type = peasants 
+					}
+					save_scope_as = peasant_pop_scope
+				}
+			save_scope_as = peasant_state
+		}
+		set_variable = {
+			name = tanzimat_cooldown
+			months = 6
+		}
+		random_scope_character = {
+			limit = {
+				has_role = general
+			}
+			save_scope_as = peasant_smashing_general
+		}
+	}
+
+	option = {
+		name = rum.9.a						
+        default_option = yes
+		scope:peasant_state = {
+			add_modifier = {
+				name = peasant_unrest
+				months = normal_modifier_time
+				multiplier = 0.5
+			}
+			add_radicals_in_state = {
+				pop_type = peasants
+				value = medium_radicals
+			}
+		}
+		ig:ig_landowners = {
+			add_modifier = {
+				name = expanding_holdings
+				months = normal_modifier_time
+			}
+		}
+	}
+	option = {
+		name = rum.9.b
+		scope:peasant_state = {
+			add_modifier = {
+				name = peasant_unrest
+				months = normal_modifier_time
+				multiplier = 0.25
+			}
+			add_radicals_in_state = {
+				pop_type = peasants
+				value = large_radicals
+			}
+		}
+	}
+	option = {
+		name = rum.9.c					
+		scope:peasant_state = {
+			add_modifier = {
+				name = peasant_unrest
+				months = normal_modifier_time
+			}
+		}
+	}
+}
+# Drafting Dhimmis
+rum.10 = {
+	type = country_event
+	placement = root
+	title = rum.10.t
+	desc = rum.10.d
+	flavor = rum.10.f
+
+	event_image = {
+		video = "middleeast_battlefield_trenches"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	
+	duration = 3
+
+	trigger = {
+		has_technology_researched = napoleonic_warfare
+		has_variable = rum_var
+		NOT = { 
+			has_variable = tanzimat_military_service 
+		}
+	}
+	immediate = {
+		set_variable = tanzimat_military_service
+	}
+	option = {
+		name = rum.10.a						
+        default_option = yes
+		remove_modifier = sunni_aspect_8_mdf
+		add_modifier = { 
+			name = draft_exemption_tax
+			months = 50
+		}
+	}
+	option = {
+		name = rum.10.b
+		if = {
+			limit = {
+				any_scope_pop = { 
+					religion = rel:orthodox 
+				}
+			}
+			add_radicals = {
+				religion = rel:orthodox
+				value = 0.15
+			}
+		}
+		if = {
+			limit = {
+				any_scope_pop = { 
+					religion = rel:oriental_orthodox 
+				}
+			}
+			add_radicals = {
+				religion = rel:oriental_orthodox
+				value = 0.15
+			}
+		}
+		if = {
+			limit = {
+				any_scope_pop = { 
+					religion = rel:catholic 
+				}
+			}
+			add_radicals = {
+				religion = rel:catholic
+				value = 0.15
+			}
+		}
+		if = {
+			limit = {
+				any_scope_pop = { 
+					religion = rel:protestant 
+				}
+			}
+			add_radicals = {
+				religion = rel:protestant
+				value = 0.15
+			}
+		}
+		if = {
+			limit = {
+				any_scope_pop = { 
+					religion = rel:jewish 
+				}
+			}
+			add_radicals = {
+				religion = rel:jewish
+				value = 0.15
+			}
+		}
+		if = {
+			limit = {
+				any_scope_pop = { 
+					religion = rel:zoroastrian 
+				}
+			}
+			add_radicals = {
+				religion = rel:zoroastrian
+				value = 0.15
+			}
+		}
+		if = {
+			limit = {
+				any_scope_pop = { 
+					religion = rel:baal 
+				}
+			}
+			add_radicals = {
+				religion = rel:baal
+				value = 0.15
+			}
+		}
+	}
+}

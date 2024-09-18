@@ -370,7 +370,7 @@
 		}
 	}
 	s:STATE_PALESTINE = {
-		region_state:SIU = {
+		region_state:EGE = {
 			create_pop = {
 				culture = mashriqi
 				size = 448000
@@ -426,7 +426,12 @@
 			create_pop = {
 				culture = phoenician
 				religion = sunni
-				size = 355000
+				size = 215000
+			}
+			create_pop = {
+				culture = phoenician
+				religion = zoroastrian
+				size = 55000
 			}
 			create_pop = {
 				culture = sephardic
@@ -436,14 +441,13 @@
 				culture = phoenician
 				size = 128000
 			}
-			}
 			create_pop = {
 				culture = mashriqi
 				size = 378000
 			}
 			create_pop = {
 				culture = armenian
-				religion = catholic
+				religion = sunni
 				size = 4000
 			}
 			create_pop = {
@@ -466,6 +470,7 @@
 				size = 3000
 			}
 		}
+	}
 	s:STATE_SYRIA = {
 		region_state:SIU = {
 			create_pop = {

@@ -1523,7 +1523,7 @@ TOR = {
 	tier = kingdom
 	
 	cultures = { turkish }
-	capital = STATE_ANKARA
+	capital = STATE_KONYA
 }
 
 WAL = {
@@ -2876,6 +2876,28 @@ ISR = {
 	
 	cultures = { ashkenazi sephardic }
 	capital = STATE_PALESTINE
+}
+
+KEM = {
+	color = { 60 150 230 }
+	
+	country_type = recognized
+
+	tier = empire
+	
+	cultures = { turkish }	
+	capital = STATE_KONYA
+}
+
+REM = {
+	color = { 184 46 50 }
+	
+	country_type = recognized
+
+	tier = empire
+	
+	cultures = { turkish }	
+	capital = STATE_EASTERN_THRACE
 }
 
 BIZ = {
