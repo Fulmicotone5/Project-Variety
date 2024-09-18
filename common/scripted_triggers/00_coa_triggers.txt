@@ -444,19 +444,19 @@ coa_def_native_american_trigger = {
 }
 
 coa_def_cross_trigger = {
-    religion = {
+    religion ?= {
     	has_discrimination_trait = christian
     }
 }
 
 coa_def_crescent_trigger = {
-    religion = {
+    religion ?= {
 		has_discrimination_trait = muslim
     }
 }
 
 coa_def_buddhist_trigger = {
-    religion = {
+    religion ?= {
         has_discrimination_trait = buddhist
     }
 }

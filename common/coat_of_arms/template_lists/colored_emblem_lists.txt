@@ -72,7 +72,7 @@ colored_emblem_texture_lists = {
 				country_definition_has_culture = cu:patagonian
 			}
 			90 = "ce_star_gunelve.dds"
-		}		
+		}
 		special_selection = {
 			trigger = {
 				any_primary_culture = {
@@ -83,7 +83,7 @@ colored_emblem_texture_lists = {
 				}
 			}
 			40 = "ce_star_07.dds"
-		}		
+		}
 		special_selection = {
 			trigger = {
 				any_primary_culture = {
