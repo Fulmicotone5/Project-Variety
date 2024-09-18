@@ -1,7 +1,7 @@
 na_native_american_heritage = {
-    heritage = yes
+	heritage = yes
 }
 
 na_north_american_heritage = {
-    heritage = yes
+	heritage = yes
 }

@@ -13,11 +13,11 @@ COUNTRIES = {
 
 		effect_starting_politics_traditional = yes
 
-		
-        set_ruling_interest_groups = {
-        	ig_landowners
+
+		set_ruling_interest_groups = {
+			ig_landowners
 			ig_devout
-        }
+		}
 		activate_law = law_type:law_council_republic
 		activate_law = law_type:law_anarchy
 		activate_law = law_type:law_racial_segregation

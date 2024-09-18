@@ -1,153 +1,153 @@
 DKT = {
-    color = { 13 102 75 }
+	color = { 13 102 75 }
 
-    country_type = unrecognized
+	country_type = unrecognized
 
-    tier = kingdom
+	tier = kingdom
 
-    cultures = { na_santee_dakota na_yankton_yanktonai_dakota na_lakota }
-    capital = STATE_MINNESOTA
+	cultures = { na_santee_dakota na_yankton_yanktonai_dakota na_lakota }
+	capital = STATE_MINNESOTA
 }
 
 LKT = {
-    color = { 198 114 168 }
+	color = { 198 114 168 }
 
-    country_type = decentralized
+	country_type = decentralized
 
-    tier = principality
+	tier = principality
 
-    cultures = { na_yankton_yanktonai_dakota na_lakota }
-    capital = STATE_SOUTH_DAKOTA
+	cultures = { na_yankton_yanktonai_dakota na_lakota }
+	capital = STATE_SOUTH_DAKOTA
 }
 
 CTF = {
-    color = { 13 102 75 }
+	color = { 13 102 75 }
 
-    country_type = decentralized
+	country_type = decentralized
 
-    tier = kingdom
+	tier = kingdom
 
-    cultures = { na_cree_montagnais }
-    capital = STATE_MICHIGAN
+	cultures = { na_cree_montagnais }
+	capital = STATE_MICHIGAN
 }
 
 CHE = {
-    color = { 13 102 75 }
+	color = { 13 102 75 }
 
-    country_type = decentralized
+	country_type = decentralized
 
-    tier = kingdom
+	tier = kingdom
 
-    cultures = { na_cherokee }
-    capital = STATE_WEST_VIRGINIA
+	cultures = { na_cherokee }
+	capital = STATE_WEST_VIRGINIA
 }
 
 COM = {
-    color = { 13 102 75 }
+	color = { 13 102 75 }
 
-    country_type = decentralized
+	country_type = decentralized
 
-    tier = kingdom
+	tier = kingdom
 
-    cultures = { na_comanche na_chickasaw_choctaw }
-    capital = STATE_TEXAS
+	cultures = { na_comanche na_chickasaw_choctaw }
+	capital = STATE_TEXAS
 }
 
 UTE = {
-    color = { 13 102 75 }
+	color = { 13 102 75 }
 
-    country_type = decentralized
+	country_type = decentralized
 
-    tier = kingdom
+	tier = kingdom
 
-    cultures = { na_paiute }
-    capital = STATE_UTAH
+	cultures = { na_paiute }
+	capital = STATE_UTAH
 }
 
 NVJ = {
-    color = { 13 102 75 }
+	color = { 13 102 75 }
 
-    country_type = decentralized
+	country_type = decentralized
 
-    tier = kingdom
+	tier = kingdom
 
-    cultures = { na_colorado_numic na_paiute }
-    capital = STATE_ARIZONA
+	cultures = { na_colorado_numic na_paiute }
+	capital = STATE_ARIZONA
 }
 
 HOK = {
-    color = { 13 102 75 }
+	color = { 13 102 75 }
 
-    country_type = decentralized
+	country_type = decentralized
 
-    tier = kingdom
+	tier = kingdom
 
-    cultures = { na_yuman }
-    capital = STATE_CALIFORNIA
+	cultures = { na_yuman }
+	capital = STATE_CALIFORNIA
 }
 
 BNN = {
-    color = { 13 102 75 }
+	color = { 13 102 75 }
 
-    country_type = decentralized
+	country_type = decentralized
 
-    tier = kingdom
+	tier = kingdom
 
-    cultures = { na_paiute na_shapwailutan na_lakota }
-    capital = STATE_IDAHO
+	cultures = { na_paiute na_shapwailutan na_lakota }
+	capital = STATE_IDAHO
 }
 
 NZP = {
-    color = { 13 102 75 }
+	color = { 13 102 75 }
 
-    country_type = decentralized
+	country_type = decentralized
 
-    tier = kingdom
+	tier = kingdom
 
-    cultures = { na_paiute na_shapwailutan na_lakota }
-    capital = STATE_IDAHO
+	cultures = { na_paiute na_shapwailutan na_lakota }
+	capital = STATE_IDAHO
 }
 
 CRU = {
-    color = { 13 102 75 }
+	color = { 13 102 75 }
 
-    country_type = decentralized
+	country_type = decentralized
 
-    tier = kingdom
+	tier = kingdom
 
-    cultures = { na_cree_montagnais }
-    capital = STATE_ONTARIO
+	cultures = { na_cree_montagnais }
+	capital = STATE_ONTARIO
 }
 
 SIO = {
-    color = { 13 102 75 }
+	color = { 13 102 75 }
 
-    country_type = decentralized
+	country_type = decentralized
 
-    tier = kingdom
+	tier = kingdom
 
-    cultures = { na_cree_montagnais }
-    capital = STATE_SASKATCHEWAN
+	cultures = { na_cree_montagnais }
+	capital = STATE_SASKATCHEWAN
 }
 
 SAO = {
-    color = { 13 102 75 }
+	color = { 13 102 75 }
 
-    country_type = decentralized
+	country_type = decentralized
 
-    tier = kingdom
+	tier = kingdom
 
-    cultures = { na_cree_montagnais }
-    capital = STATE_BRITISH_COLUMBIA
+	cultures = { na_cree_montagnais }
+	capital = STATE_BRITISH_COLUMBIA
 }
 
 ATB = {
-    color = { 13 102 75 }
+	color = { 13 102 75 }
 
-    country_type = decentralized
+	country_type = decentralized
 
-    tier = kingdom
+	tier = kingdom
 
-    cultures = { na_cree_montagnais }
-    capital = STATE_NORTHWEST_TERRITORIES
+	cultures = { na_cree_montagnais }
+	capital = STATE_NORTHWEST_TERRITORIES
 }

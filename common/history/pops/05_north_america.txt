@@ -352,7 +352,7 @@
 			}
 		}
 	}
-	s:STATE_MINNESOTA = { # TODO: move to own file?
+	s:STATE_MINNESOTA = {
 		region_state:DKT = {
 			create_pop = {
 				culture = na_santee_dakota
