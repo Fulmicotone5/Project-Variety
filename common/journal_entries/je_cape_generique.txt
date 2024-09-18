@@ -2,15 +2,18 @@ je_cape_fm = {
 	icon = "gfx/interface/icons/event_icons/event_trade.dds"
 	group = je_group_foreign_affairs
 	fail = {
-		OR = {
-			NOT = {
-				owns_treaty_port_in = STATE_CAPE_COLONY
-				owns_entire_state_region = STATE_CAPE_COLONY
-			}
-			any_state = {
-				has_building = building_suez_canal
-			}
+		NOT = {
+			owns_treaty_port_in = STATE_CAPE_COLONY
+			owns_entire_state_region = STATE_CAPE_COLONY
 		}
+	}
+	complete = {
+		any_state = {
+			has_building = building_suez_canal
+		}
+	}
+	on_complete = {
+		remove_modifier = modifier_ven_two
 	}
 	on_fail = {
 		remove_modifier = modifier_ven_two

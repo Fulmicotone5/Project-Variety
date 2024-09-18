@@ -1802,12 +1802,12 @@ BUILDINGS={
 		}
 	}
 	s:STATE_ADANA = {
-		region_state:SIU = {
+		region_state:TOR = {
 			create_building={
 				building="building_cotton_plantation"
 				add_ownership={
 					country={
-						country="c:SIU"
+						country="c:TOR"
 						levels=1
 					}
 				}
@@ -1831,7 +1831,7 @@ BUILDINGS={
 				building="building_fishing_wharf"
 				add_ownership={
 					country={
-						country="c:SIU"
+						country="c:TOR"
 						levels=2
 					}
 				}
@@ -1842,7 +1842,7 @@ BUILDINGS={
 				building="building_livestock_ranch"
 				add_ownership={
 					country={
-						country="c:SIU"
+						country="c:TOR"
 						levels=1
 					}
 				}
@@ -1853,7 +1853,7 @@ BUILDINGS={
 				building="building_tea_plantation"
 				add_ownership={
 					country={
-						country="c:SIU"
+						country="c:TOR"
 						levels=1
 					}
 				}
@@ -1864,7 +1864,7 @@ BUILDINGS={
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:SIU"
+						country="c:TOR"
 						levels=1
 					}
 				}

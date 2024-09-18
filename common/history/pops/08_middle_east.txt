@@ -592,7 +592,12 @@
 			}
 			create_pop = {
 				culture = persian
-				size = 1967000
+				religion = sunni
+				size = 425987
+			}
+			create_pop = {
+				culture = persian
+				size = 1567000
 			}
 			create_pop = {
 				pop_type = slaves
@@ -638,7 +643,12 @@
 			create_pop = {
 				culture = bedouin
 				religion = zoroastrian
-				size = 295000
+				size = 115000
+			}
+			create_pop = {
+				culture = bedouin
+				religion = sunni
+				size = 135623
 			}
 			create_pop = {
 				culture = assyrian
@@ -655,7 +665,12 @@
 			}
 			create_pop = {
 				culture = persian
-				size = 130000
+				size = 96000
+			}
+			create_pop = {
+				culture = persian
+				religion = sunni
+				size = 60000
 			}
 			create_pop = {
 				pop_type = slaves
@@ -781,7 +796,12 @@
 		region_state:SAE = {
 			create_pop = {
 				culture = persian
-				size = 783996
+				size = 683996
+			}
+			create_pop = {
+				culture = persian
+				religion = sunni
+				size = 93996
 			}
 			create_pop = {
 				culture = sephardic
@@ -802,7 +822,12 @@
 		region_state:SAE = {
 			create_pop = {
 				culture = persian
-				size = 643804
+				size = 543804
+			}
+			create_pop = {
+				culture = persian
+				religion = sunni
+				size = 118767
 			}
 			create_pop = {
 				culture = sephardic
@@ -823,7 +848,12 @@
 		region_state:SAE = {
 			create_pop = {
 				culture = persian
-				size = 416996
+				size = 316996
+			}
+			create_pop = {
+				culture = persian
+				religion = sunni
+				size = 97834
 			}
 			create_pop = {
 				culture = turkmen
@@ -840,7 +870,12 @@
 		region_state:SAE = {
 			create_pop = {
 				culture = persian
-				size = 639196
+				size = 439196
+			}
+			create_pop = {
+				culture = persian
+				religion = sunni
+				size = 214987
 			}
 			create_pop = {
 				culture = sephardic
@@ -1295,10 +1330,10 @@
 		}
 	}
 	s:STATE_ADANA = {
-		region_state:SIU = {
+		region_state:TOR = {
 			create_pop = {
 				culture = turkish
-				size = 270062
+				size = 290062
 			}
 			create_pop = {
 				culture = kurdish
@@ -1328,30 +1363,6 @@
 				pop_type = slaves
 				culture = lacustrine_bantu
 				size = 1000
-			}
-		}
-		region_state:TOR = {
-			create_pop = {
-				culture = turkish
-				size = 30012
-			}
-			create_pop = {
-				culture = armenian
-				size = 2010
-			}
-			create_pop = {
-				culture = greek
-				size = 1003
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = north_caucasian
-				size = 100
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = lacustrine_bantu
-				size = 400
 			}
 		}
 	}
