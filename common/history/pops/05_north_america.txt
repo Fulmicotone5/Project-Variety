@@ -13,18 +13,22 @@
 	}
 	s:STATE_LOUISIANA = {
 		region_state:LOI = {
+#			create_pop = {
+#				culture = na_cherokee
+#				size = 68392
+#			}
+#			create_pop = {
+#				culture = na_cherokee
+#				religion = catholic
+#				size = 36892
+#			}
+#			create_pop = {
+#				culture = french
+#				size = 116392
+#			}
 			create_pop = {
-				culture = na_cherokee
-				size = 68392
-			}
-			create_pop = {
-				culture = na_cherokee
-				religion = catholic
-				size = 36892
-			}
-			create_pop = {
-				culture = french
-				size = 116392
+				culture = na_caddoan
+				size = 50000 # Historically ~200k in 1300 (spread between 4 states) of Caddo
 			}
 		}
 	}
@@ -219,68 +223,80 @@
 	}
 	s:STATE_NORTH_DAKOTA = {
 		region_state:DKT = {
+#			create_pop = {
+#				culture = na_yankton_yanktonai_dakota
+#				size = 930000
+#			}
+#			create_pop = {
+#				culture = na_santee_dakota
+#				size = 4000
+#			}
 			create_pop = {
-				culture = na_yankton_yanktonai_dakota
-				size = 930000
-			}
-			create_pop = {
-				culture = na_santee_dakota
-				size = 4000
+				culture = na_caddoan
+				size = 4000 # historically ~30k pre-contact (most in SD) of Arikara
 			}
 		}
 	}
 	s:STATE_SOUTH_DAKOTA = {
 		region_state:DKT = {
+#			create_pop = {
+#				culture = na_yankton_yanktonai_dakota
+#				size = 930000
+#			}
+#			create_pop = {
+#				culture = na_santee_dakota
+#				size = 4000
+#			}
 			create_pop = {
-				culture = na_yankton_yanktonai_dakota
-				size = 930000
-			}
-			create_pop = {
-				culture = na_santee_dakota
-				size = 4000
+				culture = na_caddoan
+				size = 26000 # historically ~30k pre-contact (small pop separate in ND) of Arikara
 			}
 		}
 	}
 	s:STATE_NEBRASKA = {
 		region_state:DKT = {
+#			create_pop = {
+#				culture = na_lakota
+#				size = 589000
+#			}
 			create_pop = {
-				culture = na_lakota
-				size = 589000
+				culture = na_caddoan
+				size = 20000 # Historically ~60k pre-contact (small pop in kansas) of Pawnee
 			}
 		}
 		region_state:UTE = {
-			create_pop = {
-				culture = na_paiute
-				size = 19000
-			}
+#			create_pop = {
+#				culture = na_paiute
+#				size = 19000
+#			}
 		}
 		region_state:LOI = {
 			create_pop = {
 				culture = na_caddoan
-				size = 219000
+				size = 30000 # Historically ~60k pre-contact (small pop in kansas) of Pawnee
 			}
-			create_pop = {
-				culture = na_lakota
-				size = 15000
-			}
+#			create_pop = {
+#				culture = na_lakota
+#				size = 15000
+#			}
 		}
 	}
 	s:STATE_KANSAS = {
 		region_state:LOI = {
+#			create_pop = {
+#				culture = na_caddoan
+#				size = 448000
+#			}
 			create_pop = {
 				culture = na_caddoan
-				size = 448000
+				size = 10000 # Historically ~60k pre-contact (most in nebraska) of Pawnee
 			}
 		}
 		region_state:UTE = {
-			create_pop = {
-				culture = na_paiute
-				size = 164000
-			}
-			create_pop = {
-				culture = na_caddoan
-				size = 4000
-			}
+#			create_pop = {
+#				culture = na_paiute
+#				size = 164000
+#			}
 		}
 	}
 	s:STATE_OKLAHOMA = {
@@ -289,14 +305,20 @@
 				culture = french
 				size = 5689
 			}
+#			create_pop = {
+#				culture = na_cherokee
+#				size = 472771
+#			}
+#			create_pop = {
+#				culture = na_cherokee
+#				religion = catholic
+#				size = 2235
+#			}
 			create_pop = {
-				culture = na_cherokee
-				size = 472771
-			}
-			create_pop = {
-				culture = na_cherokee
-				religion = catholic
-				size = 2235
+				culture = na_caddoan
+				size = 56000
+				# Historically ~12k pre-contact (half in texas) of Witchita
+				# Historically ~200k in 1300 (spread between 4 states) of Caddo
 			}
 		}
 	}
@@ -306,24 +328,26 @@
 				culture = french
 				size = 15689
 			}
-			create_pop = {
-				culture = na_cherokee
-				size = 370136
-			}
-			create_pop = {
-				culture = na_cherokee
-				religion = catholic
-				size = 2000
-			}
-			create_pop = {
-				culture = na_caddoan
-				size = 42635
-			}
+#			create_pop = {
+#				culture = na_cherokee
+#				size = 370136
+#			}
+#			create_pop = {
+#				culture = na_cherokee
+#				religion = catholic
+#				size = 2000
+#			}
 			create_pop = {
 				culture = na_caddoan
-				religion = catholic
-				size = 2635
+				size = 60000
+				# Historically ~200k in 1300 (spread between 4 states) of Caddo
+				# no clue on kitsai, Im guessing 10000
 			}
+#			create_pop = {
+#				culture = na_caddoan
+#				religion = catholic
+#				size = 2635
+#			}
 		}
 	}
 	s:STATE_MISSOURI = {
@@ -990,13 +1014,19 @@
 	}
 	s:STATE_TEXAS = {
 		region_state:COM = {
+#			create_pop = {
+#				culture = na_comanche
+#				size = 745600
+#			}
+#			create_pop = {
+#				culture = na_chickasaw_choctaw
+#				size = 12000
+#			}
 			create_pop = {
-				culture = na_comanche
-				size = 745600
-			}
-			create_pop = {
-				culture = na_chickasaw_choctaw
-				size = 12000
+				culture = na_caddoan
+				size = 56000
+				# Historically ~12k pre-contact of Witchita (half in oklahoma)
+				# Historically ~200k in 1300 (spread between 4 states) of Caddo
 			}
 		}
 		region_state:MAX = {
