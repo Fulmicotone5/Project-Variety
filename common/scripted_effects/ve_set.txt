@@ -18,7 +18,7 @@ set_missionary_cultural_missionary = {
 			}
 		}
 		set_variable = {
-			name = ve_total_culture_missionaries
+			name = total_culture_missionaries
 			value = ve_set_citizenship_law_effects
 		}
 	}
@@ -29,7 +29,7 @@ set_missionary_cultural_missionary = {
 			}
 		}
 		set_variable = {
-			name = ve_avaible_missionaries
+			name = avaible_missionaries
 			value = ve_set_religion_law_effects
 		}
 	}
@@ -40,7 +40,7 @@ set_missionary_cultural_missionary = {
 			}
 		}
 		set_variable = {
-			name = ve_total_missionaries
+			name = total_missionaries
 			value = ve_set_religion_law_effects
 		}
 	}
