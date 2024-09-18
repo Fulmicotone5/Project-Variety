@@ -198,15 +198,16 @@ je_venice_cape_r = {
 	icon = "gfx/interface/icons/event_icons/event_trade.dds"
 	group = je_group_historical_content
 	fail = {
-		OR = {
-			NOT = {
-				owns_treaty_port_in = STATE_CAPE_COLONY
-				owns_entire_state_region = STATE_CAPE_COLONY
-			}
-			any_state = {
-				has_building = building_suez_canal
-			}
+		NOT = {
+			owns_treaty_port_in = STATE_CAPE_COLONY
+			owns_entire_state_region = STATE_CAPE_COLONY
 		}
+	}
+	complete = {
+		any_state = {
+			has_building = building_suez_canal
+		}
+		remove_modifier = modifier_ven_two
 	}
 	on_fail = {
 		remove_modifier = modifier_ven_two

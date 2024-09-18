@@ -8526,7 +8526,7 @@ misri={
 
 mashriqi={
 	color= hsv{ 0.34 0.48 0.71 }
-	religion = zoroastrian
+	religion = sunni
 	traits = { arab_speaking middle_eastern_heritage }
 	obsessions = {
 		coffee
@@ -9226,7 +9226,7 @@ turkmen={
 
 kurdish={
 	color= hsv{ 0.59 0.51 0.79 }
-	religion = zoroastrian
+	religion = sunni
 	traits = { iranian_turanian_culture_group middle_eastern_heritage }
 	male_common_first_names={
 		Advi Rashan Arsham Kourosh Aardburzin 

@@ -47,7 +47,7 @@ STATES = {
 		}
 		
 		add_homeland = cu:misri
-		add_claim = c:TOR
+		
 	}
 	s:STATE_HOME_COUNTIES = {
 		create_state = {
@@ -2632,7 +2632,7 @@ STATES = {
 		add_homeland = cu:misri
 		add_homeland = cu:bedouin
 		add_homeland = cu:beja
-		add_claim = c:TOR
+		
 	}
 	s:STATE_EGYPTIAN_DESERT = {
 		create_state = {
@@ -2650,7 +2650,7 @@ STATES = {
 		}
 		
 		add_homeland = cu:misri
-		add_claim = c:TOR
+		
 	}
 	s:STATE_MATRUH = {
 		create_state = {
@@ -2661,7 +2661,7 @@ STATES = {
 		add_homeland = cu:misri
 		add_homeland = cu:bedouin
 		add_homeland = cu:berber	
-		add_claim = c:TOR		
+				
 	}
 	s:STATE_SINAI = {
 		create_state = {
@@ -2670,7 +2670,7 @@ STATES = {
 		}
 		
 		add_homeland = cu:misri
-		add_claim = c:TOR
+		
 	}
 	s:STATE_DONGOLA = {
 		create_state = {
@@ -5070,7 +5070,7 @@ STATES = {
 		add_homeland = cu:mashriqi
 		add_homeland = cu:bedouin
 		add_homeland = cu:phoenician
-		add_claim = c:TOR
+		
 	}
 	s:STATE_PALESTINE = {
 		create_state = {
@@ -5081,7 +5081,7 @@ STATES = {
 		
 		add_homeland = cu:mashriqi
 		add_homeland = cu:phoenician
-		add_claim = c:TOR
+		
 	}
 	s:STATE_LEBANON = {
 		create_state = {
@@ -5091,7 +5091,7 @@ STATES = {
 		
 		add_homeland = cu:mashriqi
 		add_homeland = cu:phoenician
-		add_claim = c:TOR
+		
 		add_claim = c:ARM
 	}
 	s:STATE_SYRIA = {
@@ -5102,7 +5102,7 @@ STATES = {
 
 		add_homeland = cu:mashriqi
 		add_homeland = cu:phoenician
-		add_claim = c:TOR
+		
 		add_claim = c:ARM
 	}
 	s:STATE_ALEPPO = {
@@ -5115,7 +5115,7 @@ STATES = {
 		add_homeland = cu:turkish
 		add_homeland = cu:kurdish
 		add_homeland = cu:phoenician
-		add_claim = c:TOR
+		
 		add_claim = c:ARM
 	}
 	s:STATE_BAGHDAD = {
@@ -5237,7 +5237,7 @@ STATES = {
 		add_homeland = cu:persian
 		add_homeland = cu:armenian
 		add_homeland = cu:azerbaijani
-		add_claim = c:TOR
+		
 		add_claim = c:ARM
 	}
 
@@ -5252,7 +5252,7 @@ STATES = {
 		add_homeland = cu:azerbaijani
 		add_homeland = cu:armenian
 		add_homeland = cu:assyrian
-		add_claim = c:TOR
+		
 		add_claim = c:ARM
 	}
 	s:STATE_PERSIAN_KURDISTAN = {
@@ -5281,7 +5281,7 @@ STATES = {
 		
 		add_homeland = cu:armenian
 		add_homeland = cu:azerbaijani
-		add_claim = c:TOR
+		
 	}
 	s:STATE_AZERBAIJAN = {
 		create_state = {
@@ -5295,7 +5295,7 @@ STATES = {
 		
 		add_homeland = cu:armenian
 		add_homeland = cu:azerbaijani
-		add_claim = c:TOR
+		
 		add_claim = c:ARM
 
 	}
@@ -5313,7 +5313,7 @@ STATES = {
 		
 		add_homeland = cu:armenian
 		add_homeland = cu:azerbaijani
-		add_claim = c:TOR
+		
 		add_claim = c:ARM
 	}
 	s:STATE_GREATER_CAUCASUS = {
@@ -5323,7 +5323,7 @@ STATES = {
 		}
 		
 		add_homeland = cu:georgian
-		add_claim = c:TOR
+		
 		add_claim = c:ARM
 		}
 	s:STATE_MONTENEGRO = {
@@ -5449,7 +5449,7 @@ STATES = {
 		add_homeland = cu:armenian
 		add_homeland = cu:kurdish
 		add_homeland = cu:georgian
-		add_claim = c:TOR
+		
 		add_claim = c:ARM
 	}
 	s:STATE_CRETE = {
@@ -7342,18 +7342,12 @@ STATES = {
 	s:STATE_ADANA = {
 		create_state = {
 			country = c:TOR
-			owned_provinces = { xFA9C84 xE8DCC5 xA09060 }
+			owned_provinces = { xFA9C84 xE8DCC5 xA09060 x2111E0 x39CBF7 x909463 x63E9DB x7DD48B x4DA0F1 xA4523A xF657D8 xB0E060 xCCBD19 x8517E9 xDAD836}
 		}
-		create_state = {
-			country = c:SIU
-			owned_provinces = { x2111E0 x39CBF7 x909463 x63E9DB x7DD48B x4DA0F1 xA4523A xF657D8 xB0E060 xCCBD19 x8517E9 xDAD836 }
-		}
-
 		add_homeland = cu:turkish
 		add_homeland = cu:armenian
 		add_homeland = cu:kurdish
 		add_claim = c:ARM
-		add_claim = c:TOR
 	}
 	s:STATE_DEIR_EZ_ZOR = {
 		create_state = {

@@ -391,6 +391,9 @@ lotharingia.6 = {
 		s:STATE_AUSTRIA = {
 			add_claim = c:LOT
 		}
+		s:STATE_STYRIA = {
+			add_claim = c:LOT
+		}
 		s:STATE_SLOVENIA = {
 			add_claim = c:LOT
 		}
