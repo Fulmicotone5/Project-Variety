@@ -89,27 +89,7 @@ age_3_obj_triggers = {
 		}
 		army_size >= 350
 		leading_producer_of = g:oil
-		NOT = {
-			any_scope_state = {
-				owner = ROOT
-				any_scope_building = {
-					is_building_type = building_barracks
-					OR = {
-						has_active_production_method = pm_irregular_infantry
-						has_active_production_method = pm_line_infantry
-						has_active_production_method = pm_skirmish_infantry
-						has_active_production_method = pm_trench_infantry
-						has_active_production_method = pm_squad_infantry
-					}
-					OR = {
-						has_active_production_method = pm_no_artillery
-						has_active_production_method = pm_cannon_artillery
-						has_active_production_method = pm_mobile_artillery
-						has_active_production_method = pm_shrapnel_artillery
-					}
-				}
-			}
-		}
+		has_technology_researched = mobile_armor
 		GDP >= 1000000000
 		global_country_ranking = 1
 	}
@@ -212,27 +192,7 @@ golden_age_3_obj_trigger = {
 			}
 			army_size >= 350
 			leading_producer_of = g:oil
-			NOT = {
-				any_scope_state = {
-					owner = ROOT
-					any_scope_building = {
-						is_building_type = building_barracks
-						OR = {
-							has_active_production_method = pm_irregular_infantry
-							has_active_production_method = pm_line_infantry
-							has_active_production_method = pm_skirmish_infantry
-							has_active_production_method = pm_trench_infantry
-							has_active_production_method = pm_squad_infantry
-						}
-						OR = {
-							has_active_production_method = pm_no_artillery
-							has_active_production_method = pm_cannon_artillery
-							has_active_production_method = pm_mobile_artillery
-							has_active_production_method = pm_shrapnel_artillery
-						}
-					}
-				}
-			}
+			has_technology_researched = mobile_armor
 			GDP >= 1000000000
 			global_country_ranking = 1
 		}
