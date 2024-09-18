@@ -2298,14 +2298,14 @@ cultural_missionary_power_10mplus = {
 	}
 }
 
-example_svalue = {
-	base = 0
-	if = {
-		limit = {
-			owner = {
-				has_variable = text_var
-			}
-		}
-		add = 10000
-	}
-}
+# example_svalue = {
+# 	base = 0
+# 	if = {
+# 		limit = {
+# 			owner = {
+# 				has_variable = text_var
+# 			}
+# 		}
+# 		add = 10000
+# 	}
+# }
