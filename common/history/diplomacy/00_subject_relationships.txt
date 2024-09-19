@@ -110,6 +110,12 @@
 			type = dominion
 		}
 	}
+	c:SCO = {
+		create_diplomatic_pact = {
+			country = c:NVS
+			type = dominion
+		}
+	}
 	c:FRU ?= {
 		create_diplomatic_pact = {
 			country = c:ORL
@@ -148,6 +154,13 @@
 		create_diplomatic_pact = {
 			country = c:HDJ
 			type = tributary
+		}
+	}
+
+	c:MAX = {
+		create_diplomatic_pact = {
+			country = c:MAY
+			type = vassal
 		}
 	}
 

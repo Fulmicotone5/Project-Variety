@@ -2182,23 +2182,6 @@ COR = { # Corsica
 	}
 }
 
-COS = { # Costa Rica
-	flag_definition = {
-		coa = COS
-		subject_canton = COS	
-		allow_overlord_canton = yes		
-		coa_with_overlord_canton = COS_subject			
-		priority = 1
-	}
-	flag_definition = {
-		coa = COS_subject_MAX
-		priority = 30
-		trigger = { 
-			coa_def_mexican_ensign_trigger = yes
-		}
-	}	
-}
-
 CRE = { # Crete
 	flag_definition = {
 		coa = CRE
@@ -3474,6 +3457,11 @@ UKK = { # Great Britain / United Kingdom
 	}
 }
 
+SCO = {
+
+
+}
+
 GCO = { # Gran Colombia
 	flag_definition = {
 		coa = CLM_gran_colombia
@@ -3564,45 +3552,6 @@ GRE = { # Greece
 			coa_def_fascist_flag_trigger = yes
 		}
 	}	
-}
-
-GUA = { # Guatemala
-	flag_definition = {
-		coa = GUA
-		allow_overlord_canton = yes	
-		coa_with_overlord_canton = GUA_subject	
-		overlord_canton_scale = { 0.337 0.5 }		
-		subject_canton = GUA
-		priority = 1
-	}
-	flag_definition = {
-		coa = GUA_republic
-		priority = 10
-		trigger = { 
-			coa_def_republic_flag_trigger = yes
-		}
-	}	
-	flag_definition = {
-		coa = GUA_absolute_monarchy
-		priority = 10
-		trigger = { 
-			coa_def_absolute_monarchy_flag_trigger = yes
-		}
-	}	
-	flag_definition = {
-		coa = GUA_subject_ESP
-		priority = 30
-		trigger = { 
-			coa_def_spanish_ensign_trigger = yes
-		}
-	}	
-	flag_definition = {
-		coa = GUA_subject_MAX
-		priority = 30
-		trigger = { 
-			coa_def_mexican_ensign_trigger = yes
-		}
-	}		
 }
 
 GWA = { # Gwalior
@@ -3982,30 +3931,6 @@ HOL = { # Holstein
 		}
 	}	
 }	
-
-HON = { # Honduras
-	flag_definition = {
-		coa = HON
-		subject_canton = HON	
-		allow_overlord_canton = yes		
-		coa_with_overlord_canton = HON_subject			
-		priority = 1
-	}
-	flag_definition = {
-		coa = HON_communist
-		priority = 1500
-		trigger = { 
-			coa_def_communist_flag_trigger = yes
-		}
-	}	
-	flag_definition = {
-		coa = HON_subject_MAX
-		priority = 30
-		trigger = { 
-			coa_def_mexican_ensign_trigger = yes
-		}
-	}	
-}
 
 HRO = { # Herero
 	flag_definition = {
@@ -5536,13 +5461,6 @@ MJT = { # Majerteen
 	}
 }
 
-MKT = { # Miskitia
-	flag_definition = {
-		coa = MKT
-		allow_overlord_canton = yes
-	}
-}
-
 MLT = { # Malta
 	flag_definition = {
 		coa = MLT
@@ -6073,23 +5991,6 @@ NGF = { # North Germany
 	}	
 }
 
-NIC = { # Nicaragua
-	flag_definition = {
-		coa = NIC
-		subject_canton = NIC	
-		coa_with_overlord_canton = NIC_subject	
-		allow_overlord_canton = yes		
-		priority = 1
-	}
-	flag_definition = {
-		coa = NIC_subject_MAX
-		priority = 30
-		trigger = { 
-			coa_def_mexican_ensign_trigger = yes
-		}
-	}	
-}
-
 NNV = { # Nunavut
 	flag_definition = {
 		coa = NNV
@@ -6150,14 +6051,6 @@ NVJ = { # Navajo
 		subject_canton = NVJ
 		priority = 1
 	}
-}
-
-NVS = { # Nova Scotia
-	flag_definition = {
-		coa = NVS
-		coa_with_overlord_canton = NVS_subject
-		allow_overlord_canton = yes		
-	}	
 }
 
 NRU = { # Nauru
@@ -6958,23 +6851,6 @@ PLC = { # Poland-Lithuania
 		subject_canton = PLC	
 		priority = 1
 	}
-}
-
-PNM = { # Panama
-	flag_definition = {
-		coa = PNM
-		subject_canton = PNM	
-		coa_with_overlord_canton = PNM_subject	
-		allow_overlord_canton = yes	
-		priority = 1
-	}
-	flag_definition = {
-		coa = PNM_subject_MAX
-		priority = 30
-		trigger = { 
-			coa_def_mexican_ensign_trigger = yes
-		}
-	}	
 }
 
 PUL = { # Poland
@@ -8505,43 +8381,11 @@ TUS = { # Tuscany
 	}		
 }	
 
-UCA = { # Central America
+NVS = { # Nova Scotia
 	flag_definition = {
-		coa = UCA
-		subject_canton = UCA
-		coa_with_overlord_canton = UCA_subject
-		allow_overlord_canton = yes				
+		coa = NVS			
 		priority = 1
 	}
-	flag_definition = {
-		coa = UCA_dictatorship
-		subject_canton = UCA_dictatorship
-		priority = 20
-		trigger = {
-			coa_def_dictatorship_flag_trigger = yes
-		}
-	}	
-	flag_definition = {
-		coa = UCA_subject_ESP
-		priority = 30
-		trigger = { 
-			coa_def_spanish_ensign_trigger = yes
-		}
-	}	
-	flag_definition = {
-		coa = UCA_communist
-		priority = 1500
-		trigger = { 
-			coa_def_communist_flag_trigger = yes
-		}
-	}
-	flag_definition = {
-		coa = UCA_subject_USA
-		priority = 50
-		trigger = { 
-			coa_def_american_ensign_trigger = yes
-		}
-	}		
 }
 
 UKR = { # Ukraine
@@ -9562,14 +9406,6 @@ MRI = { # Mari El
 				coa_def_communist_flag_trigger = yes
 			}
 		}
-	}
-}
-
-ALT = { # Los Altos
-	flag_definition = {
-		coa = ALT
-		subject_canton = ALT
-		priority = 1
 	}
 }
 

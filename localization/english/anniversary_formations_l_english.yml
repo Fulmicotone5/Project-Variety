@@ -133,9 +133,4 @@
   notification_unification_notification_generic_name: "[SCOPE.sCountry('formation_country').GetAdjective] Unification"
   notification_unification_notification_generic_desc: "[SCOPE.sCountry('formation_country').GetName] has emerged as a rising power in [SCOPE.sStrategicRegion('capital_region_scope').GetName]."
   notification_unification_notification_generic_tooltip: "#header $notification_unification_notification_generic_name$#!\n$TOOLTIP_DELIMITER$\n$notification_unification_notification_generic_desc$"
-  je_reunify_central_america: "Central American Reunification"
-  je_reunify_central_america_reason: "The collapse of the United Provinces of Central America into disparate fiefdoms has left the region impoverished and vulnerable to the most avaricious exploitation. If Central America ever wishes to take full advantage of the potential of the modern era, it must stand as one."
-  central_america.1.t: "Central American Reunification"
-  central_america.1.d: "The dissident states that so foolishly abandoned [ROOT.GetCountry.GetAdjective] unity have been brough back into the fold. The nation is once again united."
-  central_america.1.f: ""The days of the Spanish crown are no more. We are free to pursue our own destinies now, yet we trample each other in a stampede to our ends. And all around us, our enemies unite into greater wholes. If greater machines, greater bodies, and greater scopes are our future, let us embrace it. Let us embrace each other. Let us offer each other the sign of peace. Let us seek our greater destinies together.""
-  central_america.1.a: "Here's to a more stable union."
+

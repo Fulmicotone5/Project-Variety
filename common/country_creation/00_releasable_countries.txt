@@ -572,42 +572,6 @@ SPA = {
 	ai_will_do = { always = no }
 }
 
-ELS = {
-	states = { STATE_SAN_SALVADOR }
-	
-	ai_will_do = { always = no }
-}
-
-GUA = {
-	states = { STATE_GUATEMALA }
-	
-	ai_will_do = { always = no }
-}
-
-ALT = {
-	provinces = { xD9BEFE x78C465 xBD8628  }
-	
-	ai_will_do = { always = no }
-}
-
-NIC = {
-	states = { STATE_NICARAGUA }
-	
-	ai_will_do = { always = no }
-}
-
-HON = {
-	states = { STATE_HONDURAS }
-	
-	ai_will_do = { always = no }
-}
-
-COS = {
-	states = { STATE_COSTA_RICA }
-	
-	ai_will_do = { always = no }
-}
-
 FRM = {
 	provinces = { x11C0A0 }
 	
@@ -730,14 +694,6 @@ NBS = {
 	ai_will_do = { always = no }
 }
 
-NVS = {
-	provinces = {
-		x085C83 xEC5B4B x406FBA xC060C0 xE4892F x99CA75 x380F20 xB95DB3 x905458 x8060C0 x80AA26 x6B5822 xCA0399 x63E1C4 xF95D47 x8CFA32 xEAFA99 xF04040
-	}
-
-	ai_will_do = { always = no }
-}
-
 AST = {
 	use_culture_states = yes
 
@@ -809,13 +765,6 @@ NEN = {
 	ai_will_do = { always = no }
 }
 
-PNM = {
-	states = { 
-		STATE_PANAMA
-	}
-
-	ai_will_do = { always = no }
-}
 
 TWT = {
 	use_culture_states = yes
@@ -1238,7 +1187,7 @@ SIC = {
 	ai_will_do = { always = no }
 }
 
-UCA = {
+NVS = {
 	use_culture_states = yes
 	required_num_states = 3
 	
@@ -1966,11 +1915,6 @@ SEQ = {
 	states = {
 		STATE_OKLAHOMA
 	}
-	ai_will_do = { always = no }
-}
-
-MKT = {
-	provinces = { x17F33B x6C22F2 x59D231 xAD9EE8 }
 	ai_will_do = { always = no }
 }
 

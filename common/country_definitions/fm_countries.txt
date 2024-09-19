@@ -2476,18 +2476,6 @@ COL = {
 	cultures = { british }
 }
 
-COS = {
-	color = { 207 72 60 }
-	
-	country_type = colonial
-	
-	tier = principality
-	
-	cultures = { central_american }
-	capital = STATE_COSTA_RICA
-	is_named_from_capital = yes
-}
-
 CUB = {
 	color = { 87  192  204 }
 	
@@ -2521,41 +2509,6 @@ DOM = {
 	cultures = { caribeno afro_caribeno }
 	capital = STATE_SANTO_DOMINGO
 	is_named_from_capital = yes
-}
-
-ELS = {
-	color = { 0 47 94 }
-	
-	country_type = colonial
-	
-	tier = principality
-	
-	cultures = { central_american }
-	capital = STATE_SAN_SALVADOR
-	is_named_from_capital = yes
-}
-
-GUA = {
-	color = { 115 194 251 }
-	
-	country_type = colonial
-	
-	tier = principality
-	
-	cultures = { central_american }
-	capital = STATE_GUATEMALA
-	is_named_from_capital = yes
-}
-
-ALT = {
-	color = { 115 251 194 }
-	
-	country_type = colonial
-	
-	tier = principality
-	
-	cultures = { central_american }
-	capital = STATE_GUATEMALA
 }
 
 HAE = {
@@ -2594,18 +2547,6 @@ MTC = {
 	capital = STATE_MANITOBA
 }
 
-HON = {
-	color = { 235 240 247 }
-	
-	country_type = colonial
-	
-	tier = principality
-	
-	cultures = { central_american }
-	capital = STATE_HONDURAS
-	is_named_from_capital = yes
-}
-
 NEN = {
 	color = { 166  224  85 }
 	
@@ -2626,30 +2567,6 @@ NEW = {
 	
 	cultures = { anglo_canadian }
 	capital = STATE_NEWFOUNDLAND
-	is_named_from_capital = yes
-}
-
-NIC = {
-	color = { 34 88 186 }
-	
-	country_type = colonial
-	
-	tier = principality
-	
-	cultures = { central_american }
-	capital = STATE_NICARAGUA
-	is_named_from_capital = yes
-}
-
-PNM = {
-	color = { 150  85  61 }
-	
-	country_type = colonial
-	
-	tier = principality
-	
-	cultures = { central_american }
-	capital = STATE_PANAMA
 	is_named_from_capital = yes
 }
 
@@ -2700,17 +2617,6 @@ NBS = {
 	capital = STATE_NEW_BRUNSWICK
 }
 
-NVS = {
-	color = { 148 205 135 }
-	
-	country_type = colonial
-	
-	tier = principality
-	
-	cultures = { anglo_canadian }
-	capital = STATE_NEW_BRUNSWICK
-}
-
 TEX = {
 	color = { 4  144  178 }
 	
@@ -2723,16 +2629,17 @@ TEX = {
 	is_named_from_capital = yes
 }
 
-UCA = {
+NVS = {
 	color = { 90 175 255 }
 	
 	country_type = colonial
 	
 	tier = kingdom
 	
-	capital = STATE_SAN_SALVADOR
+	capital = STATE_PANAMA
 	cultures = { central_american }
 }
+
 FLU = {
 	color = { 123 86  133 }
 	
@@ -3356,17 +3263,6 @@ PCO = {
 	cultures = { americano }
 	capital = STATE_PUERTO_RICO
 	is_named_from_capital = yes
-}
-
-MKT = {
-	color = hsv{ 0.5  0.6  0.6 }
-	
-	country_type = unrecognized
-	
-	tier = principality
-	
-	cultures = { miskito afro_caribbean }
-	capital = STATE_NICARAGUA
 }
 
 NAH = {

@@ -1,0 +1,26 @@
+﻿COUNTRIES = {
+	c:NVS ?= {
+		set_next_election_date = 1837.4.9
+		
+		effect_starting_technology_tier_1_tech = yes
+		
+		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_census_voting
+		activate_law = law_type:law_racial_segregation
+		activate_law = law_type:law_freedom_of_conscience
+		activate_law = law_type:law_elected_bureaucrats
+		activate_law = law_type:law_professional_army
+
+		activate_law = law_type:law_agrarianism
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_per_capita_based_taxation
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_no_police
+		activate_law = law_type:law_no_schools
+		activate_law = law_type:law_charity_hospitals
+
+		activate_law = law_type:law_right_of_assembly
+
+	}
+	
+}
