@@ -201,8 +201,12 @@
 	s:STATE_LANCASHIRE = {
 		region_state:ENG = {
 			create_pop = {
+				culture = scottish
+				size = 433202
+			}
+			create_pop = {
 				culture = british
-				size = 1486404
+				size = 983202
 			}
 			create_pop = {
 				culture = british
@@ -230,8 +234,12 @@
 	s:STATE_YORKSHIRE = {
 		region_state:ENG = {
 			create_pop = {
+				culture = scottish
+				size = 463296
+			}
+			create_pop = {
 				culture = british
-				size = 1526592
+				size = 1063296
 			}
 			create_pop = {
 				culture = irish
