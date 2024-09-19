@@ -1,12 +1,4 @@
-﻿UCA = {
-	use_culture_states = yes
-
-	required_states_fraction = 0.5
-	
-	ai_will_do = { always = yes }
-}
-
-GSM = {
+﻿GSM = {
 	states = {
 		STATE_ROMAGNA
 		STATE_WALLACHIA
