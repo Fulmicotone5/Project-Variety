@@ -9180,7 +9180,7 @@ hazara={
 turkmen={
 	color= hsv{ 0.84 0.21 0.75 }
 	religion = zoroastrian
-	traits = { iranian_turanian_culture_group central_asian_heritage }
+	traits = { iranian_turanian_culture_group central_asian_heritage turkic }
 	obsessions = {
 		spice
 	}
