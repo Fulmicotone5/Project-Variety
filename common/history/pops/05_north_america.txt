@@ -477,11 +477,6 @@
 	s:STATE_KENTUCKY = {
 		region_state:CHE = {
 			create_pop = {
-				culture = na_cherokee
-				size = 279988
-				religion = animist
-			}
-			create_pop = {
 				culture = na_miami_illinois
 				size = 40000
 			}
@@ -503,7 +498,7 @@
 		region_state:CHE = {
 			create_pop = {
 				culture = na_cherokee
-				size = 372804
+				size = 3000
 			}
 		}
 	}
@@ -511,14 +506,10 @@
 		region_state:CHE = {
 			create_pop = {
 				culture = na_cherokee
-				size = 201008
+				size = 7000
 			}
 		}
 		region_state:FLU = {
-			create_pop = {
-				culture = na_cherokee
-				size = 80008
-			}
 			create_pop = {
 				culture = na_cherokee
 				religion = catholic
@@ -583,15 +574,13 @@
 		region_state:CHE = {
 			create_pop = {
 				culture = na_cherokee
-				size = 160916
-				religion = animist
+				size = 5000
 			}
 		}
 		region_state:FOU = {
 			create_pop = {
 				culture = na_cherokee
-				size = 6916
-				religion = animist
+				size = 5000
 			}
 			create_pop = {
 				culture = british
@@ -622,9 +611,8 @@
 				size = 116
 			}
 			create_pop = {
-				culture = na_cherokee
-				religion = protestant
-				size = 22489
+				culture = na_eastern_algonquian
+				size = 10000
 			}
 			create_pop = {
 				culture = afro_amerikaans
@@ -674,11 +662,6 @@
 				culture = na_cree_montagnais
 				religion = protestant
 				size = 6758
-			}
-			create_pop = {
-				culture = na_cherokee
-				religion = protestant
-				size = 14035
 			}
 			create_pop = {
 				culture = afro_amerikaans
