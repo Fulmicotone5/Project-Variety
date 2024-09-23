@@ -163,10 +163,6 @@
 				culture = na_shapwailutan
 				size = 14560
 			}
-			create_pop = {
-				culture = na_lakota
-				size = 15627
-			}
 		}
 		region_state:NZP = {
 			create_pop = {
@@ -176,10 +172,6 @@
 			create_pop = {
 				culture = na_shapwailutan
 				size = 14560
-			}
-			create_pop = {
-				culture = na_lakota
-				size = 1627
 			}
 		}
 	}
@@ -199,7 +191,11 @@
 		region_state:LKT = {
 			create_pop = {
 				culture = na_lakota
-				size = 682000
+				size = 4000
+			}
+			create_pop = {
+				culture = na_crow_hisatsa
+				size = 5000
 			}
 		}
 		region_state:BNN = {
@@ -213,10 +209,10 @@
 #				culture = na_paiute
 #				size = 182000
 #			}
-#			create_pop = {
-#				culture = na_lakota
-#				size = 14000
-#			}
+			create_pop = {
+				culture = na_lakota
+				size = 4000
+			}
 			create_pop = {
 				culture = na_arapahoan
 				size = 10000
@@ -226,41 +222,49 @@
 	s:STATE_MONTANA = {
 		region_state:LKT = {
 			create_pop = {
-				culture = na_lakota
-				size = 636000
-			}
-			create_pop = {
 				culture = na_blackfoot
 				size = 45000
+			}
+			create_pop = {
+				culture = na_crow_hisatsa
+				size = 35000
 			}
 		}
 	}
 	s:STATE_NORTH_DAKOTA = {
 		region_state:DKT = {
-#			create_pop = {
-#				culture = na_yankton_yanktonai_dakota
-#				size = 930000
-#			}
-#			create_pop = {
-#				culture = na_santee_dakota
-#				size = 4000
-#			}
+			create_pop = {
+				culture = na_yankton_yanktonai_dakota
+				size = 30000
+			}
+			create_pop = {
+				culture = na_santee_dakota
+				size = 6000
+			}
 			create_pop = {
 				culture = na_caddoan
 				size = 4000 # historically ~30k pre-contact (most in SD) of Arikara
+			}
+			create_pop = {
+				culture = na_crow_hisatsa
+				size = 20000
+			}
+			create_pop = {
+				culture = na_assiniboine
+				size = 17000
 			}
 		}
 	}
 	s:STATE_SOUTH_DAKOTA = {
 		region_state:DKT = {
-#			create_pop = {
-#				culture = na_yankton_yanktonai_dakota
-#				size = 930000
-#			}
-#			create_pop = {
-#				culture = na_santee_dakota
-#				size = 4000
-#			}
+			create_pop = {
+				culture = na_yankton_yanktonai_dakota
+				size = 30000
+			}
+			create_pop = {
+				culture = na_santee_dakota
+				size = 6000
+			}
 			create_pop = {
 				culture = na_caddoan
 				size = 26000 # historically ~30k pre-contact (small pop separate in ND) of Arikara
@@ -269,14 +273,22 @@
 				culture = na_arapahoan
 				size = 7000
 			}
+			create_pop = {
+				culture = na_lakota
+				size = 10000
+			}
 		}
 	}
 	s:STATE_NEBRASKA = {
 		region_state:DKT = {
-#			create_pop = {
-#				culture = na_lakota
-#				size = 589000
-#			}
+			create_pop = {
+				culture = na_lakota
+				size = 10000
+			}
+			create_pop = {
+				culture = na_omaha_ponca
+				size = 10000
+			}
 			create_pop = {
 				culture = na_caddoan
 				size = 20000 # Historically ~60k pre-contact (small pop in kansas) of Pawnee
@@ -287,10 +299,6 @@
 			}
 		}
 		region_state:UTE = {
-#			create_pop = {
-#				culture = na_paiute
-#				size = 19000
-#			}
 			create_pop = {
 				culture = na_arapahoan
 				size = 2000
@@ -301,10 +309,6 @@
 				culture = na_caddoan
 				size = 30000 # Historically ~60k pre-contact (small pop in kansas) of Pawnee
 			}
-#			create_pop = {
-#				culture = na_lakota
-#				size = 15000
-#			}
 		}
 	}
 	s:STATE_KANSAS = {
@@ -316,6 +320,10 @@
 			create_pop = {
 				culture = na_caddoan
 				size = 10000 # Historically ~60k pre-contact (most in nebraska) of Pawnee
+			}
+			create_pop = {
+				culture = na_kansa_osage
+				size = 10000
 			}
 		}
 		region_state:UTE = {
@@ -331,15 +339,10 @@
 				culture = french
 				size = 5689
 			}
-#			create_pop = {
-#				culture = na_cherokee
-#				size = 472771
-#			}
-#			create_pop = {
-#				culture = na_cherokee
-#				religion = catholic
-#				size = 2235
-#			}
+			create_pop = {
+				culture = na_kansa_osage
+				size = 6000
+			}
 			create_pop = {
 				culture = na_caddoan
 				size = 56000
@@ -369,11 +372,10 @@
 				# Historically ~200k in 1300 (spread between 4 states) of Caddo
 				# no clue on kitsai, Im guessing 10000
 			}
-#			create_pop = {
-#				culture = na_caddoan
-#				religion = catholic
-#				size = 2635
-#			}
+			create_pop = {
+				culture = na_quapaw
+				size = 6000
+			}
 		}
 	}
 	s:STATE_MISSOURI = {
@@ -386,6 +388,14 @@
 				culture = na_miami_illinois
 				size = 30000
 			}
+			create_pop = {
+				culture = na_chiwere_winnebago
+				size = 10000
+			}
+			create_pop = {
+				culture = na_kansa_osage
+				size = 10000
+			}
 		}
 	}
 	s:STATE_IOWA = {
@@ -397,6 +407,10 @@
 			create_pop = {
 				culture = na_miami_illinois
 				size = 10000
+			}
+			create_pop = {
+				culture = na_chiwere_winnebago
+				size = 5000
 			}
 		}
 		region_state:DKT = {
@@ -411,6 +425,10 @@
 			create_pop = {
 				culture = na_miami_illinois
 				size = 20000
+			}
+			create_pop = {
+				culture = na_chiwere_winnebago
+				size = 10000
 			}
 		}
 	}
@@ -436,22 +454,18 @@
 	}
 	s:STATE_WISCONSIN = {
 		region_state:CTF = {
-#			create_pop = {
-#				culture = na_cree_montagnais
-#				size = 558000
-#			}
 			create_pop = {
 				culture = na_miami_illinois
 				size = 10000
+			}
+			create_pop = {
+				culture = na_chiwere_winnebago
+				size = 6000
 			}
 		}
 	}
 	s:STATE_INDIANA = {
 		region_state:CTF = {
-#			create_pop = {
-#				culture = na_cree_montagnais
-#				size = 331504
-#			}
 			create_pop = {
 				culture = na_miami_illinois
 				size = 30000
@@ -460,10 +474,6 @@
 	}
 	s:STATE_MICHIGAN = {
 		region_state:CTF = {
-#			create_pop = {
-#				culture = na_cree_montagnais
-#				size = 523996
-#			}
 			create_pop = {
 				culture = na_ojibwe
 				size = 20000
@@ -473,8 +483,8 @@
 	s:STATE_OHIO = {
 		region_state:CTF = {
 			create_pop = {
-				culture = na_cree_montagnais
-				size = 392200
+				culture = na_ojibwe
+				size = 10000
 			}
 		}
 	}
@@ -511,6 +521,10 @@
 			create_pop = {
 				culture = na_chickasaw_choctaw
 				size = 135000
+			}
+			create_pop = {
+				culture = na_quapaw
+				size = 5000
 			}
 		}
 	}
@@ -608,6 +622,10 @@
 			create_pop = {
 				culture = na_cherokee
 				size = 5000
+			}
+			create_pop = {
+				culture = na_quapaw
+				size = 3000
 			}
 			create_pop = {
 				culture = british
@@ -722,13 +740,13 @@
 	}
 	s:STATE_ILLINOIS = {
 		region_state:CTF = {
-#			create_pop = {
-#				culture = na_cree_montagnais
-#				size = 552400
-#			}
 			create_pop = {
 				culture = na_miami_illinois
 				size = 100000
+			}
+			create_pop = {
+				culture = na_chiwere_winnebago
+				size = 1000
 			}
 		}
 	}
@@ -872,6 +890,10 @@
 			}
 			create_pop = {
 				culture = na_cherokee
+				size = 10000
+			}
+			create_pop = {
+				culture = na_quapaw
 				size = 10000
 			}
 			create_pop = {
@@ -1053,6 +1075,10 @@
 				culture = na_blackfoot
 				size = 40000
 			}
+			create_pop = {
+				culture = na_stoney
+				size = 10000
+			}
 		}
 	}
 	s:STATE_BRITISH_COLUMBIA = {
@@ -1080,6 +1106,10 @@
 			create_pop = {
 				culture = na_blackfoot
 				size = 7000
+			}
+			create_pop = {
+				culture = na_assiniboine
+				size = 17000
 			}
 		}
 	}
