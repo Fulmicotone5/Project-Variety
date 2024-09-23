@@ -120,7 +120,7 @@
 				size = 19780
 			}
 			create_pop = {
-				culture = salish
+				culture = na_salishan
 				size = 6780
 			}
 			create_pop = {
@@ -136,7 +136,7 @@
 				size = 170600
 			}
 			create_pop = {
-				culture = salish
+				culture = na_salishan
 				size = 15627
 			}
 		}
@@ -148,17 +148,17 @@
 				size = 24060
 			}
 			create_pop = {
+				culture = cu:na_colorado_numic
+				size = 4000
+			}
+			create_pop = {
 				culture = na_paiute
-				size = 182000
+				size = 2000
 			}
 		}
 	}
 	s:STATE_IDAHO = {
 		region_state:BNN = {
-			create_pop = {
-				culture = na_paiute
-				size = 120000
-			}
 			create_pop = {
 				culture = na_shapwailutan
 				size = 14560
@@ -172,6 +172,10 @@
 			create_pop = {
 				culture = na_shapwailutan
 				size = 14560
+			}
+			create_pop = {
+				culture = cu:na_colorado_numic
+				size = 30000
 			}
 		}
 	}
@@ -197,12 +201,20 @@
 				culture = na_crow_hisatsa
 				size = 5000
 			}
+			create_pop = {
+				culture = cu:na_colorado_numic
+				size = 10000
+			}
 		}
 		region_state:BNN = {
 #			create_pop = {
 #				culture = na_paiute
 #				size = 12000
 #			}
+			create_pop = {
+				culture = cu:na_colorado_numic
+				size = 10000
+			}
 		}
 		region_state:UTE = {
 #			create_pop = {
@@ -916,6 +928,10 @@
 				culture = na_paiute
 				size = 41000
 			}
+			create_pop = {
+				culture = cu:na_colorado_numic
+				size = 10000
+			}
 		}
 		region_state:NVJ = {
 #			create_pop = {
@@ -1088,12 +1104,8 @@
 				size = 20
 			}
 			create_pop = {
-				culture = salish
-				size = 127396
-			}
-			create_pop = {
-				culture = na_cree_montagnais
-				size = 55200
+				culture = na_salishan
+				size = 40000
 			}
 		}
 	}
@@ -1130,10 +1142,6 @@
 			create_pop = {
 				culture = na_cree_montagnais
 				size = 12000
-			}
-			create_pop = {
-				culture = salish
-				size = 19780
 			}
 		}
 	}
@@ -1202,7 +1210,7 @@
 		region_state:NVJ = {
 			create_pop = {
 				culture = na_colorado_numic
-				size = 110000
+				size = 50000
 			}
 			create_pop = {
 				culture = na_paiute

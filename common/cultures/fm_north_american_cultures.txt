@@ -37,6 +37,8 @@
 # cu:na_miami_illinois
 # cu:na_eastern_algonquian
 
+# na_salishan
+
 # (cu:nez_perce ->)
 # cu:na_shapwailutan
 
