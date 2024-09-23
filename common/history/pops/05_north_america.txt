@@ -13,19 +13,10 @@
 	}
 	s:STATE_LOUISIANA = {
 		region_state:LOI = {
-#			create_pop = {
-#				culture = na_cherokee
-#				size = 68392
-#			}
-#			create_pop = {
-#				culture = na_cherokee
-#				religion = catholic
-#				size = 36892
-#			}
-#			create_pop = {
-#				culture = french
-#				size = 116392
-#			}
+			create_pop = {
+				culture = french
+				size = 116392
+			}
 			create_pop = {
 				culture = na_caddoan
 				size = 50000 # Historically ~200k in 1300 (spread between 4 states) of Caddo
@@ -40,11 +31,11 @@
 		region_state:AMC = {
 			create_pop = {
 				culture = dutch_colonial
-				size = 735000
+				size = 35000
 			}
 			create_pop = {
 				culture = swedish_colonial
-				size = 915544
+				size = 15544
 			}
 			create_pop = {
 				culture = na_cree_montagnais
@@ -57,7 +48,7 @@
 			}
 			create_pop = {
 				culture = afro_amerikaans
-				size = 38264
+				size = 8264
 			}
 			create_pop = {
 				culture = na_eastern_algonquian
@@ -69,11 +60,11 @@
 		region_state:FOU = {
 			create_pop = {
 				culture = na_tuscarora_nottoway
-				size = 5000
+				size = 100000
 			}
 			create_pop = {
 				culture = british
-				size = 183597
+				size = 193597
 			}
 			create_pop = {
 				culture = dutch_colonial
@@ -89,7 +80,7 @@
 			}
 			create_pop = {
 				culture = na_eastern_algonquian
-				size = 16500
+				size = 36500
 			}
 		}
 		region_state:CHE = {
@@ -331,11 +322,11 @@
 #			}
 			create_pop = {
 				culture = na_caddoan
-				size = 10000 # Historically ~60k pre-contact (most in nebraska) of Pawnee
+				size = 20000 # Historically ~60k pre-contact (most in nebraska) of Pawnee
 			}
 			create_pop = {
 				culture = na_kansa_osage
-				size = 10000
+				size = 20000
 			}
 		}
 		region_state:UTE = {
@@ -448,7 +439,7 @@
 		region_state:DKT = {
 			create_pop = {
 				culture = na_santee_dakota
-				size = 820000
+				size = 620000
 			}
 			create_pop = {
 				culture = na_yankton_yanktonai_dakota
@@ -587,11 +578,11 @@
 		region_state:FOU = {
 			create_pop = {
 				culture = na_cherokee
-				size = 5000
+				size = 15000
 			}
 			create_pop = {
 				culture = na_muscogee
-				size = 10000
+				size = 20000
 			}
 			create_pop = {
 				culture = british
@@ -633,23 +624,11 @@
 		region_state:FOU = {
 			create_pop = {
 				culture = na_cherokee
-				size = 5000
+				size = 10000
 			}
 			create_pop = {
 				culture = na_quapaw
-				size = 3000
-			}
-			create_pop = {
-				culture = british
-				size = 11516
-			}
-			create_pop = {
-				culture = dutch_colonial
-				size = 2916
-			}
-			create_pop = {
-				culture = swedish_colonial
-				size = 916
+				size = 6000
 			}
 		}
 	}
@@ -681,7 +660,7 @@
 		region_state:AMC = {
 			create_pop = {
 				culture = dutch_colonial
-				size = 127000
+				size = 67000
 			}
 			create_pop = {
 				culture = swedish_colonial
@@ -705,11 +684,11 @@
 		region_state:AMC = {
 			create_pop = {
 				culture = dutch_colonial
-				size = 403200
+				size = 43200
 			}
 			create_pop = {
 				culture = swedish_colonial
-				size = 265544
+				size = 65544
 			}
 			create_pop = {
 				culture = swedish
@@ -722,7 +701,7 @@
 			}
 			create_pop = {
 				culture = afro_amerikaans
-				size = 40573
+				size = 4573
 			}
 			create_pop = {
 				culture = na_eastern_algonquian
@@ -806,11 +785,11 @@
 		region_state:AMC = {
 			create_pop = {
 				culture = dutch_colonial
-				size = 503300
+				size = 3300
 			}
 			create_pop = {
 				culture = swedish_colonial
-				size = 475544
+				size = 5544
 			}
 			create_pop = {
 				culture = swedish
@@ -818,7 +797,7 @@
 			}
 			create_pop = {
 				culture = afro_amerikaans
-				size = 25037
+				size = 5037
 			}
 			create_pop = {
 				culture = na_eastern_algonquian
@@ -874,11 +853,11 @@
 		region_state:AMC = {
 			create_pop = {
 				culture = dutch_colonial
-				size = 461228
+				size = 1228
 			}
 			create_pop = {
 				culture = swedish_colonial
-				size = 335544
+				size = 35544
 			}
 			create_pop = {
 				culture = swedish
@@ -902,7 +881,7 @@
 			}
 			create_pop = {
 				culture = na_cherokee
-				size = 10000
+				size = 30000
 			}
 			create_pop = {
 				culture = na_quapaw
@@ -918,7 +897,7 @@
 			}
 			create_pop = {
 				culture = na_eastern_algonquian
-				size = 16000
+				size = 160000
 			}
 		}
 	}
@@ -952,15 +931,15 @@
 		region_state:FOU = {
 			create_pop = {
 				culture = na_cherokee
-				size = 10000
+				size = 20000
 			}
 			create_pop = {
 				culture = na_muscogee
-				size = 10000
+				size = 20000
 			}
 			create_pop = {
 				culture = british
-				size = 93836
+				size = 133836
 			}
 			create_pop = {
 				culture = afro_american
@@ -1048,16 +1027,12 @@
 		region_state:SWU = {
 			create_pop = {
 				culture = swedish_colonial
-				size = 647200
+				size = 67200
 			}
 			create_pop = {
 				culture = inuit
 				size = 4000
 			}
-			#create_pop = {
-			#	culture = na_cree_montagnais
-			#	size = 18204
-			#}
 			create_pop = {
 				culture = na_cree_montagnais
 				size = 8000
