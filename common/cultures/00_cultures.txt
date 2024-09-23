@@ -13715,53 +13715,6 @@ tupinamba={
 	graphics = decentralised_americas
 }
 
-metis={
-	color= rgb{ 200 111 62 }
-	religion = catholic
-	traits = { indigenous_american_heritage francophone north_american_group }
-	male_common_first_names={
-		Amroise-Dydime
-		Daniel
-		Gabriel
-		James
-		Jaque
-		Joel
-		John
-		Louis
-		William
-	}
-	female_common_first_names = {
-		Blance
-		Charlotte
-		Helene_2
-		Josephte 
-		Julie
-		Laura
-		Maria
-		Marie-Anne
-		Michele
-		Rosalie
-	}	
-	noble_last_names = {
-		Lepine
-		Riel
-		Sayer
-	}
-	common_last_names={
-		Bruce
-		Clarence
-		Dumont
-		Lacerte
-		Lesperance
-		Martin
-		Vandal
-	}
-	ethnicities = {
-		1 = native_american
-	}
-	graphics = decentralised_americas
-}
-
 
 
 

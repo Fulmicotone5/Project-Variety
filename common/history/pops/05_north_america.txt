@@ -48,13 +48,17 @@
 				size = 11758
 			}
 			create_pop = {
-				culture = na_na_cherokee
+				culture = na_cherokee
 				religion = protestant
 				size = 1035
 			}
 			create_pop = {
 				culture = afro_amerikaans
 				size = 38264
+			}
+			create_pop = {
+				culture = na_eastern_algonquian
+				size = 10000
 			}
 		}
 	}
@@ -84,6 +88,10 @@
 			create_pop = {
 				culture = afro_american
 				size = 16261
+			}
+			create_pop = {
+				culture = na_eastern_algonquian
+				size = 16500
 			}
 		}
 		region_state:CHE = {
@@ -197,19 +205,23 @@
 			}
 		}
 		region_state:BNN = {
-			create_pop = {
-				culture = na_paiute
-				size = 12000
-			}
+#			create_pop = {
+#				culture = na_paiute
+#				size = 12000
+#			}
 		}
 		region_state:UTE = {
+#			create_pop = {
+#				culture = na_paiute
+#				size = 182000
+#			}
+#			create_pop = {
+#				culture = na_lakota
+#				size = 14000
+#			}
 			create_pop = {
-				culture = na_paiute
-				size = 182000
-			}
-			create_pop = {
-				culture = na_lakota
-				size = 14000
+				culture = na_arapahoan
+				size = 10000
 			}
 		}
 	}
@@ -218,6 +230,10 @@
 			create_pop = {
 				culture = na_lakota
 				size = 636000
+			}
+			create_pop = {
+				culture = na_blackfoot
+				size = 45000
 			}
 		}
 	}
@@ -251,6 +267,10 @@
 				culture = na_caddoan
 				size = 26000 # historically ~30k pre-contact (small pop separate in ND) of Arikara
 			}
+			create_pop = {
+				culture = na_arapahoan
+				size = 7000
+			}
 		}
 	}
 	s:STATE_NEBRASKA = {
@@ -263,12 +283,20 @@
 				culture = na_caddoan
 				size = 20000 # Historically ~60k pre-contact (small pop in kansas) of Pawnee
 			}
+			create_pop = {
+				culture = na_arapahoan
+				size = 1000
+			}
 		}
 		region_state:UTE = {
 #			create_pop = {
 #				culture = na_paiute
 #				size = 19000
 #			}
+			create_pop = {
+				culture = na_arapahoan
+				size = 2000
+			}
 		}
 		region_state:LOI = {
 			create_pop = {
@@ -356,6 +384,10 @@
 				culture = na_caddoan
 				size = 469642
 			}
+			create_pop = {
+				culture = na_miami_illinois
+				size = 30000
+			}
 		}
 	}
 	s:STATE_IOWA = {
@@ -363,6 +395,10 @@
 			create_pop = {
 				culture = na_caddoan
 				size = 82000
+			}
+			create_pop = {
+				culture = na_miami_illinois
+				size = 10000
 			}
 		}
 		region_state:DKT = {
@@ -373,6 +409,10 @@
 			create_pop = {
 				culture = na_caddoan
 				size = 88900
+			}
+			create_pop = {
+				culture = na_miami_illinois
+				size = 20000
 			}
 		}
 	}
@@ -386,29 +426,49 @@
 				culture = na_yankton_yanktonai_dakota
 				size = 102000
 			}
+			create_pop = {
+				culture = na_ojibwe
+				size = 3000
+			}
+			create_pop = {
+				culture = na_miami_illinois
+				size = 1000
+			}
 		}
 	}
 	s:STATE_WISCONSIN = {
 		region_state:CTF = {
+#			create_pop = {
+#				culture = na_cree_montagnais
+#				size = 558000
+#			}
 			create_pop = {
-				culture = na_cree_montagnais
-				size = 558000
+				culture = na_miami_illinois
+				size = 10000
 			}
 		}
 	}
 	s:STATE_INDIANA = {
 		region_state:CTF = {
+#			create_pop = {
+#				culture = na_cree_montagnais
+#				size = 331504
+#			}
 			create_pop = {
-				culture = na_cree_montagnais
-				size = 331504
+				culture = na_miami_illinois
+				size = 30000
 			}
 		}
 	}
 	s:STATE_MICHIGAN = {
 		region_state:CTF = {
+#			create_pop = {
+#				culture = na_cree_montagnais
+#				size = 523996
+#			}
 			create_pop = {
-				culture = na_cree_montagnais
-				size = 523996
+				culture = na_ojibwe
+				size = 20000
 			}
 		}
 	}
@@ -427,6 +487,10 @@
 				size = 279988
 				religion = animist
 			}
+			create_pop = {
+				culture = na_miami_illinois
+				size = 40000
+			}
 		}
 	}
 	s:STATE_TENNESSEE = {
@@ -435,6 +499,10 @@
 				culture = na_cherokee
 				size = 269604
 				religion = animist
+			}
+			create_pop = {
+				culture = na_miami_illinois
+				size = 10000
 			}
 		}
 	}
@@ -603,6 +671,10 @@
 				culture = afro_amerikaans
 				size = 3888
 			}
+			create_pop = {
+				culture = na_eastern_algonquian
+				size = 20000
+			}
 		}
 	}
 	s:STATE_PENNSYLVANIA = {
@@ -633,6 +705,10 @@
 				culture = afro_amerikaans
 				size = 40573
 			}
+			create_pop = {
+				culture = na_eastern_algonquian
+				size = 3000
+			}
 		}
 	}
 	s:STATE_NEW_JERSEY = {
@@ -657,9 +733,13 @@
 	}
 	s:STATE_ILLINOIS = {
 		region_state:CTF = {
+#			create_pop = {
+#				culture = na_cree_montagnais
+#				size = 552400
+#			}
 			create_pop = {
-				culture = na_cree_montagnais
-				size = 552400
+				culture = na_miami_illinois
+				size = 100000
 			}
 		}
 	}
@@ -697,6 +777,10 @@
 				culture = afro_amerikaans
 				size = 3950
 			}
+			create_pop = {
+				culture = na_eastern_algonquian
+				size = 4000
+			}
 		}
 	}
 	s:STATE_MASSACHUSETTS = {
@@ -716,6 +800,10 @@
 			create_pop = {
 				culture = afro_amerikaans
 				size = 25037
+			}
+			create_pop = {
+				culture = na_eastern_algonquian
+				size = 6000
 			}
 		}
 	}
@@ -737,6 +825,10 @@
 				culture = afro_amerikaans
 				size = 3974
 			}
+			create_pop = {
+				culture = na_eastern_algonquian
+				size = 10000
+			}
 		}
 	}
 	s:STATE_VERMONT = {
@@ -752,6 +844,10 @@
 			create_pop = {
 				culture = afro_amerikaans
 				size = 1027
+			}
+			create_pop = {
+				culture = na_eastern_algonquian
+				size = 10000
 			}
 		}
 	}
@@ -772,6 +868,10 @@
 			create_pop = {
 				culture = afro_amerikaans
 				size = 2974
+			}
+			create_pop = {
+				culture = na_eastern_algonquian
+				size = 20000
 			}
 		}
 	}
@@ -795,6 +895,10 @@
 				culture = afro_american
 				size = 28025
 			}
+			create_pop = {
+				culture = na_eastern_algonquian
+				size = 16000
+			}
 		}
 	}
 	s:STATE_UTAH = {
@@ -805,13 +909,17 @@
 			}
 		}
 		region_state:NVJ = {
+#			create_pop = {
+#				culture = na_colorado_numic
+#				size = 10000
+#			}
+#			create_pop = {
+#				culture = na_paiute
+#				size = 11000
+#			}
 			create_pop = {
-				culture = na_colorado_numic
+				culture = na_arapahoan
 				size = 10000
-			}
-			create_pop = {
-				culture = na_paiute
-				size = 11000
 			}
 		}
 	}
@@ -834,6 +942,10 @@
 			create_pop = {
 				culture = afro_american
 				size = 19367
+			}
+			create_pop = {
+				culture = na_eastern_algonquian
+				size = 10000
 			}
 		}
 	}
@@ -877,18 +989,31 @@
 	}
 	s:STATE_ONTARIO = {
 		region_state:CRU = {
+#			create_pop = {
+#				culture = na_cree_montagnais
+#				size = 555200
+#			}
+
 			create_pop = {
 				culture = na_cree_montagnais
-				size = 555200
+				size = 7000
+			}
+			create_pop = {
+				culture = na_ojibwe
+				size = 11500
 			}
 		}
 	}
 	s:STATE_NEW_BRUNSWICK = {
-		# New Brunswick: 119457 in 1834
 		region_state:SWU = {
 			create_pop = {
 				culture = swedish_colonial
 				size = 352800
+			}
+			#
+			create_pop = {
+				culture = na_eastern_algonquian
+				size = 20000
 			}
 		}
 	}
@@ -902,9 +1027,13 @@
 				culture = inuit
 				size = 4000
 			}
+			#create_pop = {
+			#	culture = na_cree_montagnais
+			#	size = 18204
+			#}
 			create_pop = {
 				culture = na_cree_montagnais
-				size = 18204
+				size = 8000
 			}
 		}
 	}
@@ -918,17 +1047,22 @@
 				culture = swedish_colonial
 				size = 139996
 			}
+			#
+			create_pop = {
+				culture = na_eastern_algonquian
+				size = 51500
+			}
 		}
 	}
 	s:STATE_ALBERTA = {
 		region_state:SIO = {
 			create_pop = {
-				culture = na_generic
-				size = 518200
+				culture = na_cree_montagnais
+				size = 5000
 			}
 			create_pop = {
-				culture = metis
-				size = 11000
+				culture = na_blackfoot
+				size = 40000
 			}
 		}
 	}
@@ -951,12 +1085,12 @@
 	s:STATE_SASKATCHEWAN = {
 		region_state:SIO = {
 			create_pop = {
-				culture = na_generic
-				size = 554648
+				culture = na_cree_montagnais
+				size = 7000
 			}
 			create_pop = {
-				culture = na_cree_montagnais
-				size = 22648
+				culture = na_blackfoot
+				size = 7000
 			}
 		}
 	}
@@ -964,7 +1098,11 @@
 		region_state:CRU = {
 			create_pop = {
 				culture = na_cree_montagnais
-				size = 534848
+				size = 4500
+			}
+			create_pop = {
+				culture = na_ojibwe
+				size = 5000
 			}
 		}
 	}

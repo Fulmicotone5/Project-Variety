@@ -27,6 +27,7 @@
 # cu:na_mandan
 
 # (cu:cree
+#  cu:metis
 #  cu:athabaskan
 #  cu:algonquian ->)
 # cu:na_cree_montagnais
