@@ -135,11 +135,11 @@
 	s:STATE_OREGON = {
 		region_state:BNN = {
 			create_pop = {
-				culture = cu:na_shapwailutan
+				culture = na_shapwailutan
 				size = 24060
 			}
 			create_pop = {
-				culture = cu:na_colorado_numic
+				culture = na_colorado_numic
 				size = 4000
 			}
 			create_pop = {
@@ -154,6 +154,10 @@
 				culture = na_shapwailutan
 				size = 14560
 			}
+			create_pop = {
+				culture = na_colorado_numic
+				size = 30000
+			}
 		}
 		region_state:NZP = {
 			create_pop = {
@@ -163,10 +167,6 @@
 			create_pop = {
 				culture = na_shapwailutan
 				size = 14560
-			}
-			create_pop = {
-				culture = cu:na_colorado_numic
-				size = 30000
 			}
 		}
 	}
@@ -193,7 +193,7 @@
 				size = 5000
 			}
 			create_pop = {
-				culture = cu:na_colorado_numic
+				culture = na_colorado_numic
 				size = 10000
 			}
 		}
@@ -203,8 +203,8 @@
 #				size = 12000
 #			}
 			create_pop = {
-				culture = cu:na_colorado_numic
-				size = 10000
+				culture = na_colorado_numic
+				size = 6000
 			}
 		}
 		region_state:UTE = {
@@ -446,7 +446,7 @@
 				size = 102000
 			}
 			create_pop = {
-				culture = na_ojibwe
+				culture = na_ojibwe_potawatomi
 				size = 3000
 			}
 			create_pop = {
@@ -478,7 +478,7 @@
 	s:STATE_MICHIGAN = {
 		region_state:CTF = {
 			create_pop = {
-				culture = na_ojibwe
+				culture = na_ojibwe_potawatomi
 				size = 20000
 			}
 		}
@@ -486,7 +486,7 @@
 	s:STATE_OHIO = {
 		region_state:CTF = {
 			create_pop = {
-				culture = na_ojibwe
+				culture = na_ojibwe_potawatomi
 				size = 10000
 			}
 		}
@@ -908,7 +908,7 @@
 				size = 41000
 			}
 			create_pop = {
-				culture = cu:na_colorado_numic
+				culture = na_colorado_numic
 				size = 10000
 			}
 		}
@@ -1001,7 +1001,7 @@
 				size = 7000
 			}
 			create_pop = {
-				culture = na_ojibwe
+				culture = na_ojibwe_potawatomi
 				size = 11500
 			}
 			create_pop = {
@@ -1107,7 +1107,7 @@
 				size = 4500
 			}
 			create_pop = {
-				culture = na_ojibwe
+				culture = na_ojibwe_potawatomi
 				size = 5000
 			}
 		}
@@ -1126,6 +1126,10 @@
 				culture = na_cree_montagnais
 				size = 16000
 			}
+			create_pop = {
+				culture = athabaskan
+				size = 6000
+			}
 		}
 	}
 	s:STATE_NUNAVUT = {
@@ -1137,6 +1141,10 @@
 			create_pop = {
 				culture = swedish_colonial
 				size = 70
+			}
+			create_pop = {
+				culture = athabaskan
+				size = 3000
 			}
 		}
 	}
@@ -1154,14 +1162,14 @@
 	}
 	s:STATE_TEXAS = {
 		region_state:COM = {
-#			create_pop = {
-#				culture = na_comanche
-#				size = 745600
-#			}
-#			create_pop = {
-#				culture = na_chickasaw_choctaw
-#				size = 12000
-#			}
+			create_pop = {
+				culture = na_comanche
+				size = 45600
+			}
+			create_pop = {
+				culture = na_chickasaw_choctaw
+				size = 12000
+			}
 			create_pop = {
 				culture = na_caddoan
 				size = 56000
@@ -1203,6 +1211,14 @@
 				culture = na_paiute
 				size = 4000
 			}
+			create_pop = {
+				culture = na_chickasaw_choctaw
+				size = 11000
+			}
+			create_pop = {
+				culture = pueblo
+				size = 2000
+			}
 		}
 		region_state:MAX = {
 			create_pop = {
@@ -1222,16 +1238,6 @@
 			create_pop = {
 				culture = na_colorado_numic
 				size = 12000
-			}
-		}
-		region_state:APC = {
-			create_pop = {
-				culture = na_chickasaw_choctaw
-				size = 11000
-			}
-			create_pop = {
-				culture = pueblo
-				size = 2000
 			}
 		}
 	}

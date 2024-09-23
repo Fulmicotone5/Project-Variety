@@ -43,7 +43,6 @@
 # cu:na_shapwailutan
 
 # (cu:comanche
-#  cu:navajo
 #  cu:paiute
 #  cu:oodham ->)
 # cu:na_shoshone
@@ -63,6 +62,9 @@
 
 # (cu:caddoan ->)
 #  cu:na_caddoan
+
+# cu:navajo
+# cu: pueblo
 
 na_santee_dakota = {
 	color = hsv{ 0.63 0.30 0.52 }
@@ -2228,6 +2230,175 @@ na_coahuiltecan = {
 	}
 	ethnicities = {
 		1 = na_coahuiltecan_ethnicity
+	}
+	graphics = decentralised_americas
+}
+
+pueblo={
+	color= hsv{ 0.19 0.34 0.93 }
+	religion = na_native_american_spirituality
+	traits = { indigenous_american_heritage north_american_group }
+	male_common_first_names={
+		Alchesay
+		Amisoli
+		Cochise
+		Geronimo
+		Loco
+		Mangas
+		Naiche
+		Nana
+		Taza
+		Victorio
+	}
+	female_common_first_names = {
+		Alfonsita
+		Crucita
+		Elizabeth
+		Evelina
+		Geronima
+		Helen
+		Juanita
+		Lisa
+		Lucy
+		Laurencita
+		Louise
+		Margaret
+		Martina
+		Ramita
+		Susan
+		Vera
+	}
+	noble_last_names = {
+		Abeita
+		Herrera
+		Potsunu
+		Romero
+	}
+	common_last_names={
+		Arivaipa
+		Cibecue
+		Coyotero
+		Jicarilla
+		Llanero
+		Mescalero
+		Nateges
+		Naranjo
+		Tonto
+	}
+	ethnicities = {
+		1 = native_american
+	}
+	graphics = decentralised_americas
+}
+
+navajo={
+	color= hsv{ 0.62 0.26 0.74 }
+	traits = { indigenous_american_heritage north_american_group }
+	religion = na_native_american_spirituality
+	male_common_first_names={
+		Barboncito
+		Digul_Chee
+		Ganado
+		Henry_Chee
+		Herrero
+		Jeremiah
+		Manuelito
+		Mariano
+		Narbona
+		Zarcillos
+	}
+	female_common_first_names = {
+		Amanda
+		Claudeen
+		Geraldine
+		Jacqueline
+		Maria
+		Pablita
+		Theresa
+	}
+	noble_last_names = {
+		Begay
+		Dodge
+		Hastiin_Dagha
+		K-aayelii
+	}
+	common_last_names={
+		Ch_ilhanjini
+		Da_ghaaii
+		Delagado
+		Grande
+		Largos
+		Martinez
+		Naat_aa
+		Redcloud
+		To_tso_nii
+		Zah
+	}
+	ethnicities = {
+		1 = native_american
+	}
+	graphics = decentralised_americas
+}
+
+athabaskan={
+	color= rgb{ 96 108 64 }
+	religion = na_native_american_spirituality
+	traits = { indigenous_american_heritage north_american_group }
+	male_common_first_names={
+		Caubvick
+		David
+		Ernie
+		Germaine
+		Markoosie
+		Ipeelee
+		Jack
+		James
+		Jose_2
+		Kenojuak
+		Naalak
+		Peter
+		Pitseolak
+		Steve
+		Simeonie
+		Titus
+	}
+	female_common_first_names = {
+		Alacie
+		Beatrice
+		Josephine
+		Madeline
+		Mina
+		Mitiarjuk
+		Sheila
+	}
+	noble_last_names = {
+		Atagotaaluk
+		Tullaugaq
+	}
+	common_last_names={
+		Alakannuark
+		Arreak
+		Ashoona
+		Enuaraq
+		Evaloarjuk
+		Ipeelee
+		Irgittuq
+		Keenainak
+		Kunuk
+		Kusugak
+		Maksagak
+		Nappaaluk
+		Nutarak
+		Paniloo
+		Piugattuk
+		Pudluk
+		Tiktaalaaq
+		Ungallaq
+		Quissa
+		Sivuarapik
+	}
+	ethnicities = {
+		1 = native_american
 	}
 	graphics = decentralised_americas
 }
