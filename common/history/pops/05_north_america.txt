@@ -48,9 +48,8 @@
 				size = 11758
 			}
 			create_pop = {
-				culture = na_cherokee
-				religion = protestant
-				size = 1035
+				culture = na_haudenosaunee
+				size = 40000
 			}
 			create_pop = {
 				culture = afro_amerikaans
@@ -65,13 +64,8 @@
 	s:STATE_VIRGINIA = {
 		region_state:FOU = {
 			create_pop = {
-				culture = na_cherokee
-				size = 173597
-			}
-			create_pop = {
-				culture = na_cherokee
-				religion = protestant
-				size = 85597
+				culture = na_tuscarora_nottoway
+				size = 5000
 			}
 			create_pop = {
 				culture = british
@@ -497,8 +491,7 @@
 		region_state:CHE = {
 			create_pop = {
 				culture = na_cherokee
-				size = 269604
-				religion = animist
+				size = 10000
 			}
 			create_pop = {
 				culture = na_miami_illinois
@@ -562,12 +555,7 @@
 		region_state:FOU = {
 			create_pop = {
 				culture = na_cherokee
-				size = 29836
-			}
-			create_pop = {
-				culture = na_cherokee
-				size = 1946
-				religion = protestant
+				size = 5000
 			}
 			create_pop = {
 				culture = british
@@ -581,19 +569,10 @@
 		region_state:CHE = {
 			create_pop = {
 				culture = na_cherokee
-				size = 18000
+				size = 5000
 			}
 		}
 		region_state:FLU = {
-			create_pop = {
-				culture = na_cherokee
-				size = 152836
-			}
-			create_pop = {
-				culture = na_cherokee
-				religion = catholic
-				size = 22836
-			}
 			create_pop = {
 				culture = americano
 				size = 125640
@@ -883,13 +862,11 @@
 			}
 			create_pop = {
 				culture = na_cherokee
-				size = 143836
-				religion = protestant
+				size = 10000
 			}
 			create_pop = {
-				culture = na_cherokee
-				religion = animist
-				size = 99500
+				culture = na_tuscarora_nottoway
+				size = 32000
 			}
 			create_pop = {
 				culture = afro_american
@@ -927,13 +904,7 @@
 		region_state:FOU = {
 			create_pop = {
 				culture = na_cherokee
-				size = 453836
-				religion = animist
-			}
-			create_pop = {
-				culture = na_cherokee
-				size = 43836
-				religion = protestant
+				size = 10000
 			}
 			create_pop = {
 				culture = british
@@ -1000,6 +971,10 @@
 			}
 			create_pop = {
 				culture = na_ojibwe
+				size = 11500
+			}
+			create_pop = {
+				culture = na_haudenosaunee
 				size = 11500
 			}
 		}
