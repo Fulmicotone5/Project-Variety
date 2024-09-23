@@ -994,13 +994,13 @@
 		}
 	}
 	s:STATE_LANCASHIRE = {
-		region_state:ENG = {
+		region_state:SCO = {
 			create_building={
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:ENG"
-						levels=4
+						country="c:SCO"
+						levels=2
 					}
 				}
 				reserves=1
@@ -1010,7 +1010,7 @@
 				building="building_construction_sector"
 				add_ownership={
 					country={
-						country="c:ENG"
+						country="c:SCO"
 						levels=1
 					}
 				}
@@ -1021,8 +1021,87 @@
 				building="building_textile_mills"
 				add_ownership={
 					country={
+						country="c:SCO"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_handsewn_clothes" "pm_craftsman_sewing" }
+			}
+			create_building={
+				building="building_furniture_manufacturies"
+				add_ownership={
+					country={
+						country="c:SCO"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_lathe" "pm_no_luxury_clothes" }
+			}
+			create_building={
+				building="building_coal_mine"
+				add_ownership={
+					country={
+						country="c:SCO"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_coal_mine" }
+			}
+			create_building={
+				building="building_fishing_wharf"
+				add_ownership={
+					country={
+						country="c:SCO"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={  }
+			}
+			create_building={
+				building="building_logging_camp"
+				add_ownership={
+					country={
+						country="c:SCO"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_saw_mills" "pm_increased_hardwood" }
+			}
+			create_building={
+				building="building_rye_farm"
+				add_ownership={
+					country={
+						country="c:SCO"
+						levels=5
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_privately_owned" "pm_apple_orchards" "pm_tools" "pm_simple_farming" }
+			}
+		}
+		region_state:ENG = {
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
 						country="c:ENG"
-						levels=3
+						levels=2
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
+			}
+			create_building={
+				building="building_textile_mills"
+				add_ownership={
+					country={
+						country="c:ENG"
+						levels=2
 					}
 				}
 				reserves=1
@@ -1038,17 +1117,6 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_sweeteners" "pm_pot_stills" }
-			}
-			create_building={
-				building="building_furniture_manufacturies"
-				add_ownership={
-					country={
-						country="c:ENG"
-						levels=1
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_lathe" "pm_no_luxury_clothes" }
 			}
 			create_building={
 				building="building_glassworks"
@@ -1073,17 +1141,6 @@
 				activate_production_methods={ "pm_muskets" "pm_merchant_guilds_building_arms_industry" }
 			}
 			create_building={
-				building="building_coal_mine"
-				add_ownership={
-					country={
-						country="c:ENG"
-						levels=1
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_picks_and_shovels_building_coal_mine" }
-			}
-			create_building={
 				building="building_iron_mine"
 				add_ownership={
 					country={
@@ -1106,22 +1163,11 @@
 				activate_production_methods={ "pm_picks_and_shovels_building_lead_mine" }
 			}
 			create_building={
-				building="building_fishing_wharf"
-				add_ownership={
-					country={
-						country="c:ENG"
-						levels=1
-					}
-				}
-				reserves=1
-				activate_production_methods={  }
-			}
-			create_building={
 				building="building_logging_camp"
 				add_ownership={
 					country={
 						country="c:ENG"
-						levels=3
+						levels=2
 					}
 				}
 				reserves=1
@@ -1143,7 +1189,7 @@
 				add_ownership={
 					country={
 						country="c:ENG"
-						levels=10
+						levels=5
 					}
 				}
 				reserves=1
@@ -1200,6 +1246,41 @@
 		}
 	}
 	s:STATE_YORKSHIRE = {
+		region_state:SCO = {
+			create_building={
+				building="building_logging_camp"
+				add_ownership={
+					country={
+						country="c:SCO"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_saw_mills" }
+			}
+			create_building={
+				building="building_rye_farm"
+				add_ownership={
+					country={
+						country="c:SCO"
+						levels=4
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_privately_owned" "pm_potatoes" "pm_tools" "pm_simple_farming" }
+			}
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:SCO"
+						levels=2
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
+			}
+		}
 		region_state:ENG = {
 			create_building={
 				building="building_tooling_workshops"
@@ -1224,22 +1305,11 @@
 				activate_production_methods={ "pm_leaded_glass" "pm_ceramics" }
 			}
 			create_building={
-				building="building_logging_camp"
-				add_ownership={
-					country={
-						country="c:ENG"
-						levels=1
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_saw_mills" }
-			}
-			create_building={
 				building="building_rye_farm"
 				add_ownership={
 					country={
 						country="c:ENG"
-						levels=10
+						levels=6
 					}
 				}
 				reserves=1
@@ -1250,7 +1320,7 @@
 				add_ownership={
 					country={
 						country="c:ENG"
-						levels=5
+						levels=3
 					}
 				}
 				reserves=1

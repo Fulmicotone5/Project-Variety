@@ -88,28 +88,22 @@
 		}
 	}
 
-	c:UCA = {
+	c:NVS = {
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_central_america
-			name = "American Army"
+			name = "Robert's Army"
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_GUATEMALA
-				count = 20
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_HONDURAS
-				count = 20
+				state_region = s:STATE_PANAMA
+				count = 15
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_NICARAGUA
-				count = 25
+				state_region = s:STATE_COSTA_RICA
+				count = 10
 			}
 		}
 	}

@@ -859,3 +859,19 @@ temporary_minimum_wages = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
 	building_minimum_wage_mult = 0.1
 }
+
+rum_bureaucracy = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
+	country_bureaucracy_mult = 0.15
+}
+
+ottoman_urbanization = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+	building_urban_center_throughput_add = 0.33
+	building_construction_sector_throughput_add = 0.25
+}
+
+ottoman_education = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
+	country_society_tech_research_speed_mult = 0.33
+}

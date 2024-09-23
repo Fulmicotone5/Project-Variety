@@ -1,17 +1,17 @@
 ﻿POPS = {
 	s:STATE_SAN_SALVADOR = {
-		region_state:UCA = {
+		region_state:NVS = {
 			create_pop = {
 				culture = central_american
-				size = 428204
+				size = 178204
 			}
 		}
 	}
 	s:STATE_GUATEMALA = {
-		region_state:UCA = {
+		region_state:MAY = {
 			create_pop = {
 				culture = central_american
-				size = 164404
+				size = 56440
 			}
 			create_pop = {
 				culture = mayan
@@ -20,10 +20,10 @@
 		}
 	}
 	s:STATE_HONDURAS = {
-		region_state:UCA = {
+		region_state:NVS = {
 			create_pop = {
 				culture = central_american
-				size = 385204
+				size = 205204
 			}
 			create_pop = {
 				culture = miskito # Cape of Gracias a Dios Miskito
@@ -32,20 +32,14 @@
 		}
 	}
 	s:STATE_NICARAGUA = {
-		region_state:UCA = {
+		region_state:NVS = {
 			create_pop = {
 				culture = central_american
 				size = 284000
 			}
 			create_pop = {
 				culture = miskito # Miskito pop. across the 'borders'
-				size = 4000
-			}
-		}
-		region_state:MKT = {
-			create_pop = {
-				culture = miskito # Tawira Miskito
-				size = 30000
+				size = 34000
 			}
 			create_pop = {
 				culture = miskito
@@ -72,18 +66,18 @@
 		}
 	}
 	s:STATE_COSTA_RICA = {
-		region_state:UCA = {
+		region_state:NVS = {
 			create_pop = {
 				culture = central_american
-				size = 83992
+				size = 313992
 			}
 		}
 	}
 	s:STATE_PANAMA = {
-		region_state:CUL = {
+		region_state:NVS = {
 			create_pop = {
 				culture = central_american
-				size = 87792
+				size = 507792
 			}
 			create_pop = {
 				culture = afro_caribeno

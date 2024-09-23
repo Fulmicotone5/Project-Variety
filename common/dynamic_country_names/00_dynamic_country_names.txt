@@ -476,6 +476,34 @@ BEM = {
 	}
 }
 
+KEM = {
+	dynamic_country_name = {
+		name = dyn_kem
+		adjective = dyn_kem_adj
+		priority = 0
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_law = law_type:law_monarchy
+			}
+		}
+	}
+}
+
+REM = {
+	dynamic_country_name = {
+		name = dyn_rem
+		adjective = REM_ADJ
+		priority = 0
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_law = law_type:law_monarchy
+			}
+		}
+	}
+}
+
 GAR = {
 	dynamic_country_name = {
 		name = dyn_arm
@@ -1689,30 +1717,6 @@ MAX = {
 		priority = 0
 		trigger = {
 			coa_def_spanish_ensign_trigger = yes
-		}
-	}
-}
-
-MKT = {
-	# Miskito
-	dynamic_country_name = {
-		name = dyn_c_miskito_kingdom
-		adjective = MKT_ADJ
-		is_main_tag_only = yes
-		priority = 0
-		trigger = {
-			coa_def_monarchy_flag_trigger = yes
-			coa_def_british_ensign_trigger = no
-		}
-	}
-	dynamic_country_name = {
-		name = dyn_c_mosquito_kingdom
-		adjective = dyn_c_mosquito_kingdom_adj
-		is_main_tag_only = yes
-		priority = 0
-		trigger = {
-			coa_def_monarchy_flag_trigger = yes
-			coa_def_british_ensign_trigger = yes
 		}
 	}
 }

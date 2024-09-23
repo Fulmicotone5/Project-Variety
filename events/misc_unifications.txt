@@ -1071,7 +1071,6 @@ formation.17 = {
 			c:BHT ?= THIS
 			c:YEM ?= THIS
 			c:KAZ ?= THIS
-			c:UCA ?= THIS
 			c:URA ?= THIS
 			c:UNL ?= THIS
 			c:RHU ?= THIS

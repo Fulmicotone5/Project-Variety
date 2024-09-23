@@ -63,11 +63,15 @@ STATES = {
 	s:STATE_LANCASHIRE = {
 		create_state = {
 			country = c:ENG
-			owned_provinces = { x410CE6 x60E000 xE0E000 xA242B2 xE06000 xE74158 x65617C }
+			owned_provinces = { x60E000 xE0E000 x65617C }
+		}
+		create_state = {
+			country = c:SCO
+			owned_provinces = { x410CE6 xA242B2 xE74158 xE06000}
 		}
 		
 		add_homeland = cu:british
-
+		add_homeland = cu:scottish
 	}
 	s:STATE_PROVENCE = {
 		create_state = {
@@ -868,40 +872,36 @@ STATES = {
 	}
 	s:STATE_GUATEMALA = {
 		create_state = {
-			country = c:UCA
+			country = c:MAY
 			owned_provinces = { xD0B040 x02073E x7D333F xDEC8D3 x464F6A x0F5049 xBD8628 xA9090A x78C465 xD9BEFE xD030C0 x42124E xB2E11E x50B040 x2D4EB6 x5449D0 x6D71DA x702CD9 x65C19A x30E01C x50B0C0 xC67219 xD176F3 xFA4B41 x011E0F }
 		}
-		add_homeland = cu:central_american
+		add_homeland = cu:mayan
 	}
 	s:STATE_HONDURAS = {
 		create_state = {
-			country = c:UCA
+			country = c:NVS
 			owned_provinces = { x3C64D6 x9A0C09 x964591 x90EF40 xFA595E xE521E1 x52914C x907040 xC77E76 x5C25CB x55B06A xC27057 xE2A108 xD08FCB x63D186 xEF5C1F x0E5459 x98E7D7 x3D20D1 x10EF40 x600AC6 x907080 x528F3B }
 		}
 		add_homeland = cu:central_american
 	}
 	s:STATE_NICARAGUA = {
 		create_state = {
-			country = c:UCA
-			owned_provinces = { x95FC5A x9070C0 x9CDB2B xD50755 x10EFC0 x832DFB x074DD8 x68E7F3 xC9A998 x1070C0 xFD8FA1 x2245C0 x9EB0DC x4A4413 x107080 x02733F x745F00 x865E67 xBA0A50 }
-		}
-		create_state = {
-			country = c:MKT
-			owned_provinces = { x17F33B x6C22F2 x59D231 xAD9EE8 }
+			country = c:NVS
+			owned_provinces = { x17F33B x6C22F2 x59D231 xAD9EE8 x95FC5A x9070C0 x9CDB2B xD50755 x10EFC0 x832DFB x074DD8 x68E7F3 xC9A998 x1070C0 xFD8FA1 x2245C0 x9EB0DC x4A4413 x107080 x02733F x745F00 x865E67 xBA0A50 }
 		}
 		add_homeland = cu:central_american
 		add_homeland = cu:miskito
 	}
 	s:STATE_COSTA_RICA = {
 		create_state = {
-			country = c:UCA
+			country = c:NVS
 			owned_provinces = { x1A076A x32AA32 x10EF80 x4D3411 x478109 x535AE8 xD88369 x8342D1 x395FB6 xB0243F xEF90DC }
 		}
 		add_homeland = cu:central_american
 	}
 	s:STATE_PANAMA = {
 		create_state = {
-			country = c:CUL
+			country = c:NVS
 			owned_provinces = { xBB820B x8A8A20 xD0EF40 x47C5F8 x50C29C x8537FE x357099 x717275 x910E14 x30B080 xB0A911 xC650E1 xB0B080 xEE835F }
 		}
 		
@@ -1804,7 +1804,7 @@ STATES = {
 	}
 	s:STATE_YUCATAN = {
 		create_state = {
-			country = c:MAX
+			country = c:MAY
 			owned_provinces = { 
 				"x1DB7A7" "x23EF68" "x2C4E34" "x35FEEB" "x40B001" "x47D122" "x4F7405" "x5030C0" "x51E4B6" "x54250B" "x68F271" "x69E5AF" "x8BE638" "x90AC14" "x91484C" "xA59F7B" "xA8DEBE" "xB598B9" "xCE98DE" "xCE9FD1" "xD1EC91" "xDB85B0" "xDD8B61" "xE280B2" "xE31B45" "xE3AD92" "xE68FD8" "xFEE4D4"
 			}
@@ -2653,7 +2653,7 @@ STATES = {
 	}
 	s:STATE_EGYPTIAN_DESERT = {
 		create_state = {
-			country = c:EGE
+			country = c:SUD
 			owned_provinces = { x9130F8 xE03FA1 x03534F x1DF813 x3FFE56 xB32C4A x221888 x6AF576 x2B6F28 xC87A53 x581E1A x811823 x1403CE xD91602 x99610C xE12C26 x54C854 x48152A xACEBEA xF0B8A3 x807EFF x8BEC52 x5D6A34 x1106F7 x1CDFF0 x54D103 xB5BED4 x22B654 x448F8B x4B8A20 xB01121 x27C39D xF55182 x2578C4 x6D12E3 xE1F55D xAA1826 xA14C64 x1B8AFB xCAE0D2 x331A56 x559DD9 xF87E36 xE18FD5 x1F1C45 x36E64E x1741F9 x150086 x27571E x7514D7 xB23CCA x46C8F9 x83E020 x9D3831 xBBEAA1 xE853CA x2FA8B3 xFA5382 xCA855F xBD1C16 xD0D0E0 x91BF54 xCC0432 x941E53 x88E19F xFF4484 xE21A78 x1C0C7D x741E9E xE95AD6 xE565E4 x8F31B0 x9A6DB5 xBA5529 x20FBA0 xCE519C xBCE332 x6C5890 xB9EBE6 x3940DA xF63E3C xF21A84 xC943B1 x3C21A0 xA8FA0A xF3B9CD xB2E150 x66AEE5 x7CEEDA xBD5993 x9D6B88 xB05020 xD03CB6 x8D6726 xFA85DD xC48A06 }
 		}
 		
@@ -2924,10 +2924,16 @@ STATES = {
 	s:STATE_YORKSHIRE = {
 		create_state = {
 			country = c:ENG
-			owned_provinces = { x527116 x606000 x824DB7 xB5BF4E xE06080 x606080 xEDC0BA x5544D0 x86B021 }
+			owned_provinces = { xB5BF4E xE06080 x606080 xEDC0BA x5544D0 x86B021 }
+		}
+
+		create_state = {
+			country = c:SCO
+			owned_provinces = { x527116 x824DB7 x606000 }
 		}
 		
 		add_homeland = cu:british
+		add_homeland = cu:scottish
 	}
 	s:STATE_HIGHLANDS = {
 		create_state = {
@@ -4845,13 +4851,6 @@ STATES = {
 	}
 	s:STATE_SENEGAL = {
 		create_state = {
-			country = c:CAS
-			owned_provinces = { 
-				xEF30C0 
-			}
-			state_type = unincorporated
-		}
-		create_state = {
 			country = c:JLF
 			owned_provinces = { 
 				x7B4218 xCBF5C9 x1F187B xAACD3D xEFAFC0 xECB3CF x2227E7 x008EC3 x339E4C xA80844 x267B18 x329831 x3A5023
@@ -4860,7 +4859,7 @@ STATES = {
 		create_state = {
 			country = c:CAY
 			owned_provinces = {
-				x70B0C0 xBCFFB5 
+				x70B0C0 xBCFFB5 xEF30C0
 			}
 		}
 		create_state = {
@@ -5092,7 +5091,7 @@ STATES = {
 	}
 	s:STATE_PALESTINE = {
 		create_state = {
-			country = c:SIU
+			country = c:EGE
 			state_type = incorporated
 			owned_provinces = { xE0D060 x136A0C x0EC997 x60D060 x605060 xE05060 xC9CBC0 x365E8F }
 		}
@@ -7332,26 +7331,18 @@ STATES = {
 	}
 	s:STATE_CHIAPAS = {
 		create_state = {
-			country = c:MAX
+			country = c:MAY
 			owned_provinces = { 
-				"x10B0C0" "x1521F4" "x31E49A" "x8E26C5" "xA46BA0" "xA6550F" "xB70B3B" "xE0AADA" "xE8CFA0" "xF19260"
-			}
-		}
-		# Soconusco and parts of Los Altos. Control was disputed.
-		create_state = {
-			country = c:UCA
-			owned_provinces = {
-				x1030C0 x4DBDE9 xD03040 xA087F6
+				x10B0C0 x1521F4 x31E49A x8E26C5 xA46BA0 xA6550F xB70B3B xE0AADA xE8CFA0 xF19260 x1030C0 x4DBDE9 xD03040 xA087F6
 			}
 		}
 		
 		add_homeland = cu:mexican
 		add_homeland = cu:mayan
-		add_claim = c:MAX		
 	}
 	s:STATE_SAN_SALVADOR = {
 		create_state = {
-			country = c:UCA
+			country = c:NVS
 			owned_provinces = { xB0D0C7 x3DB036 x107040 xCC1FCA }
 		}
 		

@@ -1,0 +1,318 @@
+je_rum_main = {
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+	group = je_group_historical_content
+	complete = {
+		scope:journal_entry = {
+			is_goal_complete = yes
+		}
+	}
+	on_complete = {
+		trigger_event = {
+			id = rum.2
+		}
+		if = {
+			limit = {
+				has_modifier = outmoded_bureaucracy
+			}
+			remove_modifier = outmoded_bureaucracy
+		}
+		remove_modifier = diplomatic_plays_blocked
+		remove_variable = rum_var
+	}
+	current_value = {
+		value = var:rum_var
+	}
+	goal_add_value = {
+		add = 4
+	}
+	progressbar = yes
+	weight = 10000
+	should_be_pinned_by_default = yes
+}
+
+je_rum_economy = {
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+	group = je_group_historical_content
+	complete = {
+		in_default = no
+		gdp >= 6000000
+	}
+	on_complete = {
+		custom_tooltip = je_rum_advance
+		change_variable = {
+			name = rum_var
+			add = 1
+		}
+	}
+	invalid = {
+		custom_tooltip = {
+			text = finished_rum_tt
+			NOT = {
+				has_variable = rum_var
+			}
+		}
+	}
+	transferable = no
+	weight = 5000
+	should_be_pinned_by_default = yes
+}
+
+# Literacy and Universities
+je_rum_education = {
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	group = je_group_historical_content
+	complete = {
+		any_scope_building = {
+			is_building_type = building_university
+			occupancy > 0.9
+			level >= 5
+		}
+		literacy_rate >= 0.3
+	}
+	on_complete = {
+		custom_tooltip = je_rum_advance
+		change_variable = {
+			name = rum_var
+			add = 1
+		}
+	}
+	invalid = {
+		custom_tooltip = {
+			text = finished_rum_tt
+			NOT = {
+				has_variable = rum_var
+			}
+		}
+	}
+	transferable = no
+	weight = 5000
+	should_be_pinned_by_default = yes
+}
+
+# Nationalism
+je_rum_separatism = {
+	icon = "gfx/interface/icons/event_icons/event_fire.dds"
+	group = je_group_historical_content
+	immediate = {
+		set_variable = {
+			name = kurdistan_rev_value
+			value = 0
+		}
+	}
+	complete = {
+		scope:journal_entry = {
+			is_goal_complete = yes
+		}
+	}
+	on_complete = {
+		custom_tooltip = je_rum_advance
+		change_variable = {
+			name = rum_var
+			add = 1
+		}
+	}
+	on_monthly_pulse = {
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_variable = kurdistan_rev
+					}
+				}
+				change_variable = {
+					name = kurdistan_rev_value
+					add = 1
+				}
+			}
+		}
+		random_events = {
+			100 = 0
+			10 = rum.5			# Paranoia Event
+		}
+	}
+	fail = {
+		custom_tooltip = {
+			text = kurdrevolt
+			has_variable = kurdistan_rev
+		}
+	}
+	current_value = {
+		value = var:kurdistan_rev_value
+	}
+	goal_add_value = {
+		add = 50
+	}
+	invalid = {
+		custom_tooltip = {
+			text = finished_rum_tt
+			NOT = {
+				has_variable = rum_var
+			}
+		}
+	}
+	transferable = no
+	weight = 5000
+	should_be_pinned_by_default = yes
+	progressbar = yes
+}
+
+# Army Reform
+je_rum_army = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	group = je_group_historical_content
+	complete = {
+		army_size >= 60
+		has_technology_researched = general_staff
+		NOT = {
+			any_military_formation = {
+				filter = {
+					is_army = yes
+				}
+				any_combat_unit = {
+					has_unit_type = unit_type:combat_unit_type_irregular_infantry
+				}
+				percent >= 0.25
+			}
+		}
+	}
+	on_complete = {
+		custom_tooltip = je_rum_advance
+		change_variable = {
+			name = rum_var
+			add = 1
+		}
+	}
+	on_monthly_pulse = {
+		events = {
+			rum.10			# Tanzimat Draft Question
+		}
+	}
+	invalid = {
+		custom_tooltip = {
+			text = finished_rum_tt
+			NOT = {
+				has_variable = rum_var
+			}
+		}
+	}
+	transferable = no
+	should_be_pinned_by_default = yes
+	weight = 5000
+}
+
+# Bureaucractic Reform
+je_rum_bureaucracy = {
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	group = je_group_historical_content
+	complete = {
+		NOT = {
+			has_law = law_type:law_hereditary_bureaucrats
+		}
+		bureaucracy >= 0
+		approaching_bureaucracy_shortage = no
+	}
+	on_complete = {
+		remove_modifier = outmoded_bureaucracy
+		custom_tooltip = je_rum_advance
+		change_variable = {
+			name = rum_var
+			add = 1
+		}
+	}
+	on_monthly_pulse = {
+		random_events = {
+			100 = 0
+			10 = rum.9			# Land registration resisted
+		}
+	}
+	invalid = {
+		custom_tooltip = {
+			text = finished_rum_tt
+			NOT = {
+				has_variable = rum_var
+			}
+		}
+	}
+	transferable = no
+	weight = 5000
+	should_be_pinned_by_default = yes
+}
+
+je_rum_rome = {
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	group = je_group_historical_content
+	complete = {
+		owns_entire_state_region = STATE_EASTERN_THRACE
+		owns_entire_state_region = STATE_WESTERN_THRACE
+		owns_entire_state_region = STATE_NORTHERN_THRACE
+		owns_entire_state_region = STATE_PELOPONNESE
+		owns_entire_state_region = STATE_ATTICA
+		owns_entire_state_region = STATE_WEST_AEGEAN_ISLANDS
+		owns_entire_state_region = STATE_CRETE
+		owns_entire_state_region = STATE_MACEDONIA
+		owns_entire_state_region = STATE_THESSALIA
+		owns_entire_state_region = STATE_HUDAVENDIGAR
+		owns_entire_state_region = STATE_AYDIN
+		has_technology_researched = pan-nationalism
+		has_law = law_type:law_racial_segregation
+	}
+	on_complete = {
+		trigger_event = {
+			id = rum.3
+		}
+	}
+	fail = {
+		NOT = {
+			has_law = law_type:law_monarchy
+		}
+	}
+	should_be_pinned_by_default = yes
+}
+je_rum_kor = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	group = je_group_historical_content
+	complete = {
+		owns_entire_state_region = STATE_FARS
+		owns_entire_state_region = STATE_LARISTAN
+		owns_entire_state_region = STATE_KHORASAN
+		owns_entire_state_region = STATE_KHUZESTAN
+		owns_entire_state_region = STATE_ISFAHAN
+		owns_entire_state_region = STATE_MAZANDARAN
+		owns_entire_state_region = STATE_IRAKAJEMI
+		owns_entire_state_region = STATE_SEMNAN
+		owns_entire_state_region = STATE_TABRIZ
+		owns_entire_state_region = STATE_KERMAN
+		owns_entire_state_region = STATE_URMIA
+		owns_entire_state_region = STATE_PERSIAN_KURDISTAN
+		owns_entire_state_region = STATE_LURISTAN
+		owns_entire_state_region = STATE_AZERBAIJAN
+		owns_entire_state_region = STATE_ELIZAVETPOL
+		owns_entire_state_region = STATE_KARS
+		owns_entire_state_region = STATE_ARMENIA
+		owns_entire_state_region = STATE_MOSUL
+		owns_entire_state_region = STATE_DEIR_EZ_ZOR
+		owns_entire_state_region = STATE_BAGHDAD
+		owns_entire_state_region = STATE_BASRA
+		owns_entire_state_region = STATE_ALEPPO
+		owns_entire_state_region = STATE_SYRIA
+		owns_entire_state_region = STATE_LEBANON
+		owns_entire_state_region = STATE_PALESTINE
+		owns_entire_state_region = STATE_TRANSJORDAN
+		owns_entire_state_region = STATE_OMAN
+		owns_entire_state_region = STATE_ABU_DHABI
+
+
+		has_law = law_type:law_racial_segregation
+	}
+	on_complete = {
+		trigger_event = {
+			id = rum.4
+		}
+	}
+	fail = {
+		NOT = {
+			has_law = law_type:law_monarchy
+		}
+	}
+	should_be_pinned_by_default = yes
+}

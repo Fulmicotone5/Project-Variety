@@ -347,7 +347,7 @@ BUILDINGS={
 		}
 	}
 	s:STATE_EGYPTIAN_DESERT={
-		region_state:EGE={
+		region_state:SUD={
 		}
 	}
 	s:STATE_MATRUH={
@@ -1579,6 +1579,19 @@ BUILDINGS={
 		region_state:OUA = {
 		}
 		region_state:TRZ = {
+		}
+		region_state:CAS = {
+			create_building={
+				building="building_port"
+				add_ownership={
+					country={
+						country="c:CAS"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_basic_port" }
+			}
 		}
 		region_state:FTR = {
 			create_building={

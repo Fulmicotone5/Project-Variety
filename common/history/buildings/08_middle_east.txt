@@ -345,12 +345,12 @@ BUILDINGS={
 		}
 	}
 	s:STATE_PALESTINE = {
-		region_state:SIU = {
+		region_state:EGE = {
 			create_building={
 				building="building_fishing_wharf"
 				add_ownership={
 					country={
-						country="c:SIU"
+						country="c:EGE"
 						levels=1
 					}
 				}
@@ -361,8 +361,8 @@ BUILDINGS={
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:SIU"
-						levels=5
+						country="c:EGE"
+						levels=1
 					}
 				}
 				reserves=1
@@ -373,13 +373,13 @@ BUILDINGS={
 				add_ownership={
 					building={
 						type="building_logging_camp"
-						country="c:SIU"
+						country="c:EGE"
 						levels=1
 						region="STATE_SYRIA"
 					}
 					building={
 						type="building_financial_district"
-						country="c:SIU"
+						country="c:EGE"
 						levels=3
 						region="STATE_PALESTINE"
 					}
@@ -392,7 +392,7 @@ BUILDINGS={
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:SIU"
+						country="c:EGE"
 						levels=1
 						region="STATE_PALESTINE"
 					}
@@ -404,7 +404,7 @@ BUILDINGS={
 				building="building_livestock_ranch"
 				add_ownership={
 					country={
-						country="c:SIU"
+						country="c:EGE"
 						levels=1
 					}
 				}
@@ -446,7 +446,7 @@ BUILDINGS={
 				add_ownership={
 					country={
 						country="c:SIU"
-						levels=1
+						levels=4
 					}
 				}
 				reserves=1
