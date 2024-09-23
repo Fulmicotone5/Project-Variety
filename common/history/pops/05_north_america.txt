@@ -330,10 +330,10 @@
 			}
 		}
 		region_state:UTE = {
-#			create_pop = {
-#				culture = na_paiute
-#				size = 164000
-#			}
+			create_pop = {
+				culture = na_paiute
+				size = 10000
+			}
 		}
 	}
 	s:STATE_OKLAHOMA = {
