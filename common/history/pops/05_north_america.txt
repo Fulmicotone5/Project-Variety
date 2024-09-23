@@ -30,6 +30,10 @@
 				culture = na_caddoan
 				size = 50000 # Historically ~200k in 1300 (spread between 4 states) of Caddo
 			}
+			create_pop = {
+				culture = na_chickasaw_choctaw
+				size = 10000
+			}
 		}
 	}
 	s:STATE_NEW_YORK = {
@@ -492,6 +496,10 @@
 				culture = na_miami_illinois
 				size = 10000
 			}
+			create_pop = {
+				culture = na_chickasaw_choctaw
+				size = 10000
+			}
 		}
 	}
 	s:STATE_MISSISSIPPI = {
@@ -500,6 +508,10 @@
 				culture = na_cherokee
 				size = 3000
 			}
+			create_pop = {
+				culture = na_chickasaw_choctaw
+				size = 135000
+			}
 		}
 	}
 	s:STATE_ALABAMA = {
@@ -507,6 +519,10 @@
 			create_pop = {
 				culture = na_cherokee
 				size = 7000
+			}
+			create_pop = {
+				culture = na_muscogee
+				size = 5000
 			}
 		}
 		region_state:FLU = {
@@ -519,18 +535,17 @@
 				culture = americano
 				size = 69108
 			}
+			create_pop = {
+				culture = na_muscogee
+				size = 10000
+			}
 		}
 	}
 	s:STATE_FLORIDA = {
 		region_state:FLU = {
 			create_pop = {
 				culture = na_muscogee
-				size = 248000
-			}
-			create_pop = {
-				culture = na_muscogee
-				religion = catholic
-				size = 56000
+				size = 34000
 			}
 			create_pop = {
 				culture = americano
@@ -549,6 +564,10 @@
 				size = 5000
 			}
 			create_pop = {
+				culture = na_muscogee
+				size = 10000
+			}
+			create_pop = {
 				culture = british
 				size = 23786
 			}
@@ -562,11 +581,19 @@
 				culture = na_cherokee
 				size = 5000
 			}
+			create_pop = {
+				culture = na_muscogee
+				size = 5000
+			}
 		}
 		region_state:FLU = {
 			create_pop = {
 				culture = americano
 				size = 125640
+			}
+			create_pop = {
+				culture = na_muscogee
+				size = 10000
 			}
 		}
 	}
@@ -887,6 +914,10 @@
 		region_state:FOU = {
 			create_pop = {
 				culture = na_cherokee
+				size = 10000
+			}
+			create_pop = {
+				culture = na_muscogee
 				size = 10000
 			}
 			create_pop = {
