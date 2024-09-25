@@ -2,7 +2,7 @@
 	c:NVS ?= {
 		set_next_election_date = 1837.4.9
 		
-		effect_starting_technology_tier_1_tech = yes
+		effect_starting_technology_tier_2_tech = yes
 		
 		activate_law = law_type:law_presidential_republic
 		activate_law = law_type:law_census_voting

@@ -13,6 +13,47 @@ fm_sae.1 = {
 	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 	immediate = {
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_BASRA
+			}
+			save_scope_as = secession_state_sae
+		}
+		create_country = {
+			tag = TPE
+			origin = ROOT
+			state = scope:secession_state_sae
+		}
+		if = {
+			limit = { 
+				has_variable = sassanid_cw_var
+			}
+		}
+		random_state = {
+			limit = {
+				state_region = s:STATE_ERZURUM
+			}
+			set_state_owner = c:TPE
+		}
+	}
+	option = {
+		name = fm_sae.1.a
+	}
+}
+
+fm_sae.2 = {
+	type = country_event
+	placement = ROOT
+	title = fm_sae.2.t
+	desc = fm_sae.2.d
+	flavor = fm_sae.2.f
+	duration = 3
+	event_image = {
+		video = "africa_leader_arguing"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	immediate = {
 		random_interest_group = {
 			limit
 			{
@@ -25,7 +66,7 @@ fm_sae.1 = {
 		}
 	}
 	option = {
-		name = fm_sae.1.a
+		name = fm_sae.2.a
 		add_loyalists = {
 			strata = rich
 			value = 0.2
@@ -88,7 +129,7 @@ fm_sae.1 = {
 		}
 	}
 	option = {
-		name = fm_sae.1.b
+		name = fm_sae.2.b
 		add_loyalists = {
 			strata = rich
 			value = 0.2

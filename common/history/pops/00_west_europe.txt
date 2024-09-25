@@ -202,11 +202,17 @@
 		region_state:ENG = {
 			create_pop = {
 				culture = scottish
-				size = 433202
+				size = 33202
 			}
 			create_pop = {
 				culture = british
-				size = 983202
+				size = 683202
+			}
+		}
+		region_state:SCO = {
+			create_pop = {
+				culture = scottish
+				size = 833202
 			}
 			create_pop = {
 				culture = british
@@ -234,12 +240,18 @@
 	s:STATE_YORKSHIRE = {
 		region_state:ENG = {
 			create_pop = {
-				culture = scottish
-				size = 463296
+				culture = british
+				size = 863296
 			}
 			create_pop = {
-				culture = british
-				size = 1063296
+				culture = scottish
+				size = 43296
+			}
+		}
+		region_state:SCO = {
+			create_pop = {
+				culture = scottish
+				size = 423296
 			}
 			create_pop = {
 				culture = irish
@@ -309,6 +321,12 @@
 				culture = irish
 				religion = protestant
 				size = 144400
+			}
+		}
+		region_state:NUR = {
+			create_pop = {
+				culture = british
+				size = 600
 			}
 		}
 	}

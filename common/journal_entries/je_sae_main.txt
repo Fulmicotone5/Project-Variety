@@ -1,20 +1,78 @@
 je_sae_main = {
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 	group = je_group_historical_content
+	scripted_progress_bar = sassanid_civ_war_progress_bar
+
 	complete = {
-		owns_entire_state_region = STATE_KERMAN
-		owns_entire_state_region = STATE_LARISTAN
-		owns_entire_state_region = STATE_SISTAN
-		owns_entire_state_region = STATE_TABRIZ
-		owns_entire_state_region = STATE_URMIA
-		owns_entire_state_region = STATE_ELIZAVETPOL
-		owns_entire_state_region = STATE_ARMENIA
-		owns_entire_state_region = STATE_GREATER_CAUCASUS
-		owns_entire_state_region = STATE_KARS
+		custom_tooltip = {
+			text = civ_war_comp_tt
+			has_variable = civ_war_comp
+		}
 	}
 	on_complete = {
+		remove_modifier = diplomatic_plays_blocked
 		trigger_event = {
 			id = fm_sae.1
+		}
+	}
+	status_desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = sae_pr_1
+				trigger = {
+					scope:journal_entry = { 
+						"scripted_bar_progress(sassanid_civ_war_progress_bar)" = 2
+					}
+				}
+			}
+			triggered_desc = {
+				desc = sae_pr_2
+				trigger = {
+					scope:journal_entry = { 
+						"scripted_bar_progress(sassanid_civ_war_progress_bar)" = 3
+					}
+				}
+			}
+			triggered_desc = {
+				desc = sae_pr_3
+				trigger = {
+					scope:journal_entry = { 
+						"scripted_bar_progress(sassanid_civ_war_progress_bar)" = 4
+					}
+				}
+			}
+			triggered_desc = {
+				desc = sae_pr_4
+				trigger = {
+					scope:journal_entry = { 
+						"scripted_bar_progress(sassanid_civ_war_progress_bar)" = 5
+					}
+				}
+			}
+			triggered_desc = {
+				desc = sae_pr_5
+				trigger = {
+					scope:journal_entry = { 
+						"scripted_bar_progress(sassanid_civ_war_progress_bar)" = 6
+					}
+				}
+			}
+			triggered_desc = {
+				desc = sae_pr_6
+				trigger = {
+					scope:journal_entry = { 
+						"scripted_bar_progress(sassanid_civ_war_progress_bar)" = 7
+					}
+				}
+			}
+			triggered_desc = {
+				desc = sae_pr_7
+				trigger = {
+					scope:journal_entry = { 
+						"scripted_bar_progress(sassanid_civ_war_progress_bar)" = 8
+					}
+				}
+			}
 		}
 	}
 	weight = 100

@@ -70,6 +70,8 @@ STATES = {
 		
 		add_homeland = cu:british
 		add_homeland = cu:scottish
+		add_claim = c:SCO
+		add_claim = c:ENG
 	}
 	s:STATE_PROVENCE = {
 		create_state = {
@@ -2916,6 +2918,8 @@ STATES = {
 		
 		add_homeland = cu:british
 		add_homeland = cu:scottish
+		add_claim = c:SCO
+		add_claim = c:ENG
 	}
 	s:STATE_HIGHLANDS = {
 		create_state = {
@@ -2944,7 +2948,11 @@ STATES = {
 	s:STATE_WEST_COUNTRY = {
 		create_state = {
 			country = c:ENG
-			owned_provinces = { xE020C0 x65B395 x6060C0 x225544 xEB9862 xE0E040 xB78E54 x1E38F8 xC900EF xA2DD9E x63EF7E }
+			owned_provinces = { xE020C0 x65B395 x6060C0 x225544 xEB9862 xE0E040 x1E38F8 xC900EF xA2DD9E x63EF7E }
+		}
+		create_state = {
+			country = c:NUR
+			owned_provinces = { xB78E54 }
 		}
 		
 		add_homeland = cu:british

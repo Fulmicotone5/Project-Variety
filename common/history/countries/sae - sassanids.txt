@@ -19,7 +19,7 @@ COUNTRIES = {
 		activate_law = law_type:law_religious_schools
 		activate_law = law_type:law_charitable_health_system
 
-		ig:ig_landowners = { # Mehmed Emin Rauf Pasha was Grand Vizier in 1836
+		ig:ig_landowners = { 
 			add_ruling_interest_group = yes
 		}
 		set_institution_investment_level = {
@@ -31,6 +31,13 @@ COUNTRIES = {
 		}
 		set_variable = {
 			name = idea_sae
+		}
+		set_variable = {
+			name = sassanid_cw_var
+			value = 0
+		}
+		add_modifier = {
+			name = diplomatic_plays_blocked
 		}
 	}
 }
