@@ -7,10 +7,10 @@
 # cu:na_haudenosaunee
 
 # (cu:muscogee
-#  cu:muskogean
-#  cu:apache ->)
+#  cu:muskogean ->)
 # cu:na_chickasaw_choctaw
 # cu:na_muscogee
+# cu:na_apalachee
 
 # (cu:dakota
 #  cu:sioux ->)
@@ -65,6 +65,14 @@
 
 # cu:navajo
 # cu: pueblo
+
+
+# cu:apache
+
+
+# ( ->)
+#  cu:na_northern_athabaskan
+#  cu:na_pacific_athabaskan
 
 na_santee_dakota = {
 	color = hsv{ 0.63 0.30 0.52 }
@@ -1299,7 +1307,7 @@ na_pacific_athabaskan = {
 	graphics = decentralised_americas
 }
 
-na_apachean = {
+na_apalachee = {
 	color = hsv{ 0.22 0.15 0.86 }
 	religion = na_native_american_spirituality
 	traits = { na_native_american_heritage na_north_american_heritage na_athabaskan_culture_group }

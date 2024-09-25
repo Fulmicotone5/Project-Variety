@@ -93,7 +93,7 @@
 	s:STATE_ALASKA = {
 		region_state:KOC = {
 			create_pop = {
-				culture = na_cree_montagnais
+				culture = na_northern_athabaskan
 				size = 5780
 			}
 			create_pop = {
@@ -107,8 +107,8 @@
 		}
 		region_state:SAO = {
 			create_pop = {
-				culture = na_cree_montagnais
-				size = 19780
+				culture = na_northern_athabaskan
+				size = 20000
 			}
 			create_pop = {
 				culture = na_salishan
@@ -137,6 +137,10 @@
 			create_pop = {
 				culture = na_shapwailutan
 				size = 24060
+			}
+			create_pop = {
+				culture = na_pacific_athabaskan
+				size = 20000
 			}
 			create_pop = {
 				culture = na_colorado_numic
@@ -561,7 +565,7 @@
 	s:STATE_FLORIDA = {
 		region_state:FLU = {
 			create_pop = {
-				culture = na_muscogee
+				culture = na_apalachee
 				size = 34000
 			}
 			create_pop = {
@@ -1070,6 +1074,10 @@
 				culture = na_stoney
 				size = 10000
 			}
+			create_pop = {
+				culture = na_northern_athabaskan
+				size = 3000
+			}
 		}
 	}
 	s:STATE_BRITISH_COLUMBIA = {
@@ -1077,6 +1085,10 @@
 			create_pop = {
 				culture = korean
 				size = 20
+			}
+			create_pop = {
+				culture = na_northern_athabaskan
+				size = 25000
 			}
 			create_pop = {
 				culture = na_salishan
@@ -1118,6 +1130,10 @@
 				culture = na_cree_montagnais
 				size = 12000
 			}
+			create_pop = {
+				culture = na_northern_athabaskan
+				size = 20000
+			}
 		}
 	}
 	s:STATE_NORTHWEST_TERRITORIES = {
@@ -1127,8 +1143,8 @@
 				size = 16000
 			}
 			create_pop = {
-				culture = athabaskan
-				size = 6000
+				culture = na_northern_athabaskan
+				size = 10000
 			}
 		}
 	}
@@ -1143,7 +1159,7 @@
 				size = 70
 			}
 			create_pop = {
-				culture = athabaskan
+				culture = na_northern_athabaskan
 				size = 3000
 			}
 		}
@@ -1248,6 +1264,10 @@
 				size = 256000
 			}
 			create_pop = {
+				culture = navajo
+				size = 10000
+			}
+			create_pop = {
 				culture = mexican
 				size = 600
 			}
@@ -1255,7 +1275,6 @@
 		region_state:MAX = {
 			create_pop = {
 				culture = na_comanche
-				religion = catholic
 				size = 12000
 			}
 			create_pop = {
@@ -1267,6 +1286,10 @@
 			create_pop = {
 				culture = na_paiute
 				size = 39000
+			}
+			create_pop = {
+				culture = navajo
+				size = 40000
 			}
 			create_pop = {
 				culture = na_comanche
