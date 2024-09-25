@@ -1510,7 +1510,7 @@ na_caddoan_ethnicity = {
 
 }
 
-na_muskogean_ethnicity = {
+na_muscogean_ethnicity = {
 	template = "ethnicity_template"
 
 
