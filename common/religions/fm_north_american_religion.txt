@@ -1,9 +1,9 @@
-na_native_american_spirituality = {
+﻿na_native_american_spirituality = {
 	texture = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		na_native_american_spirituality_heritage
 	}
-	color = { 0.95 0.52 0.2 }
+	color = { 237 162 192 }
 }
 
 na_wocekiye = {
@@ -11,7 +11,7 @@ na_wocekiye = {
 	traits = {
 		na_native_american_spirituality_heritage
 	}
-	color = { 0.86 0.50 0.2 }
+	color = { 65 57 62 }
 }
 
 na_lakota_spirituality = {
@@ -19,7 +19,7 @@ na_lakota_spirituality = {
 	traits = {
 		na_native_american_spirituality_heritage
 	}
-	color = { 0.88 0.52 0.2 }
+	color = { 142 65 98 }
 }
 
 na_ojibwe_spirituality = {
@@ -27,7 +27,7 @@ na_ojibwe_spirituality = {
 	traits = {
 		na_native_american_spirituality_heritage
 	}
-	color = { 0.88 0.52 0.2 }
+	color = { 199 232 243 }
 }
 
 na_midewiwin = {
@@ -35,7 +35,7 @@ na_midewiwin = {
 	traits = {
 		na_native_american_spirituality_heritage
 	}
-	color = { 0.88 0.52 0.2 }
+	color = { 167 110 150 }
 }
 
 na_shawano = {
@@ -43,7 +43,7 @@ na_shawano = {
 	traits = {
 		na_native_american_spirituality_heritage
 	}
-	color = { 0.88 0.52 0.2 }
+	color = { 123 63 89 }
 }
 
 na_blackfoot_spirituality = {
@@ -51,7 +51,7 @@ na_blackfoot_spirituality = {
 	traits = {
 		na_native_american_spirituality_heritage
 	}
-	color = { 0.88 0.52 0.2 }
+	color = { 104 61 80 }
 }
 
 na_the_great_law_of_peace = {
@@ -59,7 +59,7 @@ na_the_great_law_of_peace = {
 	traits = {
 		na_native_american_spirituality_heritage
 	}
-	color = { 0.88 0.52 0.2 }
+	color = { 151 110 127 }
 }
 
 na_cherokee_spirituality = {
@@ -67,5 +67,5 @@ na_cherokee_spirituality = {
 	traits = {
 		na_native_american_spirituality_heritage
 	}
-	color = { 0.88 0.52 0.2 }
+	color = { 150 119 149 }
 }
