@@ -1,0 +1,71 @@
+﻿na_native_american_spirituality = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		na_native_american_spirituality_heritage
+	}
+	color = { 237 162 192 }
+}
+
+na_wocekiye = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		na_native_american_spirituality_heritage
+	}
+	color = { 65 57 62 }
+}
+
+na_lakota_spirituality = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		na_native_american_spirituality_heritage
+	}
+	color = { 142 65 98 }
+}
+
+na_ojibwe_spirituality = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		na_native_american_spirituality_heritage
+	}
+	color = { 199 232 243 }
+}
+
+na_midewiwin = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		na_native_american_spirituality_heritage
+	}
+	color = { 167 110 150 }
+}
+
+na_shawano = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		na_native_american_spirituality_heritage
+	}
+	color = { 123 63 89 }
+}
+
+na_blackfoot_spirituality = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		na_native_american_spirituality_heritage
+	}
+	color = { 104 61 80 }
+}
+
+na_the_great_law_of_peace = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		na_native_american_spirituality_heritage
+	}
+	color = { 151 110 127 }
+}
+
+na_cherokee_spirituality = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		na_native_american_spirituality_heritage
+	}
+	color = { 150 119 149 }
+}

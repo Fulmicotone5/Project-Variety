@@ -81,9 +81,6 @@ hungarian_culture_group={
 baltic_culture_group={
 }
 
-native_north_american_culture_group={
-}
-
 native_mesoamerican_culture_group={
 }
 
@@ -120,4 +117,3 @@ tibetan_language = {}
 aboriginal_australian = {}
 indigenous_andean = {}
 south_american_group = {}
-north_american_group = {}

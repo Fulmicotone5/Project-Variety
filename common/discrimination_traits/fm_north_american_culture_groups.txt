@@ -1,0 +1,12 @@
+na_sioux_culture_group = {}
+na_algonquian_culture_group = {}
+na_caddoan_culture_group = {}
+na_muscogean_culture_group = {}
+na_iroquois_culture_group = {}
+na_athabaskan_culture_group = {}
+na_uto_aztecan_culture_group = {}
+na_yuman_culture_group = {}
+na_salishan_culture_group = {}
+na_shapwailutan_culture_group = {}
+na_tonkawa_culture_group = {}
+na_coahuiltecan_culture_group = {}

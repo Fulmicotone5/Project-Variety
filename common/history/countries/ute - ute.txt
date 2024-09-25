@@ -1,7 +1,6 @@
 ﻿COUNTRIES = {
-	c:LKT = {
+	c:UTE = {
 		effect_starting_technology_tier_6_tech = yes
 		effect_starting_politics_traditional = yes
-		effect_native_conscription_20 = yes
 	}
 }

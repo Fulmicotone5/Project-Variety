@@ -111,7 +111,7 @@
 		}
 		else_if = {
 			limit = {
-				country_has_primary_culture = cu:dakota
+				country_has_primary_culture = cu:na_santee_dakota
 			}
 			ig:ig_landowners = {
 				remove_ideology = ideology_nationalist
