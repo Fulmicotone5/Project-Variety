@@ -64,7 +64,7 @@ ig_rural_folk = {
 		}
 		else_if = {
 			limit = {
-				country_has_primary_culture = cu:dakota
+				country_has_primary_culture = cu:na_santee_dakota
 			}
 			ig:ig_rural_folk = {
 				remove_ideology = ideology_isolationist

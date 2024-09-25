@@ -153,7 +153,7 @@ native_north_american_clothes_trigger = {
 	exists = scope:character
 	scope:character = {
 		culture = {
-			has_discrimination_trait = north_american_group
+            has_discrimination_trait = na_north_american_heritage
 		}
 	}
 }
@@ -903,7 +903,10 @@ native_american_clothes_pop_trigger = {
 	exists = scope:pop
 	scope:pop = {
 		culture = {
-			has_discrimination_trait = indigenous_american_heritage
+			OR = {
+				has_discrimination_trait = indigenous_american_heritage
+				has_discrimination_trait = na_native_american_heritage
+			}
 		}
 	}
 }
