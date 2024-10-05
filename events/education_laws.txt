@@ -419,6 +419,18 @@ education_laws.5 = {
 	}
 	event_image = {
 		trigger = {
+			country_has_state_religion = rel:zoroastrian
+		}
+		video = "ep1_central_asian_city"
+	}
+	event_image = {
+		trigger = {
+			country_has_state_religion = rel:na_wocekiye
+		}
+		video = "europenorthamerica_native_american"
+	}
+	event_image = {
+		trigger = {
 			NOR = {
 				religion = rel:jewish
 				religion = rel:protestant
@@ -433,8 +445,8 @@ education_laws.5 = {
 				religion = rel:sikh
 				religion = rel:sunni
 				religion = rel:shiite
+				religion = rel:na_wocekiye
 				religion = rel:zoroastrian
-				religion = rel:baal
 			}
 		}
 		video = "africa_animism"
@@ -558,6 +570,18 @@ education_laws.6 = {
 	}
 	event_image = {
 		trigger = {
+			religion = rel:zoroastrian
+		}
+		video = "ep1_central_asian_city"
+	}
+	event_image = {
+		trigger = {
+			religion = rel:na_wocekiye
+		}
+		video = "europenorthamerica_native_american"
+	}
+	event_image = {
+		trigger = {
 			NOR = {
 				religion = rel:jewish
 				religion = rel:protestant
@@ -573,7 +597,7 @@ education_laws.6 = {
 				religion = rel:sunni
 				religion = rel:shiite
 				religion = rel:zoroastrian
-				religion = rel:baal
+				religion = rel:na_wocekiye
 			}
 		}
 		video = "africa_animism"

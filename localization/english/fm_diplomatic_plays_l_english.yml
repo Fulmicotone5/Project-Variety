@@ -8,5 +8,14 @@
  dp_unify_jugo_desc:0 "Sets the initiating [concept_war_goal] to unify the balkan region."
  YUG_tt:0 "[SCOPE.sCountry('target_country').GetName] can form Yugoslavia
 
-
-
+ GAME_RULES_PRESET_FM_DIFFICULTY:0 "Mod: [GameRuleSetting.GetName]"
+ rule_fm_difficulty:0 "Difficulty"
+ setting_lenient_fm_behavior:1 "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],depeffo_desc_easy #high Easy#!#!#!"
+ setting_lenient_fm_behavior_desc:0 "You deserve nothing from life"
+ setting_standard_fm_behavior:1 "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],depeffo_desc Standard#!#!"
+ setting_standard_fm_behavior_desc:0 "Standard difficulty, AI will generally be aggressive towards you if you don't improve relations with them"
+ setting_harsh_fm_behavior:1 "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],depeffo_desc_hard #high Hard#!#!#!"
+ setting_harsh_fm_behavior_desc:0 "AI countries will be less friendly, more aggressive towards the players and more inclined to intervene against them in [Concept('concept_diplomatic_play', '$concept_diplomatic_plays$')]"
+ depeffo_desc:0 "Not too hard, not too easy, but it still seem to be too much for some players"
+ depeffo_desc_easy:0 "AI will be less inclined to act against the players, if selected with "Lenient AI Behavior" it will make the AI extremely docile and breedable, like the pig you are"
+ depeffo_desc_hard:0 "Makes the diplomatic aspect of the game more impactful, if selected with "Harsh AI Behavior" it will make the game so hard that it will feel unfair"

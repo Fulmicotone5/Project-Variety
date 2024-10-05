@@ -26,6 +26,7 @@ ve_becoming_atheist = {
 				has_modifier = theravada_pasive_mdf
 				has_modifier = gelugpa_pasive_mdf
 				has_modifier = conf_pasive
+				has_modifier = na_wocekiye_pasive_mdf
 			}
 		}
 		remove_modifier = catholic_pasive_mdf
@@ -38,6 +39,7 @@ ve_becoming_atheist = {
 		remove_modifier = hindu_pasive_mdf
 		remove_modifier = sikh_pasive_mdf
 		remove_modifier = animist_pasive_mdf
+		remove_modifier = na_wocekiye_pasive_mdf
 		remove_modifier = baal_pasive_mdf
 		remove_modifier = zoro_pasive_mdf
 		remove_modifier = conf_pasive
@@ -124,6 +126,14 @@ ve_becoming_atheist = {
 		remove_modifier = animist_aspect_6_mdf
 		remove_modifier = animist_aspect_7_mdf
 		remove_modifier = animist_aspect_8_mdf
+		remove_modifier = na_wocekiye_aspect_1_mdf
+		remove_modifier = na_wocekiye_aspect_2_mdf
+		remove_modifier = na_wocekiye_aspect_3_mdf
+		remove_modifier = na_wocekiye_aspect_4_mdf
+		remove_modifier = na_wocekiye_aspect_5_mdf
+		remove_modifier = na_wocekiye_aspect_6_mdf
+		remove_modifier = na_wocekiye_aspect_7_mdf
+		remove_modifier = na_wocekiye_aspect_8_mdf
 		remove_modifier = baal_aspect_1_mdf
 		remove_modifier = baal_aspect_2_mdf
 		remove_modifier = baal_aspect_3_mdf
@@ -316,6 +326,15 @@ ve_religion_aspect_1_effect = {
 	}
 	else_if = {
 		limit = {
+			country_has_state_religion = rel:na_wocekiye
+		}
+		add_modifier = {
+			name = na_wocekiye_aspect_1_mdf
+			months = 65
+		}
+	}
+	else_if = {
+		limit = {
 			country_has_state_religion = rel:atheist
 		}
 		add_modifier = {
@@ -476,6 +495,15 @@ ve_religion_aspect_2_effect = {
 		}
 		add_modifier = {
 			name = animist_aspect_2_mdf
+			months = 65
+		}
+	}
+	else_if = {
+		limit = {
+			country_has_state_religion = rel:na_wocekiye
+		}
+		add_modifier = {
+			name = na_wocekiye_aspect_2_mdf
 			months = 65
 		}
 	}
@@ -646,6 +674,15 @@ ve_religion_aspect_3_effect = {
 	}
 	else_if = {
 		limit = {
+			country_has_state_religion = rel:na_wocekiye
+		}
+		add_modifier = {
+			name = na_wocekiye_aspect_3_mdf
+			months = 65
+		}
+	}
+	else_if = {
+		limit = {
 			country_has_state_religion = rel:atheist
 		}
 		add_modifier = {
@@ -806,6 +843,15 @@ ve_religion_aspect_4_effect = {
 		}
 		add_modifier = {
 			name = animist_aspect_4_mdf
+			months = 65
+		}
+	}
+	else_if = {
+		limit = {
+			country_has_state_religion = rel:na_wocekiye
+		}
+		add_modifier = {
+			name = na_wocekiye_aspect_4_mdf
 			months = 65
 		}
 	}
@@ -976,6 +1022,15 @@ ve_religion_aspect_5_effect = {
 	}
 	else_if = {
 		limit = {
+			country_has_state_religion = rel:na_wocekiye
+		}
+		add_modifier = {
+			name = na_wocekiye_aspect_5_mdf
+			months = 65
+		}
+	}
+	else_if = {
+		limit = {
 			country_has_state_religion = rel:atheist
 		}
 		add_modifier = {
@@ -1136,6 +1191,15 @@ ve_religion_aspect_6_effect = {
 		}
 		add_modifier = {
 			name = animist_aspect_6_mdf
+			months = 65
+		}
+	}
+	else_if = {
+		limit = {
+			country_has_state_religion = rel:na_wocekiye
+		}
+		add_modifier = {
+			name = na_wocekiye_aspect_6_mdf
 			months = 65
 		}
 	}
@@ -1306,6 +1370,15 @@ ve_religion_aspect_7_effect = {
 	}
 	else_if = {
 		limit = {
+			country_has_state_religion = rel:na_wocekiye
+		}
+		add_modifier = {
+			name = na_wocekiye_aspect_7_mdf
+			months = 65
+		}
+	}
+	else_if = {
+		limit = {
 			country_has_state_religion = rel:atheist
 		}
 		add_modifier = {
@@ -1444,6 +1517,15 @@ ve_religion_aspect_8_effect = {
 		}
 		add_modifier = {
 			name = animist_aspect_8_mdf
+			months = 65
+		}
+	}
+	else_if = {
+		limit = {
+			country_has_state_religion = rel:na_wocekiye
+		}
+		add_modifier = {
+			name = na_wocekiye_aspect_8_mdf
 			months = 65
 		}
 	}

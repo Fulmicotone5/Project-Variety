@@ -436,10 +436,7 @@ coa_def_west_african_trigger = {
 
 coa_def_native_american_trigger = {
     any_primary_culture = {
-		OR = {
-			has_discrimination_trait = indigenous_american_heritage
-			has_discrimination_trait = na_native_american_heritage
-		}
+		has_discrimination_trait = indigenous_american_heritage
     }
 }
 

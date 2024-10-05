@@ -117,7 +117,7 @@ je_dakota_main = {
 			}
 			clamp_variable = {
 				name = dakota_progress
-				max = 300
+				max = 200
 				min = 0
 			}
 		}
@@ -126,7 +126,7 @@ je_dakota_main = {
 		value = root.var:dakota_progress
 	}
 	goal_add_value = {
-		value = 300
+		value = 200
 	}
 	progressbar = yes
 	weight = 100

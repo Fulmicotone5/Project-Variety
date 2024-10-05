@@ -161,8 +161,40 @@ max_missionary_power_250k = {
 			add = 0.0025
 		}
 	}
+	else_if = {
+		limit = {
+			country_has_state_religion = rel:na_wocekiye
+		}
+		if = {
+			limit = {
+				always = yes
+			}
+			add = 0.0025
+		}
+	}
+	else_if = {
+		limit = {
+			country_has_state_religion = rel:baal
+		}
+		if = {
+			limit = {
+				always = yes
+			}
+			add = 0.0025
+		}
+	}
+	else_if = {
+		limit = {
+			country_has_state_religion = rel:zoroastrian
+		}
+		if = {
+			limit = {
+				always = yes
+			}
+			add = 0.0025
+		}
+	}
 }
-
 max_cultural_missionary_power_250k = {
 	value = 0.05	#Base Power
 	if = {
@@ -252,6 +284,17 @@ max_cultural_missionary_power_250k = {
 	if = {
 		limit = {
 			country_has_state_religion = rel:animist
+		}
+		if = {
+			limit = {
+				always = yes
+			}
+			add = 0.0025
+		}
+	}
+	else_if = {
+		limit = {
+			country_has_state_religion = rel:na_wocekiye
 		}
 		if = {
 			limit = {

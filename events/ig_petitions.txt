@@ -140,6 +140,18 @@ ig_petitions.4 = {
 	}
 	event_image = {
 		trigger = {
+			religion = rel:zoroastrian
+		}
+		video = "ep1_central_asian_city"
+	}
+	event_image = {
+		trigger = {
+			religion = rel:na_wocekiye
+		}
+		video = "europenorthamerica_native_american"
+	}
+	event_image = {
+		trigger = {
 			NOR = {
 				religion = rel:jewish
 				religion = rel:protestant
@@ -155,7 +167,7 @@ ig_petitions.4 = {
 				religion = rel:sunni
 				religion = rel:shiite
 				religion = rel:zoroastrian
-				religion = rel:baal
+				religion = rel:na_wocekiye
 			}
 		}
 		video = "africa_animism"

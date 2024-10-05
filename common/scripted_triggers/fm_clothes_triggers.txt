@@ -903,10 +903,7 @@ native_american_clothes_pop_trigger = {
 	exists = scope:pop
 	scope:pop = {
 		culture = {
-			OR = {
-				has_discrimination_trait = indigenous_american_heritage
-				has_discrimination_trait = na_native_american_heritage
-			}
+			has_discrimination_trait = indigenous_american_heritage
 		}
 	}
 }

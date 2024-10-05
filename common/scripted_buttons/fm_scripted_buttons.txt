@@ -1805,7 +1805,11 @@ je_int_ala = {
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
-					culture = cu:cherokee
+					culture = cu:na_cherokee
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:na_muscogee
 				}
 				set_state_type = incorporated
 			}
@@ -1848,7 +1852,11 @@ je_int_missi = {
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
-					culture = cu:cherokee
+					culture = cu:na_cherokee
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:na_chickasaw_choctaw
 				}
 				set_state_type = incorporated
 			}
@@ -1891,7 +1899,15 @@ je_int_ten = {
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
-					culture = cu:cherokee
+					culture = cu:na_cherokee
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:na_chickasaw_choctaw
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:na_miami_illinois
 				}
 				set_state_type = incorporated
 			}
@@ -1935,7 +1951,11 @@ je_int_ark = {
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
-					culture = cu:cherokee
+					culture = cu:na_caddoan
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:na_quapaw
 				}
 				set_state_type = incorporated
 			}
@@ -1978,7 +1998,11 @@ je_int_okl = {
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
-					culture = cu:cherokee
+					culture = cu:na_caddoan
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:na_kansa_osage
 				}
 				set_state_type = incorporated
 			}
@@ -2021,7 +2045,15 @@ je_int_mis = {
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
-					culture = cu:caddoan
+					culture = cu:na_caddoan
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:na_miami_illinois
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:na_chiwere_winnebago
 				}
 				set_state_type = incorporated
 			}
@@ -2064,11 +2096,11 @@ je_int_kan = {
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
-					culture = cu:caddoan
+					culture = cu:na_caddoan
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
-					culture = cu:paiute
+					culture = cu:na_kansa_osage
 				}
 				set_state_type = incorporated
 			}
@@ -2121,7 +2153,11 @@ je_int_lak = {
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
-					culture = cu:dakota
+					culture = cu:na_blackfoot
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:na_crow_hisatsa
 				}
 				set_state_type = incorporated
 			}
@@ -2131,11 +2167,15 @@ je_int_lak = {
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
-					culture = cu:dakota
+					culture = cu:na_lakota
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
-					culture = cu:paiute
+					culture = cu:na_crow_hisatsa
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:na_colorado_numic
 				}
 				set_state_type = incorporated
 			}
@@ -2178,7 +2218,15 @@ je_int_ntd = {
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
-					culture = cu:dakota
+					culture = cu:na_yankton_yanktonai_dakota
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:na_santee_dakota
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:na_crow_hisatsa
 				}
 				set_state_type = incorporated
 			}
@@ -2221,7 +2269,23 @@ je_int_std = {
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
-					culture = cu:dakota
+					culture = cu:na_yankton_yanktonai_dakota
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:na_santee_dakota
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:na_caddoan
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:na_lakota
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:na_arapahoan
 				}
 				set_state_type = incorporated
 			}
@@ -2264,7 +2328,19 @@ je_int_min = {
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
-					culture = cu:dakota
+					culture = cu:na_yankton_yanktonai_dakota
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:na_santee_dakota
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:na_ojibwe_potawatomi
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:na_miami_illinois
 				}
 				set_state_type = incorporated
 			}
@@ -2307,11 +2383,19 @@ je_int_iow = {
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
-					culture = cu:dakota
+					culture = cu:na_santee_dakota
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
-					culture = cu:caddoan
+					culture = cu:na_caddoan
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:na_miami_illinois
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:na_chiwere_winnebago
 				}
 				set_state_type = incorporated
 			}
@@ -2354,11 +2438,19 @@ je_int_neb = {
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
-					culture = cu:dakota
+					culture = cu:na_omaha_ponca
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
-					culture = cu:caddoan
+					culture = cu:na_lakota
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:na_caddoan
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:na_arapahoan
 				}
 				set_state_type = incorporated
 			}
@@ -2402,7 +2494,15 @@ je_int_tex = {
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
-					culture = cu:comanche
+					culture = cu:na_caddoan
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:na_comanche
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:na_chickasaw_choctaw
 				}
 				set_state_type = incorporated
 			}
@@ -2445,7 +2545,11 @@ je_int_nme = {
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
-					culture = cu:comanche
+					culture = cu:na_caddoan
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:navajo
 				}
 				set_state_type = incorporated
 			}
@@ -2498,7 +2602,7 @@ je_int_che = {
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
-					culture = cu:cherokee
+					culture = cu:na_cherokee
 				}
 				set_state_type = incorporated
 			}
@@ -2508,7 +2612,7 @@ je_int_che = {
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
-					culture = cu:cherokee
+					culture = cu:na_miami_illinois
 				}
 				set_state_type = incorporated
 			}
@@ -2551,7 +2655,7 @@ je_int_ohi = {
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
-					culture = cu:algonquian
+					culture = cu:na_ojibwe_potawatomi
 				}
 				set_state_type = incorporated
 			}
@@ -2594,7 +2698,7 @@ je_int_mich = {
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
-					culture = cu:algonquian
+					culture = cu:na_ojibwe_potawatomi
 				}
 				set_state_type = incorporated
 			}
@@ -2637,7 +2741,7 @@ je_int_indiana = {
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
-					culture = cu:algonquian
+					culture = cu:na_miami_illinois
 				}
 				set_state_type = incorporated
 			}
@@ -2680,7 +2784,11 @@ je_int_illi = {
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
-					culture = cu:algonquian
+					culture = cu:na_miami_illinois
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:na_chiwere_winnebago
 				}
 				set_state_type = incorporated
 			}
@@ -2723,7 +2831,11 @@ je_int_wis = {
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
-					culture = cu:algonquian
+					culture = cu:na_miami_illinois
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:na_chiwere_winnebago
 				}
 				set_state_type = incorporated
 			}
@@ -2767,7 +2879,19 @@ je_int_ari = {
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
-					culture = cu:navajo
+					culture = cu:na_colorado_numic
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:na_chickasaw_choctaw
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:na_paiute
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:pueblo
 				}
 				set_state_type = incorporated
 			}
@@ -2810,7 +2934,11 @@ je_int_nev = {
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
-					culture = cu:navajo
+					culture = cu:na_paiute
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:na_colorado_numic
 				}
 				set_state_type = incorporated
 			}
@@ -2854,11 +2982,11 @@ je_int_utah = {
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
-					culture = cu:paiute
+					culture = cu:na_arapahoan
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
-					culture = cu:navajo
+					culture = cu:na_colorado_numic
 				}
 				set_state_type = incorporated
 			}
@@ -2902,7 +3030,11 @@ je_int_colo = {
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
-					culture = cu:paiute
+					culture = cu:na_paiute
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:na_chickasaw_choctaw
 				}
 				set_state_type = incorporated
 			}
@@ -2954,8 +3086,16 @@ je_int_cree = {
 					state_region = s:STATE_ONTARIO
 				}
 				kill_population_percent_in_state = {
-					percent = 0.95
-					culture = cu:cree
+					percent = 0.35
+					culture = cu:na_ojibwe_potawatomi
+				}
+				kill_population_percent_in_state = {
+					percent = 0.35
+					culture = cu:na_cree_montagnais
+				}
+				kill_population_percent_in_state = {
+					percent = 0.35
+					culture = cu:na_haudenosaunee
 				}
 				set_state_type = incorporated
 			}
@@ -2964,8 +3104,12 @@ je_int_cree = {
 					state_region = s:STATE_MANITOBA
 				}
 				kill_population_percent_in_state = {
-					percent = 0.95
-					culture = cu:cree
+					percent = 0.35
+					culture = cu:na_ojibwe_potawatomi
+				}
+				kill_population_percent_in_state = {
+					percent = 0.35
+					culture = cu:na_cree_montagnais
 				}
 				set_state_type = incorporated
 			}
@@ -3027,7 +3171,11 @@ je_int_atha = {
 				}
 				kill_population_percent_in_state = {
 					percent = 0.20
-					culture = cu:athabaskan
+					culture = cu:na_cree_montagnais
+				}
+				kill_population_percent_in_state = {
+					percent = 0.20
+					culture = cu:na_northern_athabaskan
 				}
 				set_state_type = incorporated
 			}
@@ -3088,7 +3236,11 @@ je_int_sali = {
 				}
 				kill_population_percent_in_state = {
 					percent = 0.55
-					culture = cu:salish
+					culture = cu:na_northern_athabaskan
+				}
+				kill_population_percent_in_state = {
+					percent = 0.55
+					culture = cu:na_cree_montagnais
 				}
 				set_state_type = incorporated
 			}
@@ -3098,11 +3250,11 @@ je_int_sali = {
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
-					culture = cu:salish
+					culture = cu:na_northern_athabaskan
 				}
 				kill_population_percent_in_state = {
 					percent = 0.55
-					culture = cu:athabaskan
+					culture = cu:na_salishan
 				}
 				set_state_type = incorporated
 			}
@@ -3112,11 +3264,11 @@ je_int_sali = {
 				}
 				kill_population_percent_in_state = {
 					percent = 0.85
-					culture = cu:salish
+					culture = cu:na_northern_athabaskan
 				}
 				kill_population_percent_in_state = {
 					percent = 0.85
-					culture = cu:athabaskan
+					culture = cu:na_salishan
 				}
 				set_state_type = incorporated
 			}
@@ -3168,11 +3320,19 @@ je_int_siou = {
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
-					culture = cu:siouan
+					culture = cu:na_blackfoot
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
-					culture = cu:metis
+					culture = cu:na_stoney
+				}
+				kill_population_percent_in_state = {
+					percent = 0.85
+					culture = cu:na_northern_athabaskan
+				}
+				kill_population_percent_in_state = {
+					percent = 0.85
+					culture = cu:na_cree_montagnais
 				}
 				set_state_type = incorporated
 			}
@@ -3182,11 +3342,15 @@ je_int_siou = {
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
-					culture = cu:siouan
+					culture = cu:na_blackfoot
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
-					culture = cu:cree
+					culture = cu:na_cree_montagnais
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+					culture = cu:na_assiniboine
 				}
 				set_state_type = incorporated
 			}

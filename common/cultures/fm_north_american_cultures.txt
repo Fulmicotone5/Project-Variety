@@ -77,7 +77,7 @@
 na_santee_dakota = {
 	color = { 165 190 0 }
 	religion = na_wocekiye
-	traits = { na_native_american_heritage na_north_american_heritage na_sioux_culture_group }
+	traits = { indigenous_american_heritage na_north_american_heritage na_sioux_culture_group }
 	male_common_first_names = {
 		Hehaka
 		Inkpaduta
@@ -129,7 +129,7 @@ na_santee_dakota = {
 na_yankton_yanktonai_dakota = {
 	color = { 0 70 190 }
 	religion = na_wocekiye
-	traits = { na_native_american_heritage na_north_american_heritage na_sioux_culture_group }
+	traits = { indigenous_american_heritage na_north_american_heritage na_sioux_culture_group }
 	male_common_first_names = {
 		Hehaka
 		Inkpaduta
@@ -181,7 +181,7 @@ na_yankton_yanktonai_dakota = {
 na_lakota = {
 	color = { 120 0 190 }
 	religion = na_lakota_spirituality
-	traits = { na_native_american_heritage na_north_american_heritage na_sioux_culture_group }
+	traits = { indigenous_american_heritage na_north_american_heritage na_sioux_culture_group }
 	male_common_first_names = {
 		Hehaka
 		Inkpaduta
@@ -233,7 +233,7 @@ na_lakota = {
 na_crow_hisatsa = {
 	color = { 190 25 0 }
 	religion = na_native_american_spirituality
-	traits = { na_native_american_heritage na_north_american_heritage na_sioux_culture_group }
+	traits = { indigenous_american_heritage na_north_american_heritage na_sioux_culture_group }
 	male_common_first_names = {
 		Hehaka
 		Inkpaduta
@@ -285,7 +285,7 @@ na_crow_hisatsa = {
 na_assiniboine = {
 	color = { 0 190 120 }
 	religion = na_native_american_spirituality
-	traits = { na_native_american_heritage na_north_american_heritage na_sioux_culture_group }
+	traits = { indigenous_american_heritage na_north_american_heritage na_sioux_culture_group }
 	male_common_first_names = {
 		Hehaka
 		Inkpaduta
@@ -337,7 +337,7 @@ na_assiniboine = {
 na_stoney = {
 	color = { 190 0 165 }
 	religion = na_native_american_spirituality
-	traits = { na_native_american_heritage na_north_american_heritage na_sioux_culture_group }
+	traits = { indigenous_american_heritage na_north_american_heritage na_sioux_culture_group }
 	male_common_first_names = {
 		Hehaka
 		Inkpaduta
@@ -389,7 +389,7 @@ na_stoney = {
 na_chiwere_winnebago = {
 	color = { 0 190 25 }
 	religion = na_native_american_spirituality
-	traits = { na_native_american_heritage na_north_american_heritage na_sioux_culture_group }
+	traits = { indigenous_american_heritage na_north_american_heritage na_sioux_culture_group }
 	male_common_first_names = {
 		Hehaka
 		Inkpaduta
@@ -441,7 +441,7 @@ na_chiwere_winnebago = {
 na_omaha_ponca = {
 	color = { 190 0 70 }
 	religion = na_native_american_spirituality
-	traits = { na_native_american_heritage na_north_american_heritage na_sioux_culture_group }
+	traits = { indigenous_american_heritage na_north_american_heritage na_sioux_culture_group }
 	male_common_first_names = {
 		Hehaka
 		Inkpaduta
@@ -493,7 +493,7 @@ na_omaha_ponca = {
 na_kansa_osage = {
 	color = { 0 165 190 }
 	religion = na_native_american_spirituality
-	traits = { na_native_american_heritage na_north_american_heritage na_sioux_culture_group }
+	traits = { indigenous_american_heritage na_north_american_heritage na_sioux_culture_group }
 	male_common_first_names = {
 		Hehaka
 		Inkpaduta
@@ -545,7 +545,7 @@ na_kansa_osage = {
 na_quapaw = {
 	color = { 190 120 0 }
 	religion = na_native_american_spirituality
-	traits = { na_native_american_heritage na_north_american_heritage na_sioux_culture_group }
+	traits = { indigenous_american_heritage na_north_american_heritage na_sioux_culture_group }
 	male_common_first_names = {
 		Hehaka
 		Inkpaduta
@@ -597,7 +597,7 @@ na_quapaw = {
 na_mandan = {
 	color = { 25 0 190 }
 	religion = na_native_american_spirituality
-	traits = { na_native_american_heritage na_north_american_heritage na_sioux_culture_group }
+	traits = { indigenous_american_heritage na_north_american_heritage na_sioux_culture_group }
 	male_common_first_names = {
 		Hehaka
 		Inkpaduta
@@ -649,7 +649,7 @@ na_mandan = {
 na_cree_montagnais = {
 	color = { 248 112 96 }
 	religion = na_native_american_spirituality
-	traits = { na_native_american_heritage na_north_american_heritage na_algonquian_culture_group }
+	traits = { indigenous_american_heritage na_north_american_heritage na_algonquian_culture_group }
 	male_common_first_names={
 		Alexis
 		Baptiste
@@ -699,7 +699,7 @@ na_cree_montagnais = {
 na_ojibwe_potawatomi = {
 	color = { 96 156 248 }
 	religion = na_ojibwe_spirituality
-	traits = { na_native_american_heritage na_north_american_heritage na_algonquian_culture_group }
+	traits = { indigenous_american_heritage na_north_american_heritage na_algonquian_culture_group }
 	male_common_first_names={
 		Alexis
 		Baptiste
@@ -749,7 +749,7 @@ na_ojibwe_potawatomi = {
 na_blackfoot = {
 	color = { 232 248 96 }
 	religion = na_blackfoot_spirituality
-	traits = { na_native_american_heritage na_north_american_heritage na_algonquian_culture_group }
+	traits = { indigenous_american_heritage na_north_american_heritage na_algonquian_culture_group }
 	male_common_first_names={
 		Alexis
 		Baptiste
@@ -799,7 +799,7 @@ na_blackfoot = {
 na_arapahoan = {
 	color = { 188 96 248 }
 	religion = na_native_american_spirituality
-	traits = { na_native_american_heritage na_north_american_heritage na_algonquian_culture_group }
+	traits = { indigenous_american_heritage na_north_american_heritage na_algonquian_culture_group }
 	male_common_first_names={
 		Alexis
 		Baptiste
@@ -849,7 +849,7 @@ na_arapahoan = {
 na_miami_illinois = {
 	color = { 96 248 188 }
 	religion = na_native_american_spirituality
-	traits = { na_native_american_heritage na_north_american_heritage na_algonquian_culture_group }
+	traits = { indigenous_american_heritage na_north_american_heritage na_algonquian_culture_group }
 	male_common_first_names={
 		Alexis
 		Baptiste
@@ -899,7 +899,7 @@ na_miami_illinois = {
 na_eastern_algonquian = {
 	color = { 248 96 232 }
 	religion = na_native_american_spirituality
-	traits = { na_native_american_heritage na_north_american_heritage na_algonquian_culture_group }
+	traits = { indigenous_american_heritage na_north_american_heritage na_algonquian_culture_group }
 	male_common_first_names={
 		Alexis
 		Baptiste
@@ -949,7 +949,7 @@ na_eastern_algonquian = {
 na_caddoan = {
 	color = { 112 5 72 }
 	religion = na_native_american_spirituality
-	traits = { na_native_american_heritage na_north_american_heritage na_caddoan_culture_group }
+	traits = { indigenous_american_heritage na_north_american_heritage na_caddoan_culture_group }
 	male_common_first_names={
 		Apuckshunubbee
 		Benjamin
@@ -990,7 +990,7 @@ na_caddoan = {
 na_chickasaw_choctaw = {
 	color = { 112 46 5 }
 	religion = na_native_american_spirituality
-	traits = { na_native_american_heritage na_north_american_heritage na_muscogean_culture_group }
+	traits = { indigenous_american_heritage na_north_american_heritage na_muscogean_culture_group }
 	male_common_first_names={
 		Hehaka
 		Inkpaduta
@@ -1042,7 +1042,7 @@ na_chickasaw_choctaw = {
 na_muscogee = {
 	color = { 5 112 100 }
 	religion = na_native_american_spirituality
-	traits = { na_native_american_heritage na_north_american_heritage na_muscogean_culture_group }
+	traits = { indigenous_american_heritage na_north_american_heritage na_muscogean_culture_group }
 	male_common_first_names={
 		Hehaka
 		Inkpaduta
@@ -1094,7 +1094,7 @@ na_muscogee = {
 na_haudenosaunee = {
 	color = { 19 112 5 }
 	religion = na_the_great_law_of_peace
-	traits = { na_native_american_heritage na_north_american_heritage na_iroquois_culture_group }
+	traits = { indigenous_american_heritage na_north_american_heritage na_iroquois_culture_group }
 	male_common_first_names={
 		Akwiraron Akwirente
 		Domagaya
@@ -1138,7 +1138,7 @@ na_haudenosaunee = {
 na_tuscarora_nottoway = {
 	color = { 45 5 112 }
 	religion = na_the_great_law_of_peace
-	traits = { na_native_american_heritage na_north_american_heritage na_iroquois_culture_group }
+	traits = { indigenous_american_heritage na_north_american_heritage na_iroquois_culture_group }
 	male_common_first_names={
 		Akwiraron Akwirente
 		Domagaya
@@ -1182,7 +1182,7 @@ na_tuscarora_nottoway = {
 na_cherokee = {
 	color = { 112 99 5 }
 	religion = na_cherokee_spirituality
-	traits = { na_native_american_heritage na_north_american_heritage na_iroquois_culture_group }
+	traits = { indigenous_american_heritage na_north_american_heritage na_iroquois_culture_group }
 	male_common_first_names={
 		Akwiraron Akwirente
 		Domagaya
@@ -1226,7 +1226,7 @@ na_cherokee = {
 na_northern_athabaskan = {
 	color = { 220 247 99 }
 	religion = na_native_american_spirituality
-	traits = { na_native_american_heritage na_north_american_heritage na_athabaskan_culture_group }
+	traits = { indigenous_american_heritage na_north_american_heritage na_athabaskan_culture_group }
 	male_common_first_names={
 		Caubvick
 		David
@@ -1289,7 +1289,7 @@ na_northern_athabaskan = {
 na_pacific_athabaskan = {
 	color = { 247 99 146 }
 	religion = na_native_american_spirituality
-	traits = { na_native_american_heritage na_north_american_heritage na_athabaskan_culture_group }
+	traits = { indigenous_american_heritage na_north_american_heritage na_athabaskan_culture_group }
 	male_common_first_names={
 		Caubvick
 		David
@@ -1352,7 +1352,7 @@ na_pacific_athabaskan = {
 na_apalachee = {
 	color = { 99 247 126 }
 	religion = na_native_american_spirituality
-	traits = { na_native_american_heritage na_north_american_heritage na_athabaskan_culture_group }
+	traits = { indigenous_american_heritage na_north_american_heritage na_athabaskan_culture_group }
 	male_common_first_names={
 		Caubvick
 		David
@@ -1415,7 +1415,7 @@ na_apalachee = {
 na_shoshone = {
 	color = { 200 99 247 }
 	religion = na_native_american_spirituality
-	traits = { na_native_american_heritage na_north_american_heritage na_uto_aztecan_culture_group }
+	traits = { indigenous_american_heritage na_north_american_heritage na_uto_aztecan_culture_group }
 	male_common_first_names={
 		Antonga
 		Arapeen
@@ -1474,7 +1474,7 @@ na_shoshone = {
 na_paiute = {
 	color = { 126 99 247 }
 	religion = na_native_american_spirituality
-	traits = { na_native_american_heritage na_north_american_heritage na_uto_aztecan_culture_group }
+	traits = { indigenous_american_heritage na_north_american_heritage na_uto_aztecan_culture_group }
 	male_common_first_names={
 		Antonga
 		Arapeen
@@ -1533,7 +1533,7 @@ na_paiute = {
 na_colorado_numic = {
 	color = { 99 220 247 }
 	religion = na_native_american_spirituality
-	traits = { na_native_american_heritage na_north_american_heritage na_uto_aztecan_culture_group }
+	traits = { indigenous_american_heritage na_north_american_heritage na_uto_aztecan_culture_group }
 	male_common_first_names = {
 		Antonga
 		Arapeen
@@ -1592,7 +1592,7 @@ na_colorado_numic = {
 na_comanche = {
 	color = { 247 200 99 }
 	religion = na_native_american_spirituality
-	traits = { na_native_american_heritage na_north_american_heritage na_uto_aztecan_culture_group }
+	traits = { indigenous_american_heritage na_north_american_heritage na_uto_aztecan_culture_group }
 	male_common_first_names={
 		Esihabit
 		Huupi-pahati Hitetetsi
@@ -1639,7 +1639,7 @@ na_comanche = {
 na_northern_uto_aztecan = {
 	color = { 99 146 247 }
 	religion = na_native_american_spirituality
-	traits = { na_native_american_heritage na_north_american_heritage na_uto_aztecan_culture_group }
+	traits = { indigenous_american_heritage na_north_american_heritage na_uto_aztecan_culture_group }
 	male_common_first_names={
 		Antonga
 		Arapeen
@@ -1698,7 +1698,7 @@ na_northern_uto_aztecan = {
 na_southern_uto_aztecan = {
 	color = { 247 126 99 }
 	religion = na_native_american_spirituality
-	traits = { na_native_american_heritage na_north_american_heritage na_uto_aztecan_culture_group }
+	traits = { indigenous_american_heritage na_north_american_heritage na_uto_aztecan_culture_group }
 	male_common_first_names={
 		Antonga
 		Arapeen
@@ -1757,7 +1757,7 @@ na_southern_uto_aztecan = {
 na_nahuan = {
 	color = { 99 247 200 }
 	religion = na_native_american_spirituality
-	traits = { na_native_american_heritage na_north_american_heritage na_uto_aztecan_culture_group }
+	traits = { indigenous_american_heritage na_north_american_heritage na_uto_aztecan_culture_group }
 	male_common_first_names={
 		Antonga
 		Arapeen
@@ -1816,7 +1816,7 @@ na_nahuan = {
 na_piman = {
 	color = { 247 99 220 }
 	religion = na_native_american_spirituality
-	traits = { na_native_american_heritage na_north_american_heritage na_uto_aztecan_culture_group }
+	traits = { indigenous_american_heritage na_north_american_heritage na_uto_aztecan_culture_group }
 	male_common_first_names = {
 		Antonga
 		Arapeen
@@ -1875,7 +1875,7 @@ na_piman = {
 na_optan = {
 	color = { 146 247 99 }
 	religion = na_native_american_spirituality
-	traits = { na_native_american_heritage na_north_american_heritage na_uto_aztecan_culture_group }
+	traits = { indigenous_american_heritage na_north_american_heritage na_uto_aztecan_culture_group }
 	male_common_first_names={
 		Antonga
 		Arapeen
@@ -1934,7 +1934,7 @@ na_optan = {
 na_cahita = {
 	color = { 126 99 247 }
 	religion = na_native_american_spirituality
-	traits = { na_native_american_heritage na_north_american_heritage na_uto_aztecan_culture_group }
+	traits = { indigenous_american_heritage na_north_american_heritage na_uto_aztecan_culture_group }
 	male_common_first_names={
 		Antonga
 		Arapeen
@@ -1993,7 +1993,7 @@ na_cahita = {
 na_corachol = {
 	color = { 247 200 99 }
 	religion = na_native_american_spirituality
-	traits = { na_native_american_heritage na_north_american_heritage na_uto_aztecan_culture_group }
+	traits = { indigenous_american_heritage na_north_american_heritage na_uto_aztecan_culture_group }
 	male_common_first_names={
 		Antonga
 		Arapeen
@@ -2052,7 +2052,7 @@ na_corachol = {
 na_yuman = {
 	color = { 99 220 247 }
 	religion = na_native_american_spirituality
-	traits = { na_native_american_heritage na_north_american_heritage na_yuman_culture_group }
+	traits = { indigenous_american_heritage na_north_american_heritage na_yuman_culture_group }
 	male_common_first_names={
 		Aurelio
 		Camilo
@@ -2113,7 +2113,7 @@ na_yuman = {
 na_salishan = {
 	color = { 247 99 146 }
 	religion = na_native_american_spirituality
-	traits = { na_native_american_heritage na_north_american_heritage na_salishan_culture_group }
+	traits = { indigenous_american_heritage na_north_american_heritage na_salishan_culture_group }
 	male_common_first_names={
 		Cumshewa
 		Cuneah
@@ -2160,7 +2160,7 @@ na_salishan = {
 na_shapwailutan = {
 	color = { 99 247 126 }
 	religion = na_native_american_spirituality
-	traits = { na_native_american_heritage na_north_american_heritage na_shapwailutan_culture_group }
+	traits = { indigenous_american_heritage na_north_american_heritage na_shapwailutan_culture_group }
 	male_common_first_names = {
 		Catecahassa Cottawamago Cheeseekau
 		Gakiiwegwanebi
@@ -2200,7 +2200,7 @@ na_shapwailutan = {
 na_tonkawa = {
 	color = { 200 99 247 }
 	religion = na_native_american_spirituality
-	traits = { na_native_american_heritage na_north_american_heritage na_tonkawa_culture_group }
+	traits = { indigenous_american_heritage na_north_american_heritage na_tonkawa_culture_group }
 	male_common_first_names = {
 		Catecahassa Cottawamago Cheeseekau
 		Gakiiwegwanebi
@@ -2240,7 +2240,7 @@ na_tonkawa = {
 na_coahuiltecan = {
 	color = { 247 126 99 }
 	religion = na_native_american_spirituality
-	traits = { na_native_american_heritage na_north_american_heritage na_coahuiltecan_culture_group }
+	traits = { indigenous_american_heritage na_north_american_heritage na_coahuiltecan_culture_group }
 	male_common_first_names = {
 		Catecahassa Cottawamago Cheeseekau
 		Gakiiwegwanebi
@@ -2280,7 +2280,7 @@ na_coahuiltecan = {
 pueblo={
 	color= hsv{ 0.19 0.34 0.93 }
 	religion = na_native_american_spirituality
-	traits = { indigenous_american_heritage north_american_group }
+	traits = { indigenous_american_heritage na_north_american_heritage na_uto_aztecan_culture_group }
 	male_common_first_names={
 		Alchesay
 		Amisoli
@@ -2336,7 +2336,7 @@ pueblo={
 
 navajo={
 	color= hsv{ 0.62 0.26 0.74 }
-	traits = { indigenous_american_heritage north_american_group }
+	traits = { indigenous_american_heritage na_north_american_heritage na_uto_aztecan_culture_group }
 	religion = na_native_american_spirituality
 	male_common_first_names={
 		Barboncito

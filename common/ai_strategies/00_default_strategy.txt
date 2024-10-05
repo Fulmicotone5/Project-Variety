@@ -1707,6 +1707,13 @@ ai_strategy_default = {
 				}
 				multiply = 0.0
 			}
+			if = {
+				limit = {
+					lenient_fm_behavior_trigger = yes
+					scope:target_state = { is_homeland_of_country_cultures = scope:target_country }
+				}
+				multiply = 0.0
+			}
 
 			if = {
 				limit = {
@@ -2177,6 +2184,12 @@ ai_strategy_default = {
 			if = {
 				limit = {
 					lenient_ai_behavior_trigger = yes
+				}
+				multiply = 0.5
+			}
+			if = {
+				limit = {
+					lenient_fm_behavior_trigger = yes
 				}
 				multiply = 0.5
 			}
@@ -4345,6 +4358,12 @@ ai_strategy_default = {
 				}
 				multiply = 1.5
 			}
+			if = {
+				limit = {
+					lenient_fm_behavior_trigger = yes
+				}
+				multiply = 1.5
+			}
 
 			if = {
 				limit = {
@@ -4366,6 +4385,13 @@ ai_strategy_default = {
 			if = {
 				limit = {
 					harsh_ai_behavior_trigger = yes
+				}
+				multiply = 0.75
+			}	
+
+			if = {
+				limit = {
+					harsh_fm_behavior_trigger = yes
 				}
 				multiply = 0.75
 			}	
@@ -4584,10 +4610,22 @@ ai_strategy_default = {
 				}
 				multiply = 1.5
 			}
+			if = {
+				limit = {
+					lenient_fm_behavior_trigger = yes
+				}
+				multiply = 1.5
+			}
 			
 			if = {
 				limit = {
 					harsh_ai_behavior_trigger = yes
+				}
+				multiply = 0.75
+			}	
+			if = {
+				limit = {
+					harsh_fm_behavior_trigger = yes
 				}
 				multiply = 0.75
 			}	
@@ -4748,6 +4786,13 @@ ai_strategy_default = {
 
 			if = {
 				limit = {
+					harsh_fm_behavior_trigger = yes
+				}
+				multiply = 0.75
+			}
+
+			if = {
+				limit = {
 					scope:target_country.infamy >= infamy_threshold:infamous
 				}
 				multiply = 0.9
@@ -4885,6 +4930,12 @@ ai_strategy_default = {
 				}
 				multiply = 0.75
 			}
+			if = {
+				limit = {
+					lenient_fm_behavior_trigger = yes
+				}
+				multiply = 0.75
+			}
 			
 			if = {
 				limit = {
@@ -4892,7 +4943,12 @@ ai_strategy_default = {
 				}
 				multiply = 1.5
 			}	
-			
+			if = {
+				limit = {
+					harsh_fm_behavior_trigger = yes
+				}
+				multiply = 1.5
+			}
 			if = {
 				limit = {
 					has_game_rule = high_ai_aggression
@@ -5165,10 +5221,22 @@ ai_strategy_default = {
 				}
 				multiply = 0.25
 			}
+			if = {
+				limit = {
+					lenient_fm_behavior_trigger = yes
+				}
+				multiply = 0.25
+			}
 			
 			if = {
 				limit = {
 					harsh_ai_behavior_trigger = yes
+				}
+				multiply = 1.25
+			}
+			if = {
+				limit = {
+					harsh_fm_behavior_trigger = yes
 				}
 				multiply = 1.25
 			}
@@ -5395,6 +5463,12 @@ ai_strategy_default = {
 					lenient_ai_behavior_trigger = yes
 				}
 				multiply = 0.50
+			}	
+			if = {
+				limit = {
+					lenient_fm_behavior_trigger = yes
+				}
+				multiply = 0.50
 			}		
 			
 			if = {
@@ -5405,6 +5479,12 @@ ai_strategy_default = {
 			if = {
 				limit = {
 					harsh_ai_behavior_trigger = yes
+				}
+				multiply = 1.5
+			}	
+			if = {
+				limit = {
+					harsh_fm_behavior_trigger = yes
 				}
 				multiply = 1.5
 			}	
@@ -6095,6 +6175,12 @@ ai_strategy_default = {
 				}
 				multiply = 0.0
 			}
+			if = {
+				limit = {
+					lenient_fm_behavior_trigger = yes
+				}
+				multiply = 0.0
+			}
 
 			min = 0
 			max = 200			
@@ -6123,6 +6209,12 @@ ai_strategy_default = {
 			if = {
 				limit = {
 					lenient_ai_behavior_trigger = yes
+				}
+				multiply = 0.0
+			}
+			if = {
+				limit = {
+					lenient_fm_behavior_trigger = yes
 				}
 				multiply = 0.0
 			}

@@ -326,6 +326,25 @@
 	}
 	text = {
 		trigger = {
+			country_has_state_religion = rel:na_wocekiye
+			piety_cost_trigger = yes
+		}
+		localization_key = na_wocekiye_aspect_1
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:na_wocekiye
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = na_wocekiye_aspect_1_mdf
+				}
+			}
+		}
+		localization_key = na_wocekiye_aspect_1_black
+	}
+	text = {
+		trigger = {
 			country_has_state_religion = rel:atheist
 			piety_cost_trigger = yes
 		}
@@ -670,6 +689,25 @@ religion_aspect_2 = {
 			}
 		}
 		localization_key = animist_aspect_2_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:na_wocekiye
+			piety_cost_trigger = yes
+		}
+		localization_key = na_wocekiye_aspect_2
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:na_wocekiye
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = na_wocekiye_aspect_2_mdf
+				}
+			}
+		}
+		localization_key = na_wocekiye_aspect_2_black
 	}
 	text = {
 		trigger = {
@@ -1020,6 +1058,25 @@ religion_aspect_3 = {
 	}
 	text = {
 		trigger = {
+			country_has_state_religion = rel:na_wocekiye
+			piety_cost_trigger = yes
+		}
+		localization_key = na_wocekiye_aspect_3
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:na_wocekiye
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = na_wocekiye_aspect_3_mdf
+				}
+			}
+		}
+		localization_key = na_wocekiye_aspect_3_black
+	}
+	text = {
+		trigger = {
 			country_has_state_religion = rel:atheist
 			piety_cost_trigger = yes
 		}
@@ -1364,6 +1421,25 @@ religion_aspect_4 = {
 			}
 		}
 		localization_key = animist_aspect_4_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:na_wocekiye
+			piety_cost_trigger = yes
+		}
+		localization_key = na_wocekiye_aspect_4
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:na_wocekiye
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = na_wocekiye_aspect_4_mdf
+				}
+			}
+		}
+		localization_key = na_wocekiye_aspect_4_black
 	}
 	text = {
 		trigger = {
@@ -1714,6 +1790,25 @@ religion_aspect_5 = {
 	}
 	text = {
 		trigger = {
+			country_has_state_religion = rel:na_wocekiye
+			piety_cost_trigger = yes
+		}
+		localization_key = na_wocekiye_aspect_5
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:na_wocekiye
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = na_wocekiye_aspect_5_mdf
+				}
+			}
+		}
+		localization_key = na_wocekiye_aspect_5_black
+	}
+	text = {
+		trigger = {
 			country_has_state_religion = rel:atheist
 			piety_cost_trigger = yes
 		}
@@ -2058,6 +2153,25 @@ religion_aspect_6 = {
 			}
 		}
 		localization_key = animist_aspect_6_black
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:na_wocekiye
+			piety_cost_trigger = yes
+		}
+		localization_key = na_wocekiye_aspect_6
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:na_wocekiye
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = na_wocekiye_aspect_6_mdf
+				}
+			}
+		}
+		localization_key = na_wocekiye_aspect_6_black
 	}
 	text = {
 		trigger = {
@@ -2408,6 +2522,25 @@ religion_aspect_7 = {
 	}
 	text = {
 		trigger = {
+			country_has_state_religion = rel:na_wocekiye
+			piety_cost_trigger = yes
+		}
+		localization_key = na_wocekiye_aspect_7
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:na_wocekiye
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = na_wocekiye_aspect_7_mdf
+				}
+			}
+		}
+		localization_key = na_wocekiye_aspect_7_black
+	}
+	text = {
+		trigger = {
 			country_has_state_religion = rel:atheist
 			piety_cost_trigger = yes
 		}
@@ -2755,6 +2888,25 @@ religion_aspect_8 = {
 	}
 	text = {
 		trigger = {
+			country_has_state_religion = rel:na_wocekiye
+			piety_cost_trigger = yes
+		}
+		localization_key = na_wocekiye_aspect_8
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:na_wocekiye
+			OR = {
+				var:piety_bar_point < 125
+				NOT = {
+					has_modifier = na_wocekiye_aspect_8_mdf
+				}
+			}
+		}
+		localization_key = na_wocekiye_aspect_8_black
+	}
+	text = {
+		trigger = {
 			country_has_state_religion = rel:atheist
 			piety_cost_trigger = yes
 		}
@@ -2879,6 +3031,12 @@ religion_aspect_9 = {
 			country_has_state_religion = rel:animist
 		}
 		localization_key = animist_aspect_9
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:na_wocekiye
+		}
+		localization_key = na_wocekiye_aspect_9
 	}
 	text = {
 		trigger = {
@@ -4082,6 +4240,12 @@ religion_aspect_text_1 = {
 	}
 	text = {
 		trigger = {
+			country_has_state_religion = rel:na_wocekiye
+		}
+		localization_key = na_wocekiye_aspect_text_1
+	}
+	text = {
+		trigger = {
 			country_has_state_religion = rel:atheist
 		}
 		localization_key = atheist_aspect_text_1
@@ -4179,6 +4343,12 @@ religion_aspect_text_2 = {
 			country_has_state_religion = rel:animist
 		}
 		localization_key = animist_aspect_text_2
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:na_wocekiye
+		}
+		localization_key = na_wocekiye_aspect_text_2
 	}
 	text = {
 		trigger = {
@@ -4282,6 +4452,12 @@ religion_aspect_text_3 = {
 	}
 	text = {
 		trigger = {
+			country_has_state_religion = rel:na_wocekiye
+		}
+		localization_key = na_wocekiye_aspect_text_3
+	}
+	text = {
+		trigger = {
 			country_has_state_religion = rel:atheist
 		}
 		localization_key = atheist_aspect_text_3
@@ -4382,6 +4558,12 @@ religion_aspect_text_4 = {
 	}
 	text = {
 		trigger = {
+			country_has_state_religion = rel:na_wocekiye
+		}
+		localization_key = na_wocekiye_aspect_text_4
+	}
+	text = {
+		trigger = {
 			country_has_state_religion = rel:atheist
 		}
 		localization_key = atheist_aspect_text_4
@@ -4479,6 +4661,12 @@ religion_aspect_text_5 = {
 			country_has_state_religion = rel:animist
 		}
 		localization_key = animist_aspect_text_5
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:na_wocekiye
+		}
+		localization_key = na_wocekiye_aspect_text_5
 	}
 	text = {
 		trigger = {
@@ -4583,6 +4771,12 @@ religion_aspect_text_6 = {
 	}
 	text = {
 		trigger = {
+			country_has_state_religion = rel:na_wocekiye
+		}
+		localization_key = na_wocekiye_aspect_text_6
+	}
+	text = {
+		trigger = {
 			country_has_state_religion = rel:atheist
 		}
 		localization_key = atheist_aspect_text_6
@@ -4683,6 +4877,12 @@ religion_aspect_text_7 = {
 	}
 	text = {
 		trigger = {
+			country_has_state_religion = rel:na_wocekiye
+		}
+		localization_key = na_wocekiye_aspect_text_7
+	}
+	text = {
+		trigger = {
 			country_has_state_religion = rel:atheist
 		}
 		localization_key = atheist_aspect_text_7
@@ -4780,6 +4980,12 @@ religion_aspect_text_8 = {
 			country_has_state_religion = rel:animist
 		}
 		localization_key = animist_aspect_text_8
+	}
+	text = {
+		trigger = {
+			country_has_state_religion = rel:na_wocekiye
+		}
+		localization_key = na_wocekiye_aspect_text_8
 	}
 	text = {
 		trigger = {

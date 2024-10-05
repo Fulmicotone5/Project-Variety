@@ -277,7 +277,7 @@ je_buy_louisiana_mex_desc:0 "We can send a delegation to France to make a purcha
 
  je_dakota_main:0 "Modernizing our Nation"
  je_dakota_main_reason:0 "The status of the #bold Progress Bar#! will #tooltippable;tooltip:[Country.GetTooltipTag],je_dakota_main_advance advance#! based on certain conditions."
- je_dakota_main_goal:0 "The #bold Progress Bar#! has reached #bold 300#!, signifying that our nation has modernized enought to be able to stand against foreign powers."
+ je_dakota_main_goal:0 "The #bold Progress Bar#! has reached #bold 200#!, signifying that our nation has modernized enought to be able to stand against foreign powers."
 
  je_dakota_main_advance:0 "• Building a university\n• Opening our market to foreign trade\n• Having researched #bold Line Infantry#!\n• Having a [concept_literacy] rating above 30%\n• Opening our borders\n• Changing to a law that allows the development of a industrial sector"
  anarcho_c_text:0 "[GetIdeology('ideology_anarcho_capitalism').GetName] and [GetIdeology('ideology_anarchist').GetName] characters will appear much more frequently in Dakota"

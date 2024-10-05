@@ -79,6 +79,18 @@ state_atheism.1 = {
 	}
 	event_image = {
 		trigger = {
+			religion = rel:zoroastrian
+		}
+		video = "ep1_central_asian_city"
+	}
+	event_image = {
+		trigger = {
+			religion = rel:na_wocekiye
+		}
+		video = "europenorthamerica_native_american"
+	}
+	event_image = {
+		trigger = {
 			NOR = {
 				religion = rel:jewish
 				religion = rel:protestant
@@ -94,7 +106,7 @@ state_atheism.1 = {
 				religion = rel:sunni
 				religion = rel:shiite
 				religion = rel:zoroastrian
-				religion = rel:baal
+				religion = rel:na_wocekiye
 			}
 		}
 		video = "africa_animism"
@@ -657,6 +669,18 @@ state_atheism.6 = {
 	}
 	event_image = {
 		trigger = {
+			country_has_state_religion = rel:zoroastrian
+		}
+		video = "ep1_central_asian_city"
+	}
+	event_image = {
+		trigger = {
+			country_has_state_religion = rel:na_wocekiye
+		}
+		video = "europenorthamerica_native_american"
+	}
+	event_image = {
+		trigger = {
 			NOR = {
 				country_has_state_religion = rel:jewish
 				country_has_state_religion = rel:protestant
@@ -672,7 +696,7 @@ state_atheism.6 = {
 				country_has_state_religion = rel:sunni
 				country_has_state_religion = rel:shiite
 				country_has_state_religion = rel:zoroastrian
-				country_has_state_religion = rel:baal
+				country_has_state_religion = rel:na_wocekiye
 			}
 		}
 		video = "africa_animism"

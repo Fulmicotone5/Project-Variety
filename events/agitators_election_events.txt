@@ -4813,6 +4813,18 @@ agitators_election_events.36 = {
 	}
 	event_image = {
 		trigger = {
+			religion = rel:zoroastrian
+		}
+		video = "ep1_central_asian_city"
+	}
+	event_image = {
+		trigger = {
+			religion = rel:na_wocekiye
+		}
+		video = "europenorthamerica_native_american"
+	}
+	event_image = {
+		trigger = {
 			NOR = {
 				religion = rel:jewish
 				religion = rel:protestant
@@ -4827,8 +4839,8 @@ agitators_election_events.36 = {
 				religion = rel:sikh
 				religion = rel:sunni
 				religion = rel:shiite
+				religion = rel:na_wocekiye
 				religion = rel:zoroastrian
-				religion = rel:baal
 			}
 		}
 		video = "africa_animism"

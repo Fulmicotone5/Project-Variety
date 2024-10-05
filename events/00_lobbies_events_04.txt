@@ -953,6 +953,22 @@ lobby_events.2 = {
 	}
 	event_image = {
 		trigger = {
+			country_has_state_religion = rel:zoroastrian
+		}
+		video = "ep1_central_asian_city"
+
+		on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	}
+	event_image = {
+		trigger = {
+			country_has_state_religion = rel:na_wocekiye
+		}
+		video = "europenorthamerica_native_american"
+
+		on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	}
+	event_image = {
+		trigger = {
 			NOR = {
 				country_has_state_religion = rel:jewish
 				country_has_state_religion = rel:protestant
@@ -967,8 +983,8 @@ lobby_events.2 = {
 				country_has_state_religion = rel:sikh
 				country_has_state_religion = rel:sunni
 				country_has_state_religion = rel:shiite
+				country_has_state_religion = rel:na_wocekiye
 				country_has_state_religion = rel:zoroastrian
-				country_has_state_religion = rel:baal
 			}
 		}
 		video = "africa_animism"
