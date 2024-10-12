@@ -451,7 +451,7 @@ ve_ai_boost_idea = {
 ve_ai_uses_religion = {
 	if = {
 		limit = {
-			piety_cost_trigger = yes
+			piety_cost_trigger ?= yes
 		}
 		random_list = {
 			12 = {
@@ -678,7 +678,7 @@ ve_ai_uses_culture = {
 	if = {
 		limit = {
 			culture_cost_trigger = yes
-			var:selected_reform_value == 0
+			var:selected_reform_value = 0
 		}
 		random_list = {
 			50 = {
@@ -777,7 +777,7 @@ ve_ai_uses_culture = {
 	else_if = {
 		limit = {
 			culture_cost_trigger = yes
-			var:selected_reform_value == 1
+			var:selected_reform_value = 1
 		}
 		random_list = {
 			50 = {
@@ -849,7 +849,7 @@ ve_ai_uses_culture = {
 	else_if = {
 		limit = {
 			culture_cost_trigger = yes
-			var:selected_reform_value == 2
+			var:selected_reform_value = 2
 		}
 		random_list = {
 			50 = {
@@ -921,7 +921,7 @@ ve_ai_uses_culture = {
 	else_if = {
 		limit = {
 			culture_cost_trigger = yes
-			var:selected_reform_value == 3
+			var:selected_reform_value = 3
 		}
 		random_list = {
 			50 = {
@@ -993,7 +993,7 @@ ve_ai_uses_culture = {
 	else_if = {
 		limit = {
 			culture_cost_trigger = yes
-			var:selected_reform_value == 4
+			var:selected_reform_value = 4
 		}
 		random_list = {
 			50 = {
@@ -1065,7 +1065,7 @@ ve_ai_uses_culture = {
 	else_if = {
 		limit = {
 			culture_cost_trigger = yes
-			var:selected_reform_value == 5
+			var:selected_reform_value = 5
 		}
 		random_list = {
 			50 = {
@@ -1137,7 +1137,7 @@ ve_ai_uses_culture = {
 	else_if = {
 		limit = {
 			culture_cost_trigger = yes
-			var:selected_reform_value == 6
+			var:selected_reform_value = 6
 		}
 		random_list = {
 			50 = {
@@ -1213,7 +1213,7 @@ ve_ai_uses_age_bonuses = {
 		}
 		if = {
 			limit = {
-				splendor_cost_trigger = yes
+				splendor_cost_trigger ?= yes
 			}
 			random_list = {
 				17 = {

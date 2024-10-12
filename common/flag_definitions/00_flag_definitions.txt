@@ -6475,6 +6475,14 @@ REM = { # rum
 	}
 }
 
+PIN = { 
+	flag_definition = {	
+		coa = PIN
+		subject_canton = PIN
+		priority = 10
+	}
+}
+
 GAR = { # Greater Armenia
 	flag_definition = {	
 		coa = GAR
@@ -6680,6 +6688,60 @@ SAE = { # Persia
 	}		
 	flag_definition = {
 		coa = SAE_communist
+		priority = 1500
+		trigger = { 
+			coa_def_communist_flag_trigger = yes
+		}
+	}	
+}
+SOP = { # Persia
+	flag_definition = {
+		coa = SOP		
+		priority = 1
+	}
+	flag_definition = {
+		coa = SOP_monarchy	
+		priority = 20
+		trigger = { 
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = SOP_monarchy	
+		priority = 20
+		trigger = { 
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = SOP_communist
+		priority = 1500
+		trigger = { 
+			coa_def_communist_flag_trigger = yes
+		}
+	}	
+}
+TPE = { # Persia
+	flag_definition = {
+		coa = TPE		
+		priority = 1
+	}
+	flag_definition = { #sassanid flag
+		coa = TPE_monarchy	
+		priority = 20
+		trigger = { 
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}		
+	flag_definition = {
+		coa = TPE_theocracy
+		priority = 30
+		trigger = { 
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = TPE_communist
 		priority = 1500
 		trigger = { 
 			coa_def_communist_flag_trigger = yes

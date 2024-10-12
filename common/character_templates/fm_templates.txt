@@ -1,0 +1,17 @@
+farnbag_character_template = {
+    first_name = Farnbag
+    last_name = Adarbad
+    historical = yes
+    birth_date = 1806.4.20
+    culture = cu:persian
+    female = no
+    is_agitator = yes
+    interest_group = ig_devout
+    ideology = ideology_royalist
+    dna = dna_naser_qajar
+    traits = {
+        literary
+        experienced_political_operator
+        demagogue
+    }  
+}

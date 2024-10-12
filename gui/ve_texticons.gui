@@ -1889,6 +1889,294 @@ texticon = {
   }
 }
 texticon = {
+  icon = TPE_idea_icon_1_trad
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_national_ideas/timer_ab_allow_feudal_de_jure_law.dds"
+    fontsize = 55
+  }
+}
+texticon = {
+  icon = TPE_idea_icon_2_trad
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_national_ideas/tolerance_heathen.dds"
+    fontsize = 50
+  }
+}
+texticon = {
+  icon = TPE_idea_icon_bonus
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_national_ideas/global_manpower_modifier.dds"
+    fontsize = 50
+  }
+}
+texticon = {
+  icon = TPE_idea_icon_bonus_black
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_national_ideas/global_manpower_modifier_black.dds"
+    fontsize = 50
+  }
+}
+texticon = {
+  icon = TPE_idea_icon_1
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_national_ideas/bureaucracy_shortage.dds"
+    fontsize = 50
+  }
+}
+texticon = {
+  icon = TPE_idea_icon_1_black
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_national_ideas/bureaucracy_shortage_black.dds"
+    fontsize = 50
+  }
+}
+texticon = {
+  icon = TPE_idea_icon_2
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_national_ideas/local_institution_spread.dds"
+    fontsize = 50
+  }
+}
+texticon = {
+  icon = TPE_idea_icon_2_black
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_national_ideas/local_institution_spread_black.dds"
+    fontsize = 50
+  }
+}
+texticon = {
+  icon = TPE_idea_icon_3
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_national_ideas/discipline.dds"
+    fontsize = 50
+  }
+}
+texticon = {
+  icon = TPE_idea_icon_3_black
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_national_ideas/discipline_black.dds"
+    fontsize = 50
+  }
+}
+texticon = {
+  icon = TPE_idea_icon_4
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_national_ideas/trade_efficiency.dds"
+    fontsize = 50
+  }
+}
+texticon = {
+  icon = TPE_idea_icon_4_black
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_national_ideas/trade_efficiency_black.dds"
+    fontsize = 50
+  }
+}
+texticon = {
+  icon = TPE_idea_icon_5
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_national_ideas/trade_center.dds"
+    fontsize = 50
+  }
+}
+texticon = {
+  icon = TPE_idea_icon_5_black
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_national_ideas/trade_center_black.dds"
+    fontsize = 50
+  }
+}
+texticon = {
+  icon = TPE_idea_icon_6
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_national_ideas/approval_icon.dds"
+    fontsize = 65
+  }
+}
+texticon = {
+  icon = TPE_idea_icon_6_black
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_national_ideas/approval_icon_black.dds"
+    fontsize = 65
+  }
+}
+texticon = {
+  icon = TPE_idea_icon_7
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_national_ideas/aggresive_exp_icon.dds"
+    fontsize = 50
+  }
+}
+texticon = {
+  icon = TPE_idea_icon_7_black
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_national_ideas/aggresive_exp_icon_black.dds"
+    fontsize = 50
+  }
+}
+texticon = {
+  icon = SOP_idea_icon_1_trad
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_national_ideas/timer_ab_allow_feudal_de_jure_law.dds"
+    fontsize = 55
+  }
+}
+texticon = {
+  icon = SOP_idea_icon_2_trad
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_national_ideas/tolerance_heathen.dds"
+    fontsize = 50
+  }
+}
+texticon = {
+  icon = SOP_idea_icon_bonus
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_national_ideas/global_manpower_modifier.dds"
+    fontsize = 50
+  }
+}
+texticon = {
+  icon = SOP_idea_icon_bonus_black
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_national_ideas/global_manpower_modifier_black.dds"
+    fontsize = 50
+  }
+}
+texticon = {
+  icon = SOP_idea_icon_1
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_national_ideas/bureaucracy_shortage.dds"
+    fontsize = 50
+  }
+}
+texticon = {
+  icon = SOP_idea_icon_1_black
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_national_ideas/bureaucracy_shortage_black.dds"
+    fontsize = 50
+  }
+}
+texticon = {
+  icon = SOP_idea_icon_2
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_national_ideas/local_institution_spread.dds"
+    fontsize = 50
+  }
+}
+texticon = {
+  icon = SOP_idea_icon_2_black
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_national_ideas/local_institution_spread_black.dds"
+    fontsize = 50
+  }
+}
+texticon = {
+  icon = SOP_idea_icon_3
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_national_ideas/discipline.dds"
+    fontsize = 50
+  }
+}
+texticon = {
+  icon = SOP_idea_icon_3_black
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_national_ideas/discipline_black.dds"
+    fontsize = 50
+  }
+}
+texticon = {
+  icon = SOP_idea_icon_4
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_national_ideas/trade_efficiency.dds"
+    fontsize = 50
+  }
+}
+texticon = {
+  icon = SOP_idea_icon_4_black
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_national_ideas/trade_efficiency_black.dds"
+    fontsize = 50
+  }
+}
+texticon = {
+  icon = SOP_idea_icon_5
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_national_ideas/trade_center.dds"
+    fontsize = 50
+  }
+}
+texticon = {
+  icon = SOP_idea_icon_5_black
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_national_ideas/trade_center_black.dds"
+    fontsize = 50
+  }
+}
+texticon = {
+  icon = SOP_idea_icon_6
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_national_ideas/approval_icon.dds"
+    fontsize = 65
+  }
+}
+texticon = {
+  icon = SOP_idea_icon_6_black
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_national_ideas/approval_icon_black.dds"
+    fontsize = 65
+  }
+}
+texticon = {
+  icon = SOP_idea_icon_7
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_national_ideas/aggresive_exp_icon.dds"
+    fontsize = 50
+  }
+}
+texticon = {
+  icon = SOP_idea_icon_7_black
+  iconsize = {
+    offset = { 0 15 }
+    texture = "gfx/interface/ve_national_ideas/aggresive_exp_icon_black.dds"
+    fontsize = 50
+  }
+}
+texticon = {
   icon = KOR_idea_icon_1_trad
   iconsize = {
     offset = { 0 15 }

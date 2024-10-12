@@ -1,0 +1,22 @@
+CHARACTERS = {
+	c:SAE ?= {
+		create_character = {
+			first_name = Mohammad_Hassan
+			last_name = Adarbad
+			historical = yes
+			female = no
+			ruler = yes
+			birth_date = 1800.9.7
+			culture = cu:persian
+			religion = rel:sunni
+			interest_group = ig_landowners
+
+			ideology = ideology_royalist
+			traits = {
+				ambitious
+				erudite
+				pious
+			}
+		}
+	}
+}

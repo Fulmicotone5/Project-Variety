@@ -32,6 +32,7 @@ COUNTRIES = {
 		activate_law = law_type:law_collectivized_agriculture
 		activate_law = law_type:law_appointed_bureaucrats
 		activate_law = law_type:law_isolationism
+		activate_law = law_type:law_freedom_of_conscience
 		add_modifier = {
 			name = modifier_dak_one
 		}

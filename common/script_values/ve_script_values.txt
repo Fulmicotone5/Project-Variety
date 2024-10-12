@@ -789,9 +789,7 @@ monthly_splender_points = {
 monthly_culture_reform_point = {
 	if = {
 		limit = {
-			NOT = {
-				var:selected_reform_value == 7
-			}
+			always = yes
 		}
 		if = {
 			limit = {

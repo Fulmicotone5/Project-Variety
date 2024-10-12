@@ -1,5 +1,5 @@
 je_sae_main = {
-	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	icon = "gfx/interface/icons/event_icons/event_fire.dds"
 	group = je_group_historical_content
 	scripted_progress_bar = sassanid_civ_war_progress_bar
 
@@ -11,8 +11,22 @@ je_sae_main = {
 	}
 	on_complete = {
 		remove_modifier = diplomatic_plays_blocked
-		trigger_event = {
-			id = fm_sae.1
+	}
+	fail = {
+		NOT = {
+			has_law = law_type:law_monarchy
+		}
+	}
+	on_monthly_pulse = {
+		random_events = {
+			50 = 0
+			10 = fm_sae.5
+			10 = fm_sae.6
+			10 = fm_sae.7
+			10 = fm_sae.8
+			10 = fm_sae.9
+			10 = fm_sae.10
+			10 = fm_sae.11
 		}
 	}
 	status_desc = {
@@ -21,7 +35,7 @@ je_sae_main = {
 				desc = sae_pr_1
 				trigger = {
 					scope:journal_entry = { 
-						"scripted_bar_progress(sassanid_civ_war_progress_bar)" = 2
+						"scripted_bar_progress(sassanid_civ_war_progress_bar)"<= 2
 					}
 				}
 			}
@@ -76,5 +90,84 @@ je_sae_main = {
 		}
 	}
 	weight = 100
+	should_be_pinned_by_default = yes
+}
+
+je_sae_sunni = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	group = je_group_historical_content
+	complete = {
+		custom_tooltip = {
+			text = je_sae_sunnito
+			NOT = {
+				exists = c:TPE
+			}
+		}
+	}
+	on_complete = {
+		trigger_event = {
+			id = fm_sae.2
+		}
+	}
+	fail = {
+		NOT = {
+			has_law = law_type:law_monarchy
+		}
+	}
+	should_be_pinned_by_default = yes
+}
+
+je_sae_zoro = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	group = je_group_historical_content
+	immediate = {
+		if = {
+			limit = {
+				NOT = {
+					has_variable = victoria_universalis_system_on
+				}
+			}
+			set_missionary_cultural_missionary = yes
+			set_point_system = yes
+			set_idea_buttons = yes
+			set_ideas = yes
+			set_national_idea = yes
+			religion_passive_bonuses = yes
+			national_idea_traditions = yes
+		}
+	}
+	complete = {
+		custom_tooltip = {
+			text = je_sae_zoroto
+			NOT = {
+				exists = c:SOP
+			}
+		}
+	}
+	on_complete = {
+		trigger_event = {
+			id = fm_sae.4
+		}
+	}
+	fail = {
+		NOT = {
+			has_law = law_type:law_monarchy
+		}
+	}
+	should_be_pinned_by_default = yes
+}
+je_zoro = {
+	icon = "gfx/interface/icons/religion_icons/zoroastrianism.dds"
+	group = je_group_historical_content
+	complete = {
+		owns_entire_state_region = STATE_TABRIZ
+	}
+	on_complete = {
+		trigger_event = {
+			id = fm_sae.13
+		}
+	}
+	transferable = no
+	weight = 5000
 	should_be_pinned_by_default = yes
 }

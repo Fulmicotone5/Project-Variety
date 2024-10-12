@@ -22,7 +22,6 @@ opium_wars.1 = {
 	}
 
 	immediate = {
-		set_variable = opium_wars_start_var
 		random_primary_culture = {
 			limit = {
 				has_cultural_obsession = opium

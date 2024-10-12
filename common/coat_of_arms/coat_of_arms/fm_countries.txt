@@ -3289,13 +3289,7 @@ AZB = {
 		texture = "ce_tricolor_horizontal.dds"
 		color1 = "red"
 		color2 = "green"
-	}
-	colored_emblem = {
-		texture = "ce_crescent_star_08.dds"
-		color1 = "white"
-		color2 = "white"
-		instance = { scale = { 0.33 0.33 } position = { 0.5 0.5 } }		
-	}		
+	}	
 }	
 AZB_dictatorship = {
 	pattern = "pattern_solid.tga"
@@ -5106,12 +5100,6 @@ BUK = { # Bukhara
 		instance = { scale = { 0.3 0.3 } position = { 0.45 0.70 } }				
 	}
 	colored_emblem = {
-		texture = "ce_crescent_large.dds"
-		color1 = "white"
-		color2 = "white"
-		instance = { scale = { 0.25 0.6 } rotation = 270 position = { 0.45 0.4 } }			
-	}
-	colored_emblem = {
 		texture = "ce_star_05.dds"
 		color1 = "white"
 		color2 = "white"
@@ -5132,12 +5120,6 @@ BUK_absolute_monarchy = {
 		color1 = "yellow"
 		color2 = "yellow"	
 		instance = { scale = { 0.40 0.40 } position = { 0.5 0.70 } }				
-	}
-	colored_emblem = {
-		texture = "ce_crescent_rotated.dds"
-		color1 = "yellow"
-		color2 = "yellow"
-		instance = { scale = { 0.40 0.40 } position = { 0.49 0.32 } }		
 	}		
 	colored_emblem = {
 		texture = "ce_star_05.dds"
@@ -5170,43 +5152,6 @@ BUK_absolute_monarchy = {
 		instance = { scale = { 0.04 0.12 } rotation = 180 position = { 0.968 0.92 } }		
 	}	
 	colored_emblem = {
-		texture = "ce_pattern_bukhara.dds"
-		color1 = "saffron"
-		color2 = "saffron"		
-		instance = { scale = { 0.14 0.2 } rotation = 100 position = { 0.032 0.20 } }	
-		instance = { scale = { 0.14 0.2 } rotation = 100 position = { 0.032 0.35 } }		
-		instance = { scale = { 0.14 0.2 } rotation = 100 position = { 0.032 0.50 } }
-		instance = { scale = { 0.14 0.2 } rotation = 100 position = { 0.032 0.65 } }			
-		instance = { scale = { 0.14 0.2 } rotation = 100 position = { 0.032 0.80 } }	
-		instance = { scale = { 0.14 0.2 } rotation = 100 position = { 0.968 0.20 } }
-		instance = { scale = { 0.14 0.2 } rotation = 100 position = { 0.968 0.35 } }			
-		instance = { scale = { 0.14 0.2 } rotation = 100 position = { 0.968 0.50 } }	
-		instance = { scale = { 0.14 0.2 } rotation = 100 position = { 0.968 0.65 } }			
-		instance = { scale = { 0.14 0.2 } rotation = 100 position = { 0.968 0.80 } }	
-	
-	}	
-	colored_emblem = {
-		texture = "ce_pattern_bukhara.dds"
-		color1 = "saffron"
-		color2 = "saffron"
-		instance = { scale = { 0.15 0.15 } position = { 0.15 0.05 } }
-		instance = { scale = { 0.15 0.15 } position = { 0.25 0.05 } }
-		instance = { scale = { 0.15 0.15 } position = { 0.35 0.05 } }	
-		instance = { scale = { 0.15 0.15 } position = { 0.45 0.05 } }
-		instance = { scale = { 0.15 0.15 } position = { 0.55 0.05 } }
-		instance = { scale = { 0.15 0.15 } position = { 0.65 0.05 } }	
-		instance = { scale = { 0.15 0.15 } position = { 0.75 0.05 } }
-		instance = { scale = { 0.15 0.15 } position = { 0.85 0.05 } }
-		instance = { scale = { 0.15 0.15 } position = { 0.15 0.95 } }
-		instance = { scale = { 0.15 0.15 } position = { 0.25 0.95 } }
-		instance = { scale = { 0.15 0.15 } position = { 0.35 0.95 } }	
-		instance = { scale = { 0.15 0.15 } position = { 0.45 0.95 } }
-		instance = { scale = { 0.15 0.15 } position = { 0.55 0.95 } }
-		instance = { scale = { 0.15 0.15 } position = { 0.65 0.95 } }	
-		instance = { scale = { 0.15 0.15 } position = { 0.75 0.95 } }
-		instance = { scale = { 0.15 0.15 } position = { 0.85 0.95 } }		
-	}
-	colored_emblem = {
 		texture = "ce_frame_circle.dds"
 		color1 = "brown"
 		color2 = "brown"
@@ -5236,13 +5181,6 @@ BUK_absolute_monarchy = {
 		instance = { scale = { 0.05 0.05 } position = { 0.968 0.575 } }	
 		instance = { scale = { 0.05 0.05 } position = { 0.032 0.425 } }	
 		instance = { scale = { 0.05 0.05 } position = { 0.032 0.575 } }			
-	}	
-	colored_emblem = {
-		texture = "ce_shahada.dds"
-		color1 = "yellow"
-		color2 = "yellow"	
-		instance = { scale = { 0.35 0.9 } rotation = 90 position = { 0.23 0.5 } }	
-		instance = { scale = { 0.35 0.9 } rotation = 90 position = { 0.77 0.5 } }			
 	}		
 }
 BUK_republic = {
@@ -5255,12 +5193,6 @@ BUK_republic = {
 		texture = "ce_bicolor_bottom.dds"
 		color1 = "orange"
 		color2 = "orange"
-	}	
-	colored_emblem = {
-		texture = "ce_crescent_star_08.dds"
-		color1 = "white"
-		color2 = "white"
-		instance = { scale = { 0.8 0.8 } position = { 0.5 0.5 } }		
 	}		
 }
 BUK_theocracy = {
@@ -5285,12 +5217,6 @@ BUK_dictatorship = {
 		color1 = "red"
 		color2 = "red"
 	}	
-	colored_emblem = {
-		texture = "ce_crescent_large.dds"
-		color1 = "yellow"
-		color2 = "yellow"
-		instance = { scale = { 0.5 1.2 } rotation = 270 position = { 0.5 0.58 } }			
-	}
 	colored_emblem = {
 		texture = "ce_star_05.dds"
 		color1 = "yellow"
@@ -12875,12 +12801,6 @@ KAL = { # Kalat
 		color2 = "green"
 	}	
 	colored_emblem = {
-		texture = "ce_crescent_large.dds"
-		color1 = "white"
-		color2 = "white"
-		instance = { scale = { 0.55 1.25 } rotation = 270 position = { 0.5 0.48 } }			
-	}
-	colored_emblem = {
 		texture = "ce_star_05.dds"
 		color1 = "white"
 		color2 = "white"
@@ -12919,12 +12839,6 @@ KAL_theocracy = {
 	color2 = "red"
 	
 	colored_emblem = {
-		texture = "ce_crescent_large.dds"
-		color1 = "white"
-		color2 = "white"
-		instance = { scale = { 0.45 1.0 } rotation = 270 position = { 0.45 0.4 } }			
-	}
-	colored_emblem = {
 		texture = "ce_star_05.dds"
 		color1 = "white"
 		color2 = "white"
@@ -12948,12 +12862,6 @@ KAL_subject = {
 		instance = { scale = { 0.5 0.5 } position = { 0.75 0.5 } }		
 	}	
 	colored_emblem = {
-		texture = "ce_crescent_pale.dds"
-		color1 = "white"
-		color2 = "white"
-		instance = { scale = { 0.48 0.48 } position = { 0.75 0.50 } }			
-	}
-	colored_emblem = {
 		texture = "ce_star_05.dds"
 		color1 = "white"
 		color2 = "white"
@@ -12975,12 +12883,6 @@ KAL_subject_green = {
 		color1 = "white"
 		color2 = "white"
 		instance = { scale = { 0.5 0.5 } position = { 0.75 0.5 } }		
-	}	
-	colored_emblem = {
-		texture = "ce_crescent_pale.dds"
-		color1 = "green"
-		color2 = "green"
-		instance = { scale = { 0.48 0.48 } position = { 0.75 0.50 } }			
 	}
 	colored_emblem = {
 		texture = "ce_star_05.dds"
@@ -13193,12 +13095,6 @@ KOK = { # Kokand
 		color2 = "yellow"	
 		instance = { scale = { 0.8 0.8 } position = { 0.45 0.5 } }				
 	}
-	colored_emblem = {
-		texture = "ce_star_05.dds"
-		color1 = "yellow"
-		color2 = "yellow"
-		instance = { scale = { 0.4 0.4 } position = { 0.61 0.51 } }	
-	}	
 }
 KOK_monarchy = {
 	# variant of the starting flag with three stars
@@ -13206,12 +13102,6 @@ KOK_monarchy = {
 	color1 = "green"
 	color2 = "yellow"
 	
-	colored_emblem = {
-		texture = "ce_crescent.dds"
-		color1 = "yellow"
-		color2 = "yellow"
-		instance = { scale = { 0.8 0.8 } position = { 0.45 0.5 } }		
-	}	
 	colored_emblem = {
 		texture = "ce_star_05.dds"
 		color1 = "yellow"
@@ -14668,13 +14558,7 @@ MAK = { # Makran
 		texture = "ce_tricolor_horizontal.dds"
 		color1 = "red"
 		color2 = "blue_light"
-	}
-	colored_emblem = {
-		texture = "ce_crescent_rotated.dds"
-		color1 = "white"
-		color2 = "white"
-		instance = { scale = { 0.28 0.28 } position = { 0.83 0.175 } }		
-	}		
+	}	
 	colored_emblem = {
 		texture = "ce_star_05.dds"
 		color1 = "white"
@@ -14707,12 +14591,6 @@ MAK_theocracy = {
 		color1 = "red"
 		color2 = "red"
 		instance = { scale = { 0.15 1.0 } position = { 0.325 0.5 } }
-	}	
-	colored_emblem = {
-		texture = "ce_crescent_star_05_rotated.dds"
-		color1 = "white"
-		color2 = "white"
-		instance = { scale = { 0.75 0.75 } position = { 0.72 0.48 } }		
 	}			
 }
 
@@ -19180,6 +19058,16 @@ REM = {
 	}
 }
 
+PIN = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "te_coa_PIN.dds"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
+	}
+}
+
 GAR = {
 	pattern = "pattern_solid.tga"
 	color1 = "red"
@@ -19406,15 +19294,115 @@ PCO = {
 		instance = { position = { 0.175 0.5 } scale = { 0.4 0.4 } }
 	}
 }
-
-SAE_monarchy = { # Persia
+TPE_monarchy = { # Persia
 	pattern = "pattern_border_two_stripes.dds"
 	color1 = "purple"
 	color2 = "red_light"
-	
+
 	textured_emblem = {		
 		texture = "te_coa_sassanid.dds"
 		instance = { scale = { 0.6 0.6 } position = { 0.5 0.5 } }		
+	}	
+}
+
+TPE = {
+	pattern = "pattern_solid.tga"
+	color1 = "green"
+	color2 = "white"
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = "white"
+		color2 = "red"
+	}	
+}
+TPE_theocracy = { # Persia
+	pattern = "pattern_border_two_stripes.dds"
+	color1 = "purple"
+	color2 = "red_light"
+
+	textured_emblem = {
+		texture = "te_coa_zara.dds"
+		instance = { scale = { 0.8 0.8 } position = { 0.5 0.5 } }
+	}	
+}
+TPE_communist = {		
+	# SUMKA flag
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	
+	colored_emblem = {
+		texture = "ce_star_frame_hammer_sickle.dds"
+		color1 = "yellow"
+		color2 = "red"
+		instance = { scale = { 0.35 0.34 } position = { 0.15 0.2 } }
+	}	
+}
+SOP = {
+	pattern = "pattern_solid.tga"
+	color1 = "green"
+	color2 = "white"
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = "white"
+		color2 = "red"
+	}	
+	colored_emblem = {
+		texture = "ce_inti.dds"
+		color1 = "yellow"
+		color2 = "orange"
+		color3 = "white"
+		instance = { scale = { 0.30 0.30 } position = { 0.51 0.465 } }			
+	}	
+
+	colored_emblem = {		
+		texture = "ce_frame_circle.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { scale = { 0.08 0.08 } position = { 0.51 0.465 } }		
+	}	
+	colored_emblem = {		
+		texture = "ce_solid.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { scale = { 0.25 0.10 } position = { 0.5 0.6 } }		
+	}	
+	colored_emblem = {		
+		texture = "ce_solid.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { scale = { 0.26 0.02 } position = { 0.51 0.66 } }		
+	}	
+	colored_emblem = {
+		texture = "ce_lion_persia.dds"
+		color1 = "yellow"
+		color2 = "orange"
+		color3 = "white"
+		instance = { scale = { 0.55 0.55 } position = { 0.5 0.505 } }			
+	}	
+}
+SOP_monarchy = { # Persia
+	pattern = "pattern_solid.tga"
+	color1 = "purple"
+	
+	colored_emblem = {		
+		texture = "ce_crescent_star_06_pale.dds"
+		color1 = "white"
+		instance = { scale = { 0.8 0.8 } position = { 0.5 0.5 } }		
+	}	
+	
+}
+SOP_communist = {		
+	# SUMKA flag
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	
+	colored_emblem = {
+		texture = "ce_star_frame_hammer_sickle.dds"
+		color1 = "yellow"
+		color2 = "red"
+		instance = { scale = { 0.35 0.34 } position = { 0.15 0.2 } }
 	}	
 }
 SAE = {
@@ -19429,6 +19417,17 @@ SAE = {
 	}	
 	
 }
+SAE_monarchy = { # Persia
+	pattern = "pattern_border_two_stripes.dds"
+	color1 = "purple"
+	color2 = "red_light"
+
+	textured_emblem = {		
+		texture = "te_coa_sassanid.dds"
+		instance = { scale = { 0.6 0.6 } position = { 0.5 0.5 } }		
+	}	
+}
+
 
 SAE_communist = {		
 	# SUMKA flag
@@ -25566,12 +25565,6 @@ XIN = { # Xinjiang
 	color2 = "white"
 	color3 = "white"
 	
-	colored_emblem = {
-		texture = "ce_crescent_star_08.dds"
-		color1 = "white"
-		color2 = "white"
-		instance = { position = { 0.5 0.5 } scale = { 0.8 0.8 } }
-	}
 }
 XIN_republic = {
 	# East Turkestan 1933 - A more distinctive flag (short lived republic of Uighuristan)
@@ -25593,13 +25586,7 @@ XIN_subject = {
 	color1 = "red"
 	color2 = "white"
 	color3 = "white"
-	
-	colored_emblem = {
-		texture = "ce_crescent_star_08.dds"
-		color1 = "white"
-		color2 = "white"
-		instance = { position = { 0.75 0.5 } scale = { 0.55 0.55 } }
-	}	
+		
 }
 
 YAK = { # Yakutia

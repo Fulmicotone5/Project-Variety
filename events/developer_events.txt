@@ -933,11 +933,11 @@ dev.9 = {
 			limit = {
 				is_ai = yes
 			}
-			ve_ai_choose_idea = yes
-			ve_ai_boost_idea = yes
-			ve_ai_uses_religion = yes
-			ve_ai_uses_culture = yes
-			ve_ai_uses_age_bonuses = yes
+			#ve_ai_choose_idea = yes
+			#ve_ai_boost_idea = yes
+			#ve_ai_uses_religion = yes
+			#ve_ai_uses_culture = yes
+			#ve_ai_uses_age_bonuses = yes
 		}
 		if = {
 			#For Released and Civil War Countries

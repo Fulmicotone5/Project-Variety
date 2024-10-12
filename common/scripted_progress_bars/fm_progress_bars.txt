@@ -4,17 +4,6 @@ sassanid_civ_war_progress_bar = {
 
 	default = yes
 
-	monthly_progress = {
-		if = {
-			limit = {
-				has_variable = civ_war_comp #This variable stops iteration, and is granted by reaching 360 with one dynasty. It's reset when this JE is completed, or when je_cement_the_rightful_dynasty fails.
-			}
-			add = {
-				desc = "sassanid_cw_var"
-				value = owner.var:sassanid_cw_var
-			}
-		}
-	}
 
 	start_value = 2
 	min_value = 0

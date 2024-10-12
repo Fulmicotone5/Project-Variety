@@ -125,12 +125,6 @@ POPS = {
 				size = 54908
 			}
 		}
-		region_state:CUL = {
-			create_pop = {
-				culture = north_andean
-				size = 908
-			}
-		}
 	}
 	s:STATE_BOLIVAR = {
 		region_state:VNA = {

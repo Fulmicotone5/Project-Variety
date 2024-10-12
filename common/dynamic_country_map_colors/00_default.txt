@@ -539,6 +539,17 @@ persia_mon = {
 	}
 }
 
+sassa_mon = {
+	color = { 229  170  87 }
+	possible = {
+		exists = c:TPE
+		THIS = c:TPE
+		OR = {
+		has_law = law_type:law_monarchy
+		}
+	}
+}
+
 bba_comm = {
 	color = "red_dark"
 	possible = {

@@ -488,6 +488,11 @@ dp_revolution = {
 				}
 			}
 		}
+		scope:initiator = {
+			trigger_event = {
+				id = dev.4
+			}
+		}
 		
 		OR = {
 			has_interest_marker_in_region = scope:target_capital_region

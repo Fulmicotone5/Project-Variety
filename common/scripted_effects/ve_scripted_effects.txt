@@ -135,7 +135,7 @@ splendor_cost = {
 reform_limiter = {
 	if = {
 		limit = {
-			var:selected_reform_value == 7
+			var:selected_reform_value = 7
 		}
 		set_variable = {
 			name = culture_reform_point

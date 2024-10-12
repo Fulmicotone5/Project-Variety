@@ -29,12 +29,11 @@ COUNTRIES = {
 		add_journal_entry = {
 			type = je_sae_main
 		}
-		set_variable = {
-			name = idea_sae
+		trigger_event = {
+			id = fm_sae.1
 		}
 		set_variable = {
-			name = sassanid_cw_var
-			value = 0
+			name = idea_sae
 		}
 		add_modifier = {
 			name = diplomatic_plays_blocked

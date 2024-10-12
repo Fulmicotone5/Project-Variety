@@ -10,7 +10,7 @@ DKT = {
 }
 
 LKT = {
-	color = { 198 114 168 }
+	color = { 13 102 75  }
 
 	country_type = decentralized
 

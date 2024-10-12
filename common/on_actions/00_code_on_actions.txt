@@ -3091,7 +3091,6 @@ on_revolution_start = {
 					}
 				}
 			}
-			set_variable = anti_shogunate_civil_war
 		}
 		if = {
 			limit = {

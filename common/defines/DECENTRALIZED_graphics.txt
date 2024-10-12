@@ -1,6 +1,0 @@
-﻿NMapMode = {
-
-	### DECENTRALIZED ###
-	COLOR_DECENTRALIZED_COUNTRY = { 0.88 0.83 0.82 1.0 }		# Alpha can control blend with country color
-
-}

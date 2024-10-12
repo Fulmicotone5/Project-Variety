@@ -102,7 +102,7 @@ je_fru_main = {
 			}
 			clamp_variable = {
 				name = progress_fra
-				max = 120
+				max = 100
 				min = 0
 			}
 		}
@@ -112,7 +112,7 @@ je_fru_main = {
 		value = root.var:progress_fra
 	}
 	goal_add_value = {
-		value = 120
+		value = 100
 	}
 	progressbar = yes
 	weight = 100

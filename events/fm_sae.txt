@@ -12,32 +12,15 @@ fm_sae.1 = {
 	}
 	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
-	immediate = {
-		random_scope_state = {
-			limit = {
-				state_region = s:STATE_BASRA
-			}
-			save_scope_as = secession_state_sae
-		}
-		create_country = {
-			tag = TPE
-			origin = ROOT
-			state = scope:secession_state_sae
-		}
-		if = {
-			limit = { 
-				has_variable = sassanid_cw_var
-			}
-		}
-		random_state = {
-			limit = {
-				state_region = s:STATE_ERZURUM
-			}
-			set_state_owner = c:TPE
-		}
-	}
+	
 	option = {
 		name = fm_sae.1.a
+		hidden_effect = {
+			trigger_event = {
+				id = fm_sae.3
+				days = 1300
+			}
+		}
 	}
 }
 
@@ -49,53 +32,30 @@ fm_sae.2 = {
 	flavor = fm_sae.2.f
 	duration = 3
 	event_image = {
-		video = "africa_leader_arguing"
+		video = "ep1_persian_court"
 	}
 	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	icon = "gfx/interface/icons/event_icons/event_military.dds"
-	immediate = {
-		random_interest_group = {
-			limit
-			{
-				is_interest_group_type = ig_intelligentsia
-				exist = leader
-			}
-			leader = {
-				save_scope_as = intelligentsia_leader
-			}
-		}
-	}
+	icon = "gfx/interface/icons/religion_icons/sunni.dds"
 	option = {
 		name = fm_sae.2.a
 		add_loyalists = {
-			strata = rich
-			value = 0.2
+			religion = rel:sunni
+			value = 0.25
 		}
-		add_loyalists = {
-			strata = middle
-			value = 0.15
+		add_journal_entry = {
+			type = je_sop
 		}
-		add_loyalists = {
-			strata = poor
-			value = 0.1
+		add_journal_entry = {
+			type = je_sop_levant
 		}
-		s:STATE_DIYARBAKIR = {
-			add_claim = ROOT 
+		add_journal_entry = {
+			type = je_sop_arabia
 		}
-		s:STATE_ADANA = {
-			add_claim = ROOT 
+		add_journal_entry = {
+			type = je_sop_egypt
 		}
-		s:STATE_ERZURUM = {
-			add_claim = ROOT 
-		}
-		s:STATE_TRABZON = {
-			add_claim = ROOT 
-		}
-		s:STATE_ANKARA = {
-			add_claim = ROOT 
-		}
-		s:STATE_KONYA = {
-			add_claim = ROOT 
+		add_journal_entry = {
+			type = je_sop_north_africa
 		}
 		s:STATE_LOWER_EGYPT = {
 			add_claim = ROOT 
@@ -127,20 +87,276 @@ fm_sae.2 = {
 		s:STATE_ALEPPO = {
 			add_claim = ROOT 
 		}
+		s:STATE_HEDJAZ = {
+			add_claim = ROOT 
+		}
+		s:STATE_HAIL = {
+			add_claim = ROOT 
+		}
+		s:STATE_NEJD = {
+			add_claim = ROOT 
+		}
+		s:STATE_LIBYA = {
+			add_claim = ROOT 
+		}
+		s:STATE_TRIPOLI = {
+			add_claim = ROOT 
+		}
+		s:STATE_TUNISIA = {
+			add_claim = ROOT 
+		}
+		s:STATE_CONSTANTINE = {
+			add_claim = ROOT 
+		}
+		s:STATE_ALGIERS = {
+			add_claim = ROOT 
+		}
+		s:STATE_ORAN = {
+			add_claim = ROOT 
+		}
+		s:STATE_AL_RIF = {
+			add_claim = ROOT 
+		}
+		s:STATE_FEZ = {
+			add_claim = ROOT 
+		}
+		s:STATE_MARRAKECH = {
+			add_claim = ROOT 
+		}
+		set_variable = {
+			name = fm_sul_var
+			value = 0
+		}
+	}
+}
+
+fm_sae.3 = {
+	type = country_event
+	placement = ROOT
+	title = fm_sae.3.t
+	desc = fm_sae.3.d
+	flavor = fm_sae.3.f
+	duration = 1
+	event_image = {
+		video = "ep1_ca_mountain_pass_military"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	immediate = {
+		change_tag = SOP
+		set_state_religion = rel:sunni
+		set_variable = {
+			name = civ_war_comp
+			months = 1
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_BASRA
+			}
+			save_scope_as = secession_state_sae
+		}
+		create_country = {
+			tag = TPE
+			origin = ROOT
+			state = scope:secession_state_sae
+		}
+		if = {
+			limit = { 
+				has_variable = var_adur_farn
+			}
+			random_state = {
+				limit = {
+					state_region = s:STATE_FARS
+				}
+				set_state_owner = c:TPE
+			}
+		}
+		if = {
+			limit = { 
+				has_variable = var_adur_burz
+			}
+			random_state = {
+				limit = {
+					state_region = s:STATE_KHORASAN
+				}
+				set_state_owner = c:TPE
+			}
+			random_state = {
+				limit = {
+					state_region = s:STATE_SEMNAN
+				}
+				set_state_owner = c:TPE
+			}
+		}
+		if = {
+			limit = { 
+				has_variable = var_arabistan
+			}
+			random_state = {
+				limit = {
+					state_region = s:STATE_KHUZESTAN
+				}
+				set_state_owner = c:TPE
+			}
+		}
+		if = {
+			limit = { 
+				has_variable = var_irak
+			}
+			random_state = {
+				limit = {
+					state_region = s:STATE_IRAKAJEMI
+				}
+				set_state_owner = c:TPE
+			}
+			random_state = {
+				limit = {
+					state_region = s:STATE_MAZANDARAN
+				}
+				set_state_owner = c:TPE
+			}
+		}
+		if = {
+			limit = { 
+				has_variable = var_isfahan
+			}
+			random_state = {
+				limit = {
+					state_region = s:STATE_ISFAHAN
+				}
+				set_state_owner = c:TPE
+			}
+		}
+		if = {
+			limit = { 
+				has_variable = var_zorokur
+			}
+			random_state = {
+				limit = {
+					state_region = s:STATE_PERSIAN_KURDISTAN
+				}
+				set_state_owner = c:TPE
+			}
+		}
+		if = {
+			limit = { 
+				has_variable = var_luri
+			}
+			random_state = {
+				limit = {
+					state_region = s:STATE_LURISTAN
+				}
+				set_state_owner = c:TPE
+			}
+		}
+		c:TPE = {
+			create_character = {
+				template = farnbag_character_template
+				on_created = {
+					set_character_as_ruler = yes
+				}
+			}
+		}
+		c:TPE = {
+			add_journal_entry = {
+				type = je_sae_zoro
+			}
+		}
+		add_journal_entry = {
+			type = je_sae_sunni
+		}
 	}
 	option = {
-		name = fm_sae.2.b
-		add_loyalists = {
-			strata = rich
-			value = 0.2
+		name = fm_sae.3.a
+		default_option = yes
+		root ={
+			create_diplomatic_play = {
+				name = annex_war
+				target_country = c:TPE
+				war = yes
+				type = dp_annex_war
+				add_war_goal = {
+					holder = c:TPE
+					type = annex_country
+					target_country = c:SOP
+				}
+			}
 		}
-		add_loyalists = {
-			strata = middle
-			value = 0.15
+		remove_variable = var_adur_farn
+		remove_variable = var_adur_burz
+		remove_variable = var_arabistan
+		remove_variable = var_isfahan
+		remove_variable = var_irak
+		remove_variable = var_zorokur
+		remove_variable = var_luri
+	}
+	option = {
+		name = fm_sae.3.b
+		root ={
+			create_diplomatic_play = {
+				name = annex_war
+				target_country = c:TPE
+				war = yes
+				type = dp_annex_war
+				add_war_goal = {
+					holder = c:TPE
+					type = annex_country
+					target_country = c:SOP
+				}
+			}
 		}
+		play_as = c:TPE
+		remove_variable = var_adur_farn
+		remove_variable = var_adur_burz
+		remove_variable = var_arabistan
+		remove_variable = var_isfahan
+		remove_variable = var_irak
+		remove_variable = var_zorokur
+		remove_variable = var_luri
+	}
+}
+fm_sae.4 = {
+	type = country_event
+	placement = ROOT
+	title = fm_sae.4.t
+	desc = fm_sae.4.d
+	flavor = fm_sae.4.f
+	duration = 3
+	event_image = {
+		video = "ep1_persian_court"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/religion_icons/zoroastrianism.dds"
+
+	option = {
+		name = fm_sae.4.a
 		add_loyalists = {
-			strata = poor
-			value = 0.1
+			religion = rel:zoroastrian
+			value = 0.25
+		}
+		add_journal_entry = {
+			type = je_zoro
+		}
+		s:STATE_AZERBAIJAN = {
+			add_claim = ROOT 
+		}
+		s:STATE_TABRIZ = {
+			add_claim = ROOT 
+		}
+		s:STATE_URMIA = {
+			add_claim = ROOT 
+		}
+		s:STATE_ELIZAVETPOL = {
+			add_claim = ROOT 
+		}
+		s:STATE_KERMAN = {
+			add_claim = ROOT 
+		}
+		s:STATE_SISTAN = {
+			add_claim = ROOT 
+		}
+		s:STATE_LARISTAN = {
+			add_claim = ROOT 
 		}
 		s:STATE_ABU_DHABI = {
 			add_claim = ROOT 
@@ -187,9 +403,6 @@ fm_sae.2 = {
 		s:STATE_MERZ = {
 			add_claim = ROOT 
 		}
-		s:STATE_KERMAN = {
-			add_claim = ROOT 
-		}
 		s:STATE_UZBEKIA = {
 			add_claim = ROOT 
 		}
@@ -213,6 +426,609 @@ fm_sae.2 = {
 		}
 		s:STATE_DZUNGARIA = {
 			add_claim = ROOT 
+		}
+	}
+}
+
+fm_sae.5 = { #fars
+	type = country_event
+	placement = ROOT
+	title = fm_sae.5.t
+	desc = fm_sae.5.d
+	flavor = fm_sae.5.f
+	duration = 3
+	event_image = {
+		video = "middleeast_islam"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/pops_icons/clergymen.dds"
+
+	trigger = {
+		NOT = {
+			has_variable = var_sae5
+		}
+	}
+	immediate = {
+		set_variable = {
+			name = var_sae5
+		}
+	}
+
+	option = {
+		name = fm_sae.5.a
+		custom_tooltip = {
+			text = tooltip_adur_farn
+			set_variable = {
+				name = var_adur_farn
+			}
+			je:je_sae_main = {
+				add_progress = { value = 1 name = sassanid_civ_war_progress_bar }
+			}
+		}
+		add_loyalists = {
+			value = 0.05
+			religion = rel:sunni
+		}
+		add_radicals = {
+			value = 0.1
+			religion = rel:zoroastrian
+		}
+		ai_chance = {
+			base = 50
+		}
+	}
+	option = {
+		name = fm_sae.5.b
+		add_radicals = {
+			value = 0.15
+			religion = rel:sunni
+		}
+		add_loyalists = {
+			value = 0.03
+			religion = rel:zoroastrian
+		}
+		add_modifier = {
+			name = zoro_1
+			months = 25
+		}
+		je:je_sae_main = {
+				add_progress = { value = -1 name = sassanid_civ_war_progress_bar }
+			}
+		ai_chance = {
+			base = 50
+		}
+	}
+}
+fm_sae.6 = { #khorasan
+	type = country_event
+	placement = ROOT
+	title = fm_sae.6.t
+	desc = fm_sae.6.d
+	flavor = fm_sae.6.f
+	duration = 3
+	event_image = {
+		video = "middleeast_islam"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/pops_icons/clergymen.dds"
+
+	trigger = {
+		NOT = {
+			has_variable = var_sae6
+		}
+	}
+	immediate = {
+		set_variable = {
+			name = var_sae6
+		}
+	}
+
+	option = {
+		name = fm_sae.6.a
+		custom_tooltip = {
+			text = tooltip_adur_burz
+			set_variable = {
+				name = var_adur_burz
+			}
+			je:je_sae_main = {
+				add_progress = { value = 1 name = sassanid_civ_war_progress_bar }
+			}
+		}
+		add_loyalists = {
+			value = 0.3
+			religion = rel:sunni
+		}
+		add_radicals = {
+			value = 0.2
+			religion = rel:zoroastrian
+		}
+		ig:ig_devout = {
+			add_modifier = {
+				name = zoro_2
+				months = 37
+			}
+		}
+		ai_chance = {
+			base = 50
+		}
+	}
+	option = {
+		name = fm_sae.6.b
+		add_radicals = {
+			value = 0.25
+			religion = rel:sunni
+		}
+		add_loyalists = {
+			value = 0.05
+			religion = rel:zoroastrian
+		}
+		je:je_sae_main = {
+				add_progress = { value = -1 name = sassanid_civ_war_progress_bar }
+			}
+		ai_chance = {
+			base = 50
+		}
+	}
+}
+
+fm_sae.7 = { #arabistam
+	type = country_event
+	placement = ROOT
+	title = fm_sae.7.t
+	desc = fm_sae.7.d
+	flavor = fm_sae.7.f
+	duration = 3
+	event_image = {
+		video = "middleeast_courtroom_upheaval"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/state_status_icons/has_construction.dds"
+
+	trigger = {
+		NOT = {
+			has_variable = var_sae7
+		}
+	}
+	immediate = {
+		set_variable = {
+			name = var_sae7
+		}
+	}
+
+	option = {
+		name = fm_sae.7.a
+		custom_tooltip = {
+			text = tooltip_luri
+			set_variable = {
+				name = var_arabistan
+			}
+			je:je_sae_main = {
+				add_progress = { value = 1 name = sassanid_civ_war_progress_bar }
+			}
+		}
+		random_scope_state = {
+			limit = {	
+				state_region = s:STATE_BAGHDAD
+			}
+			add_loyalists = {
+				value = 0.1
+				religion = rel:sunni
+			}
+			add_radicals = {
+				value = 0.15
+				religion = rel:zoroastrian
+			}
+			add_radicals = {
+				value = 0.3
+				pop_type = clergymen
+			}
+		}
+		ai_chance = {
+			base = 50
+		}
+	}
+	option = {
+		name = fm_sae.7.b
+		random_scope_state = {
+			limit = {	
+				state_region = s:STATE_BAGHDAD
+			}
+			add_radicals = {
+				value = 0.3
+				religion = rel:sunni
+			}
+			add_loyalists = {
+				value = 0.05
+				religion = rel:zoroastrian
+			}
+		}
+		ai_chance = {
+			base = 50
+		}
+	}
+}
+
+fm_sae.8 = { #missionaries
+	type = country_event
+	placement = ROOT
+	title = fm_sae.8.t
+	desc = fm_sae.8.d
+	flavor = fm_sae.8.f
+	duration = 3
+	event_image = {
+		video = "votp_prison"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/ig_icons/devout.dds"
+	trigger = {
+		NOT = {
+			has_variable = var_sae8
+		}
+	}
+	immediate = {
+		set_variable = {
+			name = var_sae8
+		}
+	}
+	
+
+	option = {
+		name = fm_sae.8.a
+		custom_tooltip = {
+			text = tooltip_irak
+			set_variable = {
+				name = var_irak
+			}
+			je:je_sae_main = {
+				add_progress = { value = 1 name = sassanid_civ_war_progress_bar }
+			}
+		}
+		random_scope_state = {
+			limit = {	
+				state_region = s:STATE_IRAKAJEMI
+			}
+			convert_population = {
+				target = rel:sunni
+				value = 0.05
+			}
+			add_radicals = {
+				value = 0.1
+				religion = rel:zoroastrian
+			}
+		}
+		random_scope_state = {
+			limit = {	
+				state_region = s:STATE_MAZANDARAN
+			}
+			convert_population = {
+				target = rel:sunni
+				value = 0.05
+			}
+			add_radicals = {
+				value = 0.1
+				religion = rel:zoroastrian
+			}
+		}
+		ai_chance = {
+			base = 50
+		}
+	}
+	option = {
+		name = fm_sae.8.b
+		add_radicals = {
+			value = 0.15
+			religion = rel:sunni
+		}
+		je:je_sae_main = {
+				add_progress = { value = -1 name = sassanid_civ_war_progress_bar }
+			}
+		ai_chance = {
+			base = 50
+		}
+	}
+	
+}
+
+fm_sae.9 = { #isfahan
+	type = country_event
+	placement = ROOT
+	title = fm_sae.9.t
+	desc = fm_sae.9.d
+	flavor = fm_sae.9.f
+	duration = 3
+	event_image = {
+		video = "middleeast_police_breaking_door"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/invention_icons/law_enforcement.dds"
+
+	trigger = {
+		NOT = {
+			has_variable = var_sae9
+		}
+	}
+	immediate = {
+		set_variable = {
+			name = var_sae9
+		}
+	}
+
+	option = {
+		name = fm_sae.9.a
+		custom_tooltip = {
+			text = tooltip_isfaha
+			set_variable = {
+				name = var_isfahan
+			}
+			je:je_sae_main = {
+				add_progress = { value = 1 name = sassanid_civ_war_progress_bar }
+			}
+		}
+		random_scope_state = {
+			limit = {	
+				state_region = s:STATE_ISFAHAN
+			}
+			add_loyalists = {
+				value = 0.2
+				religion = rel:sunni
+			}
+			add_radicals = {
+				value = 0.35
+				religion = rel:zoroastrian
+			}
+		}
+		ai_chance = {
+			base = 50
+		}
+	}
+	option = {
+		name = fm_sae.9.b
+		random_scope_state = {
+			limit = {	
+				state_region = s:STATE_ISFAHAN
+			}
+			kill_population_percent_in_state = {
+				percent = 0.06
+			}
+			add_radicals = {
+				value = 0.25
+				religion = rel:sunni
+			}
+		}
+		change_infamy = 5
+		je:je_sae_main = {
+				add_progress = { value = -1 name = sassanid_civ_war_progress_bar }
+			}
+		ai_chance = {
+			base = 50
+		}
+	}
+
+}
+
+fm_sae.10 = { #kurdistan
+	type = country_event
+	placement = ROOT
+	title = fm_sae.10.t
+	desc = fm_sae.10.d
+	flavor = fm_sae.10.f
+	duration = 3
+	event_image = {
+		video = "africa_leader_arguing"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/topbar/authority_icon.dds"
+
+	trigger = {
+		NOT = {
+			has_variable = var_sae10
+		}
+	}
+	immediate = {
+		set_variable = {
+			name = var_sae10
+		}
+	}
+
+	option = {
+		name = fm_sae.10.a
+		custom_tooltip = {
+			text = tooltip_luri
+			set_variable = {
+				name = var_zorokur
+			}
+			je:je_sae_main = {
+				add_progress = { value = 1 name = sassanid_civ_war_progress_bar }
+			}
+		}
+		add_loyalists = {
+			value = 0.25
+			religion = rel:sunni
+		}
+		add_radicals = {
+			value = 0.1
+			religion = rel:zoroastrian
+		}
+		ig:ig_devout = {
+			add_modifier = {
+				name = zoro_2
+				months = 13
+			}
+		}
+		ai_chance = {
+			base = 50
+		}
+	}
+	option = {
+		name = fm_sae.10.b
+		add_loyalists = {
+			value = 0.05
+			religion = rel:zoroastrian
+		}
+		add_radicals = {
+			value = 0.2
+			religion = rel:sunni
+		}
+		add_modifier = {
+			name = zoro_3
+			months = 60
+		}
+		je:je_sae_main = {
+				add_progress = { value = -1 name = sassanid_civ_war_progress_bar }
+			}
+		ai_chance = {
+			base = 50
+		}
+	}
+	
+}
+fm_sae.11 = { #luristan
+	type = country_event
+	placement = ROOT
+	title = fm_sae.11.t
+	desc = fm_sae.11.d
+	flavor = fm_sae.11.f
+	duration = 3
+	event_image = {
+		video = "ep1_persian_court"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/invention_icons/egalitarianism.dds"
+
+	trigger = {
+		NOT = {
+			has_variable = var_sae11
+		}
+	}
+	immediate = {
+		set_variable = {
+			name = var_sae11
+		}
+	}
+
+	option = {
+		name = fm_sae.11.a
+		custom_tooltip = {
+			text = tooltip_luri
+			set_variable = {
+				name = var_luri
+			}
+			je:je_sae_main = {
+				add_progress = { value = 1 name = sassanid_civ_war_progress_bar }
+			}
+		}
+		add_loyalists = {
+			value = 0.3
+			religion = rel:sunni
+		}
+		add_radicals = {
+			value = 0.15
+			religion = rel:zoroastrian
+		}
+		ig:ig_devout = {
+			add_modifier = {
+				name = zoro_2
+				months = 25
+			}
+		}
+		activate_law = law_type:law_freedom_of_conscience
+		ai_chance = {
+			base = 50
+		}
+	}
+	option = {
+		name = fm_sae.11.b
+		add_loyalists = {
+			value = 0.05
+			religion = rel:zoroastrian
+		}
+		add_radicals = {
+			value = 0.15
+			religion = rel:sunni
+		}
+		je:je_sae_main = {
+				add_progress = { value = -1 name = sassanid_civ_war_progress_bar }
+			}
+		ai_chance = {
+			base = 50
+		}
+	}
+}
+fm_sae.12 = {
+	type = country_event
+	placement = root
+	title = fm_sae.12.t
+	desc = fm_sae.12.d
+	flavor = fm_sae.12.f
+	duration = 3
+	event_image = {
+		video = "middleeast_islam"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/ig_icons/devout.dds"
+
+	option = {
+		name = fm_sae.12.a
+		default_option = yes
+		add_loyalists = {
+			religion = rel:sunni
+			value = 0.25
+		}
+		capital = {
+			convert_population = {
+				target = root.religion
+				value = 0.25
+			}
+		}
+		every_scope_state = {
+			limit = { is_capital = no }
+			convert_population = {
+				target = root.religion
+				value = 0.2
+			}				
+		}
+		add_modifier = {
+			name = zoro_4
+			months = 120
+		}
+	}
+}
+fm_sae.13 = {
+	type = country_event
+	placement = root
+	title = fm_sae.13.t
+	desc = fm_sae.13.d
+	flavor = fm_sae.13.f
+	duration = 3
+	event_image = {
+		video = "ep1_central_asian_city"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/ig_icons/devout.dds"
+
+	option = {
+		name = fm_sae.13.a
+		default_option = yes
+		add_loyalists = {
+			religion = rel:zoroastrian
+			value = 0.25
+		}
+		capital = {
+			convert_population = {
+				target = root.religion
+				value = 0.25
+			}
+		}
+		every_scope_state = {
+			limit = { is_capital = no }
+			convert_population = {
+				target = root.religion
+				value = 0.2
+			}				
+		}
+		add_modifier = {
+			name = zoro_4
+			months = 60
 		}
 	}
 }

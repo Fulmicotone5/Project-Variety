@@ -535,9 +535,9 @@ set_national_idea = {
 				this = c:BOH
 				this = c:KAR
 				this = c:KOR
-				this = c:SAE
 				this = c:JAP
 				this = c:SAE
+
 			}
 		}
 		set_variable = generic_idea_country

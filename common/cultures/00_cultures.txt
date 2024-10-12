@@ -8761,6 +8761,10 @@ persian={
 		Kaamran Ardakhoreh Dadafarin
 		Chubin Abadun 
 		Adargushnasp
+		Farnbag 
+		Sarvazad
+		Arasti Arshama Aoshnar Adarvan Erezwa 
+		Gelshah Adarfra Khusru
 	}
 	female_common_first_names = {
 		Arsia Zoish Rexelle Vispanfriva 
@@ -8782,6 +8786,10 @@ persian={
 		Gashtaham 
 		Ahumstut 
 		Izadyar
+		Narimanzadeh Dadburzin 
+		Ardvisura Khawaja 
+		Adarbad Ardwahisht 
+		Kaveh
 	}
 	male_regal_first_names = {
 		Farnbag 

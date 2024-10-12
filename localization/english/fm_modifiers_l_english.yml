@@ -355,7 +355,7 @@
  sikh_aspect_6_mdf:0 "For the Faith"
  sikh_aspect_7_mdf:0 "Religious Laws"
  sikh_aspect_8_mdf:0 "Religious Diplomats"
- baal_pasive_mdf:0 "Cult of Tanit"
+ baal_pasive_mdf:0 "Canaanite"
  baal_aspect_1_mdf:0 "Children Sacrifice"
  baal_aspect_2_mdf:0 "Phoenician Dances"
  baal_aspect_3_mdf:0 "Sign of Tanit"
@@ -625,3 +625,8 @@
  corn_law_leverage:0 "Corn Law Leverage"
  repealed_corn_laws:0 "Repealed Corn Laws"
  temporary_minimum_wages:0 "Temporary Minimum Wages"
+
+ zoro_1:0 "Ignored Council"
+ zoro_2:0 "Enraged Clergy"
+ zoro_3:0 "Religious Tax"
+ zoro_4:0 "Religious Fervor"

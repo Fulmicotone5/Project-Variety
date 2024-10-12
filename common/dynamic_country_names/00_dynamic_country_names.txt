@@ -518,6 +518,20 @@ GAR = {
 	}
 }
 
+PIN = {
+	dynamic_country_name = {
+		name = dyn_pin
+		adjective = PIN_ADJ
+		priority = 0
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_law = law_type:law_monarchy
+			}
+		}
+	}
+}
+
 KBG = {
 	dynamic_country_name = {
 		name = kbd_mon
@@ -3192,6 +3206,49 @@ SAE = {
 	dynamic_country_name = {
 		name = dyn_c_sae
 		adjective = dyn_c_sae_adj
+		is_main_tag_only = yes
+		priority = 1
+		trigger = {
+			scope:actor = {
+				has_law = law_type:law_monarchy
+			}
+		}
+	}
+}
+SOP = {
+	dynamic_country_name = {
+		name = dyn_c_sop
+		adjective = dyn_c_sop_adj
+		is_main_tag_only = yes
+		priority = 1
+		trigger = {
+			scope:actor = {
+				OR = {
+					has_law = law_type:law_monarchy
+					has_law = law_type:law_theocracy
+				}
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_per
+		adjective = dyn_c_sop_adj
+		is_main_tag_only = yes
+		priority = 10000
+		trigger = {
+			scope:actor = {
+				OR = {
+					has_law = law_type:law_total_separation
+					has_law = law_type:law_state_atheism
+				}
+			}
+		}
+	}
+}
+TPE = {
+	dynamic_country_name = {
+		name = dyn_c_tpe
+		adjective = dyn_c_tpe_adj
 		is_main_tag_only = yes
 		priority = 1
 		trigger = {

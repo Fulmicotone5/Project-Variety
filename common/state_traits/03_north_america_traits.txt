@@ -11,7 +11,7 @@ state_trait_northern_canadian_terrain = {
 	
 	modifier = {
 		building_group_bg_agriculture_throughput_add = -0.2
-		state_construction_mult = -0.2
+		state_construction_mult = -0.1
 		state_infrastructure_mult = -0.2
 		state_migration_pull_mult = -0.5
 	}
@@ -149,8 +149,8 @@ state_trait_floridian_wetlands = {
 	icon = "gfx/interface/icons/state_trait_icons/swamp.dds"
 	
 	modifier = {
-		state_construction_mult = -0.15
-		state_infrastructure_mult = -0.15
+		state_construction_mult = -0.05
+		state_infrastructure_mult = -0.05
 	}
 }
 

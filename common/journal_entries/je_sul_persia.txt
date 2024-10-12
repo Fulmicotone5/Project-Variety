@@ -1,0 +1,191 @@
+je_sop = {
+	icon = "gfx/interface/icons/religion_icons/sunni.dds"
+	group = je_group_historical_content
+	complete = {
+		scope:journal_entry = {
+			is_goal_complete = yes
+		}
+	}
+	on_complete = {
+		trigger_event = {
+			id = fm_sae.12
+		}
+	}
+	fail = {
+		NOT = {
+			has_law = law_type:law_monarchy
+		}
+	}
+	current_value = {
+		value = var:fm_sul_var
+	}
+	goal_add_value = {
+		add = 4
+	}
+	timeout = 6007
+	progressbar = yes
+	weight = 10000
+	should_be_pinned_by_default = yes
+}
+
+je_sop_levant = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	group = je_group_historical_content
+	complete = {
+		owns_entire_state_region = STATE_TRANSJORDAN
+		owns_entire_state_region = STATE_PALESTINE
+		owns_entire_state_region = STATE_LEBANON
+		owns_entire_state_region = STATE_SYRIA
+		owns_entire_state_region = STATE_ALEPPO   
+	}
+	on_complete = {
+		custom_tooltip = je_pur_advance
+		change_variable = {
+			name = fm_sul_var
+			add = 1
+		}
+		capital = {
+			convert_population = {
+				target = root.religion
+				value = 0.1
+			}
+		}
+		every_scope_state = {
+			limit = { is_capital = no }
+			convert_population = {
+				target = root.religion
+				value = 0.05
+			}				
+		}
+	}
+	fail = {
+		NOT = {
+			has_law = law_type:law_monarchy
+		}
+	}
+	timeout = 1825
+	transferable = no
+	weight = 5000
+	should_be_pinned_by_default = yes
+}
+
+je_sop_arabia = {
+	icon = "gfx/interface/icons/ig_icons/devout.dds"
+	group = je_group_historical_content
+	complete = {
+		owns_entire_state_region = STATE_HEDJAZ
+	}
+	fail = {
+		NOT = {
+			has_law = law_type:law_monarchy
+		}
+	}
+	on_complete = {
+		custom_tooltip = je_pur_advance
+		change_variable = {
+			name = fm_sul_var
+			add = 1
+		}
+		capital = {
+			convert_population = {
+				target = root.religion
+				value = 0.2
+			}
+		}
+		every_scope_state = {
+			limit = { is_capital = no }
+			convert_population = {
+				target = root.religion
+				value = 0.15
+			}				
+		}
+	}
+	timeout = 3650
+	transferable = no
+	weight = 5000
+	should_be_pinned_by_default = yes
+}
+
+je_sop_egypt = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	group = je_group_historical_content
+	complete = {
+		owns_entire_state_region = STATE_LOWER_EGYPT
+		owns_entire_state_region = STATE_UPPER_EGYPT
+		owns_entire_state_region = STATE_MIDDLE_EGYPT
+		owns_entire_state_region = STATE_MATRUH
+		owns_entire_state_region = STATE_SINAI   
+	}
+	fail = {
+		NOT = {
+			has_law = law_type:law_monarchy
+		}
+	}
+	on_complete = {
+		custom_tooltip = je_pur_advance
+		change_variable = {
+			name = fm_sul_var
+			add = 1
+		}
+		capital = {
+			convert_population = {
+				target = root.religion
+				value = 0.15
+			}
+		}
+		every_scope_state = {
+			limit = { is_capital = no }
+			convert_population = {
+				target = root.religion
+				value = 0.1
+			}				
+		}
+	}
+	timeout = 3650
+	transferable = no
+	weight = 5000
+	should_be_pinned_by_default = yes
+}
+
+je_sop_north_africa = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	group = je_group_historical_content
+	complete = {
+		any_scope_state = {
+			count >= 10
+			AND = {
+				region = sr:region_north_africa
+				owner = ROOT
+			}
+		}
+	}
+	fail = {
+		NOT = {
+			has_law = law_type:law_monarchy
+		}
+	}
+	on_complete = {
+		custom_tooltip = je_pur_advance
+		change_variable = {
+			name = fm_sul_var
+			add = 1
+		}
+		capital = {
+			convert_population = {
+				target = root.religion
+				value = 0.25
+			}
+		}
+		every_scope_state = {
+			limit = { is_capital = no }
+			convert_population = {
+				target = root.religion
+				value = 0.2
+			}				
+		}
+	}
+	timeout = 6000
+	transferable = no
+	weight = 5000
+	should_be_pinned_by_default = yes
+}

@@ -1251,7 +1251,7 @@ ai_strategy_default = {
 
 			if = {
 				limit = {
-					has_journal_entry = je_sae_main
+					has_journal_entry = je_zoro
 					scope:target_state = {
 						OR = {
 							state_region = s:STATE_KERMAN
@@ -1264,6 +1264,36 @@ ai_strategy_default = {
 							state_region = s:STATE_GREATER_CAUCASUS
 							state_region = s:STATE_KARS
 							state_region = s:STATE_AZERBAIJAN
+						}
+					}
+				}
+				add = 400
+			}
+			if = {
+				limit = {
+					has_journal_entry = je_sop
+					scope:target_state = {
+						OR = {
+							state_region = s:STATE_TRANSJORDAN
+							state_region = s:STATE_PALESTINE
+							state_region = s:STATE_LEBANON
+							state_region = s:STATE_SYRIA
+							state_region = s:STATE_ALEPPO
+							state_region = s:STATE_LOWER_EGYPT
+							state_region = s:STATE_UPPER_EGYPT
+							state_region = s:STATE_MIDDLE_EGYPT
+							state_region = s:STATE_MATRUH
+							state_region = s:STATE_SINAI
+							state_region = s:STATE_HEDJAZ
+							state_region = s:STATE_HAIL
+							state_region = s:STATE_NEDJ
+							state_region = s:STATE_SISTAN
+							state_region = s:STATE_KERMAN
+							state_region = s:STATE_LARISTAN
+							state_region = s:STATE_LIBYA
+							state_region = s:STATE_TRIPOLI
+							state_region = s:STATE_TABRIZ
+							state_region = s:STATE_URMIA
 						}
 					}
 				}
@@ -3167,18 +3197,37 @@ ai_strategy_default = {
 
 		if = {
 			limit = {
-				has_journal_entry = je_sae_main
+				has_journal_entry = je_zoro
 				scope:target_country = {
 					any_scope_state = {
 						OR = {
 							region = sr:region_persia
 							region = sr:region_caucasus
+							region = sr:region_central_asia
 						}
 						has_claim_by = ROOT
 					}
 				}
 			}
 			add = 25
+		}
+
+		if = {
+			limit = {
+				has_journal_entry = je_sop
+				scope:target_country = {
+					any_scope_state = {
+						OR = {
+							region = sr:region_persia
+							region = sr:region_arabic
+							region = sr:region_nile_basin
+							region = sr:region_north_africa
+						}
+						has_claim_by = ROOT
+					}
+				}
+			}
+			add = 10
 		}
 
         # Neutral Switzerland
