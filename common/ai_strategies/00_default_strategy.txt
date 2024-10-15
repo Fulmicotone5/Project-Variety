@@ -75,7 +75,7 @@ ai_strategy_default = {
 		
 		if = { # Donghak Rebellion - Japanese Behaviours - Pro-Government
 			limit = {
-				c:JAP ?= this
+				c:JAE ?= this
 				has_journal_entry = je_korean_rebellion
 				has_variable = sided_with_korean_gov
 				scope:country = {
@@ -91,7 +91,7 @@ ai_strategy_default = {
 
 		if = { # Donghak Rebellion - Japanese Behaviours - Anti-Government
 			limit = {
-				c:JAP ?= this
+				c:JAE ?= this
 				has_journal_entry = je_korean_rebellion
 				has_variable = sided_with_korean_rebels
 				scope:country = {
@@ -168,8 +168,8 @@ ai_strategy_default = {
 		
 		if = { # Isolationist Japan should tend to back down against market opening plays
 			limit = {
-				exists = c:JAP
-				this = c:JAP
+				exists = c:JAE
+				this = c:JAE
 				has_law = law_type:law_isolationism 
 				scope:diplomatic_play = { 
 					OR = {
@@ -3144,7 +3144,7 @@ ai_strategy_default = {
 		if = {
 			limit = {
 				has_global_variable = sino_japanese_war
-				c:JAP ?= this
+				c:JAE ?= this
 				scope:target_country = {
 					country_has_primary_culture = cu:korean
 					overlord = {
@@ -3160,7 +3160,7 @@ ai_strategy_default = {
 		if = {
 			limit = {
 				has_global_variable = sino_japanese_war
-				c:JAP ?= this
+				c:JAE ?= this
 				scope:target_country = {
 					OR = {
 						country_has_primary_culture = cu:han
@@ -3918,8 +3918,8 @@ ai_strategy_default = {
 		region_japan = {	
 			if = {
 				limit = {
-					exists = c:JAP
-					c:JAP = { has_law = law_type:law_isolationism }
+					exists = c:JAE
+					c:JAE = { has_law = law_type:law_isolationism }
 					NOT = { country_rank = rank_value:great_power }
 				}
 				add = -50

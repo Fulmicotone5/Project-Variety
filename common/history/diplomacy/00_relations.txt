@@ -95,7 +95,6 @@
 	c:KOR ?= {
 		set_relations = { country = c:YUA value = -25 }
 		set_relations = { country = c:MCH value = -35 }
-		set_relations = { country = c:JAP value = -15 }
 		set_relations = { country = c:SAO value = -50 }
 	}
 	c:CAS ?= {
@@ -142,8 +141,8 @@
 		set_relations = { country = c:FLU value = 20 }
 		set_relations = { country = c:MAX value = 20 }
 	}
-	c:JAP ?= {
-		set_relations = { country = c:NED value = 30 }
+	c:SAU ?= {
+		set_relations = { country = c:PUR value = 50 }
 	}
 	c:KTI ?= {
 		set_relations = { country = c:NED value = 30 }

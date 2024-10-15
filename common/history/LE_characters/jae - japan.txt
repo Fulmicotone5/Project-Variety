@@ -1,0 +1,698 @@
+﻿CHARACTERS = {
+	c:IPJ = {
+		create_character = {
+			ruler = yes
+			historical = yes
+			first_name = Toyoshige
+			last_name = Yamato
+			birth_date = 1829.03.16
+			interest_group = ig_armed_forces
+			ideology = ideology_traditionalist
+			traits = {
+				trait_child
+				sickly
+			}
+		}
+
+	}
+
+	c:SAU = {
+		create_character = {
+			ruler = yes
+			historical = yes
+			first_name = Narioki
+			last_name = Shimazu
+			birth_date = 1791.12.01
+			interest_group = ig_armed_forces
+			ideology = ideology_reformer
+			traits = {
+				imperious
+				innovative
+			}
+		}
+	}
+
+	c:CUH = {
+		create_character = {
+			ruler = yes
+			historical = yes
+			first_name = Takachika
+			last_name = mori
+			birth_date = 1819.03.05
+			interest_group = ig_armed_forces
+			ideology = ideology_jingoist_leader
+			traits = {
+				arrogant
+				expensive_tastes # bit of corruption
+			}
+		}
+	}
+
+	c:TOS = {
+		create_character = {
+			ruler = yes
+			historical = yes
+			first_name = Toyoshige
+			last_name = Yamauchi
+			birth_date = 1794.10.17
+			interest_group = ig_landowners
+			ideology = ideology_royalist
+			traits = {
+				inspirational_orator
+				firebrand
+			}
+		}
+	}
+
+	c:KAW = {
+		create_character = {
+			ruler = yes
+			historical = yes
+			first_name = Nariyasu
+			last_name = Maeda
+			birth_date = 1811.08.28
+			interest_group = ig_armed_forces
+			ideology = ideology_pacifist
+			traits = {
+				meticulous
+				expensive_tastes # bit of corruption
+			}
+		}
+	}
+
+	c:SEN = {
+		create_character = {
+			ruler = yes
+			historical = yes
+			first_name = Narikuni
+			last_name = Date
+			birth_date = 1817.11.06
+			interest_group = ig_landowners
+			ideology = ideology_moderate
+			traits = {
+				ambitious
+			}
+		}
+
+	}
+
+	c:YON = {
+		create_character = {
+			ruler = yes
+			historical = yes
+			first_name = Narisada
+			last_name = Uesugi
+			birth_date = 1788.10.03
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = {
+				charismatic
+				inspirational_orator
+			}
+		}
+
+	}
+
+	c:WAK = {
+		create_character = {
+			ruler = yes
+			historical = yes
+			first_name = Nariyuki
+			last_name = Tokugawa
+			birth_date = 1801.10.16
+			interest_group = ig_landowners
+			ideology = ideology_moderate
+			traits = {
+				arrogant
+				expensive_tastes
+			}
+		}
+	}
+
+	c:ODA = {
+		create_character = {
+			ruler = yes
+			historical = yes
+			first_name = Tadanori
+			last_name = Okubo
+			birth_date = 1822.05.20
+			interest_group = ig_armed_forces
+			ideology = ideology_traditionalist
+			traits = {
+				pious
+			}
+		}
+	}	
+	c:SAG = {
+		create_character = {
+			ruler = yes
+			historical = yes
+			first_name = Naomasa
+			last_name = Nabeshina
+			birth_date = 1816.01.16
+			interest_group = ig_landowners
+			ideology = ideology_jingoist_leader
+			traits = {
+				ambitious
+				arrogant
+				expensive_tastes
+			}
+		}
+
+	}
+
+	c:TSU = {
+		create_character = {
+			ruler = yes
+			historical = yes
+			first_name = todo
+			last_name = Takayuki
+			birth_date = 1813.05.11
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = {
+				pious
+				charismatic
+			}
+		}
+
+	}
+
+
+	c:NAA = {
+		create_character = {
+			ruler = yes
+			historical = yes
+			first_name = Tadamasa
+			last_name = Makino
+			birth_date = 1799.12.02
+			interest_group = ig_landowners
+			ideology = ideology_authoritarian
+			traits = {
+				expensive_tastes
+				experienced_political_operator
+				meticulous
+			}
+		}
+	}
+
+	c:JOZ = {
+		create_character = {
+			ruler = yes
+			historical = yes
+			first_name = Tadafusa
+			last_name = Hayashi
+			birth_date = 1801.10.16
+			interest_group = ig_landowners
+			ideology = ideology_authoritarian
+			traits = {
+				meticulous
+				romantic
+				basic_diplomat
+			}
+		}
+	}
+
+	c:AIZ = {
+		create_character = {
+			ruler = yes
+			historical = yes
+			first_name = Katataka
+			last_name = Matsudaira
+			birth_date = 1806.06.14
+			interest_group = ig_armed_forces
+			ideology = ideology_traditionalist
+			traits = {
+				basic_political_operator
+				erudite
+			}
+		}
+	}
+
+	c:MAT = {
+		create_character = {
+			ruler = yes
+			historical = yes
+			first_name = Akihiro
+			last_name = Matsumae
+			birth_date = 1775.08.08
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = {
+				wrathful
+    			expensive_tastes
+        		erudite
+			}
+		}
+
+	}
+
+	c:HIR = {
+		create_character = {
+			ruler = yes
+			historical = yes
+			first_name = Nobuyuki
+			last_name = Tsugaru
+			birth_date = 1800.04.18
+			interest_group = ig_armed_forces
+			ideology = ideology_royalist
+			traits = {
+				charismatic
+        		brave
+        		bigoted
+			}
+		}
+
+	}
+
+
+	c:MER = {
+		create_character = {
+			ruler = yes
+			historical = yes
+			first_name = Toshitada
+			last_name = Nanbu
+			birth_date = 1797.10.18
+			interest_group = ig_landowners
+			ideology = ideology_authoritarian
+			traits = {
+				basic_political_operator
+        		reserved
+			}
+		}
+	}
+
+	c:KUB = {
+		create_character = {
+			ruler = yes
+			historical = yes
+			first_name = Yoshihiro
+			last_name = Satake 
+			birth_date = 1812.08.23
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = {
+				direct
+        		tactful
+			}
+		}
+	}
+
+	c:TOK = {
+		create_character = {
+			ruler = yes
+			historical = yes
+			first_name = Narimasa
+			last_name = Hachisuka  
+			birth_date = 1795.08.24
+			interest_group = ig_armed_forces
+			ideology = ideology_moderate
+			traits = {
+				direct
+        		tactful
+				ambitious
+			}
+		}
+	}
+	c:ODU = {
+		create_character = {
+			ruler = yes
+			historical = yes
+			first_name = Nobukazu
+			last_name = Oda 
+			birth_date = 1793.08.15
+			interest_group = ig_armed_forces
+			ideology = ideology_jingoist_leader
+			traits = {
+				ambitious
+				brave
+				expensive_tastes
+			}
+		}
+		create_character = {
+			heir = yes
+			historical = yes
+			first_name = Nobumichi
+			last_name = Oda 
+			birth_date = 1815.03.11
+			interest_group = ig_devout
+			ideology = ideology_moderate
+			traits = {
+				ambitious
+				pious
+			}
+		}
+	}
+
+
+
+	c:AWT = {
+		create_character = {
+			ruler = yes
+			historical = yes
+			first_name = Tadamasa
+			last_name = Inada
+			birth_date = 1799.12.02
+			interest_group = ig_landowners
+			ideology = ideology_moderate
+			traits = {
+				expensive_tastes
+				experienced_political_operator
+				meticulous
+			}
+		}
+	}
+
+	c:TAK = {
+		create_character = {
+			ruler = yes
+			historical = yes
+			first_name = Naotomo
+			last_name = Nagai
+			birth_date = 1801.10.16
+			interest_group = ig_landowners
+			ideology = ideology_authoritarian
+			traits = {
+				meticulous
+				romantic
+				basic_diplomat
+			}
+		}
+	}
+
+	c:TKT = {
+		create_character = {
+			ruler = yes
+			historical = yes
+			first_name = Ienori
+			last_name = Uemura
+			birth_date = 1806.06.14
+			interest_group = ig_armed_forces
+			ideology = ideology_traditionalist
+			traits = {
+				basic_political_operator
+				erudite
+			}
+		}
+	}
+
+	c:OKA = {
+		create_character = {
+			ruler = yes
+			historical = yes
+			first_name = Tadamoto
+			last_name = Honda
+			birth_date = 1817.04.12
+			interest_group = ig_landowners
+			ideology = ideology_moderate
+			traits = {
+				wrathful
+    			expensive_tastes
+        		erudite
+			}
+		}
+
+	}
+
+	c:KKW = {
+		create_character = {
+			ruler = yes
+			historical = yes
+			first_name = Sukemoto
+			last_name = Ota
+			birth_date = 1799.08.28
+			interest_group = ig_armed_forces
+			ideology = ideology_royalist
+			traits = {
+				charismatic
+        		arrogant
+        		bigoted
+			}
+		}
+
+	}
+
+
+	c:SUN = {
+		create_character = {
+			ruler = yes
+			historical = yes
+			first_name = Yoshiyori
+			last_name = Imagawa
+			birth_date = 1797.10.18
+			interest_group = ig_landowners
+			ideology = ideology_authoritarian
+			traits = {
+				basic_political_operator
+        		reserved
+				brave
+			}
+		}
+	}
+
+	c:MTO = {
+		create_character = {
+			ruler = yes
+			historical = yes
+			first_name = Nariaki
+			last_name = Tokugawa 
+			birth_date = 1800.04.04
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = {
+				direct
+        		tactful
+			}
+		}
+	}
+	c:UTS = {
+		create_character = {
+			ruler = yes
+			historical = yes
+			first_name = Kunitsuna
+			last_name = Utsunomiya  
+			birth_date = 1795.08.26
+			interest_group = ig_armed_forces
+			ideology = ideology_moderate
+			traits = {
+				direct
+        		tactful
+				ambitious
+			}
+		}
+	}
+	c:NUM = {
+		create_character = {
+			ruler = yes
+			historical = yes
+			first_name = Yorikatsu
+			last_name = Toki
+			birth_date = 1807.04.15
+			interest_group = ig_landowners
+			ideology = ideology_moderate
+			traits = {
+				wrathful
+    			expensive_tastes
+        		erudite
+			}
+		}
+
+	}
+	c:KOF = {
+		create_character = {
+			ruler = yes
+			historical = yes
+			first_name = Yoshiyasu
+			last_name = Yanagisawa
+			birth_date = 1799.10.05
+			interest_group = ig_armed_forces
+			ideology = ideology_reformer
+			traits = {
+				imperious
+				innovative
+				brave
+			}
+		}
+	}
+
+	c:TKA = {
+		create_character = {
+			ruler = yes
+			historical = yes
+			first_name = Shigeyori
+			last_name = Kanamori
+			birth_date = 1809.03.08
+			interest_group = ig_armed_forces
+			ideology = ideology_jingoist_leader
+			traits = {
+				arrogant
+				expensive_tastes # bit of corruption
+			}
+		}
+	}
+
+	c:MTS = {
+		create_character = {
+			ruler = yes
+			historical = yes
+			first_name = Mitsutsura
+			last_name = Matsudaira 
+			birth_date = 1781.05.18
+			interest_group = ig_landowners
+			ideology = ideology_royalist
+			traits = {
+				inspirational_orator
+				firebrand
+			}
+		}
+		create_character = {
+			heir = yes
+			historical = yes
+			first_name = Mitsutsune
+			last_name = Matsudaira 
+			birth_date = 1798.08.08
+			interest_group = ig_landowners
+			ideology = ideology_jingoist_leader
+			traits = {
+				charismatic
+				arrogant
+			}
+		}
+	}
+
+	c:GUJ = {
+		create_character = {
+			ruler = yes
+			historical = yes
+			first_name = Yukinori
+			last_name = Aoyama
+			birth_date = 1801.08.21
+			interest_group = ig_armed_forces
+			ideology = ideology_pacifist
+			traits = {
+				meticulous
+				expensive_tastes # bit of corruption
+			}
+		}
+	}
+
+	c:KAW = {
+		create_character = {
+			ruler = yes
+			historical = yes
+			first_name = Nariyasu
+			last_name = Maeda 
+			birth_date = 1811.08.28
+			interest_group = ig_landowners
+			ideology = ideology_moderate
+			traits = {
+				ambitious
+			}
+		}
+
+	}
+
+	c:SAB = {
+		create_character = {
+			ruler = yes
+			historical = yes
+			first_name = Akikatsu
+			last_name = Manabe
+			birth_date = 1804.03.30
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = {
+				charismatic
+				inspirational_orator
+			}
+		}
+
+	}
+
+	c:TWA = {
+		create_character = {
+			ruler = yes
+			historical = yes
+			first_name = Korekata
+			last_name = Kamei 
+			birth_date = 1803.05.17
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = {
+				pious
+				brave
+			}
+		}
+
+	}
+
+
+	c:MTE = {
+		create_character = {
+			ruler = yes
+			historical = yes
+			first_name = Naritoki
+			last_name = Matsudaira
+			birth_date = 1799.05.11
+			interest_group = ig_landowners
+			ideology = ideology_authoritarian
+			traits = {
+				expensive_tastes
+				experienced_political_operator
+				meticulous
+			}
+		}
+	}
+
+	c:TTT = {
+		create_character = {
+			ruler = yes
+			historical = yes
+			first_name = Narimichi
+			last_name = Ikeda
+			birth_date = 1801.10.16
+			interest_group = ig_landowners
+			ideology = ideology_authoritarian
+			traits = {
+				meticulous
+				romantic
+				basic_diplomat
+			}
+		}
+	}
+
+	c:HHI = {
+		create_character = {
+			ruler = yes
+			historical = yes
+			first_name = Naritaka
+			last_name = Asano
+			birth_date = 1817.11.07
+			interest_group = ig_armed_forces
+			ideology = ideology_traditionalist
+			traits = {
+				basic_political_operator
+				erudite
+				literary
+			}
+		}
+	}
+
+	c:MTY = {
+		create_character = {
+			ruler = yes
+			historical = yes
+			first_name = Katsuyoshi
+			last_name = Matsudaira
+			birth_date = 1775.08.08
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = {
+				wrathful
+    			expensive_tastes
+        		brave
+			}
+		}
+
+	}
+}

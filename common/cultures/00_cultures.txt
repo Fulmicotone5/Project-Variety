@@ -11505,6 +11505,7 @@ japanese={
 	religion = mahayana
 	traits = { yamato east_asian_heritage }
 	male_common_first_names={
+		Narioki
 		Aritomo
 		Gentaro
 		Gonnohyoe
@@ -11573,6 +11574,12 @@ japanese={
 		Yoshinobu
 		Yoshinori
 		Yusaku
+		Takachika
+		Toyoshige
+		Nariyasu
+		Narikuni
+		Narisada Nariyuki Tadanori Naomasa todo Tadamasa Tadafusa Katataka Akihiro Nobuyuki Toshitada Yoshihiro Narimasa Nobukazu Nobumichi Naotomo Ienori Tadamoto Sukemoto Yoshiyori Nariaki Kunitsuna
+		Yorikatsu Yoshiyasu Shigeyori Mitsutsura Mitsutsune Yukinori Nariyasu Akikatsu Katsuyoshi Naritaka Narimichi Naritoki Korekata
 	}
 	female_common_first_names = {
 		Asako
@@ -11595,7 +11602,7 @@ japanese={
 		Tsuneko
 	}	
 	noble_last_names = {
-		Hayashi
+		Hayashi Nabeshina
 		Ito
 		Jutoku
 		Kujo
@@ -11604,6 +11611,15 @@ japanese={
 		Nabeshima
 		Togo
 		Tokugawa
+		Shimazu
+		mori
+		Yamauchi
+		Maeda
+		Date
+		Uesugi
+		Yamato
+		Tokugawa Okubo Takayuki Makino Hayashi Matsumae Tsugaru Nanbu Satake Hachisuka Oda Inada Nagai Uemura Honda Ota Imagawa Tokugawa
+		Toki Yanagisawa Kanamori Aoyama Maeda Manabe Asano Ikeda Kamei
 	}
 	common_last_names={
 		Akiyama

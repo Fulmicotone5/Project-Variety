@@ -21,20 +21,106 @@ gov_enlightened_despotate = {
 	}
 }
 
-gov_shogunate = {
+gov_daimyo = {
 	transfer_of_power = hereditary
 	
-	male_ruler = "RULER_TITLE_SHOGUN"
-	female_ruler = "RULER_TITLE_SHOGUN" 
+	male_ruler = "RULER_TITLE_DAIMYO"
+	female_ruler = "RULER_TITLE_DAIMYO" 
 
 	male_heir = "RULER_TITLE_HEIR_APPARENT"
 	female_heir = "RULER_TITLE_HEIR_APPARENT"
 	
 	possible = {
-		exists = c:JAP
-		c:JAP = ROOT
+		or = {
+			AND = { exists = c:SAU c:SAU = ROOT }
+			AND = { exists = c:SAG c:SAG = ROOT }
+			AND = { exists = c:CUH c:CUH = ROOT }
+			AND = { exists = c:TOS c:TOS = ROOT }
+			AND = { exists = c:TSU c:TSU = ROOT }
+			AND = { exists = c:NAA c:NAA = ROOT }
+			AND = { exists = c:JOZ c:JOZ = ROOT }
+			AND = { exists = c:AIZ c:AIZ = ROOT }
+			AND = { exists = c:SEN c:SEN = ROOT }
+			AND = { exists = c:WAK c:WAK = ROOT }
+			AND = { exists = c:ODA c:ODA = ROOT }
+			AND = { exists = c:KAW c:KAW = ROOT }
+			AND = { exists = c:YON c:YON = ROOT }
+			AND = { exists = c:SAG c:SAG = ROOT }
+			AND = { exists = c:TSU c:TSU = ROOT }
+			AND = { exists = c:NAA c:NAA = ROOT }
+			AND = { exists = c:JOZ c:JOZ = ROOT }
+			AND = { exists = c:AIZ c:AIZ = ROOT }
+			AND = { exists = c:MAT c:MAT = ROOT }
+			AND = { exists = c:HIR c:HIR = ROOT }
+			AND = { exists = c:MER c:MER = ROOT }
+			AND = { exists = c:KUB c:KUB = ROOT }
+			AND = { exists = c:TOK c:TOK = ROOT }
+			AND = { exists = c:TAK c:TAK = ROOT }
+			AND = { exists = c:TKT c:TKT = ROOT }
+			AND = { exists = c:OKA c:OKA = ROOT }
+			AND = { exists = c:KKW c:KKW = ROOT }
+			AND = { exists = c:SUN c:SUN = ROOT }
+			AND = { exists = c:MTO c:MTO = ROOT }
+			AND = { exists = c:NUM c:NUM = ROOT }
+			AND = { exists = c:KOF c:KOF = ROOT }
+			AND = { exists = c:TKA c:TKA = ROOT }
+			AND = { exists = c:MTS c:MTS = ROOT }
+			AND = { exists = c:GUJ c:GUJ = ROOT }
+			AND = { exists = c:SAB c:SAB = ROOT }
+			AND = { exists = c:TWA c:TWA = ROOT }
+			AND = { exists = c:MTE c:MTE = ROOT }
+			AND = { exists = c:TTT c:TTT = ROOT }
+			AND = { exists = c:HHI c:HHI = ROOT }
+			AND = { exists = c:MTY c:MTY = ROOT }
+		}
 		has_law = law_type:law_monarchy
-		NOT = { has_variable = meiji_var }
+	}
+
+	on_government_type_change = {
+		change_to_hereditary = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_hereditary = yes
+	}
+}
+
+gov_clan = {
+	transfer_of_power = hereditary
+	
+	male_ruler = "RULER_CHIEFTAIN"
+	female_ruler = "RULER_CHIEFTESS" 
+
+	male_heir = "RULER_TITLE_HEIR_APPARENT"
+	female_heir = "RULER_TITLE_HEIR_APPARENT"
+	
+	possible = {
+		or = {
+			AND = { exists = c:AWT c:AWT = ROOT }
+			AND = { exists = c:UTS c:UTS = ROOT }
+		}
+		has_law = law_type:law_monarchy
+	}
+
+	on_government_type_change = {
+		change_to_hereditary = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_hereditary = yes
+	}
+}
+
+gov_domain = {
+	transfer_of_power = hereditary
+	
+	male_ruler = "RULER_TITLE_TAIKUN"
+	female_ruler = "RULER_TITLE_TAIKUN" 
+
+	male_heir = "RULER_TITLE_HEIR_APPARENT"
+	female_heir = "RULER_TITLE_HEIR_APPARENT"
+	
+	possible = {
+		AND = { exists = c:ODU c:ODU = ROOT }
+		has_law = law_type:law_monarchy
 	}
 
 	on_government_type_change = {
@@ -129,6 +215,28 @@ gov_tsardom = {
 		has_law = law_type:law_monarchy
 		exists = c:RUS
 		c:RUS = ROOT
+	}
+
+	on_government_type_change = {
+		change_to_hereditary = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_hereditary = yes
+	}
+}
+gov_union_of_crowns = {
+	transfer_of_power = hereditary
+
+	male_ruler = "RULER_TITLE_KING"
+	female_ruler = "RULER_TITLE_QUEEN"
+	
+	male_heir = "RULER_TITLE_PRINCE_ROYAL"
+	female_heir = "RULER_TITLE_PRINCESS_ROYAL"
+	
+	possible = {
+		has_law = law_type:law_monarchy
+		exists = c:EAF
+		c:EAF = ROOT
 	}
 
 	on_government_type_change = {
@@ -1728,26 +1836,4 @@ gov_constitutional_grand_principality = {
 	}
 }
 
-gov_union_of_crowns = {
-	transfer_of_power = hereditary
-
-	male_ruler = "RULER_TITLE_KING"
-	female_ruler = "RULER_TITLE_QUEEN"
-	
-	male_heir = "RULER_TITLE_PRINCE_ROYAL"
-	female_heir = "RULER_TITLE_PRINCESS_ROYAL"
-	
-	possible = {
-		exists = c:EAF 
-		c:EAF = ROOT
-		has_law = law_type:law_monarchy
-	}
-
-	on_government_type_change = {
-		change_to_hereditary = yes
-	}
-	on_post_government_type_change = {
-		post_change_to_hereditary = yes
-	}
-}
 

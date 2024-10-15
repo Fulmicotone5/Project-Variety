@@ -676,7 +676,7 @@
 		}
 	}
 	s:STATE_LUZON = {
-		region_state:JAP = {
+		region_state:SAU = {
 			create_pop = {
 				culture = filipino
 				size = 1862796

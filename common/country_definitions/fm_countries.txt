@@ -482,16 +482,6 @@ GRI = {
 	capital = STATE_BAJO_PARAGUAY
 }
 
-JAP = {
-	color = { 237 97 113 }
-	country_type = unrecognized
-	
-	tier = empire
-	
-	cultures = { japanese }
-	capital = STATE_KANSAI
-}
-
 DKI = {
 	color = { 16 82 122 }
 	
@@ -4989,4 +4979,382 @@ MNN = { # Mann
 	cultures = { british }
 	religion = protestant
 	capital = STATE_LANCASHIRE
+}
+
+ODA = {
+	color = { 6 128 45 }
+	country_type = unrecognized
+	
+	tier = kingdom
+	
+	cultures = { japanese }
+	capital = STATE_CHUBU
+}
+WAK = {
+	color = { 70 9 94 }
+	country_type = unrecognized
+	
+	tier = kingdom
+	
+	cultures = { japanese }
+	capital = STATE_KANSAI
+}
+YON = {
+	color = { 28 24 92 }
+	country_type = unrecognized
+	
+	tier = kingdom
+	
+	cultures = { japanese }
+	capital = STATE_CHUBU
+}
+SEN = {
+	color = { 29 53 140 }
+	country_type = unrecognized
+	
+	tier = kingdom
+	
+	cultures = { japanese }
+	capital = STATE_TOHOKU
+}
+CUH = {
+	color = { 173 138 12 }
+	country_type = unrecognized
+	
+	tier = kingdom
+	
+	cultures = { japanese }
+	capital = STATE_CHUGOKU
+}
+SAU = {
+	color = { 13 34 128 }
+	country_type = recognized
+	
+	tier = kingdom
+	
+	cultures = { japanese }
+	capital = STATE_KYUSHU
+}
+
+TOS = {
+	color = { 84 8 10 }
+	country_type = unrecognized
+	
+	tier = kingdom
+	
+	cultures = { japanese }
+	capital = STATE_SHIKOKU
+}
+
+KAW = {
+	color = { 19 168 66 }
+	country_type = unrecognized
+	
+	tier = kingdom
+	
+	cultures = { japanese }
+	capital = STATE_CHUBU
+}
+
+SAG = {
+	color = { 133 84 7 }
+	country_type = unrecognized
+	
+	tier = kingdom
+	
+	cultures = { japanese }
+	capital = STATE_KYUSHU
+}
+TSU = {
+	color = { 214 66 182 }
+	country_type = unrecognized
+	
+	tier = kingdom
+	
+	cultures = { japanese }
+	capital = STATE_KANSAI
+}
+NAA = {
+	color = { 4 54 22 }
+	country_type = unrecognized
+	
+	tier = kingdom
+	
+	cultures = { japanese }
+	capital = STATE_CHUBU
+}
+
+JOZ = {
+	color = { 15 144 184 }
+	country_type = unrecognized
+	
+	tier = kingdom
+	
+	cultures = { japanese }
+	capital = STATE_KANTO
+}
+AIZ = {
+	color = { 7 29 36 }
+	country_type = unrecognized
+	
+	tier = kingdom
+	
+	cultures = { japanese }
+	capital = STATE_TOHOKU
+}
+MAT = {
+	color = { 37 183 230 }
+	country_type = unrecognized
+	
+	tier = kingdom
+	
+	cultures = { japanese }
+	capital = STATE_HOKKAIDO
+}
+HIR = {
+	color = { 47 125 222 }
+	country_type = unrecognized
+	
+	tier = kingdom
+	
+	cultures = { japanese }
+	capital = STATE_TOHOKU
+}
+
+MER = {
+	color = { 36 78 133 } 
+	country_type = unrecognized
+	
+	tier = kingdom
+	
+	cultures = { japanese }
+	capital = STATE_TOHOKU
+}
+KUB = {
+	color = { 28 86 163 }
+	country_type = unrecognized
+	
+	tier = kingdom
+	
+	cultures = { japanese }
+	capital = STATE_TOHOKU
+}
+
+TOK = {
+	color = { 120 10 11 }
+	country_type = unrecognized
+	
+	tier = kingdom
+	
+	cultures = { japanese }
+	capital = STATE_SHIKOKU
+}
+
+ODU = {
+	color = { 140 11 11 }
+	country_type = unrecognized
+	
+	tier = kingdom
+	
+	cultures = { japanese }
+	capital = STATE_KANSAI
+}
+
+AWT = {
+	color = { 92 9 42 }
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { japanese }
+	capital = STATE_SHIKOKU
+}
+TAK = {
+	color = { 79 9 84 }
+	country_type = unrecognized
+	
+	tier = kingdom
+	
+	cultures = { japanese }
+	capital = STATE_KANSAI
+}
+TKT = {
+	color = { 120 12 104 }
+	country_type = unrecognized
+	
+	tier = kingdom
+	
+	cultures = { japanese }
+	capital = STATE_KANSAI
+}
+
+OKA = {
+	color = { 6 46 33 }
+	country_type = unrecognized
+	
+	tier = kingdom
+	
+	cultures = { japanese }
+	capital = STATE_CHUBU
+}
+KKW = {
+	color = { 19 82 61 }
+	country_type = unrecognized
+	
+	tier = kingdom
+	
+	cultures = { japanese }
+	capital = STATE_CHUBU
+}
+SUN = {
+	color = { 24 120 88 }
+	country_type = unrecognized
+	
+	tier = kingdom
+	
+	cultures = { japanese }
+	capital = STATE_CHUBU
+}
+
+MTO = {
+	color = { 31 94 102 }
+	country_type = unrecognized
+	
+	tier = kingdom
+	
+	cultures = { japanese }
+	capital = STATE_KANTO
+}
+UTS = {
+	color = { 48 107 201 }
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { japanese }
+	capital = STATE_KANTO
+}
+
+NUM = {
+	color = { 27 140 65 }
+	country_type = unrecognized
+	
+	tier = kingdom
+	
+	cultures = { japanese }
+	capital = STATE_KANTO
+}
+KOF = {
+	color = { 22 94 46 }
+	country_type = unrecognized
+	
+	tier = kingdom
+	
+	cultures = { japanese }
+	capital = STATE_KANTO
+}
+
+TKA = {
+	color = { 36 145 89 }
+	country_type = unrecognized
+	
+	tier = kingdom
+	
+	cultures = { japanese }
+	capital = STATE_CHUBU
+}
+MTS = {
+	color = { 53 130 89}
+	country_type = unrecognized
+	
+	tier = kingdom
+	
+	cultures = { japanese }
+	capital = STATE_CHUBU
+}
+GUJ = {
+	color = { 81 168 120 }
+	country_type = unrecognized
+	
+	tier = kingdom
+	
+	cultures = { japanese }
+	capital = STATE_CHUBU
+}
+SAB = {
+	color = { 27 150 48 }
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { japanese }
+	capital = STATE_CHUBU
+}
+
+IPJ = {
+	color = { 194 53 60 }
+	country_type = unrecognized
+	
+	tier = empire
+	
+	cultures = { japanese }
+	capital = STATE_KANSAI
+}
+
+JAE = {
+	color= hsv{ 0 0 90 }
+	country_type = unrecognized
+	
+	tier = empire
+	
+	cultures = { japanese }
+	capital = STATE_KANSAI
+}
+
+TWA = {
+	color = { 186 147 19}
+	country_type = unrecognized
+	
+	tier = kingdom
+	
+	cultures = { japanese }
+	capital = STATE_CHUGOKU
+}
+MTE = {
+	color = { 179 165 12 }
+	country_type = unrecognized
+	
+	tier = kingdom
+	
+	cultures = { japanese }
+	capital = STATE_CHUGOKU
+}
+TTT = {
+	color = { 201 114 32 }
+	country_type = unrecognized
+	
+	tier = kingdom
+	
+	cultures = { japanese }
+	capital = STATE_CHUGOKU
+}
+
+HHI = {
+	color = { 163 130 23 }
+	country_type = unrecognized
+	
+	tier = kingdom
+	
+	cultures = { japanese }
+	capital = STATE_CHUGOKU
+}
+
+MTY = {
+	color= { 179 57 32 }
+	country_type = unrecognized
+	
+	tier = kingdom
+	
+	cultures = { japanese }
+	capital = STATE_CHUGOKU
 }

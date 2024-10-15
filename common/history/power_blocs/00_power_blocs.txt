@@ -60,7 +60,7 @@ POWER_BLOCS = {
 		create_power_bloc = {
 			name = french_kingdom
 			map_color = {
-				9 51 189
+				163 34 24
 			}
 			founding_date = 1700.01.01
 			identity = identity_sovereign_empire
@@ -68,6 +68,60 @@ POWER_BLOCS = {
 			member = c:PRI
 			member = c:HSE
 
+		}
+		power_bloc = {
+			add_principle = principle_market_unification_3
+		}
+	}
+	c:IPJ = {
+		create_power_bloc = {
+			name = empire_of_japan
+			map_color = {
+				147
+				130
+				110
+			}
+			founding_date = 1589.09.10
+			identity = identity_sovereign_empire
+			principle = principle_vassalization_1
+			member = c:SAU
+			member = c:SAG
+			member = c:CUH
+			member = c:TOS
+			member = c:TSU
+			member = c:NAA
+			member = c:JOZ
+			member = c:AIZ
+			member = c:SEN
+			member = c:WAK
+			member = c:ODA
+			member = c:KAW
+			member = c:YON
+			member = c:MAT
+			member = c:HIR
+			member = c:MER
+			member = c:KUB
+			member = c:ODU
+			member = c:TOK
+			member = c:AWT
+			member = c:TAK
+			member = c:TKT
+			member = c:OKA
+			member = c:KKW
+			member = c:SUN
+			member = c:MTO
+			member = c:UTS
+			member = c:TWA
+			member = c:MTE
+			member = c:TTT
+			member = c:HHI
+			member = c:MTY
+			member = c:NUM
+			member = c:KOF
+			member = c:TKA
+			member = c:MTS
+			member = c:GUJ
+			member = c:SAB
 		}
 		power_bloc = {
 			add_principle = principle_market_unification_3

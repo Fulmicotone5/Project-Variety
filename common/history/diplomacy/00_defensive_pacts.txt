@@ -23,4 +23,10 @@
 			type = defensive_pact
 		}	
 	}
+	c:PUR ?= {
+		create_diplomatic_pact = {
+			country = c:SAU          
+			type = defensive_pact
+		}	
+	}
 }

@@ -2125,12 +2125,12 @@ BUILDINGS={
 	s:STATE_NEW_MEXICO = {
 	}
 	s:STATE_CALIFORNIA = {
-		region_state:JAP = {
+		region_state:MAX = {
 			create_building={
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:JAP"
+						country="c:MAX"
 						levels=1
 					}
 				}
@@ -2141,7 +2141,7 @@ BUILDINGS={
 				building="building_wheat_farm"
 				add_ownership={
 					country={
-						country="c:JAP"
+						country="c:MAX"
 						levels=1
 					}
 				}
@@ -2152,7 +2152,7 @@ BUILDINGS={
 				building="building_coal_mine"
 				add_ownership={
 					country={
-						country="c:JAP"
+						country="c:MAX"
 						levels=1
 					}
 				}
@@ -2163,7 +2163,7 @@ BUILDINGS={
 				building="building_iron_mine"
 				add_ownership={
 					country={
-						country="c:JAP"
+						country="c:MAX"
 						levels=1
 					}
 				}
@@ -2174,7 +2174,7 @@ BUILDINGS={
 				building="building_logging_camp"
 				add_ownership={
 					country={
-						country="c:JAP"
+						country="c:MAX"
 						levels=1
 					}
 				}
@@ -2535,13 +2535,13 @@ BUILDINGS={
 		}
 	}
 	s:STATE_YUCATAN={
-		region_state:MAX={
+		region_state:MAY={
 			create_building={
 				building="building_banana_plantation"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:MAX"
+						country="c:MAY"
 						levels=1
 						region="STATE_YUCATAN"
 					}
@@ -2554,7 +2554,7 @@ BUILDINGS={
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:MAX"
+						country="c:MAY"
 						levels=1
 						region="STATE_YUCATAN"
 					}
@@ -3093,13 +3093,13 @@ BUILDINGS={
 		}
 	}
 	s:STATE_CHIAPAS={
-		region_state:MAX={
+		region_state:MAY={
 			create_building={
 				building="building_dye_plantation"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:MAX"
+						country="c:MAY"
 						levels=1
 						region="STATE_CHIAPAS"
 					}
@@ -3112,7 +3112,7 @@ BUILDINGS={
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:MAX"
+						country="c:MAY"
 						levels=1
 						region="STATE_CHIAPAS"
 					}
@@ -3123,12 +3123,12 @@ BUILDINGS={
 		}
 	}
 	s:STATE_BAJA_CALIFORNIA = {
-		region_state:JAP = {
+		region_state:MAX = {
 			create_building={
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:JAP"
+						country="c:MAX"
 						levels=1
 					}
 				}
@@ -3139,7 +3139,7 @@ BUILDINGS={
 				building="building_wheat_farm"
 				add_ownership={
 					country={
-						country="c:JAP"
+						country="c:MAX"
 						levels=1
 					}
 				}
@@ -3150,7 +3150,7 @@ BUILDINGS={
 				building="building_shipyards"
 				add_ownership={
 					country={
-						country="c:JAP"
+						country="c:MAX"
 						levels=1
 					}
 				}

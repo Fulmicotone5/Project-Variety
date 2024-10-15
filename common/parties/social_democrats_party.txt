@@ -100,8 +100,8 @@ social_democrat_party = {
 			triggered_desc = {
 				desc = party_common_peoples_party
 				trigger = {
-					exists = c:JAP
-					THIS = c:JAP
+					exists = c:JAE
+					THIS = c:JAE
 				}
 			}
 			triggered_desc = {

@@ -535,7 +535,7 @@ set_national_idea = {
 				this = c:BOH
 				this = c:KAR
 				this = c:KOR
-				this = c:JAP
+				this = c:ODU
 				this = c:SAE
 
 			}
@@ -869,8 +869,8 @@ national_idea_traditions = {
 	}
 	else_if = {
 		limit = {
-			exists = c:JAP
-			this = c:JAP
+			exists = c:ODU
+			this = c:ODU
 		}
 		if = {
 			limit = {

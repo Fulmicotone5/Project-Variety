@@ -498,7 +498,7 @@
 		}
 	}
 	s:STATE_FORMOSA = {
-		region_state:JAP = {
+		region_state:SAU = {
 			create_pop = {
 				culture = min
 				size = 1480000
@@ -967,93 +967,368 @@
 		}
 	}
 	s:STATE_SAKHALIN = {
-		region_state:AIN = {
+		region_state:SKH = {
 			create_pop = {
 				culture = ainu
 				size = 24004
 			}
-		}
-		region_state:JAP = {
 			create_pop = {
-				culture = ainu
-				size = 4004
-			}
-			create_pop = {
-				culture = japanese
-				size = 321
+				culture = siberian
+				size = 16000
 			}
 		}
 	}
 	s:STATE_HOKKAIDO = {
-		region_state:JAP = {
+		region_state:AIN = {
 			create_pop = {
 				culture = ainu
-				religion = mahayana
-				size = 19020
+				size = 49500
+			}
+		}
+		region_state:MAT = {
+			create_pop = {
+				culture = ainu
+				size = 9020
 			}
 			create_pop = {
 				culture = japanese
-				size = 199862
+				size = 69862
 			}
 		}
 	}
 	s:STATE_TOHOKU = {
-		region_state:JAP = {
+		region_state:YON = {
 			create_pop = {
 				culture = japanese
-				size = 2374632
+				size = 412044
 			}
 			create_pop = {
 				culture = japanese
 				religion = shinto
-				size = 917280
+				size = 102199
+			}
+		}
+		region_state:KUB = {
+			create_pop = {
+				culture = japanese
+				size = 775188
+			}
+			create_pop = {
+				culture = japanese
+				religion = shinto
+				size = 288594
+			}
+		}
+		region_state:SEN = {
+			create_pop = {
+				culture = japanese
+				size = 355958
+			}
+			create_pop = {
+				culture = japanese
+				religion = shinto
+				size = 158695
+			}
+		}
+		region_state:AIZ = {
+			create_pop = {
+				culture = japanese
+				size = 774212
+			}
+			create_pop = {
+				culture = japanese
+				religion = shinto
+				size = 244689
+			}
+		}
+		region_state:MER = {
+			create_pop = {
+				culture = japanese
+				size = 412634
+			}
+			create_pop = {
+				culture = japanese
+				religion = shinto
+				size = 99382
+			}
+		}
+		region_state:HIR = {
+			create_pop = {
+				culture = japanese
+				size = 105943
+			}
+			create_pop = {
+				culture = japanese
+				religion = shinto
+				size = 25732
 			}
 		}
 	}
 	s:STATE_KANTO = {
-		region_state:JAP = {
+		region_state:NUM = {
 			create_pop = {
 				culture = japanese
-				size = 4050072
+				size = 1503243
 			}
 			create_pop = {
 				culture = japanese
 				religion = shinto
-				size = 1123204
+				size = 504322
+			}
+		}
+		region_state:KOF = {
+			create_pop = {
+				culture = japanese
+				size = 1022384
+			}
+			create_pop = {
+				culture = japanese
+				religion = shinto
+				size = 301938
+			}
+		}
+		region_state:JOZ = {
+			create_pop = {
+				culture = japanese
+				size = 290546
+			}
+			create_pop = {
+				culture = japanese
+				religion = shinto
+				size = 125834
+			}
+		}
+		region_state:ODA = {
+			create_pop = {
+				culture = japanese
+				size = 794958
+			}
+			create_pop = {
+				culture = japanese
+				religion = shinto
+				size = 199832
+			}
+		}
+		region_state:MTO = {
+			create_pop = {
+				culture = japanese
+				size = 383721
+			}
+			create_pop = {
+				culture = japanese
+				religion = shinto
+				size = 90493
+			}
+		}
+		region_state:UTS = {
+			create_pop = {
+				culture = japanese
+				size = 320394
+			}
+			create_pop = {
+				culture = japanese
+				religion = shinto
+				size = 101984
 			}
 		}
 	}
 	s:STATE_CHUBU = {
-		region_state:JAP = {
+		region_state:KAW = {
 			create_pop = {
 				culture = japanese
-				size = 4127776
+				size = 639222
 			}
 			create_pop = {
 				culture = japanese
 				religion = shinto
-				size = 1745764
+				size = 170493
+			}
+		}
+		region_state:TKA = {
+			create_pop = {
+				culture = japanese
+				size = 655032
+			}
+			create_pop = {
+				culture = japanese
+				religion = shinto
+				size = 160392
+			}
+		}
+		region_state:MTS = {
+			create_pop = {
+				culture = japanese
+				size = 302999
+			}
+			create_pop = {
+				culture = japanese
+				religion = shinto
+				size = 110594
+			}
+		}
+		region_state:GUJ = {
+			create_pop = {
+				culture = japanese
+				size = 929993
+			}
+			create_pop = {
+				culture = japanese
+				religion = shinto
+				size = 288943
+			}
+		}
+		region_state:SAB = {
+			create_pop = {
+				culture = japanese
+				size = 306292
+			}
+			create_pop = {
+				culture = japanese
+				religion = shinto
+				size = 99039
+			}
+		}
+
+		region_state:YON = {
+			create_pop = {
+				culture = japanese
+				size = 133589
+			}
+			create_pop = {
+				culture = japanese
+				religion = shinto
+				size = 22786
+			}
+		}
+		region_state:NAA = {
+			create_pop = {
+				culture = japanese
+				size = 679435
+			}
+			create_pop = {
+				culture = japanese
+				religion = shinto
+				size = 198345
+			}
+		}
+		region_state:ODA = {
+			create_pop = {
+				culture = japanese
+				size = 296584
+			}
+			create_pop = {
+				culture = japanese
+				religion = shinto
+				size = 106493
+			}
+		}
+		region_state:OKA = {
+			create_pop = {
+				culture = japanese
+				size = 626854
+			}
+			create_pop = {
+				culture = japanese
+				religion = shinto
+				size = 145903
+			}
+		}
+		region_state:KKW = {
+			create_pop = {
+				culture = japanese
+				size = 288675
+			}
+			create_pop = {
+				culture = japanese
+				religion = shinto
+				size = 110902
+			}
+		}
+		region_state:SUN = {
+			create_pop = {
+				culture = japanese
+				size = 299054
+			}
+			create_pop = {
+				culture = japanese
+				religion = shinto
+				size = 99584
 			}
 		}
 	}
 	s:STATE_KANSAI = {
-		region_state:JAP = {
+		region_state:WAK = {
 			create_pop = {
 				culture = japanese
-				size = 6178176
+				size = 504922
 			}
 			create_pop = {
 				culture = japanese
 				religion = shinto
-				size = 1686204
+				size = 223943
+			}
+		}
+		region_state:TAK = {
+			create_pop = {
+				culture = japanese
+				size = 975382
+			}
+			create_pop = {
+				culture = japanese
+				religion = shinto
+				size = 414933
+			}
+		}
+		region_state:TKT = {
+			create_pop = {
+				culture = japanese
+				size = 501948
+			}
+			create_pop = {
+				culture = japanese
+				religion = shinto
+				size = 209584
+			}
+		}
+		region_state:ODU = {
+			create_pop = {
+				culture = japanese
+				size = 2839219
+			}
+			create_pop = {
+				culture = japanese
+				religion = shinto
+				size = 1103291
+			}
+		}
+		region_state:TSU = {
+			create_pop = {
+				culture = japanese
+				size = 498176
+			}
+			create_pop = {
+				culture = japanese
+				religion = shinto
+				size = 206204
+			}
+		}
+		region_state:IPJ = {
+			create_pop = {
+				culture = japanese
+				size = 228176
+			}
+			create_pop = {
+				culture = japanese
+				religion = shinto
+				size = 86204
 			}
 		}
 	}
 	s:STATE_KYUSHU = {
-		region_state:JAP = {
+		region_state:SAU = {
 			create_pop = {
 				culture = japanese
-				size = 3170167
+				size = 2370167
 			}
 			create_pop = {
 				culture = micronesian
@@ -1062,17 +1337,36 @@
 			create_pop = {
 				culture = japanese
 				religion = shinto
-				size = 1067036
+				size = 767036
 			}
 			create_pop = {
 				culture = han # nanfaren
 				size = 18712
 			}
 		}
+		region_state:SAG = {
+			create_pop = {
+				culture = japanese
+				size = 870167
+			}
+			create_pop = {
+				culture = micronesian
+				size = 132
+			}
+			create_pop = {
+				culture = japanese
+				religion = shinto
+				size = 367036
+			}
+			create_pop = {
+				culture = han # nanfaren
+				size = 8712
+			}
+		}
 	}
 
 	s:STATE_RYUKYU_ISLANDS = {
-		region_state:JAP = {
+		region_state:SAU = {
 			create_pop = {
 				culture = japanese
 				size = 259181
@@ -1081,28 +1375,105 @@
 	}
 	
 	s:STATE_CHUGOKU = {
-		region_state:JAP = {
+		region_state:CUH = {
 			create_pop = {
 				culture = japanese
-				size = 2024340
+				size = 301444
 			}
 			create_pop = {
 				culture = japanese
 				religion = shinto
-				size = 744588
+				size = 55039
+			}
+		}
+		region_state:TWA = {
+			create_pop = {
+				culture = japanese
+				size = 280943
+			}
+			create_pop = {
+				culture = japanese
+				religion = shinto
+				size = 74588
+			}
+		}
+		region_state:MTE = {
+			create_pop = {
+				culture = japanese
+				size = 250394
+			}
+			create_pop = {
+				culture = japanese
+				religion = shinto
+				size = 110293
+			}
+		}
+		region_state:TTT = {
+			create_pop = {
+				culture = japanese
+				size = 275594
+			}
+			create_pop = {
+				culture = japanese
+				religion = shinto
+				size = 72458
+			}
+		}
+		region_state:HHI = {
+			create_pop = {
+				culture = japanese
+				size = 859643
+			}
+			create_pop = {
+				culture = japanese
+				religion = shinto
+				size = 302984
+			}
+		}
+		region_state:MTY = {
+			create_pop = {
+				culture = japanese
+				size = 202434
+			}
+			create_pop = {
+				culture = japanese
+				religion = shinto
+				size = 114458
 			}
 		}
 	}
 	s:STATE_SHIKOKU = {
-		region_state:JAP = {
+		region_state:TOS = {
 			create_pop = {
 				culture = japanese
-				size = 1161416
+				size = 503495
 			}
 			create_pop = {
 				culture = japanese
 				religion = shinto
-				size = 352420
+				size = 189342
+			}
+		}
+		region_state:TOK = {
+			create_pop = {
+				culture = japanese
+				size = 509384
+			}
+			create_pop = {
+				culture = japanese
+				religion = shinto
+				size = 177345
+			}
+		}
+		region_state:AWT = {
+			create_pop = {
+				culture = japanese
+				size = 215796
+			}
+			create_pop = {
+				culture = japanese
+				religion = shinto
+				size = 44593
 			}
 		}
 	}

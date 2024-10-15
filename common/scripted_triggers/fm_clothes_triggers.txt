@@ -224,20 +224,20 @@ japanese_imperial_clothes_trigger = {
 				}
 				OR = {
 					NOT = {
-						exists = c:JAP
+						exists = c:IPJ
 					}
 					AND = {
-						exists = c:JAP
+						exists = c:IPJ
 						NOT = {
-							home_country = c:JAP
+							home_country = c:IPJ
 						}
 					}
 				}
 			}
 			AND = {
-				exists = c:JAP
+				exists = c:IPJ
 				home_country = {
-					this = c:JAP
+					this = c:IPJ
 					NOT = {
 						has_variable = meiji_restoration_complete
 					}

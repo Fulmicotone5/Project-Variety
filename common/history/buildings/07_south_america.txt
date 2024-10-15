@@ -657,11 +657,11 @@
 		}
 	}
 	s:STATE_TARAPACA={
-		region_state:JAP={
+		region_state:AGA={
 		}
 	}
 	s:STATE_ANTOFAGASTA={
-		region_state:JAP={
+		region_state:AGA={
 		}
 	}
 	s:STATE_SANTA_CRUZ={
@@ -1313,13 +1313,13 @@
 		}
 	}
 	s:STATE_SANTIAGO={
-		region_state:JAP={
+		region_state:AGA={
 			create_building={
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:JAP"
-						levels=4
+						country="c:AGA"
+						levels=2
 					}
 				}
 				reserves=1
@@ -1330,7 +1330,7 @@
 				add_ownership={
 					building={
 						type="building_tooling_workshops"
-						country="c:JAP"
+						country="c:AGA"
 						levels=1
 						region="STATE_SANTIAGO"
 					}
@@ -1342,7 +1342,7 @@
 				building="building_gold_mine"
 				add_ownership={
 					country={
-						country="c:JAP"
+						country="c:AGA"
 						levels=3
 					}
 				}
@@ -1354,7 +1354,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:JAP"
+						country="c:AGA"
 						levels=1
 						region="STATE_SANTIAGO"
 					}
@@ -1367,8 +1367,8 @@
 				add_ownership={
 					building={
 						type="building_wheat_farm"
-						country="c:JAP"
-						levels=1
+						country="c:AGA"
+						levels=2
 						region="STATE_SANTIAGO"
 					}
 				}
@@ -1380,7 +1380,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:JAP"
+						country="c:AGA"
 						levels=1
 						region="STATE_SANTIAGO"
 					}
@@ -1392,7 +1392,7 @@
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:JAP"
+						country="c:AGA"
 						levels=1
 					}
 				}
@@ -1404,7 +1404,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:JAP"
+						country="c:AGA"
 						levels=2
 						region="STATE_SANTIAGO"
 					}
@@ -1415,13 +1415,13 @@
 		}
 	}
 	s:STATE_LOS_RIOS={
-		region_state:JAP={
+		region_state:AGA={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
 					building={
 						type="building_livestock_ranch"
-						country="c:JAP"
+						country="c:AGA"
 						levels=1
 						region="STATE_LOS_RIOS"
 					}
@@ -1434,7 +1434,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:JAP"
+						country="c:AGA"
 						levels=1
 						region="STATE_LOS_RIOS"
 					}
@@ -1447,7 +1447,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:JAP"
+						country="c:AGA"
 						levels=1
 						region="STATE_LOS_RIOS"
 					}
@@ -1460,7 +1460,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:JAP"
+						country="c:AGA"
 						levels=2
 						region="STATE_LOS_RIOS"
 					}
@@ -1471,13 +1471,13 @@
 		}
 	}
 	s:STATE_ARAUCANIA={
-		region_state:JAP={
+		region_state:AGA={
 			create_building={
 				building="building_fishing_wharf"
 				add_ownership={
 					building={
 						type="building_fishing_wharf"
-						country="c:JAP"
+						country="c:AGA"
 						levels=1
 						region="STATE_ARAUCANIA"
 					}
@@ -1490,7 +1490,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:JAP"
+						country="c:AGA"
 						levels=1
 						region="STATE_ARAUCANIA"
 					}

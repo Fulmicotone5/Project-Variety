@@ -788,9 +788,6 @@ STATES = {
 		}
 		
 		add_homeland = cu:na_salish
-		add_claim = c:YUA
-		add_claim = c:KOR
-		add_claim = c:JAP
 	}
 	s:STATE_ALBERTA = {
 		create_state = {
@@ -1145,7 +1142,6 @@ STATES = {
 			owned_provinces = { xAEFFEB xCF4030 xFDDBE1 x33409C x51E0D0 x53F27D x7E02ED xEDA242 x254626 xD65CBB x83B57F x0EA2A3 xD060D0 x91A2E2 xD2EE80 xD74DB9 x26EEF1 xF22CA8 x4FF662 x0E3317 xFD1F91 x276C93 xC1F3AD xA39D9A xE8CAF7 x3354DD x6C0833 x234F3B x821BC4 x54F665 xE7D61A x6FB312 xA6D562 x628CE9 x6576A8 x68E6E2 x5CAC91 xAFEC31 xBEA265 xB6943C x2BD326 x045603 xCFB449 x37807C xEF1DE2 xFDFB3F x3D22B3 x20201C xB01F74 x6B877D x9907A8 xDBD9ED xBDF73B x0AA399 x0274E2 xB48C62 xBA0D99 x2D0386 x3ADE63 x617C46 x70E720 x75A793 x5BE1A4 xE02F70 x562717 x5A4740 x97B2F0 x3AC189 x267585 x02DB56 xB9104E x086D7B x9AFA6A xAF3A01 x36A22E xE85D89 x1F3DBB x533071 xC41B96 xE15846 x9A8050 x7E0DF6 x4AAA58 x8FD0F0 x391526 x11FF8C x45975E xFB3077 xCBED4E x24BF23 x996B4B x95B28A x467A72 x5E4B6A xF6ABF7 xE4FF76 x3A6A72 x5E0692 xE7C856 x31FF16 x798FE7 xCB67EC x3D5CE8 xCEDA26 x740B78 x6334E0 xDF754A x9453C1 xC7A584 x799B34 x4866D3 x27A4C5 xB15C6D xC24514 x19D5E4 x6FD80D xCDE6CE xAEC58F x0285F6 x116050 x18E220 x027214 xFDD3E6 xF4A6F5 x1A3E4E x9D5FB1 x8B56F5 xC7BC96 x704E84 xB62ED1 x8ACD73 xC24AAA xBE5235 xB96167 x1AE650 x722808 x468CAB xE6C282 x698A94 x482C38 xDA4137 x20093A xCD17C3 xB9E4F4 x237F0D x2ACD80 xED82D9 xFB0B72 x840C5D x1C487B xA8E040 x24AEFA x40E057 x768B4D xF4CF93 x90F3AF x447C79 x1160CF x6E5393 xC42012 xD9170D x73D224 xC193DA xE18B8E xA681A6 x8CAAE6 x8D65DF xC15B4F xFAC1B2 x93A7A7 x8A6B46 x9D61D1 x279D6E xFA57CA x94099D x16D521 x6CBE17 x3C7D82 x30D9E5 x28BA60 x44CFBA xE6B9A2 xC345CF x85E2DE x2FE431 x9D8ACB x4555A7 x51BCDB xA98344 x0F081C x518D32 x99526E xF17F79 x52D3F3 x681CC6 x4A7137 }
 			state_type = unincorporated
 		}
-		add_homeland = cu:japanese
 		add_homeland = cu:aborigine
 	}
 	s:STATE_VICTORIA = {
@@ -1282,7 +1278,6 @@ STATES = {
 				x83F546 x69E2E6 x6C71E5 x048DBF xEEEFB7 x95B834 xEF2A2F xFB6039 x27E1A1 x496C63 x35DA70 xD40E0B x753DF5 x6F64BA x32E24B xA9E6D1 xD63284 x691D84 xB1E766 x835D35 x496C3E x54DF60 xA42747 xB021D1 xA7BCBF x1BFD4A x9E719E x71DA68 xAB255E x87BA64 xE0A589 x7787B6 xF568ED x6A150A xD40F63 x284A61 x6BBD1B xFFE893 xEDAB39 x4F4743 x1629D3 x19818E x1A0031 x7260D1 xFF6CAB x044521 x2A320F x83B260 x9C6A14 x2007B7 xDC3CFD x642906 xAB7482 xFA3609
 			}
 		}
-		add_homeland = cu:japanese
 		add_homeland = cu:aborigine
 		add_claim = c:JAP
 	}
@@ -1727,7 +1722,7 @@ STATES = {
 			owned_provinces = { xDAABF7 xD6A835 x3F27C8 xC4A8E9 x108000 xC1F518 x42B7D9 xE97768 xE6440D x33EE3B x0425B3 x1C6782 x5A4650 xBFE3A4 xAF199E }
 		}
 		create_state = {
-			country = c:JAP
+			country = c:MAX
 			owned_provinces = { x0898A3 x2F8F36 x8CC57E xC2E1AA x4C2D30 xA45ACA x3117AA x508000 x8CFB9B x2099C1 x108080 x1116AA x8F1372 x908080 x76A57D }
 		}
 		create_state = {
@@ -1735,7 +1730,6 @@ STATES = {
 			owned_provinces = { xC78CD3 xA06435 x2F3B45 x6B8E78 x7A5DA6 x8D4E6D x500CAD x2C84C4 x908000 xDBCBC6 x2A91D8 xC54807 xAB1AA2 xE4FC42 x5EF8F5 xB8F452 x607BA8 x161979 x7B005B x25A37F x6F44CB xFDC502 }
 		}
 		add_claim = c:YUA
-		add_claim = c:JAP
 		add_homeland = cu:na_yuman
 		add_homeland = cu:han
 		add_homeland = cu:min
@@ -2309,8 +2303,6 @@ STATES = {
 		}
 		
 		add_homeland = cu:patagonian
-		add_claim = c:AGA
-		add_claim = c:JAP
 	}
 	s:STATE_RIO_NEGRO = {
 		create_state = {
@@ -2330,7 +2322,6 @@ STATES = {
 
 		add_homeland = cu:argentino
 		add_homeland = cu:patagonian	
-		add_claim = c:AGA	
 	}
 	s:STATE_LA_PAMPA = {
 		create_state = {
@@ -2424,27 +2415,27 @@ STATES = {
 	}
 	s:STATE_SANTIAGO = {
 		create_state = {
-			country = c:JAP
+			country = c:AGA
 			owned_provinces = { x94DFAD xAFBE09 x92EAB2 x73C0F8 x6F3C8F x9E95B8 xC6A968 xD080D0 xD08050 x001886 xFEDF06 x975852 x6B96A8 xF0147F x792B0A x1D4FBD x1297F8 xA53405 x7CD76E xD3A966 x423A89 x38BE02 xB17E89 xD000D0 xE3764F x3B1319 xFFF993 xB808E7 x983742 x5F5835 xCF8B7D xB6BD11 x61C0E9 xC3EC7E xB57224 xACD450 x42CE23 x5080D0 x5DED27 }
-			state_type = unincorporated
+			state_type = incorporated
 		}
 		
 		add_homeland = cu:patagonian
 	}
 	s:STATE_LOS_RIOS = {
 		create_state = {
-			country = c:JAP
+			country = c:AGA
 			owned_provinces = { xD78C29 x29AFD4 xF63FA0 x10C050 x304688 xAAA21B x24D8BD x427820 xDAE7CA x904050 xF68D31 x1A5ED2 x90C0D0 x49F9FC x8848C6 xF2263F x02C052 x3D3ED8 xF0CA34 x9DA2FB xE70539 xA316F5 xB72711 x90C050 xE855B1 x31F03F x142AEF xCFB481 x42A6B5 x9040D0 x83D701 }
-			state_type = unincorporated
+			state_type = incorporated
 		}
 		
 		add_homeland = cu:patagonian
 	}
 	s:STATE_ARAUCANIA = {
 		create_state = {
-			country = c:JAP
+			country = c:AGA
 			owned_provinces = { x553B3F x521B0A x592AB4 x9EF738 x4A805F x144683 xEFB409 x45155F xB79F3F xC42462 }
-			state_type = unincorporated
+			state_type = incorporated
 		}
 		create_state = {
 			country = c:THL
@@ -2460,8 +2451,6 @@ STATES = {
 		}
 		
 		add_homeland = cu:patagonian		
-		add_claim = c:JAP
-		add_claim = c:AGA
 	}
 	s:STATE_SOUTH_ATLANTIC_ISLANDS = {
 		create_state = {
@@ -3897,7 +3886,7 @@ STATES = {
 	}
 	s:STATE_LUZON = {
 		create_state = {
-			country = c:JAP
+			country = c:SAU
 			owned_provinces = { x51BC8C x33B5F8 x0D8236 xB0F0E0 x5C0D4C xB08546 x1C8BCF x95102A x63FA56 xEB310E xECF5E9 x795BD8 x707061 xF4CD9C x5ED347 xCDE626 xD2AEEB xE173C4 x31F0E0 x2291B3 x6D44B5 x97B9E0 }
 		}
 		create_state = {
@@ -5636,67 +5625,174 @@ STATES = {
 	}
 	s:STATE_SAKHALIN = {
 		create_state = {
-			country = c:AIN
-			owned_provinces = { xF1B27F x041FF2 x1CAAE0 x9628A0 x4ED0E9 x768145 xDFA060 x1B4E8D x1CA52F xC3C06E xEAFA0A x22C190 x7608FE xB8277E x503660 x02BAB7 x3405B2 xA5E421 xBE16C2 xD0294D xF15B61 x47B65C xE99CEA }
+			country = c:SKH
+			owned_provinces = { xF1B27F x041FF2 x1CAAE0 x9628A0 x4ED0E9 x768145 xDFA060 x1B4E8D x1CA52F xC3C06E xEAFA0A x22C190 x7608FE xB8277E x503660 x02BAB7 x3405B2 x2010C0 xA5E421 xBE16C2 x2492AA xD0294D xF15B61 x47B65C x9E3A0A xE99CEA }
 		}
-		create_state = {
-			country = c:JAP
-			owned_provinces = { x2010C0 x2492AA x9E3A0A }
-		}
+		
 		add_homeland = cu:siberian
 		add_homeland = cu:ainu
 
-		add_claim = c:JAP
+		add_claim = c:<AT
 	}	
 	s:STATE_HOKKAIDO = {
 		create_state = {
-			country = c:JAP
+			country = c:AIN
+			owned_provinces = { 
+				x6275D4 x65D8B2 x5F2A24 x103C2B xEEB7F4 x413F60 x03E00D x86757A x420E86 xC85C0C x7F67EF x1E5261 x601140 x1E9A93
+			}
+		}
+		create_state = {
+			country = c:MAT
 			owned_provinces = {
-				xA090C0 x40BDB8 xF17C01
-				x17C8CA x210B6E xA011C0 x3974DA x5F2A24 x103C2B x1E9A93 x6275D4 x85C158 x65D8B2 xEEB7F4 x413F60 x03E00D x86757A x420E86 xC85C0C x7F67EF x1E5261 x601140 x2090C0 x3EA37A x493B76 x9E56C2 x5B9D2D x70C55B 
+				xA090C0 x40BDB8 xF17C01 x5B9D2D x70C55B 
+				x17C8CA x210B6E x85C158 x2090C0 x3EA37A x493B76 x9E56C2 xA011C0 x3974DA 
 			}
 		}
 		
 		add_homeland = cu:japanese
 		add_homeland = cu:ainu
-		add_claim = c:JAP	
+		add_claim = c:MAT	
 	}
 	s:STATE_TOHOKU = {
 		create_state = {
-			country = c:JAP
-			owned_provinces = { xE22202 xE0D080 xBC2AFE x3190C0 x15EED4 x81A720 xB011C0 xBED026 x1BAF33 x4C5533 xA26E5F xB090C0 xF29D08 x701040 x637FEB xAC762F xF01040 x322F47 x19C715 x3CA2FC }
+			country = c:YON
+			owned_provinces = { xF29D08 x701040 x637FEB }
+		}
+		create_state = {
+			country = c:SEN
+			owned_provinces = { x4C5533 xB090C0 xA26E5F xB011C0 }
+		}	
+		create_state = {
+			country = c:AIZ
+			owned_provinces = { x19C715 x322F47 x3CA2FC xF01040 xAC762F }
+		}	
+		create_state = {
+			country = c:KUB
+			owned_provinces = { xE22202 xBC2AFE x3190C0 x15EED4 x81A720 }
+		}
+		create_state = {
+			country = c:MER
+			owned_provinces = { x1BAF33 xBED026 x4C5533 }
+		}
+		create_state = {
+			country = c:HIR
+			owned_provinces = { xE0D080 }
 		}
 		
 		add_homeland = cu:japanese
 	}
 	s:STATE_KANTO = {
 		create_state = {
-			country = c:JAP
-			owned_provinces = { xEF9040 x478599 xF011C0 xB94331 x7010C0 x709040 xEAE893 x787CC4 x7090C0 xD350FB }
+			country = c:NUM
+			owned_provinces = { x7090C0 x787CC4 xD350FB }
+		}
+		create_state = {
+			country = c:KOF
+			owned_provinces = { xF011C0 xB94331 }
+		}
+		create_state = {
+			country = c:ODA
+			owned_provinces = { xEF9040 x7010C0 }
+		}
+		create_state = {
+			country = c:JOZ
+			owned_provinces = { x478599 }
+		}
+		create_state = {
+			country = c:MTO
+			owned_provinces = { x709040 }
+		}
+		create_state = {
+			country = c:UTS
+			owned_provinces = { xEAE893 }
 		}
 		
 		add_homeland = cu:japanese
 	}
 	s:STATE_CHUBU = {
 		create_state = {
-			country = c:JAP
-			owned_provinces = { x9B2E00 x205FEB x4942D2 x3050C0 xC02285 x910F25 xB5F9BD xE76E8F xEF90C0 x5A57C3 xB0D040 x88595F x31D0C0 x5E87A1 xADE732 xD12DC5 xB050C0 x779089 }
+			country = c:ODA
+			owned_provinces = { xADE732 }
+		}
+		create_state = {
+			country = c:KAW
+			owned_provinces = { x5A57C3 x88595F }
+		}
+		create_state = {
+			country = c:TKA
+			owned_provinces = { x205FEB xD12DC5 }
+		}
+		create_state = {
+			country = c:MTS
+			owned_provinces = { xB050C0 }
+		}
+		create_state = {
+			country = c:GUJ
+			owned_provinces = { x9B2E00 x4942D2 xC02285 }
+		}
+		create_state = {
+			country = c:SAB
+			owned_provinces = { xB0D040 }
+		}
+		create_state = {
+			country = c:YON
+			owned_provinces = { xB5F9BD }
+		}
+		create_state = {
+			country = c:NAA
+			owned_provinces = { xE76E8F xEF90C0 x779089 }
+		}
+		create_state = {
+			country = c:OKA
+			owned_provinces = { x3050C0 x910F25 }
+		}
+		create_state = {
+			country = c:KKW
+			owned_provinces = { x31D0C0 }
+		}
+		create_state = {
+			country = c:SUN
+			owned_provinces = { x5E87A1 }
 		}
 		
 		add_homeland = cu:japanese
 	}
 	s:STATE_KANSAI = {
 		create_state = {
-			country = c:JAP
-			owned_provinces = { xB0D0C0 xB03EF0 x614287 x705040 x879C25 x8EC4C9 x305040 xCCB03E x70D040 x9BD7C1 x9E58B2 }
+			country = c:ODU
+			owned_provinces = { x614287 x705040 x879C25 x305040 xCCB03E x70D040 x9BD7C1 x9E58B2 }
+		}
+		create_state = {
+			country = c:IPJ
+			owned_provinces = { x8EC4C9 }
+		}
+		create_state = {
+			country = c:TAK
+			owned_provinces = { xB03EF0 xB0D0C0 }
+		}
+		create_state = {
+			country = c:TKT
+			owned_provinces = { xCCB03E }
+		}
+		create_state = {
+			country = c:WAK
+			owned_provinces = { x614287 }
+		}
+		create_state = {
+			country = c:TSU
+			owned_provinces = { x305040 }
 		}
 		
 		add_homeland = cu:japanese
 	}
 	s:STATE_KYUSHU = {
 		create_state = {
-			country = c:JAP
-			owned_provinces = { x70CF00 xF0D000 x73414A xAE5874 xE16F98 x705080 x906F1E xEF5080 xCEA020 x1F0D2C x5C7980 x70D080 x800111 xEF50C0 }
+			country = c:SAU
+			owned_provinces = { x73414A x705080 x906F1E xEF5080 xCEA020 x1F0D2C x5C7980 x70D080 x800111 xEF50C0 }
+		}
+		create_state = {
+			country = c:SAG
+			owned_provinces = { x70CF00 xF0D000 xAE5874 xE16F98 }
 		}
 		
 		add_homeland = cu:japanese
@@ -5704,7 +5800,7 @@ STATES = {
 
 	s:STATE_RYUKYU_ISLANDS = {
 		create_state = {
-			country = c:JAP
+			country = c:SAU
 			owned_provinces = { xf0f061 xf0d080 }
 		}
 			
@@ -5714,16 +5810,44 @@ STATES = {
 
 	s:STATE_CHUGOKU = {
 		create_state = {
-			country = c:JAP
-			owned_provinces = { xF05001 x715101 xB49AFB x89FD28 xC8AE5C xA287B0 x77D64C x1151C0 }
+			country = c:CUH
+			owned_provinces = { xF05001 }
+		}
+		create_state = {
+			country = c:TWA
+			owned_provinces = { xA287B0 }
+		}
+		create_state = {
+			country = c:MTE
+			owned_provinces = { x77D64C }
+		}
+		create_state = {
+			country = c:TTT
+			owned_provinces = { xC8AE5C }
+		}
+		create_state = {
+			country = c:HHI
+			owned_provinces = { x715101 xB49AFB x89FD28 }
+		}
+		create_state = {
+			country = c:MTY
+			owned_provinces = { x1151C0 }
 		}
 		
 		add_homeland = cu:japanese
 	}
 	s:STATE_SHIKOKU = {
 		create_state = {
-			country = c:JAP
-			owned_provinces = { xF05040 x7C9BEB xEFD040 x90D040 x5D5512 }
+			country = c:TOS
+			owned_provinces = { xEFD040 x90D040 }
+		}
+		create_state = {
+			country = c:TOK
+			owned_provinces = { x7C9BEB x5D5512 }
+		}
+		create_state = {
+			country = c:AWT
+			owned_provinces = { xF05040 }
 		}
 		
 		add_homeland = cu:japanese
@@ -6185,7 +6309,7 @@ STATES = {
 	}
 	s:STATE_FORMOSA = {
 		create_state = {
-			country = c:JAP
+			country = c:SAU
 			owned_provinces = { x44797F x9A5066 xE73B31 x6645CF xBB27F6 x6DAB21 xAEA2D8 x7070E0 }
 		}
 		
@@ -7179,7 +7303,7 @@ STATES = {
 	}
 	s:STATE_TARAPACA = {
 		create_state = {
-			country = c:JAP
+			country = c:AGA
 			owned_provinces = { xB3DA33 x380AE9 xC9DDC4 x8733A4 x79C7F7 x2F3768 x1040D0 xD46425 xCB9DD5 xF391A7 xA00070 x49DD3B x2FB295 }
 			state_type = unincorporated
 		}
@@ -7188,7 +7312,7 @@ STATES = {
 	}
 	s:STATE_ANTOFAGASTA = {
 		create_state = {
-			country = c:JAP
+			country = c:AGA
 			owned_provinces = { x291C71 xEE0067 x7984DF x8BA717 xF5E20E x20E574 x40D35C x2000F0 xCC472E x8F918A xF39FDA x8238EF x82A274 xCAECEF x3FDC05 x1B2EC2 x6B33D0 x208070 x2DF128 xE96CF4 x4DCF72 xDE43F7 xCE7F3B x71C02C x694D06 }
 			state_type = unincorporated
 		}
@@ -7377,14 +7501,9 @@ STATES = {
 	}
 	s:STATE_BAJA_CALIFORNIA = {
 		create_state = {
-			country = c:HOK
-			owned_provinces = { xD5E26E }
+			country = c:MAX
+			owned_provinces = { xD5E26E xA1B232 x567116 x3FF655 x57EBCB xD4D12E x205040 xBC4223 xC642C3 x1E47C8 x9F7207 x7546F8 x0418C4 xD34672 xDD6E50 x6320AE xF8AB7F x249043 x0D1D9D xB0A278 x21AA9D xBED6FE x657B7B x247143 x90DF58 x11D494 x5B4ABD xC42EA6 }
 		}
-		create_state = {
-			country = c:JAP
-			owned_provinces = { xA1B232 x567116 x3FF655 x57EBCB xD4D12E x205040 xBC4223 xC642C3 x1E47C8 x9F7207 x7546F8 x0418C4 xD34672 xDD6E50 x6320AE xF8AB7F x249043 x0D1D9D xB0A278 x21AA9D xBED6FE x657B7B x247143 x90DF58 x11D494 x5B4ABD xC42EA6 }
-		}
-		add_claim = c:JAP
 		add_homeland = cu:mexican
 		add_homeland = cu:na_piman
 		add_homeland = cu:na_yuman

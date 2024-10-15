@@ -157,11 +157,38 @@
 		}
 	}
 
-	c:MAX = {
+	c:MTO = {
 		create_diplomatic_pact = {
-			country = c:MAY
+			country = c:UTS
 			type = vassal
 		}
 	}
-
+	c:TOK = {
+		create_diplomatic_pact = {
+			country = c:AWT
+			type = vassal
+		}
+	}
+	c:ODU = {
+		create_diplomatic_pact = {
+			country = c:SAB
+			type = tributary
+		}
+		create_diplomatic_pact = {
+			country = c:KAW
+			type = tributary
+		}
+		create_diplomatic_pact = {
+			country = c:TKT
+			type = tributary
+		}
+		create_diplomatic_pact = {
+			country = c:TSU
+			type = tributary
+		}
+		create_diplomatic_pact = {
+			country = c:TAK
+			type = tributary
+		}
+	}
 }

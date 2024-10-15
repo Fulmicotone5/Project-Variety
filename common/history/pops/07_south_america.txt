@@ -243,25 +243,25 @@ POPS = {
 		}
 	}
 	s:STATE_TARAPACA = {
-		region_state:JAP = {
+		region_state:AGA = {
 			create_pop = {
 				culture = aimara
 				size = 38500
 			}
 			create_pop = {
-				culture = japanese
+				culture = argentino
 				size = 12500
 			}
 		}
 	}
 	s:STATE_ANTOFAGASTA = {
-		region_state:JAP = {
+		region_state:AGA = {
 			create_pop = {
 				culture = aimara
 				size = 64200
 			}
 			create_pop = {
-				culture = japanese
+				culture = argentino
 				size = 3400
 			}
 		}
@@ -473,7 +473,7 @@ POPS = {
 			}
 			create_pop = {
 				culture = argentino
-				size = 96096
+				size = 196096
 			}
 			create_pop = {
 				culture = afro_caraibico
@@ -598,38 +598,38 @@ POPS = {
 		}
 	}
 	s:STATE_SANTIAGO = {
-		region_state:JAP = {
+		region_state:AGA = {
 			create_pop = {
 				culture = patagonian
-				size = 55608
+				size = 45608
 			}
 			create_pop = {
-				culture = japanese
-				size = 19000
+				culture = argentino
+				size = 390000
 			}
 		}
 	}
 	s:STATE_LOS_RIOS = {
-		region_state:JAP = {
+		region_state:AGA = {
 			create_pop = {
 				culture = patagonian
 				size = 44892
 			}
 			create_pop = {
-				culture = japanese
-				size = 12000
+				culture = argentino
+				size = 120000
 			}
 		}
 	}
 	s:STATE_ARAUCANIA = {
-		region_state:JAP = {
+		region_state:AGA = {
 			create_pop = {
 				culture = patagonian
 				size = 12004
 			}
 			create_pop = {
-				culture = japanese
-				size = 3200
+				culture = argentino
+				size = 32000
 			}
 		}
 		region_state:THL = {

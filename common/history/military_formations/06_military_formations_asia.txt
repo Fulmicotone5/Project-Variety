@@ -16,19 +16,19 @@
 			}
 		}
 	}
-	c:JAP = {
+	c:SAU = {
 		create_military_formation = {
 			type = fleet
 			hq_region = sr:region_japan
-			name = "Japanese Imperial Navy"
+			name = "Satsuma Navy"
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_CHUBU
-				count = 15
+				state_region = s:STATE_KYUSHU
+				count = 5
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_KANTO
+				state_region = s:STATE_KYUSHU
 				count = 5
 			}
 		}

@@ -3989,25 +3989,13 @@
                 add = 1100
                 OR = {
                     scope:pop ?= {
-                        OR = {
-                            owner ?= {
-                                c:JAP ?= this
-                                NOT = { has_variable = meiji_restoration_complete }
-                            }
-                            owner ?= {
-                                NOT = { c:JAP ?= this }
-                            }
+                        owner ?= {
+                            c:JAE ?= this
                         }
                     }
                     scope:character ?= {
-                        OR = {
-                            owner ?= {
-                                c:JAP ?= this
-                                NOT = { has_variable = meiji_restoration_complete }
-                            }
-                            owner ?= {
-                                NOT = { c:JAP ?= this }
-                            }
+                        owner ?= {
+                            c:JAE ?= this
                         }
                     }
                 }

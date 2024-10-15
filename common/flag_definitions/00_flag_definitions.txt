@@ -6483,6 +6483,64 @@ PIN = {
 	}
 }
 
+IPJ = { 
+	flag_definition = {	
+		coa = IPJ
+		subject_canton = IPJ
+		priority = 10
+	}
+}
+
+JAE = { # Japan
+	flag_definition = {
+		coa = JAE
+		allow_overlord_canton = yes		
+		coa_with_overlord_canton = JAE_subject			
+		subject_canton = JAE
+		priority = 1		
+	}
+	flag_definition = {
+		coa = JAE_monarchy
+		subject_canton = JAE_absolute_monarchy
+		priority = 20
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = JAE_republic
+		subject_canton = JAE_republic
+		priority = 10
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = JAE_dictatorship
+		subject_canton = JAE_dictatorship
+		priority = 20
+		trigger = {
+			coa_def_dictatorship_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = JAE_theocracy
+		subject_canton = JAE_theocracy
+		priority = 20
+		trigger = { 
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = JAE_fascist
+		subject_canton = JAE_fascist
+		priority = 1500
+		trigger = { 
+			coa_def_fascist_flag_trigger = yes
+		}
+	}	
+}
+
 GAR = { # Greater Armenia
 	flag_definition = {	
 		coa = GAR
@@ -10546,3 +10604,272 @@ MNN = {
 	}
 }
 
+
+CUH = { 
+	flag_definition = {
+		coa = CUH
+		subject_canton = CUH
+		priority = 1
+	}
+}
+WAK = { 
+	flag_definition = {
+		coa = WAK
+		subject_canton = WAK
+		priority = 1
+	}
+}
+TOS = { 
+	flag_definition = {
+		coa = TOS
+		subject_canton = TOS
+		priority = 1
+	}
+}
+KAW = { 
+	flag_definition = {
+		coa = KAW
+		subject_canton = KAW
+		priority = 1
+	}
+}
+ODA = { 
+	flag_definition = {
+		coa = ODA
+		subject_canton = ODA
+		priority = 1
+	}
+}
+SEN = { 
+	flag_definition = {
+		coa = SEN
+		subject_canton = SEN
+		priority = 1
+	}
+}
+SAU = { 
+	flag_definition = {
+		coa = SAU
+		subject_canton = SAU
+		priority = 1
+	}
+}
+YON = { 
+	flag_definition = {
+		coa = YON
+		subject_canton = YON
+		priority = 1
+	}
+}
+SAG = { 
+	flag_definition = {
+		coa = SAG
+		subject_canton = SAG
+		priority = 1
+	}
+}
+TSU = { 
+	flag_definition = {
+		coa = TSU
+		subject_canton = TSU
+		priority = 1
+	}
+}
+NAA = { 
+	flag_definition = {
+		coa = NAA
+		subject_canton = NAA
+		priority = 1
+	}
+}
+JOZ = { 
+	flag_definition = {
+		coa = JOZ
+		subject_canton = JOZ
+		priority = 1
+	}
+}
+AIZ = { 
+	flag_definition = {
+		coa = AIZ
+		subject_canton = AIZ
+		priority = 1
+	}
+}
+MAT = { 
+	flag_definition = {
+		coa = MAT
+		subject_canton = MAT
+		priority = 1
+	}
+}
+HIR = { 
+	flag_definition = {
+		coa = HIR
+		subject_canton = HIR
+		priority = 1
+	}
+}
+MER = { 
+	flag_definition = {
+		coa = MER
+		subject_canton = MER
+		priority = 1
+	}
+}
+KUB = { 
+	flag_definition = {
+		coa = KUB
+		subject_canton = KUB
+		priority = 1
+	}
+}
+TOK = { 
+	flag_definition = {
+		coa = TOK
+		subject_canton = TOK
+		priority = 1
+	}
+}
+ODU = { 
+	flag_definition = {
+		coa = ODU
+		subject_canton = ODU
+		priority = 1
+	}
+}
+AWT = { 
+	flag_definition = {
+		coa = AWT
+		subject_canton = AWT
+		priority = 1
+	}
+}
+TAK = { 
+	flag_definition = {
+		coa = TAK
+		subject_canton = TAK
+		priority = 1
+	}
+}
+TKT = { 
+	flag_definition = {
+		coa = TKT
+		subject_canton = TKT
+		priority = 1
+	}
+}
+OKA = { 
+	flag_definition = {
+		coa = OKA
+		subject_canton = OKA
+		priority = 1
+	}
+}
+KKW = { 
+	flag_definition = {
+		coa = KKW
+		subject_canton = KKW
+		priority = 1
+	}
+}
+SUN = { 
+	flag_definition = {
+		coa = SUN
+		subject_canton = SUN
+		priority = 1
+	}
+}
+MTO = { 
+	flag_definition = {
+		coa = MTO
+		subject_canton = MTO
+		priority = 1
+	}
+}
+UTS = { 
+	flag_definition = {
+		coa = UTS
+		subject_canton = UTS
+		priority = 1
+	}
+}
+
+NUM = { 
+	flag_definition = {
+		coa = NUM
+		subject_canton = NUM
+		priority = 1
+	}
+}
+KOF = { 
+	flag_definition = {
+		coa = KOF
+		subject_canton = KOF
+		priority = 1
+	}
+}
+TKA = { 
+	flag_definition = {
+		coa = TKA
+		subject_canton = TKA
+		priority = 1
+	}
+}
+MTS = { 
+	flag_definition = {
+		coa = MTS
+		subject_canton = MTS
+		priority = 1
+	}
+}
+GUJ = { 
+	flag_definition = {
+		coa = GUJ
+		subject_canton = GUJ
+		priority = 1
+	}
+}
+SAB = { 
+	flag_definition = {
+		coa = SAB
+		subject_canton = SAB
+		priority = 1
+	}
+}
+
+TWA = { 
+	flag_definition = {
+		coa = TWA
+		subject_canton = TWA
+		priority = 1
+	}
+}
+MTE = { 
+	flag_definition = {
+		coa = MTE
+		subject_canton = MTE
+		priority = 1
+	}
+}
+TTT = { 
+	flag_definition = {
+		coa = TTT
+		subject_canton = TTT
+		priority = 1
+	}
+}
+HHI = { 
+	flag_definition = {
+		coa = HHI
+		subject_canton = HHI
+		priority = 1
+	}
+}
+MTY = { 
+	flag_definition = {
+		coa = MTY
+		subject_canton = MTY
+		priority = 1
+	}
+}

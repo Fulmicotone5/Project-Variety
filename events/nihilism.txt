@@ -72,7 +72,7 @@ nihilism.1 = {
 			}
 			else_if = {
 				limit = {
-					THIS = c:JAP
+					THIS = c:JAE
 					AND = {
 						game_date >= 1878.1.1
 						game_date <= 1908.1.1

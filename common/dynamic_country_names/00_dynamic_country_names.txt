@@ -518,6 +518,20 @@ GAR = {
 	}
 }
 
+JAE = {
+	dynamic_country_name = {
+		name = dyn_jae
+		adjective = JAE_ADJ
+		priority = 0
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_law = law_type:law_monarchy
+			}
+		}
+	}
+}
+
 PIN = {
 	dynamic_country_name = {
 		name = dyn_pin
