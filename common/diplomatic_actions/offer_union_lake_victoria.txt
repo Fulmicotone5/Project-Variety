@@ -1,0 +1,91 @@
+﻿offer_union = {
+	groups= {
+		general
+	}
+	texture = "gfx/interface/icons/diplomatic_action_icons/take_state.dds"
+	confirmation_sound = "event:/SFX/UI/MapInteraction/diplomatic_action_foreign_investment_agreement_request"
+	requires_approval = no
+	should_notify_third_parties = no
+	# can_select = yes
+	# can_select_to_break = yes
+	unlocking_technologies = {
+		colonization
+	}
+	potential = {
+		c:NLB ?= THIS
+		has_modifier = modifier_uniting_the_tribes
+		NOT = {
+			is_country_type = decentralized
+		}
+		scope:target_country = {
+			is_country_type = decentralized
+		}
+	}
+	possible = {
+		NOT = {
+			has_war_with = scope:target_country
+		}
+		NOT = {
+			has_diplomatic_pact = {
+				who = scope:target_country
+				type = colonization_rights
+			}
+		}
+
+		in_default = no			
+		is_revolutionary = no
+	}
+	pact = {
+		cost = 3
+		is_two_sided_pact = no
+		is_colonization_rights = yes
+
+		requirement_to_maintain = {
+			trigger = {
+				has_diplomatic_relevance = scope:target_country
+			}
+		}
+		weekly_effect = {
+			change_tension = {
+				country = scope:target_country
+				value = -20
+			}
+		}
+
+		manual_break_effect = {
+			is_colonization_rights = no
+			change_tension = {
+				country = scope:target_country
+				value = 30
+			}
+		}
+		auto_break_effect = {
+			is_colonization_rights = no
+			change_tension = {
+				country = scope:target_country
+				value = 30
+			}
+		}
+	}
+	ai = {
+		accept_score = {
+			value = 0
+			add = {
+				desc = "DIPLOMATIC_ACCEPTANCE_BASE"
+				value = 30
+			}
+		}
+		propose_score = {
+			value = 0
+		}
+		propose_break_score = {
+			value = 0
+		}
+		use_obligation_chance = {
+			value = 50
+		}
+		owe_obligation_chance = {
+			value = 10
+		}
+	}
+}

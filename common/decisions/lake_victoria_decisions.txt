@@ -1,0 +1,68 @@
+﻿unite_the_tribes = {
+	is_shown = {
+		c:NLB ?= THIS		
+	}
+	possible = {
+		has_technology_researched = colonization
+		NOT = {
+			has_modifier = modifier_uniting_the_tribes
+		      }
+		}
+	when_taken = {
+		add_modifier = {
+			name = modifier_uniting_the_tribes
+			months = 24
+			}
+		     }
+
+	ai_chance = {
+		base = 50
+	}
+}
+utilize_natural_medicine = {
+	is_shown = {
+		c:NLB ?= THIS
+		NOT = {
+			has_modifier = modifier_utilizing_natural_medicine
+		      }
+	}
+	possible = {
+		has_technology_researched = colonization
+		}
+	when_taken = {
+			add_treasury = -50000
+			add_modifier = 	{
+				name = modifier_utilizing_natural_medicine
+				months = -1
+			}
+			add_technology_researched = quinine
+			add_technology_researched = malaria_prevention
+		     }
+
+	ai_chance = {
+		base = 50
+	}
+}
+catch_up_to_white_men = {
+	is_shown = {
+		c:NLB ?= THIS
+	}
+	possible = {
+		has_technology_researched = colonization
+		NOT = {
+			has_modifier = modifier_catching_up_to_white_men
+		      }
+		}
+	when_taken = {
+			add_modifier = 	{
+				name = modifier_catching_up_to_white_men
+				months = 24
+					}
+		     }
+
+	ai_chance = {
+		base = 50
+	}
+}
+
+
