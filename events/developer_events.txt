@@ -895,7 +895,6 @@ dev.9 = {
 			ve_ai_uses_religion = yes
 			ve_ai_uses_culture = yes
 			ve_ai_uses_age_bonuses = yes
-			fm_ai_chooses_policy = yes
 		}
 		if = {
 			#For Released and Civil War Countries

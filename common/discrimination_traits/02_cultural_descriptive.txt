@@ -31,6 +31,9 @@ german_speaking = {
 italophone = {
 }
 
+mediterranean = {
+}
+
 yuggera_speaker = {
 }
 

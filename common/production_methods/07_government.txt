@@ -343,7 +343,7 @@ pm_analytical_philosophy_department = {
 	texture = "gfx/interface/icons/production_method_icons/analytical_philosophy_department.dds"
 	
 	unlocking_technologies = {
-		analytical_philosophy
+		psychoanalysis
 	}
 	
 	country_modifiers = {
@@ -469,7 +469,7 @@ pm_farms_research_funding = {
 	texture = "gfx/interface/icons/goods_icons/grain.dds"
 
 	country_modifiers = {
-		workforce_scaled = {
+		unscaled = {
 			country_invention_farms_add = 2
 
 			
@@ -495,7 +495,7 @@ pm_groceries_research_funding = {
 	texture = "gfx/interface/icons/goods_icons/groceries.dds"
 
 	country_modifiers = {
-		workforce_scaled = {
+		unscaled = {
 			country_invention_groceries_add = 2.2
 
 			
@@ -522,7 +522,7 @@ pm_logging_research_funding = {
 	texture = "gfx/interface/icons/goods_icons/wood.dds"
 
 	country_modifiers = {
-		workforce_scaled = {
+		unscaled = {
 			country_invention_logging_add = 2
 
 			
@@ -544,7 +544,7 @@ pm_textile_research_funding = {
 	texture = "gfx/interface/icons/goods_icons/clothes.dds"
 
 	country_modifiers = {
-		workforce_scaled = {
+		unscaled = {
 			country_invention_textile_add = 2
 
 			
@@ -571,7 +571,7 @@ pm_fishing_research_funding = {
 	texture = "gfx/interface/icons/goods_icons/fish.dds"
 
 	country_modifiers = {
-		workforce_scaled = {
+		unscaled = {
 			country_invention_fishing_add = 2.5
 
 			
@@ -594,7 +594,7 @@ pm_furniture_research_funding = {
 	texture = "gfx/interface/icons/goods_icons/furniture.dds"
 
 	country_modifiers = {
-		workforce_scaled = {
+		unscaled = {
 			country_invention_furniture_add = 2
 
 			
@@ -622,7 +622,7 @@ pm_paper_research_funding = {
 	texture = "gfx/interface/icons/goods_icons/paper.dds"
 
 	country_modifiers = {
-		workforce_scaled = {
+		unscaled = {
 			country_invention_paper_add = 1.8
 
 			
@@ -649,7 +649,7 @@ pm_motor_research_funding = {
 	texture = "gfx/interface/icons/goods_icons/locomotives.dds"
 
 	country_modifiers = {
-		workforce_scaled = {
+		unscaled = {
 			country_invention_motor_add = 2
 
 			
@@ -676,7 +676,7 @@ pm_alcohol_research_funding = {
 	texture = "gfx/interface/icons/goods_icons/wine.dds"
 
 	country_modifiers = {
-		workforce_scaled = {
+		unscaled = {
 			country_invention_alcohol_add = 3
 
 			
@@ -705,7 +705,7 @@ pm_meat_research_funding = {
 	texture = "gfx/interface/icons/goods_icons/meat.dds"
 
 	country_modifiers = {
-		workforce_scaled = {
+		unscaled = {
 			country_invention_meat_add = 3
 
 			
@@ -732,7 +732,7 @@ pm_mining_research_funding = {
 	texture = "gfx/interface/icons/production_method_icons/picks_and_shovels.dds"
 
 	country_modifiers = {
-		workforce_scaled = {
+		unscaled = {
 			country_invention_mining_add = 1
 
 			
@@ -760,7 +760,7 @@ pm_boats_research_funding = {
 	texture = "gfx/interface/icons/goods_icons/clippers.dds"
 
 	country_modifiers = {
-		workforce_scaled = {
+		unscaled = {
 			country_invention_boats_add = 2.5
 
 			
@@ -789,7 +789,7 @@ pm_glass_research_funding = {
 	texture = "gfx/interface/icons/goods_icons/glass.dds"
 
 	country_modifiers = {
-		workforce_scaled = {
+		unscaled = {
 			country_invention_glass_add = 1.5
 
 			
@@ -816,7 +816,7 @@ pm_plantations_research_funding = {
 	texture = "gfx/interface/icons/production_method_icons/plantation_production.dds"
 
 	country_modifiers = {
-		workforce_scaled = {
+		unscaled = {
 			country_invention_plantations_add = 1.5
 
 			
@@ -848,7 +848,7 @@ pm_explosives_research_funding = {
 	texture = "gfx/interface/icons/goods_icons/explosives.dds"
 
 	country_modifiers = {
-		workforce_scaled = {
+		unscaled = {
 			country_invention_explosives_add = 1.5
 
 			
@@ -876,7 +876,7 @@ pm_silk_research_funding = {
 	texture = "gfx/interface/icons/goods_icons/silk.dds"
 
 	country_modifiers = {
-		workforce_scaled = {
+		unscaled = {
 			country_invention_silk_add = 4
 
 			
@@ -903,7 +903,7 @@ pm_steel_research_funding = {
 	texture = "gfx/interface/icons/goods_icons/steel.dds"
 
 	country_modifiers = {
-		workforce_scaled = {
+		unscaled = {
 			country_invention_steel_add = 1.5
 
 			
@@ -931,7 +931,7 @@ pm_tools_research_funding = {
 	texture = "gfx/interface/icons/goods_icons/tools.dds"
 
 	country_modifiers = {
-		workforce_scaled = {
+		unscaled = {
 			country_invention_tools_add = 1.5
 
 			
@@ -958,7 +958,7 @@ pm_military_research_funding = {
 	texture = "gfx/interface/icons/principles_icons/military_industry.dds"
 
 	country_modifiers = {
-		workforce_scaled = {
+		unscaled = {
 			country_invention_military_add = 2
 
 			

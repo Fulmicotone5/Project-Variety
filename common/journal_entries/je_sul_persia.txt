@@ -22,7 +22,7 @@
 	goal_add_value = {
 		add = 4
 	}
-	timeout = 6007
+	timeout = 9007
 	progressbar = yes
 	weight = 10000
 	should_be_pinned_by_default = yes
@@ -63,7 +63,7 @@ je_sop_levant = {
 			has_law = law_type:law_monarchy
 		}
 	}
-	timeout = 1825
+	timeout = 2825
 	transferable = no
 	weight = 5000
 	should_be_pinned_by_default = yes
@@ -100,7 +100,7 @@ je_sop_arabia = {
 			}				
 		}
 	}
-	timeout = 3650
+	timeout = 4650
 	transferable = no
 	weight = 5000
 	should_be_pinned_by_default = yes
@@ -141,7 +141,7 @@ je_sop_egypt = {
 			}				
 		}
 	}
-	timeout = 3650
+	timeout = 7007
 	transferable = no
 	weight = 5000
 	should_be_pinned_by_default = yes
@@ -184,7 +184,7 @@ je_sop_north_africa = {
 			}				
 		}
 	}
-	timeout = 6000
+	timeout = 9007
 	transferable = no
 	weight = 5000
 	should_be_pinned_by_default = yes
