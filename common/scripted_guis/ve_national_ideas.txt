@@ -1,0 +1,1180 @@
+ve_national_idea_1 = {
+	scope = country
+	is_shown = {
+		var:national_idea_pool >= 3
+	}
+	is_valid = {
+		var:national_idea_pool >= 3
+	}
+	effect = {
+		if = {
+			limit = {
+				has_variable = idea_eng
+			}
+			add_modifier = {
+				name = gbr_idea_1
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_fru
+			}
+			add_modifier = {
+				name = fra_idea_1
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_lot
+			}
+			add_modifier = {
+				name = ger_idea_1
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_boh
+			}
+			add_modifier = {
+				name = aus_idea_1
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_kar
+			}
+			add_modifier = {
+				name = rus_idea_1
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_sae
+			}
+			add_modifier = {
+				name = tur_idea_1
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_kor
+			}
+			add_modifier = {
+				name = qng_idea_1
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_jap
+			}
+			add_modifier = {
+				name = jap_idea_1
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_pul
+			}
+			add_modifier = {
+				name = pul_idea_1
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_sau
+			}
+			add_modifier = {
+				name = sau_idea_1
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_japgen
+			}
+			add_modifier = {
+				name = japgen_idea_1
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_amc
+			}
+			add_modifier = {
+				name = usa_idea_1
+				months = -1
+			}
+		}
+		else = {
+			add_modifier = {
+				name = generic_idea_1
+				months = -1
+			}
+		}
+	}
+}
+
+ve_national_idea_2 = {
+	scope = country
+	is_shown = {
+		var:national_idea_pool >= 6
+	}
+	is_valid = {
+		var:national_idea_pool >= 6
+	}
+	effect = {
+		if = {
+			limit = {
+				has_variable = idea_eng
+			}
+			add_modifier = {
+				name = gbr_idea_2
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_fru
+			}
+			add_modifier = {
+				name = fra_idea_2
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_lot
+			}
+			add_modifier = {
+				name = ger_idea_2
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_boh
+			}
+			add_modifier = {
+				name = aus_idea_2
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_kar
+			}
+			add_modifier = {
+				name = rus_idea_2
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_sae
+			}
+			add_modifier = {
+				name = tur_idea_2
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_kor
+			}
+			add_modifier = {
+				name = qng_idea_2
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_jap
+			}
+			add_modifier = {
+				name = jap_idea_2
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_pul
+			}
+			add_modifier = {
+				name = pul_idea_2
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_japgen
+			}
+			add_modifier = {
+				name = japgen_idea_2
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_sau
+			}
+			add_modifier = {
+				name = sau_idea_2
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_amc
+			}
+			add_modifier = {
+				name = usa_idea_2
+				months = -1
+			}
+		}
+		else = {
+			add_modifier = {
+				name = generic_idea_2
+				months = -1
+			}
+		}
+	}
+}
+
+ve_national_idea_3 = {
+	scope = country
+	is_shown = {
+		var:national_idea_pool >= 9
+	}
+	is_valid = {
+		var:national_idea_pool >= 9
+	}
+	effect = {
+		if = {
+			limit = {
+				has_variable = idea_eng
+			}
+			add_modifier = {
+				name = gbr_idea_3
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_fru
+			}
+			add_modifier = {
+				name = fra_idea_3
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_lot
+			}
+			add_modifier = {
+				name = ger_idea_3
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_boh
+			}
+			add_modifier = {
+				name = aus_idea_3
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_kar
+			}
+			add_modifier = {
+				name = rus_idea_3
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_sae
+			}
+			add_modifier = {
+				name = tur_idea_3
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_kor
+			}
+			add_modifier = {
+				name = qng_idea_3
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_jap
+			}
+			add_modifier = {
+				name = jap_idea_3
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_pul
+			}
+			add_modifier = {
+				name = pul_idea_3
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_japgen
+			}
+			add_modifier = {
+				name = japgen_idea_3
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_sau
+			}
+			add_modifier = {
+				name = sau_idea_3
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_amc
+			}
+			add_modifier = {
+				name = usa_idea_3
+				months = -1
+			}
+		}
+		else = {
+			add_modifier = {
+				name = generic_idea_3
+				months = -1
+			}
+		}
+	}
+}
+
+ve_national_idea_4 = {
+	scope = country
+	is_shown = {
+		var:national_idea_pool >= 12
+	}
+	is_valid = {
+		var:national_idea_pool >= 12
+	}
+	effect = {
+		if = {
+			limit = {
+				has_variable = idea_eng
+			}
+			add_modifier = {
+				name = gbr_idea_4
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_fru
+			}
+			add_modifier = {
+				name = fra_idea_4
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_lot
+			}
+			add_modifier = {
+				name = ger_idea_4
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_boh
+			}
+			add_modifier = {
+				name = aus_idea_4
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_kar
+			}
+			add_modifier = {
+				name = rus_idea_4
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_sae
+			}
+			add_modifier = {
+				name = tur_idea_4
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_kor
+			}
+			add_modifier = {
+				name = qng_idea_4
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_jap
+			}
+			add_modifier = {
+				name = jap_idea_4
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_pul
+			}
+			add_modifier = {
+				name = pul_idea_4
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_japgen
+			}
+			add_modifier = {
+				name = japgen_idea_4
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_sau
+			}
+			add_modifier = {
+				name = sau_idea_4
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_amc
+			}
+			add_modifier = {
+				name = usa_idea_4
+				months = -1
+			}
+		}
+		else = {
+			add_modifier = {
+				name = generic_idea_4
+				months = -1
+			}
+		}
+	}
+}
+
+ve_national_idea_5 = {
+	scope = country
+	is_shown = {
+		var:national_idea_pool >= 15
+	}
+	is_valid = {
+		var:national_idea_pool >= 15
+	}
+	effect = {
+		if = {
+			limit = {
+				has_variable = idea_eng
+			}
+			add_modifier = {
+				name = gbr_idea_5
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_fru
+			}
+			add_modifier = {
+				name = fra_idea_5
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_lot
+			}
+			add_modifier = {
+				name = ger_idea_5
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_boh
+			}
+			add_modifier = {
+				name = aus_idea_5
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_kar
+			}
+			add_modifier = {
+				name = rus_idea_5
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_sae
+			}
+			add_modifier = {
+				name = tur_idea_5
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_kor
+			}
+			add_modifier = {
+				name = qng_idea_5
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_jap
+			}
+			add_modifier = {
+				name = jap_idea_5
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_pul
+			}
+			add_modifier = {
+				name = pul_idea_5
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_japgen
+			}
+			add_modifier = {
+				name = japgen_idea_5
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_sau
+			}
+			add_modifier = {
+				name = sau_idea_5
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_amc
+			}
+			add_modifier = {
+				name = usa_idea_5
+				months = -1
+			}
+		}
+		else = {
+			add_modifier = {
+				name = generic_idea_5
+				months = -1
+			}
+		}
+	}
+}
+
+ve_national_idea_6 = {
+	scope = country
+	is_shown = {
+		var:national_idea_pool >= 18
+	}
+	is_valid = {
+		var:national_idea_pool >= 18
+	}
+	effect = {
+		if = {
+			limit = {
+				has_variable = idea_eng
+			}
+			add_modifier = {
+				name = gbr_idea_6
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_fru
+			}
+			add_modifier = {
+				name = fra_idea_6
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_lot
+			}
+			add_modifier = {
+				name = ger_idea_6
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_boh
+			}
+			add_modifier = {
+				name = aus_idea_6
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_kar
+			}
+			add_modifier = {
+				name = rus_idea_6
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_sae
+			}
+			add_modifier = {
+				name = tur_idea_6
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_kor
+			}
+			add_modifier = {
+				name = qng_idea_6
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_jap
+			}
+			add_modifier = {
+				name = jap_idea_6
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_pul
+			}
+			add_modifier = {
+				name = pul_idea_6
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_japgen
+			}
+			add_modifier = {
+				name = japgen_idea_6
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_sau
+			}
+			add_modifier = {
+				name = sau_idea_6
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_amc
+			}
+			add_modifier = {
+				name = usa_idea_6
+				months = -1
+			}
+		}
+		else = {
+			add_modifier = {
+				name = generic_idea_6
+				months = -1
+			}
+		}
+	}
+}
+
+ve_national_idea_7 = {
+	scope = country
+	is_shown = {
+		var:national_idea_pool >= 21
+	}
+	is_valid = {
+		var:national_idea_pool >= 21
+	}
+	effect = {
+		if = {
+			limit = {
+				has_variable = idea_eng
+			}
+			add_modifier = {
+				name = gbr_idea_7
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_fru
+			}
+			add_modifier = {
+				name = fra_idea_7
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_lot
+			}
+			add_modifier = {
+				name = ger_idea_7
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_boh
+			}
+			add_modifier = {
+				name = aus_idea_7
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_kar
+			}
+			add_modifier = {
+				name = rus_idea_7
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_sae
+			}
+			add_modifier = {
+				name = tur_idea_7
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_kor
+			}
+			add_modifier = {
+				name = qng_idea_7
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_jap
+			}
+			add_modifier = {
+				name = jap_idea_7
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_pul
+			}
+			add_modifier = {
+				name = pul_idea_7
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_japgen
+			}
+			add_modifier = {
+				name = japgen_idea_7
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_sau
+			}
+			add_modifier = {
+				name = sau_idea_7
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_amc
+			}
+			add_modifier = {
+				name = usa_idea_7
+				months = -1
+			}
+		}
+		else = {
+			add_modifier = {
+				name = generic_idea_7
+				months = -1
+			}
+		}
+	}
+}
+
+ve_national_idea_tradition = {
+	scope = country
+	effect = {
+		if = {
+			limit = {
+				has_variable = idea_eng
+			}
+			add_modifier = {
+				name = gbr_idea_tradition_1
+				months = -1
+			}
+			add_modifier = {
+				name = gbr_idea_tradition_2
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_fru
+			}
+			add_modifier = {
+				name = fra_idea_tradition_1
+				months = -1
+			}
+			add_modifier = {
+				name = fra_idea_tradition_2
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_lot
+			}
+			add_modifier = {
+				name = ger_idea_tradition_1
+				months = -1
+			}
+			add_modifier = {
+				name = ger_idea_tradition_2
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_boh
+			}
+			add_modifier = {
+				name = aus_idea_tradition_1
+				months = -1
+			}
+			add_modifier = {
+				name = aus_idea_tradition_2
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_kar
+			}
+			add_modifier = {
+				name = rus_idea_tradition_1
+				months = -1
+			}
+			add_modifier = {
+				name = rus_idea_tradition_2
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_sae
+			}
+			add_modifier = {
+				name = tur_idea_tradition_1
+				months = -1
+			}
+			add_modifier = {
+				name = tur_idea_tradition_2
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_kor
+			}
+			add_modifier = {
+				name = qng_idea_tradition_1
+				months = -1
+			}
+			add_modifier = {
+				name = qng_idea_tradition_2
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_jap
+			}
+			add_modifier = {
+				name = jap_idea_tradition_1
+				months = -1
+			}
+			add_modifier = {
+				name = jap_idea_tradition_2
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_pul
+			}
+			add_modifier = {
+				name = pul_idea_tradition_1
+				months = -1
+			}
+			add_modifier = {
+				name = pul_idea_tradition_2
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_japgen
+			}
+			add_modifier = {
+				name = japgen_idea_tradition_1
+				months = -1
+			}
+			add_modifier = {
+				name = japgen_idea_tradition_2
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_sau
+			}
+			add_modifier = {
+				name = sau_idea_tradition_1
+				months = -1
+			}
+			add_modifier = {
+				name = sau_idea_tradition_2
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_amc
+			}
+			add_modifier = {
+				name = usa_idea_tradition_1
+				months = -1
+			}
+			add_modifier = {
+				name = usa_idea_tradition_2
+				months = -1
+			}
+		}
+		else = {
+			add_modifier = {
+				name = generic_idea_tradition_1
+				months = -1
+			}
+			add_modifier = {
+				name = generic_idea_tradition_2
+				months = -1
+			}
+		}
+	}
+}
+
+ve_national_idea_bonus = {
+	scope = country
+	effect = {
+		if = {
+			limit = {
+				has_variable = idea_eng
+			}
+			add_modifier = {
+				name = gbr_idea_bonus
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_fru
+			}
+			add_modifier = {
+				name = fra_idea_bonus
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_lot
+			}
+			add_modifier = {
+				name = ger_idea_bonus
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_boh
+			}
+			add_modifier = {
+				name = aus_idea_bonus
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_kar
+			}
+			add_modifier = {
+				name = rus_idea_bonus
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_sae
+			}
+			add_modifier = {
+				name = tur_idea_bonus
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_kor
+			}
+			add_modifier = {
+				name = qng_idea_bonus
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_jap
+			}
+			add_modifier = {
+				name = jap_idea_bonus
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_pul
+			}
+			add_modifier = {
+				name = pul_idea_bonus
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_japgen
+			}
+			add_modifier = {
+				name = japgen_idea_bonus
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_sau
+			}
+			add_modifier = {
+				name = sau_idea_bonus
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = idea_amc
+			}
+			add_modifier = {
+				name = usa_idea_bonus
+				months = -1
+			}
+		}
+		else = {
+			add_modifier = {
+				name = generic_idea_bonus
+				months = -1
+			}
+		}
+	}
+}
+
+ve_national_idea_img = {
+	scope = country
+	is_shown = {
+		has_variable = generic_idea_country
+	}
+}

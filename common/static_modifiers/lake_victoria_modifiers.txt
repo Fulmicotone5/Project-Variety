@@ -1,0 +1,18 @@
+modifier_uniting_the_tribes = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	state_tax_collection_mult = -0.20
+	state_colony_growth_speed_mult = 1
+	state_colony_growth_creation_factor = 10
+}
+modifier_utilizing_natural_medicine = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	state_standard_of_living_add = 1.5
+	state_birth_rate_mult = 0.1
+}
+modifier_catching_up_to_white_men = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	state_tax_collection_mult = -0.25
+	country_tech_spread_mult = 2
+	country_tech_spread_add = 50
+	state_education_access_add = 0.25
+}

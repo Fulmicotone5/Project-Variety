@@ -1,0 +1,30 @@
+﻿l_english:
+ DECISION_TOOLTIP_FORMAT:1 "#header $NAME$#!\n$TOOLTIP_DELIMITER$\n$TRIGGER_SUMMARY$\n\nWhen taken:\n$EFFECT_SUMMARY$"
+
+unite_the_tribes:0 "Begin Tribal Unification Campaign"
+unite_the_tribes_desc:0 "We must unite the tribes before the White Men come for us all"
+unite_the_tribes_tooltip:0 "Send out the diplomats"
+
+modifier_uniting_the_tribes:0 "Uniting The Tribes"
+
+utilize_natural_medicine:0 "Utilize Natural Medicine"
+utilize_natural_medicine_desc:0 "We will utilize our traditional knowledge of natural medicine to combat Malaria"
+utilize_natural_medicine_tooltip:0 "Gather the Shamans"
+
+modifier_utilizing_natural_medicine:0 "Utilizing Natural Medicine"
+
+catch_up_to_white_men:0 "Reverse Engineer Creations of The White Men"
+catch_up_to_white_men_desc:0 "Few of our bravest merchants have managed to acquire mechanisms created by the White Men, we shall create a group of the smartest men in our country and pay them to reverse engineer these mechanisms"
+catch_up_to_white_men_tooltip:0 "Gather The Educated"
+
+modifier_catching_up_to_white_men:0 "Reverse Engineering Mechanisms of White Men"
+
+ offer_union:0 "Unification agreement"
+ offer_union_action_name:0 "Unification agreement"
+ offer_union_action_propose_name:0 "Propose Unification agreement"
+ offer_union_action_break_name:0 "End Unification agreement"
+ offer_union_action_notification_name:0 "Unification proposal accepted"
+ offer_union_action_notification_desc:0 "We have formed a Unification agreement with [INITIATOR_COUNTRY.GetName]."
+ offer_union_desc:0 "Establishes a Unification agreement between two Countries."
+ offer_union_pact_desc:0 "[SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName] and [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName] have a unification agreement."
+
