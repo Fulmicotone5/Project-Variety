@@ -625,7 +625,10 @@ strnum1 = {
 		}
 	}
 	is_valid = {
-		milexp_cost_small_cost = yes
+		custom_tooltip = {
+			text = milexp300
+			var:var_mil_exp >= 300
+		}
 		custom_tooltip = {
 			text = onlyonedoc
 			NOR = {
