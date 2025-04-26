@@ -899,6 +899,7 @@ dp_unify_india = {
 			text = BHT_tt
 			can_form_nation = BHT
 		}
+		has_technology_researched = nationalism
 		scope:target_country = {
 			NOT = { is_country_type = decentralized }
 			aggressive_diplomatic_plays_permitted = yes
