@@ -26555,7 +26555,7 @@ PLT_communist = {
 	}
 }
 
-SLS={
+SL1={
 	pattern="pattern_solid.tga"
 	color1="white"
 	colored_emblem={
@@ -26564,7 +26564,7 @@ SLS={
 		color2="yellow"
 	}
 }
-SLS_monarchy={
+SL1_monarchy={
 	pattern="pattern_solid.tga"
 	color1="yellow_dark"
 	textured_emblem={
@@ -26575,7 +26575,7 @@ SLS_monarchy={
 		}
 	}
 }
-SLS_communist={
+SL1_communist={
 	pattern="pattern_solid.tga"
 	color1="yellow_dark"
 	colored_emblem={
@@ -26584,7 +26584,7 @@ SLS_communist={
 		color2="black"
 	}
 }
-SLS_anarchy={
+SL1_anarchy={
 	pattern="pattern_per_bend_senester.dds"
 	color1="yellow_dark"
 	color2="black"

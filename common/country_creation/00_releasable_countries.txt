@@ -2191,7 +2191,7 @@ MAZ = {
 	ai_will_do = { always = no }
 }
 
-SLS = {
+SL1 = {
 	states = { STATE_SILESIA }
 	
 	ai_will_do = { always = no }

@@ -5002,14 +5002,14 @@ PAK = {
 }
 
 
-SLS = { # Silesia
+SL1 = { # Silesia
 	color = { 204 187 0 }
 	
 	country_type = recognized
 	
 	tier = principality
 	
-	cultures = { north_german }
+	cultures = { north_german polish czech }
 	religion = protestant
 	capital = STATE_SILESIA
 }

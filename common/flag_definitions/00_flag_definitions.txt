@@ -10764,14 +10764,14 @@ AEF = { # Anointed Kingdom of east Frankia
 	}
 }
 
-SLS = {
+SL1 = {
 	flag_definition = {
-		coa = SLS
+		coa = SL1
 		priority = 1
 	}
 
 	flag_definition = {
-		coa = SLS_monarchy
+		coa = SL1_monarchy
 		priority = 10
 		trigger = {
 			coa_def_monarchy_flag_trigger = yes
@@ -10779,7 +10779,7 @@ SLS = {
 	}
 
 	flag_definition = {
-		coa = SLS_communist
+		coa = SL1_communist
 		priority = 1500
 		trigger = {
 			coa_def_communist_flag_trigger = yes
@@ -10787,7 +10787,7 @@ SLS = {
 	}
 
 	flag_definition = {
-		coa = SLS_anarchy
+		coa = SL1_anarchy
 		priority = 1500
 		trigger = {
 			coa_def_anarchy_flag_trigger = yes
