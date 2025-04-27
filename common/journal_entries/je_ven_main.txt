@@ -211,7 +211,7 @@ je_venice_cape_r = {
 	on_fail = {
 		remove_modifier = modifier_ven_two
 		add_journal_entry = {
-			type = je_venice_cape
+			type = je_cape_fm
 		}
 	}
 	transferable = no
