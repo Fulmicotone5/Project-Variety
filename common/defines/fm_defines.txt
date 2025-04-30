@@ -56,6 +56,12 @@ NWar = {
 	DEVASTATION_INCREASE_RATE = 0.1 # Per day, scales with level of occupation
 	DEVASTATION_DECAY_RATE = -0.05 # Per day, when there are no occupations
 	DEVASTATION_FROM_BATTLES = 0.15 # For each battle
+	WAR_EXHAUSTION_CONTESTED_ENEMY_WARGOALS = 3.0
+	WAR_EXHAUSTION_TURMOIL_FACTOR = 4.0
+	AR_EXHAUSTION_ANTI_WAR_LOBBY_CLOUT_FACTOR = 3.0 # At 100% lobby clout opposed to the war
+	WAR_EXHAUSTION_PRO_WAR_LOBBY_CLOUT_FACTOR = -3.0
+
+
 }
 NPowerBlocs = {
 	MAX_PRINCIPLES = 4					# Max number of principles that a Power Bloc can have
