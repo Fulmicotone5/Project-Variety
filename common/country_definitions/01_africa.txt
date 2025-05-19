@@ -1608,3 +1608,14 @@ MGB = {
 	cultures = { maghrebi berber bidan }
 	capital = STATE_TUNISIA
 }
+
+NLB = {
+	color = { 255 174 0 }
+	
+	country_type = unrecognized
+	
+	tier = kingdom
+	
+	cultures = { baganda lacustrine_bantu unyamwezi nilotic maasai ruanda rundi }
+	capital = STATE_UGANDA
+}
