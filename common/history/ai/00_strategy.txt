@@ -771,30 +771,6 @@
 			25 = { set_strategy = ai_strategy_progressive_agenda }
 		}			
 	}	
-	c:CUH = {
-		random_list = {	
-			50 = { set_strategy = ai_strategy_agricultural_expansion }
-			25 = { set_strategy = ai_strategy_resource_expansion }
-			25 = { set_strategy = ai_strategy_industrial_expansion }
-		}			
-		set_strategy = ai_strategy_unify_japan
-		random_list = {	
-			75 = { set_strategy = ai_strategy_conservative_agenda }
-			25 = { set_strategy = ai_strategy_progressive_agenda }
-		}			
-	}
-	c:TOS = {
-		random_list = {	
-			50 = { set_strategy = ai_strategy_agricultural_expansion }
-			25 = { set_strategy = ai_strategy_resource_expansion }
-			25 = { set_strategy = ai_strategy_industrial_expansion }
-		}			
-		set_strategy = ai_strategy_unify_japan
-		random_list = {	
-			75 = { set_strategy = ai_strategy_conservative_agenda }
-			25 = { set_strategy = ai_strategy_progressive_agenda }
-		}			
-	}
 	c:TSU = {
 		random_list = {	
 			50 = { set_strategy = ai_strategy_agricultural_expansion }
@@ -819,67 +795,7 @@
 			25 = { set_strategy = ai_strategy_progressive_agenda }
 		}			
 	}
-	c:JOZ = {
-		random_list = {	
-			50 = { set_strategy = ai_strategy_agricultural_expansion }
-			25 = { set_strategy = ai_strategy_resource_expansion }
-			25 = { set_strategy = ai_strategy_industrial_expansion }
-		}			
-		set_strategy = ai_strategy_unify_japan
-		random_list = {	
-			75 = { set_strategy = ai_strategy_conservative_agenda }
-			25 = { set_strategy = ai_strategy_progressive_agenda }
-		}			
-	}
-	c:AIZ = {
-		random_list = {	
-			50 = { set_strategy = ai_strategy_agricultural_expansion }
-			25 = { set_strategy = ai_strategy_resource_expansion }
-			25 = { set_strategy = ai_strategy_industrial_expansion }
-		}			
-		set_strategy = ai_strategy_unify_japan
-		random_list = {	
-			75 = { set_strategy = ai_strategy_conservative_agenda }
-			25 = { set_strategy = ai_strategy_progressive_agenda }
-		}			
-	}
-	c:SEN = {
-		random_list = {	
-			50 = { set_strategy = ai_strategy_agricultural_expansion }
-			25 = { set_strategy = ai_strategy_resource_expansion }
-			25 = { set_strategy = ai_strategy_industrial_expansion }
-		}			
-		set_strategy = ai_strategy_unify_japan
-		random_list = {	
-			75 = { set_strategy = ai_strategy_conservative_agenda }
-			25 = { set_strategy = ai_strategy_progressive_agenda }
-		}			
-	}
-	c:WAK = {
-		random_list = {	
-			50 = { set_strategy = ai_strategy_agricultural_expansion }
-			25 = { set_strategy = ai_strategy_resource_expansion }
-			25 = { set_strategy = ai_strategy_industrial_expansion }
-		}			
-		set_strategy = ai_strategy_unify_japan
-		random_list = {	
-			75 = { set_strategy = ai_strategy_conservative_agenda }
-			25 = { set_strategy = ai_strategy_progressive_agenda }
-		}			
-	}
 	c:ODA = {
-		random_list = {	
-			50 = { set_strategy = ai_strategy_agricultural_expansion }
-			25 = { set_strategy = ai_strategy_resource_expansion }
-			25 = { set_strategy = ai_strategy_industrial_expansion }
-		}			
-		set_strategy = ai_strategy_unify_japan
-		random_list = {	
-			75 = { set_strategy = ai_strategy_conservative_agenda }
-			25 = { set_strategy = ai_strategy_progressive_agenda }
-		}			
-	}
-	c:KAW = {
 		random_list = {	
 			50 = { set_strategy = ai_strategy_agricultural_expansion }
 			25 = { set_strategy = ai_strategy_resource_expansion }
@@ -915,43 +831,7 @@
 			25 = { set_strategy = ai_strategy_progressive_agenda }
 		}			
 	}
-	c:HIR = {
-		random_list = {	
-			50 = { set_strategy = ai_strategy_agricultural_expansion }
-			25 = { set_strategy = ai_strategy_resource_expansion }
-			25 = { set_strategy = ai_strategy_industrial_expansion }
-		}			
-		set_strategy = ai_strategy_unify_japan
-		random_list = {	
-			75 = { set_strategy = ai_strategy_conservative_agenda }
-			25 = { set_strategy = ai_strategy_progressive_agenda }
-		}			
-	}
 	c:MER = {
-		random_list = {	
-			50 = { set_strategy = ai_strategy_agricultural_expansion }
-			25 = { set_strategy = ai_strategy_resource_expansion }
-			25 = { set_strategy = ai_strategy_industrial_expansion }
-		}			
-		set_strategy = ai_strategy_unify_japan
-		random_list = {	
-			75 = { set_strategy = ai_strategy_conservative_agenda }
-			25 = { set_strategy = ai_strategy_progressive_agenda }
-		}			
-	}
-	c:KUB = {
-		random_list = {	
-			50 = { set_strategy = ai_strategy_agricultural_expansion }
-			25 = { set_strategy = ai_strategy_resource_expansion }
-			25 = { set_strategy = ai_strategy_industrial_expansion }
-		}			
-		set_strategy = ai_strategy_unify_japan
-		random_list = {	
-			75 = { set_strategy = ai_strategy_conservative_agenda }
-			25 = { set_strategy = ai_strategy_progressive_agenda }
-		}			
-	}
-	c:TAK = {
 		random_list = {	
 			50 = { set_strategy = ai_strategy_agricultural_expansion }
 			25 = { set_strategy = ai_strategy_resource_expansion }
@@ -975,43 +855,7 @@
 			25 = { set_strategy = ai_strategy_progressive_agenda }
 		}			
 	}
-	c:TKT = {
-		random_list = {	
-			50 = { set_strategy = ai_strategy_agricultural_expansion }
-			25 = { set_strategy = ai_strategy_resource_expansion }
-			25 = { set_strategy = ai_strategy_industrial_expansion }
-		}			
-		set_strategy = ai_strategy_unify_japan
-		random_list = {	
-			75 = { set_strategy = ai_strategy_conservative_agenda }
-			25 = { set_strategy = ai_strategy_progressive_agenda }
-		}			
-	}
-	c:OKA = {
-		random_list = {	
-			50 = { set_strategy = ai_strategy_agricultural_expansion }
-			25 = { set_strategy = ai_strategy_resource_expansion }
-			25 = { set_strategy = ai_strategy_industrial_expansion }
-		}			
-		set_strategy = ai_strategy_unify_japan
-		random_list = {	
-			75 = { set_strategy = ai_strategy_conservative_agenda }
-			25 = { set_strategy = ai_strategy_progressive_agenda }
-		}			
-	}
 	c:KKW = {
-		random_list = {	
-			50 = { set_strategy = ai_strategy_agricultural_expansion }
-			25 = { set_strategy = ai_strategy_resource_expansion }
-			25 = { set_strategy = ai_strategy_industrial_expansion }
-		}			
-		set_strategy = ai_strategy_unify_japan
-		random_list = {	
-			75 = { set_strategy = ai_strategy_conservative_agenda }
-			25 = { set_strategy = ai_strategy_progressive_agenda }
-		}			
-	}
-	c:SUN = {
 		random_list = {	
 			50 = { set_strategy = ai_strategy_agricultural_expansion }
 			25 = { set_strategy = ai_strategy_resource_expansion }
@@ -1035,42 +879,6 @@
 			25 = { set_strategy = ai_strategy_progressive_agenda }
 		}			
 	}	
-	c:TWA = {
-		random_list = {	
-			50 = { set_strategy = ai_strategy_agricultural_expansion }
-			25 = { set_strategy = ai_strategy_resource_expansion }
-			25 = { set_strategy = ai_strategy_industrial_expansion }
-		}			
-		set_strategy = ai_strategy_unify_japan
-		random_list = {	
-			75 = { set_strategy = ai_strategy_conservative_agenda }
-			25 = { set_strategy = ai_strategy_progressive_agenda }
-		}			
-	}
-	c:MTE = {
-		random_list = {	
-			50 = { set_strategy = ai_strategy_agricultural_expansion }
-			25 = { set_strategy = ai_strategy_resource_expansion }
-			25 = { set_strategy = ai_strategy_industrial_expansion }
-		}			
-		set_strategy = ai_strategy_unify_japan
-		random_list = {	
-			75 = { set_strategy = ai_strategy_conservative_agenda }
-			25 = { set_strategy = ai_strategy_progressive_agenda }
-		}			
-	}
-	c:TTT = {
-		random_list = {	
-			50 = { set_strategy = ai_strategy_agricultural_expansion }
-			25 = { set_strategy = ai_strategy_resource_expansion }
-			25 = { set_strategy = ai_strategy_industrial_expansion }
-		}			
-		set_strategy = ai_strategy_unify_japan
-		random_list = {	
-			75 = { set_strategy = ai_strategy_conservative_agenda }
-			25 = { set_strategy = ai_strategy_progressive_agenda }
-		}			
-	}
 	c:HHI = {
 		random_list = {	
 			50 = { set_strategy = ai_strategy_agricultural_expansion }
@@ -1096,42 +904,6 @@
 		}			
 	}
 	c:NUM = {
-		random_list = {	
-			50 = { set_strategy = ai_strategy_agricultural_expansion }
-			25 = { set_strategy = ai_strategy_resource_expansion }
-			25 = { set_strategy = ai_strategy_industrial_expansion }
-		}			
-		set_strategy = ai_strategy_unify_japan
-		random_list = {	
-			75 = { set_strategy = ai_strategy_conservative_agenda }
-			25 = { set_strategy = ai_strategy_progressive_agenda }
-		}			
-	}
-	c:KOF = {
-		random_list = {	
-			50 = { set_strategy = ai_strategy_agricultural_expansion }
-			25 = { set_strategy = ai_strategy_resource_expansion }
-			25 = { set_strategy = ai_strategy_industrial_expansion }
-		}			
-		set_strategy = ai_strategy_unify_japan
-		random_list = {	
-			75 = { set_strategy = ai_strategy_conservative_agenda }
-			25 = { set_strategy = ai_strategy_progressive_agenda }
-		}			
-	}
-	c:TKA = {
-		random_list = {	
-			50 = { set_strategy = ai_strategy_agricultural_expansion }
-			25 = { set_strategy = ai_strategy_resource_expansion }
-			25 = { set_strategy = ai_strategy_industrial_expansion }
-		}			
-		set_strategy = ai_strategy_unify_japan
-		random_list = {	
-			75 = { set_strategy = ai_strategy_conservative_agenda }
-			25 = { set_strategy = ai_strategy_progressive_agenda }
-		}			
-	}
-	c:MTS = {
 		random_list = {	
 			50 = { set_strategy = ai_strategy_agricultural_expansion }
 			25 = { set_strategy = ai_strategy_resource_expansion }

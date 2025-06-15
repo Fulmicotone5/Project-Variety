@@ -607,7 +607,6 @@ dutch={
 	traits = { beneluxian_culture_group dutch_speaking european_heritage }
 	obsessions = {
 		spice
-		meat
 		coffee
 		tobacco
 		luxury_clothes
@@ -1620,7 +1619,6 @@ swedish={
 	obsessions = {
 		wine
 		liquor
-		meat
 		tobacco
 		luxury_clothes
 		luxury_furniture
@@ -1745,7 +1743,6 @@ danish={
 	traits = { scandinavian_culture_group norse european_heritage }
 	obsessions = {
 		liquor
-		meat
 		tobacco
 		luxury_clothes
 		luxury_furniture
@@ -2832,7 +2829,6 @@ north_roman={
 	obsessions = {
 		wine
 		olive
-		meat
 		coffee
 		tobacco
 	}	
@@ -2917,7 +2913,6 @@ south_roman={
 		wine
 		olive
 		coffee
-		meat
 		fine_art
 	}	
 	
@@ -5155,7 +5150,7 @@ burgundian={
 	
 	obsessions = {
 		wine luxury_clothes luxury_furniture
-		coffee fine_art meat fruit spice
+		coffee fine_art fruit spice
 	}
 	
 	male_common_first_names={
@@ -6330,7 +6325,6 @@ romanian={
 	obsessions = {
 		tobacco
 		liquor
-		meat
 		olive
 		wine
 	}	
@@ -12293,7 +12287,6 @@ han={
 	traits = { sinosphere han_chinese east_asian_heritage }
 	obsessions = {
 		opium
-		meat
 		tea
 		spice
 	}	
@@ -17130,7 +17123,6 @@ argentino={
 		olive
 		coffee
 		tobacco
-		meat
 	}
 	
 	male_common_first_names={
@@ -22732,7 +22724,6 @@ swedish_colonial={
 	obsessions = {
 		wine
 		liquor
-		meat
 		tobacco
 		coffee
 	}

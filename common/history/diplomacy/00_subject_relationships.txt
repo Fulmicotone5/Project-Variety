@@ -237,28 +237,6 @@
 			type = vassal
 		}
 	}
-	c:ODU = {
-		create_diplomatic_pact = {
-			country = c:SAB
-			type = tributary
-		}
-		create_diplomatic_pact = {
-			country = c:KAW
-			type = tributary
-		}
-		create_diplomatic_pact = {
-			country = c:TKT
-			type = tributary
-		}
-		create_diplomatic_pact = {
-			country = c:TSU
-			type = tributary
-		}
-		create_diplomatic_pact = {
-			country = c:TAK
-			type = tributary
-		}
-	}
 
 	c:CAS = {
 		create_diplomatic_pact = {

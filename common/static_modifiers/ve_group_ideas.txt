@@ -242,7 +242,7 @@ ip4 = {
 	country_legitimacy_base_add = 10
 	country_agitator_slots_add = 1
 	country_loyalists_from_legitimacy_mult = 0.25
-	country_law_enactment_time_mult = -0.25
+	country_law_enactment_time_mult = -0.15
 	country_law_enactment_success_add = 0.1
 }
 ip5 = {

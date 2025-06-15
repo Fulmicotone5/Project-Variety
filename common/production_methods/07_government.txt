@@ -470,7 +470,7 @@ pm_farms_research_funding = {
 
 	country_modifiers = {
 		unscaled = {
-			country_invention_farms_add = 1.5
+			country_invention_farms_add = 1.2
 
 			
 		}
@@ -496,7 +496,7 @@ pm_groceries_research_funding = {
 
 	country_modifiers = {
 		unscaled = {
-			country_invention_groceries_add = 1.7
+			country_invention_groceries_add = 1.5
 
 			
 		}
@@ -523,7 +523,7 @@ pm_logging_research_funding = {
 
 	country_modifiers = {
 		unscaled = {
-			country_invention_logging_add = 1.5
+			country_invention_logging_add = 1.2
 
 			
 		}
@@ -545,7 +545,7 @@ pm_textile_research_funding = {
 
 	country_modifiers = {
 		unscaled = {
-			country_invention_textile_add = 1.5
+			country_invention_textile_add = 1.2
 
 			
 		}
@@ -572,7 +572,7 @@ pm_fishing_research_funding = {
 
 	country_modifiers = {
 		unscaled = {
-			country_invention_fishing_add = 1.9
+			country_invention_fishing_add = 1.7
 
 			
 		}
@@ -595,7 +595,7 @@ pm_furniture_research_funding = {
 
 	country_modifiers = {
 		unscaled = {
-			country_invention_furniture_add = 1.5
+			country_invention_furniture_add = 1.3
 
 			
 		}
@@ -623,7 +623,7 @@ pm_paper_research_funding = {
 
 	country_modifiers = {
 		unscaled = {
-			country_invention_paper_add = 1.3
+			country_invention_paper_add = 1.2
 
 			
 		}
@@ -650,7 +650,7 @@ pm_motor_research_funding = {
 
 	country_modifiers = {
 		unscaled = {
-			country_invention_motor_add = 1.5
+			country_invention_motor_add = 1.3
 
 			
 		}
@@ -677,7 +677,7 @@ pm_alcohol_research_funding = {
 
 	country_modifiers = {
 		unscaled = {
-			country_invention_alcohol_add = 2
+			country_invention_alcohol_add = 1.8
 
 			
 		}
@@ -706,7 +706,7 @@ pm_meat_research_funding = {
 
 	country_modifiers = {
 		unscaled = {
-			country_invention_meat_add = 2
+			country_invention_meat_add = 1.6
 
 			
 		}
@@ -733,7 +733,7 @@ pm_mining_research_funding = {
 
 	country_modifiers = {
 		unscaled = {
-			country_invention_mining_add = 0.9
+			country_invention_mining_add = 0.8
 
 			
 		}
@@ -790,7 +790,7 @@ pm_glass_research_funding = {
 
 	country_modifiers = {
 		unscaled = {
-			country_invention_glass_add = 1.3
+			country_invention_glass_add = 1.1
 
 			
 		}
@@ -817,7 +817,7 @@ pm_plantations_research_funding = {
 
 	country_modifiers = {
 		unscaled = {
-			country_invention_plantations_add = 1.2
+			country_invention_plantations_add = 1.1
 
 			
 		}
@@ -849,7 +849,7 @@ pm_explosives_research_funding = {
 
 	country_modifiers = {
 		unscaled = {
-			country_invention_explosives_add = 1.3
+			country_invention_explosives_add = 1.1
 
 			
 		}
@@ -877,7 +877,7 @@ pm_silk_research_funding = {
 
 	country_modifiers = {
 		unscaled = {
-			country_invention_silk_add = 2.5
+			country_invention_silk_add = 2.0
 
 			
 		}
@@ -904,7 +904,7 @@ pm_steel_research_funding = {
 
 	country_modifiers = {
 		unscaled = {
-			country_invention_steel_add = 1.3
+			country_invention_steel_add = 1.1
 
 			
 		}
@@ -932,7 +932,7 @@ pm_tools_research_funding = {
 
 	country_modifiers = {
 		unscaled = {
-			country_invention_tools_add = 1.2
+			country_invention_tools_add = 1.1
 
 			
 		}
@@ -959,7 +959,7 @@ pm_military_research_funding = {
 
 	country_modifiers = {
 		unscaled = {
-			country_invention_military_add = 1.5
+			country_invention_military_add = 1.3
 
 			
 		}

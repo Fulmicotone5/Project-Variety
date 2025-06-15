@@ -52,7 +52,7 @@ intellectual_nation_mdf_3 = {
 
 intellectual_nation_mdf_4 = {
 	icon = gfx/interface/monarch_cultures_icon.dds
-	country_law_enactment_time_mult = -0.2
+	country_law_enactment_time_mult = -0.15
 }
 
 intellectual_nation_mdf_5 = {

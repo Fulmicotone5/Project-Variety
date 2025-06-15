@@ -50,11 +50,6 @@ fm_jae.1 = {
 					c:SAU ?= this
 					c:ODU ?= this
 					c:IPJ ?= this
-					c:TAK ?= this
-					c:TSU ?= this
-					c:SAB ?= this
-					c:KAW ?= this
-					c:TKT ?= this
 				}
 			}
 			trigger_event = {

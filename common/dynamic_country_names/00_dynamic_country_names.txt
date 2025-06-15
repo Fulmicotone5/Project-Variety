@@ -606,6 +606,15 @@ HKN = {
 			}
 		}
 	}
+	dynamic_country_name = {
+		name = vest_theo
+		adjective = HKN_ADJ
+		is_main_tag_only = yes
+		priority = 0
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
 }
 
 HKV = {
@@ -618,6 +627,15 @@ HKV = {
 			scope:actor ?= {
 				has_law = law_type:law_monarchy
 			}
+		}
+	}
+	dynamic_country_name = {
+		name = vest_theo
+		adjective = HKV_ADJ
+		is_main_tag_only = yes
+		priority = 0
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
 		}
 	}
 }
@@ -1747,6 +1765,30 @@ FRE = {
 			scope:actor ?= {
 				has_law = law_type:law_monarchy
 			}
+		}
+	}
+}
+BR1 = {
+	dynamic_country_name = {
+		name = BR1_emp
+		adjective = BR1_ADJ
+		priority = 10
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_law = law_type:law_monarchy
+			}
+		}
+	}
+}
+VSL = {
+ dynamic_country_name = {
+		name = vest_theo
+		adjective = VSL_ADJ
+		is_main_tag_only = yes
+		priority = 0
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
 		}
 	}
 }

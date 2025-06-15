@@ -2,24 +2,24 @@
 
 japgen_idea_tradition_1 = {
 	icon = gfx/interface/ve_national_ideas/japan_idea2.dds
-	unit_combat_unit_type_irregular_infantry_offense_mult = 0.8
-	unit_combat_unit_type_irregular_infantry_defense_mult = 1
-	unit_combat_unit_type_hussars_offense_mult = 0.8
-	unit_combat_unit_type_hussars_defense_mult = 1
+	unit_combat_unit_type_irregular_infantry_offense_mult = 0.5
+	unit_combat_unit_type_irregular_infantry_defense_mult = 0.6
+	unit_combat_unit_type_hussars_offense_mult = 0.5
+	unit_combat_unit_type_hussars_defense_mult = 0.6
 	state_bureaucracy_population_base_cost_factor_mult = -0.1
 }
 
 
 jap_idea_tradition_1 = {
 	icon = gfx/interface/ve_national_ideas/japan_idea1.dds
-	unit_combat_unit_type_irregular_infantry_offense_mult = 1
-	unit_combat_unit_type_irregular_infantry_defense_mult = 1
+	unit_combat_unit_type_irregular_infantry_offense_mult = 0.7
+	unit_combat_unit_type_irregular_infantry_defense_mult = 0.8
 }
 
 jap_idea_tradition_2 = {
 	icon = gfx/interface/ve_national_ideas/jap_cav.dds
-	unit_combat_unit_type_hussars_offense_mult = 1
-	unit_combat_unit_type_hussars_defense_mult = 1
+	unit_combat_unit_type_hussars_offense_mult = 0.7
+	unit_combat_unit_type_hussars_defense_mult = 0.8
 }
 
 

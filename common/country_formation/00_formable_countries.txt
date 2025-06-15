@@ -336,6 +336,30 @@ AAN = {
 	}
 }
 
+BR1 = {
+	states = {
+		STATE_KACHIN
+		STATE_SHAN_STATES
+		STATE_MANDALAY
+		STATE_PEGU
+		STATE_ARAKAN
+		STATE_ASSAM
+		STATE_LAOS
+		STATE_CHIANG_MAI
+		STATE_TENASSERIM
+		STATE_BANGKOK
+		STATE_NAKHON_RATCHASIMA
+	}
+
+	required_states_fraction = 0.8
+	
+	ai_will_do = { always = yes }
+
+	possible = {
+		has_technology_researched = nationalism
+	}
+}
+
 HU1 = {
 	states = {
 		STATE_WEST_SLOVAKIA

@@ -1005,7 +1005,7 @@ mod_yag_3 = {
 	state_tax_waste_add = 0.1
 	country_government_dividends_waste_add = 0.1
 	country_legitimacy_base_add = -5
-	country_law_enactment_time_mult = -0.25
+	country_law_enactment_time_mult = -0.2
 }
 
 mod_yag_4 = {

@@ -1567,6 +1567,50 @@ BUN = { # Bundelkhand
 		}
 	}	
 }
+BR1 = { # Burma
+	flag_definition = {
+		coa = BR1
+		subject_canton = BR1
+		allow_overlord_canton = yes		
+		coa_with_overlord_canton = BUR_subject
+		priority = 1
+	}
+	flag_definition = {
+		coa = BR1_monarchy
+		subject_canton = BR1_monarchy
+		allow_overlord_canton = yes		
+		coa_with_overlord_canton = BUR_subject		
+		priority = 20
+		trigger = { 
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = BUR_republic
+		subject_canton = BUR_republic
+		priority = 10
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = BUR_dictatorship
+		subject_canton = BUR_dictatorship
+		priority = 20
+		trigger = {
+			coa_def_dictatorship_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = BUR_theocracy
+		subject_canton = BUR_theocracy
+		priority = 20
+		trigger = { 
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}	
+}
+
 
 BUR = { # Burma
 	flag_definition = {
@@ -10884,35 +10928,6 @@ MNN = {
 	}
 }
 
-
-CUH = { 
-	flag_definition = {
-		coa = CUH
-		subject_canton = CUH
-		priority = 1
-	}
-}
-WAK = { 
-	flag_definition = {
-		coa = WAK
-		subject_canton = WAK
-		priority = 1
-	}
-}
-TOS = { 
-	flag_definition = {
-		coa = TOS
-		subject_canton = TOS
-		priority = 1
-	}
-}
-KAW = { 
-	flag_definition = {
-		coa = KAW
-		subject_canton = KAW
-		priority = 1
-	}
-}
 ODA = { 
 	flag_definition = {
 		coa = ODA
@@ -10920,13 +10935,7 @@ ODA = {
 		priority = 1
 	}
 }
-SEN = { 
-	flag_definition = {
-		coa = SEN
-		subject_canton = SEN
-		priority = 1
-	}
-}
+
 SAU = { 
 	flag_definition = {
 		coa = SAU
@@ -10962,31 +10971,11 @@ NAA = {
 		priority = 1
 	}
 }
-JOZ = { 
-	flag_definition = {
-		coa = JOZ
-		subject_canton = JOZ
-		priority = 1
-	}
-}
-AIZ = { 
-	flag_definition = {
-		coa = AIZ
-		subject_canton = AIZ
-		priority = 1
-	}
-}
+
 MAT = { 
 	flag_definition = {
 		coa = MAT
 		subject_canton = MAT
-		priority = 1
-	}
-}
-HIR = { 
-	flag_definition = {
-		coa = HIR
-		subject_canton = HIR
 		priority = 1
 	}
 }
@@ -10997,13 +10986,7 @@ MER = {
 		priority = 1
 	}
 }
-KUB = { 
-	flag_definition = {
-		coa = KUB
-		subject_canton = KUB
-		priority = 1
-	}
-}
+
 TOK = { 
 	flag_definition = {
 		coa = TOK
@@ -11025,38 +11008,10 @@ AWT = {
 		priority = 1
 	}
 }
-TAK = { 
-	flag_definition = {
-		coa = TAK
-		subject_canton = TAK
-		priority = 1
-	}
-}
-TKT = { 
-	flag_definition = {
-		coa = TKT
-		subject_canton = TKT
-		priority = 1
-	}
-}
-OKA = { 
-	flag_definition = {
-		coa = OKA
-		subject_canton = OKA
-		priority = 1
-	}
-}
 KKW = { 
 	flag_definition = {
 		coa = KKW
 		subject_canton = KKW
-		priority = 1
-	}
-}
-SUN = { 
-	flag_definition = {
-		coa = SUN
-		subject_canton = SUN
 		priority = 1
 	}
 }
@@ -11082,27 +11037,6 @@ NUM = {
 		priority = 1
 	}
 }
-KOF = { 
-	flag_definition = {
-		coa = KOF
-		subject_canton = KOF
-		priority = 1
-	}
-}
-TKA = { 
-	flag_definition = {
-		coa = TKA
-		subject_canton = TKA
-		priority = 1
-	}
-}
-MTS = { 
-	flag_definition = {
-		coa = MTS
-		subject_canton = MTS
-		priority = 1
-	}
-}
 GJO = { 
 	flag_definition = {
 		coa = GJO
@@ -11118,27 +11052,6 @@ SAB = {
 	}
 }
 
-TWA = { 
-	flag_definition = {
-		coa = TWA
-		subject_canton = TWA
-		priority = 1
-	}
-}
-MTE = { 
-	flag_definition = {
-		coa = MTE
-		subject_canton = MTE
-		priority = 1
-	}
-}
-TTT = { 
-	flag_definition = {
-		coa = TTT
-		subject_canton = TTT
-		priority = 1
-	}
-}
 HHI = { 
 	flag_definition = {
 		coa = HHI

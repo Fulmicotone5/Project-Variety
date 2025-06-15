@@ -53,7 +53,7 @@ age_1_bonus_8 = {
 age_1_bonus_9 = {
 	icon = gfx/interface/icon_splendor_tiny.dds
 	country_law_enactment_success_add = 0.1
-	country_law_enactment_time_mult = -0.25
+	country_law_enactment_time_mult = -0.15
 }
 
 age_1_bonus_10 = {

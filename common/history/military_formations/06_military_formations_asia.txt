@@ -88,6 +88,16 @@
 				state_region = s:STATE_KYUSHU
 				count = 5
 			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_CHUGOKU
+				count = 3
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_hussars
+				state_region = s:STATE_CHUGOKU
+				count = 3
+			}
 		}
 	}
 	c:MCH = {
@@ -719,47 +729,6 @@
 			}
 		}
 	}
-	c:HIR = {
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_japan
-			name = "Tsugaru Clan Army"
-			combat_unit = {
-				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_TOHOKU
-				count = 5
-			}
-		}
-	}
-	c:KUB = {
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_japan
-			name = "Satake Clan Army"
-			combat_unit = {
-				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_TOHOKU
-				count = 5
-			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_TOHOKU
-				count = 3
-			}
-		}
-	}
-	c:SEN = {
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_japan
-			name = "Date Clan Army"
-			combat_unit = {
-				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_TOHOKU
-				count = 10
-			}
-		}
-	}
 	c:YON = {
 		create_military_formation = {
 			type = army
@@ -794,28 +763,6 @@
 			}
 		}
 	}
-	c:AIZ = {
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_japan
-			name = "Matsudaira Clan Army"
-			combat_unit = {
-				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_TOHOKU
-				count = 4
-			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_TOHOKU
-				count = 1
-			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_TOHOKU
-				count = 3
-			}
-		}
-	}
 	c:ODA = {
 		create_military_formation = {
 			type = army
@@ -835,18 +782,6 @@
 				type = unit_type:combat_unit_type_hussars
 				state_region = s:STATE_KANTO
 				count = 3
-			}
-		}
-	}
-	c:KOF = {
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_japan
-			name = "Yanagisawa Clan Army"
-			combat_unit = {
-				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_KANTO
-				count = 9
 			}
 		}
 	}
@@ -901,23 +836,6 @@
 			}
 		}
 	}
-	c:JOZ = {
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_japan
-			name = "Hayashi Clan Army"
-			combat_unit = {
-				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_KANTO
-				count = 5
-			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_KANTO
-				count = 2
-			}
-		}
-	}
 	c:GJO = {
 		create_military_formation = {
 			type = army
@@ -943,19 +861,7 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
 				state_region = s:STATE_CHUBU
-				count = 3
-			}
-		}
-	}
-	c:KAW = {
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_japan
-			name = "Maeba Clan Army"
-			combat_unit = {
-				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_CHUBU
-				count = 3
+				count = 10
 			}
 		}
 	}
@@ -981,62 +887,6 @@
 			}
 		}
 	}
-	c:TKA = {
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_japan
-			name = "Kanamori Clan Army"
-			combat_unit = {
-				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_CHUBU
-				count = 3
-			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_CHUBU
-				count = 1
-			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_CHUBU
-				count = 2
-			}
-		}
-	}
-	c:MTS = {
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_japan
-			name = "Matsudaira Clan Army"
-			combat_unit = {
-				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_CHUBU
-				count = 4
-			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_CHUBU
-				count = 1
-			}
-		}
-	}
-	c:SUN = {
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_japan
-			name = "Imagawa Clan Army"
-			combat_unit = {
-				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_CHUBU
-				count = 4
-			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_CHUBU
-				count = 2
-			}
-		}
-	}
 	c:KKW = {
 		create_military_formation = {
 			type = army
@@ -1045,24 +895,12 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
 				state_region = s:STATE_CHUBU
-				count = 4
+				count = 7
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_hussars
 				state_region = s:STATE_CHUBU
-				count = 1
-			}
-		}
-	}
-	c:OKA = {
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_japan
-			name = "Honda Clan Army"
-			combat_unit = {
-				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_CHUBU
-				count = 7
+				count = 2
 			}
 		}
 	}
@@ -1100,30 +938,6 @@
 			}
 		}
 	}
-	c:TKT = {
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_japan
-			name = "Uemura Clan Army"
-			combat_unit = {
-				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_KANSAI
-				count = 4
-			}
-		}
-	}
-	c:WAK = {
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_japan
-			name = "Tokugawa Clan Army"
-			combat_unit = {
-				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_KANSAI
-				count = 9
-			}
-		}
-	}
 	c:TSU = {
 		create_military_formation = {
 			type = army
@@ -1132,19 +946,7 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
 				state_region = s:STATE_KANSAI
-				count = 2
-			}
-		}
-	}
-	c:TAK = {
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_japan
-			name = "Nagai Clan Army"
-			combat_unit = {
-				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_KANSAI
-				count = 5
+				count = 10
 			}
 		}
 	}
@@ -1156,7 +958,7 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
 				state_region = s:STATE_SHIKOKU
-				count = 4
+				count = 5
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_hussars
@@ -1177,23 +979,6 @@
 			}
 		}
 	}
-	c:TOS = {
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_japan
-			name = "Yamauchi Clan Army"
-			combat_unit = {
-				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_SHIKOKU
-				count = 5
-			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_SHIKOKU
-				count = 3
-			}
-		}
-	}
 	c:MTY = {
 		create_military_formation = {
 			type = army
@@ -1202,31 +987,7 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
 				state_region = s:STATE_CHUGOKU
-				count = 9
-			}
-		}
-	}
-	c:TTT = {
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_japan
-			name = "Ikeda Clan Army"
-			combat_unit = {
-				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_CHUGOKU
-				count = 9
-			}
-		}
-	}
-	c:MTE = {
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_japan
-			name = "Matsudaira Clan Army"
-			combat_unit = {
-				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_CHUGOKU
-				count = 5
+				count = 14
 			}
 		}
 	}
@@ -1238,41 +999,12 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
 				state_region = s:STATE_CHUGOKU
-				count = 4
+				count = 6
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_hussars
 				state_region = s:STATE_CHUGOKU
-				count = 4
-			}
-		}
-	}
-	c:TWA = {
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_japan
-			name = "Kamei Clan Army"
-			combat_unit = {
-				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_CHUGOKU
-				count = 4
-			}
-		}
-	}
-	c:CUH = {
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_japan
-			name = "Mōri Clan Army"
-			combat_unit = {
-				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_CHUGOKU
-				count = 5
-			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_CHUGOKU
-				count = 3
+				count = 6
 			}
 		}
 	}

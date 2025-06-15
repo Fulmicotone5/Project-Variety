@@ -1111,7 +1111,7 @@
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_north_africa
-			name = "carthaginian Army"
+			name = "Carthaginian Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_SICILY
@@ -1127,7 +1127,7 @@
 		create_military_formation = {
 			type = fleet
 			hq_region = sr:region_north_africa
-			name = "carthaginian Navy"
+			name = "Carthaginian Navy"
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
 				state_region = s:STATE_SICILY

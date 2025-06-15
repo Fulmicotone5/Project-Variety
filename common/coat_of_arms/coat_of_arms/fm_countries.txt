@@ -4603,7 +4603,30 @@ BUN_subject = {
 		instance = { scale = { 0.5 0.5 } position = { 0.75 0.5 } }			
 	}				
 }
-
+BR1 = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	textured_emblem = {
+		texture = "te_peacock.dds"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.51 } }
+	}		
+}
+BR1_monarchy = {
+	# Starting flag
+	
+	pattern = "pattern_solid.tga"
+	color1 = "yellow_dark"
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = "red"
+		color2 = "red"
+		instance = { scale = { 0.85 0.85 } position = { 0.5 0.5 } }		
+	}
+	textured_emblem = {
+		texture = "te_peacock.dds"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.51 } }
+	}		
+}
 BUR = { # Burma	
 	pattern = "pattern_solid.tga"
 	color1 = "white"
@@ -26747,35 +26770,6 @@ NOS = { # Nova Scotia
 	}
 }
 
-CUH = {
-	pattern = "pattern_solid.tga"
-	color1 = "white"
-
-	textured_emblem = {
-			texture = "te_coa_choshu.dds"
-			instance = { scale = { 1.5 1.5 } position = { 0.5 0.5 } }
-	}
-}
-
-WAK = {
-	pattern = "pattern_solid.tga"
-	color1 = "white"
-
-	textured_emblem = {
-			texture = "te_coa_wakayama.dds"
-			instance = { scale = { 1.5 1.5 } position = { 0.5 0.5 } }
-	}
-}
-
-KAW = {
-	pattern = "pattern_solid.tga"
-	color1 = "white"
-
-	textured_emblem = {
-			texture = "te_coa_kanazawa.dds"
-			instance = { scale = { 1.5 1.5 } position = { 0.5 0.5 } }
-	}
-}
 
 ODA = {
 	pattern = "pattern_solid.tga"
@@ -26813,25 +26807,7 @@ SAU = {
 	}
 }
 
-SEN = {
-	pattern = "pattern_solid.tga"
-	color1 = "blue_light"
 
-	textured_emblem = {
-		texture = "te_coa_sendai.dds"
-		instance = { scale = { 1.5 1.5 } position = { 0.5 0.5 } }
-	}	
-}
-
-TOS = {
-	pattern = "pattern_solid.tga"
-	color1 = "white"
-
-	textured_emblem = {
-		texture = "te_coa_tosa.dds"
-		instance = { scale = { 1.5 1.5 } position = { 0.5 0.5 } }
-	}
-}
 
 YON = {
 	pattern = "pattern_solid.tga"
@@ -26873,25 +26849,6 @@ NAA = {
 	}
 }
 
-JOZ = {
-	pattern = "pattern_solid.tga"
-	color1 = "black"
-
-	textured_emblem = {
-			texture = "te_coa_jozai.dds"
-			instance = { scale = { 0.7 0.7 } position = { 0.5 0.5 } }
-	}
-}
-
-AIZ = {
-	pattern = "pattern_solid.tga"
-	color1 = "black"
-
-	textured_emblem = {
-		texture = "te_coa_aizu.dds"
-		instance = { scale = { 0.7 0.7 } position = { 0.5 0.5 } }
-	}
-}
 
 MAT = {
 	pattern = "pattern_solid.tga"
@@ -26903,15 +26860,6 @@ MAT = {
 	}
 }
 
-HIR = {
-	pattern = "pattern_solid.tga"
-	color1 = "black"
-
-	textured_emblem = {
-			texture = "te_coa_hirosaki.dds"
-			instance = { scale = { 0.9 0.9 } position = { 0.5 0.5 } }
-	}
-}
 
 MER = {
 	pattern = "pattern_solid.tga"
@@ -26920,16 +26868,6 @@ MER = {
 	textured_emblem = {
 			texture = "te_coa_morioka.dds"
 			instance = { scale = { 0.8 0.8 } position = { 0.5 0.5 } }
-	}
-}
-
-KUB = {
-	pattern = "pattern_solid.tga"
-	color1 = "black"
-
-	textured_emblem = {
-		texture = "te_coa_kubota.dds"
-		instance = { scale = { 0.7 0.7 } position = { 0.5 0.5 } }
 	}
 }
 
@@ -26963,35 +26901,7 @@ AWT = {
 	}
 }
 
-TAK = {
-	pattern = "pattern_solid.tga"
-	color1 = "white"
 
-	textured_emblem = {
-		texture = "te_coa_tak.dds"
-		instance = { scale = { 0.8 0.8 } position = { 0.5 0.5 } }
-	}
-}
-
-TKT = {
-	pattern = "pattern_solid.tga"
-	color1 = "black"
-
-	textured_emblem = {
-			texture = "te_coa_tkt.dds"
-			instance = { scale = { 0.8 0.8 } position = { 0.5 0.5 } }
-	}
-}
-
-OKA = {
-	pattern = "pattern_solid.tga"
-	color1 = "black"
-
-	textured_emblem = {
-		texture = "te_coa_oka.dds"
-		instance = { scale = { 0.8 0.8 } position = { 0.5 0.5 } }
-	}
-}
 
 KKW = {
 	pattern = "pattern_solid.tga"
@@ -27003,15 +26913,6 @@ KKW = {
 	}
 }
 
-SUN = {
-	pattern = "pattern_solid.tga"
-	color1 = "black"
-
-	textured_emblem = {
-			texture = "te_coa_sun.dds"
-			instance = { scale = { 0.7 0.7 } position = { 0.5 0.5 } }
-	}
-}
 
 MTO = {
 	pattern = "pattern_solid.tga"
@@ -27044,35 +26945,6 @@ NUM = {
 	}
 }
 
-KOF = {
-	pattern = "pattern_solid.tga"
-	color1 = "white"
-
-	textured_emblem = {
-			texture = "te_coa_kof.dds"
-			instance = { scale = { 0.8 0.8 } position = { 0.5 0.5 } }
-	}
-}
-
-TKA = {
-	pattern = "pattern_solid.tga"
-	color1 = "white"
-
-	textured_emblem = {
-		texture = "te_coa_tka.dds"
-		instance = { scale = { 0.7 0.7 } position = { 0.5 0.5 } }
-	}
-}
-
-MTS = {
-	pattern = "pattern_solid.tga"
-	color1 = "black"
-
-	textured_emblem = {
-		texture = "te_coa_mts.dds"
-		instance = { scale = { 0.8 0.8 } position = { 0.5 0.5 } }
-	}
-}
 
 GJO = {
 	pattern = "pattern_solid.tga"
@@ -27200,36 +27072,6 @@ JAE_fascist = {
 		color1 = color2
 		color2 = color2
 		color3 = color2
-	}
-}
-
-TWA = {
-	pattern = "pattern_solid.tga"
-	color1 = "white"
-
-	textured_emblem = {
-			texture = "te_coa_twa.dds"
-			instance = { scale = { 0.8 0.8 } position = { 0.5 0.5 } }
-	}
-}
-
-MTE = {
-	pattern = "pattern_solid.tga"
-	color1 = "black"
-
-	textured_emblem = {
-		texture = "te_coa_mte.dds"
-		instance = { scale = { 0.9 0.9 } position = { 0.5 0.5 } }
-	}
-}
-
-TTT = {
-	pattern = "pattern_solid.tga"
-	color1 = "black"
-
-	textured_emblem = {
-		texture = "te_coa_ttt.dds"
-		instance = { scale = { 0.8 0.8 } position = { 0.5 0.5 } }
 	}
 }
 

@@ -6608,27 +6608,19 @@ STATES = {
 	s:STATE_TOHOKU = {
 		create_state = {
 			country = c:YON
-			owned_provinces = { xF29D08 x701040 x637FEB }
+			owned_provinces = { xF29D08 x701040 x637FEB x4C5533 xB090C0 xA26E5F xB011C0  }
 		}
 		create_state = {
-			country = c:SEN
-			owned_provinces = { x4C5533 xB090C0 xA26E5F xB011C0 }
-		}	
-		create_state = {
-			country = c:AIZ
+			country = c:NUM
 			owned_provinces = { x19C715 x322F47 x3CA2FC xF01040 xAC762F }
 		}	
 		create_state = {
-			country = c:KUB
+			country = c:MAT
 			owned_provinces = { xE22202 xBC2AFE x3190C0 x15EED4 x81A720 }
 		}
 		create_state = {
 			country = c:MER
-			owned_provinces = { x1BAF33 xBED026 x4C5533 }
-		}
-		create_state = {
-			country = c:HIR
-			owned_provinces = { xE0D080 }
+			owned_provinces = { x1BAF33 xBED026 x4C5533 xE0D080 }
 		}
 		
 		add_homeland = cu:japanese
@@ -6639,20 +6631,12 @@ STATES = {
 			owned_provinces = { x7090C0 x787CC4 xD350FB }
 		}
 		create_state = {
-			country = c:KOF
-			owned_provinces = { xF011C0 xB94331 }
-		}
-		create_state = {
 			country = c:ODA
-			owned_provinces = { xEF9040 x7010C0 }
-		}
-		create_state = {
-			country = c:JOZ
-			owned_provinces = { x478599 }
+			owned_provinces = { xEF9040 x7010C0 xF011C0 xB94331}
 		}
 		create_state = {
 			country = c:MTO
-			owned_provinces = { x709040 }
+			owned_provinces = { x709040 x478599 }
 		}
 		create_state = {
 			country = c:UTS
@@ -6667,24 +6651,12 @@ STATES = {
 			owned_provinces = { xADE732 }
 		}
 		create_state = {
-			country = c:KAW
-			owned_provinces = { x5A57C3 x88595F }
-		}
-		create_state = {
-			country = c:TKA
-			owned_provinces = { x205FEB xD12DC5 }
-		}
-		create_state = {
-			country = c:MTS
-			owned_provinces = { xB050C0 }
-		}
-		create_state = {
 			country = c:GJO
-			owned_provinces = { x9B2E00 x4942D2 xC02285 }
+			owned_provinces = { x9B2E00 x4942D2 xC02285 x5E87A1 xB050C0 x205FEB xD12DC5}
 		}
 		create_state = {
 			country = c:SAB
-			owned_provinces = { xB0D040 }
+			owned_provinces = { xB0D040 x5A57C3 x88595F }
 		}
 		create_state = {
 			country = c:YON
@@ -6695,16 +6667,8 @@ STATES = {
 			owned_provinces = { xE76E8F xEF90C0 x779089 }
 		}
 		create_state = {
-			country = c:OKA
-			owned_provinces = { x3050C0 x910F25 }
-		}
-		create_state = {
 			country = c:KKW
-			owned_provinces = { x31D0C0 }
-		}
-		create_state = {
-			country = c:SUN
-			owned_provinces = { x5E87A1 }
+			owned_provinces = { x31D0C0 x3050C0 x910F25 }
 		}
 		
 		add_homeland = cu:japanese
@@ -6712,27 +6676,15 @@ STATES = {
 	s:STATE_KANSAI = {
 		create_state = {
 			country = c:ODU
-			owned_provinces = { x614287 x705040 x879C25 x305040 xCCB03E x70D040 x9BD7C1 x9E58B2 }
+			owned_provinces = { x705040 x879C25 x70D040 x9BD7C1 x9E58B2 }
 		}
 		create_state = {
 			country = c:IPJ
 			owned_provinces = { x8EC4C9 }
 		}
 		create_state = {
-			country = c:TAK
-			owned_provinces = { xB03EF0 xB0D0C0 }
-		}
-		create_state = {
-			country = c:TKT
-			owned_provinces = { xCCB03E }
-		}
-		create_state = {
-			country = c:WAK
-			owned_provinces = { x614287 }
-		}
-		create_state = {
 			country = c:TSU
-			owned_provinces = { x305040 }
+			owned_provinces = { x305040 xCCB03E x614287 xB03EF0 xB0D0C0 }
 		}
 		
 		add_homeland = cu:japanese
@@ -6762,40 +6714,24 @@ STATES = {
 
 	s:STATE_CHUGOKU = {
 		create_state = {
-			country = c:CUH
+			country = c:SAG
 			owned_provinces = { xF05001 }
 		}
 		create_state = {
-			country = c:TWA
-			owned_provinces = { xA287B0 }
-		}
-		create_state = {
-			country = c:MTE
-			owned_provinces = { x77D64C }
-		}
-		create_state = {
-			country = c:TTT
-			owned_provinces = { xC8AE5C }
-		}
-		create_state = {
 			country = c:HHI
-			owned_provinces = { x715101 xB49AFB x89FD28 }
+			owned_provinces = { x715101 xB49AFB x89FD28 xA287B0 }
 		}
 		create_state = {
 			country = c:MTY
-			owned_provinces = { x1151C0 }
+			owned_provinces = { x1151C0 x77D64C xC8AE5C}
 		}
 		
 		add_homeland = cu:japanese
 	}
 	s:STATE_SHIKOKU = {
 		create_state = {
-			country = c:TOS
-			owned_provinces = { xEFD040 x90D040 }
-		}
-		create_state = {
 			country = c:TOK
-			owned_provinces = { x7C9BEB x5D5512 }
+			owned_provinces = { x7C9BEB x5D5512 xEFD040 x90D040  }
 		}
 		create_state = {
 			country = c:AWT

@@ -403,7 +403,7 @@ sunni_aspect_5_mdf = {
 sunni_aspect_6_mdf = {
 	icon = gfx/interface/catholic.dds
 	country_bureaucracy_mult = 0.05
-	country_law_enactment_time_mult = -0.2
+	country_law_enactment_time_mult = -0.05
 	country_law_enactment_success_add = 0.05
 }
 
@@ -461,7 +461,7 @@ shia_aspect_6_mdf = {
 shia_aspect_7_mdf = {
 	icon = gfx/interface/catholic.dds
 	country_bureaucracy_mult = 0.1
-	country_law_enactment_time_mult = -0.1
+	country_law_enactment_time_mult = -0.05
 }
 
 shia_aspect_8_mdf = {
@@ -552,7 +552,7 @@ mahayana_aspect_2_mdf = {
 mahayana_aspect_3_mdf = {
 	icon = gfx/interface/catholic.dds
 	country_legitimacy_govt_size_add = 10
-	country_law_enactment_time_mult = -0.1
+	country_law_enactment_time_mult = -0.05
 }
 
 mahayana_aspect_4_mdf = {

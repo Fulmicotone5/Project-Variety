@@ -285,40 +285,21 @@
 	c:IPJ ?= {
 		set_relations = { country = c:SAU value = 80 }
 		set_relations = { country = c:SAG value = 80 }
-		set_relations = { country = c:CUH value = 80 }
-		set_relations = { country = c:TOS value = 80 }
 		set_relations = { country = c:TSU value = 80 }
 		set_relations = { country = c:NAA value = 80 }
-		set_relations = { country = c:JOZ value = 80 }
-		set_relations = { country = c:AIZ value = 80 }
-		set_relations = { country = c:SEN value = 80 }
-		set_relations = { country = c:WAK value = 80 }
 		set_relations = { country = c:ODA value = 80 }
-		set_relations = { country = c:KAW value = 80 }
 		set_relations = { country = c:YON value = 80 }
 		set_relations = { country = c:MAT value = 80 }
-		set_relations = { country = c:HIR value = 80 }
 		set_relations = { country = c:MER value = 80 }
-		set_relations = { country = c:KUB value = 80 }
 		set_relations = { country = c:ODU value = 80 }
 		set_relations = { country = c:TOK value = 80 }
 		set_relations = { country = c:AWT value = 80 }
-		set_relations = { country = c:TAK value = 80 }
-		set_relations = { country = c:TKT value = 80 }
-		set_relations = { country = c:OKA value = 80 }
 		set_relations = { country = c:KKW value = 80 }
-		set_relations = { country = c:SUN value = 80 }
 		set_relations = { country = c:MTO value = 80 }
 		set_relations = { country = c:UTS value = 80 }
-		set_relations = { country = c:TWA value = 80 }
-		set_relations = { country = c:MTE value = 80 }
-		set_relations = { country = c:TTT value = 80 }
 		set_relations = { country = c:HHI value = 80 }
 		set_relations = { country = c:MTY value = 80 }
 		set_relations = { country = c:NUM value = 80 }
-		set_relations = { country = c:KOF value = 80 }
-		set_relations = { country = c:TKA value = 80 }
-		set_relations = { country = c:MTS value = 80 }
 		set_relations = { country = c:GJO value = 80 }
 		set_relations = { country = c:SAB value = 80 }
 	}

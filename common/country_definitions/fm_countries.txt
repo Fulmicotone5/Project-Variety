@@ -2302,6 +2302,15 @@ BUR = {
 	cultures = { burmese }
 	capital = STATE_MANDALAY
 }
+BR1 = {
+	color = { 171 148 31 }
+	country_type = recognized
+	
+	tier = empire
+	
+	cultures = { burmese }
+	capital = STATE_MANDALAY
+}
 
 CAM = {
 	color = { 127  180  60 }
@@ -5073,17 +5082,8 @@ ODA = {
 	cultures = { japanese }
 	capital = STATE_CHUBU
 }
-WAK = {
-	color = { 70 9 94 }
-	country_type = unrecognized
-	
-	tier = kingdom
-	
-	cultures = { japanese }
-	capital = STATE_KANSAI
-}
 YON = {
-	color = { 28 24 92 }
+	color = { 29 53 140 }
 	country_type = unrecognized
 	
 	tier = kingdom
@@ -5091,24 +5091,7 @@ YON = {
 	cultures = { japanese }
 	capital = STATE_CHUBU
 }
-SEN = {
-	color = { 29 53 140 }
-	country_type = unrecognized
-	
-	tier = kingdom
-	
-	cultures = { japanese }
-	capital = STATE_TOHOKU
-}
-CUH = {
-	color = { 173 138 12 }
-	country_type = unrecognized
-	
-	tier = kingdom
-	
-	cultures = { japanese }
-	capital = STATE_CHUGOKU
-}
+
 SAU = {
 	color = { 13 34 128 }
 	country_type = recognized
@@ -5119,25 +5102,6 @@ SAU = {
 	capital = STATE_KYUSHU
 }
 
-TOS = {
-	color = { 84 8 10 }
-	country_type = unrecognized
-	
-	tier = kingdom
-	
-	cultures = { japanese }
-	capital = STATE_SHIKOKU
-}
-
-KAW = {
-	color = { 19 168 66 }
-	country_type = unrecognized
-	
-	tier = kingdom
-	
-	cultures = { japanese }
-	capital = STATE_CHUBU
-}
 
 SAG = {
 	color = { 133 84 7 }
@@ -5150,7 +5114,7 @@ SAG = {
 	capital = STATE_KYUSHU
 }
 TSU = {
-	color = { 214 66 182 }
+	color = { 84 8 10  }
 	country_type = unrecognized
 	
 	tier = kingdom
@@ -5168,26 +5132,9 @@ NAA = {
 	capital = STATE_CHUBU
 }
 
-JOZ = {
-	color = { 15 144 184 }
-	country_type = unrecognized
-	
-	tier = kingdom
-	
-	cultures = { japanese }
-	capital = STATE_KANTO
-}
-AIZ = {
-	color = { 7 29 36 }
-	country_type = unrecognized
-	
-	tier = kingdom
-	
-	cultures = { japanese }
-	capital = STATE_TOHOKU
-}
+
 MAT = {
-	color = { 37 183 230 }
+	color = { 28 86 163 }
 	country_type = unrecognized
 	
 	tier = kingdom
@@ -5195,15 +5142,7 @@ MAT = {
 	cultures = { japanese }
 	capital = STATE_HOKKAIDO
 }
-HIR = {
-	color = { 47 125 222 }
-	country_type = unrecognized
-	
-	tier = kingdom
-	
-	cultures = { japanese }
-	capital = STATE_TOHOKU
-}
+
 
 MER = {
 	color = { 36 78 133 } 
@@ -5214,15 +5153,7 @@ MER = {
 	cultures = { japanese }
 	capital = STATE_TOHOKU
 }
-KUB = {
-	color = { 28 86 163 }
-	country_type = unrecognized
-	
-	tier = kingdom
-	
-	cultures = { japanese }
-	capital = STATE_TOHOKU
-}
+
 
 TOK = {
 	color = { 120 10 11 }
@@ -5253,45 +5184,9 @@ AWT = {
 	cultures = { japanese }
 	capital = STATE_SHIKOKU
 }
-TAK = {
-	color = { 79 9 84 }
-	country_type = unrecognized
-	
-	tier = kingdom
-	
-	cultures = { japanese }
-	capital = STATE_KANSAI
-}
-TKT = {
-	color = { 120 12 104 }
-	country_type = unrecognized
-	
-	tier = kingdom
-	
-	cultures = { japanese }
-	capital = STATE_KANSAI
-}
 
-OKA = {
-	color = { 6 46 33 }
-	country_type = unrecognized
-	
-	tier = kingdom
-	
-	cultures = { japanese }
-	capital = STATE_CHUBU
-}
 KKW = {
 	color = { 19 82 61 }
-	country_type = unrecognized
-	
-	tier = kingdom
-	
-	cultures = { japanese }
-	capital = STATE_CHUBU
-}
-SUN = {
-	color = { 24 120 88 }
 	country_type = unrecognized
 	
 	tier = kingdom
@@ -5320,15 +5215,6 @@ UTS = {
 }
 
 NUM = {
-	color = { 27 140 65 }
-	country_type = unrecognized
-	
-	tier = kingdom
-	
-	cultures = { japanese }
-	capital = STATE_KANTO
-}
-KOF = {
 	color = { 22 94 46 }
 	country_type = unrecognized
 	
@@ -5338,26 +5224,8 @@ KOF = {
 	capital = STATE_KANTO
 }
 
-TKA = {
-	color = { 36 145 89 }
-	country_type = unrecognized
-	
-	tier = kingdom
-	
-	cultures = { japanese }
-	capital = STATE_CHUBU
-}
-MTS = {
-	color = { 53 130 89}
-	country_type = unrecognized
-	
-	tier = kingdom
-	
-	cultures = { japanese }
-	capital = STATE_CHUBU
-}
 GJO = {
-	color = { 81 168 120 }
+	color = { 24 120 88  }
 	country_type = unrecognized
 	
 	tier = kingdom
@@ -5366,7 +5234,7 @@ GJO = {
 	capital = STATE_CHUBU
 }
 SAB = {
-	color = { 27 150 48 }
+	color = { 19 82 61 }
 	country_type = unrecognized
 	
 	tier = principality
@@ -5393,34 +5261,6 @@ JAE = {
 	
 	cultures = { japanese }
 	capital = STATE_KANSAI
-}
-
-TWA = {
-	color = { 186 147 19}
-	country_type = unrecognized
-	
-	tier = kingdom
-	
-	cultures = { japanese }
-	capital = STATE_CHUGOKU
-}
-MTE = {
-	color = { 179 165 12 }
-	country_type = unrecognized
-	
-	tier = kingdom
-	
-	cultures = { japanese }
-	capital = STATE_CHUGOKU
-}
-TTT = {
-	color = { 201 114 32 }
-	country_type = unrecognized
-	
-	tier = kingdom
-	
-	cultures = { japanese }
-	capital = STATE_CHUGOKU
 }
 
 HHI = {
