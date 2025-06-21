@@ -34,7 +34,7 @@
 			name = survey_suez_taken
 			value = 0
 		}
-		add_if= {
+		add_modifier= {
 			name = modifier_surveying_suez
 		}
 		add_journal_entry = {
@@ -55,9 +55,11 @@
 			multiply = 0
 		}		
 		if= {
-			OR = {
-				is_diplomatic_play_committed_participant = yes
-				is_at_war = yes
+			limit = {
+				OR = {
+					is_diplomatic_play_committed_participant = yes
+					is_at_war = yes
+				}
 			}
 			multiply = 0
 		}		
@@ -66,14 +68,14 @@
 
 stop_suez_survey_decision = {
 	is_shown = {
-		has_if= modifier_surveying_suez
+		has_modifier= modifier_surveying_suez
 	}
 	possible = {
-		has_if= modifier_surveying_suez
+		has_modifier= modifier_surveying_suez
 	}
 	when_taken = {
 		remove_variable = survey_suez_taken
-		remove_if= modifier_surveying_suez
+		remove_modifier= modifier_surveying_suez
 	}
 	ai_chance = {
 		value= 0
@@ -134,7 +136,7 @@ suez_canal_purchase = {
 							}
 						}
 						owner = {
-							add_if= {
+							add_modifier= {
 								name = suez_sale
 								months = 120
 							}
@@ -148,13 +150,13 @@ suez_canal_purchase = {
 					provinces = { xC01060 x8ED45E x76E63D xEC3DC5 xC3AB33 x7DA2DA x464B8A }
 				}
 			}
-			add_if= {
+			add_modifier= {
 				name = suez_purchase
 				months = 120
 			}
 		}
 		else = {
-			limit_event = {
+			trigger_event = {
 				id = canal_events.1
 				days = 0
 				popup = yes
@@ -176,9 +178,11 @@ suez_canal_purchase = {
 			add = 10
 		}		
 		if= {
-			OR = {
-				is_diplomatic_play_committed_participant = yes
-				is_at_war = yes
+			limit = {
+				OR = {
+					is_diplomatic_play_committed_participant = yes
+					is_at_war = yes
+				}
 			}
 			multiply = 0
 		}		
@@ -221,7 +225,7 @@ panama_survey_decision = {
 			name = survey_panama_taken
 			value = 0
 		}
-		add_if= {
+		add_modifier= {
 			name = modifier_surveying_panama
 		}
 		add_journal_entry = {
@@ -242,9 +246,11 @@ panama_survey_decision = {
 			multiply = 0
 		}		
 		if= {
-			OR = {
-				is_diplomatic_play_committed_participant = yes
-				is_at_war = yes
+			limit = {
+				OR = {
+					is_diplomatic_play_committed_participant = yes
+					is_at_war = yes
+				}
 			}
 			multiply = 0
 		}		
@@ -253,14 +259,14 @@ panama_survey_decision = {
 
 stop_panama_survey_decision = {
 	is_shown = {
-		has_if= modifier_surveying_panama
+		has_modifier= modifier_surveying_panama
 	}
 	possible = {
-		has_if= modifier_surveying_panama
+		has_modifier= modifier_surveying_panama
 	}
 	when_taken = {
 		remove_variable = survey_panama_taken
-		remove_if= modifier_surveying_panama
+		remove_modifier= modifier_surveying_panama
 	}
 	ai_chance = {
 		value= 0
@@ -322,7 +328,7 @@ panama_canal_purchase = {
 							}
 						}
 						owner = {
-							add_if= {
+							add_modifier= {
 								name = panama_sale
 								months = 120
 							}
@@ -336,13 +342,13 @@ panama_canal_purchase = {
 					provinces = {xD0EF40}
 				}
 			}
-			add_if= {
+			add_modifier= {
 				name = panama_purchase
 				months = 120
 			}
 		}
 		else = {
-			limit_event = {
+			trigger_event = {
 				id = canal_events.5
 				days = 0
 				popup = yes
@@ -363,12 +369,14 @@ panama_canal_purchase = {
 			}
 			add = 10
 		}
-		if= {
-			OR = {
-				is_diplomatic_play_committed_participant = yes
-				is_at_war = yes
+		if = {
+			limit = {
+				OR = {
+					is_diplomatic_play_committed_participant = yes
+					is_at_war = yes
+				}
 			}
 			multiply = 0
-		}		
+		}	
 	}
 }

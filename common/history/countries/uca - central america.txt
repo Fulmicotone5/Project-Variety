@@ -25,6 +25,7 @@
 
 		activate_law = law_type:law_right_of_assembly
 		set_variable = panama_survey_complete
+		set_variable = survey_panama_taken
 		add_journal_entry = {
 			type = je_panama_canal
 		}
