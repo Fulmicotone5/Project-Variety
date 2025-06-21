@@ -62,6 +62,10 @@
 				culture = yue
 				size = 188000
 			}
+			create_pop = {
+				culture = zhuang
+				size = 85796
+			}
 		}
 	}
 	s:STATE_GUIZHOU = {
@@ -73,6 +77,10 @@
 			create_pop = {
 				culture = yue
 				size = 3504000
+			}
+			create_pop = {
+				culture = zhuang
+				size = 892020
 			}
 		}
 	}
@@ -149,6 +157,15 @@
 			create_pop = {
 				culture = han
 				size = 3306504
+			}
+			create_pop = {
+				culture = zhuang
+				size = 1002000
+			}
+			create_pop = {
+				culture = zhuang
+				size = 3212000
+				religion = mahayana
 			}
 			create_pop = {
 				culture = manchu
@@ -338,6 +355,15 @@
 				religion = catholic
 				size = 3847
 			}
+			create_pop = {
+				culture = zhuang
+				size = 107000
+			}
+			create_pop = {
+				culture = zhuang
+				size = 117000
+				religion = mahayana
+			}
 		}
 		region_state:GNG = {
 			create_pop = {
@@ -347,6 +373,15 @@
 			create_pop = {
 				culture = han
 				size = 178797
+			}
+			create_pop = {
+				culture = zhuang
+				size = 7000
+			}
+			create_pop = {
+				culture = zhuang
+				size = 17000
+				religion = mahayana
 			}
 			create_pop = {
 				culture = min

@@ -95,7 +95,7 @@ age_2_bonus_4 = {
 
 age_2_bonus_5 = {
 	icon = gfx/interface/icon_splendor_tiny.dds
-	country_trade_route_competitiveness_mult = 0.5
+	state_trade_advantage_mult = 0.5
 }
 
 age_2_bonus_6 = {

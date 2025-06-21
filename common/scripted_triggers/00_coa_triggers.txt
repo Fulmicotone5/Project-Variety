@@ -136,7 +136,7 @@ coa_nihilist_trigger = {
 		has_law = law_type:law_council_republic
 	}
 	ruler ?= {
-		has_ideology = ideology:ideology_atheist
+		has_ideology = ideology:ideology_nihilist
     }
 }
 
@@ -148,6 +148,9 @@ coa_secessionist_or_revolutionary_trigger = {
 }
 
 ### scope is COUNTRY DEFINITION ###
+coa_chartered_company_trigger = {
+	is_subject_type = subject_type_chartered_company
+}
 
 coa_def_independent_trigger = {
 	exists = scope:actor
@@ -256,6 +259,12 @@ coa_def_nihilist_flag_trigger = {
 	exists = scope:actor
 	scope:actor ?= { coa_nihilist_trigger = yes }
 }
+coa_def_chartered_company_trigger = {
+	scope:actor ?= {
+		coa_chartered_company_trigger = yes
+	}
+}
+
 
 # Overlord
 

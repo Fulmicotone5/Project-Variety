@@ -12,7 +12,7 @@ cologne_hs_mdf = {
 
 santiago_hs_mdf = {
 	icon = gfx/interface/monument.dds
-	country_trade_route_competitiveness_mult = 0.15
+	state_trade_advantage_mult = 0.15
 }
 
 notre_dame_hs_mdf = {
@@ -59,7 +59,7 @@ prag_hs_mdf = {
 
 canterbury_hs_mdf = {
 	icon = gfx/interface/monument.dds
-	country_trade_route_quantity_mult = 0.15
+	state_trade_capacity_mult  = 0.15
 }
 
 shan_hs_mdf = {

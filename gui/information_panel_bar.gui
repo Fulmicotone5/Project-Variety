@@ -28,6 +28,7 @@ template ve_clear_tab_bar {
 	onclick = "[GetVariableSystem.Clear('ve_tab_var')]"
 }
 
+
 types information_panel_bar_types {
 	type information_panel_bar = widget {
 		name = "information_panel_bar"
@@ -90,7 +91,7 @@ types information_panel_bar_types {
 			}
 		}
 
-				container = {
+		container = {
 			position = { 0 -16 }
 
 			### SIDEBAR BACKGROUND
@@ -152,7 +153,7 @@ types information_panel_bar_types {
 			onmousehierarchyleave = "[PdxGuiInterruptThenTriggerAllAnimations('show_sidebar_labels','hide_sidebar_labels')]"
 
 			container = {
-				  name = "ingame_sidebar_buttons_container" # Don't rename otherwise `UiValidityCheck`s will just pretend to work
+			    name = "ingame_sidebar_buttons_container" # Don't rename otherwise `UiValidityCheck`s will just pretend to work
 				### POWER BLOC
 
 
@@ -258,7 +259,7 @@ types information_panel_bar_types {
 							value = "[FixedPointToFloat(GetPlayer.GetLawEnactmentProgress)]"
 							alwaystransparent = yes
 						}
-						
+
 						### IF LAW ENACTMENT CAN'T PROGRESS, E.G. BECAUSE OF AN ILLEGITMATE GOVERNMENT - RED PROGRESS
 						animated_progresspie = {
 							visible = "[Not(GetPlayer.HasProgressingLawEnactment)]"
@@ -323,7 +324,7 @@ types information_panel_bar_types {
 					position = { -100 @buildings_position }
 					blockoverride "onclick" {
 						using = ve_clear_tab_bar
-						onclick = "[InformationPanelBar.OpenCompactBuildingBrowserPanelCycleFilters( GetPlayer.Self, '|is_urban|is_rural|is_development' )]"
+						onclick = "[InformationPanelBar.OpenCompactBuildingBrowserPanelCycleFilters( GetPlayer.Self, '|is_development|is_rural|is_urban' )]"
 						input_action = "open_buildings"
 					}
 				}
@@ -348,7 +349,7 @@ types information_panel_bar_types {
 						blockoverride "button_selected" {
 							visible = "[InformationPanelBar.IsPanelOpen('compact_building_browser')]"
 						}
-						onclick = "[InformationPanelBar.OpenCompactBuildingBrowserPanelCycleFilters( GetPlayer.Self, '|is_urban|is_rural|is_development' )]"
+						onclick = "[InformationPanelBar.OpenCompactBuildingBrowserPanelCycleFilters( GetPlayer.Self, '|is_development|is_rural|is_urban' )]"
 					}
 				}
 				sidebar_tooltip_area = {
@@ -362,7 +363,7 @@ types information_panel_bar_types {
 					position = { -100 @trade_position }
 					blockoverride "onclick" {
 						using = ve_clear_tab_bar
-						onclick = "[InformationPanelBar.OpenMarketPanelCycleTabs(AccessPlayer.AccessFirstMarket, 'market', 'default|trade_routes|food_security|states')]"
+						onclick = "[InformationPanelBar.OpenMarketPanelCycleTabs(AccessPlayer.AccessFirstMarket.Self, 'market', 'default|world_market_trade|food_security|states')]"
 						input_action = "open_market"
 					}
 				}
@@ -387,7 +388,7 @@ types information_panel_bar_types {
 							visible = "[InformationPanelBar.IsPanelOpen('market')]"
 						}
 						using = ve_clear_tab_bar
-						onclick = "[InformationPanelBar.OpenMarketPanelCycleTabs(AccessPlayer.AccessFirstMarket, 'market', 'default|trade_routes|food_security|states')]"
+						onclick = "[InformationPanelBar.OpenMarketPanelCycleTabs(AccessPlayer.AccessFirstMarket.Self, 'market', 'default|world_market_trade|food_security|states')]"
 					}
 				}
 				sidebar_tooltip_area = {
@@ -551,13 +552,13 @@ types information_panel_bar_types {
 					tooltip = "BUTTON_TECHNOLOGY"
 					input_action = "open_technology"
 				}
-
+				
 				### COMPANIES
 				sidebar_label_button_small = {
 					enabled = "[GetMetaPlayer.GetPlayedOrObservedCountry.IsValid]"
 					position = { -100 @companies_position }
 					blockoverride "onclick" {
-						onclick = "[InformationPanelBar.OpenPanelCycleTabs('companies', 'default|potential_companies')]"
+						onclick = "[InformationPanelBar.OpenPanelCycleTabs('companies', 'default|ranking')]"
 						input_action = "open_companies"
 					}
 				}
@@ -582,7 +583,7 @@ types information_panel_bar_types {
 						blockoverride "button_selected" {
 							visible = "[InformationPanelBar.IsPanelOpen('companies')]"
 						}
-						onclick = "[InformationPanelBar.OpenPanel('companies')]"
+						onclick = "[InformationPanelBar.OpenPanelCycleTabs('companies', 'default|ranking')]"
 						using = ve_clear_tab_bar
 					}
 				}
@@ -590,14 +591,14 @@ types information_panel_bar_types {
 					position = { 0 @companies_position }
 					tooltip = "BUTTON_COMPANIES_OVERVIEW"
 					input_action = "open_companies"
-				}	
+				}				
 
 				### SOCIETY
 				sidebar_label_button_small = {
 					enabled = "[GetMetaPlayer.GetPlayedOrObservedCountry.IsValid]"
 					position = { -100 @society_position }
 					blockoverride "onclick" {
-						onclick = "[InformationPanelBar.OpenPanelCycleTabs('society', 'default|cultures|religions')]"
+						onclick = "[InformationPanelBar.OpenPanelCycleTabs('society', 'default|cultures|religions|classes')]"
 						input_action = "open_society"
 					}
 				}
@@ -622,7 +623,7 @@ types information_panel_bar_types {
 						blockoverride "button_selected" {
 							visible = "[InformationPanelBar.IsPanelOpen('society')]"
 						}
-						onclick = "[InformationPanelBar.OpenPanelCycleTabs('society', 'default|cultures|religions')]"
+						onclick = "[InformationPanelBar.OpenPanelCycleTabs('society', 'default|cultures|religions|classes')]"
 					}
 				}
 				sidebar_tooltip_area_small = {
@@ -678,7 +679,7 @@ types information_panel_bar_types {
 					position = { -100 @journal_position }
 					blockoverride "onclick" {
 						using = ve_clear_tab_bar
-						onclick = "[InformationPanelBar.OpenPanelCycleTabs('journal', 'default|inactive_journal_entries')]"
+						onclick = "[InformationPanelBar.OpenPanelCycleTabs('journal', 'default|inactive_journal_entries|nation_formation')]"
 						input_action = "open_journal"
 					}
 				}
@@ -704,7 +705,7 @@ types information_panel_bar_types {
 							visible = "[InformationPanelBar.IsPanelOpen('journal')]"
 						}
 						using = ve_clear_tab_bar
-						onclick = "[InformationPanelBar.OpenPanelCycleTabs('journal', 'default|inactive_journal_entries')]"
+						onclick = "[InformationPanelBar.OpenPanelCycleTabs('journal', 'default|inactive_journal_entries|nation_formation')]"
 					}
 					textbox = {
 						parentanchor = right|top
@@ -774,7 +775,7 @@ types information_panel_bar_types {
 					tooltip = "MAP_LIST_TOOLTIP"
 					input_action = map_list
 				}
-
+				
 				
 
 
@@ -830,7 +831,7 @@ types information_panel_bar_types {
 			}
 		}
 	}
-	
+
 	type power_bloc_icon_button_widget = widget {
 
 		position = { 0 @power_bloc_position }
@@ -859,9 +860,9 @@ types information_panel_bar_types {
 	}
 }
 
-template sidebar_button_size { 
-	size = { 48 50 } 
+template sidebar_button_size {
+	size = { 48 50 }
 }
-template sidebar_button_size_small { 
+template sidebar_button_size_small {
 	size = { 42 40 }
 }

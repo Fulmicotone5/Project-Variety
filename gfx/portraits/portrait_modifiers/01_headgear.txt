@@ -234,6 +234,7 @@ headgear = {
                             AND = { # Monarchs don't get to wear this hat, but republican rulers can
                                 NAND = {
                                     is_ruler = yes
+                                    is_heir = no
                                     home_country ?= {
                                         has_law = law_type:law_monarchy
                                     }
@@ -440,6 +441,102 @@ headgear = {
             }
         }
     }
+    
+    ceo_talaat_harb_headgear = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = headgear
+                template = arabic_fez
+                range = { 0 1 }
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 90000
+                has_dlc_feature = mp1_cosmetics
+                scope:character ?= {
+                     AND = {
+                        has_template = EGY_talaat_harb
+                        has_role = executive
+                    }
+                }
+            }
+        }
+    }
+
+    ceo_isambard_kingdom_brunel_headgear = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = headgear
+                template = european_executive_hats
+                range = { 0 0.5 }
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 90000
+                has_dlc_feature = mp1_cosmetics
+                scope:character ?= {
+                    AND = {
+                        has_template = GBR_isambard_kingdom_brunel
+                        has_role = executive
+                    }
+                }
+            }
+        }
+    }
+
+    HBC_george_simpson_headgear = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                range = { 0 1 }
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 90000
+                scope:character ?= {
+                    AND = {
+                        has_template = HBC_george_simpson
+                        has_role = executive
+                    }
+                }
+            }
+        }
+    }
+
+    BIC_george_eden_headgear = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                range = { 0 1 }
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 90000
+                scope:character ?= {
+                    AND = {
+                        has_template = BIC_george_eden
+                        has_role = executive
+                    }
+                }
+            }
+        }
+    }
+
+
 
     ### END OF HISTORICAL CLOTHING ###
 
@@ -728,6 +825,7 @@ headgear = {
                             OR = {  # A monarch shouldn't wear this, but a republican ruler can
                                 AND = {
                                     is_ruler = no
+                                    is_heir = no
                                     home_country ?= {
                                         has_law = law_type:law_monarchy
                                     }
@@ -787,6 +885,7 @@ headgear = {
                             OR = {  # A monarch shouldn't wear this, but a republican ruler can
                                 AND = {
                                     is_ruler = no
+                                    is_heir = no
                                     home_country ?= {
                                         has_law = law_type:law_monarchy
                                     }
@@ -1987,13 +2086,17 @@ headgear = {
                     age >= define:NCharacters|ADULT_AGE
                     OR = {
                         AND = {
-                            is_interest_group_type = ig_landowners
+                             OR = {
+                                is_interest_group_type = ig_landowners
+                                is_interest_group_type = ig_industrialists
+                            }
                             has_role = politician
                             NOR = {
                                 has_role = general
                                 has_role = admiral
                             }
                             is_ruler = no
+                            is_heir = no
                         }
                         has_template = usa_lincoln_character_template
                     }
@@ -2892,6 +2995,62 @@ headgear = {
                 scope:pop ?= {
                     is_pop_type = clergymen
                     religion = rel:catholic
+                }
+            }
+        }
+    }
+
+
+    european_executive_headgear = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = headgear
+                template = european_executive_hats
+                range = { 0 1 } # For the randomness to work correctly
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 10000
+                AND = {
+                    OR = {
+                        european_clothes_trigger = yes
+                        african_diaspora_clothes_trigger = yes
+                        scope:character ?= {
+                            OR = {
+                                culture = cu:na_cherokee
+                                culture = cu:na_muscogee
+                            }
+                        }
+                        AND = {
+                            european_clothes_trigger = no
+                            scope:character ?= {
+                                NOT = { has_ideology = ideology:ideology_traditionalist }
+                                owner ?= {
+                                    OR = {
+                                        AND = {
+                                            has_technology_researched = investment_banks
+                                            NOT = {
+                                                has_law = law_type:law_isolationism
+                                            }
+                                        }
+                                        is_country_type = recognized
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    OR = {
+                        AND = {
+                            politician_clothes_trigger = yes
+                            scope:character ?= {
+                                is_interest_group_type = ig_industrialists
+                            }
+                        }
+                        executive_clothes_trigger = yes
+                    }
                 }
             }
         }

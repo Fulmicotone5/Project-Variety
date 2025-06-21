@@ -126,7 +126,7 @@ option = {
 	ig:ig_landowners = {
 		add_modifier = {
 			name = modifier_bav_two
-			months = normal_modifier_time
+			days = normal_modifier_time
 			is_decaying = yes
 		}
 	}
@@ -143,7 +143,7 @@ option = {
 	ig:ig_landowners = {
 		add_modifier = {
 			name = modifier_bav_one
-			months = normal_modifier_time
+			days = normal_modifier_time
 			is_decaying = yes
 		}
 	}
@@ -289,7 +289,7 @@ fm_bavaria.6 = {
 		}
 		add_modifier = {
 			name = modifier_bav_five
-			months = long_modifier_time
+			days = long_modifier_time
 			is_decaying = yes
 		}
 		hidden_effect = {
@@ -355,17 +355,17 @@ fm_bavaria.7 = {
 		}
 		add_modifier = {
 			name = modifier_loth_twelwe
-			months = long_modifier_time
+			days = long_modifier_time
 			is_decaying = yes
 		}
 		add_modifier = {
 			name = modifier_bav_three
-			months = long_modifier_time
+			days = long_modifier_time
 			is_decaying = yes
 		}
 		add_modifier = {
 			name = modifier_bav_four
-			months = long_modifier_time
+			days = long_modifier_time
 			is_decaying = yes
 		}
 		add_primary_culture = cu:north_german

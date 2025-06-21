@@ -8,7 +8,7 @@
     mine = "x3F1E38"
     wood = "x4713EE"
     arable_land = 130
-    arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_vineyard_plantations" bg_olive_plantations }
+    arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_silk_plantations" "bg_vineyard_plantations" bg_olive_plantations }
     capped_resources = {
         bg_iron_mining = 47
         bg_lead_mining = 21
@@ -16,7 +16,7 @@
     }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 5
+         undiscovered_amount = 20
     }
 }
 
@@ -430,7 +430,8 @@ STATE_NAVARRA = {
     }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 10
+        undiscovered_amount = 20
+
     }
     naval_exit_id = 3029
 }
@@ -752,7 +753,8 @@ STATE_ALBANIA = {
     }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 5
+        undiscovered_amount = 20
+
     }
     naval_exit_id = 3033
 }

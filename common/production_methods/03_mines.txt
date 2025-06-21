@@ -57,7 +57,7 @@ pm_condensing_engine_pump_building_coal_mine = {
 
 	state_modifiers = {
 		workforce_scaled = {
-			state_pollution_generation_add = 10
+			state_pollution_generation_add = 15
 		}
 	}
 	
@@ -158,7 +158,7 @@ pm_dynamite_building_coal_mine = {
 	
 	state_modifiers = {
 		workforce_scaled = {
-			state_pollution_generation_add = 10
+			state_pollution_generation_add = 15
 		}
 	}
 
@@ -274,7 +274,7 @@ pm_condensing_engine_pump_building_iron_mine = {
 	
 	state_modifiers = {
 		workforce_scaled = {
-			state_pollution_generation_add = 10
+			state_pollution_generation_add = 15
 		}
 	}
 
@@ -366,7 +366,7 @@ pm_dynamite_building_iron_mine = {
 	texture = "gfx/interface/icons/production_method_icons/dynamite.dds"
 	state_modifiers = {
 		workforce_scaled = {
-			state_pollution_generation_add = 10
+			state_pollution_generation_add = 15
 		}
 	}
 
@@ -421,7 +421,7 @@ pm_rail_transport_mine = {
 	texture = "gfx/interface/icons/production_method_icons/rail_transport.dds"
 	state_modifiers = {
 		workforce_scaled = {
-			state_pollution_generation_add = 10
+			state_pollution_generation_add = 15
 		}
 	}
 		
@@ -495,7 +495,7 @@ pm_condensing_engine_pump_building_lead_mine = {
 	texture = "gfx/interface/icons/production_method_icons/condensing_engine_pump.dds"
 	state_modifiers = {
 		workforce_scaled = {
-			state_pollution_generation_add = 10
+			state_pollution_generation_add = 15
 		}
 	}
 
@@ -590,7 +590,7 @@ pm_dynamite_building_lead_mine = {
 	texture = "gfx/interface/icons/production_method_icons/dynamite.dds"
 	state_modifiers = {
 		workforce_scaled = {
-			state_pollution_generation_add = 10
+			state_pollution_generation_add = 15
 		}
 	}
 
@@ -666,7 +666,7 @@ pm_condensing_engine_pump_building_sulfur_mine = {
 	texture = "gfx/interface/icons/production_method_icons/condensing_engine_pump.dds"
 	state_modifiers = {
 		workforce_scaled = {
-			state_pollution_generation_add = 10
+			state_pollution_generation_add = 15
 		}
 	}
 
@@ -761,7 +761,7 @@ pm_dynamite_building_sulfur_mine = {
 	texture = "gfx/interface/icons/production_method_icons/dynamite.dds"
 	state_modifiers = {
 		workforce_scaled = {
-			state_pollution_generation_add = 10
+			state_pollution_generation_add = 15
 		}
 	}
 
@@ -850,7 +850,7 @@ pm_condensing_engine_pump_building_gold_mine = {
 	texture = "gfx/interface/icons/production_method_icons/condensing_engine_pump.dds"
 	state_modifiers = {
 		workforce_scaled = {
-			state_pollution_generation_add = 10
+			state_pollution_generation_add = 15
 		}
 	}
 
@@ -963,7 +963,7 @@ pm_dynamite_building_gold_mine = {
 	texture = "gfx/interface/icons/production_method_icons/dynamite.dds"
 	state_modifiers = {
 		workforce_scaled = {
-			state_pollution_generation_add = 10
+			state_pollution_generation_add = 15
 		}
 	}
 

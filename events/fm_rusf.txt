@@ -220,7 +220,7 @@ fm_rusf.4 = {
 			}
 		add_modifier = {
 			name = modifier_rui_two
-			months = normal_modifier_time
+			days = normal_modifier_time
 			is_decaying = yes
 		}
 	}
@@ -240,7 +240,7 @@ fm_rusf.4 = {
 			}
 		add_modifier = {
 			name = modifier_rui_one
-			months = normal_modifier_time
+			days = normal_modifier_time
 			is_decaying = yes
 		}
 	}

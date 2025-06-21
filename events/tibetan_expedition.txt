@@ -294,7 +294,7 @@ tibet_expedition_events.4 = { # Yaks cross the border
 			}
 			add_modifier = {
 				name = hostility_resisted
-				months = normal_modifier_time
+				days = normal_modifier_time
 			}
 		}
 
@@ -327,7 +327,7 @@ tibet_expedition_events.4 = { # Yaks cross the border
 				}
 				add_modifier = {
 					name = hostility_resisted
-					months = normal_modifier_time
+					days = normal_modifier_time
 				}
 			}
 		}
@@ -357,7 +357,7 @@ tibet_expedition_events.4 = { # Yaks cross the border
 			}
 			add_modifier = {
 				name = resisted_being_hostile
-				months = normal_modifier_time
+				days = normal_modifier_time
 			}
 		}
 	}
@@ -433,7 +433,7 @@ tibet_expedition_events.5 = { # The Great Trigonometrical Survey Goes North (Mou
 		scope:expedition_leader = {
 			add_modifier = {
 				name = sidelined_mountaineer
-				months = normal_modifier_time
+				days = normal_modifier_time
 			}
 		}
 
@@ -660,7 +660,7 @@ tibet_expedition_events.6 = { # Leeches!
 		scope:expedition_leader = {
 			add_modifier = {
 				name = well_rested_leader
-				months = normal_modifier_time
+				days = normal_modifier_time
 			}
 		}
 	}
@@ -952,7 +952,7 @@ tibet_expedition_events.9 = { # Cross the border (Overlord alert)
 
 		add_modifier = {
 			name = himalayan_affairs # temp hit to authority
-			months = normal_modifier_time
+			days = normal_modifier_time
 		}
 
 		create_incident = {
@@ -995,7 +995,7 @@ tibet_expedition_events.9 = { # Cross the border (Overlord alert)
 			}
 			add_modifier = {
 				name = overlord_military_support
-				months = short_modifier_time
+				days = short_modifier_time
 			}
 			trigger_event = { id = tibet_expedition_events.10 days = 1 }
 		}
@@ -1123,7 +1123,7 @@ tibet_expedition_events.11 = { # (Tibet) Block their advance?
 			}
 			add_modifier = {
 				name = government_cowardice
-				months = normal_modifier_time
+				days = normal_modifier_time
 			}
 		}
 
@@ -1136,7 +1136,7 @@ tibet_expedition_events.11 = { # (Tibet) Block their advance?
 			scope:disturbed_state = {
 				add_modifier = {
 					name = expedition_disturbs_the_people
-					months = normal_modifier_time
+					days = normal_modifier_time
 				}
 			}
 		}
@@ -1161,7 +1161,7 @@ tibet_expedition_events.11 = { # (Tibet) Block their advance?
 			}
 			add_modifier = {
 				name = government_bravery
-				months = normal_modifier_time
+				days = normal_modifier_time
 			}
 		}
 		scope:expedition_country = {
@@ -1331,7 +1331,7 @@ tibet_expedition_events.13 = { # Block their advance? Overlord alert of clash.
 				}
 				add_modifier = {
 					name = overlord_military_support
-					months = short_modifier_time
+					days = short_modifier_time
 				}
 			}
 		}
@@ -1343,7 +1343,7 @@ tibet_expedition_events.13 = { # Block their advance? Overlord alert of clash.
 			add_modifier = {
 				name = himalayan_expenses
 				multiplier = money_amount_multiplier_small
-				months = short_modifier_time
+				days = short_modifier_time
 			}
 		}
 
@@ -1587,7 +1587,7 @@ tibet_expedition_events.19 = { # Unsanctioned pillaging
 
 		set_variable = {
 			name = pillaged_tibet
-			months = short_modifier_time
+			days = short_modifier_time
 		}
 	}
 
@@ -1641,7 +1641,7 @@ tibet_expedition_events.19 = { # Unsanctioned pillaging
 		add_modifier = {
 			name = tibetan_restitution
 			multiplier = money_amount_multiplier_very_small
-			months = short_modifier_time
+			days = short_modifier_time
 		}
 
 		random_list = {
@@ -2354,7 +2354,7 @@ tibet_expedition_events.29 = { # Manul spotted
 
 			add_modifier = {
 				name = manul_zoo_exhibit
-				months = normal_modifier_time
+				days = normal_modifier_time
 			}
 		}
 

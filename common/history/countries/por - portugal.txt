@@ -49,5 +49,17 @@
 		trigger_event = {
 			id = fm_por.1
 		}
+		add_company = company_type:company_EIC
+		company:company_EIC = {
+			set_company_establishment_date = 1720.5.2
+			set_company_state_region = s:STATE_ESTREMADURA
+			add_owned_country = c:EIC #links the country to this company
+		}
+		add_company = company_type:company_mozambique_company
+		company:company_mozambique_company = {
+			set_company_establishment_date = 1681.3.9
+			set_company_state_region = s:STATE_ESTREMADURA
+			add_owned_country = c:NIA #links the country to this company
+		}
 	}
 }

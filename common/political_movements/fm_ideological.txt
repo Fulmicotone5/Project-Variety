@@ -43,6 +43,10 @@ movement_liberal = {
 				has_ideology = ideology:ideology_radical
 				has_ideology = ideology:ideology_humanitarian
 				has_ideology = ideology:ideology_humanitarian_royalist	
+				has_ideology = ideology:ideology_humanitarian_royalist
+				has_ideology = ideology:ideology_reformer
+				has_ideology = ideology:ideology_utopian
+				has_ideology = ideology:ideology_modernizer_leader
 				has_ideology = ideology:ideology_anarcho_capitalism	
 			}
 		}
@@ -54,7 +58,10 @@ movement_liberal = {
 				has_ideology = ideology:ideology_radical
 				has_ideology = ideology:ideology_humanitarian
 				has_ideology = ideology:ideology_humanitarian_royalist
-				has_ideology = ideology:ideology_anarcho_capitalism	
+				has_ideology = ideology:ideology_anarcho_capitalism
+				has_ideology = ideology:ideology_reformer
+				has_ideology = ideology:ideology_utopian
+				has_ideology = ideology:ideology_modernizer_leade
 				interest_group ?= {
 					OR = {
 						has_ideology = ideology:ideology_liberal
@@ -76,6 +83,14 @@ movement_liberal = {
 			}
 			multiply = {
 				value = 5
+			}
+		}
+		else_if = {
+			limit = {
+				has_ideology = ideology:ideology_modernizer_leader
+			}
+			multiply = {
+				value = 2
 			}
 		}
 		else_if = {
@@ -137,7 +152,46 @@ movement_liberal = {
 		movement_support_peasants
 	}
 	
-	pop_support_weight = {	
+	pop_support_weight = {
+		if = {
+			limit = {
+				owner ?= {
+					any_political_movement = {
+						is_political_movement_type = movement_liberal
+						OR = {
+							is_being_suppressed = yes
+							is_being_bolstered = yes
+						}
+						save_temporary_scope_as = affected_movement
+					}
+				}
+			}
+			if = {
+				limit = {
+					scope:affected_movement = {
+						is_being_suppressed = yes
+					}
+				}
+				add = {
+					value = 10
+					multiply = {
+						value = -0.5
+						add = owner.modifier:country_suppression_attraction_factor
+					}
+					desc = "concept_suppressed"
+				}
+			}
+			else = {
+				add = {
+					value = 10
+					multiply = {
+						value = 0.5
+						add = owner.modifier:country_bolster_attraction_factor
+					}
+					desc = "concept_bolstered"
+				}
+			}
+		}
 		add = {
 			value = 3
 			desc = "POP_BASE_SUPPORT"

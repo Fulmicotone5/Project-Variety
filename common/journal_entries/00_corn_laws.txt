@@ -55,7 +55,7 @@
 				ig:ig_landowners = {
 					add_modifier = {
 						name = repealed_corn_laws
-						months = long_modifier_time
+						days = long_modifier_time
 					}
 				}
 			}

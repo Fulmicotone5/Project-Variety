@@ -2393,7 +2393,7 @@ british={ # "English" in localization
 		Isambard Isaac
 		John James Jacob Jeremy Joseph Julian Josslyn Joshua
 		Kenelm
-		Laurence Leonard_2 Lyon Lionel Lewis
+		Laurence Leonard Lyon Lionel Lewis
 		Mark Michael Matthew Massey Montague Myles Murrough Maurice Martin Maxwell
 		Nigel Nicholas Nathaniel Neville
 		Oliver Octavius Oscar Oswald
@@ -5052,7 +5052,7 @@ french={
 		Quentin
 		Robert Roland Rodolphe Raymond RenE_ RE_my
 		Sebastien Simon
-		Thibaut Thierry Thomas Theophile Theodore ThE_obald
+		Thibaut Thierry Thomas Theophile ThE_odore  ThE_obald
 		Ulysse
 		Vincent Victor
 		Xavier
@@ -10006,7 +10006,6 @@ bengali={
 	obsessions = {
 		spice
 		tea
-		fruit
 		liquor
 	}	
 	
@@ -10057,7 +10056,6 @@ bihari={
 	obsessions = {
 		spice
 		tea
-		fruit
 	}
 	
 	male_common_first_names={
@@ -10105,7 +10103,6 @@ manipuri={
 	obsessions = {
 		spice
 		tea
-		fruit
 	}	
 	male_common_first_names={
 		Bekendra
@@ -10156,7 +10153,6 @@ nepali={
 	obsessions = {
 		spice
 		tea
-		fruit
 	}	
 	
 	male_common_first_names={
@@ -10216,7 +10212,6 @@ oriya={
 	obsessions = {
 		spice
 		tea
-		fruit
 	}	
 	male_common_first_names={
 		Birakishoredeva
@@ -10260,7 +10255,6 @@ sinhala={
 	obsessions = {
 		spice
 		tea
-		fruit
 	}	
 	male_common_first_names={
 		Anagarika
@@ -10305,7 +10299,6 @@ avadhi={
 	obsessions = {
 		spice
 		tea
-		fruit
 	}	
 	male_common_first_names={
 		Ishvari
@@ -10350,7 +10343,6 @@ kanauji={
 	obsessions = {
 		spice
 		tea
-		fruit
 	}	
 	male_common_first_names={
 		Ishvari
@@ -10390,7 +10382,6 @@ panjabi={
 	obsessions = {
 		spice
 		tea
-		fruit
 	}	
 	male_common_first_names={
 		Baba Banda Bhuma
@@ -10451,7 +10442,6 @@ kashmiri={
 	obsessions = {
 		spice
 		tea
-		fruit
 	}	
 	male_common_first_names={
 		Abdullah
@@ -10501,7 +10491,6 @@ gujarati={
 	obsessions = {
 		spice
 		tea
-		fruit
 	}	
 	male_common_first_names={
 		Anand
@@ -10551,7 +10540,6 @@ marathi={
 	obsessions = {
 		spice
 		tea
-		fruit
 	}	
 	male_common_first_names={
 		Bajirao
@@ -10616,7 +10604,6 @@ sindi={
 	obsessions = {
 		spice
 		tea
-		fruit
 	}	
 	male_common_first_names={
 		Advi Rashan Arsham Kourosh Aardburzin 
@@ -10665,7 +10652,6 @@ rajput={
 	obsessions = {
 		spice
 		tea
-		fruit
 	}	
 	male_common_first_names={
 		Bhagwant
@@ -10721,7 +10707,6 @@ kannada={
 	obsessions = {
 		spice
 		tea
-		fruit
 	}	
 	male_common_first_names={
 		Abbakka
@@ -10777,7 +10762,6 @@ malayalam={
 	obsessions = {
 		spice
 		tea
-		fruit
 	}	
 	male_common_first_names={
 		Ayilyam
@@ -10822,7 +10806,6 @@ tamil={
 	obsessions = {
 		spice
 		tea
-		fruit
 	}	
 	male_common_first_names={
 		Champakaraman
@@ -10873,7 +10856,6 @@ telegu={
 	obsessions = {
 		spice
 		tea
-		fruit
 	}	
 	male_common_first_names={
 		Alluri
@@ -10921,7 +10903,6 @@ vietnamese={
 	obsessions = {
 		spice
 		tea
-		fruit
 	}	
 	male_common_first_names={
 		Bui_An
@@ -10977,7 +10958,6 @@ khmer={
 	obsessions = {
 		spice
 		tea
-		fruit
 	}	
 	male_common_first_names={
 		Ang
@@ -11025,7 +11005,6 @@ batak={
 	obsessions = {
 		spice
 		tea
-		fruit
 	}	
 	male_common_first_names={
 		Kiras
@@ -11080,7 +11059,6 @@ dayak={
 	obsessions = {
 		spice
 		tea
-		fruit
 	}	
 	male_common_first_names={
 		Daud
@@ -11196,7 +11174,6 @@ filipino={
 	obsessions = {
 		spice
 		tea
-		fruit
 	}	
 	male_common_first_names={
 		Aritomo
@@ -15341,7 +15318,7 @@ yankee={
 		Isaac Isaiah Irving Ichabod
 		Joshua Joseph John James Jacob Jesse Joel Jeremiah Jeffrey Judah Jonas Jedediah Jonathan Josiah
 		Kermit Kenner
-		Lemuel Lysander Lawrence Lewis Lorenzo Leland Levi Leonard_2 Lucius
+		Lemuel Lysander Lawrence Lewis Lorenzo Leland Levi Leonard Lucius
 		Micah Marcellus Mark Michael Millard Matthew Matthias Montgomery Maxwell Milton 
 		Nicholas Noah Nathaniel Newton Nelson
 		Obadiah Othniel Oswald Orson Orville Oscar Otis Oliver Orrin Owen Ormsby
@@ -23675,7 +23652,6 @@ hindustani = {
 	obsessions = {
 		spice
 		tea
-		fruit
 	}
 	male_common_first_names = {
 		Aakash
@@ -23764,7 +23740,6 @@ bundeli = {
 	obsessions = {
 		spice
 		tea
-		fruit
 	}
 	male_common_first_names = {
 		Adithya
@@ -23814,7 +23789,6 @@ pahari = {
 	obsessions = {
 		spice
 		tea
-		fruit
 	}
 	male_common_first_names = {
 		Anupam Anku
@@ -23858,7 +23832,6 @@ gondi = {
 	obsessions = {
 		spice
 		tea
-		fruit
 	}
 	male_common_first_names = {
 		Ajanbahu
@@ -23907,7 +23880,6 @@ bageli = {
 	obsessions = {
 		spice
 		tea
-		fruit
 	}
 	male_common_first_names = {
 		Atal
@@ -23953,7 +23925,6 @@ chhattisgarhi = {
 	obsessions = {
 		spice
 		tea
-		fruit
 	}
 	male_common_first_names = {
 		Bhupesh
@@ -24046,7 +24017,6 @@ deccani = {
 	obsessions = {
 		spice
 		tea
-		fruit
 		tobacco
 	}
 	male_common_first_names = {
@@ -24104,7 +24074,6 @@ gujarati={
 	obsessions = {
 		spice
 		tea
-		fruit
 		tobacco
 	}
 	male_common_first_names={
@@ -24160,7 +24129,6 @@ tamil={
 	obsessions = {
 		spice
 		tea
-		fruit
 		tobacco
 	}
 	male_common_first_names={
@@ -24217,7 +24185,6 @@ marathi= {
 	obsessions = {
 		spice
 		tea
-		fruit
 	}
 	male_common_first_names = {
 		Bajirao
@@ -24313,7 +24280,6 @@ pathan = {
 	obsessions = {
 		spice
 		tea
-		fruit
 		tobacco
 		meat
 	}

@@ -3,10 +3,18 @@
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_farm_rye.dds"
 	
 	flavored_company = yes
+
+	preferred_headquarters = { STATE_EASTERN_THRACE STATE_LAZIO }
 	
 	building_types = {  
 		building_olive_plantation
 	}
+
+	extension_building_types = {
+		building_vineyard_plantatio
+		building_livestock_ranch
+	}
+
 	
 	potential = {
 		OR = {
@@ -32,7 +40,30 @@
 		country_influence_mult = 0.1
 		building_olive_plantation_throughput_add = 0.15
 		state_lower_strata_expected_sol_add = -1
-	}	
+	}
+	ai_will_do = {
+		any_scope_state = {
+			OR = {
+				state_region = s:STATE_EASTERN_THRACE
+				state_region = s:STATE_LAZIO
+			}
+			is_incorporated = yes
+		}
+	}
+
+	ai_construction_targets = {
+		building_olive_plantation = {
+			level = 5
+			state_trigger = {
+				OR = {
+					state_region = s:STATE_EASTERN_THRACE
+					state_region = s:STATE_LAZIO
+				}
+				is_incorporated = yes
+			}
+		}
+	}
+
 	
 	ai_weight = {
 		value = 3 # Higher base value for flavored companies
@@ -43,10 +74,18 @@ company_incacomp = {
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_mining.dds"
 	
 	flavored_company = yes
+
+	preferred_headquarters = { STATE_LIMA }
 	
 	building_types = {  
 		building_gold_mine
 	}
+
+	extension_building_types = {
+		building_iron_mine
+		building_lead_mine
+	}
+
 	
 	potential = {
 		country_has_primary_culture = cu:quechua
@@ -70,6 +109,23 @@ company_incacomp = {
 		country_influence_mult = 0.1
 		building_gold_mine_throughput_add = 0.3
 	}	
+
+	ai_will_do = {
+		any_scope_state = {
+			state_region = s:STATE_LIMA
+			is_incorporated = yes
+		}
+	}
+
+	ai_construction_targets = {
+		building_gold_mine = {
+			level = 6
+			state_trigger = {
+				state_region = s:STATE_LIMA
+				is_incorporated = yes
+			}
+		}
+	}
 	
 	ai_weight = {
 		value = 3 # Higher base value for flavored companies
@@ -77,13 +133,18 @@ company_incacomp = {
 }
 
 company_statera = {
-	icon = "gfx/interface/icons/company_icons/historical_company_icons/CreditAnstalt.png"
+	icon = "gfx/interface/icons/company_icons/fm_company_icons/CreditAnstalt.png"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufactering_light.dds"
 	
 	flavored_company = no
 	
 	building_types = {  
 		building_motor_industry
+		building_railway
+	}
+	extension_building_types = {
+		building_automotive_industry 
+		building_steel_mills
 	}
 	
 	potential = {
@@ -96,6 +157,7 @@ company_statera = {
 	}
 	
 	attainable = {
+		has_technology_researched = railways
 		NOT = {
 			has_law = law_type:law_laissez_faire
 		}
@@ -125,11 +187,96 @@ company_statera = {
 		building_railway_throughput_add = 0.15
 		state_infrastructure_from_population_add = 5
 	}
+
+	ai_will_do = {
+		any_scope_state = {
+			is_incorporated = yes
+		}
+	}
+
+	ai_construction_targets = {
+		building_railway = {
+			level = 1
+			state_trigger = {
+				is_incorporated = yes
+			}
+		}
+	}
 	
 	ai_weight = {
 		value = 3 # Higher base value for flavored companies
 	}
+		
 }
+company_stateenergy = {
+	icon = "gfx/interface/icons/company_icons/fm_company_icons/CreditAnstalt.png"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufactering_light.dds"
+	
+	flavored_company = no
+	
+	building_types = {  
+		building_power_plant
+	}
+	extension_building_types = {
+		building_electrics_industry 
+		building_oil_rig
+	}
+	
+	potential = {
+		NOT = {
+			has_law = law_type:law_laissez_faire
+		}
+		NOT = {
+			has_law = law_type:law_cooperative_ownership
+		}
+	}
+	
+	attainable = {
+		has_technology_researched = electrical_generation
+		NOT = {
+			has_law = law_type:law_laissez_faire
+		}
+		NOT = {
+			has_law = law_type:law_cooperative_ownership
+		}
+	}	
+	
+	possible = {
+		any_scope_state = {
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_power_plant
+				level >= 3
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		state_colony_growth_speed_mult = 0.1
+		country_infamy_generation_against_unrecognized_mult = -0.1
+	}
+
+	ai_will_do = {
+		any_scope_state = {
+			is_incorporated = yes
+		}
+	}
+
+	ai_construction_targets = {
+		building_power_plant = {
+			level = 2
+			state_trigger = {
+				is_incorporated = yes
+			}
+		}
+	}
+	
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+		
+}
+
 
 company_venars = {
 	icon = "gfx/interface/icons/company_icons/fm_company_icons/venars.dds"
@@ -141,6 +288,9 @@ company_venars = {
 		building_military_shipyards
 		building_arms_industry
 		building_artillery_foundries
+	}
+	extension_building_types = {
+		building_trade_center		
 	}
 	
 	potential = {
@@ -168,3 +318,472 @@ company_venars = {
 		value = 3 # Higher base value for flavored companies
 	}
 }
+company_VNA = {
+	icon = "gfx/interface/icons/company_icons/fm_company_icons/te_compagnia.png"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
+
+	flavored_company = yes
+
+
+	building_types = {
+		building_sugar_plantation
+		building_banana_plantation
+	}
+
+	extension_building_types = {
+		building_dye_plantation
+		building_olive_plantation
+		building_tobacco_plantation
+		building_coffee_plantation
+		building_livestock_ranch
+
+	}
+
+	possible_prestige_goods = {
+		prestige_good_gros_michel_banana
+	}
+
+	potential = {
+		c:VEN ?= this
+	}
+
+	possible = {
+		c:VEN ?= this
+		OR = {
+			has_law = law_type:law_mercantilism
+			has_law = law_type:law_protectionism
+		}
+		any_scope_state = {
+			OR = {
+				region = sr:region_dixie
+				region = sr:region_caribbean
+				region = sr:region_gran_colombia
+			}
+			any_scope_building = {
+				OR = {
+					is_building_type = building_sugar_plantation
+					is_building_type = building_banana_plantation
+				}
+				level >= 5
+			}
+			count >= 2
+		}
+	}
+
+	prosperity_modifier = {
+		state_colony_growth_creation_factor = 0.1
+		state_colony_growth_speed_mult = 0.1
+	}
+
+	ai_will_do = {
+		c:VEN ?= this
+		OR = {
+			has_law = law_type:law_mercantilism
+			has_law = law_type:law_protectionism
+		}
+		any_scope_state = {
+			OR = {
+				region = sr:region_dixie
+				region = sr:region_caribbean
+				region = sr:region_gran_colombia
+			}
+		}
+	}
+
+	ai_construction_targets = {
+		building_sugar_plantation = {
+			level = 5
+			state_trigger = {
+				OR = {
+				region = sr:region_dixie
+				region = sr:region_caribbean
+				region = sr:region_gran_colombia
+				}
+			}
+		}
+		building_banana_plantation = {
+			level = 5
+			state_trigger = {
+				OR = {
+				region = sr:region_dixie
+				region = sr:region_caribbean
+				region = sr:region_gran_colombia
+				}
+			}
+		}
+	}
+
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+company_EIC = {
+	icon = "gfx/interface/icons/company_icons/fm_company_icons/eicco.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
+
+	flavored_company = yes
+
+
+	building_types = {
+		building_opium_plantation
+	}
+
+	extension_building_types = {
+		building_spice_plantation
+		building_textile_mills
+		building_sugar_plantation
+	}
+
+	possible_prestige_goods = {
+		prestige_good_bengal_opium
+	}
+
+	potential = {
+		c:PUR ?= this
+	}
+
+	possible = {
+		c:PUR ?= this
+		OR = {
+			has_law = law_type:law_mercantilism
+			has_law = law_type:law_protectionism
+		}
+		any_scope_state = {
+			OR = {
+				region = sr:region_madras
+				region = sr:region_bombay
+				region = sr:region_bengal
+				region = sr:region_central_india
+				region = sr:region_punjab
+			}
+			any_scope_building = {
+				OR = {
+					is_building_type = building_coffee_plantation
+					is_building_type = building_tobacco_plantation
+				}
+				level >= 5
+			}
+			count >= 2
+		}
+	}
+
+	prosperity_modifier = {
+		country_convoys_capacity_mult = 0.05
+	}
+
+	ai_will_do = {
+		c:PUR ?= this
+		OR = {
+			has_law = law_type:law_mercantilism
+			has_law = law_type:law_protectionism
+		}
+		any_scope_state = {
+			OR = {
+				region = sr:region_madras
+				region = sr:region_bombay
+				region = sr:region_bengal
+				region = sr:region_central_india
+				region = sr:region_punjab
+			}
+		}
+	}
+
+	ai_construction_targets = {
+		building_coffee_plantation = {
+			level = 5
+			state_trigger = {
+				OR = {
+					region = sr:region_madras
+					region = sr:region_bombay
+					region = sr:region_bengal
+					region = sr:region_central_india
+					region = sr:region_punjab
+				}
+			}
+		}
+		building_tobacco_plantation = {
+			level = 5
+			state_trigger = {
+				OR = {
+					region = sr:region_madras
+					region = sr:region_bombay
+					region = sr:region_bengal
+					region = sr:region_central_india
+					region = sr:region_punjab
+				}
+			}
+		}
+	}
+
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+company_VOC = {
+	icon = "gfx/interface/icons/company_icons/fm_company_icons/vocco.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
+
+	flavored_company = yes
+
+	building_types = {
+		building_tea_plantation
+		building_dye_plantation
+		building_sugar_plantation
+	}
+
+	extension_building_types = {
+		building_tobacco_plantation
+		building_spice_plantation
+		building_opium_plantation
+		building_silk_plantation
+	}
+
+	potential = {
+		country_has_primary_culture = cu:dutch
+	}
+
+	possible = {
+		country_has_primary_culture = cu:dutch
+		OR = {
+			has_law = law_type:law_mercantilism
+			has_law = law_type:law_protectionism
+		}
+		any_scope_state = {
+			OR = {
+				region = sr:region_south_china
+				region = sr:region_indonesia
+			}
+			any_scope_building = {
+				OR = {
+					is_building_type = building_dye_plantation
+					is_building_type = building_sugar_plantation
+				}
+				level >= 5
+			}
+			count >= 2
+		}
+	}
+
+	prosperity_modifier = {
+		country_convoys_capacity_mult = 0.1
+		state_trade_advantage_mult = 0.05
+	}
+
+	ai_will_do = {
+		c:NED ?= this
+		OR = {
+			has_law = law_type:law_mercantilism
+			has_law = law_type:law_protectionism
+		}
+		any_scope_state = {
+			OR = {
+				region = sr:region_south_china
+				region = sr:region_indonesia
+			}
+		}
+	}
+
+	ai_construction_targets = {
+		building_dye_plantation = {
+			level = 5
+			state_trigger = {
+				OR = {
+					region = sr:region_south_china
+				region = sr:region_indonesia
+				}
+			}
+		}
+		building_sugar_plantation = {
+			level = 5
+			state_trigger = {
+				OR = {
+					region = sr:region_south_china
+					region = sr:region_indonesia
+				}
+			}
+		}
+	}
+
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+company_DAK = {
+icon = "gfx/interface/icons/company_icons/fm_company_icons/denco.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
+
+	flavored_company = yes
+
+	preferred_headquarters = { STATE_SUZHOU }
+
+	building_types = {
+		building_silk_plantation
+		building_spice_plantation
+	}
+
+	extension_building_types = {
+		building_logging_camp
+		building_rice_farm
+		building_tea_plantation
+		building_dye_plantation
+	}
+
+	possible_prestige_goods = {
+		prestige_good_suzhou_silk
+	}
+
+	potential = {
+		country_has_primary_culture = cu:danish
+	}
+
+	possible = {
+		any_scope_state = {
+			OR = {
+				state_region = s:STATE_SUZHOU
+				state_region = s:STATE_NORTH_SUMATRA
+				state_region = s:STATE_ACEH
+				state_region = s:STATE_SUZHOU
+			}
+			any_scope_building = {
+				OR = {
+					is_building_type = building_silk_plantation
+					is_building_type = building_spice_plantation
+				}
+				level >= 5
+			}
+		}
+	}
+
+	prosperity_modifier = {
+		country_convoys_capacity_mult = 0.15
+		interest_group_ig_industrialists_approval_add = 3
+	}
+
+	ai_will_do = {
+		any_scope_state = {
+			OR = {
+				state_region = s:STATE_SUZHOU
+				state_region = s:STATE_NORTH_SUMATRA
+				state_region = s:STATE_ACEH
+				state_region = s:STATE_SUZHOU
+			}
+			is_incorporated = yes
+		}
+	}
+
+	ai_construction_targets = {
+		building_spice_plantation = {
+			level = 10
+			state_trigger = {
+				OR = {
+					state_region = s:STATE_SUZHOU
+				state_region = s:STATE_NORTH_SUMATRA
+				state_region = s:STATE_ACEH
+				state_region = s:STATE_SUZHOUS
+				}
+				is_incorporated = yes
+			}
+		}
+		building_silk_plantation = {
+			level = 5
+			state_trigger = {
+				OR = {
+					state_region = s:STATE_SUZHOU
+				state_region = s:STATE_NORTH_SUMATRA
+				state_region = s:STATE_ACEH
+				state_region = s:STATE_SUZHOUS
+				}
+				is_incorporated = yes
+			}
+		}
+	}
+
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+company_NOS = {
+icon = "gfx/interface/icons/company_icons/fm_company_icons/nosco.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
+
+	flavored_company = yes
+	
+	preferred_headquarters = { STATE_PANAMA }
+
+	building_types = {
+		building_banana_plantation
+		building_gold_mine
+	}
+
+	extension_building_types = {
+		building_maize_farm
+		building_tobacco_plantation
+		building_dye_plantation
+		building_coffee_plantation
+	}
+
+	potential = {
+		country_has_primary_culture = cu:scottish
+	}
+
+	possible = {
+		any_scope_state = {
+			OR = {
+				state_region = s:STATE_SAN_SALVADOR
+				state_region = s:STATE_HONDURAS
+				state_region = s:STATE_NICARAGUA
+				state_region = s:STATE_COSTA_RICA
+				state_region = s:STATE_PANAMA
+			}
+			any_scope_building = {
+				OR = {
+					is_building_type = building_banana_plantation
+					is_building_type = building_gold_mine
+				}
+				level >= 3
+			}
+		}
+	}
+
+	prosperity_modifier = {
+		state_infrastructure_mult = 0.05
+		building_group_bg_plantations_throughput_add = 0.05
+	}
+
+	ai_will_do = {
+		any_scope_state = {
+			OR = {
+				state_region = s:STATE_SAN_SALVADOR
+				state_region = s:STATE_HONDURAS
+				state_region = s:STATE_NICARAGUA
+				state_region = s:STATE_COSTA_RICA
+				state_region = s:STATE_PANAMA
+			}
+			is_incorporated = yes
+		}
+	}
+
+	ai_construction_targets = {
+		building_banana_plantation = {
+			level = 5
+			state_trigger = {
+				OR = {
+				state_region = s:STATE_SAN_SALVADOR
+				state_region = s:STATE_HONDURAS
+				state_region = s:STATE_NICARAGUA
+				state_region = s:STATE_COSTA_RICA
+				state_region = s:STATE_PANAMA
+				}
+				is_incorporated = yes
+			}
+		}
+	}
+
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+

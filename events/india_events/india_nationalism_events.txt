@@ -20,7 +20,7 @@ india_nationalism_events.1 = { # The Anarchy
 
 	icon = "gfx/interface/icons/event_icons/event_fire.dds"
 
-	cooldown = { months = normal_modifier_time }
+	cooldown = { days = normal_modifier_time }
 
 	immediate = {
 		c:BIC ?= {
@@ -107,7 +107,7 @@ india_nationalism_events.2 = { # The Anarchy - 2 - British Withdrawal
 
 	icon = "gfx/interface/icons/event_icons/event_fire.dds"
 
-	cooldown = { months = normal_modifier_time }
+	cooldown = { days = normal_modifier_time }
 
 	immediate = {
 		top_overlord = {
@@ -322,7 +322,7 @@ india_nationalism_events.3 = { # The Salt March
 
 	icon = "gfx/interface/icons/event_icons/event_protest.dds"
 
-	cooldown = { months = very_long_modifier_time }
+	cooldown = { days = very_long_modifier_time }
 
 	trigger = {
 		has_dlc_feature = ip2_content
@@ -388,7 +388,7 @@ india_nationalism_events.3 = { # The Salt March
 		scope:prisoner_scope = {
 			add_modifier = {
 				name = modifier_salt_march_leader
-				months = very_long_modifier_time
+				days = very_long_modifier_time
 			}
 			custom_tooltip = {
 				text = to_jail_5_tt
@@ -400,7 +400,7 @@ india_nationalism_events.3 = { # The Salt March
 		scope:salt_march_state = {
 			add_modifier = {
 				name = modifier_salt_tax_protests
-				months = normal_modifier_time
+				days = normal_modifier_time
 				multiplier = 0.5
 			}
 		}
@@ -411,7 +411,7 @@ india_nationalism_events.3 = { # The Salt March
 		scope:salt_march_state = {
 			add_modifier = {
 				name = modifier_salt_tax_protests
-				months = normal_modifier_time
+				days = normal_modifier_time
 			}
 		}
 	}
@@ -438,7 +438,7 @@ india_nationalism_events.5 = { # Gandhi in India
 
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 
-	cooldown = { months = stupidly_long_modifier_time }
+	cooldown = { days = stupidly_long_modifier_time }
 
 	trigger = {
 		has_dlc_feature = ip2_content
@@ -585,7 +585,7 @@ india_nationalism_events.6 = { # India League
 
 	icon = "gfx/interface/icons/event_icons/event_protest.dds"
 
-	cooldown = { months = very_long_modifier_time }
+	cooldown = { days = very_long_modifier_time }
 
 	trigger = {
 		has_dlc_feature = ip2_content
@@ -655,7 +655,7 @@ india_nationalism_events.6 = { # India League
 				random_member = {
 					add_modifier = {
 						name = modifier_india_league_ig
-						months = normal_modifier_time
+						days = normal_modifier_time
 					}
 				}
 			}
@@ -667,7 +667,7 @@ india_nationalism_events.6 = { # India League
 			scope:india_league_character = {
 				add_modifier = {
 					name = modifier_india_league_character
-					months = normal_modifier_time
+					days = normal_modifier_time
 				}
 			}
 		}
@@ -683,7 +683,7 @@ india_nationalism_events.6 = { # India League
 				random_member = {
 					add_modifier = {
 						name = modifier_india_league_ig
-						months = normal_modifier_time
+						days = normal_modifier_time
 						multiplier = 0.5
 					}
 				}
@@ -696,7 +696,7 @@ india_nationalism_events.6 = { # India League
 			scope:india_league_character = {
 				add_modifier = {
 					name = modifier_india_league_character
-					months = normal_modifier_time
+					days = normal_modifier_time
 					multiplier = 0.5
 				}
 			}
@@ -734,7 +734,7 @@ india_nationalism_events.7 = { # The Condition of India
 
 	icon = "gfx/interface/icons/event_icons/event_protest.dds"
 
-	cooldown = { months = very_long_modifier_time }
+	cooldown = { days = very_long_modifier_time }
 
 	trigger = {
 		has_dlc_feature = ip2_content
@@ -809,7 +809,7 @@ india_nationalism_events.7 = { # The Condition of India
 			}
 			add_modifier = {
 				name = modifier_condition_of_india_rejected
-				months = short_modifier_time
+				days = short_modifier_time
 			}
 		}
 	}

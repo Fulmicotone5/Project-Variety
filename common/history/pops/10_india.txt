@@ -601,7 +601,7 @@
 			}
 			create_pop = {
 				culture = portuguese
-				size = 25520
+				size = 45520
 			}
 			create_pop = {
 				culture = bengali

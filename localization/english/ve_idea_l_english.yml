@@ -41,7 +41,7 @@
  embrace_idea_tt: "#Y An idea group slot will be activated every 10 years. The maximum idea group limit is 8."
 
  cannot_take_policy_yet: "A new Policy can be selected every 4 years"
- tradeagreementmax: "Countries are more likely to accept a [concept_trade_agreement]"
+ tradeagreementmax: "Countries are more likely to accept a [concept_treaty]"
  musthavenatsup: "Must have enacted either [GetLawType('law_ethnostate').GetName], [GetLawType('law_national_supremacy').GetName] or [GetLawType('law_racial_segregation').GetName]"
  nirights: "Must not have enacted [GetLawType('law_compulsory_primary_school').GetName] or $from_labor_rights$"
  musthavemulti: "Must have enacted either [GetLawType('law_cultural_exclusion').GetName] or [GetLawType('law_multicultural').GetName]"

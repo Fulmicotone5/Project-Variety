@@ -1587,7 +1587,7 @@
 	s:STATE_HAWAIIAN_ISLANDS = {
 		region_state:SAU = {
 			create_pop = {
-				pop_type = clergy
+				pop_type = clergymen
 				culture = japanese
 				size = 100
 			}

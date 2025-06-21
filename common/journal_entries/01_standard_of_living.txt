@@ -54,7 +54,7 @@
 	on_complete = {
 		set_variable = {
 			name = completed_sol_je
-			months = normal_modifier_time
+			days = normal_modifier_time
 		}
 		trigger_event = { id = sol_events.2 }
 	}

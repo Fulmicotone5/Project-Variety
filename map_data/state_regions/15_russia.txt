@@ -832,7 +832,7 @@ STATE_KALMYKIA = {
     }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 10
+        undiscovered_amount = 25
     }
 }
 

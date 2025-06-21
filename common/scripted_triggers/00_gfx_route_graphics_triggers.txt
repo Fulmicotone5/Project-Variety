@@ -3,7 +3,7 @@
 #################################################################
 
 gfx_car_condition_trigger = {
-	
+
 	scope:state = {
 		market = {
 			mg:automobiles = {
@@ -15,7 +15,7 @@ gfx_car_condition_trigger = {
 }
 
 gfx_truck_condition_trigger = {
-	
+
 	scope:state = {
 		any_scope_building = {
 			has_active_production_method = pm_public_motor_carriages
@@ -52,12 +52,20 @@ gfx_experimental_locomotive_trigger = {
 				has_active_production_method = pm_steam_trains
 			}
 			any_scope_building = {
+				has_active_production_method = pm_steam_trains_principle_transport_3
+			}
+			any_scope_building = {
 				has_active_production_method = pm_electric_trains
+			}
+			any_scope_building = {
+				has_active_production_method = pm_electric_trains_principle_transport_3
 			}
 			any_scope_building = {
 				has_active_production_method = pm_diesel_trains
 			}
-
+			any_scope_building = {
+				has_active_production_method = pm_diesel_trains_principle_transport_3
+			}
 		}
 	}
 
@@ -67,7 +75,10 @@ gfx_steam_locomotive_trigger = {
 
 	scope:state = {
 		any_scope_building = {
-			has_active_production_method = pm_steam_trains
+			OR = {
+				has_active_production_method = pm_steam_trains
+				has_active_production_method = pm_steam_trains_principle_transport_3
+			}
 		}
 	}
 
@@ -77,7 +88,10 @@ gfx_electrical_locomotive_trigger = {
 
 	scope:state = {
 		any_scope_building = {
-			has_active_production_method = pm_electric_trains
+			OR = {
+				has_active_production_method = pm_electric_trains
+				has_active_production_method = pm_electric_trains_principle_transport_3
+			}
 		}
 	}
 
@@ -87,7 +101,10 @@ gfx_diesel_locomotive_trigger = {
 
 	scope:state = {
 		any_scope_building = {
-			has_active_production_method = pm_diesel_trains
+			OR = {
+				has_active_production_method = pm_diesel_trains
+				has_active_production_method = pm_diesel_trains_principle_transport_3
+			}
 		}
 	}
 
@@ -127,6 +144,7 @@ gfx_forestry_train_trigger = {
 }
 
 
+
 #################################################################
 #####				TRAIN CULTURE TRIGGERS					#####
 #################################################################
@@ -152,16 +170,16 @@ gfx_has_british_trains_trigger = {
 						}
 					}
 				}
-				any_trade_route = {
-					goods = g:engines
-					exporter.owner = {
-						OR = {
-							country_has_primary_culture = cu:british
-							country_has_primary_culture = cu:scottish
-							country_has_primary_culture = cu:irish
-						}
-					}
-				}
+				#any_trade_route = {
+				#	goods = g:engines
+				#	exporter.owner = {
+				#		OR = {
+				#			country_has_primary_culture = cu:british
+				#			country_has_primary_culture = cu:scottish
+				#			country_has_primary_culture = cu:irish
+				#}
+				#	}
+				#}
 				power_bloc ?= {
 					power_bloc_leader = {
 						OR = {
@@ -247,28 +265,6 @@ gfx_has_british_trains_trigger = {
 					}
 				}
 			}
-			any_trade_route = {
-				goods = g:engines
-				exporter.owner = {
-					OR = {
-						country_has_primary_culture = cu:british
-						country_has_primary_culture = cu:scottish
-						country_has_primary_culture = cu:irish
-						country_has_primary_culture = cu:north_german
-						country_has_primary_culture = cu:south_german
-						country_has_primary_culture = cu:french
-						country_has_primary_culture = cu:occitan
-						country_has_primary_culture = cu:breton
-						country_has_primary_culture = cu:russian
-						country_has_primary_culture = cu:ukrainian
-						country_has_primary_culture = cu:dutch_colonial
-						
-						country_has_primary_culture = cu:swedish_colonial
-						
-						country_has_primary_culture = cu:afro_american
-					}
-				}
-			}
 			power_bloc ?= {
 				power_bloc_leader = {
 					OR = {
@@ -313,15 +309,7 @@ gfx_has_german_trains_trigger = {
 					}
 				}
 			}
-			any_trade_route = {
-				goods = g:engines
-				exporter.owner = {
-					OR = {
-						country_has_primary_culture = cu:north_german
-						country_has_primary_culture = cu:south_german
-					}
-				}
-			}
+
 			power_bloc ?= {
 				power_bloc_leader = {
 					OR = {
@@ -371,16 +359,7 @@ gfx_has_french_trains_trigger = {
 					}
 				}
 			}
-			any_trade_route = {
-				goods = g:engines
-				exporter.owner = {
-					OR = {
-						country_has_primary_culture = cu:french
-						country_has_primary_culture = cu:occitan
-						country_has_primary_culture = cu:breton
-					}
-				}
-			}
+
 			power_bloc ?= {
 				power_bloc_leader = {
 					OR = {
@@ -427,15 +406,7 @@ gfx_has_russian_trains_trigger = {
 					}
 				}
 			}
-			any_trade_route = {
-				goods = g:engines
-				exporter.owner = {
-					OR = {
-						country_has_primary_culture = cu:russian
-						country_has_primary_culture = cu:ukrainian
-					}
-				}
-			}
+
 			power_bloc ?= {
 				power_bloc_leader = {
 					OR = {
@@ -479,18 +450,6 @@ gfx_has_american_trains_trigger = {
 			AND = {
 				is_subject = yes
 				any_overlord_or_above = {
-					OR = {
-						country_has_primary_culture = cu:dutch_colonial
-						
-						country_has_primary_culture = cu:swedish_colonial
-						
-						country_has_primary_culture = cu:afro_american
-					}
-				}
-			}
-			any_trade_route = {
-				goods = g:engines
-				exporter.owner = {
 					OR = {
 						country_has_primary_culture = cu:dutch_colonial
 						
@@ -571,28 +530,6 @@ gfx_has_no_culture_trains_trigger = {
 				}
 			}
 		}
-		any_trade_route = {
-			goods = g:engines
-			exporter.owner = {
-				OR = {
-					country_has_primary_culture = cu:british
-					country_has_primary_culture = cu:scottish
-					country_has_primary_culture = cu:irish
-					country_has_primary_culture = cu:north_german
-					country_has_primary_culture = cu:south_german
-					country_has_primary_culture = cu:french
-					country_has_primary_culture = cu:occitan
-					country_has_primary_culture = cu:breton
-					country_has_primary_culture = cu:russian
-					country_has_primary_culture = cu:ukrainian
-					country_has_primary_culture = cu:dutch_colonial
-					
-					country_has_primary_culture = cu:swedish_colonial
-					
-					country_has_primary_culture = cu:afro_american
-				}
-			}
-		}
 		power_bloc ?= {
 			power_bloc_leader = {
 				OR = {
@@ -615,6 +552,153 @@ gfx_has_no_culture_trains_trigger = {
 			}
 		}
 	}	
+}
+
+
+
+#################################################################
+#####				SHIP CULTURE TRIGGERS					#####
+#################################################################
+
+gfx_junk_ship_trigger = {
+	OR = {
+		any_primary_culture = {
+			OR = {
+				has_discrimination_trait = east_asian_heritage
+				has_discrimination_trait = southeast_asian_heritage
+				has_discrimination_trait = north_asian_heritage
+			}
+		}
+		AND = {
+			is_subject = yes
+			any_overlord_or_above = {
+				any_primary_culture = {
+					OR = {
+						has_discrimination_trait = east_asian_heritage
+						has_discrimination_trait = southeast_asian_heritage
+						has_discrimination_trait = north_asian_heritage
+					}
+				}
+			}
+		}
+		# TODO PRCAL-38034
+		#any_trade_route = {
+		#	goods = g:clippers
+		#	exporter.owner = {
+		#		any_primary_culture = {
+		#			OR = {
+		#				has_discrimination_trait = east_asian_heritage
+		#				has_discrimination_trait = southeast_asian_heritage
+		#				has_discrimination_trait = north_asian_heritage
+		#			}
+		#		}
+		#	}
+		#}
+		power_bloc ?= {
+			power_bloc_leader = {
+						any_primary_culture = {
+					OR = {
+						has_discrimination_trait = east_asian_heritage
+						has_discrimination_trait = southeast_asian_heritage
+						has_discrimination_trait = north_asian_heritage
+					}
+				}
+			}
+		}
+	}
+}
+
+gfx_marmara_ship_trigger = {
+	OR = {
+		OR = {
+			country_has_primary_culture = cu:turkish
+			country_has_primary_culture = cu:misri
+			country_has_primary_culture = cu:greek
+		}
+		AND = {
+			is_subject = yes
+			any_overlord_or_above = {
+				OR = {
+					country_has_primary_culture = cu:turkish
+					country_has_primary_culture = cu:misri
+					country_has_primary_culture = cu:greek
+				}
+			}
+		}
+		# TODO PRCAL-38034
+		#any_trade_route = {
+		#	goods = g:clippers
+		#	exporter.owner = {
+		#		OR = {
+		#			country_has_primary_culture = cu:turkish
+		#			country_has_primary_culture = cu:misri
+		#			country_has_primary_culture = cu:greek
+		#		}
+		#
+		#	}
+		#}
+		power_bloc ?= {
+			power_bloc_leader = {
+				OR = {
+					country_has_primary_culture = cu:turkish
+					country_has_primary_culture = cu:misri
+					country_has_primary_culture = cu:greek
+				}
+			}
+		}
+	}
+}
+
+gfx_dhow_ship_trigger = {
+	NOT = {
+		country_has_primary_culture = cu:turkish
+		country_has_primary_culture = cu:misri
+	}
+	OR = {
+		any_primary_culture = {
+			OR = {
+				has_discrimination_trait = middle_eastern_heritage
+				has_discrimination_trait = central_asian_heritage
+				has_discrimination_trait = south_asian_heritage
+			}
+		}
+		AND = {
+			is_subject = yes
+			any_overlord_or_above = {
+				any_primary_culture = {
+					OR = {
+						has_discrimination_trait = middle_eastern_heritage
+						has_discrimination_trait = central_asian_heritage
+						has_discrimination_trait = south_asian_heritage
+					}
+				}
+			}
+		}
+		# TODO PRCAL-38034
+		#any_trade_route = {
+		#	goods = g:clippers
+		#	exporter.owner = {
+		#		any_primary_culture = {
+		#			OR = {
+		#				has_discrimination_trait = middle_eastern_heritage
+		#				has_discrimination_trait = central_asian_heritage
+		#				has_discrimination_trait = south_asian_heritage
+		#			}
+		#		}
+		#	}
+		#}
+		power_bloc ?= {
+			power_bloc_leader = {
+						any_primary_culture = {
+					OR = {
+						has_discrimination_trait = middle_eastern_heritage
+						has_discrimination_trait = central_asian_heritage
+						has_discrimination_trait = south_asian_heritage
+					}
+				}
+			}
+		}
+	}
 }
 
 #################################################################

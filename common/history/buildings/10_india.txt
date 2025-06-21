@@ -37,6 +37,17 @@
 				activate_production_methods={ "pm_simple_forestry" "pm_hardwood" "pm_no_equipment" "pm_road_carts"  }
 			}
 			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:BGL"
+						levels=3
+					}
+				}
+				reserves=1
+			}
+			create_building={
 				building="building_paper_mills"
 				add_ownership={
 					country={
@@ -274,6 +285,20 @@
 				}
 				reserves=1
 				activate_production_methods={ "default_building_tobacco_plantation" "pm_road_carts" }
+			}
+		}
+		region_state:EIC = {
+			create_building={
+				building="building_opium_plantation"
+				add_ownership={
+					company = {
+						type=company_EIC
+						country="c:PUR"
+						levels=5
+					}
+				}
+				reserves=1
+				activate_production_methods={ "default_building_opium_plantation" "pm_road_carts"  }
 			}
 		}
 	}
@@ -626,6 +651,17 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_simple_organization" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
+			}
+			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:BER"
+						levels=3
+					}
+				}
+				reserves=1
 			}
 			create_building={
 				building="building_wheat_farm"
@@ -1070,6 +1106,17 @@
 				activate_production_methods={ "pm_simple_organization" }
 			}
 			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:PAN"
+						levels=3
+					}
+				}
+				reserves=1
+			}
+			create_building={
 				building="building_spice_plantation"
 				add_ownership={
 					country={
@@ -1485,6 +1532,17 @@
 				activate_production_methods={ "pm_vertical_filing_cabinets" }
 			}
 			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:EIC"
+						levels=4
+					}
+				}
+				reserves=1
+			}
+			create_building={
 				building="building_logging_camp"
 				add_ownership={
 					building={
@@ -1647,6 +1705,17 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated" }
+			}
+			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:SIN"
+						levels=3
+					}
+				}
+				reserves=1
 			}
 			create_building={
 				building="building_barracks"
@@ -1845,6 +1914,17 @@
 				activate_production_methods={ "pm_fishing_trawlers" "pm_unrefrigerated" }
 			}
 			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:TRA"
+						levels=3
+					}
+				}
+				reserves=1
+			}
+			create_building={
 				building="building_spice_plantation"
 				add_ownership={
 					country={
@@ -1965,6 +2045,17 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_hereditary_bureaucrats" "pm_secular_bureaucrats" }
+			}
+			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:MYS"
+						levels=3
+					}
+				}
+				reserves=1
 			}
 			create_building={
 				building="building_rice_farm"
@@ -2280,6 +2371,17 @@
 				}
 				reserves=1
 				activate_production_methods={ "default_building_dye_plantation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:VOC"
+						levels=1
+					}
+				}
+				reserves=1
 			}
 			create_building={
 				building="building_iron_mine"

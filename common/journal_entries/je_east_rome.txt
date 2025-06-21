@@ -120,7 +120,7 @@ je_anatolia_int = {
 	on_complete = {
 		add_modifier = {
 			name = modifier_eastrome_two
-			months = long_modifier_time
+			days = long_modifier_time
 			is_decaying = yes
 		}
 		hidden_effect = {

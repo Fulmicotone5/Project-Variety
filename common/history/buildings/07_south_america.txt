@@ -156,6 +156,17 @@
 				activate_production_methods={ "pm_vertical_filing_cabinets" "pm_religious_bureaucrats" "pm_professional_bureaucrats" }
 			}
 			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:CUL"
+						levels=5
+					}
+				}
+				reserves=1
+			}
+			create_building={
 				building="building_shipyards"
 				add_ownership={
 					country={
@@ -226,12 +237,23 @@
 				building="building_fishing_wharf"
 				add_ownership={
 					country={
-						country="c:CUL"
+						country="c:VNA"
 						levels=1
 					}
 				}
 				reserves=1
 				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated"  }
+			}
+			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:VNA"
+						levels=2
+					}
+				}
+				reserves=1
 			}
 			create_building={
 				building="building_paper_mills"
@@ -809,6 +831,17 @@
 				activate_production_methods={ "pm_picks_and_shovels_building_gold_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
 			}
 			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:RPQ"
+						levels=5
+					}
+				}
+				reserves=1
+			}
+			create_building={
 				building= "building_machu_picchu"
 				level = 1
 			}
@@ -1080,6 +1113,17 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_vertical_filing_cabinets" "pm_religious_bureaucrats" "pm_professional_bureaucrats" }
+			}
+			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:AGA"
+						levels=2
+					}
+				}
+				reserves=1
 			}
 			create_building={
 				building="building_paper_mills"
@@ -1456,6 +1500,17 @@
 				activate_production_methods={ "pm_simple_organization" "pm_religious_bureaucrats" "pm_professional_bureaucrats" }
 			}
 			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:AGA"
+						levels=2
+					}
+				}
+				reserves=1
+			}
+			create_building={
 				building="building_tooling_workshops"
 				add_ownership={
 					country={
@@ -1655,6 +1710,17 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_simple_forestry" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:PUR"
+						levels=1
+					}
+				}
+				reserves=1
 			}
 			create_building={
 				building="building_rice_farm"
@@ -2106,6 +2172,17 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_professional_bureaucrats" "pm_religious_bureaucrats" }
+			}
+			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:AGA"
+						levels=3
+					}
+				}
+				reserves=1
 			}
 			create_building={
 				building="building_university"

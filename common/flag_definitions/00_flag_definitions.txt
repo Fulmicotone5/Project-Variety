@@ -51,6 +51,25 @@
 
 DEFAULT = {
 	flag_definition = {
+		coa = list "chartered_company"
+		allow_overlord_canton = yes
+		overlord_canton_scale = { @canton_scale_cross_x @canton_scale_cross_y }
+		priority = 1000
+		trigger = {
+			coa_def_chartered_company_trigger = yes
+			scope:actor ?= {
+				NOR = {
+					c:EIC ?= this
+					c:VOC ?= this
+					c:VNA ?= this
+					c:NIA ?= this
+					c:NOS ?= this
+				}
+			}
+		}
+	}
+
+	flag_definition = {
 		coa = list "communist"
 		priority = 1000
 		trigger = {
@@ -1567,6 +1586,7 @@ BUN = { # Bundelkhand
 		}
 	}	
 }
+
 BR1 = { # Burma
 	flag_definition = {
 		coa = BR1
@@ -1604,6 +1624,39 @@ BR1 = { # Burma
 	flag_definition = {
 		coa = BUR_theocracy
 		subject_canton = BUR_theocracy
+		priority = 20
+		trigger = { 
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}	
+}
+BR3 = { # Burma
+	flag_definition = {
+		coa = BR3
+		subject_canton = BR3
+		priority = 1
+	}
+}
+
+BR2 = { # Burma
+	flag_definition = {
+		coa = BR2
+		subject_canton = BR2
+		priority = 1
+	}
+	flag_definition = {
+		coa = BR2_monarchy
+		subject_canton = BR2_monarchy
+		allow_overlord_canton = yes		
+		coa_with_overlord_canton = BUR_subject		
+		priority = 20
+		trigger = { 
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = BR2_theo
+		subject_canton = BR2_theo
 		priority = 20
 		trigger = { 
 			coa_def_theocracy_flag_trigger = yes

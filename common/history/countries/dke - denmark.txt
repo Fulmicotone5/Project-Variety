@@ -37,5 +37,10 @@
 		add_modifier = {
 			name = modifier_ven_two
 		}
+		add_company = company_type:company_DAK
+		company:company_DAK = {
+			set_company_establishment_date = 1730.5.4
+			set_company_state_region = s:STATE_SUZHOU
+		}
 	}
 }

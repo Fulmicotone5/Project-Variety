@@ -66,19 +66,19 @@ law_is_valid_for_ig_petition = {
 }
 
 ruler_is_bonapartist = {
-	ruler = {
+	ruler ?= {
 		has_variable = bonapartist_leader
 	}
 }
 
 ruler_is_orleanist = {
-	ruler = {
+	ruler ?= {
 		has_variable = orleanist_leader
 	}
 }
 
 ruler_is_legitimist = {
-	ruler = {
+	ruler ?= {
 		has_variable = legitimist_leader
 	}
 }
@@ -137,9 +137,27 @@ researched_mass_politics = {
 
 any_pro_lobby_demand_is_valid = {
 	OR = {
-		can_break_diplomatic_pact = { target = scope:third_party_country type = alliance }
-		can_break_diplomatic_pact = { target = scope:third_party_country type = trade_agreement }
-		can_break_diplomatic_pact = { target = scope:third_party_country type = defensive_pact }
+		any_scope_treaty = {
+			remaining_binding_period <= 0
+			binds = scope:third_party_country
+			any_scope_article = {
+				has_type = alliance
+			}
+		}
+		any_scope_treaty = {
+			remaining_binding_period <= 0
+			binds = scope:third_party_country
+			any_scope_article = {
+				has_type = trade_privilege
+			}
+		}
+		any_scope_treaty = {
+			remaining_binding_period <= 0
+			binds = scope:third_party_country
+			any_scope_article = {
+				has_type = defensive_pact
+			}
+		}
 		can_create_diplomatic_pact = { target = scope:third_party_country type = rivalry }
 		can_create_diplomatic_pact = { target = scope:third_party_country type = embargo }
 		pro_lobby_war_valid_check = yes
@@ -278,9 +296,27 @@ pro_lobby_leave_power_bloc_valid_check = {
 
 any_anti_lobby_demand_is_valid = {
 	OR = {
-		can_break_diplomatic_pact = { target = scope:relevant_country type = alliance }
-		can_break_diplomatic_pact = { target = scope:relevant_country type = trade_agreement }
-		can_break_diplomatic_pact = { target = scope:relevant_country type = defensive_pact }
+		any_scope_treaty = {
+			remaining_binding_period <= 0
+			binds = scope:relevant_country
+			any_scope_article = {
+				has_type = alliance
+			}
+		}
+		any_scope_treaty = {
+			remaining_binding_period <= 0
+			binds = scope:relevant_country
+			any_scope_article = {
+				has_type = trade_privilege
+			}
+		}
+		any_scope_treaty = {
+			remaining_binding_period <= 0
+			binds = scope:relevant_country
+			any_scope_article = {
+				has_type = defensive_pact
+			}
+		}
 		can_create_diplomatic_pact = { target = scope:relevant_country type = rivalry }
 		can_create_diplomatic_pact = { target = scope:relevant_country type = embargo }
 		anti_lobby_war_valid_check = yes
@@ -308,10 +344,41 @@ anti_lobby_leave_power_bloc_valid_check = {
 
 any_anti_lobby_opportunity_is_valid = {
 	OR = {
-		can_create_diplomatic_pact = { target = scope:third_party_country type = trade_agreement }
-		can_create_diplomatic_pact = { target = scope:third_party_country type = defensive_pact }
-		can_create_diplomatic_pact = { target = scope:third_party_country type = alliance }
-		can_create_diplomatic_pact = { target = scope:third_party_country type = foreign_investment_agreement }
+		can_create_treaty = {
+			first_country = root
+			second_country = scope:third_party_country
+			is_draft = no
+			binding_period = { years = 2 }
+			articles_to_create = {
+				{
+					article = trade_privilege
+					source_country = root
+					target_country = scope:third_party_country
+				}
+			}
+		}
+		can_create_treaty = {
+			first_country = root
+			second_country = scope:third_party_country
+			is_draft = no
+			binding_period = { years = 2 }
+			articles_to_create = {
+				{
+					article = defensive_pact
+				}
+			}
+		}
+		can_create_treaty = {
+			first_country = root
+			second_country = scope:third_party_country
+			is_draft = no
+			binding_period = { years = 2 }
+			articles_to_create = {
+				{
+					article = alliance
+				}
+			}
+		}
 		AND = {
 			scope:third_party_country = {
 				is_power_bloc_leader = yes
@@ -327,10 +394,41 @@ any_anti_lobby_opportunity_is_valid = {
 
 any_pro_lobby_opportunity_is_valid = {
 	OR = {
-		can_create_diplomatic_pact = { target = scope:relevant_country type = trade_agreement }
-		can_create_diplomatic_pact = { target = scope:relevant_country type = defensive_pact }
-		can_create_diplomatic_pact = { target = scope:relevant_country type = alliance }
-		can_create_diplomatic_pact = { target = scope:relevant_country type = foreign_investment_agreement }
+		can_create_treaty = {
+			first_country = root
+			second_country = scope:third_party_country
+			is_draft = no
+			binding_period = { years = 2 }
+			articles_to_create = {
+				{
+					article = trade_privilege
+					source_country = root
+					target_country = scope:third_party_country
+				}
+			}
+		}
+		can_create_treaty = {
+			first_country = root
+			second_country = scope:third_party_country
+			is_draft = no
+			binding_period = { years = 2 }
+			articles_to_create = {
+				{
+					article = defensive_pact
+				}
+			}
+		}
+		can_create_treaty = {
+			first_country = root
+			second_country = scope:third_party_country
+			is_draft = no
+			binding_period = { years = 2 }
+			articles_to_create = {
+				{
+					article = alliance
+				}
+			}
+		}
 		AND = {
 			scope:relevant_country = {
 				is_power_bloc_leader = yes
@@ -519,28 +617,6 @@ meiji_completion_trigger = {
 		owns_entire_state_region = STATE_KANTO		
 	}	
 }
-country_is_in_india = {
-	OR = {
-		capital.region = sr:region_punjab
-		capital.region = sr:region_central_india
-		capital.region = sr:region_bengal
-		capital.region = sr:region_bombay
-		capital.region = sr:region_madras
-		capital.state_region = s:STATE_QUETTA
-		capital.state_region = s:STATE_PASHTUNISTAN
-		capital.state_region = s:STATE_KASHMIR
-	}
-}
-
-state_is_in_india = {
-	OR = {
-		region = sr:region_punjab
-		region = sr:region_central_india
-		region = sr:region_bengal
-		region = sr:region_bombay
-		region = sr:region_madras
-	}
-}
 
 state_is_homeland_of_indian_cultures = {
 	state_region = {
@@ -622,7 +698,7 @@ ideology_traditionalist_minoritarian_valid_trigger = {
 	}
 }
 
-ideology_atheist_valid_trigger = {
+ideology_nihilist_valid_trigger = {
 	OR = {
 		is_interest_group_type = ig_trade_unions
 		is_interest_group_type = ig_armed_forces
@@ -851,6 +927,11 @@ ideology_corporatist_leader_valid_trigger = {
 
 }
 
+
+ideology_modernizer_leader_valid_trigger = {
+
+}
+
 ideology_humanitarian_royalist_valid_trigger = {
 	OR = {
 		is_interest_group_type = ig_intelligentsia
@@ -928,6 +1009,16 @@ ideology_legitimist_valid_trigger = {
 		is_interest_group_type = ig_landowners
 	}
 }
+
+ideology_utopian_valid_trigger = {
+	OR = {
+		is_interest_group_type = ig_rural_folk
+		is_interest_group_type = ig_petty_bourgeoisie
+		is_interest_group_type = ig_intelligentsia
+		is_interest_group_type = ig_trade_unions
+	}
+}
+
 
 movement_is_plausibly_indian_nationalist = {
 	OR = {

@@ -36,7 +36,7 @@ fm_rhi.2= {
 		default_option = yes
 		add_modifier = {
 			name = unification_prestige
-			months = very_long_modifier_time
+			days = very_long_modifier_time
 		}
 		add_loyalists = {
 			value = very_large_radicals

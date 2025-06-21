@@ -143,7 +143,7 @@ fm_pom.4 = {
 		}
 		add_modifier = {
 			name = modifier_loth_twelwe
-			months = long_modifier_time
+			days = long_modifier_time
 			is_decaying = yes
 		}
 		set_variable = {

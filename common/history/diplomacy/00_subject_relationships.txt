@@ -181,7 +181,7 @@
 	c:SCU = {
 		create_diplomatic_pact = {
 			country = c:NOS
-			type = colony
+			type = chartered_company
 		}
 	}
 	c:FRU ?= {

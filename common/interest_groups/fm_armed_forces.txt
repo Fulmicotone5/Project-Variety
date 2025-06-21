@@ -75,7 +75,7 @@
 			is_pop_type = soldiers
 			is_pop_type = officers
 			is_pop_type = aristocrats
-			pop_is_discriminated = no
+			pop_acceptance >= acceptance_status_4
 		}
 	}
 
@@ -86,7 +86,7 @@
 			desc = "POP_NOT_DISCRIMINATED"
 			if = {
 				limit = {
-					pop_is_discriminated = no
+					pop_acceptance >= acceptance_status_4
 				}
 				value = 25
 				if = { # Militarisation of colonial settlers
@@ -364,12 +364,18 @@
 	commander_weight = {
 		value = 5.0
 	}
+	executive_weight = {
+		value = 0.2
+	}
 
 	noble_chance = {
 		value = 0.5
 	}
 
 	female_commander_chance = {
+		value = 0.0
+	}
+	female_executive_chance = {
 		value = 0.0
 	}
 
@@ -420,7 +426,13 @@
 	# The chance that a commander belonging to this IG takes over leadership when it changes
 	# scope:character is the most popular commander in the IG
 	commander_leader_chance = {
-		value = 0.25
+		value = 0.75
 		multiply = ig_commander_leader_chance_mult
+	}
+
+	# The chance that a executive belonging to this IG takes over leadership when it changes
+	# scope:character is the most popular executive in the IG
+	executive_leader_chance = {
+		value = 0.1
 	}
 }

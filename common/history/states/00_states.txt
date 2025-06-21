@@ -161,7 +161,7 @@ STATES = {
 		}
 		create_state = {
 			country = c:OMA
-			state_type = treaty_port
+			state_type = unincorporated
 			owned_provinces = { xB7B2BD }
 		}
 		create_state = {
@@ -293,7 +293,7 @@ STATES = {
 		}
 		create_state = {
 			country = c:DKE
-			state_type = treaty_port
+			state_type = unincorporated
 			owned_provinces = { x301000 xB01101 xE9E92E }
 		}
 		
@@ -3828,7 +3828,7 @@ STATES = {
 		create_state = {
 			country = c:VOC
 			owned_provinces = { x7543E0 x5B12AF x97EAD8 x964401 xEF4150 x3560D3 x59D2D7 x6ABC89 xCA52E6 x1F8B77 xD497D5 x8C303E x826376 x6C917D x306050 x39A19A xD13AD2 xC9BCA7 x10CCF3 x8A5F5F xA18690 x43FDEA xB06050 xE156BB xA4187E x407453 }
-			state_type = treaty_port
+			state_type = unincorporated
 		}
 		create_state = {
 			country = c:ST1
@@ -3838,7 +3838,7 @@ STATES = {
 		create_state = {
 			country = c:DKE
 			owned_provinces = { x31E050 xEF2B27 xC400D3 x55A52C x2392F9 x0D23B6 }
-			state_type = treaty_port
+			state_type = unincorporated
 		}
 		add_homeland = cu:sotho
 		add_homeland = cu:khoisan		
@@ -4504,7 +4504,7 @@ STATES = {
 		create_state = {
 			country = c:VOC
 			owned_provinces = { xABADB1 x2EAD15 x07104C x61FE06 x9A2EF3 x56456B xAEAE4C x0E2990 x486310 xA3158E x10B060 }
-			state_type = treaty_port
+			state_type = unincorporated
 		}
 		create_state = {
 			country = c:TRA
@@ -4602,6 +4602,7 @@ STATES = {
 		add_homeland = cu:assamese
 		add_homeland = cu:bengali
 		add_homeland = cu:manipuri
+		add_claim = c:BUR
 	}
 	s:STATE_AWADH = {
 		create_state = {
@@ -6800,6 +6801,7 @@ STATES = {
 		add_claim = c:CHO
 		add_claim = c:YUN
 		add_claim = c:GUC
+		add_claim = c:SIA
 	}
 	s:STATE_YUNNAN = {
 		create_state = {
@@ -6809,10 +6811,12 @@ STATES = {
 		
 		add_homeland = cu:han
 		add_homeland = cu:yi
+		add_homeland = cu:zhuang
 		add_claim = c:SIH
 		add_claim = c:CHO
 		add_claim = c:YUN
 		add_claim = c:GUC
+		add_claim = c:SIA
 	}	
 	s:STATE_GUIZHOU = {
 		create_state = {
@@ -6822,10 +6826,12 @@ STATES = {
 		
 		add_homeland = cu:han
 		add_homeland = cu:yi
+		add_homeland = cu:zhuang
 		add_claim = c:SIH
 		add_claim = c:CHO
 		add_claim = c:YUN
 		add_claim = c:GUC
+		add_claim = c:SIA
 	}
 	s:STATE_SHAOZHOU = {
 		create_state = {
@@ -6835,7 +6841,7 @@ STATES = {
 		create_state = {
 			country = c:VOC
 			owned_provinces = { xB03161 }
-			state_type = treaty_port
+			state_type = unincorporated
 		}
 		
 		add_homeland = cu:yue
@@ -6874,6 +6880,7 @@ STATES = {
 		
 		add_homeland = cu:yue
 		add_homeland = cu:han
+		add_homeland = cu:zhuang
 		add_claim = c:NCL
 		add_claim = c:YUE
 		add_claim = c:TAC
@@ -6889,7 +6896,7 @@ STATES = {
 		}
 		create_state = {
 			country = c:VEN
-			state_type = treaty_port
+			state_type = unincorporated
 			owned_provinces = { xD4E0E8 x58AFAC xCDCDEE xF151F1 xB00D9D }
 		}
 		add_homeland = cu:han
@@ -7053,7 +7060,7 @@ STATES = {
 		}
 		create_state = {
 			country = c:DKE
-			state_type = treaty_port
+			state_type = unincorporated
 			owned_provinces = { xAB5BE9 xFE1A9C x241F94 }
 		}
 		
@@ -7111,7 +7118,7 @@ STATES = {
 		}
 		create_state = {
 			country = c:VEN
-			state_type = treaty_port
+			state_type = unincorporated
 			owned_provinces = { xE5DAD3 x0FEECE xD8F037 }
 		}
 		add_claim = c:ZHI
@@ -8814,7 +8821,7 @@ STATES = {
 	    create_state = {
 	    	country = c:VEN
 	    	owned_provinces = { x9A018D xD5DB0B xE85BF0 xF691D2 x6305C9 xB316F6 }
-			state_type = treaty_port
+			state_type = unincorporated
 		}
 		
 	    add_homeland = cu:burmese

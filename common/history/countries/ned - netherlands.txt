@@ -55,5 +55,11 @@
 		add_modifier = {
 			name = modifier_ned_one
 		}
+		add_company = company_type:company_VOC
+		company:company_VOC = {
+			set_company_establishment_date = 1678.5.8
+			set_company_state_region = s:STATE_HOLLAND
+			add_owned_country = c:VOC #links the country to this company
+		}
 	}
 }

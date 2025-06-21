@@ -24,7 +24,7 @@ fall_papacy.1 = {
 			}
 			add_modifier = {
 				name = modifier_clergy_decline
-				months = normal_modifier_time
+				days = normal_modifier_time
 			}
 		}
 		s:STATE_LAZIO = {

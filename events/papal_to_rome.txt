@@ -41,7 +41,7 @@ papal_to_rome.1 = {
 			}
 			add_modifier = {
 				name = modifier_rome_positive
-				months = normal_modifier_time
+				days = normal_modifier_time
 				is_decaying = yes
 			}
 		}
@@ -54,7 +54,7 @@ papal_to_rome.1 = {
 			}
 			add_modifier = {
 				name = modifier_rome_negative
-				months = normal_modifier_time
+				days = normal_modifier_time
 				is_decaying = yes
 			}
 		}
@@ -87,7 +87,7 @@ papal_to_rome.1 = {
 			}
 			add_modifier = {
 				name = modifier_rome_positive
-				months = normal_modifier_time
+				days = normal_modifier_time
 				is_decaying = yes
 			}
 		}
@@ -103,7 +103,7 @@ papal_to_rome.1 = {
 			}
 			add_modifier = {
 				name = modifier_rome_negative
-				months = normal_modifier_time
+				days = normal_modifier_time
 				is_decaying = yes
 			}
 		}
@@ -202,7 +202,7 @@ papal_to_rome.3 = {
 			}
 			add_modifier = {
 				name = modifier_rome_one
-				months = normal_modifier_time
+				days = normal_modifier_time
 				is_decaying = yes
 			}
 		}
@@ -215,7 +215,7 @@ papal_to_rome.3 = {
 			}
 			add_modifier = {
 				name = modifier_rome_two
-				months = normal_modifier_time
+				days = normal_modifier_time
 				is_decaying = yes
 			}
 		}
@@ -255,7 +255,7 @@ papal_to_rome.3 = {
 			}
 			add_modifier = {
 				name = modifier_rome_armd
-				months = long_modifier_time
+				days = long_modifier_time
 			}
 		}
 		scope:armed_forces_leader = {
@@ -270,7 +270,7 @@ papal_to_rome.3 = {
 			}
 			add_modifier = {
 				name = modifier_rome_one
-				months = normal_modifier_time
+				days = normal_modifier_time
 				is_decaying = yes
 			}
 		}
@@ -280,7 +280,7 @@ papal_to_rome.3 = {
 			}
 			add_modifier = {
 				name = modifier_rome_bad
-				months = normal_modifier_time
+				days = normal_modifier_time
 				is_decaying = yes
 			}
 		}
@@ -328,7 +328,7 @@ papal_to_rome.4 = {
 			}
 			add_modifier = {
 				name = modifier_rome_three
-				months = normal_modifier_time
+				days = normal_modifier_time
 				is_decaying = yes
 			}
 		}
@@ -367,7 +367,7 @@ papal_to_rome.5 = {
 			}
 			add_modifier = {
 				name = modifier_rome_eight
-				months = normal_modifier_time
+				days = normal_modifier_time
 				is_decaying = yes
 			}
 		}
@@ -440,7 +440,7 @@ papal_to_rome.6 = {
 			}
 			add_modifier = {
 				name = modifier_rome_four
-				months = normal_modifier_time
+				days = normal_modifier_time
 				is_decaying = yes
 			}
 		}
@@ -458,7 +458,7 @@ papal_to_rome.6 = {
 			}
 			add_modifier = {
 				name = modifier_rome_five
-				months = normal_modifier_time
+				days = normal_modifier_time
 				is_decaying = yes
 			}
 		}
@@ -548,7 +548,7 @@ papal_to_rome.7 = {
 			}
 			add_modifier = {
 				name = modifier_rome_six
-				months = normal_modifier_time
+				days = normal_modifier_time
 				is_decaying = yes
 			}
 		}
@@ -624,7 +624,7 @@ papal_to_rome.8 = {
 			}
 			add_modifier = {
 				name = modifier_rome_seven
-				months = normal_modifier_time
+				days = normal_modifier_time
 				is_decaying = yes
 			}
 		}

@@ -41,6 +41,17 @@
 				activate_production_methods={ "pm_simple_organization" "pm_professional_bureaucrats" "pm_secular_bureaucrats" }
 			}
 			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:MAY"
+						levels=5
+					}
+				}
+				reserves=1
+			}
+			create_building={
 				building="building_arms_industry"
 				add_ownership={
 					country={
@@ -158,9 +169,10 @@
 			create_building={
 				building="building_gold_mine"
 				add_ownership={
-					country={
-						country="c:NOS"
-						levels=6
+					company = {
+						type=company_NOS
+						country="c:SCU"
+						levels=5
 					}
 				}
 				reserves=1
@@ -210,8 +222,9 @@
 			create_building={
 				building="building_gold_mine"
 				add_ownership={
-					country={
-						country="c:NOS"
+					company = {
+						type=company_NOS
+						country="c:SCU"
 						levels=2
 					}
 				}
@@ -244,7 +257,18 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_basic_port" }
+				activate_production_methods={ }
+			}
+			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:NOS"
+						levels=5
+					}
+				}
+				reserves=1
 			}
 			create_building={
 				building="building_tooling_workshops"
@@ -295,11 +319,10 @@
 			create_building={
 				building="building_banana_plantation"
 				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:NOS"
-						levels=1
-						region="STATE_PANAMA"
+					company = {
+						type=company_NOS
+						country="c:SCU"
+						levels=5
 					}
 				}
 				reserves=1
@@ -319,6 +342,17 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_simple_organization" "pm_religious_bureaucrats" "pm_professional_bureaucrats" }
+			}
+			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:HAE"
+						levels=2
+					}
+				}
+				reserves=1
 			}
 			create_building={
 				building="building_tobacco_plantation"
@@ -393,6 +427,17 @@
 				}
 				reserves=1
 				activate_production_methods={ "default_building_tobacco_plantation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:HAE"
+						levels=1
+					}
+				}
+				reserves=1
 			}
 			create_building={
 				building="building_banana_plantation"
@@ -725,6 +770,17 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_fig_orchards_building_rice_farm" "pm_tools_disabled"  }
+			}
+			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:CUB"
+						levels=3
+					}
+				}
+				reserves=1
 			}
 			create_building={
 				building="building_coffee_plantation"

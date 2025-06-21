@@ -94,7 +94,7 @@ fm_kor.2 = {
 		add_modifier = {
 			# influence mult
 			name = royal_marriage
-			months = normal_modifier_time
+			days = normal_modifier_time
 		}
 		set_variable = {
 			name = kor_man_solved
@@ -433,7 +433,7 @@ fm_kor.8 = {
 			}
 			add_modifier = {
 				name = modifier_kor_five
-				months = long_modifier_time
+				days = long_modifier_time
 				is_decaying = yes
 			}
 		}

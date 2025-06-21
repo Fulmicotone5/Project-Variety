@@ -159,7 +159,7 @@ fm_yag.5 = {
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
-	cooldown = { months = short_modifier_time }
+	cooldown = { days = short_modifier_time }
 
 	immediate = {
 		every_scope_pop = {

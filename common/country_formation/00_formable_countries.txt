@@ -351,13 +351,39 @@ BR1 = {
 		STATE_NAKHON_RATCHASIMA
 	}
 
-	required_states_fraction = 0.8
+	required_states_fraction = 0.9
 	
 	ai_will_do = { always = yes }
 
 	possible = {
 		has_technology_researched = nationalism
 	}
+}
+
+BR2 = {
+	use_culture_states = yes
+
+	required_states_fraction = 1
+	
+	ai_will_do = { always = yes }
+
+	possible = {
+		has_technology_researched = nationalism
+	}
+
+}
+
+BR3 = {
+	use_culture_states = yes
+
+	required_states_fraction = 0.8
+	
+	ai_will_do = { always = yes }
+
+	possible = {
+		has_technology_researched = pan-nationalism
+	}
+
 }
 
 HU1 = {

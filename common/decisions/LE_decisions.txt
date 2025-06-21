@@ -64,7 +64,7 @@
 		}
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 }
 
@@ -140,7 +140,7 @@ revive_the_carolingian_empire = {
 		}
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 }
 
@@ -165,7 +165,7 @@ RUI_six_decision = {
 		}
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 }
 
@@ -190,7 +190,7 @@ RUI_five_decision = {
 		}
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 }
 
@@ -215,7 +215,7 @@ RUI_four_decision = {
 		}
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 }
 
@@ -240,7 +240,7 @@ RUI_one_decision = {
 		}
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 }
 
@@ -265,7 +265,7 @@ RUI_two_decision = {
 		}
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 }
 
@@ -290,7 +290,7 @@ RUI_three_decision = {
 		}
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 }
 
@@ -312,7 +312,7 @@ YUA_decision = {
 		}
 	}
 	ai_chance = {
-		base = 0
+		value = 0
 	}
 }
 
@@ -327,7 +327,7 @@ YUA_decision_two = {
 		remove_modifier = modifier_yua_exp
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 }
 
@@ -339,7 +339,7 @@ YUA_decision_three = {
 		remove_modifier = modifier_yua_int
 	}
 	ai_chance = {
-		base = 0
+		value = 0
 	}
 }
 
@@ -363,7 +363,7 @@ YUA_decision_four = {
 		}
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 }
 
@@ -393,7 +393,7 @@ YUA_decision_five = {
 		}
 	}
 	ai_chance = {
-		base = 0
+		value = 0
 	}
 }
 
@@ -428,7 +428,7 @@ KOR_decision_one = {
 		}
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 }
 
@@ -460,7 +460,7 @@ KOR_decision_two = {
 		}
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 }
 
@@ -492,7 +492,7 @@ dec_stateof = {
 		}
 	}
 	ai_chance = {
-		base = 0
+		value = 0
 	}
 }
 
@@ -531,7 +531,7 @@ convert_to_isl = {
 		}
 	}
 	ai_chance = {
-		base = 1
+		value = 1
 	}
 }
 
@@ -564,6 +564,6 @@ research_decision = {
 	}
 
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 }

@@ -137,7 +137,7 @@
 					add_ideology = ideology_heavenly_kingdom_theocratic
 					add_modifier = {
 						name = taiping_god_worshippers
-						months = very_long_modifier_time
+						days = very_long_modifier_time
 						is_decaying = yes
 					}
 				}
@@ -660,12 +660,18 @@
 	commander_weight = {
 		value = 1.0
 	}
+	executive_weight = {
+		value = 1.0
+	}
 
 	noble_chance = {
 		value = 0.5
 	}
 
 	female_commander_chance = {
+		value = 0.0
+	}
+	female_executive_chance = {
 		value = 0.0
 	}
 
@@ -730,5 +736,10 @@
 	commander_leader_chance = {
 		value = 0.25
 		multiply = ig_commander_leader_chance_mult
+	}
+	# The chance that a executive belonging to this IG takes over leadership when it changes
+	# scope:character is the most popular executive in the IG
+	executive_leader_chance = {
+		value = 0.25
 	}
 }

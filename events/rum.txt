@@ -522,7 +522,7 @@ rum.6 = {
 		add_modifier = { 
 			name = mobilizing_the_militia
 			multiplier = money_amount_multiplier_very_small
-			months = short_modifier_time
+			days = short_modifier_time
 		}
 		scope:mob_state_scope = {
 			add_radicals_in_state = {
@@ -555,7 +555,7 @@ rum.6 = {
 		add_modifier = { 
 			name = deploying_the_army
 			multiplier = money_amount_multiplier_very_small
-			months = short_modifier_time
+			days = short_modifier_time
 		}
 		scope:mob_state_scope = {
 			add_radicals_in_state = {
@@ -873,7 +873,7 @@ rum.9 = {
 		scope:peasant_state = {
 			add_modifier = {
 				name = peasant_unrest
-				months = normal_modifier_time
+				days = normal_modifier_time
 				multiplier = 0.5
 			}
 			add_radicals_in_state = {
@@ -884,7 +884,7 @@ rum.9 = {
 		ig:ig_landowners = {
 			add_modifier = {
 				name = expanding_holdings
-				months = normal_modifier_time
+				days = normal_modifier_time
 			}
 		}
 	}
@@ -893,7 +893,7 @@ rum.9 = {
 		scope:peasant_state = {
 			add_modifier = {
 				name = peasant_unrest
-				months = normal_modifier_time
+				days = normal_modifier_time
 				multiplier = 0.25
 			}
 			add_radicals_in_state = {
@@ -907,7 +907,7 @@ rum.9 = {
 		scope:peasant_state = {
 			add_modifier = {
 				name = peasant_unrest
-				months = normal_modifier_time
+				days = normal_modifier_time
 			}
 		}
 	}

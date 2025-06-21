@@ -82,6 +82,43 @@
 				set_interest_group_name = ig_landed_gentry
 			}
 		}
+		else_if = {
+			limit = {
+				c:VEN ?= this
+			}
+			ig:ig_landowners = { 
+				remove_ideology = ideology_paternalistic
+				add_ideology = ideology_magnatial
+			}
+		}
+		else_if = {
+			limit = {
+				c:PUR ?= this
+			}
+			ig:ig_landowners = { 
+				remove_ideology = ideology_paternalistic
+				add_ideology = ideology_magnatial
+			}
+		}
+		else_if = {
+			limit = {
+				c:DKE ?= this
+			}
+			ig:ig_landowners = { 
+				remove_ideology = ideology_paternalistic
+				add_ideology = ideology_magnatial
+			}
+		}
+		else_if = {
+			limit = {
+				c:NED ?= this
+			}
+			ig:ig_landowners = { 
+				remove_ideology = ideology_paternalistic
+				add_ideology = ideology_magnatial
+			}
+		}
+
 		# Yangban Officials
 		else_if = {
 			limit = {
@@ -333,16 +370,22 @@
 		}
 	}
 	commander_weight = {
-		value = 2
+		value = 2.0
+	}
+		executive_weight = {
+		value = 0.25
 	}
 	noble_chance = {
-		value = 1
+		value = 1.0
 	}
 	female_commander_chance = {
-		value = 0
+		value = 0.0
+	}
+	female_executive_chance = {
+		value = 0.0
 	}
 	female_politician_chance = {
-		value = 0
+		value = 0.0
 		if = {
 			limit = {
 				owner = {
@@ -390,7 +433,12 @@
 	# The chance that a commander belonging to this IG takes over leadership when it changes
 	# scope:character is the most popular commander in the IG
 	commander_leader_chance = {
-		value = 0.25
+		value = 0.5
 		multiply = ig_commander_leader_chance_mult
+	}
+		# The chance that a executive belonging to this IG takes over leadership when it changes
+	# scope:character is the most popular executive in the IG
+	executive_leader_chance = {
+		value = 0.1
 	}
 }

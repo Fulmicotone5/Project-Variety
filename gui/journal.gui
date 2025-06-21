@@ -129,6 +129,9 @@ types journal
 						blockoverride "text" {
 							text = "[AccessPlayer.GetObjective.GetObjectiveType.GetIdleHeader]"
 						}
+						blockoverride "hint_visibility" {
+							visible = yes
+						}
 						blockoverride "hint" {
 							text = "[AccessPlayer.GetObjective.GetObjectiveType.GetIdleHint]"
 						}
@@ -470,8 +473,7 @@ types journal
 					datamodel = "[JournalEntry.GetScriptedProgressBars]"
 					margin = { 0 10 }
 					direction = vertical
-				    parentanchor = vcenter
-					spacing = 20
+				    spacing = 10
 					item = {
 						container = {
 
@@ -479,7 +481,7 @@ types journal
 							default_progressbar_horizontal = {
 								visible = "[ScriptedProgressBar.IsDefault]"
 								block "progressbar_size" {
-									size = { 420 6 }
+									size = { 420 10  }
 								}
 								tooltip = "[ScriptedProgressBar.GetPeriodicProgressBreakdown]"
 								blockoverride "values" {
@@ -493,7 +495,7 @@ types journal
 							bad_progressbar_horizontal = {
 								visible = "[ScriptedProgressBar.IsDefaultBad]"
 								block "progressbar_size" {
-									size = { 420 6 }
+									size = { 420 10  }
 								}
 								tooltip = "[ScriptedProgressBar.GetPeriodicProgressBreakdown]"
 								blockoverride "values" {
@@ -507,7 +509,7 @@ types journal
 							green_progressbar_horizontal = {
 								visible = "[ScriptedProgressBar.IsDefaultGreen]"
 								block "progressbar_size" {
-									size = { 420 6 }
+									size = { 420 10  }
 								}
 
 								tooltip = "[ScriptedProgressBar.GetPeriodicProgressBreakdown]"
@@ -522,7 +524,7 @@ types journal
 							default_progressbar_horizontal = {
 								visible = "[ScriptedProgressBar.IsDoubleSidedBad]"
 								block "progressbar_size" {
-									size = { 420 6 }
+									size = { 420 10  }
 								}
 								tooltip = "[ScriptedProgressBar.GetPeriodicProgressBreakdown]"
 

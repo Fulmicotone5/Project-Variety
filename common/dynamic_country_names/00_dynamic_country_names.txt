@@ -1781,6 +1781,19 @@ BR1 = {
 		}
 	}
 }
+BR2 = {
+	dynamic_country_name = {
+		name = BR2_emp
+		adjective = BR2_ADJ
+		priority = 10
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_law = law_type:law_monarchy
+			}
+		}
+	}
+}
 VSL = {
  dynamic_country_name = {
 		name = vest_theo

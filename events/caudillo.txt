@@ -44,7 +44,7 @@ caudillo.1 = {
 		}
 		set_global_variable = { # ensures military presidents aren't replaced super early
 			name = continuismo_start_var
-			months = long_modifier_time
+			days = long_modifier_time
 		}
 		ig:ig_armed_forces = {
 			save_scope_as = army_scope
@@ -202,7 +202,7 @@ caudillo.4 = {
 	
 	duration = 3
 
-	cooldown = { months = long_modifier_time }
+	cooldown = { days = long_modifier_time }
 	
 	trigger = {
 		# triggered by je_caudillo
@@ -298,7 +298,7 @@ caudillo.4 = {
 		ig:ig_armed_forces = {
 			add_modifier = {
 				name = continuismo
-				months = normal_modifier_time
+				days = normal_modifier_time
 			}
 		}
 		ai_chance = {
@@ -316,7 +316,7 @@ caudillo.4 = {
 		ig:ig_armed_forces = {
 			add_modifier = {
 				name = no_continuismo
-				months = normal_modifier_time
+				days = normal_modifier_time
 			}
 		}
 		custom_tooltip = {
@@ -561,7 +561,7 @@ caudillo.6 = {
 
 	icon = "gfx/interface/icons/ig_icons/armed_forces.dds"
 
-	cooldown = { months = normal_modifier_time }
+	cooldown = { days = normal_modifier_time }
 	
 	duration = 3
 	

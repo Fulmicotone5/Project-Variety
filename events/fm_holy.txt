@@ -31,7 +31,7 @@ fm_holy.1 = { #return inq
 		}
 		add_modifier = {
 			name = modifier_rome_ten
-			months = long_modifier_time
+			days = long_modifier_time
 			is_decaying = yes
 		}
 	}

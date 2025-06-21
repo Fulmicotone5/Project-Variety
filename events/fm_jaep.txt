@@ -26,7 +26,7 @@ jaep.2 = {
 		default_option = yes
 		add_modifier = {
 			name = japan_military_rewardfm
-			months = normal_modifier_time
+			days = normal_modifier_time
 		}
 		if = {
 			limit = {
@@ -73,14 +73,14 @@ jaep.2 = {
 		name = jaep.2.b
 		add_modifier = {
 			name = japan_diplomatic_rewardfm
-			months = normal_modifier_time
+			days = normal_modifier_time
 		}
 	}
 	option = {
 		name = jaep.2.c
 		add_modifier = {
 			name = japan_production_rewardfm
-			months = normal_modifier_time
+			days = normal_modifier_time
 		}
 	}
 }
@@ -127,7 +127,7 @@ jaep.3 = {
 		# reduce mil tech spread
 		add_modifier = {
 			name = samurai_officers
-			months = normal_modifier_time
+			days = normal_modifier_time
 		}
 	}
 	option = { # expel the samurai from the army
@@ -243,7 +243,7 @@ jaep.4 = {
 		}
 		add_modifier = {
 			name = western_military_consultant
-			months = short_modifier_time
+			days = short_modifier_time
 		}
 		if = {
 			limit = {
@@ -298,7 +298,7 @@ jaep.5 = {
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
-	cooldown = { months = short_modifier_time }
+	cooldown = { days = short_modifier_time }
 
 	trigger = {
 		NOT = { has_modifier = japan_society_tech_modifier }
@@ -384,7 +384,7 @@ jaep.5 = {
 		}
 		add_modifier = {
 			name = japan_society_tech_modifier
-			months = short_modifier_time
+			days = short_modifier_time
 		}
 		if = {
 			limit = {
@@ -503,7 +503,7 @@ jaep.6 = {
 		}
 		add_modifier = {
 			name = japan_production_tech_modifier
-			months = short_modifier_time
+			days = short_modifier_time
 		}
 		if = {
 			limit = {
@@ -679,7 +679,7 @@ jaep.7 = {
 
 		add_modifier = {
 			name = railway_our_way
-			months = long_modifier_time
+			days = long_modifier_time
 		}
 	}
 }
@@ -735,7 +735,7 @@ jaep.8 = {
 		ig:ig_armed_forces = {
 			add_modifier = {
 				name = railway_priority
-				months = long_modifier_time
+				days = long_modifier_time
 			}
 		}
 	}
@@ -746,13 +746,13 @@ jaep.8 = {
 
 		add_modifier = {
 			name = retained_railway_control
-			months = long_modifier_time
+			days = long_modifier_time
 		}
 
 		ig:ig_armed_forces = {
 			add_modifier = {
 				name = refused_railway_priority
-				months = normal_modifier_time
+				days = normal_modifier_time
 			}
 		}
 	}
@@ -799,7 +799,7 @@ jaep.9 = {
 		ig:ig_armed_forces = {
 			add_modifier = {
 				name = revoked_sword_rights
-				months = long_modifier_time
+				days = long_modifier_time
 			}
 		}
 	}
@@ -829,7 +829,7 @@ jaep.9 = {
 		ig:ig_armed_forces = {
 			add_modifier = {
 				name = retained_sword_rights
-				months = normal_modifier_time
+				days = normal_modifier_time
 			}
 		}
 	}
@@ -879,7 +879,7 @@ jaep.10 = {
 		s:STATE_KYUSHU.region_state:JAE = {
 			add_modifier = {
 				name = shi_gakko
-				months = normal_modifier_time
+				days = normal_modifier_time
 			}
 			add_radicals_in_state = {
 				pop_type = soldiers
@@ -895,12 +895,12 @@ jaep.10 = {
 		ig:ig_armed_forces = {
 			add_modifier = {
 				name = shut_down_military_academies
-				months = long_modifier_time
+				days = long_modifier_time
 			}
 			leader = {
 				add_modifier = {
 					name = suspected_insurrectionist
-					months = long_modifier_time
+					days = long_modifier_time
 				}
 			}
 		}
@@ -1002,7 +1002,7 @@ jaep.11 = {
 
 		add_modifier = {
 			name = sakoku_violated
-			months = long_modifier_time
+			days = long_modifier_time
 		}
 	}
 
@@ -1106,7 +1106,7 @@ jaep.12 = {
 
 		add_modifier = {
 			name = diplomatic_flexibility
-			months = normal_modifier_time
+			days = normal_modifier_time
 		}
 
 	}

@@ -19,7 +19,7 @@
 				set_variable = hong_var
 				add_modifier = {
 					name = modifier_brother_of_christ
-					months = long_modifier_time
+					days = long_modifier_time
 				}
 			}
 		}

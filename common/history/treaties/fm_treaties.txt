@@ -1,0 +1,407 @@
+TREATIES = {
+		create_treaty = {
+			first_country = c:MCG
+			second_country = c:IQS
+
+			is_draft = no
+			entered_into_force_on = 1820.10.26
+			binding_period = { years = 20 } # 14 years to cover the Revolutions of 1848
+
+			articles_to_create = {
+				{ # Defensive Pact
+					article = defensive_pact
+				}
+			}
+		}
+		create_treaty = {
+			first_country = c:KNA
+			second_country = c:NWA
+
+			is_draft = no
+			entered_into_force_on = 1825.10.26
+			binding_period = { years = 20 } # 14 years to cover the Revolutions of 1848
+
+			articles_to_create = {
+				{ # Defensive Pact
+					article = defensive_pact
+				}
+			}
+		}
+	create_treaty = {
+			first_country = c:KNA
+			second_country = c:KAU
+
+			is_draft = no
+			entered_into_force_on = 1825.10.26
+			binding_period = { years = 17 } # 14 years to cover the Revolutions of 1848
+
+			articles_to_create = {
+				{ # Defensive Pact
+					article = defensive_pact
+				}
+			}
+		}
+	create_treaty = {
+			first_country = c:PUR
+			second_country = c:SAU
+
+			is_draft = no
+			entered_into_force_on = 1815.10.26
+			binding_period = { years = 25 } # 14 years to cover the Revolutions of 1848
+
+			articles_to_create = {
+				{ # Defensive Pact
+					article = defensive_pact
+				}
+				{ 
+					article = foreign_investment_rights
+					source_country = c:SAU
+					target_country = c:PUR
+				}
+			}
+		}
+
+	create_treaty = {
+		first_country = c:ZUR
+		second_country = c:LLO
+
+		is_draft = no
+		entered_into_force_on = 1836.1.1
+		binding_period = { years = 9 } # 10 years
+
+		articles_to_create = {
+			{
+				article = transit_rights
+				source_country = c:LLO
+				target_country = c:ZUR
+			}
+		}
+	}
+	create_treaty = {
+			first_country = c:IRE
+			second_country = c:WLS
+
+			is_draft = no
+			entered_into_force_on = 1825.10.26
+			binding_period = { years = 27 } # 14 years to cover the Revolutions of 1848
+
+			articles_to_create = {
+				{ # Defensive Pact
+					article = defensive_pact
+				}
+			}
+		}
+	create_treaty = {
+			first_country = c:KAA
+			second_country = c:NAV
+
+			is_draft = no
+			entered_into_force_on = 1815.10.26
+			binding_period = { years = 25 } # 14 years to cover the Revolutions of 1848
+
+			articles_to_create = {
+				{ # Defensive Pact
+					article = defensive_pact
+				}
+			}
+		}
+	create_treaty = {
+		first_country = c:DKE
+		second_country = c:TAC
+
+		is_draft = no
+		entered_into_force_on = 1821.5.1 # Establishment of Portugese Macau
+		binding_period = { years = 50 } 
+
+		articles_to_create = {
+			{ 
+					article = foreign_investment_rights
+					source_country = c:TAC
+					target_country = c:DKE
+				}
+			{
+					article = trade_privilege
+					source_country = c:TAC
+					target_country = c:DKE
+				}
+			{
+				article = guarantee_independence
+				source_country = c:DKE
+				target_country = c:TAC
+			}
+		}
+	}
+	create_treaty = {
+		first_country = c:NED
+		second_country = c:HEN
+
+		is_draft = no
+		entered_into_force_on = 1821.5.1 # Establishment of Portugese Macau
+		binding_period = { years = 20 } 
+
+		articles_to_create = {
+			{
+					article = trade_privilege
+					source_country = c:HEN
+					target_country = c:NED
+				}
+			{
+				article = guarantee_independence
+				source_country = c:NED
+				target_country = c:HEN
+			}
+		}
+	}
+	create_treaty = {
+		first_country = c:FRU
+		second_country = c:HSE
+
+		is_draft = no
+		entered_into_force_on = 1821.5.1 # Establishment of Portugese Macau
+		binding_period = { years = 20 } 
+
+		articles_to_create = {
+			{
+				article = guarantee_independence
+				source_country = c:FRU
+				target_country = c:HSE
+			}
+		}
+	}
+	create_treaty = {
+		first_country = c:FRU
+		second_country = c:CAT
+
+		is_draft = no
+		entered_into_force_on = 1821.5.1 # Establishment of Portugese Macau
+		binding_period = { years = 20 } 
+
+		articles_to_create = {
+			{
+					article = trade_privilege
+					source_country = c:CAT
+					target_country = c:FRU
+				}
+			{
+				article = guarantee_independence
+				source_country = c:FRU
+				target_country = c:CAT
+			}
+		}
+	}
+	create_treaty = {
+		first_country = c:CAS
+		second_country = c:PUP
+
+		is_draft = no
+		entered_into_force_on = 1821.5.1 # Establishment of Portugese Macau
+		binding_period = { years = 20 } 
+
+		articles_to_create = {
+			{
+				article = guarantee_independence
+				source_country = c:CAS
+				target_country = c:PUP
+			}
+		}
+	}
+	create_treaty = {
+		first_country = c:ENG
+		second_country = c:BRI
+
+		is_draft = no
+		entered_into_force_on = 1821.5.1 # Establishment of Portugese Macau
+		binding_period = { years = 20 } 
+
+		articles_to_create = {
+			{
+				article = guarantee_independence
+				source_country = c:ENG
+				target_country = c:BRI
+			}
+		}
+	}
+	# Hormuz Treaty Port
+	create_treaty = {
+		name = treaty_name_firman_of_1793
+		first_country = c:OMA
+		second_country = c:MAK
+
+		is_draft = no
+		entered_into_force_on = 1793.1.1
+		binding_period = { years = 99 } # 99 year binding period after start of game
+
+		articles_to_create = {
+			{
+				article = treaty_port
+				source_country = c:MAK
+				target_country = c:OMA
+				inputs = {
+					{ state = s:STATE_BALUCHISTAN.region_state:MAK }
+				}
+			}
+			{
+				article = money_transfer
+				source_country = c:OMA
+				target_country = c:MAK
+				inputs = {
+					{ quantity = 100 } # Loose estimate, the rent was 'thousands of tomans per year' (1 toman was roughly equal to a pound in 1815)
+				}
+			}
+		}
+	}
+	create_treaty = {
+		first_country = c:DKE
+		second_country = c:ST1
+
+		is_draft = no
+		entered_into_force_on = 1763.1.1
+		binding_period = { years = 99 } # 99 year binding period after start of game
+
+		articles_to_create = {
+			{
+				article = treaty_port
+				source_country = c:ST1
+				target_country = c:DKE
+				inputs = {
+					{ state = s:STATE_CAPE_COLONY.region_state:ST1 }
+				}
+			}
+			{
+				article = guarantee_independence
+				source_country = c:DKE
+				target_country = c:ST1
+			}
+		}
+	}
+	create_treaty = {
+		first_country = c:VOC
+		second_country = c:ST1
+
+		is_draft = no
+		entered_into_force_on = 1769.1.1
+		binding_period = { years = 75 } # 99 year binding period after start of game
+
+		articles_to_create = {
+			{
+				article = treaty_port
+				source_country = c:ST1
+				target_country = c:VOC
+				inputs = {
+					{ state = s:STATE_CAPE_COLONY.region_state:ST1 }
+				}
+			}
+			{
+				article = money_transfer
+				source_country = c:VOC
+				target_country = c:ST1
+				inputs = {
+					{ quantity = 1000 } # Loose estimate, the rent was 'thousands of tomans per year' (1 toman was roughly equal to a pound in 1815)
+				}
+			}
+		}
+	}
+	create_treaty = {
+		first_country = c:VOC
+		second_country = c:TRA
+
+		is_draft = no
+		entered_into_force_on = 1771.1.1
+		binding_period = { years = 75 } # 99 year binding period after start of game
+
+		articles_to_create = {
+			{
+				article = treaty_port
+				source_country = c:TRA
+				target_country = c:VOC
+				inputs = {
+					{ state = s:STATE_MADRAS.region_state:TRA }
+				}
+			}
+			{ # Port wine trade
+					article = goods_transfer
+					source_country = c:VOC
+					target_country = c:TRA
+					inputs = {
+						{ goods = g:wine }
+						{ quantity = 20 }
+					}
+				}
+		}
+	}
+	create_treaty = {
+		first_country = c:VOC
+		second_country = c:YUE
+
+		is_draft = no
+		entered_into_force_on = 1775.1.1
+		binding_period = { years = 75 } # 99 year binding period after start of game
+
+		articles_to_create = {
+			{
+				article = treaty_port
+				source_country = c:YUE
+				target_country = c:VOC
+				inputs = {
+					{ state = s:STATE_SHAOZHOU.region_state:YUE }
+				}
+			}
+			{ # British Military Assistance to Portugal
+					article = military_assistance
+					source_country = c:VOC
+					target_country = c:YUE
+				}
+		}
+	}
+	create_treaty = {
+		first_country = c:VEN
+		second_country = c:ZHI
+
+		is_draft = no
+		entered_into_force_on = 1765.1.1
+		binding_period = { years = 75 } # 99 year binding period after start of game
+
+		articles_to_create = {
+			{
+				article = treaty_port
+				source_country = c:ZHI
+				target_country = c:VEN
+				inputs = {
+					{ state = s:STATE_BEIJING.region_state:ZHI }
+				}
+			}
+			{ # British Military Assistance to Portugal
+					article = military_assistance
+					source_country = c:VEN
+					target_country = c:ZHI
+				}
+		}
+	}
+	create_treaty = {
+		first_country = c:VEN
+		second_country = c:BUR
+
+		is_draft = no
+		entered_into_force_on = 1763.1.1
+		binding_period = { years = 75 } # 99 year binding period after start of game
+
+		articles_to_create = {
+			{
+				article = treaty_port
+				source_country = c:BUR
+				target_country = c:VEN
+				inputs = {
+					{ state = s:STATE_ARAKAN.region_state:BUR }
+				}
+			}
+			{
+				article = money_transfer
+				source_country = c:VEN
+				target_country = c:BUR
+				inputs = {
+					{ quantity = 1000 } # Loose estimate, the rent was 'thousands of tomans per year' (1 toman was roughly equal to a pound in 1815)
+				}
+			}
+		}
+	}
+}

@@ -115,7 +115,7 @@
  concept_unrecognized_regional_power: "Unrecognized Regional Power"
  concept_unrecognized_major_power: "Unrecognized Major Power"
  concept_unrecognized_power_desc: "$concept_unrecognized_powers$ are [Concept('concept_country','$concept_country_polities$')] that have not been recognized as Sovereign Nations by the reigning [Concept('concept_great_power','$concept_great_powers$')], who regard them as little more than potential future conquests. As a result their [concept_prestige] is penalized and they can be targeted with more severe [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')]. They are also restricted in what [Concept('concept_rank','$concept_ranks$')] they may reach, no matter how much $concept_prestige$ they acquire.[AddLocalizationIf(GetPlayer.IsValid,'concept_unrecognized_power_desc_added')]"
- concept_unrecognized_power_desc_added: "\n\nAn $concept_unrecognized_power$ that wishes to remove these penalties must claim recognition from completing the $je_earn_recognition$ Journal Entry."
+ concept_unrecognized_power_desc_added: "\n\nAn $concept_unrecognized_power$ that wishes to remove these penalties must claim recognition from completing the $je_earn_recognition$ [concept_journal_entry]."
 
  concept_protectorate: "Protectorate"
  concept_protectorates: "Protectorates"
@@ -186,6 +186,100 @@
  concept_tariffs_desc_added: "[GetLawGroup('lawgroup_trade_policy').GetName]"
  concept_tariffs_desc_added_2: "[GetBuildingType('building_trade_center').GetName]"
  
+   concept_import: "Import"
+ concept_imported: "Imported"
+ concept_exporting: "Exporting"
+ concept_exports: "Exports"
+ concept_export: "Export"
+ concept_exported: "Exported"
+ concept_trade_desc: "$concept_trade$ is the process of $concept_importing$ and $concept_exporting$ [Concept('concept_good','$concept_goods$')]. Most $concept_trade$ is conducted autonomously by a [GetBuildingType('building_trade_center').GetName] via the [concept_world_market], but [Concept('concept_country','$concept_countries$')] can also set up [Concept('concept_treaty', '$concept_treaties$')] to trade $concept_goods$ between them directly. $concept_trade$ can be an effective way for $concept_countries$ to improve their economic situation."
+
+ concept_trade_revenue: "Trade Revenue"
+ concept_trade_revenue_desc: "[concept_trade] generates revenue for the [SelectLocalization(GetPlayer.IsValid,'concept_trade_revenue_desc_added','Trade Center')] managing it, depending on the [concept_market_price] difference and the volume traded. [concept_tariffs] reduce the $concept_trade_revenue$ generated."
+ concept_trade_revenue_desc_added: "[GetBuildingType('building_trade_center').GetName]"
+
+ concept_trade_privilege: "Trade Privilege"
+ concept_trade_privileges: "Trade Privileges"
+ concept_trade_privilege_desc: "A type of [concept_treaty] [concept_article] granted by one [concept_market_owner] to another. It affects every [concept_country] in the receiver's [concept_market], increasing their [concept_trade_advantage] relative to how much of the [concept_trade] is conducted with the giver's $concept_market$."
+
+ concept_trade_advantage: "Trade Advantage"
+ concept_relative_trade_advantage: "Relative Advantage"
+ concept_trade_advantage_short: "Advantage"
+ concept_trade_advantage_desc: "$concept_trade_advantage$ is the value that determines the [concept_import_price] and [concept_export_price] for a particular [GetBuildingType('building_trade_center').GetName] and therefore also directly affects the amount of [Concept('concept_good','$concept_goods$')] traded. It is influenced by factors such as the [GetBuildingType('building_trade_center').GetName] level, the [Concept('concept_market_area','$concept_market_area_possessive$')] share of global production of a $concept_good$, [Concept('concept_interest','$concept_interests$')] in relevant [Concept('concept_strategic_region','$concept_strategic_regions$')] and [Concept('concept_trade_privilege','$concept_trade_privileges$')]. $concept_trade_advantage$ is calculated per $concept_good$, per direction, so the $concept_trade_advantage$ differs for $concept_importing$ Coal and $concept_exporting$ Fabric for example."
+
+ concept_trade_potential: "Trade Potential"
+ concept_trade_potential_desc: "$concept_trade_potential$ is a rough approximation for the potential to [Concept('concept_trade','$concept_import$')] or [Concept('concept_trade','$concept_export$')] a [concept_good] in a particular [concept_state]. It considers numerous factors such as the the [concept_local_price], the [concept_world_market_price], [concept_trade_advantage], the difference between [concept_good_production] and [concept_good_consumption], as well as [concept_tariffs] and [concept_subventions]. \n\n@information! $concept_trade_potential$ should #b not#! be considered an accurate predictor of trade volumes, but is useful to determine which $concept_goods$ a $concept_state$ is likely to $concept_trade$ more of if it has free $concept_trade_capacity$."
+
+ concept_trade_capacity: "Trade Capacity"
+ concept_trade_capacity_usage: "Trade Capacity Usage"
+ concept_trade_capacity_desc: "$concept_trade_capacity$ is generated by [GetBuildingType('building_trade_center').GetName] levels and used to conduct [concept_trade] with the [concept_world_market]. The quantity of [Concept('concept_good','$concept_goods$')] traded per $concept_trade_capacity$ varies per $concept_good$."
+
+ concept_market_area: "Market Area"
+ concept_market_areas: "Market Areas"
+ concept_market_area_possessive: "Market Area’s"
+ concept_market_area_desc: "$concept_market_areas$ are parts of a [concept_market] that are connected via land or straits. There is always one [concept_world_market_hub] per $concept_market_area$ through which it conducts [concept_trade] with the [concept_world_market]."
+
+ concept_traded_quantity: "Traded Quantity"
+ concept_traded_quantity_desc: "The amount of a [concept_good] that is [Concept('concept_trade', '$concept_imported$')] or $concept_exported$ with each [concept_trade_capacity] used."
+  concept_national: "National"
+ concept_privatizations: "Privatizations"
+ concept_private: "Private"
+concept_monopoly: "Monopoly"
+ concept_monopolies: "Monopolies"
+ concept_monopolize: "Monopolize"
+ concept_monopolized: "Monopolized"
+ concept_monopoly_desc: "A $concept_monopoly$ on a [concept_building] gives its owner exclusive $concept_building$ rights of that [Concept('concept_building', '$concept_building_industry$')]. It can either be a [concept_company_monopoly] or a [concept_country_monopoly]."
+
+ concept_company_monopoly: "Company Monopoly"
+ concept_company_monopolies: "Company Monopolies"
+ concept_company_monopolize: "Company Monopolize"
+ concept_company_monopolized: "Company Monopolized"
+ concept_company_monopoly_short: "Monopoly"
+ concept_company_monopolies_short: "Monopolies"
+ concept_company_monopolize_short: "Monopolize"
+ concept_company_monopolized_short: "Monopolized"
+ concept_company_monopoly_desc: "A $concept_company_monopoly$ gives a [concept_company] a [concept_monopoly] on a [concept_building] with exclusive $concept_building$ rights of that [Concept('concept_building', '$concept_building_industry$')]"
+
+ concept_country_monopoly: "Country Monopoly"
+ concept_country_monopolies: "Country Monopolies"
+ concept_country_monopolize: "Country Monopolize"
+ concept_country_monopolized: "Country Monopolized"
+ concept_country_monopoly_short: "Monopoly"
+ concept_country_monopolies_short: "Monopolies"
+ concept_country_monopolize_short: "Monopolize"
+ concept_country_monopolized_short: "Monopolized"
+ concept_country_monopoly_desc: "A $concept_country_monopoly$ gives a [concept_country] a [concept_monopoly] on a [concept_building] with exclusive $concept_building$ rights of that [Concept('concept_building', '$concept_building_industry$')]"
+
+ concept_company_charter: "Company Charter"
+ concept_company_charters: "Company Charters"
+ concept_company_charter_short: "Charter"
+ concept_company_charters_short: "Charters"
+ concept_company_charter_desc: "[Concept('concept_country','$concept_countries$')] can give their [Concept('concept_company','$concept_companies$')] a $concept_company_charter$ which grants the $concept_company$ a particular right. These rights can range from establishing a [concept_monopoly] to the rights to build a different [Concept('concept_building', '$concept_building_industry$')] or to construct a [concept_regional_company_hq] in another country. $concept_countries$ have a number of free $concept_company_charters$ they can hand out at no cost. [Concept('concept_technology','$concept_technologies$')] and [Concept('concept_law','$concept_laws$')] can increase this limit. Additional $concept_company_charters_short$ past the limit can be given to $concept_companies$, but will incur an [concept_authority] cost."
+
+ concept_company_hq: "Company HQ"
+ concept_company_hqs: "Company HQs"
+ concept_company_hq_short: "HQ"
+ concept_company_hqs_short: "HQs"
+ concept_company_hq_desc: "$concept_company_hqs$ are [Concept('concept_building','$concept_buildings$')] that represent the administration of [concept_company] assets. They own [Concept('concept_building_level','$concept_building_levels$')] from which they receive their [concept_dividends]."
+
+ concept_regional_company_hq: "Regional Company HQ"
+ concept_regional_company_hqs: "Regional Company HQs"
+ concept_regional_company_hq_short: "Regional HQ"
+ concept_regional_company_hqs_short: "Regional HQs"
+ concept_regional_company_hq_desc: "A [concept_company] can establish a $concept_regional_company_hq$ in a foreign [concept_country] if they have been granted an Investment [concept_company_charter] by their own $concept_country$. Additionally they need access to the foreign $concept_country$ via [concept_foreign_investment_rights] and an established presence with a small number of [Concept('concept_building_level','$concept_building_levels$')]. The $concept_regional_company_hq$ acts mostly like a [concept_company_hq], but will use the foreign $concept_country_possessive$ [concept_investment_pool] to construct additional $concept_building_levels$ and will reinvest parts of their [concept_dividends] directly into their own $concept_country_possessive$ $concept_investment_pool$."
+
+
+ concept_tariffs: "Tariffs"
+ concept_tariff: "Tariff"
+ concept_tariff_rate: "Tariff Rate"
+ concept_tariffs_desc: "$concept_tariffs$ are a fee that [Concept('concept_country', '$concept_countries$')] can collect from a [GetBuildingType('building_trade_center').GetName] for each [Concept('concept_trade', '$concept_imported$')] or $concept_exported$ [concept_good]. Therefore, they will make it less attractive to conduct [concept_trade] of a particular [concept_good], for example to ensure critical military $concept_goods$ remain in the $concept_country$. A $concept_country_possessive$ [Concept('concept_law', '$concept_laws$')] determines their maximum level of $concept_tariffs$. The level of $concept_tariffs$ for all members of a [concept_market] are determined by the [concept_market_owner]."
+
+ concept_subventions: "Subventions"
+ concept_subvention: "Subvention"
+ concept_subvention_rate: "Subvention Rate"
+ concept_subventions_desc: "$concept_subventions$ are a sum of money a [concept_country] can pay out to a [GetBuildingType('building_trade_center').GetName] for each [Concept('concept_trade', '$concept_imported$')] or $concept_exported$ [concept_good]. Therefore, they will make it more attractive to conduct [concept_trade] of a particular good, for example to weaken the competition. A $concept_country_possessive$ [Concept('concept_law', '$concept_laws$')] determines their maximum level of $concept_subventions$. The level of $concept_subventions$ for all members of a [concept_market] are determined by the [concept_market_owner]."
+
+
 
  concept_building_owners: "Building Owners"
  concept_building_owners_desc: "A [Concept('concept_building','$concept_building_possessive$')] size is divided into [Concept('concept_building_level','$concept_building_levels_short$')]. These $concept_building_levels_short$ can either be [concept_privately_owned] by [Concept('concept_pop','$concept_pops$')], or [concept_nationally_owned] by a [Concept('concept_country','$concept_country$')]. The [Concept('concept_building_balance','$concept_building_balance_profit$')] from a $concept_building$ is shared among its owners as [concept_dividends]."
@@ -276,14 +370,16 @@
  concept_company_possessive: "Company’s"
  concept_company_desc: "$concept_companies$ are associated with one or several types of [Concept('concept_building','$concept_buildings$')] in a [concept_country]. When established in said $concept_country$ they increase the [concept_throughput] and @construction![Nbsp][concept_construction] efficiency of their associated $concept_buildings$. The degree to which a $concept_company$ provides benefits depends on the relative [concept_prestige] ranking of the $concept_country$, with $concept_countries$ in the #v Top-[GetDefine('NDiplomacy','TOP_PRESTIGE_RANK_BONUS_THRESHOLD')]#! receiving even stronger bonuses.\n\n$concept_companies$ have a [concept_prosperity] score which increases from high [concept_productivity] and can provide additional bonuses for its $concept_country$."
  
- concept_prosperity: "Prosperity"
- concept_prosperity_desc: "$concept_companies$ have a $concept_prosperity$ score which depends on their [concept_productivity]. When a $concept_company$ has at least [GetDefine('NEconomy','COMPANY_PROSPERITY_BONUS_THRESHOLD')|v0] $concept_prosperity$, it will activate a bonus [concept_modifier] for its [concept_country].\n\n$concept_prosperity$ will #b increase#! while $concept_productivity$ is at least #p @money![GetDefine('NEconomy','COMPANY_PRODUCTIVITY_ABSOLUTE_HIGH_THRESHOLD')|0]#! or #p x[GetDefine('NEconomy','COMPANY_PRODUCTIVITY_RATIO_HIGH_THRESHOLD')]#! the global average (whichever is lower) and #b decrease#! while it is below #n @money![GetDefine('NEconomy','COMPANY_PRODUCTIVITY_ABSOLUTE_LOW_THRESHOLD')|0]#! or #n x[GetDefine('NEconomy','COMPANY_PRODUCTIVITY_RATIO_LOW_THRESHOLD')]#! the global average (whichever is higher)."
-
+  concept_prosperity: "Prosperity"
+ concept_prosperous: "Prosperous"
+ concept_prosperity_desc: "$concept_companies$ have a $concept_prosperity$ score which depends on their [concept_productivity] and number of employed [concept_building] levels, among other factors. When a $concept_company$ reaches [GetDefine('NEconomy','COMPANY_PROSPERITY_BONUS_ACTIVATION_THRESHOLD')|v0] $concept_prosperity$, it will be considered $concept_prosperous$ and activate a bonus [concept_modifier] for its [concept_country].\nIf the $concept_prosperity$ of a $concept_prosperous$ company falls below [GetDefine('NEconomy','COMPANY_PROSPERITY_BONUS_DEACTIVATION_THRESHOLD')|v0] it will no longer be considered $concept_prosperous$ and its bonus $concept_modifier$ will be deactivated."
  concept_building_level: "Building Level"
  concept_building_level_short: "Level"
  concept_building_levels: "Building Levels"
  concept_building_levels_short: "Levels"
- concept_building_level_desc: "A [Concept('concept_building', '$concept_building_possessive$')] $concept_building_level_short$ scales its current [concept_good_consumption], [concept_good_production], [concept_workforce] requirements, and may apply an [concept_economy_of_scale] bonus.\n\nExpanding a $concept_building$'s $concept_building_level_short$ usually requires [concept_construction], though some $concept_building$'s $concept_building_level_short$ is automatically adjusted based on other factors such as [concept_infrastructure], [Concept('concept_trade_route','$concept_trade_routes$')], [Concept('concept_conscription_center','$concept_conscription$')] rate, or unused $concept_arable_land$.\n\nEach $concept_building_level_short$ is either [concept_privately_owned] or [concept_nationally_owned].\n\nThe maximum $concept_building_level_short$ a $concept_building$ can be expanded to may depend on the [concept_resource_potential] or [concept_arable_land] in the [concept_state]."
+ concept_building_levels_parenthetical_plural: "Building Level(s)"
+ concept_building_levels_parenthetical_plural_short: "Level(s)"
+ concept_building_level_desc: "A [Concept('concept_building', '$concept_building_possessive$')] $concept_building_level_short$ scales its current [concept_good_consumption], [concept_good_production], [concept_workforce] requirements, and may apply an [concept_economy_of_scale] bonus.\n\nExpanding a $concept_building$'s $concept_building_level_short$ usually requires [concept_construction], though some $concept_building$'s $concept_building_level_short$ is automatically adjusted based on other factors such as [concept_infrastructure], [Concept('concept_conscription_center','$concept_conscription$')] rate, or unused $concept_arable_land$.\n\nEach $concept_building_level_short$ is either [concept_privately_owned] or [concept_nationally_owned].\n\nThe maximum $concept_building_level_short$ a $concept_building$ can be expanded to may depend on the [concept_resource_potential] or [concept_arable_land] in the [concept_state]."
 
  
  concept_diplomatic_play: "Diplomatic Play"
@@ -380,10 +476,10 @@
  concept_conscription_limit_short: "Limit"
  concept_conscription_limit_desc: "The max number of [Concept('concept_conscript_battalion', '$concept_conscript_battalions$')] a [concept_state] can recruit. The $concept_conscription_limit$ is calculated from the [concept_workforce] of a $concept_state$ multiplied by its $state_conscription_rate_add$. It cannot exceed the $state_building_conscription_center_max_level_add$ set in place by your [GetLawGroup('lawgroup_army_model').GetName] [concept_law]."
 
- concept_strategic_objective: "Strategic Objective"
+  concept_strategic_objective: "Strategic Objective"
  concept_strategic_objectives: "Strategic Objectives"
- concept_strategic_objective_desc: "One of your own [Concept('concept_state','$concept_states$')] or a [concept_state] in an enemy [concept_theater]. When a [concept_general] is advancing into a [concept_front] in which the enemy [concept_theater] contains a Strategic Objective, he will be more likely to advance towards that objective."
-
+ concept_strategic_objective_short: "Objective"
+ concept_strategic_objective_desc: "A $concept_strategic_objective$ can be assigned to an [concept_army]. If an enemy or friendly [concept_state] is assigned as an $concept_army_possessive$ $concept_strategic_objective$, any of the $concept_army_possessive$ advancing [Concept('concept_general','$concept_generals$')] will try to advance the [concept_front] towards that $concept_state$. If the $concept_state$ is under friendly control, they will prioritize expanding the defensive perimiter around the $concept_state$. While defending $concept_generals$ will focus on the defence of the $concept_state$ and surrounding areas, prioritizing defensive [Concept('concept_battle','$concept_battles$')] closest to the $concept_strategic_objective$.\n\nAn $concept_army$ can have one $concept_strategic_objective$, but several $concept_armies$ can have the same $concept_state$ as their $concept_strategic_objective_short$."
  concept_conscript_battalion: "Conscript Battalion"
  concept_conscript_battalions: "Conscript Battalions"
  concept_conscript_battalion_short: "Conscript"
@@ -505,14 +601,14 @@
  concept_capacity_desc: "A measure of your [Concept('concept_country','$concept_country_possessive$')] capabilities in one of three areas: [concept_bureaucracy], [concept_authority], and [concept_influence]. $concept_capacities$ are not stored and used, but continuously generated from different sources and continually expended by the various projects you have going on. Your remaining balance in each area is displayed in the top bar. Having an excess of a $concept_capacity$ will yield a minor bonus for your $concept_country$, while having a lack of a $concept_capacity$ will inflict large penalties."
 
  concept_bureaucracy: "Bureaucracy"
- concept_bureaucracy_desc: "@bur! Bureaucracy is a [concept_capacity] used to maintain your [Concept('concept_country','$concept_country_possessive$')] administrative cohesion and day-to-day operations. The cost increases with the population across your [Concept('concept_incorporated_state', '$concept_incorporated_states$')] and with every [concept_institution] investment level, and is also used to administer [Concept('concept_commander','$concept_commanders$')] and [Concept('concept_trade_route','$concept_trade_routes$')]. You gain @bur! from operating [SelectLocalization(GetPlayer.IsValid,'concept_bureaucracy_desc_added','Government Administration')] [Concept('concept_building','$concept_buildings$')]."
+ concept_bureaucracy_desc: "@bur! Bureaucracy is a [concept_capacity] used to maintain your [Concept('concept_country','$concept_country_possessive$')] administrative cohesion and day-to-day operations. The cost increases with the population across your [Concept('concept_incorporated_state', '$concept_incorporated_states$')] and with every [concept_institution] investment level, and is also used to administer [Concept('concept_commander','$concept_commanders$')]. You gain @bur! from operating [SelectLocalization(GetPlayer.IsValid,'concept_bureaucracy_desc_added','Government Administration')] [Concept('concept_building','$concept_buildings$')]."
  concept_bureaucracy_desc_added: "[GetBuildingType('building_government_administration').GetName]"
  
  concept_authority: "Authority"
  concept_authority_desc: "@aut! Authority is a [concept_capacity] used to effect internal change to your [concept_country], like issuing [Concept('concept_decree', '$concept_decrees$')] or managing [Concept('concept_interest_group', '$concept_interest_groups$')]. You gain @aut! from [Concept('concept_law', '$concept_laws$')]."
  
  concept_influence: "Influence"
- concept_influence_desc: "@inf! Influence is a [concept_capacity] used for [Concept('concept_diplomatic_action', '$concept_diplomatic_actions$')] and [Concept('concept_diplomatic_pact','$concept_diplomatic_pacts_short$')] targeting another [concept_country]. You gain @inf! based on your [concept_rank]."
+ concept_influence_desc: "@inf! Influence is a [concept_capacity] used for [Concept('concept_diplomatic_action', '$concept_diplomatic_actions$')], [Concept('concept_diplomatic_pact','$concept_diplomatic_pacts_short$')] and [Concept('concept_treaty', '$concept_treaties$')] targeting another [concept_country]. You gain @inf! based on your [concept_rank]."
 
  concept_institution: "Institution"
  concept_institutions: "Institutions"
@@ -537,8 +633,8 @@
  concept_enactment_phase_ingame_added: "- [GetPlayer.GetCustom('enactment_phase_0')|v], [GetPlayer.GetCustom('enactment_phase_1')|v], and [GetPlayer.GetCustom('enactment_phase_2')|v] - "
 
  concept_money: "Money"
- concept_money_desc: "$concept_money$ makes the world go 'round. It is used to pay for [Concept('concept_government_wage','$concept_government_wages$')] and [concept_bureaucracy] production, [concept_construction] materials, industry [concept_subsidies], [concept_convoys] for your [Concept('concept_trade_route','$concept_trade_routes$')], and last but probably not least, your military. You gain $concept_money$ by [Concept('concept_taxes','$concept_taxing$')] your [Concept('concept_pop', '$concept_pops$')] and enforcing [concept_tariffs]. Excess $concept_money$ in your [concept_treasury] balance is used to pay off your [concept_loans] or stockpile gold in your [concept_gold_reserves]. Insufficient $concept_money$ increases your $concept_loans$ towards your [Concept('concept_credit','$concept_credit_limit$')], which is determined by how much $concept_money$ is in your $concept_buildings$' [concept_cash_reserves]."
- 
+  concept_money_desc: "$concept_money$ makes the world go 'round. It is used to pay for [Concept('concept_government_wage','$concept_government_wages$')] and [concept_bureaucracy] production, [concept_construction] materials, industry [concept_subsidies], [concept_convoys] for your [Concept('concept_shipping_lane','$concept_shipping_lanes$')], and last but probably not least, your military. You gain $concept_money$ by [Concept('concept_taxes','$concept_taxing$')] your [Concept('concept_pop', '$concept_pops$')] and enforcing [concept_tariffs]. Excess $concept_money$ in your [concept_treasury] balance is used to pay off your [concept_loans] or stockpile gold in your [concept_gold_reserves]. Insufficient $concept_money$ increases your $concept_loans$ towards your [Concept('concept_credit','$concept_credit_limit$')], which is determined by how much $concept_money$ is in your $concept_buildings$' [concept_cash_reserves]."
+
  concept_workforce: "Workforce"
  concept_workforce_desc: "The $concept_workforce$ of a [concept_building] consists of [Concept('concept_pop', '$concept_pops$')] of different [Concept('concept_profession', '$concept_professions$')] depending on the currently active [Concept('concept_production_method', '$concept_production_methods$')]."
 
@@ -568,10 +664,27 @@
  concept_market_prices_short: "Prices"
  concept_market_price_desc: "The price of a [concept_good] in the [concept_market]. It is based on [concept_buy_orders] and [concept_sell_orders], and affect the [concept_local_price] of [Concept('concept_good','$concept_goods$')] in all participating [Concept('concept_state','$concept_states$')] depending on their [concept_market_access].\n\nThe degree to which the $concept_market_price$ influences the [concept_local_price] is calculated by multiplying the [concept_market_access] with the [Concept('concept_state','$concept_state_possessive$')] #v $state_market_access_price_impact$#! modifier."
 
+ concept_combat_unit_groups_short: "Unit Groups"
+ concept_blockade: "Blockade"
+ concept_blockade_level: "Blockade Level"
+ concept_blockades: "Blockades"
+ concept_blockaded: "Blockaded"
+ concept_blockade_desc: "$concept_blockades$ are a set up in a [concept_sea_node] via an [concept_admiral] [concept_order]. They damage [Concept('concept_supply_network','$concept_supply_networks$')] and reduce access to the [concept_world_market] in ports adjacent to the $concept_sea_node$. The $concept_blockade_level$ is determined by the respective attribute on ship [Concept('concept_unit','$concept_unit$')]. [GetCombatUnitGroup('combat_unit_group_capital_ship').GetName] are best suited for $concept_blockades$."
+
  concept_local_price: "Local Price"
  concept_local_prices: "Local Prices"
- concept_local_price_desc: "The price of a [concept_good] in a [concept_state]. It is determined by the local [concept_good_consumption] and [concept_good_production], moderated by the [concept_market_price] depending on the [Concept('concept_state','$concept_state_possessive$')] [concept_market_access] and #v $state_market_access_price_impact$#! modifier. All transactions except [Concept('concept_trade_route','$concept_trade$')] occur in the $concept_local_price$, with purchases and sales creating [Concept('concept_buy_orders','$concept_buy_order_short$')] and [concept_sell_orders] on the [concept_market]."
- 
+  concept_local_goods_prices: "Local Goods Prices"
+ concept_local_price_desc: "The price of a [concept_good] in a [concept_state]. It is determined by the local [concept_good_consumption] and [concept_good_production], moderated by the [concept_market_price] depending on the [Concept('concept_state','$concept_state_possessive$')] [concept_market_access] and #v $state_market_access_price_impact$#! modifier. All transactions occur in the $concept_local_price$, with purchases and sales creating [Concept('concept_buy_orders','$concept_buy_order_short$')] and [concept_sell_orders] on the [concept_market]."
+
+ concept_world_market_price: "World Market Price"
+ concept_world_market_price_desc: "The average price at which a [concept_good] is traded on the [concept_world_market]. This is dependent on the number of [Concept('concept_trade','$concept_exports$')] versus $concept_imports$ of that $concept_good$."
+
+ concept_import_price: "Import Price"
+ concept_import_price_desc: "The price at which a [concept_good] is imported from the [concept_world_market] in a specific [concept_state]. This is based on both the [concept_world_market_price] and the $concept_state_possessive$ relative [concept_trade_advantage]."
+
+ concept_export_price: "Export Price"
+ concept_export_price_desc: "The price at which a [concept_good] is exported to the [concept_world_market] in a specific [concept_state]. This is based on both the [concept_world_market_price] and the $concept_state_possessive$ relative [concept_trade_advantage]."
+
  concept_local_good: "Local Good"
  concept_local_goods: "Local Goods"
  concept_local_good_desc: "$concept_local_goods$ are certain [Concept('concept_good','$concept_goods$')] that are not available in the wider [concept_market] outside the [concept_state] where they are produced. Their price is fully determined by local [concept_good_production] and [concept_good_consumption], with [concept_market_price] not factored in at all."
@@ -599,8 +712,8 @@
   concept_court_intrigue_desc: "$concept_court_intrigue$ represents the progress various plots to overthrow the [Concept('concept_ruler','$RULER_TITLE_MAHARAJA$')]. $concept_court_intrigue_short$ is tracked in the #b $je_sikh_sovereignty$#! [concept_journal_entry]. If $concept_court_intrigue_short$ reaches #v 100%#!, the $RULER_TITLE_MAHARAJA$ will be assassinated, and a new candidate enthroned.\n\n#title $concept_court_intrigue$ can be affected by the following conditions:#!\n• [GetCharacterTrait('ambitious').GetName] or [GetCharacterTrait('ruthless').GetName] [Concept('concept_leader', '$concept_leaders$')]\n• [concept_ruler] [concept_popularity]\n• [concept_legitimacy]\n• The [concept_clout] of the $concept_ruler_possessive$ [concept_interest_group]\n• Events and other conditions"
  # Sikh Empire Content
  je_sikh_sovereignty: "Sikh Sovereignty"
- je_sikh_sovereignty_reason:1 "These are the early days of our newly established dynasty. Our burgeoning kingdom has enjoyed great success in the years since the #bold Sher-e-Punjab#! conquered the former Mughal imperial capital.\n\nIt is critical at this time that we protect our territory from outside aggression and honor the tenets of our [GetReligion('sikh').GetName] faith. May the legacy of this dynasty be long-lasting!\n\n#b [concept_empire_stability] and [concept_court_intrigue]#!\nThe [ROOT.GetCountry.GetNameNoFormatting] faces more than just external threats. Forces within our court may conspire to overthrow our [concept_ruler] in favor of their preferred candidate. If our #b $sikh_empire_intrigue_bar$#! reaches #v 100%#!, our [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] ($concept_ruler$) will be assassinated, #b $sikh_empire_progress_bar$#! will be #bold reset#! to #v 0#!, $concept_court_intrigue_short$ will decrease, and a new candidate will be enthroned."
- je_sikh_sovereignty_complete:1 "[concept_empire_stability] has reached #v 100%#!"
+ je_sikh_sovereignty_reason: "These are the early days of our newly established dynasty. Our burgeoning kingdom has enjoyed great success in the years since the #bold Sher-e-Punjab#! conquered the former Mughal imperial capital.\n\nIt is critical at this time that we protect our territory from outside aggression and honor the tenets of our [GetReligion('sikh').GetName] faith. May the legacy of this dynasty be long-lasting!\n\n#b [concept_empire_stability] and [concept_court_intrigue]#!\nThe [ROOT.GetCountry.GetNameNoFormatting] faces more than just external threats. Forces within our court may conspire to overthrow our [concept_ruler] in favor of their preferred candidate. If our #b $sikh_empire_intrigue_bar$#! reaches #v 100%#!, our [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] ($concept_ruler$) will be assassinated, #b $sikh_empire_progress_bar$#! will be #bold reset#! to #v 0#!, $concept_court_intrigue_short$ will decrease, and a new candidate will be enthroned."
+ je_sikh_sovereignty_complete: "[concept_empire_stability] has reached #v 100%#!"
 
 
  concept_interest_group: "Interest Group"
@@ -859,9 +972,9 @@ concept_acceptance: "Acceptance"
  concept_market_capital: "Market Capital"
  concept_market_capitals: "Market Capitals"
  concept_market_capital_short: "Capital"
- concept_market_capital_desc: "The [concept_state] that serves as the nexus of a [concept_market], to which all other $concept_states$ in the $concept_market$ must connect lest they become [Concept('concept_isolated_state','$concept_isolated_state_short$')]. [Concept('concept_trade_route','$concept_trade_routes$')] are often, but not always, managed from the $concept_market_capital$. The $concept_market_capital$ is often the same $concept_state$ as the [Concept('concept_market_owner','$concept_market_owner_possessive$')] [concept_capital_state], but it is possible to keep these separate.[AddLocalizationIf(GetPlayer.IsValid,'concept_market_capital_desc_added')] "
+ concept_market_capital_desc: "The [concept_state] that serves as the nexus of a [concept_market], to which all other $concept_states$ in the $concept_market$ must connect lest they become [Concept('concept_isolated_state','$concept_isolated_state_short$')]. [concept_trade] with the [concept_world_market] is often, but not always, managed from the $concept_market_capital$. The $concept_market_capital$ is often the same $concept_state$ as the [Concept('concept_market_owner','$concept_market_owner_possessive$')] [concept_capital_state], but it is possible to keep these separate.[AddLocalizationIf(GetPlayer.IsValid,'concept_market_capital_desc_added')] "
  concept_market_capital_desc_added: "\nThe following effects apply:\n[GetStaticModifier('market_capital_state').GetDesc]"
-
+ concept_market_shares: "Market Shares"
  concept_ownership_share: "Pop Ownership Share"
  concept_ownership_shares: "Pop Ownership Shares"
  concept_ownership_share_desc: "Determines how the [Concept('concept_building_balance','$concept_building_balance_profit$')] of [Concept('concept_building_level','$concept_building_levels$')] that are [concept_privately_owned] by its [concept_workforce] is distributed.\n\nThe [concept_dividends] are given to each [Concept('concept_pop','$concept_pops$')] as [concept_pop_income], depending on the size of their share compared to the rest of the $concept_workforce$.\n\nThe $concept_pop$ is also considered to own that proportion of the [concept_building]'s current [concept_cash_reserves].\n\nThis is the main source of income for $ARISTOCRATS_GC_LINK$ and $CAPITALISTS_GC_LINK$, as they are considered part of the $concept_workforce$ of $MANOR_HOUSES_GC_LINK$ and $FINANCIAL_DISTRICTS_GC_LINK$, respectively."
@@ -877,14 +990,16 @@ concept_acceptance: "Acceptance"
  concept_bankruptcy_desc_added: "\n\nIn addition, the following effects are applied for #v [GetDefine('NEconomy','DECLARE_BANKRUPTCY_PENALTY_DURATION_YEARS')|0] years#!:\n[GetStaticModifier('declared_bankruptcy').GetDesc]"
 
  concept_market_owner: "Market Owner"
+ concept_market_owners: "Market Owners"
  concept_market_owner_possessive: "Market Owner’s"
- concept_market_owner_desc: "The [concept_country] that owns the market, either because it is the only participant or the [concept_senior_partner] in a [concept_customs_union]. Only the $concept_market_owner$ may set [concept_tariffs], [Concept('concept_market_good_policy','$concept_market_good_policies$')], and issue [Concept('concept_embargo','$concept_embargoes$')]."
+ concept_market_owner_desc: "The [concept_country] that owns the market, either because it is the only participant or the [concept_senior_partner] in a [concept_customs_union]. Only the $concept_market_owner$ may sign [Concept('concept_trade_privilege','$concept_trade_privileges$')] and issue [Concept('concept_embargo','$concept_embargoes$')]."
 
  concept_embargo: "Embargo"
  concept_embargoed: "Embargoed"
  concept_embargoes: "Embargoes"
  concept_embargoing: "Embargoing"
- concept_embargo_desc: "An [concept_ongoing_diplomatic_action] established by one [concept_country] targeting another, which completely blocks the target [concept_country] from importing or exporting [Concept('concept_good','$concept_goods$')] in the [concept_market] belonging to the country enforcing the embargo. $concept_countries$ that are at [concept_war] will automatically Embargo each other."
+ concept_embargo_desc: "An [concept_ongoing_diplomatic_action] established by one [concept_country] targeting another, which reduces the [concept_trade_advantage] of the target $concept_country$ for exporting [Concept('concept_good','$concept_goods$')] to the country enforcing the embargo via the [concept_world_market]. $concept_countries$ that are at [concept_war] will automatically Embargo each other."
+
  
  concept_encourage_consumption: "Encourage Consumption"
  concept_encouraging_consumption: "Encouraging Consumption"
@@ -1013,7 +1128,7 @@ concept_acceptance: "Acceptance"
 ### ITEMS BELOW THIS LINE UPDATED OR VERIFIED MAY 1, 2022
 
  concept_war_reparations: "War Reparations"
- concept_war_reparations_desc: "A secondary [concept_war_goal] that can be added onto a [concept_diplomatic_play] and claimed as part of a [concept_peace_deal]. If enforced, the targeted [concept_country] is forced to transfer [GetDiplomaticActionType('war_reparations').GetIncomeTransfer|v%] of their [concept_treasury] income to the other for a duration of #v [GetDefine('NDiplomacy','WAR_GOAL_REPARATIONS_MONTHS')|0] months#!."
+  concept_war_reparations_desc: "A secondary [concept_war_goal] that can be added onto a [concept_diplomatic_play] by choosing a specific [concept_article] to accompany it and claimed as part of a [concept_peace_deal]. If enforced, a new [concept_treaty] will be created containing all [Concept('concept_article','$concept_articles$')] that were selected as war reparations by the other [concept_country] with a minimum binding period that lasts for the duration of the [concept_truce]."
  
  concept_colonization_rights: "Colonization Rights"
  concept_colonization_rights_desc: "A [concept_diplomatic_pact] that is created when a [concept_decentralized_nation] is defeated in a [concept_native_uprising]. It increases the speed at which the country granted $concept_colonization_rights$ colonizes their territory, and lasts for the duration of the truce."
@@ -1021,12 +1136,20 @@ concept_acceptance: "Acceptance"
 
  concept_foreign_investment: "Foreign Investment"
  concept_foreign_investments: "Foreign Investments"
- concept_foreign_investment_desc: "A [concept_country] constructing and owning [Concept('concept_building_level','$concept_building_levels$')] in another $concept_country$.\n\n$concept_foreign_investments$ can be made by an [concept_overlord] in its [Concept('concept_subject','$concept_subjects$')], or between two sovereign $concept_countries$ by signing a [concept_foreign_investment_rights] Pact.\n\nBoth [concept_government_construction] and [concept_private_construction] are allowed via $concept_foreign_investment$.\n\nWhile the foreign owner constructs the $concept_building_levels$ and gains [concept_dividends], the [concept_workforce] comes from the local [concept_state], and [concept_taxes] are paid to the $concept_country$ controlling that $concept_state$. Any [Concept('concept_good','$concept_goods$')] used by the [concept_building] remains in the local [concept_market]."
+ concept_foreign_investment_desc: "A [concept_country] constructing and owning [Concept('concept_building_level','$concept_building_levels$')] in another $concept_country$.\n\n$concept_foreign_investments$ can be made by an [concept_overlord] in its [Concept('concept_subject','$concept_subjects$')], or between two sovereign $concept_countries$ by signing a [concept_foreign_investment_rights] [concept_treaty].\n\nBoth [concept_government_construction] and [concept_private_construction] are allowed via $concept_foreign_investment$.\n\nWhile the foreign owner constructs the $concept_building_levels$ and gains [concept_dividends], the [concept_workforce] comes from the local [concept_state], and [concept_taxes] are paid to the $concept_country$ controlling that $concept_state$. Any [Concept('concept_good','$concept_goods$')] used by the [concept_building] remains in the local [concept_market]."
 
  concept_foreign_investment_rights: "Foreign Investment Rights"
  concept_foreign_investment_rights_short: "Investment Rights"
- concept_foreign_investment_rights_desc: "Permits one [concept_country] to do [concept_foreign_investment] in another for the duration of the pact."
+ concept_foreign_investment_rights_desc: "Permits one [concept_country] to do [concept_foreign_investment] in another for the duration of the [concept_treaty]. Additionally the $concept_treaty$ allows [Concept('concept_company','$concept_companies$')] to construct a [concept_regional_company_hq] if they are given the $investment_charter$ [concept_company_charter]."
 
+ concept_exiled_army: "Exiled Army"
+ concept_exiled_armies: "Exiled Armies"
+ concept_exiled_army_short: "Exiled"
+ concept_exiled_army_exile: "Exile"
+ concept_exiled_army_desc: "[Concept('concept_army','$concept_armies$')] can become $concept_exiled_army_short$ when their [concept_front] cannot be reached any longer and they cannot find a valid alternative. This can happen for example when they are fully surrounded. An $concept_exiled_army$ will move to the nearest [concept_hq] before it can be sent to another $concept_front$ or be given other [Concept('concept_order','$concept_orders$')] again. While doing so, the $concept_army$ will suffer from [concept_attrition]."
+
+ concept_military_access: "Military Access"
+ concept_military_access_desc: "$concept_military_access$ can be used to attack an enemy through the lands of other neutral [Concept('concept_country','$concept_countries$')]. It is secured by establishing an [concept_ongoing_diplomatic_action] with the neutral $concept_country$."
  concept_open_market: "Market Opening"
  concept_open_market_short: "Open"
  concept_open_market_desc: "A [concept_war_goal] that can be claimed in a [concept_diplomatic_play] or as part of a [concept_peace_deal]. A [concept_country] forced to $concept_open_market_short$ its [concept_market] immediately changes its [SelectLocalization(GetPlayer.IsValid,'concept_open_market_desc_added','Trade Policy')] to [SelectLocalization(GetPlayer.IsValid,'concept_open_market_desc_added_2','Free Trade')] and may not change it again for #v [GetDefine('NDiplomacy','WAR_GOAL_OPEN_MARKET_MONTHS')|0] months#!. [AddLocalizationIf(GetPlayer.IsValid,'concept_open_market_desc_added_3')]"
@@ -1044,27 +1167,28 @@ concept_acceptance: "Acceptance"
  concept_customs_union_desc: "An enforced pact between a [concept_senior_partner] and one or several [Concept('concept_junior_partner','$concept_junior_partners$')] to share a single [concept_market], under the leadership of the $concept_senior_partner$. Usually enforced via a [concept_power_bloc] [concept_power_bloc_principle]. Additionally, all [concept_subject] $concept_diplomatic_pacts_short$ also act as a $concept_customs_union$."
  
  concept_senior_partner: "Senior Partner"
- concept_senior_partner_desc: "A $concept_senior_partner$ in a [concept_customs_union] gains control of their [Concept('concept_junior_partner','$concept_junior_partners_possessive$')] [Concept('concept_market','$concept_markets$')]. While the $concept_junior_partners$ may continue to [Concept('concept_trade_route','$concept_trade$')] with other $concept_markets$, only the $concept_senior_partner$ may issue [Concept('concept_embargo','$concept_embargoes$')] and control [Concept('concept_tariffs','$concept_tariff$')] levels. In exchange the $concept_senior_partner$ shares a minor portion of the $concept_market$'s $concept_tariff$ income, while both [Concept('concept_country','$concept_countries_possessive$')] [Concept('concept_building','$concept_building_industries$')] benefit from participating in a more powerful and mature $concept_market$."
+ concept_senior_partner_desc: "A $concept_senior_partner$ in a [concept_customs_union] gains control of their [Concept('concept_junior_partner','$concept_junior_partners_possessive$')] [Concept('concept_market','$concept_markets$')]. While the $concept_junior_partners$ may continue to [concept_trade] with other $concept_markets$, only the $concept_senior_partner$ may issue [Concept('concept_embargo','$concept_embargoes$')] and control [Concept('concept_tariffs','$concept_tariff$')] levels. In exchange the $concept_senior_partner$ shares a minor portion of the $concept_market$'s $concept_tariff$ income, while both [Concept('concept_country','$concept_countries_possessive$')] [Concept('concept_building','$concept_building_industries$')] benefit from participating in a more powerful and mature $concept_market$."
+
 
  concept_junior_partner: "Junior Partner"
  concept_junior_partners: "Junior Partners"
  concept_junior_partners_possessive: "Junior Partners’"
- concept_junior_partner_desc: "A $concept_junior_partner$ in a [concept_customs_union] yields control of their [concept_market] to the [concept_senior_partner]. While the $concept_junior_partner$ may continue to [Concept('concept_trade_route','$concept_trade$')] with other $concept_markets$, they may not issue [Concept('concept_embargo','$concept_embargoes$')] or control [Concept('concept_tariffs','$concept_tariff$')] levels. In exchange they collect a minor portion of the $concept_market$'s $concept_tariff$ income and their [Concept('concept_building','$concept_building_industries$')] benefit from participating in a more powerful and mature $concept_market$."
+ concept_junior_partner_desc: "A $concept_junior_partner$ in a [concept_customs_union] yields control of their [concept_market] to the [concept_senior_partner]. While the $concept_junior_partner$ may continue to [concept_trade] with other $concept_markets$, they may not issue [Concept('concept_embargo','$concept_embargoes$')] or control [Concept('concept_tariffs','$concept_tariff$')] levels. In exchange they collect a minor portion of the $concept_market$'s $concept_tariff$ income and their [Concept('concept_building','$concept_building_industries$')] benefit from participating in a more powerful and mature $concept_market$."
 
  concept_regime_change: "Regime Change"
  concept_regime_change_desc: "Forces the target to change their [concept_government] to one similar to the enforcer, and to immediately enact up to #v [GetDefine('NPolitics','NUM_REVOLUTIONARY_LAW_CHANGES')]#! [Concept('concept_law', '$concept_laws$')] favored by the new regime."
 
  concept_alliance: "Alliance"
  concept_alliances: "Alliances"
- concept_alliance_desc: "A [concept_diplomatic_pact] between two [Concept('concept_country','$concept_countries$')]. $concept_countries$ engaged in an $concept_alliance$ may always side with each other in [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')] regardless of if the other side maintains an [concept_active_interest] in the affected [concept_strategic_region]. This applies no matter if the other $concept_country$ is the initiator or target of the $concept_diplomatic_play_short$."
+ concept_alliance_desc: "A [concept_treaty] [concept_article] between two [Concept('concept_country','$concept_countries$')]. $concept_countries$ engaged in an $concept_alliance$ may always side with each other in [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')] regardless of if the other side maintains an [concept_active_interest] in the affected [concept_strategic_region]. This applies no matter if the other $concept_country$ is the initiator or target of the $concept_diplomatic_play_short$."
 
  concept_defensive_pact: "Defensive Pact"
  concept_defensive_pacts: "Defensive Pacts"
- concept_defensive_pact_desc: "A [concept_diplomatic_pact] is a limited [concept_alliance] between two [Concept('concept_country','$concept_countries$')], which only comes into effect in [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')] where one of the two is the [concept_target] of the $concept_diplomatic_play_short$."
+  concept_defensive_pact_desc: "A [concept_treaty] [concept_article] that is a limited [concept_alliance] between two [Concept('concept_country','$concept_countries$')], which only comes into effect in [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')] where one of the two is the [concept_target] of the $concept_diplomatic_play_short$."
 
  concept_guarantee_independence: "Guarantee Independence"
  concept_guarantee_of_independence: "Guarantee of Independence"
- concept_guarantee_independence_desc: "An [concept_ongoing_diplomatic_action] established by one [concept_country] targeting another, where the second $concept_country$ is able to call the first to aid it in any [concept_diplomatic_play] where they are the defender."
+ concept_guarantee_independence_desc: "A [concept_treaty] [concept_article] established by one [concept_country] targeting another, where the second $concept_country$ is able to call the first to aid it in any [concept_diplomatic_play] where they are the defender."
 
  concept_ally: "Ally"
  concept_allies: "Allies"
@@ -1072,7 +1196,7 @@ concept_acceptance: "Acceptance"
  concept_ally_desc: "An $concept_ally$ is a [concept_country] which maintains an [concept_alliance] or [concept_defensive_pact] with another country and can be called to support them in [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')]. For the [concept_initiator], only [Concept('concept_country','$concept_countries$')] with a full [concept_alliance] are considered to be $concept_allies$ in that [concept_diplomatic_play]."
 
  concept_supply: "Supply"
- concept_supply_desc: "The $concept_supply$ of a [concept_military_formation] determines how quickly [Concept('concept_unit','$concept_units$')] regain [concept_morale].\n\n#indent_newline: $concept_supply$ is usually #v 100%#!, but can be lower if an $concept_army$ is:\n- Overseas and supplied by a compromised [concept_shipping_lane]\n- Contain $concept_units$ whose [concept_building] is subject to [Concept('concept_shortage','$concept_input_goods_shortages$')]\n- Will be zero if the $concept_army$ is completely cut off from its $concept_hq$#!\n\n[Concept('concept_modifier','$concept_modifiers$')] can also apply in some cases."
+ concept_supply_desc: "The $concept_supply$ of a [concept_military_formation] determines how quickly [Concept('concept_unit','$concept_units$')] regain [concept_organization].\n\n#indent_newline:3 $concept_supply$ is usually #v 100%#!, but can be lower if an $concept_army$ is:\n- Overseas and supplied by a compromised [concept_shipping_lane]\n- Contain $concept_units$ whose [concept_building] is subject to [Concept('concept_shortage','$concept_input_goods_shortages$')]\n- Will be zero if the $concept_army$ is completely cut off from its $concept_hq$#!\n\n[Concept('concept_modifier','$concept_modifiers$')] can also apply in some cases."
 
  concept_escort_convoys: "Escort Convoys"
  concept_escort_convoys_desc: "$concept_escort_convoys$ through their [Concept('concept_shipping_lane','$concept_shipping_lanes$')] safely, engaging enemy vessels as needed."
@@ -1110,7 +1234,7 @@ concept_acceptance: "Acceptance"
  concept_mass_migration: "Mass Migration"
  concept_mass_migrations: "Mass Migrations"
  concept_mass_migration_migrating: "Mass Migrating"
- concept_mass_migration_desc: "A $concept_mass_migration$ is the movement of [Concept('concept_pop', '$concept_pops$')] of a specific [concept_culture] in large numbers between two [Concept('concept_country', '$concept_countries$')]. A [Concept('concept_migration_target', '$concept_mass_migration_target$')] may appear if there is a [concept_trade_route] connection between two [Concept('concept_market', '$concept_markets$')] and the [concept_cultural_turmoil] of a specific $concept_culture$ in the origin $concept_country$ is at least [GetDefine('NPops','MASS_MIGRATION_ORIGIN_MIN_TURMOIL')|v%0]. A $concept_country$ is more likely to have one of its $concept_states$ be selected as a $concept_migration_target$ if it has a high [concept_mass_migration_pull]."
+ concept_mass_migration_desc: "A $concept_mass_migration$ is the movement of [Concept('concept_pop', '$concept_pops$')] of a specific [concept_culture] in large numbers between two [Concept('concept_country', '$concept_countries$')]. A [Concept('concept_migration_target', '$concept_mass_migration_target$')] may appear if there is a [concept_trade] connection between two [Concept('concept_market', '$concept_markets$')] and the [concept_cultural_turmoil] of a specific $concept_culture$ in the origin $concept_country$ is at least [GetDefine('NPops','MASS_MIGRATION_ORIGIN_MIN_TURMOIL')|v%0]. A $concept_country$ is more likely to have one of its $concept_states$ be selected as a $concept_migration_target$ if it has a high [concept_mass_migration_pull]."
 
  concept_migration_target: "Migration Target"
  concept_mass_migration_target: "Mass Migration Target"
@@ -1134,7 +1258,41 @@ concept_acceptance: "Acceptance"
 
  concept_treaty_port: "Treaty Port"
  concept_treaty_ports: "Treaty Ports"
- concept_treaty_port_desc: "A coastal [concept_state] that consists of a single [concept_province] taken as a [concept_war_goal] for purpose of opening [Concept('concept_trade_route','$concept_trade$')] with that [concept_country]. A $concept_treaty_port$ permits its owner to bypass [concept_tariffs] and [Concept('concept_embargo','$concept_embargoes$')] when trading with any [concept_market] in the same [concept_state_region]. $concept_treaty_ports$ that come under hostile occupation will not confer any of their benefits while the occupation lasts.\n\nFor a $concept_treaty_port$ to confer its effect, the holder's [concept_rank] must be higher than that of the [concept_market_owner], or the holder must be a [concept_recognized_power] while the [concept_market_owner] is not."
+ concept_treaty_port_desc: "A coastal [concept_split_state] held under a [concept_treaty] for the purpose of opening [concept_trade] with another [concept_country]. A $concept_treaty_port$ is part of the [concept_market] of the $concept_country$ that ceded the $concept_province$, and can freely [concept_trade] with the [concept_world_market].\n\n[concept_tariffs], [concept_subventions] and [Concept('concept_embargo','$concept_embargoes$')] do not affect $concept_treaty_ports$, and the owner gets [concept_trade_advantage] when importing [Concept('concept_good','$concept_goods$')] exported by the $concept_treaty_port$ (and vice versa). If the $concept_treaty$ ceding the $concept_treaty_port$, is broken, it ceases to be a $concept_treaty_port$ and becomes a regular [concept_state]."
+
+ concept_treaty: "Treaty"
+ concept_treaties: "Treaties"
+ concept_treaty_desc: "A $concept_treaty$ is a type of bilateral agreement between two [Concept('concept_country', '$concept_countries$')] and is made up of individual [Concept('concept_article', '$concept_articles$')] that define the rights, duties and @inf![concept_influence] cost of each $concept_country$. $concept_treaties$ remain in effect until either side breaks the agreement or withdraws from it after the initial [concept_binding_period] has passed.\n\n$concept_treaties$ may also be [Concept('concept_enforced_treaty', '$concept_enforced_treaty_forced_short$')] upon a $concept_country$ in the form of [concept_war_reparations] as a result of a [concept_diplomatic_play]."
+ concept_occupy: "Occupy"
+ concept_occupies: "Occupies"
+
+ concept_enforced_treaty: "Enforced Treaty"
+ concept_enforced_treaties: "Enforced Treaties"
+ concept_enforced_treaty_short: "Enforced"
+ concept_enforced_treaty_forced_short: "Forced"
+ concept_enforced_treaty_enforce: "Enforce Treaty"
+ concept_enforced_treaty_enforce_short: "Enforce"
+ concept_enforced_treaty_desc: "An $concept_enforced_treaty$ is a [concept_treaty] forced upon a [concept_country] from backing down in a [concept_diplomatic_play] or capitulating in a [concept_war]. Some [Concept('concept_diplomatic_demand', '$concept_diplomatic_demands$')] can also turn into an $concept_enforced_treaty$.\n\nIt is made up of [concept_war_reparations] or $concept_diplomatic_demands$ containing individual [Concept('concept_article', '$concept_articles$')] that define the rights, duties and @inf![concept_influence] cost for the capitulating $concept_country$. $concept_enforced_treaties$ remain in effect until the demanding side breaks the agreement or either side withdraws from it after the initial [concept_binding_period] has passed."
+
+ concept_article: "Article"
+ concept_articles: "Articles"
+ concept_article_desc: "$concept_articles$ are the components that make up a [concept_treaty] and can take many shapes.\n\nAn $concept_article$ can apply several effects upon one or both [Concept('concept_country','$concept_countries$')] involved and will usually incur an @inf![concept_influence] cost for as long as the $concept_treaty$ is upheld, alternatively an $concept_article$ may also apply specific one-time effects or impart certain duties upon the responsible $concept_country$ that may negatively affect the $concept_treaty$ if [Concept('concept_contravention', '$concept_contravened$')] where the $concept_treaty$ may eventually become [Concept('concept_non_fulfillment', '$concept_non_fulfilled$')].\n\nEach $concept_article$ falls under one of two categories:#indent_newline:3 \n$EFFECT_LIST_BULLET$#bold Mutual#!: Mutual $concept_articles$ extend all of their effects and duties to both $concept_countries$ equally.\n$EFFECT_LIST_BULLET$#bold Directional#!: Directional $concept_articles$ have different effects and duties towards one or the other $concept_country$ depending one whether they are the offering or receiving side respectively.#!"
+
+ concept_contravention: "Contravention"
+ concept_contraventions: "Contraventions"
+ concept_contravening: "Contravening"
+ concept_contravene: "Contravene"
+ concept_contravened: "Contravened"
+ concept_contravention_desc: "[Concept('concept_article', '$concept_articles$')] in [Concept('concept_treaty', '$concept_treaties$')] that have [concept_non_fulfillment] conditions can be $concept_contravened$. For an $concept_article$ to be considered $concept_contravened$, the responsible [concept_country] must have failed to meet the requirements of that $concept_article$. Whether the responsible $concept_country$ is $concept_contravening$ to an $concept_article$ is checked weekly, monthly, yearly, or any combination thereof, depending on the $concept_article$.\n\nFor example, in the [GetArticleType('law_commitment').GetName] $concept_article$, if the specified [concept_law] has not been [Concept('concept_enactment_of_laws','$concept_enactment_of_laws_enacted$')] or is not actively $concept_enactment_of_laws_enacting$ for #v 3#! consecutive weeks, the $concept_article$ is considered to be $concept_non_fulfilled$ until the $concept_law$ is being $concept_enactment_of_laws_enacted$ again.\n\nThe number of consecutive $concept_contraventions$ before $concept_non_fulfillment$ may differ between $concept_articles$."
+
+ concept_binding_period: "Binding Period"
+ concept_binding_period_binding: "Binding"
+ concept_binding_period_bound: "Bound"
+ concept_binding_period_desc: "A [concept_treaty] usually has a $concept_binding_period$ where any withdrawal from the $concept_treaty$ by either [concept_country] will result in penalties for the withdrawing [concept_country]. When the $concept_binding_period$ has passed, withdrawal does not apply penalties anymore."
+
+ concept_non_fulfillment: "Non-Fulfillment"
+ concept_non_fulfilled: "Non-Fulfilled"
+ concept_non_fulfillment_desc: "Some [Concept('concept_article','$concept_articles$')] may come with specific duties attached that will adversely affect the [concept_treaty] if [Concept('concept_contravention', '$concept_contravened$')]. An $concept_article$ is considered $concept_non_fulfilled$ if consecutively $concept_contravened$ up to the maximum number of allowed $concept_contraventions$ for that $concept_article$.\n\nConsequences of $concept_non_fulfillment$ may include subjecting the $concept_contravening$ [concept_country] to #bold compensation payments#!, as well as #bold freezing#! or outright #bold breaking#! the $concept_treaty$.\n\nIf a $concept_treaty$ is #b frozen#!, the $concept_contravening$ $concept_country$ still pays and fulfills whatever they can from their $concept_articles$, but recieve #b nothing#! in return."
 
  concept_prestige: "Prestige"
  concept_prestige_desc: "Your [concept_rank] is determined by comparing your $concept_prestige$ to all other [Concept('concept_country','$concept_countries$')] in the world. $concept_prestige$ originates primarily from how impressive your economy is as measured by your [concept_gdp], how much [concept_power_projection] your military forces generate, and your [concept_country_tier]. It can also be affected by other factors such as your [SelectLocalization(GetPlayer.IsValid,'concept_prestige_desc_gamestate','Arts Academy')] and [Concept('concept_monument','$concept_monuments$')], and if you are a world leader in the production of a certain [concept_good]."
@@ -1207,7 +1365,13 @@ concept_acceptance: "Acceptance"
  concept_generals: "Generals"
  concept_general_possessive: "General’s"
  concept_general_plural_singular: "General(s)"
- concept_general_desc: "An [Concept('concept_army','$concept_army_possessive$')] [concept_commander] is called a $concept_general$ who leads the $concept_army$'s [Concept('concept_battalion','$concept_battalions$')] into [concept_battle]. You can change any $concept_general$'s [concept_order] on the $concept_army$ [concept_military_formation] panel or by right-clicking the $concept_general$ at any time. What orders you may give a $concept_general$ depends on his [Concept('concept_character_trait','$concept_character_traits$')], but there will always be the basic #b Advance#! and #b Defend#! $concept_orders$. Any other military effects from a $concept_general$'s $concept_character_traits$ may affect his $concept_army$ as a whole or are applied onto $concept_battalions$ under his direct command when in a [concept_battle]."
+ concept_general_desc: "An [Concept('concept_army','$concept_army_possessive$')] [concept_commander] is called a $concept_general$ who leads the $concept_army$'s [Concept('concept_battalion','$concept_battalions$')] into [concept_battle]. You can change any $concept_general$'s [concept_order] on the $concept_army$ [concept_military_formation] panel or by right-clicking the $concept_general$ at any time. What $concept_orders$ you may give a $concept_general$ depends on his [Concept('concept_character_trait','$concept_character_traits$')], but there will always be the basic #b Advance#! and #b Defend#! $concept_orders$. Any other military effects from a $concept_general$'s $concept_character_traits$ may affect his $concept_army$ as a whole or are applied onto $concept_battalions$ under his direct command when in a [concept_battle]."
+ concept_invasion: "Invasion"
+ concept_invade: "Invade"
+ concept_invaded: "Invaded"
+ concept_invading: "Invading"
+ concept_invasion_desc: "An [concept_army] attacking a [concept_state] via land or sea, the latter also being referred to as [concept_naval_invasion]."
+
 
  concept_admiral: "Admiral"
  concept_admirals: "Admirals"
@@ -1228,7 +1392,7 @@ concept_acceptance: "Acceptance"
  concept_naval_invasion: "Naval Invasion"
  concept_naval_invasions: "Naval Invasions"
  concept_naval_invaded: "Naval Invaded"
- concept_naval_invasion_desc: "A maritime invasion of a coastal [concept_state], coordinated between a [concept_fleet] and an [concept_army]. The $concept_fleet$ keeps the waters off the coast clear to ensure the $concept_army$ can land safely, while the $concept_army$ executes a series of land [Concept('concept_battle','$concept_battles$')] to win [concept_occupation] in the targeted $concept_state$.\n\nThe controller of the targeted $concept_state$ can defend against the $concept_naval_invasion$ by positioning their own [Concept('concept_fleet','$concept_fleets$')] in the affected [concept_sea_node] or stationing a [Concept('concept_mobilize_army','$concept_mobilize_army_mobilized$')] [concept_army] in the land [concept_hq] encompassing the invaded $concept_state$."
+ concept_naval_invasion_desc: "A maritime invasion of a coastal [concept_state], coordinated between a [concept_fleet] and an [concept_army]. The $concept_fleet$ keeps the waters off the coast clear to ensure the $concept_army$ can land safely, while the $concept_army$ executes a series of land [Concept('concept_battle','$concept_battles$')] to win [concept_occupation] in the targeted $concept_state$.\n\nThe controller of the targeted $concept_state$ can defend against the $concept_naval_invasion$ by positioning their own [Concept('concept_fleet','$concept_fleets$')] in the affected [concept_sea_node] or stationing a [Concept('concept_mobilize_army','$concept_mobilize_army_mobilized$')] $concept_army$ in the land [concept_hq] encompassing the invaded $concept_state$."
 
  concept_working_adults: "Working Adults"
  concept_working_adult: "Working Adult"
@@ -1327,8 +1491,20 @@ concept_acceptance: "Acceptance"
 
  concept_war_goal: "War Goal"
  concept_war_goals: "War Goals"
- concept_war_goal_desc: "$concept_war_goals$ are the objectives a [concept_country] is fighting a [concept_war] over. They are determined during the [concept_diplomatic_play] and are fixed after the $concept_war$ has begun. Each $concept_war_goal$ claimed in a [concept_peace_deal] decreases the chance the opponent will accept it, and increases the degree by which their [concept_war_support] must be [Concept('concept_war_exhaustion','$concept_war_exhaustion_exhausted$')] before they will agree.\n\nThe first $concept_war_goal$ claimed as part of the $concept_diplomatic_play$ is considered your $concept_primary_demand$, and some $concept_diplomatic_plays$ require it to be included in all $concept_peace_deals$."
- 
+  concept_war_goal_desc: "$concept_war_goals$ are the objectives a [concept_country] is fighting a [concept_war] over. They are determined during the [concept_diplomatic_play] and are fixed after the $concept_war$ has begun. Each $concept_war_goal$ claimed in a [concept_peace_deal] decreases the chance the opponent will accept it, and increases the degree by which their [concept_war_support] must be [Concept('concept_war_exhaustion','$concept_war_exhaustion_exhausted$')] before they will agree. $concept_war_support$ can only drop below #v 0#! if the opposing side [Concept('concept_controlled_war_goal','$concept_controls_war_goal_short$')] all their $concept_war_goals$.\n\nThe first $concept_war_goal$ claimed as part of the $concept_diplomatic_play$ is considered your $concept_primary_demand$, and some $concept_diplomatic_plays$ require it to be included in all $concept_peace_deals$."
+ concept_declare_interest:0 "Declare Interest"
+ concept_controlled_war_goal: "Controlled War Goal"
+ concept_controlled_war_goals: "Controlled War Goals"
+ concept_control_war_goal: "Control War Goal"
+ concept_control_war_goals: "Control War Goals"
+ concept_controlling_a_war_goal: "Controlling a War Goal"
+ concept_controlling_war_goals: "Controlling War Goals"
+ concept_controlled_war_goal_short: "Controlled"
+ concept_controlling_war_goal_short: "Controlling"
+ concept_control_war_goal_short: "Control"
+ concept_controls_war_goal_short: "Controls"
+ concept_controlled_war_goal_desc: "If the holder of a [concept_war_goal], or their [Concept('concept_ally','$concept_allies$')], [Concept('concept_occupation','$concept_occupy$')] the required [concept_state] or [Concept('concept_state','$concept_states$')], they are considered to have $concept_control_war_goal_short$ of this [concept_war_goal]. [concept_war_support] can only drop below #v 0#! if the opposing side $concept_controls_war_goal_short$ all their $concept_war_goals$."
+
  concept_primary_demand: "Primary Demand"
  concept_primary_demand_short: "Primary"
  concept_primary_demands: "Primary Demands"
@@ -1374,7 +1550,7 @@ concept_acceptance: "Acceptance"
  concept_obligation: "Obligation"
  concept_obligations: "Obligations"
  concept_obligated: "Obligated"
- concept_obligation_desc: "One [concept_country] can become $concept_obligated$ to another as a result of agreements made during [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')] or when one $concept_country$ buys out another's [concept_loans]. While $concept_obligated$ to a $concept_country$ you are unable to start $concept_diplomatic_plays$ against them or even join a $concept_diplomatic_play_short$ on the other side as them. The other $concept_country$ may use an $concept_obligation$ they hold over you to force you into a [concept_diplomatic_pact], or may absolve it to [concept_sway] you into supporting them in a $concept_diplomatic_play$ or increase [concept_relations] with you."
+ concept_obligation_desc: "One [concept_country] can become $concept_obligated$ to another as a result of agreements made during [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')] or when one $concept_country$ buys out another's [concept_loans]. While $concept_obligated$ to a $concept_country$ you are unable to start $concept_diplomatic_plays$ against them or even join a $concept_diplomatic_play_short$ on the other side as them. The other $concept_country$ may use an $concept_obligation$ they hold over you to force you into a [concept_diplomatic_pact] or [concept_treaty], or may absolve it to [concept_sway] you into supporting them in a $concept_diplomatic_play$ or increase [concept_relations] with you."
 
  concept_gdp: "Gross Domestic Product"
  concept_gdp_short: "GDP"
@@ -1402,10 +1578,26 @@ concept_acceptance: "Acceptance"
  concept_market: "Market"
  concept_markets: "Markets"
  concept_market_possessive: "Market’s"
- concept_market_desc: "All [Concept('concept_state', '$concept_states$')] in the same $concept_market$ will trade [Concept('concept_good', '$concept_goods$')] with each other, unless they are [Concept('concept_isolated_state','$concept_isolated_state_short$')]. How well connected these $concept_states$ are with each other is measured by their [concept_market_access]. $concept_markets$ may also trade with each other through [Concept('concept_trade_route','$concept_trade_routes$')].\n\nEach [concept_country] either controls its own $concept_market$ or participates in a different one via a [concept_customs_union] or [concept_subject] relationship. "
+ concept_market_desc: "All [Concept('concept_state', '$concept_states$')] in the same $concept_market$ will trade [Concept('concept_good', '$concept_goods$')] with each other, unless they are [Concept('concept_isolated_state','$concept_isolated_state_short$')]. How well connected these $concept_states$ are with each other is measured by their [concept_market_access]. $concept_markets$ may also trade with each other through the [concept_world_market].\n\nEach [concept_country] either controls its own $concept_market$ or participates in a different one via a [concept_customs_union] or [concept_subject] relationship. "
+
+ concept_world_market: "World Market"
+ concept_world_market_desc: "The $concept_world_market$ serves as the place to conduct autonomous [concept_trade]. The price of [Concept('concept_good', '$concept_goods$')] is determined by the number of $concept_imports$ and $concept_exports$. [Concept('concept_state', '$concept_states$')] need [concept_market_access] in order to conduct $concept_trade$ via their [GetBuildingType('building_trade_center').GetName]. Landlocked [Concept('concept_country', '$concept_countries$')] can get Transit Rights from other $concept_countries$ to secure access to the $concept_world_market$."
 
  concept_market_access: "Market Access"
- concept_market_access_desc: "A measure of how well-connected a [concept_state] is to the rest of its [concept_market]. It starts at 100% and is reduced proportionally whenever the $concept_state$'s [concept_infrastructure_usage] exceeds its [concept_infrastructure]. It impacts both how many [concept_sell_orders] and [concept_buy_orders] are generated due to the $concept_state$'s [concept_good_production] and [concept_good_consumption], and also how much the [concept_market_price] affects the [concept_local_price] of [Concept('concept_good','$concept_goods$')]."
+  concept_market_access_desc: "A measure of how well-connected a [concept_state] is to the rest of its [concept_market]. It starts at 100% and is reduced proportionally whenever the $concept_state$'s [concept_infrastructure_usage] exceeds its [concept_infrastructure]. It impacts both how many [concept_sell_orders] and [concept_buy_orders] are generated due to the $concept_state$'s [concept_good_production] and [concept_good_consumption], and also how much the [concept_market_price] affects the [concept_local_price] of [Concept('concept_good','$concept_goods$')]."
+
+ concept_world_market_access: "World Market Access"
+ concept_world_market_access_desc: "$concept_world_market_access$ exists if a [concept_state] is connected to the [concept_world_market] via a [concept_world_market_hub]. Its value is impacted by the $concept_state_possessive$ [concept_market_access]."
+ concept_prestige_good: "Prestige Good"
+ concept_prestige_good_short: "Prestige"
+ concept_prestige_goods: "Prestige Goods"
+ concept_prestige_good_desc: "A [concept_good] that is considered prestigious and to be of superior quality. $concept_prestige_goods$ are produced by some [Concept('concept_company','$concept_companies$')] that have a high enough [concept_prosperity]. Being a top producer of $concept_prestige_goods$ grants significant [concept_prestige].\n\nAdditionally, $concept_prestige_goods$ grant the following benefits:\n$EFFECT_LIST_BULLET$Increased [concept_good_consumption] by [Concept('concept_pop','$concept_pops$')] relative to other $concept_goods$\n$EFFECT_LIST_BULLET$Increased [concept_trade_advantage] for [Concept('concept_trade','$concept_exports$')]\n$EFFECT_LIST_BULLET$Increased [concept_throughput] for [Concept('concept_building','$concept_building_industries$')] which use them as $concept_input_goods$\n$EFFECT_LIST_BULLET$Increased [concept_offense] and [concept_defense] for [Concept('concept_unit', '$concept_units$')] that consume them as supplies"
+
+ concept_world_market_hub: "World Market Hub"
+ concept_world_market_hubs: "World Market Hubs"
+ concept_world_market_hub_short: "Hub"
+ concept_world_market_hubs_short: "Hubs"
+ concept_world_market_hub_desc: "A $concept_world_market_hub$ is the place from which [concept_trade] via the [concept_world_market] is conducted. It is created if a [concept_market_area] has at least one [GetBuildingType('building_port').GetName]. The location of a $concept_world_market_hub$ can change depending on [GetBuildingType('building_port').GetName] levels and [Concept('concept_state', '$concept_state_possessive$')] [concept_gdp]."
 
  concept_infrastructure: "Infrastructure"
  concept_infrastructure_desc: "$concept_infrastructure$ is provided by [Concept('concept_building','$concept_buildings$')] like [SelectLocalization(GetPlayer.IsValid,'concept_infrastructure_desc_added','Railway')] and [SelectLocalization(GetPlayer.IsValid,'concept_infrastructure_desc_added_2','Port')]. It influences how well connected a [concept_state] is to its [concept_market], and how rapidly [Concept('concept_battalion', '$concept_battalions$')] [Concept('concept_mobilize_battalion','$concept_mobilize_battalion_mobilize$')]."
@@ -1453,8 +1645,7 @@ concept_acceptance: "Acceptance"
  concept_production_method_desc: "$concept_production_methods$ determine how [Concept('concept_building','$concept_buildings$')] operate. They impact\n\n- The [Concept('concept_good_consumption','$concept_input_goods$')] the $concept_building$ must purchase to operate\n- The [Concept('concept_good_production','$concept_output_goods$')] the $concept_building$ produces and sells\n- The distribution of [Concept('concept_profession','$concept_professions$')] among its [concept_workforce]\n\n$concept_production_methods$ can also have other effects, such as the generation of [Concept('concept_modifier','$concept_modifiers$')]. $concept_production_methods$ are organized in groups, in which only one can be active at a time. You can switch which $concept_production_method$ is active in each group as long as you meet the [concept_technology] and [concept_law] requirement for it."
 
  concept_nation_formation: "Nation Formation"
- concept_nation_formation_desc: "If a [concept_country] meets certain requirements, such as owning land in specific [Concept('concept_state_region','$concept_state_regions$')] and/or having discovered a certain $SOCIETY$ [concept_technology], they may be able to form a new $concept_country$ of a higher [concept_country_tier]. The possible $concept_countries$ are listed in the #b $NATION_FORMATION$#! tab in the #b $CULTURE$#! panel."
-
+ concept_nation_formation_desc: "If a [concept_country] meets certain requirements, such as owning land in specific [Concept('concept_state_region','$concept_state_regions$')] and/or having discovered a certain $SOCIETY$ [concept_technology], they may be able to form a new $concept_country$ of a higher [concept_country_tier]. The possible $concept_countries$ are listed in the #b $NATION_FORMATION$#! tab in the #b Journal#! panel."
  concept_culture: "Culture"
  concept_cultures: "Cultures"
  concept_culture_possessive: "Culture’s"
@@ -1629,6 +1820,7 @@ concept_religious: "Religious"
 
  concept_budget_diplomatic_pacts: "Diplomatic Pacts"
  concept_budget_diplomatic_pacts_desc: "[concept_money] collected from or remitted to the other party in a [concept_diplomatic_pact]."
+ concept_constructed: "Constructed"
 
  concept_budget_power_bloc: "Power Bloc Budget"
  concept_budget_power_bloc_desc: "[concept_money] collected from a [concept_power_bloc_member] or remitted to the [concept_power_bloc_leader]"
@@ -1762,8 +1954,10 @@ concept_religious: "Religious"
 
  concept_convoys: "Convoys"
  concept_convoy: "Convoy"
- concept_convoys_desc: "$concept_convoys$ are produced by [SelectLocalization(GetPlayer.IsValid,'concept_convoys_desc_added','Port')] $concept_buildings$ and are required to operate [Concept('concept_shipping_lane','$concept_shipping_lanes$')]."
- concept_convoys_desc_added: "[GetBuildingType('building_port').GetName]"
+ concept_convoys_desc: "$concept_convoys$ are produced by [SelectLocalization(GetPlayer.IsValid,'concept_convoys_desc_added','Port')] $concept_buildings$ and are required to operate a [Concept('concept_country','$concept_countries_possessive$')] [Concept('concept_shipping_lane','$concept_shipping_lanes$')].\n\n[concept_convoy_cost] is incurred by the $concept_country$ unlike [SelectLocalization(GetPlayer.IsValid,'concept_convoys_desc_added_2','Merchant Marine')] which is utilized by [SelectLocalization(GetPlayer.IsValid,'concept_convoys_desc_added_3','Trade Center')] $concept_buildings$ to conduct [concept_trade] on the [concept_world_market]."
+ concept_convoys_desc_added:0 "[GetBuildingType('building_port').GetName]"
+ concept_convoys_desc_added_2: "[GetGoods('merchant_marine').GetName]"
+ concept_convoys_desc_added_3: "[GetBuildingType('building_trade_center').GetName]"
 
  concept_shipping_lane: "Shipping Lane"
  concept_shipping_lanes: "Shipping Lanes"
@@ -1776,8 +1970,12 @@ concept_religious: "Religious"
 ### ITEMS BELOW THIS LINE UPDATED OR VERIFIED MARCH 31, 2022
 
  concept_convoy_cost: "$concept_convoy$ Cost"
- concept_convoy_cost_desc: "The $concept_convoy_cost$ of a [concept_shipping_lane] is determined by how many [Concept('concept_good','$concept_goods$')] a [concept_trade_route] moves, how many [Concept('concept_battalion','$concept_battalions$')] a [concept_supply_route] provides for, or how much [concept_infrastructure_usage] a [concept_port_connection] facilitates [concept_market_access] for. This more [Concept('concept_sea_node','$concept_sea_nodes$')] $concept_shipping_lane$ must pass through on its way to the destination, the higher the total $concept_convoy_cost$. The total $concept_convoy_cost$ of all $concept_shipping_lanes$ is compared to the total number of [concept_convoys] provided by [SelectLocalization(GetPlayer.IsValid,'concept_convoy_cost_desc_added','Port')] $concept_buildings$ to determine the strength of your [concept_supply_network]."
+ concept_convoy_cost_desc: "The $concept_convoy_cost$ of a [concept_shipping_lane] is determined by how many [Concept('concept_battalion','$concept_battalions$')] a [concept_supply_route] provides for, or how much [concept_infrastructure_usage] a [concept_port_connection] facilitates [concept_market_access] for. The more [Concept('concept_sea_node','$concept_sea_nodes$')] a $concept_shipping_lane$ must pass through on its way to the destination, the higher the total $concept_convoy_cost$. The total $concept_convoy_cost$ of all $concept_shipping_lanes$ is compared to the total number of [concept_convoys] provided by [SelectLocalization(GetPlayer.IsValid,'concept_convoy_cost_desc_added','Port')] $concept_buildings$ to determine the strength of your [concept_supply_network]."
  concept_convoy_cost_desc_added: "[GetBuildingType('building_port').GetName]"
+ concept_attrition_risk: "Attrition Risk"
+ concept_executive: "Executive"
+ concept_executives: "Executives"
+ concept_executive_desc: "$concept_executives$ are the [Concept('concept_character','$concept_characters$')] that lead a [concept_company]. Like other $concept_characters$ they can have [Concept('concept_character_trait','$concept_character_traits$')] which influence how good they are at their job. They provide [concept_clout] to their [concept_interest_group] based on how well their [concept_company] is doing. $concept_executives$ can also become [concept_leader] of an $concept_interest_group$."
 
  concept_port_connection: "Port Connection"
  concept_port_connections: "Port Connections"
@@ -1850,15 +2048,19 @@ concept_religious: "Religious"
 
  concept_character_role: "Role"
  concept_character_roles: "Roles"
- concept_character_role_desc: "$concept_character_roles$ determine what areas of your [concept_country] a particular [concept_character] has influence over. A $concept_character$ can have one or several $concept_character_roles$.\n\nThe list of $concept_character_roles$ are:\n[concept_ruler] (usually also a [concept_politician])\n[concept_heir]\n[concept_politician]\n[concept_agitator]\n[concept_general]\n[concept_admiral]"
-
+ concept_character_role_desc: "$concept_character_roles$ determine what areas of your [concept_country] a particular [concept_character] has influence over. A $concept_character$ can have one or several $concept_character_roles$.\n\nThe list of $concept_character_roles$ are:\n[concept_ruler] (usually also a [concept_politician])\n[concept_heir]\n[concept_politician]\n[concept_executive]\n[concept_agitator]\n[concept_general]\n[concept_admiral]"
  concept_treasury: "Treasury"
  concept_treasury_possessive: "Treasury’s"
  concept_treasury_desc: "The $concept_treasury$ keeps track of your [Concept('concept_country','$concept_country_possessive$')] assets. Each week your budget balance will result in the $concept_treasury$ taking out more [concept_loans] to cover a [concept_money] deficit, or depositing $concept_money$ into the [concept_gold_reserves]."
-
+ concept_recognition: "Recognition"
  concept_building_balance: "Balance"
  concept_building_balance_profit: "Profit"
  concept_building_balance_desc: "A [Concept('concept_building','$concept_building_possessive$')] $concept_building_balance$ is the amount of [concept_money] that remains of its [concept_revenue] after paying [Concept('concept_building_wage','$concept_building_wages$')] and purchasing required [Concept('concept_good','$concept_goods_input$')].\n\nThe $concept_building_balance$ is divided between [concept_building_owners] and the $concept_building$'s [concept_cash_reserves].\n\nA $concept_building$'s $concept_building_balance$ can be improved either by making its $concept_goods_input$ cheaper, or by making its $concept_goods_output$ more expensive. This can be done by increasing or decreasing [Concept('concept_sell_orders','$concept_sell_orders_supply$')] and [Concept('concept_buy_orders','$concept_buy_orders_demand$')] on the [concept_market] it belongs to."
+ concept_risk: "Risk"
+ concept_risk_desc: "The Risk of a particular [concept_terrain] type influences the amount of [concept_casualties] and [concept_wounded] a [concept_battle] would result in."
+
+ concept_terrain_labels: "Terrain Labels"
+ concept_terrain_labels_desc: "A [concept_terrain] Label is a grouping of several $concept_terrain$ Types. [Concept('concept_character_trait','$concept_character_traits$')] can have [Concept('concept_modifier','$concept_modifiers$')] affecting all $concept_terrain$ Types with a specific Terrain Label."
 
  concept_building_wage: "Wage"
  concept_building_wages: "Wages"
@@ -2186,8 +2388,7 @@ concept_religious: "Religious"
  concept_power_bloc_cohesion_desc: "$concept_power_bloc_cohesion$ is the indicator for how well a [concept_power_bloc] is running. It is mostly affected by the [concept_power_bloc_identity] which informs what impacts the value. The larger the [concept_power_bloc], the lower the Cohesion will generally be."
 
  concept_power_bloc_leverage: "Leverage"
- concept_power_bloc_leverage_desc: "[Concept('concept_power_bloc','$concept_power_blocs$')] build up $concept_power_bloc_leverage$ in [Concept('concept_country','$concept_countries$')] over time, by comparing their influence in the $concept_country$ to that of other $concept_power_blocs$. $concept_power_bloc_leverage$ share can be gained through different interactions, for example an active [concept_diplomatic_pact] or [concept_trade_route], and current $concept_power_bloc_leverage$ will drift towards this share each week. Once enough [concept_power_bloc_leverage_advantage] has been accumulated over a $concept_country$, they can be invited to the $concept_power_bloc$."
-
+  concept_power_bloc_leverage_desc: "[Concept('concept_power_bloc','$concept_power_blocs$')] build up $concept_power_bloc_leverage$ in [Concept('concept_country','$concept_countries$')] over time, by comparing their influence in the $concept_country$ to that of other $concept_power_blocs$. $concept_power_bloc_leverage$ share can be gained through different interactions, for example an active [concept_diplomatic_pact] or [concept_treaty], and current $concept_power_bloc_leverage$ will drift towards this share each week. Once enough [concept_power_bloc_leverage_advantage] has been accumulated over a $concept_country$, they can be invited to the $concept_power_bloc$."
  concept_power_bloc_unclaimed_leverage: "Unclaimed Leverage"
  concept_power_bloc_unclaimed_leverage_short: "Unclaimed"
  concept_power_bloc_unclaimed_leverage_desc: "A [Concept('concept_country','$concept_country_possessive$')] $concept_power_bloc_unclaimed_leverage$ is the [concept_power_bloc_leverage] that no [concept_power_bloc] has claimed on that $concept_country$. It is based on the $concept_country_possessive$ #b Leverage Resistance#! which in turn is based on a number of factors like their [Concept('concept_law','$concept_laws$')] and [Concept('concept_pop','$concept_population$')], more people means more people to convince."
@@ -2214,7 +2415,70 @@ concept_religious: "Religious"
 
  concept_opposed: "Opposed"
 
- gov_cannot_build_economic_buildings_bool: "Disables the ability of the government to build economic buildings"
- gov_cannot_build_economic_buildings_bool_desc: "Disables the ability of the government to build economic buildings.\nGovernment funded construction will only be able to build [Concept('concept_government_building', '$concept_government_buildings$')], [Concept('concept_monument', '$concept_monuments$')], [GetBuildingType('building_university').GetName], [GetBuildingType('building_arts_academy').GetName], [GetBuildingType('building_power_plant').GetName], [GetBuildingType('building_port').GetName], [GetBuildingType('building_railway').GetName], [GetBuildingType('building_construction_sector').GetName], [GetBuildingType('building_skyscraper').GetName], [GetBuildingType('building_barracks').GetName] and [GetBuildingType('building_naval_base').GetName]."
+ gov_cannot_build_economic_buildings_bool: "Disables the government's capacity to develop economic infrastructure internally."
+ gov_cannot_build_economic_buildings_bool_desc: "Government funded construction will only be able to build [Concept('concept_government_building', '$concept_government_buildings$')], [Concept('concept_monument', '$concept_monuments$')], [GetBuildingType('building_university').GetName], [GetBuildingType('building_arts_academy').GetName], [GetBuildingType('building_power_plant').GetName], [GetBuildingType('building_port').GetName], [GetBuildingType('building_railway').GetName], [GetBuildingType('building_construction_sector').GetName], [GetBuildingType('building_skyscraper').GetName], [GetBuildingType('building_barracks').GetName], [GetBuildingType('building_naval_base').GetName] and [GetBuildingType('building_trade_center').GetName].\nThe construction of economic buildings inside of a [concept_subject] is allowed."
 
  milexp_cost_small_cost: "Have at least 300 War Experience"
+ cannot_choose_doctrine_bool: "Locks out certain doctrines"
+ cannot_choose_doctrine_bool_desc: "The Doctrine "Strenght in Numbers" will be disabled; If already selected, it will lock you out from advancing in the tree."
+
+ concept_economic_dependence_desc: "$concept_economic_dependence$ is the amount of economic reliance two [Concept('concept_country','$concept_countries$')] have between one another. The main influence of which is the amount of [Concept('concept_building','$concept_buildings$')] that are owned by the other $concept_country$. This can either be through direct ownership from a $concept_country$ or by [concept_pop] investors.\n\nBeing in a shared market will additionally take into consideration the difference in [concept_gdp] and the impact of each [Concept('concept_country','$concept_countries_possessive$')] produced [Concept('concept_good','$concept_goods$')] and owned $concept_buildings$ on $concept_pops$.\n\nIf the two $concept_countries$ are not in a shared market, the $concept_economic_dependence$ is impacted by [concept_trade]. The impact of this is dependent on the amount of $concept_trade$ between the two $concept_countries$ and the impact on $concept_good$ Market Balance."
+
+###
+ concept_georegion: "Geographic Region"
+ concept_georegions: "Geographic Regions"
+ concept_georegion_desc: "A $concept_georegion$ is an area that corresponds to a collection of [Concept('concept_strategic_region','$concept_strategic_regions$')] and [Concept('concept_state_region','$concept_state_regions$')]. $concept_georegions$ are unchanging but may overlap and in some cases can be a part of a larger $concept_georegion$ altogether."
+
+ concept_georegion_europe: "Europe"
+ concept_georegion_european: "European"
+ concept_georegion_europe_desc: "Europe is a [concept_georegion] that consists of the following [Concept('concept_strategic_region','$concept_strategic_regions$')]:\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_north_germany').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_south_germany').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_england').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_iberia').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_france').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_occitania').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_rhine').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_italy').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_poland').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_danubia').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_balkans').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_baltic').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_poland').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_russia').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_dnieper').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_belarus').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_finland').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_baltic_states').GetName]"
+
+ concept_georegion_americas: "Americas"
+ concept_georegion_americas_desc: "The Americas are a [concept_georegion] that consist of the following [Concept('concept_strategic_region','$concept_strategic_regions$')]:\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_canada').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_new_england').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_pacific_coast').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_great_plains').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_the_midwest').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_dixie').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_mexico').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_central_america').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_caribbean').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_brazil').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_la_plata').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_andes').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_gran_colombia').GetName]"
+
+ concept_georegion_north_america: "North America"
+ concept_georegion_north_america_desc: "North America is a [concept_georegion] that consists of the following [Concept('concept_strategic_region','$concept_strategic_regions$')]:\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_canada').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_new_england').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_pacific_coast').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_great_plains').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_the_midwest').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_dixie').GetName]"
+
+ concept_georegion_central_america: "Central America"
+ concept_georegion_central_america_desc: "Central America is a [concept_georegion] that consists of the following [Concept('concept_strategic_region','$concept_strategic_regions$')]:\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_mexico').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_central_america').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_caribbean').GetName]"
+
+ concept_georegion_south_america: "South America"
+ concept_georegion_south_america_desc: "South America is a [concept_georegion] that consists of the following [Concept('concept_strategic_region','$concept_strategic_regions$')]:\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_brazil').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_la_plata').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_andes').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_gran_colombia').GetName]"
+
+ concept_georegion_africa: "Africa"
+ concept_georegion_africa_desc: "Africa is a [concept_georegion] that consists of the following [Concept('concept_strategic_region','$concept_strategic_regions$')]:\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_nile_basin').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_ethiopia').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_north_africa').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_senegal').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_niger').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_congo').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_southern_africa').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_zanj').GetName]"
+
+ concept_georegion_subsaharan_africa: "Sub-Saharan Africa"
+ concept_georegion_subsaharan_africa_desc: "Sub-Saharan Africa is a [concept_georegion] that consists of the following [Concept('concept_strategic_region','$concept_strategic_regions$')]:\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_ethiopia').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_senegal').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_niger').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_congo').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_southern_africa').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_zanj').GetName]\nIt also includes the following [Concept('concept_state_region','$concept_state_regions$')]:[SelectLocalization(GetPlayer.IsValid, 'GEOREGION_SUBSAHARAN_AFRICA_STATE_REGIONS_INGAME_LINK','GEOREGION_SUBSAHARAN_AFRICA_STATE_REGIONS')]"
+ # Necessary as it is avoids crashing the game when opening the Vickypedia in the Main Menu
+ GEOREGION_SUBSAHARAN_AFRICA_STATE_REGIONS_INGAME_LINK: "\n$EFFECT_LIST_BULLET$[GetStateRegion('STATE_EQUATORIA').GetName]\n$EFFECT_LIST_BULLET$[GetStateRegion('STATE_DARFUR').GetName]\n$EFFECT_LIST_BULLET$[GetStateRegion('STATE_KORDOFAN').GetName]\n$EFFECT_LIST_BULLET$[GetStateRegion('STATE_BLUE_NILE').GetName]\n$EFFECT_LIST_BULLET$[GetStateRegion('STATE_DONGOLA').GetName]"
+ GEOREGION_SUBSAHARAN_AFRICA_STATE_REGIONS: "\n$EFFECT_LIST_BULLET$$STATE_EQUATORIA$\n$EFFECT_LIST_BULLET$$STATE_DARFUR$\n$EFFECT_LIST_BULLET$$STATE_KORDOFAN$\n$EFFECT_LIST_BULLET$$STATE_BLUE_NILE$\n$EFFECT_LIST_BULLET$$STATE_DONGOLA$"
+
+ concept_georegion_north_africa: "North Africa"
+ concept_georegion_north_africa_desc: "North Africa is a [concept_georegion] that consists of the following [Concept('concept_strategic_region','$concept_strategic_regions$')]:\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_north_africa').GetName]\nIt also includes the following [Concept('concept_state_region','$concept_state_regions$')]:[SelectLocalization(GetPlayer.IsValid, 'GEOREGION_NORTH_AFRICA_STATE_REGIONS_INGAME_LINK','GEOREGION_NORTH_AFRICA_STATE_REGIONS')]"
+ GEOREGION_NORTH_AFRICA_STATE_REGIONS_INGAME_LINK: "\n$EFFECT_LIST_BULLET$[GetStateRegion('STATE_MATRUH').GetName]\n$EFFECT_LIST_BULLET$[GetStateRegion('STATE_EGYPTIAN_DESERT').GetName]\n$EFFECT_LIST_BULLET$[GetStateRegion('STATE_LOWER_EGYPT').GetName]\n$EFFECT_LIST_BULLET$[GetStateRegion('STATE_MIDDLE_EGYPT').GetName]\n$EFFECT_LIST_BULLET$[GetStateRegion('STATE_UPPER_EGYPT').GetName]\n$EFFECT_LIST_BULLET$[GetStateRegion('STATE_SINAI').GetName]"
+ GEOREGION_NORTH_AFRICA_STATE_REGIONS: "\n$EFFECT_LIST_BULLET$$STATE_MATRUH$\n$EFFECT_LIST_BULLET$$STATE_EGYPTIAN_DESERT$\n$EFFECT_LIST_BULLET$$STATE_LOWER_EGYPT$\n$EFFECT_LIST_BULLET$$STATE_MIDDLE_EGYPT$\n$EFFECT_LIST_BULLET$$STATE_UPPER_EGYPT$\n$EFFECT_LIST_BULLET$$STATE_SINAI$"
+
+ concept_georegion_middle_east: "Middle East"
+ concept_georegion_middle_east_desc: "The Middle East is a [concept_georegion] that consists of the following [Concept('concept_strategic_region','$concept_strategic_regions$')]:\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_anatolia').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_arabic').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_persia').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_caucasus').GetName]"
+
+ concept_georegion_central_asia: "Central Asia"
+ concept_georegion_central_asia_desc: "Central Asia is a [concept_georegion] that consists of the following [Concept('concept_strategic_region','$concept_strategic_regions$')]:\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_central_asia').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_himalayas').GetName]"
+
+ concept_georegion_india: "India"
+ concept_georegion_indian: "Indian"
+ concept_georegion_india_desc: "India is a [concept_georegion] that consists of the following [Concept('concept_strategic_region','$concept_strategic_regions$')]:\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_punjab').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_bombay').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_central_india').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_madras').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_bengal').GetName]\nIt also includes the following [Concept('concept_state_region','$concept_state_regions$')]:[SelectLocalization(GetPlayer.IsValid, 'GEOREGION_INDIA_STATE_REGIONS_INGAME_LINK','GEOREGION_INDIA_STATE_REGIONS')]"
+ GEOREGION_INDIA_STATE_REGIONS_INGAME_LINK: "\n$EFFECT_LIST_BULLET$[GetStateRegion('STATE_QUETTA').GetName]\n$EFFECT_LIST_BULLET$[GetStateRegion('STATE_PASHTUNISTAN').GetName]\n$EFFECT_LIST_BULLET$[GetStateRegion('STATE_KASHMIR').GetName]"
+ GEOREGION_INDIA_STATE_REGIONS: "\n$EFFECT_LIST_BULLET$$STATE_QUETTA$\n$EFFECT_LIST_BULLET$$STATE_PASHTUNISTAN$\n$EFFECT_LIST_BULLET$$STATE_KASHMIR$"
+
+ concept_georegion_east_asia: "East Asia"
+ concept_georegion_east_asia_desc: "East Asia is a [concept_georegion] that consists of the following [Concept('concept_strategic_region','$concept_strategic_regions$')]:\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_south_china').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_north_china').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_manchuria').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_japan').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_west_siberia').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_east_siberia').GetName]"
+
+ concept_georegion_china: "China"
+ concept_georegion_china_desc: "China is a [concept_georegion] that consists of the following [Concept('concept_strategic_region','$concept_strategic_regions$')]:\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_south_china').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_north_china').GetName]"
+
+ concept_georegion_southeast_asia: "Southeast Asia"
+ concept_georegion_southeast_asia_desc: "Southeast Asia is a [concept_georegion] that consists of the following [Concept('concept_strategic_region','$concept_strategic_regions$')]:\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_indonesia').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_indochina').GetName]"
+
+ concept_privy_purse: "Privy Purse"
+ concept_privy_purse_desc: "A Privy Purse is the personal income of a [Concept('concept_ruler','Monarch')]. In the context of [concept_georegion_india], it represents the pension paid to the former ruler of a [concept_princely_state] #b annexed#! by another [concept_country] using a #v The Federation of India#! [concept_journal_entry].\n\nThe $modifier_privy_purse_payments$ modifier will be added upon annexing any $concept_princely_state$ with this $concept_journal_entry$, and will be updated upon each subsequent annexation. The #b Privy Purse#! payments will add #b National Expenses#! equivalent to #v 0.01%#! [concept_gdp] times the number of #b Princely States#! annexed using this [concept_journal_entry]"

@@ -755,6 +755,177 @@ catalyst_pact_broken = {
 	}	
 }
 
+
+catalyst_treaty_broken = {
+	category = cc_diplomatic_treaty
+
+	political_lobby_creation = {
+		lobby_anti_country = {
+			value = 0.05
+
+			if = {
+				limit = {
+					scope:target_country.country_rank > root.country_rank
+				}
+				multiply = 2
+			}
+
+			if = {
+				limit = {
+					NOT = { has_strategic_adjacency = scope:target_country }
+				}
+				multiply = 0.5
+			}
+
+			if = {
+				limit = {
+					"relations(scope:target_country)" > relations_threshold:poor
+				}
+				multiply = 0.5
+			}
+			else_if = {
+				limit = {
+					"relations(scope:target_country)" <= relations_threshold:hostile
+				}
+				multiply = 1.5
+			}
+		}
+		lobby_anti_overlord = {
+			value = 0.05
+
+			if = {
+				limit = { liberty_desire >= 75 }
+				multiply = 3
+			}
+
+			else_if = {
+				limit = { liberty_desire >= 50 }
+				multiply = 2
+			}
+			if = {
+				limit = {
+					NOT = { has_strategic_adjacency = scope:target_country }
+				}
+				multiply = 0.5
+			}
+			if = {
+				limit = {
+					"relations(scope:target_country)" > relations_threshold:poor
+				}
+				multiply = 0.5
+			}
+		}
+	}
+
+	ai_country_goal_recalculation = {
+		type = more_hostile
+		chance = {
+			value = 0.1
+
+			if = {
+				limit = {
+					"relations(scope:target_country)" <= relations_threshold:cold
+				}
+				multiply = 4.0
+			}
+			else_if = {
+				limit = {
+					"relations(scope:target_country)" < relations_threshold:cordial
+				}
+				multiply = 3.0
+			}
+			else_if = {
+				limit = {
+					"relations(scope:target_country)" < relations_threshold:friendly
+				}
+				multiply = 2.0
+			}
+		}
+	}
+}
+
+catalyst_treaty_enforced = {
+	category = cc_diplomatic_treaty
+
+	political_lobby_creation = {
+		lobby_anti_country = {
+			value = 0.25
+
+			if = {
+				limit = {
+					scope:target_country.country_rank > root.country_rank
+				}
+				multiply = 2
+			}
+
+			if = {
+				limit = {
+					NOT = { has_strategic_adjacency = scope:target_country }
+				}
+				multiply = 0.5
+			}
+
+			if = {
+				limit = {
+					"relations(scope:target_country)" > relations_threshold:poor
+				}
+				multiply = 0.5
+			}
+			else_if = {
+				limit = {
+					"relations(scope:target_country)" <= relations_threshold:hostile
+				}
+				multiply = 1.5
+			}
+		}
+		lobby_anti_overlord = {
+			value = 0.25
+
+			if = {
+				limit = { liberty_desire >= 75 }
+				multiply = 3
+			}
+
+			else_if = {
+				limit = { liberty_desire >= 50 }
+				multiply = 2
+			}
+			if = {
+				limit = {
+					NOT = { has_strategic_adjacency = scope:target_country }
+				}
+				multiply = 0.5
+			}
+			if = {
+				limit = {
+					"relations(scope:target_country)" > relations_threshold:poor
+				}
+				multiply = 0.5
+			}
+		}
+	}
+
+	ai_country_goal_recalculation = {
+		type = more_hostile
+		chance = {
+			value = 0.5
+
+			if = {
+				limit = {
+					"relations(scope:target_country)" <= relations_threshold:cold
+				}
+				add = 100.0 # Guaranteed
+			}
+			else_if = {
+				limit = {
+					"relations(scope:target_country)" <= relations_threshold:poor
+				}
+				multiply = 1.5
+			}
+		}
+	}
+}
+
 # This only triggers when non-hostile two-sided alliances & defensive pacts are created (replaces catalyst_pact_formed)
 catalyst_alliance_formed = {
 	category = cc_alliance_formed

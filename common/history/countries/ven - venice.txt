@@ -59,5 +59,11 @@
 		trigger_event = {
 			id = fm_venice.1
 		}
+		add_company = company_type:company_VNA
+		company:company_VNA = {
+			set_company_establishment_date = 1699.6.6
+			set_company_state_region = s:STATE_VENETIA
+			add_owned_country = c:VNA #links the country to this company
+		}
 	}
 }

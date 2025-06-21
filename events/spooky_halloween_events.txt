@@ -8,7 +8,7 @@ spooky_halloween_events.1 = {
 	desc = spooky_halloween_events.1.d
 	flavor = spooky_halloween_events.1.f
 
-	cooldown = { months = normal_modifier_time }
+	cooldown = { days = normal_modifier_time }
 	
 	gui_window = event_window_1char_tabloid_halloween
 	left_icon = scope:dracula_scope
@@ -54,7 +54,7 @@ spooky_halloween_events.1 = {
 		set_global_variable = count_dracula_global_var
 		set_global_variable = {
 			name = dracula_timer_global_var
-			months = normal_modifier_time
+			days = normal_modifier_time
 		}
 		random_scope_state = {
 			limit = {
@@ -94,7 +94,7 @@ spooky_halloween_events.1 = {
 		ruler = {
 			add_modifier = {
 				name = feeling_drained_2
-				months = normal_modifier_time
+				days = normal_modifier_time
 			}
 		}
 		custom_tooltip = dracula_coup_tt
@@ -110,7 +110,7 @@ spooky_halloween_events.1 = {
 			}
 			add_modifier = {
 				name = umbral_coup_modifier
-				months = normal_modifier_time
+				days = normal_modifier_time
 			}
 		}
 	}
@@ -146,7 +146,7 @@ spooky_halloween_events.2 = {
 	desc = spooky_halloween_events.2.d
 	flavor = spooky_halloween_events.2.f
 
-	cooldown = { months = normal_modifier_time }
+	cooldown = { days = normal_modifier_time }
 	
 	gui_window = event_window_2char_halloween
 
@@ -228,7 +228,7 @@ spooky_halloween_events.2 = {
 							}
 							add_modifier = {
 								name = feeling_drained_1
-								months = long_modifier_time
+								days = long_modifier_time
 							}
 						}
 						else_if = {
@@ -240,7 +240,7 @@ spooky_halloween_events.2 = {
 							}
 							add_modifier = {
 								name = feeling_drained_2
-								months = long_modifier_time
+								days = long_modifier_time
 							}						
 						}
 					}
@@ -259,7 +259,7 @@ spooky_halloween_events.2 = {
 		scope:dracula_scope = {
 			add_modifier = {
 				name = feeling_invigorated
-				months = normal_modifier_time
+				days = normal_modifier_time
 			}
 		}
 	}
@@ -298,7 +298,7 @@ spooky_halloween_events.3 = {
 	desc = spooky_halloween_events.3.d
 	flavor = spooky_halloween_events.3.f
 
-	cooldown = { months = normal_modifier_time }
+	cooldown = { days = normal_modifier_time }
 	
 	gui_window = event_window_1char_tabloid_halloween
 	left_icon = scope:dracula_scope

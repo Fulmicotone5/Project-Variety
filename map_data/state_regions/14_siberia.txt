@@ -212,7 +212,7 @@ STATE_YAKUTSK = {
     }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 5
+        undiscovered_amount = 20
     }
 }
 
@@ -236,7 +236,7 @@ STATE_TRANS_BAIKAL = {
     }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 10
+        undiscovered_amount = 25
     }
 }
 
@@ -259,7 +259,7 @@ STATE_IRKUTSK = {
     }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 10
+        undiscovered_amount = 25
     }
 }
 

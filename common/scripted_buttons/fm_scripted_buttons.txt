@@ -1358,7 +1358,7 @@ je_anatolia_int_rel = {
 	effect = {
 		add_modifier = {
 			name = modifier_eastrome_three
-			months = very_long_modifier_time
+			days = very_long_modifier_time
 		}
 		every_scope_state = {
 			limit = {
@@ -4245,12 +4245,12 @@ je_nat_butt = {
 	effect = {
 		add_modifier = {
 			name = modifier_nat
-			months = normal_modifier_time
+			days = normal_modifier_time
 			multiplier = money_amount_multiplier_fm
 		}
 		add_modifier = {
 			name = modifier_nat_two
-			months = normal_modifier_time
+			days = normal_modifier_time
 		}
 	}
 }

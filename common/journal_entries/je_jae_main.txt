@@ -26,6 +26,10 @@
 		trigger_event = {
 			id = jaep.2
 		}
+		hidden_effect = {
+			set_variable = meiji_restoration_complete
+			set_global_variable = meiji_restoration_complete
+		}
 	}
 
 	on_monthly_pulse = {

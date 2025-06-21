@@ -48,7 +48,7 @@
 		}
 	}
 
-	cooldown = { months = normal_modifier_time }
+	cooldown = { days = normal_modifier_time }
 
 	ai_chance = {
 		value = -50

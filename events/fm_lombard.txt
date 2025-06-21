@@ -63,7 +63,7 @@ lombard.2 = {
 			}
 			add_modifier = {
 				name = modifier_lom_one
-				months = normal_modifier_time
+				days = normal_modifier_time
 				is_decaying = yes
 			}
 		}
@@ -84,7 +84,7 @@ lombard.2 = {
 			}
 			add_modifier = {
 				name = modifier_lom_two
-				months = normal_modifier_time
+				days = normal_modifier_time
 				is_decaying = yes
 			}
 		}
@@ -144,13 +144,13 @@ lombard.3 = {
 			}
 			add_modifier = {
 				name = modifier_lom_three
-				months = normal_modifier_time
+				days = normal_modifier_time
 				is_decaying = yes
 			}
 		}
 		add_modifier = {
 			name = modifier_lom_four
-			months = long_modifier_time
+			days = long_modifier_time
 		}
 		add_loyalists = {
 			strata = middle
@@ -195,7 +195,7 @@ lombard.4 = {
 			}
 			add_modifier = {
 				name = modifier_rome_two
-				months = normal_modifier_time
+				days = normal_modifier_time
 				is_decaying = yes
 			}
 		}

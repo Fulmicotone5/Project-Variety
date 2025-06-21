@@ -77,7 +77,7 @@ slave_revolt.1 = {
 			}
 			add_modifier = {
 				name = protested_slave_ship_release
-				months = normal_modifier_time
+				days = normal_modifier_time
 			}
 		}
 		every_interest_group = {
@@ -89,7 +89,7 @@ slave_revolt.1 = {
 			}
 			add_modifier = {
 				name = protested_slave_ship_release
-				months = normal_modifier_time
+				days = normal_modifier_time
 				multiplier = -0.5
 			}
 		}
@@ -108,7 +108,7 @@ slave_revolt.1 = {
 			}
 			add_modifier = {
 				name = did_not_protest_ship_seizure
-				months = normal_modifier_time
+				days = normal_modifier_time
 			}
 		}
 		every_interest_group = {
@@ -120,7 +120,7 @@ slave_revolt.1 = {
 			}
 			add_modifier = {
 				name = did_not_protest_ship_seizure
-				months = normal_modifier_time
+				days = normal_modifier_time
 				multiplier = -0.5
 			}
 		}
@@ -177,7 +177,7 @@ slave_revolt.2 = {
 
 		add_modifier = {
 			name = government_slave_catchers
-			months = normal_modifier_time
+			days = normal_modifier_time
 		}
 		every_interest_group = {
 			limit = {
@@ -188,7 +188,7 @@ slave_revolt.2 = {
 			}
 			add_modifier = {
 				name = government_pays_for_slave_catchers
-				months = normal_modifier_time
+				days = normal_modifier_time
 			}
 		}
 		every_interest_group = {
@@ -197,7 +197,7 @@ slave_revolt.2 = {
 			}
 			add_modifier = {
 				name = government_pays_for_slave_catchers
-				months = normal_modifier_time
+				days = normal_modifier_time
 				multiplier = -0.5
 			}
 		}
@@ -212,7 +212,7 @@ slave_revolt.2 = {
 			}
 			add_modifier = {
 				name = government_lets_fugitives_go
-				months = normal_modifier_time
+				days = normal_modifier_time
 			}
 		}
 		every_interest_group = {
@@ -224,7 +224,7 @@ slave_revolt.2 = {
 			}
 			add_modifier = {
 				name = government_lets_fugitives_go
-				months = normal_modifier_time
+				days = normal_modifier_time
 				multiplier = -0.5
 			}
 		}
@@ -287,7 +287,7 @@ slave_revolt.3 = {
 
 			add_modifier = {
 				name = soft_approach_to_slaves
-				months = normal_modifier_time
+				days = normal_modifier_time
 			}
 		}
 	}
@@ -313,7 +313,7 @@ slave_revolt.3 = {
 
 			add_modifier = {
 				name = tough_approach_to_slaves
-				months = normal_modifier_time
+				days = normal_modifier_time
 			}
 		}
 	}

@@ -1116,4 +1116,83 @@ colored_emblem_texture_lists = {
         20 = "pb_center_08.dds"
         20 = "pb_center_09.dds"
     }
+	    chartered_companies_charges = {
+    	# Generic Icons
+        20 = "ce_southern_cross_australia.dds"
+        20 = "ce_southern_cross_brazil.dds"
+        20 = "ce_southern_cross_brazil_tilted.dds"
+        20 = "ce_southern_cross_new_zealand.dds"
+        20 = "ce_southern_cross_variant.dds"
+        20 = "ce_star_05_pinwheeled.dds"
+        20 = "ce_star_08.dds"
+        20 = "ce_shield_iberian_cross_thin.dds"
+        20 = "ce_shield_new_zealand.dds"
+        20 = "ce_shield_round_per_pale.dds"
+        20 = "ce_shield_heater_large_barry_05_bottom.dds"
+        20 = "ce_shield_heater_large_per_fess.dds"
+        20 = "ce_shield_heater_fess.dds"
+        20 = "ce_shield_accolade_modena.dds"
+        20 = "ce_palm_tree.dds"
+        20 = "ce_morning_star.dds"
+        20 = "ce_lion_rampant.dds"
+        20 = "ce_hammer_hoe.dds"
+        20 = "ce_crown_ducal.dds"
+        20 = "ce_armillary_sphere.dds"
+        20 = "ce_alaska_big_dipper.dds"
+
+        # African Chartered Companies
+		special_selection = {
+			trigger = {
+				scope:actor ?= {
+					country_is_in_africa = yes
+				}
+			}
+			50 = "ce_bull_head_african.dds"
+			50 = "ce_crocodile.dds"
+			50 = "ce_elephant_african.dds"
+			50 = "ce_kanaga.dds"
+			50 = "ce_moors_head.dds"
+			50 = "ce_nguni_shield.dds"
+			50 = "ce_palm_tree.dds"
+			50 = "ce_shield_african.dds"
+			50 = "ce_ship_manchester.dds"
+			50 = "ce_torch.dds"
+			50 = "ce_wildman.dds"
+			50 = "ce_wreath.dds"
+			50 = "ce_masai_shield.dds"
+		}
+		# American Chartered Companies
+		special_selection = {
+			trigger = {
+				scope:actor ?= {
+					country_is_in_americas = yes
+				}
+			}
+			50 = "ce_horse_tribal.dds"
+			50 = "ce_buffalo.dds"
+			50 = "ce_buffalo_02.dds"
+			50 = "ce_beehive.dds"
+			50 = "ce_beaver.dds"
+			50 = "ce_bear_california.dds"
+			50 = "ce_beehive.dds"
+		}
+		# Asian Chartered Companies
+		special_selection = {
+			trigger = {
+				scope:actor ?= {
+					OR = {
+						country_is_in_india = yes
+						country_is_in_east_asia = yes
+						country_is_in_southeast_asia = yes
+					}
+				}
+			}
+			50 = "ce_elephant_asia.dds"
+			50 = "ce_elephant_asia_decorated.dds"
+			50 = "ce_golden_fishes.dds"
+			50 = "ce_conch_shell.dds"
+			50 = "ce_umbrella_champasak.dds"
+			50 = "ce_bird_paradise.dds"
+		}
+    }
 }

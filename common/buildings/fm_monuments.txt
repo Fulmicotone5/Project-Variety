@@ -866,7 +866,7 @@ building_victoria_terminus = {
 	}
 
 	unlocking_technologies = { 
-		pneumatic_tools 
+		steel_frame_buildings 
 	}
 	
 	required_construction = construction_cost_monument
@@ -876,11 +876,7 @@ building_victoria_terminus = {
 	}
 
 	possible = {
-		owner = {
-			NOT = {
-				has_law = law_type:law_state_atheism
-			}
-		}
+		always = yes
 	}
 	ai_value = 10000
 

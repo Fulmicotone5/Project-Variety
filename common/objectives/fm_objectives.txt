@@ -17,7 +17,7 @@ objective_new_world = {
 	enabled_background = "gfx/interface/icons/objectives/new_world.dds"
 	icon = "gfx/interface/icons/objectives/egalitarian_society.dds"
 	
-	recommended_tags = { AMC AGA VSL DKT YUA NSP FOU RPQ VNA CAH IQS YMN }
+	recommended_tags = { AMC AGA VSL DKT YUA NSP FOU RPQ VNA NOS CAH IQS }
 	
 }
 
@@ -25,7 +25,7 @@ objective_crumbling = {
 	enabled_background = "gfx/interface/icons/objectives/crumbling_po.dds"
 	icon = "gfx/interface/icons/invention_icons/romanticism.dds"
 	
-	recommended_tags = { KOR ODU SAU YAG TAC YUE GUC NCL }	
+	recommended_tags = { KOR ODU SAU YAG TAC SIA BUR YUE }	
 
 }
 

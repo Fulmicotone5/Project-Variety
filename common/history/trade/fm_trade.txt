@@ -1,0 +1,12 @@
+TRADE = {
+	s:STATE_HOME_COUNTIES={
+		region_state:ENG={
+			sg:dye = {
+				add_imports = 5
+			}
+			sg:wood = {
+				add_imports = 300
+			}
+		}
+	}	
+}

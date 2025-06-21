@@ -41,5 +41,11 @@
 		add_journal_entry = {
 			type = je_scu_main
 		}
+		add_company = company_type:company_NOS
+		company:company_NOS = {
+			set_company_establishment_date = 1696.9.9
+			set_company_state_region = s:STATE_LOWLANDS
+			add_owned_country = c:NOS #links the country to this company
+		}
 	}
 }

@@ -11,7 +11,7 @@ economic_flavor.1 = {
 	desc = economic_flavor.1.desc
 	duration = 3
 	cooldown = {
-		months = normal_modifier_time
+		days = normal_modifier_time
 	}
 	trigger = {
 		has_variable = can_go_economic
@@ -25,7 +25,7 @@ economic_flavor.1 = {
 		default_option = yes
 		add_modifier = {
 			name = ve_economy_improvements
-			months = normal_modifier_time
+			days = normal_modifier_time
 		}
 	}
 }
@@ -42,7 +42,7 @@ economic_flavor.2 = {
 	desc = economic_flavor.1.desc
 	duration = 3
 	cooldown = {
-		months = normal_modifier_time
+		days = normal_modifier_time
 	}
 	trigger = {
 		has_variable = can_go_economic
@@ -56,7 +56,7 @@ economic_flavor.2 = {
 		capital = {
 			add_modifier = {
 				name = ve_inefficient_production
-				months = normal_modifier_time
+				days = normal_modifier_time
 			}
 		}
 	}
@@ -74,7 +74,7 @@ economic_flavor.3 = {
 	desc = economic_flavor.1.desc
 	duration = 3
 	cooldown = {
-		months = normal_modifier_time
+		days = normal_modifier_time
 	}
 	trigger = {
 		has_variable = can_go_economic
@@ -88,7 +88,7 @@ economic_flavor.3 = {
 		default_option = yes
 		add_modifier = {
 			name = ve_successful_bureaucracy
-			months = normal_modifier_time
+			days = normal_modifier_time
 		}
 	}
 }
@@ -105,7 +105,7 @@ economic_flavor.4 = {
 	desc = economic_flavor.1.desc
 	duration = 3
 	cooldown = {
-		months = normal_modifier_time
+		days = normal_modifier_time
 	}
 	trigger = {
 		has_variable = can_go_economic
@@ -119,7 +119,7 @@ economic_flavor.4 = {
 		default_option = yes
 		add_modifier = {
 			name = ve_corruption
-			months = normal_modifier_time
+			days = normal_modifier_time
 		}
 	}
 }
@@ -137,7 +137,7 @@ economic_flavor.5 = {
 	placement = scope:ve_eco_low_market_access
 	duration = 3
 	cooldown = {
-		months = normal_modifier_time
+		days = normal_modifier_time
 	}
 	trigger = {
 		has_variable = can_go_economic

@@ -247,6 +247,46 @@
 
     ### AGITATORS ###
 
+    historical_ada_lovelace_clothes = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = outfits
+                template = european_royal_outfits
+                range = { 0 1 }
+            }
+        }        
+        weight = {
+            base = 0
+            modifier = {
+                add = 90000
+                scope:character ?= {
+                    has_template = ada_lovelace_template
+                }
+            }
+        } 
+    }
+
+    historical_ada_lovelace_clothes = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = outfits
+                template = european_royal_outfits
+                range = { 0 1 }
+            }
+        }        
+        weight = {
+            base = 0
+            modifier = {
+                add = 90000
+                scope:character ?= {
+                    has_template = ada_lovelace_template
+                }
+            }
+        } 
+    }
+
     european_agitator_clothes = {
         dna_modifiers = {
             accessory = {
@@ -2302,6 +2342,217 @@
             }
         }
     }
+    
+    historical_florence_nightingale_clothes = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = outfits
+                template = european_working_class_outfits
+                range = { 1 1 } # targetting only female_outfit_polynesian_01_high
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 90000
+                scope:character ?= {
+                    has_template = GBR_florence_nightingale
+                }
+            }
+        }
+    }
+
+    count_dracula = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = coats
+                template = male_coat_dracula
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = necklaces
+                template = male_necklace_historical_dracula
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = props
+                template = glasses_02_dracula
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = legwear
+                template = polynesian_legwear
+                range = { 0 1 } # For the randomness to work correctly
+            }
+        }
+
+        weight = {
+            base = 0
+            modifier = {
+                add = 90000
+
+                scope:character ?= {
+                    OR = {
+                        has_template = canonic_count_dracula
+                        has_template = exile_count_dracula
+                    }
+                }
+            }
+        }
+    }
+
+    #Executives
+
+    ceo_arnold_peter_moller_clothes = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = civilian_coats
+                template = european_civilian_coats
+                accessory = male_civilian_coat_european_01
+            }
+            accessory = {
+                mode = add
+                gene = waistcoats
+                template = black_waistcoat
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = legwear
+                template = european_legwear
+                range = { 0 1 }
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 90000
+                scope:character ?= {
+                    has_template = DEN_arnold_peter_moller
+                }
+            }
+        }
+    }
+    ceo_lars_magnus_ericsson_clothes = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = civilian_coats
+                template = european_civilian_coats
+                accessory = male_civilian_coat_european_01
+            }
+            accessory = {
+                mode = add
+                gene = waistcoats
+                template = historical_waistcoats_dickens
+                range = { 0 1 }
+            }
+            accessory = {
+                mode = add
+                gene = legwear
+                template = european_legwear
+                range = { 0 1 }
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 90000
+                scope:character ?= {
+                    has_template = swe_lars_magnus_ericsson
+                }
+            }
+        }
+    }
+    ceo_talaat_harb_clothes = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = top_layer
+                template = executive_overcoat
+                range = { 0 0.5 } # For the randomness to work correctly
+            }
+
+            accessory = {
+                mode = add
+                gene = civilian_coats
+                template = european_executive_coats
+                range = { 0 1 } # For the randomness to work correctly
+            }
+
+            accessory = {
+                mode = add
+                gene = legwear
+                template = european_legwear
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            # headgear set in arabic_fez headgear file
+        }
+
+        weight = {
+            modifier = {
+                add = 90000
+                has_dlc_feature = mp1_cosmetics
+                scope:character ?= {
+                    has_template = EGY_talaat_harb
+                }
+            }
+        }
+    }
+    ceo_isambard_kingdom_brunel_clothes = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = top_layer
+                template = executive_overcoat
+                range = { 0 1 } # For the randomness to work correctly
+            }
+
+            accessory = {
+                mode = add
+                gene = civilian_coats
+                template = european_executive_coats
+                range = { 0 1 } # For the randomness to work correctly
+            }
+
+            accessory = {
+                mode = add
+                gene = legwear
+                template = european_legwear
+                range = { 0 1 } # For the randomness to work correctly
+            }
+
+            accessory = {
+                mode = add
+                gene = props
+                template = cigar_and_pipes
+                range = { 0.9 1 } # For cigars only
+            }
+
+            # headgear set in headgear file
+        }
+
+        weight = {
+            modifier = {
+                add = 90000
+                has_dlc_feature = mp1_cosmetics
+                scope:character ?= {
+                    AND = {
+                        has_template = GBR_isambard_kingdom_brunel
+                        has_role = executive
+                    }
+                }
+            }
+        }
+    }
+
+
 
     ### BACK TO YOUR REGULAR SCHEDULED PROGRAMMING ###
 
@@ -4283,7 +4534,15 @@
                         }
                         african_diaspora_clothes_trigger = yes
                     }
-                    politician_clothes_trigger = yes
+                     OR = {
+                        politician_clothes_trigger = yes
+                        AND = {
+                            executive_clothes_trigger = yes
+                            NOT = {
+                                has_dlc_feature = mp1_cosmetics
+                            }
+                        }
+                    }
                     scope:character ?= {
                         age >= define:NCharacters|ADULT_AGE
                         NOR = {
@@ -4468,7 +4727,15 @@
                     scope:character ?= {
                         is_interest_group_type = ig_landowners
                         age >= define:NCharacters|ADULT_AGE
-                        has_role = politician
+                         OR = {
+                            has_role = politician
+                            AND = {
+                                has_role = executive
+                                NOT = {
+                                    has_dlc_feature = mp1_cosmetics
+                                }
+                            }
+                        }
                         NAND = {
                             # monarchs wear other stuff
                             is_ruler = yes
@@ -5381,6 +5648,12 @@
                         OR = {
                             ruler_clothes_trigger = yes
                             politician_clothes_trigger = yes
+                              AND = {
+                                executive_clothes_trigger = yes
+                                NOT = {
+                                    has_dlc_feature = mp1_cosmetics
+                                }
+                            }
                         }
                     }
                 }
@@ -7734,4 +8007,83 @@
             }
         }
     }
+    
+    european_common_executive_clothes = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = top_layer
+                template = executive_overcoat
+                range = { 0 1 } # For the randomness to work correctly
+            }
+
+            accessory = {
+                mode = add
+                gene = civilian_coats
+                template = european_executive_coats
+                range = { 0 1 } # For the randomness to work correctly
+            }
+
+            accessory = {
+                mode = add
+                gene = legwear
+                template = european_legwear
+                range = { 0 1 } # For the randomness to work correctly
+            }
+
+            accessory = {
+                mode = add
+                gene = props
+                template = gene_lences
+                range = { 0 1 } # For the randomness to work correctly
+            }
+        }
+
+        weight = {
+            base = 0
+            modifier = {
+                add = 1000
+                has_dlc_feature = mp1_cosmetics
+                AND = {
+                    OR = {
+                        european_clothes_trigger = yes
+                        african_diaspora_clothes_trigger = yes
+                        scope:character ?= {
+                            OR = {
+                                culture = cu:na_cherokee
+                                culture = cu:na_muscogee
+                            }
+                        }
+                        AND = {
+                            european_clothes_trigger = no
+                            scope:character ?= {
+                                NOT = { has_ideology = ideology:ideology_traditionalist }
+                                owner ?= {
+                                    OR = {
+                                        AND = {
+                                            has_technology_researched = investment_banks
+                                            NOT = {
+                                                has_law = law_type:law_isolationism
+                                            }
+                                        }
+                                        is_country_type = recognized
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    OR = {
+                        AND = {
+                            politician_clothes_trigger = yes
+                            scope:character ?= {
+                                is_interest_group_type = ig_industrialists
+                            }
+                        }
+                        executive_clothes_trigger = yes
+                    }
+                }
+            }
+        }
+    }
+
 }

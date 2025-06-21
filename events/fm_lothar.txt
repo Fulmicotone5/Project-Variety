@@ -105,7 +105,7 @@ lotharingia.2 = {
 			}
 			add_modifier = {
 				name = modifier_loth_one
-				months = normal_modifier_time
+				days = normal_modifier_time
 				is_decaying = yes
 			}
 		}
@@ -165,7 +165,7 @@ lotharingia.3 = {
 			}
 			add_modifier = {
 				name = modifier_loth_three
-				months = normal_modifier_time
+				days = normal_modifier_time
 				is_decaying = yes
 			}
 		}
@@ -275,7 +275,7 @@ lotharingia.5 = {
 			}
 			add_modifier = {
 				name = modifier_loth_six
-				months = long_modifier_time
+				days = long_modifier_time
 			}
 		}
 		every_interest_group = {
@@ -284,7 +284,7 @@ lotharingia.5 = {
 			}
 			add_modifier = {
 				name = modifier_loth_seven
-				months = normal_modifier_time
+				days = normal_modifier_time
 				is_decaying = yes
 			}
 		}
@@ -294,7 +294,7 @@ lotharingia.5 = {
 			}
 			add_modifier = {
 				name = modifier_loth_eight
-				months = normal_modifier_time
+				days = normal_modifier_time
 				is_decaying = yes
 			}
 		}
@@ -481,7 +481,7 @@ lotharingia.8 = {
 			}
 			add_modifier = {
 				name = modifier_loth_nine
-				months = long_modifier_time
+				days = long_modifier_time
 			}
 			add_loyalists = {
 				strata = middle
@@ -810,7 +810,7 @@ lotharingia.11 = {
 			}
 			add_modifier = {
 				name = modifier_loth_ten
-				months = normal_modifier_time
+				days = normal_modifier_time
 				is_decaying = yes
 			}
 		}
@@ -823,7 +823,7 @@ lotharingia.11 = {
 			}
 			add_modifier = {
 				name = modifier_loth_eleven
-				months = normal_modifier_time
+				days = normal_modifier_time
 				is_decaying = yes
 			}
 		}
@@ -985,7 +985,7 @@ lotharingia.13 = {
 		}
 		add_modifier = {
 			name = modifier_loth_twelwe
-			months = long_modifier_time
+			days = long_modifier_time
 			is_decaying = yes
 		}
 	}
@@ -1023,22 +1023,22 @@ lotharingia.14 = {
 		}
 		add_modifier = {
 			name = modifier_loth_twelwe
-			months = long_modifier_time
+			days = long_modifier_time
 			is_decaying = yes
 		}
 		add_modifier = {
 			name = modifier_loth_thirteen
-			months = long_modifier_time
+			days = long_modifier_time
 			is_decaying = yes
 		}
 		add_modifier = {
 			name = modifier_loth_fourteen
-			months = long_modifier_time
+			days = long_modifier_time
 			is_decaying = yes
 		}
 		add_modifier = {
 			name = modifier_loth_fifteen
-			months = long_modifier_time
+			days = long_modifier_time
 			is_decaying = yes
 		}
 		add_primary_culture = cu:south_german

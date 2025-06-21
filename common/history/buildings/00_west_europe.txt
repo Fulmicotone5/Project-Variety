@@ -13,6 +13,17 @@
 				activate_production_methods={ "pm_vertical_filing_cabinets" }
 			}
 			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:SWU"
+						levels=5
+					}
+				}
+				reserves=1
+			}
+			create_building={
 				building="building_military_shipyards"
 				add_ownership={
 					country={
@@ -478,6 +489,17 @@
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
 			}
 			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:DKE"
+						levels=5
+					}
+				}
+				reserves=1
+			}
+			create_building={
 				building="building_artillery_foundries"
 				add_ownership={
 					country={
@@ -636,6 +658,17 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_unrefrigerated" "pm_fishing_trawlers" }
+			}
+			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:NOR"
+						levels=3
+					}
+				}
+				reserves=1
 			}
 			create_building={
 				building="building_shipyards"
@@ -900,6 +933,17 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
+			}
+			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:ENG"
+						levels=5
+					}
+				}
+				reserves=1
 			}
 			create_building={
 				building="building_arms_industry"
@@ -1229,6 +1273,17 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_sweeteners" "pm_pot_stills" }
+			}
+			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:WLS"
+						levels=2
+					}
+				}
+				reserves=1
 			}
 			create_building={
 				building="building_logging_camp"
@@ -1774,6 +1829,17 @@
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
 			}
 			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:SCU"
+						levels=5
+					}
+				}
+				reserves=1
+			}
+			create_building={
 				building="building_construction_sector"
 				add_ownership={
 					country={
@@ -2023,6 +2089,17 @@
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
 			}
 			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:IRE"
+						levels=5
+					}
+				}
+				reserves=1
+			}
+			create_building={
 				building="building_logging_camp"
 				add_ownership={
 					country={
@@ -2202,6 +2279,17 @@
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
 			}
 			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:FRU"
+						levels=3
+					}
+				}
+				reserves=1
+			}
+			create_building={
 				building="building_tooling_workshops"
 				add_ownership={
 					country={
@@ -2303,6 +2391,17 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_unrefrigerated" "pm_fishing_trawlers" }
+			}
+			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:PRI"
+						levels=3
+					}
+				}
+				reserves=1
 			}
 			create_building={
 				building="building_arms_industry"
@@ -2555,6 +2654,17 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_professional_bureaucrats" "pm_religious_bureaucrats" "pm_horizontal_drawer_cabinets" }
+			}
+			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:TOU"
+						levels=2
+					}
+				}
+				reserves=1
 			}
 			create_building={
 				building="building_shipyards"
@@ -3254,6 +3364,17 @@
 				activate_production_methods={ "pm_vertical_filing_cabinets" }
 			}
 			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:BRI"
+						levels=3
+					}
+				}
+				reserves=1
+			}
+			create_building={
 				building="building_shipyards"
 				add_ownership={
 					country={
@@ -3355,6 +3476,17 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_steel" "pm_automation_disabled" }
+			}
+			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:BUD"
+						levels=5
+					}
+				}
+				reserves=1
 			}
 			create_building={
 				building="building_government_administration"
@@ -3681,6 +3813,17 @@
 				activate_production_methods={ "pm_vertical_filing_cabinets" }
 			}
 			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:DCQ"
+						levels=2
+					}
+				}
+				reserves=1
+			}
+			create_building={
 				building="building_tooling_workshops"
 				add_ownership={
 					country={
@@ -3896,6 +4039,17 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_vertical_filing_cabinets" }
+			}
+			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:NED"
+						levels=8
+					}
+				}
+				reserves=1
 			}
 			create_building={
 				building="building_railway"
@@ -4531,6 +4685,17 @@
 				activate_production_methods={ "pm_vertical_filing_cabinets" }
 			}
 			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:FLA"
+						levels=5
+					}
+				}
+				reserves=1
+			}
+			create_building={
 				building="building_paper_mills"
 				add_ownership={
 					country={
@@ -4884,6 +5049,17 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_blister_steel_process" "pm_automation_disabled" }
+			}
+			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:BOH"
+						levels=5
+					}
+				}
+				reserves=1
 			}
 			create_building={
 				building="building_munition_plants"
@@ -5287,6 +5463,17 @@
 				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated" }
 			}
 			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:PUM"
+						levels=3
+					}
+				}
+				reserves=1
+			}
+			create_building={
 				building="building_rye_farm"
 				add_ownership={
 					country={
@@ -5485,6 +5672,17 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_vertical_filing_cabinets" }
+			}
+			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:ZUR"
+						levels=3
+					}
+				}
+				reserves=1
 			}
 			create_building={
 				building="building_university"
@@ -6169,6 +6367,17 @@
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
 			}
 			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:LOT"
+						levels=5
+					}
+				}
+				reserves=1
+			}
+			create_building={
 				building="building_rye_farm"
 				add_ownership={
 					country={
@@ -6556,6 +6765,17 @@
 				activate_production_methods={ "pm_professional_bureaucrats" "pm_religious_bureaucrats" "pm_vertical_filing_cabinets" }
 			}
 			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:HEN"
+						levels=5
+					}
+				}
+				reserves=1
+			}
+			create_building={
 				building="building_chemical_plants"
 				add_ownership={
 					building={
@@ -6766,10 +6986,21 @@
 				activate_production_methods={ "pm_vertical_filing_cabinets" }
 			}
 			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:BAY"
+						levels=5
+					}
+				}
+				reserves=1
+			}
+			create_building={
 				building="building_paper_mills"
 				add_ownership={
 					country={
-						country="c:VEN"
+						country="c:BAY"
 						levels=4
 					}
 				}

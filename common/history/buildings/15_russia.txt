@@ -124,6 +124,17 @@
 				activate_production_methods={ "pm_professional_bureaucrats" "pm_religious_bureaucrats" "pm_horizontal_drawer_cabinets" }
 			}
 			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:LIT"
+						levels=3
+					}
+				}
+				reserves=1
+			}
+			create_building={
 				building="building_arms_industry"
 				add_ownership={
 					country={
@@ -434,6 +445,17 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_professional_bureaucrats" "pm_religious_bureaucrats" "pm_vertical_filing_cabinets" }
+			}
+			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:FUN"
+						levels=5
+					}
+				}
+				reserves=1
 			}
 			create_building={
 				building="building_shipyards"
@@ -845,6 +867,17 @@
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
 			}
 			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:SMO"
+						levels=3
+					}
+				}
+				reserves=1
+			}
+			create_building={
 				building="building_rye_farm"
 				add_ownership={
 					building={
@@ -1016,6 +1049,17 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
+			}
+			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:COH"
+						levels=3
+					}
+				}
+				reserves=1
 			}
 			create_building={
 				building="building_arms_industry"
@@ -1339,6 +1383,17 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated"  }
+			}
+			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:CRI"
+						levels=1
+					}
+				}
+				reserves=1
 			}
 			create_building={
 				building="building_barracks"
@@ -1830,6 +1885,17 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
+			}
+			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:KAR"
+						levels=3
+					}
+				}
+				reserves=1
 			}
 			create_building={
 				building="building_arms_industry"

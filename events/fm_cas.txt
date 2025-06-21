@@ -247,7 +247,7 @@ fm_cas.6 = { #return inq
 			}
 			add_modifier = {
 				name = modifier_rome_eight
-				months = normal_modifier_time
+				days = normal_modifier_time
 				is_decaying = yes
 			}
 		}

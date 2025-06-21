@@ -1,8 +1,0 @@
-﻿DIPLOMACY = {
-	c:OIS ?= {
-		create_diplomatic_pact = {
-			country = c:SIC
-			type = trade_agreement
-		}	
-	}			
-}

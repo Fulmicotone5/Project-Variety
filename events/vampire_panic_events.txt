@@ -185,7 +185,7 @@ vampire_panic.1 = {
 		}
 		add_modifier = { #spend bureaucracy
 			name = vampire_research_modifier
-			months = normal_modifier_time
+			days = normal_modifier_time
 		}
 		if = {
 			limit = { can_research = antibiotics }

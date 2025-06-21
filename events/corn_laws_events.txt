@@ -35,7 +35,7 @@ corn_laws.1 = {
         		# interest_group_approval_add
         		add_modifier = {
         			name = repealed_corn_laws
-        			months = long_modifier_time
+        			days = long_modifier_time
         		}
         	}
         }
@@ -109,7 +109,7 @@ corn_laws.2 = {
         	# character_popularity_add
         	add_modifier = {
         		name = corn_law_proponent
-        		months = normal_modifier_time
+        		days = normal_modifier_time
         	}
         }
 	}
@@ -170,7 +170,7 @@ corn_laws.3 = {
 		# country_aristocrats_pol_str_mult
 		add_modifier = {
 			name = corn_law_leverage
-			months = normal_modifier_time
+			days = normal_modifier_time
 			multiplier = 2
 		}
 		add_loyalists = {
@@ -184,7 +184,7 @@ corn_laws.3 = {
         default_option = yes
         add_modifier = {
         	name = corn_law_leverage
-        	months = normal_modifier_time
+        	days = normal_modifier_time
         }
 	}
 }
@@ -234,7 +234,7 @@ corn_laws.4 = {
 		name = corn_laws.4.a
 		add_modifier = {
 			name = temporary_minimum_wages
-			months = normal_modifier_time
+			days = normal_modifier_time
 		}
 	}
 

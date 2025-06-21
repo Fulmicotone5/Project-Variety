@@ -645,8 +645,10 @@ EIC = {
 	country_type = colonial
 
 	tier = kingdom
+	social_hierarchy = british_indian_caste_system
 	
 	cultures = { portuguese }
+
 	capital = STATE_EAST_BENGAL
 }
 
@@ -2311,6 +2313,24 @@ BR1 = {
 	cultures = { burmese }
 	capital = STATE_MANDALAY
 }
+BR2 = {
+	color = {  38 64 181 }
+	country_type = recognized
+	
+	tier = empire
+	
+	cultures = { thai lao shan zhuang }
+	capital = STATE_BANGKOK
+}
+BR3 = {
+	color = { 90 136 191 }
+	country_type = recognized
+	
+	tier = hegemony
+	
+	cultures = { burmese khmer vietnamese thai lao shan zhuang balinese batak bornean dayak javan malay moluccan sumatran  }
+	capital = STATE_BANGKOK
+}
 
 CAM = {
 	color = { 127  180  60 }
@@ -2569,7 +2589,7 @@ CHE = {
 
 	religion = animist
 	
-	cultures = { cherokee }
+	cultures = { na_cherokee }
 	capital = STATE_ARKANSAS
 }
 
@@ -3038,7 +3058,7 @@ VOC = {
 	tier = principality
 	
 	cultures = { dutch }
-	capital = STATE_GUANGDONG
+	capital = STATE_SHAOZHOU
 }
 
 ORL = {
@@ -3732,7 +3752,7 @@ YUE = { # Yue
 	tier = principality
 	cultures = { yue }
 	
-	capital = STATE_GUANGDONG
+	capital = STATE_SHAOZHOU
 }
 
 OAX = { # Oaxaca
@@ -4395,7 +4415,7 @@ GNG = { #Guangxi
 	color = { 133 56 8 }
 	country_type = unrecognized
 	tier = principality
-	cultures = { han yue }
+	cultures = { han yue zhuang }
 	capital = STATE_GUANGXI
 }
 

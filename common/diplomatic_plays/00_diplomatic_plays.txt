@@ -1,9 +1,10 @@
 ﻿# This play is only used as a 'default diplomatic play' for certain triggers etc, and potentially for scripted content
 # It can never actually be launched in the normal way
-dp_war_reparations = {
-	war_goal = war_reparations
-	
-	texture = "gfx/interface/icons/war_goals/war_reparations.dds"
+dp_default_treaty_article = {
+	# This defaults to a standard money transfer article
+	war_goal = enforce_treaty_article
+
+	texture = "gfx/interface/icons/war_goals/enforce_treaty_article.dds"
 
 	selectable_in_lens = {
 		always = no
@@ -795,11 +796,20 @@ dp_annex_war = {
 	texture = "gfx/interface/icons/war_goals/annex_country.dds"
 	
 	selectable_in_lens = {
-		always = no
+		aggressive_diplomatic_plays_permitted = yes
 	}
 	
 	possible = {
 		NOT = { has_modifier = diplomatic_plays_blocked }
+		NOT = { is_country_type = decentralized }
+		aggressive_diplomatic_plays_permitted = yes
+		NOT = { is_subject_of = scope:target_country }
+		scope:target_country = {
+			NOT = { is_country_type = decentralized }
+			NOT = { is_subject_of = root }
+			country_rank <= rank_value:insignificant_power
+		}
+		diplomatic_play_has_no_relations_blockers = yes
 	}
 	
 	ai_acceptance_max = 75

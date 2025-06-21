@@ -24,7 +24,7 @@ fall_theo.1 = {
 			}
 			add_modifier = {
 				name = modifier_loth_two
-				months = long_modifier_time
+				days = long_modifier_time
 				is_decaying = yes
 			}
 		}
