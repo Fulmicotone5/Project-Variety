@@ -425,6 +425,8 @@ on_monthly_pulse_country = {
 		delay = { days = 7 }
 		fund_lobbies_monthly_events
 		spooky_halloween_events
+		delay = { days = 7 }
+		tech_monthly_events
 	}
 }
 
@@ -648,10 +650,13 @@ on_yearly_pulse_country = {
 		bp1_misc_yearly_events
 		delay = { days = 3 }
 		indochina_yearly_events
+		ip2_misc_yearly_events
 		delay = { days = 5 }
 		exiles_yearly_events
 		delay = { days = 8 }
 		historical_agitators_yearly_events
+		famine_yearly_events
+
 		delay = { days = 13 }
 		slavery_abolition_yearly_events
 		delay = { days = 21 }
@@ -672,7 +677,6 @@ on_half_yearly_pulse_country = {
 		delay = { days = 4 }
 		silkworm_half_yearly_events
 		delay = { days = 6 }
-		secession_half_yearly_events
 		delay = { days = 14 }
 		korea_half_yearly_events
 		delay = { days = 17 }
@@ -2818,6 +2822,8 @@ on_law_checkpoint_stall = {
 		10 = agitator_legal_events.9
 		10 = agitator_legal_events.10
 		10 = technocracy.1
+		10 = corporate_state.3
+		10 = corporate_state.6
 	}
 }
 
@@ -3089,10 +3095,22 @@ on_revolution_start = {
 				}
 				trigger_event = {
 					id = gg_korea.7
-					popup = yes
+					popup = yes }
+				}
+			}
+					ROOT = {
+			random_civil_war = {
+				limit = {
+					is_civil_war_type = revolution
+				}
+				scope:target ?= {
+					set_variable = { name = civil_war_type_var value = prev.political_movement.type }
 				}
 			}
 		}
+				
+			
+		
 	}
 }
 
@@ -3466,11 +3484,19 @@ on_wargoal_enforced = {
 				}
 			}
 			owner = {
-				change_variable = {
-					name = recognition_progress_var
-					add = {
-						add = scope:wargoal_impact
+				set_variable = {
+					name = temp_wargoal_impact
+					value = {
+						value = scope:wargoal_impact
 						multiply = 4
+					}
+				}
+				if = {
+					limit = {
+						has_variable = temp_wargoal_impact
+					}
+					je:je_earn_recognition ?= {
+						add_progress = { value = owner.var:temp_wargoal_impact name = earn_recognition_progress_bar }
 					}
 				}
 			}
@@ -3674,20 +3700,20 @@ on_harvest_condition_started_in_country = {
 	}
 }
 
-on_state_owner_change = {
-	effect = {
-		evaluate_and_assign_state_hub_dynamic_names  = yes # All dynamic naming is handled by this scripted effect
-	}
-}
-on_state_created = { 
-	effect = { 
-		evaluate_and_assign_state_hub_dynamic_names  = yes # All dynamic naming is handled by this scripted effect
-	}
-}
-
 # Root = state
 on_state_incorporation = {
 	effect = {
+
+	}
+}
+on_state_owner_change = {
+	effect = {
+		evaluate_and_assign_state_hub_dynamic_names = yes # All dynamic naming is handled by this scripted effect
+	}
+}
+on_state_created = {
+	effect = {
+		evaluate_and_assign_state_hub_dynamic_names = yes # All dynamic naming is handled by this scripted effect
 	}
 }
 
