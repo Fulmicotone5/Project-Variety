@@ -37,6 +37,7 @@
 						is_subject_type = subject_type_colony
 						is_subject_type = subject_type_puppet
 						is_subject_type = subject_type_vassal
+						is_subject_type = subject_type_chartered_company
 					}								
 				}
 			}
@@ -339,6 +340,7 @@ take_state = {
 							is_subject_type = subject_type_colony
 							is_subject_type = subject_type_puppet
 							is_subject_type = subject_type_vassal
+							is_subject_type = subject_type_chartered_company
 						}
 					}					
 				}
@@ -424,6 +426,7 @@ demand_state = {
 						is_subject_type = subject_type_colony
 						is_subject_type = subject_type_puppet
 						is_subject_type = subject_type_vassal
+						is_subject_type = subject_type_chartered_company
 					}
 				}
 			}
