@@ -220,6 +220,43 @@ MSH = {
 	cultures = { south_bantu }
 	capital = STATE_ZAMBEZI
 }
+AF6 = {
+	color = { 138 168 70 }
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { west_africanus }
+	capital = STATE_EAST_SAHARA
+}
+AF5 = {
+	color = { 123 134 74 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { equatorial_bantu }
+	capital = STATE_UBANGI_SHARI
+}
+AF4 = {
+	color= rgb{ 227 194 96 }
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { central_bantu }
+	capital = STATE_KASAI
+}
+AF3 = {
+	color= hsv{ 0.88 0.35 0.64 }
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { east_africanus }
+	capital = STATE_EQUATORIA
+}
 AF2 = {
 	color= hsv{ 0.58 0.51 0.96 }
 	country_type = decentralized
@@ -656,7 +693,7 @@ MSI = {
 	
 	tier = principality
 	
-	cultures = { maasai }
+	cultures = { east_africanus }
 	capital = STATE_RIFT_VALLEY
 }
 
@@ -667,7 +704,7 @@ TRK = {
 	
 	tier = principality
 	
-	cultures = { east_africanus maasai }
+	cultures = { east_africanus  }
 	capital = STATE_RIFT_VALLEY
 }
 

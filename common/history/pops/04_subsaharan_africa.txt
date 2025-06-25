@@ -82,36 +82,19 @@
 		}
 	}
 	s:STATE_SENEGAL = {
-		region_state:CAY = {
+		region_state:AF6 = {
 			create_pop = {
 				culture = central_bantu
-				size = 32000
-			}
-		}
-		region_state:JLF = {
-			create_pop = {
-				culture = central_bantu
-				size = 257600
+				size = 366544
 			}
 			create_pop = {
 				pop_type = slaves
 				culture = central_bantu
-				size = 6000
+				size = 25666
 			}
 			create_pop = {
 				culture = west_africanus
 				size = 12400
-			}
-		}
-		region_state:FTR = {
-			create_pop = {
-				culture = central_bantu
-				size = 80004
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = central_bantu
-				size = 18000
 			}
 		}
 	}
@@ -142,19 +125,23 @@
 				size = 220
 			}
 		}
-		region_state:SRR = {
+		region_state:AF6 = {
 			create_pop = {
 				culture = west_africanus
 				religion = animist
-				size = 80400
+				size = 280400
 			}
 			create_pop = {
 				pop_type = slaves
 				culture = west_africanus
 				size = 8000
 			}
-		}
-		region_state:BND = {
+			create_pop = {
+				pop_type = slaves
+				culture = west_africanus
+				religion = animist
+				size = 20000
+			}
 			create_pop = {
 				culture = west_africanus
 				size = 96000
@@ -162,19 +149,6 @@
 			create_pop = {
 				culture = central_bantu
 				size = 64400
-			}
-		}
-		region_state:KBU = {
-			create_pop = {
-				culture = west_africanus
-				religion = animist
-				size = 204000
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = west_africanus
-				religion = animist
-				size = 20000
 			}
 		}
 	}
@@ -601,7 +575,7 @@
 				size = 1000
 			}
 		}
-		region_state:SSU = {
+		region_state:AF6 = {
 			create_pop = {
 				culture = west_africanus
 				size = 316000
@@ -815,10 +789,10 @@
 		}
 	}
 	s:STATE_TANGANYIKA = {
-		region_state:NYM = {
+		region_state:AF2 = {
 			create_pop = {
 				culture = east_bantu
-				size = 531200
+				size = 566200
 			}
 			create_pop = {
 				culture = east_bantu
@@ -835,12 +809,6 @@
 				pop_type = slaves
 				culture = east_bantu
 				size = 25000
-			}
-		}
-		region_state:MSI = {
-			create_pop = {
-				culture = east_bantu
-				size = 45673
 			}
 		}
 		region_state:KRG = {
@@ -878,7 +846,7 @@
 		}
 	}
 	s:STATE_KENYA = {
-		region_state:KKY = {
+		region_state:AF2 = {
 			create_pop = {
 				culture = east_bantu
 				size = 492600
@@ -900,7 +868,7 @@
 		}
 	}
 	s:STATE_RIFT_VALLEY = {
-		region_state:MSI = {
+		region_state:AF2 = {
 			create_pop = {
 				culture = east_bantu
 				size = 49000
@@ -922,7 +890,7 @@
 				size = 6000
 			}
 		}
-		region_state:TRK = {
+		region_state:AF3 = {
 			create_pop = {
 				culture = east_africanus
 				size = 155800
@@ -1375,22 +1343,22 @@
 		}
 	}
 	s:STATE_EQUATORIA = {
-		region_state:DNK = {
+		region_state:AF3 = {
 			create_pop = {
 				culture = sudanese
-				size = 6000
+				size = 10392
 			}
 			create_pop = {
 				culture = east_bantu
-				size = 50000
+				size = 101222
 			}
 			create_pop = {
 				culture = east_africanus
-				size = 220000
+				size = 601333
 			}
 			create_pop = {
 				culture = fur
-				size = 26000
+				size = 27654
 			}
 			create_pop = {
 				pop_type = slaves
@@ -1400,71 +1368,21 @@
 			create_pop = {
 				pop_type = slaves
 				culture = east_bantu
-				size = 2000
+				size = 12344
 			}
 			create_pop = {
 				pop_type = slaves
 				culture = east_africanus
-				size = 12000
+				size = 21566
 			}
 			create_pop = {
 				pop_type = slaves
 				culture = fur
-				size = 2000
-			}
-		}
-		region_state:NUE = {
-			create_pop = {
-				culture = east_africanus
-				size = 248000
-			}
-			create_pop = {
-				culture = sudanese
-				size = 4000
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = east_africanus
-				size = 15000
-			}
-		}
-		region_state:DFT = {
-			create_pop = {
-				culture = east_africanus
-				size = 48036
+				size = 7866
 			}
 			create_pop = {
 				culture = central_bantu
 				size = 218804
-			}
-			create_pop = {
-				culture = east_bantu
-				size = 50000
-			}
-			create_pop = {
-				culture = fur
-				size = 11000
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = east_bantu
-				size = 10000
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = fur
-				size = 5000
-			}
-		}
-		region_state:TPS = {
-			create_pop = {
-				culture = east_africanus
-				size = 76000
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = east_africanus
-				size = 4000
 			}
 		}
 	}
@@ -1565,7 +1483,7 @@
 				size = 10000
 			}
 		}
-		region_state:BMM = {
+		region_state:AF5 = {
 			create_pop = {
 				culture = equatorial_bantu
 				religion = sunni
@@ -1598,39 +1516,28 @@
 				size = 6400
 			}
 		}
-		region_state:FNG = {
+		region_state:AF5 = {
 			create_pop = {
 				culture = central_bantu
 				size = 688000
 			}
 			create_pop = {
 				culture = equatorial_bantu
-				size = 149992
+				size = 749655
 			}
 
 			create_pop = {
 				pop_type = slaves
 				culture = equatorial_bantu
-				size = 13000
-			}
-		}
-		region_state:DLA = {
-			create_pop = {
-				culture = equatorial_bantu
-				size = 600000
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = equatorial_bantu
-				size = 80000
+				size = 95444
 			}
 		}
 	}
 	s:STATE_UBANGI_SHARI = {
-		region_state:DAK = {
+		region_state:AF5 = {
 			create_pop = {
 				culture = equatorial_bantu
-				size = 283400
+				size = 303222
 			}
 			create_pop = {
 				culture = fur
@@ -1639,74 +1546,28 @@
 			create_pop = {
 				pop_type = slaves
 				culture = central_bantu
-				size = 12000
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = central_bantu
-				size = 4000
-			}
-		}
-		region_state:ZND = {
-			create_pop = {
-				culture = equatorial_bantu
-				size = 18000
+				size = 18443
 			}
 			create_pop = {
 				culture = central_bantu
-				size = 28000
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = equatorial_bantu
-				size = 6000
+				size = 32556
 			}
 		}
 	}
 	s:STATE_CONGO = {
-		region_state:BOB = {
+		region_state:AF4 = {
 			create_pop = {
 				culture = bakongo
-				size = 20200
+				size = 25200
 			}
 			create_pop = {
 				culture = central_bantu
-				size = 21600
+				size = 24600
 			}
 			create_pop = {
 				pop_type = slaves
 				culture = central_bantu
-				size = 2400
-			}
-		}
-		region_state:LNG = {
-			create_pop = {
-				culture = bakongo
-				size = 36200
-			}
-			create_pop = {
-				culture = central_bantu
-				size = 19000
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = central_bantu
-				size = 9000
-			}
-		}
-		region_state:TKE = {
-			create_pop = {
-				culture = bakongo
-				size = 29000
-			}
-			create_pop = {
-				culture = central_bantu
-				size = 10000
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = central_bantu
-				size = 2000
+				size = 16554
 			}
 			create_pop = {
 				pop_type = slaves
@@ -1716,67 +1577,23 @@
 		}
 	}
 	s:STATE_CONGO_ORIENTALE = {
-		region_state:MNB = {
+		region_state:AF4 = {
 			create_pop = {
 				culture = central_bantu
-				size = 433500
+				size = 1056433
 			}
 			create_pop = {
 				pop_type = slaves
 				culture = central_bantu
-				size = 34500
-			}
-		}
-		region_state:ZND = {
-			create_pop = {
-				culture = central_bantu
-				size = 391006
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = central_bantu
-				size = 28506
-			}
-		}
-		region_state:LGA = {
-			create_pop = {
-				culture = central_bantu
-				size = 228000
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = central_bantu
-				size = 12000
-			}
-		}
-		region_state:HMB = {
-			create_pop = {
-				culture = central_bantu
-				size = 321000
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = central_bantu
-				size = 15000
-			}
-		}
-		region_state:LBA = {
-			create_pop = {
-				culture = central_bantu
-				size = 96012
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = central_bantu
-				size = 12000
+				size = 88066
 			}
 		}
 	}
 	s:STATE_KASAI = {
-		region_state:KBA = {
+		region_state:AF4 = {
 			create_pop = {
 				culture = central_bantu
-				size = 720000
+				size = 1220000
 			}
 			create_pop = {
 				culture = south_bantu
@@ -1785,23 +1602,12 @@
 			create_pop = {
 				pop_type = slaves
 				culture = central_bantu
-				size = 72000
+				size = 112000
 			}
 			create_pop = {
 				pop_type = slaves
 				culture = south_bantu
 				size = 6000
-			}
-		}
-		region_state:LBA = {
-			create_pop = {
-				culture = central_bantu
-				size = 442000
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = central_bantu
-				size = 30000
 			}
 		}
 	}
@@ -1831,7 +1637,7 @@
 				size = 30000
 			}
 		}
-		region_state:YKA = {
+		region_state:AF4 = {
 			create_pop = {
 				culture = bakongo
 				size = 165000
@@ -1853,26 +1659,15 @@
 		}
 	}
 	s:STATE_EQUATEUR = {
-		region_state:BNG = {
+		region_state:AF4 = {
 			create_pop = {
 				culture = central_bantu
-				size = 595200
+				size = 844200
 			}
 			create_pop = {
 				pop_type = slaves
 				culture = central_bantu
-				size = 30000
-			}
-		}
-		region_state:BOB = {
-			create_pop = {
-				culture = central_bantu
-				size = 240012
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = central_bantu
-				size = 12000
+				size = 43222
 			}
 		}
 	}
@@ -1969,14 +1764,14 @@
 		}
 	}
 	s:STATE_GABON = {
-		region_state:FNG = {
+		region_state:AF4 = {
 			create_pop = {
 				culture = central_bantu
-				size = 56000
+				size = 75000
 			}
 			create_pop = {
 				culture = equatorial_bantu
-				size = 60800
+				size = 160800
 			}
 			create_pop = {
 				pop_type = slaves
@@ -1986,29 +1781,12 @@
 			create_pop = {
 				pop_type = slaves
 				culture = equatorial_bantu
-				size = 20000
+				size = 45970
 			}
-		}
-		region_state:LNG = {
 			create_pop = {
 				culture = bakongo
 				size = 32000
 			}
-			create_pop = {
-				culture = equatorial_bantu
-				size = 105200
-			}
-			create_pop = {
-				culture = central_bantu
-				size = 6000
-			}
-
-			create_pop = {
-				pop_type = slaves
-				culture = equatorial_bantu
-				size = 15000
-			}
-
 		}
 	}
 	s:STATE_ZAMBIA = {
@@ -2051,6 +1829,17 @@
 			create_pop = {
 				culture = east_bantu
 				size = 75004
+			}
+		}
+		region_state:AF1 = {
+			create_pop = {
+				culture = south_bantu
+				size = 221000
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = south_bantu
+				size = 15000
 			}
 		}
 	}

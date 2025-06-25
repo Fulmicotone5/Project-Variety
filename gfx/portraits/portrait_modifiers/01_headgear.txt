@@ -2025,7 +2025,7 @@ headgear = {
                         NOR = {
                             has_discrimination_trait = ethiopian
                             has_discrimination_trait = bantu
-                            THIS = cu:maasai
+                            THIS = cu:east_africanus
                         }
                     }
                 }

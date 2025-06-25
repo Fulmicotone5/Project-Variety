@@ -15,30 +15,6 @@
 		}
 	}
 	s:STATE_SENEGAL = {
-		region_state:FTR = {
-			create_building={
-				building="building_millet_farm"
-				add_ownership={
-					country={
-						country="c:FTR"
-						levels=1
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_fig_orchards" "pm_tools_disabled" }
-			}
-			create_building={
-				building="building_barracks"
-				add_ownership={
-					country={
-						country="c:FTR"
-						levels=10
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_general_training" }
-			}
-		}
 	}
 	s:STATE_GAMBIA = {
 		region_state:PUR = {

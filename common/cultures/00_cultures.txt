@@ -19876,7 +19876,7 @@ teda={
 	graphics = african
 }
 
-central_bantu ={ # Gabon + Cameroon + CAR
+central_bantu ={ 
 	color= rgb{ 227 194 96 }
 	religion = animist
 	traits = { central_african_culture_group bantu african_heritage }

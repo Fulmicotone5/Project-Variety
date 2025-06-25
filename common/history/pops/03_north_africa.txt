@@ -671,7 +671,7 @@
 		}
 	}
 	s:STATE_SAHARA = {
-		region_state:TUA = {
+		region_state:AF6 = {
 			create_pop = {
 				culture = berber
 				size = 4000
@@ -693,7 +693,7 @@
 		}
 	}
 	s:STATE_EAST_SAHARA = {
-		region_state:AHG = {
+		region_state:AF6 = {
 			create_pop = {
 				culture = west_africanus
 				size = 45600
@@ -745,19 +745,33 @@
 		}
 	}
 	s:STATE_MAURITANIA = {
-		region_state:OUA = {
+		region_state:AF6 = {
 			create_pop = {
 				culture = west_africanus
-				size = 52000
+				size = 121000
 			}
 			create_pop = {
 				culture = haratin
 				size = 22000
 			}
 			create_pop = {
+				culture = central_bantu
+				size = 10000
+			}
+			create_pop = {
 				pop_type = slaves
 				culture = haratin
 				size = 10000
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = central_bantu
+				size = 2000
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = west_africanus
+				size = 3000
 			}
 		}
 		region_state:CAS = {
@@ -779,53 +793,9 @@
 				size = 4000
 			}
 		}
-		region_state:TRZ = {
-			create_pop = {
-				culture = west_africanus
-				size = 80000
-			}
-			create_pop = {
-				culture = haratin
-				size = 40000
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = haratin
-				size = 4000
-			}
-		}
-		region_state:FTR = {
-			create_pop = {
-				culture = central_bantu
-				size = 10000
-			}
-			create_pop = {
-				culture = west_africanus
-				size = 33000
-			}
-			create_pop = {
-				culture = haratin
-				size = 28000
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = central_bantu
-				size = 2000
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = west_africanus
-				size = 3000
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = haratin
-				size = 4000
-			}
-		}
 	}
 	s:STATE_INNER_MAURITANIA = {
-		region_state:OUA = {
+		region_state:AF6 = {
 			create_pop = {
 				culture = west_africanus
 				size = 51000
@@ -881,7 +851,7 @@
 		}
 	}
 	s:STATE_TIMBUKTU = {
-		region_state:ADG = {
+		region_state:AF6 = {
 			create_pop = {
 				culture = central_bantu
 				size = 15000
@@ -908,7 +878,7 @@
 		}
 	}
 	s:STATE_NIGER = {
-		region_state:AIR = {
+		region_state:AF6 = {
 			create_pop = {
 				culture = west_africanus
 				size = 104000
@@ -961,7 +931,7 @@
 				size = 28000
 			}
 		}
-		region_state:TBI = {
+		region_state:AF6 = {
 			create_pop = {
 				culture = west_africanus
 				size = 108904
