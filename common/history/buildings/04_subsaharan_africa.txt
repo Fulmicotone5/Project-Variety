@@ -1692,7 +1692,7 @@
 				add_ownership={
 					country={
 						country="c:ACH"
-						levels=10
+						levels=3
 					}
 				}
 				reserves=1

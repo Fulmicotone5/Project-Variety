@@ -1097,7 +1097,7 @@ SOA = {
 
 	tier = empire
 	
-	cultures = { hausa kanuri fulbe }
+	cultures = { hausa  central_bantu }
 	capital = STATE_TUNISIA
 }
 

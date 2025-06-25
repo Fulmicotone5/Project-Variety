@@ -91,17 +91,14 @@ GLOBAL = {
 		add_radicals = {
 			value = 0.1
 		}
+
 		add_radicals = {
 			value = 0.2
-			culture = cu:bakongo
+			culture = cu:central_bantu
 		}
 		add_radicals = {
 			value = 0.2
-			culture = cu:ovimbundu
-		}
-		add_radicals = {
-			value = 0.2
-			culture = cu:kavango_bantu
+			culture = cu:south_bantu
 		}
 	}
 

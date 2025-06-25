@@ -19156,6 +19156,51 @@ tiv={
 	}
 	graphics = african
 }
+west_africanus ={
+	color= hsv{ 0.60 0.62 0.84 }
+	religion = sunni
+	traits = { west_african_culture_group african_heritage }
+	obsessions = {
+		fruit
+		coffee
+		tobacco
+	}
+	male_common_first_names={
+		Abareybon
+		Ag_Mama
+		Ahmad
+		Attici
+		Aytarel
+		Hasso
+		In_Tayaden
+		Islaman
+		Issouf
+		Kiddu
+		Majila
+		Moussa
+		Musa
+	}
+	female_common_first_names = {
+		Malika
+		Nina
+		Safia
+	}	
+	noble_last_names = {
+		Ag_Alhabib
+		Ikhia
+	}
+	common_last_names={
+		ag_Amastan
+		ag_Amellal
+		ag_Muhammad
+		ag_Sidi
+		al-Hajj
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
 
 tuareg={
 	color= hsv{ 0.60 0.62 0.84 }
@@ -19831,6 +19876,61 @@ teda={
 	graphics = african
 }
 
+central_bantu ={ # Gabon + Cameroon + CAR
+	color= rgb{ 227 194 96 }
+	religion = animist
+	traits = { central_african_culture_group bantu african_heritage }
+	obsessions = {
+		fruit
+		tea
+		tobacco
+	}
+	male_common_first_names = {
+		Bakar
+		Essomba
+		Fifen
+		Monjou
+		Ndengue
+		Ngapna
+		Ngouhouno
+		Nsangou
+		Ntsama
+		Omgba
+	}
+	female_common_first_names = {
+		Aissa
+		Assiga
+		Djaili
+		Edzimbi
+		Nizpah
+		Soukda
+	}	
+	noble_last_names = {
+		a_Doo
+		a_Ewale
+		Atangana
+		Bissogo
+		Dgijama
+		Douala
+		Njoya
+		Sankre
+	}	
+	common_last_names = {
+		Atabong
+		Beyala
+		Boum
+		Chinje
+		Fomumbod
+		Fotso
+		Ngatansou
+		Njeuma
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+
 equatorial_bantu={ # Gabon + Cameroon + CAR
 	color= rgb{ 227 194 96 }
 	religion = animist
@@ -19886,6 +19986,7 @@ equatorial_bantu={ # Gabon + Cameroon + CAR
 	graphics = african
 }
 
+
 fluvian_bantu = { # DRC
 	color= hsv{ 0.95 0.29 0.30 }
 	religion = animist
@@ -19930,6 +20031,45 @@ fluvian_bantu = { # DRC
 		Nyirambarato
 		Pongo
 		Sungilanga
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+east_africanus = {
+	color= hsv{ 0.88 0.35 0.64 }
+	religion = animist
+	traits = { east_african_culture_group african_heritage }
+	obsessions = {
+		fruit
+		tea
+		tobacco
+	}
+	male_common_first_names={
+		Adongo
+		Kimoi
+		Matayo
+		Toroitich
+		Tuitoek
+	}
+	female_common_first_names = {
+		Kabon
+		Zahra
+	}	
+	noble_last_names = {
+		arap_Chebii
+		arap_Moi
+		Cheptirim
+	}
+	common_last_names={
+		Cham
+		Garang
+		Kandie
+		Kiplagat
+		Kulei
+		Mwaita
+		ole_Tameno
 	}
 	ethnicities = {
 		1 = african
@@ -21276,6 +21416,83 @@ unyamwezi={
 	}
 	graphics = african
 }
+east_bantu={ 
+	color= hsv{ 0.58 0.51 0.96 }
+	religion = animist
+	traits = { east_african_culture_group bantu african_heritage }
+	obsessions = {
+		fruit
+		tea
+		tobacco
+		coffee
+		liquor
+		spice
+	}
+	male_common_first_names={
+		Amadi
+		Andikan
+		Aren
+		Averey
+		Bahari
+		Bakari
+		Bash
+		Bayode
+		Bitalo
+		Chane
+		Chata
+		Dakarai
+		Davu
+		Dume
+		Fabunni
+		Gamba
+		Genet
+		Guban
+		Hajari
+		Haruni
+		Ife
+		Ilo
+		Issay
+		Jabari
+		Jabilo
+		Jaguan
+		Kabili
+		Kamwimbile
+		Kasim
+		Kenyi
+		Khairi
+		Makalo
+		Mansa
+		Morathi
+		Musawenkosi
+		Raimi
+		Razi
+		Reth
+	}
+	female_common_first_names = {
+		Jokate
+		Kajala
+		Khalila
+		Wema
+		Yobnesh
+	}	
+	noble_last_names = {
+		Kasanda
+		Watuta
+		Zwagendaba
+	}
+	common_last_names={
+		Bulungute
+		Mirambo
+		Mkasiwa
+		Mnywasele
+		Msemwa
+		Mudimbe
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
 
 lacustrine_bantu={ # Lake Victoria + Lake Tanganyika + Lake Malawi
 	color= hsv{ 0.58 0.51 0.96 }
@@ -21518,6 +21735,66 @@ herero={
 	}
 	graphics = african
 }
+
+
+south_bantu ={
+	color= hsv{ 0.16 0.37 0.84 }
+	religion = animist
+	traits = { southern_african_culture_group bantu african_heritage }
+	obsessions = {
+		fruit
+		tea
+		tobacco
+		coffee
+		liquor
+	}
+	male_common_first_names={
+		Aruseb
+		Autshumato
+		Gabeb
+		Gaob
+		Gorakhab
+		Hab
+		Hanab
+		Khaub
+		Khomab
+		Na-khom
+		Nanseb
+		Naresib
+		O-Naib
+		Oasib
+		Tsawub
+		Xamseb
+	}
+	female_common_first_names = {
+		Inaviposa
+		Kamboi
+		Kanuni
+		Krotoa
+		Penehupifo
+	}
+	noble_last_names = {
+		Garoeb
+		Goeseb
+		Guxanus
+	}
+	common_last_names={
+		Gamab
+		Hamab
+		Hanamab
+		Khaumab
+		Khomaa
+		Manassee
+		Nakhomab
+		O-Naimab
+		Oasmab
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+
 
 khoisan={
 	color= hsv{ 0.16 0.37 0.84 }

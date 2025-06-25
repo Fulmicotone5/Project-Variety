@@ -112,7 +112,7 @@ ST1 = {
 	
 	tier = grand_principality
 	
-	cultures = { sotho khoisan }
+	cultures = { xhosa south_bantu }
 	capital = STATE_CAPE_COLONY
 }
 
@@ -123,7 +123,7 @@ SOK = {
 	
 	tier = kingdom
 	
-	cultures = { hausa fulbe }
+	cultures = { hausa central_bantu }
 	capital = STATE_HAUSALAND
 }
 
@@ -170,7 +170,7 @@ ZAN = {
 	
 	tier = principality
 	
-	cultures = { swahili }
+	cultures = { east_bantu }
 	capital = STATE_ZANZIBAR
 	is_named_from_capital = yes
 }
@@ -206,7 +206,7 @@ MTB = {
 	
 	tier = principality
 	
-	cultures = { nguni shona }
+	cultures = { nguni south_bantu }
 	capital = STATE_ZAMBEZI
 }
 
@@ -217,7 +217,7 @@ MSH = {
 	
 	tier = principality
 	
-	cultures = { shona }
+	cultures = { south_bantu }
 	capital = STATE_ZAMBEZI
 }
 
@@ -228,7 +228,7 @@ MNC = {
 	
 	tier = principality
 	
-	cultures = { shona }
+	cultures = { south_bantu }
 	capital = STATE_ZAMBEZIA
 }
 
@@ -239,7 +239,7 @@ MSK = {
 	
 	tier = principality
 	
-	cultures = { shona }
+	cultures = { south_bantu }
 	capital = STATE_ZAMBEZIA
 }
 
@@ -250,7 +250,7 @@ NAM = {
 	
 	tier = principality
 	
-	cultures = { khoisan }
+	cultures = { south_bantu }
 	capital = STATE_NAMAQUALAND
 }
 
@@ -261,7 +261,7 @@ HRO = {
 	
 	tier = principality
 	
-	cultures = { herero khoisan }
+	cultures = {  south_bantu }
 	capital = STATE_HEREROLAND
 }
 
@@ -272,7 +272,7 @@ LZO = {
 	
 	tier = principality
 	
-	cultures = { kavango_bantu }
+	cultures = { south_bantu }
 	capital = STATE_ZAMBIA
 }
 
@@ -283,7 +283,7 @@ TSW = {
 	
 	tier = principality
 	
-	cultures = { tswana }
+	cultures = { south_bantu }
 	capital = STATE_BOTSWANA
 }
 
@@ -294,7 +294,7 @@ WBL = {
 	
 	tier = principality
 	
-	cultures = { khoisan tswana }
+	cultures = { south_bantu }
 	capital = STATE_NORTHERN_CAPE
 }
 
@@ -305,7 +305,7 @@ KZM = {
 	
 	tier = principality
 	
-	cultures = { lunda }
+	cultures = { south_bantu }
 	capital = STATE_KAZEMBE
 }
 
@@ -316,7 +316,7 @@ BMB = {
 	
 	tier = principality
 	
-	cultures = { lacustrine_bantu }
+	cultures = { east_bantu }
 	capital = STATE_KAZEMBE
 }
 
@@ -327,7 +327,7 @@ KSN = {
 	
 	tier = principality
 	
-	cultures = { lunda ovimbundu }
+	cultures = { south_bantu  }
 	capital = STATE_EAST_ANGOLA
 }
 
@@ -338,7 +338,7 @@ OVM = {
 	
 	tier = principality
 	
-	cultures = { ovimbundu }
+	cultures = { south_bantu }
 	capital = STATE_SOUTH_ANGOLA
 }
 
@@ -349,7 +349,7 @@ CHK = {
 	
 	tier = principality
 	
-	cultures = { lunda ovimbundu }
+	cultures = { south_bantu  }
 	capital = STATE_EAST_ANGOLA
 }
 
@@ -360,7 +360,7 @@ LND = {
 	
 	tier = principality
 	
-	cultures = { lunda ovimbundu }
+	cultures = { south_bantu  }
 	capital = STATE_EAST_ANGOLA
 }
 
@@ -371,7 +371,7 @@ KBA = {
 	
 	tier = principality
 	
-	cultures = { fluvian_bantu }
+	cultures = { central_bantu }
 	capital = STATE_KASAI
 }
 
@@ -382,7 +382,7 @@ MNB = {
 	
 	tier = principality
 	
-	cultures = { fluvian_bantu }
+	cultures = { central_bantu }
 	capital = STATE_CONGO_ORIENTALE
 }
 
@@ -393,7 +393,7 @@ NYM = {
 	
 	tier = principality
 	
-	cultures = { unyamwezi }
+	cultures = { east_bantu }
 	capital = STATE_TANGANYIKA
 }
 
@@ -404,7 +404,7 @@ HHE = {
 	
 	tier = principality
 	
-	cultures = { lacustrine_bantu }
+	cultures = { east_bantu }
 	capital = STATE_LINDI
 }
 
@@ -415,7 +415,7 @@ FTJ = {
 	
 	tier = principality
 	
-	cultures = { fulbe }
+	cultures = { central_bantu }
 	capital = STATE_GUINEA
 }
 
@@ -426,7 +426,7 @@ BUG = {
 	
 	tier = principality
 	
-	cultures = { baganda }
+	cultures = { east_bantu }
 	capital = STATE_UGANDA
 }
 
@@ -448,7 +448,7 @@ YKA = {
 	
 	tier = principality
 	
-	cultures = { bakongo lunda }
+	cultures = { bakongo south_bantu }
 	capital = STATE_BAS_CONGO
 }
 
@@ -483,7 +483,7 @@ FNG = {
 	
 	tier = principality
 	
-	cultures = { fang }
+	cultures = { central_bantu }
 	capital = STATE_GABON
 }
 
@@ -494,7 +494,7 @@ BNG = {
 	
 	tier = principality
 	
-	cultures = { mongo fluvian_bantu }
+	cultures = { central_bantu }
 	capital = STATE_EQUATEUR
 }
 
@@ -527,7 +527,7 @@ BOB = {
 	
 	tier = principality
 	
-	cultures = { mongo bakongo }
+	cultures = { central_bantu bakongo }
 	capital = STATE_EQUATEUR
 }
 
@@ -538,7 +538,7 @@ LGA = {
 	
 	tier = principality
 	
-	cultures = { fluvian_bantu }
+	cultures = { central_bantu }
 	capital = STATE_CONGO_ORIENTALE
 }
 
@@ -549,7 +549,7 @@ HMB = {
 	
 	tier = principality
 	
-	cultures = { fluvian_bantu }
+	cultures = { central_bantu }
 	capital = STATE_CONGO_ORIENTALE
 }
 
@@ -560,7 +560,7 @@ LBA = {
 	
 	tier = principality
 	
-	cultures = { luba }
+	cultures = { central_bantu }
 	capital = STATE_KATANGA
 }
 
@@ -570,8 +570,8 @@ BNY = {
 	country_type = unrecognized
 	
 	tier = principality
+	cultures = { east_bantu }
 	
-	cultures = { baganda lacustrine_bantu }
 	capital = STATE_UGANDA
 }
 
@@ -582,7 +582,7 @@ ANK = {
 	
 	tier = principality
 	
-	cultures = { baganda lacustrine_bantu }
+	cultures = {  east_bantu }
 	capital = STATE_UGANDA
 }
 
@@ -593,7 +593,7 @@ ACH = {
 	
 	tier = principality
 	
-	cultures = { luo lacustrine_bantu }
+	cultures = { east_africanus east_bantu }
 	capital = STATE_UGANDA
 }
 
@@ -604,7 +604,7 @@ KRG = {
 	
 	tier = principality
 	
-	cultures = { lacustrine_bantu baganda }
+	cultures = { east_bantu  }
 	capital = STATE_TANGANYIKA
 }
 
@@ -615,7 +615,7 @@ RWD = {
 	
 	tier = principality
 	
-	cultures = { ruanda }
+	cultures = { east_bantu }
 	capital = STATE_TANGANYIKA
 }
 
@@ -626,7 +626,7 @@ BRD = {
 	
 	tier = principality
 	
-	cultures = { rundi }
+	cultures = { east_bantu }
 	capital = STATE_TANGANYIKA
 }
 
@@ -648,7 +648,7 @@ TRK = {
 	
 	tier = principality
 	
-	cultures = { nilotic maasai }
+	cultures = { east_africanus maasai }
 	capital = STATE_RIFT_VALLEY
 }
 
@@ -659,7 +659,7 @@ LUO = {
 	
 	tier = principality
 	
-	cultures = { luo }
+	cultures = { east_africanus }
 	capital = STATE_RIFT_VALLEY
 }
 
@@ -670,7 +670,7 @@ GGO = {
 	
 	tier = principality
 	
-	cultures = { lacustrine_bantu }
+	cultures = { east_bantu }
 	capital = STATE_LINDI
 }
 
@@ -681,7 +681,7 @@ SNG = {
 	
 	tier = principality
 	
-	cultures = { lacustrine_bantu }
+	cultures = { east_bantu }
 	capital = STATE_LINDI
 }
 
@@ -692,7 +692,7 @@ KKY = {
 	
 	tier = principality
 	
-	cultures = { kikuyu }
+	cultures = { east_bantu }
 	capital = STATE_KENYA
 }
 
@@ -780,7 +780,7 @@ ZND = {
 	
 	tier = principality
 	
-	cultures = { azande }
+	cultures = { central_bantu }
 	capital = STATE_CONGO_ORIENTALE
 }
 
@@ -791,7 +791,7 @@ DFT = {
 	
 	tier = principality
 	
-	cultures = { equatorial_bantu azande }
+	cultures = { equatorial_bantu central_bantu }
 	capital = STATE_EQUATORIA
 }
 
@@ -802,7 +802,7 @@ DNK = {
 	
 	tier = principality
 	
-	cultures = { dinka }
+	cultures = { east_africanus }
 	capital = STATE_EQUATORIA
 }
 
@@ -813,7 +813,7 @@ NUE = {
 	
 	tier = principality
 	
-	cultures = { nuer }
+	cultures = { east_africanus }
 	capital = STATE_EQUATORIA
 }
 
@@ -824,7 +824,7 @@ TPS = {
 	
 	tier = principality
 	
-	cultures = { nilotic }
+	cultures = { east_africanus }
 	capital = STATE_EQUATORIA
 }
 
@@ -987,7 +987,7 @@ MSN = {
 	
 	tier = principality
 	
-	cultures = { fulbe }
+	cultures = { central_bantu }
 	capital = STATE_EASTERN_MALI
 }
 
@@ -1017,7 +1017,7 @@ CAY = {
 	
 	tier = principality
 	
-	cultures = { wolof }
+	cultures = { central_bantu }
 	capital = STATE_SENEGAL
 }
 
@@ -1027,7 +1027,7 @@ JLF = {
 	
 	tier = principality
 	
-	cultures = { wolof }
+	cultures = { central_bantu }
 	capital = STATE_SENEGAL
 }
 
@@ -1037,7 +1037,7 @@ FTR = {
 	
 	tier = principality
 	
-	cultures = { fulbe wolof }
+	cultures = { central_bantu central_bantu }
 	capital = STATE_SENEGAL
 }
 
@@ -1120,7 +1120,7 @@ BND = {
 	
 	tier = principality
 	
-	cultures = { fulbe mande }
+	cultures = { central_bantu mande }
 	capital = STATE_GAMBIA
 }
 
@@ -1359,7 +1359,7 @@ SRA = { # Sara
 	
 	tier = principality
 	
-	cultures = { sara }
+	cultures = { central_bantu }
 	capital = STATE_UBANGI_SHARI
 }
 
@@ -1370,7 +1370,7 @@ EQU = { # Equatoria
 	
 	tier = principality
 	
-	cultures = { nilotic }
+	cultures = { east_africanus }
 	capital = STATE_EQUATORIA
 }
 
@@ -1392,7 +1392,7 @@ NBA = { # Nuba
 	
 	tier = principality
 	
-	cultures = { nuba }
+	cultures = { east_africanus }
 	capital = STATE_EQUATORIA
 }
 
@@ -1414,7 +1414,7 @@ SKM = { # Sukuma
 	
 	tier = principality
 	
-	cultures = { sukuma }
+	cultures = { east_bantu }
 	capital = STATE_TANGANYIKA
 }
 
@@ -1425,7 +1425,7 @@ CHW = { # Chewa
 	
 	tier = principality
 	
-	cultures = { chewa }
+	cultures = { south_bantu }
 	capital = STATE_KAZEMBE
 }
 
@@ -1436,7 +1436,7 @@ LMW = { # Lomwe
 	
 	tier = principality
 	
-	cultures = { lomwe }
+	cultures = { south_bantu }
 	capital = STATE_MOCAMBIQUE
 }
 
@@ -1447,7 +1447,7 @@ MKU = { # Makua
 	
 	tier = principality
 	
-	cultures = { makua }
+	cultures = { south_bantu }
 	capital = STATE_MOCAMBIQUE
 }
 
@@ -1458,7 +1458,7 @@ SNA = { # Sena
 	
 	tier = principality
 	
-	cultures = { sena }
+	cultures = { south_bantu }
 	capital = STATE_MOCAMBIQUE
 }
 
@@ -1469,7 +1469,7 @@ BTG = { # Batonga
 	
 	tier = principality
 	
-	cultures = { tonga }
+	cultures = { south_bantu }
 	capital = STATE_LOURENCO_MARQUES
 }
 
@@ -1491,7 +1491,7 @@ UYA = { # Uyao
 	
 	tier = principality
 	
-	cultures = { yao }
+	cultures = { south_bantu }
 	capital = STATE_MOCAMBIQUE
 }
 
@@ -1502,7 +1502,7 @@ ZIM = {
 	
 	tier = kingdom
 	
-	cultures = { shona nguni}
+	cultures = { south_bantu nguni}
 	capital = STATE_ZAMBEZIA
 }
 
@@ -1510,7 +1510,7 @@ MAL = {
 	color = { 75 179 27}
 	country_type = unrecognized
 	tier = kingdom
-	cultures = { bambara fulbe wolof mande }
+	cultures = { bambara  central_bantu mande }
 	capital = STATE_WESTERN_MALI
 }
 
@@ -1571,7 +1571,7 @@ MRV = {
 	
 	tier = principality
 	
-	cultures = { chewa }
+	cultures = { south_bantu }
 	capital = STATE_KAZEMBE
 }
 
@@ -1582,7 +1582,7 @@ BRG = {
 	
 	tier = principality
 	
-	cultures = { mande fulbe }
+	cultures = { mande central_bantu }
 	capital = STATE_HAUSALAND
 }
 

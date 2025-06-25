@@ -318,23 +318,15 @@
 				size = 224396
 			}
 			create_pop = {
-				culture = nuba
-				size = 105608
-			}
-			create_pop = {
-				culture = dinka
-				size = 94004
+				culture = east_africanus
+				size = 195608
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = nuba
-				size = 50400
+				culture = east_africanus
+				size = 100400
 			}
-			create_pop = {
-				pop_type = slaves
-				culture = dinka
-				size = 50400
-			}
+
 		}
 	}
 	s:STATE_DARFUR = {
@@ -344,12 +336,12 @@
 				size = 199192
 			}
 			create_pop = {
-				culture = dinka
+				culture = east_africanus
 				size = 14400
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = dinka
+				culture = east_africanus
 				size = 14400
 			}
 			create_pop = {
@@ -369,20 +361,12 @@
 				size = 1992
 			}
 			create_pop = {
-				culture = nuba
-				size = 344100
-			}
-			create_pop = {
-				culture = dinka
-				size = 127896
+				culture = east_africanus
+				size = 544100
 			}
 			create_pop = {
 				culture = bedouin
 				size = 64004
-			}
-			create_pop = {
-				culture = nuer
-				size = 60000
 			}
 			create_pop = {
 				culture = beja
@@ -812,7 +796,7 @@
 		}
 		region_state:FTR = {
 			create_pop = {
-				culture = fulbe
+				culture = central_bantu
 				size = 10000
 			}
 			create_pop = {
@@ -825,7 +809,7 @@
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = fulbe
+				culture = central_bantu
 				size = 2000
 			}
 			create_pop = {
@@ -872,7 +856,7 @@
 				size = 32000
 			}
 			create_pop = {
-				culture = fulbe
+				culture = central_bantu
 				size = 111996
 			}
 		}
@@ -880,7 +864,7 @@
 	s:STATE_WESTERN_MALI = {
 		region_state:SGU = {
 			create_pop = {
-				culture = fulbe
+				culture = central_bantu
 				size = 40004
 			}
 			create_pop = {
@@ -891,7 +875,7 @@
 		}
 		region_state:KRT = {
 			create_pop = {
-				culture = fulbe
+				culture = central_bantu
 				size = 140000
 			}
 			create_pop = {
@@ -908,12 +892,12 @@
 	s:STATE_TIMBUKTU = {
 		region_state:ADG = {
 			create_pop = {
-				culture = fulbe
+				culture = central_bantu
 				size = 15000
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = fulbe
+				culture = central_bantu
 				size = 5000
 			}
 			create_pop = {
@@ -927,7 +911,7 @@
 				size = 176400
 			}
 			create_pop = {
-				culture = fulbe
+				culture = central_bantu
 				size = 20000
 			}
 		}
@@ -957,7 +941,7 @@
 				size = 8000
 			}
 			create_pop = {
-				culture = fulbe
+				culture = central_bantu
 				size = 20000
 			}
 		}
@@ -986,7 +970,7 @@
 				size = 12000
 			}
 			create_pop = {
-				culture = kanuri
+				culture = central_bantu
 				size = 28000
 			}
 		}

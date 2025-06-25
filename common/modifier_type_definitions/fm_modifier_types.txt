@@ -352,6 +352,41 @@ state_south_roman_standard_of_living_add={
 		ai_value=0
 	}
 }
+state_central_bantu_standard_of_living_add={
+	decimals=1
+	color=good
+	game_data={
+		ai_value=0
+	}
+}
+state_south_bantu_standard_of_living_add={
+	decimals=1
+	color=good
+	game_data={
+		ai_value=0
+	}
+}
+state_east_bantu_standard_of_living_add={
+	decimals=1
+	color=good
+	game_data={
+		ai_value=0
+	}
+}
+state_west_africanus_standard_of_living_add={
+	decimals=1
+	color=good
+	game_data={
+		ai_value=0
+	}
+}
+state_east_africanus_standard_of_living_add={
+	decimals=1
+	color=good
+	game_data={
+		ai_value=0
+	}
+}
 state_greco_roman_standard_of_living_add={
 	decimals=1
 	color=good

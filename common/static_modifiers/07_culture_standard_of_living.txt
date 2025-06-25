@@ -3491,3 +3491,51 @@ na_coahuiltecan_standard_of_living_modifier_negative = {
 	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
 	state_na_coahuiltecan_standard_of_living_add = 1
 }
+
+central_bantu_standard_of_living_modifier_positive = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	state_central_bantu_standard_of_living_add = 1
+}
+
+central_bantu_standard_of_living_modifier_negative = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	state_central_bantu_standard_of_living_add = 1
+}
+
+south_bantu_standard_of_living_modifier_positive = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	state_south_bantu_standard_of_living_add = 1
+}
+
+south_bantu_standard_of_living_modifier_negative = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	state_south_bantu_standard_of_living_add = 1
+}
+
+east_bantu_standard_of_living_modifier_positive = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	state_east_bantu_standard_of_living_add = 1
+}
+
+east_bantu_standard_of_living_modifier_negative = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	state_east_bantu_standard_of_living_add = 1
+}
+west_africanus_standard_of_living_modifier_positive = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	state_west_africanus_standard_of_living_add = 1
+}
+
+west_africanus_standard_of_living_modifier_negative = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	state_west_africanus_standard_of_living_add = 1
+}
+east_africanus_standard_of_living_modifier_positive = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	state_east_africanus_standard_of_living_add = 1
+}
+
+east_africanus_standard_of_living_modifier_negative = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	state_east_africanus_standard_of_living_add = 1
+}

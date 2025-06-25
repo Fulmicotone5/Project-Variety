@@ -537,7 +537,7 @@
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = lacustrine_bantu
+				culture = east_bantu
 				size = 16000
 			}
 		}
@@ -982,7 +982,7 @@
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = lacustrine_bantu
+				culture = east_bantu
 				size = 700
 			}
 		}
@@ -1008,7 +1008,7 @@
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = lacustrine_bantu
+				culture = east_bantu
 				size = 1500
 			}
 		}

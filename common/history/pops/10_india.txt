@@ -657,7 +657,7 @@
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = lacustrine_bantu
+				culture = east_bantu
 				size = 31000
 			}
 			create_pop = {
@@ -780,7 +780,7 @@
 				size = 449208
 			}
 			create_pop = {
-				culture = lacustrine_bantu
+				culture = east_bantu
 				religion = catholic
 				size = 700
 			}
