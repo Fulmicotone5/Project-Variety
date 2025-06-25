@@ -221,6 +221,16 @@ MSH = {
 	capital = STATE_ZAMBEZI
 }
 
+AF1 = {
+	color= hsv{ 0.16 0.37 0.84 }
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { south_bantu }
+	capital = STATE_ZAMBEZI
+}
+
 MNC = {
 	color = { 60 147 140 }
 	
@@ -977,7 +987,7 @@ AIR = {
 	
 	tier = principality
 	
-	cultures = { tuareg }
+	cultures = { west_africanus }
 	capital = STATE_NIGER
 }
 
@@ -1097,7 +1107,7 @@ TRZ = {
 	
 	tier = principality
 	
-	cultures = { bidan }
+	cultures = { west_africanus }
 	capital = STATE_MAURITANIA
 }
 
@@ -1107,7 +1117,7 @@ KBU = {
 	
 	tier = principality
 	
-	cultures = { mande }
+	cultures = { west_africanus }
 	
 	religion = animist
 	
@@ -1120,7 +1130,7 @@ BND = {
 	
 	tier = principality
 	
-	cultures = { central_bantu mande }
+	cultures = { central_bantu west_africanus }
 	capital = STATE_GAMBIA
 }
 
@@ -1132,7 +1142,7 @@ SRR = {
 
 	religion = animist
 	
-	cultures = { mande }
+	cultures = { west_africanus }
 	capital = STATE_GAMBIA
 }
 
@@ -1142,7 +1152,7 @@ SSU = {
 	
 	tier = principality
 	
-	cultures = { mande }
+	cultures = { west_africanus }
 	capital = STATE_GUINEA
 }
 
@@ -1152,7 +1162,7 @@ MDK = {
 	
 	tier = principality
 	
-	cultures = { mande }
+	cultures = { west_africanus }
 	capital = STATE_GUINEA
 }
 
@@ -1192,7 +1202,7 @@ KBD = {
 	
 	tier = principality
 	
-	cultures = { mande }
+	cultures = { west_africanus }
 	capital = STATE_WINDWARD_COAST
 }
 
@@ -1242,7 +1252,7 @@ TBI = {
 	
 	tier = principality
 	
-	cultures = { teda }
+	cultures = { west_africanus }
 	capital = STATE_CHAD
 }
 
@@ -1252,7 +1262,7 @@ AHG = {
 	
 	tier = principality
 	
-	cultures = { tuareg }
+	cultures = { west_africanus }
 	capital = STATE_EAST_SAHARA
 }
 
@@ -1262,7 +1272,7 @@ TUA = {
 	
 	tier = principality
 	
-	cultures = { tuareg }
+	cultures = { west_africanus }
 	capital = STATE_SAHARA
 }
 
@@ -1272,7 +1282,7 @@ OUA = {
 	
 	tier = principality
 	
-	cultures = { bidan }
+	cultures = { west_africanus }
 	capital = STATE_INNER_MAURITANIA
 }
 
@@ -1282,7 +1292,7 @@ ADG = {
 	
 	tier = principality
 	
-	cultures = { tuareg }
+	cultures = { west_africanus }
 	capital = STATE_TIMBUKTU
 }
 
@@ -1510,7 +1520,7 @@ MAL = {
 	color = { 75 179 27}
 	country_type = unrecognized
 	tier = kingdom
-	cultures = { bambara  central_bantu mande }
+	cultures = { bambara  central_bantu west_africanus }
 	capital = STATE_WESTERN_MALI
 }
 
@@ -1582,7 +1592,7 @@ BRG = {
 	
 	tier = principality
 	
-	cultures = { mande central_bantu }
+	cultures = { west_africanus central_bantu }
 	capital = STATE_HAUSALAND
 }
 
@@ -1605,6 +1615,6 @@ MGB = {
 	
 	tier = empire
 	
-	cultures = { maghrebi berber bidan }
+	cultures = { maghrebi berber west_africanus }
 	capital = STATE_TUNISIA
 }
