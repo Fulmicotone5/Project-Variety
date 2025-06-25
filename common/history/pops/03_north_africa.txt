@@ -931,14 +931,10 @@
 				size = 28000
 			}
 		}
-		region_state:AF6 = {
-			create_pop = {
-				culture = west_africanus
-				size = 108904
-			}
+		region_state:BED = {
 			create_pop = {
 				culture = bedouin
-				size = 20000
+				size = 67899
 			}
 			create_pop = {
 				pop_type = slaves

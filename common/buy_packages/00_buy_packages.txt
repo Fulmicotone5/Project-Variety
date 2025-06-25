@@ -81,6 +81,7 @@ wealth_9 = {
 		popneed_crude_items = 48
 		popneed_basic_food = 132
 		popneed_heating = 29
+		popneed_luxury_drinks = 6
 		popneed_intoxicants = 62
 	}
 }
@@ -95,7 +96,7 @@ wealth_10 = {
 		popneed_standard_clothing = 7
 		popneed_services = 24
 		popneed_intoxicants = 65
-		popneed_luxury_drinks = 10
+		popneed_luxury_drinks = 14
 		popneed_free_movement = 3
 	}
 }
@@ -110,7 +111,7 @@ wealth_11 = {
 		popneed_standard_clothing = 19
 		popneed_services = 30
 		popneed_intoxicants = 68
-		popneed_luxury_drinks = 14
+		popneed_luxury_drinks = 18
 		popneed_free_movement = 8
 	}
 }
@@ -125,7 +126,7 @@ wealth_12 = {
 		popneed_standard_clothing = 30
 		popneed_services = 39
 		popneed_intoxicants = 73
-		popneed_luxury_drinks = 20
+		popneed_luxury_drinks = 22
 		popneed_free_movement = 13
 	}
 }
@@ -140,7 +141,7 @@ wealth_13 = {
 		popneed_standard_clothing = 64
 		popneed_services = 46
 		popneed_intoxicants = 73
-		popneed_luxury_drinks = 24
+		popneed_luxury_drinks = 26
 		popneed_free_movement = 14
 	}
 }
@@ -155,7 +156,7 @@ wealth_14 = {
 		popneed_standard_clothing = 85
 		popneed_services = 58
 		popneed_intoxicants = 74
-		popneed_luxury_drinks = 27
+		popneed_luxury_drinks = 30
 		popneed_free_movement = 16
 	}
 }
@@ -168,7 +169,7 @@ wealth_15 = {
 		popneed_standard_clothing = 102
 		popneed_services = 64
 		popneed_intoxicants = 75
-		popneed_luxury_drinks = 33
+		popneed_luxury_drinks = 34
 		popneed_free_movement = 21
 		popneed_luxury_items = 11
 	}
@@ -182,7 +183,7 @@ wealth_16 = {
 		popneed_standard_clothing = 108
 		popneed_services = 75
 		popneed_intoxicants = 78
-		popneed_luxury_drinks = 36
+		popneed_luxury_drinks = 38
 		popneed_free_movement = 24
 		popneed_luxury_items = 24
 	}
@@ -224,7 +225,7 @@ wealth_19 = {
 		popneed_standard_clothing = 118
 		popneed_services = 110
 		popneed_intoxicants = 79
-		popneed_luxury_drinks = 84
+		popneed_luxury_drinks = 86
 		popneed_free_movement = 39
 		popneed_luxury_items = 79
 	}
