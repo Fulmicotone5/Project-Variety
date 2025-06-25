@@ -1594,7 +1594,7 @@ BUN = { # Bundelkhand
 		}
 	}	
 }
-BF1 = { # Burma
+BF1 = { 
 	flag_definition = {
 		coa = BF1
 		subject_canton = BF1
@@ -1609,7 +1609,7 @@ BF1 = { # Burma
 		}
 	}	
 }
-SR1 = { # Burma
+SR1 = { 
 	flag_definition = {
 		coa = SR1
 		subject_canton = SR1

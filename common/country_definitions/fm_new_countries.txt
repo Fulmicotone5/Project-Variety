@@ -11,7 +11,7 @@ SR1 = {
 	color = {84 133 129}
 	country_type = recognized
 	
-	tier = hegemony
+	tier = empire
 	
 	cultures = { serb }
 	capital = STATE_EASTERN_THRACE
