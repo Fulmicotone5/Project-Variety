@@ -2610,6 +2610,7 @@ ai_strategy_default = {
 							binds = root
 							any_scope_article = {
 								has_type = trade_privilege
+								source_country = scope:target_country
 							}
 						}
 					}
@@ -3227,7 +3228,7 @@ ai_strategy_default = {
 			limit = {
 				has_journal_entry = je_greek_nationalism
 				scope:target_country = {
-					any_state = {
+					any_scope_state = {
 						state_region = { is_homeland = cu:greek }
 						has_claim_by = root
 					}
@@ -3456,7 +3457,7 @@ ai_strategy_default = {
 			limit = {
 				has_journal_entry = je_greek_nationalism
 				scope:target_country = {
-					any_state = {
+					any_scope_state = {
 						state_region = { is_homeland = cu:greek }
 						has_claim_by = root
 					}
@@ -3538,7 +3539,7 @@ ai_strategy_default = {
 				has_variable = haiti_stops_paying_france_aggressor
 				scope:target_country = {
 					has_variable = haiti_stops_paying_france_target
-					any_state = {
+					any_scope_state = {
 						has_claim_by = root
 					}
 				}
@@ -6800,6 +6801,7 @@ ai_strategy_default = {
 							binds = scope:target_country
 							any_scope_article = {
 								has_type = trade_privilege
+								source_country = scope:target_country
 							}
 						}
 					}
@@ -7363,15 +7365,15 @@ ai_strategy_default = {
 			}
 
 			if = {
-				limit = {
-					scope:target_country = {
-						num_states > 1
+					limit = {
+						scope:target_country = {
+							num_states > 1
+						}
 					}
-				}
-				add = {
-					value = scope:target_country.num_states
-					multiply = 10
-				}
+					add = {
+						value = scope:target_country.num_states
+						multiply = 10
+					}
 			}
 
 			if = {

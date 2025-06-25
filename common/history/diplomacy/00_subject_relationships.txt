@@ -57,10 +57,24 @@
 			type = chartered_company
 		}
 	}
+	c:SER ?= {
+		create_diplomatic_pact = {
+			country = c:ALB
+			type = puppet
+		}
+	}
 	c:VEN ?= {
 		create_diplomatic_pact = {
 			country = c:VNA
 			type = chartered_company
+		}
+		create_diplomatic_pact = {
+			country = c:EPY
+			type = protectorate
+		}
+		create_diplomatic_pact = {
+			country = c:CRE
+			type = protectorate
 		}
 	}
 	c:SAU ?= {
@@ -75,6 +89,18 @@
 		create_diplomatic_pact = {
 			country = c:JP1
 			type = protectorate
+		}
+	}
+	c:GAL ?= {
+		create_diplomatic_pact = {
+			country = c:KRK
+			type = puppet
+		}
+	}
+	c:KAA ?= {
+		create_diplomatic_pact = {
+			country = c:CAT
+			type = puppet
 		}
 	}
 	c:HEN ?= {

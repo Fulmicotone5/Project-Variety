@@ -977,6 +977,24 @@ CZH = {
 		has_technology_researched = pan-nationalism
 	}
 }
+NEA = {
+	states = {
+		STATE_SICILY
+		STATE_CALABRIA
+		STATE_CAMPANIA
+		STATE_APULIA
+	}
+	
+	ai_will_do = { always = no }
+}
+SPO = {
+	states = {
+		STATE_UMBRIA
+	}
+	
+	ai_will_do = { always = no }
+}
+
 
 
 
@@ -987,7 +1005,12 @@ SIC = {
 	
 	ai_will_do = { always = no }
 }
-
+EX1 = {
+	use_culture_states = yes
+	required_num_states = 4
+	
+	ai_will_do = { always = no }
+}
 NOS = {
 	use_culture_states = yes
 	required_num_states = 3

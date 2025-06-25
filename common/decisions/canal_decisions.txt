@@ -14,11 +14,9 @@
 			}
 		}
 		s:STATE_SINAI = {
-			any_scope_state = {
-				NOT = {
-					any_scope_building = { 
-						is_building_type = building_suez_canal 
-					}
+			NOT = {
+				any_scope_state = {
+					has_building = building_suez_canal
 				}
 			}
 		}
@@ -43,18 +41,18 @@
 	}
 
 	ai_chance = {
-		value= 0
-		if= {
+		value = 0
+		if = {
 			limit = { produced_bureaucracy > 5000 }
-			add = 5
+			add = 10
 		}
-		if= {
+		if = {
 			limit = {
 				has_strategy = ai_strategy_armed_isolationism
 			}
 			multiply = 0
-		}		
-		if= {
+		}
+		if = {
 			limit = {
 				OR = {
 					is_diplomatic_play_committed_participant = yes
@@ -62,23 +60,23 @@
 				}
 			}
 			multiply = 0
-		}		
+		}
 	}
 }
 
 stop_suez_survey_decision = {
 	is_shown = {
-		has_modifier= modifier_surveying_suez
+		has_modifier = modifier_surveying_suez
 	}
 	possible = {
-		has_modifier= modifier_surveying_suez
+		has_modifier = modifier_surveying_suez
 	}
 	when_taken = {
 		remove_variable = survey_suez_taken
-		remove_modifier= modifier_surveying_suez
+		remove_modifier = modifier_surveying_suez
 	}
 	ai_chance = {
-		value= 0
+		value = 0
 	}
 }
 
@@ -92,14 +90,12 @@ suez_canal_purchase = {
 		s:STATE_SINAI = {
 			any_scope_state = {
 				NOT = {
-					any_scope_building = { 
-						is_building_type = building_suez_canal 
-					}
+					has_building = building_suez_canal
 				}
 				owner = {
 					owns_treaty_port_in = STATE_SINAI
-					NOT = { 
-						has_variable = suez_survey_complete 
+					NOT = {
+						has_variable = suez_survey_complete
 					}
 				}
 			}
@@ -205,11 +201,9 @@ panama_survey_decision = {
 			}
 		}
 		s:STATE_PANAMA = {
-			any_scope_state = {
-				NOT = {
-					any_scope_building = { 
-						is_building_type = building_panama_canal 
-					}
+			NOT = {
+				any_scope_state = {
+					has_building = building_panama_canal
 				}
 			}
 		}
@@ -234,18 +228,18 @@ panama_survey_decision = {
 	}
 
 	ai_chance = {
-		value= 0
-		if= {
+		value = 0
+		if = {
 			limit = { produced_bureaucracy > 5000 }
-			add = 5
+			add = 10
 		}
-		if= {
+		if = {
 			limit = {
 				has_strategy = ai_strategy_armed_isolationism
 			}
 			multiply = 0
-		}		
-		if= {
+		}
+		if = {
 			limit = {
 				OR = {
 					is_diplomatic_play_committed_participant = yes
@@ -253,7 +247,7 @@ panama_survey_decision = {
 				}
 			}
 			multiply = 0
-		}		
+		}
 	}
 }
 
@@ -284,14 +278,12 @@ panama_canal_purchase = {
 		s:STATE_PANAMA = {
 			any_scope_state = {
 				NOT = {
-					any_scope_building = { 
-						is_building_type = building_panama_canal 
-					}
+					has_building = building_panama_canal
 				}
 				owner = {
 					owns_treaty_port_in = STATE_PANAMA
-					NOT = { 
-						has_variable = panama_survey_complete 
+					NOT = {
+						has_variable = panama_survey_complete
 					}
 				}
 			}

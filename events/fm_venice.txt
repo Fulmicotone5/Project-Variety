@@ -55,9 +55,6 @@ fm_venice.1 = {
 		s:STATE_ALBANIA = {
 			add_claim = c:VEN
 		}
-		s:STATE_DALMATIA = {
-			add_claim = c:VEN
-		}
 		s:STATE_EASTERN_THRACE = {
 			add_claim = c:VEN
 		}

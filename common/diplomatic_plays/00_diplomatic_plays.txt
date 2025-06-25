@@ -146,7 +146,6 @@ dp_return_state = {
 		NOT = { is_subject_of = scope:target_country }	
 		scope:target_country = {
 			NOT = { is_country_type = decentralized }
-			NOT = { is_subject_of = root }
 		}
 		diplomatic_play_has_no_relations_blockers = yes
 	}
@@ -820,42 +819,6 @@ dp_annex_war = {
 
 	on_war_end = {}
 }
-
-dp_unify_jugo = {
-	war_goal = annex_country
-	
-	texture = "gfx/interface/icons/war_goals/annex_country.dds"
-	
-	selectable_in_lens = {
-		can_form_nation = YUG
-	}
-	
-	possible = {
-		NOT = { has_modifier = diplomatic_plays_blocked }
-		NOT = { exists = c:YUG }
-		NOT = { is_country_type = decentralized }
-		is_subject = no
-		custom_tooltip = {
-			text = YUG_tt
-			can_form_nation = YUG
-		}
-		scope:target_country = {
-			NOT = { is_country_type = decentralized }
-			aggressive_diplomatic_plays_permitted = yes
-			custom_tooltip = {
-				text = YUG_tt
-				can_form_nation = YUG
-			}
-		}
-	}
-	
-	on_weekly_pulse = {}
-	
-	on_war_begins = {}
-
-	on_war_end = {}
-}
-
 
 dp_unify_ethiopia = {
 	war_goal = annex_country

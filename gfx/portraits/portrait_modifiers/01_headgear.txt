@@ -34,6 +34,117 @@ headgear = {
             }
         }
     }
+        USA_thomas_edison_headgear = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                range = { 0 1 }
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 90000
+                scope:character ?= {
+                    AND = {
+                        has_template = usa_thomas_edison_character_template
+                        has_role = executive
+                    }
+                }
+            }
+        }
+    }
+    USA_robert_e_lee_wilson_headgear = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                range = { 0 1 }
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 90000
+                scope:character ?= {
+                    AND = {
+                        has_template = usa_robert_e_lee_wilson
+                        has_role = executive
+                    }
+                }
+            }
+        }
+    }
+    GBR_john_maple_headgear = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                range = { 0 1 }
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 90000
+                scope:character ?= {
+                    AND = {
+                        has_template = GBR_john_maple
+                        has_role = executive
+                    }
+                }
+            }
+        }
+    }
+    SAF_cecil_rhodes_headgear = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                range = { 0 1 }
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 90000
+                scope:character ?= {
+                    AND = {
+                        has_template = SAF_cecil_rhodes
+                        has_role = executive
+                    }
+                }
+            }
+        }
+    }
+    NOR_sam_eyde_headgear = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                range = { 0 1 }
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 90000
+                scope:character ?= {
+                    AND = {
+                        has_template = NOR_sam_eyde
+                        has_role = executive
+                    }
+                }
+            }
+        }
+    }
+
 
     historical_frederick = {
         dna_modifiers = {

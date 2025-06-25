@@ -47,6 +47,7 @@
 	DIPLO_PROPOSAL_TO_PLAYER_COOLDOWN_MONTHS = 120 # Do not make the same exact proposal to the player for this amount of months
     DIPLO_PROPOSAL_LIKELY_NON_ACCEPTED_COOLDOWN_MONTHS = 120 # When AI rolls the dice on whether or not to attempt a proposal it thinks will be rejected, don't try again for this time
     DIPLO_PROPOSAL_NO_OBLIGATION_COOLDOWN_MONTHS = 120 # If the AI decides not to offer an obligation for a proposal, remember that decision for this many months
+	DIPLO_PROPOSAL_LIKELY_NON_ACCEPTED_TREATY_COOLDOWN_MONTHS = 12 # When AI fails to propose a treaty to another AI, wait this long  before trying again with the same country 
 
 	DIPLO_PROPOSAL_ACCEPT_THRESHOLD = 1				# At this or more acceptance on a diplomatic action without uses_random_approval flag, AI says yes to a proposal. Each point above it increases chance to accept a uses_random_approval proposal
 	DIPLO_PROPOSAL_HALFWAY_RANDOM_ACCEPTANCE_THRESHOLD = 10		# At this or more acceptance on a diplomatic action with uses_random_approval flag, AI considers it to be accepted for the purpose of proposing it
@@ -792,6 +793,8 @@
 	AUTONOMOUS_INVESTMENT_COMPANY_TARGET_BUILDING_TYPE_CONSTRUCTION_FACTOR = 3
 	AUTONOMOUS_INVESTMENT_COMPANY_TARGET_STATE_NO_BUILDING_CONSTRUCTION_FACTOR = 20 # Applied when the state does not already have the target building type
 	AUTONOMOUS_INVESTMENT_COMPANY_TARGET_STATE_WITH_BUILDING_CONSTRUCTION_FACTOR = 50 # Applied when the state *does* already have the target building type
+	PRODUCTION_BUILDING_TREATY_PORT_TRADE_CENTER_FACTOR = 5.0 		# Score for Trade Center buildings in Treaty Ports is multiplied by this when selecting state for a construction
+	PRODUCTION_BUILDING_TREATY_PORT_NON_TRADE_CENTER_FACTOR = 0.10 	# Score for non Trade Center buildings in Treaty Ports is multiplied by this when selecting state for a construction
 
 	# The factors below are only applied to government constructions
 	PRODUCTION_BUILDING_GOVERNMENT_CONSTRUCTION_MONOPOLY_MULT = 1.5 # Multiply score by this if we have a government monopoly for the buildng type
@@ -1114,7 +1117,6 @@
 	TREATIES_ACCEPTANCE_BASE = 0										# Base Acceptance for Treaties
 	TREATIES_ACCEPTANCE_WITHDRAW_THRESHOLD = -50						# Threshold at or under which AI will withdraw from treaties outside of their binding period
 	TREATIES_ACCEPTANCE_WITHDRAW_BINDING_PERIOD_THRESHOLD = -800		# Threshold at or under which AI will withdraw from treaties while they are still binding
-	TREATIES_MINIMUM_INFLUENCE_TO_PROPOSE = 50							# Minimum Influence AI wants before attempting to propose a treaty
 	TREATIES_DEFAULT_LENGTH_YEARS = 5 									# How long treaties the AI will propose
 
 

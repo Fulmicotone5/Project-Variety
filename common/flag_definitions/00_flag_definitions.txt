@@ -1557,6 +1557,14 @@ BUL = { # Bulgaria
 		priority = 1
 	}
 }
+EX1 = { # Bulgaria
+	flag_definition = {
+		coa = EX1
+		subject_canton = EX1	
+		allow_overlord_canton = yes				
+		priority = 1
+	}
+}
 
 BUN = { # Bundelkhand
 	flag_definition = {
@@ -1583,6 +1591,36 @@ BUN = { # Bundelkhand
 				coa_def_british_ensign_trigger = yes
 				coa_def_british_india_trigger = yes
 			}
+		}
+	}	
+}
+BF1 = { # Burma
+	flag_definition = {
+		coa = BF1
+		subject_canton = BF1
+		priority = 1
+	}
+	flag_definition = {
+		coa = BF1_monarchy
+		subject_canton = BF1_monarchy	
+		priority = 20
+		trigger = { 
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}	
+}
+SR1 = { # Burma
+	flag_definition = {
+		coa = SR1
+		subject_canton = SR1
+		priority = 1
+	}
+	flag_definition = {
+		coa = SR1_monarchy
+		subject_canton = SR1_monarchy	
+		priority = 20
+		trigger = { 
+			coa_def_monarchy_flag_trigger = yes
 		}
 	}	
 }

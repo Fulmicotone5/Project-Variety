@@ -100,33 +100,6 @@
 		}
 	}
 	s:STATE_YEMEN = {
-		region_state:ZAI = {
-			create_pop = {
-				pop_type = slaves
-				culture = sudanese
-				religion = animist
-				size = 32800
-			}
-			create_pop = {
-				culture = yemenite
-				size = 630000
-			}
-			create_pop = {
-				culture = yemenite
-				religion = sunni
-				size = 221000
-			}
-			create_pop = {
-				culture = bedouin
-				religion = sunni
-				size = 48000
-			}
-			create_pop = {
-				culture = sephardic
-				religion = jewish
-				size = 16000
-			}
-		}
 		region_state:HDJ = {
 			create_pop = {
 				pop_type = slaves
@@ -155,55 +128,26 @@
 				size = 2000
 			}
 		}
-		region_state:MAH = {
+		region_state:OMA = {
 			create_pop = {
 				culture = bedouin
-				size = 33000
+				size = 1013000
 			}
-			create_pop = {
-				pop_type = slaves
-				culture = sudanese
-				religion = animist
-				size = 3200
-			}
-		}
-		region_state:KAT = {
-			create_pop = {
-				culture = bedouin
-				size = 39000
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = sudanese
-				religion = animist
-				size = 4900
-			}
-		}
-		region_state:LAH = {
 			create_pop = {
 				culture = yemenite
 				religion = sunni
-				size = 44000
+				size = 630000
 			}
 			create_pop = {
 				culture = yemenite
 				religion = zoroastrian
-				size = 8000
-			}
-			create_pop = {
-				culture = bedouin
-				religion = sunni
-				size = 12000
-			}
-			create_pop = {
-				culture = sephardic
-				size = 2000
+				size = 244000
 			}
 			create_pop = {
 				pop_type = slaves
 				culture = sudanese
 				religion = animist
-				size = 8100
+				size = 19200
 			}
 		}
 	}

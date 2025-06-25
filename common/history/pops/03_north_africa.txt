@@ -263,15 +263,15 @@
 				size = 4200
 			}
 		}
-		region_state:AWS = {
+		region_state:OMA = {
 			create_pop = {
 				culture = tigray
 				religion = sunni
-				size = 8000
+				size = 14400
 			}
 			create_pop = {
-				culture = afar
-				size = 8000
+				culture = bedouin
+				size = 3000
 			}
 			create_pop = {
 				culture = somali

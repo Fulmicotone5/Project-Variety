@@ -222,7 +222,7 @@
 		}
 	}
 	s:STATE_POSEN = {
-		region_state:PUM = {
+		region_state:LOT = {
 			create_pop = {
 				culture = north_german
 				size = 540400

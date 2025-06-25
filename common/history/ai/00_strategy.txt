@@ -4,7 +4,7 @@
 			75 = { set_strategy = ai_strategy_resource_expansion }
 			25 = { set_strategy = ai_strategy_industrial_expansion }
 		}		
-		set_strategy = ai_strategy_maintain_power_balance
+		set_strategy = ai_strategy_territorial_expansion
 		random_list = {
 			50 = { set_strategy = ai_strategy_conservative_agenda }
 			50 = { set_strategy = ai_strategy_progressive_agenda }
@@ -37,21 +37,18 @@
 			75 = { set_strategy = ai_strategy_industrial_expansion }
 			25 = { set_strategy = ai_strategy_plantation_economy }
 		}	
-		random_list = {
-			75 = { set_strategy = ai_strategy_maintain_power_balance }
-			25 = { set_strategy = ai_strategy_territorial_expansion }
-		}
+		set_strategy = ai_strategy_territorial_expansion
 		random_list = {
 			75 = { set_strategy = ai_strategy_conservative_agenda }
 			25 = { set_strategy = ai_strategy_progressive_agenda }
 		}
 	}
-	c:NEA = {
+	c:EX1 = {
 		random_list = {	
 			75 = { set_strategy = ai_strategy_resource_expansion }
 			25 = { set_strategy = ai_strategy_industrial_expansion }
 		}	
-		set_strategy = ai_strategy_maintain_power_balance
+		set_strategy = ai_strategy_territorial_expansion
 		random_list = {
 			75 = { set_strategy = ai_strategy_conservative_agenda }
 			25 = { set_strategy = ai_strategy_progressive_agenda }
@@ -59,7 +56,7 @@
 	}	
 	c:FUN = {
 		set_strategy = ai_strategy_resource_expansion	
-		set_strategy = ai_strategy_maintain_power_balance
+		set_strategy = ai_strategy_territorial_expansion
 		set_strategy = ai_strategy_conservative_agenda
 	}	
 	c:OIS = {
@@ -68,7 +65,7 @@
 			25 = { set_strategy = ai_strategy_resource_expansion }
 			25 = { set_strategy = ai_strategy_industrial_expansion }
 		}	
-		set_strategy = ai_strategy_maintain_power_balance
+		set_strategy = ai_strategy_territorial_expansion
 		random_list = {
 			75 = { set_strategy = ai_strategy_conservative_agenda }
 			25 = { set_strategy = ai_strategy_progressive_agenda }
@@ -104,10 +101,7 @@
 			25 = { set_strategy = ai_strategy_resource_expansion }
 			25 = { set_strategy = ai_strategy_industrial_expansion }
 		}			
-		random_list = {	
-			75 = { set_strategy = ai_strategy_maintain_power_balance }
-			25 = { set_strategy = ai_strategy_territorial_expansion }
-		}			
+		set_strategy = ai_strategy_territorial_expansion			
 	}	
 	c:HEN = {
 		random_list = {	
@@ -116,8 +110,8 @@
 			50 = { set_strategy = ai_strategy_industrial_expansion }
 		}			
 		random_list = {	
-			55 = { set_strategy = ai_strategy_maintain_power_balance }
-			45 = { set_strategy = ai_strategy_hen }
+			25 = { set_strategy = ai_strategy_maintain_power_balance }
+			75 = { set_strategy = ai_strategy_hen }
 		}			
 		set_strategy = ai_strategy_progressive_agenda
 	}	
@@ -447,25 +441,14 @@
 		set_strategy = ai_strategy_armed_isolationism
 		set_strategy = ai_strategy_conservative_agenda		
 	}
-	c:CRO = {
+
+	c:YUG = {
 		random_list = {	
 			50 = { set_strategy = ai_strategy_agricultural_expansion }
 			25 = { set_strategy = ai_strategy_resource_expansion }
 			25 = { set_strategy = ai_strategy_industrial_expansion }
 		}			
-		set_strategy = ai_strategy_unify_jugo
-		random_list = {	
-			75 = { set_strategy = ai_strategy_conservative_agenda }
-			25 = { set_strategy = ai_strategy_progressive_agenda }
-		}			
-	}
-	c:BUS = {
-		random_list = {	
-			50 = { set_strategy = ai_strategy_agricultural_expansion }
-			25 = { set_strategy = ai_strategy_resource_expansion }
-			25 = { set_strategy = ai_strategy_industrial_expansion }
-		}			
-		set_strategy = ai_strategy_unify_jugo
+		set_strategy = ai_strategy_territorial_expansion
 		random_list = {	
 			75 = { set_strategy = ai_strategy_conservative_agenda }
 			25 = { set_strategy = ai_strategy_progressive_agenda }
@@ -483,18 +466,7 @@
 			25 = { set_strategy = ai_strategy_progressive_agenda }
 		}			
 	}
-	c:MON = {
-		random_list = {	
-			50 = { set_strategy = ai_strategy_agricultural_expansion }
-			25 = { set_strategy = ai_strategy_resource_expansion }
-			25 = { set_strategy = ai_strategy_industrial_expansion }
-		}			
-		set_strategy = ai_strategy_unify_jugo
-		random_list = {	
-			75 = { set_strategy = ai_strategy_conservative_agenda }
-			25 = { set_strategy = ai_strategy_progressive_agenda }
-		}			
-	}
+
 	c:ALB = {
 		random_list = {	
 			50 = { set_strategy = ai_strategy_agricultural_expansion }

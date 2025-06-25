@@ -1212,7 +1212,7 @@
 		region_state:WLO = {
 			create_pop = {
 				culture = amhara
-				size = 335200
+				size = 385200
 			}
 			create_pop = {
 				culture = oromo
@@ -1229,26 +1229,6 @@
 				pop_type = slaves
 				culture = amhara
 				size = 26000
-			}
-		}
-		region_state:AWS = {
-			create_pop = {
-				culture = afar
-				size = 52000
-			}
-			create_pop = {
-				culture = amhara
-				size = 4500
-			}
-			create_pop = {
-				culture = tigray
-				religion = sunni
-				size = 4360
-			}
-			create_pop = {
-				culture = kikuyu 
-				size = 6694
-				pop_type = slaves
 			}
 		}
 		region_state:TGR = {

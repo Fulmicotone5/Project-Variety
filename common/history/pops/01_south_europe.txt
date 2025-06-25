@@ -71,7 +71,7 @@
 		}
 	}
 	s:STATE_CAMPANIA = {
-		region_state:NEA = {
+		region_state:EX1 = {
 			create_pop = {
 				culture = south_roman
 				size = 1757396
@@ -79,7 +79,7 @@
 		}
 	}
 	s:STATE_CALABRIA = {
-		region_state:NEA = {
+		region_state:EX1 = {
 			create_pop = {
 				culture = south_roman
 				size = 1182848
@@ -87,7 +87,7 @@
 		}
 	}
 	s:STATE_APULIA = {
-		region_state:NEA = {
+		region_state:EX1 = {
 			create_pop = {
 				culture = south_roman
 				size = 984392
@@ -95,10 +95,20 @@
 		}
 	}
 	s:STATE_ABRUZZO = {
-		region_state:SPO = {
+		region_state:EX1 = {
 			create_pop = {
 				culture = south_roman
 				size = 1160448
+			}
+		}
+		region_state:VEN = {
+			create_pop = {
+				culture = south_roman
+				size = 11540
+			}
+			create_pop = {
+				culture = venetian
+				size = 550
 			}
 		}
 	}
@@ -595,7 +605,7 @@
 		}
 	}
 	s:STATE_BOSNIA = {
-		region_state:BUS = {
+		region_state:YUG = {
 			create_pop = {
 				culture = serb
 				size = 1004908
@@ -647,7 +657,7 @@
 		}
 	}
 	s:STATE_SLOVENIA = {
-		region_state:CRO = {
+		region_state:YUG = {
 			create_pop = {
 				culture = slovene
 				size = 464400
@@ -663,7 +673,7 @@
 		}
 	}
 	s:STATE_DALMATIA = {
-		region_state:BUS = {
+		region_state:VEN = {
 			create_pop = {
 				culture = croat
 				size = 689000
@@ -683,7 +693,7 @@
 		}
 	}
 	s:STATE_CROATIA = {
-		region_state:CRO = {
+		region_state:YUG = {
 			create_pop = {
 				culture = croat
 				size = 703592
@@ -706,7 +716,7 @@
 				size = 176000
 			}
 		}
-		region_state:BUS = {
+		region_state:VEN = {
 			create_pop = {
 				culture = croat
 				size = 343592
@@ -718,7 +728,7 @@
 		}
 	}
 	s:STATE_SLAVONIA = {
-		region_state:CRO = {
+		region_state:YUG = {
 			create_pop = {
 				culture = croat
 				size = 582048
@@ -761,7 +771,7 @@
 				pop_type = slaves
 			}
 		}
-		region_state:CRO = {
+		region_state:YUG = {
 			create_pop = {
 				culture = venetian
 				size = 17800
@@ -781,7 +791,7 @@
 		}
 	}
 	s:STATE_MONTENEGRO = {
-		region_state:MON = {
+		region_state:YUG = {
 			create_pop = {
 				culture = albanian
 				size = 234000

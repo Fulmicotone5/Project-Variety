@@ -32,7 +32,10 @@ je_venice_adriatic = {
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 	group = je_group_historical_content
 	complete = {
-		owns_entire_state_region = STATE_DALMATIA
+		any_scope_state = {
+                state_region = s:STATE_DALMATIA
+                is_incorporated = yes
+            }
 		owns_entire_state_region = STATE_ALBANIA
 	}
 	on_complete = {

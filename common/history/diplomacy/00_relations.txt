@@ -61,7 +61,7 @@
 		set_relations = { country = c:PUP value = 20 }
 		set_relations = { country = c:TOR value = -20 }
 		set_relations = { country = c:BIZ value = -20 }
-		set_relations = { country = c:CRO value = -20 }
+		set_relations = { country = c:YUG value = -20 }
 		set_relations = { country = c:SLO value = 20 }
 		set_relations = { country = c:OIS value = -20 }
 		set_relations = { country = c:BAV value = 30 }
@@ -92,7 +92,7 @@
 	c:CTH ?= {
 		set_relations = { country = c:PUP value = -30 }
 		set_relations = { country = c:HAK value = -50 }
-		set_relations = { country = c:NEA value = -50 }
+		set_relations = { country = c:EX1 value = -50 }
 	}
 	c:EGE ?= {
 		set_relations = { country = c:HDJ value = -30 }
@@ -170,18 +170,18 @@
 		set_relations = { country = c:CAS value = -30 }
 	}
 	c:SAR ?= {
-		set_relations = { country = c:NEA value = 30 }
+		set_relations = { country = c:EX1 value = 30 }
 		set_relations = { country = c:PUP value = -20 }
 		set_relations = { country = c:FRA value = 30 }
 	}
 	c:PUP ?= {
 		set_relations = { country = c:SAR value = 30 }
-		set_relations = { country = c:NEA value = 30 }
+		set_relations = { country = c:EX1 value = 30 }
 		set_relations = { country = c:OIS value = 30 }
 		set_relations = { country = c:HSE value = -100 }
 	}
 	c:SPO ?= {
-		set_relations = { country = c:NEA value = 50 }
+		set_relations = { country = c:EX1 value = -25 }
 	}
 	c:SER ?= {
 		set_relations = { country = c:TOR value = -30 }

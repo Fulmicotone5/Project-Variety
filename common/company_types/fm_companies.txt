@@ -8,11 +8,15 @@
 	
 	building_types = {  
 		building_olive_plantation
+		building_vineyard_plantation
 	}
 
 	extension_building_types = {
-		building_vineyard_plantatio
 		building_livestock_ranch
+	}
+
+	possible_prestige_goods = {
+		prestige_good_champagne
 	}
 
 	
@@ -290,7 +294,8 @@ company_venars = {
 		building_artillery_foundries
 	}
 	extension_building_types = {
-		building_trade_center		
+		building_port	
+		building_shipyards	
 	}
 	
 	potential = {
@@ -328,13 +333,13 @@ company_VNA = {
 	building_types = {
 		building_sugar_plantation
 		building_banana_plantation
+		building_olive_plantation
+		building_tobacco_plantation
+		building_coffee_plantation
 	}
 
 	extension_building_types = {
 		building_dye_plantation
-		building_olive_plantation
-		building_tobacco_plantation
-		building_coffee_plantation
 		building_livestock_ranch
 
 	}
@@ -427,10 +432,10 @@ company_EIC = {
 
 	building_types = {
 		building_opium_plantation
+		building_spice_plantation
 	}
 
 	extension_building_types = {
-		building_spice_plantation
 		building_textile_mills
 		building_sugar_plantation
 	}
@@ -529,14 +534,13 @@ company_VOC = {
 	building_types = {
 		building_tea_plantation
 		building_dye_plantation
-		building_sugar_plantation
+		building_silk_plantation
+		building_tobacco_plantation
 	}
 
 	extension_building_types = {
-		building_tobacco_plantation
 		building_spice_plantation
 		building_opium_plantation
-		building_silk_plantation
 	}
 
 	potential = {
@@ -621,13 +625,13 @@ icon = "gfx/interface/icons/company_icons/fm_company_icons/denco.dds"
 	building_types = {
 		building_silk_plantation
 		building_spice_plantation
+		building_tea_plantation
+		building_dye_plantation
 	}
 
 	extension_building_types = {
 		building_logging_camp
 		building_rice_farm
-		building_tea_plantation
-		building_dye_plantation
 	}
 
 	possible_prestige_goods = {
@@ -716,13 +720,13 @@ icon = "gfx/interface/icons/company_icons/fm_company_icons/nosco.dds"
 	building_types = {
 		building_banana_plantation
 		building_gold_mine
+		building_tobacco_plantation
+		building_coffee_plantation
 	}
 
 	extension_building_types = {
 		building_maize_farm
-		building_tobacco_plantation
 		building_dye_plantation
-		building_coffee_plantation
 	}
 
 	potential = {
@@ -787,3 +791,65 @@ icon = "gfx/interface/icons/company_icons/fm_company_icons/nosco.dds"
 	}
 }
 
+company_zarath = {
+	icon = "gfx/interface/icons/religion_icons/zoroastrianism.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
+
+	flavored_company = yes
+
+	building_types = {
+		building_paper_mills
+		building_livestock_ranch
+	}
+
+	extension_building_types = {
+		building_opium_plantation
+	}
+
+	possible_prestige_goods = {
+		prestige_good_generic_meat
+	}
+
+	potential = {
+		country_has_state_religion = rel:zoroastrian
+	}
+
+	attainable = {
+		country_has_state_religion = rel:zoroastrian
+	}
+
+	possible = {
+		country_has_state_religion = rel:zoroastrian
+		any_scope_state = {
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_livestock_ranch
+				level >= 5
+			}
+		}
+	}
+
+	prosperity_modifier = {
+		state_infrastructure_from_population_max_add = 10
+	}
+
+	ai_will_do = {
+		has_technology_researched = mechanical_tools
+		any_scope_state = {
+			is_incorporated = yes
+		}
+	}
+
+	ai_construction_targets = {
+		building_paper_mills = {
+			level = 2
+			state_trigger = {
+				is_incorporated = yes
+			}
+		}
+	}
+
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}

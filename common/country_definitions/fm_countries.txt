@@ -1780,7 +1780,7 @@ OMA = {
 	
 	country_type = recognized
 	
-	tier = principality
+	tier = kingdom
 	
 	cultures = { bedouin }
 	religion = zoroastrian

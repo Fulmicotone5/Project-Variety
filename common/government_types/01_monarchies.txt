@@ -21,6 +21,7 @@ gov_enlightened_despotate = {
 	}
 }
 
+
 gov_princely_state_rawalate = {
 	transfer_of_power = hereditary
 

@@ -1335,7 +1335,7 @@ types state_panel_types
 				}
 			}
 		}
-
+		
 
 		flowcontainer = {
 			margin = { 10 10 }
@@ -4074,7 +4074,7 @@ types building_item_types
 				}
 
 				textbox = {
-					visible = "[And(And(And(Not(Building.IsGovernmentFunded), Building.IsActive), Not(Building.IsSubsidized)), Not(Building.IsSubsistenceBuilding))]"
+					visible = "[And(And(Not(Building.IsGovernmentFunded), Building.IsActive), Not(Building.IsSubsistenceBuilding))]"
 					parentanchor = vcenter
 					minimumsize = { 60 -1 }
 					autoresize = yes
@@ -4084,20 +4084,9 @@ types building_item_types
 					fontsize_min = 12
 					raw_text = "#v @money![Building.GetAverageAnnualEarningsPerEmployeeFormatted|1+]#!"
 				}
-				
-				textbox = {
-					visible = "[And(Building.GetBuildingType.CanBeSubsidized, Building.IsSubsidized)]"
-					parentanchor = vcenter
-					minimumsize = { 60 -1 }
-					autoresize = yes
-					align = right|nobaseline
-					max_width = 52
-					fontsize_min = 12
-					raw_text = "#N @money!#bold -[Building.GetSubsidies|D]#!"
-				}
 
 				textbox = {
-					visible = "[And(And(And(Building.IsGovernmentFunded, Building.IsActive), Not(Building.IsSubsidized)), Not(Building.IsSubsistenceBuilding))]"
+					visible = "[And(And(Building.IsGovernmentFunded, Building.IsActive), Not(Building.IsSubsistenceBuilding))]"
 					parentanchor = vcenter
 					minimumsize = { 60 -1 }
 					autoresize = yes
@@ -4273,7 +4262,6 @@ types building_item_types
 
 							textbox = {
 								parentanchor = right
-								alpha = "[TransparentIfTrue(Building.IsSubsidized)]"
 								visible = "[And(Not(Building.IsGovernmentFunded), Building.IsActive)]"
 								raw_text = "#v @money![Building.GetAverageAnnualEarningsPerEmployeeFormatted|1+]#!"
 								align = right|nobaseline
@@ -4655,7 +4643,7 @@ types building_item_types
 					size = { 60 30 }
 					parentanchor = vcenter
 					textbox = {
-						visible = "[And(And(And(Not(Building.IsGovernmentFunded), Building.IsActive), Not(Building.IsSubsidized)), Not(Building.IsSubsistenceBuilding))]"
+						visible = "[And(And(Not(Building.IsGovernmentFunded), Building.IsActive), Not(Building.IsSubsistenceBuilding))]"
 						raw_text = "#v @money![Building.GetAverageAnnualEarningsPerEmployeeFormatted|1+]#!"
 						tooltip = "TOOLTIP_BUILDING_PRODUCTIVITY"
 						tooltipwidget = {

@@ -31,6 +31,11 @@
 			institution = institution_schools
 			level = 2
 		}
+			set_tax_level = high
+
+		add_taxed_goods = g:meat
+		add_taxed_goods = g:tobacco
+		add_taxed_goods = g:liquor
 		trigger_event = {
 			id = lotharingia.1
 		}

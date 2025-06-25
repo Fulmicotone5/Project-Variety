@@ -1,0 +1,23 @@
+
+papermap_signup_reward = {
+	category = papermap_theme
+
+	selectable = {
+		custom_tooltip = {
+			text = SUBSCRIBED_TO_NEWSLETTER
+			always = yes
+		}
+	}
+
+	papermap_textures_file = "gfx/map/textures/maptextures_newsletter_bonus.settings"
+
+	map_object = {
+		pdxmesh = "papermap_extension_top_newsletter_bonus_mesh"
+		locator = "papermap_extension_top_locator"
+	}
+
+	map_object = {
+		pdxmesh = "papermap_extension_bottom_newsletter_bonus_mesh"
+		locator = "papermap_extension_bottom_locator"
+	}
+}

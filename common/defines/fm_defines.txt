@@ -37,6 +37,9 @@ NWar = {
 
 
 }
+ NPolitics = {
+	LAW_ENACTMENT_LAW_COMMITMENT_EFFECT = 0.01 # Committing to enacting a law via treaty adds this much to pass chance
+ }
 NPowerBlocs = {
 	MAX_PRINCIPLES = 4					# Max number of principles that a Power Bloc can have
 	INITIAL_PRINCIPLE_LEVELS = 3		# Max total levels of principles that a Power Bloc can have during formation

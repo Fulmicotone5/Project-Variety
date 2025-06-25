@@ -5300,6 +5300,8 @@ BUK_subject_GBR = {
 	}	
 }
 
+
+
 BUL = { # Bulgaria
 	# 1878
 	

@@ -1383,7 +1383,7 @@
 		region_state:LOT = {
 			create_pop = {
 				culture = north_german
-				size = 1898704
+				size = 1988704
 			}
 			create_pop = {
 				culture = ashkenazi
@@ -1397,16 +1397,6 @@
 			create_pop = {
 				culture = polish
 				size = 20000
-			}
-		}
-		region_state:PUM = {
-			create_pop = {
-				culture = north_german
-				size = 44000
-			}
-			create_pop = {
-				culture = polish
-				size = 1000
 			}
 		}
 	}

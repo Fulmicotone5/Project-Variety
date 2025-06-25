@@ -1,0 +1,58 @@
+BF1 = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue_light"
+	color2 = "red"
+	color3 = "black"
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = color2
+		color2 = color3
+	}		
+}
+BF1_monarchy = {
+	# Starting flag
+	
+		pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "te_coa_bf1_base.dds"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
+	}	
+}
+SR1 = {
+		pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "te_coa_SR1_base.dds"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
+	}		
+}
+SR1_monarchy = {
+	# Starting flag
+	
+		pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "te_coa_SR1M_base.dds"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
+	}	
+}
+
+EX1 = { # exa
+	# 1878 flag
+	
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	color2 = "yellow"
+	
+	colored_emblem = {
+		texture = "ce_chi_rho.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { scale = { 0.66 0.66 } position = { 0.4 0.5 } }	
+	}	
+}

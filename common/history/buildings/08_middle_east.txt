@@ -137,76 +137,53 @@
 		}
 	}
 	s:STATE_YEMEN = {
-		region_state:LAH = {
+		region_state:OMA = {
 			create_building={
 				building="building_coffee_plantation"
 				add_ownership={
 					country={
-						country="c:LAH"
-						levels=1
+						country="c:OMA"
+						levels=3
 					}
 				}
 				reserves=1
 				activate_production_methods={ "default_building_coffee_plantation" "pm_road_carts" }
 			}
 			create_building={
-				building="building_port"
+				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:LAH"
-						levels=1
+						country="c:OMA"
+						levels=4
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_anchorage" }
+				activate_production_methods={ "pm_simple_organization" "pm_religious_bureaucrats" "pm_professional_bureaucrats" }
 			}
-		}
-		region_state:ZAI = {
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
 					country={
-						country="c:ZAI"
-						levels=1
+						country="c:OMA"
+						levels=7
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" }
+				activate_production_methods={ "pm_simple_farming" "pm_citrus_orchards" "pm_tools_disabled" }
 			}
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
 					country={
-						country="c:ZAI"
+						country="c:OMA"
 						levels=1
 					}
 				}
 				reserves=1
 				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" }
 			}
-			create_building={
-				building="building_coffee_plantation"
-				add_ownership={
-					country={
-						country="c:ZAI"
-						levels=1
-					}
-				}
-				reserves=1
-				activate_production_methods={ "default_building_coffee_plantation" "pm_road_carts" }
-			}
-			create_building={
-				building="building_barracks"
-				add_ownership={
-					country={
-						country="c:ZAI"
-						levels=10
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_general_training" }
-			}
 		}
+
 		region_state:HDJ = {
 			create_building={
 				building="building_coffee_plantation"
@@ -814,7 +791,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" }
+				activate_production_methods={ "pm_simple_farming" "pm_citrus_orchards" "pm_tools_disabled" }
 			}
 			create_building={
 				building= "building_argebam"

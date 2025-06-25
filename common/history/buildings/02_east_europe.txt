@@ -688,13 +688,13 @@
 		}
 	}
 	s:STATE_POSEN = {
-		region_state:PUM={
+		region_state:LOT={
 			create_building={
 				building="building_food_industry"
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:PUM"
+						country="c:LOT"
 						levels=2
 						region="STATE_POSEN"
 					}
@@ -703,11 +703,22 @@
 				activate_production_methods={ "pm_pot_stills" "pm_disabled_canning" "pm_sweeteners" "pm_manual_dough_processing" }
 			}
 			create_building={
+					building="building_government_administration"
+					add_ownership={
+						country={
+							country="c:LOT"
+							levels=1
+						}
+					}
+					reserves=1
+					activate_production_methods={ "pm_horizontal_drawer_cabinets" }
+				}
+			create_building={
 				building="building_rye_farm"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:PUM"
+						country="c:LOT"
 						levels=15
 						region="STATE_POSEN"
 					}
@@ -720,7 +731,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:PUM"
+						country="c:LOT"
 						levels=3
 						region="STATE_POSEN"
 					}
@@ -732,7 +743,7 @@
 				building="building_iron_mine"
 				add_ownership={
 					country={
-						country="c:PUM"
+						country="c:LOT"
 						levels=3
 					}
 				}

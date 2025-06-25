@@ -3,7 +3,7 @@
 	country_infamy_decay_mult = -0.1
 	country_infamy_generation_mult = 0.1
 	country_influence_mult = -0.1
-	country_liberty_desire_of_subjects_add = 0.1
+	country_liberty_desire_of_subjects_add = 0.05
 }
 
 modifier_opposes_enforced_law_ig = {

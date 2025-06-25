@@ -18,6 +18,7 @@ secession_growing = {
 
 diplomatic_pact_in_danger = {
 }
+treaty_article_in_danger = {}
 
 expiring_obligations = {
 }

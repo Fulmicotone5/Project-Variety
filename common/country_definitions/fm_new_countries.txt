@@ -1,0 +1,28 @@
+BF1 = {
+	color = { 0 0 90 }
+	country_type = recognized
+	
+	tier = hegemony
+	
+	cultures = { serb croat slovene bosniak albanian bulgarian greek romanian hungarian }
+	capital = STATE_EASTERN_THRACE
+}
+SR1 = {
+	color = {84 133 129}
+	country_type = recognized
+	
+	tier = hegemony
+	
+	cultures = { serb }
+	capital = STATE_EASTERN_THRACE
+}
+EX1 = {
+	color = { 145 45 144 }
+	
+	country_type = recognized
+
+	tier = kingdom
+	
+	cultures = { south_roman }	
+	capital = STATE_CAMPANIA
+}
