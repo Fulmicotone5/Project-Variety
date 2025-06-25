@@ -759,14 +759,14 @@
 		}
 	}
 	s:STATE_LINDI = {
-		region_state:HHE = {
+		region_state:AF2 = {
 			create_pop = {
 				culture = south_bantu
 				size = 306800
 			}
 			create_pop = {
 				culture = east_bantu
-				size = 74200
+				size = 260322
 			}
 			create_pop = {
 				culture = east_bantu
@@ -777,31 +777,9 @@
 			create_pop = {
 				pop_type = slaves
 				culture = south_bantu
-				size = 19000
+				size = 35666
 			}
 
-		}
-		region_state:GGO = {
-			create_pop = {
-				culture = east_bantu
-				size = 85000
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = east_bantu
-				size = 7000
-			}
-		}
-		region_state:SNG = {
-			create_pop = {
-				culture = east_bantu
-				size = 107000
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = east_bantu
-				size = 5000
-			}
 		}
 	}
 	s:STATE_ZANZIBAR = {
@@ -1180,50 +1158,24 @@
 		}
 	}
 	s:STATE_KAZEMBE = {
-		region_state:BMB = {
+		region_state:AF1 = {
 			create_pop = {
 				culture = south_bantu
-				size = 37204
+				size = 212044
 			}
 
 			create_pop = {
 				culture = east_bantu
-				size = 88000
+				size = 148765
 			}
 			create_pop = {
 				pop_type = slaves
 				culture = south_bantu
-				size = 10000
+				size = 21344
 			}
 			create_pop = {
 				culture = nguni
 				size = 20000
-			}
-		}
-		region_state:KZM = {
-			create_pop = {
-				culture = south_bantu
-				size = 126000
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = south_bantu
-				size = 6000
-			}
-		}
-		region_state:MRV = {
-			create_pop = {
-				culture = east_bantu
-				size = 60000
-			}
-			create_pop = {
-				culture = south_bantu
-				size = 55000
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = south_bantu
-				size = 5000
 			}
 		}
 	}
@@ -1545,7 +1497,7 @@
 				size = 3996
 			}		
 		}
-		region_state:MRV = {
+		region_state:AF1 = {
 			create_pop = {
 				culture = east_bantu
 				size = 68996
@@ -1968,7 +1920,7 @@
 				size = 15304
 			}
 		}
-		region_state:OVM = {
+		region_state:AF1 = {
 			create_pop = {
 				culture = south_bantu
 				size = 244996
@@ -1982,84 +1934,37 @@
 		}
 	}
 	s:STATE_EAST_ANGOLA = {
-		region_state:CHK = {
+		region_state:AF1 = {
 			create_pop = {
 				culture = south_bantu
-				size = 190000
+				size = 452204
 			}
 			create_pop = {
 				pop_type = slaves
 				culture = south_bantu
-				size = 10000
-			}
-		}
-		region_state:LND = {
-			create_pop = {
-				culture = south_bantu
-				size = 143996
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = south_bantu
-				size = 10000
-			}
-		}
-		region_state:KSN = {
-			create_pop = {
-				culture = south_bantu
-				size = 166000
-			}
-
-			create_pop = {
-				pop_type = slaves
-				culture = south_bantu
-				size = 4000
-			}
-
-		}
-		region_state:LZO = {
-			create_pop = {
-				culture = south_bantu
-				size = 40600
+				size = 24322
 			}
 		}
 	}
 	s:STATE_KATANGA = {
-		region_state:KZM = {
+		region_state:AF1 = {
 			create_pop = {
 				culture = south_bantu
-				size = 120400
+				size = 388977
 			}
 			create_pop = {
 				culture = central_bantu
-				size = 200000
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = central_bantu
-				size = 15604
-			}
-		}
-		region_state:LND = {
-			create_pop = {
-				culture = south_bantu
-				size = 268400
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = south_bantu
-				size = 12000
-			}
-		}
-		region_state:LBA = {
-			create_pop = {
-				culture = central_bantu
-				size = 2404
+				size = 204988
 			}
 			create_pop = {
 				pop_type = slaves
 				culture = central_bantu
 				size = 16000
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = central_bantu
+				size = 27543
 			}
 		}
 	}
@@ -2107,22 +2012,14 @@
 		}
 	}
 	s:STATE_ZAMBIA = {
-		region_state:LZO = {
-			create_pop = {
-				culture = south_bantu
-				size = 66900
-			}
-
-
-		}
-		region_state:BMB = {
+		region_state:AF1 = {
 			create_pop = {
 				culture = east_bantu
-				size = 48136
+				size = 45136
 			}
 			create_pop = {
 				culture = south_bantu
-				size = 5000
+				size = 71333
 			}
 			create_pop = {
 				pop_type = slaves

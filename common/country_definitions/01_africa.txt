@@ -220,6 +220,15 @@ MSH = {
 	cultures = { south_bantu }
 	capital = STATE_ZAMBEZI
 }
+AF2 = {
+	color= hsv{ 0.58 0.51 0.96 }
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { east_bantu }
+	capital = STATE_KAZEMBE
+}
 
 AF1 = {
 	color= hsv{ 0.16 0.37 0.84 }
