@@ -3058,7 +3058,7 @@ VOC = {
 	tier = principality
 	
 	cultures = { dutch }
-	capital = STATE_SHAOZHOU
+	capital = STATE_MEKONG
 }
 
 ORL = {

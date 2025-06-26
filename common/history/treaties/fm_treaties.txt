@@ -283,14 +283,11 @@ TREATIES = {
 		binding_period = { years = 75 } # 99 year binding period after start of game
 
 		articles_to_create = {
-			{
-				article = treaty_port
-				source_country = c:ST1
-				target_country = c:VOC
-				inputs = {
-					{ state = s:STATE_CAPE_COLONY.region_state:ST1 }
+			{ 
+					article = trade_privilege
+					source_country = c:ST1
+					target_country = c:VOC
 				}
-			}
 			{
 				article = money_transfer
 				source_country = c:VOC
@@ -346,7 +343,7 @@ TREATIES = {
 					{ state = s:STATE_SHAOZHOU.region_state:YUE }
 				}
 			}
-			{ # British Military Assistance to Portugal
+			{ 
 					article = military_assistance
 					source_country = c:VOC
 					target_country = c:YUE
@@ -370,38 +367,11 @@ TREATIES = {
 					{ state = s:STATE_BEIJING.region_state:ZHI }
 				}
 			}
-			{ # British Military Assistance to Portugal
+			{ 
 					article = military_assistance
 					source_country = c:VEN
 					target_country = c:ZHI
 				}
-		}
-	}
-	create_treaty = {
-		first_country = c:VEN
-		second_country = c:BUR
-
-		is_draft = no
-		entered_into_force_on = 1763.1.1
-		binding_period = { years = 75 } # 99 year binding period after start of game
-
-		articles_to_create = {
-			{
-				article = treaty_port
-				source_country = c:BUR
-				target_country = c:VEN
-				inputs = {
-					{ state = s:STATE_ARAKAN.region_state:BUR }
-				}
-			}
-			{
-				article = money_transfer
-				source_country = c:VEN
-				target_country = c:BUR
-				inputs = {
-					{ quantity = 1000 } # Loose estimate, the rent was 'thousands of tomans per year' (1 toman was roughly equal to a pound in 1815)
-				}
-			}
 		}
 	}
 }

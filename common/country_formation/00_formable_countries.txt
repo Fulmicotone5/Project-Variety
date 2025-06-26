@@ -309,6 +309,7 @@ HLE = {
 		STATE_GELRE
 		
 	}
+	
 
 	required_states_fraction = 0.8
 	
@@ -1331,6 +1332,9 @@ SC2 = {
 
 	possible = {
 		has_technology_researched = nationalism
+		NOT = {
+			c:IRE ?= this
+		}
 	}
 }
 
