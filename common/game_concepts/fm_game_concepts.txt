@@ -39,5 +39,10 @@ concept_sapainca = {
 	is_loading_tip = yes
 }
 concept_invention_progress = {
+	texture = "gfx/interface/icons/invention_icons/academia.dds"
+	is_loading_tip = yes
+}
+concept_control = {
+	texture = "gfx/interface/icons/invention_icons/centralization.dds"
 	is_loading_tip = yes
 }

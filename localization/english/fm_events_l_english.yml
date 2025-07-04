@@ -1283,7 +1283,9 @@
 
  concept_veto: "Veto"
  concept_veto_desc: "An official power or right to reject a decision or proposal made by a lawmaking body."
-
+  concept_control: "Control"
+ concept_control_desc: "Control reflects the extent of a [concept_country]'s authority over its regions and citizens. As the number of regions increases, maintaining cohesive governance becomes progressively more challenging. A more liberal government will also have less control over its citizens."
+ 
  mod_yag_1: "Bribes"
  mod_yag_2: "Granted Holdings"
  mod_yag_3: "Free Hands"

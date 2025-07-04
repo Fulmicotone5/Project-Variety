@@ -306,6 +306,9 @@ fm_internal5 = {
 		add_modifier = {
 			name = ip5
 		}
+		custom_tooltip = {
+			text = ip5tool
+		}
 	}
 }
 
@@ -457,6 +460,9 @@ fm_administration5 = {
 		set_variable = administration5
 		add_modifier = {
 			name = fadm5
+		}
+		custom_tooltip = {
+			text= fadm5tool
 		}
 	}
 }

@@ -187,6 +187,7 @@ law_isolationism = {
 		country_max_declared_interests_mult = -0.5
 
 		country_disallow_trade_bool = yes
+		control_bool_25 = yes
 	}
 
 	ai_will_do = {

@@ -105,6 +105,7 @@ law_corporate_state = {
 		country_legitimacy_ideological_incoherence_mult = -0.25
 		country_authority_add = 100
 		interest_group_ig_petty_bourgeoisie_pol_str_mult = 0.25
+		control_bool_5 = yes
 	}
 
 	ai_will_do = {

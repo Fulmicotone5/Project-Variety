@@ -793,7 +793,7 @@ icon = "gfx/interface/icons/company_icons/fm_company_icons/nosco.dds"
 
 company_zarath = {
 	icon = "gfx/interface/icons/religion_icons/zoroastrianism.dds"
-	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
 
 	flavored_company = yes
 
@@ -843,6 +843,69 @@ company_zarath = {
 	ai_construction_targets = {
 		building_paper_mills = {
 			level = 2
+			state_trigger = {
+				is_incorporated = yes
+			}
+		}
+	}
+
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+
+company_genm = {
+icon = "gfx/interface/icons/company_icons/fm_company_icons/generalm.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+
+	flavored_company = yes
+
+	building_types = {
+		building_motor_industry
+		building_steel_mills
+	}
+
+	extension_building_types = {
+		building_automotive_industry
+	}
+
+	possible_prestige_goods = {
+		prestige_good_loud_car
+	}
+
+	potential = {
+		has_technology_researched = atmospheric_engine
+	}
+
+	possible = {
+		any_scope_state = {
+			any_scope_building = {
+				is_building_type = building_motor_industry
+				level >= 10
+			}
+		}
+	}
+
+	prosperity_modifier = {
+		building_motor_industry_throughput_add = 0.15
+	}
+
+	ai_will_do = {
+		any_scope_state = {
+			is_incorporated = yes
+		}
+	}
+
+	ai_construction_targets = {
+		building_spice_plantation = {
+			level = 10
+			state_trigger = {
+				is_incorporated = yes
+			}
+		}
+		building_motor_industry = {
+			level = 3
 			state_trigger = {
 				is_incorporated = yes
 			}

@@ -6,7 +6,7 @@
 	country_improve_relations_speed_mult = 1
 	country_damage_relations_speed_mult = -0.5
 	country_tech_spread_mult = 0.1
-	country_infamy_generation_mult = 0.05
+	country_infamy_generation_mult = 0.15
 }
 fm_fa2 = {
 	icon = gfx/interface/ve_religion/trade_efficiency.dds
@@ -18,33 +18,36 @@ fm_fa2 = {
 }
 fm_fa3 = {
 	icon = gfx/interface/ve_religion/aggresive_exp_icon.dds
-	country_influence_mult = -0.25
+	country_influence_mult = -0.2
 	country_diplomatic_play_maneuvers_add = 50
 	state_migration_pull_mult = -0.2
 	country_max_declared_interests_add = 3
 	country_infamy_generation_mult = -0.2
 	country_infamy_generation_against_unrecognized_mult = 0.5
-	country_infamy_decay_mult = -0.5
+	country_infamy_decay_mult = -0.25
 	country_improve_relations_speed_mult = -0.5
-	country_damage_relations_speed_mult = 0.5
+	country_damage_relations_speed_mult = 0.
+	state_contiguous_incorporation_speed_mult = 0.25
 
 }
 fm_fa4 = {
 	icon = gfx/interface/ve_ideas/land_morale.dds
-	country_influence_mult = -0.25
+	country_influence_mult = -0.2
 	state_migration_pull_mult = -0.2
 	country_max_declared_interests_add = 3
 	state_colony_growth_creation_factor = 0.1
 	state_non_homeland_colony_growth_speed_mult = 0.25
 	country_infamy_generation_against_unrecognized_mult = -0.6
-	country_infamy_generation_mult = 0.3
+	country_infamy_generation_mult = 0.2
 	unit_convoy_requirements_mult = -0.1
 	unit_navy_defense_mult = 0.1
 	country_ignores_landing_craft_penalty_bool = yes
 	unit_navy_offense_mult = 0.05
-	country_infamy_decay_mult = -0.5
+	country_infamy_decay_mult = -0.25
 	country_improve_relations_speed_mult = -0.5
 	country_damage_relations_speed_mult = 0.5
+	state_non_contiguous_incorporation_speed_mult = 0.25
+	state_contiguous_incorporation_speed_mult = 0.25
 }
 fm_fa5 = {
 	icon = gfx/interface/ve_ideas/improve_relation_modifier.dds
@@ -276,15 +279,15 @@ fadm3 = {
 	icon = gfx/interface/ve_national_ideas/adm_tech_cost_modifier.dds
 	country_production_tech_research_speed_mult = 0.1
 	country_military_tech_research_speed_mult = 0.1
-	country_society_tech_research_speed_mult = 0.2
-	country_weekly_innovation_mult = 0.15
+	country_society_tech_research_speed_mult = 0.1
+	country_weekly_innovation_mult = 0.25
 }
 fadm4 = {
 	icon = gfx/interface/ve_national_ideas/local_institution_spread.dds
 	building_arts_academy_throughput_add = 0.2
-	building_university_throughput_add = 0.2
+	building_university_throughput_add = 0.1
 	state_pop_qualifications_mult = 0.1
-	country_tech_spread_mult = 0.5
+	country_tech_spread_mult = 0.4
 }
 fadm5 = {
 	icon = gfx/interface/ve_ideas/land_morale.dds
@@ -295,7 +298,7 @@ fadm5 = {
 	state_harvest_condition_heatwave_impact_mult = -0.5
 	state_harvest_condition_disease_outbreak_impact_mult = -0.5
 	state_food_security_add = 0.1
-	state_mortality_turmoil_mult = -0.1
+	state_mortality_turmoil_mult = -0.2
 
 }
 economic1 = {

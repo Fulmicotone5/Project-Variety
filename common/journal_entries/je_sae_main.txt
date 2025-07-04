@@ -122,6 +122,18 @@ je_sae_zoro = {
 	group = je_group_historical_content
 	immediate = {
 		if = {
+			limit = { 
+				NOT = {
+					has_variable = control_var
+				}
+			}
+				set_variable = {
+				name = control_var
+				value = 10
+			}
+
+		}
+		if = {
 			limit = {
 				NOT = {
 					has_variable = victoria_universalis_system_on
@@ -130,7 +142,9 @@ je_sae_zoro = {
 			set_missionary_cultural_missionary = yes
 			set_point_system = yes
 			religion_passive_bonuses = yes
-
+			control_effects = yes
+			reset_control_modifiers = yes
+			control_mdf_effects = yes
 			ve_holy_site_effects = yes
 		}
 	}

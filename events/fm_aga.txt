@@ -68,11 +68,25 @@ fm_aga.2 = {
 				set_state_type = incorporated
 			}
 			c:BRZ = {
+				if = {
+			limit = { 
+				NOT = {
+					has_variable = control_var
+				}
+			}
+				set_variable = {
+				name = control_var
+				value = 10
+			}
+
+		}
+		control_effects = yes
+		reset_control_modifiers = yes
+		control_mdf_effects = yes
 				set_missionary_cultural_missionary = yes
 				ve_law_change_effects = yes
 				set_point_system = yes
 				religion_passive_bonuses = yes
-	
 				ve_holy_site_effects = yes
 			}
 		}
@@ -107,11 +121,25 @@ fm_aga.2 = {
 				set_state_type = incorporated
 			}
 			c:URU = {
+				if = {
+			limit = { 
+				NOT = {
+					has_variable = control_var
+				}
+			}
+				set_variable = {
+				name = control_var
+				value = 10
+			}
+
+		}
+		control_effects = yes
+		reset_control_modifiers = yes
+		control_mdf_effects = yes
 				set_missionary_cultural_missionary = yes
 				ve_law_change_effects = yes
 				set_point_system = yes
 				religion_passive_bonuses = yes
-
 				ve_holy_site_effects = yes
 			}
 		}
@@ -146,11 +174,25 @@ fm_aga.2 = {
 				set_state_type = incorporated
 			}
 			c:AGR = {
+				if = {
+			limit = { 
+				NOT = {
+					has_variable = control_var
+				}
+			}
+				set_variable = {
+				name = control_var
+				value = 10
+			}
+
+		}
+		control_effects = yes
+		reset_control_modifiers = yes
+		control_mdf_effects = yes
 				set_missionary_cultural_missionary = yes
 				ve_law_change_effects = yes
 				set_point_system = yes
 				religion_passive_bonuses = yes
-	
 				ve_holy_site_effects = yes
 			}
 		}

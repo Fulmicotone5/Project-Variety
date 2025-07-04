@@ -1,0 +1,7 @@
+progress_bar_tooltip_control = {
+	scope = country
+	effect = {
+		control_mdf_effects = yes
+	}
+}
+

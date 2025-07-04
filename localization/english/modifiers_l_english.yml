@@ -1873,6 +1873,14 @@ building_group_bg_subsistence_agriculture_allowed_collectivization_add: "Minimum
  building_group_bg_cotton_plantations_throughput_add_desc: "A bonus or penalty to both input and output of Cotton Plantations"
  building_group_bg_silk_plantations_throughput_add: "Silk Plantation [concept_throughput]"
  building_group_bg_silk_plantations_throughput_add_desc: "A bonus or penalty to both input and output of Silk Plantations"
+ 
+ state_incorporation_speed_mult: "Incorporation Speed"
+ state_cincorporation_speed_mult_desc: "A bonus or penalty to the speed at which [Concept('concept_state', '$concept_states$')] are [Concept('concept_incorporated_state','$concept_incorporated$')]" 
+ state_contiguous_incorporation_speed_mult: "Contiguous Incorporation Speed"
+ state_contiguous_incorporation_speed_mult_desc: "A bonus or penalty to the speed at which [Concept('concept_state', '$concept_states$')] that have a land or strait connection to the [concept_capital_state] are [Concept('concept_incorporated_state','$concept_incorporated$')]" 
+ state_non_contiguous_incorporation_speed_mult: "Non-Contiguous Incorporation Speed"
+ state_non_contiguous_incorporation_speed_mult_desc: "A bonus or penalty to the speed at which [Concept('concept_state', '$concept_states$')] that lack a land or strait connection to the [concept_capital_state] are [Concept('concept_incorporated_state','$concept_incorporated$')]" 
+
 
  state_incorporated_infrastructure_add: "[concept_infrastructure] in [Concept('concept_incorporated_state', '$concept_incorporated_states$')]"
  state_incorporated_infrastructure_add_desc: "A bonus or penalty to the [concept_infrastructure] in [Concept('concept_incorporated_state', '$concept_incorporated_states$')]"
@@ -2158,7 +2166,7 @@ building_group_bg_subsistence_agriculture_allowed_collectivization_add: "Minimum
  country_subsidies_bg_power_bool_desc: "Legal permission to enact government subsidies of $bg_power$"
  country_disallow_trade_bool: "Disable Trade Centers"
  country_can_only_conscript_peasants_bool: "Allows only $combat_unit_group_infantry$ $concept_conscript_battalions$"
- country_can_only_conscript_peasants_bool_desc: "[Concept('concept_conscript_battalion', '$concept_conscript_battalions$')] can only consist of #b [GetCombatUnitGroup('combat_unit_group_infantry').GetName]#! [Concept('concept_unit', '$concept_combat_unit_types$')], except [GetCombatUnitType('combat_unit_type_mechanized_infantry').GetName
+ country_can_only_conscript_peasants_bool_desc: "[Concept('concept_conscript_battalion', '$concept_conscript_battalions$')] can only consist of #b [GetCombatUnitGroup('combat_unit_group_infantry').GetName]#! [Concept('concept_unit', '$concept_combat_unit_types$')], except [GetCombatUnitType('combat_unit_type_mechanized_infantry').GetName]"
  country_disallow_trade_bool_desc: "Disallow construction of Trade Centers"
  country_disallow_trade_outside_canton_bool: "Disable Trade Centers outside $STATE_GUANGDONG$"
  country_disallow_trade_outside_canton_bool_desc: "Disallow construction of Trade Centers in $concept_states$ other than #v $STATE_GUANGDONG$#!"

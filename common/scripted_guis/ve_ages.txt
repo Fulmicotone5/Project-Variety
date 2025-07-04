@@ -1358,6 +1358,21 @@ enable_ve_system = {
 	scope = country
 	effect = {
 		if = {
+			limit = { 
+				NOT = {
+					has_variable = control_var
+				}
+			}
+				set_variable = {
+				name = control_var
+				value = 10
+			}
+
+		}
+		control_effects = yes
+		reset_control_modifiers = yes
+		control_mdf_effects = yes
+		if = {
 			limit = {
 				NOT = {
 					has_variable = victoria_universalis_system_on
@@ -1366,7 +1381,6 @@ enable_ve_system = {
 			set_missionary_cultural_missionary = yes
 			set_point_system = yes
 			religion_passive_bonuses = yes
-
 		}
 	}
 }

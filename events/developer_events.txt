@@ -387,6 +387,21 @@ dev.4 = { #For released countries
 	hidden = yes
 	immediate = {
 		if = {
+			limit = { 
+				NOT = {
+					has_variable = control_var
+				}
+			}
+				set_variable = {
+				name = control_var
+				value = 10
+			}
+
+		}
+		control_effects = yes
+		reset_control_modifiers = yes
+		control_mdf_effects = yes
+		if = {
 			limit = {
 				NOT = {
 					has_variable = victoria_universalis_system_on
@@ -395,7 +410,6 @@ dev.4 = { #For released countries
 			set_missionary_cultural_missionary = yes
 			set_point_system = yes
 			religion_passive_bonuses = yes
-
 		}
 	}
 	option = {
@@ -896,6 +910,21 @@ dev.9 = {
 			ve_ai_uses_culture = yes
 			ve_ai_uses_age_bonuses = yes
 		}
+		if = {
+			limit = { 
+				NOT = {
+					has_variable = control_var
+				}
+			}
+				set_variable = {
+				name = control_var
+				value = 10
+			}
+
+		}
+		control_effects = yes
+		reset_control_modifiers = yes
+		control_mdf_effects = yes
 		if = {
 			#For Released and Civil War Countries
 			limit = {

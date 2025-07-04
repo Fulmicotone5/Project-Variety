@@ -1109,6 +1109,7 @@
 	REJECTED_TREATY_UNDER_MIN_ACCEPTANCE_IMPROVEMENT_PENALTY = -1000		# Added to accepance when a treaty proposal isn't sufficiently improved upon within the rejected treaty memory duration
 
 	# Treaties
+	TREATIES_RANDOM_FACTOR = 1.0										# How random should the AI be regarding article selection when composing treaties?
 	TREATIES_CHECK_CATEGORIES_WHEN_COMPOSING_TREATY = no				# Does the AI care about categories when composing a treaty after gathering the initial article?
 	TREATIES_NUMBER_CHECKED_CATEGORIES_TREATY_COMPOSER = 3				# How many categories does the AI try to gather to check against when composing a treaty
 	TREATIES_MINIMUM_ACCEPTANCE_TO_PROPOSE = 15							# How much acceptance does the AI require the other side to have for it to try sending a proposal? 0 = never accept, 100 = always accept, in between = random chance

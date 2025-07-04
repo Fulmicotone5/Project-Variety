@@ -3051,7 +3051,7 @@ BIC = {
 }
 
 VOC = {
-	color = { 95 201 98 }
+	color = {27 87 15 }
 	
 	country_type = colonial
 	

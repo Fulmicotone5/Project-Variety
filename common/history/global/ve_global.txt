@@ -23,5 +23,9 @@
 			name = var_mil_exp
 			value = 0
 		}
+		set_variable = {
+			name = control_var
+			value = 10
+		}
 	}
 }

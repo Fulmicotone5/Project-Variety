@@ -42,6 +42,7 @@ law_national_guard = {
 		state_harvest_condition_wildfire_impact_mult = -0.05
 		state_harvest_condition_extreme_winds_impact_mult = -0.05
 		state_harvest_condition_drought_impact_mult= -0.05
+		control_bool_315 = yes
 	}
 
 	# Don't return to national guard we have something more advanced
@@ -88,6 +89,7 @@ law_secret_police = {
 		country_acceptance_shared_heritage_trait_add = 0
 		country_acceptance_shared_cultural_trait_add = -1
 		country_acceptance_culture_base_add = -2
+		control_bool_320 = yes
 	}
 
 	on_enact = {

@@ -18,3 +18,8 @@ fm_transferable_currency = {
 	value = gold_reserves
 	add = fm_remaining_credit
 }
+
+controlvariable = {
+	value = var:control_var
+
+}

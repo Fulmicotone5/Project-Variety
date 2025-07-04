@@ -8103,7 +8103,11 @@ STATES = {
 	s:STATE_UMBRIA = {
 		create_state = {
 			country = c:SPO
-			owned_provinces = { x30C021 x72531E xD3A384 xE782CC x6E8D07 xD8F07B }
+			owned_provinces = {  x72531E xD3A384 xE782CC x6E8D07 xD8F07B }
+		}
+		create_state = {
+			country = c:VEN
+			owned_provinces = { x30C021 }
 		}
 		
 		add_homeland = cu:south_roman

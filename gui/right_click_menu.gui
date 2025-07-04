@@ -7481,7 +7481,7 @@ template article_input_fixed_bottom {
 				position = { -10 0 }
 				using = default_button_action
 				using = tooltip_se
-				enabled = "[And(And(ArticleDraft.IsPossible, ArticleDraft.CanAddWarGoal(GetPlayer.Self, WarGoal.GetDiplomaticPlay.Self)), ArticleDraft.HasAllRequiredInputsSet)]"
+				enabled = "[And4(ArticleDraft.IsPossible, ArticleDraft.CanAddWarGoal(GetPlayer.Self, WarGoal.GetDiplomaticPlay.Self), ArticleDraft.HasAllRequiredInputsSet, IsValid(WarGoal.GetDiplomaticPlay.AddWarGoal(WarGoal.Self)) )]"
 				onclick = "[WarGoal.SetArticleInputsFromDraft(ArticleDraft.Self)]"
 				onclick = "[Execute(WarGoal.GetDiplomaticPlay.AddWarGoal(WarGoal.Self))]"
 				onclick = "[InformationPanelBar.OpenPreviousPanel]"
@@ -7491,6 +7491,13 @@ template article_input_fixed_bottom {
 					RegularTooltip_WarGoalArticle = {
 						blockoverride "primary_secondary_demand_text_visibility" {
 							visible = no
+						}
+
+						blockoverride "can_add_article_text" {
+							custom_tooltip_textbox_with_empty_line = {
+								visible = "[Not(IsValid(WarGoal.GetDiplomaticPlay.AddWarGoal(WarGoal.Self)))]"
+								text = "[GetDesc(WarGoal.GetDiplomaticPlay.AddWarGoal(WarGoal.Self))]"
+							}
 						}
 					}
 				}

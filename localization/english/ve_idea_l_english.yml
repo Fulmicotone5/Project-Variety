@@ -52,3 +52,10 @@
  notindustrialize: "Must not have enacted the Policy "Industrialize at any cost""
  researchcentre: "Must have a Research Center"
  notschool: "Must not have enacted the Policy "Mass Schooling Program""
+
+  CONTROL_TITLE: "#bold #o Control#!"
+
+  CONTROL_VALUE_TEXT: "[AddLocalizationIf(GreaterThan_int32(FixedPointToInt(AccessPlayer.MakeScope.ScriptValue('controlvariable')), '(int32)50'), 'CONTROL_VALUE_WHITE')][AddLocalizationIf(EqualTo_int32(FixedPointToInt(AccessPlayer.MakeScope.ScriptValue('controlvariable')), '(int32)50'), 'CONTROL_VALUE_BLUE')][AddLocalizationIf(LessThan_int32(FixedPointToInt(AccessPlayer.MakeScope.ScriptValue('controlvariable')), '(int32)50'), 'CONTROL_VALUE_RED')]"
+  CONTROL_VALUE_BLUE: "#v [AccessPlayer.MakeScope.ScriptValue('controlvariable')|1]%#!"
+  CONTROL_VALUE_WHITE: "#bold #o [AccessPlayer.MakeScope.ScriptValue('controlvariable')|1]%#!#!"
+  CONTROL_VALUE_RED: "#bold #u [AccessPlayer.MakeScope.ScriptValue('controlvariable')|1]%#!#!"

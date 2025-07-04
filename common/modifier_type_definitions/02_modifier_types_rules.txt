@@ -299,3 +299,60 @@ cannot_choose_doctrine_bool = {
 	color = good
 	boolean=yes
 }
+
+ control_bool_5 = {
+	color = good
+	boolean=yes
+}
+ control_bool_10 = {
+	color = good
+	boolean=yes
+}
+ control_bool_15 = {
+	color = good
+	boolean=yes
+}
+ control_bool_20 = {
+	color = good
+	boolean=yes
+}
+ control_bool_25 = {
+	color = good
+	boolean=yes
+}
+ control_bool_5n = {
+	color = bad
+	boolean=yes
+}
+ control_bool_10n = {
+	color = bad
+	boolean=yes
+}
+ control_bool_15n = {
+	color = bad
+	boolean=yes
+}
+ control_bool_20n = {
+	color = bad
+	boolean=yes
+}
+ control_bool_25n = {
+	color = bad
+	boolean=yes
+}
+ control_bool_315 = {
+	color = good
+	boolean=yes
+}
+ control_bool_320 = {
+	color = good
+	boolean=yes
+}
+ control_bool_318 = {
+	color = good
+	boolean=yes
+}
+ control_bool_425 = {
+	color = good
+	boolean=yes
+}

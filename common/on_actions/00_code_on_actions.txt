@@ -1691,6 +1691,11 @@ on_country_released_as_own_subject = {
 # scope:target = Released Country
 on_country_released_as_company_subject = {
 	effect = {
+		scope:target ?= {
+			trigger_event = {
+				id = dev.4
+			}
+		}
 		activate_law = law_type:law_presidential_republic
 		activate_law = law_type:law_oligarchy
 		activate_law = law_type:law_racial_segregation
@@ -2833,6 +2838,7 @@ on_law_enactment_ended = {
 # enacted. Therefore using the `currently_enacting_law` link will return the
 # null law
 on_law_activated = {
+
 }
 
 # Root = Institution

@@ -14,7 +14,7 @@ NDiplomacy = {
 	WAR_GOAL_INFAMY_ANNEX_COUNTRY = 2.0
 	INFAMY_THRESHOLD_INFAMOUS = 50			# Above this, countries are considered infamous and get related penalties
 	INFAMY_THRESHOLD_NOTORIOUS = 80		# Above this, countries are considered notorious and get related penalties
-	INFAMY_THRESHOLD_PARIAH = 125			# Above this, countries are considered pariah and get related penalties
+	INFAMY_THRESHOLD_PARIAH = 100			# Above this, countries are considered pariah and get related penalties
 	BASE_YEARLY_INFAMY_DECAY_RATE = 10
 	WAR_GOAL_INFAMY_POPULATION_SCALING_FACTOR = 11000
 	WAR_GOAL_INFAMY_POPULATION_SCALING_MULTIPLIER_MAX_PER_STATE = 10
@@ -24,6 +24,7 @@ NDiplomacy = {
 	WAR_GOAL_INFAMY_CONQUER_STATE = 3.5
 	WAR_GOAL_INFAMY_RETURN_STATE = 1.5
 	SWAY_OFFER_WARGOAL_MANEUVERS_COST_REVOKE_CLAIM = 2.3
+	WAR_GOAL_INFAMY_TRANSFER_SUBJECT = 1.0
 }
 NWar = {
 	DEVASTATION_MAX = 100.0

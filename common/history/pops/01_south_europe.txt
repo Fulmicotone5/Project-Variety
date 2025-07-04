@@ -53,7 +53,17 @@
 		region_state:SPO = {
 			create_pop = {
 				culture = south_roman
-				size = 1051000
+				size = 779909
+			}
+		}
+		region_state:VEN = {
+			create_pop = {
+				culture = south_roman
+				size = 151000
+			}
+			create_pop = {
+				culture = venetian
+				size = 9600
 			}
 		}
 	}

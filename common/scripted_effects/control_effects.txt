@@ -1,0 +1,1866 @@
+control_effects = {
+			remove_variable = control_var
+			set_variable = {
+			name = control_var
+			value = 10
+			}
+			      if = {
+				limit = {
+					or = {
+						has_law = law_type:law_autocracy
+						has_law = law_type:law_single_party_state
+
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = 15
+				}
+			}
+			if = {
+				limit = {
+					has_law = law_type:law_technocracy
+				}
+				change_variable = {
+					name = control_var
+					add = 10
+				}
+			}
+			if = {
+				limit = {
+					has_law = law_type:law_corporate_state
+				}
+				change_variable = {
+					name = control_var
+					add = 5
+				}
+			}
+			if = {
+				limit = {
+					has_law = law_type:law_laissez_faire
+				}
+				change_variable = {
+					name = control_var
+					add = -10
+				}
+			}
+			if = {
+				limit = {
+					has_law = law_type:law_command_economy
+				}
+				change_variable = {
+					name = control_var
+					add = 15
+				}
+			}
+			if = {
+				limit = {
+					has_law = law_type:law_state_capitalism
+				}
+				change_variable = {
+					name = control_var
+					add = 5
+				}
+			}
+			if = {
+				limit = {
+					has_law = law_type:law_oligarchy
+				}
+				change_variable = {
+					name = control_var
+					add = 10
+				}
+			}
+			if = {
+				limit = {
+					has_law = law_type:law_landed_voting
+				}
+				change_variable = {
+					name = control_var
+					add = 5
+				}
+			}
+			if = {
+				limit = {
+					AND = {
+					institution_investment_level = {
+						institution = institution_home_affairs
+						value = 1
+					}
+					has_law = law_type:law_national_guard
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = 3
+				}
+			}
+			if = {
+				limit = {
+					AND = {
+					institution_investment_level = {
+						institution = institution_home_affairs
+						value = 2
+					}
+					has_law = law_type:law_national_guard
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = 5
+				}
+			}
+			if = {
+				limit = {
+					AND = {
+					institution_investment_level = {
+						institution = institution_home_affairs
+						value = 3
+					}
+					has_law = law_type:law_national_guard
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = 7
+				}
+			}
+			if = {
+				limit = {
+					AND = {
+					institution_investment_level = {
+						institution = institution_home_affairs
+						value = 4
+					}
+					has_law = law_type:law_national_guard
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = 11
+				}
+			}
+			if = {
+				limit = {
+					AND = {
+					institution_investment_level = {
+						institution = institution_home_affairs
+						value = 5
+					}
+					has_law = law_type:law_national_guard
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = 15
+				}
+			}
+			if = {
+				limit = {
+					AND = {
+					institution_investment_level = {
+						institution = institution_home_affairs
+						value = 1
+					}
+					has_law = law_type:law_secret_police
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = 3
+				}
+			}
+			if = {
+				limit = {
+					AND = {
+					institution_investment_level = {
+						institution = institution_home_affairs
+						value = 2
+					}
+					has_law = law_type:law_secret_police
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = 7
+				}
+			}
+			if = {
+				limit = {
+					AND = {
+					institution_investment_level = {
+						institution = institution_home_affairs
+						value = 3
+					}
+					has_law = law_type:law_secret_police
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = 11
+				}
+			}
+			if = {
+				limit = {
+					AND = {
+					institution_investment_level = {
+						institution = institution_home_affairs
+						value = 4
+					}
+					has_law = law_type:law_secret_police
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = 15
+				}
+			}
+			if = {
+				limit = {
+					AND = {
+					institution_investment_level = {
+						institution = institution_home_affairs
+						value = 5
+					}
+					has_law = law_type:law_secret_police
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = 20
+				}
+			}
+			#POLICE
+			if = { 
+				limit = {
+					AND = {
+					institution_investment_level = {
+						institution = institution_police
+						value = 1
+					}
+					has_law = law_type:law_local_police
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = 3
+				}
+			}
+			if = {
+				limit = {
+					AND = {
+					institution_investment_level = {
+						institution = institution_police
+						value = 2
+					}
+					has_law = law_type:law_local_police
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = 6
+				}
+			}
+			if = {
+				limit = {
+					AND = {
+					institution_investment_level = {
+						institution = institution_police
+						value = 3
+					}
+					has_law = law_type:law_local_police
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = 9
+				}
+			}
+			if = {
+				limit = {
+					AND = {
+					institution_investment_level = {
+						institution = institution_police
+						value = 4
+					}
+					has_law = law_type:law_local_police
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = 13
+				}
+			}
+			if = {
+				limit = {
+					AND = {
+					institution_investment_level = {
+						institution = institution_police
+						value = 5
+					}
+					has_law = law_type:law_local_police
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = 18
+				}
+			}
+			if = { 
+				limit = {
+					AND = {
+					institution_investment_level = {
+						institution = institution_police
+						value = 1
+					}
+					has_law = law_type:law_dedicated_police
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = 3
+				}
+			}
+			if = {
+				limit = {
+					AND = {
+					institution_investment_level = {
+						institution = institution_police
+						value = 2
+					}
+					has_law = law_type:law_dedicated_police
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = 7
+				}
+			}
+			if = {
+				limit = {
+					AND = {
+					institution_investment_level = {
+						institution = institution_police
+						value = 3
+					}
+					has_law = law_type:law_dedicated_police
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = 11
+				}
+			}
+			if = {
+				limit = {
+					AND = {
+					institution_investment_level = {
+						institution = institution_police
+						value = 4
+					}
+					has_law = law_type:law_dedicated_police
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = 15
+				}
+			}
+			if = {
+				limit = {
+					AND = {
+					institution_investment_level = {
+						institution = institution_police
+						value = 5
+					}
+					has_law = law_type:law_dedicated_police
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = 20
+				}
+			}
+			if = {
+				limit = {
+					AND = {
+					institution_investment_level = {
+						institution = institution_police
+						value = 1
+					}
+					has_law = law_type:law_militarized_police
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = 4
+				}
+			}
+			if = {
+				limit = {
+					AND = {
+					institution_investment_level = {
+						institution = institution_police
+						value = 2
+					}
+					has_law = law_type:law_militarized_police
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = 9
+				}
+			}
+			if = {
+				limit = {
+					AND = {
+					institution_investment_level = {
+						institution = institution_police
+						value = 3
+					}
+					has_law = law_type:law_militarized_police
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = 14
+				}
+			}
+			if = {
+				limit = {
+					AND = {
+					institution_investment_level = {
+						institution = institution_police
+						value = 4
+					}
+					has_law = law_type:law_militarized_police
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = 19
+				}
+			}
+			if = {
+				limit = {
+					AND = {
+					institution_investment_level = {
+						institution = institution_police
+						value = 5
+					}
+					has_law = law_type:law_militarized_police
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = 25
+				}
+			}
+
+			if = {
+				limit = {
+					has_law = law_type:law_outlawed_dissent
+				}
+				change_variable = {
+					name = control_var
+					add = 10
+				}
+			}
+			if = {
+				limit = {
+					has_law = law_type:law_censorship
+				}
+				change_variable = {
+					name = control_var
+					add = 5
+				}
+			}
+			if = {
+				limit = {
+					has_law = law_type:law_migration_controls
+				}
+				change_variable = {
+					name = control_var
+					add = 10
+				}
+			}
+			if = {
+				limit = {
+					has_law = law_type:law_closed_borders
+				}
+				change_variable = {
+					name = control_var
+					add = 20
+				}
+			}
+			if = {
+				limit = {
+					has_law = law_type:law_isolationism
+				}
+				change_variable = {
+					name = control_var
+					add = 25
+				}
+			}
+			if = {
+				limit = {
+					has_law = law_type:law_ethnostate
+				}
+				change_variable = {
+					name = control_var
+					add = 5
+				}
+			}
+			if = {
+				limit = {
+					has_law = law_type:law_racial_segregation
+				}
+				change_variable = {
+					name = control_var
+					add = -5
+				}
+			}
+			if = {
+				limit = {
+					has_law = law_type:law_cultural_exclusion
+				}
+				change_variable = {
+					name = control_var
+					add = -10
+				}
+			}
+			if = {
+				limit = {
+					has_law = law_type:law_multicultural
+				}
+				change_variable = {
+					name = control_var
+					add = -20
+				}
+			}
+			if = {
+				limit = {
+					in_default = yes
+				}
+				change_variable = {
+					name = control_var
+					add = -50
+				}
+			}
+			if = {
+				limit = {
+					scaled_debt > 0
+				}
+				change_variable = {
+					name = control_var
+					add = -30
+				}
+			}
+			if = {
+				limit = {
+					has_any_secessionists_broken_out = yes
+				}
+				change_variable = {
+					name = control_var
+					add = -35
+				}
+			}
+			if = {
+				limit = {
+					has_any_secessionists_growing = yes
+					has_any_secessionists_broken_out = no
+				}
+				change_variable = {
+					name = control_var
+					add = -5
+				}
+			}
+			if = {
+				limit = {
+					has_revolution = yes
+				}
+				change_variable = {
+					name = control_var
+					add = -25
+				}
+			}
+			if = {
+				limit = {
+					any_civil_war = {
+							civil_war_progress >= 0.05
+							is_civil_war_type = revolution
+						}
+				}
+				change_variable = {
+					name = control_var
+					add = -15
+				}
+			}
+			if = {
+				limit = {
+					government_legitimacy < 50
+				}
+				change_variable = {
+					name = control_var
+					add = -10
+				}
+			}
+			if = {
+				limit = {
+					government_legitimacy > 90
+				}
+				change_variable = {
+					name = control_var
+					add = 5
+				}
+			}
+			if = {
+				limit = {
+					has_famine = yes
+				}
+				change_variable = {
+					name = control_var
+					add = -15
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+					any_scope_building = {			
+						building_has_goods_shortage = yes
+					}
+					count >= 3
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = -10
+				}
+			}
+			if = {
+				limit = {
+					has_law = law_type:law_anarchy
+				}
+				change_variable = {
+					name = control_var
+					add = -15
+				}
+			}
+			if = {
+				limit = {
+					has_variable = recently_lost_war
+				}
+				change_variable = {
+					name = control_var
+					add = -10
+				}
+			}
+			if = {
+				limit = {
+					gdp < 25000000
+				}
+				change_variable = {
+					name = control_var
+					add = 10
+				}
+			}
+			if = {
+				limit = {
+					gdp > 75000000
+				}
+				change_variable = {
+					name = control_var
+					add = -10
+				}
+			}
+			if = {
+				limit = {
+					has_modifier = ip5
+				}
+				change_variable = {
+					name = control_var
+					add = 5
+				}
+			}
+			if = {
+				limit = {
+					has_modifier = fadm5
+				}
+				change_variable = {
+					name = control_var
+					add = 10
+				}
+			}
+			if = {
+				limit = {
+					owner ?= {
+						is_in_power_bloc = yes
+						power_bloc = { has_principle =  principle:principle_police_coordination_1 }
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = 5
+				}
+			}
+			if = {
+				limit = {
+					owner ?= {
+						is_in_power_bloc = yes
+						power_bloc = { has_principle = principle:principle_police_coordination_2 }
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = 10
+				}
+			}
+			if = {
+				limit = {
+					owner ?= {
+						is_in_power_bloc = yes
+						power_bloc = { has_principle = principle:principle_police_coordination_3 }
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = 15
+				}
+			}
+      		if = {
+				limit = {
+					any_scope_state = {
+					owner = ROOT
+					devastation > 0.1
+					count = 1
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = -3
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+					owner = ROOT
+					devastation > 0.1
+					count = 2
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = -6
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+					owner = ROOT
+					devastation > 0.1
+					count = 3
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = -9
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+					owner = ROOT
+					devastation > 0.1
+					count = 4
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = -12
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+					owner = ROOT
+					devastation > 0.1
+					count = 5
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = -18
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+					owner = ROOT
+					devastation > 0.1
+					count = 6
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = -21
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+					owner = ROOT
+					devastation > 0.1
+					count = 7
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = -24
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+					owner = ROOT
+					devastation > 0.1
+					count = 8
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = -27
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+					owner = ROOT
+					devastation > 0.1
+					count > 8
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = -30
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+					owner = ROOT
+					is_incorporated = yes
+					turmoil >= 0.25
+					count = 1
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = -4
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+					owner = ROOT
+					is_incorporated = yes
+					turmoil >= 0.25
+					count = 2
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = -8
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+					owner = ROOT
+					is_incorporated = yes
+					turmoil >= 0.25
+					count = 3
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = -12
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+					owner = ROOT
+					is_incorporated = yes
+					turmoil >= 0.25
+					count = 4
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = -16
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+					owner = ROOT
+					is_incorporated = yes
+					turmoil >= 0.25
+					count = 5
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = -20
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+					owner = ROOT
+					is_incorporated = yes
+					turmoil >= 0.25
+					count = 6
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = -24
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+					owner = ROOT
+					is_incorporated = yes
+					turmoil >= 0.25
+					count = 7
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = -28
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+					owner = ROOT
+					is_incorporated = yes
+					turmoil >= 0.25
+					count = 8
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = -32
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+					owner = ROOT
+					is_incorporated = yes
+					turmoil >= 0.25
+					count = 9
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = -36
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+					owner = ROOT
+					is_incorporated = yes
+					turmoil >= 0.25
+					count > 9
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = -40
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+					owner = ROOT
+					is_incorporated = no
+					turmoil >= 0.25
+					count = 1
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = -2
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+					owner = ROOT
+					is_incorporated = no
+					turmoil >= 0.25
+					count = 2
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = -4
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+					owner = ROOT
+					is_incorporated = no
+					turmoil >= 0.25
+					count = 3
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = -6
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+					owner = ROOT
+					is_incorporated = no
+					turmoil >= 0.25
+					count = 4
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = -8
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+					owner = ROOT
+					is_incorporated = no
+					turmoil >= 0.25
+					count = 5
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = -10
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+					owner = ROOT
+					is_incorporated = no
+					turmoil >= 0.25
+					count = 6
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = -12
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+					owner = ROOT
+					is_incorporated = no
+					turmoil >= 0.25
+					count = 7
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = -14
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+					owner = ROOT
+					is_incorporated = no
+					turmoil >= 0.25
+					count = 8
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = -16
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+					owner = ROOT
+					is_incorporated = no
+					turmoil >= 0.25
+					count = 9
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = -18
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+					owner = ROOT
+					is_incorporated = no
+					turmoil >= 0.25
+					count > 9
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = -20
+				}
+			}
+       		if = {
+				limit = {
+					any_scope_state = {
+					owner = ROOT
+					is_incorporated = yes
+					count < 10
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = 15
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+					owner = ROOT
+					is_incorporated = yes
+					count > 24
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = -15
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+					owner = ROOT
+					is_incorporated = no
+					count < 3
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = 5
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+					owner = ROOT
+					is_incorporated = no
+					count > 5
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = -10
+				}
+			}
+			if = {
+				limit = {
+					infamy >= infamy_threshold:infamous
+					infamy < infamy_threshold:notorious
+				}
+				change_variable = {
+					name = control_var
+					add = -10
+				}
+			}
+			if = {
+				limit = {
+					infamy >= infamy_threshold:notorious
+					infamy < infamy_threshold:pariah
+				}
+				change_variable = {
+					name = control_var
+					add = -20
+				}
+			}
+			if = {
+				limit = {
+					infamy >= infamy_threshold:pariah
+				}
+				change_variable = {
+					name = control_var
+					add = -50
+				}
+			}
+			if = {
+				limit = { 
+						any_subject_or_below = {
+						OR = {
+							has_diplomatic_pact = {
+								who = ROOT
+								type = puppet
+							}
+							has_diplomatic_pact = {
+								who = ROOT
+								type = dominion
+							}
+							has_diplomatic_pact = {
+								who = ROOT
+								type = colony
+							}
+						}
+							count = 2
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = -10
+				}
+			}
+			if = {
+				limit = { 
+						any_subject_or_below = {
+						OR = {
+							has_diplomatic_pact = {
+								who = ROOT
+								type = puppet
+							}
+							has_diplomatic_pact = {
+								who = ROOT
+								type = dominion
+							}
+							has_diplomatic_pact = {
+								who = ROOT
+								type = colony
+							}
+						}
+							count = 3
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = -20
+				}
+			}
+			if = {
+				limit = { 
+						any_subject_or_below = {
+						OR = {
+							has_diplomatic_pact = {
+								who = ROOT
+								type = puppet
+							}
+							has_diplomatic_pact = {
+								who = ROOT
+								type = dominion
+							}
+							has_diplomatic_pact = {
+								who = ROOT
+								type = colony
+							}
+						}
+							count = 4
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = -30
+				}
+			}
+			if = {
+				limit = { 
+						any_subject_or_below = {
+						OR = {
+							has_diplomatic_pact = {
+								who = ROOT
+								type = puppet
+							}
+							has_diplomatic_pact = {
+								who = ROOT
+								type = dominion
+							}
+							has_diplomatic_pact = {
+								who = ROOT
+								type = colony
+							}
+						}
+							count = 5
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = -40
+				}
+			}
+			if = {
+				limit = { 
+						any_subject_or_below = {
+						OR = {
+							has_diplomatic_pact = {
+								who = ROOT
+								type = puppet
+							}
+							has_diplomatic_pact = {
+								who = ROOT
+								type = dominion
+							}
+							has_diplomatic_pact = {
+								who = ROOT
+								type = colony
+							}
+						}
+							count > 5
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = -50
+				}
+			}
+			clamp_variable = {
+				name = control_var
+				max = 100
+				min = -100
+			}
+		}
+
+		
+control_mdf_effects = {
+	if = {
+		limit = {
+			OR = {
+				var:control_var = 1
+				var:control_var = 2
+				var:control_var = 3
+				var:control_var = 4
+				var:control_var = 5
+				var:control_var = 6
+				var:control_var = 7
+				var:control_var = 8
+				var:control_var = 9
+				var:control_var = 10
+			}
+		}
+		add_modifier = {
+			name = control_mdf_1
+			months = -1
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				var:control_var = 11
+				var:control_var = 12
+				var:control_var = 13
+				var:control_var = 14
+				var:control_var = 15
+				var:control_var = 16
+				var:control_var = 17
+				var:control_var = 18
+				var:control_var = 19
+				var:control_var = 20
+			}
+		}
+		add_modifier = {
+			name = control_mdf_2
+			months = -1
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				var:control_var = 21
+				var:control_var = 22
+				var:control_var = 23
+				var:control_var = 24
+				var:control_var = 25
+				var:control_var = 26
+				var:control_var = 27
+				var:control_var = 28
+				var:control_var = 29
+				var:control_var = 30
+			}
+		}
+		add_modifier = {
+			name = control_mdf_3
+			months = -1
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				var:control_var = 31
+				var:control_var = 32
+				var:control_var = 33
+				var:control_var = 34
+				var:control_var = 35
+				var:control_var = 36
+				var:control_var = 37
+				var:control_var = 38
+				var:control_var = 39
+				var:control_var = 40
+			}
+		}
+		add_modifier = {
+			name = control_mdf_4
+			months = -1
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				var:control_var = 41
+				var:control_var = 42
+				var:control_var = 43
+				var:control_var = 44
+				var:control_var = 45
+				var:control_var = 46
+				var:control_var = 47
+				var:control_var = 48
+				var:control_var = 49
+				var:control_var = 50
+			}
+		}
+		add_modifier = {
+			name = control_mdf_5
+			months = -1
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				var:control_var = 51
+				var:control_var = 52
+				var:control_var = 53
+				var:control_var = 54
+				var:control_var = 55
+				var:control_var = 56
+				var:control_var = 57
+				var:control_var = 58
+				var:control_var = 59
+				var:control_var = 60
+			}
+		}
+		add_modifier = {
+			name = control_mdf_6
+			months = -1
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				var:control_var = 61
+				var:control_var = 62
+				var:control_var = 63
+				var:control_var = 64
+				var:control_var = 65
+				var:control_var = 66
+				var:control_var = 67
+				var:control_var = 68
+				var:control_var = 69
+				var:control_var = 70
+			}
+		}
+		add_modifier = {
+			name = control_mdf_7
+			months = -1
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				var:control_var = 71
+				var:control_var = 72
+				var:control_var = 73
+				var:control_var = 74
+				var:control_var = 75
+				var:control_var = 76
+				var:control_var = 77
+				var:control_var = 78
+				var:control_var = 79
+				var:control_var = 80
+			}
+		}
+		add_modifier = {
+			name = control_mdf_8
+			months = -1
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				var:control_var = 81
+				var:control_var = 82
+				var:control_var = 83
+				var:control_var = 84
+				var:control_var = 85
+				var:control_var = 86
+				var:control_var = 87
+				var:control_var = 88
+				var:control_var = 89
+				var:control_var = 90
+			}
+		}
+		add_modifier = {
+			name = control_mdf_9
+			months = -1
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				var:control_var = 91
+				var:control_var = 92
+				var:control_var = 93
+				var:control_var = 94
+				var:control_var = 95
+				var:control_var = 96
+				var:control_var = 97
+				var:control_var = 98
+				var:control_var = 99
+				var:control_var = 100
+			}
+		}
+		add_modifier = {
+			name = control_mdf_10
+			months = -1
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				var:control_var = 0
+				var:control_var = -1
+				var:control_var = -2
+				var:control_var = -3
+				var:control_var = -4
+				var:control_var = -5
+				var:control_var = -6
+				var:control_var = -7
+				var:control_var = -8
+				var:control_var = -9
+				var:control_var = -10
+			}
+		}
+		add_modifier = {
+			name = control_mdf_11
+			months = -1
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				var:control_var = -11
+				var:control_var = -12
+				var:control_var = -13
+				var:control_var = -14
+				var:control_var = -15
+				var:control_var = -16
+				var:control_var = -17
+				var:control_var = -18
+				var:control_var = -19
+				var:control_var = -20
+			}
+		}
+		add_modifier = {
+			name = control_mdf_21
+			months = -1
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				var:control_var = -21
+				var:control_var = -22
+				var:control_var = -23
+				var:control_var = -24
+				var:control_var = -25
+				var:control_var = -26
+				var:control_var = -27
+				var:control_var = -28
+				var:control_var = -29
+				var:control_var = -30
+			}
+		}
+		add_modifier = {
+			name = control_mdf_31
+			months = -1
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				var:control_var = -31
+				var:control_var = -32
+				var:control_var = -33
+				var:control_var = -34
+				var:control_var = -35
+				var:control_var = -36
+				var:control_var = -37
+				var:control_var = -38
+				var:control_var = -39
+				var:control_var = -40
+			}
+		}
+		add_modifier = {
+			name = control_mdf_41
+			months = -1
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				var:control_var = -41
+				var:control_var = -42
+				var:control_var = -43
+				var:control_var = -44
+				var:control_var = -45
+				var:control_var = -46
+				var:control_var = -47
+				var:control_var = -48
+				var:control_var = -49
+				var:control_var = -50
+			}
+		}
+		add_modifier = {
+			name = control_mdf_51
+			months = -1
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				var:control_var = -51
+				var:control_var = -52
+				var:control_var = -53
+				var:control_var = -54
+				var:control_var = -55
+				var:control_var = -56
+				var:control_var = -57
+				var:control_var = -58
+				var:control_var = -59
+				var:control_var = -60
+			}
+		}
+		add_modifier = {
+			name = control_mdf_61
+			months = -1
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				var:control_var = -61
+				var:control_var = -62
+				var:control_var = -63
+				var:control_var = -64
+				var:control_var = -65
+				var:control_var = -66
+				var:control_var = -67
+				var:control_var = -68
+				var:control_var = -69
+				var:control_var = -70
+			}
+		}
+		add_modifier = {
+			name = control_mdf_71
+			months = -1
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				var:control_var = -71
+				var:control_var = -72
+				var:control_var = -73
+				var:control_var = -74
+				var:control_var = -75
+				var:control_var = -76
+				var:control_var = -77
+				var:control_var = -78
+				var:control_var = -79
+				var:control_var = -80
+			}
+		}
+		add_modifier = {
+			name = control_mdf_81
+			months = -1
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				var:control_var = -81
+				var:control_var = -82
+				var:control_var = -83
+				var:control_var = -84
+				var:control_var = -85
+				var:control_var = -86
+				var:control_var = -87
+				var:control_var = -88
+				var:control_var = -89
+				var:control_var = -90
+			}
+		}
+		add_modifier = {
+			name = control_mdf_91
+			months = -1
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				var:control_var = -91
+				var:control_var = -92
+				var:control_var = -93
+				var:control_var = -94
+				var:control_var = -95
+				var:control_var = -96
+				var:control_var = -97
+				var:control_var = -98
+				var:control_var = -99
+				var:control_var = -100
+			}
+		}
+		add_modifier = {
+			name = control_mdf_101
+			months = -1
+		}
+	}
+}
+
+reset_control_modifiers = {
+	if = {
+		limit = { 
+			has_modifier = control_mdf_1
+		}
+		remove_modifier = control_mdf_1
+	}
+	else_if = {
+		limit = { 
+			has_modifier = control_mdf_2
+		}
+		remove_modifier = control_mdf_2
+	}
+	else_if = {
+		limit = { 
+			has_modifier = control_mdf_3
+		}
+		remove_modifier = control_mdf_3
+	}
+	else_if = {
+		limit = { 
+			has_modifier = control_mdf_4
+		}
+		remove_modifier = control_mdf_4
+	}
+	else_if = {
+		limit = { 
+			has_modifier = control_mdf_5
+		}
+		remove_modifier = control_mdf_5
+	}
+	else_if = {
+		limit = { 
+			has_modifier = control_mdf_6
+		}
+		remove_modifier = control_mdf_6
+	}
+	else_if = {
+		limit = { 
+			has_modifier = control_mdf_7
+		}
+		remove_modifier = control_mdf_7
+	}
+	else_if = {
+		limit = { 
+			has_modifier = control_mdf_8
+		}
+		remove_modifier = control_mdf_8
+	}
+	else_if = {
+		limit = { 
+			has_modifier = control_mdf_9
+		}
+		remove_modifier = control_mdf_9
+	}
+	else_if = {
+		limit = { 
+			has_modifier = control_mdf_10
+		}
+		remove_modifier = control_mdf_10
+	}
+	else_if = {
+		limit = { 
+			has_modifier = control_mdf_11
+		}
+		remove_modifier = control_mdf_11
+	}
+	else_if = {
+		limit = { 
+			has_modifier = control_mdf_21
+		}
+		remove_modifier = control_mdf_21
+	}
+	else_if = {
+		limit = { 
+			has_modifier = control_mdf_31
+		}
+		remove_modifier = control_mdf_31
+	}
+	else_if = {
+		limit = { 
+			has_modifier = control_mdf_41
+		}
+		remove_modifier = control_mdf_41
+	}
+	else_if = {
+		limit = { 
+			has_modifier = control_mdf_51
+		}
+		remove_modifier = control_mdf_51
+	}
+	else_if = {
+		limit = { 
+			has_modifier = control_mdf_61
+		}
+		remove_modifier = control_mdf_61
+	}
+	else_if = {
+		limit = { 
+			has_modifier = control_mdf_71
+		}
+		remove_modifier = control_mdf_71
+	}
+	else_if = {
+		limit = { 
+			has_modifier = control_mdf_81
+		}
+		remove_modifier = control_mdf_81
+	}
+	else_if = {
+		limit = { 
+			has_modifier = control_mdf_91
+		}
+		remove_modifier = control_mdf_91
+	}
+	else_if = {
+		limit = { 
+			has_modifier = control_mdf_101
+		}
+		remove_modifier = control_mdf_101
+	}
+}

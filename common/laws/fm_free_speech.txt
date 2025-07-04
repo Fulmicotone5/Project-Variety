@@ -14,6 +14,7 @@ law_outlawed_dissent = {
 		country_suppression_attraction_factor = -0.5
 		country_tech_spread_mult = -0.15
 		country_leverage_resistance_mult = 0.5
+		control_bool_10 = yes
 	}
 	
 	unlocking_technologies = {
@@ -42,6 +43,7 @@ law_censorship = {
 		country_suppression_attraction_factor = -0.4
 		country_tech_spread_mult = -0.10
 		country_leverage_resistance_mult = 0.25
+		control_bool_5 = yes
 	}
 
 	unlocking_technologies = {
