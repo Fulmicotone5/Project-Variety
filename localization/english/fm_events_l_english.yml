@@ -78,7 +78,7 @@
  fm_cth.3.a: "May Tanit protect us"
  fm_cth.4.t: "A Critical Situation"
  fm_cth.4.d: "The capital of our country, Carthago, is currently facing a severe overpopulation problem"
- fm_cth.4.f: "Due to our recent defeat in the fifth Carthaginian-Hafsid war, we have lost almost all our lands in north Africa, and because of that, a lot of refugees have moved from our former lands to our capital, which has now become our last bastion in Africa.\nThe City is not able to sustain such a massive amount of people, and therefore it is mandatory to conquer back Tunisia as soon as possible to ease the problem."
+ fm_cth.4.f: "Due to our recent defeat in the fifth Carthaginian-Marinid war, we have lost almost all our lands in north Africa, and because of that, a lot of refugees have moved from our former lands to our capital, which has now become our last bastion in Africa.\nThe City is not able to sustain such a massive amount of people, and therefore it is mandatory to conquer back Tunisia as soon as possible to ease the problem."
  fm_cth.4.a: "We will take back Tunisia!"
  fm_cth.5.t: "Tunisia Reclaimed!"
  fm_cth.5.d: "Massive swarms of people have started returning to their homes in the countryside"
@@ -1065,7 +1065,7 @@
  rum.2.b: "We did not forget our [GetReligion('sunni').GetName] brothers to the east"
 
  rum.3.t: "Rulers of Rome"
- rum.3.d: "The [ROOT.GetCountry.GetName] has established itself as the true ruler of the Eastern Roman People"
+ rum.3.d: "The [ROOT.GetCountry.GetName] has established itself as the true ruler of the Roman People"
  rum.3.f: "The Sultanate of Rum's victory over the Eastern Roman Empire marked a significant turning point in the region's history, symbolizing a shift in power and influence.\nThis triumph not only solidified the Sultanate's dominion over formerly Eastern Roman territories, but also facilitated the spread of [GetCulture('turkish').GetName] culture and Islam, reshaping the socio-political landscape of Anatolia."
  rum.3.a: "Glory to the [ROOT.GetCountry.GetName]"
  rum.4.t: "The Great Resurgence"

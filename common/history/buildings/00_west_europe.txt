@@ -2972,12 +2972,12 @@
 		}
 	}
 	s:STATE_POITOU = {
-		region_state:POI = {
+		region_state:FRU = {
 			create_building={
 				building="building_paper_mills"
 				add_ownership={
 					country={
-						country="c:POI"
+						country="c:FRU"
 						levels=1
 					}
 				}
@@ -2988,7 +2988,7 @@
 				building="building_logging_camp"
 				add_ownership={
 					country={
-						country="c:POI"
+						country="c:FRU"
 						levels=1
 					}
 				}
@@ -2999,7 +2999,7 @@
 				building="building_wheat_farm"
 				add_ownership={
 					country={
-						country="c:POI"
+						country="c:FRU"
 						levels=1
 					}
 				}
@@ -3010,7 +3010,7 @@
 				building="building_vineyard_plantation"
 				add_ownership={
 					country={
-						country="c:POI"
+						country="c:FRU"
 						levels=1
 					}
 				}
@@ -3021,7 +3021,7 @@
 				building="building_fishing_wharf"
 				add_ownership={
 					country={
-						country="c:POI"
+						country="c:FRU"
 						levels=1
 					}
 				}
@@ -3032,7 +3032,7 @@
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:POI"
+						country="c:FRU"
 						levels=1
 					}
 				}
@@ -3042,12 +3042,12 @@
 		}
 	}
 	s:STATE_MAINE_ANJOU = {
-		region_state:ANJ = {
+		region_state:FRU = {
 			create_building={
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:ANJ"
+						country="c:FRU"
 						levels=1
 					}
 				}
@@ -3058,7 +3058,7 @@
 				building="building_arms_industry"
 				add_ownership={
 					country={
-						country="c:ANJ"
+						country="c:FRU"
 						levels=1
 					}
 				}
@@ -3069,7 +3069,7 @@
 				building="building_wheat_farm"
 				add_ownership={
 					country={
-						country="c:ANJ"
+						country="c:FRU"
 						levels=1
 					}
 				}
@@ -3080,7 +3080,7 @@
 				building="building_iron_mine"
 				add_ownership={
 					country={
-						country="c:ANJ"
+						country="c:FRU"
 						levels=1
 					}
 				}
@@ -3091,7 +3091,7 @@
 				building="building_tooling_workshops"
 				add_ownership={
 					country={
-						country="c:ANJ"
+						country="c:FRU"
 						levels=1
 					}
 				}
@@ -3102,7 +3102,7 @@
 				building="building_vineyard_plantation"
 				add_ownership={
 					country={
-						country="c:ANJ"
+						country="c:FRU"
 						levels=1
 					}
 				}
@@ -3113,7 +3113,7 @@
 				building="building_livestock_ranch"
 				add_ownership={
 					country={
-						country="c:ANJ"
+						country="c:FRU"
 						levels=1
 					}
 				}
@@ -3124,7 +3124,7 @@
 				building="building_logging_camp"
 				add_ownership={
 					country={
-						country="c:ANJ"
+						country="c:FRU"
 						levels=1
 					}
 				}
@@ -3969,12 +3969,12 @@
 		}
 	}
 	s:STATE_ORLEANS = {
-		region_state:ORL = {
+		region_state:FRU = {
 			create_building={
 				building="building_glassworks"
 				add_ownership={
 					country={
-						country="c:ORL"
+						country="c:FRU"
 						levels=1
 					}
 				}
@@ -3985,7 +3985,7 @@
 				building="building_logging_camp"
 				add_ownership={
 					country={
-						country="c:ORL"
+						country="c:FRU"
 						levels=1
 					}
 				}
@@ -3996,7 +3996,7 @@
 				building="building_wheat_farm"
 				add_ownership={
 					country={
-						country="c:ORL"
+						country="c:FRU"
 						levels=1
 					}
 				}
@@ -4007,7 +4007,7 @@
 				building="building_vineyard_plantation"
 				add_ownership={
 					country={
-						country="c:ORL"
+						country="c:FRU"
 						levels=1
 					}
 				}
@@ -4018,7 +4018,7 @@
 				building="building_livestock_ranch"
 				add_ownership={
 					country={
-						country="c:ORL"
+						country="c:FRU"
 						levels=1
 					}
 				}

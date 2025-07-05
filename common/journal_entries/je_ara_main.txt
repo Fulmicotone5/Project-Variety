@@ -63,7 +63,6 @@ je_ara_occ = {
 		owns_entire_state_region = STATE_LANGUEDOC
 		owns_entire_state_region = STATE_GUYENNE
 		owns_entire_state_region = STATE_AUVERGNE_LIMOUSIN
-		has_technology_researched = pan-nationalism
 		NOT = {
 			has_law = law_type:law_national_supremacy
 		}

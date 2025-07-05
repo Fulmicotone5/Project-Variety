@@ -19,7 +19,7 @@
 	}
 	c:CTH= {
 		create_bidirectional_truce = {
-			country = c:HAK
+			country = c:MUR
 			months = 5
 		}
 	}

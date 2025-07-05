@@ -366,7 +366,7 @@
 		}
 	}
 	s:STATE_ANDALUSIA = {
-		region_state:GRA = {
+		region_state:MUR = {
 			create_pop = {
 				culture = andalusian
 				size = 857592
@@ -383,7 +383,7 @@
 		}
 	}
 	s:STATE_GRANADA = {
-		region_state:GRA = {
+		region_state:MUR = {
 			create_pop = {
 				culture = andalusian
 				size = 808404
@@ -615,7 +615,7 @@
 		}
 	}
 	s:STATE_BOSNIA = {
-		region_state:YUG = {
+		region_state:IL1 = {
 			create_pop = {
 				culture = serb
 				size = 1004908
@@ -667,7 +667,7 @@
 		}
 	}
 	s:STATE_SLOVENIA = {
-		region_state:YUG = {
+		region_state:IL1 = {
 			create_pop = {
 				culture = slovene
 				size = 464400
@@ -703,7 +703,7 @@
 		}
 	}
 	s:STATE_CROATIA = {
-		region_state:YUG = {
+		region_state:IL1 = {
 			create_pop = {
 				culture = croat
 				size = 703592
@@ -738,7 +738,7 @@
 		}
 	}
 	s:STATE_SLAVONIA = {
-		region_state:YUG = {
+		region_state:IL1 = {
 			create_pop = {
 				culture = croat
 				size = 582048
@@ -781,7 +781,7 @@
 				pop_type = slaves
 			}
 		}
-		region_state:YUG = {
+		region_state:IL1 = {
 			create_pop = {
 				culture = venetian
 				size = 17800
@@ -801,7 +801,7 @@
 		}
 	}
 	s:STATE_MONTENEGRO = {
-		region_state:YUG = {
+		region_state:IL1 = {
 			create_pop = {
 				culture = albanian
 				size = 234000

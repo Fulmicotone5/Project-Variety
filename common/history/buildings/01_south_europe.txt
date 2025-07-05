@@ -2852,12 +2852,12 @@
 		}
 	}
 	s:STATE_ANDALUSIA = {
-		region_state:GRA = {
+		region_state:MUR = {
 			create_building={
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:GRA"
+						country="c:MUR"
 						levels=3
 					}
 				}
@@ -2869,7 +2869,7 @@
 				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
 				add_ownership={
 					country={
-						country="c:GRA"
+						country="c:MUR"
 						levels=3
 					}
 				}
@@ -2879,7 +2879,7 @@
 				building="building_gold_mine"
 				add_ownership={
 					country={
-						country="c:GRA"
+						country="c:MUR"
 						levels=3
 					}
 				}
@@ -2891,7 +2891,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:GRA"
+						country="c:MUR"
 						levels=2
 						region="STATE_ANDALUSIA"
 					}
@@ -2903,7 +2903,7 @@
 				building="building_construction_sector"
 				add_ownership={
 					country={
-						country="c:GRA"
+						country="c:MUR"
 						levels=1
 					}
 				}
@@ -2914,7 +2914,7 @@
 				building="building_shipyards"
 				add_ownership={
 					country={
-						country="c:GRA"
+						country="c:MUR"
 						levels=1
 					}
 				}
@@ -2925,7 +2925,7 @@
 				building="building_military_shipyards"
 				add_ownership={
 					country={
-						country="c:GRA"
+						country="c:MUR"
 						levels=1
 					}
 				}
@@ -2937,7 +2937,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:GRA"
+						country="c:MUR"
 						levels=2
 						region="STATE_ANDALUSIA"
 					}
@@ -2949,7 +2949,7 @@
 				building="building_tooling_workshops"
 				add_ownership={
 					country={
-						country="c:GRA"
+						country="c:MUR"
 						levels=1
 					}
 				}
@@ -2960,7 +2960,7 @@
 				building="building_arms_industry"
 				add_ownership={
 					country={
-						country="c:GRA"
+						country="c:MUR"
 						levels=2
 					}
 				}
@@ -2972,7 +2972,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:GRA"
+						country="c:MUR"
 						levels=2
 						region="STATE_ANDALUSIA"
 					}
@@ -2984,7 +2984,7 @@
 				building="building_wheat_farm"
 				add_ownership={
 					country={
-						country="c:GRA"
+						country="c:MUR"
 						levels=10
 					}
 				}
@@ -2995,7 +2995,7 @@
 				building="building_livestock_ranch"
 				add_ownership={
 					country={
-						country="c:GRA"
+						country="c:MUR"
 						levels=1
 					}
 				}
@@ -3006,7 +3006,7 @@
 				building="building_tobacco_plantation"
 				add_ownership={
 					country={
-						country="c:GRA"
+						country="c:MUR"
 						levels=1
 					}
 				}
@@ -3017,7 +3017,7 @@
 				building="building_sugar_plantation"
 				add_ownership={
 					country={
-						country="c:GRA"
+						country="c:MUR"
 						levels=1
 					}
 				}
@@ -3028,7 +3028,7 @@
 				building="building_cotton_plantation"
 				add_ownership={
 					country={
-						country="c:GRA"
+						country="c:MUR"
 						levels=1
 					}
 				}
@@ -3039,7 +3039,7 @@
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:GRA"
+						country="c:MUR"
 						levels=1
 					}
 				}
@@ -3049,12 +3049,12 @@
 		}
 	}
 	s:STATE_GRANADA = {
-		region_state:GRA = {
+		region_state:MUR = {
 			create_building={
 				building="building_rice_farm"
 				add_ownership={
 					country={
-						country="c:GRA"
+						country="c:MUR"
 						levels=1
 					}
 				}
@@ -3065,7 +3065,7 @@
 				building="building_gold_mine"
 				add_ownership={
 					country={
-						country="c:GRA"
+						country="c:MUR"
 						levels=1
 					}
 				}
@@ -3076,7 +3076,7 @@
 				building="building_paper_mills"
 				add_ownership={
 					country={
-						country="c:GRA"
+						country="c:MUR"
 						levels=1
 					}
 				}
@@ -3087,7 +3087,7 @@
 				building="building_livestock_ranch"
 				add_ownership={
 					country={
-						country="c:GRA"
+						country="c:MUR"
 						levels=1
 					}
 				}
@@ -3098,7 +3098,7 @@
 				building="building_tobacco_plantation"
 				add_ownership={
 					country={
-						country="c:GRA"
+						country="c:MUR"
 						levels=1
 					}
 				}
@@ -3109,7 +3109,7 @@
 				building="building_sugar_plantation"
 				add_ownership={
 					country={
-						country="c:GRA"
+						country="c:MUR"
 						levels=1
 					}
 				}
@@ -3120,7 +3120,7 @@
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:GRA"
+						country="c:MUR"
 						levels=1
 					}
 				}
@@ -4179,12 +4179,12 @@
 		}
 	}
 	s:STATE_BOSNIA = {
-		region_state:YUG = {
+		region_state:IL1 = {
 			create_building={
 				building="building_tooling_workshops"
 				add_ownership={
 					country={
-						country="c:YUG"
+						country="c:IL1"
 						levels=1
 					}
 				}
@@ -4195,7 +4195,7 @@
 				building="building_arms_industry"
 				add_ownership={
 					country={
-						country="c:YUG"
+						country="c:IL1"
 						levels=1
 					}
 				}
@@ -4206,7 +4206,7 @@
 				building="building_artillery_foundries"
 				add_ownership={
 					country={
-						country="c:YUG"
+						country="c:IL1"
 						levels=1
 					}
 				}
@@ -4217,7 +4217,7 @@
 				building="building_iron_mine"
 				add_ownership={
 					country={
-						country="c:YUG"
+						country="c:IL1"
 						levels=3
 					}
 				}
@@ -4228,7 +4228,7 @@
 				building="building_logging_camp"
 				add_ownership={
 					country={
-						country="c:YUG"
+						country="c:IL1"
 						levels=3
 					}
 				}
@@ -4239,7 +4239,7 @@
 				building="building_paper_mills"
 				add_ownership={
 					country={
-						country="c:YUG"
+						country="c:IL1"
 						levels=1
 					}
 				}
@@ -4250,7 +4250,7 @@
 				building="building_livestock_ranch"
 				add_ownership={
 					country={
-						country="c:YUG"
+						country="c:IL1"
 						levels=1
 					}
 				}
@@ -4261,7 +4261,7 @@
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:YUG"
+						country="c:IL1"
 						levels=4
 					}
 				}
@@ -4411,12 +4411,12 @@
 		}
 	}
 	s:STATE_SLOVENIA = {
-		region_state:YUG = {
+		region_state:IL1 = {
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
 					country={
-						country="c:YUG"
+						country="c:IL1"
 						levels=1
 					}
 				}
@@ -4427,7 +4427,7 @@
 				building="building_livestock_ranch"
 				add_ownership={
 					country={
-						country="c:YUG"
+						country="c:IL1"
 						levels=1
 					}
 				}
@@ -4438,7 +4438,7 @@
 				building="building_logging_camp"
 				add_ownership={
 					country={
-						country="c:YUG"
+						country="c:IL1"
 						levels=1
 					}
 				}
@@ -4551,12 +4551,12 @@
 		}
 	}
 	s:STATE_CROATIA = {
-		region_state:YUG = {
+		region_state:IL1 = {
 			create_building={
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:YUG"
+						country="c:IL1"
 						levels=1
 					}
 				}
@@ -4567,7 +4567,7 @@
 				building="building_arms_industry"
 				add_ownership={
 					country={
-						country="c:YUG"
+						country="c:IL1"
 						levels=1
 					}
 				}
@@ -4578,7 +4578,7 @@
 				building="building_tooling_workshops"
 				add_ownership={
 					country={
-						country="c:YUG"
+						country="c:IL1"
 						levels=1
 					}
 				}
@@ -4589,7 +4589,7 @@
 				building="building_shipyards"
 				add_ownership={
 					country={
-						country="c:YUG"
+						country="c:IL1"
 						levels=1
 					}
 				}
@@ -4600,7 +4600,7 @@
 				building="building_paper_mills"
 				add_ownership={
 					country={
-						country="c:YUG"
+						country="c:IL1"
 						levels=1
 					}
 				}
@@ -4611,7 +4611,7 @@
 				building="building_wheat_farm"
 				add_ownership={
 					country={
-						country="c:YUG"
+						country="c:IL1"
 						levels=1
 					}
 				}
@@ -4622,7 +4622,7 @@
 				building="building_vineyard_plantation"
 				add_ownership={
 					country={
-						country="c:YUG"
+						country="c:IL1"
 						levels=1
 					}
 				}
@@ -4633,7 +4633,7 @@
 				building="building_livestock_ranch"
 				add_ownership={
 					country={
-						country="c:YUG"
+						country="c:IL1"
 						levels=1
 					}
 				}
@@ -4644,7 +4644,7 @@
 				building="building_logging_camp"
 				add_ownership={
 					country={
-						country="c:YUG"
+						country="c:IL1"
 						levels=1
 					}
 				}
@@ -4655,7 +4655,7 @@
 				building="building_fishing_wharf"
 				add_ownership={
 					country={
-						country="c:YUG"
+						country="c:IL1"
 						levels=1
 					}
 				}
@@ -4744,12 +4744,12 @@
 		}
 	}
 	s:STATE_SLAVONIA = {
-		region_state:YUG = {
+		region_state:IL1 = {
 			create_building={
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:YUG"
+						country="c:IL1"
 						levels=1
 					}
 				}
@@ -4760,7 +4760,7 @@
 				building="building_wheat_farm"
 				add_ownership={
 					country={
-						country="c:YUG"
+						country="c:IL1"
 						levels=1
 					}
 				}
@@ -4771,7 +4771,7 @@
 				building="building_livestock_ranch"
 				add_ownership={
 					country={
-						country="c:YUG"
+						country="c:IL1"
 						levels=1
 					}
 				}
@@ -4840,13 +4840,13 @@
 				activate_production_methods={ "pm_saw_mills" "pm_hardwood" "pm_no_equipment" "pm_road_carts" }
 			}
 		}
-		region_state:YUG = {
+		region_state:IL1 = {
 			create_building={
 				building="building_trade_center"
 				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
 				add_ownership={
 					country={
-						country="c:YUG"
+						country="c:IL1"
 						levels=1
 					}
 				}
@@ -4855,12 +4855,12 @@
 		}
 	}
 	s:STATE_MONTENEGRO = {
-		region_state:YUG = {
+		region_state:IL1 = {
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
 					country={
-						country="c:YUG"
+						country="c:IL1"
 						levels=1
 					}
 				}

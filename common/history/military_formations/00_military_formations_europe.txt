@@ -558,28 +558,7 @@
 			}
 		}
 	}
-	c:POI = {
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_france
-			name = "Poitiers Ducal Army"
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_POITOU
-				count = 10
-			}
-		}
-		create_military_formation = {
-			type = fleet
-			hq_region = sr:region_france
-			name = "Poitiers Ducal Navy"
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_POITOU
-				count = 10
-			}
-		}
-	}
+
 	c:BUL = {
 		create_military_formation = {
 			type = army
@@ -790,6 +769,16 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_mobile_artillery
 				state_region = s:STATE_ILE_DE_FRANCE
+				count = 10
+			}
+		}
+		create_military_formation = {
+			type = fleet
+			hq_region = sr:region_france
+			name = "Royal Navy"
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigate
+				state_region = s:STATE_POITOU
 				count = 10
 			}
 		}
@@ -1387,18 +1376,6 @@
 			}
 		}
 	}
-	c:ANJ = {
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_france
-			name = "Anjou Ducal Army"
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_MAINE_ANJOU
-				count = 15
-			}
-		}
-	}
 	c:BRI = {
 		create_military_formation = {
 			type = army
@@ -1411,18 +1388,7 @@
 			}
 		}
 	}
-	c:ORL = {
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_france
-			name = "Orleans Ducal Army"
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_ORLEANS
-				count = 15
-			}
-		}
-	}
+
 	c:SAV = {
 		create_military_formation = {
 			type = army
@@ -1630,23 +1596,11 @@
 			}
 		}
 	}
-	c:GRA = {
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_iberia
-			name = "Granada Army"
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_ANDALUSIA
-				count = 20
-			}
-		}
-	}
-	c:YUG = {
+	c:IL1 = {
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_balkans
-			name = "Yugoslavian Republican Army"
+			name = "Illyrian Republican Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_BOSNIA

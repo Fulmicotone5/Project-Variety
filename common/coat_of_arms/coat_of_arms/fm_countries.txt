@@ -27354,3 +27354,20 @@ FL1_monarchy = {	# Empire Flanders
 		instance = { position = { 0.775 0.3 }scale = { 0.6 0.6 } } 		
 	}
 }
+
+IL1={
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "te_coa_IL1rep.dds"
+	}
+}
+IL1_mon={
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "te_coa_IL1.dds"
+	}
+}

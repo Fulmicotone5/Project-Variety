@@ -544,16 +544,35 @@ control_effects = {
 				}
 				change_variable = {
 					name = control_var
-					add = -50
+					add = -100
 				}
 			}
 			if = {
 				limit = {
 					scaled_debt > 0
+					scaled_debt < 0.3
 				}
 				change_variable = {
 					name = control_var
-					add = -30
+					add = -20
+				}
+			}
+			if = {
+				limit = {
+					scaled_debt >= 0.3
+				}
+				change_variable = {
+					name = control_var
+					add = -50
+				}
+			}
+			if = {
+				limit = {
+					scaled_debt > 0.6
+				}
+				change_variable = {
+					name = control_var
+					add = -20
 				}
 			}
 			if = {
@@ -1142,7 +1161,59 @@ control_effects = {
 					any_scope_state = {
 					owner = ROOT
 					is_incorporated = yes
-					count > 24
+					count = 10
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = 10
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+					owner = ROOT
+					is_incorporated = yes
+					count = 11
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = 5
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+					owner = ROOT
+					is_incorporated = yes
+					count = 21
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = -5
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+					owner = ROOT
+					is_incorporated = yes
+					count = 22
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = -10
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+					owner = ROOT
+					is_incorporated = yes
+					count > 23
 					}
 				}
 				change_variable = {
@@ -1161,6 +1232,19 @@ control_effects = {
 				change_variable = {
 					name = control_var
 					add = 5
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+					owner = ROOT
+					is_incorporated = no
+					count = 5
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = -5
 				}
 			}
 			if = {

@@ -18,9 +18,7 @@ fm_fru_oc.1 = {
 			target_country = c:OCC
 			war = yes
 			type = dp_annex_subject
-			add_initiator_backers = {
-				c:ORL
-			}
+
 			add_initiator_backers = {
 				c:BOU
 			}

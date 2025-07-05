@@ -1053,7 +1053,7 @@ AAN = {
 	
 	tier = empire
 	
-	cultures = { maghrebi berber spanish }
+	cultures = { maghrebi berber andalusian spanish }
 	religion = sunni
 	capital = STATE_GRANADA
 }
@@ -1616,7 +1616,7 @@ WAL = {
 	is_named_from_capital = yes
 }
 
-YUG = {
+IL1 = {
 	color = { 37 128 174 }
 	
 	country_type = recognized

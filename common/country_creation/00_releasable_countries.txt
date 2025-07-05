@@ -1267,11 +1267,48 @@ MON = {
 	}
 	ai_will_do = { always = no }
 }
+ORL = {
+	states = {
+		STATE_ORLEANS
+	}
+	ai_will_do = { always = no }
+}
+ANJ = {
+	states = {
+		STATE_MAINE_ANJOU
+	}
+	ai_will_do = { always = no }
+}
+POI = {
+	states = {
+		STATE_POITOU
+	}
+	ai_will_do = { always = no }
+}
+GRA = {
+	states = {
+		STATE_ANDALUSIA
+		STATE_GRANADA
+	}
+	ai_will_do = { always = no }
+}
+HAK = {
+	states = {
+		STATE_ALGIERS
+		STATE_CONSTANTINE
+		STATE_ORAN
+		STATE_TUNISIA
+		STATE_TRIPOLI
+		STATE_LIBYA
+	}
+	ai_will_do = { always = no }
+}
 
 SER = {
 	use_culture_states = yes
 	ai_will_do = { always = no }
 }
+
 
 ABU = {
 	states = {

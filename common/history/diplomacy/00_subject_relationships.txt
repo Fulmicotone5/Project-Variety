@@ -211,18 +211,7 @@
 		}
 	}
 	c:FRU ?= {
-		create_diplomatic_pact = {
-			country = c:ORL
-			type = protectorate
-		}
-		create_diplomatic_pact = {
-			country = c:ANJ
-			type = protectorate
-		}
-		create_diplomatic_pact = {
-			country = c:POI
-			type = protectorate
-		}
+
 		create_diplomatic_pact = {
 			country = c:BOU
 			type = protectorate

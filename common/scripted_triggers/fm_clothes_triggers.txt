@@ -445,13 +445,7 @@ arabic_military_fez_pop_trigger = {
 						has_law = law_type:law_monarchy
 					}
 				}
-				home_country = {
-					exists = c:HAK
-					c:HAK = this
-					c:HAK = {
-						has_law = law_type:law_monarchy
-					}
-				}
+
 				home_country = {
 					exists = c:MUR
 					c:MUR = this

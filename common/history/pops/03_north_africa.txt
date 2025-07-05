@@ -479,7 +479,7 @@
 		}
 	}
 	s:STATE_ALGIERS = {
-		region_state:HAK = {
+		region_state:MUR = {
 			create_pop = {
 				culture = maghrebi
 				size = 441914
@@ -504,7 +504,7 @@
 		}
 	}
 	s:STATE_CONSTANTINE = {
-		region_state:HAK = {
+		region_state:MUR = {
 			create_pop = {
 				culture = maghrebi
 				size = 145953
@@ -529,7 +529,7 @@
 		}
 	}
 	s:STATE_ORAN = {
-		region_state:HAK = {
+		region_state:MUR = {
 			create_pop = {
 				culture = maghrebi
 				size = 612178
@@ -554,7 +554,7 @@
 		}
 	}
 	s:STATE_TUNISIA = {
-		region_state:HAK = {
+		region_state:MUR = {
 			create_pop = {
 				culture = maghrebi
 				size = 265804
@@ -585,7 +585,7 @@
 		}
 	}
 	s:STATE_TRIPOLI = {
-		region_state:HAK = {
+		region_state:EGE = {
 			create_pop = {
 				culture = maghrebi
 				size = 259628
@@ -624,7 +624,7 @@
 		}
 	}
 	s:STATE_LIBYA = {
-		region_state:HAK = {
+		region_state:EGE = {
 			create_pop = {
 				culture = bedouin
 				size = 171604
@@ -659,7 +659,7 @@
 				size = 2000
 			}
 		}
-		region_state:HAK = {
+		region_state:EGE = {
 			create_pop = {
 				culture = bedouin
 				size = 200
@@ -708,7 +708,7 @@
 				size = 8004
 			}
 		}
-		region_state:HAK = {
+		region_state:MUR = {
 			create_pop = {
 				culture = maghrebi
 				size = 16020

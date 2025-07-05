@@ -202,24 +202,12 @@
 				state_region = s:STATE_AL_RIF
 				count = 5
 			}
-		}
-	}
-	c:HAK = {
-		## Hadsid
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_north_africa
-			name = "Hafsid Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_CONSTANTINE
-				count = 30
-			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_lancers
-				state_region = s:STATE_ALGIERS
-				count = 30
+				state_region = s:STATE_ANDALUSIA
+				count = 10
 			}
 		}
 	}
+
 }

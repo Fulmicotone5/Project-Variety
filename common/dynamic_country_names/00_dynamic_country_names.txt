@@ -1302,6 +1302,19 @@ FL1 = {
 		}
 	}
 }
+IL1 = {
+	dynamic_country_name = {
+		name = IL1_mon
+		adjective = IL1_ADJ
+		is_main_tag_only = yes
+		priority = 0
+		trigger = {
+			scope:actor ?= {
+				has_law = law_type:law_monarchy
+			}
+		}
+	}
+}
 
 AGA = {
 	dynamic_country_name = {

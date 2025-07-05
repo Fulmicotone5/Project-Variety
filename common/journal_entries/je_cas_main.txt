@@ -56,17 +56,7 @@
 			type = fm_basq
 		}
 		hidden_effect = {
-			if = {
-				limit = {
-					c:GRA = {
-						OR = {
-							is_subject_of = ROOT
-							is_in_same_power_bloc = root
-						}
-					}
-				}
-				annex = c:GRA
-			}
+
 			if = {
 				limit = {
 					c:KAA = {

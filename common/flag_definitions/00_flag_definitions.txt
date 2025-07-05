@@ -9444,18 +9444,18 @@ YOG = { # Yogyakarta
 	}	
 }
 
-YUG = { # Yugoslavia
+IL1 = { 
 	flag_definition = {
-		coa = YUG
-		subject_canton = YUG
+		coa = IL1
+		subject_canton = IL1
 		allow_overlord_canton = no		
 		priority = 1
 	}
 	flag_definition = {
-		coa = YUG_communist
+		coa = IL1_mon
 		priority = 1500
 		trigger = { 
-			coa_def_communist_flag_trigger = yes
+			coa_def_monarchy_flag_trigger = yes
 		}
 	}		
 }
