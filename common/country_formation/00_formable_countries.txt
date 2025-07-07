@@ -489,7 +489,7 @@ JAE = {
 	ai_will_do = { always = yes }
 }
 
-PIN = {
+PI1 = {
 	use_culture_states = yes
 
 	required_states_fraction = 0.7

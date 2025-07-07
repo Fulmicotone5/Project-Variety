@@ -53,3 +53,44 @@ prestige_good_lightbulb = {
 	prestige_bonus = 0.1
 	texture = "gfx/interface\icons\goods_icons\unused\lightbulbs.dds"
 }
+prestige_good_ethcoffee = {
+	base_good = coffee
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/ethcoffee.dds"
+}
+prestige_good_brzcoffee = {
+	base_good = coffee
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/brzcoffee.dds"
+}
+
+prestige_good_manitobaf = {
+	base_good = grain
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/manitobaf.dds"
+}
+prestige_good_kiwif = {
+	base_good = fruit
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/kiwif.dds"
+}
+prestige_good_hadon = {
+	base_good = clothes
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/hadon.dds"
+}
+prestige_good_cubancig = {
+	base_good = tobacco
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/cubancig.dds"
+}
+prestige_good_cocacola = {
+	base_good = groceries
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/cocacola.dds"
+}
+prestige_good_coronaglass = {
+	base_good = glass
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/coronaglass.dds"
+}

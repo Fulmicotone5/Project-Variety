@@ -1145,7 +1145,7 @@ RAA = {
 	capital = STATE_MOSCOW
 }
 
-PIN = {
+PI1 = {
 	color = { 17 145 56 }
 
 	country_type = recognized

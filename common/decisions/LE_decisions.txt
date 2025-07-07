@@ -564,6 +564,6 @@ research_decision = {
 	}
 
 	ai_chance = {
-		value = 100
+		value = 0
 	}
 }

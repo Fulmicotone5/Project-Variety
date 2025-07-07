@@ -15579,9 +15579,10 @@ MON_absolute_monarchy = {
 MU1 = { # Morocco
 	# Adopted 1915
 	
-	pattern = "pattern_solid.tga"
+		pattern = "pattern_border_outlined_thin.dds"
 	color1 = "red"
-	color2 = "blue"
+	color2 = "yellow_light"
+
 
 	textured_emblem = {
 		texture = "marinidco.dds"
@@ -19178,7 +19179,7 @@ REM = {
 	}
 }
 
-PIN = {
+PI1 = {
 	pattern = "pattern_solid.tga"
 	color1 = "red"
 

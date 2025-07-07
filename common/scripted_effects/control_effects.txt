@@ -82,6 +82,55 @@ control_effects = {
 			}
 			if = {
 				limit = {
+					total_population > 30000000
+					total_population <= 40000000
+				}
+				change_variable = {
+					name = control_var
+					add = -5
+				}
+			}
+			if = {
+				limit = {
+					total_population > 40000000
+					total_population <= 55000000
+				}
+				change_variable = {
+					name = control_var
+					add = -10
+				}
+			}
+			if = {
+				limit = {
+					total_population > 55000000
+					total_population <= 70000000
+				}
+				change_variable = {
+					name = control_var
+					add = -15
+				}
+			}
+			if = {
+				limit = {
+					total_population > 70000000
+					total_population <= 100000000
+				}
+				change_variable = {
+					name = control_var
+					add = -20
+				}
+			}
+			if = {
+				limit = {
+					total_population > 100000000
+				}
+				change_variable = {
+					name = control_var
+					add = -25
+				}
+			}
+			if = {
+				limit = {
 					AND = {
 					institution_investment_level = {
 						institution = institution_home_affairs

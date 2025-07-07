@@ -654,10 +654,10 @@ JAE = {
 	}
 }
 
-PIN = {
+PI1 = {
 	dynamic_country_name = {
 		name = dyn_pin
-		adjective = PIN_ADJ
+		adjective = PI1_ADJ
 		priority = 0
 		trigger = {
 			exists = scope:actor
@@ -668,7 +668,7 @@ PIN = {
 	}
 	dynamic_country_name = {
 		name = dyn_pin_theo
-		adjective = PIN_ADJ
+		adjective = PI1_ADJ
 		priority = 0
 		trigger = {
 			exists = scope:actor

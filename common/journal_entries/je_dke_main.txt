@@ -78,7 +78,7 @@ je_danelaw = {
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 	group = je_group_historical_content
 
-	timeout = 3600
+	timeout = 7200
 
 	complete = {
 		owns_entire_state_region = STATE_YORKSHIRE

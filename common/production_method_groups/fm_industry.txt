@@ -1,5 +1,7 @@
 pmg_canning = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+    ai_selection = most_productive
+
 	production_methods = {
 		pm_disabled_canning
 		pm_spice_conservation
@@ -12,6 +14,8 @@ pmg_canning = {
 }
 pmg_invention_building_food_industry = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+    ai_selection = most_productive
+
 	production_methods = {
 		pm_no_invention
 		pm_roller_mill_processing
@@ -23,6 +27,8 @@ pmg_invention_building_food_industry = {
 
 pmg_invention_building_logging_industry = {
     texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+    ai_selection = most_productive
+
     production_methods = {
         pm_no_invention
         pm_hydraulic_flume_transport
@@ -34,6 +40,8 @@ pmg_invention_building_logging_industry = {
 
 pmg_invention_building_textile_industry = {
     texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+    ai_selection = most_productive
+
     production_methods = {
         pm_no_invention
         pm_coal_dye_application
@@ -46,6 +54,8 @@ pmg_invention_building_textile_industry = {
 
 pmg_invention_building_fishing_industry = {
     texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+    ai_selection = most_productive
+
     production_methods = {
         pm_no_invention
         pm_industrial_fish_cannery
@@ -56,6 +66,8 @@ pmg_invention_building_fishing_industry = {
 
 pmg_invention_building_fertilizer_industry = {
     texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+    ai_selection = most_productive
+
     production_methods = {
         pm_no_invention
         early_nitrogen_fixation
@@ -64,6 +76,8 @@ pmg_invention_building_fertilizer_industry = {
 
 pmg_invention_building_furniture_industry = {
     texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+    ai_selection = most_productive
+
     production_methods = {
         pm_no_invention
         pm_steam_bent_furniture
@@ -75,6 +89,8 @@ pmg_invention_building_furniture_industry = {
 
 pmg_invention_building_paper_industry = {
     texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+    ai_selection = most_productive
+
     production_methods = {
         pm_no_invention
         pm_fourdrinier_machine_adoption
@@ -87,6 +103,8 @@ pmg_invention_building_paper_industry = {
 
 pmg_invention_building_motor_industry = {
     texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+    ai_selection = most_productive
+
     production_methods = {
         pm_no_invention
         pm_corliss_valve_system
@@ -99,6 +117,8 @@ pmg_invention_building_motor_industry = {
 
 pmg_invention_building_meat_industry = {
     texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+    ai_selection = most_productive
+
     production_methods = {
         pm_no_invention
         pm_selective_breeding
@@ -111,6 +131,8 @@ pmg_invention_building_meat_industry = {
 
 pmg_invention_building_boats_industry = {
     texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+    ai_selection = most_productive
+
     production_methods = {
         pm_no_invention
         pm_tarred_hulls
@@ -122,6 +144,8 @@ pmg_invention_building_boats_industry = {
 
 pmg_invention_building_boats_industry_military = {
     texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+    ai_selection = most_productive
+
     production_methods = {
         pm_no_invention
         pm_torpedo_gunboats
@@ -130,6 +154,8 @@ pmg_invention_building_boats_industry_military = {
 
 pmg_invention_building_glass_industry = {
     texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+    ai_selection = most_productive
+
     production_methods = {
         pm_no_invention
         pm_cylinder_glass_rolling
@@ -142,6 +168,8 @@ pmg_invention_building_glass_industry = {
 
 pmg_invention_building_explosives_industry = {
     texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+    ai_selection = most_productive
+
     production_methods = {
         pm_no_invention
         pm_nitrocellulose_propellant
@@ -153,6 +181,8 @@ pmg_invention_building_explosives_industry = {
 
 pmg_invention_building_silk_industry = {
     texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+    ai_selection = most_productive
+
     production_methods = {
         pm_no_invention
         pm_cellulose_fiber_synthesis
@@ -162,6 +192,8 @@ pmg_invention_building_silk_industry = {
 
 pmg_invention_building_steel_industry = {
     texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+    ai_selection = most_productive
+
     production_methods = {
         pm_no_invention
         pm_acidic_bessemer_conversion
@@ -173,6 +205,8 @@ pmg_invention_building_steel_industry = {
 
 pmg_invention_building_tools_industry = {
     texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+    ai_selection = most_productive
+
     production_methods = {
         pm_no_invention
         pm_steam_drop_hammers
@@ -184,6 +218,8 @@ pmg_invention_building_tools_industry = {
 
 pmg_invention_building_military_industry_arms = {
     texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+    ai_selection = most_productive
+
     production_methods = {
         pm_no_invention
         pm_submachine_gun_production
@@ -193,6 +229,8 @@ pmg_invention_building_military_industry_arms = {
 
 pmg_invention_building_military_industry_munition = {
     texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+    ai_selection = most_productive
+
     production_methods = {
         pm_no_invention
         pm_paper_cartridges
@@ -202,6 +240,8 @@ pmg_invention_building_military_industry_munition = {
 
 pmg_invention_building_military_industry_war_machines = {
     texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+    ai_selection = most_productive
+
     production_methods = {
         pm_no_invention
         pm_composite_armor_tanks

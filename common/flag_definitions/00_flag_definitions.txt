@@ -65,6 +65,7 @@ DEFAULT = {
 					c:NIA ?= this
 					c:NOS ?= this
 					c:OM1 ?= this
+					c:MU1 ?= this
 				}
 			}
 		}
@@ -6731,10 +6732,10 @@ REM = { # rum
 	}
 }
 
-PIN = { 
+PI1 = { 
 	flag_definition = {	
-		coa = PIN
-		subject_canton = PIN
+		coa = PI1
+		subject_canton = PI1
 		priority = 10
 	}
 }

@@ -1,5 +1,7 @@
 ﻿pmg_invention_building_rye_farm = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+
 	production_methods = {
 		pm_no_invention
 		pm_four_course_system
@@ -11,6 +13,8 @@
 
 pmg_invention_building_wheat_farm = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+
 	production_methods = {
 		pm_no_invention
 		pm_four_course_system
@@ -22,6 +26,8 @@ pmg_invention_building_wheat_farm = {
 
 pmg_invention_building_maize_farm = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+
 	production_methods = {
 		pm_no_invention
 		pm_four_course_system
@@ -33,6 +39,8 @@ pmg_invention_building_maize_farm = {
 
 pmg_invention_building_millet_farm = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+
 	production_methods = {
 		pm_no_invention
 		pm_four_course_system
@@ -44,6 +52,8 @@ pmg_invention_building_millet_farm = {
 
 pmg_invention_building_rice = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+
 	production_methods = {
 		pm_no_invention
 		pm_mechanical_reapers

@@ -1,6 +1,5 @@
 ﻿pmg_research_funding = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
-	ai_selection = most_productive
 
 	production_methods = {
 		pm_farms_research_funding

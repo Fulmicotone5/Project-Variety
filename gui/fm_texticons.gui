@@ -115,3 +115,75 @@ texticon = {
 		fontsize = 18
 	}
 }
+texticon = {
+	icon = prestige_good_brzcoffee
+	iconsize = {
+		texture = "gfx/interface\icons\goods_icons\unused\brzcoffee.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+texticon = {
+	icon = prestige_good_ethcoffee
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/prestige_goods/ethcoffee.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+texticon = {
+	icon = prestige_good_hadon
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/prestige_goods/hadon.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+texticon = {
+	icon = prestige_good_kiwif
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/prestige_goods/kiwif.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+texticon = {
+	icon = prestige_good_manitobaf
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/prestige_goods/manitobaf.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+texticon = {
+	icon = prestige_good_cubancig
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/prestige_goods/cubancig.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+texticon = {
+	icon = prestige_good_cocacola
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/prestige_goods/cocacola.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+texticon = {
+	icon = prestige_good_coronaglass
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/prestige_goods/coronaglass.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}

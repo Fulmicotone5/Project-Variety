@@ -1,5 +1,7 @@
 pmg_base_building_olive_plantation = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+    ai_selection = most_productive
+
 	production_methods = {
 		default_building_olive_plantation
 		automatic_irrigation_building_olive_plantation
@@ -14,6 +16,8 @@ pmg_train_automation_building_olive_plantation = {
 }
 pmg_base_building_spice_plantation = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+    ai_selection = most_productive
+
 	production_methods = {
 		default_building_spice_plantation
 		automatic_irrigation_building_spice_plantation
@@ -28,6 +32,8 @@ pmg_train_automation_building_spice_plantation = {
 }
 pmg_invention_building_alcohol_industry = {
     texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+    ai_selection = most_productive
+
     production_methods = {
         pm_no_invention
         pm_pasteurization_techniques
@@ -38,6 +44,8 @@ pmg_invention_building_alcohol_industry = {
 
 pmg_invention_building_silk_industry_silk_plantation = {
     texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+    ai_selection = most_productive
+
     production_methods = {
         pm_no_invention
         pm_nutrient_rich_fertilization
@@ -47,6 +55,8 @@ pmg_invention_building_silk_industry_silk_plantation = {
 
 pmg_invention_building_silk_industry_dye_plantation = {
     texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+    ai_selection = most_productive
+
     production_methods = {
         pm_no_invention
         pm_coal_tar_colorants
@@ -55,6 +65,8 @@ pmg_invention_building_silk_industry_dye_plantation = {
 
 pmg_invention_building_plantations_industry_tea = {
     texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+    ai_selection = most_productive
+
     production_methods = {
         pm_no_invention
         pm_clonal_propagation
@@ -64,6 +76,8 @@ pmg_invention_building_plantations_industry_tea = {
 
 pmg_invention_building_plantations_industry_cotton = {
     texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+    ai_selection = most_productive
+
     production_methods = {
         pm_no_invention
         pm_clonal_propagation_cotton
@@ -73,6 +87,8 @@ pmg_invention_building_plantations_industry_cotton = {
 
 pmg_invention_building_plantations_industry_banana = {
     texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+    ai_selection = most_productive
+
     production_methods = {
         pm_no_invention
         pm_clonal_propagation_banana
@@ -82,6 +98,8 @@ pmg_invention_building_plantations_industry_banana = {
 
 pmg_invention_building_plantations_industry_opium = {
     texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+    ai_selection = most_productive
+
     production_methods = {
         pm_no_invention
         pm_mechanical_resin_extraction
@@ -91,6 +109,8 @@ pmg_invention_building_plantations_industry_opium = {
 
 pmg_invention_building_plantations_industry_coffee = {
     texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+    ai_selection = most_productive
+
     production_methods = {
         pm_no_invention
         pm_shade_grown_polyculture
@@ -100,6 +120,8 @@ pmg_invention_building_plantations_industry_coffee = {
 
 pmg_invention_building_plantations_industry_tobacco = {
     texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+    ai_selection = most_productive
+
     production_methods = {
         pm_no_invention
         pm_steam_cured_leaves
@@ -109,6 +131,8 @@ pmg_invention_building_plantations_industry_tobacco = {
 
 pmg_invention_building_plantations_industry_sugar = {
     texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+    ai_selection = most_productive
+
     production_methods = {
         pm_no_invention
         pm_steam_cured_leaves_sugar

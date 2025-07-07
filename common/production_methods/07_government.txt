@@ -369,11 +369,11 @@ pm_farms_research_funding = {
 	}
 
 	building_modifiers = {
-		unscaled = {
-			goods_output_grain_add = 50
-		}
 		level_scaled = {
-			building_employment_laborers_add = 50
+			building_employment_laborers_add = 2500
+building_employment_clerks_add = 3750
+building_employment_academics_add = 7500
+building_employment_engineers_add = 1000
 		}
 	}
 
@@ -395,12 +395,11 @@ pm_groceries_research_funding = {
 	}
 
 	building_modifiers = {
-		unscaled = {
-			goods_output_groceries_add = 20
-			goods_input_grain_add = 10
-		}
 		level_scaled = {
-			building_employment_laborers_add = 50
+			building_employment_laborers_add = 2500
+building_employment_clerks_add = 3750
+building_employment_academics_add = 7500
+building_employment_engineers_add = 1000
 		}
 	}
 
@@ -422,11 +421,11 @@ pm_logging_research_funding = {
 	}
 
 	building_modifiers = {
-		unscaled = {
-			goods_output_wood_add = 30
-		}
 		level_scaled = {
-			building_employment_laborers_add = 50
+			building_employment_laborers_add = 2500
+building_employment_clerks_add = 3750
+building_employment_academics_add = 7500
+building_employment_engineers_add = 1000
 		}
 	}
 }
@@ -444,12 +443,11 @@ pm_textile_research_funding = {
 	}
 
 	building_modifiers = {
-		unscaled = {
-			goods_output_clothes_add = 20
-			goods_input_fabric_add = 5
-		}
 		level_scaled = {
-			building_employment_laborers_add = 50
+			building_employment_laborers_add = 2500
+building_employment_clerks_add = 3750
+building_employment_academics_add = 7500
+building_employment_engineers_add = 1000
 		}
 	}
 
@@ -471,12 +469,11 @@ pm_fishing_research_funding = {
 	}
 
 	building_modifiers = {
-		unscaled = {
-			goods_output_fish_add = 20
-			goods_output_fertilizer_add = 5
-		}
 		level_scaled = {
-			building_employment_laborers_add = 50
+			building_employment_laborers_add = 2500
+building_employment_clerks_add = 3750
+building_employment_academics_add = 7500
+building_employment_engineers_add = 1000
 		}
 	}
 }
@@ -494,13 +491,11 @@ pm_furniture_research_funding = {
 	}
 
 	building_modifiers = {
-		unscaled = {
-			goods_output_furniture_add = 20
-			goods_input_wood_add = 5
-			goods_input_fabric_add = 5
-		}
 		level_scaled = {
-			building_employment_laborers_add = 50
+			building_employment_laborers_add = 2500
+building_employment_clerks_add = 3750
+building_employment_academics_add = 7500
+building_employment_engineers_add = 1000
 		}
 	}
 
@@ -522,12 +517,11 @@ pm_paper_research_funding = {
 	}
 
 	building_modifiers = {
-		unscaled = {
-			goods_output_paper_add = 20
-			goods_input_wood_add = 5
-		}
 		level_scaled = {
-			building_employment_laborers_add = 50
+			building_employment_laborers_add = 2500
+building_employment_clerks_add = 3750
+building_employment_academics_add = 7500
+building_employment_engineers_add = 1000
 		}
 	}
 
@@ -549,12 +543,11 @@ pm_motor_research_funding = {
 	}
 
 	building_modifiers = {
-		unscaled = {
-			goods_output_engines_add = 10
-			goods_input_steel_add = 2
-		}
 		level_scaled = {
-			building_employment_laborers_add = 50
+			building_employment_laborers_add = 2500
+building_employment_clerks_add = 3750
+building_employment_academics_add = 7500
+building_employment_engineers_add = 1000
 		}
 	}
 
@@ -576,14 +569,11 @@ pm_alcohol_research_funding = {
 	}
 
 	building_modifiers = {
-		unscaled = {
-			goods_output_liquor_add = 25
-			goods_output_groceries_add = 5
-			goods_input_grain_add = 5
-			goods_input_sugar_add = 5
-		}
 		level_scaled = {
-			building_employment_laborers_add = 50
+			building_employment_laborers_add = 2500
+building_employment_clerks_add = 3750
+building_employment_academics_add = 7500
+building_employment_engineers_add = 1000
 		}
 	}
 
@@ -605,12 +595,11 @@ pm_meat_research_funding = {
 	}
 
 	building_modifiers = {
-		unscaled = {
-			goods_output_meat_add = 5
-			goods_output_fabric_add = 20
-		}
 		level_scaled = {
-			building_employment_laborers_add = 50
+			building_employment_laborers_add = 2500
+building_employment_clerks_add = 3750
+building_employment_academics_add = 7500
+building_employment_engineers_add = 1000
 		}
 	}
 
@@ -632,13 +621,11 @@ pm_mining_research_funding = {
 	}
 
 	building_modifiers = {
-		unscaled = {
-			goods_input_tools_add = 2
-			
-			goods_output_coal_add = 25
-		}
 		level_scaled = {
-			building_employment_laborers_add = 50
+			building_employment_laborers_add = 2500
+building_employment_clerks_add = 3750
+building_employment_academics_add = 7500
+building_employment_engineers_add = 1000
 		}
 	}
 
@@ -660,14 +647,11 @@ pm_boats_research_funding = {
 	}
 
 	building_modifiers = {
-		unscaled = {
-			goods_output_clippers_add = 10
-
-			goods_input_wood_add = 2
-			goods_input_fabric_add = 2
-		}
 		level_scaled = {
-			building_employment_laborers_add = 50
+			building_employment_laborers_add = 2500
+building_employment_clerks_add = 3750
+building_employment_academics_add = 7500
+building_employment_engineers_add = 1000
 		}
 	}
 
@@ -689,12 +673,11 @@ pm_glass_research_funding = {
 	}
 
 	building_modifiers = {
-		unscaled = {
-			goods_output_glass_add = 15
-			goods_input_wood_add = 5
-		}
 		level_scaled = {
-			building_employment_laborers_add = 50
+			building_employment_laborers_add = 2500
+building_employment_clerks_add = 3750
+building_employment_academics_add = 7500
+building_employment_engineers_add = 1000
 		}
 	}
 
@@ -709,24 +692,18 @@ pm_plantations_research_funding = {
 
 	country_modifiers = {
 		unscaled = {
-			country_invention_plantations_add = 1.1
+			country_invention_plantations_add = 1.2
 
 			
 		}
 	}
 
 	building_modifiers = {
-		unscaled = {
-			goods_output_tea_add = 5
-			goods_output_fabric_add = 5
-			goods_output_fruit_add = 5
-			goods_output_sugar_add = 5
-			goods_output_opium_add = 5
-			goods_output_coffee_add = 5
-			goods_output_tobacco_add = 5
-		}
 		level_scaled = {
-			building_employment_laborers_add = 50
+			building_employment_laborers_add = 2500
+building_employment_clerks_add = 3750
+building_employment_academics_add = 7500
+building_employment_engineers_add = 1000
 		}
 	}
 
@@ -748,13 +725,11 @@ pm_explosives_research_funding = {
 	}
 
 	building_modifiers = {
-		unscaled = {
-			goods_output_explosives_add =10
-			goods_input_fertilizer_add = 1
-			goods_input_sulfur_add = 2
-		}
 		level_scaled = {
-			building_employment_laborers_add = 50
+			building_employment_laborers_add = 2500
+building_employment_clerks_add = 3750
+building_employment_academics_add = 7500
+building_employment_engineers_add = 1000
 		}
 	}
 
@@ -776,12 +751,11 @@ pm_silk_research_funding = {
 	}
 
 	building_modifiers = {
-		unscaled = {
-			goods_output_silk_add = 10
-			goods_output_dye_add = 5
-		}
 		level_scaled = {
-			building_employment_laborers_add = 50
+			building_employment_laborers_add = 2500
+building_employment_clerks_add = 3750
+building_employment_academics_add = 7500
+building_employment_engineers_add = 1000
 		}
 	}
 
@@ -803,13 +777,11 @@ pm_steel_research_funding = {
 	}
 
 	building_modifiers = {
-		unscaled = {
-			goods_output_steel_add = 10
-			goods_input_coal_add = 2
-			goods_input_iron_add = 2
-		}
 		level_scaled = {
-			building_employment_laborers_add = 50
+			building_employment_laborers_add = 2500
+building_employment_clerks_add = 3750
+building_employment_academics_add = 7500
+building_employment_engineers_add = 1000
 		}
 	}
 
@@ -831,12 +803,11 @@ pm_tools_research_funding = {
 	}
 
 	building_modifiers = {
-		unscaled = {
-			goods_output_tools_add = 10
-			goods_input_wood_add = 5
-		}
 		level_scaled = {
-			building_employment_laborers_add = 50
+			building_employment_laborers_add = 2500
+building_employment_clerks_add = 3750
+building_employment_academics_add = 7500
+building_employment_engineers_add = 1000
 		}
 	}
 
@@ -858,15 +829,11 @@ pm_military_research_funding = {
 	}
 
 	building_modifiers = {
-		unscaled = {
-			goods_output_small_arms_add = 5
-			goods_output_artillery_add = 5
-
-			goods_input_iron_add = 2
-			goods_input_hardwood_add = 1
-		}
 		level_scaled = {
-			building_employment_laborers_add = 50
+			building_employment_laborers_add = 2500
+building_employment_clerks_add = 3750
+building_employment_academics_add = 7500
+building_employment_engineers_add = 1000
 		}
 	}
 

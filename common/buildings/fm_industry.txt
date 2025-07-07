@@ -156,6 +156,7 @@ building_motor_industry = {
 	production_method_groups = {
 		pmg_base_building_motor_industry
 		pmg_automation_building_motor_industry
+		pmg_invention_building_motor_industry
 	}
 	can_build_government = {
 		owner = {
