@@ -2,8 +2,8 @@
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 	group = je_group_historical_content
 	complete = {
-		cultural_acceptance_base = { target = cu:catalan value >= 50 }
-		cultural_acceptance_base = { target = cu:basque value >= 50 }
+		cultural_acceptance_base = { target = cu:catalan value >= 60 }
+		cultural_acceptance_base = { target = cu:basque value >= 40 }
 	}
 	on_complete = {
 		add_primary_culture = cu:catalan

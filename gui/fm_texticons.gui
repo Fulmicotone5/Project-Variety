@@ -16,3 +16,102 @@ texticon = {
 		fontsize = 18
 	}
 }
+texticon = {
+	icon = prestige_good_loud_car
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/prestige_goods/turin_automobiles_prestige.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+texticon = {
+	icon = prestige_carsugar
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/prestige_goods/carsugar.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+texticon = {
+	icon = prestige_good_spice
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/prestige_goods/dalchini.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+texticon = {
+	icon = prestige_good_pilsner
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/prestige_goods/pilsner.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+texticon = {
+	icon = prestige_good_gay
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/prestige_goods/gayrum.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+texticon = {
+	icon = prestige_good_kobe
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/prestige_goods/kobe.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+texticon = {
+	icon = prestige_good_psashimi
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/prestige_goods/psashimi.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+texticon = {
+	icon = prestige_good_galeazza
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/prestige_goods/galeazza.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+texticon = {
+	icon = prestige_good_teasugar
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/prestige_goods/teasugar.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+texticon = {
+	icon = prestige_good_zporcelain
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/prestige_goods/zporcelain.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+texticon = {
+	icon = prestige_good_lightbulb
+	iconsize = {
+		texture = "gfx/interface\icons\goods_icons\unused\lightbulbs.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}

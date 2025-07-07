@@ -676,7 +676,7 @@ control_effects = {
 			}
 			if = {
 				limit = {
-					gdp < 25000000
+					gdp < 30000000
 				}
 				change_variable = {
 					name = control_var
@@ -1143,12 +1143,38 @@ control_effects = {
 					add = -20
 				}
 			}
+			if = {
+				limit = {
+					any_scope_state = {
+					owner = ROOT
+					is_incorporated = yes
+					count < 6
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = 20
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+					owner = ROOT
+					is_incorporated = yes
+					count = 6
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = 15
+				}
+			}
        		if = {
 				limit = {
 					any_scope_state = {
 					owner = ROOT
 					is_incorporated = yes
-					count < 10
+					count = 7
 					}
 				}
 				change_variable = {
@@ -1161,12 +1187,38 @@ control_effects = {
 					any_scope_state = {
 					owner = ROOT
 					is_incorporated = yes
-					count = 10
+					count = 8
 					}
 				}
 				change_variable = {
 					name = control_var
 					add = 10
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+					owner = ROOT
+					is_incorporated = yes
+					count = 9
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = 10
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+					owner = ROOT
+					is_incorporated = yes
+					count = 10
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = 5
 				}
 			}
 			if = {
@@ -1187,12 +1239,90 @@ control_effects = {
 					any_scope_state = {
 					owner = ROOT
 					is_incorporated = yes
-					count = 21
+					count = 15
 					}
 				}
 				change_variable = {
 					name = control_var
 					add = -5
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+					owner = ROOT
+					is_incorporated = yes
+					count = 16
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = -5
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+					owner = ROOT
+					is_incorporated = yes
+					count = 17
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = -10
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+					owner = ROOT
+					is_incorporated = yes
+					count = 18
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = -10
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+					owner = ROOT
+					is_incorporated = yes
+					count = 19
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = -10
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+					owner = ROOT
+					is_incorporated = yes
+					count = 20
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = -15
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+					owner = ROOT
+					is_incorporated = yes
+					count = 21
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = -15
 				}
 			}
 			if = {
@@ -1205,19 +1335,6 @@ control_effects = {
 				}
 				change_variable = {
 					name = control_var
-					add = -10
-				}
-			}
-			if = {
-				limit = {
-					any_scope_state = {
-					owner = ROOT
-					is_incorporated = yes
-					count > 23
-					}
-				}
-				change_variable = {
-					name = control_var
 					add = -15
 				}
 			}
@@ -1225,13 +1342,52 @@ control_effects = {
 				limit = {
 					any_scope_state = {
 					owner = ROOT
-					is_incorporated = no
-					count < 3
+					is_incorporated = yes
+					count = 23
 					}
 				}
 				change_variable = {
 					name = control_var
-					add = 5
+					add = -20
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+					owner = ROOT
+					is_incorporated = yes
+					count = 24
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = -20
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+					owner = ROOT
+					is_incorporated = yes
+					count = 25
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = -20
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+					owner = ROOT
+					is_incorporated = yes
+					count > 25
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = -25
 				}
 			}
 			if = {
@@ -1239,7 +1395,7 @@ control_effects = {
 					any_scope_state = {
 					owner = ROOT
 					is_incorporated = no
-					count = 5
+					count < 5
 					}
 				}
 				change_variable = {
@@ -1252,12 +1408,51 @@ control_effects = {
 					any_scope_state = {
 					owner = ROOT
 					is_incorporated = no
-					count > 5
+					count = 5
 					}
 				}
 				change_variable = {
 					name = control_var
 					add = -10
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+					owner = ROOT
+					is_incorporated = no
+					count = 6
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = -10
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+					owner = ROOT
+					is_incorporated = no
+					count = 7
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = -10
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+					owner = ROOT
+					is_incorporated = no
+					count > 7
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = -15
 				}
 			}
 			if = {

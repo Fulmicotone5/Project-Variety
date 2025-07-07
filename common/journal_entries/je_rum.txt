@@ -254,8 +254,8 @@ je_rum_rome = {
 		owns_entire_state_region = STATE_HUDAVENDIGAR
 		owns_entire_state_region = STATE_AYDIN
 		has_technology_researched = pan-nationalism
-		cultural_acceptance_base = { target = cu:greek value >= 20 }
-		cultural_acceptance_base = { target = cu:greco_roman value >= 20 }
+		cultural_acceptance_base = { target = cu:greek value >= 15 }
+		cultural_acceptance_base = { target = cu:greco_roman value >= 15 }
 	}
 	on_complete = {
 		trigger_event = {

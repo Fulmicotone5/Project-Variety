@@ -27,5 +27,11 @@
 		set_market_capital = STATE_ZANZIBAR
 		
 		add_journal_entry = { type = je_splitting_oman }
+		add_company = company_type:company_OMA
+		company:company_OMA = {
+			set_company_establishment_date = 1780.9.9
+			set_company_state_region = s:STATE_OMAN
+			add_owned_country = c:OM1 #links the country to this company
+		}
 	}
 }

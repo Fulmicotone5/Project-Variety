@@ -154,7 +154,7 @@ je_occ_int = {
 	group = je_group_historical_content
 
 	complete = {
-		cultural_acceptance_base = { target = cu:occitan value >= 70 }
+		cultural_acceptance_base = { target = cu:occitan value >= 60 }
 	}
 	on_complete = {
 		add_primary_culture = cu:occitan

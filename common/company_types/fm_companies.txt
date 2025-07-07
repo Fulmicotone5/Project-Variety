@@ -86,7 +86,7 @@ company_incacomp = {
 	}
 
 	extension_building_types = {
-		building_iron_mine
+		building_sulfur_mine
 		building_lead_mine
 	}
 
@@ -111,7 +111,7 @@ company_incacomp = {
 	
 	prosperity_modifier = {
 		country_influence_mult = 0.1
-		building_gold_mine_throughput_add = 0.3
+		building_gold_mine_throughput_add = 0.2
 	}	
 
 	ai_will_do = {
@@ -138,7 +138,7 @@ company_incacomp = {
 
 company_statera = {
 	icon = "gfx/interface/icons/company_icons/fm_company_icons/CreditAnstalt.png"
-	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufactering_light.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_railways.dds"
 	
 	flavored_company = no
 	
@@ -214,16 +214,17 @@ company_statera = {
 }
 company_stateenergy = {
 	icon = "gfx/interface/icons/company_icons/fm_company_icons/CreditAnstalt.png"
-	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufactering_light.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_oil_drills.dds"
 	
 	flavored_company = no
 	
 	building_types = {  
 		building_power_plant
+		building_coal_mine
 	}
-	extension_building_types = {
-		building_electrics_industry 
+	extension_building_types = { 
 		building_oil_rig
+		building_electrics_industry
 	}
 	
 	potential = {
@@ -256,8 +257,8 @@ company_stateenergy = {
 	}
 	
 	prosperity_modifier = {
-		state_colony_growth_speed_mult = 0.1
-		country_infamy_generation_against_unrecognized_mult = -0.1
+		building_power_plant_throughput_add = 0.25
+		country_infamy_generation_against_unrecognized_mult = -0.2
 	}
 
 	ai_will_do = {
@@ -287,19 +288,27 @@ company_venars = {
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_harbor_shipbuilding.dds"
 	
 	flavored_company = yes
+
+	preferred_headquarters = { STATE_VENETIA }
 	
 	building_types = {  
 		building_military_shipyards
 		building_arms_industry
 		building_artillery_foundries
+		building_munition_plants
 	}
 	extension_building_types = {
 		building_port	
 		building_shipyards	
 	}
+
+	possible_prestige_goods = {
+		prestige_good_galeazza
+	}
+	
 	
 	potential = {
-		c:VEN ?= this
+		has_interest_marker_in_region = region_south_germany
 	}
 	
 	
@@ -316,7 +325,7 @@ company_venars = {
 	
 	prosperity_modifier = {
 		unit_navy_offense_mult = 0.05
-		unit_navy_defense_mult = 0.1
+		unit_navy_defense_mult = 0.05
 	}
 	
 	ai_weight = {
@@ -349,11 +358,15 @@ company_VNA = {
 	}
 
 	potential = {
-		c:VEN ?= this
+		c:VNA = {
+			is_subject_of = root
+		}
 	}
 
 	possible = {
-		c:VEN ?= this
+		c:VNA = {
+			is_subject_of = root
+		}
 		OR = {
 			has_law = law_type:law_mercantilism
 			has_law = law_type:law_protectionism
@@ -381,7 +394,9 @@ company_VNA = {
 	}
 
 	ai_will_do = {
-		c:VEN ?= this
+		c:VNA = {
+			is_subject_of = root
+		}
 		OR = {
 			has_law = law_type:law_mercantilism
 			has_law = law_type:law_protectionism
@@ -445,11 +460,15 @@ company_EIC = {
 	}
 
 	potential = {
-		c:PUR ?= this
+		c:EIC = {
+			is_subject_of = root
+		}
 	}
 
 	possible = {
-		c:PUR ?= this
+		c:EIC = {
+			is_subject_of = root
+		}
 		OR = {
 			has_law = law_type:law_mercantilism
 			has_law = law_type:law_protectionism
@@ -874,11 +893,9 @@ icon = "gfx/interface/icons/company_icons/fm_company_icons/generalm.dds"
 		prestige_good_loud_car
 	}
 
-	potential = {
-		has_technology_researched = atmospheric_engine
-	}
 
 	possible = {
+		has_technology_researched = atmospheric_engine
 		any_scope_state = {
 			any_scope_building = {
 				is_building_type = building_motor_industry
@@ -914,5 +931,742 @@ icon = "gfx/interface/icons/company_icons/fm_company_icons/generalm.dds"
 
 	ai_weight = {
 		value = 3 # Higher base value for flavored companies
+	}
+}
+company_OMA = {
+	icon = "gfx/interface/icons/company_icons/fm_company_icons/omancom.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
+
+	flavored_company = yes
+
+
+	building_types = {
+		building_opium_plantation
+		building_livestock_ranch
+		building_sugar_plantation
+	}
+
+	extension_building_types = {
+		building_spice_plantation
+	}
+
+	possible_prestige_goods = {
+		prestige_good_generic_opium
+	}
+
+	potential = {
+		c:OM1 = {
+			is_subject_of = root
+		}
+	}
+
+	possible = {
+		c:OM1 = {
+			is_subject_of = root
+		}
+		OR = {
+			has_law = law_type:law_mercantilism
+			has_law = law_type:law_protectionism
+		}
+		any_scope_state = {
+			OR = {
+				region = sr:region_madras
+				region = sr:region_bombay
+				region = sr:region_bengal
+				region = sr:region_central_india
+				region = sr:region_punjab
+			}
+			any_scope_building = {
+				OR = {
+					is_building_type = building_opium_plantation
+					is_building_type = building_sugar_plantation
+				}
+				level >= 5
+			}
+			count >= 2
+		}
+	}
+
+	prosperity_modifier = {
+		state_loyalists_from_political_movements_mult = 0.1
+		state_colony_growth_creation_factor = 0.1
+	}
+
+	ai_will_do = {
+		OR = {
+			has_law = law_type:law_mercantilism
+			has_law = law_type:law_protectionism
+		}
+		any_scope_state = {
+			OR = {
+				region = sr:region_madras
+				region = sr:region_bombay
+				region = sr:region_bengal
+				region = sr:region_central_india
+				region = sr:region_punjab
+			}
+		}
+	}
+
+	ai_construction_targets = {
+		building_opium_plantation = {
+			level = 15
+			state_trigger = {
+				OR = {
+					region = sr:region_madras
+					region = sr:region_bombay
+					region = sr:region_bengal
+					region = sr:region_central_india
+					region = sr:region_punjab
+				}
+			}
+		}
+		building_sugar_plantation = {
+			level = 5
+			state_trigger = {
+				OR = {
+					region = sr:region_madras
+					region = sr:region_bombay
+					region = sr:region_bengal
+					region = sr:region_central_india
+					region = sr:region_punjab
+				}
+			}
+		}
+	}
+
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+company_MAR = {
+icon = "gfx/interface/icons/company_icons/fm_company_icons/marinidco.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
+
+	flavored_company = yes
+	
+
+	building_types = {
+		building_banana_plantation
+		building_spice_plantation
+		building_tobacco_plantation
+		building_coffee_plantation
+		building_dye_plantation
+	}
+
+	extension_building_types = {
+		building_rice_farm
+	}
+
+	possible_prestige_goods = {
+		prestige_good_generic_coffee
+	}
+
+	potential = {
+			c:MU1 = {
+			is_subject_of = root
+		}
+	}
+
+	possible = {
+		any_scope_state = {
+			state_region = s:STATE_TRAVANCORE
+			any_scope_building = {
+				OR = {
+					is_building_type = building_spice_plantation
+					is_building_type = building_dye_plantation
+				}
+				level >= 3
+			}
+		}
+	}
+
+	prosperity_modifier = {
+		state_colony_growth_creation_factor = 0.2
+	}
+
+	ai_will_do = {
+		any_scope_state = {
+			state_region = s:STATE_TRAVANCORE
+			is_incorporated = yes
+		}
+	}
+
+	ai_construction_targets = {
+		building_spice_plantation = {
+			level = 30
+			state_trigger = {
+				state_region = s:STATE_TRAVANCORE
+				is_incorporated = yes
+			}
+		}
+	}
+
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+company_EIC1 = {
+	icon = "gfx/interface/icons/company_icons/fm_company_icons/EIC1.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
+
+	flavored_company = yes
+
+
+	building_types = {
+		building_tea_plantation
+		building_spice_plantation
+	}
+
+	extension_building_types = {
+		building_opium_plantation
+	}
+
+	possible_prestige_goods = {
+		prestige_good_spice
+	}
+
+	potential = {
+		OR = {
+				has_interest_marker_in_region = sr:region_madras
+				has_interest_marker_in_region = sr:region_bombay
+				has_interest_marker_in_region = sr:region_bengal
+				has_interest_marker_in_region = sr:region_central_india
+				has_interest_marker_in_region = sr:region_punjab
+			}
+	}
+
+	possible = {
+		OR = {
+			has_law = law_type:law_mercantilism
+			has_law = law_type:law_protectionism
+		}
+		any_scope_state = {
+			OR = {
+				region = sr:region_madras
+				region = sr:region_bombay
+				region = sr:region_bengal
+				region = sr:region_central_india
+				region = sr:region_punjab
+			}
+			any_scope_building = {
+				OR = {
+					is_building_type = building_tea_plantation
+					is_building_type = building_spice_plantation
+				}
+				level >= 5
+			}
+			count >= 2
+		}
+	}
+
+	prosperity_modifier = {
+		building_group_bg_plantations_throughput_add = 0.05
+	}
+
+	ai_will_do = {
+		OR = {
+			has_law = law_type:law_mercantilism
+			has_law = law_type:law_protectionism
+		}
+		any_scope_state = {
+			OR = {
+				region = sr:region_madras
+				region = sr:region_bombay
+				region = sr:region_bengal
+				region = sr:region_central_india
+				region = sr:region_punjab
+			}
+		}
+	}
+
+	ai_construction_targets = {
+		building_tea_plantation = {
+			level = 5
+			state_trigger = {
+				OR = {
+				region = sr:region_madras
+				region = sr:region_bombay
+				region = sr:region_bengal
+				region = sr:region_central_india
+				region = sr:region_punjab
+				}
+			}
+		}
+		building_spice_plantation = {
+			level = 25
+			state_trigger = {
+				OR = {
+					region = sr:region_madras
+				region = sr:region_bombay
+				region = sr:region_bengal
+				region = sr:region_central_india
+				region = sr:region_punjab
+				}
+			}
+		}
+	}
+
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+company_WIC = {
+	icon = "gfx/interface/icons/company_icons/fm_company_icons/company_WIC.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
+
+	flavored_company = yes
+
+
+	building_types = {
+		building_tobacco_plantation
+		building_sugar_plantation
+		building_dye_plantation
+	}
+
+	extension_building_types = {
+		building_coffee_plantation
+		building_banana_plantation
+	}
+
+	possible_prestige_goods = {
+		prestige_carsugar
+	}
+
+	potential = {
+		OR = {
+				has_interest_marker_in_region = sr:region_gran_colombia
+				has_interest_marker_in_region = sr:region_caribbean
+			}
+	}
+
+	possible = {
+		OR = {
+			has_law = law_type:law_mercantilism
+			has_law = law_type:law_protectionism
+		}
+		any_scope_state = {
+			OR = {
+				region = sr:region_gran_colombia
+				region = sr:region_caribbean
+			}
+			any_scope_building = {
+				OR = {
+					is_building_type = building_tobacco_plantation
+					is_building_type = building_sugar_plantation
+				}
+				level >= 5
+			}
+			count >= 2
+		}
+	}
+
+	prosperity_modifier = {
+		building_group_bg_plantations_throughput_add = 0.1
+	}
+
+	ai_will_do = {
+		OR = {
+			has_law = law_type:law_mercantilism
+			has_law = law_type:law_protectionism
+		}
+		any_scope_state = {
+			OR = {
+				region = sr:region_gran_colombia
+				region = sr:region_caribbean
+			}
+		}
+	}
+
+	ai_construction_targets = {
+		building_tobacco_plantation = {
+			level = 5
+			state_trigger = {
+				OR = {
+				region = sr:region_gran_colombia
+				region = sr:region_caribbean
+				}
+			}
+		}
+		building_sugar_plantation = {
+			level = 15
+			state_trigger = {
+				OR = {
+				region = sr:region_gran_colombia
+				region = sr:region_caribbean
+				}
+			}
+		}
+	}
+
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+company_pilsnerco = {
+icon = "gfx/interface/icons/company_icons/fm_company_icons/pilsnerco.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+
+	flavored_company = yes
+
+	preferred_headquarters = { STATE_BOHEMIA }
+	
+
+	building_types = {
+		building_food_industry
+		building_rye_farm
+	}
+
+	extension_building_types = {
+		building_wheat_farm
+		building_livestock_ranch
+	}
+
+	possible_prestige_goods = {
+		prestige_good_pilsner
+	}
+
+	potential = {
+		has_interest_marker_in_region = region_south_germany
+	}
+
+	possible = {
+		any_scope_state = {
+			state_region = s:STATE_BOHEMIA
+			any_scope_building = {
+				is_building_type = building_food_industry
+				level >= 3
+			}
+		}
+	}
+
+
+	prosperity_modifier = {
+		state_lower_strata_standard_of_living_add = 0.5
+		state_middle_strata_standard_of_living_add = 0.5
+	}
+
+	ai_will_do = {
+		any_scope_state = {
+			state_region = s:STATE_BOHEMIA
+			is_incorporated = yes
+		}
+	}
+
+	ai_construction_targets = {
+		building_food_industry = {
+			level = 30
+			state_trigger = {
+				state_region = s:STATE_BOHEMIA
+				is_incorporated = yes
+			}
+		}
+	}
+
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+company_mountgay = {
+icon = "gfx/interface/icons/company_icons/fm_company_icons/mountgay.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
+
+	flavored_company = yes
+
+	preferred_headquarters = { STATE_WEST_INDIES }
+	
+
+	building_types = {
+		building_food_industry
+		building_livestock_ranch
+	}
+
+	extension_building_types = {
+		building_rice_farm
+	}
+
+	possible_prestige_goods = {
+		prestige_good_gay
+	}
+
+	possible = {
+		any_scope_state = {
+			state_region = s:STATE_WEST_INDIES
+			any_scope_building = {
+				is_building_type = building_food_industry
+				level >= 1
+			}
+		}
+	}
+
+	prosperity_modifier = {
+		state_lower_strata_expected_sol_add = -1.5
+	}
+
+	ai_will_do = {
+		any_scope_state = {
+			state_region = s:STATE_WEST_INDIES
+			is_incorporated = yes
+		}
+	}
+
+	ai_construction_targets = {
+		building_food_industry = {
+			level = 30
+			state_trigger = {
+				state_region = s:STATE_WEST_INDIES
+				is_incorporated = yes
+			}
+		}
+	}
+
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+company_kobe  = {
+	icon = "gfx/interface/icons/company_icons/fm_company_icons/cokobe.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_farm_rice.dds"
+
+	flavored_company = yes
+	preferred_headquarters = { STATE_KANSAI }
+
+	building_types = {
+		building_livestock_ranch
+	}
+
+	extension_building_types = {
+		building_rice_farm
+	}
+
+	possible_prestige_goods = {
+		prestige_good_kobe
+	}
+	potential = {
+		has_interest_marker_in_region = region_japan
+	}
+
+
+	possible = {
+		any_scope_state = {
+			state_region = s:STATE_KANSAI
+			any_scope_building = {
+				is_building_type = building_livestock_ranch
+				level >= 5
+			}
+		}
+	}
+
+	prosperity_modifier = {
+		building_livestock_ranch_throughput_add = 0.1
+	}
+
+	ai_will_do = {
+		any_scope_state = {
+			state_region = s:STATE_KANSAI
+			any_scope_building = {
+				is_building_type = building_livestock_ranch
+				level >= 1
+			}
+		}
+	}
+}
+company_kikkoman = {
+	icon = "gfx/interface/icons/company_icons/fm_company_icons/cokikkoman.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_harbor_shipbuilding.dds"
+
+	flavored_company = yes
+	preferred_headquarters = { STATE_KANTO }
+
+	building_types = {
+		building_fishing_wharf
+	}
+
+	extension_building_types = {
+		building_food_industry
+	}
+
+	possible_prestige_goods = {
+		prestige_good_psashimi
+	}
+	potential = {
+		has_interest_marker_in_region = region_japan
+	}
+
+
+	possible = {
+		any_scope_state = {
+			state_region = s:STATE_KANTO
+			any_scope_building = {
+				is_building_type = building_fishing_wharf
+				level >= 5
+			}
+		}
+	}
+
+	prosperity_modifier = {
+		building_fishing_wharf_throughput_add = 0.2
+		state_trade_advantage_mult = 0.1
+	}
+
+	ai_will_do = {
+		any_scope_state = {
+			state_region = s:STATE_KANTO
+			any_scope_building = {
+				is_building_type = building_fishing_wharf
+				level >= 1
+			}
+		}
+	}
+}
+company_zsolnay = {
+	icon = "gfx/interface/icons/company_icons/fm_company_icons/cozsolnay.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufactering_heavy.dds"
+
+	flavored_company = yes
+	preferred_headquarters = { STATE_TRANSDANUBIA }
+
+	building_types = {
+		building_glassworks
+		building_lead_mine
+	}
+
+	extension_building_types = {
+		building_coal_mine
+	}
+
+	possible_prestige_goods = {
+		prestige_good_zporcelain
+	}
+	potential = {
+		has_interest_marker_in_region = region_danubia
+	}
+
+
+	possible = {
+		any_scope_state = {
+			state_region = s:STATE_TRANSDANUBIA
+			any_scope_building = {
+				is_building_type = building_glassworks
+				level >= 5
+			}
+		}
+	}
+
+	prosperity_modifier = {
+		country_influence_mult = 0.05
+		building_glassworks_throughput_add = 0.1
+	}
+
+	ai_will_do = {
+		any_scope_state = {
+			state_region = s:STATE_TRANSDANUBIA
+			any_scope_building = {
+				is_building_type = building_glassworks
+				level >= 1
+			}
+		}
+	}
+}
+company_tungstram = {
+	icon = "gfx/interface/icons/company_icons/fm_company_icons/cotungstram.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufactering_heavy.dds"
+
+	flavored_company = yes
+	preferred_headquarters = { STATE_CENTRAL_HUNGARY }
+
+	building_types = {
+		building_electrics_industry
+		building_power_plant
+	}
+
+	extension_building_types = {
+		building_paper_mills
+	}
+
+	possible_prestige_goods = {
+		prestige_good_lightbulb
+	}
+	potential = {
+		has_interest_marker_in_region = region_danubia
+	}
+
+
+	possible = {
+		has_technology_researched = electrical_generation
+		any_scope_state = {
+			state_region = s:STATE_CENTRAL_HUNGARY
+			any_scope_building = {
+				is_building_type = building_power_plant
+				level >= 1
+			}
+		}
+	}
+
+	prosperity_modifier = {
+		building_power_plant_throughput_add = 0.2
+		country_weekly_innovation_mult = 0.05
+		building_group_bg_oil_extraction_throughput_add = 0.05
+	}
+
+	ai_will_do = {
+		any_scope_state = {
+			state_region = s:STATE_CENTRAL_HUNGARY
+			any_scope_building = {
+				is_building_type = building_power_plant
+				level >= 1
+			}
+		}
+	}
+}
+company_dacice = {
+	icon = "gfx/interface/icons/company_icons/fm_company_icons/codacice.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufactering_heavy.dds"
+
+	flavored_company = yes
+	preferred_headquarters = { STATE_MORAVIA }
+
+	building_types = {
+		building_food_industry
+		building_sugar_plantation
+	}
+
+	extension_building_types = {
+		building_motor_industry
+	}
+
+	possible_prestige_goods = {
+		prestige_good_teasugar
+	}
+	potential = {
+		has_interest_marker_in_region = region_south_germany
+	}
+
+
+	possible = {
+		any_scope_state = {
+			state_region = s:STATE_MORAVIA
+			any_scope_building = {
+				is_building_type = building_food_industry
+				level >= 3
+			}
+		}
+	}
+
+	prosperity_modifier = {
+		building_food_industry_throughput_add = 0.1
+		state_radicals_from_political_movements_mult = -0.15
+	}
+
+	ai_will_do = {
+		any_scope_state = {
+			state_region = s:STATE_MORAVIA
+			any_scope_building = {
+				is_building_type = building_food_industry
+				level >= 1
+			}
+		}
 	}
 }

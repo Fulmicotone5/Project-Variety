@@ -390,45 +390,8 @@
 			}
 		}
 	}
-	c:SHN = {
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_north_china
-			name = "Shanxi Army"
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_SHANXI
-				count = 20
-			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_HENAN
-				count = 10
-			}
-		}
-	}
-	c:ZHI = {
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_north_china
-			name = "Zhili Army"
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_BEIJING
-				count = 15
-			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_cuirassiers
-				state_region = s:STATE_ZHILI
-				count = 5
-			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_ZHILI
-				count = 10
-			}
-		}
-	}
+
+
 	c:SHA = {
 		create_military_formation = {
 			type = army
@@ -437,12 +400,34 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_SHANDONG
-				count = 15
+				count = 20
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_JIANGSU
-				count = 15
+				state_region = s:STATE_BEIJING
+				count = 10
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_cuirassiers
+				state_region = s:STATE_ZHILI
+				count = 5
+			}
+		}
+	}
+	c:OM1 = {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_bombay
+			name = "Company Army"
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_GUJARAT
+				count = 10
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_cannon_artillery
+				state_region = s:STATE_GUJARAT
+				count = 5
 			}
 		}
 	}
@@ -450,7 +435,7 @@
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_persia
-			name = "Oman Army"
+			name = "Royal Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_OMAN
@@ -465,7 +450,7 @@
 		create_military_formation = {
 			type = fleet
 			hq_region = sr:region_persia
-			name = "Oman Navy"
+			name = "Royal Navy"
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
 				state_region = s:STATE_OMAN

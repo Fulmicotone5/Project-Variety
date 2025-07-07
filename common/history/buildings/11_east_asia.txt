@@ -945,12 +945,12 @@
 		}
 	}
 	s:STATE_BEIJING = {
-		region_state:ZHI = {
+		region_state:SHA = {
 			create_building={
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:ZHI"
+						country="c:SHA"
 						levels=2
 					}
 				}
@@ -962,7 +962,7 @@
 				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
 				add_ownership={
 					country={
-						country="c:ZHI"
+						country="c:SHA"
 						levels=3
 					}
 				}
@@ -972,7 +972,7 @@
 				building="building_artillery_foundries"
 				add_ownership={
 					country={
-						country="c:ZHI"
+						country="c:SHA"
 						levels=1
 					}
 				}
@@ -984,7 +984,7 @@
 				building="building_construction_sector"
 				add_ownership={
 					country={
-						country="c:ZHI"
+						country="c:SHA"
 						levels=1
 					}
 				}
@@ -995,7 +995,7 @@
 				building="building_arms_industry"
 				add_ownership={
 					country={
-						country="c:ZHI"
+						country="c:SHA"
 						levels=1
 					}
 				}
@@ -1006,7 +1006,7 @@
 				building="building_tooling_workshops"
 				add_ownership={
 					country={
-						country="c:ZHI"
+						country="c:SHA"
 						levels=1
 					}
 				}
@@ -1017,7 +1017,7 @@
 				building="building_furniture_manufacturies"
 				add_ownership={
 					country={
-						country="c:ZHI"
+						country="c:SHA"
 						levels=1
 					}
 				}
@@ -1028,7 +1028,7 @@
 				building="building_wheat_farm"
 				add_ownership={
 					country={
-						country="c:ZHI"
+						country="c:SHA"
 						levels=5
 					}
 				}
@@ -1039,7 +1039,7 @@
 				building="building_tea_plantation"
 				add_ownership={
 					country={
-						country="c:ZHI"
+						country="c:SHA"
 						levels=2
 					}
 				}
@@ -1054,7 +1054,7 @@
 				building="building_logging_camp"
 				add_ownership={
 					country={
-						country="c:ZHI"
+						country="c:SHA"
 						levels=2
 					}
 				}
@@ -1234,12 +1234,12 @@
 		}
 	}
 	s:STATE_SHANXI = {
-		region_state:SHN = {
+		region_state:SHA = {
 			create_building={
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:SHN"
+						country="c:SHA"
 						levels=5
 					}
 				}
@@ -1251,7 +1251,7 @@
 				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
 				add_ownership={
 					country={
-						country="c:SHN"
+						country="c:SHA"
 						levels=3
 					}
 				}
@@ -1261,7 +1261,7 @@
 				building="building_iron_mine"
 				add_ownership={
 					country={
-						country="c:SHN"
+						country="c:SHA"
 						levels=2
 					}
 				}
@@ -1272,7 +1272,7 @@
 				building="building_paper_mills"
 					add_ownership={
 						country={
-							country="c:SHN"
+							country="c:SHA"
 							levels=1
 						}
 				}
@@ -1283,7 +1283,7 @@
 				building="building_artillery_foundries"
 				add_ownership={
 					country={
-						country="c:SHN"
+						country="c:SHA"
 						levels=1
 					}
 				}
@@ -1295,7 +1295,7 @@
 				building="building_construction_sector"
 				add_ownership={
 					country={
-						country="c:SHN"
+						country="c:SHA"
 						levels=1
 					}
 				}
@@ -1306,7 +1306,7 @@
 				building="building_arms_industry"
 				add_ownership={
 					country={
-						country="c:SHN"
+						country="c:SHA"
 						levels=1
 					}
 				}
@@ -1317,7 +1317,7 @@
 				building="building_tooling_workshops"
 				add_ownership={
 					country={
-						country="c:SHN"
+						country="c:SHA"
 						levels=1
 					}
 				}
@@ -1328,7 +1328,7 @@
 				building="building_furniture_manufacturies"
 				add_ownership={
 					country={
-						country="c:SHN"
+						country="c:SHA"
 						levels=1
 					}
 				}
@@ -1339,7 +1339,7 @@
 				building="building_wheat_farm"
 				add_ownership={
 					country={
-						country="c:SHN"
+						country="c:SHA"
 						levels=5
 					}
 				}
@@ -1350,7 +1350,7 @@
 				building="building_tea_plantation"
 				add_ownership={
 					country={
-						country="c:SHN"
+						country="c:SHA"
 						levels=2
 					}
 				}
@@ -1361,7 +1361,7 @@
 				building="building_logging_camp"
 				add_ownership={
 					country={
-						country="c:SHN"
+						country="c:SHA"
 						levels=3
 					}
 				}
@@ -2092,12 +2092,12 @@
 		}
 	}
 	s:STATE_JIANGSU = {
-		region_state:SHA = {
+		region_state:NCL = {
 			create_building={
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:SHA"
+						country="c:NCL"
 						levels=1
 					}
 				}
@@ -2108,7 +2108,7 @@
 				building="building_glassworks"
 				add_ownership={
 					country={
-						country="c:SHA"
+						country="c:NCL"
 						levels=1
 					}
 				}
@@ -2119,7 +2119,7 @@
 				building="building_tea_plantation"
 				add_ownership={
 					country={
-						country="c:SHA"
+						country="c:NCL"
 						levels=1
 					}
 				}
@@ -2130,7 +2130,7 @@
 				building="building_rice_farm"
 				add_ownership={
 					country={
-						country="c:SHA"
+						country="c:NCL"
 						levels=1
 					}
 				}
@@ -2266,12 +2266,12 @@
 		}
 	}
 	s:STATE_HENAN = {
-		region_state:SHN = {
+		region_state:AHU = {
 			create_building={
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:SHN"
+						country="c:AHU"
 						levels=1
 					}
 				}
@@ -2282,7 +2282,7 @@
 				building="building_construction_sector"
 				add_ownership={
 					country={
-						country="c:SHN"
+						country="c:AHU"
 						levels=1
 					}
 				}
@@ -2293,7 +2293,7 @@
 				building="building_glassworks"
 				add_ownership={
 					country={
-						country="c:SHN"
+						country="c:AHU"
 						levels=1
 					}
 				}
@@ -2304,7 +2304,7 @@
 				building="building_tea_plantation"
 				add_ownership={
 					country={
-						country="c:SHN"
+						country="c:AHU"
 						levels=1
 					}
 				}
@@ -2314,12 +2314,12 @@
 		}
 	}
 	s:STATE_ZHILI = {
-		region_state:ZHI = {
+		region_state:SHA = {
 			create_building={
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:ZHI"
+						country="c:SHA"
 						levels=1
 					}
 				}
@@ -2330,7 +2330,7 @@
 				building="building_iron_mine"
 				add_ownership={
 					country={
-						country="c:ZHI"
+						country="c:SHA"
 						levels=1
 					}
 				}
@@ -2341,7 +2341,7 @@
 				building="building_paper_mills"
 				add_ownership={
 					country={
-						country="c:ZHI"
+						country="c:SHA"
 						levels=1
 					}
 				}
@@ -2352,7 +2352,7 @@
 				building="building_glassworks"
 				add_ownership={
 					country={
-						country="c:ZHI"
+						country="c:SHA"
 						levels=1
 					}
 				}
@@ -2363,7 +2363,7 @@
 				building="building_wheat_farm"
 				add_ownership={
 					country={
-						country="c:ZHI"
+						country="c:SHA"
 						levels=1
 					}
 				}
@@ -2374,7 +2374,7 @@
 				building="building_tea_plantation"
 				add_ownership={
 					country={
-						country="c:ZHI"
+						country="c:SHA"
 						levels=1
 					}
 				}

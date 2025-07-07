@@ -9,12 +9,14 @@ intervene_in_war = {
 		#Parties are not decentralized
 		NOT = { is_country_type = decentralized }
 		scope:target_country = { NOT = { is_country_type = decentralized } }
+		NOT = { has_truce_with = scope:target_country }
 		
 		#THIS is not a civil war country
 		is_revolutionary = no is_secessionist = no
 		
 		#THIS has independent foreign affairs
 		aggressive_diplomatic_plays_permitted = yes
+		is_ai = no
 		
 		#TARGET is at war, is the war leader, and not at war with THIS
 		scope:target_country = { 

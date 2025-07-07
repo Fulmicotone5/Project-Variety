@@ -311,39 +311,104 @@
 		region_state:BEN = {
 			create_pop = {
 				culture = edo
-				size = 493792
+				size = 253792
 			}
 			create_pop = {
 				culture = ibo
-				size = 312000
+				size = 112000
 			}
 			create_pop = {
 				culture = yoruba
-				size = 231996
+				size = 131996
 			}
 			create_pop = {
 				culture = central_bantu
-				size = 268000
+				size = 168000
 			}
 			create_pop = {
 				culture = tiv
-				size = 186000
+				size = 86000
 			}
 			create_pop = {
 				pop_type = slaves
 				culture = tiv
-				size = 186000
+				size = 86000
+			}
+		}
+		region_state:MU1 = {
+			create_pop = {
+				culture = berber
+				size = 6579
+			}
+			create_pop = {
+				culture = maghrebi
+				size = 2579
+			}
+			create_pop = {
+				culture = edo
+				size = 165792
+			}
+			create_pop = {
+				culture = edo
+				religion = sunni
+				size = 87655
+			}
+			create_pop = {
+				culture = ibo
+				size = 112000
+			}
+			create_pop = {
+				culture = ibo
+				religion = sunni
+				size = 96544
+			}
+			create_pop = {
+				culture = yoruba
+				size = 78966
+			}
+			create_pop = {
+				culture = yoruba
+				religion = sunni
+				size = 24322
+			}
+			create_pop = {
+				culture = central_bantu
+				size = 123000
+			}
+			create_pop = {
+				culture = tiv
+				size = 99856
+			}
+			create_pop = {
+				pop_type = slaves
+				religion = sunni
+				culture = tiv
+				size = 78544
 			}
 		}
 	}
 	s:STATE_YORUBA_STATES = {
-		region_state:OYO = {
+		region_state:MU1 = {
 			create_pop = {
 				culture = yoruba
-				size = 1548008
+				size = 1148008
+			}
+			create_pop = {
+				culture = yoruba
+				religion = sunni
+				size = 424322
+			}
+			create_pop = {
+				culture = berber
+				size = 8008
+			}
+			create_pop = {
+				culture = maghrebi
+				size = 14800
 			}
 			create_pop = {
 				pop_type = slaves
+				religion = sunni
 				culture = fon
 				size = 27996
 			}
@@ -692,7 +757,7 @@
 		}
 	}
 	s:STATE_DAHOMEY = {
-		region_state:DAH = {
+		region_state:MU1 = {
 			create_pop = {
 				culture = fon
 				size = 287988
@@ -1181,45 +1246,14 @@
 				size = 7000
 			}
 		}
-		region_state:GLD = {
+		region_state:MU1 = {
 			create_pop = {
 				culture = somali
-				size = 158000
+				size = 422040
 			}
 			create_pop = {
 				culture = oromo
-				religion = animist
-				size = 12000
-			}
-			create_pop = {
-				culture = east_bantu
-				size = 32000
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = somali
-				size = 8280
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = oromo
-				religion = animist
-				size = 4000
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = east_bantu
-				size = 8000
-			}
-		}
-		region_state:MJT = {
-			create_pop = {
-				culture = somali
-				size = 282040
-			}
-			create_pop = {
-				culture = oromo
-				religion = animist
+				religion = sunni
 				size = 6000
 			}
 			create_pop = {
@@ -1234,13 +1268,21 @@
 			create_pop = {
 				pop_type = slaves
 				culture = oromo
-				religion = animist
+				religion = sunni
 				size = 2000
 			}
 			create_pop = {
 				pop_type = slaves
 				culture = east_bantu
 				size = 4000
+			}
+			create_pop = {
+				culture = berber
+				size = 13369
+			}
+			create_pop = {
+				culture = maghrebi
+				size = 12277
 			}
 		}
 	}
@@ -1555,6 +1597,34 @@
 		}
 	}
 	s:STATE_CONGO = {
+		region_state:MU1 = {
+			create_pop = {
+				culture = bakongo
+				size = 1200
+			}
+			create_pop = {
+				culture = central_bantu
+				size = 1600
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = central_bantu
+				size = 554
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = bakongo
+				size = 300
+			}
+			create_pop = {
+				culture = berber
+				size = 69
+			}
+			create_pop = {
+				culture = maghrebi
+				size = 77
+			}
+		}
 		region_state:AF4 = {
 			create_pop = {
 				culture = bakongo
@@ -2055,14 +2125,47 @@
 		}
 	}
 	s:STATE_LOURENCO_MARQUES = {
-		region_state:NIA = {
+		region_state:MU1 = {
 			create_pop = {
 				culture = nguni
-				size = 66761
+				size = 6761
+			}
+			create_pop = {
+				culture = nguni
+				religion = sunni
+				size = 1761
 			}
 			create_pop = {
 				culture = south_bantu
-				size = 164000
+				size = 64000
+			}
+			create_pop = {
+				culture = south_bantu
+				religion = sunni
+				size = 12000
+			}
+			create_pop = {
+				culture = south_bantu
+				pop_type = slaves
+				size = 400
+			}
+			create_pop = {
+				culture = berber
+				size = 369
+			}
+			create_pop = {
+				culture = maghrebi
+				size = 277
+			}
+		}
+		region_state:NIA = {
+			create_pop = {
+				culture = nguni
+				size = 46761
+			}
+			create_pop = {
+				culture = south_bantu
+				size = 104000
 			}
 			create_pop = {
 				culture = south_bantu

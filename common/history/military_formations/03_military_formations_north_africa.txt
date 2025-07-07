@@ -186,7 +186,7 @@
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_north_africa
-			name = "Marinid Army"
+			name = "Marinid Royal Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_FEZ
@@ -205,6 +205,23 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_ANDALUSIA
+				count = 10
+			}
+		}
+	}
+	c:MU1 ?= {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_niger
+			name = "Company Army"
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_YORUBA_STATES
+				count = 10
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_CEYLON
 				count = 10
 			}
 		}

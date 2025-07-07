@@ -337,7 +337,7 @@ chinese_manchu_queue_hairstyle_pops_trigger = {
 								has_discrimination_trait = han_chinese
 							}
 						}
-						cultural_acceptance_base = { target = cu:manchu value >= acceptance_status_4 }
+						cultural_acceptance_base = { target = cu:manchu value >= 60 }
 					}
 				}
 				culture = cu:manchu

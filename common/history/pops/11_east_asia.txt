@@ -178,7 +178,7 @@
 		}
 	}
 	s:STATE_BEIJING = {
-		region_state:ZHI = {
+		region_state:SHA = {
 			create_pop = {
 				culture = han # nanfaren
 				size = 7197600
@@ -200,7 +200,7 @@
 		}
 	}
 	s:STATE_SHENGJING = {
-		region_state:MCH = {
+		region_state:SHA = {
 			create_pop = {
 				culture = han
 				size = 1091006
@@ -269,7 +269,7 @@
 		}
 	}
 	s:STATE_SHANXI = {
-		region_state:SHN = {
+		region_state:SHA = {
 			create_pop = {
 				culture = han # nanfaren
 				size = 7277592
@@ -435,7 +435,7 @@
 		}
 	}
 	s:STATE_JIANGSU = {
-		region_state:SHA = {
+		region_state:NCL = {
 			create_pop = {
 				culture = han # nanfaren
 				size = 4985904
@@ -451,10 +451,21 @@
 		}
 	}
 	s:STATE_HENAN = {
-		region_state:SHN = {
+		region_state:SHA = {
 			create_pop = {
 				culture = han # nanfaren
-				size = 10338400
+				size = 203922
+			}
+			create_pop = {
+				culture = han # nanfaren
+				religion = jewish
+				size = 1996
+			}
+		}
+		region_state:AHU = {
+			create_pop = {
+				culture = han # nanfaren
+				size = 7338400
 			}
 			create_pop = {
 				culture = han # nanfaren
@@ -464,7 +475,7 @@
 		}
 	}
 	s:STATE_ZHILI = {
-		region_state:ZHI = {
+		region_state:SHA = {
 			create_pop = {
 				culture = han # nanfaren
 				size = 3446940

@@ -36,7 +36,7 @@
 					relations:ROOT >= relations_threshold:amicable
 					is_ai = yes
 				}
-				cultural_acceptance_base = { target = cu:burgundian value >= 50 }
+				cultural_acceptance_base = { target = cu:burgundian value >= 40 }
 			}
 		}
 	}

@@ -63,7 +63,6 @@ law_closed_borders = {
 		country_leverage_resistance_mult = 0.25
 
 		country_authority_add = 150
-		state_birth_rate_mult = 0.05
 		control_bool_20 = yes
 	}
 	

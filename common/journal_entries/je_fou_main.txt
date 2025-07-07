@@ -49,8 +49,8 @@ fou_usa = {
 					relations:ROOT > relations_threshold:cordial
 					is_subject = no
 				}
-				cultural_acceptance_base = { target = cu:swedish_colonial value >= 50 }
-				cultural_acceptance_base = { target = cu:dutch_colonial value >= 50 }
+				cultural_acceptance_base = { target = cu:swedish_colonial value >= 40 }
+				cultural_acceptance_base = { target = cu:dutch_colonial value >= 40 }
 			}
 			AND = {
 				c:AMC = {

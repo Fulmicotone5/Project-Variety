@@ -194,7 +194,7 @@ unincorporated_state = {
 	building_group_bg_government_throughput_add = -0.1
 	building_group_bg_military_throughput_add = -0.1		
 	state_market_access_price_impact = -0.1
-	state_construction_mult = -0.25
+	state_construction_mult = -0.3
 }
 
 treaty_port_state = {

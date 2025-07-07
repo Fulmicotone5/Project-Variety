@@ -40,6 +40,16 @@
 				set_ig_trait = ig_trait:ig_trait_veteran_consultation
 				set_ig_trait = ig_trait:ig_trait_el_buen_jefe
 			}
+			else_if = {
+				limit = {
+					owner = {
+						c:SHA ?= this
+					}
+				}
+				set_ig_trait = ig_trait:ig_trait_newly_created_army
+				set_ig_trait = ig_trait:ig_trait_self_strengthening
+				set_ig_trait = ig_trait:ig_trait_parochial_leadership
+			}
 			else = {
 				set_ig_trait = ig_trait:ig_trait_materiel_waste
 				set_ig_trait = ig_trait:ig_trait_veteran_consultation

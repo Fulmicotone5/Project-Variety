@@ -64,6 +64,7 @@ DEFAULT = {
 					c:VNA ?= this
 					c:NIA ?= this
 					c:NOS ?= this
+					c:OM1 ?= this
 				}
 			}
 		}
@@ -6471,6 +6472,12 @@ OLD = {
 		}
 	}	
 }	
+OM1 = { # Oman
+	flag_definition = {
+		coa = OM1
+		priority = 1
+	}
+}
 
 OMA = { # Oman
 	flag_definition = {
@@ -6998,6 +7005,21 @@ HU1 = {
 		priority = 15
 		trigger = { 
 			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+}
+YUG = { # Yugoslavia
+	flag_definition = {
+		coa = YUG
+		subject_canton = YUG
+		allow_overlord_canton = no
+		priority = 1
+	}
+	flag_definition = {
+		coa = YUG_communist
+		priority = 1500
+		trigger = {
+			coa_def_communist_flag_trigger = yes
 		}
 	}
 }

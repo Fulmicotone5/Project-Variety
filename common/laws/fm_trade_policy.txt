@@ -230,7 +230,7 @@ law_canton_system = {
 			has_discrimination_trait = han_chinese
 		}
 		any_scope_state = {
-			state_region = s:STATE_GUANGDONG
+			state_region = s:STATE_SHANDONG
 			is_largest_state_in_region = yes
 		}
 	}
@@ -241,7 +241,7 @@ law_canton_system = {
 			has_discrimination_trait = han_chinese
 		}
 		any_scope_state = {
-			state_region = s:STATE_GUANGDONG
+			state_region = s:STATE_SHANDONG
 			is_largest_state_in_region = yes
 		}
 	}

@@ -1011,7 +1011,7 @@
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_south_germany
-			name = "Esercito della Serenissima"
+			name = "Infanteria Veneta"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_VENETIA
@@ -1022,7 +1022,7 @@
 		create_military_formation = {
 			type = fleet
 			hq_region = sr:region_south_germany
-			name = "Marina della Serenissima"
+			name = "Armada da Mar"
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
 				state_region = s:STATE_VENETIA

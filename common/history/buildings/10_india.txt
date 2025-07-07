@@ -640,24 +640,24 @@
 		}
 	}
 	s:STATE_GUJARAT={
-		region_state:BER={
+		region_state:OM1={
 			create_building={
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:BER"
-						levels=2
+						country="c:OM1"
+						levels=3
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_organization" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
+				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
 			}
 			create_building={
 				building="building_trade_center"
 				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
 				add_ownership={
 					country={
-						country="c:BER"
+						country="c:OM1"
 						levels=3
 					}
 				}
@@ -668,9 +668,9 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:BER"
-						levels=25
-						region="STATE_BOMBAY"
+						country="c:OM1"
+						levels=20
+						region="STATE_GUJARAT"
 					}
 				}
 				reserves=1
@@ -681,8 +681,8 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:BER"
-						levels=3
+						country="c:OM1"
+						levels=6
 						region="STATE_GUJARAT"
 					}
 				}
@@ -694,7 +694,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:BER"
+						country="c:OM1"
 						levels=2
 						region="STATE_GUJARAT"
 					}
@@ -706,29 +706,18 @@
 				building="building_furniture_manufacturies"
 				add_ownership={
 					country={
-						country="c:BER"
-						levels=2
+						country="c:OM1"
+						levels=1
 					}
 				}
 				reserves=1
 				activate_production_methods={ "pm_handcrafted_furniture"  "pm_automation_disabled" "pm_luxury_furniture" }
 			}
 			create_building={
-				building="building_spice_plantation"
-				add_ownership={
-					country={
-						country="c:BER"
-						levels=1
-					}
-				}
-				reserves=1
-				activate_production_methods={ "default_building_spice_plantation" "pm_road_carts"  }
-			}
-			create_building={
 				building="building_textile_mills"
 				add_ownership={
 					country={
-						country="c:BER"
+						country="c:OM1"
 						levels=2
 					}
 				}
@@ -739,19 +728,19 @@
 				building="building_fishing_wharf"
 				add_ownership={
 					country={
-						country="c:BER"
-						levels=3
+						country="c:OM1"
+						levels=12
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated"  }
+				activate_production_methods={ "pm_fishing_trawlers" "pm_unrefrigerated"  }
 			}
 			create_building={
 				building="building_sugar_plantation"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:BER"
+						country="c:OM1"
 						levels=3
 						region="STATE_GUJARAT"
 					}
@@ -764,7 +753,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:BER"
+						country="c:OM1"
 						levels=2
 						region="STATE_GUJARAT"
 					}
@@ -773,64 +762,53 @@
 				activate_production_methods={ "default_building_tobacco_plantation" "pm_road_carts"  }
 			}
 			create_building={
-				building="building_barracks"
+				building="building_port"
 				add_ownership={
 					country={
-						country="c:BER"
-						levels=20
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_general_training" }
-			}
-		}
-		region_state:KUT={
-			create_building={
-				building="building_fishing_wharf"
-				add_ownership={
-					country={
-						country="c:KUT"
+						country="c:OM1"
 						levels=1
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated"  }
+				activate_production_methods={ "pm_basic_port" }
 			}
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:KUT"
-						levels=1
-						region="STATE_GUJARAT"
+					company = {
+						type=company_OMA
+						country="c:OMA"
+						levels=5
 					}
 				}
 				reserves=1
 				activate_production_methods={ "pm_open_air_stockyards" "pm_simple_ranch" "pm_standard_fences" "pm_unrefrigerated"  }
 			}
 			create_building={
-				building="building_spice_plantation"
+				building="building_opium_plantation"
 				add_ownership={
-					country={
-						country="c:KUT"
+					company = {
+						type=company_OMA
+						country="c:OMA"
+						levels=5
+					}
+				}
+				reserves=1
+				activate_production_methods={ "default_building_opium_plantation" "pm_road_carts" }
+			}
+			create_building={
+				building="building_spice_plantation"
+					add_ownership={
+					company = {
+						type=company_OMA
+						country="c:OMA"
 						levels=1
 					}
 				}
 				reserves=1
 				activate_production_methods={ "default_building_spice_plantation" "pm_road_carts"  }
 			}
-			create_building={
-				building="building_barracks"
-				add_ownership={
-					country={
-						country="c:KUT"
-						levels=5
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_general_training" }
-			}
+
 		}
 	}
 	s:STATE_MALWA={
@@ -1901,12 +1879,12 @@
 		}
 	}
 	s:STATE_CEYLON = {
-		region_state:TRA = {
+		region_state:MU1 = {
 			create_building={
 				building="building_fishing_wharf"
 				add_ownership={
 					country={
-						country="c:TRA"
+						country="c:MU1"
 						levels=1
 					}
 				}
@@ -1918,7 +1896,7 @@
 				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
 				add_ownership={
 					country={
-						country="c:TRA"
+						country="c:MU1"
 						levels=3
 					}
 				}
@@ -1927,9 +1905,10 @@
 			create_building={
 				building="building_spice_plantation"
 				add_ownership={
-					country={
-						country="c:TRA"
-						levels=4
+					company = {
+						type=company_MAR
+						country="c:MUR"
+						levels=5
 					}
 				}
 				reserves=1
@@ -1939,7 +1918,7 @@
 				building="building_tea_plantation"
 				add_ownership={
 					country={
-						country="c:TRA"
+						country="c:MU1"
 						levels=1
 					}
 				}
@@ -1950,7 +1929,7 @@
 				building="building_tobacco_plantation"
 				add_ownership={
 					country={
-						country="c:TRA"
+						country="c:MU1"
 						levels=1
 					}
 				}
@@ -1961,7 +1940,7 @@
 				building="building_coffee_plantation"
 				add_ownership={
 					country={
-						country="c:TRA"
+						country="c:MU1"
 						levels=1
 					}
 				}
@@ -1972,7 +1951,7 @@
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:TRA"
+						country="c:MU1"
 						levels=1
 					}
 				}
@@ -2330,6 +2309,17 @@
 				}
 				reserves=1
 				activate_production_methods={ "default_building_tea_plantation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:TRA"
+						levels=3
+					}
+				}
+				reserves=1
 			}
 			create_building={
 				building="building_barracks"

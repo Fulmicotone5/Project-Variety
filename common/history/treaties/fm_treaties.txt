@@ -352,7 +352,7 @@ TREATIES = {
 	}
 	create_treaty = {
 		first_country = c:VEN
-		second_country = c:ZHI
+		second_country = c:SHA
 
 		is_draft = no
 		entered_into_force_on = 1765.1.1
@@ -361,17 +361,22 @@ TREATIES = {
 		articles_to_create = {
 			{
 				article = treaty_port
-				source_country = c:ZHI
+				source_country = c:SHA
 				target_country = c:VEN
 				inputs = {
-					{ state = s:STATE_BEIJING.region_state:ZHI }
+					{ state = s:STATE_BEIJING.region_state:SHA }
 				}
 			}
 			{ 
 					article = military_assistance
 					source_country = c:VEN
-					target_country = c:ZHI
+					target_country = c:SHA
 				}
+				{
+					article = guarantee_independence
+				source_country = c:VEN
+				target_country = c:SHA
+			}
 		}
 	}
 }

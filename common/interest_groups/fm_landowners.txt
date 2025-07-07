@@ -36,6 +36,16 @@
 				set_ig_trait = ig_trait:ig_trait_the_velvet_book
 				set_ig_trait = ig_trait:ig_trait_bad_boyars
 			}
+			else_if = {
+				limit = {
+					c:SHA ?= this
+				}
+				ig:ig_landowners = {
+					set_interest_group_name = ig_scholar_officials
+					remove_ideology = ideology_paternalistic
+					add_ideology = ideology_scholar_paternalistic
+				}
+			}
 			else = {
 				set_ig_trait = ig_trait:ig_trait_noble_privileges
 				set_ig_trait = ig_trait:ig_trait_family_ties

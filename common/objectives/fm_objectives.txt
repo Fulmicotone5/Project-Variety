@@ -25,7 +25,7 @@ objective_crumbling = {
 	enabled_background = "gfx/interface/icons/objectives/crumbling_po.dds"
 	icon = "gfx/interface/icons/invention_icons/romanticism.dds"
 	
-	recommended_tags = { KOR ODU SAU YAG TAC SIA BUR YUE }	
+	recommended_tags = { KOR ODU SAU YAG TAC SIA BUR SHA }	
 
 }
 
@@ -33,6 +33,6 @@ objective_colonial = {
 	enabled_background = "gfx/interface/icons/objectives/col_po.dds"
 	icon = "gfx/interface/icons/objectives/economic_dominance.dds"
 	
-	recommended_tags = { NED PUR VEN DKE }
+	recommended_tags = { NED PUR VEN DKE MUR OMA}
 	
 }

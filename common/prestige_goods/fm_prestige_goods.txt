@@ -1,0 +1,55 @@
+prestige_good_loud_car = {
+	base_good = automobiles
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/turin_automobiles_prestige.dds"
+}
+prestige_carsugar = {
+	base_good = sugar
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/carsugar.dds"
+}
+prestige_good_spice = {
+	base_good = spice
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/dalchini.dds"
+}
+prestige_good_pilsner = {
+	base_good = liquor
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/pilsner.dds"
+}
+prestige_good_gay = {
+	base_good = liquor
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/gayrum.dds"
+}
+prestige_good_zporcelain = {
+	base_good = glass
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/zporcelain.dds"
+}
+prestige_good_teasugar = {
+	base_good = sugar
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/teasugar.dds"
+}
+prestige_good_galeazza = {
+	base_good = manowars
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/galeazza.dds"
+}
+prestige_good_psashimi = {
+	base_good = fish
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/psashimi.dds"
+}
+prestige_good_kobe = {
+	base_good = meat
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/kobe.dds"
+}
+prestige_good_lightbulb = {
+	base_good = telephones
+	prestige_bonus = 0.1
+	texture = "gfx/interface\icons\goods_icons\unused\lightbulbs.dds"
+}

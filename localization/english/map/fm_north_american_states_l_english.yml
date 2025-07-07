@@ -65,4 +65,6 @@
  STATE_AREQUIPA: "Ari Quepay"
  STATE_ICA: "Ika"
  STATE_LIMA: "Limaq"
-STATE_SANTA_CRUZ: "Santa Croce"
+ STATE_SANTA_CRUZ: "Santa Croce"
+
+ STATE_BOSNIA: "Illyria"

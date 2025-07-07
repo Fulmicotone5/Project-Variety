@@ -335,7 +335,7 @@
 		region_state:NOV = {
 			create_pop = {
 				culture = russian
-				size = 982176
+				size = 782176
 			}
 			create_pop = {
 				culture = finnish
@@ -385,7 +385,7 @@
 			}
 			create_pop = {
 				culture = byelorussian
-				size = 1907700
+				size = 1007700
 			}
 			create_pop = {
 				culture = ukrainian
@@ -466,7 +466,7 @@
 		region_state:COH = {
 			create_pop = {
 				culture = ukrainian
-				size = 3210320
+				size = 2010320
 			}
 			create_pop = {
 				culture = ashkenazi
@@ -592,7 +592,7 @@
 		region_state:BYE = {
 			create_pop = {
 				culture = ukrainian
-				size = 949520
+				size = 549520
 			}
 			create_pop = {
 				culture = ashkenazi
@@ -600,7 +600,7 @@
 			}
 			create_pop = {
 				culture = byelorussian
-				size = 394380
+				size = 494380
 			}
 		}
 	}
@@ -608,7 +608,7 @@
 		region_state:CRI = {
 			create_pop = {
 				culture = ukrainian
-				size = 1072404
+				size = 572404
 			}
 			create_pop = {
 				culture = tatar
@@ -616,7 +616,7 @@
 			}
 			create_pop = {
 				culture = russian
-				size = 270677
+				size = 70677
 			}
 			create_pop = {
 				culture = ashkenazi
@@ -744,7 +744,7 @@
 		region_state:SMO = {
 			create_pop = {
 				culture = russian
-				size = 2005300
+				size = 805300
 			}
 
 		}
@@ -753,7 +753,7 @@
 		region_state:SMO = {
 			create_pop = {
 				culture = russian
-				size = 1235720
+				size = 535720
 			}
 			create_pop = {
 				culture = polish
@@ -765,7 +765,7 @@
 		region_state:STR = {
 			create_pop = {
 				culture = russian
-				size = 2383492
+				size = 1383492
 			}
 		}
 	}
@@ -793,7 +793,7 @@
 			}
 			create_pop = {
 				culture = russian
-				size = 964834
+				size = 664834
 			}
 		}
 	}
@@ -801,7 +801,7 @@
 		region_state:KAR = {
 			create_pop = {
 				culture = russian
-				size = 1632715
+				size = 1032715
 			}
 		}
 	}
@@ -809,7 +809,7 @@
 		region_state:KAR = {
 			create_pop = {
 				culture = russian
-				size = 873968
+				size = 573968
 			}
 		}
 	}
@@ -817,7 +817,7 @@
 		region_state:DPR = {
 			create_pop = {
 				culture = russian
-				size = 1215648
+				size = 615648
 			}
 		}
 	}
@@ -825,7 +825,7 @@
 		region_state:DPR = {
 			create_pop = {
 				culture = russian
-				size = 937400
+				size = 737400
 			}
 		}
 	}
@@ -845,7 +845,7 @@
 		region_state:DPR = {
 			create_pop = {
 				culture = russian
-				size = 1603944
+				size = 1003944
 			}
 		}
 	}

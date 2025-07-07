@@ -118,7 +118,7 @@ pm_apple_orchards = {
 		workforce_scaled = {
 			goods_output_grain_add = -10
 			goods_output_fruit_add = 5
-			goods_output_sugar_add = 5
+			goods_output_sugar_add = 1
 		}
 	}
 }
@@ -224,7 +224,7 @@ pm_citrus_orchards = {
 		workforce_scaled = {
 			goods_output_grain_add = -10
 			goods_output_fruit_add = 5
-			goods_output_sugar_add = 5
+			goods_output_sugar_add = 1
 		}
 	}
 }
@@ -321,7 +321,7 @@ pm_fig_orchards_building_rice_farm = {
 		workforce_scaled = {
 			goods_output_grain_add = -30
 			goods_output_fruit_add = 12
-			goods_output_sugar_add = 18
+			goods_output_sugar_add = 5
 		}
 	}
 }
@@ -373,7 +373,7 @@ pm_fig_orchards = {
 		workforce_scaled = {
 			goods_output_grain_add = -10
 			goods_output_fruit_add = 5
-			goods_output_sugar_add = 5
+			goods_output_sugar_add = 1
 		}
 	}
 }						

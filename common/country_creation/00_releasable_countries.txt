@@ -1309,6 +1309,17 @@ SER = {
 	ai_will_do = { always = no }
 }
 
+YUG = {
+	use_culture_states = yes
+
+	required_num_states = 3
+
+	possible = {
+		has_technology_researched = nationalism
+	}
+
+	ai_will_do = { always = no }
+}
 
 ABU = {
 	states = {

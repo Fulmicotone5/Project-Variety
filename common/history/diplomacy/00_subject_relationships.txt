@@ -204,6 +204,18 @@
 			type = protectorate
 		}
 	}
+	c:OMA = {
+		create_diplomatic_pact = {
+			country = c:OM1
+			type = chartered_company
+		}
+	}
+	c:MUR = {
+		create_diplomatic_pact = {
+			country = c:MU1
+			type = chartered_company
+		}
+	}
 	c:SCU = {
 		create_diplomatic_pact = {
 			country = c:NOS

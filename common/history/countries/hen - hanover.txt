@@ -1,26 +1,19 @@
 ﻿COUNTRIES = {
 	c:HEN = {
-		effect_starting_technology_tier_2_tech = yes
+		effect_starting_technology_tier_1_tech = yes
 
 		effect_starting_politics_liberal = yes
-
-		add_technology_researched = intensive_agriculture
-		add_technology_researched = atmospheric_engine
-		add_technology_researched = mechanical_tools
-		add_technology_researched = dialectics
-		add_technology_researched = central_archives
-		add_technology_researched = central_banking
-		add_technology_researched = general_staff
-		add_technology_researched = percussion_cap
-		add_technology_researched = nitroglycerin
+		
+		add_technology_researched = labor_movement 
+		add_technology_researched = joint_stock_companies
 		add_technology_researched = hydraulic_logging_systems
 		add_technology_researched = cornish_beam_pumping_systems
 
 
 		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
 		activate_law = law_type:law_freedom_of_conscience
 		activate_law = law_type:law_per_capita_based_taxation
-		activate_law = law_type:law_wealth_voting
 		activate_law = law_type:law_religious_schools
 		activate_law = law_type:law_national_supremacy
 		activate_law = law_type:law_mercantilism

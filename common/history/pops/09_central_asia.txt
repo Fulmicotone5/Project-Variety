@@ -155,7 +155,7 @@
 		region_state:POC = {
 			create_pop = {
 				culture = russian
-				size = 1870657
+				size = 1270657
 			}
 			create_pop = {
 				culture = kazak
@@ -167,7 +167,7 @@
 		region_state:KAR = {
 			create_pop = {
 				culture = russian
-				size = 1962676
+				size = 1562676
 			}
 		}
 	}
@@ -175,7 +175,7 @@
 		region_state:STR = {
 			create_pop = {
 				culture = russian
-				size = 1999377
+				size = 999377
 			}
 		}
 	}

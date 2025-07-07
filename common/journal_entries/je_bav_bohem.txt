@@ -22,7 +22,7 @@ je_disf_king = {
 	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
 	group = je_group_historical_content
 	complete = {
-		cultural_acceptance_base = { target = cu:south_german value >= 50 }
+		cultural_acceptance_base = { target = cu:south_german value >= 40 }
 		OR = {
 			has_law = law_type:law_freedom_of_conscience
 			has_law = law_type:law_total_separation
@@ -190,7 +190,7 @@ je_boh_dan = {
 			has_law = law_type:law_freedom_of_conscience
 			has_law = law_type:law_total_separation
 		}
-		cultural_acceptance_base = { target = cu:south_german value >= 50 }
+		cultural_acceptance_base = { target = cu:south_german value >= 40 }
 		has_technology_researched = pan-nationalism
 	}
 	fail = {

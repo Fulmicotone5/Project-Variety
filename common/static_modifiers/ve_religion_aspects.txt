@@ -862,7 +862,7 @@ na_native_american_spirituality_aspect_7_mdf = {
 na_native_american_spirituality_aspect_8_mdf = {
 	icon = gfx/interface/catholic.dds
 	interest_group_in_opposition_approval_add = 5
-	state_birth_rate_mult = 0.08
+	state_birth_rate_mult = 0.06
 }
 
 #Missionary

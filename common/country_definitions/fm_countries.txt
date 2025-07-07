@@ -1623,10 +1623,19 @@ IL1 = {
 
 	tier = empire
 	
-	capital = STATE_NORTHERN_SERBIA 
+	capital = STATE_BOSNIA
 	cultures = { serb croat slovene albanian }
 }
+YUG = {
+	color = { 37 128 174 }
 
+	country_type = recognized
+
+	tier = empire
+
+	capital = STATE_NORTHERN_SERBIA
+	cultures = { serb croat slovene }
+}
 ABU = {
 	color = { 113  112  96 }
 	
@@ -2767,6 +2776,17 @@ NOS = {
 	
 	capital = STATE_PANAMA
 	cultures = { central_american }
+}
+OM1 = {
+	color = { 127 110 133 }
+	
+	country_type = colonial
+	
+	tier = kingdom
+	
+	capital = STATE_GUJARAT
+	religion = zoroastrian
+	cultures = { bedouin }
 }
 
 
@@ -3909,6 +3929,16 @@ ORN = { # Orinoco
 	cultures = { cariban }
 	
 	capital = STATE_MIRANDA
+}
+MU1 = {
+	color = { 3 138 27 }
+	
+	country_type = colonial
+	
+	tier = principality
+	
+	cultures = { berber maghrebi }
+	capital = STATE_YORUBA_STATES
 }
 
 MUR = {

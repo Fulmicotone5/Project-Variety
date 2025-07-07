@@ -53,9 +53,6 @@ fm_foreign_affairs2 = {
 		add_modifier = {
 			name = fm_fa2
 		}
-		custom_tooltip = {
-			text = tradeagreementmax
-		}
 	}
 }
 fm_foreign_affairs3 = {

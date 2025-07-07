@@ -247,19 +247,20 @@
 		}
 	}
 	s:STATE_GUJARAT = {
-		region_state:BER = {
+		region_state:OM1 = {
 			create_pop = {
 				culture = gujarati
-				size = 6634412
+				size = 5634412
 			}
 			create_pop = {
 				culture = gujarati
-				religion = animist
-				size = 81200
+				religion = zoroastrian
+				size = 812000
 			}
 			create_pop = {
-				culture = british
-				size = 32
+				culture = bedouin
+				religion = zoroastrian
+				size = 52199
 			}
 			create_pop = {
 				culture = sindi
@@ -273,7 +274,7 @@
 			create_pop = {
 				pop_type = slaves
 				culture = gujarati
-				religion = animist
+				religion = zoroastrian
 				size = 6000
 			}
 			create_pop = {
@@ -282,24 +283,20 @@
 				size = 30088
 			}
 		}
-		region_state:KUT = {
-			create_pop = {
-				culture = gujarati
-				size = 200208
-			}
+		region_state:SIN = {
 			create_pop = {
 				culture = sindi
-				size = 26200
+				size = 6200
 			}
 			create_pop = {
 				pop_type = slaves
 				culture = gujarati
-				size = 20000
+				size = 200
 			}
 			create_pop = {
 				pop_type = slaves
 				culture = sindi
-				size = 2200
+				size = 20
 			}
 		}
 	}
@@ -758,10 +755,6 @@
 				size = 461052
 			}
 			create_pop = {
-				culture = british
-				size = 48
-			}
-			create_pop = {
 				pop_type = slaves
 				culture = rajput
 				size = 22000
@@ -774,14 +767,14 @@
 		}
 	}
 	s:STATE_CEYLON = {
-		region_state:TRA = {
+		region_state:MU1 = {
 			create_pop = {
 				culture = sinhala
-				size = 449208
+				size = 849208
 			}
 			create_pop = {
 				culture = east_bantu
-				religion = catholic
+				religion = sunni
 				size = 700
 			}
 			create_pop = {
@@ -796,21 +789,11 @@
 			create_pop = {
 				culture = sinhala
 				religion = sunni
-				size = 24000
+				size = 64000
 			}
 			create_pop = {
 				culture = malay
 				size = 16400
-			}
-			create_pop = {
-				culture = sinhala
-				religion = catholic
-				size = 36200
-			}
-			create_pop = {
-				culture = sinhala
-				religion = protestant
-				size = 12000
 			}
 		}
 	}

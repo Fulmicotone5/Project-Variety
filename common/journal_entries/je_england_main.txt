@@ -52,7 +52,7 @@ je_actuni = {
 		c:IRE = {
 			relations:ROOT > relations_threshold:amicable
 		}
-		cultural_acceptance_base = { target = cu:irish value >= 50 }
+		cultural_acceptance_base = { target = cu:irish value >= 40 }
 		has_technology_researched = pan-nationalism
 	}
 	on_complete = {
@@ -178,7 +178,7 @@ je_french_int = {
 	icon = "gfx/interface/icons/event_icons/event_protest.dds"
 	group = je_group_historical_content
 	complete = {
-		cultural_acceptance_base = { target = cu:french value >= 50 }
+		cultural_acceptance_base = { target = cu:french value >= 40 }
 		OR = {
 			has_law = law_type:law_freedom_of_conscience
 			has_law = law_type:law_total_separation

@@ -15576,6 +15576,18 @@ MON_absolute_monarchy = {
 		instance = { scale = { 0.2 0.2 } position = { 0.54 0.585 } }	
 	}		
 }
+MU1 = { # Morocco
+	# Adopted 1915
+	
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	color2 = "blue"
+
+	textured_emblem = {
+		texture = "marinidco.dds"
+		instance = { scale = { 0.5 0.75 } position = { 0.5 0.48 } }
+	}	
+}
 
 MUR = { # Morocco
 	# Adopted 1915
@@ -18278,6 +18290,20 @@ OLD_subject = {
 		texture = "te_crown_cut.dds"
 		instance = { scale = { 0.3 0.3 } position = { 0.75 0.315 } }
 	}		
+}
+OM1 = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	colored_emblem = {
+		texture = "ce_bicolor_right.dds"
+		color1 = "orange"
+		color2 = "orange"
+		instance = { scale = { 1.5 1.5 } position = { 0.35 0.5 } }
+	}
+	textured_emblem = {
+		texture = "omancom.dds"
+		instance = { scale = { 0.65 0.75 } position = { 0.35 0.5 } }
+	}
 }
 	
 OMA = {

@@ -57,7 +57,7 @@ intellectual_nation_mdf_4 = {
 
 intellectual_nation_mdf_5 = {
 	icon = gfx/interface/monarch_cultures_icon.dds
-	country_infamy_decay_mult = 0.2
+	country_infamy_decay_mult = 0.25
 }
 
 intellectual_nation_mdf_6 = {

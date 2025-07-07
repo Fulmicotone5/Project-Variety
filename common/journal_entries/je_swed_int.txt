@@ -3,7 +3,7 @@
 	group = je_group_historical_content
 
 	complete = {
-		cultural_acceptance_base = { target = cu:dutch_colonial value >= 70 }
+		cultural_acceptance_base = { target = cu:dutch_colonial value >= 60 }
 	}
 	on_complete = {
 		add_primary_culture = cu:dutch_colonial

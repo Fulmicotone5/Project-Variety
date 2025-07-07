@@ -24,7 +24,7 @@
 		remove_modifier = modifier_eastrome_one
 	}
 	complete = {
-		cultural_acceptance_base = { target = cu:greek value >= 70 }
+		cultural_acceptance_base = { target = cu:greek value >= 60 }
 		NOT = {
 			has_law = law_type:law_serfdom
 		}
