@@ -109,8 +109,7 @@ je_boh_mor = {
 			}
 		}
 		add_primary_culture = cu:moravian
-		add_primary_culture = cu:slovak
-		add_primary_culture = cu:sorb
+		remove_primary_culture = cu:czech
 		hidden_effect = {
 			s:STATE_BOHEMIA = {
 				remove_homeland = cu:south_german

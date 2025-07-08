@@ -1053,7 +1053,7 @@ AAN = {
 	
 	tier = empire
 	
-	cultures = { maghrebi berber andalusian spanish }
+	cultures = { maghrebi berber andalusian }
 	religion = sunni
 	capital = STATE_GRANADA
 }
@@ -1323,7 +1323,7 @@ GRM = {
 
 	tier = kingdom
 	
-	cultures = { moravian czech slovak sorb }	
+	cultures = { moravian }	
 	capital = STATE_BOHEMIA
 }
 
@@ -3948,7 +3948,7 @@ MUR = {
 	
 	tier = kingdom
 	
-	cultures = { berber maghrebi }
+	cultures = { berber maghrebi andalusian }
 	capital = STATE_FEZ
 }
 

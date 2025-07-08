@@ -6075,14 +6075,13 @@ STATES = {
 	}
 	s:STATE_GREATER_CAUCASUS = {
 		create_state = {
-			country = c:GEO
+			country = c:ARM
 			owned_provinces = { x3537D5 xFB53B8 x9BC69B x74A861 xC27075 xD62036 xC0CF80 xFB38B0 xD15CBD xF0E0DF x4A4DF9 xD65AC8 x85DCE4 xD1A8AF x801000 xC9B445 x011141 x73A639 x40D001 }
 		}
 		
 		add_homeland = cu:georgian
 		
-		add_claim = c:ARM
-		}
+
 	s:STATE_MONTENEGRO = {
 		create_state = {
 			country = c:IL1
@@ -6195,13 +6194,10 @@ STATES = {
 		add_claim = c:ARM
 	}
 	s:STATE_KARS = {
-		create_state = {
-			country = c:GEO
-			owned_provinces = { x009000 x8A9689 x809001 }
-		}
+
 		create_state = {
 			country = c:ARM
-			owned_provinces = { x467F92 xB8481F x327755 xC09080 }
+			owned_provinces = { x467F92 xB8481F x327755 xC09080  x009000 x8A9689 x809001 }
 		}
 
 		add_homeland = cu:armenian

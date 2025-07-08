@@ -1139,6 +1139,7 @@ company_EIC1 = {
 	}
 
 	possible = {
+		has_technology_researched = civilizing_mission
 		OR = {
 			has_law = law_type:law_mercantilism
 			has_law = law_type:law_protectionism

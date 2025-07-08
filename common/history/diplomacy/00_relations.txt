@@ -1,10 +1,7 @@
 ﻿DIPLOMACY = {
 	c:AZB ?= {
 		set_relations = { country = c:TOR value = -80 }
-		set_relations = { country = c:GEO value = -50 }
-	}
-	c:ARM ?= {
-		set_relations = { country = c:TOR value = -10 }
+		set_relations = { country = c:ARM value = -50 }
 	}
 	c:GEO ?= {
 		set_relations = { country = c:TOR value = -80 }

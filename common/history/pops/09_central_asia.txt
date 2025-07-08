@@ -106,7 +106,7 @@
 		}
 	}
 	s:STATE_GREATER_CAUCASUS = { #Tbilsi - and DONE
-		region_state:GEO = {
+		region_state:ARM = {
 			create_pop = {
 				culture = georgian
 				size = 832950

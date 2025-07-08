@@ -1969,12 +1969,12 @@
 		}
 	}
 	s:STATE_KARS = {
-		region_state:GEO = {
+		region_state:ARM = {
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
 					country={
-						country="c:GEO"
+						country="c:ARM"
 						levels=1
 					}
 				}
@@ -1985,7 +1985,7 @@
 				building="building_barracks"
 				add_ownership={
 					country={
-						country="c:GEO"
+						country="c:ARM"
 						levels=15
 					}
 				}
@@ -1996,7 +1996,7 @@
 				building="building_tea_plantation"
 				add_ownership={
 					country={
-						country="c:GEO"
+						country="c:ARM"
 						levels=1
 					}
 				}
@@ -2007,15 +2007,13 @@
 				building="building_wheat_farm"
 				add_ownership={
 					country={
-						country="c:GEO"
+						country="c:ARM"
 						levels=1
 					}
 				}
 				reserves=1
 				activate_production_methods={ "pm_simple_farming" "pm_citrus_orchards" "pm_tools_disabled" }
 			}
-		}
-		region_state:ARM = {
 		}
 	}
 	s:STATE_ANKARA = {

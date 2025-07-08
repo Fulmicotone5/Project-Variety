@@ -182,6 +182,47 @@
 			}
 		}
 	}
+	s:STATE_GREATER_CAUCASUS={
+		region_state:ARM={
+			create_building={
+				building="building_textile_mills"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:ARM"
+						levels=1
+						region="STATE_GREATER_CAUCASUS"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_handsewn_clothes"  "pm_traditional_looms" "pm_no_luxury_clothes" }
+			}
+			create_building={
+				building="building_port"
+				add_ownership={
+					country={
+						country="c:ARM"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_anchorage" }
+			}
+			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:ARM"
+						levels=1
+						region="STATE_ARMENIA"
+					}
+				}
+				reserves=1
+			}
+		}
+	}
 	s:STATE_SAMARA={
 		region_state:POC={
 			create_building={

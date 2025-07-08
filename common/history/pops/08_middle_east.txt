@@ -1381,7 +1381,7 @@
 		}
 	}
 	s:STATE_KARS = {
-		region_state:GEO = {
+		region_state:ARM = {
 			create_pop = {
 				culture = turkish
 				size = 1000
@@ -1399,11 +1399,11 @@
 			create_pop = {
 				culture = kurdish
 				religion = sunni
-				size = 15000
+				size = 23000
 			}
 			create_pop = {
 				culture = armenian
-				size = 8500
+				size = 106000
 			}
 			create_pop = {
 				culture = greek
@@ -1420,21 +1420,7 @@
 				size = 1400
 			}
 		}
-		region_state:ARM = {
-			create_pop = {
-				culture = azerbaijani
-				size = 3000
-			}
-			create_pop = {
-				culture = kurdish
-				religion = sunni
-				size = 7000
-			}
-			create_pop = {
-				culture = armenian
-				size = 94000
-			}
-		}
+
 	}
 	s:STATE_ANKARA = {
 		region_state:TOR = {
