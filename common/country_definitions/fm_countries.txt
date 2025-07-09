@@ -1624,7 +1624,8 @@ IL1 = {
 	tier = empire
 	
 	capital = STATE_BOSNIA
-	cultures = { serb croat slovene albanian }
+	cultures = { croat serb slovene albanian }
+	religion = catholic
 }
 YUG = {
 	color = { 37 128 174 }

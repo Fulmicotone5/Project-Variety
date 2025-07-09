@@ -2900,45 +2900,6 @@
         }
     }
 
-    european_ruler_republic_pb_military_clothes = {
-        dna_modifiers = {
-            accessory = {
-                mode = add
-                gene = coats
-                template = european_coats
-                range = { 0 1 } # For the randomness to work correctly
-            }
-            accessory = {
-                mode = add
-                gene = legwear
-                template = european_legwear
-                range = { 0 1 } # For the randomness to work correctly
-            }
-        }
-        weight = {
-            base = 0
-            modifier = {
-                add = 10000
-                exists = scope:character
-                scope:character = {
-                    is_female = no
-
-                    owner ?= {
-                        is_in_power_bloc = yes
-                        power_bloc ?= {
-                            has_identity = identity:identity_military_treaty_organization
-                        }
-                    }
-                }
-                OR = {
-                    european_clothes_trigger = yes
-                    african_diaspora_clothes_trigger = yes
-                }
-                ruler_clothes_trigger = yes
-                republic_clothes_trigger = yes
-            }
-        }
-    }
 
     european_ruler_republic_clothes_female = {
         dna_modifiers = {

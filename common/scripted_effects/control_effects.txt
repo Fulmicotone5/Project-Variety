@@ -1,20 +1,34 @@
 control_effects = {
 			remove_variable = control_var
-			set_variable = {
-			name = control_var
-			value = 10
+			custom_tooltip = {
+				text = fmbasecontrol
+				set_variable = {
+				name = control_var
+				value = 10
+				}
 			}
-			      if = {
+			if = {
 				limit = {
-					or = {
-						has_law = law_type:law_autocracy
-						has_law = law_type:law_single_party_state
-
-					}
+					has_law = law_type:law_autocracy
 				}
 				change_variable = {
 					name = control_var
 					add = 15
+				}
+				custom_tooltip = {
+					text = fmlaw1
+				}
+			}
+			if = {
+				limit = {
+					has_law = law_type:law_single_party_state
+				}
+				change_variable = {
+					name = control_var
+					add = 15
+				}
+				custom_tooltip = {
+					text = fmlaw111
 				}
 			}
 			if = {
@@ -25,6 +39,9 @@ control_effects = {
 					name = control_var
 					add = 10
 				}
+				custom_tooltip = {
+					text = fmlaw2
+				}
 			}
 			if = {
 				limit = {
@@ -33,6 +50,9 @@ control_effects = {
 				change_variable = {
 					name = control_var
 					add = 5
+				}
+				custom_tooltip = {
+					text = fmlaw3
 				}
 			}
 			if = {
@@ -43,6 +63,9 @@ control_effects = {
 					name = control_var
 					add = -10
 				}
+				custom_tooltip = {
+					text = fmlaw4
+				}
 			}
 			if = {
 				limit = {
@@ -51,6 +74,9 @@ control_effects = {
 				change_variable = {
 					name = control_var
 					add = 15
+				}
+				custom_tooltip = {
+					text = fmlaw5
 				}
 			}
 			if = {
@@ -61,6 +87,9 @@ control_effects = {
 					name = control_var
 					add = 5
 				}
+				custom_tooltip = {
+					text = fmlaw6
+				}
 			}
 			if = {
 				limit = {
@@ -70,6 +99,9 @@ control_effects = {
 					name = control_var
 					add = 10
 				}
+				custom_tooltip = {
+					text = fmlaw7
+				}
 			}
 			if = {
 				limit = {
@@ -78,6 +110,9 @@ control_effects = {
 				change_variable = {
 					name = control_var
 					add = 5
+				}
+				custom_tooltip = {
+					text = fmlaw8
 				}
 			}
 			if = {
@@ -89,6 +124,9 @@ control_effects = {
 					name = control_var
 					add = -5
 				}
+				custom_tooltip = {
+					text = fmpop1
+				}
 			}
 			if = {
 				limit = {
@@ -98,6 +136,9 @@ control_effects = {
 				change_variable = {
 					name = control_var
 					add = -10
+				}
+				custom_tooltip = {
+					text = fmpop2
 				}
 			}
 			if = {
@@ -109,6 +150,9 @@ control_effects = {
 					name = control_var
 					add = -15
 				}
+				custom_tooltip = {
+					text = fmpop3
+				}
 			}
 			if = {
 				limit = {
@@ -119,6 +163,9 @@ control_effects = {
 					name = control_var
 					add = -20
 				}
+				custom_tooltip = {
+					text = fmpop4
+				}
 			}
 			if = {
 				limit = {
@@ -127,6 +174,9 @@ control_effects = {
 				change_variable = {
 					name = control_var
 					add = -25
+				}
+				custom_tooltip = {
+					text = fmpop5
 				}
 			}
 			if = {
@@ -143,6 +193,9 @@ control_effects = {
 					name = control_var
 					add = 3
 				}
+				custom_tooltip = {
+					text = fmhome1
+				}
 			}
 			if = {
 				limit = {
@@ -157,6 +210,9 @@ control_effects = {
 				change_variable = {
 					name = control_var
 					add = 5
+				}
+				custom_tooltip = {
+					text = fmhome2
 				}
 			}
 			if = {
@@ -173,6 +229,9 @@ control_effects = {
 					name = control_var
 					add = 7
 				}
+				custom_tooltip = {
+					text = fmhome3
+				}
 			}
 			if = {
 				limit = {
@@ -187,6 +246,9 @@ control_effects = {
 				change_variable = {
 					name = control_var
 					add = 11
+				}
+				custom_tooltip = {
+					text = fmhome4
 				}
 			}
 			if = {
@@ -203,6 +265,9 @@ control_effects = {
 					name = control_var
 					add = 15
 				}
+				custom_tooltip = {
+					text = fmhome5
+				}
 			}
 			if = {
 				limit = {
@@ -217,6 +282,9 @@ control_effects = {
 				change_variable = {
 					name = control_var
 					add = 3
+				}
+				custom_tooltip = {
+					text = fmhome6
 				}
 			}
 			if = {
@@ -233,6 +301,9 @@ control_effects = {
 					name = control_var
 					add = 7
 				}
+				custom_tooltip = {
+					text = fmhome7
+				}
 			}
 			if = {
 				limit = {
@@ -248,6 +319,9 @@ control_effects = {
 					name = control_var
 					add = 11
 				}
+				custom_tooltip = {
+					text = fmhome8
+				}
 			}
 			if = {
 				limit = {
@@ -262,6 +336,9 @@ control_effects = {
 				change_variable = {
 					name = control_var
 					add = 15
+				}
+				custom_tooltip = {
+					text = fmhome9
 				}
 			}
 			if = {
@@ -277,6 +354,9 @@ control_effects = {
 				change_variable = {
 					name = control_var
 					add = 20
+				}
+				custom_tooltip = {
+					text = fmhome10
 				}
 			}
 			#POLICE
@@ -294,6 +374,9 @@ control_effects = {
 					name = control_var
 					add = 3
 				}
+				custom_tooltip = {
+					text = fmpolice1
+				}
 			}
 			if = {
 				limit = {
@@ -309,6 +392,9 @@ control_effects = {
 					name = control_var
 					add = 6
 				}
+				custom_tooltip = {
+					text = fmpolice2
+				}
 			}
 			if = {
 				limit = {
@@ -323,6 +409,9 @@ control_effects = {
 				change_variable = {
 					name = control_var
 					add = 9
+				}
+				custom_tooltip = {
+					text = fmpolice3
 				}
 			}
 			if = {
@@ -339,6 +428,9 @@ control_effects = {
 					name = control_var
 					add = 13
 				}
+				custom_tooltip = {
+					text = fmpolice4
+				}
 			}
 			if = {
 				limit = {
@@ -353,6 +445,9 @@ control_effects = {
 				change_variable = {
 					name = control_var
 					add = 18
+				}
+				custom_tooltip = {
+					text = fmpolice5
 				}
 			}
 			if = { 
@@ -369,6 +464,9 @@ control_effects = {
 					name = control_var
 					add = 3
 				}
+				custom_tooltip = {
+					text = fmpolice6
+				}
 			}
 			if = {
 				limit = {
@@ -383,6 +481,9 @@ control_effects = {
 				change_variable = {
 					name = control_var
 					add = 7
+				}
+				custom_tooltip = {
+					text = fmpolice7
 				}
 			}
 			if = {
@@ -399,6 +500,9 @@ control_effects = {
 					name = control_var
 					add = 11
 				}
+				custom_tooltip = {
+					text = fmpolice8
+				}
 			}
 			if = {
 				limit = {
@@ -414,6 +518,9 @@ control_effects = {
 					name = control_var
 					add = 15
 				}
+				custom_tooltip = {
+					text = fmpolice9
+				}
 			}
 			if = {
 				limit = {
@@ -428,6 +535,9 @@ control_effects = {
 				change_variable = {
 					name = control_var
 					add = 20
+				}
+				custom_tooltip = {
+					text = fmpolice10
 				}
 			}
 			if = {
@@ -444,6 +554,9 @@ control_effects = {
 					name = control_var
 					add = 4
 				}
+				custom_tooltip = {
+					text = fmpolice11
+				}
 			}
 			if = {
 				limit = {
@@ -458,6 +571,9 @@ control_effects = {
 				change_variable = {
 					name = control_var
 					add = 9
+				}
+				custom_tooltip = {
+					text = fmpolice12
 				}
 			}
 			if = {
@@ -474,6 +590,9 @@ control_effects = {
 					name = control_var
 					add = 14
 				}
+				custom_tooltip = {
+					text = fmpolice13
+				}
 			}
 			if = {
 				limit = {
@@ -488,6 +607,9 @@ control_effects = {
 				change_variable = {
 					name = control_var
 					add = 19
+				}
+				custom_tooltip = {
+					text = fmpolice14
 				}
 			}
 			if = {
@@ -504,6 +626,9 @@ control_effects = {
 					name = control_var
 					add = 25
 				}
+				custom_tooltip = {
+					text = fmpolice15
+				}
 			}
 
 			if = {
@@ -514,6 +639,9 @@ control_effects = {
 					name = control_var
 					add = 10
 				}
+				custom_tooltip = {
+					text = fmlaw9
+				}
 			}
 			if = {
 				limit = {
@@ -522,6 +650,9 @@ control_effects = {
 				change_variable = {
 					name = control_var
 					add = 5
+				}
+				custom_tooltip = {
+					text = fmlaw10
 				}
 			}
 			if = {
@@ -532,6 +663,9 @@ control_effects = {
 					name = control_var
 					add = 10
 				}
+				custom_tooltip = {
+					text = fmlaw11
+				}
 			}
 			if = {
 				limit = {
@@ -540,6 +674,9 @@ control_effects = {
 				change_variable = {
 					name = control_var
 					add = 20
+				}
+				custom_tooltip = {
+					text = fmlaw12
 				}
 			}
 			if = {
@@ -550,6 +687,9 @@ control_effects = {
 					name = control_var
 					add = 25
 				}
+				custom_tooltip = {
+					text = fmlaw13
+				}
 			}
 			if = {
 				limit = {
@@ -558,6 +698,9 @@ control_effects = {
 				change_variable = {
 					name = control_var
 					add = 5
+				}
+				custom_tooltip = {
+					text = fmlaw14
 				}
 			}
 			if = {
@@ -568,6 +711,9 @@ control_effects = {
 					name = control_var
 					add = -5
 				}
+				custom_tooltip = {
+					text = fmlaw15
+				}
 			}
 			if = {
 				limit = {
@@ -576,6 +722,9 @@ control_effects = {
 				change_variable = {
 					name = control_var
 					add = -10
+				}
+				custom_tooltip = {
+					text = fmlaw16
 				}
 			}
 			if = {
@@ -586,6 +735,9 @@ control_effects = {
 					name = control_var
 					add = -20
 				}
+				custom_tooltip = {
+					text = fmlaw17
+				}
 			}
 			if = {
 				limit = {
@@ -594,6 +746,9 @@ control_effects = {
 				change_variable = {
 					name = control_var
 					add = -100
+				}
+				custom_tooltip = {
+					text = fmdefault1
 				}
 			}
 			if = {
@@ -605,23 +760,34 @@ control_effects = {
 					name = control_var
 					add = -20
 				}
+				custom_tooltip = {
+					text = fmdefault11
+				}
 			}
 			if = {
 				limit = {
 					scaled_debt >= 0.3
+					scaled_debt < 0.6
 				}
 				change_variable = {
 					name = control_var
 					add = -50
 				}
+				custom_tooltip = {
+					text = fmdefault12
+				}
 			}
 			if = {
 				limit = {
-					scaled_debt > 0.6
+					scaled_debt >= 0.6
+					scaled_debt < 1
 				}
 				change_variable = {
 					name = control_var
-					add = -20
+					add = -80
+				}
+				custom_tooltip = {
+					text = fmdefault13
 				}
 			}
 			if = {
@@ -631,6 +797,9 @@ control_effects = {
 				change_variable = {
 					name = control_var
 					add = -35
+				}
+				custom_tooltip = {
+					text = fmsec1
 				}
 			}
 			if = {
@@ -642,6 +811,9 @@ control_effects = {
 					name = control_var
 					add = -5
 				}
+				custom_tooltip = {
+					text = fmsec2
+				}
 			}
 			if = {
 				limit = {
@@ -649,7 +821,10 @@ control_effects = {
 				}
 				change_variable = {
 					name = control_var
-					add = -25
+					add = -50
+				}
+				custom_tooltip = {
+					text = fmsec3
 				}
 			}
 			if = {
@@ -663,6 +838,9 @@ control_effects = {
 					name = control_var
 					add = -15
 				}
+				custom_tooltip = {
+					text = fmsec4
+				}
 			}
 			if = {
 				limit = {
@@ -672,14 +850,33 @@ control_effects = {
 					name = control_var
 					add = -10
 				}
+				custom_tooltip = {
+					text = fmleg2
+				}
 			}
 			if = {
 				limit = {
-					government_legitimacy > 90
+					government_legitimacy >= 50
+					government_legitimacy < 75
+				}
+				change_variable = {
+					name = control_var
+					add = -5
+				}
+				custom_tooltip = {
+					text = fmleg3
+				}
+			}
+			if = {
+				limit = {
+					government_legitimacy >= 90
 				}
 				change_variable = {
 					name = control_var
 					add = 5
+				}
+				custom_tooltip = {
+					text = fmleg1
 				}
 			}
 			if = {
@@ -689,6 +886,9 @@ control_effects = {
 				change_variable = {
 					name = control_var
 					add = -15
+				}
+				custom_tooltip = {
+					text = fmfamine
 				}
 			}
 			if = {
@@ -704,6 +904,9 @@ control_effects = {
 					name = control_var
 					add = -10
 				}
+				custom_tooltip = {
+					text = fmshortage
+				}
 			}
 			if = {
 				limit = {
@@ -712,6 +915,9 @@ control_effects = {
 				change_variable = {
 					name = control_var
 					add = -15
+				}
+				custom_tooltip = {
+					text = fmlaw18
 				}
 			}
 			if = {
@@ -722,6 +928,9 @@ control_effects = {
 					name = control_var
 					add = -10
 				}
+				custom_tooltip = {
+					text = fmlostwar
+				}
 			}
 			if = {
 				limit = {
@@ -730,6 +939,9 @@ control_effects = {
 				change_variable = {
 					name = control_var
 					add = 10
+				}
+				custom_tooltip = {
+					text = fmsize1
 				}
 			}
 			if = {
@@ -740,6 +952,9 @@ control_effects = {
 					name = control_var
 					add = -10
 				}
+				custom_tooltip = {
+					text = fmsize2
+				}
 			}
 			if = {
 				limit = {
@@ -749,6 +964,9 @@ control_effects = {
 					name = control_var
 					add = 5
 				}
+				custom_tooltip = {
+					text = fmpolicy1
+				}
 			}
 			if = {
 				limit = {
@@ -757,6 +975,9 @@ control_effects = {
 				change_variable = {
 					name = control_var
 					add = 10
+				}
+				custom_tooltip = {
+					text = fmpolicy2
 				}
 			}
 			if = {
@@ -770,6 +991,9 @@ control_effects = {
 					name = control_var
 					add = 5
 				}
+				custom_tooltip = {
+					text = fmpb1
+				}
 			}
 			if = {
 				limit = {
@@ -782,6 +1006,9 @@ control_effects = {
 					name = control_var
 					add = 10
 				}
+				custom_tooltip = {
+					text = fmpb2
+				}
 			}
 			if = {
 				limit = {
@@ -793,6 +1020,9 @@ control_effects = {
 				change_variable = {
 					name = control_var
 					add = 15
+				}
+				custom_tooltip = {
+					text = fmpb3
 				}
 			}
       		if = {
@@ -807,6 +1037,9 @@ control_effects = {
 					name = control_var
 					add = -3
 				}
+				custom_tooltip = {
+					text = fmdeva1
+				}
 			}
 			if = {
 				limit = {
@@ -819,6 +1052,9 @@ control_effects = {
 				change_variable = {
 					name = control_var
 					add = -6
+				}
+				custom_tooltip = {
+					text = fmdeva12
 				}
 			}
 			if = {
@@ -833,6 +1069,9 @@ control_effects = {
 					name = control_var
 					add = -9
 				}
+				custom_tooltip = {
+					text = fmdeva13
+				}
 			}
 			if = {
 				limit = {
@@ -846,6 +1085,9 @@ control_effects = {
 					name = control_var
 					add = -12
 				}
+				custom_tooltip = {
+					text = fmdeva14
+				}
 			}
 			if = {
 				limit = {
@@ -857,7 +1099,10 @@ control_effects = {
 				}
 				change_variable = {
 					name = control_var
-					add = -18
+					add = -15
+				}
+				custom_tooltip = {
+					text = fmdeva141
 				}
 			}
 			if = {
@@ -870,7 +1115,10 @@ control_effects = {
 				}
 				change_variable = {
 					name = control_var
-					add = -21
+					add = -18
+				}
+				custom_tooltip = {
+					text = fmdeva15
 				}
 			}
 			if = {
@@ -883,7 +1131,10 @@ control_effects = {
 				}
 				change_variable = {
 					name = control_var
-					add = -24
+					add = -21
+				}
+				custom_tooltip = {
+					text = fmdeva16
 				}
 			}
 			if = {
@@ -896,7 +1147,10 @@ control_effects = {
 				}
 				change_variable = {
 					name = control_var
-					add = -27
+					add = -24
+				}
+				custom_tooltip = {
+					text = fmdeva17
 				}
 			}
 			if = {
@@ -904,12 +1158,31 @@ control_effects = {
 					any_scope_state = {
 					owner = ROOT
 					devastation > 0.1
-					count > 8
+					count = 9
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = -27
+				}
+				custom_tooltip = {
+					text = fmdeva18
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+					owner = ROOT
+					devastation > 0.1
+					count > 9
 					}
 				}
 				change_variable = {
 					name = control_var
 					add = -30
+				}
+				custom_tooltip = {
+					text = fmdeva19
 				}
 			}
 			if = {
@@ -917,6 +1190,7 @@ control_effects = {
 					any_scope_state = {
 					owner = ROOT
 					is_incorporated = yes
+					is_treaty_port = no
 					turmoil >= 0.25
 					count = 1
 					}
@@ -925,12 +1199,16 @@ control_effects = {
 					name = control_var
 					add = -4
 				}
+				custom_tooltip = {
+					text = fminco1
+				}
 			}
 			if = {
 				limit = {
 					any_scope_state = {
 					owner = ROOT
 					is_incorporated = yes
+					is_treaty_port = no
 					turmoil >= 0.25
 					count = 2
 					}
@@ -939,12 +1217,16 @@ control_effects = {
 					name = control_var
 					add = -8
 				}
+				custom_tooltip = {
+					text = fminco12
+				}
 			}
 			if = {
 				limit = {
 					any_scope_state = {
 					owner = ROOT
 					is_incorporated = yes
+					is_treaty_port = no
 					turmoil >= 0.25
 					count = 3
 					}
@@ -953,12 +1235,16 @@ control_effects = {
 					name = control_var
 					add = -12
 				}
+				custom_tooltip = {
+					text = fminco13
+				}
 			}
 			if = {
 				limit = {
 					any_scope_state = {
 					owner = ROOT
 					is_incorporated = yes
+					is_treaty_port = no
 					turmoil >= 0.25
 					count = 4
 					}
@@ -967,12 +1253,16 @@ control_effects = {
 					name = control_var
 					add = -16
 				}
+				custom_tooltip = {
+					text = fminco14
+				}
 			}
 			if = {
 				limit = {
 					any_scope_state = {
 					owner = ROOT
 					is_incorporated = yes
+					is_treaty_port = no
 					turmoil >= 0.25
 					count = 5
 					}
@@ -981,12 +1271,16 @@ control_effects = {
 					name = control_var
 					add = -20
 				}
+				custom_tooltip = {
+					text = fminco15
+				}
 			}
 			if = {
 				limit = {
 					any_scope_state = {
 					owner = ROOT
 					is_incorporated = yes
+					is_treaty_port = no
 					turmoil >= 0.25
 					count = 6
 					}
@@ -995,12 +1289,16 @@ control_effects = {
 					name = control_var
 					add = -24
 				}
+				custom_tooltip = {
+					text = fminco16
+				}
 			}
 			if = {
 				limit = {
 					any_scope_state = {
 					owner = ROOT
 					is_incorporated = yes
+					is_treaty_port = no
 					turmoil >= 0.25
 					count = 7
 					}
@@ -1009,12 +1307,16 @@ control_effects = {
 					name = control_var
 					add = -28
 				}
+				custom_tooltip = {
+					text = fminco17
+				}
 			}
 			if = {
 				limit = {
 					any_scope_state = {
 					owner = ROOT
 					is_incorporated = yes
+					is_treaty_port = no
 					turmoil >= 0.25
 					count = 8
 					}
@@ -1023,12 +1325,16 @@ control_effects = {
 					name = control_var
 					add = -32
 				}
+				custom_tooltip = {
+					text = fminco18
+				}
 			}
 			if = {
 				limit = {
 					any_scope_state = {
 					owner = ROOT
 					is_incorporated = yes
+					is_treaty_port = no
 					turmoil >= 0.25
 					count = 9
 					}
@@ -1037,12 +1343,16 @@ control_effects = {
 					name = control_var
 					add = -36
 				}
+				custom_tooltip = {
+					text = fminco19
+				}
 			}
 			if = {
 				limit = {
 					any_scope_state = {
 					owner = ROOT
 					is_incorporated = yes
+					is_treaty_port = no
 					turmoil >= 0.25
 					count > 9
 					}
@@ -1051,12 +1361,16 @@ control_effects = {
 					name = control_var
 					add = -40
 				}
+				custom_tooltip = {
+					text = fminco10
+				}
 			}
 			if = {
 				limit = {
 					any_scope_state = {
 					owner = ROOT
 					is_incorporated = no
+					is_treaty_port = no
 					turmoil >= 0.25
 					count = 1
 					}
@@ -1065,12 +1379,16 @@ control_effects = {
 					name = control_var
 					add = -2
 				}
+				custom_tooltip = {
+					text = fmuninco1
+				}
 			}
 			if = {
 				limit = {
 					any_scope_state = {
 					owner = ROOT
 					is_incorporated = no
+					is_treaty_port = no
 					turmoil >= 0.25
 					count = 2
 					}
@@ -1079,12 +1397,16 @@ control_effects = {
 					name = control_var
 					add = -4
 				}
+				custom_tooltip = {
+					text = fmuninco12
+				}
 			}
 			if = {
 				limit = {
 					any_scope_state = {
 					owner = ROOT
 					is_incorporated = no
+					is_treaty_port = no
 					turmoil >= 0.25
 					count = 3
 					}
@@ -1093,12 +1415,16 @@ control_effects = {
 					name = control_var
 					add = -6
 				}
+				custom_tooltip = {
+					text = fmuninco13
+				}
 			}
 			if = {
 				limit = {
 					any_scope_state = {
 					owner = ROOT
 					is_incorporated = no
+					is_treaty_port = no
 					turmoil >= 0.25
 					count = 4
 					}
@@ -1107,12 +1433,16 @@ control_effects = {
 					name = control_var
 					add = -8
 				}
+				custom_tooltip = {
+					text = fmuninco14
+				}
 			}
 			if = {
 				limit = {
 					any_scope_state = {
 					owner = ROOT
 					is_incorporated = no
+					is_treaty_port = no
 					turmoil >= 0.25
 					count = 5
 					}
@@ -1121,12 +1451,16 @@ control_effects = {
 					name = control_var
 					add = -10
 				}
+				custom_tooltip = {
+					text = fmuninco15
+				}
 			}
 			if = {
 				limit = {
 					any_scope_state = {
 					owner = ROOT
 					is_incorporated = no
+					is_treaty_port = no
 					turmoil >= 0.25
 					count = 6
 					}
@@ -1135,12 +1469,16 @@ control_effects = {
 					name = control_var
 					add = -12
 				}
+				custom_tooltip = {
+					text = fmuninco16
+				}
 			}
 			if = {
 				limit = {
 					any_scope_state = {
 					owner = ROOT
 					is_incorporated = no
+					is_treaty_port = no
 					turmoil >= 0.25
 					count = 7
 					}
@@ -1149,12 +1487,16 @@ control_effects = {
 					name = control_var
 					add = -14
 				}
+				custom_tooltip = {
+					text = fmuninco17
+				}
 			}
 			if = {
 				limit = {
 					any_scope_state = {
 					owner = ROOT
 					is_incorporated = no
+					is_treaty_port = no
 					turmoil >= 0.25
 					count = 8
 					}
@@ -1163,12 +1505,16 @@ control_effects = {
 					name = control_var
 					add = -16
 				}
+				custom_tooltip = {
+					text = fmuninco18
+				}
 			}
 			if = {
 				limit = {
 					any_scope_state = {
 					owner = ROOT
 					is_incorporated = no
+					is_treaty_port = no
 					turmoil >= 0.25
 					count = 9
 					}
@@ -1177,12 +1523,16 @@ control_effects = {
 					name = control_var
 					add = -18
 				}
+				custom_tooltip = {
+					text = fmuninco19
+				}
 			}
 			if = {
 				limit = {
 					any_scope_state = {
 					owner = ROOT
 					is_incorporated = no
+					is_treaty_port = no
 					turmoil >= 0.25
 					count > 9
 					}
@@ -1191,12 +1541,16 @@ control_effects = {
 					name = control_var
 					add = -20
 				}
+				custom_tooltip = {
+					text = fmuninco10
+				}
 			}
 			if = {
 				limit = {
 					any_scope_state = {
 					owner = ROOT
 					is_incorporated = yes
+					is_treaty_port = no
 					count < 6
 					}
 				}
@@ -1204,18 +1558,25 @@ control_effects = {
 					name = control_var
 					add = 20
 				}
+				custom_tooltip = {
+					text = fminconum1
+				}
 			}
 			if = {
 				limit = {
 					any_scope_state = {
 					owner = ROOT
 					is_incorporated = yes
+					is_treaty_port = no
 					count = 6
 					}
 				}
 				change_variable = {
 					name = control_var
 					add = 15
+				}
+				custom_tooltip = {
+					text = fminconum12
 				}
 			}
        		if = {
@@ -1223,6 +1584,7 @@ control_effects = {
 					any_scope_state = {
 					owner = ROOT
 					is_incorporated = yes
+					is_treaty_port = no
 					count = 7
 					}
 				}
@@ -1230,12 +1592,16 @@ control_effects = {
 					name = control_var
 					add = 15
 				}
+				custom_tooltip = {
+					text = fminconum12
+				}
 			}
 			if = {
 				limit = {
 					any_scope_state = {
 					owner = ROOT
 					is_incorporated = yes
+					is_treaty_port = no
 					count = 8
 					}
 				}
@@ -1243,12 +1609,16 @@ control_effects = {
 					name = control_var
 					add = 10
 				}
+				custom_tooltip = {
+					text = fminconum13
+				}
 			}
 			if = {
 				limit = {
 					any_scope_state = {
 					owner = ROOT
 					is_incorporated = yes
+					is_treaty_port = no
 					count = 9
 					}
 				}
@@ -1256,12 +1626,16 @@ control_effects = {
 					name = control_var
 					add = 10
 				}
+				custom_tooltip = {
+					text = fminconum13
+				}
 			}
 			if = {
 				limit = {
 					any_scope_state = {
 					owner = ROOT
 					is_incorporated = yes
+					is_treaty_port = no
 					count = 10
 					}
 				}
@@ -1269,12 +1643,16 @@ control_effects = {
 					name = control_var
 					add = 5
 				}
+				custom_tooltip = {
+					text = fminconum14
+				}
 			}
 			if = {
 				limit = {
 					any_scope_state = {
 					owner = ROOT
 					is_incorporated = yes
+					is_treaty_port = no
 					count = 11
 					}
 				}
@@ -1282,12 +1660,16 @@ control_effects = {
 					name = control_var
 					add = 5
 				}
+				custom_tooltip = {
+					text = fminconum14
+				}
 			}
 			if = {
 				limit = {
 					any_scope_state = {
 					owner = ROOT
 					is_incorporated = yes
+					is_treaty_port = no
 					count = 15
 					}
 				}
@@ -1295,12 +1677,16 @@ control_effects = {
 					name = control_var
 					add = -5
 				}
+				custom_tooltip = {
+					text = fminconum15
+				}
 			}
 			if = {
 				limit = {
 					any_scope_state = {
 					owner = ROOT
 					is_incorporated = yes
+					is_treaty_port = no
 					count = 16
 					}
 				}
@@ -1308,12 +1694,16 @@ control_effects = {
 					name = control_var
 					add = -5
 				}
+				custom_tooltip = {
+					text = fminconum15
+				}
 			}
 			if = {
 				limit = {
 					any_scope_state = {
 					owner = ROOT
 					is_incorporated = yes
+					is_treaty_port = no
 					count = 17
 					}
 				}
@@ -1321,12 +1711,16 @@ control_effects = {
 					name = control_var
 					add = -10
 				}
+				custom_tooltip = {
+					text = fminconum16
+				}
 			}
 			if = {
 				limit = {
 					any_scope_state = {
 					owner = ROOT
 					is_incorporated = yes
+					is_treaty_port = no
 					count = 18
 					}
 				}
@@ -1334,12 +1728,16 @@ control_effects = {
 					name = control_var
 					add = -10
 				}
+				custom_tooltip = {
+					text = fminconum16
+				}
 			}
 			if = {
 				limit = {
 					any_scope_state = {
 					owner = ROOT
 					is_incorporated = yes
+					is_treaty_port = no
 					count = 19
 					}
 				}
@@ -1347,12 +1745,16 @@ control_effects = {
 					name = control_var
 					add = -10
 				}
+				custom_tooltip = {
+					text = fminconum16
+				}
 			}
 			if = {
 				limit = {
 					any_scope_state = {
 					owner = ROOT
 					is_incorporated = yes
+					is_treaty_port = no
 					count = 20
 					}
 				}
@@ -1360,12 +1762,16 @@ control_effects = {
 					name = control_var
 					add = -15
 				}
+				custom_tooltip = {
+					text = fminconum17
+				}
 			}
 			if = {
 				limit = {
 					any_scope_state = {
 					owner = ROOT
 					is_incorporated = yes
+					is_treaty_port = no
 					count = 21
 					}
 				}
@@ -1373,12 +1779,16 @@ control_effects = {
 					name = control_var
 					add = -15
 				}
+				custom_tooltip = {
+					text = fminconum17
+				}
 			}
 			if = {
 				limit = {
 					any_scope_state = {
 					owner = ROOT
 					is_incorporated = yes
+					is_treaty_port = no
 					count = 22
 					}
 				}
@@ -1386,12 +1796,16 @@ control_effects = {
 					name = control_var
 					add = -15
 				}
+				custom_tooltip = {
+					text = fminconum17
+				}
 			}
 			if = {
 				limit = {
 					any_scope_state = {
 					owner = ROOT
 					is_incorporated = yes
+					is_treaty_port = no
 					count = 23
 					}
 				}
@@ -1399,12 +1813,16 @@ control_effects = {
 					name = control_var
 					add = -20
 				}
+				custom_tooltip = {
+					text = fminconum18
+				}
 			}
 			if = {
 				limit = {
 					any_scope_state = {
 					owner = ROOT
 					is_incorporated = yes
+					is_treaty_port = no
 					count = 24
 					}
 				}
@@ -1412,12 +1830,16 @@ control_effects = {
 					name = control_var
 					add = -20
 				}
+				custom_tooltip = {
+					text = fminconum18
+				}
 			}
 			if = {
 				limit = {
 					any_scope_state = {
 					owner = ROOT
 					is_incorporated = yes
+					is_treaty_port = no
 					count = 25
 					}
 				}
@@ -1425,12 +1847,16 @@ control_effects = {
 					name = control_var
 					add = -20
 				}
+				custom_tooltip = {
+					text = fminconum18
+				}
 			}
 			if = {
 				limit = {
 					any_scope_state = {
 					owner = ROOT
 					is_incorporated = yes
+					is_treaty_port = no
 					count > 25
 					}
 				}
@@ -1438,25 +1864,84 @@ control_effects = {
 					name = control_var
 					add = -25
 				}
+				custom_tooltip = {
+					text = fminconum19
+				}
 			}
 			if = {
 				limit = {
 					any_scope_state = {
 					owner = ROOT
 					is_incorporated = no
-					count < 5
+					is_treaty_port = no
+					count = 1
 					}
 				}
 				change_variable = {
 					name = control_var
 					add = -5
 				}
+				custom_tooltip = {
+					text = fmuniconum12
+				}
 			}
 			if = {
 				limit = {
 					any_scope_state = {
 					owner = ROOT
 					is_incorporated = no
+					is_treaty_port = no
+					count = 2
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = -5
+				}
+				custom_tooltip = {
+					text = fmuniconum12
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+					owner = ROOT
+					is_incorporated = no
+					is_treaty_port = no
+					count = 3
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = -5
+				}
+				custom_tooltip = {
+					text = fmuniconum12
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+					owner = ROOT
+					is_incorporated = no
+					is_treaty_port = no
+					count = 4
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = -5
+				}
+				custom_tooltip = {
+					text = fmuniconum12
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+					owner = ROOT
+					is_incorporated = no
+					is_treaty_port = no
 					count = 5
 					}
 				}
@@ -1464,12 +1949,16 @@ control_effects = {
 					name = control_var
 					add = -10
 				}
+				custom_tooltip = {
+					text = fmuniconum13
+				}
 			}
 			if = {
 				limit = {
 					any_scope_state = {
 					owner = ROOT
 					is_incorporated = no
+					is_treaty_port = no
 					count = 6
 					}
 				}
@@ -1477,12 +1966,16 @@ control_effects = {
 					name = control_var
 					add = -10
 				}
+				custom_tooltip = {
+					text = fmuniconum14
+				}
 			}
 			if = {
 				limit = {
 					any_scope_state = {
 					owner = ROOT
 					is_incorporated = no
+					is_treaty_port = no
 					count = 7
 					}
 				}
@@ -1490,18 +1983,25 @@ control_effects = {
 					name = control_var
 					add = -10
 				}
+				custom_tooltip = {
+					text = fmuniconum15
+				}
 			}
 			if = {
 				limit = {
 					any_scope_state = {
 					owner = ROOT
 					is_incorporated = no
+					is_treaty_port = no
 					count > 7
 					}
 				}
 				change_variable = {
 					name = control_var
 					add = -15
+				}
+				custom_tooltip = {
+					text = fmuniconum16
 				}
 			}
 			if = {
@@ -1513,6 +2013,9 @@ control_effects = {
 					name = control_var
 					add = -10
 				}
+				custom_tooltip = {
+					text = fminfamy1
+				}
 			}
 			if = {
 				limit = {
@@ -1523,6 +2026,9 @@ control_effects = {
 					name = control_var
 					add = -20
 				}
+				custom_tooltip = {
+					text = fminfamy2
+				}
 			}
 			if = {
 				limit = {
@@ -1531,6 +2037,9 @@ control_effects = {
 				change_variable = {
 					name = control_var
 					add = -50
+				}
+				custom_tooltip = {
+					text = fminfamy3 
 				}
 			}
 			if = {
@@ -1557,6 +2066,9 @@ control_effects = {
 					name = control_var
 					add = -10
 				}
+				custom_tooltip = {
+					text = fmpuppets1
+				}
 			}
 			if = {
 				limit = { 
@@ -1581,6 +2093,9 @@ control_effects = {
 				change_variable = {
 					name = control_var
 					add = -20
+				}
+				custom_tooltip = {
+					text = fmpuppets2
 				}
 			}
 			if = {
@@ -1607,6 +2122,9 @@ control_effects = {
 					name = control_var
 					add = -30
 				}
+				custom_tooltip = {
+					text = fmpuppets3
+				}
 			}
 			if = {
 				limit = { 
@@ -1632,6 +2150,9 @@ control_effects = {
 					name = control_var
 					add = -40
 				}
+				custom_tooltip = {
+					text = fmpuppets4
+				}
 			}
 			if = {
 				limit = { 
@@ -1656,6 +2177,9 @@ control_effects = {
 				change_variable = {
 					name = control_var
 					add = -50
+				}
+				custom_tooltip = {
+					text = fmpuppets5
 				}
 			}
 			clamp_variable = {

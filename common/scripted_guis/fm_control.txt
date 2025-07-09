@@ -4,4 +4,9 @@ progress_bar_tooltip_control = {
 		control_mdf_effects = yes
 	}
 }
-
+total_control_generation = {
+	scope = country
+	effect = {
+		control_effects = yes
+	}
+}
