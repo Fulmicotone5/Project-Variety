@@ -80,6 +80,40 @@
             }
         }
     }
+        historical_william_hanover_clothes = {
+        dna_modifiers = {
+                accessory = {
+                mode = add
+                gene = coats
+                template = european_coats
+                accessory = male_coat_european_10
+            }
+             accessory = {
+                mode = add
+                gene = medals
+                template = all_medals
+                accessory = male_medals_generic_01_04
+            }
+            accessory = {
+                mode = add
+                gene = legwear
+                template = european_legwear_colors
+                accessory = male_legwear_european_01_white
+            }
+        }
+
+        weight = {
+            base = 0
+            modifier = {
+                add = 95000
+                scope:character ?= {
+                    has_template = gbr_william_hanover_template
+                    is_ruler = yes
+                }
+            }
+        }
+    }
+
 
     historical_napoleon_ruler = {
         dna_modifiers = {

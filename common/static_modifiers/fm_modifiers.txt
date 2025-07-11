@@ -1139,3 +1139,8 @@ research_site = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
 	
 }
+tewodros_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	unit_army_offense_add = 30
+	character_popularity_add = 50
+}

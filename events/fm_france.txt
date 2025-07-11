@@ -16,17 +16,6 @@ fm_france.1 = {
 		default_option = yes
 		if = {
 			limit = {
-				exists = c:MCG
-				c:MCG = {
-					has_variable = variable_louisiana
-				}
-			}
-			c:MCG = {
-				trigger_event = fm_na_mcg.1
-			}
-		}
-		else_if = {
-			limit = {
 				exists = c:CAD
 				c:CAD = {
 					has_variable = variable_louisiana
@@ -52,17 +41,6 @@ fm_france.1 = {
 		name = fm_france.1.b
 
 		if = {
-			limit = {
-				exists = c:MCG
-				c:MCG = {
-					has_variable = variable_louisiana
-				}
-			}
-			c:MCG = {
-				trigger_event = fm_na_mcg.2
-			}
-		}
-		else_if = {
 			limit = {
 				exists = c:CAD
 				c:CAD = {

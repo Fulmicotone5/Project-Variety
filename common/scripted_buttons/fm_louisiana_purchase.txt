@@ -13,11 +13,6 @@
 			NOT = {
 				has_modifier = modifier_fru_one
 			}
-			c:MCG = {
-				NOT = {
-					has_variable = variable_louisiana
-				}
-			}
 			c:CAD = {
 				NOT = {
 					has_variable = variable_louisiana

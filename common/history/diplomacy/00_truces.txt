@@ -48,32 +48,7 @@
 			months = 4
 		}
 	}
-	c:IQS = {
-		create_bidirectional_truce = {
-			country = c:AMC
-			months = 48
-		}
-	}
-	c:IQS = {
-		create_bidirectional_truce = {
-			country = c:FOU
-			months = 36
-		}
-	}
-	c:MCG = {
-		create_bidirectional_truce = {
-			country = c:VNA
-			months = 8
-		}
-		create_bidirectional_truce = {
-			country = c:FOU
-			months = 30
-		}
-		create_bidirectional_truce = {
-			country = c:LOI
-			months = 18
-		}
-	}
+
 	c:YMN = {
 		create_bidirectional_truce = {
 			country = c:NSP

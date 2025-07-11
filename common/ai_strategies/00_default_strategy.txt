@@ -911,8 +911,22 @@ ai_strategy_default = {
 					scope:target_state = { owner = root }
 				}
 
-				if = { # Very reluctant to cede incorporate states
-					limit = { scope:target_state = { is_incorporated = yes } }
+				if = {
+					limit = {
+						scope:target_state = { ai_can_incorporate_state = yes }
+					}
+					add = 50
+				}
+
+				if = { # Very reluctant to cede incorporated states
+					limit = {
+						scope:target_state = {
+							OR = {
+								is_incorporated = yes
+								ai_can_incorporate_state = yes
+							}
+						}
+					}
 
 					if = {
 						limit = {
@@ -7117,7 +7131,18 @@ ai_strategy_default = {
 		}
 
 		humiliation = {
-			value = 25
+			value = 0
+			
+			if = {
+				limit = {
+					has_diplomatic_pact = {
+						who = scope:target_country
+						type = rivalry
+					}				
+				}
+				
+				add = 10
+			}
 		}
 
 		join_power_bloc = {

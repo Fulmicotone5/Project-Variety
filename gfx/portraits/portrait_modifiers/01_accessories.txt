@@ -18,6 +18,35 @@
     #}
 
     ### HISTORICAL CHARACTER ACCESSORIES ###
+
+      historical_william_hanover_accessories = {
+        dna_modifiers = {
+            accessory = {
+               mode = add
+               gene = top_layer
+               template = european_top_layer
+               accessory = male_top_layer_european_royal_01
+            }
+            accessory = {
+               mode = add
+               gene = belts
+               template = all_belts
+               accessory = male_belt_generic_02
+            }
+        }
+
+        weight = {
+            base = 0
+            modifier = {
+                add = 95000
+                scope:character ?= {
+                    has_template = gbr_william_hanover_template
+                    is_ruler = yes
+                }
+            }
+        }
+    }
+    
     historical_napoleon_stage_one = {
 
         dna_modifiers = {

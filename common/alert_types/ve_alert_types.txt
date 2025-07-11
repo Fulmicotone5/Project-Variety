@@ -8,7 +8,16 @@ max_piety = {
 	}
 	type = alert
 }
-
+boost_policy = {
+	script_context = player_country
+	texture = "gfx/interface/icons/lens_toolbar_icons/unused/grant_recognition.dds"
+	valid = {
+		NOT = {
+				has_variable = policy_taken
+			}
+	}
+	type = alert
+}
 max_culture_reform_point = {
 	script_context = player_country
 	texture = "gfx/interface/monarch_cultures_icon.dds"

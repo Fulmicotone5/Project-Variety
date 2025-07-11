@@ -40,7 +40,7 @@ CAH = {
 MCG = {
 	color = { 116 142 184 }
 
-	country_type = unrecognized
+	country_type = decentralized
 
 	tier = principality
 
@@ -55,7 +55,7 @@ MCG = {
 SWN = {
 	color = { 255 230 179 }
 
-	country_type = unrecognized
+	country_type = decentralized
 
 	tier = principality
 
@@ -80,7 +80,7 @@ ONE = {
 IQS = {
 	color = { 200 102 60 }
 
-	country_type = unrecognized
+	country_type = decentralized
 
 	tier = principality
 
@@ -88,7 +88,7 @@ IQS = {
 		na_cherokee
 
 	}
-	capital = STATE_NEW_YORK
+	capital = STATE_PENNSYLVANIA
 }
 
 AT1 = {

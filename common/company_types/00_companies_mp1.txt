@@ -83,13 +83,13 @@ company_compania_sansinena_de_carnes_congeladas = {
 		building_port
 	}
 
+	possible_prestige_goods = {
+		prestige_good_river_plate_beef
+	}
+
 	potential = {
 		
 		has_interest_marker_in_region = region_la_plata
-	}
-
-	possible_prestige_goods = {
-		prestige_good_river_plate_beef
 	}
 
 	attainable = {
@@ -264,9 +264,8 @@ company_jiangnan_weaving_bureaus= {
 	}
 
 	prosperity_modifier = {
-		country_legitimacy_base_add = 10
 		country_authority_mult = 0.05
-		country_influence_mult = 0.05
+		country_influence_mult = 0.1
 	}
 
 	ai_will_do = {
@@ -312,7 +311,7 @@ company_jiangnan_weaving_bureaus= {
 }
 
 # Russian-American Company Under the High Patronage of His Imperial Majesty
-company_russian_american_company = {
+company_korean_american_company = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/company_russian_american_company.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_harbor_shipbuilding.dds"
 
@@ -336,7 +335,7 @@ company_russian_american_company = {
 	potential = {
 		has_interest_marker_in_region = region_pacific_coast
 		any_primary_culture = {
-			has_discrimination_trait = east_slavic
+			has_discrimination_trait = korean_language
 		}
 	}
 
@@ -344,33 +343,6 @@ company_russian_american_company = {
 	}
 
 	possible = {
-		OR = {
-			any_subject_or_below = {
-				any_scope_state = {
-					region = sr:region_pacific_coast
-					any_scope_building = {
-						OR = {
-							is_building_type = building_port
-							is_building_type = building_whaling_station
-							is_building_type = building_logging_camp
-						}
-						level >= 5
-					}
-				}
-			}
-
-			any_scope_state = {
-				region = sr:region_pacific_coast
-				any_scope_building = {
-					OR = {
-						is_building_type = building_port
-						is_building_type = building_whaling_station
-						is_building_type = building_logging_camp
-					}
-					level >= 5
-				}
-			}
-		}
 	}
 
 	prosperity_modifier = {
@@ -1150,6 +1122,12 @@ company_massey_harris = {
 
 	possible_prestige_goods = {
 		prestige_good_generic_tools
+	}
+	prestige_goods_trigger = {
+		custom_tooltip = {
+			text = je_prestige_goods_tools_complete_tt
+			has_variable = prestige_good_generic_tools_var
+		}
 	}
 
 	potential = {

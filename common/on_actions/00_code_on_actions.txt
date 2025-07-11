@@ -3295,8 +3295,9 @@ on_wargoal_enforced = {
 					limit = {
 						has_variable = temp_wargoal_impact
 					}
-					je:je_earn_recognition ?= {
-						add_progress = { value = owner.var:temp_wargoal_impact name = earn_recognition_progress_bar }
+					change_variable = {
+					name = recognition_progress_var
+					value = owner.var:temp_wargoal_impact
 					}
 				}
 			}
@@ -3326,8 +3327,9 @@ on_wargoal_enforced = {
 					limit = {
 						has_variable = temp_wargoal_impact
 					}
-					je:je_earn_recognition ?= {
-						add_progress = { value = owner.var:temp_wargoal_impact name = earn_recognition_progress_bar }
+					change_variable = {
+						name = recognition_progress_var
+						value = owner.var:temp_wargoal_impact
 					}
 				}
 			}

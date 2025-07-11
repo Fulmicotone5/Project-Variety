@@ -283,40 +283,7 @@
 			}
 		}
 	}
-	c:IQS = {
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_new_england
-			name = "Iroquois Army"
-			combat_unit = {
-				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_NEW_YORK
-				count = 20
-			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_WEST_VIRGINIA
-				count = 15
-			}
-		}
-	}
-	c:SWN = {
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_the_midwest
-			name = "Shawnee Army"
-			combat_unit = {
-				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_OHIO
-				count = 10
-			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_KENTUCKY
-				count = 10
-			}
-		}
-	}
+
 	c:ONE = {
 		create_military_formation = {
 			type = army
@@ -378,23 +345,6 @@
 				type = unit_type:combat_unit_type_hussars
 				state_region = s:STATE_ARKANSAS
 				count = 5
-			}
-		}
-	}
-	c:MCG = {
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_dixie
-			name = "Muscogeen Army"
-			combat_unit = {
-				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_ALABAMA
-				count = 20
-			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_GEORGIA
-				count = 17
 			}
 		}
 	}

@@ -1,19 +1,5 @@
 TREATIES = {
 		create_treaty = {
-			first_country = c:MCG
-			second_country = c:IQS
-
-			is_draft = no
-			entered_into_force_on = 1820.10.26
-			binding_period = { years = 20 } # 14 years to cover the Revolutions of 1848
-
-			articles_to_create = {
-				{ # Defensive Pact
-					article = defensive_pact
-				}
-			}
-		}
-		create_treaty = {
 			first_country = c:KNA
 			second_country = c:NWA
 

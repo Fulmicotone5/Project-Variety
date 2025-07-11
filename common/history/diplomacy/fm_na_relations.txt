@@ -2,44 +2,25 @@
 	c:AMC = {
 		set_relations = { country = c:FOU value = 50 }
 
-		set_relations = { country = c:IQS value = -50 }
+	
 	}
 
 	c:FOU = {
 		set_relations = { country = c:AMC value = 50 }
 
 
-		set_relations = { country = c:MCG value = -10 }
-		set_relations = { country = c:IQS value = -50 }
+
+
 	}
 
 
 
-	c:IQS = {
-		set_relations = { country = c:AMC value = -80 }
-		set_relations = { country = c:FOU value = -80 }
 
-		set_relations = { country = c:SWN value = 25 }
-	}
 
-	c:SWN = {
-		set_relations = { country = c:AMC value = -50 }
-		set_relations = { country = c:FOU value = -50 }
 
-		set_relations = { country = c:IQS value = -25 }
-	}
-
-	c:MCG = {
-		set_relations = { country = c:FOU value = -30 }
-		set_relations = { country = c:VNA value = -80 }
-		set_relations = { country = c:LOI value = -40 }
-
-		set_relations = { country = c:IQS value = 40 }
-		set_relations = { country = c:SWN value = 80 }
-	}
 
 	c:LOI = {
-		set_relations = { country = c:MCG value = -20 }
+	
 		set_relations = { country = c:CAD value = -20 }
 		set_relations = { country = c:CAH value = -20 }
 		set_relations = { country = c:AT1 value = -20 }

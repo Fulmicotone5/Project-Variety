@@ -369,16 +369,24 @@
 		region_state:MUR = {
 			create_pop = {
 				culture = andalusian
-				size = 857592
+				size = 757592
 			}
 			create_pop = {
 				culture = spanish
-				size = 304592
+				size = 204592
 			}
 			create_pop = {
 				culture = phoenician
-				religion = catholic
+				religion = sunni
 				size = 1092
+			}
+			create_pop = {
+				culture = berber
+				size = 67000
+			}
+			create_pop = {
+				culture = maghrebi
+				size = 55396
 			}
 		}
 	}
@@ -386,16 +394,24 @@
 		region_state:MUR = {
 			create_pop = {
 				culture = andalusian
-				size = 808404
+				size = 708404
 			}
 			create_pop = {
 				culture = spanish
-				size = 658404
+				size = 358404
 			}
 			create_pop = {
 				culture = phoenician
-				religion = catholic
+				religion = sunni
 				size = 1352
+			}
+			create_pop = {
+				culture = berber
+				size = 45000
+			}
+			create_pop = {
+				culture = maghrebi
+				size = 43405
 			}
 		}
 	}

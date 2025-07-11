@@ -383,7 +383,7 @@
 		region_state:MUR = {
 			create_pop = {
 				culture = maghrebi
-				size = 686700
+				size = 586700
 			}
 			create_pop = {
 				culture = sephardic
@@ -391,7 +391,7 @@
 			}
 			create_pop = {
 				culture = berber
-				size = 243996
+				size = 143996
 			}
 			create_pop = {
 				pop_type = slaves
@@ -446,7 +446,7 @@
 		region_state:MUR = {
 			create_pop = {
 				culture = berber
-				size = 322000
+				size = 122000
 			}
 			create_pop = {
 				culture = bedouin
@@ -454,7 +454,7 @@
 			}
 			create_pop = {
 				culture = maghrebi
-				size = 222396
+				size = 122396
 			}
 			create_pop = {
 				pop_type = slaves
@@ -482,11 +482,11 @@
 		region_state:MUR = {
 			create_pop = {
 				culture = maghrebi
-				size = 441914
+				size = 341914
 			}
 			create_pop = {
 				culture = berber
-				size = 703830
+				size = 603830
 			}
 			create_pop = {
 				culture = phoenician
@@ -511,7 +511,7 @@
 			}
 			create_pop = {
 				culture = berber
-				size = 1204215
+				size = 804215
 			}
 			create_pop = {
 				culture = phoenician
@@ -557,7 +557,7 @@
 		region_state:MUR = {
 			create_pop = {
 				culture = maghrebi
-				size = 265804
+				size = 65804
 			}
 			create_pop = {
 				culture = sephardic
@@ -569,7 +569,7 @@
 			}
 			create_pop = {
 				culture = phoenician
-				size = 230000
+				size = 138700
 			}
 			create_pop = {
 				culture = phoenician

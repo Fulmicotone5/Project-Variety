@@ -358,15 +358,11 @@ company_VNA = {
 	}
 
 	potential = {
-		c:VNA = {
-			is_subject_of = root
-		}
+		country_has_primary_culture = cu:venetian
 	}
 
 	possible = {
-		c:VNA = {
-			is_subject_of = root
-		}
+		country_has_primary_culture = cu:venetian
 		OR = {
 			has_law = law_type:law_mercantilism
 			has_law = law_type:law_protectionism
@@ -394,9 +390,7 @@ company_VNA = {
 	}
 
 	ai_will_do = {
-		c:VNA = {
-			is_subject_of = root
-		}
+		country_has_primary_culture = cu:venetian
 		OR = {
 			has_law = law_type:law_mercantilism
 			has_law = law_type:law_protectionism
@@ -460,15 +454,11 @@ company_EIC = {
 	}
 
 	potential = {
-		c:EIC = {
-			is_subject_of = root
-		}
+		country_has_primary_culture = cu:portuguese
 	}
 
 	possible = {
-		c:EIC = {
-			is_subject_of = root
-		}
+		country_has_primary_culture = cu:portuguese
 		OR = {
 			has_law = law_type:law_mercantilism
 			has_law = law_type:law_protectionism
@@ -497,7 +487,7 @@ company_EIC = {
 	}
 
 	ai_will_do = {
-		c:PUR ?= this
+		country_has_primary_culture = cu:portuguese
 		OR = {
 			has_law = law_type:law_mercantilism
 			has_law = law_type:law_protectionism
@@ -955,15 +945,11 @@ company_OMA = {
 	}
 
 	potential = {
-		c:OM1 = {
-			is_subject_of = root
-		}
+		country_has_primary_culture = cu:bedouin
 	}
 
 	possible = {
-		c:OM1 = {
-			is_subject_of = root
-		}
+		country_has_primary_culture = cu:bedouin
 		OR = {
 			has_law = law_type:law_mercantilism
 			has_law = law_type:law_protectionism
@@ -1064,9 +1050,7 @@ icon = "gfx/interface/icons/company_icons/fm_company_icons/marinidco.dds"
 	}
 
 	potential = {
-			c:MU1 = {
-			is_subject_of = root
-		}
+		country_has_primary_culture = cu:maghrebi
 	}
 
 	possible = {
@@ -1864,6 +1848,16 @@ company_gilbratar_company = {
 	extension_building_types = {
 		building_military_shipyards
 	}
+	possible_prestige_goods = {
+		prestige_good_generic_merchant_marine
+	}
+
+	prestige_goods_trigger = {
+		custom_tooltip = {
+			text = je_prestige_goods_merchant_marine_complete_tt
+			has_variable = prestige_good_generic_merchant_marine_var
+		}
+	}
 
 	attainable = {
 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
@@ -1933,6 +1927,16 @@ company_babelmandeb = {
 
 	extension_building_types = {
 		building_fishing_wharf
+	}
+	possible_prestige_goods = {
+		prestige_good_generic_merchant_marine
+	}
+
+	prestige_goods_trigger = {
+		custom_tooltip = {
+			text = je_prestige_goods_merchant_marine_complete_tt
+			has_variable = prestige_good_generic_merchant_marine_var
+		}
 	}
 	possible = {
 		any_scope_state = {

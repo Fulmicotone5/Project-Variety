@@ -443,7 +443,38 @@ BBA = {
 		}
 	}
 }
-
+#VEN = {
+#	dynamic_country_name = {
+#		name = VENSER
+#		adjective = VEN_ADJ
+#		priority = 0
+#		trigger = {
+#			exists = scope:actor
+#			scope:actor ?= {
+#				OR = {
+#					has_law = law_type:law_presidential_republic
+#					has_law = law_type:law_parliamentary_republic
+#				}
+#			}
+#		}
+#	}
+#}
+GRV = {
+	dynamic_country_name = {
+		name = GRV_rep
+		adjective = GRV_ADJ
+		priority = 0
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				OR = {
+					has_law = law_type:law_presidential_republic
+					has_law = law_type:law_parliamentary_republic
+				}
+			}
+		}
+	}
+}
 BEM = {
 	dynamic_country_name = {
 		name = DYN_BEM

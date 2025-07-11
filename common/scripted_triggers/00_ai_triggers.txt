@@ -250,6 +250,59 @@ has_je_conquest_reason = {
 	}
 }
 
+has_je_subjugation_reason = {
+	can_reach_target_country = yes
+
+	OR = {
+		AND = {
+			OR = {
+				has_journal_entry = je_rum_main
+				has_journal_entry = je_rum_kor
+			}
+			exists = c:EGE
+			$TARGET$ = c:EGE
+		}
+		AND = { # Open up Japan
+			has_strategy = ai_strategy_economic_imperialism
+			has_technology_researched = nationalism # Just to make sure it doesn't happen immediately in 1836
+			country_rank = rank_value:great_power
+			navy_size >= 25
+			scope:target_country = {
+				exists = c:JAE
+				this = c:JAE
+				has_law_or_variant = law_type:law_isolationism
+				gdp >= 5000000
+			}
+		}
+		AND = {
+			c:GBR ?= this
+			has_variable = committed_to_afghanistan_assistance
+			$TARGET$ = {
+				has_variable = AFG_appealed_to_RUS
+			}
+		}
+		AND = {
+			c:RUS ?= this
+			has_variable = committed_to_afghanistan_assistance
+			$TARGET$ = {
+				has_variable = AFG_appealed_to_GBR
+			}
+		}
+		AND = {
+			has_journal_entry = je_maintain_afghan_protectorate
+			$TARGET$ = {
+				capital = {
+					region = sr:region_persia
+				}
+				OR = {
+					country_has_primary_culture = cu:pashtun
+					country_has_primary_culture = cu:tajik
+				}
+			}
+		}
+	}
+}
+
 has_je_befriend_reason = {
 	can_reach_target_country = yes
 	country_rank <= $TARGET$.country_rank
@@ -439,4 +492,18 @@ should_carve_up_china = {
 			}
 		}
 	}
+}
+ai_can_incorporate_state = {
+	OR = {
+		is_homeland_of_country_cultures = root
+		"years_to_incorporate(root)" <= define:NAI|INCORPORATE_STATE_MAX_YEARS
+	}
+}
+
+ai_will_incorporate_state = {
+	OR = {
+		is_homeland_of_country_cultures = root
+		"years_to_incorporate(root)" <= define:NAI|INCORPORATE_STATE_MAX_YEARS
+	}
+	state_population >= define:NAI|INCORPORATE_STATE_MIN_POPULATION
 }

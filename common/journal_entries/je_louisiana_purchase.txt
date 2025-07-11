@@ -4,7 +4,6 @@
 	is_shown_when_inactive = {
 		exists = c:LOI
 		OR = {
-			c:MCG ?= THIS
 			c:CAD ?= THIS
 			c:AT1 ?= THIS
 		}

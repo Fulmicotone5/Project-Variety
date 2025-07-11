@@ -145,11 +145,11 @@
 		region_state:IQS = {
 			create_pop = {
 				culture = na_cherokee
-				size = 321432
+				size = 71432
 			}
 			create_pop = {
 				culture = na_eastern_algonquian
-				size = 78965
+				size = 8965
 			}
 		}
 		region_state:AMC = {
@@ -292,7 +292,7 @@
 		region_state:IQS = {
 			create_pop = {
 				culture = na_cherokee
-				size = 167054
+				size = 67054
 			}
 		}
 		region_state:FOU = {
@@ -411,7 +411,7 @@
 			}
 			create_pop = {
 				culture = na_muscogee
-				size = 600000
+				size = 100000
 			}
 		}
 		region_state:VNA = {
@@ -491,11 +491,11 @@
 		region_state:IQS = {
 			create_pop = {
 				culture = na_eastern_algonquian
-				size = 139765
+				size = 39765
 			}
 			create_pop = {
 				culture = na_cherokee
-				size = 216765
+				size = 16765
 			}
 
 		}
@@ -536,7 +536,7 @@
 		region_state:IQS = {
 			create_pop = {
 				culture = na_cherokee
-				size = 440322
+				size = 40322
 			}
 		}
 		region_state:FOU = {
@@ -568,7 +568,7 @@
 		region_state:SWN = {
 			create_pop = {
 				culture = na_eastern_algonquian
-				size = 605493
+				size = 105493
 			}
 		}
 	}
@@ -577,11 +577,11 @@
 		region_state:SWN = {
 			create_pop = {
 				culture = na_miami_illinois
-				size = 145854
+				size = 12877
 			}
 			create_pop = {
 				culture = na_eastern_algonquian
-				size = 245035
+				size = 45035
 			}
 		}
 		region_state:ONE = {
@@ -599,7 +599,7 @@
 		region_state:SWN = {
 			create_pop = {
 				culture = na_eastern_algonquian
-				size = 404231
+				size = 104231
 			}
 		}
 		region_state:MCG = {
@@ -613,20 +613,20 @@
 		region_state:SWN = {
 			create_pop = {
 				culture = na_eastern_algonquian
-				size = 231965
+				size = 31965
 			}
 		}
 		region_state:IQS = {
 			create_pop = {
 				culture = na_cherokee
-				size = 67054
+				size = 7054
 			}
 		}
 		region_state:MCG = {
 
 			create_pop = {
 				culture = na_muscogee
-				size = 335643
+				size = 35643
 			}
 		}
 	}
@@ -635,7 +635,7 @@
 
 			create_pop = {
 				culture = na_muscogee
-				size = 854322
+				size = 154322
 			}
 
 		}
@@ -655,7 +655,7 @@
 		region_state:MCG = {
 			create_pop = {
 				culture = na_muscogee
-				size = 678544
+				size = 178544
 			}
 		}
 		region_state:LOI = {
@@ -700,25 +700,13 @@
 				size = 543024
 			}
 		}
-		region_state:SWN = {
-			create_pop = {
-				culture = na_eastern_algonquian
-				size = 22004
-			}
-		}
-		region_state:MCG = {
-			create_pop = {
-				culture = na_muscogee
-				size = 5876
-			}
-		}
 	}
 
 	s:STATE_MINNESOTA = {
 		region_state:DKT = {
 			create_pop = {
 				culture = na_yankton_yanktonai_dakota
-				size = 743455
+				size = 643455
 			}
 
 			create_pop = {
@@ -730,7 +718,7 @@
 
 			create_pop = {
 				culture = na_cree_montagnais
-				size = 15876
+				size = 25876
 			}
 		}
 	}
@@ -1338,7 +1326,7 @@
 
 			create_pop = {
 				culture = na_cherokee
-				size = 544865
+				size = 44865
 			}
 			create_pop = {
 				culture = vinlander
@@ -1390,7 +1378,7 @@
 
 			create_pop = {
 				culture = na_cherokee
-				size = 94632
+				size = 34632
 			}
 			create_pop = {
 				culture = vinlander

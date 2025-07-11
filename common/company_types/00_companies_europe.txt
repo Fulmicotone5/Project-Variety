@@ -312,6 +312,9 @@ company_philips = {
 		building_power_plant
 		building_motor_industry
 	}
+	possible_prestige_goods = {
+		prestige_good_philips_chapel_radio
+	}
 
 	potential = {
 		has_interest_marker_in_region = region_rhine
@@ -475,6 +478,12 @@ company_kouppas = {
 
 	possible_prestige_goods = {
 		prestige_good_generic_tools
+	}
+	prestige_goods_trigger = {
+		custom_tooltip = {
+			text = je_prestige_goods_tools_complete_tt
+			has_variable = prestige_good_generic_tools_var
+		}
 	}
 
 	potential = {
@@ -995,6 +1004,12 @@ company_lilpop = {
 	possible_prestige_goods = {
 		prestige_good_generic_steel
 	}
+	prestige_goods_trigger = {
+		custom_tooltip = {
+			text = je_prestige_goods_steel_complete_tt
+			has_variable = prestige_good_generic_steel_var
+		}
+	}
 
 	potential = {
 		has_interest_marker_in_region = region_poland
@@ -1076,6 +1091,17 @@ company_mozambique_company = {
 
 	extension_building_types = {
 		building_logging_camp
+	}
+
+	possible_prestige_goods = {
+		prestige_good_generic_grain
+	}
+
+	prestige_goods_trigger = {
+		custom_tooltip = {
+			text = je_prestige_goods_grain_complete_tt
+			has_variable = prestige_good_generic_grain_var
+		}
 	}
 
 	potential = {
@@ -1168,6 +1194,12 @@ company_altos_hornos_de_vizcaya = {
 	possible_prestige_goods = {
 		prestige_good_generic_steel
 	}
+	prestige_goods_trigger = {
+		custom_tooltip = {
+			text = je_prestige_goods_steel_complete_tt
+			has_variable = prestige_good_generic_steel_var
+		}
+	}
 
 	potential = {
 		has_interest_marker_in_region = region_iberia
@@ -1240,6 +1272,12 @@ company_duro_y_compania = {
 
 	possible_prestige_goods = {
 		prestige_good_generic_steel
+	}
+	prestige_goods_trigger = {
+		custom_tooltip = {
+			text = je_prestige_goods_steel_complete_tt
+			has_variable = prestige_good_generic_steel_var
+		}
 	}
 
 	potential = {
@@ -1383,6 +1421,16 @@ company_trubia = {
 		building_munition_plants
 		building_explosives_factory
 	}
+	possible_prestige_goods = {
+		prestige_good_generic_artillery
+	}
+
+	prestige_goods_trigger = {
+		custom_tooltip = {
+			text = je_prestige_goods_artillery_complete_tt
+			has_variable = prestige_good_generic_artillery_var
+		}
+	}
 
 	potential = {
 		has_interest_marker_in_region = region_iberia
@@ -1451,6 +1499,16 @@ company_zastava = {
 
 	extension_building_types = {
 		building_artillery_foundries
+	}
+	possible_prestige_goods = {
+		prestige_good_generic_small_arms
+	}
+
+	prestige_goods_trigger = {
+		custom_tooltip = {
+			text = je_prestige_goods_small_arms_complete_tt
+			has_variable = prestige_good_generic_small_arms_var
+		}
 	}
 
 	potential = {
@@ -1524,6 +1582,12 @@ company_chr_hansens = {
 
 	possible_prestige_goods = {
 		prestige_good_generic_groceries
+	}
+	prestige_goods_trigger = {
+		custom_tooltip = {
+			text = je_prestige_goods_groceries_complete_tt
+			has_variable = prestige_good_generic_groceries_var
+		}
 	}
 
 	potential = {
@@ -1601,10 +1665,15 @@ company_ap_moller = {
 		building_shipyards
 		building_logging_camp
 	}
+	possible_prestige_goods = {
+		prestige_good_generic_merchant_marine
+	}
+
 
 	potential = {
 		has_interest_marker_in_region = region_baltic
 	}
+
 
 	attainable = {
 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible

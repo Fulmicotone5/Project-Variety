@@ -1,4 +1,4 @@
-# Overwritten for removed cultures
+s# Overwritten for removed cultures
 
 headgear = {
     usage = game
@@ -699,9 +699,15 @@ headgear = {
         weight = {
             base = 0
             modifier = {
-                add = 100
-                european_clothes_trigger = yes
-                monarchy_clothes_trigger = yes
+               add = 100
+               european_clothes_trigger = yes
+               monarchy_clothes_trigger = yes
+            }
+            modifier = {
+                add = 90000
+                scope:character ?= {
+                    age <= define:NCharacters|ADULT_AGE
+                }
             }
         }
     }

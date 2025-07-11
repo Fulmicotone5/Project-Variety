@@ -17,7 +17,7 @@ objective_new_world = {
 	enabled_background = "gfx/interface/icons/objectives/new_world.dds"
 	icon = "gfx/interface/icons/objectives/egalitarian_society.dds"
 	
-	recommended_tags = { AMC AGA VSL DKT YUA NSP FOU RPQ VNA NOS CAH IQS }
+	recommended_tags = { AMC AGA VSL DKT YUA NSP FOU RPQ VNA NOS CAH }
 	
 }
 

@@ -10099,7 +10099,7 @@ bihari={
 manipuri={
 	color= hsv{ 0.74 0.27 0.94 }
 	religion = hindu
-	traits = { southeast_asian_heritage northeast_indian }
+	traits = { southeast_asian_heritage northeast_indian indo_aryan_language }
 	obsessions = {
 		spice
 		tea
