@@ -1,5 +1,5 @@
 ﻿trade_center_construction_allowed = {
-	NOT = { owner = { has_law = law_type:law_isolationism } }
+	NOT = { owner = { has_law_or_variant = law_type:law_isolationism } }
 	trigger_if = {
 		limit = { owner = { has_law = law_type:law_canton_system } }
 		custom_tooltip = {

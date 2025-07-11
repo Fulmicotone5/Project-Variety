@@ -3144,7 +3144,7 @@ headgear = {
                                         AND = {
                                             has_technology_researched = investment_banks
                                             NOT = {
-                                                has_law = law_type:law_isolationism
+                                                has_law_or_variant = law_type:law_isolationism
                                             }
                                         }
                                         is_country_type = recognized

@@ -49,10 +49,34 @@ control_effects = {
 				}
 				change_variable = {
 					name = control_var
-					add = 5
+					add = 10
 				}
 				custom_tooltip = {
 					text = fmlaw3
+				}
+			}
+			if = {
+				limit = {
+					has_law = law_type:law_monarchy
+				}
+				change_variable = {
+					name = control_var
+					add = 5
+				}
+				custom_tooltip = {
+					text = fmlaw31
+				}
+			}
+			if = {
+				limit = {
+					has_law = law_type:law_theocracy
+				}
+				change_variable = {
+					name = control_var
+					add = 10
+				}
+				custom_tooltip = {
+					text = fmlaw32
 				}
 			}
 			if = {
@@ -681,7 +705,7 @@ control_effects = {
 			}
 			if = {
 				limit = {
-					has_law = law_type:law_isolationism
+					has_law_or_variant = law_type:law_isolationism
 				}
 				change_variable = {
 					name = control_var
@@ -2180,6 +2204,34 @@ control_effects = {
 				}
 				custom_tooltip = {
 					text = fmpuppets5
+				}
+			}
+			if = {
+				limit = { 
+						loyalist_fraction = {
+						value >= 0.5
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = 15
+				}
+				custom_tooltip = {
+					text = fmloyalist1
+				}
+			}
+			else_if = {
+				limit = { 
+						loyalist_fraction = {
+						value >= 0.2
+					}
+				}
+				change_variable = {
+					name = control_var
+					add = 5
+				}
+				custom_tooltip = {
+					text = fmloyalist
 				}
 			}
 			clamp_variable = {

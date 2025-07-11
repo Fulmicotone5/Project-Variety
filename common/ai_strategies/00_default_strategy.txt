@@ -391,7 +391,7 @@ ai_strategy_default = {
 			limit = {
 				c:JAP ?= this
 				NOT = {
-					has_law = law_type:law_isolationism
+					has_law_or_variant = law_type:law_isolationism
 					has_law = law_type:law_closed_borders
 				}
 				scope:country = {
@@ -508,7 +508,7 @@ ai_strategy_default = {
 			limit = {
 				exists = c:JAP
 				this = c:JAP
-				has_law = law_type:law_isolationism
+				has_law_or_variant = law_type:law_isolationism
 				scope:diplomatic_play = {
 					has_play_goal = open_market
 				}
@@ -2901,7 +2901,7 @@ ai_strategy_default = {
 			limit = {
 				has_strategy = ai_strategy_economic_imperialism
 				scope:target_country = {
-					has_law = law_type:law_isolationism
+					has_law_or_variant = law_type:law_isolationism
 					gdp >= 5000000
 				}
 			}
@@ -3725,7 +3725,7 @@ ai_strategy_default = {
 			limit = {
 				country_has_primary_culture = cu:japanese
 				NOT = {
-					has_law = law_type:law_isolationism
+					has_law_or_variant = law_type:law_isolationism
 					has_law = law_type:law_closed_borders
 				}
 				scope:target_country = {
@@ -4929,7 +4929,7 @@ ai_strategy_default = {
 			if = {
 				limit = {
 					exists = c:JAP
-					c:JAP = { has_law = law_type:law_isolationism }
+					c:JAP = { has_law_or_variant = law_type:law_isolationism }
 					NOT = { country_rank = rank_value:great_power }
 				}
 				add = -50
@@ -5339,7 +5339,7 @@ ai_strategy_default = {
 			# Large isolationist countries should ignore the world
 			if = {
 				limit = {
-					has_law = law_type:law_isolationism
+					has_law_or_variant = law_type:law_isolationism
 					gdp >= 5000000
 				}
 				add = 10000
@@ -5565,7 +5565,7 @@ ai_strategy_default = {
 			if = {
 				limit = {
 					scope:target_country = {
-						has_law = law_type:law_isolationism
+						has_law_or_variant = law_type:law_isolationism
 						gdp >= 5000000
 					}
 				}
@@ -5953,7 +5953,7 @@ ai_strategy_default = {
 			if = {
 				limit = {
 					scope:target_country = {
-						has_law = law_type:law_isolationism
+						has_law_or_variant = law_type:law_isolationism
 						gdp >= 5000000
 					}
 				}

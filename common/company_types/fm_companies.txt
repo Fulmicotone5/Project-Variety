@@ -1951,7 +1951,7 @@ company_babelmandeb = {
 
 	prosperity_modifier = {
 		state_trade_advantage_mult = 0.05
-		country_tax_income_add = 5000
+		country_tax_income_add = 10000
 	}
 
 	ai_will_do = {

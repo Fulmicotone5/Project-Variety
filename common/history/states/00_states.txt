@@ -7594,7 +7594,6 @@ STATES = {
 	s:STATE_DALMATIA = {
 		create_state = {
 			country = c:VEN
-			state_type = unincorporated
 			owned_provinces = { xF9421B xEFA0C0 x11A0E0 }
 		}
 		
@@ -7608,7 +7607,6 @@ STATES = {
 		}
 		create_state = {
 			country = c:VEN
-			state_type = unincorporated
 			owned_provinces = { x71A0C0 xB39050 xB339EC }
 		}
 		

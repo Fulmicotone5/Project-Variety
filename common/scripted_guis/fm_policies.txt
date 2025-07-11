@@ -40,7 +40,7 @@ fm_foreign_affairs2 = {
 			}
 		}
 		NOT = {
-			has_law = law_type:law_isolationism
+			has_law_or_variant = law_type:law_isolationism
 		}
 	}
 	effect = {
