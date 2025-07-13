@@ -68,14 +68,6 @@
 			country = c:VNA
 			type = chartered_company
 		}
-		create_diplomatic_pact = {
-			country = c:EPY
-			type = protectorate
-		}
-		create_diplomatic_pact = {
-			country = c:CRE
-			type = protectorate
-		}
 	}
 	c:SAU ?= {
 		create_diplomatic_pact = {

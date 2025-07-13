@@ -1786,6 +1786,16 @@ company_bosphorus_company = {
 	extension_building_types = {
 		building_logging_camp
 	}
+	possible_prestige_goods = {
+		prestige_good_generic_merchant_marine
+	}
+
+	prestige_goods_trigger = {
+		custom_tooltip = {
+			text = je_prestige_goods_merchant_marine_complete_tt
+			has_variable = prestige_good_generic_merchant_marine_var
+		}
+	}
 
 
 	attainable = {
@@ -1932,12 +1942,6 @@ company_babelmandeb = {
 		prestige_good_generic_merchant_marine
 	}
 
-	prestige_goods_trigger = {
-		custom_tooltip = {
-			text = je_prestige_goods_merchant_marine_complete_tt
-			has_variable = prestige_good_generic_merchant_marine_var
-		}
-	}
 	possible = {
 		any_scope_state = {
 				state_region = s:STATE_YEMEN
@@ -2511,6 +2515,269 @@ company_habeco = {
 			any_scope_building = {
 				is_building_type = building_food_industry
 				level >= 5
+			}
+		}
+	}
+
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+company_kalevko = {
+	icon = "gfx/interface/icons/company_icons/fm_company_icons/kalevco.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufactering_light.dds"
+
+	flavored_company = yes
+
+		preferred_headquarters = { STATE_TALINN }
+
+	building_types = {
+		building_coffee_plantation
+		building_food_industry
+	}
+
+	extension_building_types = {
+		building_sugar_plantation
+	}
+
+	possible_prestige_goods = {
+		prestige_good_kalevcho
+	}
+
+	potential = {
+		has_interest_marker_in_region = region_baltic_states
+	}
+
+	possible = {
+		any_scope_state = {
+			state_region = s:STATE_TALINN
+			any_scope_building = {
+				is_building_type = building_food_industry
+				level >= 1
+			}
+		}
+	}
+
+	prosperity_modifier = {
+		building_food_industry_throughput_add = 0.15
+	}
+
+	ai_will_do = {
+		any_scope_state = {
+			OR = {
+			state_region = s:STATE_TALINN
+			}
+			any_scope_building = {
+				is_building_type = building_food_industry
+				level >= 1
+			}
+		}
+	}
+
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+company_fmdk = {
+	icon = "gfx/interface/icons/company_icons/fm_company_icons/companydk.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+
+	flavored_company = yes
+
+		preferred_headquarters = { STATE_VILNIUS }
+
+	building_types = {
+		building_glassworks
+		building_lead_mine
+	}
+
+	extension_building_types = {
+		building_textile_mills
+	}
+
+	possible_prestige_goods = {
+		prestige_good_coronaglass
+	}
+
+	potential = {
+		has_interest_marker_in_region = region_baltic_states
+	}
+
+	possible = {
+		any_scope_state = {
+			state_region = s:STATE_VILNIUS
+			any_scope_building = {
+				is_building_type = building_glassworks
+				level >= 3
+			}
+		}
+	}
+
+	prosperity_modifier = {
+		state_infrastructure_from_population_add = 1
+	}
+
+	ai_will_do = {
+		any_scope_state = {
+			state_region = s:STATE_VILNIUS
+			any_scope_building = {
+				is_building_type = building_glassworks
+				level >= 3
+			}
+		}
+	}
+
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+company_inquietaco = {
+	icon = "gfx/interface/icons/company_icons/fm_company_icons/inquietaco.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufactering_light.dds"
+
+	flavored_company = yes
+
+		preferred_headquarters = { STATE_EASTERN_THRACE }
+
+	building_types = {
+		building_arts_academy
+		building_paper_mills
+	}
+
+	extension_building_types = {
+		building_tooling_workshops
+	}
+
+	possible_prestige_goods = {
+		prestige_good_fmromanart
+	}
+
+	possible = {
+		any_primary_culture = {
+			has_discrimination_trait = roman_culture
+			}
+		any_scope_state = {
+			any_scope_building = {
+				is_building_type = building_arts_academy
+				level >= 4
+			}
+		}
+	}
+
+	prosperity_modifier = {
+		building_arts_academy_throughput_add = 0.1
+		building_paper_mills_throughput_add = 0.05
+	}
+
+	ai_will_do = {
+		any_scope_state = {
+			any_scope_building = {
+				is_building_type = building_arts_academy
+				level >= 4
+			}
+		}
+	}
+
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+company_scandiart = {
+	icon = "gfx/interface/icons/company_icons/fm_company_icons/artcoscandi.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufactering_light.dds"
+
+	flavored_company = yes
+
+		preferred_headquarters = { STATE_SVEALAND }
+
+	building_types = {
+		building_arts_academy
+		building_tooling_workshops
+	}
+
+	extension_building_types = {
+		building_electrics_industry
+	}
+
+	possible_prestige_goods = {
+		prestige_good_scandiart
+	}
+
+	possible = {
+		any_primary_culture = {
+			has_discrimination_trait = scandinavian_culture_group
+			}
+		any_scope_state = {
+			any_scope_building = {
+				is_building_type = building_arts_academy
+				level >= 4
+			}
+		}
+	}
+
+	prosperity_modifier = {
+		building_arts_academy_throughput_add = 0.05
+		building_tooling_workshops_throughput_add = 0.05
+	}
+
+	ai_will_do = {
+		any_scope_state = {
+			any_scope_building = {
+				is_building_type = building_arts_academy
+				level >= 4
+			}
+		}
+	}
+
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+company_arnoldco = {
+	icon = "gfx/interface/icons/company_icons/fm_company_icons/arnoldco.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufactering_light.dds"
+
+	flavored_company = yes
+
+		preferred_headquarters = { STATE_BURGUNDY }
+
+	building_types = {
+		building_arts_academy
+	}
+
+	extension_building_types = {
+		building_paper_mills
+	}
+
+	possible_prestige_goods = {
+		prestige_good_fmbudart
+	}
+
+	potential = {
+		has_interest_marker_in_region = region_france
+	}
+
+	possible = {
+		any_scope_state = {
+			state_region = s:STATE_BURGUNDY
+			any_scope_building = {
+				is_building_type = building_arts_academy
+				level >= 4
+			}
+		}
+	}
+
+	prosperity_modifier = {
+		building_arts_academy_throughput_add = 0.1
+	}
+
+	ai_will_do = {
+		any_scope_state = {
+			state_region = s:STATE_BURGUNDY
+			any_scope_building = {
+				is_building_type = building_arts_academy
+				level >= 4
 			}
 		}
 	}

@@ -178,24 +178,73 @@ fm_bavaria.5 = { # kings dilemma
 	option = {
 		name = fm_bavaria.5.a
 		default_option = yes
-		annex = c:OIS
-		s:STATE_BOHEMIA = {
-			add_claim = c:BAY
+		if = {
+			limit = { 
+				exists = c:OIS
+				c:OIS = {
+					is_ai = yes
+					is_subject_of = ROOT
+				}
+			}
+			annex = c:OIS
 		}
-		s:STATE_MORAVIA = {
+		if = {
+			limit = {
+				is_ai = no
+			}
+			s:STATE_BOHEMIA = {
 			add_claim = c:BAY
+			}
+			s:STATE_MORAVIA = {
+				add_claim = c:BAY
+			}
+			s:STATE_TRANSDANUBIA = {
+				add_claim = c:BAY
+			}
+			s:STATE_SLOVENIA = {
+				add_claim = c:BAY
+			}
+			s:STATE_SOUTH_TYROL = {
+				add_claim = c:BAY
+			}
+			add_journal_entry = {
+				type = je_sgf
+			}
 		}
-		s:STATE_TRANSDANUBIA = {
-			add_claim = c:BAY
+		if = {
+			limit = {
+					is_ai = yes 
+					is_subject = no
+				}
+				if = {
+					limit = {
+						exists = c:BOH
+						c:BOH = {
+							is_ai = yes 
+							is_subject = no
+						}
+					}
+					annex_with_incorporation = c:BOH
+				}
+			change_tag = SGF
+			s:STATE_TRANSDANUBIA = {
+				add_claim = root
+			}
+			s:STATE_SLOVENIA = {
+				add_claim = root
+			}
+			s:STATE_SOUTH_TYROL = {
+				add_claim = root
+			}
 		}
-		s:STATE_SLOVENIA = {
-			add_claim = c:BAY
-		}
-		s:STATE_SOUTH_TYROL = {
-			add_claim = c:BAY
-		}
-		add_journal_entry = {
-			type = je_sgf
+		ai_chance = {
+			base = 60
+			modifier = {
+				trigger = {
+					is_ai = yes
+				}
+				add = 40
+			}
 		}
 	}
 	option = {

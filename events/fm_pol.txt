@@ -152,3 +152,43 @@ fm_pol.3 = {
 		}
 	}
 }
+
+
+fm_pol.999 = {
+	#Developer Work Event - Not for users
+	type = country_event
+	event_image = {
+		video = "gfx/event_pictures/middleeast_oil_derricks.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/world_fair"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	title = fm_pol.999.t
+	desc = fm_pol.999.d
+	flavor = fm_pol.999.f
+	duration = 0
+	trigger = {
+		is_ai = yes
+	}
+	immediate = {
+	}
+	option = {
+		name = fm_pol.999.a
+		default_option = yes
+		if = {
+			limit = { 
+				c:LIT = {
+					is_ai = yes
+				}
+			}
+					create_diplomatic_pact = {
+			country = c:LIT
+			type = protectorate
+		}
+			change_relations = {
+				country = c:LIT
+				value = 100
+			}
+		}
+	}
+}

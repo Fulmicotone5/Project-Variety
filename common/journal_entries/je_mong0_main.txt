@@ -1,0 +1,39 @@
+je_mon_main = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	group = je_group_historical_content
+
+	scripted_button = je_mon_button
+
+	complete = {
+		owns_entire_state_region = STATE_BEIJING
+		NOT = {
+				 has_law = law_type:law_monarchy
+			}
+	}
+	on_complete = {
+		trigger_event = {
+			id = fm_mon.2
+		}
+	}
+	should_be_pinned_by_default = yes
+}
+je_gelugpa = {
+	texture = "gfx/interface/icons/religion_icons/gelugpa.dds"
+	group = je_group_historical_content
+
+	complete = {
+		owns_entire_state_region = STATE_BEIJING
+		owns_entire_state_region = STATE_BEIJING
+		owns_entire_state_region = STATE_BEIJING
+		owns_entire_state_region = STATE_BEIJING
+		owns_entire_state_region = STATE_BEIJING
+		owns_entire_state_region = STATE_BEIJING
+		owns_entire_state_region = STATE_BEIJING
+	}
+	on_complete = {
+		trigger_event = {
+			id = fm_mon.1
+		}
+	}
+	should_be_pinned_by_default = yes
+}

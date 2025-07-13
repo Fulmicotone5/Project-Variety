@@ -314,3 +314,58 @@ fm_east_rome.5 = {
 		}
 	}
 }
+
+
+fm_east_rome.999 = {
+	#Developer Work Event - Not for users
+	type = country_event
+	event_image = {
+		video = "gfx/event_pictures/middleeast_oil_derricks.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/world_fair"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	title = fm_east_rome.999.t
+	desc = fm_east_rome.999.d
+	flavor = fm_east_rome.999.f
+	duration = 0
+	trigger = {
+		is_ai = yes
+	}
+	immediate = {
+	}
+	option = {
+		name = fm_east_rome.999.a
+		default_option = yes
+		if = {
+			limit = { 
+				exists = c:TOR
+				c:TOR = {
+					is_ai = yes
+					is_subject = no
+				}
+			}
+			annex_with_incorporation = c:TOR
+		}
+		if = {
+			limit = { 
+				exists = c:CRE
+				c:CRE = {
+					is_ai = yes
+					is_subject = no
+				}
+			}
+			annex_with_incorporation = c:CRE
+		}
+		if = {
+			limit = { 
+				exists = c:EPY
+				c:EPY = {
+					is_ai = yes
+					is_subject = no
+				}
+			}
+			annex_with_incorporation = c:EPY
+		}
+	}
+}

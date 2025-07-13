@@ -2,6 +2,7 @@
 	c:DPR = {
 		effect_starting_technology_tier_3_tech = yes
 		add_technology_researched = mass_communication
+		add_technology_researched = nationalism
         set_ruling_interest_groups = {
         	ig_landowners
         }

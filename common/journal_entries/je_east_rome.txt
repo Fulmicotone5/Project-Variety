@@ -22,6 +22,18 @@
 			}
 		}
 		remove_modifier = modifier_eastrome_one
+		if = {
+			limit = { 
+				is_ai = yes
+				c:TOR = {
+					is_ai = yes
+					is_subject = no
+				}
+			}
+			trigger_event = {
+				id = fm_east_rome.999
+			}
+		}
 	}
 	complete = {
 		cultural_acceptance_base = { target = cu:greek value >= 60 }

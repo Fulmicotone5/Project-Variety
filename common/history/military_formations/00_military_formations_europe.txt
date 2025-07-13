@@ -840,33 +840,17 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_GREATER_POLAND
-				count = 10
-			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_MAZOVIA
-				count = 5
+				count = 15 
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_hussars
 				state_region = s:STATE_GREATER_POLAND
-				count = 10
+				count = 15
 			}
 			save_scope_as = poland_army
 		}
 	}
-	c:MZV = {
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_poland
-			name = "Mazovian Army"
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_MAZOVIA
-				count = 20
-			}
-		}
-	}
+
 	c:KRK = {
 		create_military_formation = {
 			type = army
@@ -885,7 +869,7 @@
 			hq_region = sr:region_poland
 			name = "Galician Army"
 			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
+				type = unit_type:combat_unit_type_hussars
 				state_region = s:STATE_EAST_GALICIA
 				count = 10
 			}

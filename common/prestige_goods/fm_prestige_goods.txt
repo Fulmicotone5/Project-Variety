@@ -94,3 +94,23 @@ prestige_good_coronaglass = {
 	prestige_bonus = 0.1
 	texture = "gfx/interface/icons/goods_icons/prestige_goods/coronaglass.dds"
 }
+prestige_good_scandiart = {
+	base_good = fine_art
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/scandiart.dds"
+}
+prestige_good_fmbudart = {
+	base_good = fine_art
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/fine_art.dds"
+}
+prestige_good_fmromanart = {
+	base_good = fine_art
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/fmromanart.dds"
+}
+prestige_good_kalevcho = {
+	base_good = groceries
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/kalevcho.dds"
+}

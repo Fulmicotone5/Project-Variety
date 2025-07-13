@@ -162,7 +162,7 @@
 				size = 80440
 			}
 		}
-		region_state:MZV = {
+		region_state:GAL = {
 			create_pop = {
 				culture = polish
 				size = 600792

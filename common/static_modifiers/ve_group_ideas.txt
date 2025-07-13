@@ -46,8 +46,7 @@ fm_fa4 = {
 	country_infamy_decay_mult = -0.15
 	country_improve_relations_speed_mult = -0.5
 	country_damage_relations_speed_mult = 0.5
-	state_non_contiguous_incorporation_speed_mult = 0.25
-	state_contiguous_incorporation_speed_mult = 0.25
+	state_incorporation_speed_mult = 0.35
 }
 fm_fa5 = {
 	icon = gfx/interface/ve_ideas/improve_relation_modifier.dds

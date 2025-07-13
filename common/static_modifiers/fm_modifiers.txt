@@ -357,6 +357,12 @@ modifier_rui_ten = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
 	country_prestige_add = 150
 }
+modifier_rui_999 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_tax_income_add = 80000
+	unit_army_defense_add = 10
+	building_training_rate_mult = 3
+}
 modifier_yua_one = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
 	country_expenses_add = 2000

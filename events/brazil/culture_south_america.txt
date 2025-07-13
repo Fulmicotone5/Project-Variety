@@ -153,7 +153,7 @@ culture_south_america.1 = {
 		name = culture_south_america.1.a
 		default_option = yes
 		ai_chance = {
-			base = 90
+			value = 90
 		}
 
 		if = {

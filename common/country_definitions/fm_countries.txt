@@ -1404,7 +1404,7 @@ LIT = {
 	tier = principality
 	
 	cultures = { lithuanian }	
-	is_named_from_capital = yes
+	capital = STATE_VILNIUS
 }
 
 GDL = {

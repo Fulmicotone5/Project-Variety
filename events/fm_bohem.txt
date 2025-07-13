@@ -85,7 +85,7 @@ fm_bohem.3 = {
 			}
 		}
 		ai_chance = {
-			base = 60
+			base = 40
 		}
 	}
 	option = {
@@ -106,12 +106,17 @@ fm_bohem.3 = {
 		ai_chance = {
 			base = 0
 			modifier = {
-				trigger = { 
-					c:BAY = {
-						is_ai = yes
+				trigger  = { 
+					AND = {
+						c:BAY = {
+							is_ai = yes
+						}
+						c:OIS = {
+							is_ai = yes
+						}
 					}
-				 }
-				add = 40
+				}
+				add = 60
 			}
 		}
 	}
@@ -157,14 +162,29 @@ fm_bohem.4 = {
 				value = 0.15
 			}
 		}
-		s:STATE_AUSTRIA = {
-			add_claim = c:BOH
+		if = {
+			limit = { 
+				is_ai = no
+			}
+			s:STATE_AUSTRIA = {
+				add_claim = c:BOH
+			}
+			s:STATE_STYRIA = {
+				add_claim = c:BOH
+			}
+			add_modifier = {
+				name = modifier_boh_one
+			}
 		}
-		s:STATE_STYRIA = {
-			add_claim = c:BOH
-		}
-		add_modifier = {
-			name = modifier_boh_one
+		if = {
+			limit = {
+				is_ai = yes
+			 }
+			 annex_with_incorporation = c:OIS
+			activate_law = law_type:law_racial_segregation
+			activate_law = law_type:law_freedom_of_conscience
+			activate_law = law_type:law_homesteading
+			add_technology_researched = nationalism
 		}
 		add_journal_entry = {
 			type = je_disf_king

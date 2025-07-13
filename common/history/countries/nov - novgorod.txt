@@ -1,6 +1,8 @@
 ﻿COUNTRIES = {
 	c:NOV = {
-		effect_starting_technology_tier_2_tech = yes
+		effect_starting_technology_tier_3_tech = yes
+		add_technology_researched = mass_communication
+		add_technology_researched = nationalism
 		effect_starting_politics_traditional = yes
 
 		# Laws

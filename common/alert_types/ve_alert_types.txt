@@ -17,6 +17,7 @@ boost_policy = {
 			}
 	}
 	type = alert
+	color = green
 }
 max_culture_reform_point = {
 	script_context = player_country

@@ -9,6 +9,12 @@
 		exists = c:PUL
 		c:PUL ?= THIS
 	}
+	immediate = {
+		trigger_event = {
+			id = fm_pol.999
+			days = 300
+		}
+	}
 	timeout = 1000
 	complete = {
 		OR = {

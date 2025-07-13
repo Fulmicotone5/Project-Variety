@@ -5,7 +5,7 @@
 		always = yes
 	}
 	ai_chance = {
-		base = 10
+		value = 10
 	}
 	possible = {
 		custom_tooltip = {
@@ -63,7 +63,7 @@ je_ye_button_two = {
 		always = yes
 	}
 	ai_chance = {
-		base = 10
+		value = 10
 	}
 	possible = {
 		custom_tooltip = {
@@ -107,7 +107,7 @@ je_ye_button_col = {
 		always = yes
 	}
 	ai_chance = {
-		base = 0
+		value = 0
 	}
 	possible = {
 		custom_tooltip = {
@@ -138,7 +138,7 @@ je_ye_button_migr = {
 		always = yes
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 	possible = {
 		custom_tooltip = {
@@ -168,7 +168,7 @@ je_ye_button_int = {
 		always = yes
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 	possible = {
 		custom_tooltip = {
@@ -198,7 +198,7 @@ je_ye_button_mos = {
 		always = yes
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 	possible = {
 		custom_tooltip = {
@@ -223,7 +223,7 @@ je_chi_button_hubei = {
 		always = yes
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 	possible = {
 		NOT = {
@@ -271,7 +271,7 @@ je_chi_button_wu = {
 		always = yes
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 	possible = {
 		NOT = {
@@ -325,7 +325,7 @@ je_chi_button_wei = {
 		always = yes
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 	possible = {
 		NOT = {
@@ -379,7 +379,7 @@ je_chi_button_beij = {
 		always = yes
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 	possible = {
 		NOT = {
@@ -424,7 +424,7 @@ je_chi_button_sc = {
 		always = yes
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 	possible = {
 		NOT = {
@@ -472,7 +472,7 @@ je_chi_button_ss = {
 		always = yes
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 	possible = {
 		NOT = {
@@ -517,7 +517,7 @@ je_chi_button_ns = {
 		always = yes
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 	possible = {
 		NOT = {
@@ -562,7 +562,7 @@ je_chi_button_ncp = {
 		always = yes
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 	possible = {
 		NOT = {
@@ -610,7 +610,7 @@ je_chi_button_scp = {
 		always = yes
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 	possible = {
 		NOT = {
@@ -655,7 +655,7 @@ je_chi_button_plat = {
 		always = yes
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 	possible = {
 		NOT = {
@@ -703,7 +703,7 @@ je_chi_button_shsr = {
 		always = yes
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 	possible = {
 		NOT = {
@@ -754,7 +754,7 @@ je_chi_button_shir = {
 		always = yes
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 	possible = {
 		NOT = {
@@ -802,7 +802,7 @@ je_anatolia_depo = {
 		always = yes
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 	possible = {
 		NOT = {
@@ -1348,7 +1348,7 @@ je_anatolia_int_rel = {
 		always = yes
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 	possible = {
 		NOT = {
@@ -1390,7 +1390,7 @@ je_anatolia_int_erz = {
 		always = yes
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 	possible = {
 		has_modifier = modifier_eastrome_four
@@ -1427,7 +1427,7 @@ je_ind_rem_but = {
 		always = yes
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 	possible = {
 		custom_tooltip = {
@@ -1451,7 +1451,7 @@ je_int_ala = {
 		always = yes
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 	possible = {
 		owns_entire_state_region = STATE_ALABAMA
@@ -1498,7 +1498,7 @@ je_int_nacoc = {
 		always = yes
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 	possible = {
 		owns_entire_state_region = STATE_GEORGIA
@@ -1547,7 +1547,7 @@ je_int_missi = {
 		always = yes
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 	possible = {
 		owns_entire_state_region = STATE_MISSISSIPPI
@@ -1590,7 +1590,7 @@ je_int_ten = {
 		always = yes
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 	possible = {
 		owns_entire_state_region = STATE_TENNESSEE
@@ -1643,7 +1643,7 @@ je_int_ark = {
 		always = yes
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 	possible = {
 		owns_entire_state_region = STATE_ARKANSAS
@@ -1690,7 +1690,7 @@ je_int_okl = {
 		always = yes
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 	possible = {
 		owns_entire_state_region = STATE_OKLAHOMA
@@ -1745,7 +1745,7 @@ je_int_mis = {
 		always = yes
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 	possible = {
 		owns_entire_state_region = STATE_MISSOURI
@@ -1796,7 +1796,7 @@ je_int_kan = {
 		always = yes
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 	possible = {
 		owns_entire_state_region = STATE_KANSAS
@@ -1848,7 +1848,7 @@ je_int_lak = {
 		always = yes
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 	possible = {
 		owns_entire_state_region = STATE_MONTANA
@@ -1940,7 +1940,7 @@ je_int_ntd = {
 		always = yes
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 	possible = {
 		owns_entire_state_region = STATE_NORTH_DAKOTA
@@ -1989,7 +1989,7 @@ je_int_std = {
 		always = yes
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 	possible = {
 		owns_entire_state_region = STATE_SOUTH_DAKOTA
@@ -2045,7 +2045,7 @@ je_int_min = {
 		always = yes
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 	possible = {
 		owns_entire_state_region = STATE_MINNESOTA
@@ -2098,7 +2098,7 @@ je_int_iow = {
 		always = yes
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 	possible = {
 		owns_entire_state_region = STATE_IOWA
@@ -2149,7 +2149,7 @@ je_int_neb = {
 		always = yes
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 	possible = {
 		owns_entire_state_region = STATE_NEBRASKA
@@ -2205,7 +2205,7 @@ je_int_tex = {
 		always = yes
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 	possible = {
 		owns_entire_state_region = STATE_TEXAS
@@ -2260,7 +2260,7 @@ je_int_nme = {
 		always = yes
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 	possible = {
 		owns_entire_state_region = STATE_NEW_MEXICO
@@ -2320,7 +2320,7 @@ je_int_che = {
 		always = yes
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 	possible = {
 		owns_entire_state_region = STATE_WEST_VIRGINIA
@@ -2391,7 +2391,7 @@ je_int_ohi = {
 		always = yes
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 	possible = {
 		owns_entire_state_region = STATE_OHIO
@@ -2434,7 +2434,7 @@ je_int_mich = {
 		always = yes
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 	possible = {
 		owns_entire_state_region = STATE_MICHIGAN
@@ -2481,7 +2481,7 @@ je_int_indiana = {
 		always = yes
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 	possible = {
 		owns_entire_state_region = STATE_INDIANA
@@ -2528,7 +2528,7 @@ je_int_illi = {
 		always = yes
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 	possible = {
 		owns_entire_state_region = STATE_ILLINOIS
@@ -2579,7 +2579,7 @@ je_int_wis = {
 		always = yes
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 	possible = {
 		owns_entire_state_region = STATE_WISCONSIN
@@ -2631,7 +2631,7 @@ je_int_ari = {
 		always = yes
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 	possible = {
 		owns_entire_state_region = STATE_ARIZONA
@@ -2698,7 +2698,7 @@ je_int_nev = {
 		always = yes
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 	possible = {
 		owns_entire_state_region = STATE_NEVADA
@@ -2750,7 +2750,7 @@ je_int_utah = {
 		always = yes
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 	possible = {
 		owns_entire_state_region = STATE_UTAH
@@ -2802,7 +2802,7 @@ je_int_colo = {
 		always = yes
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 	possible = {
 		owns_entire_state_region = STATE_COLORADO
@@ -2850,7 +2850,7 @@ je_int_cree = {
 		always = yes
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 	possible = {
 		owns_entire_state_region = STATE_ONTARIO
@@ -2919,7 +2919,7 @@ je_int_atha = {
 		always = yes
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 	possible = {
 		owns_entire_state_region = STATE_NUNAVUT
@@ -2985,7 +2985,7 @@ je_int_sali = {
 		always = yes
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 	possible = {
 		owns_entire_state_region = STATE_ALASKA
@@ -3086,7 +3086,7 @@ je_int_siou = {
 		always = yes
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 	possible = {
 		owns_entire_state_region = STATE_ALBERTA
@@ -3158,9 +3158,9 @@ je_amc_swu = {
 		always = yes
 	}
 	ai_chance = {
-		base = 10
-		modifier = {
-			trigger = {
+		value = 10
+		if = {
+			limit = {
 				game_date > 1836.4.11
 			}
 			add = 90
@@ -3198,7 +3198,7 @@ je_amc_dec_nd = {
 		always = yes
 	}
 	ai_chance = {
-		base = 100	
+		value = 100	
 	}
 	possible = {
 		custom_tooltip = {
@@ -3240,7 +3240,7 @@ je_pun_warrome = {
 		always = yes
 	}
 	ai_chance = {
-		base = 100	
+		value = 100	
 	}
 	possible = {
 		root = {
@@ -3302,7 +3302,7 @@ je_pun_warrome_two = {
 		always = yes
 	}
 	ai_chance = {
-		base = 100	
+		value = 100	
 	}
 	possible = {
 		root = {
@@ -3364,7 +3364,7 @@ je_pun_warcth = {
 		always = yes
 	}
 	ai_chance = {
-		base = 100	
+		value = 100	
 	}
 	possible = {
 		root = {
@@ -3426,7 +3426,7 @@ je_ned_butt = {
 		always = yes
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 	possible = {
 		custom_tooltip = {
@@ -3467,7 +3467,7 @@ je_ned_butt_two = {
 		always = yes
 	}
 	ai_chance = {
-		base = 0
+		value = 0
 	}
 	possible = {
 		custom_tooltip = {
@@ -3506,7 +3506,7 @@ je_fru_orl = {
 		always = yes
 	}
 	ai_chance = {
-		base = 0	
+		value = 0	
 	}
 	possible = {
 		custom_tooltip = {
@@ -3533,7 +3533,7 @@ je_fru_anj = {
 		always = yes
 	}
 	ai_chance = {
-		base = 0	
+		value = 0	
 	}
 	possible = {
 		custom_tooltip = {
@@ -3560,7 +3560,7 @@ je_fru_poi = {
 		always = yes
 	}
 	ai_chance = {
-		base = 0	
+		value = 0	
 	}
 	possible = {
 		custom_tooltip = {
@@ -3588,9 +3588,9 @@ je_bribe_pope = {
 		always = yes
 	}
 	ai_chance = {
-		base = 0
-		modifier = {
-			trigger = {
+		value = 0
+		if = {
+			limit = {
 				game_date > 1836.4.11
 			}
 			add = 100
@@ -3628,15 +3628,15 @@ je_ann_acq = {
 		always = yes
 	}
 	ai_chance = {
-		base = 0
-		modifier = {
-			trigger = {
+		value = 0
+		if = {
+			limit = {
 				game_date > 1840.4.11
 			}
 			add = 40
 		}	
-		modifier = {
-			trigger = {
+		if = {
+			limit = {
 				game_date > 1844.4.11
 			}
 			add = 60
@@ -3693,15 +3693,15 @@ je_ann_tou = {
 		always = yes
 	}
 	ai_chance = {
-		base = 0
-		modifier = {
-			trigger = {
+		value = 0
+		if = {
+			limit = {
 				game_date > 1839.4.11
 			}
 			add = 30
 		}	
-		modifier = {
-			trigger = {
+		if = {
+			limit = {
 				game_date > 1842.4.11
 			}
 			add = 30
@@ -3758,7 +3758,7 @@ je_bourb = {
 		always = yes
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 	possible = {
 		custom_tooltip = {
@@ -3801,9 +3801,9 @@ je_inde = {
 		always = yes
 	}
 	ai_chance = {
-		base = 0
-		modifier = {
-			trigger = {
+		value = 0
+		if = {
+			limit = {
 				game_date > 1849.1.1
 			}
 			add = 100
@@ -3854,9 +3854,9 @@ je_inde_bud = {
 		always = yes
 	}
 	ai_chance = {
-		base = 0
-		modifier = {
-			trigger = {
+		value = 0
+		if = {
+			limit = {
 				game_date > 1836.4.4
 			}
 			add = 100
@@ -3912,7 +3912,7 @@ je_jae_button = {
 		always = yes
 	}
 	ai_chance = {
-		base = 0
+		value = 0
 	}
 	possible = {
 		custom_tooltip = {
@@ -3939,7 +3939,7 @@ je_yag_1 = {
 		always = yes
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 	possible = {
 		NOT = {
@@ -3964,9 +3964,9 @@ je_yag_2 = {
 		always = yes
 	}
 	ai_chance = {
-		base = 0
-		modifier = {
-			trigger = {
+		value = 0
+		if = {
+			limit = {
 				game_date >= 1839.1.1 
 			}
 			add = 100
@@ -3995,9 +3995,9 @@ je_yag_3 = {
 		always = yes
 	}
 	ai_chance = {
-		base = 0
-		modifier = {
-			trigger = {
+		value = 0
+		if = {
+			limit = {
 				game_date >= 1841.1.1 
 			}
 			add = 100
@@ -4026,9 +4026,9 @@ je_yag_4 = {
 		always = yes
 	}
 	ai_chance = {
-		base = 0
-		modifier = {
-			trigger = {
+		value = 0
+		if = {
+			limit = {
 				game_date >= 1842.1.1 
 			}
 			add = 100
@@ -4057,7 +4057,7 @@ je_yag_int_kau_b = {
 		always = yes
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 	possible = {
 		custom_tooltip = {
@@ -4087,7 +4087,7 @@ je_yag_int_thura_b = {
 		always = yes
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 	possible = {
 		custom_tooltip = {
@@ -4117,7 +4117,7 @@ je_yag_int_nuy_b = {
 		always = yes
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 	possible = {
 		custom_tooltip = {
@@ -4147,7 +4147,7 @@ je_yag_int_nor_b = {
 		always = yes
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 	possible = {
 		custom_tooltip = {
@@ -4177,7 +4177,7 @@ je_vikey = {
 		always = yes
 	}
 	ai_chance = {
-		base = 50
+		value = 50
 	}
 	possible = {
 		custom_tooltip = {
@@ -4204,7 +4204,7 @@ je_noclavin = {
 		always = yes
 	}
 	ai_chance = {
-		base = 50
+		value = 50
 	}
 	possible = {
 		custom_tooltip = {
@@ -4235,7 +4235,7 @@ je_nat_butt = {
 		always = yes
 	}
 	ai_chance = {
-		base = 100
+		value = 100
 	}
 	possible = {
 		NOT = {
@@ -4261,7 +4261,7 @@ je_nat_butt_two = {
 		always = yes
 	}
 	ai_chance = {
-		base = 0
+		value = 0
 	}
 	possible = {
 		custom_tooltip = {
@@ -4288,5 +4288,88 @@ je_nat_butt_two = {
 			name = var_je_nat_butt_two
 			days = 1825
 		}
+	}
+}
+je_mon_button = {
+	name = "je_mon_button"
+	desc = "je_mon_button_desc"
+	visible = {
+		always = yes
+	}
+	ai_chance = {
+		value = 0
+	}
+	possible = {
+		custom_tooltip = {
+			text = text_je_mon_button
+			NOT = {
+				has_variable = var_je_mon_button
+			}
+		}
+	}
+	effect = {
+		add_journal_entry = {
+			type = je_gelugpa
+		}
+		s:STATE_BEIJING = {
+			remove_claim = root
+		}
+		set_variable = {
+			name = var_je_mon_button
+			days = 1825
+		}
+		every_state_region = {
+				limit = {
+					state_region = {
+						is_homeland = cu:mongol
+					}
+					NOT = {
+						owner = root
+					}
+				}
+				add_claim = root
+			}
+	}
+}
+convert_to_conf = {
+	is_shown = {
+		exists = c:MO1
+		c:MO1 ?= THIS
+	}
+	possible = {
+		always = yes
+		NOT = {
+			has_variable = convert_to_mo1
+		}
+	}
+	when_taken = {
+		set_variable = {
+			name = convert_to_mo1
+		}
+		set_state_religion = rel:confucian
+		hidden_effect = {
+			remove_modifier = conf_pasive_mdf
+			add_modifier = {
+				name = conf_pasive_mdf
+			}
+		}
+		ruler = {
+			change_character_religion = rel:convert_to_mo1
+		}
+		ig:ig_devout = {
+			leader = {
+				change_character_religion = rel:convert_to_mo1
+			}
+			set_ig_trait = ig_trait:ig_trait_pious_fiction
+			set_ig_trait = ig_trait:ig_trait_divine_right
+			set_ig_trait = ig_trait:ig_trait_asceticism
+			set_interest_group_name = ig_confucian
+				remove_ideology = ideology_pious
+				remove_ideology = ideology_moralist
+				add_ideology = ideology_confucian
+		}
+	}
+	ai_chance = {
+		value = 1
 	}
 }

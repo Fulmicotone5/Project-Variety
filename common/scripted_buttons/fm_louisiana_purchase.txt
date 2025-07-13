@@ -5,7 +5,7 @@
 		always = yes
 	}
 	ai_chance = {
-		base = 0
+		value = 0
 	}
 	possible = {
 		custom_tooltip = {

@@ -187,3 +187,39 @@ texticon = {
 		fontsize = 18
 	}
 }
+texticon = {
+	icon = prestige_good_scandiart
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/prestige_goods/scandiart.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+texticon = {
+	icon = prestige_good_fmbudart
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/fine_art.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+texticon = {
+	icon = prestige_good_fmromanart
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/prestige_goods/fmromanart.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+texticon = {
+	icon = prestige_good_kalevcho
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/prestige_goods/kalevcho.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
