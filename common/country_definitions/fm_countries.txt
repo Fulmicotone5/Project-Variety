@@ -5375,5 +5375,15 @@ FL1 = {
 	tier = empire
 	
 	capital = STATE_FLANDERS
-	cultures = { flemish wallonian }
+	cultures = { flemish wallonian french }
+}
+UBD = {
+	color = { 142  140  84 }
+
+	country_type = recognized
+
+	tier = kingdom
+
+	cultures = { latvian estonian lithuanian }
+	capital = STATE_RIGA
 }

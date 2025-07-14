@@ -81,14 +81,50 @@ control_effects = {
 			}
 			if = {
 				limit = {
-					has_law = law_type:law_laissez_faire
+					has_law = law_type:law_interventionism
 				}
 				change_variable = {
 					name = control_var
-					add = -10
+					add = 5
 				}
 				custom_tooltip = {
 					text = fmlaw4
+				}
+			}
+			if = {
+				limit = {
+					has_law = law_type:law_agrarianism
+				}
+				change_variable = {
+					name = control_var
+					add = 5
+				}
+				custom_tooltip = {
+					text = fmlaw41
+				}
+			}
+			if = {
+				limit = {
+					has_law = law_type:law_industry_banned
+				}
+				change_variable = {
+					name = control_var
+					add = 10
+				}
+				custom_tooltip = {
+					text = fmlaw42
+				}
+			}
+			if = {
+				limit = {
+					has_law = law_type:law_extraction_economy
+				}
+				change_variable = {
+					name = control_var
+					add = 10
+				}
+				custom_tooltip = {
+					text = fmlaw43
 				}
 			}
 			if = {
@@ -109,7 +145,7 @@ control_effects = {
 				}
 				change_variable = {
 					name = control_var
-					add = 5
+					add = 10
 				}
 				custom_tooltip = {
 					text = fmlaw6

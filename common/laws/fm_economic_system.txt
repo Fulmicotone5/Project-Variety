@@ -79,6 +79,7 @@ law_interventionism = {
 		state_capitalists_investment_pool_efficiency_mult = 0.1
 		state_shopkeepers_investment_pool_efficiency_mult = 0.35
 		country_free_charters_add = 1
+		control_bool_5 = yes
 	}
 	
 	ai_enact_weight_modifier = { #Petitions
@@ -151,6 +152,7 @@ law_agrarianism = {
 		country_government_dividends_efficiency_add = 0.6
 		country_max_companies_add = 1
 		country_free_charters_add = 1
+		control_bool_5 = yes
 
 		
 		country_disable_nationalization_without_compensation_bool = yes
@@ -280,6 +282,7 @@ law_industry_banned = {
 		state_farmers_investment_pool_efficiency_mult = 1
 		state_capitalists_investment_pool_efficiency_mult = 0.1
 		country_free_charters_add = 1
+		control_bool_10 = yes
 	}
 
 	ai_will_do = {
@@ -328,7 +331,6 @@ law_laissez_faire = {
 		country_force_privatization_bool = yes
 		country_free_charters_add = 2
 		country_forbid_monopoly_bool = yes
-		control_bool_10n = yes
 
 	}
 
@@ -594,7 +596,7 @@ law_state_capitalism = {
 		country_government_dividends_efficiency_add = 0.5
 		country_max_companies_add = 20
 		country_free_charters_add = 3
-		control_bool_5 = yes
+		control_bool_10 = yes
 		
 		country_leverage_resistance_mult = 0.25
 
@@ -741,6 +743,7 @@ law_extraction_economy = {
 		country_economic_dependence_on_overlord_add = 0.5
 		country_max_companies_add = 3
 		country_free_charters_add = 1
+		control_bool_10 = yes
 	}
 
 	ai_will_do = {

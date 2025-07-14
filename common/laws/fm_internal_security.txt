@@ -32,16 +32,17 @@ law_national_guard = {
 	modifier = {
 		country_officers_pol_str_mult = 0.5
 		country_soldiers_pol_str_mult = 0.25
+		country_institution_home_affairs_max_investment_add = 2
 	}
 
 	institution = institution_home_affairs
 	institution_modifier = {
-		state_conscription_rate_add = 0.005
-		political_movement_radicalism_add = -0.05
-		state_harvest_condition_flood_impact_mult = -0.05
-		state_harvest_condition_wildfire_impact_mult = -0.05
-		state_harvest_condition_extreme_winds_impact_mult = -0.05
-		state_harvest_condition_drought_impact_mult= -0.05
+		state_conscription_rate_add = 0.003
+		political_movement_radicalism_add = -0.03
+		state_harvest_condition_flood_impact_mult = -0.03
+		state_harvest_condition_wildfire_impact_mult = -0.03
+		state_harvest_condition_extreme_winds_impact_mult = -0.03
+		state_harvest_condition_drought_impact_mult= -0.03
 		control_bool_315 = yes
 	}
 

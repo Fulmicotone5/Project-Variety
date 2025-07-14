@@ -6,7 +6,7 @@
 	ai_will_do = { always = no }
 	
 	possible = {
-		has_technology_researched = pan-nationalism
+		has_technology_researched = nationalism
 	}
 }
 IRE = {

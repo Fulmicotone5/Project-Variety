@@ -1378,3 +1378,15 @@ FL1 = {
 	
 	ai_will_do = { always = yes }
 }
+
+UBD = {
+	states = { STATE_KAUNAS STATE_VILNIUS STATE_TALINN STATE_TARTU STATE_RIGA STATE_COURLAND }
+	
+	required_states_fraction = 1
+
+	ai_will_do = { always = no }
+	
+	possible = {
+		has_technology_researched = nationalism
+	}
+}
