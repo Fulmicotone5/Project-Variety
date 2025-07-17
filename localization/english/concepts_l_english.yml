@@ -1823,7 +1823,8 @@ concept_religious: "Religious"
  concept_budget_diplomatic_pacts: "Diplomatic Pacts"
  concept_budget_diplomatic_pacts_desc: "[concept_money] collected from or remitted to the other party in a [concept_diplomatic_pact]."
  concept_constructed: "Constructed"
-
+ concept_budget_treaties: "Treaties"
+ concept_budget_treaties_desc: "[concept_money] collected from or remitted to the other [concept_country] in a [concept_treaty]."
  concept_budget_power_bloc: "Power Bloc Budget"
  concept_budget_power_bloc_desc: "[concept_money] collected from a [concept_power_bloc_member] or remitted to the [concept_power_bloc_leader]"
 

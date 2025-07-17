@@ -1,11 +1,11 @@
 ﻿BUILDINGS={
 	s:STATE_MAZOVIA={
-		region_state:GAL={
+		region_state:MZV={
 			create_building={
 				building="building_furniture_manufacturies"
 				add_ownership={
 					country={
-						country="c:GAL"
+						country="c:MZV"
 						levels=1
 					}
 				}
@@ -16,7 +16,7 @@
 				building="building_rye_farm"
 				add_ownership={
 					country={
-						country="c:GAL"
+						country="c:MZV"
 						levels=10
 					}
 				}
@@ -27,7 +27,7 @@
 				building="building_tooling_workshops"
 				add_ownership={
 					country={
-						country="c:GAL"
+						country="c:MZV"
 						levels=1
 					}
 				}
@@ -39,7 +39,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:GAL"
+						country="c:MZV"
 						levels=6
 						region="STATE_MAZOVIA"
 					}

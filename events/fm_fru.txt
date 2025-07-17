@@ -85,7 +85,12 @@ fm_fru.2 = {
 		add_journal_entry = {
 			type = je_occ_int
 		}
-		annex_with_incorporation = c:BOU
+		if = {
+			limit = { 
+				exists = c:BOU
+			}
+			annex_with_incorporation = c:BOU
+		}
 		ruler = {
 			set_ideology = ideology:ideology_reformer
 		}
@@ -109,5 +114,31 @@ fm_fru.2 = {
 				is_decaying = yes
 			}
 		}
+		if = {
+				limit = {
+					is_ai = yes
+					exists = c:TOU
+					exists = c:DCQ
+					c:TOU = {
+					is_ai = yes
+					is_subject_of = root
+					}
+					c:DCQ = {
+					is_ai = yes
+					is_subject_of = root
+					}
+					c:BUD = {
+					is_ai = yes
+					}
+					c:FLA = {
+					is_ai = yes
+					}
+					c:KAA = {
+					is_ai = yes
+					}
+				}
+				annex_with_incorporation = c:TOU
+				annex_with_incorporation = c:DCQ
+			}
 	}
 }

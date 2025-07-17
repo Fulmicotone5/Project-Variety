@@ -311,6 +311,28 @@ fm_yag.7 = {
 
 	immediate = {
 		set_variable = yag_demands_event
+		if = {
+				limit = {
+					is_ai = yes
+					exists = c:KNA
+					c:KNA = {
+					is_ai = yes
+					is_subject = no
+					}
+				}
+				annex_with_incorporation = c:KNA
+			}
+			if = {
+				limit = {
+					is_ai = yes
+					exists = c:WTI
+					c:WTI = {
+					is_ai = yes
+					is_subject = no
+					}
+				}
+				annex_with_incorporation = c:WTI
+			}
 	}
 
 	option = {
@@ -389,6 +411,28 @@ fm_yag.8 = {
 
 	immediate = {
 		set_variable = intyua_event
+		if = {
+				limit = {
+					is_ai = yes
+					exists = c:KAU
+					c:KAU = {
+					is_ai = yes
+					is_subject = no
+					}
+				}
+				annex_with_incorporation = c:KAU
+			}
+			if = {
+				limit = {
+					is_ai = yes
+					exists = c:WTI
+					c:WTI = {
+					is_ai = yes
+					is_subject = no
+					}
+				}
+				annex_with_incorporation = c:WTI
+			}
 	}
 
 
@@ -444,6 +488,28 @@ fm_yag.9 = {
 
 	immediate = {
 		set_variable = appalot_event
+		if = {
+				limit = {
+					is_ai = yes
+					exists = c:NWA
+					c:NWA = {
+					is_ai = yes
+					is_subject = no
+					}
+				}
+				annex_with_incorporation = c:NWA
+			}
+			if = {
+				limit = {
+					is_ai = yes
+					exists = c:WTI
+					c:WTI = {
+					is_ai = yes
+					is_subject = no
+					}
+				}
+				annex_with_incorporation = c:WTI
+			}
 	}
 
 	option = {
@@ -500,6 +566,28 @@ fm_yag.10 = {
 		ig:ig_intelligentsia = {
 			leader = { save_scope_as = int_leader }
 		}
+		if = {
+				limit = {
+					is_ai = yes
+					exists = c:MRN
+					c:MRN = {
+					is_ai = yes
+					is_subject = no
+					}
+				}
+				annex_with_incorporation = c:MRN
+			}
+			if = {
+				limit = {
+					is_ai = yes
+					exists = c:WTI
+					c:WTI = {
+					is_ai = yes
+					is_subject = no
+					}
+				}
+				annex_with_incorporation = c:WTI
+			}
 	}
 
 	option = {
@@ -588,6 +676,28 @@ fm_yag.11 = {
 
 	immediate = {
 		set_variable = harvest_event
+		if = {
+				limit = {
+					is_ai = yes
+					exists = c:NNG
+					c:NNG = {
+					is_ai = yes
+					is_subject = no
+					}
+				}
+				annex_with_incorporation = c:NNG
+			}
+			if = {
+				limit = {
+					is_ai = yes
+					exists = c:WTI
+					c:WTI = {
+					is_ai = yes
+					is_subject = no
+					}
+				}
+				annex_with_incorporation = c:WTI
+			}
 	}
 
 	option = {
@@ -653,6 +763,28 @@ fm_yag.12 = {
 
 	immediate = {
 		set_variable = factoryua_event
+		if = {
+				limit = {
+					is_ai = yes
+					exists = c:WAT
+					c:WAT = {
+					is_ai = yes
+					is_subject = no
+					}
+				}
+				annex_with_incorporation = c:WAT
+			}
+			if = {
+				limit = {
+					is_ai = yes
+					exists = c:WTI
+					c:WTI = {
+					is_ai = yes
+					is_subject = no
+					}
+				}
+				annex_with_incorporation = c:WTI
+			}
 	}
 
 	option = {

@@ -408,6 +408,7 @@ je_cas_main_reason: "Whether through diplomacy or war, the time has come to unif
 je_inqui: "Restoring the Holy Office of Compostela"
 je_inqui_reason: "The past few decades have been tough for the [GetReligion('catholic').GetName] Church;\nAfter the schism in 1809, the catholic world plunged into chaos.\nJerusalem, Antioch, Alexandria, Constantinople are all under the control of infidel nations.\nThe Papacy of Rome is losing authority day after day, and without any intervention, the situation it's only going to get worse.\nThe Catholic Church of Castile is demanding for [ROOT.GetCountry.GetName] to become the last bastion of Catholicism."
 noesp: "The player follows the #bold Spain#! path"
+nomon: "The [GetLawType('law_monarchy').GetName] has fallen"
 je_remove_av: "The True Pope"
 je_remove_av_reason: "That impostor has tarnished the legitimacy of the Pope for too long.\n The time has come to be rid of him."
 je_reclaim_holy: "Reclaiming the Holy Sites"

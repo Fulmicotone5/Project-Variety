@@ -8039,9 +8039,8 @@ STATES = {
 			owned_provinces = { xE165F5 x009F60 x46B451 x4F022C x802161 xDC58D0 }
 		}
 		create_state = {
-			country = c:GAL
+			country = c:MZV
 			owned_provinces = { xF8C8F6 xDE551D x117AE1 x4969E4 xC06121 x0087C9 x1AA8FB xC17590 x809F60 }
-			state_type = unincorporated
 		}
 		
 		add_homeland = cu:polish

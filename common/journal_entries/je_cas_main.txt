@@ -12,6 +12,28 @@
 		trigger_event = {
 			id = fm_cas.2
 		}
+		if = {
+			limit = { 
+				is_ai = yes
+				exists = c:KAA
+				c:KAA = {
+					is_ai = yes
+					is_subject = no
+				}
+			}
+			annex_with_incorporation = c:KAA
+		}
+		if = {
+				limit = { 
+					is_ai = yes
+					exists = c:NAV
+					c:NAV = {
+					is_ai = yes
+					is_subject = no
+					}
+				}
+				annex_with_incorporation = c:NAV
+			}
 	}
 	complete = {
 		owns_entire_state_region = STATE_ANDALUSIA
@@ -40,9 +62,16 @@
 		}
 	}
 	fail = {
-		NOT = {
-			has_law = law_type:law_monarchy
+		custom_tooltip = {
+			text = nomon
+			OR = {
+				is_ai = yes
+				NOT = {
+				has_law = law_type:law_monarchy
+				}
+			}
 		}
+
 	}
 	on_complete = {
 		change_tag = ESP

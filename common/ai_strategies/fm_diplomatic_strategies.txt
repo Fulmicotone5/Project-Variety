@@ -5,23 +5,23 @@ ai_strategy_unify_poland = {
 		always = yes
 	}
 	undesirable_infamy_level = {
-		value = 80
+		value = 100
 	}
 	unacceptable_infamy_level = {
 		value = 120
 	}
 	ideological_opinion_effect_mult = 0.5
 	wargoal_maneuvers_fraction = {
-		value = 0.2
+		value = 0.5
 	}
 	diplomatic_play_neutrality = {
 		value = 0
 	}
 	diplomatic_play_boldness = {
-		value = 100
+		value = 1000
 	}
 	obligation_value = {
-		value = 20
+		value = 0
 	}
 	recklessness = {
 		value = 2
@@ -34,7 +34,7 @@ ai_strategy_unify_poland = {
 					can_form_nation = PUL
 				}
 			}
-			add = 200
+			add = 10000
 		}
 		if = {
 			limit = {
@@ -66,7 +66,7 @@ ai_strategy_unify_poland = {
 				}
 				can_reach_target_state = yes
 			}
-			add = 500
+			add = 1000
 		}
 	}
 	wargoal_scores = {
@@ -193,7 +193,7 @@ ai_strategy_unify_japan = {
 				}
 				can_reach_target_country = yes
 			}
-			add = 200
+			add = 1000
 		}
 	}
 	building_group_weights = {
