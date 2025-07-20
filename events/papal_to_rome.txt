@@ -246,6 +246,9 @@ papal_to_rome.3 = {
 		s:STATE_PIEDMONT = {
 			add_claim = c:PUP
 		}
+		ai_chance = {
+			base = 100
+		}
 	}
 	option = {
 		name = papal_to_rome.3.b
@@ -302,6 +305,9 @@ papal_to_rome.3 = {
 		add_journal_entry = {
 			type = je_restore_emperor
 		}
+		ai_chance = {
+			base = 0
+		}
 	}
 }
 
@@ -335,11 +341,67 @@ papal_to_rome.4 = {
 		s:STATE_PROVENCE = {
 			add_claim = c:PUP
 		}
-	}
-	after = {
+		if = {
+			limit = {
+				is_ai = no
+			}
 		add_journal_entry = {
 			type = je_one_church
+			}
 		}
+		if = {
+				limit = {
+					is_ai = yes
+					c:LLO = {
+					is_ai = yes
+					is_subject = no
+					}
+					c:SPO = {
+					is_ai = yes
+					is_subject = no
+					}
+					c:SNM = {
+					is_ai = yes
+					is_subject = no
+					}
+					c:VEN = {
+					is_ai = yes
+					is_subject = no
+					}
+				}
+				annex_with_incorporation = c:LLO
+				annex_with_incorporation = c:SPO
+				random_list = {
+					50 = { 
+						change_tag = ICI
+						s:STATE_ABRUZZO = {
+						add_claim = root
+						}
+						s:STATE_CAMPANIA = {
+							add_claim = root
+						}
+						s:STATE_APULIA = {
+							add_claim = root
+						}
+						s:STATE_CALABRIA = {
+							add_claim = root
+						}
+					}
+					50 = {
+						activate_law = law_type:law_monarchy
+						activate_law = law_type:law_wealth_voting
+						activate_law = law_type:law_total_separation
+						activate_law = law_type:law_private_schools
+						add_loyalists = {
+							strata = lower
+							value = very_large_radicals
+						}
+						trigger_event = {
+							id = papal_to_rome.3
+						}
+					}
+				}
+			}
 	}
 }
 

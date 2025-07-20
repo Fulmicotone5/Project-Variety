@@ -679,11 +679,6 @@ NEW = {
 	ai_will_do = { always = no }
 }
 
-SMI = {
-	use_culture_states = yes
-
-	ai_will_do = { always = no }
-}
 
 BUS = {
 	use_culture_states = yes

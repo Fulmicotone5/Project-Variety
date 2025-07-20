@@ -1150,3 +1150,9 @@ tewodros_modifier = {
 	unit_army_offense_add = 30
 	character_popularity_add = 50
 }
+
+modifier_amc_col = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
+	state_colony_growth_speed_mult = 0.5
+	state_colony_growth_creation_factor = 2
+}

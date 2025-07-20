@@ -49,7 +49,7 @@
  modifier_boh_two: "Upset Nobility"
  modifier_dan_one: "The Restorer"
  modifier_boh_one: "Dysfunctional Kingdom"
- modifier_carp: "From the Alps to the Carphatians"
+ modifier_carp: "From the Alps to the Carpathians"
  modifier_bav_one: "Nobles Slaughtered"
  modifier_bav_two: "Nobles Under Trial"
  modifier_bav_three: "Concessions to the East Frankish Nobility"
@@ -144,6 +144,7 @@
  modifier_stateof: "State of Emergency"
  modifier_stateof_ig: "State of Emergency"
  modifier_subject: "Price of Subjugation"
+ modifier_amc_col: "Colonization Effort"
 
  #Age Modifiers
  golden_age_mdf: "Golden Age"

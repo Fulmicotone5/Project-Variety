@@ -96,6 +96,16 @@ fm_bavaria.3 = {
 		add_journal_entry = {
 			type = je_ari_rev
 		}
+		if = {
+				limit = {
+					is_ai = yes
+					c:OIS = {
+						is_ai = yes
+					}
+				}
+				annex_with_incorporation = c:BAD
+				annex_with_incorporation = c:WUR
+			}
 	}
 }
 

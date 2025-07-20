@@ -16,7 +16,7 @@
 			id = papal_to_rome.2
 		}
 	}
-	timeout = 800
+	timeout = 1000
 	fail = {
 		NOT = {
 			any_scope_state = {
@@ -212,8 +212,6 @@ je_ita_pro = {
 		owns_entire_state_region = STATE_CAMPANIA
 		owns_entire_state_region = STATE_CALABRIA
 		owns_entire_state_region = STATE_APULIA
-		owns_entire_state_region = STATE_ABRUZZO
-		owns_entire_state_region = STATE_UMBRIA
 		owns_entire_state_region = STATE_PIEDMONT
 	}
 	on_complete = {

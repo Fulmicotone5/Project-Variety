@@ -3414,7 +3414,7 @@ ai_strategy_default = {
 	# How likely is the AI to start a diplomatic play against another country if their attitude allows for it
 	# Using this value in other strategies will function additively
 	aggression = {
-		value = 0.5
+		value = 1
 
 		# More fighting between unrecognized powers
 		if = {
@@ -3619,6 +3619,17 @@ ai_strategy_default = {
 			add = 3
 		}
 
+		if = {
+			limit = {
+				scope:target_country = {
+					any_scope_state = {
+						has_claim_by = ROOT
+					}
+				}
+			}
+			add = 100
+		}
+
 		# Britain consolidating South Asia
 		if = {
 			limit = {
@@ -3734,6 +3745,7 @@ ai_strategy_default = {
 			}
 			add = 5
 		}
+		
 
 		if = { #Japan also wants Korea
 			limit = {

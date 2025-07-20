@@ -284,6 +284,17 @@ fm_rusf.5 = { #vs cossacks
 		hidden_effect = {
 			change_infamy = -100
 		}
+		if = {
+			limit = { 
+				is_ai = yes
+				exists = c:DON
+				c:DON = {
+					is_ai = yes
+					is_subject = no
+				}
+			}
+			annex_with_incorporation = c:DON
+		}
 	}
 }
 

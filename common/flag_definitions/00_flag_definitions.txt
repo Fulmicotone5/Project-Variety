@@ -3716,8 +3716,15 @@ UKK = { # Great Britain / United Kingdom
 }
 
 SCU = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	color2 = "white"
 
-
+	colored_emblem = {
+		texture = "ce_saltire.dds"
+		color1 = color2
+		color2 = color3
+	}
 }
 
 GCO = { # Gran Colombia

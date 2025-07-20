@@ -192,7 +192,7 @@ BF1 = {
 IBE = {
 	use_culture_states = yes
 
-	required_states_fraction = 1
+	required_states_fraction = 0.8
 	
 	ai_will_do = { always = yes }
 
@@ -442,7 +442,7 @@ HU1 = {
 		
 	}
 
-	required_states_fraction = 1
+	required_states_fraction = 0.9
 	
 	ai_will_do = { always = yes }
 
@@ -729,6 +729,7 @@ PUL = {
 		STATE_WEST_GALICIA
 		STATE_EAST_GALICIA
 	}
+	required_states_fraction = 0.5
 
 	ai_will_do = { always = yes }
 }

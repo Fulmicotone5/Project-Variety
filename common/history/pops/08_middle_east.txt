@@ -1015,42 +1015,10 @@
 		}
 	}
 	s:STATE_HUDAVENDIGAR = {
-		region_state:TOR = {
-			create_pop = {
-				culture = turkish
-				size = 128494
-			}
-			create_pop = {
-				culture = sephardic
-				size = 2010
-			}
-			create_pop = {
-				culture = armenian
-				size = 32277
-			}
-			create_pop = {
-				culture = greco_roman
-				size = 6555
-			}
-			create_pop = {
-				culture = greek
-				size = 58626
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = north_caucasian
-				size = 1000
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = east_bantu
-				size = 2000
-			}
-		}
 		region_state:BIZ = {
 			create_pop = {
 				culture = greek
-				size = 328494
+				size = 428494
 			}
 			create_pop = {
 				culture = sephardic
@@ -1066,7 +1034,7 @@
 			}
 			create_pop = {
 				culture = turkish
-				size = 65464
+				size = 95464
 			}
 			create_pop = {
 				culture = greco_roman

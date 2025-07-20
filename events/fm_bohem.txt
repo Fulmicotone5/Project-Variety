@@ -85,7 +85,7 @@ fm_bohem.3 = {
 			}
 		}
 		ai_chance = {
-			base = 40
+			base = 50
 		}
 	}
 	option = {
@@ -102,6 +102,18 @@ fm_bohem.3 = {
 		}
 		hidden_effect = {
 			change_infamy = -36
+			if = {
+				limit = { 
+					is_ai = yes
+					c:BAY = {
+						is_ai = yes
+					}
+				}
+				create_diplomatic_pact = {
+				country = c:BAY
+				type = protectorate
+				}
+			}
 		}
 		ai_chance = {
 			base = 0
@@ -116,7 +128,7 @@ fm_bohem.3 = {
 						}
 					}
 				}
-				add = 60
+				add = 50
 			}
 		}
 	}

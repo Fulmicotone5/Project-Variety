@@ -190,5 +190,15 @@ fm_pol.999 = {
 				value = 100
 			}
 		}
+		if = {
+				limit = {
+					is_ai = yes
+					c:MZV = {
+					is_ai = yes
+					is_subject = no
+					}
+				}
+				annex_with_incorporation = c:MZV
+			}
 	}
 }

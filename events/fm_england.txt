@@ -108,34 +108,35 @@ fm_england.4 = {
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
 	immediate = {
-		random_scope_state = {
+		if = {
 			limit = {
-				state_region = s:STATE_LOWLANDS
-			}
-			save_scope_as = secession_state_sco
-		}
-		create_country = {
+				NOT = {
+					exists = c:SCU
+				}
+			 }
+			 create_country = {
 			tag = SCU
 			origin = ROOT
-			state = scope:secession_state_sco
-		}
-		random_state = {
-			limit = {
-				state_region = s:STATE_HIGHLANDS
+			state = s:STATE_LOWLANDS.region_state:ENG
+				on_created = {
+					s:STATE_HIGHLANDS.region_state:ENG = {
+							set_state_owner = c:SCU
+						}
+				}
 			}
-			set_state_owner = c:SCU
-			set_state_type = incorporated
 		}
-		random_scope_state = {
-			limit = {
-				state_region = s:STATE_WALES
-			}
-			save_scope_as = secession_state_wls
+		else = {
+					s:STATE_HIGHLANDS.region_state:ENG = {
+							set_state_owner = c:SCU
+						}
+						s:STATE_LOWLANDS.region_state:ENG = {
+							set_state_owner = c:SCU
+						}
 		}
 		create_country = {
 			tag = WLS
 			origin = ROOT
-			state = scope:secession_state_wls
+			state = s:STATE_WALES.region_state:ENG
 		}
 	}
 	option = {

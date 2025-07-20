@@ -118,21 +118,6 @@
 					set_character_immortal = no
 				}
 			}
-			if = {
-				limit = {
-					is_ai = yes
-					c:BUD = {
-					is_ai = yes
-					is_subject = no
-					}
-					c:NED = {
-					is_ai = yes
-					is_subject = no
-					}
-				}
-				annex_with_incorporation = c:BUD
-				annex_with_incorporation = c:NED
-			}
 		}
 	}
 	weight = 100

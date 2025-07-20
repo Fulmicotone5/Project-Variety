@@ -3,12 +3,27 @@
 	group = je_group_historical_content
 	scripted_button = je_ned_butt
 	scripted_button = je_ned_butt_two
-	timeout = 3650
+	timeout = 1500
 	complete = {
 		gold_reserves > 0
 	}
 	on_complete = {
 		remove_modifier = modifier_ned_one
+		if = {
+				limit = {
+					is_ai = yes
+					c:BUD = {
+					is_ai = yes
+					is_subject = no
+					}
+					c:FLA = {
+					is_ai = yes
+					is_subject = no
+					}
+				}
+				annex_with_incorporation = c:BUD
+				annex_with_incorporation = c:FLA
+			}
 	}
 	on_timeout = {
 		remove_modifier = modifier_ned_one
@@ -16,6 +31,23 @@
 			name = modifier_ned_two
 			months = 60
 		}
+		if = {
+				limit = {
+					is_ai = yes
+					c:BUD = {
+					is_ai = yes
+					is_subject = no
+					}
+					c:FLA = {
+					is_ai = yes
+					is_subject = no
+					}
+				}
+				c:BUD = {
+					annex_with_incorporation = c:NED
+					annex_with_incorporation = c:FLA
+					}
+			}
 	}
 
 	weight = 100

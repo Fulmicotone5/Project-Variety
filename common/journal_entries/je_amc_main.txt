@@ -165,6 +165,10 @@ je_amc_inde = {
 					}
 				}
 				annex_with_incorporation = c:FOU
+				add_modifier = {
+					name = modifier_amc_col
+					months = 60
+				}
 			}
 	}
 	on_timeout = {
