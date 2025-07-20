@@ -729,7 +729,7 @@ PUL = {
 		STATE_WEST_GALICIA
 		STATE_EAST_GALICIA
 	}
-	required_states_fraction = 0.5
+	required_states_fraction = 0.8
 
 	ai_will_do = { always = yes }
 }
