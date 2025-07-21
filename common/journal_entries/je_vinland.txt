@@ -63,7 +63,7 @@ king_vin = {
 		has_law = law_type:law_monarchy
 		or = {
 			has_law = law_type:law_autocracy
-			has_law = law_type:law_oligarchy
+			has_law_or_variant = law_type:law_oligarchy
 		}
 		has_technology_researched = pan-nationalism
 	}

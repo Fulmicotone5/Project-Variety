@@ -62,10 +62,6 @@ fm_rusf.2 = {
 			value = large_radicals
 			strata = lower
 		}
-		hidden_effect = {
-			s:STATE_TARTARIA = {
-				add_claim = c:RUI
-			}
 			s:STATE_GALICH = {
 				add_claim = c:RUI
 			}
@@ -73,12 +69,6 @@ fm_rusf.2 = {
 				add_claim = c:RUI
 			}
 			s:STATE_NENETSIA = {
-				add_claim = c:RUI
-			}
-			s:STATE_TAMBOV = {
-				add_claim = c:RUI
-			}
-			s:STATE_YAROSLAVL = {
 				add_claim = c:RUI
 			}
 			s:STATE_SURGUT = {
@@ -102,7 +92,14 @@ fm_rusf.2 = {
 			s:STATE_KRASNOYARSK = {
 				add_claim = c:RUI
 			}
-		}
+			every_state = {
+				limit = {
+					region = sr:region_russia
+				}
+				state_region = {
+						add_claim = ROOT
+					}
+			}
 	}
 }
 

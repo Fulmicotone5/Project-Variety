@@ -328,7 +328,7 @@ ddr_germany = {
 				OR = {
 					has_law = law_type:law_autocracy
 					has_law = law_type:law_technocracy
-					has_law = law_type:law_oligarchy
+					has_law_or_variant = law_type:law_oligarchy
 				}
 				any_scope_character = {
 					is_ruler = yes

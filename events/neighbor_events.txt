@@ -294,6 +294,7 @@ neighbor_events.3 = {
 				OR = {
 					has_ideology = ideology:ideology_stratocratic
 					has_ideology = ideology:ideology_plutocratic
+					has_ideology = ideology:ideology_corpofm
 				}
 			}
 			add_modifier = {
@@ -613,6 +614,7 @@ neighbor_events.7 = {
 			limit = {
 				has_ideology = ideology:ideology_stratocratic
 				has_ideology = ideology:ideology_plutocratic
+				has_ideology = ideology:ideology_corpofm
 			}
 			add_modifier = {
 				name = blamed_economic_inequality

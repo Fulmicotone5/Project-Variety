@@ -167,7 +167,7 @@
 		region_state:KAR = {
 			create_pop = {
 				culture = russian
-				size = 1562676
+				size = 2562676
 			}
 		}
 	}

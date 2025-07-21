@@ -734,7 +734,7 @@ ideology_radical = {
 						has_law = law_type:law_secret_police
 						has_law = law_type:law_outlawed_dissent
 						has_law = law_type:law_autocracy
-						has_law = law_type:law_oligarchy
+						has_law_or_variant = law_type:law_oligarchy
 					}
 					any_scope_state = {
 						is_incorporated = yes
@@ -768,7 +768,7 @@ ideology_radical = {
 						has_law = law_type:law_secret_police
 						has_law = law_type:law_outlawed_dissent
 						has_law = law_type:law_autocracy
-						has_law = law_type:law_oligarchy
+						has_law_or_variant = law_type:law_oligarchy
 					}
 				}
 			}
@@ -1066,7 +1066,7 @@ ideology_feminist = {
 						AND = {
 							has_law = law_type:law_women_in_the_workplace
 							OR = {
-								has_law = law_type:law_oligarchy
+								has_law_or_variant = law_type:law_oligarchy
 								has_law = law_type:law_autocracy
 							}
 						}
@@ -2276,7 +2276,7 @@ ideology_vanguardist = {
 				owner = {
 					OR = {
 						has_law = law_type:law_autocracy
-						has_law = law_type:law_oligarchy
+						has_law_or_variant = law_type:law_oligarchy
 					}
 				}
 			}
@@ -2310,7 +2310,7 @@ ideology_vanguardist = {
 					has_law = law_type:law_council_republic
 					OR = {
 						has_law = law_type:law_autocracy
-						has_law = law_type:law_oligarchy
+						has_law_or_variant = law_type:law_oligarchy
 						has_law = law_type:law_single_party_state
 						has_law = law_type:law_technocracy
 					}
@@ -3512,7 +3512,7 @@ ideology_authoritarian = {
 				has_law = law_type:law_outlawed_dissent
 				has_law = law_type:law_secret_police
 				OR = {
-					has_law = law_type:law_oligarchy
+					has_law_or_variant = law_type:law_oligarchy
 					has_law = law_type:law_autocracy
 				}
 			}
@@ -3530,7 +3530,7 @@ ideology_authoritarian = {
 				owner = { 
 					OR = {
 						has_law = law_type:law_autocracy
-						has_law = law_type:law_oligarchy
+						has_law_or_variant = law_type:law_oligarchy
 					}
 					has_law = law_type:law_secret_police
 					has_law = law_type:law_outlawed_dissent
@@ -4770,7 +4770,7 @@ ideology_liberal_leader = {
 				owner = {
 					OR = {
 						has_law = law_type:law_autocracy
-						has_law = law_type:law_oligarchy
+						has_law_or_variant = law_type:law_oligarchy
 						has_law = law_type:law_technocracy
 						has_law = law_type:law_single_party_state
 					}
@@ -5323,7 +5323,7 @@ ideology_despotic_utopian = {
 				owner = { 
 					OR = {
 						has_law = law_type:law_autocracy
-						has_law = law_type:law_oligarchy
+						has_law_or_variant = law_type:law_oligarchy
 						has_law = law_type:law_technocracy
 						has_law = law_type:law_single_party_state
 					}

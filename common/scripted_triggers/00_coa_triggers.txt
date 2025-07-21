@@ -32,7 +32,7 @@ coa_undemocratic_monarchy_trigger = {
 	OR = {
 		has_law = law_type:law_autocracy 
 		has_law = law_type:law_elder_council
-		has_law = law_type:law_oligarchy
+		has_law_or_variant = law_type:law_oligarchy
 	}
 }
 
@@ -52,7 +52,7 @@ coa_dictatorship_trigger = {
 
 coa_oligarchy_trigger = {
 	coa_republic_trigger = yes
-	has_law = law_type:law_oligarchy
+	has_law_or_variant = law_type:law_oligarchy
 }
 
 coa_theocracy_trigger = {

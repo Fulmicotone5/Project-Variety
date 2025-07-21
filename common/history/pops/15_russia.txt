@@ -753,7 +753,7 @@
 		region_state:SMO = {
 			create_pop = {
 				culture = russian
-				size = 535720
+				size = 935720
 			}
 			create_pop = {
 				culture = polish

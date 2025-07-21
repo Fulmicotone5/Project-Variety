@@ -4373,3 +4373,150 @@ convert_to_conf = {
 		value = 1
 	}
 }
+
+LF_decision_one = {
+	name = "LF_decision_one"
+	desc = "LF_decision_one_desc"
+	possible = {
+		custom_tooltip = {
+			text = text_je_ned_butt
+			NOT = {
+			has_variable = LFFMone
+			}
+		}
+		has_technology_researched = aniline
+	}
+
+	effect = {
+		capital = {
+			create_building = {
+				building = "building_synthetics_plants"
+				level = 5
+				reserves=1
+			}
+		}
+		set_variable = {
+			name = LFFMone
+		}
+		add_modifier = {
+			name = modifier_LFFM
+			days = 60
+			multiplier = money_amount_multiplier_fm
+		}
+	}
+	ai_chance = {
+		value = 100
+	}
+}
+LF_decision_two = {
+	name = "LF_decision_two"
+	desc = "LF_decision_two_desc"
+	possible = {
+		custom_tooltip = {
+			text = text_je_ned_butt
+			NOT = {
+			has_variable = LFFMtwo
+			}
+		}
+		has_technology_researched = pumpjacks
+		any_scope_state = {
+			has_potential_resource = bg_oil_extraction
+			owner = root
+		}
+	}
+
+	effect = {
+		random_state = {
+			limit = {
+				has_potential_resource = bg_oil_extraction
+				owner = root
+			}
+			create_building = {
+				building = "building_oil_rig"
+				level = 5
+				reserves=1
+			}
+		}
+		custom_tooltip = {
+			text = rincoglionito
+		}
+		set_variable = {
+			name = LFFMtwo
+		}
+		add_modifier = {
+			name = modifier_LFFM
+			days = 60
+			multiplier = money_amount_multiplier_fm
+		}
+	}
+	ai_chance = {
+		value = 100
+	}
+}
+LF_decision_three = {
+	name = "LF_decision_three"
+	desc = "LF_decision_three_desc"
+	possible = {
+		custom_tooltip = {
+			text = text_je_ned_butt
+			NOT = {
+			has_variable = LFFMthree
+			}
+		}
+			has_technology_researched = combustion_engine
+	}
+
+	effect = {
+		capital = {
+			create_building = {
+				building = "building_automotive_industry"
+				level = 5
+			}
+		}
+		set_variable = {
+			name = LFFMthree
+		}
+		add_modifier = {
+			name = modifier_LFFM
+			days = 60
+			multiplier = money_amount_multiplier_fm
+		}
+	}
+	ai_chance = {
+		value = 100
+	}
+}
+LF_decision_four = {
+	name = "LF_decision_four"
+	desc = "LF_decision_four_desc"
+	possible = {
+		custom_tooltip = {
+			text = text_je_ned_butt
+			NOT = {
+			has_variable = LFFMfour
+			}
+		}
+		has_technology_researched = telephone
+	}
+
+	effect = {
+		capital = {
+			create_building = {
+				building = "building_electrics_industry"
+				level = 5
+				reserves=1
+			}
+		}
+		set_variable = {
+			name = LFFMfour
+		}
+		add_modifier = {
+			name = modifier_LFFM
+			days = 60
+			multiplier = money_amount_multiplier_fm
+		}
+	}
+	ai_chance = {
+		value = 100
+	}
+}

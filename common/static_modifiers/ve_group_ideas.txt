@@ -128,16 +128,16 @@ waroff_2_mdf = {
 
 waroff_3_mdf = {
 	icon = gfx/interface/ve_ideas/idea_defensive_ideas.dds
-	battle_defense_owned_province_mult = 0.15
+	battle_defense_owned_province_mult = 0.1
 }
 waroff_3_mdf2 = {
 	icon = gfx/interface/icons/invention_icons/centralization.dds
-	unit_army_defense_mult = 0.1
+	unit_army_defense_mult = 0.05
 }
 
 waroff_4_mdf = {
 	icon = gfx/interface/icons/invention_icons/defense_in_depth.dds
-	unit_provinces_lost_mult = -0.15
+	unit_provinces_lost_mult = -0.1
 }
 
 waroff_5_mdf = {
@@ -286,7 +286,7 @@ fadm4 = {
 	building_arts_academy_throughput_add = 0.2
 	building_university_throughput_add = 0.1
 	state_pop_qualifications_mult = 0.1
-	country_tech_spread_mult = 0.4
+	country_tech_spread_mult = 0.3
 }
 fadm5 = {
 	icon = gfx/interface/ve_ideas/land_morale.dds

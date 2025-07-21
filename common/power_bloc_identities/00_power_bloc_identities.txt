@@ -433,7 +433,7 @@ identity_ideological_union = {
 				has_law = law_type:law_monarchy 
 				OR = {
 					has_law = law_type:law_autocracy
-					has_law = law_type:law_oligarchy
+					has_law_or_variant = law_type:law_oligarchy
 				}
 			}
 			add = 100

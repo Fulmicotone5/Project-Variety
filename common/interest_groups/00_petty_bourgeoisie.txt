@@ -87,6 +87,16 @@
 				add_ideology = ideology_middle_class
 			}
 		}
+		else_if = {
+				limit = {
+					owner = {
+						c:VEN ?= this
+					}
+				}
+				ig:ig_petty_bourgeoisie = {
+							set_interest_group_name = ig_venbur			
+				}
+			}
 	}
 
 	on_disable = {}

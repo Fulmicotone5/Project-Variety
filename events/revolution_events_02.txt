@@ -1284,7 +1284,7 @@ revolution_pulse_events.10 = {
 		OR = {
 			has_law = law_type:law_monarchy
 			has_law = law_type:law_autocracy
-			has_law = law_type:law_oligarchy
+			has_law_or_variant = law_type:law_oligarchy
 			has_law = law_type:law_single_party_state
 		}
 		revolution_progress_high = yes

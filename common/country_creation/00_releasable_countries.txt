@@ -670,6 +670,21 @@ NNV = {
 
 	ai_will_do = { always = no }
 }
+AMC  = {
+	use_culture_states = yes
+
+	ai_will_do = { always = no }
+}
+FOU = {
+	states = { 
+	STATE_VIRGINIA
+	STATE_NORTH_CAROLINA
+	STATE_SOUTH_CAROLINA
+	}
+
+
+	ai_will_do = { always = no }
+}
 
 NEW = {
 	states = { 
@@ -679,8 +694,67 @@ NEW = {
 	ai_will_do = { always = no }
 }
 
+LOI = {
+	states = { 
+		STATE_LOUISIANA
+	}
 
-BUS = {
+	ai_will_do = { always = no }
+}
+
+NSP = {
+	states = { 
+	STATE_RIO_GRANDE
+	STATE_VERACRUZ
+	STATE_BAJIO
+	STATE_MEXICO
+	}
+
+
+	ai_will_do = { always = no }
+}
+
+CAD = {
+	use_culture_states = yes
+
+	ai_will_do = { always = no }
+}
+CAH = {
+	use_culture_states = yes
+
+	ai_will_do = { always = no }
+}
+AT1 = {
+	use_culture_states = yes
+
+	ai_will_do = { always = no }
+}
+ONE = {
+	use_culture_states = yes
+
+	ai_will_do = { always = no }
+}
+YMN = {
+	use_culture_states = yes
+
+	ai_will_do = { always = no }
+}
+SSH = {
+	use_culture_states = yes
+
+	ai_will_do = { always = no }
+}
+SIS = {
+	use_culture_states = yes
+
+	ai_will_do = { always = no }
+}
+BFT = {
+	use_culture_states = yes
+
+	ai_will_do = { always = no }
+}
+DKT = {
 	use_culture_states = yes
 
 	ai_will_do = { always = no }

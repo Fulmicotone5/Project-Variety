@@ -3,7 +3,7 @@
 		region_state:SMO = {
 			create_pop = {
 				culture = russian
-				size = 1782734
+				size = 2782734
 			}
 		}
 	}
@@ -11,7 +11,7 @@
 		region_state:SMO = {
 			create_pop = {
 				culture = russian
-				size = 827590
+				size = 1827590
 			}
 			create_pop = {
 				culture = ashkenazi
@@ -27,7 +27,7 @@
 		region_state:SMO = {
 			create_pop = {
 				culture = russian
-				size = 1781596
+				size = 2781596
 			}
 			create_pop = {
 				culture = ashkenazi
@@ -43,7 +43,7 @@
 		region_state:SMO = {
 			create_pop = {
 				culture = russian
-				size = 739596
+				size = 1239596
 			}
 			create_pop = {
 				culture = finnish

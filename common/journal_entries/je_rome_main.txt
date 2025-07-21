@@ -88,7 +88,7 @@ je_restore_emperor = {
 		has_law = law_type:law_monarchy
 		OR = {
 			has_law = law_type:law_autocracy
-			has_law = law_type:law_oligarchy
+			has_law_or_variant = law_type:law_oligarchy
 		}
 		scope:armed_forces_leader = {
 			is_ruler = yes
@@ -150,7 +150,7 @@ je_mare_nostrum = {
 		has_law = law_type:law_monarchy
 		OR = {
 			has_law = law_type:law_autocracy
-			has_law = law_type:law_oligarchy
+			has_law_or_variant = law_type:law_oligarchy
 		}
 		has_technology_researched = pan-nationalism
 	}

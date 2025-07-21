@@ -290,9 +290,9 @@
  lombard.4.f: "This morning italian troops have entered Rome, taking advantage of a breach they caused near Porta Pia.\nThe Pope has been forced into exile, and the city is now under italian rule.\nDespite the destruction, the people of Rome celebrate, now that the city has been freed from the corrupted tyranny of the Curia romana."
  lombard.4.a: "For a prosperous future of our Country"
 
-  fm_venice.1.t: "The Fallen Queen of the Mediterranean"
-  fm_venice.1.d: "The Venice that once ruled the Mediterranean Sea,\nis now reduced to a regional power."
-  fm_venice.1.f: "The decline of Venice has started centuries ago, and ever since she reached her peak in the middle ages, the former queen of the mediterranean has only known defeat in war.\nAfter losing the independence wars against her colonies in the new world, the vast possessions of Venice have been reduced to a few ports and colonies scattered around the world.\nWith the rapid spread of industrialization, a second chance was given to Venice, but the road to glory is paved with difficulties."
+  fm_venice.1.t: "The Queen of the Mediterranean"
+  fm_venice.1.d: "The Republic of Venice, once renowned for its prosperity through maritime trade, has now evolved into a state predominantly serving the interests of corporate entities and affluent individuals."
+  fm_venice.1.f: "This shift raises questions about its future:\ncould this development precipitate its decline, or might [ROOT.GetCountry.GetName] ultimately emerge as the preeminent trading power the world has ever seen?"
   fm_venice.1.a: "Per Aspera ad Astra"
 
   fm_venice.2.t: "All the Ships Lead to Venice"

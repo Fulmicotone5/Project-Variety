@@ -189,6 +189,7 @@ conservative_party = {
 					has_ideology = ideology:ideology_plutocratic
 					has_ideology = ideology:ideology_paternalistic
 					has_ideology = ideology:ideology_magnatial
+					has_ideology = ideology:ideology_corpofm
 				}
 				owner = {
 					has_law = law_type:law_universal_suffrage
@@ -204,6 +205,7 @@ conservative_party = {
 				OR = {
 					has_ideology = ideology:ideology_plutocratic
 					has_ideology = ideology:ideology_stratocratic
+					has_ideology = ideology:ideology_corpofm
 				}
 				owner = {
 					has_law = law_type:law_graduated_taxation

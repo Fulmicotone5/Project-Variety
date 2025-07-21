@@ -186,6 +186,7 @@ corporate_charters = {
 	
 	modifier = {
 		country_max_companies_add = 1
+		country_free_charters_add = 1
 	}	
 	
 	unlocking_technologies = {
@@ -598,6 +599,7 @@ joint_stock_companies = {
 	modifier = {
 		country_max_companies_add = 1
 		state_urbanization_per_level_mult = -0.1
+		country_free_charters_add = 1
 	}	
 	
 	unlocking_technologies = {
@@ -1391,6 +1393,7 @@ corporate_management = {
 	modifier = {
 		country_max_companies_add = 1
 		state_urbanization_per_level_mult = -0.25
+		country_free_charters_add = 1
 	}	
 	
 	unlocking_technologies = {
@@ -1556,6 +1559,7 @@ macroeconomics = {
 	modifier = {
 		country_max_companies_add = 1
 		state_market_access_price_impact = 0.05
+		country_free_charters_add = 1
 	}
 	
 	unlocking_technologies = {

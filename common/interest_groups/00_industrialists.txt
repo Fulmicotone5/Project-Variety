@@ -65,6 +65,20 @@
 				set_ig_trait = ig_trait:ig_trait_engines_of_progress
 				set_ig_trait = ig_trait:ig_trait_job_creators				
 			}
+			else_if = {
+				limit = {
+					owner = {
+						c:VEN ?= this
+					}
+				}
+							remove_ideology = ideology_plutocratic
+			add_ideology = ideology_corpofm
+			set_interest_group_name = ig_venind
+
+				set_ig_trait = ig_trait:ig_trait_tax_avoidance
+				set_ig_trait = ig_trait:ig_trait_engines_of_progress
+				set_ig_trait = ig_trait:ig_trait_job_creators				
+			}
 			else = {
 				set_ig_trait = ig_trait:ig_trait_tax_avoidance
 				set_ig_trait = ig_trait:ig_trait_engines_of_progress
@@ -302,7 +316,7 @@
 			limit = {
 				owner = {
 					OR = {
-						has_law = law_type:law_oligarchy
+						has_law_or_variant = law_type:law_oligarchy
 						has_law = law_type:law_wealth_voting
 					}
 				}

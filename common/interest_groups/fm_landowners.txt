@@ -73,6 +73,16 @@
 				add_ideology = ideology_papal_paternalistic
 			}
 		}
+		else_if = {
+				limit = {
+					owner = {
+						c:VEN ?= this
+					}
+				}
+				ig:ig_landowners = {
+							set_interest_group_name = ig_venlan		
+				}		
+			}
 		# Ali'i
 		else_if = {
 			limit = {
@@ -353,7 +363,7 @@
 			limit = {
 				owner = {
 					OR = {
-						has_law = law_type:law_oligarchy
+						has_law_or_variant = law_type:law_oligarchy
 						has_law = law_type:law_autocracy
 						has_law = law_type:law_landed_voting
 					}

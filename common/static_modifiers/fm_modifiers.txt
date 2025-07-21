@@ -208,7 +208,7 @@ modifier_ven_three = {
 }
 modifier_ven_four = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
-	country_prestige_add = 15
+	country_prestige_add = 25
 	country_tax_income_add = 10500
 }
 modifier_ven_five = {
@@ -1155,4 +1155,8 @@ modifier_amc_col = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
 	state_colony_growth_speed_mult = 0.5
 	state_colony_growth_creation_factor = 2
+}
+modifier_LFFM = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 1
 }

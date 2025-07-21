@@ -1601,7 +1601,8 @@
 			create_building={
 				building="building_military_shipyards"
 				add_ownership={
-					country={
+					company = {
+						type=company_venars
 						country="c:VEN"
 						levels=1
 					}
@@ -1647,7 +1648,7 @@
 				add_ownership={
 					country={
 						country="c:VEN"
-						levels=1
+						levels=2
 					}
 				}
 				reserves=1
@@ -1700,7 +1701,8 @@
 			create_building={
 				building="building_arms_industry"
 				add_ownership={
-					country={
+					company = {
+						type=company_venars
 						country="c:VEN"
 						levels=4
 					}
@@ -1711,7 +1713,8 @@
 			create_building={
 				building="building_artillery_foundries"
 				add_ownership={
-					country={
+					company = {
+						type=company_venars
 						country="c:VEN"
 						levels=1
 					}
