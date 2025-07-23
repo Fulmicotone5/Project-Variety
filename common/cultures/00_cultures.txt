@@ -13911,7 +13911,7 @@ gunaikurnai={ # Aboriginal
 jagera={ 
 	color= { 186 94 7 }
 	religion = animist
-	traits = { indigenous_oceanic_heritage aboriginal_australian yuggera_speaker }
+	traits = { indigenous_oceanic_heritage aboriginal_australian yuggera_speaker yamato }
 	obsessions = {
 		tea
 		fruit

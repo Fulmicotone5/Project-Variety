@@ -4192,17 +4192,17 @@ ai_strategy_default = {
 	# How much construction output should the AI aim for
 	# Using this value in other strategies will function additively
 	wanted_construction_output = {
-		value = 10 # Accounts for the 10 free construction from base modifiers
+		value = 20 # Accounts for the 10 free construction from base modifiers
 
 		add = {
 			value = investment_pool_income
-			divide = 1000 # 1 construction output per this much into the investment pool
+			divide = 500 # 1 construction output per this much into the investment pool
 		}
 
 		add = {
 			value = income
 
-			divide = 5000 # 1 construction output per this much income
+			divide = 4000 # 1 construction output per this much income
 
 			min = 0
 			max = 200 # Above a certain point more government income isn't going to lead to more AI government construction
@@ -4211,14 +4211,14 @@ ai_strategy_default = {
 		add = {
 			value = total_population
 
-			divide = 2000000 # 1 construction output per this much population
+			divide = 1000000 # 1 construction output per this much population
 			max = 100
 		}
 
 		# Kickstart private investors If above this population value
 		if = {
 			limit = {
-				total_population >= 2000000
+				total_population >= 1000000
 			}
 			add = 10
 		}
@@ -4244,9 +4244,13 @@ ai_strategy_default = {
 				OR = {
 					has_strategy = ai_strategy_resource_expansion
 					has_strategy = ai_strategy_industrial_expansion
+					has_strategy = ai_strategy_plantation_economy
+					has_strategy = ai_strategy_agricultural_expansion
+					has_strategy = ai_strategy_placate_population
+					has_strategy = ai_strategy_colonial_extraction
 				}
 			}
-			multiply = 1.25
+			multiply = 1.3
 		}
 
 		if = {

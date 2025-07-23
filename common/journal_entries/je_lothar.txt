@@ -5,8 +5,43 @@
 		has_technology_researched = nationalism
 	}
 	on_complete = {
+		if = {
+			limit = {
+				is_ai = no
+			}
 		trigger_event = {
 			id = lotharingia.2
+			}
+		}
+		if = {
+			limit = { 
+				is_ai = yes
+				exists = c:SGF
+				c:SGF = {
+					is_ai = yes
+					is_subject = no
+				}
+			}
+			annex_with_incorporation = c:SGF
+				change_tag = GRO
+				add_primary_culture = cu:south_german
+				unification_claims_effect = yes
+		}
+		else_if = {
+			limit = {
+				is_ai = yes
+			}
+			change_tag = PRO
+		}
+		if = {
+			limit = { 
+				is_ai = yes
+				c:DKE = {
+					is_ai = yes
+					is_subject = no
+				}
+			}
+			annex_with_incorporation = c:DKE
 		}
 	}
 	should_be_pinned_by_default = yes
@@ -26,10 +61,10 @@ je_a_kingdom_for_ngp = {
 		owns_entire_state_region = STATE_WEST_PRUSSIA
 	}
 	on_complete = {
-		trigger_event = {
-			id = lotharingia.10
-		}
 		change_tag = PRO
+			trigger_event = {
+						id = lotharingia.10
+					}
 	}
 	fail = {
 		OR = {

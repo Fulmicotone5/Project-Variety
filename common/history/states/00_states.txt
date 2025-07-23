@@ -3898,15 +3898,11 @@ STATES = {
 	s:STATE_RHONE = {
 		create_state = {
 			country = c:PRI
-			owned_provinces = { x1B4B66 x30C060 x73F176 x8E88DA xB8E48D }
+			owned_provinces = { x1B4B66 x30C060 x73F176 x8E88DA xB8E48D x704060 }
 		}
 		create_state = {
 			country = c:BUD
 			owned_provinces = { x7516B6 x3369C6 x71A804 xB04060 xEF4060 }
-		}
-		create_state = {
-			country = c:TOU
-			owned_provinces = { x704060 }
 		}
 		
 		add_homeland = cu:burgundian
@@ -3972,11 +3968,7 @@ STATES = {
 	s:STATE_AUVERGNE_LIMOUSIN = {
 		create_state = {
 			country = c:BOU
-			owned_provinces = { x01FD5F x07BCC1 x368F00 x3FE149 x50A0C0 x61609A xA27EFD xA8AE71 xABE045 xBED0F4 xDF5770 xF080E0 }
-		}
-		create_state = {
-			country = c:TOU
-			owned_provinces = { x70C060 }
+			owned_provinces = { x01FD5F x07BCC1 x368F00 x3FE149 x50A0C0 x61609A xA27EFD xA8AE71 xABE045 xBED0F4 xDF5770 xF080E0 x70C060 }
 		}
 		
 

@@ -35,6 +35,9 @@ fm_scu.1 = {
 		s:STATE_WEST_COUNTRY = {
 			add_claim = root
 		}
+		ai_chance = {
+			base = 100
+		}
 	}
 	option = {
 		name = fm_scu.1.b
@@ -56,6 +59,9 @@ fm_scu.1 = {
 		}
 		s:STATE_ICELAND = {
 			add_claim = root
+		}
+		ai_chance = {
+			base = 0
 		}
 	}
 }

@@ -18,7 +18,7 @@ fm_sae.1 = {
 		hidden_effect = {
 			trigger_event = {
 				id = fm_sae.3
-				days = 1430
+				days = 600
 			}
 		}
 	}
@@ -288,15 +288,10 @@ fm_sae.3 = {
 		default_option = yes
 		root ={
 			create_diplomatic_play = {
-				name = annex_war
+				name = revolution
 				target_country = c:TPE
 				war = no
-				type = dp_annex_war
-				add_war_goal = {
-					holder = c:TPE
-					type = annex_country
-					target_country = c:SOP
-				}
+				type = dp_revolution
 			}
 		}
 		remove_variable = var_adur_farn
@@ -319,15 +314,10 @@ fm_sae.3 = {
 		name = fm_sae.3.b
 		root ={
 			create_diplomatic_play = {
-				name = annex_war
+				name = revolution
 				target_country = c:TPE
 				war = no
-				type = dp_annex_war
-				add_war_goal = {
-					holder = c:TPE
-					type = annex_country
-					target_country = c:SOP
-				}
+				type = dp_revolution
 			}
 		}
 		play_as = c:TPE

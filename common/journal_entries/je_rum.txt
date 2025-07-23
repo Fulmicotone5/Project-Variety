@@ -2,8 +2,14 @@
 	icon = "gfx/interface/icons/event_icons/event_skull.dds"
 	group = je_group_historical_content
 	complete = {
-		scope:journal_entry = {
+		custom_tooltip = {
+			text = rumcomplete
+			OR = {
+			scope:journal_entry = {
 			is_goal_complete = yes
+			}
+			is_ai = yes
+		}
 		}
 	}
 	on_complete = {
@@ -247,13 +253,17 @@ je_rum_rome = {
 		owns_entire_state_region = STATE_NORTHERN_THRACE
 		owns_entire_state_region = STATE_PELOPONNESE
 		owns_entire_state_region = STATE_ATTICA
-		owns_entire_state_region = STATE_WEST_AEGEAN_ISLANDS
-		owns_entire_state_region = STATE_CRETE
 		owns_entire_state_region = STATE_MACEDONIA
 		owns_entire_state_region = STATE_THESSALIA
 		owns_entire_state_region = STATE_HUDAVENDIGAR
 		owns_entire_state_region = STATE_AYDIN
-		has_technology_researched = pan-nationalism
+		custom_tooltip = {
+			text = fmpannat
+			OR = {
+				has_technology_researched = pan-nationalism
+				is_ai = yes
+			}
+		}
 		cultural_acceptance_base = { target = cu:greek value >= 15 }
 		cultural_acceptance_base = { target = cu:greco_roman value >= 15 }
 	}
@@ -302,8 +312,11 @@ je_rum_kor = {
 		owns_entire_state_region = STATE_OMAN
 		owns_entire_state_region = STATE_ABU_DHABI
 
-
-		has_law = law_type:law_racial_segregation
+		OR = {
+			has_law = law_type:law_racial_segregation
+			has_law = law_type:law_cultural_exclusion
+			has_law = law_type:law_multicultural
+		}
 	}
 	on_complete = {
 		trigger_event = {

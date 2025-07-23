@@ -17,7 +17,6 @@ fall_theo.1 = {
 	option = {
 		default_option = yes
 		name = fall_theocracy.1.a
-		change_tag = PRO
 		every_interest_group = {
 			limit = {
 				is_interest_group_type = ig_devout
@@ -28,8 +27,9 @@ fall_theo.1 = {
 				is_decaying = yes
 			}
 		}
+		change_tag = PRO
 		trigger_event = {
-			id = lotharingia.12
-		}
+				id = lotharingia.12
+			}
 	}
 }

@@ -293,7 +293,7 @@ je_grv_VNA_reason: "#V All countries in America, with the exception of the us an
 
 je_kurdistan: "The Lands of the Kurds"
 je_kurdistan_reason: "The kurdish people have tried to from a nation for centuries, but they have always been violently repressed by the empires that dominated them.\nTheir dream has never died, and therefore if we want to stop them from revolting, we must keep the turmoil low in their regions."
-
+fmnotext: "Is not Kurdistan"
 je_swed_int: "Integrating the Amerikaans People"
 je_swed_int_reason: "After the Kingdom of Sweden purchased New Holland from the Netherlands, the previous ruling class was replaced by new settlers sent from Sweden.\nAfter more than two decades, massive amount of swedish people have moved to New Holland, enjoying a preferential treatment over the [GetCulture('dutch_colonial').GetName] people, and this has caused the dutch people to grow more and more resentful each year.\nIf we want to avoid any revolt to break out, we must put a stop this apartheid system."
 
@@ -511,10 +511,11 @@ je_bud_main_reason: "The Grand Duchy of [ROOT.GetCountry.GetName] has been a vas
  # Corn Laws
  je_corn_laws: "Corn Laws"
  je_corn_laws_reason: "Our prohibitive import tax on grains acts as a strong protectionist policy for the interests of the landowning class and will cause an upheaval if removed."
-
+ fmpannat: "[ROOT.GetCountry.GetName] has researched #v $pan-nationalism$#!"
  je_rum_main: "Sultanate of Rûm: Reforms"
  je_rum_main_reason: "We must reform and modernize the Sultanate of Rûm."
  je_rum_main_goal: "Complete 4 Reform [Concept('concept_journal_entry', '$concept_journal_entries$')]"
+ rumcomplete: "Complete 4 Reform [Concept('concept_journal_entry', '$concept_journal_entries$')]"
  je_rum_economy_reason: "Our economy is underdeveloped and unurbanized. We must embark on the path of industrialization."
  je_rum_economy: "Economic Improvement"
  je_rum_education: "Education Reforms"

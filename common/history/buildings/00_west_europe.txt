@@ -2773,7 +2773,7 @@
 				building="building_silk_plantation"
 				add_ownership={
 					country={
-						country="c:FRU"
+						country="c:BUD"
 						levels=6
 					}
 				}

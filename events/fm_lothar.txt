@@ -32,6 +32,12 @@ lotharingia.1 = {
 			scope:devout_leader = {
 				set_ideology = ideology:ideology_theocrat
 			}
+			if = {
+				limit = { 
+					is_ai = yes
+				}
+				unification_claims_effect = yes
+			}
 		}
 	}
 	after = {
@@ -808,40 +814,41 @@ lotharingia.11 = {
 					is_interest_group_type = ig_industrialists
 				}
 			}
-			add_modifier = {
-				name = modifier_loth_ten
-				days = normal_modifier_time
-				is_decaying = yes
-			}
-		}
-		every_interest_group = {
-			limit = {
-				OR = {
-					is_interest_group_type = ig_devout
-					is_interest_group_type = ig_landowners
+				add_modifier = {
+					name = modifier_loth_ten
+					days = normal_modifier_time
+					is_decaying = yes
 				}
 			}
-			add_modifier = {
-				name = modifier_loth_eleven
-				days = normal_modifier_time
-				is_decaying = yes
+			every_interest_group = {
+				limit = {
+					OR = {
+						is_interest_group_type = ig_devout
+						is_interest_group_type = ig_landowners
+					}
+				}
+				add_modifier = {
+					name = modifier_loth_eleven
+					days = normal_modifier_time
+					is_decaying = yes
+				}
 			}
-		}
-		add_radicals = {
-			strata = upper
-			value = very_large_radicals
-		}
-		add_loyalists = {
-			strata = middle
-			value = large_radicals
-		}
-		add_loyalists = {
-			strata = lower
-			value = large_radicals
-		}
-		trigger_event = {
-			id = lotharingia.12
-		}
+			add_radicals = {
+				strata = upper
+				value = very_large_radicals
+			}
+			add_loyalists = {
+				strata = middle
+				value = large_radicals
+			}
+			add_loyalists = {
+				strata = lower
+				value = large_radicals
+			}
+			trigger_event = {
+				id = lotharingia.12
+			}
+		
 	}
 }
 

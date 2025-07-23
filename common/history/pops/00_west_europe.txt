@@ -525,7 +525,7 @@
 			}
 			create_pop = {
 				culture = occitan
-				size = 151985
+				size = 451985
 			}
 			create_pop = {
 				culture = francoprovencal
@@ -534,16 +534,6 @@
 			create_pop = {
 				culture = ashkenazi
 				size = 889
-			}
-		}
-		region_state:TOU = {
-			create_pop = {
-				culture = occitan
-				size = 341985
-			}
-			create_pop = {
-				culture = francoprovencal
-				size = 4520
 			}
 		}
 	}
@@ -688,16 +678,6 @@
 			create_pop = {
 				culture = ashkenazi
 				size = 263
-			}
-		}
-		region_state:TOU = {
-			create_pop = {
-				culture = occitan
-				size = 29056
-			}
-			create_pop = {
-				culture = french
-				size = 1270
 			}
 		}
 	}

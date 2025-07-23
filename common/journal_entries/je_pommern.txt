@@ -23,8 +23,14 @@
 		owns_entire_state_region = STATE_WEST_PRUSSIA
 	}
 	fail = {
-		NOT = {
-			has_law = law_type:law_monarchy
+			custom_tooltip = {
+			text = nomon
+			OR = {
+				is_ai = yes
+				NOT = {
+				has_law = law_type:law_monarchy
+				}
+			}
 		}
 	}
 	on_complete = {
@@ -62,4 +68,22 @@ je_ngf_pum = {
 		}
 	}
 	should_be_pinned_by_default = yes
+}
+
+je_ai_pum = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	group = je_group_historical_content
+	complete = {
+				owns_entire_state_region = STATE_BRANDENBURG
+			}
+
+			fail = {
+				is_ai = no
+			}
+	on_complete = {
+		change_tag = NGF
+		trigger_event = {
+			id = fm_pom.999
+		}
+	}
 }

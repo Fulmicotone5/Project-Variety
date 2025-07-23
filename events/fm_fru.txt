@@ -66,6 +66,7 @@ fm_fru.2 = {
 		change_tag = FRE
 		if = {
 			limit = {
+				is_ai = no
 				OR = {
 					c:BUD = {
 						is_subject_of = root
@@ -78,6 +79,16 @@ fm_fru.2 = {
 				months = 120
 				is_decaying = yes
 			}
+		}
+		if = {
+			limit = {
+				is_ai = yes
+					c:BUD = {
+						is_subject_of = root
+						is_ai = yes
+					}
+			 }
+			 annex_with_incorporation = c:BUD
 		}
 	}
 	option = {
@@ -100,7 +111,22 @@ fm_fru.2 = {
 			}
 		}
 		if = {
+			limit = { 
+				is_ai = yes
+			}
+			s:STATE_NORMANDY = {
+			add_claim = ROOT 
+		}
+		s:STATE_PICARDY = {
+			add_claim = ROOT 
+		}
+		s:STATE_FRENCH_LOW_COUNTRIES = {
+			add_claim = ROOT 
+		}
+		}
+		if = {
 			limit = {
+				is_ai = no
 				OR = {
 					c:BUD = {
 						is_subject_of = root
@@ -140,5 +166,15 @@ fm_fru.2 = {
 				annex_with_incorporation = c:TOU
 				annex_with_incorporation = c:DCQ
 			}
+			if = {
+			limit = {
+				is_ai = yes
+					c:BUD = {
+						is_subject_of = root
+						is_ai = yes
+					}
+			 }
+			 annex_with_incorporation = c:BUD
+		}
 	}
 }

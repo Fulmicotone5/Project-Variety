@@ -32,20 +32,25 @@ rum.1 = {
 
 	option = {
 		name = rum.1.a
-		add_journal_entry = {
-			type = je_rum_economy
-		}
-		add_journal_entry = {
-			type = je_rum_education
-		}
-		add_journal_entry = {
-			type = je_rum_separatism
-		}
-		add_journal_entry = {
-			type = je_rum_army
-		}
-		add_journal_entry = {
-			type = je_rum_bureaucracy
+		if = {
+			limit = { 
+				is_ai = no
+			}
+			add_journal_entry = {
+				type = je_rum_economy
+			}
+			add_journal_entry = {
+				type = je_rum_education
+			}
+			add_journal_entry = {
+				type = je_rum_separatism
+			}
+			add_journal_entry = {
+				type = je_rum_army
+			}
+			add_journal_entry = {
+				type = je_rum_bureaucracy
+			}
 		}
 	}
 }
@@ -106,6 +111,12 @@ rum.2 = {
 		}
 		s:STATE_AYDIN = {
 			add_claim = ROOT
+		}
+		if = {
+			limit = {
+				is_ai = yes
+			}
+			activate_law = law_type:law_cultural_exclusion
 		}
 	}
 	option = {
@@ -196,6 +207,12 @@ rum.2 = {
 		}
 		s:STATE_ABU_DHABI = {
 			add_claim = ROOT
+		}
+		if = {
+			limit = {
+				is_ai = yes
+			}
+			activate_law = law_type:law_racial_segregation
 		}
 	}
 }

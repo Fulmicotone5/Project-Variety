@@ -22,7 +22,7 @@
 	}
 	on_complete = {
 		trigger_event = {
-			id = fm_fru.2
+			id = fm_fru.2 
 		}
 		remove_variable = progress_fra
 

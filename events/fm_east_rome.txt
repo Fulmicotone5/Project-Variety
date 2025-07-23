@@ -20,6 +20,36 @@ fm_east_rome.1 = {
 		add_journal_entry = {
 			type = je_east_rome
 		}
+		if = {
+			limit = { is_ai = yes }
+			S:STATE_ADANA = {
+			add_claim = ROOT
+			}
+			s:STATE_HUDAVENDIGAR = {
+				add_claim = ROOT
+			}
+			s:STATE_AYDIN = {
+				add_claim = ROOT
+			}
+			s:STATE_KONYA = {
+				add_claim = ROOT
+			}
+			s:STATE_KASTAMONU = {
+				add_claim = ROOT
+			}
+			s:STATE_ANKARA = {
+				add_claim = ROOT
+			}
+			s:STATE_TRABZON = {
+				add_claim = ROOT
+			}
+			s:STATE_ERZURUM = {
+				add_claim = ROOT
+			}
+			s:STATE_DIYARBAKIR = {
+				add_claim = ROOT
+			}
+		}
 	}
 }
 
@@ -337,13 +367,14 @@ fm_east_rome.999 = {
 	option = {
 		name = fm_east_rome.999.a
 		default_option = yes
-		if = {
+		if = { 
 			limit = { 
 				exists = c:TOR
 				c:TOR = {
 					is_ai = yes
 					is_subject = no
 				}
+				owns_entire_state_region = STATE_KONYA
 			}
 			annex_with_incorporation = c:TOR
 		}

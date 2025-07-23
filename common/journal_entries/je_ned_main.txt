@@ -3,7 +3,7 @@
 	group = je_group_historical_content
 	scripted_button = je_ned_butt
 	scripted_button = je_ned_butt_two
-	timeout = 1500
+	timeout = 1600
 	complete = {
 		gold_reserves > 0
 	}
@@ -12,42 +12,127 @@
 		if = {
 				limit = {
 					is_ai = yes
-					c:BUD = {
-					is_ai = yes
-					is_subject = no
+					OR = {
+						c:BUD = {
+						is_ai = yes
+						is_subject = no
+						}
+						c:KBG = {
+						is_ai = yes
+						is_subject = no
+						}
 					}
 					c:FLA = {
 					is_ai = yes
 					is_subject = no
 					}
 				}
-				annex_with_incorporation = c:BUD
+				if = {
+					limit = { 
+						exists = c:BUD
+					}
+					annex_with_incorporation = c:BUD
+				}
+				if = {
+					limit = { 
+						exists = c:KBG
+					}
+					annex_with_incorporation = c:KBG
+				}
 				annex_with_incorporation = c:FLA
 			}
 	}
 	on_timeout = {
 		remove_modifier = modifier_ned_one
-		add_modifier = {
+		if = {
+			limit = { 
+				is_ai = no
+			}
+			add_modifier = {
 			name = modifier_ned_two
 			months = 60
 		}
-		if = {
-				limit = {
-					is_ai = yes
-					c:BUD = {
-					is_ai = yes
-					is_subject = no
-					}
-					c:FLA = {
-					is_ai = yes
-					is_subject = no
+		}
+		hidden_effect = {
+			random_list = {
+				50 = {
+					if = {
+						limit = {
+							is_ai = yes
+							OR = {
+								c:BUD = {
+								is_ai = yes
+								is_subject = no
+								}
+								c:KBG = {
+								is_ai = yes
+								is_subject = no
+								}
+							}
+							c:FLA = {
+							is_ai = yes
+							is_subject = no
+							}
+							c:VOC = {
+							is_ai = yes
+							}
+						}
+						if = {
+							limit = { 
+								exists = c:BUD
+							}
+							c:BUD = {
+							annex_with_incorporation = c:NED
+							annex_with_incorporation = c:FLA
+							}
+						}
+						if = {
+							limit = { 
+								exists = c:KBG
+							}
+						c:KBG = {
+							annex_with_incorporation = c:NED
+							annex_with_incorporation = c:FLA
+							}
+						}
 					}
 				}
-				c:BUD = {
-					annex_with_incorporation = c:NED
-					annex_with_incorporation = c:FLA
+				50 = {
+					if = {
+						limit = {
+							is_ai = yes
+							OR = {
+								c:BUD = {
+								is_ai = yes
+								is_subject = no
+								}
+								c:KBG = {
+								is_ai = yes
+								is_subject = no
+								}
+							}
+							c:FLA = {
+							is_ai = yes
+							is_subject = no
+							}
+						}
+						if = {
+							limit = { 
+								exists = c:BUD
+							}
+							annex_with_incorporation = c:BUD
+						}
+						if = {
+							limit = { 
+								exists = c:KBG
+							}
+							annex_with_incorporation = c:KBG
+						}
+						annex_with_incorporation = c:FLA
 					}
-			}
+				}
+			}	
+		}	
 	}
 
 	weight = 100
