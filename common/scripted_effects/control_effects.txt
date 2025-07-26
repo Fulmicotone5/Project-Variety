@@ -2122,10 +2122,6 @@ control_effects = {
 							}
 							has_diplomatic_pact = {
 								who = ROOT
-								type = dominion
-							}
-							has_diplomatic_pact = {
-								who = ROOT
 								type = colony
 							}
 						}
@@ -2147,10 +2143,6 @@ control_effects = {
 							has_diplomatic_pact = {
 								who = ROOT
 								type = puppet
-							}
-							has_diplomatic_pact = {
-								who = ROOT
-								type = dominion
 							}
 							has_diplomatic_pact = {
 								who = ROOT
@@ -2178,10 +2170,6 @@ control_effects = {
 							}
 							has_diplomatic_pact = {
 								who = ROOT
-								type = dominion
-							}
-							has_diplomatic_pact = {
-								who = ROOT
 								type = colony
 							}
 						}
@@ -2206,10 +2194,6 @@ control_effects = {
 							}
 							has_diplomatic_pact = {
 								who = ROOT
-								type = dominion
-							}
-							has_diplomatic_pact = {
-								who = ROOT
 								type = colony
 							}
 						}
@@ -2231,10 +2215,6 @@ control_effects = {
 							has_diplomatic_pact = {
 								who = ROOT
 								type = puppet
-							}
-							has_diplomatic_pact = {
-								who = ROOT
-								type = dominion
 							}
 							has_diplomatic_pact = {
 								who = ROOT

@@ -1,0 +1,470 @@
+namespace = fm_corpogen
+
+fm_corpogen.1 = {
+	type = country_event
+
+	title = fm_corpogen.1.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = fm_corpogen.1.d
+				trigger = {
+					has_law = law_type:law_corporatocracy
+				}
+			}
+			triggered_desc = {
+				desc = fm_corpogen.1.d2
+				trigger = {
+					has_law = law_type:law_laissez_faire
+				}
+			}
+		}
+	}
+	flavor = fm_corpogen.1.f
+
+	event_image = {
+		video = "southamerica_aristocrats"
+	}
+
+		icon = "gfx/interface/icons/dlc_icons/dlc013.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	duration = 3
+
+	trigger = {
+		OR = {
+			has_law = law_type:law_laissez_faire
+			has_law = law_type:law_corporatocracy
+		}
+		OR = {
+			NOT = {
+				has_law = law_type:law_consumption_based_taxation
+			}
+			NOT = {
+				has_law = law_type:law_no_womens_rights
+			}
+			NOT = {
+				has_law = law_type:law_debt_slavery
+			}
+			NOT = {
+				has_law = law_type:law_poor_laws
+			}
+			NOT = {
+				has_law = law_type:law_private_health_insurance
+			}
+			NOT = {
+				has_law = law_type:law_private_schools
+			}
+			NOT = {
+				has_law = law_type:law_no_migration_controls
+			}
+			NOT = {
+				has_law = law_type:law_free_trade
+			}
+			NOT = {
+				has_law = law_type:law_no_workers_rights
+			}
+			NOT = {
+				has_law = law_type:law_child_labor_allowed
+			}
+		}
+		NOT = {
+			has_modifier = fmcorpo1
+		}
+		NOT = {
+			has_modifier = fmcorpo2
+		}
+		NOT = {
+			has_modifier = fmcorpo3
+		}
+		is_ai = no
+		NOT = {
+			has_variable = corpofired
+		}
+	}
+
+	immediate = {
+		ig:ig_industrialists = {
+			leader = {
+					save_scope_as = corpoman
+				}
+		}
+		set_variable = {
+			name = corpofired
+			days = 95
+		}
+	}
+
+	option = {
+		name = fm_corpogen.1.a
+		trigger = {
+			NOT = {
+				has_law = law_type:law_consumption_based_taxation
+			}
+		}
+		
+		add_journal_entry = {
+			type = je_corpofm1
+		}
+		add_modifier = fmcorpo1
+	}
+	option = {
+		name = fm_corpogen.1.a2
+		trigger = {
+			NOT = {
+				has_law = law_type:law_no_womens_rights
+			}
+		}
+		
+		add_journal_entry = {
+			type = je_corpofm2
+		}
+		add_modifier = fmcorpo1
+	}
+	option = {
+		name = fm_corpogen.1.a3
+		trigger = {
+			NOR = {
+				has_law = law_type:law_outlawed_dissent
+				has_law = law_type:law_censorship
+			}
+		}
+		
+		add_journal_entry = {
+			type = je_corpofm3
+		}
+		add_modifier = fmcorpo1
+	}
+	option = {
+		name = fm_corpogen.1.a4
+		trigger = {
+			NOT = {
+				has_law = law_type:law_debt_slavery
+			}
+		}
+		
+		add_journal_entry = {
+			type = je_corpofm4
+		}
+		add_modifier = fmcorpo1
+	}
+	option = {
+		name = fm_corpogen.1.a5
+		trigger = {
+			NOT = {
+				has_law = law_type:law_poor_laws
+			}
+		}
+		
+		add_journal_entry = {
+			type = je_corpofm5
+		}
+		add_modifier = fmcorpo1
+	}
+	option = {
+		name = fm_corpogen.1.a6
+		trigger = {
+			NOT = {
+				has_law = law_type:law_private_health_insurance
+			}
+			has_technology_researched = pharmaceuticals
+		}
+		
+		add_journal_entry = {
+			type = je_corpofm6
+		}
+		add_modifier = fmcorpo1
+	}
+	option = {
+		name = fm_corpogen.1.a7
+		trigger = {
+			NOT = {
+				has_law = law_type:law_private_schools
+			}
+		}
+		
+		add_journal_entry = {
+			type = je_corpofm7
+		}
+		add_modifier = fmcorpo1
+	}
+	option = {
+		name = fm_corpogen.1.a8
+		trigger = {
+			NOT = {
+				has_law = law_type:law_no_migration_controls
+			}
+		}
+		
+		add_journal_entry = {
+			type = je_corpofm8
+		}
+		add_modifier = fmcorpo1
+	}
+	option = {
+		name = fm_corpogen.1.a9
+		trigger = {
+			NOT = {
+				has_law = law_type:law_free_trade
+			}
+			has_technology_researched = international_trade
+		}
+		
+		add_journal_entry = {
+			type = je_corpofm9
+		}
+		add_modifier = fmcorpo1
+	}
+	option = {
+		name = fm_corpogen.1.a10
+		trigger = {
+			NOT = {
+				has_law = law_type:law_child_labor_allowed
+			}
+		}
+		
+		add_journal_entry = {
+			type = je_corpofm10
+		}
+		add_modifier = fmcorpo1
+	}
+	option = {
+		name = fm_corpogen.1.a11
+		trigger = {
+			NOT = {
+				has_law = law_type:law_no_workers_rights
+			}
+		}
+		
+		add_journal_entry = {
+			type = je_corpofm11
+		}
+		add_modifier = fmcorpo1
+	}
+	option = {
+		name = fm_corpogen.1.a12
+		default_option = yes
+		add_modifier = {
+			name = fmcorpo2
+			days = 1094
+		}
+		ig:ig_industrialists = {
+				add_modifier = {
+				name = modifier_corpoIG
+				days = 1094
+			}
+		}
+	}
+}
+fm_corpogen.2 = {
+	type = country_event
+	placement = ROOT
+	title = fm_corpogen.2.t
+	desc = fm_corpogen.2.d
+	flavor = fm_corpogen.2.f
+	duration = 3
+	event_image = {
+		video = "ep1_clandestine_meeting"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/invention_icons/corporate_management.dds"
+	trigger = {
+		has_law = law_type:law_corporatocracy
+		is_ai = no
+		NOT = {
+			has_variable = corpofired2
+		}
+	}
+	immediate = {
+		ig:ig_industrialists = {
+			leader = {
+					save_scope_as = corpoman2
+				}
+		}
+		set_variable = {
+			name = corpofired2
+			days = 1200
+		}
+	}
+	option = {
+		name = fm_corpogen.2.a
+		trigger = {
+			average_sol < 13
+		}
+		add_modifier = {
+			name = fmcorpo4
+			days = 1094
+		}
+	}
+	option = {
+		name = fm_corpogen.2.a2
+		trigger = {
+			average_sol >= 13
+			average_sol < 15
+		}
+		add_modifier = {
+			name = fmcorpo41
+			days = 1094
+		}
+	}
+	option = {
+		name = fm_corpogen.2.a3
+		trigger = {
+			average_sol >= 15
+			average_sol < 17
+		}
+		add_modifier = {
+			name = fmcorpo42
+			days = 1094
+		}
+	}
+	option = {
+		name = fm_corpogen.2.a4
+		trigger = {
+			average_sol > 17
+		}
+		add_modifier = {
+			name = fmcorpo43
+			days = 1094
+		}
+	}
+	option = {
+		name = fm_corpogen.2.b
+		default_option = yes
+		add_modifier = {
+			name = fmcorpo5
+			days = 1094
+		}
+		ig:ig_industrialists = {
+				add_modifier = {
+				name = modifier_corpoIG2
+				days = 1094
+			}
+		}
+	}
+}
+fm_corpogen.3 = {
+	type = country_event
+	placement = ROOT
+	title = fm_corpogen.3.t
+	desc = fm_corpogen.3.d
+	flavor = fm_corpogen.3.f
+	duration = 3
+	event_image = {
+		video = "votp_agitator_speaking"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/invention_icons/corporate_management.dds"
+	trigger = {
+		has_law = law_type:law_corporatocracy
+		is_ai = no
+		NOT = {
+			has_variable = corpofired3
+		}
+	}
+	immediate = {
+		random_scope_state = {
+			limit = {
+				is_capital = yes
+			}
+			random_scope_building = {
+				limit = {
+					is_building_group = bg_manufacturing
+					level >= 1
+				}
+				save_scope_as = corpobuildinf
+			}
+		}
+		set_variable = {
+			name = corpofired3
+			days = 1200
+		}
+	}
+	option = {
+		name = fm_corpogen.3.a
+		every_scope_state = {
+				limit = {
+					is_capital = yes
+				}
+				kill_population_percent_in_state = {
+					percent = 0.07
+					pop_type = laborers
+					
+				}
+			}
+		add_modifier = {
+			name = fmcorpo69
+			days = 1094
+		}
+	}
+	option = {
+		name = fm_corpogen.3.b
+		default_option = yes
+		add_modifier = {
+			name = fmcorpo6
+			days = 1094
+		}
+		ig:ig_industrialists = {
+				add_modifier = {
+				name = modifier_corpoIG3
+				days = 1094
+			}
+		}
+	}
+}
+fm_corpogen.4 = {
+	type = country_event
+	placement = ROOT
+	title = fm_corpogen.4.t
+	desc = fm_corpogen.4.d
+	flavor = fm_corpogen.4.f
+	duration = 3
+	event_image = {
+		video = "europenorthamerica_capitalists_meeting"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/invention_icons/corporate_management.dds"
+	trigger = {
+		has_law = law_type:law_corporatocracy
+		is_ai = no
+		NOT = {
+			has_law = law_type:law_free_trade
+		}
+		NOT = {
+			has_variable = corpofired4
+		}
+		capital.market = {
+				mg:steel = { market_goods_pricier > 0.30 }
+			}
+	}
+	immediate = {
+		set_variable = {
+			name = corpofired4
+			days = 1200
+		}
+		g:steel = {
+			save_scope_as = corposteel
+		}
+	}
+	option = {
+		name = fm_corpogen.4.a
+		add_journal_entry = {
+			type = je_corpofm12
+		}
+	}
+	option = {
+		name = fm_corpogen.4.b
+		default_option = yes
+		add_modifier = {
+			name = fmcorpo6
+			days = 181
+		}
+		ig:ig_industrialists = {
+				add_modifier = {
+				name = modifier_corpoIG3
+				days = 181
+			}
+		}
+	}
+}

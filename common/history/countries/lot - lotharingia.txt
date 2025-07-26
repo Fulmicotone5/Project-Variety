@@ -3,7 +3,7 @@
 		effect_starting_technology_tier_2_tech = yes
 		add_technology_progress = {
 			technology = nationalism
-			progress = 5000
+			progress = 2000
 		}
 		add_technology_researched = intensive_agriculture
 		add_technology_researched = atmospheric_engine

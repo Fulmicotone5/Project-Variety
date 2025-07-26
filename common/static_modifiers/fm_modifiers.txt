@@ -1160,3 +1160,102 @@ modifier_LFFM = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
 	country_expenses_add = 1
 }
+
+fmcorpo1 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_legitimacy_base_add = -5
+	country_company_throughput_bonus_add = -0.05
+	country_company_construction_efficiency_bonus_add = -0.10
+	state_capitalists_investment_pool_efficiency_mult = -0.05
+	state_shopkeepers_investment_pool_efficiency_mult = -0.10
+	state_aristocrats_investment_pool_efficiency_mult = -0.15
+}
+fmcorpo2 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	state_tax_waste_add = 0.1
+	country_legitimacy_base_add = -10
+	country_law_enactment_time_mult = 0.2
+	country_company_throughput_bonus_add = -0.2
+	country_company_construction_efficiency_bonus_add = -0.30
+	state_capitalists_investment_pool_efficiency_mult = -0.15
+	state_shopkeepers_investment_pool_efficiency_mult = -0.15
+	state_aristocrats_investment_pool_efficiency_mult = -0.25
+}
+fmcorpo3 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	state_tax_waste_add = 0.15
+	country_legitimacy_base_add = -15
+	country_law_enactment_time_mult = 0.3
+	country_company_throughput_bonus_add = -0.3
+	country_company_construction_efficiency_bonus_add = -0.40
+	state_capitalists_investment_pool_efficiency_mult = -0.30
+	state_shopkeepers_investment_pool_efficiency_mult = -0.50
+	state_aristocrats_investment_pool_efficiency_mult = -0.5
+}
+modifier_corpoIG = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_negative.dds
+	interest_group_approval_add = -10
+}
+modifier_corpoIG2 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_negative.dds
+	interest_group_approval_add = -5
+}
+modifier_corpoIG3 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_negative.dds
+	interest_group_approval_add = -2
+}
+fmcorpo4 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	state_tax_collection_mult = -0.15
+	state_lower_strata_standard_of_living_add = -3
+	state_middle_strata_standard_of_living_add = -1
+	state_upper_strata_standard_of_living_add = 5
+}
+fmcorpo41 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	state_tax_collection_mult = -0.15
+	state_lower_strata_standard_of_living_add = -5
+	state_middle_strata_standard_of_living_add = -2
+	state_upper_strata_standard_of_living_add = 5
+}
+fmcorpo42 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	state_tax_collection_mult = -0.15
+	state_lower_strata_standard_of_living_add = -7
+	state_middle_strata_standard_of_living_add = -3
+	state_upper_strata_standard_of_living_add = 5
+}
+fmcorpo43 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	state_tax_collection_mult = -0.15
+	state_lower_strata_standard_of_living_add = -10
+	state_middle_strata_standard_of_living_add = -5
+	state_upper_strata_standard_of_living_add = 5
+}
+fmcorpo69 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
+	state_turmoil_effects_mult = 0.1
+	state_radicals_from_political_movements_mult = 0.5
+	state_mortality_turmoil_mult = 0.05
+	state_construction_mult = -0.05
+}
+fmcorpo5 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_authority_mult = -0.1
+	country_bureaucracy_mult = -0.1
+	state_tax_waste_add = 0.1
+	state_construction_mult = -0.05
+	country_company_throughput_bonus_add = -0.1
+	country_company_construction_efficiency_bonus_add = -0.15
+	state_capitalists_investment_pool_efficiency_mult = -0.05
+	state_shopkeepers_investment_pool_efficiency_mult = -0.1
+	state_aristocrats_investment_pool_efficiency_mult = -0.15
+}
+fmcorpo6 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_legitimacy_base_add = -5
+	country_authority_mult = -0.1
+	state_tax_waste_add = 0.05
+	country_company_throughput_bonus_add = -0.05
+	country_company_construction_efficiency_bonus_add = -0.05
+}

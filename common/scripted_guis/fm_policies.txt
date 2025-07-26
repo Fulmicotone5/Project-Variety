@@ -414,10 +414,13 @@ fm_administration4 = {
 		}
 	}
 	is_valid = {
-		NOR = {
+		custom_tooltip = {
+			text = too_tech
+					NOR = {
 			has_technology_researched = atmospheric_engine
 			has_technology_researched = general_staff
 			has_technology_researched = corporate_charters
+		}
 		}
 		custom_tooltip = {
 			text = cannot_take_policy_yet

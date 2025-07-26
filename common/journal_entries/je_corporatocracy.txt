@@ -1,0 +1,369 @@
+je_corpofm1 = {
+	icon = "gfx/interface/icons/invention_icons/corporate_management.dds"
+	group = je_group_internal_affairs
+	timeout = 1460
+	complete = {
+		has_law = law_type:law_consumption_based_taxation
+	}
+	on_complete = {
+		remove_modifier = fmcorpo1
+	}
+	on_timeout = {
+		remove_modifier = fmcorpo1
+		add_modifier = {
+			name = fmcorpo3
+			days = 1094
+		}
+		ig:ig_industrialists = {
+				add_modifier = {
+				name = modifier_corpoIG
+				days = 1094
+			}
+		}
+	}
+
+	should_be_pinned_by_default = yes
+}
+je_corpofm2 = {
+	icon = "gfx/interface/icons/invention_icons/corporate_management.dds"
+	group = je_group_internal_affairs
+	timeout = 1460
+	complete = {
+		has_law = law_type:law_no_womens_rights
+	}
+	on_complete = {
+		remove_modifier = fmcorpo1
+	}
+	on_timeout = {
+		remove_modifier = fmcorpo1
+		add_modifier = {
+			name = fmcorpo3
+			days = 1094
+		}
+		ig:ig_industrialists = {
+				add_modifier = {
+				name = modifier_corpoIG
+				days = 1094
+			}
+		}
+	}
+
+	should_be_pinned_by_default = yes
+}
+je_corpofm3 = {
+	icon = "gfx/interface/icons/invention_icons/corporate_management.dds"
+	group = je_group_internal_affairs
+	timeout = 1460
+	complete = {
+		OR = {
+			has_law = law_type:law_outlawed_dissent
+			has_law = law_type:law_censorship
+
+		}
+	}
+	on_complete = {
+		remove_modifier = fmcorpo1
+	}
+	on_timeout = {
+		remove_modifier = fmcorpo1
+		add_modifier = {
+			name = fmcorpo3
+			days = 1094
+		}
+		ig:ig_industrialists = {
+				add_modifier = {
+				name = modifier_corpoIG
+				days = 1094
+			}
+		}
+	}
+
+	should_be_pinned_by_default = yes
+}
+je_corpofm4 = {
+	icon = "gfx/interface/icons/invention_icons/corporate_management.dds"
+	group = je_group_internal_affairs
+	timeout = 1460
+	complete = {
+		has_law = law_type:law_debt_slavery
+	}
+	on_complete = {
+		remove_modifier = fmcorpo1
+	}
+	on_timeout = {
+		remove_modifier = fmcorpo1
+		add_modifier = {
+			name = fmcorpo3
+			days = 1094
+		}
+		ig:ig_industrialists = {
+				add_modifier = {
+				name = modifier_corpoIG
+				days = 1094
+			}
+		}
+	}
+
+	should_be_pinned_by_default = yes
+}
+je_corpofm5 = {
+	icon = "gfx/interface/icons/invention_icons/corporate_management.dds"
+	group = je_group_internal_affairs
+	timeout = 1460
+	complete = {
+		has_law = law_type:law_poor_laws
+	}
+	on_complete = {
+		remove_modifier = fmcorpo1
+	}
+	on_timeout = {
+		remove_modifier = fmcorpo1
+		add_modifier = {
+			name = fmcorpo3
+			days = 1094
+		}
+		ig:ig_industrialists = {
+				add_modifier = {
+				name = modifier_corpoIG
+				days = 1094
+			}
+		}
+	}
+
+	should_be_pinned_by_default = yes
+}
+je_corpofm6 = {
+	icon = "gfx/interface/icons/invention_icons/corporate_management.dds"
+	group = je_group_internal_affairs
+	timeout = 1460
+	complete = {
+		has_law = law_type:law_private_health_insurance
+	}
+	on_complete = {
+		remove_modifier = fmcorpo1
+	}
+	on_timeout = {
+		remove_modifier = fmcorpo1
+		add_modifier = {
+			name = fmcorpo3
+			days = 1094
+		}
+		ig:ig_industrialists = {
+				add_modifier = {
+				name = modifier_corpoIG
+				days = 1094
+			}
+		}
+	}
+
+	should_be_pinned_by_default = yes
+}
+je_corpofm7 = {
+	icon = "gfx/interface/icons/invention_icons/corporate_management.dds"
+	group = je_group_internal_affairs
+	timeout = 1460
+	complete = {
+		has_law = law_type:law_private_schools
+	}
+	on_complete = {
+		remove_modifier = fmcorpo1
+	}
+	on_timeout = {
+		remove_modifier = fmcorpo1
+		add_modifier = {
+			name = fmcorpo3
+			days = 1094
+		}
+		ig:ig_industrialists = {
+				add_modifier = {
+				name = modifier_corpoIG
+				days = 1094
+			}
+		}
+	}
+
+	should_be_pinned_by_default = yes
+}
+je_corpofm8 = {
+	icon = "gfx/interface/icons/invention_icons/corporate_management.dds"
+	group = je_group_internal_affairs
+	timeout = 1460
+	complete = {
+		has_law = law_type:law_no_migration_controls
+	}
+	on_complete = {
+		remove_modifier = fmcorpo1
+	}
+	on_timeout = {
+		remove_modifier = fmcorpo1
+		add_modifier = {
+			name = fmcorpo3
+			days = 1094
+		}
+		ig:ig_industrialists = {
+				add_modifier = {
+				name = modifier_corpoIG
+				days = 1094
+			}
+		}
+	}
+
+	should_be_pinned_by_default = yes
+}
+je_corpofm9 = {
+	icon = "gfx/interface/icons/invention_icons/corporate_management.dds"
+	group = je_group_internal_affairs
+	timeout = 1460
+	complete = {
+		has_law = law_type:law_free_trade
+	}
+	on_complete = {
+		remove_modifier = fmcorpo1
+	}
+	on_timeout = {
+		remove_modifier = fmcorpo1
+		add_modifier = {
+			name = fmcorpo3
+			days = 1094
+		}
+		ig:ig_industrialists = {
+				add_modifier = {
+				name = modifier_corpoIG
+				days = 1094
+			}
+		}
+	}
+
+	should_be_pinned_by_default = yes
+}
+je_corpofm10 = {
+	icon = "gfx/interface/icons/invention_icons/corporate_management.dds"
+	group = je_group_internal_affairs
+	timeout = 1460
+	complete = {
+		has_law = law_type:law_child_labor_allowed
+	}
+	on_complete = {
+		remove_modifier = fmcorpo1
+	}
+	on_timeout = {
+		remove_modifier = fmcorpo1
+		add_modifier = {
+			name = fmcorpo3
+			days = 1094
+		}
+		ig:ig_industrialists = {
+				add_modifier = {
+				name = modifier_corpoIG
+				days = 1094
+			}
+		}
+	}
+
+	should_be_pinned_by_default = yes
+}
+je_corpofm11 = {
+	icon = "gfx/interface/icons/invention_icons/corporate_management.dds"
+	group = je_group_internal_affairs
+	timeout = 1460
+	complete = {
+		has_law = law_type:law_no_workers_rights
+	}
+	on_complete = {
+		remove_modifier = fmcorpo1
+	}
+	on_timeout = {
+		remove_modifier = fmcorpo1
+		add_modifier = {
+			name = fmcorpo3
+			days = 1094
+		}
+		ig:ig_industrialists = {
+				add_modifier = {
+				name = modifier_corpoIG
+				days = 1094
+			}
+		}
+	}
+
+	should_be_pinned_by_default = yes
+}
+
+
+je_corpofm12 = {
+	icon = "gfx/interface/icons/invention_icons/corporate_management.dds"
+
+	group = je_group_internal_affairs
+	immediate = {
+		g:steel = {
+			save_scope_as = corposteel2
+		}
+		set_variable = {
+			name = steelbarfm
+			value = 0
+		}
+	}
+	progressbar = yes
+
+	complete = {
+		scope:journal_entry = {
+			is_goal_complete = yes
+		}
+	}
+	fail = {
+		NOT = {
+			has_law = law_type:law_corporatocracy
+		}
+	}
+
+	on_complete = {
+		remove_variable = steelbarfm
+	}
+	on_timeout = {
+		add_modifier = {
+			name = fmcorpo3
+			days = 181
+		}
+		ig:ig_industrialists = {
+				add_modifier = {
+				name = modifier_corpoIG
+				days = 181
+			}
+		}
+	}
+	on_monthly_pulse = {
+		effect = {
+			if = {
+				limit = {
+					capital = {
+					sg:steel = {
+						AND = {
+							import_tariff_level = max_tariffs
+							export_tariff_level = max_subventions
+							}
+						}
+					}
+				}
+				change_variable = {
+					name = steelbarfm
+					add = 1
+				}
+			}
+		}
+	}
+
+	current_value = {
+		value = var:steelbarfm
+	}
+
+	goal_add_value = {
+		add = 6
+	}
+
+	timeout = 548
+
+	weight = 200
+
+	transferable = no
+	should_be_pinned_by_default = yes
+}
