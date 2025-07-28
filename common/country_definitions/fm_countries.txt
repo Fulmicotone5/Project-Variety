@@ -169,7 +169,7 @@ BUL = {
 	tier = kingdom
 	
 	cultures = { bulgarian }	
-	capital = STATE_NORTHERN_THRACE
+	capital = STATE_BULGARIA
 }
 SIU = {
 	color = { 124 152 191 }
@@ -1496,16 +1496,6 @@ BUS = {
 	is_named_from_capital = yes
 }
 
-BUL = {
-	color = { 116  107  140 }
-	
-	country_type = recognized
-
-	tier = kingdom
-	
-	cultures = { bulgarian }	
-	capital = STATE_NORTHERN_THRACE
-}
 
 CRE = {
 	color = { 165  111  159 }

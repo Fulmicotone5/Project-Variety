@@ -55,11 +55,11 @@
 		region_state:ORE = {
 			create_pop = {
 				culture = russian
-				size = 865492
+				size = 1265492
 			}
 			create_pop = {
 				culture = ukrainian
-				size = 396871
+				size = 596871
 			}
 		}
 	}
@@ -67,7 +67,7 @@
 		region_state:DON = {
 			create_pop = {
 				culture = ukrainian
-				size = 356600
+				size = 656600
 			}
 			create_pop = {
 				culture = greek
@@ -75,7 +75,7 @@
 			}
 			create_pop = {
 				culture = russian
-				size = 1136004
+				size = 1336004
 			}
 		}
 	}

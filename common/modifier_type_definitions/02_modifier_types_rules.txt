@@ -295,6 +295,11 @@ gov_cannot_build_economic_buildings_bool = {
 	boolean=yes
 }
 
+fmunexp_bool = {
+	color = good
+	boolean=yes
+}
+
 cannot_choose_doctrine_bool = {
 	color = good
 	boolean=yes

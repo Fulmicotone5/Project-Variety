@@ -4250,7 +4250,7 @@ ai_strategy_default = {
 					has_strategy = ai_strategy_colonial_extraction
 				}
 			}
-			multiply = 2
+			multiply = 10
 		}
 
 		if = {
@@ -4448,13 +4448,13 @@ ai_strategy_default = {
 		# 1 level of naval base per 500k coastal incorporated population
 		add = {
 			value = cached_ai_incorporated_coastal_population
-			divide = 500000
+			divide = 1000000
 		}
 
 		# 1 level of naval base per 2 million coastal unincorporated population
 		add = {
 			value = cached_ai_unincorporated_coastal_population
-			divide = 2000000
+			divide = 4000000
 		}
 
 		# 1 level of naval base per 10 million population in direct overseas subjects
@@ -4476,7 +4476,7 @@ ai_strategy_default = {
 				value = income
 				divide = cached_ai_incorporated_population
 				multiply = cached_ai_incorporated_coastal_population
-				divide = 5000
+				divide = 10000
 			}
 		}
 
@@ -4495,7 +4495,7 @@ ai_strategy_default = {
 		}
 		else_if = { # GPs and MPs should want to maintain a bit of a navy
 			limit = { country_rank = rank_value:great_power }
-			add = 25
+			add = 15
 		}
 		else_if = {
 			limit = { country_rank = rank_value:major_power }

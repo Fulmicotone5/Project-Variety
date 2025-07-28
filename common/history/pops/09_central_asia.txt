@@ -27,11 +27,11 @@
 		region_state:DON = {
 			create_pop = {
 				culture = circassian
-				size = 564400
+				size = 864400
 			}
 			create_pop = {
 				culture = russian
-				size = 514400
+				size = 614400
 			}
 			create_pop = {
 				culture = ukrainian

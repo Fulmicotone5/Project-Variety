@@ -277,6 +277,7 @@ law_corporatocracy = {
 		interest_group_ig_industrialists_pol_str_mult = 1
 		country_max_companies_add = 1
 		country_free_charters_add = 1
+		fmunexp_bool = yes
 	}
 
 	can_enact = {

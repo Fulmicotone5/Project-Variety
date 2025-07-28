@@ -3,7 +3,7 @@
 		region_state:PMA = {
 			create_pop = {
 				culture = russian
-				size = 1277296
+				size = 1677296
 			}
 		}
 	}
@@ -11,7 +11,7 @@
 		region_state:PMA = {
 			create_pop = {
 				culture = russian
-				size = 1170008
+				size = 1650008
 			}
 		}
 	}
@@ -19,7 +19,7 @@
 		region_state:PMA = {
 			create_pop = {
 				culture = russian
-				size = 1352000
+				size = 1552000
 			}
 			create_pop = {
 				culture = siberian

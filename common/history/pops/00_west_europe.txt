@@ -483,7 +483,7 @@
 		region_state:TOU = {
 			create_pop = {
 				culture = occitan
-				size = 1994848
+				size = 1694848
 			}
 			create_pop = {
 				culture = catalan
@@ -503,7 +503,7 @@
 		region_state:PRI = {
 			create_pop = {
 				culture = francoprovencal
-				size = 409209
+				size = 109209
 			}
 			create_pop = {
 				culture = occitan
@@ -525,11 +525,11 @@
 			}
 			create_pop = {
 				culture = occitan
-				size = 451985
+				size = 251985
 			}
 			create_pop = {
 				culture = francoprovencal
-				size = 394520
+				size = 94520
 			}
 			create_pop = {
 				culture = ashkenazi
@@ -651,7 +651,7 @@
 		region_state:BOU = {
 			create_pop = {
 				culture = occitan
-				size = 1693584
+				size = 1293584
 			}
 			create_pop = {
 				culture = french
@@ -661,7 +661,7 @@
 		region_state:TOU = {
 			create_pop = {
 				culture = occitan
-				size = 493584
+				size = 293584
 			}
 		}
 	}
@@ -836,7 +836,7 @@
 			}
 			create_pop = {
 				culture = french
-				size = 258129
+				size = 158129
 			}
 			create_pop = {
 				culture = basque

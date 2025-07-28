@@ -277,11 +277,6 @@ fm_corpogen.2 = {
 		}
 	}
 	immediate = {
-		ig:ig_industrialists = {
-			leader = {
-					save_scope_as = corpoman2
-				}
-		}
 		set_variable = {
 			name = corpofired2
 			days = 1200
@@ -426,7 +421,11 @@ fm_corpogen.4 = {
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/invention_icons/corporate_management.dds"
 	trigger = {
-		has_law = law_type:law_corporatocracy
+
+		OR = {
+			has_law = law_type:law_laissez_faire
+			has_law = law_type:law_corporatocracy
+		}
 		is_ai = no
 		NOT = {
 			has_law = law_type:law_free_trade
@@ -464,6 +463,193 @@ fm_corpogen.4 = {
 				add_modifier = {
 				name = modifier_corpoIG3
 				days = 181
+			}
+		}
+	}
+}
+fm_corpogen.5 = {
+	type = country_event
+	placement = ROOT
+	title = fm_corpogen.5.t
+	desc = fm_corpogen.5.d
+	flavor = fm_corpogen.5.f
+	duration = 3
+	event_image = {
+		video = "votp_conspiring"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/politics_icons/radicalized.dds"
+	trigger = {
+
+		OR = {
+			has_law = law_type:law_laissez_faire
+			has_law = law_type:law_corporatocracy
+		}
+		is_ai = no
+		has_technology_researched = socialism
+		NOT = {
+			has_variable = corpofired5
+		}
+	}
+	immediate = {
+		set_variable = {
+			name = corpofired4
+			days = 1500
+		}
+				ig:ig_industrialists = {
+			leader = {
+					save_scope_as = corpoman2
+				}
+		}
+	}
+	option = {
+		name = fm_corpogen.5.a
+		add_modifier = {
+			name = fmcorpo7
+			days = 365
+		}
+	}
+	option = {
+		name = fm_corpogen.5.b
+		default_option = yes
+		add_modifier = {
+			name = fmcorpo8
+			days = 365
+		}
+		ig:ig_industrialists = {
+				add_modifier = {
+				name = modifier_corpoIG3
+				days = 365
+			}
+		}
+	}
+}
+fm_corpogen.6 = {
+	type = country_event
+	placement = ROOT
+	title = fm_corpogen.6.t
+	desc = fm_corpogen.6.d
+	flavor = fm_corpogen.6.f
+	duration = 3
+	event_image = {
+		video = "europenorthamerica_art_gallery"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/invention_icons/corporate_management.dds"
+	trigger = {
+
+		has_law = law_type:law_laissez_faire
+		is_ai = no
+		NOT = {
+			has_variable = corpofired6
+		}
+		NOT = {
+				any_scope_state = {
+				is_capital = yes
+				any_scope_building = {
+					is_building_type = building_arts_academy
+					level > 10
+				}
+			}
+		}
+	}
+	immediate = {
+		set_variable = {
+			name = corpofired6
+			days = 1200
+		}
+		g:fine_art = {
+			save_scope_as = corpoart
+		}
+	}
+	option = {
+		name = fm_corpogen.6.a
+		add_journal_entry = {
+			type = je_corpofm13
+		}
+	}
+	option = {
+		name = fm_corpogen.6.b
+		default_option = yes
+		ig:ig_industrialists = {
+				add_modifier = {
+				name = modifier_corpoIG2
+				days = 365
+			}
+		}
+	}
+}
+fm_corpogen.7 = {
+	type = country_event
+	placement = ROOT
+	title = fm_corpogen.7.t
+	desc = fm_corpogen.7.d
+	flavor = fm_corpogen.7.f
+	duration = 3
+	event_image = {
+		video = "ep1_clandestine_meeting"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/invention_icons/corporate_management.dds"
+	trigger = {
+
+		OR = {
+			has_law = law_type:law_laissez_faire
+			has_law = law_type:law_corporatocracy
+		}
+		is_ai = no
+		NOT = {
+			has_variable = corpofired7
+		}
+		
+			any_scope_state = {
+				any_scope_building = {
+					is_building_type = building_university
+					level > 4
+				}
+			}
+	}
+	immediate = {
+		set_variable = {
+			name = corpofired7
+			days = 1500
+		}
+				ig:ig_industrialists = {
+			leader = {
+					save_scope_as = corpoman3
+				}
+		}
+		random_scope_state = {
+			limit = {
+				any_scope_building = {
+					is_building_type = building_university
+					level > 4
+				}
+			}
+			save_scope_as = building_remove_unifm
+		}
+	}
+	option = {
+		name = fm_corpogen.7.a
+		scope:building_remove_unifm = {
+			remove_building = building_university
+			add_radicals = {
+				value = 0.75
+				pop_type = academics
+			}
+		}
+	}
+	option = {
+		name = fm_corpogen.7.b
+		default_option = yes
+		add_modifier = {
+			name = fmcorpo8
+			days = 365
+		}
+		ig:ig_industrialists = {
+				add_modifier = {
+				name = modifier_corpoIG2
+				days = 365
 			}
 		}
 	}

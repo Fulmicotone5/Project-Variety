@@ -766,3 +766,5 @@ je_bud_main_reason: "The Grand Duchy of [ROOT.GetCountry.GetName] has been a vas
  je_corpofm12: "[GetInterestGroupVariant('ig_industrialists',GetPlayer).GetNameWithCountryVariant]`s Demand"
  je_corpofm12_reason: "#V In accordance with the request of the [GetInterestGroupVariant('ig_industrialists',GetPlayer).GetNameWithCountryVariant], we are now required to impose tariffs on all [SCOPE.sGoods('corposteel2').GetName] imports and provide of subsidies for [SCOPE.sGoods('corposteel2').GetName] exports; failure to do so will result in significant repercussions. #!"
  je_corpofm12_goal: "We have had Maximum Subventions for [SCOPE.sGoods('corposteel2').GetName] [Concept('concept_trade','$concept_export$')] and Maximum Tariffs for [SCOPE.sGoods('corposteel2').GetName] [Concept('concept_trade','$concept_import$')] for at least 6 months"
+ je_corpofm13: "Increase Fine Art Production"
+ je_corpofm13_reason: "#V In accordance with the request from the [GetInterestGroupVariant('ig_industrialists',GetPlayer).GetNameWithCountryVariant], we are now required to augment the production of [SCOPE.sGoods('corpoart').GetName]. #!"

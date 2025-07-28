@@ -367,3 +367,42 @@ je_corpofm12 = {
 	transferable = no
 	should_be_pinned_by_default = yes
 }
+je_corpofm13 = {
+	icon = "gfx/interface/icons/goods_icons/fine_art.dds"
+
+	group = je_group_internal_affairs
+	immediate = {
+		g:fine_art = {
+			save_scope_as = corpoart
+		}
+	}
+
+	complete = {
+		any_scope_state = {
+			is_capital = yes
+			any_scope_building = {
+				is_building_type = building_arts_academy
+				level > 10
+			}
+		}
+	}
+	on_timeout = {
+		add_modifier = {
+			name = fmcorpo5
+			days = 365
+		}
+		ig:ig_industrialists = {
+				add_modifier = {
+				name = modifier_corpoIG
+				days = 365
+			}
+		}
+	}
+
+	timeout = 1095
+
+	weight = 200
+
+	transferable = no
+	should_be_pinned_by_default = yes
+}

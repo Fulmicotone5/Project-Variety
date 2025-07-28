@@ -1259,3 +1259,16 @@ fmcorpo6 = {
 	country_company_throughput_bonus_add = -0.05
 	country_company_construction_efficiency_bonus_add = -0.05
 }
+fmcorpo7 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	political_movement_radicalism_add = 0.15
+	state_radicals_from_political_movements_mult = 0.25
+	interest_group_ig_trade_unions_pop_attraction_mult = 0.1
+	interest_group_ig_trade_unions_pol_str_mult = -0.25
+}
+fmcorpo8 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	state_tax_waste_add = 0.05
+	country_company_throughput_bonus_add = -0.05
+	country_company_construction_efficiency_bonus_add = -0.05
+}

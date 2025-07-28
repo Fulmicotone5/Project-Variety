@@ -280,11 +280,14 @@ on_monthly_pulse_country = {
 		set_hierarchy_event.2 # Replaces British Indian Caste System with Default
 	}
 	random_events = {
-		chance_to_happen = 25
+		chance_to_happen = 40
 		20 = fm_corpogen.1
 		10 = fm_corpogen.2
 		10 = fm_corpogen.3
 		10 = fm_corpogen.4
+		10 = fm_corpogen.5
+		10 = fm_corpogen.6
+		10 = fm_corpogen.7
 	}
 
 	effect = {

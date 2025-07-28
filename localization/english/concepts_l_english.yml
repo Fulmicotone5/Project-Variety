@@ -2421,6 +2421,8 @@ concept_religious: "Religious"
  gov_cannot_build_economic_buildings_bool: "Disables the government's capacity to develop economic infrastructure internally."
  gov_cannot_build_economic_buildings_bool_desc: "Government funded construction will only be able to build [Concept('concept_government_building', '$concept_government_buildings$')], [Concept('concept_monument', '$concept_monuments$')], [GetBuildingType('building_university').GetName], [GetBuildingType('building_arts_academy').GetName], [GetBuildingType('building_power_plant').GetName], [GetBuildingType('building_port').GetName], [GetBuildingType('building_railway').GetName], [GetBuildingType('building_construction_sector').GetName], [GetBuildingType('building_skyscraper').GetName], [GetBuildingType('building_barracks').GetName], [GetBuildingType('building_naval_base').GetName] and [GetBuildingType('building_trade_center').GetName].\nThe construction of economic buildings inside of a [concept_subject] is allowed."
 
+ fmunexp_bool: "The enactment of this legislation is likely to prompt [GetInterestGroupVariant('ig_industrialists',GetPlayer).GetNameWithCountryVariant] and [Concept('concept_company', '$concept_companies$')] to express demands"
+ fmunexp_bool_desc: "The enactment of this legislation is likely to prompt [GetInterestGroupVariant('ig_industrialists',GetPlayer).GetNameWithCountryVariant] and [Concept('concept_company', '$concept_companies$')] to express demands"
 
  control_bool_5: "Increases [concept_control] by 5"
  control_bool_10: "Increases [concept_control] by 10"

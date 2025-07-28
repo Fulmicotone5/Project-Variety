@@ -845,7 +845,7 @@
 		region_state:DPR = {
 			create_pop = {
 				culture = russian
-				size = 1003944
+				size = 2003944
 			}
 		}
 	}

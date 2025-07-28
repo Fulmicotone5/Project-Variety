@@ -25,6 +25,12 @@ MTC = {
 	ai_will_do = { always = no }
 }
 
+BUL = {
+	use_culture_states = yes
+
+	ai_will_do = { always = no }
+}
+
 GEO = {
 	states = {
 		STATE_GREATER_CAUCASUS

@@ -1358,7 +1358,7 @@ principle_divine_economics_3 = {
 
 		# Higher wages for state religion pops
 		country_state_religion_wages_mult = 0.25
-		state_expected_sol_mult = -2
+
 		
 		# New PM for Financial Districts/Manor Houses unlocked via trigger
 	}

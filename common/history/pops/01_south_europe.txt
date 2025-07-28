@@ -207,7 +207,7 @@
 		region_state:VEN = {
 			create_pop = {
 				culture = venetian
-				size = 2955196
+				size = 2355196
 			}
 
 			create_pop = {
@@ -255,12 +255,6 @@
 				size = 1968400
 			}
 		}
-		region_state:KAA = {
-			create_pop = {
-				culture = spanish
-				size = 230400
-			}
-		}
 	}
 	s:STATE_GALICIA = {
 		# 840792
@@ -304,7 +298,7 @@
 		region_state:NAV = {
 			create_pop = {
 				culture = spanish
-				size = 579200
+				size = 379200
 			}
 			create_pop = {
 				culture = catalan
@@ -312,7 +306,7 @@
 			}
 			create_pop = {
 				culture = basque
-				size = 2200060
+				size = 1400060
 			}
 		}
 	}
@@ -427,7 +421,7 @@
 		region_state:KAA = {
 			create_pop = {
 				culture = spanish
-				size = 1389604
+				size = 1089604
 			}
 			create_pop = {
 				culture = catalan
