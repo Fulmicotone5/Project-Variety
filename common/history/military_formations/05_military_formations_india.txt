@@ -24,7 +24,7 @@
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_lancers
+				type = unit_type:combat_unit_type_hussars
 				state_region = s:STATE_KASHMIR
 				count = 10
 			}

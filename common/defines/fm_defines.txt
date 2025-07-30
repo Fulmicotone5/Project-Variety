@@ -27,14 +27,20 @@ NDiplomacy = {
 	WAR_GOAL_INFAMY_TRANSFER_SUBJECT = 1.0
 }
 NWar = {
+	WAR_EXHAUSTION_MAX = 150
 	DEVASTATION_MAX = 100.0
-	DEVASTATION_INCREASE_RATE = 0.1 # Per day, scales with level of occupation
+	DEVASTATION_INCREASE_RATE = 0.2 # Per day, scales with level of occupation
 	DEVASTATION_DECAY_RATE = -0.05 # Per day, when there are no occupations
-	DEVASTATION_FROM_BATTLES = 0.15 # For each battle
+	DEVASTATION_FROM_BATTLES = 0.25 # For each battle
 	WAR_EXHAUSTION_CONTESTED_ENEMY_WARGOALS = 3.0
 	WAR_EXHAUSTION_TURMOIL_FACTOR = 4.0
 	AR_EXHAUSTION_ANTI_WAR_LOBBY_CLOUT_FACTOR = 3.0 # At 100% lobby clout opposed to the war
 	WAR_EXHAUSTION_PRO_WAR_LOBBY_CLOUT_FACTOR = -3.0
+	WAR_EXHAUSTION_BASE = 0.05 #was 0.25
+	OCCUPATION_STATE_DEFENSIVE_BATTLE_VICTORY_SCORE = 10 #was 100 # How many occupation "points" each country receives after winning a defensive battle
+	WAR_EXHAUSTION_KIA_FACTOR = 20.0 #was 5.0 # Scaled by casualties compared to total manpower
+	WAR_EXHAUSTION_KIA_BASE_MULTIPLIER = 0.15 #was 0.25	# War Exhaustion from casualties is always multiplied by at least this
+	WAR_EXHAUSTION_KIA_BATTLES_LOST_MULTIPLIER = 0.66 	#was 0.75 # At 100% of battles lost by our side, War Exhaustion from casualties is further multiplied by this
 
 
 }
@@ -120,4 +126,13 @@ NCities = {
 	MINE_ROAD_DISTANCE_BIAS = 0.10		# was 0.25
 	PORT_ROAD_DISTANCE_BIAS = 0.10		# was -1.00
 	WOOD_ROAD_DISTANCE_BIAS = 0.10		# was 0.25
+}
+NMilitary = {
+	CONVOY_RAIDING_DEFENSE_MULT = 0.3 #0.15					# How much is Convoy raiding strength reduced by patrolling flotillas  ( num flotillas * ce defense )
+	CONVOY_RAIDING_MAX_DEFENSE = 0.95
+		## Convoy recovery rate after being raided is based on a global and a local rate, using whichever is lower
+	CONVOY_RAIDING_GLOBAL_RECOVERY_RATE = 0.005 #0.001		# The rate at which damaged convoys are replaced each day, relative to total number of produced convoys in the raided country
+
+	DEFENSIVE_PROVINCES_RETAKEN_MAX_DEPTH = 0 #was 1					# Maximum distance from battle provinces that provinces can be retaken in defensive battle
+
 }

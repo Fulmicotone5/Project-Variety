@@ -672,6 +672,18 @@ gov_colonial_administration = {
 				has_variable = congo_subject_var
 				is_subject = yes
 			}
+			AND = {
+				has_variable = india_subject_var
+				is_subject = yes
+			}
+			AND = {
+				has_variable = indonesia_subject_var
+				is_subject = yes
+			}
+			AND = {
+				has_variable = indochina_subject_var
+				is_subject = yes
+			}
 		}
 	}
 

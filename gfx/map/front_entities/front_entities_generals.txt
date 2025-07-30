@@ -140,3 +140,77 @@ military_infantry_southasian_general_diorama_entity = {
 		scope:combat_unit_type ?= unit_type:combat_unit_type_irregular_infantry
 	}
 }
+
+
+military_infantry_south_german_general_diorama_entity = {
+	entity = "military_infantry_european_general_entity"
+
+	group = "general"
+	
+	trigger = {
+		scope:country = {
+			not = { has_technology_researched = trench_works }
+		}
+		scope:culture = {
+		 or = {
+			has_culture_graphics = gfx_south_german
+			}
+		}
+	}
+}
+
+
+military_infantry_german_general_diorama_entity = {
+	entity = "military_infantry_german_general_entity"
+
+	group = "general"
+	
+	trigger = {
+		scope:country = {
+			not = { has_technology_researched = trench_works }
+		}
+		scope:culture = {
+		 or = {
+			has_culture_graphics = gfx_german
+			}
+		}
+	}
+}
+
+
+military_infantry_german_1907_general_diorama_entity = {
+	entity = "military_infantry_german_general_1907_entity"
+
+	group = "general"
+	
+	trigger = {
+		scope:country = {
+			has_technology_researched = trench_works
+		}
+		scope:culture = {
+		 or = {
+			has_culture_graphics = gfx_german
+			}
+		}
+	}
+}
+
+military_infantry_german_south_1907_general_diorama_entity = {
+	entity = "military_infantry_german_south_general_1907_entity"
+
+	group = "general"
+	
+	trigger = {
+		scope:country = {
+			has_technology_researched = trench_works
+		}
+		scope:culture = {
+		 or = {
+			has_culture_graphics = gfx_south_german
+			}
+		}
+	}
+}
+
+
+

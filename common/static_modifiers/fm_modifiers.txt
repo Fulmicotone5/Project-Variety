@@ -1272,3 +1272,180 @@ fmcorpo8 = {
 	country_company_throughput_bonus_add = -0.05
 	country_company_construction_efficiency_bonus_add = -0.05
 }
+fmcorpo9 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	building_minimum_wage_mult = -0.15
+	state_turmoil_effects_mult = 0.25
+	state_radicals_from_political_movements_mult = 0.25
+}
+fmcorpo10 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_negative.dds
+	state_mortality_turmoil_mult = 0.05
+	state_food_security_add = -0.1
+	state_radicals_and_loyalists_from_sol_change_mult = 0.25
+	state_lower_strata_standard_of_living_add = -2
+}
+fmcorpo11 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	state_tax_waste_add = 0.1
+	country_company_throughput_bonus_add = -0.05
+}
+
+war_support_mutiny_minor = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
+	unit_provinces_lost_mult = 0.10
+	unit_morale_recovery_mult = -0.05
+	unit_morale_loss_mult = 0.05
+	unit_offense_mult = -0.02
+	unit_defense_mult = -0.02
+}
+
+war_support_mutiny_moderate = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
+	unit_provinces_lost_mult = 0.10
+	unit_morale_recovery_mult = -0.1
+	unit_morale_loss_mult = 0.1
+	unit_offense_mult = -0.05
+	unit_defense_mult = -0.05
+}
+
+war_support_mutiny_major = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
+	unit_provinces_lost_mult = 0.20
+	unit_morale_recovery_mult = -0.1
+	unit_morale_loss_mult = 0.1
+	unit_offense_mult = -0.1
+	unit_defense_mult = -0.1
+}
+
+war_support_mutiny_severe = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
+	unit_provinces_lost_mult = 0.30
+	unit_morale_recovery_mult = -0.15
+	unit_morale_loss_mult = 0.15
+	unit_offense_mult = -0.2
+	unit_defense_mult = -0.2
+}
+
+
+
+war_support_leave = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
+	unit_provinces_captured_mult = -0.10
+	unit_offense_mult = -0.05
+	war_support_exhastion_reduction_add = -5
+}
+
+war_support_spoils = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
+	unit_devastation_mult = 0.25
+	war_support_exhastion_reduction_add = -10
+}
+
+war_support_talks = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
+	country_legitimacy_base_add = -10
+}
+
+war_support_letters_home = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
+	war_support_exhastion_reduction_add = -5
+}
+
+war_support_letters_wide = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
+	war_support_exhastion_reduction_add = -10
+}
+
+war_support_pay = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
+	war_support_exhastion_reduction_add = -5
+}
+
+war_support_authority_lost = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
+	country_authority_add = -100
+}
+
+war_support_demobilization = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
+	state_conscription_rate_add = -0.02
+}
+
+war_support_draft_dodge = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
+	building_training_rate_mult = -0.1
+	unit_morale_loss_mult = 0.05
+}
+
+war_support_volunteer_drive = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
+	state_conscription_rate_add = 0.1
+	unit_morale_loss_mult = -0.05
+	war_support_exhastion_reduction_add = -5
+}
+
+war_support_copper_patriotism = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
+	war_support_exhastion_reduction_add = -5
+}
+
+war_support_artists = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
+	war_support_exhastion_reduction_add = -10
+	building_group_bg_arts_throughput_add = -0.15
+}
+
+war_support_farmers = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
+	war_support_exhastion_reduction_add = -10
+	building_tooling_workshops_throughput_add = -0.1
+}
+
+war_support_prayers = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
+	war_support_exhastion_reduction_add = -10
+}
+
+war_support_stories  = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
+	war_support_exhastion_reduction_add = -10
+}
+
+war_support_stories_mgn  = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
+	war_support_exhastion_reduction_add = -10
+	building_manzoni_publishing_industry_throughput_add = -0.1
+}
+
+war_support_low_morale = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
+	unit_provinces_captured_mult = -0.10
+	unit_offense_mult = -0.05
+	unit_defense_mult = -0.05
+}
+
+war_support_sick = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
+	unit_provinces_captured_mult = -0.10
+	unit_provinces_lost_mult = 0.10
+	unit_offense_mult = -0.1
+	unit_defense_mult = -0.1
+}
+
+
+
+war_support_poetry = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
+	war_support_exhastion_reduction_add = -5
+}
+
+war_support_proud_send = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
+	war_support_exhastion_reduction_add = -5
+}
+
+war_support_poetry = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
+	war_support_exhastion_reduction_add = -5
+}

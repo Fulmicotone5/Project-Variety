@@ -1,0 +1,277 @@
+
+namespace = war_support_very_bad
+
+war_support_very_bad.1 = {
+	placement = root
+
+	title = war_support_very_bad.1.t
+	desc = war_support_very_bad.1.desc
+	flavor = war_support_very_bad.1.f
+
+	duration = 1
+
+	cooldown = {
+		days = 360
+	}
+	
+	event_image = {
+		video = "gfx/event_pictures/middleeast_battlefield_trenches.bk2"
+	}
+
+	trigger = {
+		local_var:current_war = {
+			any_scope_front = {
+				any_scope_general = {
+					limit = { 
+						owner = root 
+						is_historical = no
+						exists = yes
+					}
+				}
+			}
+		}		
+	}
+
+	immediate = {
+		local_var:current_war = {
+			random_scope_front = {
+				random_scope_general = {
+					limit = { 
+						owner = root 
+						is_historical = no
+					}
+					save_scope_as = hated_general
+				}
+			}
+		}
+	}
+
+	option = {
+		name = war_support_very_bad.1.a
+		default_option = yes
+		scope:hated_general = {
+			remove_character_role = general
+		}
+
+		add_radicals = {
+			value = 0.05
+			pop_type = officers
+		}
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_radicals_officers = yes } add = 100 }
+		}
+	}
+
+	option = {
+		name = war_support_very_bad.1.b
+		local_var:current_war = {
+			add_war_war_support = {
+				target = ROOT
+				value = -2
+			}			
+		}
+		manage_mutinies = { days = 90 }
+		add_radicals = {
+			value = 0.03
+			pop_type = soldiers
+		}
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_radicals_soldiers = yes } add = 100 }
+		}
+	}
+}
+
+war_support_very_bad.2 = {
+    placement = root
+
+    title = war_support_very_bad.2.t
+    desc = war_support_very_bad.2.desc
+    flavor = war_support_very_bad.2.f
+
+	duration = 1
+
+    cooldown = { days = 120 }
+
+    event_image = { video = "gfx/event_pictures/southamerica_election.bk2" }
+
+    option = {
+        name = war_support_very_bad.2.a
+        default_option = yes
+        add_radicals = {
+			value = 0.1
+		}
+    }
+    option = {
+        name = war_support_very_bad.2.b
+		local_var:current_war = {
+			add_war_war_support = {
+				target = ROOT
+				value = -10
+			}	
+			add_radicals = {
+				value = 0.04
+			}		
+		}
+    }
+}
+
+war_support_very_bad.3 = {
+    placement = root
+
+    title = war_support_very_bad.3.t
+    desc = war_support_very_bad.3.desc
+    flavor = war_support_very_bad.3.f
+
+	duration = 1
+
+    cooldown = { days = 120 }
+
+    event_image = { video = "gfx/event_pictures/middleeast_police_breaking_door.bk2" }
+
+    option = {
+        name = war_support_very_bad.3.a
+        default_option = yes
+       	add_radicals = {
+			value = 0.04
+		}
+		local_var:current_war = {
+			add_war_war_support = {
+				target = ROOT
+				value = -10
+			}			
+		}
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_radicals_all = yes } add = 100 }
+		}		
+    }
+    option = {
+        name = war_support_very_bad.3.b
+		add_modifier = { name = war_support_draft_dodge days = 120}
+		ai_chance = {
+			base = 50
+		}
+    }
+}
+
+war_support_very_bad.4 = {
+	placement = root
+
+	title = war_support_very_bad.4.t
+	desc = war_support_very_bad.4.desc
+	flavor = war_support_very_bad.4.f
+
+	duration = 1
+
+	cooldown = {
+		days = 360
+	}
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_fire.bk2"
+	}
+
+	option = {
+		name = war_support_very_bad.4.a
+		default_option = yes
+		manage_mutinies = { days = 30 }
+		add_radicals = {
+			value = 0.03
+			pop_type = soldiers
+		}
+		ai_chance = {
+			base = 50
+			modifier = { trigger = { wsr_check_radicals_soldiers = yes } add = 100 }
+		}
+	}
+
+	option = {
+		name = war_support_very_bad.4.b
+		add_modifier = { name = war_support_low_morale months = 4 }
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_mutinies_bad = yes } add = 200 }
+		}
+	}
+}
+
+war_support_very_bad.5 = {
+    placement = root
+
+    title = war_support_very_bad.5.t
+    desc = war_support_very_bad.5.desc
+    flavor = war_support_very_bad.5.f
+
+	duration = 1
+
+    cooldown = { days = 120 }
+
+    event_image = { video = "gfx/event_pictures/unspecific_sick_in_hospital.bk2" }
+
+    option = {
+        name = war_support_very_bad.5.a
+        default_option = yes
+        add_radicals = {
+			value = 0.03
+			pop_type = soldiers
+		}
+		local_var:current_war = {
+			add_war_war_support = {
+				target = ROOT
+				value = -5
+			}		
+		}
+		add_modifier = { name = war_support_sick months = 2 }
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_radicals_all = yes } add = 100 }
+		}
+    }
+    option = {
+        name = war_support_very_bad.5.b
+		add_modifier = { name = war_support_sick months = 6 }
+		ai_chance = {
+			base = 50
+		}
+    }
+}
+
+war_support_very_bad.6 = {
+    placement = root
+
+    title = war_support_very_bad.6.t
+    desc = war_support_very_bad.6.desc
+    flavor = war_support_very_bad.6.f
+
+	duration = 1
+
+    cooldown = { days = 120 }
+
+    event_image = { video = "gfx/event_pictures/unspecific_vandalized_storefront.bk2" }
+
+    option = {
+        name = war_support_very_bad.6.a
+        default_option = yes
+		capital = {
+			state_region = { add_devastation = 10 }
+			add_radicals_in_state = {
+				value = 0.05
+			}
+		} 
+		local_var:current_war = {
+			add_war_war_support = {
+				target = ROOT
+				value = -5
+			}			
+		}
+    }
+    option = {
+        name = war_support_very_bad.6.b
+		capital = {
+			state_region = { add_devastation = 5 }
+			add_modifier = { name = war_support_draft_dodge months = 6 }
+		}
+    }
+}

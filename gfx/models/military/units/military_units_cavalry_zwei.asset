@@ -1,0 +1,149 @@
+
+######		Dragoon 	######
+entity = {
+	name =		 "military_cavalry_german_dragoon_rider_entity"
+	clone =		 "military_cavalry_european_dragoon_rider_entity"
+	pdxmesh =	 "military_infantry_german_t2_mesh"
+
+	attach = { name = weapon 		l_hand_attach = "military_arms_dreyseneedle_entity" }
+}
+
+entity = {
+	name =		 "military_cavalry_german_dragoon_entity"
+	clone =		 "military_cavalry_european_dragoon_entity"
+
+	attach = { 
+		name = rider
+		Saddle_Node = "military_cavalry_german_dragoon_rider_entity" 
+	}
+}
+
+entity = {
+	name =		 "military_cavalry_south_german_dragoon_rider_entity"
+	clone =		 "military_cavalry_european_dragoon_rider_entity"
+	pdxmesh =	 "military_infantry_german_south_t2_mesh"
+
+	attach = { name = weapon 		l_hand_attach = "military_arms_dreyseneedle_entity" }
+}
+
+entity = {
+	name =		 "military_cavalry_south_german_dragoon_entity"
+	clone =		 "military_cavalry_european_dragoon_entity"
+
+	attach = { 
+		name = rider
+		Saddle_Node = "military_cavalry_south_german_dragoon_rider_entity" 
+	}
+}
+
+
+######		Cuirassier 	######
+entity = {
+	name =		 "military_cavalry_german_cuirassier_rider_entity"
+	clone =		 "military_cavalry_european_cuirassier_rider_entity"
+	pdxmesh =	 "military_cuirassier_german_t2_mesh"
+
+	attach = { name = weapon 		r_hand_attach = "military_arms_sword_entity" }
+}
+
+entity = {
+	name =		 "military_cavalry_german_cuirassier_entity"
+	clone =		 "military_cavalry_european_cuirassier_entity"
+	
+	attach = { 
+		name = rider
+		Saddle_Node = "military_cavalry_german_cuirassier_rider_entity" 
+	}
+}
+
+entity = {
+	name =		 "military_cavalry_south_german_cuirassier_rider_entity"
+	clone =		 "military_cavalry_european_cuirassier_rider_entity"
+	pdxmesh =	 "military_cuirassier_german_south_t2_mesh"
+
+	attach = { name = weapon 		r_hand_attach = "military_arms_sword_entity" }
+}
+
+entity = {
+	name =		 "military_cavalry_south_german_cuirassier_entity"
+	clone =		 "military_cavalry_european_cuirassier_entity"
+	
+	attach = { 
+		name = rider
+		Saddle_Node = "military_cavalry_south_german_cuirassier_rider_entity" 
+	}
+}
+
+entity = {
+	name =		 "military_cavalry_japan_cuirassier_entity"
+	clone =		 "military_cavalry_european_cuirassier_entity"
+	
+	attach = { 
+		name = rider
+		Saddle_Node = "military_cavalry_japan_cuirassier_rider_entity" 
+	}
+}
+
+entity = {
+	name =		 "military_cavalry_japan_cuirassier_rider_entity"
+	clone =		 "military_cavalry_european_cuirassier_entity"
+	pdxmesh =	 "military_infantry_eastasian_t2_mesh"
+
+	attach = { name = weapon 		r_hand_attach = "military_arms_katana_entity" }
+}
+
+######		Lancer 		######
+entity = {
+	name =		 "military_cavalry_german_lancer_rider_entity"
+	clone =		 "military_cavalry_european_lancer_rider_entity"
+	pdxmesh =	 "military_uhlan_german_t2_mesh"
+
+	attach = { name = weapon 		r_hand_attach = "military_arms_lance_entity" }
+}
+
+entity = {
+	name =		 "military_cavalry_german_lancer_entity"
+	clone =		 "military_cavalry_european_lancer_entity"
+	
+	attach = { 
+		name = rider
+		Saddle_Node = "military_cavalry_german_lancer_rider_entity" 
+	}
+}
+
+entity = {
+	name =		 "military_cavalry_german_south_lancer_rider_entity"
+	clone =		 "military_cavalry_european_lancer_rider_entity"
+	pdxmesh =	 "military_uhlan_german_south_t2_mesh"
+
+	attach = { name = weapon 		r_hand_attach = "military_arms_lance_entity" }
+}
+
+entity = {
+	name =		 "military_cavalry_german_south_lancer_entity"
+	clone =		 "military_cavalry_european_lancer_entity"
+	
+	attach = { 
+		name = rider
+		Saddle_Node = "military_cavalry_german_south_lancer_rider_entity" 
+	}
+}
+
+######		Lancer 1907 		######
+entity = {
+	name =		 "military_cavalry_german_lancer_1907_rider_entity"
+	clone =		 "military_cavalry_european_lancer_rider_entity"
+	pdxmesh =	 "military_uhlan_german_t2_1907_lancer_mesh"
+
+	attach = { name = weapon 		r_hand_attach = "military_arms_lance_entity" }
+}
+
+entity = {
+	name =		 "military_cavalry_german_lancer_1907_entity"
+	clone =		 "military_cavalry_european_lancer_entity"
+	
+	attach = { 
+		name = rider
+		Saddle_Node = "military_cavalry_german_lancer_1907_rider_entity" 
+	}
+}

@@ -654,3 +654,113 @@ fm_corpogen.7 = {
 		}
 	}
 }
+fm_corpogen.8 = {
+	type = country_event
+	placement = ROOT
+	title = fm_corpogen.8.t
+	desc = fm_corpogen.8.d
+	flavor = fm_corpogen.8.f
+	duration = 3
+	event_image = {
+		video = "europenorthamerica_political_extremism"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/politics_icons/radicalized.dds"
+	trigger = {
+
+		OR = {
+			has_law = law_type:law_laissez_faire
+			has_law = law_type:law_corporatocracy
+		}
+		is_ai = no
+		NOT = {
+			has_variable = corpofired8
+		}
+	}
+	immediate = {
+		set_variable = {
+			name = corpofired8
+			days = 1500
+		}
+	}
+	option = {
+		name = fm_corpogen.8.a
+		add_modifier = {
+			name = fmcorpo9
+			days = 365
+		}
+	}
+	option = {
+		name = fm_corpogen.8.b
+		default_option = yes
+		add_modifier = {
+			name = fmcorpo11
+			days = 365
+		}
+		ig:ig_industrialists = {
+				add_modifier = {
+				name = modifier_corpoIG3
+				days = 365
+			}
+		}
+	}
+}
+fm_corpogen.9 = {
+	type = country_event
+	placement = ROOT
+	title = fm_corpogen.9.t
+	desc = fm_corpogen.9.d
+	flavor = fm_corpogen.9.f
+	duration = 3
+	event_image = {
+		video = "unspecific_vandalized_storefront"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/goods_icons/unused/food.dds"
+	trigger = {
+
+		OR = {
+			has_law = law_type:law_laissez_faire
+			has_law = law_type:law_corporatocracy
+		}
+		is_ai = no
+		NOT = {
+			has_variable = corpofired9
+		}
+		capital.market = {
+				mg:grain = { market_goods_pricier > 0.40 }
+			}
+	}
+	immediate = {
+		set_variable = {
+			name = corpofired9
+			days = 1500
+		}
+				ig:ig_industrialists = {
+			leader = {
+					save_scope_as = corpoman2
+				}
+		}
+	}
+	option = {
+		name = fm_corpogen.9.a
+		add_modifier = {
+			name = fmcorpo10
+			days = 365
+		}
+	}
+	option = {
+		name = fm_corpogen.9.b
+		default_option = yes
+		add_modifier = {
+			name = fmcorpo8
+			days = 365
+		}
+		ig:ig_industrialists = {
+				add_modifier = {
+				name = modifier_corpoIG3
+				days = 365
+			}
+		}
+	}
+}

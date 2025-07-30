@@ -1,0 +1,28 @@
+entity = {
+	name =		 "military_arms_german_officier_sword_entity"
+	pdxmesh =	 "military_arms_german_officier_sword_mesh"
+
+	#get_state_from_parent = yes
+	#default_state = defend
+
+	#state = { name = "defend" }
+	#state = { name = "advance" }
+}
+
+entity = {
+	name =		 "military_arms_mp18_entity"
+	clone =		 "military_arms_blunderbuss_entity"
+	pdxmesh =	 "military_arms_mp18_mesh"
+
+	state = { name = "fire_defensive_01"
+		event = { time = 2.0    node = "loc_vfx" particle = "arms/tommygun_defensive" trigger_once = no keep_particle = no keep_sound = no sound = { soundeffect = "event:/SFX/Animation/weapons/infantry/tommy_gun/wpn_infantry_tommygun_burst_20rounds" }}
+		event = { time = 8.33   node = "loc_vfx" particle = "arms/tommygun_defensive" trigger_once = no keep_particle = no keep_sound = no sound = { soundeffect = "event:/SFX/Animation/weapons/infantry/tommy_gun/wpn_infantry_tommygun_burst_20rounds" }}
+		event = { time = 15.0   node = "loc_vfx" particle = "arms/tommygun_defensive" trigger_once = no keep_particle = no keep_sound = no sound = { soundeffect = "event:/SFX/Animation/weapons/infantry/tommy_gun/wpn_infantry_tommygun_burst_20rounds" }}
+		event = { time = 0 		node = "loc_vfx" trigger_once = no keep_sound = no sound = { soundeffect = "event:/SFX/Animation/weapons/infantry/tommy_gun/anm_fire_defensive_tommygun_01" }}
+	}
+	state = { name = "fire_aggressive_01"
+		event = { time = 0.933 	node = "loc_vfx" particle = "arms/tommygun" trigger_once = no keep_particle = no keep_sound = no sound = { soundeffect = "event:/SFX/Animation/weapons/infantry/tommy_gun/wpn_infantry_tommygun_burst_30rounds" }}
+		event = { time = 5.266 	node = "loc_vfx" particle = "arms/tommygun" trigger_once = no keep_particle = no keep_sound = no sound = { soundeffect = "event:/SFX/Animation/weapons/infantry/tommy_gun/wpn_infantry_tommygun_burst_30rounds" }}
+		event = { time = 0 		node = "loc_vfx" trigger_once = no keep_particle = no keep_sound = no sound = { soundeffect = "event:/SFX/Animation/weapons/infantry/tommy_gun/anm_fire_aggressive_tommygun_01" }}
+	}
+}

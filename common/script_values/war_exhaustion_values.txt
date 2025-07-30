@@ -1,6 +1,83 @@
-﻿# root = country
+﻿WAR_SUPPORT_MINIMAL_ADVANCE = 0.03 #percent of conquer per month to not count it as a stalemate
+WAR_SUPPORT_LACK_OF_PROGRESS_MONTHS = 15 #number of months before stalemate debuff can occur
+WAR_SUPPORT_STALEMATE_COOLDOWN = 15 #number of months before stalemate debuff can occur
+WAR_SUPPORT_STALEMATE_COOLDOWN = 3 #number of months after which you get a cooldown to stalemate calculation
+WAR_SUPPORT_DURATION_MODIFIER = 0.015 #modifier to a stalemate debuff
+WAR_SUPPORT_CASUALTIES_MODIFIER = 0.1 #modifier to a casualties debuff
+
+# root = country
 # scope:war = the war we're evaluating war exhaustion for
 # No randomness is allowed in this script value
+war_support = {
+	value = "has_war_support(root)"
+}
+
+total_casualties = {
+	value = "num_country_casualties(root)"
+}
+
+war_support_events = {
+	add = modifier:war_support_exhastion_reduction_add
+}
+
+war_duration = {
+	root = {
+		if = { 
+			limit = { has_variable_list = casualties_country_list } 
+			every_in_list = {
+				variable = casualties_country_list
+				limit = {
+					var:war_tag ?= scope:war
+					var:country_tag ?= root
+					var:stalemate_duration > 0
+				}
+				save_temporary_scope_as = casualties_struct
+				add = var:stalemate_duration
+				save_temporary_value_as = temp_dur
+				if = { 
+					limit = { scope:temp_dur >= 0.1 } 
+					multiply = scope:temp_dur 
+					multiply = WAR_SUPPORT_DURATION_MODIFIER
+				}
+				multiply = {
+					value = 1
+					subtract = {
+						value = var:our_occupation_current
+						subtract = var:our_occupation_before
+						divide = WAR_SUPPORT_MINIMAL_ADVANCE
+						min = 0
+						max = 1
+					}
+				}
+			
+				if = { 
+					scope:war = {
+						diplomatic_play = {
+							if = {
+								limit = {
+									OR = {
+										initiator ?= root
+										any_scope_initiator_ally = { this = root }
+									}
+								}
+								multiply = 1.2
+							}
+						}
+					}
+				}
+				scope:casualties_struct = {
+					if = {
+						limit = {
+							var:enemy_wargoal_contest_current = 1
+						}
+						multiply = 1.5
+					}
+				}
+			}
+		}
+	}
+}
+
 
 war_exhaustion_from_enemy_contested_wargoals = {
 	add = define:NWar|WAR_EXHAUSTION_CONTESTED_ENEMY_WARGOALS
@@ -13,21 +90,42 @@ military_size = {
 }
 
 war_exhaustion_from_casualties = {
-	add = "scope:war.num_country_casualties(root)"
-	if = {
-		limit = { military_size > 0 }
-		divide = military_size
-	}
-	divide = 1000
-	multiply = define:NWar|WAR_EXHAUSTION_KIA_FACTOR
-	multiply = {
-		add = define:NWar|WAR_EXHAUSTION_KIA_BASE_MULTIPLIER
-		add = {
-			add = "size_weighted_lost_battles_fraction(scope:war)"
-			multiply = define:NWar|WAR_EXHAUSTION_KIA_BATTLES_LOST_MULTIPLIER
+	root = {
+		if = { 
+			limit = { has_variable_list = casualties_country_list } 
+			every_in_list = {
+				variable = casualties_country_list
+				limit = {
+					var:war_tag ?= scope:war
+					var:country_tag ?= root
+					var:delta > 0
+				}
+				save_temporary_scope_as = casualties_struct
+				add = var:delta
+				if = {
+					limit = { var:last_mobilized > 0 var:last_all_pops > 0 }
+					divide = {
+						add = var:last_all_pops
+						subtract = var:last_mobilized
+						multiply = 0.05
+						add = var:last_mobilized
+					}
+				}
+
+				multiply = 1000 
+				multiply = WAR_SUPPORT_CASUALTIES_MODIFIER
+				multiply = {
+					add = define:NWar|WAR_EXHAUSTION_KIA_BASE_MULTIPLIER
+					add = {
+						prev = { add = "size_weighted_lost_battles_fraction(scope:war)" }
+						multiply = define:NWar|WAR_EXHAUSTION_KIA_BATTLES_LOST_MULTIPLIER
+					}
+				}
+			}
 		}
 	}
 }
+
 
 war_exhaustion_from_lobby_clout = {
 	add = "lobby_war_opposition(scope:war)"
@@ -60,6 +158,10 @@ war_exhaustion = {
 	save_temporary_value_as = temp_war_exhaustion_from_lobby_clout
 	value = war_support_from_lobby_clout
 	save_temporary_value_as = temp_war_support_from_lobby_clout
+	value = war_duration
+	save_temporary_value_as = temp_war_duration
+	value = war_support_events
+	save_temporary_value_as = temp_war_support_events
 	# end save temp values
 
 	# reset the calculation to the base
@@ -101,7 +203,7 @@ war_exhaustion = {
 				scope:temp_enemy_occupation < 0.5
 			}
 			add = {
-				add = 3.0
+				add = 15.0
 				desc = "WAR_EXHAUSTION_FROM_ENEMY_OCCUPATION_SUBSTANTIAL"
 			}
 		}
@@ -110,7 +212,7 @@ war_exhaustion = {
 				scope:temp_enemy_occupation < 0.75
 			}
 			add = {
-				add = 10.0
+				add = 25.0
 				desc = "WAR_EXHAUSTION_FROM_ENEMY_OCCUPATION_HIGH"
 			}
 		}
@@ -119,7 +221,7 @@ war_exhaustion = {
 				scope:temp_enemy_occupation < 0.9
 			}
 			add = {
-				add = 20.0
+				add = 35.0
 				desc = "WAR_EXHAUSTION_FROM_ENEMY_OCCUPATION_EXTREME"
 			}
 		}
@@ -128,7 +230,7 @@ war_exhaustion = {
 				scope:temp_enemy_occupation <= 1.0
 			}
 			add = {
-				add = 30.0
+				add = 50.0
 				desc = "WAR_EXHAUSTION_FROM_ENEMY_OCCUPATION_TOTAL"
 			}
 		}
@@ -146,13 +248,30 @@ war_exhaustion = {
 		limit = { scope:temp_war_exhaustion_from_casualties >= 0.01 }
 		add = {
 			add = scope:temp_war_exhaustion_from_casualties
-			desc = "WAR_EXHAUSTION_FROM_CASUALTIES"
+			desc = "WAR_EXHAUSTION_FROM_CASUALTIES_NEW"
 			multiply = {
 				add = 1
 				add = modifier:country_war_exhaustion_casualties_mult
 				min = 0
 				desc = "WAR_EXHAUSTION_FROM_country_war_exhaustion_casualties_mult"
 			}
+		}
+	}
+
+		if = {
+		limit = { scope:temp_war_duration >= 0.01 }
+		add = {
+			add = scope:temp_war_duration
+			desc = "WAR_EXHAUSTION_WAR_DURATION"
+		}
+	}
+
+
+	if = {
+		limit = { scope:temp_war_support_events <= 0.01 }
+		add = {
+			add = scope:temp_war_support_events
+			desc = "WAR_EXHAUSTION_EVENTS"
 		}
 	}
 	

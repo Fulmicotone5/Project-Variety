@@ -1,0 +1,23 @@
+﻿on_monthly_pulse = {
+    on_actions = {
+        wsr_on_weekly_pulse
+    }
+}
+
+wsr_on_weekly_pulse = {
+    effect = {
+        com_run_weekly_event_country_effect = {
+            weekday = 1
+            on_action = wsr_on_weekly_pulse_events
+        }
+    }
+}
+
+wsr_on_weekly_pulse_events = {
+    trigger = { 
+		is_at_war = yes 
+        country_rank >= rank_value:unrecognized_regional_power
+		is_ai = no
+	}
+    events = { war_support_entry.1 }
+}

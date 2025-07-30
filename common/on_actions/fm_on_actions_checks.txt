@@ -1,0 +1,81 @@
+﻿on_monthly_pulse = {
+	on_actions = {
+		wsr_on_monthly_check_casualties
+	}
+}
+
+on_yearly_pulse = {
+	on_actions = {
+		wsr_on_yearly_clear_garbage
+	}
+}
+
+on_diplo_play_war_start = {
+	on_actions = {
+		wsr_on_war_start_check_casualties
+	}
+}
+
+on_war_end = {
+	on_actions = {
+		wsr_on_war_end
+	}
+}
+
+
+
+wsr_on_monthly_check_casualties = {
+    effect = {
+        every_country = {
+			limit = { is_at_war = yes }
+			trigger_event = { id = check_casualties.1 }
+			trigger_event = { id = check_casualties.2 days = 5 }
+		}
+    }
+}
+
+wsr_on_yearly_clear_garbage = {
+    effect = {
+        trigger_event = { id = check_casualties.3 }
+    }
+}
+
+wsr_on_war_start_check_casualties = {
+	effect = {
+		root = {
+			target ?= {
+				trigger_event = { id = check_casualties.1 }
+			}
+			initiator ?= {
+				trigger_event = { id = check_casualties.1 }
+			}
+			every_scope_target_ally ?= {
+				trigger_event = { id = check_casualties.1 }							
+			}
+			every_scope_initiator_ally ?= {
+				trigger_event = { id = check_casualties.1 }									
+			}
+		}
+	}
+}
+
+wsr_on_war_end = {
+	effect = {
+		target ?= {
+			set_local_variable = { name = current_war value = root.war }
+			remove_war_casualties = yes
+		}
+		initiator ?= {
+			set_local_variable = { name = current_war value = root.war }
+			remove_war_casualties = yes
+		}
+		every_scope_target_ally ?= {
+			set_local_variable = { name = current_war value = root.war }
+			remove_war_casualties = yes					
+		}
+		every_scope_initiator_ally ?= {
+			set_local_variable = { name = current_war value = root.war }
+			remove_war_casualties = yes							
+		}
+	}
+}

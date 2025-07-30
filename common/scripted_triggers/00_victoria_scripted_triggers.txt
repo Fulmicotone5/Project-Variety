@@ -548,6 +548,9 @@ is_african_subject = {
 		has_variable = congo_subject_var
 		has_variable = southern_africa_subject_var
 		has_variable = ethiopia_subject_var
+		has_variable = india_subject_var
+		has_variable = indonesia_subject_var
+		has_variable = indochina_subject_var
 	}
 }
 

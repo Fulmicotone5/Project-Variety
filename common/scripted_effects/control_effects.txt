@@ -824,11 +824,11 @@ control_effects = {
 			if = {
 				limit = {
 					scaled_debt > 0
-					scaled_debt < 0.3
+					scaled_debt < 0.1
 				}
 				change_variable = {
 					name = control_var
-					add = -20
+					add = -5
 				}
 				custom_tooltip = {
 					text = fmdefault11
@@ -836,12 +836,12 @@ control_effects = {
 			}
 			if = {
 				limit = {
-					scaled_debt >= 0.3
-					scaled_debt < 0.6
+					scaled_debt >= 0.1
+					scaled_debt < 0.2
 				}
 				change_variable = {
 					name = control_var
-					add = -50
+					add = -10
 				}
 				custom_tooltip = {
 					text = fmdefault12
@@ -849,7 +849,98 @@ control_effects = {
 			}
 			if = {
 				limit = {
+					scaled_debt >= 0.2
+					scaled_debt < 0.3
+				}
+				change_variable = {
+					name = control_var
+					add = -15
+				}
+				custom_tooltip = {
+					text = fmdefault13
+				}
+			}
+			if = {
+				limit = {
+					scaled_debt >= 0.3
+					scaled_debt < 0.4
+				}
+				change_variable = {
+					name = control_var
+					add = -20
+				}
+				custom_tooltip = {
+					text = fmdefault14
+				}
+			}
+			if = {
+				limit = {
+					scaled_debt >= 0.4
+					scaled_debt < 0.5
+				}
+				change_variable = {
+					name = control_var
+					add = -30
+				}
+				custom_tooltip = {
+					text = fmdefault15
+				}
+			}
+			if = {
+				limit = {
+					scaled_debt >= 0.5
+					scaled_debt < 0.6
+				}
+				change_variable = {
+					name = control_var
+					add = -40
+				}
+				custom_tooltip = {
+					text = fmdefault16
+				}
+			}
+			if = {
+				limit = {
 					scaled_debt >= 0.6
+					scaled_debt < 0.7
+				}
+				change_variable = {
+					name = control_var
+					add = -50
+				}
+				custom_tooltip = {
+					text = fmdefault17
+				}
+			}
+			if = {
+				limit = {
+					scaled_debt >= 0.7
+					scaled_debt < 0.8
+				}
+				change_variable = {
+					name = control_var
+					add = -60
+				}
+				custom_tooltip = {
+					text = fmdefault18
+				}
+			}
+			if = {
+				limit = {
+					scaled_debt >= 0.8
+					scaled_debt < 0.9
+				}
+				change_variable = {
+					name = control_var
+					add = -70
+				}
+				custom_tooltip = {
+					text = fmdefault19
+				}
+			}
+			if = {
+				limit = {
+					scaled_debt >= 0.9
 					scaled_debt < 1
 				}
 				change_variable = {
@@ -857,7 +948,7 @@ control_effects = {
 					add = -80
 				}
 				custom_tooltip = {
-					text = fmdefault13
+					text = fmdefault2
 				}
 			}
 			if = {

@@ -118,7 +118,7 @@
 		Victoria
 	}
 
-	graphics = european
+	graphics = gfx_german
 	ethnicities = {
 		1 = caucasian
 	}
@@ -250,7 +250,7 @@ south_german={
 		von_Zahringen
 	}
 
-	graphics = european
+	graphics = gfx_south_german
 	ethnicities = {
 		1 = caucasian
 	}
@@ -1606,7 +1606,7 @@ alemannic={
 		Wille Wyss Wynistorf Willi Winet Wiss
 		Zeni Zeerleder Ziltener ZU_rcher
 	}
-	graphics = european
+	graphics = gfx_south_german
 	ethnicities = {
 		1 = caucasian
 	}

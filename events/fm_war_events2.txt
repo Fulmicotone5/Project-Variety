@@ -1,0 +1,353 @@
+
+namespace = war_support_good
+
+war_support_good.1 = {
+	placement = root
+
+	title = war_support_good.1.t
+	desc = war_support_good.1.desc
+	flavor = war_support_good.1.f
+
+	duration = 1
+
+	cooldown = {
+		days = 120
+	}
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+
+	option = {
+		name = war_support_good.1.a
+		default_option = yes
+		local_var:current_war = {
+			add_war_war_support = {
+				target = ROOT
+				value = 5
+			}			
+		}
+	}
+
+	option = {
+		name = war_support_good.1.b
+		default_option = yes
+		local_var:current_war = {
+			add_war_war_support = {
+				target = ROOT
+				value = 5
+			}			
+		}
+		add_modifier = { name = war_support_proud_send days = 180 }
+		add_treasury = wsr_money_amount_multiplier_very_small
+	}
+}
+
+war_support_good.2 = {
+	placement = root
+
+	title = war_support_good.2.t
+	desc = war_support_good.2.desc
+	flavor = war_support_good.2.f
+
+	duration = 1
+
+	cooldown = {
+		days = 120
+	}
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+
+	option = {
+		name = war_support_good.2.a
+		default_option = yes
+		local_var:current_war = {
+			add_war_war_support = {
+				target = ROOT
+				value = 10
+			}			
+		}
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_debt_bad = yes } add = 1000 }
+		}
+	}
+
+	option = {
+		name = war_support_good.2.b
+		default_option = yes
+		local_var:current_war = {
+			add_war_war_support = {
+				target = ROOT
+				value = 5
+			}			
+		}
+		add_modifier = { name = war_support_proud_send days = 180 }
+		add_treasury = wsr_money_amount_multiplier_very_small
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_debt_normal = yes } add = 100 }
+			modifier = { trigger = { wsr_check_war_support_bad = yes } add = 50 }
+		}
+	}
+}
+
+war_support_good.3 = {
+	placement = root
+
+	title = war_support_good.3.t
+	desc = war_support_good.3.desc
+	flavor = war_support_good.3.f
+
+	duration = 1
+
+	cooldown = {
+		days = 120
+	}
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+
+	option = {
+		name = war_support_good.3.a
+		default_option = yes
+		local_var:current_war = {
+			add_war_war_support = {
+				target = ROOT
+				value = 5
+			}			
+		}
+		add_modifier = { name = war_support_volunteer_drive days = 90 }
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_debt_bad = yes } add = 1000 }
+		}
+	}
+
+	option = {
+		name = war_support_good.3.b
+		default_option = yes
+		local_var:current_war = {
+			add_war_war_support = {
+				target = ROOT
+				value = 5
+			}			
+		}
+		add_modifier = { name = war_support_volunteer_drive days = 180 }
+		add_treasury = wsr_money_amount_multiplier_very_small
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_debt_normal = yes } add = 100 }
+			modifier = { trigger = { wsr_check_war_support_bad = yes } add = 50 }
+		}
+	}
+}
+
+war_support_good.4 = {
+	placement = root
+
+	title = war_support_good.4.t
+	desc = war_support_good.4.desc
+	flavor = war_support_good.4.f
+
+	duration = 1
+
+	cooldown = {
+		days = 120
+	}
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+
+	option = {
+		name = war_support_good.4.a
+		default_option = yes
+		add_treasury = { value = wsr_money_amount_multiplier_very_small multiply = -1 }
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_debt_bad = yes } add = 1000 }
+		}
+	}
+
+	option = {
+		name = war_support_good.4.b
+		default_option = yes
+		add_loyalists = {
+			value = 0.02
+			pop_type = soldiers
+		}
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_debt_normal = yes } add = 100 }
+			modifier = { trigger = { wsr_check_war_support_bad = yes } add = 50 }
+			modifier = { trigger = { wsr_check_radicals_soldiers = yes } add = 150 }
+		}
+	}
+}
+
+war_support_good.5 = {
+	placement = root
+
+	title = war_support_good.5.t
+	desc = war_support_good.5.desc
+	flavor = war_support_good.5.f
+
+	duration = 1
+
+	cooldown = {
+		days = 120
+	}
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_sick_in_hospital.bk2"
+	}
+
+	option = {
+		name = war_support_good.5.a
+		default_option = yes
+		local_var:current_war = {
+			add_war_war_support = {
+				target = ROOT
+				value = 5
+			}			
+		}
+		add_loyalists = {
+			value = 0.02
+			pop_type = soldiers
+		}
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_debt_bad = yes } add = 1000 }
+		}
+	}
+
+	option = {
+		name = war_support_good.5.b
+		default_option = yes
+		add_treasury = wsr_money_amount_multiplier_very_small
+		add_loyalists = {
+			value = 0.05
+			pop_type = soldiers
+		}
+		add_loyalists = {
+			value = 0.03
+			pop_type = officers
+		}
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_debt_normal = yes } add = 100 }
+			modifier = { trigger = { wsr_check_war_support_bad = yes } add = 50 }
+			modifier = { trigger = { wsr_check_radicals_soldiers = yes } add = 100 }
+			modifier = { trigger = { wsr_check_radicals_officers = yes } add = 1000 }
+		}
+	}
+}
+
+war_support_good.6 = {
+	placement = root
+
+	title = war_support_good.6.t
+	desc = war_support_good.6.desc
+	flavor = war_support_good.6.f
+
+	duration = 1
+
+	cooldown = {
+		days = 120
+	}
+	
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_rich_and_poor.bk2"
+	}
+
+	option = {
+		name = war_support_good.6.a
+		default_option = yes
+		add_loyalists = {
+			value = 0.01
+		}
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_debt_bad = yes } add = 1000 }
+		}
+	}
+
+	option = {
+		name = war_support_good.6.b
+		default_option = yes
+		add_loyalists = {
+			value = 0.03
+		}
+		add_loyalists = {
+			value = 0.03
+			pop_type = soldiers
+		}
+		add_treasury = wsr_money_amount_multiplier_small
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_debt_normal = yes } add = 100 }
+			modifier = { trigger = { wsr_check_war_support_bad = yes } add = 50 }
+			modifier = { trigger = { wsr_check_radicals_soldiers = yes } add = 100 }
+			modifier = { trigger = { wsr_check_radicals_all = yes } add = 1000 }
+		}
+	}
+}
+
+war_support_good.7 = {
+	placement = root
+
+	title = war_support_good.7.t
+	desc = war_support_good.7.desc
+	flavor = war_support_good.7.f
+
+	duration = 1
+
+	cooldown = {
+		days = 120
+	}
+	
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_art_gallery.bk2"
+	}
+
+	option = {
+		name = war_support_good.7.a
+		default_option = yes
+		local_var:current_war = {
+			add_war_war_support = {
+				target = ROOT
+				value = 5
+			}			
+		}
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_debt_bad = yes } add = 1000 }
+		}
+	}
+
+	option = {
+		name = war_support_good.7.b
+		default_option = yes
+		local_var:current_war = {
+			add_war_war_support = {
+				target = ROOT
+				value = 5
+			}
+		}
+		add_loyalists = {
+			value = 0.03
+			pop_type = academics
+		}
+		add_treasury = wsr_money_amount_multiplier_very_small
+		add_modifier = { name = war_support_poetry days = 120 }
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_debt_normal = yes } add = 100 }
+			modifier = { trigger = { wsr_check_war_support_bad = yes } add = 50 }
+		}
+	}
+}

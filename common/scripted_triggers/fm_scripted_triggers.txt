@@ -1801,3 +1801,170 @@ is_princely_state = {
 	}
 }
 
+gfx_military_peace_is_irregular = {
+
+	country_army_unit_type_fraction = {
+		target = unit_type:combat_unit_type_irregular_infantry  
+		value >= 0.2  
+	}
+	NOT = {
+	    any_military_formation = {
+		    is_mobilized = yes
+	    }
+	}
+
+}
+
+gfx_military_peace_is_line = {
+
+	country_army_unit_type_fraction = {
+		target = unit_type:combat_unit_type_line_infantry  
+		value >= 0.2  
+	}
+	NOT = {
+	    any_military_formation = {
+		    is_mobilized = yes
+	    }
+	}
+
+}
+
+gfx_military_peace_is_skirmish = {
+
+	country_army_unit_type_fraction = {
+		target = unit_type:combat_unit_type_skirmish_infantry  
+		value >= 0.2  
+	}
+	NOT = {
+	    any_military_formation = {
+		    is_mobilized = yes
+	    }
+	}
+
+}
+
+gfx_military_peace_is_trench = {
+
+	country_army_unit_type_fraction = {
+		target = unit_type:combat_unit_type_trench_infantry  
+		value >= 0.2  
+	}
+	NOT = {
+	    any_military_formation = {
+		    is_mobilized = yes
+	    }
+	}
+
+}
+
+gfx_military_peace_is_squad = {
+
+	country_army_unit_type_fraction = {
+		target = unit_type:combat_unit_type_squad_infantry  
+		value >= 0.2  
+	}
+	NOT = {
+	    any_military_formation = {
+		    is_mobilized = yes
+	    }
+	}
+
+}
+
+gfx_military_peace_is_mechanized = {
+
+	country_army_unit_type_fraction = {
+		target = unit_type:combat_unit_type_mechanized_infantry  
+		value >= 0.2  
+	}
+	NOT = {
+	    any_military_formation = {
+		    is_mobilized = yes
+	    }
+	}
+
+}
+
+gfx_military_mobilization_culture_is_german = {
+
+	any_primary_culture = { has_culture_graphics = gfx_german }
+
+}
+
+gfx_military_deploy_culture_is_german = {
+
+	scope:military_formation = {
+		any_combat_unit = {
+			culture = { has_culture_graphics = gfx_german }
+		}
+	}
+
+}
+
+gfx_military_mobilization_culture_is_south_german = {
+
+	any_primary_culture = { has_culture_graphics = gfx_south_german }
+
+}
+
+gfx_military_deploy_culture_is_south_german = {
+
+	scope:military_formation = {
+		any_combat_unit = {
+			culture = { has_culture_graphics = gfx_south_german }
+		}
+	}
+
+}
+
+wsr_check_radicals_soldiers = {
+	root = {
+		radical_fraction = {
+			value > 0.4
+			pop_type = soldiers
+		}
+	}
+}
+
+wsr_check_radicals_officers = {
+	root = {
+		radical_fraction = {
+			value > 0.4
+			pop_type = officers
+		}
+	}
+}
+
+wsr_check_war_support_bad = {
+	local_var:current_war = {
+		has_war_support = {
+			target = ROOT
+			value <= 60
+		}
+	}
+}
+
+wsr_check_debt_normal = {
+	root.scaled_debt < 0.5
+}
+
+wsr_check_debt_bad = {
+	root.scaled_debt >= 0.8
+}
+
+wsr_check_radicals_all = {
+	root = {
+		radical_fraction = {
+			value > 0.2
+		}
+	}
+}
+
+wsr_check_mutinies_bad = {
+	root = {
+		OR = {
+			has_modifier = war_support_mutiny_severe
+			has_modifier = war_support_mutiny_major
+		}
+	}
+}

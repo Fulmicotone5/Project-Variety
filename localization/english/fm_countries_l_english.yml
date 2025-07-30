@@ -504,3 +504,10 @@
  OM1_ADJ: "Company"
  MU1: "Africa Company"
  MU1_ADJ: "African"
+
+ colonial_admin_india: "India"
+ colonial_india_adj: "Colonial Indian"
+ colonial_admin_indonesia: "Indonesia"
+ colonial_admin_indonesia_adj: "Colonial Indonesian"
+ colonial_admin_indochina: "Indochina"
+ colonial_admin_indochina_adj: "Indochinese"

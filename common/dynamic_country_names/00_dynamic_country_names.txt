@@ -429,6 +429,46 @@ DEFAULT = {
 			}
 		}
 	}
+	dynamic_country_name = {
+		name = colonial_admin_india
+		adjective = colonial_india_adj
+		use_overlord_prefix = yes
+		priority = 100
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_variable = india_subject_var
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = colonial_admin_indonesia
+		adjective = colonial_admin_indonesia_adj
+		use_overlord_prefix = yes
+		
+		priority = 100
+		
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_variable = indonesia_subject_var
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = colonial_admin_indochina
+		adjective = colonial_admin_indochina_adj
+		use_overlord_prefix = yes
+		
+		priority = 100
+		
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_variable = indochina_subject_var
+			}
+		}
+	}
 }
 BBA = {
 	dynamic_country_name = {

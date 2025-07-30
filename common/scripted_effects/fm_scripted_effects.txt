@@ -1,0 +1,189 @@
+manage_war_casualties = {
+	if = { limit = { exists = local_var:matched_struct } remove_local_variable = matched_struct }  
+	if = { 
+		limit = { has_variable_list = casualties_country_list } 
+		every_in_list = {
+			variable = casualties_country_list
+			limit = {
+				var:country_tag = $country_tag$
+				var:war_tag = $war_tag$
+			}
+
+			set_variable = { name = delta value = $casualties$ }
+			change_variable = { name = delta subtract = var:last_total }
+			set_variable = { name = last_total value = $casualties$ }
+			set_variable = { name = last_mobilized value = var:mobilized }
+			set_variable = { name = mobilized value = $pop_count$ }
+			set_variable = { name = last_all_pops value = var:all_pops }
+			set_variable = { name = all_pops value = $all_pops$ }
+			set_variable = { name = enemy_wargoal_contest_before value = var:enemy_wargoal_contest_current}
+			set_variable = { name = enemy_wargoal_contest_current value = $enemy_wargoal_contest$}
+			set_variable = { name = enemy_occupation_before value = var:enemy_occupation_current }
+			set_variable = { name = enemy_occupation_current value = $enemy_occupation$ }
+			change_variable = { name = war_duration add = 1}
+
+			set_local_variable = matched_struct
+		}
+	} 
+	if = {
+		limit = { NOT = { exists = local_var:matched_struct } }
+		create_struct = {
+			struct_scope = war_casualties
+			struct_type  = 1
+		}
+
+		scope:war_casualties = {
+			set_variable = { name = country_tag  value = $country_tag$ }
+			set_variable = { name = war_tag value = $war_tag$ }
+			set_variable = { name = last_total value = $casualties$ }
+			set_variable = { name = mobilized value = $pop_count$ }
+			set_variable = { name = last_mobilized value = $pop_count$ }
+			set_variable = { name = all_pops value = $all_pops$ }
+			set_variable = { name = last_all_pops value = $all_pops$ }
+			set_variable = { name = delta value = $casualties$ }
+			set_variable = { name = enemy_wargoal_contest_before value = $enemy_wargoal_contest$}
+			set_variable = { name = enemy_wargoal_contest_current value = $enemy_wargoal_contest$}
+			set_variable = { name = our_wargoal_contest_before value = 0 }
+			set_variable = { name = our_wargoal_contest_current value = 0 }
+			set_variable = { name = enemy_occupation_before value = 0 }
+			set_variable = { name = enemy_occupation_current value = 0 }
+			set_variable = { name = our_occupation_before value = 0 }
+			set_variable = { name = our_occupation_current value = 0 }
+			set_variable = { name = war_duration value = 0 }
+			set_variable = { name = stalemate_duration value = 0}
+
+			prev = { 
+				add_to_variable_list = {
+					name = casualties_country_list
+					target = prev
+				} 
+			}
+		}
+	}	
+}
+
+remove_war_casualties = {
+	every_in_list = {
+		variable = casualties_country_list
+		if = {
+			limit = { var:war_tag ?= local_var:current_war }
+			set_local_variable = { name = char_to_process value = this }
+			destroy_struct = { struct = local_var:char_to_process }
+		}
+		if = { 
+			limit = { has_local_variable = char_to_process } 
+			prev = { remove_list_variable = { name = casualties_country_list target = local_var:char_to_process } }
+		}
+	}
+}
+
+manage_wargoal_contest = {
+	if = { 
+		limit = { has_variable_list = casualties_country_list } 
+		every_in_list = {
+			variable = casualties_country_list
+			limit = {
+				var:war_tag = $war_tag$
+			}
+
+			set_local_variable = { name = wargoal_temp value = var:our_wargoal_contest_current}
+			set_variable = { name = our_wargoal_contest_before value = local_var:wargoal_temp}
+			set_variable = { name = our_wargoal_contest_current value = $our_wargoal_contest_current$}
+
+			set_local_variable = { name = occ_temp value = var:our_occupation_current}
+			set_variable = { name = our_occupation_before value = local_var:occ_temp }
+			set_variable = { name = our_occupation_current value = $our_occupation_current$ }
+
+
+			if = {
+				limit = { var:war_duration > WAR_SUPPORT_LACK_OF_PROGRESS_MONTHS }
+
+				if = {
+					limit = { 
+						OR = {
+							var:our_wargoal_contest_current > var:our_wargoal_contest_before 
+							var:our_wargoal_contest_current = 1
+						}
+					}
+					set_variable = { name = stalemate_duration value = 0 }
+					set_variable = { name = progress_cooldown value = WAR_SUPPORT_STALEMATE_COOLDOWN }
+				}
+				else_if = {
+					limit = { var:progress_cooldown > 0 }
+					change_variable = { name = progress_cooldown add  = -1 }
+				}
+				else_if = {
+					limit = {
+						var:our_wargoal_contest_current <= var:our_wargoal_contest_before
+						NOT = { var:our_wargoal_contest_current = 1 }
+					}
+					change_variable = { name = stalemate_duration add  = 1 }
+				}
+			}
+			else = { set_variable = { name = progress_cooldown value = 0 } }
+		
+			#if = {
+			#	limit = {
+			#		var:our_wargoal_contest_current <= var:our_wargoal_contest_before
+			#		var:war_duration > WAR_SUPPORT_LACK_OF_PROGRESS_MONTHS
+			#		NOT = { var:our_wargoal_contest_current = 1 }
+			#	}
+			#	change_variable = { name = stalemate_duration add = 1 }
+			#}
+			#else = { set_variable = { name = stalemate_duration value = 0 } }
+		}
+	} 
+}
+manage_mutinies = {
+	if = {
+		limit = { 
+			not = { 
+				OR = {
+					has_modifier = war_support_mutiny_minor 
+					has_modifier = war_support_mutiny_moderate
+					has_modifier = war_support_mutiny_major
+					has_modifier = war_support_mutiny_severe
+				}
+			} 
+		}
+		add_modifier = { name = war_support_mutiny_minor days = $days$ }
+	}
+	else_if = {
+		limit = { has_modifier = war_support_mutiny_minor }
+		remove_modifier = war_support_mutiny_minor
+		add_modifier = { name = war_support_mutiny_moderate days = $days$ }
+		add_radicals = {
+			value = 0.05
+			pop_type = soldiers
+		}
+	}
+	else_if = {
+		limit = { has_modifier = war_support_mutiny_moderate }
+		remove_modifier = war_support_mutiny_moderate
+		add_modifier = { name = war_support_mutiny_major days = $days$ }
+		add_radicals = {
+			value = 0.05
+			pop_type = soldiers
+		}
+		add_radicals = {
+			value = 0.05
+			pop_type = officers
+		}
+	}
+	else_if = {
+		limit = { has_modifier = war_support_mutiny_major }
+		remove_modifier = war_support_mutiny_major
+		add_modifier = { name = war_support_mutiny_severe days = $days$ }
+		add_radicals = {
+			value = 0.15
+			pop_type = soldiers
+		}
+		add_radicals = {
+			value = 0.1
+			pop_type = officers
+		}
+	}
+	else = {
+		add_modifier = { name = war_support_mutiny_severe days = 120 }
+	}
+}

@@ -553,3 +553,136 @@ military_cavalry_nativeamerican_lancer_diorama_entity = {
 		scope:combat_unit_type = unit_type:combat_unit_type_lancers
 	}
 }
+
+
+military_cavalry_german_hussar_diorama_entity = {
+	entity = "military_cavalry_european_hussar_entity"
+
+	group = "cavalry"
+	
+	trigger = {
+		scope:culture = {
+		 or = {
+			has_culture_graphics = gfx_german
+			has_culture_graphics = gfx_south_german
+			}
+		}
+
+		scope:combat_unit_type = unit_type:combat_unit_type_hussars
+	}
+}
+
+military_cavalry_german_dragoon_diorama_entity = {
+	entity = "military_cavalry_german_dragoon_entity"
+
+	group = "cavalry"
+	
+	trigger = {
+		scope:culture = {
+		 or = {
+			has_culture_graphics = gfx_german
+			}
+		}
+		scope:combat_unit_type = unit_type:combat_unit_type_dragoons
+	}
+}
+
+military_cavalry_south_german_dragoon_diorama_entity = {
+	entity = "military_cavalry_south_german_dragoon_entity"
+
+	group = "cavalry"
+	
+	trigger = {
+		scope:culture = {
+		 or = {
+			has_culture_graphics = gfx_south_german
+			}
+		}
+		scope:combat_unit_type = unit_type:combat_unit_type_dragoons
+	}
+}
+
+military_cavalry_german_cuirassier_diorama_entity = {
+	entity = "military_cavalry_german_cuirassier_entity"
+
+	group = "cavalry"
+	
+	trigger = {
+		scope:culture = {
+		 or = {
+			has_culture_graphics = gfx_german
+			}
+		}
+		scope:combat_unit_type = unit_type:combat_unit_type_cuirassiers
+	}
+}
+
+military_cavalry_south_german_cuirassier_diorama_entity = {
+	entity = "military_cavalry_south_german_cuirassier_entity"
+
+	group = "cavalry"
+	
+	trigger = {
+		scope:culture = {
+		 or = {
+			has_culture_graphics = gfx_south_german
+			}
+		}
+		scope:combat_unit_type = unit_type:combat_unit_type_cuirassiers
+	}
+}
+
+military_cavalry_german_lancer_diorama_entity = {
+	entity = "military_cavalry_german_lancer_entity"
+
+	group = "cavalry"
+	
+	trigger = {
+		scope:country = {
+			not = { has_technology_researched = trench_works }
+		}
+		scope:culture = {
+		 or = {
+			has_culture_graphics = gfx_german
+			}
+		}
+		scope:combat_unit_type = unit_type:combat_unit_type_lancers
+	}
+}
+
+military_cavalry_german_south_lancer_diorama_entity = {
+	entity = "military_cavalry_german_south_lancer_entity"
+
+	group = "cavalry"
+	
+	trigger = {
+		scope:country = {
+			not = { has_technology_researched = trench_works }
+		}
+		scope:culture = {
+		 or = {
+			has_culture_graphics = gfx_south_german
+			}
+		}
+		scope:combat_unit_type = unit_type:combat_unit_type_lancers
+	}
+}
+
+military_cavalry_german_lancer_1907_diorama_entity = {
+	entity = "military_cavalry_german_lancer_1907_entity"
+
+	group = "cavalry"
+	
+	trigger = {
+		scope:country = {
+			has_technology_researched = trench_works
+		}
+		scope:culture = {
+		 or = {
+			has_culture_graphics = gfx_german
+			has_culture_graphics = gfx_south_german
+			}
+		}
+		scope:combat_unit_type = unit_type:combat_unit_type_lancers
+	}
+}

@@ -1,0 +1,116 @@
+pdxmesh = {
+	name = "military_infantry_german_t3_south_mesh"
+	file = "military_infantry_german_t3.mesh"
+
+	meshsettings = {
+		name = "military_infantry_european_t3Shape"
+		index = 0
+		texture_diffuse = "military_infantry_german_t3_south_diffuse.dds"
+		texture_normal = "military_infantry_german_t3_normal.dds"
+		texture_specular = "military_infantry_german_t3_properties.dds"
+		texture = { file = "military_infantry_german_t3_masks.dds" index = 6 }
+		additional_shader_defines = { "UNIT_COLOR" }
+		shader = "standard"		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+	meshsettings = {
+		name = "military_infantry_european_t3_helmShape"
+		index = 0
+		texture_diffuse = "military_infantry_german_t3_helm_diffuse.dds"
+		texture_normal = "military_infantry_german_t3_helm_normal.dds"
+		texture_specular = "military_infantry_german_t3_helm_specular.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+	animation = { id = "bind_pose_animation" 									type = "../animation/military_infantry_european_body_t1_bind_pose.anim" }
+
+	#################################################
+	###       			Infantry	    		  ###
+	#################################################
+
+	### Blunderbuss ###
+	animation = { id = "infantry_blunderbuss_idle_01_animation" 				type = "../animation/military_infantry_blunderbuss_idle_01.anim" }
+	animation = { id = "infantry_blunderbuss_idle_02_animation" 				type = "../animation/military_infantry_blunderbuss_idle_02.anim" }
+	animation = { id = "infantry_blunderbuss_walk_01_animation" 				type = "../animation/military_infantry_blunderbuss_walk_01.anim" }
+	animation = { id = "infantry_blunderbuss_victory_01_animation" 				type = "../animation/military_infantry_blunderbuss_victory_01.anim" }
+	animation = { id = "infantry_blunderbuss_defeat_01_animation" 				type = "../animation/military_infantry_blunderbuss_defeat_01.anim" }
+	animation = { id = "infantry_blunderbuss_defeat_02_animation" 				type = "../animation/military_infantry_blunderbuss_defeat_02.anim" }
+	animation = { id = "infantry_blunderbuss_scout_01_animation" 				type = "../animation/military_infantry_blunderbuss_scout_01.anim" }
+	animation = { id = "infantry_blunderbuss_scout_02_animation" 				type = "../animation/military_infantry_blunderbuss_scout_02.anim" }
+	animation = { id = "infantry_blunderbuss_fire_aggressive_01_animation" 		type = "../animation/military_infantry_blunderbuss_fire_aggressive_01.anim" }
+	animation = { id = "infantry_blunderbuss_fire_aggressive_02_animation" 		type = "../animation/military_infantry_blunderbuss_fire_aggressive_02.anim" }
+	animation = { id = "infantry_blunderbuss_fire_defensive_01_animation" 		type = "../animation/military_infantry_blunderbuss_fire_defensive_01.anim" }
+
+	### Saber ###
+	animation = { id = "infantry_saber_idle_01_animation" 						type = "../animation/military_infantry_saber_idle_01.anim" }
+	animation = { id = "infantry_saber_walk_01_animation" 						type = "../animation/military_infantry_saber_walk_01.anim" }
+	animation = { id = "infantry_saber_advance_01_animation" 					type = "../animation/military_infantry_saber_advance_01.anim" }
+	animation = { id = "infantry_saber_defend_01_animation" 					type = "../animation/military_infantry_saber_defend_01.anim" }
+
+	### Dreyse Needle Gun Animations ###
+	animation = { id = "infantry_dreyseneedlegun_fire_defensive_animation" 		type = "../animation/military_infantry_dreyseneedlegun_fire_defensive.anim" }
+	animation = { id = "infantry_dreyseneedlegun_fire_aggressive_animation" 		type = "../animation/military_infantry_dreyseneedlegun_fire_aggressive.anim" }
+
+	### Mauser 98 Animations ###
+	animation = { id = "infantry_mauser98_fire_defensive_animation" 		type = "../animation/military_infantry_mauser98_fire_defensive.anim" }
+	animation = { id = "infantry_mauser98_fire_aggressive_animation" 		type = "../animation/military_infantry_mauser98_fire_aggressive.anim" }
+
+	### Tommy Gun Animations ###
+	animation = { id = "infantry_tommygun_fire_defensive_animation" 		type = "../animation/military_infantry_tommygun_defensive.anim" }
+	animation = { id = "infantry_tommygun_fire_aggressive_animation" 		type = "../animation/military_infantry_tommygun_aggressive.anim" }
+
+	### Brown Bess Animations ###
+	animation = { id = "infantry_brownbess_fire_defensive_animation" 		type = "../animation/military_infantry_brownbess_defensive_01.anim" }
+	animation = { id = "infantry_brownbess_fire_aggressive_animation" 		type = "../animation/military_infantry_brownbess_aggressive_01.anim" }
+
+	### Chauchat Animations ###
+	animation = { id = "infantry_chauchat_fire_defensive_animation" 		type = "../animation/military_infantry_chauchat_defensive.anim" }
+	animation = { id = "infantry_chauchat_fire_aggressive_animation" 		type = "../animation/military_infantry_chauchat_aggressive.anim" }
+
+	### Flamethrower ###
+	animation = { id = "infantry_flamethrower_fire_aggressive_animation" 			type = "../animation/military_infantry_flamethrower_aggressive.anim" }
+
+	### Machinegun ###
+	animation = { id = "infantry_machinegun_maxim_fire_defensive_animation" 		type = "../animation/military_infantry_machinegun_maxim_defensive.anim" }
+
+
+
+
+
+
+	#################################################
+	###       			Cavalry	    			  ###
+	#################################################
+
+	### Generic ###
+	animation = { id = "cavalry_blunderbuss_idle_01_animation" 					type = "../animation/military_cavalry_blunderbuss_idle_01.anim" }
+	animation = { id = "cavalry_blunderbuss_idle_02_animation" 					type = "../animation/military_cavalry_blunderbuss_idle_02.anim" }
+	animation = { id = "cavalry_blunderbuss_walk_01_animation" 					type = "../animation/military_cavalry_blunderbuss_walk_01.anim" }
+	animation = { id = "cavalry_blunderbuss_victory_01_animation" 				type = "../animation/military_cavalry_blunderbuss_victory_01.anim" }
+	animation = { id = "cavalry_blunderbuss_defeat_01_animation" 				type = "../animation/military_cavalry_blunderbuss_defeat_01.anim" }
+	animation = { id = "cavalry_blunderbuss_defeat_02_animation" 				type = "../animation/military_cavalry_blunderbuss_defeat_02.anim" }
+	animation = { id = "cavalry_blunderbuss_scout_01_animation" 				type = "../animation/military_cavalry_blunderbuss_scout_01.anim" }
+	animation = { id = "cavalry_blunderbuss_scout_02_animation" 				type = "../animation/military_cavalry_blunderbuss_scout_02.anim" }
+
+	### Saber Animations ###
+	animation = { id = "cavalry_saber_idle_animation" 							type = "../animation/military_cavalry_saber_rider_idle.anim" }
+	animation = { id = "cavalry_saber_walk_01_animation" 						type = "../animation/military_cavalry_saber_walk_01.anim" }
+	animation = { id = "cavalry_saber_warcry_animation" 						type = "../animation/military_cavalry_saber_rider_warcry.anim" }
+	animation = { id = "cavalry_saber_charge_animation" 						type = "../animation/military_cavalry_saber_rider_charge.anim" }
+		
+	### Dreyse Needle Gun Animations ###
+	animation = { id = "cavalry_dreyseneedlegun_idle_animation" 				type = "../animation/military_cavalry_dreyseneedlegun_rider_idle.anim" }
+	animation = { id = "cavalry_dreyseneedlegun_fire_defensive_animation" 		type = "../animation/military_cavalry_dreyseneedlegun_rider_fire_defensive.anim" }
+	animation = { id = "cavalry_dreyseneedlegun_fire_aggressive_animation" 		type = "../animation/military_cavalry_dreyseneedlegun_rider_fire_aggressive.anim" }
+
+	### Sword Animations ###
+	animation = { id = "cavalry_sword_idle_animation" 							type = "../animation/military_cavalry_sword_rider_idle.anim" }
+	animation = { id = "cavalry_sword_warcry_animation" 						type = "../animation/military_cavalry_sword_rider_warcry.anim" }
+	animation = { id = "cavalry_sword_charge_animation" 						type = "../animation/military_cavalry_sword_rider_charge.anim" }
+	
+	### Lance Animations ###
+	animation = { id = "cavalry_lance_idle_animation" 							type = "../animation/military_cavalry_lance_rider_idle.anim" }
+	animation = { id = "cavalry_lance_warcry_animation" 						type = "../animation/military_cavalry_lance_rider_warcry.anim" }
+	animation = { id = "cavalry_lance_charge_animation" 						type = "../animation/military_cavalry_lance_rider_charge.anim" }
+}

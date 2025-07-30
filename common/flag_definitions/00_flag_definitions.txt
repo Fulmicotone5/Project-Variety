@@ -145,6 +145,42 @@ DEFAULT = {
 			}
 		}
 	}
+	flag_definition = {
+		coa = colonial_indonesia
+		allow_overlord_canton = yes
+		overlord_canton_scale = { @canton_scale_cross_x @canton_scale_cross_y }
+		priority = 100
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_variable = indonesia_subject_var
+			}
+		}
+	}
+	flag_definition = {
+		coa = colonial_indochina
+		allow_overlord_canton = yes
+		overlord_canton_scale = { @canton_scale_cross_x @canton_scale_cross_y }
+		priority = 100
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_variable = indochina_subject_var
+			}
+		}
+	}
+	flag_definition = {
+		coa = colonial_india
+		allow_overlord_canton = yes
+		overlord_canton_scale = { @canton_scale_cross_x @canton_scale_cross_y }
+		priority = 100
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_variable = india_subject_var
+			}
+		}
+	}
 }
 
 ABS = { # Absaroka
@@ -12751,4 +12787,22 @@ FL1 = {	# Empire Flanders
 			coa_def_monarchy_flag_trigger = yes
 		}
 	}
+}
+#colonial subjects
+
+colonial_india = {
+	pattern = "pattern_solid.tga"
+	color1 = "yellow"
+	color2 = "yellow"
+}
+
+colonial_indonesia = {
+	pattern = "pattern_solid.tga"
+	color1 = "orange"
+	color2 = "orange"
+}
+colonial_indochina = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	color2 = "red"
 }

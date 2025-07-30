@@ -21,13 +21,13 @@
 
 	
 	potential = {
+	}
+	
+	possible = {
 		OR = {
 			country_has_primary_culture = cu:south_roman
 			country_has_primary_culture = cu:greco_roman
 		}
-	}
-	
-	possible = {
 		any_scope_state = {
 			OR = {
 				region = sr:region_balkans
@@ -92,12 +92,11 @@ company_incacomp = {
 
 	
 	potential = {
-		country_has_primary_culture = cu:quechua
-		has_law = law_type:law_monarchy
-		has_law = law_type:law_command_economy
+
 	}
 	
 	possible = {
+		country_has_primary_culture = cu:quechua
 		any_scope_state = {
 			region = sr:region_andes
 			any_scope_building = {
@@ -140,7 +139,7 @@ company_statera = {
 	icon = "gfx/interface/icons/company_icons/fm_company_icons/CreditAnstalt.png"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_railways.dds"
 	
-	flavored_company = no
+	flavored_company = yes
 	
 	building_types = {  
 		building_motor_industry
@@ -216,7 +215,7 @@ company_stateenergy = {
 	icon = "gfx/interface/icons/company_icons/fm_company_icons/CreditAnstalt.png"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_oil_drills.dds"
 	
-	flavored_company = no
+	flavored_company = yes
 	
 	building_types = {  
 		building_power_plant
@@ -308,7 +307,6 @@ company_venars = {
 	
 	
 	potential = {
-		has_interest_marker_in_region = region_south_germany
 	}
 	
 	
@@ -358,7 +356,6 @@ company_VNA = {
 	}
 
 	potential = {
-		country_has_primary_culture = cu:venetian
 	}
 
 	possible = {
@@ -454,7 +451,6 @@ company_EIC = {
 	}
 
 	potential = {
-		country_has_primary_culture = cu:portuguese
 	}
 
 	possible = {
@@ -553,7 +549,6 @@ company_VOC = {
 	}
 
 	potential = {
-		country_has_primary_culture = cu:dutch
 	}
 
 	possible = {
@@ -648,10 +643,10 @@ icon = "gfx/interface/icons/company_icons/fm_company_icons/denco.dds"
 	}
 
 	potential = {
-		country_has_primary_culture = cu:danish
 	}
 
 	possible = {
+		country_has_primary_culture = cu:danish
 		any_scope_state = {
 			OR = {
 				state_region = s:STATE_SUZHOU
@@ -739,10 +734,10 @@ icon = "gfx/interface/icons/company_icons/fm_company_icons/nosco.dds"
 	}
 
 	potential = {
-		country_has_primary_culture = cu:scottish
 	}
 
 	possible = {
+		country_has_primary_culture = cu:scottish
 		any_scope_state = {
 			OR = {
 				state_region = s:STATE_SAN_SALVADOR
@@ -820,7 +815,6 @@ company_zarath = {
 	}
 
 	potential = {
-		country_has_state_religion = rel:zoroastrian
 	}
 
 	attainable = {
@@ -881,6 +875,10 @@ icon = "gfx/interface/icons/company_icons/fm_company_icons/generalm.dds"
 
 	possible_prestige_goods = {
 		prestige_good_loud_car
+	}
+
+	potential = {
+		
 	}
 
 
@@ -945,7 +943,6 @@ company_OMA = {
 	}
 
 	potential = {
-		country_has_primary_culture = cu:bedouin
 	}
 
 	possible = {
@@ -1050,10 +1047,10 @@ icon = "gfx/interface/icons/company_icons/fm_company_icons/marinidco.dds"
 	}
 
 	potential = {
-		country_has_primary_culture = cu:maghrebi
 	}
 
 	possible = {
+		country_has_primary_culture = cu:maghrebi
 		any_scope_state = {
 			state_region = s:STATE_TRAVANCORE
 			any_scope_building = {
@@ -1113,16 +1110,24 @@ company_EIC1 = {
 	}
 
 	potential = {
-		OR = {
-				has_interest_marker_in_region = sr:region_madras
-				has_interest_marker_in_region = sr:region_bombay
-				has_interest_marker_in_region = sr:region_bengal
-				has_interest_marker_in_region = sr:region_central_india
-				has_interest_marker_in_region = sr:region_punjab
+		NOR = {
+			country_has_primary_culture = cu:portuguese
+			country_has_primary_culture = cu:dutch
+			}
+
+	}
+	attainable = {
+		NOR = {
+			country_has_primary_culture = cu:portuguese
+			country_has_primary_culture = cu:dutch
 			}
 	}
 
 	possible = {
+		NOR = {
+			country_has_primary_culture = cu:portuguese
+			country_has_primary_culture = cu:dutch
+			}
 		has_technology_researched = civilizing_mission
 		OR = {
 			has_law = law_type:law_mercantilism
@@ -1221,10 +1226,7 @@ company_WIC = {
 	}
 
 	potential = {
-		OR = {
-				has_interest_marker_in_region = sr:region_gran_colombia
-				has_interest_marker_in_region = sr:region_caribbean
-			}
+
 	}
 
 	possible = {
@@ -1314,7 +1316,7 @@ icon = "gfx/interface/icons/company_icons/fm_company_icons/pilsnerco.dds"
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_south_germany
+
 	}
 
 	possible = {
@@ -1377,7 +1379,7 @@ icon = "gfx/interface/icons/company_icons/fm_company_icons/mountgay.dds"
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_caribbean
+
 	}
 
 
@@ -1435,7 +1437,7 @@ company_kobe  = {
 		prestige_good_kobe
 	}
 	potential = {
-		has_interest_marker_in_region = region_japan
+
 	}
 
 
@@ -1482,7 +1484,7 @@ company_kikkoman = {
 		prestige_good_psashimi
 	}
 	potential = {
-		has_interest_marker_in_region = region_japan
+
 	}
 
 
@@ -1580,7 +1582,7 @@ company_tungstram = {
 		prestige_good_lightbulb
 	}
 	potential = {
-		has_interest_marker_in_region = region_danubia
+
 	}
 
 
@@ -1631,7 +1633,7 @@ company_dacice = {
 		prestige_good_teasugar
 	}
 	potential = {
-		has_interest_marker_in_region = region_south_germany
+
 	}
 
 
@@ -1681,7 +1683,7 @@ vestrlandco = {
 		prestige_good_generic_meat
 	}
 	potential = {
-		country_has_state_religion = rel:norsp
+
 	}
 
 
@@ -1737,6 +1739,7 @@ royaltrade = {
 		building_coffee_plantation
 		building_dye_plantation
 	}
+
 
 
 
@@ -1991,7 +1994,7 @@ company_ETHcoffee = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_ethiopia
+
 	}
 
 	possible = {
@@ -2056,7 +2059,7 @@ company_BRZcoffee = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_brazil
+
 	}
 
 	possible = {
@@ -2112,7 +2115,7 @@ company_zespri = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_oceania
+
 	}
 
 	possible = {
@@ -2173,7 +2176,7 @@ company_hadong = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_indochina
+	
 	}
 
 	possible = {
@@ -2227,7 +2230,7 @@ company_manito = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_canada
+	
 	}
 
 	possible = {
@@ -2282,7 +2285,7 @@ company_cocaco = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_dixie
+
 	}
 
 	possible = {
@@ -2338,7 +2341,7 @@ company_cubaci = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_caribbean
+
 	}
 
 	possible = {
@@ -2389,7 +2392,7 @@ company_corona = {
 		prestige_good_coronaglass
 	}
 	potential = {
-		has_interest_marker_in_region = region_gran_colombia
+
 	}
 
 
@@ -2439,7 +2442,7 @@ company_manuelita = {
 		prestige_good_generic_fish
 	}
 	potential = {
-		has_interest_marker_in_region = region_gran_colombia
+
 	}
 
 
@@ -2490,7 +2493,7 @@ company_habeco = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_indochina
+
 	}
 
 	possible = {
@@ -2546,7 +2549,7 @@ company_kalevko = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_baltic_states
+
 	}
 
 	possible = {
@@ -2601,7 +2604,7 @@ company_fmdk = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_baltic_states
+
 	}
 
 	possible = {
@@ -2755,7 +2758,7 @@ company_arnoldco = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_france
+
 	}
 
 	possible = {

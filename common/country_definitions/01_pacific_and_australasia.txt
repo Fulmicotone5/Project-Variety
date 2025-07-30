@@ -536,7 +536,7 @@ TOM = { # tom
 
 	tier = principality
 
-	country_type = decentralized
+	country_type = unrecognized
 
 	cultures = { aborigine }
 

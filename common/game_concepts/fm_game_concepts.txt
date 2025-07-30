@@ -46,3 +46,5 @@ concept_control = {
 	texture = "gfx/interface/icons/invention_icons/centralization.dds"
 	is_loading_tip = yes
 }
+
+concept_progress_war_exhaustion = {}

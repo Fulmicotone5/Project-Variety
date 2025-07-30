@@ -398,3 +398,79 @@ military_medical_firstaid_diorama_entity = {
 		}
 	}
 }
+
+### Flamethrower ###
+
+military_support_german_flamethrower_diorama_entity = {
+	entity = "military_support_german_flamethrower_entity"
+
+	group = "flamethrower"
+
+	trigger = {
+		scope:attacker = yes
+
+		scope:culture = {
+			has_culture_graphics = gfx_german
+		}
+
+		scope:military_formation = {
+			has_mobilization_option = mobilization_option:mobilization_option_flamethrowers
+		}
+	}
+}
+
+military_support_south_german_flamethrower_diorama_entity = {
+	entity = "military_support_south_german_flamethrower_entity"
+
+	group = "flamethrower"
+
+	trigger = {
+		scope:attacker = yes
+
+		scope:culture = {
+			has_culture_graphics = gfx_south_german
+		}
+
+		scope:military_formation = {
+			has_mobilization_option = mobilization_option:mobilization_option_flamethrowers
+		}
+	}
+}
+
+### Machinegunner ###
+
+military_support_german_machinegunner_diorama_entity = {
+	entity = "military_support_german_machinegunner_entity"
+
+	group = "machinegunner"
+
+	trigger = {
+		scope:attacker = no
+
+		scope:culture = {
+			has_culture_graphics = gfx_german
+		}
+
+		scope:military_formation = {
+			has_mobilization_option = mobilization_option:mobilization_option_machinegunners
+		}
+	}
+}
+
+military_support_south_german_machinegunner_diorama_entity = {
+	entity = "military_support_south_german_machinegunner_entity"
+
+	group = "machinegunner"
+
+	trigger = {
+		scope:attacker = no
+
+		scope:culture = {
+			has_culture_graphics = gfx_south_german
+		}
+
+		scope:military_formation = {
+			has_mobilization_option = mobilization_option:mobilization_option_machinegunners
+		}
+	}
+}

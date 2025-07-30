@@ -23,3 +23,199 @@ controlvariable = {
 	value = var:control_var
 
 }
+
+WAR_SUPPORT_MIN_VG_CHANCE = 0.003
+WAR_SUPPORT_MAX_VG_CHANCE = 0.010
+WAR_SUPPORT_MAX_G_CHANCE = 0.015
+WAR_SUPPORT_MAX_B_CHANCE = 0.015
+WAR_SUPPORT_MIN_VB_CHANCE = 0.005
+WAR_SUPPORT_MAX_VB_CHANCE = 0.05
+
+war_support_vg_chance = {
+	value = local_var:war_support_temp
+	min = 0
+	divide = 100
+	save_temporary_value_as = w
+
+	value = WAR_SUPPORT_MIN_VG_CHANCE
+	add = { 
+		value = scope:w
+		multiply = scope:w
+		multiply = WAR_SUPPORT_MAX_VG_CHANCE
+	}
+
+	multiply = 100 
+	multiply = 100
+}
+
+war_support_g_chance = {
+    value = local_var:war_support_temp
+	min = 0
+    divide = 100
+    min = 0
+    max = 1
+    save_temporary_value_as = w
+
+    value = scope:w
+    multiply = { value = 1 subtract = scope:w }
+
+    multiply = WAR_SUPPORT_MAX_G_CHANCE
+    multiply = 100
+	multiply = 100
+}
+
+war_support_b_chance = {
+    value = local_var:war_support_temp 
+	min = 0
+    divide = 100
+    min = 0
+    max = 1
+    save_temporary_value_as = w
+
+    value = 1
+	subtract = scope:w
+	save_temporary_value_as = 1w
+	
+	value = 0
+	add = {
+		value = scope:1w
+		multiply = scope:1w
+	}
+
+    multiply = WAR_SUPPORT_MAX_B_CHANCE
+    multiply = 100 
+	multiply = 100
+}
+
+war_support_vb_chance = {
+	value = 100
+	subtract = {
+		value = local_var:war_support_temp
+		min = 0
+	}
+	divide = 100
+	min = 0
+	max = 1
+
+	save_temporary_value_as = inv_w
+
+	value = WAR_SUPPORT_MIN_VB_CHANCE
+	add = {
+		value = scope:inv_w
+		multiply = scope:inv_w
+		multiply = WAR_SUPPORT_MAX_VB_CHANCE
+	}
+	multiply = 100
+	multiply = 100
+	if = {
+		limit = {
+			root = {
+				is_player = yes
+			}
+			local_var:war_support_temp <= 10
+		}
+		multiply = 3
+	}
+}
+
+war_support_nothing_chance = {
+	add = 10000
+	subtract = war_support_vg_chance
+	subtract = war_support_g_chance
+	subtract = war_support_b_chance
+	subtract = war_support_vb_chance
+}
+
+mobilized_pop = {
+	every_scope_pop = {
+		limit = {
+			OR = {
+				is_pop_type = soldiers
+				is_pop_type = officers
+			}
+		}
+		add = workforce
+	}
+}
+
+all_pop = {
+	every_scope_pop = {
+		add = workforce
+	}
+}
+
+wsr_money_amount_multiplier_very_small = {
+    value = root.gdp
+    divide = 100000
+    multiply = { 2 4 }
+    round = yes
+    multiply = 100
+    min = 100
+	multiply = -1 
+}
+
+wsr_money_amount_multiplier_small = {
+    value = root.gdp
+    divide = 100000
+    multiply = { 3 7 }
+    round = yes
+    multiply = 100
+    min = 100
+	multiply = -1 
+}
+
+wsr_money_amount_multiplier_medium = {
+    value = root.gdp
+    divide = 100000
+    multiply = { 8 9 }
+    round = yes
+    multiply = 100
+    min = 100
+	multiply = -1 
+}
+
+wsr_calculate_ally_war_support_bonus = {
+	value = {
+		value = 0 
+		if = {
+			limit = { this.country_rank < rank_value:minor_power }	
+			add = 3
+		}
+		else = { 
+			add = this.country_rank
+		}
+	}
+	subtract = {
+		value = 0
+		if = {
+			limit = { root.country_rank < rank_value:minor_power }	
+			add = 3
+		}
+		else = { 
+			add = root.country_rank 
+		}
+	}
+
+	save_temporary_value_as = diff
+
+	if = {
+		limit = { scope:diff < 0 }
+		value = 0
+	}
+	else_if = {
+		limit = { scope:diff = 0 }
+		value = WAR_SUPPORT_ALLY_LOW
+	}
+	else_if = {
+		limit = { scope:diff = 1 }
+		value = WAR_SUPPORT_ALLY_MEDIUM
+	}
+	else_if = {
+		limit = { scope:diff = 2 }
+		value = WAR_SUPPORT_ALLY_HIGH
+	}
+	else_if = {
+		limit = { scope:diff >= 3 }
+		value = WAR_SUPPORT_ALLY_MAX		
+	}
+}

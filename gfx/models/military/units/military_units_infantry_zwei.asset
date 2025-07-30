@@ -1,0 +1,115 @@
+
+#################################################
+###       			German     			  ###
+#################################################
+
+entity = {
+	name =		 "military_infantry_german_line_entity"
+	clone =		 "military_infantry_european_line_entity"
+	pdxmesh =	 "military_infantry_german_t2_line_mesh"
+}
+
+entity = {
+	name =		 "military_infantry_german_south_line_entity"
+	clone =		 "military_infantry_european_line_entity"
+	pdxmesh =	 "military_infantry_german_south_t2_mesh"
+}
+
+
+entity = {
+	name =		 "military_infantry_german_skirmish_entity"
+	clone =		 "military_infantry_european_skirmish_entity"
+	pdxmesh =	 "military_infantry_german_t2_mesh"
+}
+
+entity = {
+	name =		 "military_infantry_german_south_skirmish_entity"
+	clone =		 "military_infantry_european_skirmish_entity"
+	pdxmesh =	 "military_infantry_german_south_t2_mesh"
+}
+
+entity = {
+	name =		 "military_infantry_german_trench_entity"
+	clone =		 "military_infantry_european_trench_entity"
+	pdxmesh =	 "military_infantry_german_t2_1907_mesh"
+}
+
+entity = {
+	name =		 "military_infantry_south_german_trench_entity"
+	clone =		 "military_infantry_european_trench_entity"
+	pdxmesh =	 "military_infantry_german_t2_1907_mesh"
+}
+
+entity = {
+	name =		 "military_infantry_german_squad_entity"
+	clone =		 "military_infantry_european_trench_entity"
+	pdxmesh =	 "military_infantry_german_t3_boot_mesh"
+	
+	attach = { name = weapon 		r_hand_attach = "military_arms_mauser98_entity" }
+
+	###		DEFEND STATES		###
+
+	state = { name = "defend"
+		time_offset = { 0.0 10.0 } 
+		start_event = 		{ node = l_hand_attach		entity = "military_arms_mauser98_entity" attachment_id = weapon state = "fire_defensive_01" }
+		animation = 		"infantry_mauser98_fire_defensive_animation"
+		looping = 			yes 
+		#propagate_state = 	{ weapon = "fire_defensive_01" }
+	}
+
+
+	###		ADVANCE STATES		###
+
+	state = { name = "advance"
+		time_offset = { 0.0 10.0 } 
+		start_event = 		{ node = l_hand_attach		entity = "military_arms_mauser98_entity" attachment_id = weapon state = "fire_aggressive_01" }
+		animation = 		"infantry_mauser98_fire_aggressive_animation" 
+		looping = 			yes 
+		#propagate_state = 	{ weapon = "fire_aggressive_01" }
+	}
+}
+
+entity = {
+	name =		 "military_infantry_south_german_squad_entity"
+	clone =		 "military_infantry_european_trench_entity"
+	pdxmesh =	 "military_infantry_german_t3_south_mesh"
+	
+	attach = { name = weapon 		r_hand_attach = "military_arms_mauser98_entity" }
+
+	###		DEFEND STATES		###
+
+	state = { name = "defend"
+		time_offset = { 0.0 10.0 } 
+		start_event = 		{ node = l_hand_attach		entity = "military_arms_mauser98_entity" attachment_id = weapon state = "fire_defensive_01" }
+		animation = 		"infantry_mauser98_fire_defensive_animation"
+		looping = 			yes 
+		#propagate_state = 	{ weapon = "fire_defensive_01" }
+	}
+
+
+	###		ADVANCE STATES		###
+
+	state = { name = "advance"
+		time_offset = { 0.0 10.0 } 
+		start_event = 		{ node = l_hand_attach		entity = "military_arms_mauser98_entity" attachment_id = weapon state = "fire_aggressive_01" }
+		animation = 		"infantry_mauser98_fire_aggressive_animation" 
+		looping = 			yes 
+		#propagate_state = 	{ weapon = "fire_aggressive_01" }
+	}
+}
+
+entity = {
+	name =		 "military_infantry_german_mechanized_entity"
+	clone =		 "military_infantry_european_mechanized_entity"
+	pdxmesh =	 "military_infantry_german_t3_boot_mesh"
+	
+	attach = { name = weapon 		r_hand_attach = "military_arms_mp18_entity" }
+}
+
+entity = {
+	name =		 "military_infantry_south_german_mechanized_entity"
+	clone =		 "military_infantry_european_mechanized_entity"
+	pdxmesh =	 "military_infantry_german_t3_south_mesh"
+	
+	attach = { name = weapon 		r_hand_attach = "military_arms_mp18_entity" }
+}
