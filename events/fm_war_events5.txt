@@ -31,12 +31,12 @@ war_support_entry.1 = {
 										add = war_support_vg_chance
 									}
 									random_list = {
-										1 = { trigger_event = { id = war_support_very_good.1 popup = yes } }
-										1 = { trigger_event = { id = war_support_very_good.2 popup = yes } }
-										1 = { trigger_event = { id = war_support_very_good.3 popup = yes } }
-										1 = { trigger_event = { id = war_support_very_good.4 popup = yes } }
-										1 = { trigger_event = { id = war_support_very_good.5 popup = yes } }
-										1 = { trigger_event = { id = war_support_very_good.6 popup = yes } }
+										1 = { trigger_event = { id = fm_war_good.1 popup = yes } }
+										1 = { trigger_event = { id = fm_war.2 popup = yes } }
+										1 = { trigger_event = { id = fm_war.3 popup = yes } }
+										1 = { trigger_event = { id = fm_war.4 popup = yes } }
+										1 = { trigger_event = { id = fm_war.5 popup = yes } }
+										1 = { trigger_event = { id = fm_war.6 popup = yes } }
 									}											
 								}
 								0 = {

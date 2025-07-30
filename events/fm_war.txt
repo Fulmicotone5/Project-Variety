@@ -1,0 +1,286 @@
+
+namespace = fm_war 
+
+fm_war.2 = {
+	placement = root
+
+	title = fm_war.2.t
+	desc = fm_war.2.desc
+	flavor = fm_war.2.f
+
+	duration = 1
+
+	cooldown = {
+		days = 120
+	}
+	
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_rich_and_poor.bk2"
+	}
+
+	option = {
+		name = fm_war.2.a
+		default_option = yes
+		local_var:current_war = {
+			add_war_war_support = {
+				target = ROOT
+				value = 5
+			}			
+		}
+		add_modifier = { name = war_support_copper_patriotism months = 2 }
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_debt_bad = yes } add = 1000 }
+		}
+	}
+
+	option = {
+		name = fm_war.2.b
+		local_var:current_war = {
+			add_war_war_support = {
+				target = ROOT
+				value = 5
+			}			
+		}
+		add_modifier = { name = war_support_copper_patriotism months = 5 }
+		add_treasury = wsr_money_amount_multiplier_very_small
+
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_debt_normal = yes } add = 100 }
+			modifier = { trigger = { wsr_check_war_support_bad = yes } add = 50 }
+		}
+	}
+}
+
+fm_war.3 = {
+	placement = root
+
+	title = fm_war.3.t
+	desc = fm_war.3.desc
+	flavor = fm_war.3.f
+
+	duration = 1
+
+	cooldown = {
+		days = 120
+	}
+	
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_art_gallery.bk2"
+	}
+
+	option = {
+		name = fm_war.3.a
+		default_option = yes
+		local_var:current_war = {
+			add_war_war_support = {
+				target = ROOT
+				value = 10
+			}			
+		}
+		add_modifier = { name = war_support_artists months = 2 }
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_debt_bad = yes } add = 1000 }
+		}
+	}
+
+	option = {
+		name = fm_war.3.b
+		local_var:current_war = {
+			add_war_war_support = {
+				target = ROOT
+				value = 10
+			}			
+		}
+		add_modifier = { name = war_support_artists months = 4 }
+		add_treasury = wsr_money_amount_multiplier_very_small
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_debt_normal = yes } add = 100 }
+			modifier = { trigger = { wsr_check_war_support_bad = yes } add = 50 }
+		}
+	}
+}
+
+fm_war.4 = {
+	placement = root
+
+	title = fm_war.4.t
+	desc = fm_war.4.desc
+	flavor = fm_war.4.f
+
+	duration = 1
+
+	cooldown = {
+		days = 120
+	}
+	
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_russian_serfs.bk2"
+	}
+
+	option = {
+		name = fm_war.4.a
+		default_option = yes
+		local_var:current_war = {
+			add_war_war_support = {
+				target = ROOT
+				value = 10
+			}			
+		}
+		add_modifier = { name = war_support_farmers months = 2 }
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_debt_bad = yes } add = 1000 }
+		}
+	}
+
+	option = {
+		name = fm_war.4.b
+		local_var:current_war = {
+			add_war_war_support = {
+				target = ROOT
+				value = 10
+			}			
+		}
+		add_modifier = { name = war_support_farmers months = 4 }
+		add_treasury = wsr_money_amount_multiplier_very_small
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_debt_normal = yes } add = 100 }
+			modifier = { trigger = { wsr_check_war_support_bad = yes } add = 50 }
+		}
+	}
+}
+
+fm_war.5 = {
+	placement = root
+
+	title = fm_war.5.t
+	desc = fm_war.5.desc
+	flavor = fm_war.5.f
+
+	duration = 1
+
+	cooldown = {
+		days = 120
+	}
+	
+	event_image = {
+		video = "gfx/event_pictures/southamerica_christianity.bk2"
+	}
+
+	option = {
+		name = fm_war.5.a
+		default_option = yes
+		local_var:current_war = {
+			add_war_war_support = {
+				target = ROOT
+				value = 10
+			}			
+		}
+		add_loyalists = { value = 0.02 interest_group = ig:ig_devout }
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_debt_bad = yes } add = 1000 }
+		}
+	}
+
+	option = {
+		name = fm_war.5.b
+		local_var:current_war = {
+			add_war_war_support = {
+				target = ROOT
+				value = 10
+			}			
+		}
+		add_loyalists = { value = 0.05 interest_group = ig:ig_devout }
+		add_modifier = { name = war_support_prayers months = 5 }
+		add_treasury = wsr_money_amount_multiplier_small
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_debt_normal = yes } add = 100 }
+			modifier = { trigger = { wsr_check_war_support_bad = yes } add = 50 }
+		}
+	}
+}
+
+fm_war.6 = {
+	placement = root
+
+	title = fm_war.6.t
+	desc = fm_war.6.desc
+	flavor = fm_war.6.f
+
+	duration = 1
+
+	cooldown = {
+		days = 120
+	}
+	
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_before_the_battle.bk2"
+	}
+
+	option = {
+		name = fm_war.6.a
+		default_option = yes
+		local_var:current_war = {
+			add_war_war_support = {
+				target = ROOT
+				value = 10
+			}			
+		}
+		add_modifier = { name = war_support_stories months = 2 }
+		add_loyalists = {
+			value = 0.03
+			pop_type = soldiers
+		}
+		add_loyalists = {
+			value = 0.01
+			pop_type = officers
+		}
+		ai_chance = {
+			base = 0
+			modifier = {
+				trigger = {
+					wsr_check_debt_bad = yes
+				}
+				add = 2000
+			}
+		}
+	}
+
+	option = {
+		name = fm_war.6.b
+		local_var:current_war = {
+			add_war_war_support = {
+				target = ROOT
+				value = 10
+			}			
+		}
+		if = {
+			limit = { morgenrote_is_active = yes}
+			add_modifier = { name = war_support_stories_mgn months = 6  }
+		}
+		else = { add_modifier = { name = war_support_stories months = 6 } }
+		add_treasury = wsr_money_amount_multiplier_very_small
+		add_loyalists = {
+			value = 0.05
+			pop_type = soldiers
+		}
+		add_loyalists = {
+			value = 0.03
+			pop_type = officers
+		}
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_debt_normal = yes } add = 100 }
+			modifier = { trigger = { wsr_check_war_support_bad = yes } add = 50 }
+			modifier = { trigger = { wsr_check_radicals_soldiers = yes } add = 100 }
+			modifier = { trigger = { wsr_check_radicals_officers = yes } add = 1000 }
+		}
+	}
+}
