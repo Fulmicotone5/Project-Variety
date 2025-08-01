@@ -2352,11 +2352,10 @@
 			create_building={
 				building="building_dye_plantation"
 				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:VOC"
+					company = {
+						type=company_VOC
+						country="c:NED"
 						levels=2
-						region="STATE_MADRAS"
 					}
 				}
 				reserves=1

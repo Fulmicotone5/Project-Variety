@@ -4618,6 +4618,9 @@ je_colonial_administration_button_indonesia = {
 				add_modifier = {
 					name = colonial_administration
 				}
+				trigger_event = {
+				id = dev.4
+				}
 			}
 		}
 		hidden_effect = {
@@ -4821,6 +4824,9 @@ je_colonial_administration_button_indochina = {
 				activate_law = law_type:law_presidential_republic
 				add_modifier = {
 					name = colonial_administration
+				}
+				trigger_event = {
+				id = dev.4
 				}
 			}
 		}
@@ -5061,6 +5067,9 @@ je_colonial_administration_button_india = {
 				add_modifier = {
 					name = colonial_administration
 				}
+				trigger_event = {
+				id = dev.4
+				}
 			}
 		}
 		hidden_effect = {
@@ -5185,3 +5194,232 @@ je_colonial_administration_button_expand_india = {
 	}
 }
 
+je_stateof = {
+	name = "je_stateof"
+	desc = "je_stateof_desc"
+	possible = {
+		custom_tooltip = {
+			text = tooltip_stateof
+			NOT = {
+				has_variable = fm_stateof
+			}
+		}
+	}
+	effect = {
+		add_modifier = {
+			name = modifier_stateof
+		}
+		set_variable = {
+			name = fm_stateof
+		}
+		hidden_effect = {
+			trigger_event = {
+				id = fm_stateof.1
+			}
+		}
+	}
+	ai_chance = {
+		value = 0
+	}
+}
+je_curfew = {
+	name = "je_curfew"
+	desc = "je_curfew_desc"
+	possible = {
+		custom_tooltip = {
+			text = tooltip_stateof
+			NOT = {
+				has_modifier = modifier_bplague11
+			}
+		}
+	}
+	effect = {
+		add_modifier = {
+			name = modifier_bplague11
+		}
+	}
+	ai_chance = {
+		value = 0
+	}
+}
+je_closed = {
+	name = "je_closed"
+	desc = "je_closed_desc"
+	possible = {
+		custom_tooltip = {
+			text = tooltip_stateof2
+			has_variable = fm_stateof
+		}
+		NOT = {
+			has_law = law_type:law_closed_borders
+		}
+	}
+	effect = {
+		activate_law = law_type:law_closed_borders
+	}
+	ai_chance = {
+		value = 0
+	}
+}
+je_isola = {
+	name = "je_isola"
+	desc = "je_isola_desc"
+	possible = {
+		custom_tooltip = {
+			text = tooltip_stateof2
+			has_variable = fm_stateof
+		}
+		NOT = {
+			has_law = law_type:law_isolationism
+		}
+	}
+	effect = {
+		activate_law = law_type:law_isolationism
+	}
+	ai_chance = {
+		value = 0
+	}
+}
+je_isocapi = {
+	name = "je_isocapi"
+	desc = "je_isocapi_desc"
+	possible = {
+		custom_tooltip = {
+			text = tooltip_stateof
+			any_scope_state = {
+					is_capital = yes
+					NOT = {
+						has_modifier = modifier_bplague12
+					}
+					owner = root
+				}
+		}
+	}
+	effect = {
+		capital = {
+			add_modifier = {
+			name = modifier_bplague12
+		}
+		}
+	}
+	ai_chance = {
+		value = 0
+	}
+	
+}
+je_isocities = {
+	name = "je_isocities"
+	desc = "je_isocities_desc"
+	possible = {
+		custom_tooltip = {
+			text = tooltip_stateof
+			NOT = {
+				has_variable = jeisovar
+			}
+		}
+	}
+	effect = {
+		every_state = {
+			limit = {
+				is_capital = no
+				owner = root
+			}
+			add_modifier = {
+			name = modifier_bplague13
+			}
+		}
+		set_variable = jeisovar
+	}
+	ai_chance = {
+		value = 0
+	}
+}
+je_blocports = {
+	name = "je_blocports"
+	desc = "je_blocports_desc"
+	possible = {
+		custom_tooltip = {
+			text = tooltip_stateof
+			NOT = {
+				has_modifier = modifier_bplague14
+			}
+		}
+	}
+	effect = {
+		add_modifier = {
+			name = modifier_bplague14
+		}
+	}
+	ai_chance = {
+		value = 0
+	}
+}
+je_new_hospitals = {
+	name = "je_new_hospitals"
+	desc = "je_new_hospitals_desc"
+	possible = {
+		custom_tooltip = {
+			text = tooltip_stateof
+			NOT = {
+				has_variable = hospiplague
+			}
+		}
+	}
+	effect = {
+		add_modifier = {
+			name = modifier_bplague15
+			multiplier = money_amount_multiplier_fm
+			days = 181
+		}
+		set_variable = hospiplague
+	}
+	ai_chance = {
+		value = 0
+	}
+}
+je_quarantinezones = {
+	name = "je_quarantinezones"
+	desc = "je_quarantinezones_desc"
+	possible = {
+		custom_tooltip = {
+			text = tooltip_stateof
+			NOT = {
+				has_modifier = modifier_bplague16
+			}
+		}
+	}
+	effect = {
+		add_modifier = {
+			name = modifier_bplague16
+		}
+	}
+	ai_chance = {
+		value = 0
+	}
+}
+je_burncadavers = {
+	name = "je_burncadavers"
+	desc = "je_burncadavers_desc"
+	possible = {
+		custom_tooltip = {
+			text = tooltip_stateof
+			NOT = {
+				has_modifier = modifier_bplague17
+			}
+		}
+	}
+	effect = {
+		add_modifier = {
+			name = modifier_bplague17
+		}
+		ig:ig_devout = {
+			add_modifier = {
+				name = zoro_2
+				months = 37
+			}
+		}
+	}
+	ai_chance = {
+		value = 0
+	}
+}

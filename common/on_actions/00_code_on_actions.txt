@@ -183,17 +183,6 @@ on_monthly_pulse = {
 			}
 			remove_modifier = pb_cost
 		}
-		every_country = {
-			limit = {
-				is_at_war = no
-			}
-			if = {
-				limit = {
-					has_modifier = modifier_stateof
-				}
-				remove_modifier = modifier_stateof
-			}
-		}
 
 		every_country = {
 			limit = {
@@ -278,6 +267,7 @@ on_monthly_pulse_country = {
 		# Set Hierarchy Events
 		set_hierarchy_event.1 # Sets British Indian Caste System
 		set_hierarchy_event.2 # Replaces British Indian Caste System with Default
+		plague.222
 	}
 	random_events = {
 		chance_to_happen = 30
@@ -421,6 +411,8 @@ on_monthly_pulse_country = {
 on_yearly_pulse_country = {
 	events = {
 		utopian.2
+		plague.1
+		plague.11
 	}
 	effect = {
 
@@ -684,10 +676,6 @@ on_five_year_pulse_country = {
 
 
 on_decade_pulse_country = {
-	random_events = {
-		chance_to_happen = 5
-		1 = plague.1
-	}
 }
 
 # Only fires for countries with Elections enabled

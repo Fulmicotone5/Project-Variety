@@ -3,7 +3,7 @@
 	group = je_group_historical_content
 	scripted_button = je_ned_butt
 	scripted_button = je_ned_butt_two
-	timeout = 1600
+	timeout = 1500
 	complete = {
 		gold_reserves > 0
 	}
@@ -55,7 +55,7 @@
 		}
 		hidden_effect = {
 			random_list = {
-				50 = {
+				40 = {
 					if = {
 						limit = {
 							is_ai = yes
@@ -97,7 +97,7 @@
 						}
 					}
 				}
-				50 = {
+				30 = {
 					if = {
 						limit = {
 							is_ai = yes
@@ -129,6 +129,94 @@
 							annex_with_incorporation = c:KBG
 						}
 						annex_with_incorporation = c:FLA
+					}
+				}
+				30 = {
+					if = {
+						limit = {
+							is_ai = yes
+							OR = {
+								c:BUD = {
+								is_ai = yes
+								}
+								c:KBG = {
+								is_ai = yes
+								}
+							}
+							c:FLA = {
+							is_ai = yes
+							is_subject = no
+							}
+							c:VOC = {
+							is_ai = yes
+							}
+							c:FRU = {
+							is_ai = yes
+							}
+						}
+						c:FLA = {
+							annex_with_incorporation = c:NED
+							annex_with_incorporation = c:FRU
+							change_tag = FL1
+							unification_claims_effect = yes
+							s:STATE_NORMANDY = {
+								add_claim = c:FL1
+							}
+							s:STATE_BRITTANY = {
+								add_claim = c:FL1
+							}
+							}
+						if = {
+							limit = { 
+								c:KAA = {
+									is_ai = yes
+									is_subject = no
+								}
+							}
+							c:KAA = {
+							annex_with_incorporation = c:DCQ
+							annex_with_incorporation = c:TOU
+							annex_with_incorporation = c:BOU
+							change_tag = NOC
+							add_primary_culture = cu:occitan
+							unification_claims_effect = yes
+							if = {
+									limit = { 
+										exists = c:NAV
+										c:NAV = {
+										is_ai = yes
+										is_subject = no
+										}
+									}
+									annex_with_incorporation = c:NAV
+								}
+							}
+						}
+						if = {
+							limit = { 
+								exists = c:BUD
+							}
+							c:BUD = {
+								if = {
+									limit = { 
+										c:SAV = {
+											is_ai = yes
+											is_subject = no
+										}
+									}
+									annex_with_incorporation = c:SAV
+								}
+								if = {
+									limit = { 
+										c:PRI = {
+											is_ai = yes
+											is_subject = no
+										}
+									}
+									annex_with_incorporation = c:PRI
+								}
+							}
+						}
 					}
 				}
 			}	

@@ -666,7 +666,7 @@ principle_food_standardization_2 = {
 		building_group_bg_agriculture_throughput_add = 0.1
 		
 		# Lower mortality
-		state_mortality_mult = -0.1
+		state_mortality_mult = -0.03
 	}
 	
 	ai_weight = {
@@ -681,7 +681,7 @@ principle_food_standardization_3 = {
 	member_modifier = {
 		# Modifiers from previous level(s)
 		building_group_bg_agriculture_throughput_add = 0.1
-		state_mortality_mult = -0.1
+		state_mortality_mult = -0.05
 		
 		# Higher SoL
 		state_standard_of_living_add = 1

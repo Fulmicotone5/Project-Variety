@@ -1,0 +1,6 @@
+﻿l_simp_chinese:
+ modifier_na_secure: "北美的安全"
+ modifier_cas_cuba: "购买$CUB_ADJ$"
+ modifier_flu_cuba: "购买$CUB_ADJ$"
+ modifier_flu_holy: "与 $CAS$ 的天主教会建立更密切的关系"
+ modifier_flu_no_cuba: "$CAS$最近拒绝了$VEN_ADJ$ 提出的购买 $CUB$ 的提议。"

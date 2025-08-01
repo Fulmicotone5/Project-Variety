@@ -687,8 +687,9 @@
 			create_building={
 				building="building_silk_plantation"
 				add_ownership={
-					country={
-						country="c:VOC"
+					company = {
+						type=company_VOC
+						country="c:NED"
 						levels=3
 					}
 				}
@@ -3375,8 +3376,9 @@
 			create_building={
 				building="building_tea_plantation"
 				add_ownership={
-					country={
-						country="c:VOC"
+					company = {
+						type=company_VOC
+						country="c:NED"
 						levels=1
 					}
 				}

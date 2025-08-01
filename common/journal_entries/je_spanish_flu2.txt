@@ -1,0 +1,323 @@
+
+je_spanish_flu2 = {
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+
+	group = je_group_crises
+
+    scripted_progress_bar = black_plague_bar
+	scripted_button = je_stateof
+	scripted_button = je_curfew
+	scripted_button = je_closed
+	scripted_button = je_isola
+	scripted_button = je_isocapi
+	scripted_button = je_isocities
+	scripted_button = je_blocports
+	scripted_button = je_new_hospitals
+	scripted_button = je_quarantinezones
+	scripted_button = je_burncadavers
+
+	immediate = {
+		add_modifier = modifier_bplague10
+		if = {
+			limit = {
+				has_variable = spanish_flu_over2
+			}
+			remove_variable = spanish_flu_over2
+		}
+		if = {
+			limit = { 
+				total_population >= 100000000
+			}
+			every_state = {
+				limit = {
+					owner = root
+				}
+				add_modifier = modifier_bplague1
+			}
+		}
+		else_if = {
+			limit = { 
+				total_population < 100000000
+				total_population >= 80000000
+			}
+			every_state = {
+				limit = {
+					owner = root
+				}
+				add_modifier = modifier_bplague2
+			}
+		}
+		else_if = {
+			limit = { 
+				total_population < 80000000
+				total_population >= 60000000
+			}
+			every_state = {
+				limit = {
+					owner = root
+				}
+				add_modifier = modifier_bplague3
+			}
+		}
+		else_if = {
+			limit = { 
+				total_population < 60000000
+				total_population >= 50000000
+			}
+			every_state = {
+				limit = {
+					owner = root
+				}
+				add_modifier = modifier_bplague4
+			}
+		}
+		else_if = {
+			limit = { 
+				total_population < 50000000
+				total_population >= 40000000
+			}
+			every_state = {
+				limit = {
+					owner = root
+				}
+				add_modifier = modifier_bplague5
+			}
+		}
+		else_if = {
+			limit = { 
+				total_population < 40000000
+				total_population >= 35000000
+			}
+			every_state = {
+				limit = {
+					owner = root
+				}
+				add_modifier = modifier_bplague6
+			}
+		}
+		else_if = {
+			limit = { 
+				total_population < 35000000
+				total_population >= 30000000
+			}
+			every_state = {
+				limit = {
+					owner = root
+				}
+				add_modifier = modifier_bplague7
+			}
+		}
+		else_if = {
+			limit = { 
+				total_population < 30000000
+			}
+			every_state = {
+				limit = {
+					owner = root
+				}
+				add_modifier = modifier_bplague8
+			}
+		}
+	}
+
+	complete = {
+		custom_tooltip = {
+			text = endofplague
+			scope:journal_entry ?= {
+				"scripted_bar_progress(black_plague_bar)" >= 500
+			}
+		}
+	}
+
+	on_complete = {
+		# This is just here to generate a list of plague states
+		# For obvious reasons this doesn't do anything in practice
+		trigger_event = {
+			id = plague.120
+			popup = yes
+		}
+		hidden_effect = {
+			if = {
+			limit = {
+				any_state = {
+					owner = ROOT
+					has_modifier = modifier_bplague1
+				}
+			}
+			every_state = {
+				limit = {
+					owner = root
+				}
+				remove_modifier = modifier_bplague1
+			}
+		}
+		else_if = {
+			limit = {
+				any_state = {
+					owner = ROOT
+					has_modifier = modifier_bplague2
+				}
+			}
+			every_state = {
+				limit = {
+					owner = root
+				}
+				remove_modifier = modifier_bplague2
+			}
+		}
+		else_if = {
+			limit = {
+				any_state = {
+					owner = ROOT
+					has_modifier = modifier_bplague3
+				}
+			}
+			every_state = {
+				limit = {
+					owner = root
+				}
+				remove_modifier = modifier_bplague3
+			}
+		}
+		else_if = {
+			limit = {
+				any_state = {
+					owner = ROOT
+					has_modifier = modifier_bplague4
+				}
+			}
+			every_state = {
+				limit = {
+					owner = root
+				}
+				remove_modifier = modifier_bplague4
+			}
+		}
+		else_if = {
+			limit = {
+				any_state = {
+					owner = ROOT
+					has_modifier = modifier_bplague5
+				}
+			}
+			every_state = {
+				limit = {
+					owner = root
+				}
+				remove_modifier = modifier_bplague5
+			}
+		}
+		else_if = {
+			limit = {
+				any_state = {
+					owner = ROOT
+					has_modifier = modifier_bplague6
+				}
+			}
+			every_state = {
+				limit = {
+					owner = root
+				}
+				remove_modifier = modifier_bplague6
+			}
+		}
+		else_if = {
+			limit = {
+				any_state = {
+					owner = ROOT
+					has_modifier = modifier_bplague7
+				}
+			}
+			every_state = {
+				limit = {
+					owner = root
+				}
+				remove_modifier = modifier_bplague7
+			}
+		}
+		else_if = {
+			limit = {
+				any_state = {
+					owner = ROOT
+					has_modifier = modifier_bplague8
+				}
+			}
+			every_state = {
+				limit = {
+					owner = root
+				}
+				remove_modifier = modifier_bplague8
+			}
+		}
+		}
+		if = {
+			limit = { 
+				has_modifier = modifier_stateof
+			}
+			remove_modifier = modifier_stateof
+		}
+		if = {
+			limit = { 
+				has_modifier = modifier_bplague11
+			}
+			remove_modifier = modifier_bplague11
+		}
+		if = {
+			limit = { 
+				any_state = {
+					has_modifier = modifier_bplague12
+				}
+			}
+			every_state = {
+				limit = {
+					owner = root
+					has_modifier = modifier_bplague12
+				}
+				remove_modifier = modifier_bplague12
+			}
+		}
+		if = {
+			limit = { 
+				any_state = {
+					has_modifier = modifier_bplague13
+				}
+			}
+			every_state = {
+				limit = {
+					owner = root
+					has_modifier = modifier_bplague13
+				}
+				remove_modifier = modifier_bplague13
+			}
+		}
+		if = {
+			limit = { 
+				has_modifier = modifier_bplague14
+			}
+			remove_modifier = modifier_bplague14
+		}
+		if = {
+			limit = { 
+				has_variable = hospiplague
+			}
+			remove_variable = hospiplague
+		}
+		if = {
+			limit = { 
+				has_modifier = modifier_bplague16
+			}
+			remove_modifier = modifier_bplague16
+		}
+		if = {
+			limit = { 
+				has_modifier = modifier_bplague17
+			}
+			remove_modifier = modifier_bplague17
+		}
+		remove_modifier = modifier_bplague10
+		set_variable = spanish_flu_over2
+	}
+
+	weight = 100
+	should_be_pinned_by_default = yes
+}

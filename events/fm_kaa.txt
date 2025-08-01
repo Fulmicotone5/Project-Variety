@@ -60,6 +60,9 @@ fm_kaa.2 = {
 		s:STATE_GRANADA = {
 			add_claim = ROOT
 		}
+		ai_chance = {
+			value = 0
+		}
 	}
 	option = {
 		name = fm_kaa.2.b
@@ -101,14 +104,10 @@ fm_kaa.2 = {
 				is_ai = yes
 				exists = c:DCQ
 				exists = c:TOU
-				exists = c:BOU
 				c:DCQ = {
 					is_ai = yes
 				}
 				c:TOU = {
-					is_ai = yes
-				}
-				c:BOU = {
 					is_ai = yes
 				}
 				OR = {
@@ -137,9 +136,12 @@ fm_kaa.2 = {
 			}
 			annex_with_incorporation = c:DCQ
 			annex_with_incorporation = c:TOU
-			annex_with_incorporation = c:BOU
 			change_tag = NOC
 			add_primary_culture = cu:occitan
+			unification_claims_effect = yes
+		}
+		ai_chance = {
+			value = 1
 		}
 	}
 }

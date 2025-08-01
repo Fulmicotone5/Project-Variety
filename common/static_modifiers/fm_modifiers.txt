@@ -797,21 +797,9 @@ modifier_occ_three = {
 }
 modifier_stateof = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_negative.dds
-	country_legitimacy_base_add = -35
-	country_law_enactment_success_add = 0.3
+	country_legitimacy_base_add = -25
+	country_law_enactment_success_add = 0.1
 	state_turmoil_effects_mult = 0.5
-	state_construction_mult = -0.75
-	state_conscription_rate_mult = 0.1
-	building_training_rate_mult = 0.25
-	state_aristocrats_investment_pool_efficiency_mult = -0.75
-	state_clergymen_investment_pool_efficiency_mult = -1
-	state_farmers_investment_pool_efficiency_mult = -1
-	state_capitalists_investment_pool_efficiency_mult = -1
-	state_shopkeepers_investment_pool_efficiency_mult = -1
-	country_government_dividends_reinvestment_add = -1.0
-	country_revolution_progress_mult = -0.5
-	country_secession_progress_mult = -0.5
-	military_formation_mobilization_speed_mult = 0.25
 }
 modifier_stateof_ig = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
@@ -1448,4 +1436,135 @@ war_support_proud_send = {
 war_support_poetry = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
 	war_support_exhastion_reduction_add = -5
+}
+
+modifier_bplague1 = {
+	icon = gfx/interface/icons/event_icons/event_skull.dds
+	state_mortality_mult = 2
+	building_group_bg_manufacturing_throughput_add = -0.25
+	building_group_bg_agriculture_throughput_add = -0.25
+	building_group_bg_plantations_throughput_add = -0.25
+	building_group_bg_extraction_throughput_add = -0.25
+	building_group_bg_ranching_throughput_add = -0.25
+}
+modifier_bplague2 = {
+	icon = gfx/interface/icons/event_icons/event_skull.dds
+	state_mortality_mult = 1.8
+	building_group_bg_manufacturing_throughput_add = -0.25
+	building_group_bg_agriculture_throughput_add = -0.25
+	building_group_bg_plantations_throughput_add = -0.25
+	building_group_bg_extraction_throughput_add = -0.25
+	building_group_bg_ranching_throughput_add = -0.25
+}
+modifier_bplague3 = {
+	icon = gfx/interface/icons/event_icons/event_skull.dds
+	state_mortality_mult = 1.6
+	building_group_bg_manufacturing_throughput_add = -0.25
+	building_group_bg_agriculture_throughput_add = -0.25
+	building_group_bg_plantations_throughput_add = -0.25
+	building_group_bg_extraction_throughput_add = -0.25
+	building_group_bg_ranching_throughput_add = -0.25
+}
+modifier_bplague4 = {
+	icon = gfx/interface/icons/event_icons/event_skull.dds
+	state_mortality_mult = 1.4
+	building_group_bg_manufacturing_throughput_add = -0.25
+	building_group_bg_agriculture_throughput_add = -0.25
+	building_group_bg_plantations_throughput_add = -0.25
+	building_group_bg_extraction_throughput_add = -0.25
+	building_group_bg_ranching_throughput_add = -0.25
+}
+modifier_bplague5 = {
+	icon = gfx/interface/icons/event_icons/event_skull.dds
+	state_mortality_mult = 1.2
+	building_group_bg_manufacturing_throughput_add = -0.25
+	building_group_bg_agriculture_throughput_add = -0.25
+	building_group_bg_plantations_throughput_add = -0.25
+	building_group_bg_extraction_throughput_add = -0.25
+	building_group_bg_ranching_throughput_add = -0.25
+}
+modifier_bplague6 = {
+	icon = gfx/interface/icons/event_icons/event_skull.dds
+	state_mortality_mult = 1
+	building_group_bg_manufacturing_throughput_add = -0.25
+	building_group_bg_agriculture_throughput_add = -0.25
+	building_group_bg_plantations_throughput_add = -0.25
+	building_group_bg_extraction_throughput_add = -0.25
+	building_group_bg_ranching_throughput_add = -0.25
+}
+modifier_bplague7 = {
+	icon = gfx/interface/icons/event_icons/event_skull.dds
+	state_mortality_mult = 0.9
+	building_group_bg_manufacturing_throughput_add = -0.25
+	building_group_bg_agriculture_throughput_add = -0.25
+	building_group_bg_plantations_throughput_add = -0.25
+	building_group_bg_extraction_throughput_add = -0.25
+	building_group_bg_ranching_throughput_add = -0.25
+}
+modifier_bplague8 = {
+	icon = gfx/interface/icons/event_icons/event_skull.dds
+	state_mortality_mult = 0.8
+	building_group_bg_manufacturing_throughput_add = -0.25
+	building_group_bg_agriculture_throughput_add = -0.25
+	building_group_bg_plantations_throughput_add = -0.25
+	building_group_bg_extraction_throughput_add = -0.25
+	building_group_bg_ranching_throughput_add = -0.25
+}
+modifier_bplague10 = {
+	icon = gfx/interface/icons/event_icons/event_skull.dds
+	battle_casualties_mult = 1
+	unit_morale_loss_mult = 0.5
+	unit_morale_recovery_mult = -0.5
+}
+modifier_bplague99 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_positive.dds
+	state_birth_rate_mult = 0.1
+}
+modifier_bplague11 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_negative.dds
+	state_radicals_from_political_movements_mult = 0.25
+	state_turmoil_effects_mult = 0.15
+	state_construction_mult = -0.1
+}
+modifier_bplague12 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_negative.dds
+	state_turmoil_effects_mult = 0.25
+	state_construction_mult = -0.5
+	building_group_bg_manufacturing_throughput_add = -0.5
+	building_group_bg_agriculture_throughput_add = -0.5
+	building_group_bg_plantations_throughput_add = -0.5
+	building_group_bg_extraction_throughput_add = -0.5
+	building_group_bg_ranching_throughput_add = -0.5
+}
+modifier_bplague13 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_negative.dds
+	state_turmoil_effects_mult = 0.25
+	state_construction_mult = -0.5
+	building_group_bg_manufacturing_throughput_add = -0.5
+	building_group_bg_agriculture_throughput_add = -0.5
+	building_group_bg_plantations_throughput_add = -0.5
+	building_group_bg_extraction_throughput_add = -0.5
+	building_group_bg_ranching_throughput_add = -0.5
+	state_market_access_price_impact = -0.1
+}
+modifier_bplague14 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_negative.dds
+	state_trade_advantage_mult = -1
+	building_port_throughput_add = -0.25
+	state_trade_capacity_mult  = -0.5
+}
+modifier_bplague15 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 1
+}
+modifier_bplague16 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	state_market_access_price_impact = -0.1
+	state_food_security_add = -0.15
+}
+modifier_bplague17 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	state_birth_rate_mult = -0.05
+	country_authority_mult = -0.1
+	state_radicals_from_political_movements_mult = 0.5
 }

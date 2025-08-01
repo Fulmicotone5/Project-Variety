@@ -286,3 +286,186 @@ yag_progress_bar = {
 	max_value = 300
 
  }
+
+ black_plague_bar = {
+	name = "black_plague_bar"
+	desc = "black_plague_bar_desc"
+
+	default_bad = yes
+
+	monthly_progress  = {
+		if = {
+				limit = {
+					is_ai = no
+				}
+				add = {
+					value = 2
+				}
+				custom_tooltip = {
+					text = fmplague1
+				}
+			}
+		if = {
+				limit = {
+					is_ai = yes
+				}
+				add = {
+					value = 20
+				}
+			}
+    	if = {
+			limit = {
+				has_law = law_type:law_isolationism
+			}
+			add = {
+				value = 15
+			}
+			custom_tooltip = {
+					text = fmplague2
+				}
+		}
+		if = {
+			limit = {
+				has_law = law_type:law_closed_borders
+			}
+			add = {
+				value = 10
+			}
+			custom_tooltip = {
+					text = fmplague3
+				}
+		}
+		if = {
+			limit = {
+				has_modifier = modifier_stateof
+			}
+			add = {
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+				has_modifier = modifier_bplague11
+			}
+			add = {
+				value = 2
+			}
+		}
+		if = {
+			limit = {
+				any_scope_state = {
+					is_capital = yes
+					has_modifier = modifier_bplague12
+					owner = root
+				}
+			}
+			add = {
+				value = 2
+			}
+		}
+		if = {
+			limit = {
+				any_scope_state = {
+					is_capital = no
+					has_modifier = modifier_bplague13
+					owner = root
+				}
+			}
+			add = {
+				value = 10
+			}
+		}
+		if = {
+			limit = {
+				has_modifier = modifier_bplague14
+			}
+			add = {
+				value = 5
+			}
+		}
+		if = {
+			limit = {
+				has_modifier = modifier_bplague16
+			}
+			add = {
+				value = 2
+			}
+		}
+		if = {
+			limit = {
+				has_variable = hospiplague
+			}
+			add = {
+				value = 5
+			}
+		}
+		if = {
+			limit = {
+				has_modifier = modifier_bplague17
+			}
+			add = {
+				value = 2
+			}
+		}
+		if = {
+			limit = {
+				institution_investment_level = {
+					institution = institution_health_system
+					value = 1
+				}
+			}
+			add = {
+				value = 2
+			}
+		}
+		if = {
+			limit = {
+				institution_investment_level = {
+					institution = institution_health_system
+					value = 2
+				}
+			}
+			add = {
+				value = 4
+			}
+		}
+		if = {
+			limit = {
+				institution_investment_level = {
+					institution = institution_health_system
+					value = 3
+				}
+			}
+			add = {
+				value = 6
+			}
+		}
+		if = {
+			limit = {
+				institution_investment_level = {
+					institution = institution_health_system
+					value = 4
+				}
+			}
+			add = {
+				value = 8
+			}
+		}
+		if = {
+			limit = {
+				institution_investment_level = {
+					institution = institution_health_system
+					value = 10
+				}
+			}
+			add = {
+				value = 10
+			}
+		}
+	}
+
+	start_value = 10
+	min_value = 0
+	max_value = 500
+
+ }

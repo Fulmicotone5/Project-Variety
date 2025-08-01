@@ -96,8 +96,9 @@
 			create_building={
 				building="building_tobacco_plantation"
 				add_ownership={
-					country={
-						country="c:VOC"
+					company = {
+						type=company_VOC
+						country="c:NED"
 						levels=1
 					}
 				}
@@ -228,17 +229,6 @@
 	}
 	s:STATE_EAST_BORNEO = {
 		region_state:VOC = {
-			create_building={
-				building="building_barracks"
-				add_ownership={
-					country={
-						country="c:VOC"
-						levels=10
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_general_training" }
-			}
 		}
 		region_state:KTI = {
 			create_building={
