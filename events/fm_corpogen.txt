@@ -493,7 +493,7 @@ fm_corpogen.5 = {
 	}
 	immediate = {
 		set_variable = {
-			name = corpofired4
+			name = corpofired5
 			days = 1500
 		}
 				ig:ig_industrialists = {

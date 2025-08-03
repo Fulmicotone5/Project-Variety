@@ -1352,7 +1352,8 @@ control_effects = {
 					owner = ROOT
 					is_incorporated = yes
 					is_treaty_port = no
-					turmoil >= 0.25
+					turmoil >= 0.35
+					state_population > 300000
 					count = 1
 					}
 				}
@@ -1370,7 +1371,8 @@ control_effects = {
 					owner = ROOT
 					is_incorporated = yes
 					is_treaty_port = no
-					turmoil >= 0.25
+					turmoil >= 0.35
+					state_population > 300000
 					count = 2
 					}
 				}
@@ -1388,7 +1390,8 @@ control_effects = {
 					owner = ROOT
 					is_incorporated = yes
 					is_treaty_port = no
-					turmoil >= 0.25
+					turmoil >= 0.35
+					state_population > 300000
 					count = 3
 					}
 				}
@@ -1406,7 +1409,8 @@ control_effects = {
 					owner = ROOT
 					is_incorporated = yes
 					is_treaty_port = no
-					turmoil >= 0.25
+					turmoil >= 0.35
+					state_population > 300000
 					count = 4
 					}
 				}
@@ -1424,7 +1428,8 @@ control_effects = {
 					owner = ROOT
 					is_incorporated = yes
 					is_treaty_port = no
-					turmoil >= 0.25
+					turmoil >= 0.35
+					state_population > 300000
 					count = 5
 					}
 				}
@@ -1442,7 +1447,8 @@ control_effects = {
 					owner = ROOT
 					is_incorporated = yes
 					is_treaty_port = no
-					turmoil >= 0.25
+					turmoil >= 0.35
+					state_population > 300000
 					count = 6
 					}
 				}
@@ -1460,7 +1466,8 @@ control_effects = {
 					owner = ROOT
 					is_incorporated = yes
 					is_treaty_port = no
-					turmoil >= 0.25
+					turmoil >= 0.35
+					state_population > 300000
 					count = 7
 					}
 				}
@@ -1478,7 +1485,8 @@ control_effects = {
 					owner = ROOT
 					is_incorporated = yes
 					is_treaty_port = no
-					turmoil >= 0.25
+					turmoil >= 0.35
+					state_population > 300000
 					count = 8
 					}
 				}
@@ -1496,7 +1504,8 @@ control_effects = {
 					owner = ROOT
 					is_incorporated = yes
 					is_treaty_port = no
-					turmoil >= 0.25
+					turmoil >= 0.35
+					state_population > 300000
 					count = 9
 					}
 				}
@@ -1514,7 +1523,8 @@ control_effects = {
 					owner = ROOT
 					is_incorporated = yes
 					is_treaty_port = no
-					turmoil >= 0.25
+					turmoil >= 0.35
+					state_population > 300000
 					count > 9
 					}
 				}
@@ -1532,7 +1542,8 @@ control_effects = {
 					owner = ROOT
 					is_incorporated = no
 					is_treaty_port = no
-					turmoil >= 0.25
+					turmoil >= 0.35
+					state_population > 300000
 					count = 1
 					}
 				}
@@ -1550,7 +1561,8 @@ control_effects = {
 					owner = ROOT
 					is_incorporated = no
 					is_treaty_port = no
-					turmoil >= 0.25
+					turmoil >= 0.35
+					state_population > 300000
 					count = 2
 					}
 				}
@@ -1568,7 +1580,8 @@ control_effects = {
 					owner = ROOT
 					is_incorporated = no
 					is_treaty_port = no
-					turmoil >= 0.25
+					turmoil >= 0.35
+					state_population > 300000
 					count = 3
 					}
 				}
@@ -1586,7 +1599,8 @@ control_effects = {
 					owner = ROOT
 					is_incorporated = no
 					is_treaty_port = no
-					turmoil >= 0.25
+					turmoil >= 0.35
+					state_population > 300000
 					count = 4
 					}
 				}
@@ -1604,7 +1618,8 @@ control_effects = {
 					owner = ROOT
 					is_incorporated = no
 					is_treaty_port = no
-					turmoil >= 0.25
+					turmoil >= 0.35
+					state_population > 300000
 					count = 5
 					}
 				}
@@ -1622,7 +1637,8 @@ control_effects = {
 					owner = ROOT
 					is_incorporated = no
 					is_treaty_port = no
-					turmoil >= 0.25
+					turmoil >= 0.35
+					state_population > 300000
 					count = 6
 					}
 				}
@@ -1640,7 +1656,8 @@ control_effects = {
 					owner = ROOT
 					is_incorporated = no
 					is_treaty_port = no
-					turmoil >= 0.25
+					turmoil >= 0.35
+					state_population > 300000
 					count = 7
 					}
 				}
@@ -1658,7 +1675,8 @@ control_effects = {
 					owner = ROOT
 					is_incorporated = no
 					is_treaty_port = no
-					turmoil >= 0.25
+					turmoil >= 0.35
+					state_population > 300000
 					count = 8
 					}
 				}
@@ -1676,7 +1694,8 @@ control_effects = {
 					owner = ROOT
 					is_incorporated = no
 					is_treaty_port = no
-					turmoil >= 0.25
+					turmoil >= 0.35
+					state_population > 300000
 					count = 9
 					}
 				}
@@ -1694,7 +1713,8 @@ control_effects = {
 					owner = ROOT
 					is_incorporated = no
 					is_treaty_port = no
-					turmoil >= 0.25
+					turmoil >= 0.35
+					state_population > 300000
 					count > 9
 					}
 				}
@@ -1712,6 +1732,7 @@ control_effects = {
 					owner = ROOT
 					is_incorporated = yes
 					is_treaty_port = no
+					state_population > 750000
 					count < 6
 					}
 				}
@@ -1729,6 +1750,7 @@ control_effects = {
 					owner = ROOT
 					is_incorporated = yes
 					is_treaty_port = no
+					state_population > 750000
 					count = 6
 					}
 				}
@@ -1746,6 +1768,7 @@ control_effects = {
 					owner = ROOT
 					is_incorporated = yes
 					is_treaty_port = no
+					state_population > 750000
 					count = 7
 					}
 				}
@@ -1763,6 +1786,7 @@ control_effects = {
 					owner = ROOT
 					is_incorporated = yes
 					is_treaty_port = no
+					state_population > 750000
 					count = 8
 					}
 				}
@@ -1780,6 +1804,7 @@ control_effects = {
 					owner = ROOT
 					is_incorporated = yes
 					is_treaty_port = no
+					state_population > 750000
 					count = 9
 					}
 				}
@@ -1797,6 +1822,7 @@ control_effects = {
 					owner = ROOT
 					is_incorporated = yes
 					is_treaty_port = no
+					state_population > 750000
 					count = 10
 					}
 				}
@@ -1814,6 +1840,7 @@ control_effects = {
 					owner = ROOT
 					is_incorporated = yes
 					is_treaty_port = no
+					state_population > 750000
 					count = 11
 					}
 				}
@@ -1831,6 +1858,7 @@ control_effects = {
 					owner = ROOT
 					is_incorporated = yes
 					is_treaty_port = no
+					state_population > 750000
 					count = 15
 					}
 				}
@@ -1848,6 +1876,7 @@ control_effects = {
 					owner = ROOT
 					is_incorporated = yes
 					is_treaty_port = no
+					state_population > 750000
 					count = 16
 					}
 				}
@@ -1865,6 +1894,7 @@ control_effects = {
 					owner = ROOT
 					is_incorporated = yes
 					is_treaty_port = no
+					state_population > 750000
 					count = 17
 					}
 				}
@@ -1882,6 +1912,7 @@ control_effects = {
 					owner = ROOT
 					is_incorporated = yes
 					is_treaty_port = no
+					state_population > 750000
 					count = 18
 					}
 				}
@@ -1899,6 +1930,7 @@ control_effects = {
 					owner = ROOT
 					is_incorporated = yes
 					is_treaty_port = no
+					state_population > 750000
 					count = 19
 					}
 				}
@@ -1916,6 +1948,7 @@ control_effects = {
 					owner = ROOT
 					is_incorporated = yes
 					is_treaty_port = no
+					state_population > 750000
 					count = 20
 					}
 				}
@@ -1933,6 +1966,7 @@ control_effects = {
 					owner = ROOT
 					is_incorporated = yes
 					is_treaty_port = no
+					state_population > 750000
 					count = 21
 					}
 				}
@@ -1950,6 +1984,7 @@ control_effects = {
 					owner = ROOT
 					is_incorporated = yes
 					is_treaty_port = no
+					state_population > 750000
 					count = 22
 					}
 				}
@@ -1967,6 +2002,7 @@ control_effects = {
 					owner = ROOT
 					is_incorporated = yes
 					is_treaty_port = no
+					state_population > 750000
 					count = 23
 					}
 				}
@@ -1984,6 +2020,7 @@ control_effects = {
 					owner = ROOT
 					is_incorporated = yes
 					is_treaty_port = no
+					state_population > 750000
 					count = 24
 					}
 				}
@@ -2001,6 +2038,7 @@ control_effects = {
 					owner = ROOT
 					is_incorporated = yes
 					is_treaty_port = no
+					state_population > 750000
 					count = 25
 					}
 				}
@@ -2018,6 +2056,7 @@ control_effects = {
 					owner = ROOT
 					is_incorporated = yes
 					is_treaty_port = no
+					state_population > 750000
 					count > 25
 					}
 				}
@@ -2035,6 +2074,7 @@ control_effects = {
 					owner = ROOT
 					is_incorporated = no
 					is_treaty_port = no
+					state_population > 50000
 					count = 1
 					}
 				}
@@ -2052,6 +2092,7 @@ control_effects = {
 					owner = ROOT
 					is_incorporated = no
 					is_treaty_port = no
+					state_population > 50000
 					count = 2
 					}
 				}
@@ -2069,6 +2110,7 @@ control_effects = {
 					owner = ROOT
 					is_incorporated = no
 					is_treaty_port = no
+					state_population > 50000
 					count = 3
 					}
 				}
@@ -2086,6 +2128,7 @@ control_effects = {
 					owner = ROOT
 					is_incorporated = no
 					is_treaty_port = no
+					state_population > 50000
 					count = 4
 					}
 				}
@@ -2103,6 +2146,7 @@ control_effects = {
 					owner = ROOT
 					is_incorporated = no
 					is_treaty_port = no
+					state_population > 50000
 					count = 5
 					}
 				}
@@ -2120,6 +2164,7 @@ control_effects = {
 					owner = ROOT
 					is_incorporated = no
 					is_treaty_port = no
+					state_population > 50000
 					count = 6
 					}
 				}
@@ -2137,6 +2182,7 @@ control_effects = {
 					owner = ROOT
 					is_incorporated = no
 					is_treaty_port = no
+					state_population > 50000
 					count = 7
 					}
 				}
@@ -2154,6 +2200,7 @@ control_effects = {
 					owner = ROOT
 					is_incorporated = no
 					is_treaty_port = no
+					state_population > 50000
 					count > 7
 					}
 				}

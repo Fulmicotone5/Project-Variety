@@ -5,6 +5,7 @@
 	
 	will_form_power_bloc = {
 		global_country_ranking = 1
+		year >= 1860
 	}
 	
 	undesirable_infamy_level = {
@@ -171,6 +172,7 @@ ai_strategy_territorial_expansion = {
 				has_technology_researched = nationalism
 			}
 		}
+		year >= 1865
 	}
 	
 	undesirable_infamy_level = {
@@ -346,6 +348,7 @@ ai_strategy_colonial_expansion = {
 				has_technology_researched = nationalism
 			}
 		}
+		year >= 1863 
 	}
 	
 	undesirable_infamy_level = {
@@ -838,6 +841,7 @@ ai_strategy_economic_imperialism = {
 				has_technology_researched = nationalism
 			}
 		}
+		year >= 1857
 	}	
 	
 	undesirable_infamy_level = {
@@ -1294,7 +1298,7 @@ ai_strategy_unify_ethiopia = {
 	type = diplomatic
 	
 	will_form_power_bloc = {
-		always = yes
+		always = no
 	}		
 	
 	undesirable_infamy_level = {
@@ -1482,7 +1486,7 @@ ai_strategy_unify_china = {
 	type = diplomatic
 	
 	will_form_power_bloc = {
-		always = yes
+		always = no
 	}		
 	
 	undesirable_infamy_level = {
@@ -1823,7 +1827,7 @@ ai_strategy_world_revolution = {
 	type = diplomatic
 		
 	will_form_power_bloc = {
-		always = yes
+		always = no
 	}			
 	
 	undesirable_infamy_level = {
@@ -2020,6 +2024,7 @@ ai_strategy_anti_imperialism = {
 		
 	will_form_power_bloc = {
 		country_rank >= rank_value:great_power
+		year >= 1865 
 	}			
 	
 	undesirable_infamy_level = {
@@ -2249,6 +2254,7 @@ ai_strategy_restore_natural_borders = {
 	
 	will_form_power_bloc = {
 		country_rank >= rank_value:great_power
+		year >= 1857 
 	}			
 	
 	undesirable_infamy_level = {

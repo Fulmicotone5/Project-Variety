@@ -580,7 +580,7 @@ sol_events.5 = { #article about slums
 			}
 		}
 		add_modifier = {
-			name = drainage_levels_cost_modifier
+			name = drainage_levels_cost_modifier_1
 			multiplier = money_amount_multiplier_small
 			days = normal_modifier_time
 		}

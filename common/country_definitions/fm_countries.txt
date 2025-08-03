@@ -3475,7 +3475,7 @@ IBE = {
 ORG = {
 	color = { 138  80 126 }
 	
-	country_type = decentralized
+	country_type = recognized
 	
 	tier = principality
 	

@@ -40,11 +40,11 @@
 			}
 			create_pop = {
 				culture = tibetan
-				size = 2703796
+				size = 3703796
 			}
 			create_pop = {
 				culture = yi
-				size = 4480000
+				size = 5480000
 			}
 		}
 	}
@@ -52,11 +52,11 @@
 		region_state:YUN = {
 			create_pop = {
 				culture = han # nanfaren
-				size = 2778092
+				size = 3778092
 			}
 			create_pop = {
 				culture = yi
-				size = 6608596
+				size = 8608596
 			}
 			create_pop = {
 				culture = yue
@@ -88,7 +88,7 @@
 		region_state:YUE = {
 			create_pop = {
 				culture = yue
-				size = 3781992
+				size = 4781992
 			}
 			create_pop = {
 				culture = han
@@ -181,7 +181,7 @@
 		region_state:SHA = {
 			create_pop = {
 				culture = han # nanfaren
-				size = 7197600
+				size = 12197600
 			}
 			create_pop = {
 				culture = manchu
@@ -203,16 +203,16 @@
 		region_state:SHA = {
 			create_pop = {
 				culture = han
-				size = 1091006
+				size = 1591006
 			}
 			create_pop = {
 				culture = han
-				religion = sunni
+				religion = catholic
 				size = 80000
 			}
 			create_pop = {
 				culture = manchu
-				size = 801994
+				size = 1301994
 			}
 		}
 	}
@@ -328,7 +328,7 @@
 		region_state:CHO = {
 			create_pop = {
 				culture = han # nanfaren
-				size = 14546404
+				size = 17546404
 			}
 		}
 	}
@@ -336,11 +336,11 @@
 		region_state:EIC = {
 			create_pop = {
 				culture = yue
-				size = 4756924
+				size = 6756924
 			}
 			create_pop = {
 				culture = han
-				size = 595995
+				size = 1595995
 			}
 			create_pop = {
 				culture = min
@@ -438,7 +438,7 @@
 		region_state:NCL = {
 			create_pop = {
 				culture = han # nanfaren
-				size = 4985904
+				size = 8985904
 			}
 		}
 	}
@@ -446,7 +446,7 @@
 		region_state:NCL = {
 			create_pop = {
 				culture = han # nanfaren
-				size = 5080192
+				size = 11080192
 			}
 		}
 	}
@@ -478,7 +478,7 @@
 		region_state:SHA = {
 			create_pop = {
 				culture = han # nanfaren
-				size = 3446940
+				size = 6446940
 			}
 		}
 		region_state:VEN = {
@@ -512,7 +512,7 @@
 		region_state:AHU = {
 			create_pop = {
 				culture = han # nanfaren
-				size = 5312000
+				size = 7312000
 			}
 		}
 	}
@@ -578,7 +578,7 @@
 		region_state:SHA = {
 			create_pop = {
 				culture = han # nanfaren
-				size = 7088000
+				size = 14088000
 			}
 		}
 	}
@@ -586,7 +586,7 @@
 		region_state:NCL = {
 			create_pop = {
 				culture = han # nanfaren
-				size = 4236004
+				size = 8236004
 			}
 		}
 		region_state:DKE = {

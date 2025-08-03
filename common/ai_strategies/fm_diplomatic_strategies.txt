@@ -2,7 +2,7 @@ ai_strategy_unify_poland = {
 	icon = "gfx/interface/icons/ai_strategy_icons/unification.dds"
 	type = diplomatic
 	will_form_power_bloc = {
-		always = yes
+		always = no
 	}
 	undesirable_infamy_level = {
 		value = 100
@@ -305,7 +305,7 @@ ai_strategy_unify_ethiopia = {
 	icon = "gfx/interface/icons/ai_strategy_icons/unification.dds"
 	type = diplomatic
 	will_form_power_bloc = {
-		always = yes
+		always = no
 	}
 	undesirable_infamy_level = {
 		value = 80
@@ -500,7 +500,7 @@ ai_strategy_unify_wei = {
 	icon = "gfx/interface/icons/ai_strategy_icons/unification.dds"
 	type = diplomatic
 	will_form_power_bloc = {
-		always = yes
+		always = no
 	}
 	undesirable_infamy_level = {
 		value = 80
@@ -643,7 +643,7 @@ ai_strategy_unify_han = {
 	icon = "gfx/interface/icons/ai_strategy_icons/unification.dds"
 	type = diplomatic
 	will_form_power_bloc = {
-		always = yes
+		always = no
 	}
 	undesirable_infamy_level = {
 		value = 80
@@ -788,6 +788,7 @@ ai_strategy_hen = {
 				country_rank >= rank_value:great_power
 				has_technology_researched = nationalism
 			}
+			year >= 1854
 		}
 	}
 	undesirable_infamy_level = {
@@ -919,7 +920,7 @@ ai_strategy_unify_wu = {
 	icon = "gfx/interface/icons/ai_strategy_icons/unification.dds"
 	type = diplomatic
 	will_form_power_bloc = {
-		always = yes
+		always = no
 	}
 	undesirable_infamy_level = {
 		value = 80
@@ -1063,7 +1064,7 @@ ai_strategy_unify_inde = {
 	icon = "gfx/interface/icons/ai_strategy_icons/unification.dds"
 	type = diplomatic
 	will_form_power_bloc = {
-		always = yes
+		always = no
 	}
 	undesirable_infamy_level = {
 		value = 80

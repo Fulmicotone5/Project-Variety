@@ -442,14 +442,14 @@ pb_lead = {
 	country_authority_mult = 0.05
 	state_construction_mult = -0.05
 	country_infamy_generation_mult = 0.4
-	country_prestige_add = 250
+	country_prestige_mult = 0.10
 }
 pb_cost = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
 	country_bureaucracy_mult = -0.05
 	state_construction_mult = -0.05
 	country_infamy_generation_mult = 0.25
-	country_prestige_add = 125
+	country_prestige_mult = 0.05
 }
 modifier_chu_claim = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
@@ -1440,7 +1440,7 @@ war_support_poetry = {
 
 modifier_bplague1 = {
 	icon = gfx/interface/icons/event_icons/event_skull.dds
-	state_mortality_mult = 2
+	state_mortality_mult = 2.5
 	building_group_bg_manufacturing_throughput_add = -0.25
 	building_group_bg_agriculture_throughput_add = -0.25
 	building_group_bg_plantations_throughput_add = -0.25
@@ -1449,7 +1449,7 @@ modifier_bplague1 = {
 }
 modifier_bplague2 = {
 	icon = gfx/interface/icons/event_icons/event_skull.dds
-	state_mortality_mult = 1.8
+	state_mortality_mult = 2.2
 	building_group_bg_manufacturing_throughput_add = -0.25
 	building_group_bg_agriculture_throughput_add = -0.25
 	building_group_bg_plantations_throughput_add = -0.25
@@ -1458,7 +1458,7 @@ modifier_bplague2 = {
 }
 modifier_bplague3 = {
 	icon = gfx/interface/icons/event_icons/event_skull.dds
-	state_mortality_mult = 1.6
+	state_mortality_mult = 2.0
 	building_group_bg_manufacturing_throughput_add = -0.25
 	building_group_bg_agriculture_throughput_add = -0.25
 	building_group_bg_plantations_throughput_add = -0.25
@@ -1467,7 +1467,7 @@ modifier_bplague3 = {
 }
 modifier_bplague4 = {
 	icon = gfx/interface/icons/event_icons/event_skull.dds
-	state_mortality_mult = 1.4
+	state_mortality_mult = 1.8
 	building_group_bg_manufacturing_throughput_add = -0.25
 	building_group_bg_agriculture_throughput_add = -0.25
 	building_group_bg_plantations_throughput_add = -0.25
@@ -1476,7 +1476,7 @@ modifier_bplague4 = {
 }
 modifier_bplague5 = {
 	icon = gfx/interface/icons/event_icons/event_skull.dds
-	state_mortality_mult = 1.2
+	state_mortality_mult = 1.6
 	building_group_bg_manufacturing_throughput_add = -0.25
 	building_group_bg_agriculture_throughput_add = -0.25
 	building_group_bg_plantations_throughput_add = -0.25
@@ -1485,7 +1485,7 @@ modifier_bplague5 = {
 }
 modifier_bplague6 = {
 	icon = gfx/interface/icons/event_icons/event_skull.dds
-	state_mortality_mult = 1
+	state_mortality_mult = 1.4
 	building_group_bg_manufacturing_throughput_add = -0.25
 	building_group_bg_agriculture_throughput_add = -0.25
 	building_group_bg_plantations_throughput_add = -0.25
@@ -1494,7 +1494,7 @@ modifier_bplague6 = {
 }
 modifier_bplague7 = {
 	icon = gfx/interface/icons/event_icons/event_skull.dds
-	state_mortality_mult = 0.9
+	state_mortality_mult = 1
 	building_group_bg_manufacturing_throughput_add = -0.25
 	building_group_bg_agriculture_throughput_add = -0.25
 	building_group_bg_plantations_throughput_add = -0.25
@@ -1567,4 +1567,8 @@ modifier_bplague17 = {
 	state_birth_rate_mult = -0.05
 	country_authority_mult = -0.1
 	state_radicals_from_political_movements_mult = 0.5
+}
+drainage_levels_cost_modifier_1 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
+	country_expenses_add = 1
 }
