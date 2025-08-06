@@ -1671,7 +1671,7 @@ principle_companies_2 = {
 
 	member_modifier = {
 		# Modifiers from previous level(s)
-		country_company_throughput_bonus_add = 0.1
+		country_company_throughput_bonus_add = 0.15
 
 		# Adds one free company charter
 		country_free_charters_add = 1
@@ -1688,11 +1688,10 @@ principle_companies_3 = {
 
 	member_modifier = {
 		# Modifiers from previous level(s)
-		country_company_throughput_bonus_add = 0.1
-		country_free_charters_add = 1
+		country_company_throughput_bonus_add = 0.25
+		country_free_charters_add = 3
 
 		# Adds one company slot
-		country_max_companies_add = 1
 	}
 
 	ai_weight = {

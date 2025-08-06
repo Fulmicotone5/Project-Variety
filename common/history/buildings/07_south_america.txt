@@ -726,7 +726,7 @@
 				add_ownership={
 					country={
 						country="c:CUL"
-						levels=1
+						levels=7
 					}
 				}
 				reserves=1
@@ -883,7 +883,7 @@
 				add_ownership={
 					country={
 						country="c:RPQ"
-						levels=1
+						levels=2
 					}
 				}
 				reserves=1
@@ -1131,7 +1131,7 @@
 					building={
 						type="building_financial_district"
 						country="c:AGA"
-						levels=2
+						levels=4
 						region="STATE_BUENOS_AIRES"
 					}
 				}
@@ -2000,7 +2000,7 @@
 					building={
 						type="building_financial_district"
 						country="c:AGA"
-						levels=1
+						levels=2
 						region="STATE_RIO_DE_JANEIRO"
 					}
 					country={
@@ -2223,7 +2223,7 @@
 					building={
 						type="building_financial_district"
 						country="c:AGA"
-						levels=2
+						levels=4
 						region="STATE_RIO_DE_JANEIRO"
 					}
 				}

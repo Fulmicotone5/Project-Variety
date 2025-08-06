@@ -75,7 +75,7 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_man_o_war
 				state_region = s:STATE_GALICIA
-				count = 10
+				count = 5
 			}
 		}
 	}
@@ -132,7 +132,7 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_man_o_war
 				state_region = s:STATE_NORRLAND
-				count = 15
+				count = 5
 			}
 		}
 	}
@@ -209,7 +209,7 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
 				state_region = s:STATE_ESTREMADURA
-				count = 10
+				count = 5
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_man_o_war
@@ -231,7 +231,7 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_WESTERN_THRACE
-				count = 20
+				count = 10
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_lancers
@@ -251,12 +251,12 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
 				state_region = s:STATE_EASTERN_THRACE
-				count = 19
+				count = 10
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_man_o_war
 				state_region = s:STATE_HUDAVENDIGAR
-				count = 15
+				count = 5
 			}
 		}
 	}
@@ -664,12 +664,12 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_BREST
-				count = 25
+				count = 20
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_lancers
 				state_region = s:STATE_VILNIUS
-				count = 25
+				count = 15
 			}
 		}
 		create_military_formation = {
@@ -679,7 +679,7 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
 				state_region = s:STATE_COURLAND
-				count = 10
+				count = 5
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_man_o_war
@@ -826,7 +826,7 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
 				state_region = s:STATE_LEINSTER
-				count = 15
+				count = 5
 			}
 		}
 	}
@@ -935,12 +935,12 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_HOME_COUNTIES
-				count = 25
+				count = 30
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_cannon_artillery
 				state_region = s:STATE_MIDLANDS
-				count = 25
+				count = 10
 			}
 			save_scope_as = 1st_english_army
 		}
@@ -949,14 +949,9 @@
 			hq_region = sr:region_england
 			name = "1st English Fleet"
 			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_WEST_COUNTRY
-				count = 5
-			}
-			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
 				state_region = s:STATE_HOME_COUNTIES
-				count = 25
+				count = 20
 			}
 			save_scope_as = 1st_english_fleet
 		}
@@ -970,7 +965,7 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
 				state_region = s:STATE_HIGHLANDS
-				count = 15
+				count = 10
 			}
 		}
 		create_military_formation = {
@@ -980,12 +975,12 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_HIGHLANDS
-				count = 15
+				count = 20
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_LOWLANDS
-				count = 15
+				count = 25
 			}
 		}
 	}
@@ -998,7 +993,7 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_VENETIA
-				count = 20
+				count = 25
 			}
 			save_scope_as = army_venetia
 		}
@@ -1076,12 +1071,7 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
 				state_region = s:STATE_SICILY
-				count = 10
-			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_TUNISIA
-				count = 10
+				count = 5
 			}
 			save_scope_as = carthage_navy
 		}
@@ -1108,7 +1098,7 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_OSTROBOTHNIA
-				count = 20
+				count = 15
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_mobile_artillery
@@ -1280,12 +1270,12 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_LEINSTER
-				count = 15
+				count = 10
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_MUNSTER
-				count = 15
+				count = 10
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry

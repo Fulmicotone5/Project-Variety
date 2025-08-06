@@ -3098,7 +3098,7 @@ FRE = {
 	
 	country_type = recognized
 
-	tier = kingdom
+	tier = empire
 	
 	cultures = { french }
 	capital = STATE_ILE_DE_FRANCE

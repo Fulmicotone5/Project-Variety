@@ -22,32 +22,13 @@ plague.1 = {
 	trigger = {
 		NOT = { has_global_variable = spanish_flu }
 		country_rank >= rank_value:major_power
-		NOT = {
-			institution_investment_level = {
-				institution = institution_health_system
-				value >= 3
-			}
-		}
+
 		any_scope_state = {
 			is_incorporated = yes
-			OR = {
-				is_production_method_active = {
-					building_type = building_railway
-					production_method = pm_electric_trains
-				}
-				is_production_method_active = {
-					building_type = building_railway
-					production_method = pm_electric_trains_principle_transport_3
-				}
-				is_production_method_active = {
-					building_type = building_railway
-					production_method = pm_diesel_trains
-				}
-				is_production_method_active = {
-					building_type = building_railway
-					production_method = pm_diesel_trains_principle_transport_3
-				}
-			}
+			is_production_method_active = {
+						building_type = building_automotive_industry
+						production_method = pm_no_aeroplane_production
+					}
 		}
 	}
 
@@ -62,7 +43,10 @@ plague.1 = {
 		random_scope_state = {
 			limit = {
 				is_incorporated = yes
-				year >= 1882 
+				is_production_method_active = {
+						building_type = building_automotive_industry
+						production_method = pm_no_aeroplane_production
+					}
 			}
 			save_scope_as = plague_origin_state
 			set_variable = plague_originator_state
@@ -185,6 +169,54 @@ plague.111 = {
 		set_variable = country_hit_by_plague2 # so that countries cannot get JE multiple times
 	}
 }
+plague.1111 = {
+	type = country_event
+	placement = root
+
+	title = plague.1111.t
+	desc = plague.1111.d
+	flavor = plague.1111.f
+
+	event_image = {
+		video = "europenorthamerica_russian_serfs"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+
+	duration = 3
+
+	trigger = {
+		NOT = { has_global_variable = spanish_flu3 }
+		year >= 1841
+		root = {
+			owns_entire_state_region = STATE_LEINSTER
+		}
+	}
+
+	immediate = {
+		set_global_variable = {
+			name = spanish_flu3
+		}
+	}
+
+	option = {
+		name = plague.1111.a
+		default_option = yes
+		hidden_effect = {
+			every_country = {
+				limit = {
+					NOT = { this = ROOT }
+					is_player = yes
+				}
+				trigger_event = { id = plague.42 }
+			}
+		}
+		add_journal_entry = { type = je_potato_blight }
+		set_variable = country_hit_by_plague3 # so that countries cannot get JE multiple times
+	}
+}
 plague.222 = {
 	type = country_event
 	placement = ROOT
@@ -194,7 +226,7 @@ plague.222 = {
 	flavor = plague.222.f
 
 	event_image = {
-		video = "unspecific_sick_in_hospital"
+		video = "europenorthamerica_russian_serfs"
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
@@ -237,6 +269,65 @@ plague.222 = {
 		name = plague.222.a
 		default_option = yes
 		add_journal_entry = { type = je_spanish_flu2 }
+	}
+}
+plague.22 = {
+	type = country_event
+	placement = ROOT
+
+	title = plague.22.t
+	desc = plague.22.d
+	flavor = plague.22.f
+
+	event_image = {
+		video = "europenorthamerica_russian_serfs"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+
+	duration = 1
+
+	trigger = {
+		NOT = { is_country_type = decentralized } # for balance reasons
+		NOT = {
+			has_variable = country_hit_by_plague3
+		}
+		OR = {
+			any_neighbouring_state = {
+				OR = {
+					has_modifier = modifier_bplague101
+					has_modifier = modifier_bplague102
+					has_modifier = modifier_bplague103
+					has_modifier = modifier_bplague104
+					has_modifier = modifier_bplague105
+					has_modifier = modifier_bplague106
+					has_modifier = modifier_bplague107
+				}
+			}
+			any_country = {
+				NOT = { THIS = ROOT }
+				market = root.market
+				has_variable = country_hit_by_plague3
+			}
+		}
+	}
+	immediate = {
+		set_variable = country_hit_by_plague3
+		random_country = {
+			limit = {
+				owns_entire_state_region = STATE_MUNSTER
+			}
+			save_scope_as = irescope
+		}
+	}
+
+
+	option = {
+		name = plague.22.a
+		default_option = yes
+		add_journal_entry = { type = je_potato_blight }
 	}
 }
 
@@ -503,7 +594,7 @@ plague.41 = {
 	duration = 3
 
 	event_image = {
-		video = "unspecific_sick_in_hospital"
+		video = "asia_dead_cattle_poor_harvest"
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
@@ -525,6 +616,42 @@ plague.41 = {
 	option = {
 		name = plague.41.a
 		custom_tooltip = plague_might_spread.tt
+	}
+}
+plague.42 = {
+	type = country_event
+	placement = ROOT
+
+	title = plague.42.t
+	desc = plague.42.d
+	flavor = plague.42.f
+
+	duration = 3
+
+	event_image = {
+		video = "europenorthamerica_russian_serfs"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	trigger = {
+		# triggered by plague.1
+	}
+
+	immediate = {
+		random_country = {
+			limit = {
+				owns_entire_state_region = STATE_MUNSTER
+			}
+			save_scope_as = irescope
+		}
+	}
+
+	option = {
+		name = plague.42.a
+		custom_tooltip =  plague_might_spread.ttfm
 	}
 }
 
@@ -559,6 +686,44 @@ plague.120 = {
 		add_modifier = {
 			name = modifier_bplague99
 			months = 13
+		}
+	}
+}
+plague.125 = {
+	type = country_event
+	placement = ROOT
+
+	title = plague.125.t
+	desc = plague.125.d
+	flavor = plague.125.f
+
+	duration = 3
+
+	event_image = {
+		video = "africa_prosperous_farm"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	trigger = {
+		# triggered by plague.1
+	}
+
+	immediate = {
+
+	}
+
+	option = {
+		name = plague.125.a
+		add_loyalists = {
+			value = 0.15
+			pop_type = peasants
+		}
+		add_loyalists = {
+			value = 0.2
+			pop_type = farmers
 		}
 	}
 }

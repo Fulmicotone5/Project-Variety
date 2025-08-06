@@ -5,8 +5,8 @@
 	building_modifiers = {  
 		workforce_scaled = {  
 		  goods_input_fabric_add = 3  # Clover/legumes as a textile input  
-		  goods_output_grain_add = 15  # Increased yield from rotation  
-		  goods_input_fertilizer_add = -2  # Reduced need for fertilizer  
+		  goods_output_grain_add = 7  # Increased yield from rotation  
+		  goods_input_fertilizer_add = -1  # Reduced need for fertilizer  
 		}  
 		level_scaled = {  
 		  building_employment_farmers_add = 500  # Skilled labor for crop rotation  
@@ -20,12 +20,12 @@ pm_mechanical_reapers = {
 
 	building_modifiers = {  
 		workforce_scaled = {  
-		  goods_input_tools_add = 3  # Specialized drill parts  
+		  goods_input_tools_add = 1  # Specialized drill parts  
 		  goods_input_steel_add = 1  # Reinforced machinery  
-		  goods_output_grain_add = 40  # Higher efficiency  
+		  goods_output_grain_add = 15  # Higher efficiency  
 		}  
 		level_scaled = {  
-		  building_employment_laborers_add = -1500  # Reduced manual labor  
+		  building_employment_laborers_add = -750  # Reduced manual labor  
 		}  
 	  } 
 }
@@ -36,9 +36,9 @@ pm_hybrid_grains = {
 
 	building_modifiers = {  
 		workforce_scaled = {  
-		  goods_input_glass_add = 2  # Greenhouses for controlled breeding  
-		  goods_input_paper_add = 1  # Research documentation  
-		  goods_output_grain_add = 55  # Major output boost  
+		  goods_input_glass_add = 1  # Greenhouses for controlled breeding   
+		  goods_input_steel_add = 1  # Reinforced machinery 
+		  goods_output_grain_add = 30  # Major output boost  
 		}  
 	  }  
 	  state_modifiers = {  
@@ -56,10 +56,10 @@ pm_motorized_pumps = {
 		workforce_scaled = {  
 			goods_input_oil_add = 1  # Fuel for pumps  
 			goods_input_engines_add = 1  # Pump machinery  
-			goods_output_grain_add = 75  # Maximized output  
+			goods_output_grain_add = 60  # Maximized output  
 		}  
 		level_scaled = {  
-			building_employment_laborers_add = -1500  # Fully mechanized  
+			building_employment_laborers_add = -750  # Fully mechanized  
 		}  
 	}  
 	state_modifiers = {  

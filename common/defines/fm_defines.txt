@@ -134,5 +134,9 @@ NMilitary = {
 	CONVOY_RAIDING_GLOBAL_RECOVERY_RATE = 0.005 #0.001		# The rate at which damaged convoys are replaced each day, relative to total number of produced convoys in the raided country
 
 	DEFENSIVE_PROVINCES_RETAKEN_MAX_DEPTH = 0 #was 1					# Maximum distance from battle provinces that provinces can be retaken in defensive battle
+	BATTLE_LETHALITY_MIN = 0.002
+	BATTLE_LETHALITY_MAX = 0.01
+	BATTLE_RAW_MANPOWER_INFLICTED_CASUALTY_RATIO = 0.75		# applied to the number of casualties caused by raw number of troops, ie without considering Offense/Defense - increasing this makes CE less important and battles more lethal
+	BATTLE_COMBAT_EFFICIENCY_INFLICTED_CASUALTY_RATIO = 2 # applied to the number of casualties caused by troops with Offense/Defense also factored in - increasing this makes CE more important and battles more lethal
 
 }

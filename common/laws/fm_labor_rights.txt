@@ -11,8 +11,8 @@ law_no_workers_rights = {
 
 	modifier = {
 		state_engineers_mortality_mult = 0.02
-		state_laborers_mortality_mult = 0.05
-		state_machinists_mortality_mult = 0.05
+		state_laborers_mortality_mult = 0.1
+		state_machinists_mortality_mult = 0.1
 		state_farmers_mortality_mult = 0.05
 		state_slaves_mortality_mult = 0.1
 	}
@@ -40,8 +40,8 @@ law_regulatory_bodies = {
 
 	modifier = {
 		state_engineers_mortality_mult = 0.01
-		state_laborers_mortality_mult = 0.03
-		state_machinists_mortality_mult = 0.03
+		state_laborers_mortality_mult = 0.05
+		state_machinists_mortality_mult = 0.05
 		state_farmers_mortality_mult = 0.03
 		state_slaves_mortality_mult = 0.05
 	}

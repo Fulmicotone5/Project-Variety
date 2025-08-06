@@ -563,6 +563,7 @@ building_automotive_industry = {
 	production_method_groups = {
 		pmg_automobile_production
 		pmg_aeroplanes
+		pmg_tanks
 		pmg_automation_building_automotive_industry
 		pmg_invention_building_military_industry_war_machines
 	}

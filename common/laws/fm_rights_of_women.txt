@@ -77,7 +77,7 @@ law_women_in_the_workplace = {
 	progressiveness = 0
 
 	unlocking_technologies = {
-		feminism
+		labor_movement
 	}
 
 	on_enact = {

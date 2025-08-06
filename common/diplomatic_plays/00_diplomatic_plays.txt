@@ -807,6 +807,16 @@ dp_annex_war = {
 			NOT = { is_country_type = decentralized }
 			NOT = { is_subject_of = root }
 			country_rank <= rank_value:insignificant_power
+			has_indian_primary_culture = no
+			NOT = {
+				country_has_primary_culture = cu:han
+			}
+			NOT = {
+				country_has_primary_culture = cu:yue
+			}
+			NOT = {
+				country_has_primary_culture = cu:yi
+			}
 		}
 		diplomatic_play_has_no_relations_blockers = yes
 	}

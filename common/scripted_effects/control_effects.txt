@@ -2262,6 +2262,10 @@ control_effects = {
 								who = ROOT
 								type = colony
 							}
+							has_diplomatic_pact = {
+								who = ROOT
+								type = chartered_company
+							}
 						}
 							count = 2
 					}
@@ -2285,6 +2289,10 @@ control_effects = {
 							has_diplomatic_pact = {
 								who = ROOT
 								type = colony
+							}
+							has_diplomatic_pact = {
+								who = ROOT
+								type = chartered_company
 							}
 						}
 							count = 3
@@ -2310,6 +2318,10 @@ control_effects = {
 								who = ROOT
 								type = colony
 							}
+							has_diplomatic_pact = {
+								who = ROOT
+								type = chartered_company
+							}
 						}
 							count = 4
 					}
@@ -2334,6 +2346,10 @@ control_effects = {
 								who = ROOT
 								type = colony
 							}
+							has_diplomatic_pact = {
+								who = ROOT
+								type = chartered_company
+							}
 						}
 							count = 5
 					}
@@ -2357,6 +2373,10 @@ control_effects = {
 							has_diplomatic_pact = {
 								who = ROOT
 								type = colony
+							}
+							has_diplomatic_pact = {
+								who = ROOT
+								type = chartered_company
 							}
 						}
 							count > 5

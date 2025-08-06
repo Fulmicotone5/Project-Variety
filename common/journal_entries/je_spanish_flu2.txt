@@ -19,12 +19,6 @@ je_spanish_flu2 = {
 	immediate = {
 		add_modifier = modifier_bplague10
 		if = {
-			limit = {
-				has_variable = spanish_flu_over2
-			}
-			remove_variable = spanish_flu_over2
-		}
-		if = {
 			limit = { 
 				total_population >= 100000000
 			}
@@ -315,7 +309,9 @@ je_spanish_flu2 = {
 			remove_modifier = modifier_bplague17
 		}
 		remove_modifier = modifier_bplague10
-		set_variable = spanish_flu_over2
+		set_variable = {
+			name = spanish_flu_over2
+		}
 	}
 
 	weight = 100

@@ -6,7 +6,7 @@
 				add_ownership={
 					country={
 						country="c:XIN"
-						levels=1
+						levels=10
 					}
 				}
 				reserves=1
@@ -69,7 +69,7 @@
 					add_ownership={
 						country={
 							country="c:SIH"
-							levels=1
+							levels=2
 						}
 				}
 				reserves=1
@@ -190,6 +190,17 @@
 				activate_production_methods={ "pm_handcrafted_furniture" "pm_automation_disabled" "pm_luxury_furniture" }
 			}
 			create_building={
+				building="building_livestock_ranch"
+				add_ownership={
+					country={
+						country="c:YUN"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" }
+			}
+			create_building={
 				building="building_glassworks"
 				add_ownership={
 					country={
@@ -227,7 +238,7 @@
 					add_ownership={
 						country={
 							country="c:YUN"
-							levels=1
+							levels=2
 						}
 				}
 				reserves=1
@@ -346,6 +357,17 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_handcrafted_furniture" "pm_automation_disabled" "pm_luxury_furniture" }
+			}
+			create_building={
+				building="building_livestock_ranch"
+				add_ownership={
+					country={
+						country="c:GUC"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" }
 			}
 			create_building={
 				building="building_trade_center"
@@ -515,6 +537,17 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_handcrafted_furniture" "pm_automation_disabled" "pm_luxury_furniture" }
+			}
+			create_building={
+				building="building_livestock_ranch"
+				add_ownership={
+					country={
+						country="c:YUE"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" }
 			}
 			create_building={
 				building="building_trade_center"
@@ -740,7 +773,7 @@
 				add_ownership={
 					country={
 						country="c:MGL"
-						levels=1
+						levels=10
 					}
 				}
 				reserves=1
@@ -816,7 +849,7 @@
 					add_ownership={
 						country={
 							country="c:GNG"
-							levels=1
+							levels=2
 						}
 				}
 				reserves=1
@@ -849,11 +882,22 @@
 				add_ownership={
 					country={
 						country="c:GNG"
-						levels=1
+						levels=2
 					}
 				}
 				reserves=1
 				activate_production_methods={ "pm_muskets" }
+			}
+			create_building={
+				building="building_livestock_ranch"
+				add_ownership={
+					country={
+						country="c:GNG"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" }
 			}
 			create_building={
 				building="building_tooling_workshops"
@@ -1385,6 +1429,17 @@
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
 			}
 			create_building={
+				building="building_livestock_ranch"
+				add_ownership={
+					country={
+						country="c:XIB"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" }
+			}
+			create_building={
 				building="building_tea_plantation"
 				add_ownership={
 					country={
@@ -1404,7 +1459,7 @@
 				add_ownership={
 					country={
 						country="c:MGL"
-						levels=1
+						levels=10
 					}
 				}
 				reserves=1
@@ -1474,7 +1529,7 @@
 				add_ownership={
 					country={
 						country="c:XIB"
-						levels=1
+						levels=2
 					}
 				}
 				reserves=1
@@ -1544,7 +1599,7 @@
 				add_ownership={
 					country={
 						country="c:SIH"
-						levels=1
+						levels=10
 					}
 				}
 				reserves=1
@@ -1566,11 +1621,22 @@
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
 			}
 			create_building={
+				building="building_livestock_ranch"
+				add_ownership={
+					country={
+						country="c:CHO"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" }
+			}
+			create_building={
 				building="building_paper_mills"
 					add_ownership={
 						country={
 							country="c:CHO"
-							levels=1
+							levels=2
 						}
 				}
 				reserves=1
@@ -1603,7 +1669,7 @@
 				add_ownership={
 					country={
 						country="c:CHO"
-						levels=1
+						levels=2
 					}
 				}
 				reserves=1
@@ -1888,6 +1954,17 @@
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
 			}
 			create_building={
+				building="building_livestock_ranch"
+				add_ownership={
+					country={
+						country="c:TAC"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" }
+			}
+			create_building={
 				building="building_trade_center"
 				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
 				add_ownership={
@@ -2078,6 +2155,17 @@
 				}
 				reserves=1
 				activate_production_methods={ "default_building_spice_plantation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_livestock_ranch"
+				add_ownership={
+					country={
+						country="c:NCL"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" }
 			}
 			create_building={
 				building="building_silk_plantation"
@@ -2280,6 +2368,17 @@
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
 			}
 			create_building={
+				building="building_livestock_ranch"
+				add_ownership={
+					country={
+						country="c:AHU"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" }
+			}
+			create_building={
 				building="building_construction_sector"
 				add_ownership={
 					country={
@@ -2326,6 +2425,17 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
+			}
+			create_building={
+				building="building_livestock_ranch"
+				add_ownership={
+					country={
+						country="c:SHA"
+						levels=2
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" }
 			}
 			create_building={
 				building="building_iron_mine"
@@ -2518,7 +2628,7 @@
 					add_ownership={
 						country={
 							country="c:AHU"
-							levels=1
+							levels=3
 						}
 				}
 				reserves=1
@@ -2976,7 +3086,7 @@
 				add_ownership={
 					country={
 						country="c:NCL"
-						levels=1
+						levels=2
 					}
 				}
 				reserves=1
@@ -3529,7 +3639,7 @@
 				add_ownership={
 					country={
 						country="c:CMI"
-						levels=1
+						levels=10
 					}
 				}
 				reserves=1
@@ -3577,7 +3687,7 @@
 				add_ownership={
 					country={
 						country="c:CAM"
-						levels=1
+						levels=10
 					}
 				}
 				reserves=1
@@ -3625,6 +3735,17 @@
 				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_fig_orchards_building_rice_farm" "pm_tools_disabled" }
 			}
 			create_building={
+				building="building_arms_industry"
+				add_ownership={
+					country={
+						country="c:BUR"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_muskets" }
+			}
+			create_building={
 				building="building_trade_center"
 				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
 				add_ownership={
@@ -3640,7 +3761,7 @@
 				add_ownership={
 					country={
 						country="c:BUR"
-						levels=1
+						levels=10
 					}
 				}
 				reserves=1

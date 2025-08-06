@@ -680,7 +680,7 @@
 				add_ownership={
 					country={
 						country="c:FUN"
-						levels=2
+						levels=4
 					}
 				}
 				reserves=1
@@ -1925,7 +1925,7 @@
 					building={
 						type="building_financial_district"
 						country="c:KAR"
-						levels=3
+						levels=4
 						region="STATE_KAZAN"
 					}
 					country={
@@ -2414,7 +2414,7 @@
 				add_ownership={
 					country={
 						country="c:SMO"
-						levels=1
+						levels=2
 					}
 				}
 				reserves=1
@@ -2442,12 +2442,12 @@
 				add_ownership={
 					country={
 						country="c:BYE"
-						levels=2
+						levels=4
 					}
 					building={
 						type="building_financial_district"
 						country="c:BYE"
-						levels=2
+						levels=4
 						region="STATE_VITEBSK"
 					}
 				}

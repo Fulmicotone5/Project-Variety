@@ -46,6 +46,15 @@
 			}
 			if = {
 				limit = {
+					var:control_var <= 50
+				}
+				change_variable = {
+					name = fm_por_progress
+					add = 5
+				}
+			}
+			if = {
+				limit = {
 					c:EIC = {
 						is_subject_of = c:PUR
 						liberty_desire >= 50

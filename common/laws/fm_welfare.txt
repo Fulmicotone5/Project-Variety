@@ -12,7 +12,7 @@ law_no_social_security = {
 	}
 
 	modifier = {
-		state_peasants_mortality_mult = 0.04
+		state_peasants_mortality_mult = 0.1
 	}
 
 	ai_enact_weight_modifier = { #Petitions
@@ -37,7 +37,7 @@ law_poor_laws = {
 	}
 
 	modifier = {
-		state_peasants_mortality_mult = 0.02
+		state_peasants_mortality_mult = 0.05
 	}
 
 	institution = institution_social_security
@@ -68,6 +68,7 @@ law_wage_subsidies = {
 	
 	modifier = {
 		country_institution_social_security_max_investment_add = 2
+		state_peasants_mortality_mult = 0.02
 	}
 
 	institution = institution_social_security

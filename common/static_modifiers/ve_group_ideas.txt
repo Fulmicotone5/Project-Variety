@@ -302,7 +302,7 @@ fadm5 = {
 }
 economic1 = {
 	icon = gfx/interface/ve_national_ideas/local_production_efficiency.dds
-	building_group_bg_manufacturing_throughput_add = 0.1
+	building_group_bg_manufacturing_throughput_add = 0.2
 	building_group_bg_service_throughput_add = 0.1
 	goods_output_liquor_mult = 0.1
 	goods_output_wine_mult = 0.1
@@ -324,12 +324,12 @@ economic2 = {
 economic3 = {
 	icon = gfx/interface/ve_national_ideas/privilege_gold_mint.dds
 	country_minting_mult = 0.3
-	building_group_bg_mining_throughput_add = 0.1
-	building_group_bg_logging_throughput_add = 0.2
-	building_group_bg_fishing_throughput_add = 0.2
-	building_group_bg_whaling_throughput_add = 0.2
-	building_group_bg_oil_extraction_throughput_add = 0.1
-	building_group_bg_rubber_throughput_add = 0.2
+	building_group_bg_mining_throughput_add = 0.15
+	building_group_bg_logging_throughput_add = 0.25
+	building_group_bg_fishing_throughput_add = 0.25
+	building_group_bg_whaling_throughput_add = 0.25
+	building_group_bg_oil_extraction_throughput_add = 0.15
+	building_group_bg_rubber_throughput_add = 0.25
 }
 economic4 = {
 	icon = gfx/interface/ve_national_ideas/capitalists_15.dds
@@ -341,10 +341,10 @@ economic4 = {
 }
 economic6 = {
 	icon = gfx/interface/ve_ideas/global_colonial_growth.dds
-	building_group_bg_agriculture_throughput_add = 0.15
-	building_group_bg_plantations_throughput_add = 0.2
-	building_group_bg_ranching_throughput_add = 0.2
-	state_farmers_investment_pool_efficiency_mult = 0.2
+	building_group_bg_agriculture_throughput_add = 0.25
+	building_group_bg_plantations_throughput_add = 0.25
+	building_group_bg_ranching_throughput_add = 0.25
+	state_farmers_investment_pool_efficiency_mult = 0.5
 }
 
 economic7 = {

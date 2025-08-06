@@ -468,7 +468,7 @@ STATE_HIMALAYAS = {
     capped_resources = {
         bg_logging = 10
         bg_lead_mining = 8
-		bg_iron_mining = 8
+        bg_iron_mining = 8
     }
 }
 

@@ -26,7 +26,11 @@
 		activate_law = law_type:law_appointed_bureaucrats
 
 		
-		set_tax_level = medium
+		set_tax_level = high
+
+		add_taxed_goods = g:furniture
+		add_taxed_goods = g:liquor
+		add_taxed_goods = g:meat
 		
 		set_institution_investment_level = {
 			institution = institution_schools
@@ -34,7 +38,7 @@
 		}	
 		set_institution_investment_level = {
 			institution = institution_home_affairs
-			level = 2
+			level = 1
 		}	
 		set_institution_investment_level = {
 			institution = institution_colonial_affairs

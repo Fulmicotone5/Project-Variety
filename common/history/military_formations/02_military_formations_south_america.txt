@@ -66,7 +66,7 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_MINAS_GERAIS
-				count = 6
+				count = 2
 			}
 
 			combat_unit = {
@@ -78,7 +78,7 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
 				state_region = s:STATE_SAO_PAULO
-				count = 5
+				count = 1
 			}
 
 			combat_unit = {
@@ -89,7 +89,7 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_RIO_DE_JANEIRO
-				count = 5
+				count = 2
 			}
 
 			combat_unit = {
@@ -113,13 +113,13 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_BAHIA
-				count = 5
+				count = 2
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
 				state_region = s:STATE_SANTA_CATARINA
-				count = 4
+				count = 1
 			}
 
 			combat_unit = {
@@ -129,30 +129,6 @@
 			}
 		}
 
-
-		create_military_formation = {
-			type = fleet
-			hq_region = sr:region_brazil
-			name = "Armada Nacional"
-		
-			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_RIO_DE_JANEIRO
-				count = 1
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_BAHIA
-				count = 3
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_RIO_DE_JANEIRO
-				count = 6
-			}
-		}
 	}
 
 

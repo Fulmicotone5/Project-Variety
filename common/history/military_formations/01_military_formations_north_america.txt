@@ -14,8 +14,8 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				service_type = conscript
-				state_region = s:STATE_NEW_YORK
-				count = 15
+				state_region = s:STATE_MARYLAND
+				count = 5
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -25,8 +25,8 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				service_type = conscript
-				state_region = s:STATE_PENNSYLVANIA
-				count = 15
+				state_region = s:STATE_NEW_JERSEY
+				count = 5
 			}
 
 			combat_unit = {
@@ -59,13 +59,13 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_man_o_war
 				state_region = s:STATE_NEW_YORK
-				count = 5
+				count = 3
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
 				state_region = s:STATE_NEW_YORK
-				count = 5
+				count = 3
 			}
 		}
 
@@ -77,13 +77,13 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_man_o_war
 				state_region = s:STATE_MASSACHUSETTS
-				count = 3
+				count = 2
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
 				state_region = s:STATE_MASSACHUSETTS
-				count = 3
+				count = 2
 			}
 		}
 	}

@@ -365,4 +365,318 @@ TREATIES = {
 			}
 		}
 	}
+	create_treaty = {
+			first_country = c:ENG
+			second_country = c:FOU
+
+			is_draft = no
+			entered_into_force_on = 1834.4.22
+			binding_period = { years = 4 } # 8 years
+
+			articles_to_create = {
+				{ 
+					article = goods_transfer
+					source_country = c:FOU
+					target_country = c:ENG
+					inputs = {
+						{ goods = g:fabric }
+						{ quantity = 100 }
+					}
+				}
+			}
+		}
+		create_treaty = {
+			first_country = c:LLO
+			second_country = c:FOU
+
+			is_draft = no
+			entered_into_force_on = 1833.6.21
+			binding_period = { years = 6 } # 8 years
+
+			articles_to_create = {
+				{ 
+					article = goods_transfer
+					source_country = c:FOU
+					target_country = c:LLO
+					inputs = {
+						{ goods = g:fabric }
+						{ quantity = 50 }
+					}
+				}
+			}
+		}
+		create_treaty = {
+			first_country = c:LIT
+			second_country = c:FOU
+
+			is_draft = no
+			entered_into_force_on = 1830.8.15
+			binding_period = { years = 8 } # 8 years
+
+			articles_to_create = {
+				{ 
+					article = goods_transfer
+					source_country = c:FOU
+					target_country = c:LIT
+					inputs = {
+						{ goods = g:fabric }
+						{ quantity = 100 }
+					}
+				}
+			}
+		}
+		create_treaty = {
+			first_country = c:PUM
+			second_country = c:FOU
+
+			is_draft = no
+			entered_into_force_on = 1831.1.10
+			binding_period = { years = 8 } # 8 years
+
+			articles_to_create = {
+				{ 
+					article = goods_transfer
+					source_country = c:FOU
+					target_country = c:PUM
+					inputs = {
+						{ goods = g:fabric }
+						{ quantity = 40 }
+					}
+				}
+			}
+		}
+		create_treaty = {
+			first_country = c:CAS
+			second_country = c:FOU
+
+			is_draft = no
+			entered_into_force_on = 1832.7.14
+			binding_period = { years = 5 } # 8 years
+
+			articles_to_create = {
+				{ 
+					article = goods_transfer
+					source_country = c:FOU
+					target_country = c:CAS
+					inputs = {
+						{ goods = g:fabric }
+						{ quantity = 30 }
+					}
+				}
+			}
+		}
+		create_treaty = {
+			first_country = c:BIZ
+			second_country = c:EX1
+
+			is_draft = no
+			entered_into_force_on = 1832.7.14
+			binding_period = { years = 5 } # 8 years
+
+			articles_to_create = {
+				{ 
+					article = goods_transfer
+					source_country = c:EX1
+					target_country = c:BIZ
+					inputs = {
+						{ goods = g:meat }
+						{ quantity = 30 }
+					}
+				}
+			}
+		}
+
+		create_treaty = {
+			first_country = c:WLS
+			second_country = c:VSL
+
+			is_draft = no
+			entered_into_force_on = 1834.4.22
+			binding_period = { years = 4 } # 8 years
+
+			articles_to_create = {
+				{ 
+					article = goods_transfer
+					source_country = c:VSL
+					target_country = c:WLS
+					inputs = {
+						{ goods = g:meat }
+						{ quantity = 5 }
+					}
+				}
+			}
+		}
+		create_treaty = {
+			first_country = c:PUM
+			second_country = c:VSL
+
+			is_draft = no
+			entered_into_force_on = 1833.6.21
+			binding_period = { years = 6 } # 8 years
+
+			articles_to_create = {
+				{ 
+					article = goods_transfer
+					source_country = c:VSL
+					target_country = c:PUM
+					inputs = {
+						{ goods = g:meat }
+						{ quantity = 5 }
+					}
+				}
+			}
+		}
+		create_treaty = {
+			first_country = c:IRE
+			second_country = c:VSL
+
+			is_draft = no
+			entered_into_force_on = 1830.8.15
+			binding_period = { years = 8 } # 8 years
+
+			articles_to_create = {
+				{ 
+					article = goods_transfer
+					source_country = c:VSL
+					target_country = c:IRE
+					inputs = {
+						{ goods = g:meat }
+						{ quantity = 40 }
+					}
+				}
+			}
+		}
+		create_treaty = {
+			first_country = c:KAA
+			second_country = c:VSL
+
+			is_draft = no
+			entered_into_force_on = 1831.1.10
+			binding_period = { years = 8 } # 8 years
+
+			articles_to_create = {
+				{ 
+					article = goods_transfer
+					source_country = c:VSL
+					target_country = c:KAA
+					inputs = {
+						{ goods = g:meat }
+						{ quantity = 30 }
+					}
+				}
+			}
+		}
+		create_treaty = {
+			first_country = c:LIT
+			second_country = c:VSL
+
+			is_draft = no
+			entered_into_force_on = 1832.7.14
+			binding_period = { years = 5 } # 8 years
+
+			articles_to_create = {
+				{ 
+					article = goods_transfer
+					source_country = c:VSL
+					target_country = c:LIT
+					inputs = {
+						{ goods = g:meat }
+						{ quantity = 60 }
+					}
+				}
+			}
+		}
+		create_treaty = {
+			first_country = c:CAS
+			second_country = c:VSL
+
+			is_draft = no
+			entered_into_force_on = 1833.6.21
+			binding_period = { years = 6 } # 8 years
+
+			articles_to_create = {
+				{ 
+					article = goods_transfer
+					source_country = c:VSL
+					target_country = c:CAS
+					inputs = {
+						{ goods = g:meat }
+						{ quantity = 100 }
+					}
+				}
+			}
+		}
+		create_treaty = {
+			first_country = c:BUL
+			second_country = c:VSL
+
+			is_draft = no
+			entered_into_force_on = 1829.2.11
+			binding_period = { years = 9 } # 8 years
+
+			articles_to_create = {
+				{ 
+					article = goods_transfer
+					source_country = c:VSL
+					target_country = c:BUL
+					inputs = {
+						{ goods = g:meat }
+						{ quantity = 15 }
+					}
+				}
+			}
+		}
+		create_treaty = {
+			first_country = c:MOL
+			second_country = c:VSL
+
+			is_draft = no
+			entered_into_force_on = 1833.7.19
+			binding_period = { years = 4 } # 8 years
+
+			articles_to_create = {
+				{ 
+					article = goods_transfer
+					source_country = c:VSL
+					target_country = c:MOL
+					inputs = {
+						{ goods = g:meat }
+						{ quantity = 5 }
+					}
+				}
+			}
+			articles_to_create = {
+				{ 
+					article = goods_transfer
+					source_country = c:VSL
+					target_country = c:MOL
+					inputs = {
+						{ goods = g:small_arms }
+						{ quantity = 5 }
+					}
+				}
+			}
+			articles_to_create = {
+				{ 
+					article = goods_transfer
+					source_country = c:VSL
+					target_country = c:MOL
+					inputs = {
+						{ goods = g:artillery }
+						{ quantity = 5 }
+					}
+				}
+			}
+			articles_to_create = {
+				{ 
+					article = goods_transfer
+					source_country = c:VSL
+					target_country = c:MOL
+					inputs = {
+						{ goods = g:tools }
+						{ quantity = 5 }
+					}
+				}
+			}
+		}
 }

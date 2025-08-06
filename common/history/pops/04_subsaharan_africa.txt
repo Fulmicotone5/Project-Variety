@@ -857,56 +857,12 @@
 		region_state:AF2 = {
 			create_pop = {
 				culture = east_bantu
-				size = 566200
+				size = 1566200
 			}
 			create_pop = {
 				culture = east_bantu
 				religion = animist
 				size = 222996
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = east_bantu
-				religion = animist
-				size = 25000
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = east_bantu
-				size = 25000
-			}
-		}
-		region_state:KRG = {
-			create_pop = {
-				culture = east_bantu
-				size = 116600
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = east_bantu
-				size = 7000
-			}
-		}
-		region_state:RWD = {
-			create_pop = {
-				culture = east_bantu
-				size = 501996
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = east_bantu
-				size = 10000
-			}
-		}
-		region_state:BRD = {
-			create_pop = {
-				culture = east_bantu
-				size = 452004
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = east_bantu
-				size = 16000
 			}
 		}
 	}
@@ -925,54 +881,17 @@
 				religion = animist
 				size = 20000
 			}
-			create_pop = {
-				pop_type = slaves
-				culture = east_bantu
-				size = 30000
-			}
 		}
 	}
 	s:STATE_RIFT_VALLEY = {
 		region_state:AF2 = {
 			create_pop = {
 				culture = east_bantu
-				size = 49000
+				size = 517655
 			}
-			create_pop = {
-				pop_type = slaves
-				culture = east_bantu
-				size = 3000
-			}
-		}
-		region_state:LUO = {
 			create_pop = {
 				culture = east_africanus
-				size = 102404
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = east_africanus
-				size = 6000
-			}
-		}
-		region_state:AF3 = {
-			create_pop = {
-				culture = east_africanus
-				size = 155800
-			}
-			create_pop = {
-				culture = east_bantu
-				size = 28396
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = east_africanus
-				size = 13000
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = east_bantu
-				size = 4000
+				size = 255404
 			}
 		}
 	}
@@ -1339,40 +1258,16 @@
 		}
 	}
 	s:STATE_UGANDA = {
-		region_state:BUG = {
+		region_state:AF2 = {
 			create_pop = {
 				culture = east_bantu
-				size = 755500
+				size = 1190443
 			}
 			create_pop = {
 				pop_type = slaves
 				culture = east_bantu
-				size = 19500
+				size = 79500
 			}
-		}
-		region_state:BNY = {
-			create_pop = {
-				culture = east_bantu
-				size = 235000
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = east_bantu
-				size = 10000
-			}
-		}
-		region_state:ANK = {
-			create_pop = {
-				culture = east_bantu
-				size = 231000
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = east_bantu
-				size = 9000
-			}
-		}
-		region_state:ACH = {
 			create_pop = {
 				culture = east_africanus
 				size = 201600

@@ -1340,7 +1340,7 @@
 			}
 			create_pop = {
 				culture = vinlander
-				size = 915000
+				size = 1215000
 			}
 		}
 	}
@@ -1415,7 +1415,7 @@
 			}
 			create_pop = {
 				culture = vinlander
-				size = 1266043
+				size = 1566043
 			}
 		}
 	}
@@ -1428,7 +1428,7 @@
 			}
 			create_pop = {
 				culture = vinlander
-				size = 1855643
+				size = 2155643
 			}
 		}
 	}

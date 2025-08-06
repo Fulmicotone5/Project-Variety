@@ -85,7 +85,7 @@
 				add_ownership={
 					country={
 						country="c:LLO"
-						levels=1
+						levels=3
 					}
 				}
 				reserves=1
@@ -178,7 +178,7 @@
 				add_ownership={
 					country={
 						country="c:LLO"
-						levels=4
+						levels=5
 					}
 				}
 				reserves=1
@@ -732,7 +732,7 @@
 				add_ownership={
 					country={
 						country="c:EX1"
-						levels=2
+						levels=6
 					}
 				}
 				reserves=1
@@ -1135,6 +1135,17 @@
 				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" }
 			}
 			create_building={
+				building="building_arms_industry"
+				add_ownership={
+					country={
+						country="c:PUP"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_muskets" }
+			}
+			create_building={
 				building="building_textile_mills"
 				add_ownership={
 					country={
@@ -1439,7 +1450,7 @@
 				add_ownership={
 					country={
 						country="c:PUP"
-						levels=4
+						levels=3
 					}
 				}
 				reserves=1
@@ -1468,17 +1479,6 @@
 				}
 				reserves=1
 				activate_production_methods={  }
-			}
-			create_building={
-				building="building_paper_mills"
-				add_ownership={
-					country={
-						country="c:PUP"
-						levels=1
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_pulp_pressing" "pm_automation_disabled" }
 			}
 			create_building={
 				building="building_wheat_farm"
@@ -1727,7 +1727,7 @@
 				add_ownership={
 					country={
 						country="c:VEN"
-						levels=5
+						levels=6
 					}
 				}
 				reserves=1
@@ -2365,7 +2365,7 @@
 				add_ownership={
 					country={
 						country="c:NAV"
-						levels=1
+						levels=2
 					}
 				}
 				reserves=1
@@ -2491,6 +2491,17 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_basic_port" }
+			}
+			create_building={
+				building="building_arms_industry"
+				add_ownership={
+					country={
+						country="c:NAV"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_muskets" }
 			}
 		}
 	}
@@ -3164,7 +3175,7 @@
 					building={
 						type="building_financial_district"
 						country="c:CAS"
-						levels=1
+						levels=3
 						region="STATE_TOLEDO"
 					}
 					country={
@@ -3345,11 +3356,22 @@
 				add_ownership={
 					country={
 						country="c:PUR"
-						levels=4
+						levels=5
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_vertical_filing_cabinets" }
+				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
+			}
+			create_building={
+				building="building_arms_industry"
+				add_ownership={
+					country={
+						country="c:PUR"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_muskets" }
 			}
 			create_building={
 				building="building_olive_plantation"
@@ -3357,7 +3379,7 @@
 					building={
 						type="building_manor_house"
 						country="c:PUR"
-						levels=19
+						levels=15
 						region="STATE_BEIRA"
 					}
 				}
@@ -3427,7 +3449,7 @@
 				add_ownership={
 					country={
 						country="c:PUR"
-						levels=2
+						levels=3
 					}
 				}
 				reserves=1
@@ -3460,7 +3482,7 @@
 				add_ownership={
 					country={
 						country="c:PUR"
-						levels=1
+						levels=3
 					}
 				}
 				reserves=1
@@ -3475,11 +3497,11 @@
 				add_ownership={
 					country={
 						country="c:PUR"
-						levels=2
+						levels=4
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_vertical_filing_cabinets" }
+				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
 			}
 			create_building={
 				building="building_trade_center"
@@ -3498,12 +3520,12 @@
 					building={
 						type="building_financial_district"
 						country="c:PUR"
-						levels=1
+						levels=2
 						region="STATE_ESTREMADURA"
 					}
 					country={
 						country="c:PUR"
-						levels=1
+						levels=2
 					}
 				}
 				reserves=1
@@ -3591,7 +3613,7 @@
 				add_ownership={
 					country={
 						country="c:PUR"
-						levels=1
+						levels=2
 					}
 				}
 				reserves=1
@@ -3884,7 +3906,7 @@
 				add_ownership={
 					country={
 						country="c:BIZ"
-						levels=2
+						levels=4
 					}
 				}
 				reserves=1
@@ -4243,7 +4265,7 @@
 				add_ownership={
 					country={
 						country="c:IL1"
-						levels=1
+						levels=3
 					}
 				}
 				reserves=1
@@ -4254,7 +4276,7 @@
 				add_ownership={
 					country={
 						country="c:IL1"
-						levels=1
+						levels=5
 					}
 				}
 				reserves=1
@@ -4916,7 +4938,7 @@
 				add_ownership={
 					country={
 						country="c:SER"
-						levels=1
+						levels=2
 					}
 				}
 				reserves=1
@@ -5022,6 +5044,17 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
+			}
+			create_building={
+				building="building_arms_industry"
+				add_ownership={
+					country={
+						country="c:BIZ"
+						levels=2
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_muskets" }
 			}
 			create_building={
 				building="building_textile_mills"

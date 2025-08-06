@@ -417,7 +417,7 @@ je_reclaim_holy_reason: "Jerusalem, Antioch, Alexandria and Constantinople have 
 je_por_main: "A Crumbling Colonial Empire"
 je_por_main_reason: "Our Colonial Empire has expanded to such an extent that year after year it has become increasingly harder to manage.\nCorrupted governors and the growing restlessness of the population of the colonies is causing the sovereignty of our nation to be constantly challenged.\nIt is mandatory to restore our authority in those lands.\nThe status of the #bold Progress Bar#! will #tooltippable;tooltip:[Country.GetTooltipTag],je_por_main_advance advance#! on a weekly basis based on certain conditions."
 je_por_main_goal: "The #bold Progress Bar#! has reached #bold 400#!, signifying that we have not been able to mantain order"
-je_por_main_advance: "•The [concept_liberty_desire] of each of our subjects is equal or superior to 50\n• The [concept_turmoil] in the african colonies is above 30%\n• The [concept_turmoil] in mainland Portugal is above 20%"
+je_por_main_advance: "•The [concept_liberty_desire] of each of our subjects is equal or superior to 50\n• The [concept_turmoil] in the african colonies is above 30%\n• The [concept_turmoil] in mainland Portugal is above 20%\n• We have less than 50 [concept_control]"
 
 je_pol: "Restoring the Polish-Lithuanian Commonwealth"
 je_pol_reason: "The Polish-Lithuanian Commonwealth has ceased to exist after the succession crisis and the consequent fragmentation of the Kingdom of Poland, but now that the Kingdom has been restored, we have to try to restore the Commonwealth as well.\nConquering their lands is not an option, therefore we must find a way to make Lithuania enter our sphere of influence, or in the worst case we will have to subjugate them."
@@ -807,3 +807,6 @@ je_bud_main_reason: "The Grand Duchy of [ROOT.GetCountry.GetName] has been a vas
  je_quarantinezones_desc: "Establishing quarantine zones may adversely impact local economies; however, such measures are essential to achieve a higher level of containment of the plague.\n#bold This action will #V Slightly#! improve the Plague's Confinement"
  je_burncadavers: "Burn Infected Corpses"
  je_burncadavers_desc: "The practice of burning infected corpses effectively mitigates the risk of further plague transmission; however, it is likely to be strongly opposed by the [GetInterestGroupVariant('ig_devout',GetPlayer).GetNameWithCountryVariant] and a significant portion of the population.\n#bold This action will #V Slightly#! improve the Plague's Confinement"
+ je_potato_blight: "The Potato Blight"
+ je_potato_blight_reason: "#V The Potato blight is a pathogenic disease that infects both the foliage and tubers of potatoes and tomatoes, leading to decay.\nWe are forced to wait until the outbreak subsides, as the disease persists despite efforts to control it.\nMany will perish, but there is nothing we can do.#!"
+ plague_might_spread.ttfm: "The Potato blight may spread to [THIS.GetCountry.GetName] via neighboring states or common markets.
