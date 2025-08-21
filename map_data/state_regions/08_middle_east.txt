@@ -371,6 +371,7 @@ STATE_KERMAN = {
         bg_iron_mining = 40
         bg_sulfur_mining = 22
         bg_logging = 2
+        bg_copper_mining = 22
     }
 }
 
@@ -408,6 +409,7 @@ STATE_KHORASAN = {
         bg_logging = 4
         bg_iron_mining = 22
         bg_coal_mining = 12
+        bg_copper_mining = 22
     }
     resource = {
         type = "bg_oil_extraction"
@@ -429,6 +431,7 @@ STATE_KHUZESTAN = {
         bg_sulfur_mining = 22
         bg_fishing = 5
         bg_logging = 4
+        bg_copper_mining = 22
     }
     resource = {
         type = "bg_oil_extraction"
@@ -453,6 +456,7 @@ STATE_ISFAHAN = {
         bg_iron_mining = 51
         bg_lead_mining = 35
         bg_logging = 4
+        bg_copper_mining = 22
     }
 }
 
@@ -566,6 +570,7 @@ STATE_LURISTAN = {
     capped_resources = {
         bg_logging = 3
         bg_iron_mining = 2
+        bg_copper_mining = 24
     }
 }
 
@@ -587,6 +592,7 @@ STATE_PERSIAN_KURDISTAN = {
     capped_resources = {
         bg_logging = 8
         bg_iron_mining = 5
+        bg_copper_mining = 2
     }
 }
 

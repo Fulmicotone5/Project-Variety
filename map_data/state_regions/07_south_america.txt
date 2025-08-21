@@ -17,6 +17,7 @@
         bg_logging = 14
         bg_fishing = 6
         bg_whaling = 4
+        bg_copper_mining = 25
     }
     resource = {
         type = "bg_rubber"
@@ -286,6 +287,7 @@ STATE_TARAPACA = {
         bg_sulfur_mining = 24
         bg_whaling = 3
         bg_fishing = 5
+        bg_copper_mining = 120
     }
     naval_exit_id = 3152
 }
@@ -306,6 +308,7 @@ STATE_ANTOFAGASTA = {
         bg_iron_mining = 30
         bg_sulfur_mining = 48
         bg_fishing = 5
+        bg_copper_mining = 55
     }
     resource = {
         type = "bg_gold_fields"
@@ -353,6 +356,7 @@ STATE_LA_PAZ = {
     capped_resources = {
         bg_logging = 20
         bg_gold_mining = 4
+        bg_copper_mining = 45
     }
     resource = {
         type = "bg_rubber"
@@ -379,6 +383,7 @@ STATE_POTOSI = {
         bg_lead_mining = 12
         bg_logging = 9
         bg_gold_mining = 6
+        bg_copper_mining = 138
     }
 }
 
@@ -399,6 +404,7 @@ STATE_CAJAMARCA = {
         bg_logging = 6
         bg_whaling = 3
         bg_fishing = 7
+        bg_copper_mining = 29
     }
     resource = {
         type = "bg_gold_fields"
@@ -432,6 +438,7 @@ STATE_LIMA = {
         bg_logging = 11
         bg_whaling = 5
         bg_fishing = 7
+        bg_copper_mining = 22
     }
     naval_exit_id = 3024
 }
@@ -454,6 +461,7 @@ STATE_ICA = {
         bg_logging = 11
         bg_fishing = 4
         bg_gold_mining = 4
+        bg_copper_mining = 38
     }
     naval_exit_id = 3152
 }
@@ -476,6 +484,7 @@ STATE_AREQUIPA = {
         bg_logging = 4
         bg_fishing = 5
         bg_gold_mining = 2
+        bg_copper_mining = 80
     }
     naval_exit_id = 3152
 }
@@ -521,6 +530,7 @@ STATE_JUJUY = {
         bg_lead_mining = 18
         bg_logging = 8
         bg_gold_mining = 3
+        bg_copper_mining = 72
     }
 }
 
@@ -600,6 +610,7 @@ STATE_PATAGONIA = {
         bg_coal_mining = 32
         bg_sulfur_mining = 20
         bg_fishing = 7
+        bg_copper_mining = 15
     }
     resource = {
         type = "bg_oil_extraction"
@@ -623,6 +634,7 @@ STATE_RIO_NEGRO = {
     capped_resources = {
         bg_coal_mining = 40
         bg_sulfur_mining = 52
+        bg_copper_mining = 100
     }
 }
 
@@ -701,6 +713,7 @@ STATE_TUCUMAN = {
         bg_lead_mining = 15
         bg_gold_mining = 3
         bg_logging = 6
+        bg_copper_mining = 45
     }
 }
 
@@ -740,6 +753,7 @@ STATE_SANTIAGO = {
         bg_logging = 6
         bg_whaling = 2
         bg_fishing = 8
+        bg_copper_mining = 250
     }
     naval_exit_id = 3152
 }
@@ -764,6 +778,7 @@ STATE_LOS_RIOS = {
         bg_logging = 20
         bg_whaling = 3
         bg_fishing = 10
+        bg_copper_mining = 50
     }
     naval_exit_id = 3152
 }

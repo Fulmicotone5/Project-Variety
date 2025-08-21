@@ -1138,6 +1138,7 @@ STATE_ZAMBIA = {
         bg_coal_mining = 36
         bg_lead_mining = 33
         bg_logging = 17
+        bg_copper_mining = 2
     }
     resource = {
         type = "bg_rubber"
@@ -1328,6 +1329,7 @@ STATE_CAPE_COLONY = {
         bg_logging = 8
         bg_fishing = 10
         bg_whaling = 4
+        bg_copper_mining = 2
     }
     naval_exit_id = 3105
 }

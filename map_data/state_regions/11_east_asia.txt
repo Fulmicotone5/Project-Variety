@@ -143,6 +143,7 @@ STATE_HINGGAN = {
         bg_iron_mining = 36
         bg_lead_mining = 24
         bg_logging = 6
+        bg_copper_mining = 42
     }
 }
 
@@ -227,6 +228,7 @@ STATE_OUTER_MANCHURIA = {
         bg_iron_mining = 45
         bg_logging = 20
         bg_fishing = 10
+        bg_copper_mining = 5
     }
     resource = {
         type = "bg_gold_fields"
@@ -274,6 +276,7 @@ STATE_NORTHERN_MANCHURIA = {
         bg_coal_mining = 40
         bg_iron_mining = 36
         bg_logging = 34
+        bg_copper_mining = 5
     }
 }
 
@@ -347,6 +350,7 @@ STATE_XIAN = {
         bg_coal_mining = 72
         bg_sulfur_mining = 60
         bg_logging = 9
+        bg_copper_mining = 5
     }
     resource = {
         type = "bg_oil_extraction"
@@ -426,6 +430,7 @@ STATE_FUJIAN = {
     capped_resources = {
         bg_logging = 16
         bg_fishing = 10
+        bg_copper_mining = 22
     }
     naval_exit_id = 3056
 }
@@ -445,6 +450,7 @@ STATE_ZHEJIANG = {
         bg_iron_mining = 10
         bg_logging = 20
         bg_fishing = 11
+        bg_copper_mining = 22
     }
     naval_exit_id = 3058
 }
@@ -539,6 +545,7 @@ STATE_JIANGXI = {
     capped_resources = {
         bg_coal_mining = 52
         bg_logging = 15
+        bg_copper_mining = 27
     }
 }
 
@@ -707,6 +714,7 @@ STATE_ULIASTAI = {
         bg_coal_mining = 36
         bg_iron_mining = 33
         bg_logging = 5
+        bg_copper_mining = 20
     }
 }
 
@@ -725,6 +733,7 @@ STATE_URGA = {
         bg_coal_mining = 36
         bg_iron_mining = 45
         bg_logging = 4
+        bg_copper_mining = 40
     }
 }
 
@@ -868,6 +877,7 @@ STATE_LAOS = {
         bg_coal_mining = 32
         bg_iron_mining = 36
         bg_logging = 23
+        bg_copper_mining = 4
     }
 }
 

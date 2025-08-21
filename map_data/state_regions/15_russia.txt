@@ -697,6 +697,7 @@ STATE_SEMIRECHE = {
         bg_coal_mining = 28
         bg_lead_mining = 16
         bg_logging = 4
+        bg_copper_mining = 17
     }
 }
 
@@ -715,6 +716,7 @@ STATE_JETISY = {
         bg_coal_mining = 12
         bg_lead_mining = 20
         bg_logging = 4
+        bg_copper_mining = 8
     }
     resource = {
         type = "bg_gold_fields"
@@ -754,6 +756,7 @@ STATE_FERGANA = {
     capped_resources = {
         bg_iron_mining = 21
         bg_logging = 5
+        bg_copper_mining = 72
     }
 }
 
@@ -787,6 +790,7 @@ STATE_SYRDARYA = {
         bg_iron_mining = 15
         bg_lead_mining = 60
         bg_logging = 6
+        bg_copper_mining = 22
     }
     resource = {
         type = "bg_gold_fields"
@@ -1082,6 +1086,7 @@ STATE_ALTAI = {
         bg_iron_mining = 7
         bg_logging = 18
         bg_lead_mining = 12
+        bg_copper_mining = 20
     }
     resource = {
         type = "bg_gold_fields"
@@ -1281,6 +1286,7 @@ STATE_URAL = {
         bg_lead_mining = 81
         bg_gold_mining = 2
         bg_logging = 27
+        bg_copper_mining = 8
     }
     resource = {
         type = "bg_gold_fields"

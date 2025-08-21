@@ -54,6 +54,7 @@ STATE_EAST_BENGAL = {
         bg_coal_mining = 4
         bg_logging = 23
         bg_fishing = 11
+        bg_copper_mining = 20
     }
     naval_exit_id = 3050
 }
@@ -181,6 +182,7 @@ STATE_BUNDELKHAND = {
         bg_logging = 18
         bg_coal_mining = 12
         bg_iron_mining = 8
+        bg_copper_mining = 20
     }
 }
 
@@ -277,6 +279,7 @@ STATE_CENTRAL_PROVINCES = {
         bg_iron_mining = 22
         bg_coal_mining = 21
         bg_logging = 12
+        bg_copper_mining = 20
     }
 }
 
@@ -576,6 +579,7 @@ STATE_KACHIN = {
         bg_logging = 24
         bg_iron_mining = 7
         bg_gold_mining = 3
+        bg_copper_mining = 6
     }
 }
 
@@ -670,6 +674,7 @@ STATE_ARAKAN = {
     capped_resources = {
         bg_logging = 21
         bg_fishing = 10
+        bg_copper_mining = 20
     }
     resource = {
         type = "bg_oil_extraction"

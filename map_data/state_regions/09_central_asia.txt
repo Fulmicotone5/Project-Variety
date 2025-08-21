@@ -203,6 +203,7 @@ STATE_UZBEKIA = {
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_silk_plantations" "bg_opium_plantations" "bg_cotton_plantations" "bg_tea_plantations" }
     capped_resources = {
         bg_logging = 6
+        bg_copper_mining = 70
     }
     resource = {
         type = "bg_gold_fields"
@@ -224,6 +225,7 @@ STATE_TAJIKISTAN = {
     capped_resources = {
         bg_coal_mining = 36
         bg_logging = 2
+        bg_copper_mining = 70
     }
 }
 
@@ -240,6 +242,7 @@ STATE_KIRGHIZIA = {
     capped_resources = {
         bg_coal_mining = 32
         bg_logging = 6
+        bg_copper_mining = 70
     }
 }
 
@@ -434,6 +437,7 @@ STATE_LHASA = {
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
         bg_logging = 20
+        bg_copper_mining = 22
     }
 }
 
@@ -470,6 +474,7 @@ STATE_HIMALAYAS = {
         bg_logging = 10
         bg_lead_mining = 8
         bg_iron_mining = 8
+        bg_copper_mining = 11
     }
 }
 
@@ -490,6 +495,7 @@ STATE_EASTERN_HIMALAYAS = {
     capped_resources = {
         bg_logging = 3
         bg_coal_mining = 3
+        bg_copper_mining = 20
     }
 }
 

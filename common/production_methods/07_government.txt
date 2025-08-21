@@ -102,7 +102,8 @@ pm_switch_boards = {
 	building_modifiers = {
 		workforce_scaled = {
 			goods_input_paper_add = 20
-			goods_input_telephones_add = 5
+			goods_input_telephones_add = 4
+			goods_input_copper_add = 1
 		}
 
 		level_scaled = {

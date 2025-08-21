@@ -17,6 +17,7 @@ STATE_TOMSK = {
         bg_coal_mining = 85
         bg_iron_mining = 27
         bg_logging = 26
+        bg_copper_mining = 22
     }
 }
 
@@ -124,6 +125,7 @@ STATE_CHUKOTKA = {
         bg_logging = 13
         bg_whaling = 3
         bg_fishing = 9
+        bg_copper_mining = 5
     }
     resource = {
         type = "bg_gold_fields"
@@ -178,6 +180,7 @@ STATE_OKHOTSK = {
         bg_fishing = 10
         bg_whaling = 5
         bg_logging = 10
+        bg_copper_mining = 2
     }
     resource = {
         type = "bg_gold_fields"
