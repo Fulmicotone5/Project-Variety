@@ -236,6 +236,7 @@ plague.222 = {
 	duration = 3
 
 	trigger = {
+		has_global_variable = spanish_flu2
 		NOT = { is_country_type = decentralized } # for balance reasons
 		NOT = {
 			has_variable = country_hit_by_plague2
@@ -290,6 +291,7 @@ plague.22 = {
 	duration = 1
 
 	trigger = {
+		has_global_variable = spanish_flu3
 		NOT = { is_country_type = decentralized } # for balance reasons
 		NOT = {
 			has_variable = country_hit_by_plague3

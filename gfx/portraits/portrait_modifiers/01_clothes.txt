@@ -6902,7 +6902,10 @@
                 add = 100
                 AND = {
                     african_clothes_pop_trigger = yes
-                    #poor_clothes_pop_trigger = yes
+                    OR = {
+                        poor_clothes_pop_trigger = yes
+                        scope:pop ?= { is_pop_type = soldiers }
+                    }
                 }
             }
         }
@@ -6936,7 +6939,10 @@
                             }
                         }
                     }
-                    middle_clothes_pop_trigger = yes
+                    OR = {
+                        middle_clothes_pop_trigger = yes
+                        scope:pop ?= { is_pop_type = officers }
+                    }
                 }
             }
         }

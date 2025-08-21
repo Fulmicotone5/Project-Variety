@@ -7,8 +7,9 @@
 	preferred_headquarters = { STATE_EASTERN_THRACE STATE_LAZIO }
 	
 	building_types = {  
-		building_olive_plantation
+
 		building_vineyard_plantation
+		building_glassworks
 	}
 
 	extension_building_types = {
@@ -16,7 +17,7 @@
 	}
 
 	possible_prestige_goods = {
-		prestige_good_champagne
+		prestige_good_olive
 	}
 
 	
@@ -34,15 +35,15 @@
 				region = sr:region_italy
 			}
 			any_scope_building = {
-				is_building_type = building_olive_plantation
-				level >= 8
+				is_building_type = building_vineyard_plantation
+				level >= 5
 			}
 		}
 	}
 	
 	prosperity_modifier = {
 		country_influence_mult = 0.1
-		building_olive_plantation_throughput_add = 0.15
+		building_vineyard_plantation_throughput_add = 0.15
 		state_lower_strata_expected_sol_add = -1
 	}
 	ai_will_do = {
@@ -56,7 +57,7 @@
 	}
 
 	ai_construction_targets = {
-		building_olive_plantation = {
+		building_vineyard_plantation = {
 			level = 5
 			state_trigger = {
 				OR = {
@@ -340,7 +341,7 @@ company_VNA = {
 	building_types = {
 		building_sugar_plantation
 		building_banana_plantation
-		building_olive_plantation
+		building_copper_mine
 		building_tobacco_plantation
 		building_coffee_plantation
 	}

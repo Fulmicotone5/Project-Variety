@@ -17,3 +17,367 @@ fm_ned.1 = {
 		name = fm_ned.1.a
 	}
 }
+
+fm_ned.999 = {
+	type = country_event
+	placement = ROOT
+	title = fm_ned.999.t
+	desc = fm_ned.999.d
+	flavor = fm_ned.999.f
+	duration = 1
+	event_image = {
+		video = "europenorthamerica_london_center"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+
+	option = {
+		name = fm_ned.999.a
+		if = {
+						limit = {
+							is_ai = yes
+							OR = {
+								c:BUD = {
+								is_ai = yes
+								is_subject = no
+								}
+								c:KBG = {
+								is_ai = yes
+								is_subject = no
+								}
+							}
+							c:FLA = {
+							is_ai = yes
+							is_subject = no
+							}
+							c:VOC = {
+							is_ai = yes
+							}
+						}
+						if = {
+							limit = { 
+								exists = c:BUD
+							}
+							c:BUD = {
+							annex_with_incorporation = c:NED
+							annex_with_incorporation = c:FLA
+							s:STATE_PROVENCE = {
+									add_claim = c:BUD
+								}
+							s:STATE_NORTH_RHINE = {
+								add_claim = c:BUD
+							}
+							s:STATE_ALSACE_LORRAINE = {
+								add_claim = c:BUD
+							}
+							s:STATE_RHINELAND = {
+								add_claim = c:BUD
+							}
+							s:STATE_RUHR = {
+								add_claim = c:BUD
+							}
+							s:STATE_HESSE = {
+								add_claim = c:BUD
+							}
+							s:STATE_WESTPHALIA = {
+								add_claim = c:BUD
+							}
+							s:STATE_HANNOVER = {
+								add_claim = c:BUD
+							}
+							s:STATE_BRUNSWICK = {
+								add_claim = c:BUD
+							}
+							s:STATE_ELBE = {
+								add_claim = c:BUD
+							}
+							}
+						}
+						if = {
+							limit = { 
+								exists = c:KBG
+							}
+						c:KBG = {
+							annex_with_incorporation = c:NED
+							annex_with_incorporation = c:FLA
+							s:STATE_PROVENCE = {
+									add_claim = c:KBG
+								}
+							s:STATE_NORTH_RHINE = {
+								add_claim = c:KBG
+							}
+							s:STATE_ALSACE_LORRAINE = {
+								add_claim = c:KBG
+							}
+							s:STATE_RHINELAND = {
+								add_claim = c:KBG
+							}
+							s:STATE_RUHR = {
+								add_claim = c:KBG
+							}
+							s:STATE_HESSE = {
+								add_claim = c:KBG
+							}
+							s:STATE_WESTPHALIA = {
+								add_claim = c:KBG
+							}
+							s:STATE_HANNOVER = {
+								add_claim = c:KBG
+							}
+							s:STATE_BRUNSWICK = {
+								add_claim = c:KBG
+							}
+							s:STATE_ELBE = {
+								add_claim = c:KBG
+							}
+							}
+						}
+						if = {
+							limit = { 
+								exists = c:FRU
+								c:FRU = {
+								is_ai = yes
+								}
+								c:BOU = {
+								is_ai = yes
+								is_subject_of = c:FRU
+								}
+								c:DCQ = {
+								is_ai = yes
+								is_subject_of = c:FRU
+								}
+								c:TOU = {
+								is_ai = yes
+								is_subject_of = c:FRU
+								}
+							}
+							c:FRU = {
+								annex_with_incorporation = c:BOU
+								annex_with_incorporation = c:DCQ
+								annex_with_incorporation = c:TOU
+								s:STATE_BRITTANY = {
+									add_claim = c:FRU
+								}
+								s:STATE_NORMANDY = {
+									add_claim = c:FRU
+								}
+								s:STATE_PROVENCE = {
+									add_claim = c:FRU
+								}
+							}
+						}
+					}
+		ai_chance = {
+			base = 30
+		}
+	}
+	option = {
+		name = fm_ned.999.b
+		if = {
+						limit = {
+							is_ai = yes
+							OR = {
+								c:BUD = {
+								is_ai = yes
+								is_subject = no
+								}
+								c:KBG = {
+								is_ai = yes
+								is_subject = no
+								}
+							}
+							c:FLA = {
+							is_ai = yes
+							is_subject = no
+							}
+						}
+						if = {
+							limit = { 
+								exists = c:BUD
+							}
+							annex_with_incorporation = c:BUD
+						}
+						if = {
+							limit = { 
+								exists = c:KBG
+							}
+							annex_with_incorporation = c:KBG
+						}
+						annex_with_incorporation = c:FLA
+						if = {
+							limit = { 
+								exists = c:FRU
+								c:FRU = {
+								is_ai = yes
+								}
+								c:BOU = {
+								is_ai = yes
+								is_subject_of = c:FRU
+								}
+								c:DCQ = {
+								is_ai = yes
+								is_subject_of = c:FRU
+								}
+								c:TOU = {
+								is_ai = yes
+								is_subject_of = c:FRU
+								}
+							}
+							c:FRU = {
+								annex_with_incorporation = c:BOU
+								annex_with_incorporation = c:DCQ
+								annex_with_incorporation = c:TOU
+								s:STATE_BRITTANY = {
+									add_claim = c:FRU
+								}
+								s:STATE_NORMANDY = {
+									add_claim = c:FRU
+								}
+								s:STATE_PROVENCE = {
+									add_claim = c:FRU
+								}
+							}
+						}
+					}
+					ai_chance = {
+			base = 40
+		}
+	}
+	option = {
+		name = fm_ned.999.c
+		if = {
+						limit = {
+							is_ai = yes
+							OR = {
+								c:BUD = {
+								is_ai = yes
+								}
+								c:KBG = {
+								is_ai = yes
+								}
+							}
+							c:FLA = {
+							is_ai = yes
+							is_subject = no
+							}
+							c:VOC = {
+							is_ai = yes
+							}
+							c:FRU = {
+							is_ai = yes
+							}
+						}
+						c:FLA = {
+							annex_with_incorporation = c:NED
+							annex_with_incorporation = c:FRU
+							change_tag = FL1
+							unification_claims_effect = yes
+							s:STATE_NORMANDY = {
+								add_claim = c:FL1
+							}
+							s:STATE_BRITTANY = {
+								add_claim = c:FL1
+							}
+							}
+						if = {
+							limit = { 
+								c:KAA = {
+									is_ai = yes
+									is_subject = no
+								}
+								c:BOU = {
+								is_ai = yes
+								}
+								c:DCQ = {
+								is_ai = yes
+								}
+								c:TOU = {
+								is_ai = yes
+								}
+							}
+							c:KAA = {
+							annex_with_incorporation = c:DCQ
+							annex_with_incorporation = c:TOU
+							annex_with_incorporation = c:BOU
+							change_tag = NOC
+							add_primary_culture = cu:occitan
+							unification_claims_effect = yes
+							if = {
+									limit = { 
+										exists = c:NAV
+										c:NAV = {
+										is_ai = yes
+										is_subject = no
+										}
+									}
+									annex_with_incorporation = c:NAV
+								}
+							}
+						}
+						if = {
+							limit = { 
+								exists = c:BUD
+							}
+							c:BUD = {
+								if = {
+									limit = { 
+										c:SAV = {
+											is_ai = yes
+											is_subject = no
+										}
+									}
+									annex_with_incorporation = c:SAV
+								}
+								if = {
+									limit = { 
+										c:PRI = {
+											is_ai = yes
+											is_subject = no
+										}
+									}
+									annex_with_incorporation = c:PRI
+								}
+								s:STATE_ALSACE_LORRAINE = {
+								add_claim = c:BUD
+							}
+							s:STATE_PIEDMONT= {
+								add_claim = c:BUD
+							}
+							s:STATE_LOMBARDY  = {
+								add_claim = c:BUD
+							}
+							s:STATE_EAST_SWITZERLAND = {
+								add_claim = c:BUD
+							}
+							s:STATE_EMILIA = {
+								add_claim = c:BUD
+							}
+							s:STATE_ROMAGNA = {
+								add_claim = c:BUD
+							}
+							s:STATE_TUSCANY= {
+								add_claim = c:BUD
+							}
+							s:STATE_UMBRIA = {
+								add_claim = c:BUD
+							}
+							s:STATE_LAZIO = {
+								add_claim = c:BUD
+							}
+							s:STATE_SOUTH_TYROL = {
+								add_claim = c:BUD
+							}
+							s:STATE_VENETIA = {
+								add_claim = c:BUD
+							}
+							s:STATE_ISTRIA = {
+								add_claim = c:BUD
+							}
+							}
+						}
+					}
+					ai_chance = {
+			base = 30
+		}
+	}
+}

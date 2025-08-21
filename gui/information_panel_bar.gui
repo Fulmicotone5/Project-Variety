@@ -451,7 +451,7 @@ types information_panel_bar_types {
 					position = { -100 @diplomatic_position }
 					blockoverride "onclick" {
 						using = ve_clear_tab_bar
-						onclick = "[InformationPanelBar.OpenPanelCycleTabs('diplomatic_overview', 'default|subjects|release_subject|country_browser')]"
+						onclick = "[InformationPanelBar.OpenPanelCycleTabs('diplomatic_overview', 'default|subjects|release_subject|nation_formation|country_browser')]"
 						input_action = "open_diplomatic"
 					}
 				}
@@ -477,7 +477,7 @@ types information_panel_bar_types {
 							visible = "[InformationPanelBar.IsPanelOpen('diplomatic_overview')]"
 						}
 						using = ve_clear_tab_bar
-						onclick = "[InformationPanelBar.OpenPanelCycleTabs('diplomatic_overview', 'default|subjects|release_subject|country_browser')]"
+						onclick = "[InformationPanelBar.OpenPanelCycleTabs('diplomatic_overview', 'default|subjects|release_subject|nation_formation|country_browser')]"
 					}
 				}
 				sidebar_tooltip_area_small = {

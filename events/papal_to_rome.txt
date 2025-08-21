@@ -841,13 +841,6 @@ papal_to_rome.12 = {#punic won
 		add_modifier = {
 			name = modifier_rome_eleven
 		}
-		hidden_effect = {
-			add_modifier = {
-				name = modifier_rome_thirteen
-				months = 120
-				is_decaying = yes
-			}
-		}
 	}
 }
 

@@ -265,7 +265,6 @@ fadm1 = {
 	building_group_bg_service_throughput_add = 0.2
 	country_consumption_tax_cost_mult = -0.25
 	state_bureaucracy_population_base_cost_factor_mult = -0.15
-	state_tax_capacity_mult = 0.15
 }
 
 fadm2 = {

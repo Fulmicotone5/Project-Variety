@@ -318,6 +318,7 @@
  pmg_mining_equipment_building_lead_mine: "Mining Equipment"
  pmg_mining_equipment_building_sulfur_mine: "Mining Equipment"
  pmg_mining_equipment_building_gold_mine: "Mining Equipment"
+ pmg_mining_equipment_building_copper_mine: "Mining Equipment"
 
  pm_no_mining_equipment: "No Equipment"
 
@@ -326,12 +327,14 @@
  pm_picks_and_shovels_building_lead_mine: "Picks and Shovels"
  pm_picks_and_shovels_building_sulfur_mine: "Picks and Shovels"
  pm_picks_and_shovels_building_gold_mine: "Picks and Shovels"
+ pm_picks_and_shovels_building_copper_mine: "Picks and Shovels"
 
  pm_atmospheric_engine_pump_building_coal_mine: "Atmospheric Engine Pump"
  pm_atmospheric_engine_pump_building_iron_mine: "Atmospheric Engine Pump"
  pm_atmospheric_engine_pump_building_lead_mine: "Atmospheric Engine Pump"
  pm_atmospheric_engine_pump_building_sulfur_mine: "Atmospheric Engine Pump"
  pm_atmospheric_engine_pump_building_gold_mine: "Atmospheric Engine Pump"
+ pm_atmospheric_engine_pump_building_copper_mine: "Atmospheric Engine Pump"
 
  pm_steam_donkey_mine: "Steam Donkey"
  pm_steam_donkey_building_logging_camp: "Steam Donkey"
@@ -343,6 +346,7 @@
  pmg_explosives_building_lead_mine: "Explosives"
  pmg_explosives_building_sulfur_mine: "Explosives"
  pmg_explosives_building_gold_mine: "Explosives"
+ pmg_explosives_building_copper_mine: "Explosives"
 
  pm_no_explosives: "Manual Drilling"
 
@@ -351,12 +355,14 @@
  pm_nitroglycerin_building_lead_mine: "Nitroglycerin"
  pm_nitroglycerin_building_sulfur_mine: "Nitroglycerin"
  pm_nitroglycerin_building_gold_mine: "Nitroglycerin"
+ pm_nitroglycerin_building_copper_mine: "Nitroglycerin"
 
  pm_dynamite_building_coal_mine: "Dynamite"
  pm_dynamite_building_iron_mine: "Dynamite"
  pm_dynamite_building_lead_mine: "Dynamite"
  pm_dynamite_building_sulfur_mine: "Dynamite"
  pm_dynamite_building_gold_mine: "Dynamite"
+ pm_dynamite_building_copper_mine: "Dynamite"
 
  pm_no_steam_automation: "Hand Cranked Crane"
  pm_steam_rail_transport: "Rail Transportation"
@@ -366,12 +372,14 @@
  pm_condensing_engine_pump_building_lead_mine: "Condensing Engine Pump"
  pm_condensing_engine_pump_building_sulfur_mine: "Condensing Engine Pump"
  pm_condensing_engine_pump_building_gold_mine: "Condensing Engine Pump"
+ pm_condensing_engine_pump_building_copper_mine: "Condensing Engine Pump"
 
  pm_diesel_pump_building_coal_mine: "Diesel Pump"
  pm_diesel_pump_building_iron_mine: "Diesel Pump"
  pm_diesel_pump_building_lead_mine: "Diesel Pump"
  pm_diesel_pump_building_sulfur_mine: "Diesel Pump"
  pm_diesel_pump_building_gold_mine: "Diesel Pump"
+ pm_diesel_pump_building_copper_mine: "Diesel Pump"
 
   # Government Administration
  pm_simple_organization: "Simple Organization"
@@ -503,6 +511,7 @@
  pmg_steam_automation_building_lead_mine: "$pmg_steam_automation$"
  pmg_steam_automation_building_sulfur_mine: "$pmg_steam_automation$"
  pmg_steam_automation_building_gold_mine: "$pmg_steam_automation$"
+ pmg_steam_automation_building_copper_mine: "$pmg_steam_automation$"
 
  pmg_train_automation: "Train Automation"
  pmg_train_automation_building_coal_mine: "$pmg_train_automation$"
@@ -510,6 +519,7 @@
  pmg_train_automation_building_lead_mine: "$pmg_train_automation$"
  pmg_train_automation_building_sulfur_mine: "$pmg_train_automation$"
  pmg_train_automation_building_gold_mine: "$pmg_train_automation$"
+ pmg_train_automation_building_copper_mine: "$pmg_train_automation$"
  pmg_train_automation_building_coffee_plantation: "$pmg_train_automation$"
  pmg_train_automation_building_cotton_plantation: "$pmg_train_automation$"
  pmg_train_automation_building_dye_plantation: "$pmg_train_automation$"

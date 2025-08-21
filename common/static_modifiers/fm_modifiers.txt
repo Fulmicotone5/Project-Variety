@@ -1540,11 +1540,11 @@ modifier_bplague13 = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_negative.dds
 	state_turmoil_effects_mult = 0.25
 	state_construction_mult = -0.5
-	building_group_bg_manufacturing_throughput_add = -0.5
-	building_group_bg_agriculture_throughput_add = -0.5
-	building_group_bg_plantations_throughput_add = -0.5
-	building_group_bg_extraction_throughput_add = -0.5
-	building_group_bg_ranching_throughput_add = -0.5
+	building_group_bg_manufacturing_throughput_add = -0.25
+	building_group_bg_agriculture_throughput_add = -0.25
+	building_group_bg_plantations_throughput_add = -0.25
+	building_group_bg_extraction_throughput_add = -0.25
+	building_group_bg_ranching_throughput_add = -0.25
 	state_market_access_price_impact = -0.1
 }
 modifier_bplague14 = {

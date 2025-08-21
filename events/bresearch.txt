@@ -35,6 +35,9 @@ bresearch.1 = {
 				level = 1
 			}
         }
+		custom_tooltip = {
+			text = bresearchtext
+		}
 		hidden_effect = {
 			remove_variable = bresearchvar
 		}

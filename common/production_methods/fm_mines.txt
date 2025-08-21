@@ -198,3 +198,25 @@ pm_flotation_lead = {
 		}
 	}
 }
+pm_flotation_copper = {
+    texture = "gfx/interface/icons/production_method_icons/philosophy_dept.dds"
+    unlocking_technologies = {differential_flotation_process}
+
+    building_modifiers = {
+        workforce_scaled = {
+			goods_input_tools_add = 5
+			goods_input_oil_add = 1
+			goods_output_copper_add = 35
+        }
+        level_scaled = {
+			building_employment_laborers_add = -1000
+			building_employment_engineers_add = 100
+        }
+    }
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 15
+		}
+	}
+}

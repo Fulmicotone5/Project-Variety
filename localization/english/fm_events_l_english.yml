@@ -1145,6 +1145,8 @@
  concept_taikun_desc: "The literal meaning of this word is "Great Lord/Prince" or "Supreme Commander, it's a hereditaty title that is given to the head of the Oda family as they are not eligible for the title of #D Shogun#!"
  concept_daimyo: "Daimyō"
  concept_daimyo_desc: "The term Daimyō can either refer to the powerful [GetCulture('japanese').GetName] magnates and feudal lords who rule most of Japan, or to their Domains."
+ concept_research_center: "Research Center"
+ concept_research_center_desc: "A Research Center is a building that allows the player to unlock Unique Technologies to boost the production of certain [Concept('concept_good', '$concept_goods$')]; to select which good you'd like to specialize in, you can change the [concept_production_method] of the [concept_research_center]"
  concept_toki: "Toki"
  concept_toki_desc: "Before the adoption of Western style timekeeping practices, Japan used to use the temporal hour system, in which the day was divided into 12 segments, each of them called "Ittoki", one toki."
  concept_empjimmu: "Emperor Jimmu"
@@ -1513,6 +1515,7 @@
   bresearch.1.d: "The newly established research center has been officially inaugurated, marking a significant milestone in our commitment to advancing scientific inquiry and innovation."
   bresearch.1.f: "This center aims to foster groundbreaking research that will contribute to economic growth and enhance our competitive edge in various industries."
   bresearch.1.a: "Let's get to work!"
+  bresearchtext: "A Research Center is a building that allows the player to unlock Unique Technologies to boost the production of certain [Concept('concept_good', '$concept_goods$')]; to select which good you'd like to specialize in, you can change the [concept_production_method] of the [concept_research_center]"
 
  #currency_transfer
  transfer_currency: "Transfer Currency"

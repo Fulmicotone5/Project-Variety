@@ -1857,7 +1857,7 @@
  concept_risk_desc: "特定[concept_terrain]类型的风险会影响[concept_battle]导致的[concept_casualties]和[concept_wounded]数量。"
  concept_terrain_labels: "地形标签"
  concept_terrain_labels_desc: "[concept_terrain]标签是对多种$concept_terrain$类型的归类。[Concept('concept_character_trait','$concept_character_traits$')]可拥有[Concept('concept_modifier','$concept_modifiers$')]，影响具有特定地形标签的所有$concept_terrain$类型。"
- cannot_choose_doctrine_bool: "Locks out certain doctrines"
+ cannot_choose_doctrine_bool: "The Doctrine "Strenght in Numbers" will be disabled"
  cannot_choose_doctrine_bool_desc: "The Doctrine \"Strenght in Numbers\" will be disabled; If already selected, it will lock you out from advancing in the tree."
  concept_georegion: "地理区域"
  concept_georegions: "地理区域"

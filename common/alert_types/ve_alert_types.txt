@@ -19,6 +19,20 @@ boost_policy = {
 	type = alert
 	color = green
 }
+can_build_research = {
+	script_context = player_country
+	texture = "gfx/interface/icons/invention_icons/academia.dds"
+	valid = {
+		NOT = {
+			any_scope_building = {
+				is_building_type = building_research_center
+			}
+		}
+	}
+	open_panel = journal
+	type = alert
+	color = green
+}
 max_culture_reform_point = {
 	script_context = player_country
 	texture = "gfx/interface/monarch_cultures_icon.dds"

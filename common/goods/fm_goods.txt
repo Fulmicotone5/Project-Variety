@@ -1,12 +1,10 @@
-olive = {
-	texture = "gfx/interface/icons/goods_icons/olive.dds"
-	cost = 45
-	category = luxury
-	
-	obsession_chance = 0.6
-	prestige_factor = 10
-	traded_quantity = 4 # 240
-	convoy_cost_multiplier = 0.75
+copper = {
+	texture = "gfx/interface/icons/goods_icons/copperfm.dds"
+	cost = 40
+	category = industrial
+
+	prestige_factor = 3
+	traded_quantity = 5 # 200
 }
 spice = {
 	texture = "gfx/interface/icons/goods_icons/spices.dds"

@@ -46,7 +46,7 @@ fm_pop_consolidation.1 = {
 						limit = {
 							has_state_religion = no
 						}
-						change_pop_religion = { target = root.religion value = 1 }
+						change_pop_religion = { target = root.religion value = 0.01 }
 					}
 					every_scope_pop = {
 					if = {

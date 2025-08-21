@@ -2136,7 +2136,7 @@ pm_military_shipbuilding_steam_2 = {
 
 	required_input_goods = electricity
 }			
-obile_production = {
+pm_automobile_production = {
 	texture = "gfx/interface/icons/production_method_icons/automobiles.dds"
 	state_modifiers = {
 		workforce_scaled = {
@@ -2156,7 +2156,7 @@ obile_production = {
 			goods_input_oil_add = 2
 
 			# output goods
-			goods_output_automobiles_add = 15
+			goods_output_automobiles_add = 12
 		}
 
 		level_scaled = {
@@ -2188,7 +2188,7 @@ pm_mass_automobile_production = {
 			goods_input_oil_add = 5
 
 			# output goods
-			goods_output_automobiles_add = 30
+			goods_output_automobiles_add = 25
 		}
 
 		level_scaled = {

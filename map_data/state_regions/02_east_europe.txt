@@ -31,6 +31,7 @@ STATE_SILESIA = {
         bg_lead_mining = 54
         bg_sulfur_mining = 40
         bg_logging = 14
+        bg_copper_mining = 10
     }
 }
 
@@ -139,6 +140,7 @@ STATE_WEST_GALICIA = {
         bg_coal_mining = 140
         bg_iron_mining = 33
         bg_logging = 17
+        bg_copper_mining = 20
     }
     resource = {
         type = "bg_oil_extraction"
@@ -250,6 +252,7 @@ STATE_BANAT = {
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_vineyard_plantations" }
     capped_resources = {
         bg_logging = 9
+         bg_copper_mining = 7
     }
 }
 
@@ -268,6 +271,7 @@ STATE_WEST_SLOVAKIA = {
         bg_coal_mining = 44
         bg_iron_mining = 63
         bg_logging = 8
+        bg_copper_mining = 5
     }
 }
 
@@ -285,6 +289,7 @@ STATE_EAST_SLOVAKIA = {
         bg_coal_mining = 92
         bg_lead_mining = 33
         bg_logging = 15
+        bg_copper_mining = 20
     }
 }
 
@@ -302,6 +307,7 @@ STATE_SOUTHERN_TRANSYLVANIA = {
         bg_iron_mining = 45
         bg_lead_mining = 45
         bg_logging = 17
+        bg_copper_mining = 27
     }
 }
 
@@ -319,6 +325,7 @@ STATE_NORTHERN_TRANSYLVANIA = {
         bg_coal_mining = 48
         bg_iron_mining = 63
         bg_logging = 13
+        bg_copper_mining = 12
     }
 }
 
@@ -335,6 +342,7 @@ STATE_MOLDAVIA = {
     capped_resources = {
         bg_iron_mining = 30
         bg_logging = 14
+        bg_copper_mining = 7
     }
     resource = {
         type = "bg_oil_extraction"
@@ -358,6 +366,7 @@ STATE_WALLACHIA = {
         bg_iron_mining = 21
         bg_sulfur_mining = 15
         bg_logging = 8
+        bg_copper_mining = 25
     }
     resource = {
         type = "bg_oil_extraction"

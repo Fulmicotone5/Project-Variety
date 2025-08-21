@@ -1,32 +1,3 @@
-building_olive_plantation = {
-	building_group = bg_olive_plantations
-	icon = "gfx/interface/icons/building_icons/olives.dds"
-	required_construction = construction_cost_low
-
-	unlocking_technologies = {
-		enclosure
-	}
-
-	
-	production_method_groups = {
-		pmg_base_building_olive_plantation
-		pmg_train_automation_building_olive_plantation
-	}
-	can_build_government = {
-		owner = {
-			NOT = {
-				OR = {
-					has_law = law_type:law_laissez_faire
-					has_law = law_type:law_state_capitalism
-				}
-			}
-
-		}
-	}
-	ownership_type = self
-
-	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_plantations.dds"
-}
 building_spice_plantation = {
 	building_group = bg_spice_plantations
 	icon = "gfx/interface/icons/building_icons/c_spice.dds"

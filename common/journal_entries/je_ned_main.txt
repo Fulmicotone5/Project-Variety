@@ -3,7 +3,7 @@
 	group = je_group_historical_content
 	scripted_button = je_ned_butt
 	scripted_button = je_ned_butt_two
-	timeout = 1500
+	timeout = 1000
 	complete = {
 		gold_reserves > 0
 	}
@@ -54,172 +54,14 @@
 		}
 		}
 		hidden_effect = {
-			random_list = {
-				40 = {
-					if = {
-						limit = {
-							is_ai = yes
-							OR = {
-								c:BUD = {
-								is_ai = yes
-								is_subject = no
-								}
-								c:KBG = {
-								is_ai = yes
-								is_subject = no
-								}
-							}
-							c:FLA = {
-							is_ai = yes
-							is_subject = no
-							}
-							c:VOC = {
-							is_ai = yes
-							}
-						}
-						if = {
-							limit = { 
-								exists = c:BUD
-							}
-							c:BUD = {
-							annex_with_incorporation = c:NED
-							annex_with_incorporation = c:FLA
-							}
-						}
-						if = {
-							limit = { 
-								exists = c:KBG
-							}
-						c:KBG = {
-							annex_with_incorporation = c:NED
-							annex_with_incorporation = c:FLA
-							}
-						}
-					}
+			if = {
+				limit = { 
+					is_ai = yes
 				}
-				30 = {
-					if = {
-						limit = {
-							is_ai = yes
-							OR = {
-								c:BUD = {
-								is_ai = yes
-								is_subject = no
-								}
-								c:KBG = {
-								is_ai = yes
-								is_subject = no
-								}
-							}
-							c:FLA = {
-							is_ai = yes
-							is_subject = no
-							}
-						}
-						if = {
-							limit = { 
-								exists = c:BUD
-							}
-							annex_with_incorporation = c:BUD
-						}
-						if = {
-							limit = { 
-								exists = c:KBG
-							}
-							annex_with_incorporation = c:KBG
-						}
-						annex_with_incorporation = c:FLA
-					}
+				trigger_event = {
+					id = fm_ned.999
 				}
-				30 = {
-					if = {
-						limit = {
-							is_ai = yes
-							OR = {
-								c:BUD = {
-								is_ai = yes
-								}
-								c:KBG = {
-								is_ai = yes
-								}
-							}
-							c:FLA = {
-							is_ai = yes
-							is_subject = no
-							}
-							c:VOC = {
-							is_ai = yes
-							}
-							c:FRU = {
-							is_ai = yes
-							}
-						}
-						c:FLA = {
-							annex_with_incorporation = c:NED
-							annex_with_incorporation = c:FRU
-							change_tag = FL1
-							unification_claims_effect = yes
-							s:STATE_NORMANDY = {
-								add_claim = c:FL1
-							}
-							s:STATE_BRITTANY = {
-								add_claim = c:FL1
-							}
-							}
-						if = {
-							limit = { 
-								c:KAA = {
-									is_ai = yes
-									is_subject = no
-								}
-							}
-							c:KAA = {
-							annex_with_incorporation = c:DCQ
-							annex_with_incorporation = c:TOU
-							annex_with_incorporation = c:BOU
-							change_tag = NOC
-							add_primary_culture = cu:occitan
-							unification_claims_effect = yes
-							if = {
-									limit = { 
-										exists = c:NAV
-										c:NAV = {
-										is_ai = yes
-										is_subject = no
-										}
-									}
-									annex_with_incorporation = c:NAV
-								}
-							}
-						}
-						if = {
-							limit = { 
-								exists = c:BUD
-							}
-							c:BUD = {
-								if = {
-									limit = { 
-										c:SAV = {
-											is_ai = yes
-											is_subject = no
-										}
-									}
-									annex_with_incorporation = c:SAV
-								}
-								if = {
-									limit = { 
-										c:PRI = {
-											is_ai = yes
-											is_subject = no
-										}
-									}
-									annex_with_incorporation = c:PRI
-								}
-							}
-						}
-					}
-				}
-			}	
+			}
 		}	
 	}
 

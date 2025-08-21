@@ -131,7 +131,7 @@ je_spanish_flu2 = {
 			popup = yes
 		}
 		hidden_effect = {
-			if = {
+		if = {
 			limit = {
 				any_state = {
 					owner = ROOT
@@ -145,7 +145,7 @@ je_spanish_flu2 = {
 				remove_modifier = modifier_bplague1
 			}
 		}
-		else_if = {
+		if = {
 			limit = {
 				any_state = {
 					owner = ROOT
@@ -159,7 +159,7 @@ je_spanish_flu2 = {
 				remove_modifier = modifier_bplague2
 			}
 		}
-		else_if = {
+		if = {
 			limit = {
 				any_state = {
 					owner = ROOT
@@ -173,7 +173,7 @@ je_spanish_flu2 = {
 				remove_modifier = modifier_bplague3
 			}
 		}
-		else_if = {
+		if = {
 			limit = {
 				any_state = {
 					owner = ROOT
@@ -187,7 +187,7 @@ je_spanish_flu2 = {
 				remove_modifier = modifier_bplague4
 			}
 		}
-		else_if = {
+		if = {
 			limit = {
 				any_state = {
 					owner = ROOT
@@ -201,7 +201,7 @@ je_spanish_flu2 = {
 				remove_modifier = modifier_bplague5
 			}
 		}
-		else_if = {
+		if = {
 			limit = {
 				any_state = {
 					owner = ROOT
@@ -215,7 +215,7 @@ je_spanish_flu2 = {
 				remove_modifier = modifier_bplague6
 			}
 		}
-		else_if = {
+		if = {
 			limit = {
 				any_state = {
 					owner = ROOT
@@ -229,7 +229,7 @@ je_spanish_flu2 = {
 				remove_modifier = modifier_bplague7
 			}
 		}
-		else_if = {
+		if = {
 			limit = {
 				any_state = {
 					owner = ROOT

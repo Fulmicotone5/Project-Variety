@@ -1,7 +1,7 @@
 texticon = {
-	icon = olive
+	icon = copper
 	iconsize = {
-		texture = "gfx/interface/icons/goods_icons/olive.dds"
+		texture = "gfx/interface/icons/goods_icons/copperfm.dds"
 		size = { 30 30 }
 		offset = { 0 11 }
 		fontsize = 18
@@ -218,6 +218,15 @@ texticon = {
 	icon = prestige_good_kalevcho
 	iconsize = {
 		texture = "gfx/interface/icons/goods_icons/prestige_goods/kalevcho.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+texticon = {
+	icon = prestige_good_olive
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/prestige_goods/olive.dds"
 		size = { 25 25 }
 		offset = { 0 7 }
 		fontsize = 18

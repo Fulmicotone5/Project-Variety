@@ -30,6 +30,8 @@
  alert_max_piety_hint: "Our piety are high enough to embrace an aspect."
  alert_boost_policy_name: "Can Select a Policy"
  alert_boost_policy_hint: "A new Policy can be selected in the National Focus tab (bottom left)"
+ alert_can_build_research_name: "Can Build a [concept_research_center]"
+ alert_can_build_research_hint: "You can build a [concept_research_center] in the Decision Tab"
  alert_max_culture_reform_point_name: "Can Unlock A Culture Reform"
  alert_max_culture_reform_point_hint: "Our culture reform points are high enough to embrace a culture reform."
  alert_can_unlock_age_bonus_name: "Can Unlock an Age Bonus"

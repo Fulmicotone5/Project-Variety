@@ -59,7 +59,7 @@
 				activate_production_methods={ "pm_pulp_pressing" "pm_automation_disabled"  }
 			}
 			create_building={
-				building="building_olive_plantation"
+				building="building_vineyard_plantation"
 				add_ownership={
 					building={
 						type="building_manor_house"
@@ -69,7 +69,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "default_building_olive_plantation" "pm_road_carts"  }
+				activate_production_methods={ "default_building_vineyard_plantation" "pm_road_carts"  }
 			}
 			create_building={
 				building="building_construction_sector"
@@ -402,7 +402,7 @@
 				activate_production_methods={ "pm_cannons" "pm_automation_disabled"  }
 			}
 			create_building={
-				building="building_olive_plantation"
+				building="building_vineyard_plantation"
 				add_ownership={
 					building={
 						type="building_manor_house"
@@ -412,7 +412,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "default_building_olive_plantation" "pm_road_carts"  }
+				activate_production_methods={ "default_building_vineyard_plantation" "pm_road_carts"  }
 			}
 		}
 	}
@@ -685,7 +685,7 @@
 				reserves=1
 			}
 			create_building={
-				building="building_olive_plantation"
+				building="building_vineyard_plantation"
 				add_ownership={
 					building={
 						type="building_manor_house"
@@ -695,7 +695,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "default_building_olive_plantation" "pm_road_carts"  }
+				activate_production_methods={ "default_building_vineyard_plantation" "pm_road_carts"  }
 			}
 			create_building={
 				building="building_logging_camp"
@@ -1011,7 +1011,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_pot_stills" "pm_cannery_oil" "pm_bakery" "pm_manual_dough_processing"  }
+				activate_production_methods={ "pm_pot_stills" "pm_disabled_canning" "pm_bakery" "pm_manual_dough_processing"  }
 			}
 			create_building={
 				building="building_arms_industry"
@@ -1212,7 +1212,7 @@
 				activate_production_methods={ "pm_basic_port" }
 			}
 			create_building={
-				building="building_olive_plantation"
+				building="building_vineyard_plantation"
 				add_ownership={
 					building={
 						type="building_manor_house"
@@ -1222,7 +1222,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "default_building_olive_plantation" "pm_road_carts"  }
+				activate_production_methods={ "default_building_vineyard_plantation" "pm_road_carts"  }
 			}
 		}
 		region_state:CTH = {
@@ -1271,7 +1271,7 @@
 				activate_production_methods={ "pm_picks_and_shovels_building_lead_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
 			}
 			create_building={
-				building="building_olive_plantation"
+				building="building_vineyard_plantation"
 				add_ownership={
 					building={
 						type="building_manor_house"
@@ -1281,7 +1281,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "default_building_olive_plantation" "pm_road_carts"  }
+				activate_production_methods={ "default_building_vineyard_plantation" "pm_road_carts"  }
 			}
 			create_building={
 				building="building_sugar_plantation"
@@ -1325,7 +1325,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_bakery" "pm_cannery_oil" "pm_manual_dough_processing" "pm_pot_stills" }
+				activate_production_methods={ "pm_bakery" "pm_disabled_canning" "pm_manual_dough_processing" "pm_pot_stills" }
 			}
 			create_building={
 				building="building_tooling_workshops"

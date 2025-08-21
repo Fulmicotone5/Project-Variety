@@ -782,7 +782,176 @@ pm_dynamite_building_sulfur_mine = {
 		}
 	}
 }
+pm_picks_and_shovels_building_copper_mine = {
+	texture = "gfx/interface/icons/production_method_icons/picks_and_shovels.dds"
 
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_tools_add = 2
+			
+			# output goods
+			goods_output_copper_add = 10
+		}
+
+		level_scaled = {
+			building_employment_shopkeepers_add = 250
+			building_employment_laborers_add = 1250
+		}
+	}
+}
+
+pm_atmospheric_engine_pump_building_copper_mine = {
+	texture = "gfx/interface/icons/production_method_icons/pumps.dds"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 5
+		}
+	}
+
+	unlocking_technologies = {
+		atmospheric_engine
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_tools_add = 5
+			goods_input_coal_add = 5
+			
+			# output goods
+			goods_output_copper_add = 20
+		}
+
+		level_scaled = {
+			building_employment_shopkeepers_add = 250
+			building_employment_laborers_add = 1875
+			building_employment_machinists_add = 250
+			building_employment_engineers_add = 125
+		}
+	}
+}
+
+pm_condensing_engine_pump_building_copper_mine = {
+	texture = "gfx/interface/icons/production_method_icons/condensing_engine_pump.dds"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 15
+		}
+	}
+
+	unlocking_technologies = {
+		watertube_boiler
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_tools_add = 7
+			goods_input_coal_add = 7
+			
+			# output goods
+			goods_output_copper_add = 30
+		}
+
+		level_scaled = {
+			building_employment_shopkeepers_add = 250
+			building_employment_laborers_add = 1500
+			building_employment_machinists_add = 500
+			building_employment_engineers_add = 250
+		}
+	}
+}
+
+pm_diesel_pump_building_copper_mine = {
+	texture = "gfx/interface/icons/production_method_icons/diesel_pump.dds"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 15
+		}
+	}
+
+	unlocking_technologies = {
+		compression_ignition
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_tools_add = 7
+			goods_input_oil_add = 2
+			
+			# output goods
+			goods_output_copper_add = 40
+		}
+
+		level_scaled = {
+			building_employment_shopkeepers_add = 250
+			building_employment_laborers_add = 1125
+			building_employment_machinists_add = 750
+			building_employment_engineers_add = 375
+		}
+	}
+}
+
+pm_nitroglycerin_building_copper_mine = {
+	texture = "gfx/interface/icons/production_method_icons/nitroglycerin.dds"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 5
+		}
+	}
+
+	unlocking_technologies = {
+	 	nitroglycerin
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_explosives_add = 2
+			
+			# output goods
+			goods_output_copper_add = 5
+		}
+
+		level_scaled = {
+			building_employment_engineers_add = 125
+		}
+
+		unscaled = {
+			building_laborers_mortality_mult = 0.3
+			building_machinists_mortality_mult = 0.2
+			building_engineers_mortality_mult = 0.1
+		}
+	}
+}
+
+pm_dynamite_building_copper_mine = {
+	texture = "gfx/interface/icons/production_method_icons/dynamite.dds"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 15
+		}
+	}
+
+	unlocking_technologies = {
+		dynamite
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_explosives_add = 5
+			
+			# output goods
+			goods_output_copper_add = 10
+		}
+
+		level_scaled = {
+			building_employment_engineers_add = 125
+		}
+	}
+}
 
 pm_picks_and_shovels_building_gold_mine = {
 	texture = "gfx/interface/icons/production_method_icons/picks_and_shovels.dds"

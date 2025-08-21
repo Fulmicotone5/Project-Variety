@@ -58,6 +58,7 @@ STATE_ARMENIA = {
         bg_iron_mining = 27
         bg_lead_mining = 21
         bg_logging = 2
+        bg_copper_mining = 7
     }
 }
 

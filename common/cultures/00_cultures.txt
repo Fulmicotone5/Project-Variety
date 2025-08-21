@@ -2400,7 +2400,7 @@ british={ # "English" in localization
 		Peter Paul Patrick Poulett Philip Percy
 		Richard Robert Roger Rudyard Redvers Rowland Reginald Roundell Rupert Rufus Ross
 		Stephen Simon Spencer Stanley Samuel Stafford Sewallis Sackville Sutherland
-		Theodore_2 Tristan Theobald Thomas Terence Teignmouth Timothy
+		 Tristan Theobald Thomas Terence Teignmouth Timothy
 		Victor Valentine_2
 		Winston Walter William Wilfred Watkin Wellwood Weston Wentworth Wilbraham Wyndham Weetman
 		Zachary
@@ -2828,7 +2828,7 @@ north_roman={
 	
 	obsessions = {
 		wine
-		olive
+		
 		coffee
 		tobacco
 	}	
@@ -2911,7 +2911,7 @@ south_roman={
 	
 	obsessions = {
 		wine
-		olive
+		
 		coffee
 		fine_art
 	}	
@@ -3007,7 +3007,7 @@ greco_roman ={
 	
 	obsessions = {
 		wine
-		olive
+		
 		tobacco
 		coffee
 		tea
@@ -3125,7 +3125,7 @@ north_italian = {
 	
 	obsessions = {
 		wine
-		olive
+		
 		coffee
 	}	
 	
@@ -3826,7 +3826,7 @@ moravian = {
 		
 		obsessions = {
 			wine
-			olive
+			
 			meat
 			tobacco
 			coffee
@@ -3910,7 +3910,7 @@ venetian={
 	
 	obsessions = {
 		wine
-		olive
+		
 		spice
 		coffee
 		luxury_clothes
@@ -4083,7 +4083,7 @@ maltese={
 	traits = { italophone european_heritage mediterranean }
 	obsessions = {
 		wine
-		olive
+		
 		coffee
 		tea
 	}
@@ -4286,7 +4286,7 @@ andalusian={
 	traits = { iberian_culture_group middle_eastern_heritage mediterranean }
 
 	obsessions = {
-		olive
+		
 		tobacco
 		meat
 		fruit
@@ -4473,7 +4473,7 @@ spanish={
 	traits = { iberian_culture_group hispanophone european_heritage mediterranean }
 
 	obsessions = {
-		olive
+		
 		wine
 		tobacco
 		coffee
@@ -4661,7 +4661,7 @@ catalan={
 	traits = { iberian_culture_group european_heritage mediterranean }
 
 	obsessions = {
-		olive
+		
 		wine
 		coffee
 	}
@@ -4813,7 +4813,7 @@ portuguese={
 	religion = catholic
 	traits = { iberian_culture_group lusophone european_heritage mediterranean }
 	obsessions = {
-		olive
+		
 		spice
 		wine
 		tea
@@ -5272,7 +5272,7 @@ occitan={
 	# the best wine is from Occitania, of course.
 	obsessions = {
 		wine
-		olive
+		
 		coffee
 		fruit
 
@@ -5756,7 +5756,7 @@ bulgarian={
 		tobacco
 		liquor
 		meat
-		olive
+		
 	}	
 	male_common_first_names={
 		Aleksandar
@@ -5886,7 +5886,7 @@ albanian={
 	religion = orthodox
 	traits = { albanian_language european_heritage mediterranean }
 	obsessions = {
-		olive
+		
 		tobacco
 		liquor
 		meat
@@ -6325,7 +6325,7 @@ romanian={
 	obsessions = {
 		tobacco
 		liquor
-		olive
+		
 		wine
 	}	
 	male_common_first_names={
@@ -7838,7 +7838,7 @@ greek={
 	
 	obsessions = {
 		wine
-		olive
+		
 		meat
 		fruit
 	}	
@@ -8264,7 +8264,7 @@ turkish={
 	obsessions = {
 		coffee
 		tea
-		olive
+		
 	}
 	male_common_first_names={
 		Abdulhamid
@@ -8525,7 +8525,7 @@ maghrebi={
 		coffee
 		fruit
 		tea
-		olive
+		
 	}
 	male_common_first_names={
 		Abd_Allah
@@ -8748,7 +8748,7 @@ misri={
 	obsessions = {
 		coffee
 		fruit
-		tea olive
+		tea 
 	}
 	traits = { arab_speaking middle_eastern_heritage mediterranean }
 	male_common_first_names={
@@ -9003,7 +9003,7 @@ berber={ # Amazigh
 		coffee
 		fruit
 		tea
-		olive
+		
 	}
 	male_common_first_names={
 		Abd_al-Karim
@@ -9054,7 +9054,7 @@ phoenician={
 	religion = baal
 	traits = { carthagenian middle_eastern_heritage european_heritage mediterranean }
 	obsessions = {
-		olive
+		
 		spice
 		fruit
 		tobacco
@@ -15254,7 +15254,7 @@ cariban={ # Hispanicized. Also includes some Garifuna and Warao names.
 	traits = { indigenous_american_heritage south_american_group }
 	obsessions = {
 		fruit
-		olive
+		
 		tobacco
 		coffee
 	}
@@ -15326,7 +15326,7 @@ yankee={
 		Quentin Quincy
 		Rutherford Richard Robert Rufus Roger
 		Stephen Silas Samuel Seth Simon Sidney Sylvester Shubael
-		Thomas Theodore_2 Thaddeus
+		Thomas  Thaddeus
 		Ulysses Upton
 		Victor Valentine_2
 		William Walter Winfield Wesley Wilbur Wendell
@@ -15782,7 +15782,7 @@ central_american={
 		Philip Patrick Peter
 		Roderick Ralph Robert Ruaridh
 		Struan Samuel
-		Thomas Theodore_2 Torquil
+		Thomas  Torquil
 		Windham William
 	}
 	female_common_first_names = {
@@ -15885,7 +15885,7 @@ caribeno={
 	traits = { hispanophone european_heritage }
 	obsessions = {
 		meat
-		olive
+		
 		coffee
 		tobacco
 	}
@@ -16028,7 +16028,7 @@ north_andean={
 	traits = { hispanophone american_settler european_heritage }
 	obsessions = {
 		meat
-		olive
+		
 		coffee
 		tobacco
 	}
@@ -16171,7 +16171,7 @@ south_andean={
 	traits = { hispanophone european_heritage }
 	obsessions = {
 		meat
-		olive
+		
 		coffee
 		tobacco
 	}
@@ -16245,7 +16245,7 @@ peruvian = {
 	traits = { hispanophone european_heritage }
 	obsessions = {
 		meat
-		olive
+		
 		coffee
 		tobacco
 	}
@@ -16325,7 +16325,7 @@ bolivian = {
 	traits = { hispanophone european_heritage }
 	obsessions = {
 		meat
-		olive
+		
 		coffee
 		tobacco
 	}
@@ -16400,7 +16400,7 @@ ecuadorian = {
 	traits = { hispanophone european_heritage }
 	obsessions = {
 		meat
-		olive
+		
 		coffee
 		tobacco
 	}
@@ -16474,7 +16474,7 @@ chilean = {
 	traits = { hispanophone european_heritage }
 	obsessions = {
 		meat
-		olive
+		
 		coffee
 		tobacco
 	}
@@ -16553,7 +16553,7 @@ venezuelan={
 	traits = { hispanophone european_heritage }
 	obsessions = {
 		meat
-		olive
+		
 		coffee
 		tobacco
 	}
@@ -16632,7 +16632,7 @@ argentine={
 	traits = { hispanophone european_heritage }
 	obsessions = {
 		meat
-		olive
+		
 		coffee
 		tobacco
 	}
@@ -16705,7 +16705,7 @@ uruguayan={
 	traits = { hispanophone european_heritage }
 	obsessions = {
 		meat
-		olive
+		
 		coffee
 		tobacco
 	}
@@ -16773,7 +16773,7 @@ paraguayan={
 	traits = { hispanophone european_heritage }
 	obsessions = {
 		meat
-		olive
+		
 		coffee
 		tobacco
 	}
@@ -16846,7 +16846,7 @@ colombian={
 	traits = { hispanophone european_heritage }
 	obsessions = {
 		meat
-		olive
+		
 		coffee
 		tobacco
 	}
@@ -16920,7 +16920,7 @@ platinean={
 	traits = { hispanophone american_settler european_heritage }
 	obsessions = {
 		meat
-		olive
+		
 		coffee
 		tobacco
 	}
@@ -17014,7 +17014,7 @@ americano={
 	
 	obsessions = {
 		wine
-		olive
+		
 		coffee
 		tobacco
 	}
@@ -17097,7 +17097,7 @@ argentino={
 	
 	obsessions = {
 		wine
-		olive
+		
 		coffee
 		tobacco
 	}
@@ -17178,7 +17178,7 @@ brazilian={
 	religion = catholic
 	traits = { lusophone american_settler european_heritage }
 	obsessions = {
-		olive
+		
 		coffee
 		tobacco
 		spice
@@ -17382,7 +17382,7 @@ nordestino = {
 	traits = { lusophone european_heritage }
 	obsessions = {
 		meat
-		olive
+		
 		coffee
 		tobacco
 	}
@@ -17504,7 +17504,7 @@ paulista = {
 	traits = { lusophone european_heritage }
 	obsessions = {
 		meat
-		olive
+		
 		spice
 		tobacco
 	}
@@ -23250,7 +23250,7 @@ corsican = {
 	obsessions = {
 		wine
 		fruit
-		olive
+		
 		meat
 	}
 	male_common_first_names={

@@ -813,6 +813,7 @@ has_farm_building = {
 
 is_production_building = {
 	or = {
+		is_building_type = building_copper_mine
 		is_building_type = building_coal_mine
 		is_building_type = building_iron_mine
 		is_building_type = building_lead_mine
@@ -929,6 +930,7 @@ is_distillery = {
 
 is_raw_industries_building = {
 	or = {
+		is_building_type = building_copper_mine
 		is_building_type = building_coal_mine
 		is_building_type = building_iron_mine
 		is_building_type = building_lead_mine
@@ -950,7 +952,6 @@ is_plantation_building = {
 		is_building_type = building_banana_plantation
 		is_building_type = building_silk_plantation
 		is_building_type = building_vineyard_plantation
-		is_building_type = building_olive_plantation
 		is_building_type = building_spice_plantation
 	}
 }

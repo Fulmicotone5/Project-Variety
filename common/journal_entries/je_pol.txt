@@ -10,9 +10,14 @@
 		c:PUL ?= THIS
 	}
 	immediate = {
-		trigger_event = {
+		if = {
+			limit = {
+				is_ai = yes
+			}
+			trigger_event = {
 			id = fm_pol.999
 			days = 300
+		}
 		}
 	}
 	timeout = 1000

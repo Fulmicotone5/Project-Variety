@@ -114,3 +114,8 @@ prestige_good_kalevcho = {
 	prestige_bonus = 0.1
 	texture = "gfx/interface/icons/goods_icons/prestige_goods/kalevcho.dds"
 }
+prestige_good_olive = {
+	base_good = wine
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/olive.dds"
+}

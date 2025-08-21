@@ -168,7 +168,6 @@ fm_corpogen.1 = {
 			NOT = {
 				has_law = law_type:law_private_health_insurance
 			}
-			has_technology_researched = pharmaceuticals
 		}
 		
 		add_journal_entry = {
@@ -208,7 +207,6 @@ fm_corpogen.1 = {
 			NOT = {
 				has_law = law_type:law_free_trade
 			}
-			has_technology_researched = international_trade
 		}
 		
 		add_journal_entry = {
