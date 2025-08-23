@@ -259,8 +259,8 @@ has_je_subjugation_reason = {
 				has_journal_entry = je_rum_main
 				has_journal_entry = je_rum_kor
 			}
-			exists = c:EGE
-			$TARGET$ = c:EGE
+			exists = c:M01
+			$TARGET$ = c:M01
 		}
 		AND = { # Open up Japan
 			has_strategy = ai_strategy_economic_imperialism

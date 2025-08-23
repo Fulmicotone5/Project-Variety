@@ -38,7 +38,7 @@
 		add_declared_interest = region_manchuria
 		add_declared_interest = region_rhine
 	}
-	c:EGE ?= {
+	c:M01 ?= {
 		add_declared_interest = region_north_africa
 		add_declared_interest = region_niger
 		add_declared_interest = region_zanj

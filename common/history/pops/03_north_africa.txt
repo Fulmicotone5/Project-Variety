@@ -1,6 +1,6 @@
 ﻿POPS = {
 	s:STATE_LOWER_EGYPT = {
-		region_state:EGE = {
+		region_state:M01 = {
 			create_pop = {
 				culture = misri
 				size = 2318347
@@ -61,10 +61,10 @@
 		}
 	}
 	s:STATE_UPPER_EGYPT = {
-		region_state:EGE = {
+		region_state:M01 = {
 			create_pop = {
 				culture = misri
-				size = 320008
+				size = 282008
 			}
 			create_pop = {
 				culture = bedouin
@@ -73,17 +73,12 @@
 			create_pop = {
 				culture = misri
 				religion = oriental_orthodox
-				size = 37215
+				size = 97215
 			}
 			create_pop = {
-				culture = turkish
-				pop_type = aristocrats
+				culture = sudanese
+				pop_type = oriental_orthodox
 				size = 1001
-			}
-			create_pop = {
-				culture = turkish
-				pop_type = bureaucrats
-				size = 402
 			}
 			create_pop = {
 				culture = sudanese
@@ -97,7 +92,7 @@
 		}
 	}
 	s:STATE_MIDDLE_EGYPT = {
-		region_state:EGE = {
+		region_state:M01 = {
 			create_pop = {
 				culture = misri
 				size = 942937
@@ -141,20 +136,30 @@
 		region_state:SUD = {
 			create_pop = {
 				culture = bedouin
-				size = 10948
+				size = 5032
+			}
+			create_pop = {
+				culture = sudanese
+				religion = oriental_orthodox
+				size = 5166
 			}
 			create_pop = {
 				culture = misri
 				religion = oriental_orthodox
-				size = 2184
+				size = 4184
 			}
 			create_pop = {
 				culture = misri
-				size = 13206
+				size = 11206
 			}
 			create_pop = {
 				culture = sudanese
-				size = 8123
+				size = 6123
+			}
+			create_pop = {
+				culture = sudanese
+				religion = oriental_orthodox
+				size = 2123
 			}
 			create_pop = {
 				pop_type = slaves
@@ -164,7 +169,7 @@
 		}
 	}
 	s:STATE_MATRUH = {
-		region_state:EGE = {
+		region_state:M01 = {
 			create_pop = {
 				culture = misri
 				size = 818347
@@ -214,7 +219,7 @@
 		}
 	}
 	s:STATE_SINAI = {
-		region_state:EGE = {
+		region_state:M01 = {
 			create_pop = {
 				culture = misri
 				size = 28012
@@ -288,20 +293,36 @@
 		region_state:SUD = {
 			create_pop = {
 				culture = bedouin
-				size = 156000
+				size = 106000
 			}
 			create_pop = {
 				culture = sudanese
-				size = 40004
+				religion = oriental_orthodox
+				size = 51660
+			}
+			create_pop = {
+				culture = sudanese
+				size = 30004
+			}
+			create_pop = {
+				culture = sudanese
+				religion = oriental_orthodox
+				size = 10004
 			}
 			create_pop = {
 				culture = beja
-				size = 82000
+				size = 42000
+			}
+			create_pop = {
+				culture = beja
+				religion = oriental_orthodox
+				size = 39012
 			}
 			# 20-30% of Northern Sudan's population may have been enslaved in the early 19th century
 			create_pop = {
 				pop_type = slaves
 				culture = sudanese
+				religion = oriental_orthodox
 				size = 46000
 			}
 			create_pop = {
@@ -315,7 +336,12 @@
 		region_state:SUD = {
 			create_pop = {
 				culture = sudanese
-				size = 324396
+				size = 274396
+			}
+			create_pop = {
+				culture = sudanese
+				religion = oriental_orthodox
+				size = 51660
 			}
 			create_pop = {
 				culture = east_africanus
@@ -354,7 +380,12 @@
 		region_state:SUD = {
 			create_pop = {
 				culture = sudanese
-				size = 307600
+				size = 127600
+			}
+			create_pop = {
+				culture = sudanese
+				religion = oriental_orthodox
+				size = 181660
 			}
 			create_pop = {
 				culture = misri
@@ -362,11 +393,21 @@
 			}
 			create_pop = {
 				culture = east_africanus
-				size = 544100
+				size = 244100
+			}
+			create_pop = {
+				culture = east_africanus
+				religion = oriental_orthodox
+				size = 301660
 			}
 			create_pop = {
 				culture = bedouin
-				size = 64004
+				size = 24004
+			}
+			create_pop = {
+				culture = bedouin
+				religion = oriental_orthodox
+				size = 41660
 			}
 			create_pop = {
 				culture = beja
@@ -374,6 +415,7 @@
 			}
 			create_pop = {
 				pop_type = slaves
+				religion = oriental_orthodox
 				culture = sudanese
 				size = 228000
 			}
@@ -585,7 +627,7 @@
 		}
 	}
 	s:STATE_TRIPOLI = {
-		region_state:EGE = {
+		region_state:M01 = {
 			create_pop = {
 				culture = maghrebi
 				size = 259628
@@ -624,7 +666,7 @@
 		}
 	}
 	s:STATE_LIBYA = {
-		region_state:EGE = {
+		region_state:M01 = {
 			create_pop = {
 				culture = bedouin
 				size = 171604
@@ -659,7 +701,7 @@
 				size = 2000
 			}
 		}
-		region_state:EGE = {
+		region_state:M01 = {
 			create_pop = {
 				culture = bedouin
 				size = 200

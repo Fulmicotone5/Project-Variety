@@ -417,9 +417,9 @@ arabic_fez_trigger = {
 	scope:character = {
 		exists = home_country
 		home_country = {
-			exists = c:EGE
-			c:EGE = this
-			c:EGE = {
+			exists = c:M01
+			c:M01 = this
+			c:M01 = {
 				has_law = law_type:law_monarchy
 			}
 		}
@@ -432,9 +432,9 @@ arabic_military_fez_pop_trigger = {
 		AND = {
 			OR = {
 				home_country = {
-					exists = c:EGE
-					c:EGE = this
-					c:EGE = {
+					exists = c:M01
+					c:M01 = this
+					c:M01 = {
 						has_law = law_type:law_monarchy
 					}
 				}
@@ -466,9 +466,9 @@ arabic_military_fez_pop_trigger = {
 						}
 					}
 					home_country = {
-						exists = c:EGE
-						c:EGE = this
-						c:EGE = {
+						exists = c:M01
+						c:M01 = this
+						c:M01 = {
 							has_law = law_type:law_monarchy
 						}
 					}
@@ -502,9 +502,9 @@ arabic_clothes_trigger = {
 						}
 					}
 					home_country = {
-						exists = c:EGE
-						c:EGE = this
-						c:EGE = {
+						exists = c:M01
+						c:M01 = this
+						c:M01 = {
 							has_law = law_type:law_monarchy
 						}
 					}
@@ -567,8 +567,8 @@ european_clothes_trigger = {
 								c:TOR = this
 							}
 							home_country = {
-								exists = c:EGE
-								c:EGE = this
+								exists = c:M01
+								c:M01 = this
 							}
 						}
 					}

@@ -1,11 +1,11 @@
 ﻿BUILDINGS={
 	s:STATE_LOWER_EGYPT={
-		region_state:EGE={
+		region_state:M01={
 			create_building={
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:EGE"
+						country="c:M01"
 						levels=5
 					}
 				}
@@ -17,7 +17,7 @@
 				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
 				add_ownership={
 					country={
-						country="c:EGE"
+						country="c:M01"
 						levels=6
 					}
 				}
@@ -28,7 +28,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:EGE"
+						country="c:M01"
 						levels=1
 						region="STATE_LOWER_EGYPT"
 					}
@@ -40,7 +40,7 @@
 				building="building_tooling_workshops"
 				add_ownership={
 					country={
-						country="c:EGE"
+						country="c:M01"
 						levels=1
 					}
 				}
@@ -51,7 +51,7 @@
 				building="building_paper_mills"
 				add_ownership={
 					country={
-						country="c:EGE"
+						country="c:M01"
 						levels=3
 					}
 				}
@@ -63,7 +63,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:EGE"
+						country="c:M01"
 						levels=2
 						region="STATE_LOWER_EGYPT"
 					}
@@ -75,7 +75,7 @@
 				building="building_construction_sector"
 				add_ownership={
 					country={
-						country="c:EGE"
+						country="c:M01"
 						levels=2
 					}
 				}
@@ -86,7 +86,7 @@
 				building="building_textile_mills"
 				add_ownership={
 					country={
-						country="c:EGE"
+						country="c:M01"
 						levels=3
 					}
 				}
@@ -97,7 +97,7 @@
 				building="building_arms_industry"
 				add_ownership={
 					country={
-						country="c:EGE"
+						country="c:M01"
 						levels=2
 					}
 				}
@@ -108,7 +108,7 @@
 				building="building_shipyards"
 				add_ownership={
 					country={
-						country="c:EGE"
+						country="c:M01"
 						levels=1
 					}
 				}
@@ -120,7 +120,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:EGE"
+						country="c:M01"
 						levels=7
 						region="STATE_LOWER_EGYPT"
 					}
@@ -133,7 +133,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:EGE"
+						country="c:M01"
 						levels=1
 						region="STATE_LOWER_EGYPT"
 					}
@@ -146,7 +146,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:EGE"
+						country="c:M01"
 						levels=3
 						region="STATE_LOWER_EGYPT"
 					}
@@ -159,7 +159,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:EGE"
+						country="c:M01"
 						levels=4
 						region="STATE_LOWER_EGYPT"
 					}
@@ -172,7 +172,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:EGE"
+						country="c:M01"
 						levels=8
 						region="STATE_LOWER_EGYPT"
 					}
@@ -185,7 +185,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:EGE"
+						country="c:M01"
 						levels=8
 						region="STATE_LOWER_EGYPT"
 					}
@@ -197,7 +197,7 @@
 				building="building_fishing_wharf"
 				add_ownership={
 					country={
-						country="c:EGE"
+						country="c:M01"
 						levels=3
 					}
 				}
@@ -208,7 +208,7 @@
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:EGE"
+						country="c:M01"
 						levels=1
 					}
 				}
@@ -220,7 +220,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:EGE"
+						country="c:M01"
 						levels=6
 						region="STATE_UPPER_EGYPT"
 					}
@@ -235,13 +235,13 @@
 		}
 	}
 	s:STATE_UPPER_EGYPT={
-		region_state:EGE={
+		region_state:M01={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:EGE"
+						country="c:M01"
 						levels=2
 						region="STATE_UPPER_EGYPT"
 					}
@@ -253,7 +253,7 @@
 				building="building_fishing_wharf"
 				add_ownership={
 					country={
-						country="c:EGE"
+						country="c:M01"
 						levels=1
 					}
 				}
@@ -263,12 +263,12 @@
 		}
 	}
 	s:STATE_MIDDLE_EGYPT={
-		region_state:EGE={
+		region_state:M01={
 			create_building={
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:EGE"
+						country="c:M01"
 						levels=2
 					}
 				}
@@ -279,7 +279,7 @@
 				building="building_paper_mills"
 				add_ownership={
 					country={
-						country="c:EGE"
+						country="c:M01"
 						levels=3
 					}
 				}
@@ -290,7 +290,7 @@
 				building="building_construction_sector"
 				add_ownership={
 					country={
-						country="c:EGE"
+						country="c:M01"
 						levels=1
 					}
 				}
@@ -302,7 +302,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:EGE"
+						country="c:M01"
 						levels=3
 						region="STATE_MIDDLE_EGYPT"
 					}
@@ -315,7 +315,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:EGE"
+						country="c:M01"
 						levels=2
 						region="STATE_MIDDLE_EGYPT"
 					}
@@ -328,7 +328,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:EGE"
+						country="c:M01"
 						levels=3
 						region="STATE_MIDDLE_EGYPT"
 					}
@@ -341,7 +341,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:EGE"
+						country="c:M01"
 						levels=3
 						region="STATE_MIDDLE_EGYPT"
 					}
@@ -356,12 +356,12 @@
 		}
 	}
 	s:STATE_MATRUH={
-		region_state:EGE={
+		region_state:M01={
 			create_building={
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:EGE"
+						country="c:M01"
 						levels=2
 					}
 				}
@@ -372,7 +372,7 @@
 				building="building_logging_camp"
 				add_ownership={
 					country={
-						country="c:EGE"
+						country="c:M01"
 						levels=1
 					}
 				}
@@ -383,7 +383,7 @@
 				building="building_fishing_wharf"
 				add_ownership={
 					country={
-						country="c:EGE"
+						country="c:M01"
 						levels=1
 					}
 				}
@@ -394,7 +394,7 @@
 				building="building_artillery_foundries"
 				add_ownership={
 					country={
-						country="c:EGE"
+						country="c:M01"
 						levels=1
 					}
 				}
@@ -406,7 +406,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:EGE"
+						country="c:M01"
 						levels=2
 						region="STATE_LOWER_EGYPT"
 					}
@@ -417,12 +417,12 @@
 		}
 	}
 	s:STATE_SINAI={
-		region_state:EGE={
+		region_state:M01={
 			create_building={
 				building="building_furniture_manufacturies"
 				add_ownership={
 					country={
-						country="c:EGE"
+						country="c:M01"
 						levels=1
 					}
 				}
@@ -433,7 +433,7 @@
 				building="building_fishing_wharf"
 				add_ownership={
 					country={
-						country="c:EGE"
+						country="c:M01"
 						levels=1
 					}
 				}
@@ -1440,12 +1440,12 @@
 		}
 	}
 	s:STATE_TRIPOLI = {
-		region_state:EGE = {
+		region_state:M01 = {
 			create_building={
 				building="building_fishing_wharf"
 				add_ownership={
 					country={
-						country="c:EGE"
+						country="c:M01"
 						levels=1
 					}
 				}
@@ -1456,7 +1456,7 @@
 				building="building_livestock_ranch"
 				add_ownership={
 					country={
-						country="c:EGE"
+						country="c:M01"
 						levels=1
 					}
 				}
@@ -1467,7 +1467,7 @@
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:EGE"
+						country="c:M01"
 						levels=1
 					}
 				}
@@ -1477,12 +1477,12 @@
 		}
 	}
 	s:STATE_LIBYA = {
-		region_state:EGE = {
+		region_state:M01 = {
 			create_building={
 				building="building_fishing_wharf"
 				add_ownership={
 					country={
-						country="c:EGE"
+						country="c:M01"
 						levels=1
 					}
 				}
@@ -1493,7 +1493,7 @@
 				building="building_wheat_farm"
 				add_ownership={
 					country={
-						country="c:EGE"
+						country="c:M01"
 						levels=5
 					}
 				}

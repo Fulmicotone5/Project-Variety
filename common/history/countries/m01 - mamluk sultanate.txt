@@ -1,0 +1,35 @@
+COUNTRIES = {
+	c:M01 ?= {
+		effect_starting_technology_tier_2_tech = yes
+		
+		set_tax_level = medium
+		
+		add_taxed_goods = g:tobacco
+		add_taxed_goods = g:liquor
+		
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_oligarchy
+		activate_law = law_type:law_state_religion
+		activate_law = law_type:law_racial_segregation
+		activate_law = law_type:law_agrarianism
+		activate_law = law_type:law_censorship
+		activate_law = law_type:law_per_capita_based_taxation
+		activate_law = law_type:law_debt_slavery
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_charitable_health_system
+
+		ig:ig_armed_forces = { 
+			add_ruling_interest_group = yes
+		}
+		set_institution_investment_level = {
+			institution = institution_schools
+			level = 1
+		}
+		trigger_event = {
+			id = fm_m01.1
+		}
+
+
+	}
+}

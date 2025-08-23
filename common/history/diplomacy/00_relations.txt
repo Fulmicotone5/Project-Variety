@@ -89,7 +89,7 @@
 		set_relations = { country = c:MUR value = -50 }
 		set_relations = { country = c:EX1 value = -50 }
 	}
-	c:EGE ?= {
+	c:M01 ?= {
 		set_relations = { country = c:HDJ value = -30 }
 		set_relations = { country = c:TOR value = -50 }
 		set_relations = { country = c:BIZ value = -30 }
@@ -156,7 +156,7 @@
 	c:SAE ?= {
 		set_relations = { country = c:TOR value = -30 }
 		set_relations = { country = c:HER value = -30 }
-		set_relations = { country = c:EGE value = -50 }
+		set_relations = { country = c:M01 value = -50 }
 	}
 	c:SPU ?= {
 		set_relations = { country = c:CAS value = -30 }
@@ -213,7 +213,7 @@
 		set_relations = { country = c:KAA value = -50 }
 		set_relations = { country = c:CAS value = -50 }
 		set_relations = { country = c:PUR value = -15 }
-		set_relations = { country = c:EGE value = -50 }
+		set_relations = { country = c:M01 value = -50 }
 	}
 	c:VNA ?= {
 		set_relations = { country = c:VEN value = -10 }

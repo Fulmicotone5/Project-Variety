@@ -8789,6 +8789,8 @@ misri={
 		Yunus
 		Yusuf
 		Ziya
+		uthman
+		al_mutawwakil
 	}
 	female_common_first_names = {
 		Aisha
@@ -8809,6 +8811,8 @@ misri={
 		Zulficar
 		Bey
 		Pasha
+		effendi
+		IV
 	}
 	common_last_names={
 		Abd_al-Rahman

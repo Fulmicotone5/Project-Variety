@@ -1,0 +1,189 @@
+namespace = fm_m01
+# start event
+fm_m01.1 = {
+	type = country_event
+	placement = root
+	title = fm_m01.1.t
+	desc = fm_m01.1.d
+	flavor = fm_m01.1.f
+	duration = 3
+	event_image = {
+		video = "africa_city_center"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+	trigger = {
+	}
+	immediate = {
+		add_journal_entry = {
+			type = je_m01_main
+		}
+		add_modifier = {
+			name = m01_mdf
+		}
+	}
+	option = {
+		name = fm_m01.1.a
+		add_journal_entry = {
+			type = je_coptic_issue
+		}
+		s:STATE_EGYPTIAN_DESERT = {
+			add_claim = root
+		}
+		s:STATE_DONGOLA = {
+			add_claim = root
+		}
+		s:STATE_KORDOFAN = {
+			add_claim = root
+		}
+		s:STATE_BLUE_NILE = {
+			add_claim = root
+		}
+	}
+}
+
+fm_m01.2 = {
+	type = country_event
+	placement = ROOT
+	title = fm_m01.2.t
+	desc = fm_m01.2.d
+	flavor = fm_m01.2.f
+	duration = 3
+	event_image = {
+		video = "middleeast_middleclass_cafe"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/invention_icons/nationalism.dds"
+	trigger = {
+	}
+	option = {
+		name = fm_m01.2.a
+		add_loyalists  = {
+				strata = upper
+				value = large_radicals
+			}
+			add_loyalists = {
+				strata = middle
+				value = large_radicals
+			}
+			add_loyalists = {
+				strata = lower
+				value = medium_radicals
+			}
+			add_primary_culture = cu:misri
+			custom_tooltip = {
+				text = deffope
+			}
+	}
+}
+fm_m01.3 = {
+	# proclamation of the republic
+	type = country_event
+	placement = ROOT
+	title = fm_m01.3.t
+	desc = fm_m01.3.d
+	flavor = fm_m01.3.f
+	duration = 3
+	event_image = {
+		video = "europenorthamerica_springtime_of_nations"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	immediate = {
+		set_variable = {
+			name = lerevolution
+			days = 300
+		}
+		activate_law = law_type:law_parliamentary_republic
+		activate_law = law_type:law_landed_voting
+		change_tag = EGE
+		add_primary_culture = cu:misri
+		remove_primary_culture = cu:circassian
+		ruler = {
+			kill_character = yes
+		}
+		heir = {
+			kill_character = yes
+		}
+		ig:ig_intelligentsia = {
+			leader = {
+				kill_character = yes
+			}
+		}
+		ig:ig_industrialists = {
+			leader = {
+				kill_character = yes
+			}
+		}
+		ig:ig_trade_unions = {
+			leader = {
+				kill_character = yes
+			}
+		}
+		ig:ig_landowners = {
+			leader = {
+				kill_character = yes
+			}
+		}
+		ig:ig_rural_folk = {
+			leader = {
+				kill_character = yes
+			}
+		}
+		ig:ig_armed_forces = {
+			leader = {
+				kill_character = yes
+			}
+		}
+		ig:ig_devout = {
+			leader = {
+				kill_character = yes
+			}
+		}
+		ig:ig_petty_bourgeoisie = {
+			leader = {
+				kill_character = yes
+			}
+		}
+	}
+	option = {
+		name = fm_m01.3.a
+		default_option = yes
+		every_interest_group = {
+			limit = {
+				OR = {
+					is_interest_group_type = ig_devout
+					is_interest_group_type = ig_landowners
+				}
+			}
+				add_modifier = {
+					name = modifier_loth_ten
+					days = normal_modifier_time
+					is_decaying = yes
+				}
+			}
+			every_interest_group = {
+				limit = {
+					is_interest_group_type = ig_armed_forces
+				}
+				add_modifier = {
+					name = modifier_loth_eleven
+					days = normal_modifier_time
+					is_decaying = yes
+				}
+			}
+			add_loyalists  = {
+				strata = upper
+				value = very_large_radicals
+			}
+			add_loyalists = {
+				strata = middle
+				value = large_radicals
+			}
+			add_loyalists = {
+				strata = lower
+				value = large_radicals
+			}
+		
+	}
+}

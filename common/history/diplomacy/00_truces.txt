@@ -1,11 +1,11 @@
 ﻿DIPLOMACY = {
-	c:EGE= {
+	c:M01= {
 		create_bidirectional_truce = {
 			country = c:TOR
 			months = 45
 		}
 	}	
-	c:EGE= {
+	c:M01= {
 		create_bidirectional_truce = {
 			country = c:SAE
 			months = 26

@@ -1621,3 +1621,12 @@ modifier_bplague107 = {
 	state_food_security_add = -0.2
 	building_group_bg_agriculture_throughput_add = -0.1
 }
+m01_mdf = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_negative.dds
+	country_authority_mult = -0.1
+	country_bureaucracy_mult = -0.1
+	state_tax_capacity_mult = -0.1
+	state_turmoil_effects_mult = 0.15
+	state_construction_mult = -0.1
+	country_acceptance_state_religion_add = 5
+}

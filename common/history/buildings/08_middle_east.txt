@@ -296,12 +296,12 @@
 		}
 	}
 	s:STATE_PALESTINE = {
-		region_state:EGE = {
+		region_state:M01 = {
 			create_building={
 				building="building_fishing_wharf"
 				add_ownership={
 					country={
-						country="c:EGE"
+						country="c:M01"
 						levels=1
 					}
 				}
@@ -312,7 +312,7 @@
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:EGE"
+						country="c:M01"
 						levels=1
 					}
 				}
@@ -323,12 +323,12 @@
 				building="building_logging_camp"
 				add_ownership={
 					country={
-						country="c:EGE"
+						country="c:M01"
 						levels=1
 					}
 					building={
 						type="building_financial_district"
-						country="c:EGE"
+						country="c:M01"
 						levels=3
 						region="STATE_PALESTINE"
 					}
@@ -341,7 +341,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:EGE"
+						country="c:M01"
 						levels=1
 						region="STATE_PALESTINE"
 					}
@@ -353,7 +353,7 @@
 				building="building_livestock_ranch"
 				add_ownership={
 					country={
-						country="c:EGE"
+						country="c:M01"
 						levels=1
 					}
 				}

@@ -355,9 +355,9 @@ pm_electric_sewing_machines = {
 			# input goods
 			goods_input_fabric_add = 45
 			goods_input_dye_add = 10
-			goods_input_tools_add = 5
-			goods_input_electricity_add = 5
-			goods_input_copper_add = 2
+			goods_input_tools_add = 3
+			goods_input_electricity_add = 2
+			goods_input_copper_add = 5
 			
 			# output goods
 			goods_output_clothes_add = 70
@@ -418,7 +418,7 @@ pm_elastics = {
 			goods_input_rubber_add = 5 			# x40 = -400
 			goods_input_silk_add = 20 				# x40 = -1400
 			goods_input_fabric_add = -10				# x20 =  600
-			goods_input_copper_add = 2
+			goods_input_copper_add = 5
 				
 			# output goods	
 			goods_output_clothes_add = -35 			# x30 = -2100
@@ -973,8 +973,9 @@ pm_steel = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_wood_add = 15
+			goods_input_wood_add = 12
 			goods_input_steel_add = 10
+			goods_input_copper_add = 5
 			
 			# output goods
 			goods_output_tools_add = 40
@@ -997,9 +998,10 @@ pm_rubber_grips = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_wood_add = 5
+			goods_input_wood_add = 2
 			goods_input_rubber_add = 5
 			goods_input_steel_add = 15
+			goods_input_copper_add = 5
 			
 			# output goods
 			goods_output_tools_add = 55
@@ -1450,9 +1452,9 @@ pm_brine_electrolysis = {
 			# input goods
 			goods_input_sulfur_add = 20
 			goods_input_fertilizer_add = 25
-			goods_input_paper_add = 15
-			goods_input_electricity_add = 10
-			goods_input_copper_add = 2
+			goods_input_paper_add = 12
+			goods_input_electricity_add = 5
+			goods_input_copper_add = 5
 
 			# output goods
 			goods_output_explosives_add = 75
@@ -1640,8 +1642,8 @@ pm_electric_arc_process = {
 			# input goods
 			goods_input_iron_add = 50
 			goods_input_coal_add = 15 
-			goods_input_electricity_add = 15
-			goods_input_copper_add = 2
+			goods_input_electricity_add = 10
+			goods_input_copper_add = 10
 			
 			# output goods
 			goods_output_steel_add = 75
@@ -1753,8 +1755,8 @@ pm_electric_engines = {
 		workforce_scaled = {
 			# input goods
 			goods_input_steel_add = 15
-			goods_input_electricity_add = 15
-			goods_input_copper_add = 5
+			goods_input_electricity_add = 10
+			goods_input_copper_add = 10
 			
 			# output goods
 			goods_output_engines_add = 40
@@ -2020,9 +2022,9 @@ pm_arc_welding_shipbuilding = {
 		workforce_scaled = {
 			# input goods
 			goods_input_steel_add = 15
-			goods_input_electricity_add = 15
+			goods_input_electricity_add = 10
 			goods_input_engines_add = 4
-			goods_input_copper_add = 1
+			goods_input_copper_add = 2
 			
 			# output goods
 			goods_output_steamers_add = 50
@@ -2131,7 +2133,7 @@ pm_military_shipbuilding_steam_2 = {
 		workforce_scaled = {
 			#input
 			goods_input_steel_add = 20
-			goods_input_electricity_add = 15
+			goods_input_electricity_add = 10
 			goods_input_engines_add = 8
 			goods_input_copper_add = 2
 
@@ -2281,9 +2283,9 @@ pm_telephones = {
 		workforce_scaled = {
 			goods_input_iron_add = 5
 			goods_input_rubber_add = 5
-			goods_input_lead_add = 10
+			goods_input_lead_add = 5
 			goods_input_tools_add = 5
-			goods_input_copper_add = 5
+			goods_input_copper_add = 10
 			
 			goods_output_telephones_add = 30
 		}
@@ -2308,10 +2310,10 @@ pm_radios = {
 	}	
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_electricity_add = 20
+			goods_input_electricity_add = 15
 			goods_output_telephones_add = -10
 			goods_output_radios_add = 20
-			goods_input_copper_add = 2
+			goods_input_copper_add = 5
 		}
 		
 		level_scaled = {

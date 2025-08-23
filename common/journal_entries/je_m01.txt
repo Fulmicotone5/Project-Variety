@@ -1,0 +1,103 @@
+je_m01_main = {
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	group = je_group_historical_content
+	timeout = 5351
+	complete = {
+		has_law = law_type:law_cultural_exclusion
+		NOT = {
+			has_law = law_type:law_serfdom
+		}
+		OR = {
+			has_law = law_type:law_census_voting
+			has_law = law_type:law_landed_voting
+		}
+		custom_tooltip = {
+			text = coptocompletetool
+			has_variable = coptocomplete
+		}
+		NOT = {
+			any_military_formation = {
+				filter = {
+					is_army = yes
+				}
+				any_combat_unit = {
+					OR = {
+						has_unit_type = unit_type:combat_unit_type_hussars
+						has_unit_type = unit_type:combat_unit_type_dragoons
+						has_unit_type = unit_type:combat_unit_type_cuirassiers
+						has_unit_type = unit_type:combat_unit_type_lancers
+					}
+					percent >= 0.25
+				}
+			}
+		}
+		any_military_formation = {
+				filter = {
+					is_army = yes
+				}
+				any_combat_unit = {
+					OR = {
+						has_unit_type = unit_type:combat_unit_type_cannon_artillery
+						has_unit_type = unit_type:combat_unit_type_mobile_artillery
+						has_unit_type = unit_type:combat_unit_type_shrapnel_artillery
+						has_unit_type = unit_type:combat_unit_type_siege_artillery
+					}
+					percent >= 0.2
+				}
+			}
+	}
+	on_complete = {
+		trigger_event = {
+			id = fm_m01.2
+		}
+		remove_modifier = m01_mdf
+	}
+	fail = {
+		any_scope_state = {
+				is_capital = yes
+				turmoil >= 0.5
+			}
+	}
+	on_fail = {
+		trigger_event = {
+			id = fm_m01.3
+		}
+		remove_modifier = m01_mdf
+	}
+	on_timeout = {
+		trigger_event = {
+			id = fm_m01.3
+		}
+		remove_modifier = m01_mdf
+	}
+	should_be_pinned_by_default = yes
+}
+
+je_coptic_issue = {
+	icon = "gfx/interface/icons/event_icons/tutorial_icon.dds"
+	group = je_group_historical_content
+	complete = {
+		owns_entire_state_region = STATE_EGYPTIAN_DESERT
+		owns_entire_state_region = STATE_DONGOLA
+		owns_entire_state_region = STATE_BLUE_NILE
+		any_scope_state = {
+			any_scope_pop = {
+				has_pop_religion = oriental_orthodox
+				percent < 0.25
+			}
+			count = all
+		} 
+	}
+	on_complete = {
+		set_variable = {
+			name = coptocomplete
+		}
+	}
+	fail = {
+		custom_tooltip = {
+			text = revege
+			has_variable = lerevolution
+		}
+	}
+	should_be_pinned_by_default = yes
+}

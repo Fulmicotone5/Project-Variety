@@ -41,14 +41,14 @@
 			type = vassal
 		}
 	}
-	c:EGE ?= {
+	c:M01 ?= {
 		create_diplomatic_pact = {
 			country = c:SIU
-			type = vassal
+			type = puppet
 		}
 		create_diplomatic_pact = {
 			country = c:SUD
-			type = tributary
+			type = puppet
 		}
 	}
 	c:NED ?= {
@@ -237,7 +237,7 @@
 			type = colony
 		}
 	}
-	c:EGE ?= {
+	c:M01 ?= {
 		create_diplomatic_pact = {
 			country = c:HDJ
 			type = tributary

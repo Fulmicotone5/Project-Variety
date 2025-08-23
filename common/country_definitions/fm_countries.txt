@@ -1798,6 +1798,16 @@ SAE = {
 	cultures = { persian }
 	capital = STATE_BAGHDAD
 }
+M01 = {
+	color = { 222 227 64}
+	
+	country_type = recognized
+	
+	tier = empire
+	
+	cultures = { circassian }
+	capital = STATE_LOWER_EGYPT
+}
 
 SOP = {
 	color = { 60 150 230}

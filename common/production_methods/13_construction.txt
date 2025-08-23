@@ -92,7 +92,7 @@ pm_steel_frame_buildings = {
 			goods_input_glass_add = 30
 			goods_input_explosives_add = 10
 			goods_input_tools_add = 15
-			goods_input_copper_add = 10
+			goods_input_copper_add = 20
 		}
 
 		level_scaled = {
@@ -134,7 +134,7 @@ pm_arc_welded_buildings = {
 			goods_input_explosives_add = 15
 			goods_input_tools_add = 30
 			goods_input_electricity_add = 20
-			goods_input_copper_add = 15
+			goods_input_copper_add = 25
 		} 
 
 		level_scaled = {

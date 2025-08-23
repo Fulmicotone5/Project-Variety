@@ -1,0 +1,38 @@
+CHARACTERS = {
+	c:M01 ?= {
+		create_character = {
+			first_name = uthman
+			last_name = effendi
+			historical = yes
+			female = no
+			ruler = yes
+			birth_date = 1805.9.7
+			culture = cu:misri
+			religion = rel:sunni
+			interest_group = ig_devout
+
+			ideology = ideology_royalist
+			traits = {
+				pious
+			}
+		}
+		create_character = {
+			first_name = al_mutawwakil
+			last_name = IV
+			historical = yes
+			female = no
+			ruler = no
+			heir = yes
+			birth_date = 1824.5.1
+			culture = cu:misri
+			religion = rel:sunni
+			interest_group = ig_devout
+
+			ideology = ideology_royalist
+			traits = {
+				ambitious
+				erudite
+			}
+		}
+	}
+}

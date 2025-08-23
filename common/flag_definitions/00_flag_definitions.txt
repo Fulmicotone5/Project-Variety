@@ -7243,6 +7243,12 @@ PBC = { # Peru-Bolivia
 		priority = 1
 	}
 }
+M01 = { # Persia
+	flag_definition = {
+		coa = M01		
+		priority = 1
+	}	
+}
 
 SAE = { # Persia
 	flag_definition = {

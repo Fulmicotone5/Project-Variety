@@ -810,3 +810,10 @@ je_bud_main_reason: "The Grand Duchy of [ROOT.GetCountry.GetName] has been a vas
  je_potato_blight: "The Potato Blight"
  je_potato_blight_reason: "#V The Potato blight is a pathogenic disease that infects both the foliage and tubers of potatoes and tomatoes, leading to decay.\nWe are forced to wait until the outbreak subsides, as the disease persists despite efforts to control it.\nMany will perish, but there is nothing we can do.#!"
  plague_might_spread.ttfm: "The Potato blight may spread to [THIS.GetCountry.GetName] via neighboring states or common markets.
+ revege: "The Sultanate has fallen"
+ coptocompletetool: "The Coptic issue has been dealt with"
+ je_coptic_issue: "Dealing with the Copts"
+ je_coptic_issue_reason: "#V The only real factor maintaining the unity of the Sultanate for the past centuries has been Islam; however, the southern region is unfortunately plagued by Coptic sects. To preserve religious cohesion and stability within the Sultanate, it is essential to address and manage the presence of these sects effectively.#!"
+ je_m01_main: "The Road to Inclusion"
+ je_m01_main_reason: "#V Despite the stagnation caused by corrupt institutions threatening the Sultanate`s future, there remains an opportunity to reverse this decline through meaningful reform.\nPrioritizing increased inclusion of the Egyptian population and embracing modernization are crucial steps to revitalizing the state, restoring stability, and ensuring its survival in an evolving world.#!"
+ deffope: "More content coming soon!"

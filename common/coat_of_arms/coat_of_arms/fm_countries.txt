@@ -27398,3 +27398,15 @@ IL1_mon={
 		texture = "te_coa_IL1.dds"
 	}
 }
+
+M01 = {
+	pattern = "pattern_solid.tga"
+	color1 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_crescent.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { scale = { 0.5 0.9 } position = { 0.35 0.5 } rotation =  180 }
+	}
+}

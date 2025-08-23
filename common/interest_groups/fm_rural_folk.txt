@@ -39,7 +39,7 @@ ig_rural_folk = {
 			}
 			else_if = {
 				limit = {
-					owner = { c:EGE ?= this }
+					owner = { c:M01 ?= this }
 				}
 				set_interest_group_name = ig_fellahin
 				set_ig_trait = ig_trait:ig_trait_old_ways

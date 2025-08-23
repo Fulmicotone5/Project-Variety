@@ -116,7 +116,7 @@ GLOBAL = {
 		}
 	}
 
-	c:EGE ?= {
+	c:M01 ?= {
 		add_radicals = {
 			culture = cu:sudanese
 			value = 0.3

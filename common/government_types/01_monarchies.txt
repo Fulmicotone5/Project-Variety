@@ -557,6 +557,7 @@ gov_sultanate = {
 			AND = { exists = c:TUG c:TUG = ROOT }
 			AND = { exists = c:AIT c:AIT = ROOT }
 			AND = { exists = c:ALD c:ALD = ROOT }
+			AND = { exists = c:M01 c:M01 = ROOT }
 		}
 	}
 

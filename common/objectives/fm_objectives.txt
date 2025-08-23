@@ -9,7 +9,7 @@ objectives_ruler_med = {
 	enabled_background = "gfx/interface/icons/objectives/mediterr.dds"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	
-	recommended_tags = { BIZ TOR CTH KAA PUP MUR  EGE }	
+	recommended_tags = { BIZ TOR CTH KAA PUP MUR  M01 }	
 
 
 }	

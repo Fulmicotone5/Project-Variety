@@ -293,7 +293,7 @@
 		}
 	}
 	s:STATE_PALESTINE = {
-		region_state:EGE = {
+		region_state:M01 = {
 			create_pop = {
 				culture = mashriqi
 				size = 448000
