@@ -101,3 +101,141 @@ je_coptic_issue = {
 	}
 	should_be_pinned_by_default = yes
 }
+
+je_m01_theo = {
+	icon = "gfx/interface/icons/religion_icons/sunni.dds"
+	group = je_group_historical_content
+	complete = {
+		has_law = law_type:law_theocracy
+		owns_entire_state_region = STATE_HEDJAZ
+	}
+	on_complete = {
+		trigger_event = {
+			id = fm_m01.4
+		}
+		hidden_effect = {
+			ruler = {
+				set_character_immortal = no
+				kill_character = yes
+			}
+			heir = {
+				set_character_immortal = no
+			}
+		}
+	}
+	should_be_pinned_by_default = yes
+}
+je_m01_iraq = {
+	icon = "gfx/interface/icons/religion_icons/sunni.dds"
+	group = je_group_historical_content
+	complete = {
+		owns_entire_state_region = STATE_BAGHDAD
+		owns_entire_state_region = STATE_MOSUL
+		owns_entire_state_region = STATE_BASRA
+	}
+	on_complete = {
+		custom_tooltip = {
+			text = mamlukconv
+				every_scope_state = {
+				limit = {
+					OR = {
+						state_region = s:STATE_BAGHDAD		
+						state_region = s:STATE_MOSUL	
+						state_region = s:STATE_BASRA				
+					}
+				}
+				convert_population = {
+					target = root.religion
+					value = 0.15
+				}
+			}
+		}
+	}
+	should_be_pinned_by_default = yes
+}
+je_m01_eth = {
+	icon = "gfx/interface/icons/religion_icons/sunni.dds"
+	group = je_group_historical_content
+	complete = {
+		owns_entire_state_region = STATE_ERITREA
+		owns_entire_state_region = STATE_AMHARA
+		owns_entire_state_region = STATE_GONDER
+		owns_entire_state_region = STATE_OROMIA
+	}
+	on_complete = {
+		custom_tooltip = {
+			text = mamlukconv
+			every_scope_state = {
+				limit = {
+					OR = {
+						state_region = s:STATE_ERITREA		
+						state_region = s:STATE_AMHARA	
+						state_region = s:STATE_GONDER			
+						state_region = s:STATE_OROMIA		
+					}
+				}
+				convert_population = {
+					target = root.religion
+					value = 0.15
+				}
+			}
+		}
+	}
+	should_be_pinned_by_default = yes
+}
+je_m01_abbasids = {
+	icon = "gfx/interface/icons/religion_icons/sunni.dds"
+	group = je_group_historical_content
+	complete = {
+		OR = {
+			has_law = law_type:law_theocracy
+			has_law = law_type:law_monarchy
+		}
+		owns_entire_state_region = STATE_DEIR_EZ_ZOR
+		owns_entire_state_region = STATE_BAGHDAD
+		owns_entire_state_region = STATE_MOSUL
+		owns_entire_state_region = STATE_BASRA
+		owns_entire_state_region = STATE_HAIL
+		owns_entire_state_region = STATE_NEJD
+		owns_entire_state_region = STATE_YEMEN
+		owns_entire_state_region = STATE_ABU_DHABI
+		owns_entire_state_region = STATE_OMAN
+		any_scope_state = {
+			count >= 6
+			AND = {
+				region = sr:region_persia
+				owner = ROOT
+			}
+		}
+	}
+	fail = {
+		ruler = {
+			is_character_alive = no
+		}
+		NOT = {
+			has_law = law_type:law_theocracy
+		}
+		NOT = {
+			has_law = law_type:law_monarchy
+		}
+	}
+	on_complete = {
+		trigger_event = {
+			id = fm_m01.5
+		}
+		capital = {
+				convert_population = {
+					target = root.religion
+					value = 0.25
+				}
+			}
+			every_scope_state = {
+				limit = { is_capital = no }
+				convert_population = {
+					target = root.religion
+					value = 0.15
+				}				
+			}
+	}
+	should_be_pinned_by_default = yes
+}

@@ -1020,6 +1020,7 @@ STATE_KANTO = {
         bg_logging = 9
         bg_whaling = 7
         bg_fishing = 10
+        bg_copper_mining = 75
     }
     resource = {
         type = "bg_gold_fields"
@@ -1164,6 +1165,7 @@ STATE_SHIKOKU = {
         bg_sulfur_mining = 32
         bg_logging = 11
         bg_fishing = 9
+        bg_copper_mining = 40
     }
     naval_exit_id = 3059
 }

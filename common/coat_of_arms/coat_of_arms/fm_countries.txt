@@ -27410,3 +27410,8 @@ M01 = {
 		instance = { scale = { 0.5 0.9 } position = { 0.35 0.5 } rotation =  180 }
 	}
 }
+M02 = {
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+
+}

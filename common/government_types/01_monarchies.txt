@@ -766,9 +766,27 @@ gov_caliphate = {
 	female_heir = "" # Empty on purpose
 	
 	possible = {
-		has_law = law_type:law_monarchy
-		exists = c:SOK
-		c:SOK = ROOT
+		OR = {
+			AND = {
+				has_law = law_type:law_monarchy
+				exists = c:SOK
+				c:SOK = ROOT
+			}
+			AND = {
+				has_law = law_type:law_theocracy
+				exists = c:M01
+				c:M01 = ROOT
+			}
+			AND = {
+				OR = {
+					has_law = law_type:law_theocracy
+					has_law = law_type:law_monarchy				
+				}
+
+				exists = c:M02
+				c:M02 = ROOT
+			}
+		}
 	}
 
 	on_government_type_change = {

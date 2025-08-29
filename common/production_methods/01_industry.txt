@@ -87,7 +87,8 @@ pm_cannery = {
 			# input goods
 			goods_input_grain_add = -10		# x20 = -400
 			goods_input_meat_add = 10		# x30 =  600
-			goods_input_iron_add = 5		# x40 =  400
+			goods_input_iron_add = 4		# x40 =  400
+			goods_input_copper_add = 2
 			
 			# output goods
 			goods_output_groceries_add = 15	# x30 =  900
@@ -112,7 +113,8 @@ pm_cannery_fish = {
 			# input goods
 			goods_input_grain_add = -10		# x20 = -400
 			goods_input_fish_add = 15		# x20 =  600
-			goods_input_iron_add = 5		# x40 =  400
+			goods_input_iron_add = 4		# x40 =  400
+			goods_input_copper_add = 2
 			
 			# output goods
 			goods_output_groceries_add = 15	# x30 =  900
@@ -139,8 +141,9 @@ pm_vacuum_canning = {
 			goods_input_grain_add = -15		# x20 = -600
 			goods_input_fish_add = 15		# x20 = 600
 			goods_input_meat_add = 10		# x30 = 600
-			goods_input_iron_add = 5		# x40 =  400
+			goods_input_iron_add = 4		# x40 =  400
 			goods_input_oil_add = 5 			# x40 =  200
+			goods_input_copper_add = 2
 			
 			# output goods
 			goods_output_groceries_add = 30	# x30 = 1800
@@ -172,8 +175,9 @@ pm_vacuum_canning_principle_3 = {
 			goods_input_grain_add = -15		# x20 = -600
 			goods_input_fish_add = 15		# x20 = 600
 			goods_input_meat_add = 10		# x30 = 600
-			goods_input_iron_add = 5		# x40 =  400
+			goods_input_iron_add = 4		# x40 =  400
 			goods_input_oil_add = 5 			# x40 =  200
+			goods_input_copper_add = 2
 			
 			# output goods
 			goods_output_groceries_add = 35	# x30 = 2100

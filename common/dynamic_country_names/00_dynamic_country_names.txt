@@ -3522,6 +3522,33 @@ M01 = {
 			}
 		}
 	}
+	dynamic_country_name = {
+		name = dyn_c_m01_t
+		adjective = M01_ADJ
+		is_main_tag_only = yes
+		priority = 1
+		trigger = {
+			scope:actor = {
+				has_law = law_type:law_theocracy
+			}
+		}
+	}
+}
+M02 = {
+	dynamic_country_name = {
+		name = dyn_c_m02
+		adjective = M02_ADJ
+		is_main_tag_only = yes
+		priority = 1
+		trigger = {
+			scope:actor = {
+				or = {
+					has_law = law_type:law_monarchy
+					has_law = law_type:law_theocracy
+				}
+			}
+		}
+	}
 }
 SOP = {
 	dynamic_country_name = {

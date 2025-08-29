@@ -1808,7 +1808,16 @@ M01 = {
 	cultures = { circassian }
 	capital = STATE_LOWER_EGYPT
 }
-
+M02 = {
+	color = { 199 106 14}
+	
+	country_type = recognized
+	
+	tier = hegemony
+	
+	cultures = { misri }
+	capital = STATE_LOWER_EGYPT
+}
 SOP = {
 	color = { 60 150 230}
 	

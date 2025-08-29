@@ -37,6 +37,7 @@ pm_atmospheric_engine_pump_building_coal_mine = {
 			
 			# output goods
 			goods_output_coal_add = 20
+			goods_output_copper_add = 1
 		}
 
 		level_scaled = {
@@ -68,6 +69,7 @@ pm_condensing_engine_pump_building_coal_mine = {
 			
 			# output goods
 			goods_output_coal_add = 30
+			goods_output_copper_add = 1
 		}
 
 		level_scaled = {
@@ -100,6 +102,7 @@ pm_diesel_pump_building_coal_mine = {
 			
 			# output goods
 			goods_output_coal_add = 45
+			goods_output_copper_add = 1
 		}
 
 		level_scaled = {
@@ -135,6 +138,7 @@ pm_nitroglycerin_building_coal_mine = {
 			
 			# output goods
 			goods_output_coal_add = 8
+			goods_output_copper_add = 1
 		}
 
 		level_scaled = {
@@ -168,6 +172,7 @@ pm_dynamite_building_coal_mine = {
 			
 			# output goods
 			goods_output_coal_add = 13
+			goods_output_copper_add = 1
 		}
 
 		level_scaled = {
@@ -254,6 +259,7 @@ pm_atmospheric_engine_pump_building_iron_mine = {
 			
 			# output goods
 			goods_output_iron_add = 20
+			goods_output_copper_add = 1
 		}
 
 		level_scaled = {
@@ -286,6 +292,7 @@ pm_condensing_engine_pump_building_iron_mine = {
 			
 			# output goods
 			goods_output_iron_add = 30
+			goods_output_copper_add = 1
 		}
 
 		level_scaled = {
@@ -318,6 +325,7 @@ pm_diesel_pump_building_iron_mine = {
 			
 			# output goods
 			goods_output_iron_add = 35
+			goods_output_copper_add = 1
 		}
 
 		level_scaled = {
@@ -348,6 +356,7 @@ pm_nitroglycerin_building_iron_mine = {
 			
 			# output goods
 			goods_output_iron_add = 7
+			goods_output_copper_add = 1
 		}
 
 		level_scaled = {
@@ -380,6 +389,7 @@ pm_dynamite_building_iron_mine = {
 			
 			# output goods
 			goods_output_iron_add = 10
+			goods_output_copper_add = 1
 		}
 
 		level_scaled = {

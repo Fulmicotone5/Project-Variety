@@ -21,6 +21,12 @@ fm_m01.1 = {
 		add_modifier = {
 			name = m01_mdf
 		}
+		ruler ?= { #TODO: Ruler/Heir missing
+				set_character_immortal = yes
+			}
+		heir = {
+			set_character_immortal = yes
+		}
 	}
 	option = {
 		name = fm_m01.1.a
@@ -71,9 +77,22 @@ fm_m01.2 = {
 				value = medium_radicals
 			}
 			add_primary_culture = cu:misri
-			custom_tooltip = {
-				text = deffope
+			s:STATE_HEDJAZ = {
+			add_claim = root
+		}
+			add_journal_entry = {
+			type = je_m01_theo
+		}
+		ig:ig_armed_forces = {
+			leader = {
+				set_ideology = ideology:ideology_theocrat
 			}
+		}
+		ig:ig_devout = {
+			leader = {
+				set_ideology = ideology:ideology_theocrat
+			}
+		}
 	}
 }
 fm_m01.3 = {
@@ -100,9 +119,11 @@ fm_m01.3 = {
 		add_primary_culture = cu:misri
 		remove_primary_culture = cu:circassian
 		ruler = {
+			set_character_immortal = no
 			kill_character = yes
 		}
 		heir = {
+			set_character_immortal = no
 			kill_character = yes
 		}
 		ig:ig_intelligentsia = {
@@ -185,5 +206,212 @@ fm_m01.3 = {
 				value = large_radicals
 			}
 		
+	}
+}
+fm_m01.4 = {
+	type = country_event
+	placement = ROOT
+	title = fm_m01.4.t
+	desc = fm_m01.4.d
+	flavor = fm_m01.4.f
+	duration = 3
+	event_image = {
+		video = "middleeast_islam"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/tutorial_icon.dds"
+	trigger = {
+	}
+	option = {
+		name = fm_m01.4.a
+		default_option = yes
+		custom_tooltip = {
+			text = nomoreabba
+		}
+		add_loyalists  = {
+				strata = upper
+				value = large_radicals
+			}
+			add_radicals = {
+				strata = middle
+				value = medium_radicals
+			}
+			add_radicals = {
+				strata = lower
+				value = medium_radicals
+			}
+			add_journal_entry = {
+			type = je_m01_iraq
+		}
+			add_journal_entry = {
+			type = je_m01_eth
+		}
+		s:STATE_DEIR_EZ_ZOR = {
+			add_claim = root
+		}
+		s:STATE_BAGHDAD = {
+			add_claim = root
+		}
+		s:STATE_MOSUL = {
+			add_claim = root
+		}
+		s:STATE_BASRA = {
+			add_claim = root
+		}
+		s:STATE_ERITREA = {
+			add_claim = root
+		}
+		s:STATE_AMHARA = {
+			add_claim = root
+		}
+		s:STATE_GONDER = {
+			add_claim = root
+
+		}
+		s:STATE_OROMIA = {
+			add_claim = root
+		}
+		hidden_effect = {
+			ruler = {
+				kill_character = yes
+			}
+			heir ?= {
+				kill_character = yes
+			}
+		}
+	}
+	option = {
+		name = fm_m01.4.b
+		default_option = yes
+		add_radicals  = {
+				strata = upper
+				value = large_radicals
+			}
+			add_loyalists = {
+				strata = middle
+				value = large_radicals
+			}
+			add_loyalists = {
+				strata = lower
+				value = medium_radicals
+			}
+			add_journal_entry = {
+			type = je_m01_abbasids
+		}
+		custom_tooltip = {
+			text = abbaca
+			change_tag = M02
+		}
+		remove_primary_culture = cu:circassian
+		s:STATE_DEIR_EZ_ZOR = {
+			add_claim = root
+		}
+		s:STATE_BAGHDAD = {
+			add_claim = root
+		}
+		s:STATE_MOSUL = {
+			add_claim = root
+		}
+		s:STATE_BASRA = {
+			add_claim = root
+		}
+		s:STATE_YEMEN = {
+			add_claim = root
+		}
+		s:STATE_ABU_DHABI = {
+			add_claim = root
+		}
+		s:STATE_NEJD = {
+			add_claim = root
+
+		}
+		s:STATE_HAIL = {
+			add_claim = root
+		}
+		s:STATE_OMAN = {
+			add_claim = root
+		}
+		s:STATE_TUNISIA = {
+			add_claim = root
+			
+		}
+		s:STATE_LARISTAN = {
+			add_claim = root
+		}
+		s:STATE_KERMAN = {
+			add_claim = root
+		}
+		s:STATE_SISTAN = {
+			add_claim = root
+		}
+		s:STATE_KHORASAN = {
+			add_claim = root
+		}
+		s:STATE_KHUZESTAN = {
+			add_claim = root
+		}
+		s:STATE_FARS = {
+			add_claim = root
+		}
+		s:STATE_ISFAHAN = {
+			add_claim = root
+		}
+		s:STATE_IRAKAJEMI = {
+			add_claim = root
+		}
+		s:STATE_SEMNAN = {
+			add_claim = root
+		}
+		s:STATE_TABRIZ = {
+			add_claim = root
+		}
+		s:STATE_PERSIAN_KURDISTAN = {
+			add_claim = root
+		}
+		s:STATE_LURISTAN = {
+			add_claim = root
+		}
+		s:STATE_URMIA = {
+			add_claim = root
+		}
+		ruler = {
+			set_variable = {
+					name = memento_mori_immunity
+					years = 20
+				}
+		}
+	}
+}
+
+fm_m01.5 = {
+	# Exalthed among men
+	type = country_event
+	placement = ROOT
+	title = fm_m01.5.t
+	desc = fm_m01.5.d
+	flavor = fm_m01.5.f
+	duration = 3
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/religion_icons/sunni.dds"
+	trigger = {
+	}
+	option = {
+		name = fm_m01.5.a
+		default_option = yes
+		add_loyalists = {
+			value = very_large_radicals
+			strata = middle
+		}
+		add_loyalists = {
+			strata = lower
+			value = very_large_radicals
+		}
+		add_primary_culture = cu:bedouin
+		add_primary_culture = cu:persian
+		add_primary_culture = cu:mashriqi
+		add_primary_culture = cu:berber
 	}
 }

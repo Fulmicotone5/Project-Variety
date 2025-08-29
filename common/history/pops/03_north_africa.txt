@@ -11,17 +11,17 @@
 				size = 132050
 			}
 			create_pop = {
-				culture = turkish
+				culture = circassian
 				pop_type = aristocrats
 				size = 20755
 			}
 			create_pop = {
-				culture = turkish
+				culture = circassian
 				pop_type = bureaucrats
 				size = 7591
 			}
 			create_pop = {
-				culture = turkish
+				culture = circassian
 				pop_type = officers
 				size = 520
 			}
@@ -30,7 +30,7 @@
 				size = 20590
 			}
 			create_pop = {
-				culture = north_caucasian
+				culture = circassian
 				size = 28588
 			}
 			create_pop = {
@@ -64,7 +64,11 @@
 		region_state:M01 = {
 			create_pop = {
 				culture = misri
-				size = 282008
+				size = 265008
+			}
+			create_pop = {
+				culture = circassian
+				size = 15588
 			}
 			create_pop = {
 				culture = bedouin
@@ -95,7 +99,7 @@
 		region_state:M01 = {
 			create_pop = {
 				culture = misri
-				size = 942937
+				size = 912937
 			}
 			create_pop = {
 				culture = misri
@@ -103,12 +107,16 @@
 				size = 176001
 			}
 			create_pop = {
-				culture = turkish
+				culture = circassian
 				pop_type = aristocrats
 				size = 4030
 			}
 			create_pop = {
-				culture = turkish
+				culture = circassian
+				size = 35588
+			}
+			create_pop = {
+				culture = circassian
 				pop_type = bureaucrats
 				size = 502
 			}
@@ -180,7 +188,7 @@
 				size = 132050
 			}
 			create_pop = {
-				culture = greek
+				culture = circassian
 				size = 20590
 			}
 			create_pop = {

@@ -7249,6 +7249,12 @@ M01 = { # Persia
 		priority = 1
 	}	
 }
+M02 = { # Persia
+	flag_definition = {
+		coa = M02		
+		priority = 1
+	}	
+}
 
 SAE = { # Persia
 	flag_definition = {

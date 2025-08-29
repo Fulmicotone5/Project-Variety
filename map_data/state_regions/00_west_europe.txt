@@ -1129,6 +1129,7 @@ STATE_WEST_SWITZERLAND = {
         bg_iron_mining = 24
         bg_lead_mining = 24
         bg_logging = 6
+        bg_copper_mining = 16
     }
 }
 

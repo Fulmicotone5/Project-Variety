@@ -113,7 +113,7 @@ ST1 = {
 	tier = grand_principality
 	
 	cultures = { xhosa south_bantu }
-	capital = STATE_CAPE_COLONY
+	capital = STATE_EASTERN_CAPE
 }
 
 SOK = {
