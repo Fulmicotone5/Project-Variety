@@ -416,9 +416,11 @@
 			create_building={
 				building="building_textile_mills"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:DKT"
-						levels=2
+						levels=1
+						region="STATE_MINNESOTA"
 					}
 				}
 				reserves=1
@@ -438,9 +440,11 @@
 			create_building={
 				building="building_furniture_manufacturies"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:DKT"
-						levels=2
+						levels=1
+						region="STATE_MINNESOTA"
 					}
 				}
 				reserves=1
@@ -449,9 +453,11 @@
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:DKT"
 						levels=5
+						region="STATE_MINNESOTA"
 					}
 				}
 				reserves=1
@@ -473,11 +479,26 @@
 				activate_production_methods={ "pm_simple_organization" }
 			}
 			create_building={
+				building="building_livestock_ranch"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:DKT"
+						levels=2
+						region="STATE_MINNESOTA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_sheep_farms"  "pm_standard_fences" "pm_unrefrigerated" "pm_slaughterhouses" }
+			}
+			create_building={
 				building="building_food_industry"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:DKT"
 						levels=1
+						region="STATE_MINNESOTA"
 					}
 				}
 				reserves=1
@@ -492,7 +513,7 @@
 				add_ownership={
 					country={
 						country="c:CAD"
-						levels=1
+						levels=2
 					}
 				}
 				reserves=1

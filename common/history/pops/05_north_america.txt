@@ -708,6 +708,11 @@
 				culture = na_yankton_yanktonai_dakota
 				size = 643455
 			}
+			create_pop = {
+				culture = na_yankton_yanktonai_dakota
+				pop_type = aristocrats
+				size = 24345
+			}
 
 			create_pop = {
 				culture = na_miami_illinois
@@ -738,6 +743,11 @@
 			create_pop = {
 				culture = na_yankton_yanktonai_dakota
 				size = 321432
+			}
+			create_pop = {
+				culture = na_yankton_yanktonai_dakota
+				pop_type = aristocrats
+				size = 4345
 			}
 		}
 		region_state:ONE = {
@@ -808,6 +818,11 @@
 				size = 284766
 			}
 			create_pop = {
+				culture = na_yankton_yanktonai_dakota
+				pop_type = aristocrats
+				size = 24345
+			}
+			create_pop = {
 				culture = na_caddoan
 				size = 64000
 			}
@@ -826,6 +841,11 @@
 			create_pop = {
 				culture = na_yankton_yanktonai_dakota
 				size = 543433
+			}
+			create_pop = {
+				culture = na_yankton_yanktonai_dakota
+				pop_type = aristocrats
+				size = 44345
 			}
 
 			create_pop = {
@@ -848,6 +868,11 @@
 			create_pop = {
 				culture = na_lakota
 				size = 290000
+			}
+			create_pop = {
+				culture = na_yankton_yanktonai_dakota
+				pop_type = aristocrats
+				size = 2345
 			}
 			create_pop = {
 				culture = na_omaha_ponca

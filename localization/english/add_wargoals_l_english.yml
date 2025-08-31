@@ -139,3 +139,5 @@
  canton_system_trade_center_trigger_tt: "Under the [GetLawType('law_canton_system').GetName] [concept_law], Trade Centers can only be constructed up to level #v 50#! in #v $STATE_SHANDONG$#!"
  country_disallow_trade_outside_canton_bool: "Disable Trade Centers outside $STATE_SHANDONG$"
  country_disallow_trade_outside_canton_bool_desc: "Disallow construction of Trade Centers in $concept_states$ other than #v $STATE_SHANDONG$#!"
+ je_canada_pacific_railway: "The Northern Pacific Railway"
+ je_canada_pacific_railway_reason: "A railway spanning from the Atlantic to the Pacific coast would open up new opportunities for settlement in the Western regions."

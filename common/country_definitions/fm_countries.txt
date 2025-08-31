@@ -1809,7 +1809,7 @@ M01 = {
 	capital = STATE_LOWER_EGYPT
 }
 M02 = {
-	color = { 199 106 14}
+	color = { 5 84 42}
 	
 	country_type = recognized
 	
@@ -3952,7 +3952,7 @@ MU1 = {
 }
 
 MUR = {
-	color = { 5 84 42 }
+	color = { 117 24 18 }
 	
 	country_type = recognized
 	

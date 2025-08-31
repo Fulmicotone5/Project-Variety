@@ -204,9 +204,11 @@ pm_flotation_copper = {
 
     building_modifiers = {
         workforce_scaled = {
-			goods_input_tools_add = 5
+			goods_input_tools_add = 2
 			goods_input_oil_add = 1
-			goods_output_copper_add = 35
+			goods_input_steel_add = 5
+			goods_input_electricity_add = 5
+			goods_output_copper_add = 50
         }
         level_scaled = {
 			building_employment_laborers_add = -1000

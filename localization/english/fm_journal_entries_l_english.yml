@@ -828,3 +828,5 @@ je_bud_main_reason: "The Grand Duchy of [ROOT.GetCountry.GetName] has been a vas
  je_m01_eth_reason: "#V The Coptic sects that have long troubled our nation will persist unless we address the issue at its core.\nIt is imperative that we undertake the conquest of Ethiopia and eradicate the Coptic Church once and for all.#!"
  je_m01_abbasids: "Reviving the Abbasid Caliphate"
  je_m01_abbasids_reason: "#V The Abbasid Caliphate, although formally restored, will remain ineffectual and unrecognized unless we take measures to restore it to its former glory and stature.#!"
+ je_canada_pacific_railway: "The Northern Pacific Railway"
+ je_canada_pacific_railway_reason: "A railway spanning from the Atlantic to the Pacific coast would open up new opportunities for settlement in the Western regions."

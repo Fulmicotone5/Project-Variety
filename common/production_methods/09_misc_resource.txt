@@ -409,7 +409,7 @@ pm_wooden_whaling_ships = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input
-			goods_input_clippers_add = 53
+			goods_input_clippers_add = 3
 			
 			# output
 			goods_output_meat_add = 5

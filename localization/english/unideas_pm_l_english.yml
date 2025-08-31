@@ -332,7 +332,7 @@
  differential_flotation_process_desc: "Advanced chemical separation methods allow efficient extraction of sulfur and lead from complex ores. Requires significant oil byproducts for reagent production."
  pm_flotation_sulfur: "Flotation"
  pm_flotation_lead: "Flotation"
- pm_flotation_copper: "Flotation"
+ pm_flotation_copper: "Froth Flotation"
  pmg_invention_building_mining_industry_coal: "Invention"
  pmg_invention_building_mining_industry_iron: "Invention"
  pmg_invention_building_mining_industry_sulfur: "Invention"

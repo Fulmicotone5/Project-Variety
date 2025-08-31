@@ -1,0 +1,211 @@
+namespace = fm_disasters
+fm_disasters.1 = {
+	type = country_event
+	placement = ROOT
+	title = fm_disasters.1.t
+	desc = fm_disasters.1.d
+	flavor = fm_disasters.1.f
+	duration = 1
+	event_image = {
+		video = "unspecific_devastation"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+	trigger = {
+		NOT = {
+			has_global_variable = chileearth
+		}
+		owns_entire_state_region = STATE_LOS_RIOS
+		year > 1880
+	}
+	immediate = {
+		set_global_variable = {
+			name = chileearth
+		}
+		random_scope_state = {
+			limit = { state_region = s:STATE_LOS_RIOS }
+			save_scope_as = chilee_port_state
+		}
+	}
+	option = {
+		name = fm_disasters.1.a
+		default_option = yes
+		s:STATE_LOS_RIOS = {
+			add_devastation = 60
+		}
+		s:STATE_ARAUCANIA = {
+			add_devastation = 30
+		}
+		s:STATE_PATAGONIA = {
+			add_devastation = 30
+		}
+		s:STATE_SANTIAGO = {
+			add_devastation = 30
+		}
+		s:STATE_ANTOFAGASTA = {
+			add_devastation = 25
+		}
+				s:STATE_LA_PAMPA = {
+			add_devastation = 20
+		}
+				s:STATE_RIO_NEGRO = {
+			add_devastation = 20
+		}
+				s:STATE_TUCUMAN = {
+			add_devastation = 20
+		}
+		s:STATE_LIMA = {
+			add_devastation = 20
+		}
+		s:STATE_ICA = {
+			add_devastation = 20
+		}
+		s:STATE_AREQUIPA = {
+			add_devastation = 20
+		}
+		s:STATE_CAJAMARCA = {
+			add_devastation = 15
+		}
+		s:STATE_POTOSI = {
+			add_devastation = 15
+		}
+		s:STATE_JUJUY = {
+			add_devastation = 15
+		}
+		s:STATE_ECUADOR = {
+			add_devastation = 15
+		}
+		s:STATE_HAWAIIAN_ISLANDS = {
+			add_devastation = 15
+		}
+		s:STATE_NEW_SOUTH_WALES = {
+			add_devastation = 10
+		}
+		s:STATE_VICTORIA = {
+			add_devastation = 10
+		}
+		s:STATE_QUEENSLAND = {
+			add_devastation = 10
+		}
+		s:STATE_NORTHERN_TERRITORY = {
+			add_devastation = 10
+		}
+		s:STATE_NORTH_ISLAND = {
+			add_devastation = 10
+		}
+		s:STATE_SOUTH_ISLAND = {
+			add_devastation = 10
+		}
+		s:STATE_EAST_MICRONESIA = {
+			add_devastation = 10
+		}
+		s:STATE_WEST_MICRONESIA = {
+			add_devastation = 10
+		}
+		s:STATE_SOLOMON_ISLANDS = {
+			add_devastation = 10
+		}
+		s:STATE_FIJI = {
+			add_devastation = 10
+		}
+		s:STATE_VANUATU = {
+			add_devastation = 10
+		}
+		s:STATE_KANAK = {
+			add_devastation = 10
+		}
+		s:STATE_BOUGAINVILLE = {
+			add_devastation = 10
+		}
+		s:STATE_NAURU = {
+			add_devastation = 10
+		}
+		s:STATE_TAHITI = {
+			add_devastation = 10
+		}
+		s:STATE_TONGA = {
+			add_devastation = 10
+		}
+		s:STATE_EASTERN_NEW_GUINEA = {
+			add_devastation = 10
+		}
+		s:STATE_MINDANAO = {
+			add_devastation = 10
+		}
+		s:STATE_LUZON = {
+			add_devastation = 10
+		}
+		s:STATE_VISAYAS = {
+			add_devastation = 10
+		}
+		sr:region_south_china = {
+			every_scope_state = {
+				limit = {
+					is_coastal = yes
+				}
+				state_region = {
+					add_devastation = 5
+				}		
+			}
+		}
+		sr:region_north_china = {
+			every_scope_state = {
+				limit = {
+					is_coastal = yes
+				}
+				state_region = {
+					add_devastation = 5
+				}			
+			}
+		}
+		sr:region_japan= {
+			every_scope_state = {
+				limit = {
+					is_coastal = yes
+				}
+				state_region = {
+					add_devastation = 5
+				}		
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_player = yes
+					NOT = {
+						owns_entire_state_region = STATE_LOS_RIOS
+					}
+				}
+				trigger_event = {
+					id = fm_disasters.11
+				}
+			}
+		}
+	}
+}
+fm_disasters.11 = {
+	type = country_event
+	placement = ROOT
+	title = fm_disasters.11.t
+	desc = fm_disasters.11.d
+	flavor = fm_disasters.11.f
+	duration = 2
+	event_image = {
+		video = "unspecific_devastation"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+	immediate = {
+		random_scope_state = {
+			limit = { state_region = s:STATE_LOS_RIOS }
+			save_scope_as = chilee_port_state
+		}
+	}
+	option = {
+		name = fm_disasters.11.a
+		default_option = yes
+		custom_tooltip = {
+			text = devachile
+		}
+	}
+}

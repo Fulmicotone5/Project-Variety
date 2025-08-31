@@ -450,13 +450,14 @@ on_monthly_pulse_country = {
 on_yearly_pulse_country = {
 	events = {
 		utopian.2
-		plague.11
+		plague.1
 		plague.1111
 		fm_pop_consolidation.1
 	}
 	random_events = {
 		chance_to_happen = 50
-		10 = plague.1
+		10 = plague.11
+		10 = fm_disasters.1
 	}
 	effect = {
 
