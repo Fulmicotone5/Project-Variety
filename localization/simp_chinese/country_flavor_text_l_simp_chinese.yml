@@ -1,5 +1,4 @@
 ﻿l_simp_chinese:
- EGE_FLAVOR_TEXT: "#V #bold 可成立国家：#!#!\n#V  ·阿拉伯\n ·泛伊斯兰帝国#!"
  HDJ_FLAVOR_TEXT: "#V #bold 可成立国家：#!#!\n#V  ·也门\n·阿拉伯\n·泛伊斯兰帝国#!"
  ENG_FLAVOR_TEXT: "#V #bold 可成立国家：#!#!\n#V  ·大不列颠\n·联合王国\n·英格兰和法兰西王国#!"
  PUM_FLAVOR_TEXT: "#V #bold 可成立国家：#!#!\n#V  ·日耳曼尼亚\n·北德意志联邦\n·汉萨同盟\n·法兰克尼亚#!"
@@ -16,7 +15,7 @@
  PUP_FLAVOR_TEXT: "#V #bold 可成立国家：#!#!\n#V  ·罗马共和国\n·西罗马帝国\n·意大利帝国教堂\n·罗马帝国#!"
  MUR_FLAVOR_TEXT: "#V #bold 可成立国家：#!#!\n#V  ·安达卢斯\n ·马格里布\n ·泛伊斯兰帝国#!"
  HAK_FLAVOR_TEXT: "#V #bold 可成立国家：#!#!\n#V  ·安达卢斯\n ·马格里布\n ·泛伊斯兰帝国#!"
- VEN_FLAVOR_TEXT: "The Republic of Venice, once renowned for its prosperity through maritime trade, has now evolved into a state predominantly serving the interests of corporate entities and affluent individuals.\nThis shift raises questions about its future:\ncould this development precipitate its decline, or might Venice ultimately emerge as the preeminent trading power the world has ever seen?"
+ VEN_FLAVOR_TEXT: "威尼斯共和国曾以海上贸易带来的繁荣著称，如今却已蜕变为主要服务于企业实体与富裕阶层的城邦。\n这种转变引发诸多疑问：\n此举会否加速其衰落？抑或威尼斯终将成为人类史上最卓越的贸易力量？"
  MAX_FLAVOR_TEXT: "墨西哥在经历了与卡斯蒂利亚的长期战争后，最近刚刚从卡斯蒂利亚获得独立。\n这个国家仍在从战争的创伤中恢复，但至少它现在已经独立了。\n墨西哥人民的未来会是怎样的呢？"
  AGA_FLAVOR_TEXT: "#V #bold 可成立国家：#!#!\n#V  ·阿根提\n ·巴西\n ·乌拉圭 #!"
  VNA_FLAVOR_TEXT: "#V #bold 可成立国家：#!#!\n#V  ·威尼西亚纳#!"
@@ -414,3 +413,4 @@
  OM1_FLAVOR_TEXT: "#V #bold 可成立国家：#!#!\n#V  ·阿拉伯#!"
  MU1_FLAVOR_TEXT: "#V #bold 可成立国家：#!#!\n#V  ·阿尔及利亚\n·安达卢斯\n ·马格里布\n ·泛伊斯兰帝国#!"
  IL1_FLAVOR_TEXT: "#V #bold 可成立国家：#!#!\n#V  ·$BF1$\n·法兰克尼亚#!"
+ M01_FLAVOR_TEXT: "#V #bold 可成立国家：#!#!\n#V  ·马穆鲁克哈里发国\n·埃及\n·阿拔斯哈里发国#!"
