@@ -458,6 +458,7 @@ on_yearly_pulse_country = {
 		chance_to_happen = 50
 		10 = plague.11
 		10 = fm_disasters.1
+		10 = fm_disasters.2
 	}
 	effect = {
 

@@ -209,3 +209,85 @@ fm_disasters.11 = {
 		}
 	}
 }
+
+fm_disasters.2 = {
+	type = country_event
+	placement = ROOT
+	title = fm_disasters.2.t
+	desc = fm_disasters.2.d
+	flavor = fm_disasters.2.f
+	duration = 1
+	event_image = {
+		video = "unspecific_devastation"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+	trigger = {
+		NOT = {
+			has_global_variable = coringacy
+		}
+		owns_entire_state_region = STATE_CIRCARS
+		year > 1838
+	}
+	immediate = {
+		set_global_variable = {
+			name = coringacy
+		}
+		random_scope_state = {
+			limit = { state_region = s:STATE_CIRCARS }
+			save_scope_as = circarsata
+		}
+	}
+	option = {
+		name = fm_disasters.2.a
+		default_option = yes
+		s:STATE_CIRCARS = {
+			add_devastation = 50
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_CIRCARS
+			}
+			kill_population_percent_in_state = {
+				percent = 0.07
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_player = yes
+					country_is_in_india = yes
+					NOT = {
+						owns_entire_state_region = STATE_CIRCARS
+					}
+				}
+				trigger_event = {
+					id = fm_disasters.22
+				}
+			}
+		}
+	}
+}
+fm_disasters.22 = {
+	type = country_event
+	placement = ROOT
+	title = fm_disasters.22.t
+	desc = fm_disasters.22.d
+	flavor = fm_disasters.22.f
+	duration = 2
+	event_image = {
+		video = "unspecific_devastation"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+	immediate = {
+		random_scope_state = {
+			limit = { state_region = s:STATE_CIRCARS }
+			save_scope_as = circarsata
+		}
+	}
+	option = {
+		name = fm_disasters.22.a
+		default_option = yes
+	}
+}

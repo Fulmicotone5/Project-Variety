@@ -2915,7 +2915,7 @@ URU = {
 }
 
 VNA = {
-	color = { 63 19 145 }
+	color = { 89 16 125 }
 	
 	country_type = colonial
 	
