@@ -1,0 +1,29 @@
+ig_trait_sons_of_ragnarok = {
+	icon = "gfx/interface/icons/ig_trait_icons/patriotic_fervor.dds"
+	min_approval = loyal
+	
+	modifier = {
+		unit_morale_recovery_mult = 0.1
+		unit_morale_loss_mult = -0.1
+	}
+}
+
+ig_trait_blessed_by_aesir = {
+	icon = "gfx/interface/icons/ig_trait_icons/divine_right.dds"
+	min_approval = happy
+	
+	modifier = {
+		state_loyalists_from_political_movements_mult = 0.1
+	}
+}
+
+ig_trait_nio = {
+	icon = "gfx/interface/icons/ig_trait_icons/pious_fiction.dds"
+	max_approval = unhappy
+	
+	modifier = {
+		unit_morale_recovery_mult = -0.05
+		unit_morale_loss_mult = 0.05
+		state_radicals_from_political_movements_mult = 0.05
+	}
+}
