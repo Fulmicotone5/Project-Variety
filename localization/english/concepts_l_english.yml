@@ -63,7 +63,7 @@
 
  concept_chartered_company: "Chartered Company"
  concept_chartered_companies: "Chartered Companies"
- concept_chartered_company_desc: "In special circumstances, [Concept('concept_recognized_power','$concept_recognized_powers$')] may establish a $concept_chartered_company$ ([concept_subject]). A $concept_chartered_company$ is a highly autonomous [concept_subject_type] that are able to start their own [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')] and are forced to join their [Concept('concept_overlord','$concept_overlord_possessive$')] [Concept('concept_war','$concept_wars$')]. There are also special restrictions on reducing the [concept_autonomy], and their base [concept_liberty_desire] gain is greatly reduced. They must pay #v 40%#! of their [concept_treasury] income to their $concept_overlord$ each week."
+ concept_chartered_company_desc: "In special circumstances, [Concept('concept_recognized_power','$concept_recognized_powers$')] may establish a $concept_chartered_company$ ([concept_subject]). A $concept_chartered_company$ is a highly autonomous [concept_subject_type] that are able to start their own [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')] and are forced to join their [Concept('concept_overlord','$concept_overlord_possessive$')] [Concept('concept_war','$concept_wars$')]. There are also special restrictions on reducing the [concept_autonomy], and their base [concept_liberty_desire] gain is greatly reduced. They must pay #v 30%#! of their [concept_treasury] income to their $concept_overlord$ each week."
 
  concept_fund_lobbies: "Fund Lobbies"
  concept_funding_lobbies: "Funding Lobbies"

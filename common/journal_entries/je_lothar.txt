@@ -24,6 +24,7 @@
 			}
 			annex_with_incorporation = c:SGF
 			activate_law = law_type:law_monarchy
+			activate_law = law_type:law_interventionism
 				change_tag = GRO
 				add_primary_culture = cu:south_german
 				unification_claims_effect = yes
