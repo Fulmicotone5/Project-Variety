@@ -56,8 +56,8 @@ je_boh_mor = {
 	group = je_group_historical_content
 	complete = {
 		owns_entire_state_region = STATE_WEST_GALICIA
-		owns_entire_state_region = STATE_WEST_SLOVAKIA
-		owns_entire_state_region = STATE_EAST_SLOVAKIA
+		owns_entire_state_region = STATE_SLOVAKIA
+		owns_entire_state_region = STATE_RUTHENIA
 		owns_entire_state_region = STATE_TRANSDANUBIA
 		owns_entire_state_region = STATE_CENTRAL_HUNGARY
 		owns_entire_state_region = STATE_BEKES
@@ -119,14 +119,17 @@ je_boh_mor = {
 				remove_homeland = cu:south_german
 				add_homeland = cu:moravian
 			}
-			s:STATE_SILESIA = {
+			s:STATE_LOWER_SILESIA = {
 				add_homeland = cu:moravian
 			}
-			s:STATE_WEST_SLOVAKIA = {
+			s:STATE_UPPER_SILESIA = {
+				add_homeland = cu:moravian
+			}
+			s:STATE_SLOVAKIA = {
 				remove_homeland = cu:hungarian
 				add_homeland = cu:moravian
 			}
-			s:STATE_EAST_SLOVAKIA = {
+			s:STATE_RUTHENIA = {
 				remove_homeland = cu:hungarian
 				add_homeland = cu:moravian
 			}
@@ -172,8 +175,8 @@ je_boh_dan = {
 	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
 	group = je_group_historical_content
 	complete = {
-		owns_entire_state_region = STATE_WEST_SLOVAKIA
-		owns_entire_state_region = STATE_EAST_SLOVAKIA
+		owns_entire_state_region = STATE_SLOVAKIA
+		owns_entire_state_region = STATE_RUTHENIA
 		owns_entire_state_region = STATE_TRANSDANUBIA
 		owns_entire_state_region = STATE_CENTRAL_HUNGARY
 		owns_entire_state_region = STATE_BEKES
@@ -284,8 +287,8 @@ je_carp = {
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 	group = je_group_historical_content
 	complete = {
-		owns_entire_state_region = STATE_WEST_SLOVAKIA
-		owns_entire_state_region = STATE_EAST_SLOVAKIA
+		owns_entire_state_region = STATE_SLOVAKIA
+		owns_entire_state_region = STATE_RUTHENIA
 		owns_entire_state_region = STATE_TRANSDANUBIA
 		owns_entire_state_region = STATE_CENTRAL_HUNGARY
 		owns_entire_state_region = STATE_BEKES

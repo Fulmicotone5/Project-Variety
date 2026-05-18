@@ -99,7 +99,10 @@ fm_pol.2 = {
 		s:STATE_WEST_PRUSSIA = {
 			add_claim = ROOT
 		}
-		s:STATE_SILESIA = {
+		s:STATE_LOWER_SILESIA = {
+			add_claim = ROOT
+		}
+		s:STATE_UPPER_SILESIA = {
 			add_claim = ROOT
 		}
 		s:STATE_BOHEMIA = {
@@ -108,10 +111,10 @@ fm_pol.2 = {
 		s:STATE_MORAVIA = {
 			add_claim = ROOT
 		}
-		s:STATE_WEST_SLOVAKIA = {
+		s:STATE_SLOVAKIA = {
 			add_claim = ROOT
 		}
-		s:STATE_EAST_SLOVAKIA = {
+		s:STATE_RUTHENIA = {
 			add_claim = ROOT
 		}
 	}

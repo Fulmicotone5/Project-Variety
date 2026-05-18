@@ -3,8 +3,8 @@
 		effect_starting_technology_tier_1_tech = yes
 		add_technology_researched = fractional_distillation
 		add_technology_researched = bessemer_process
-		add_technology_researched = scientific_crop_rotation
-		add_technology_researched = tropical_agronomy_studies
+		
+		
 		effect_starting_politics_conservative = yes
 		
 		add_taxed_goods = g:liquor

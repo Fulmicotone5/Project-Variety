@@ -248,7 +248,7 @@
 			}
 		}
 	}
-	s:STATE_TOLEDO = {
+	s:STATE_NEW_CASTILE = {
 		region_state:CAS = {
 			create_pop = {
 				culture = spanish
@@ -282,7 +282,7 @@
 			}
 		}
 	}
-	s:STATE_CASTILE = {
+	s:STATE_OLD_CASTILE = {
 		region_state:CAS = {
 			create_pop = {
 				culture = spanish
@@ -294,7 +294,7 @@
 			}
 		}
 	}
-	s:STATE_NAVARRA = {
+	s:STATE_BASQUE_COUNTRY = {
 		region_state:NAV = {
 			create_pop = {
 				culture = spanish
@@ -338,7 +338,7 @@
 			}
 		}
 	}
-	s:STATE_BALEARES = {
+	s:STATE_BALEARIC_ISLANDS = {
 		region_state:KAA = {
 			create_pop = {
 				culture = catalan
@@ -359,7 +359,7 @@
 			}
 		}
 	}
-	s:STATE_ANDALUSIA = {
+	s:STATE_LOWER_ANDALUSIA = {
 		region_state:MUR = {
 			create_pop = {
 				culture = andalusian
@@ -384,7 +384,7 @@
 			}
 		}
 	}
-	s:STATE_GRANADA = {
+	s:STATE_UPPER_ANDALUSIA = {
 		region_state:MUR = {
 			create_pop = {
 				culture = andalusian
@@ -409,7 +409,7 @@
 			}
 		}
 	}
-	s:STATE_BADAJOZ = {
+	s:STATE_EXTREMADURA = {
 		region_state:CAS = {
 			create_pop = {
 				culture = spanish
@@ -431,6 +431,46 @@
 				culture = phoenician
 				religion = catholic
 				size = 2392
+			}
+		}
+	}
+	s:STATE_MURCIA = {
+		region_state:KAA = {
+			create_pop = {
+				culture = spanish
+				size = 464203
+			}
+			create_pop = {
+				culture = catalan
+				size = 10103
+			}
+		}
+	}
+	s:STATE_LEON = {
+		region_state:CAS = {
+			create_pop = {
+				culture = spanish
+				size = 260024
+			}
+			create_pop = {
+				culture = asturleonese
+				size = 372894
+			}
+			create_pop = {
+				culture = galician
+				size = 10003
+			}
+		}
+	}
+	s:STATE_ENTRE_DOURO_E_MINHO = {
+		region_state:PUR = {
+			create_pop = {
+				culture = portuguese
+				size = 1194781
+			}
+			create_pop = {
+				culture = asturleonese
+				size = 8231
 			}
 		}
 	}
@@ -841,7 +881,7 @@
 			}
 		}
 	}
-	s:STATE_NORTHERN_SERBIA = {
+	s:STATE_WESTERN_SERBIA = {
 		region_state:SER = {
 			create_pop = {
 				culture = serb
@@ -849,7 +889,20 @@
 			}
 		}
 	}
-	s:STATE_SOUTHERN_SERBIA = {
+	s:STATE_KOSOVO = {
+		region_state:SER = {
+			create_pop = {
+				culture = serb
+				size = 150960
+			}
+			create_pop = {
+				culture = albanian
+				size = 180960
+			}
+		}
+	}
+
+	s:STATE_EASTERN_SERBIA = {
 		region_state:SER = {
 			create_pop = {
 				culture = serb

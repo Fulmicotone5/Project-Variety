@@ -97,19 +97,6 @@
 				size = 12400
 			}
 		}
-	}
-	s:STATE_GAMBIA = {
-		region_state:PUR = {
-			create_pop = {
-				culture = central_bantu
-				size = 952304
-			}
-
-			create_pop = {
-				culture = west_africanus
-				size = 127996
-			}
-		}
 		region_state:DKE = {
 			create_pop = {
 				culture = west_africanus
@@ -125,33 +112,8 @@
 				size = 220
 			}
 		}
-		region_state:AF6 = {
-			create_pop = {
-				culture = west_africanus
-				religion = animist
-				size = 280400
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = west_africanus
-				size = 8000
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = west_africanus
-				religion = animist
-				size = 20000
-			}
-			create_pop = {
-				culture = west_africanus
-				size = 96000
-			}
-			create_pop = {
-				culture = central_bantu
-				size = 64400
-			}
-		}
 	}
+
 	s:STATE_SIERRA_LEONE = {
 		region_state:NED = {
 			create_pop = {
@@ -625,6 +587,17 @@
 		}
 	}
 	s:STATE_GUINEA = {
+		region_state:PUR = {
+			create_pop = {
+				culture = central_bantu
+				size = 952304
+			}
+
+			create_pop = {
+				culture = west_africanus
+				size = 127996
+			}
+		}
 		region_state:MDK = {
 			create_pop = {
 				culture = west_africanus
@@ -646,8 +619,23 @@
 				size = 316000
 			}
 			create_pop = {
-				culture = central_bantu
+				pop_type = slaves
+				culture = west_africanus
 				size = 8000
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = west_africanus
+				religion = animist
+				size = 20000
+			}
+			create_pop = {
+				culture = west_africanus
+				size = 96000
+			}
+			create_pop = {
+				culture = central_bantu
+				size = 64400
 			}
 		}
 		region_state:FTJ = {
@@ -671,7 +659,7 @@
 			}
 		}
 	}
-	s:STATE_GHANA = {
+	s:STATE_GOLD_COAST = {
 		region_state:VEN = {
 			create_pop = {
 				culture = akan
@@ -706,7 +694,7 @@
 			}
 		}
 	}
-	s:STATE_TOGO = {
+	s:STATE_GOLD_COST = {
 		region_state:VEN = {
 			create_pop = {
 				culture = akan
@@ -721,6 +709,8 @@
 				size = 47996
 			}
 		}
+	}
+	s:STATE_TOGO = {
 		region_state:ASH = {
 			create_pop = {
 				culture = ewe

@@ -13,7 +13,7 @@ def_na_dakota_trigger = {
 def_na_cree_trigger = {
 	OR = {
 		has_discrimination_trait = cu:na_algonquian_culture_group
-		has_discrimination_trait = cu:na_caddoan_culture_group
+		has_discrimination_trait = cu:caddoan_culture_group
 		has_discrimination_trait = cu:na_athabaskan_culture_group
 	}
 }
@@ -48,12 +48,12 @@ def_na_native_american_trigger = {
 		culture = cu:na_chiwere_winnebago
 		culture = cu:na_kansa_osage
 		culture = cu:na_mandan
-		culture = cu:na_cree_montagnais
+		culture = cu:cree
 
-		culture = cu:na_blackfoot
+		culture = cu:siouan
 		culture = cu:na_arapahoan
-		culture = cu:na_miami_illinois
-		culture = cu:na_eastern_algonquian
+		culture = cu:algonquian
+		culture = cu:siouan
 		culture = cu:na_shapwailutan
 		culture = cu:na_shoshone
 		culture = cu:na_paiute
@@ -67,6 +67,6 @@ def_na_native_american_trigger = {
 		culture = cu:na_cahita
 		culture = cu:na_corachol
 		culture = cu:na_yuman
-		culture = cu:na_caddoan
+		culture = cu:caddoan
 	}
 }

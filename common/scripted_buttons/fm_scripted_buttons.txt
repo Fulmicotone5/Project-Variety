@@ -90,7 +90,7 @@ je_ye_button_two = {
 		}
 		hidden_effect = {
 			s:STATE_MONTANA = {
-				remove_homeland = cu:na_blackfoot
+				remove_homeland = cu:siouan
 				add_homeland = cu:han
 				add_homeland = cu:yue
 				add_homeland = cu:min
@@ -1615,7 +1615,7 @@ je_int_ten = {
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
-					culture = cu:na_eastern_algonquian
+					culture = cu:siouan
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
@@ -1668,7 +1668,7 @@ je_int_ark = {
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
-					culture = cu:na_caddoan
+					culture = cu:caddoan
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
@@ -1715,7 +1715,7 @@ je_int_okl = {
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
-					culture = cu:na_caddoan
+					culture = cu:caddoan
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
@@ -1774,7 +1774,7 @@ je_int_mis = {
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
-					culture = cu:na_miami_illinois
+					culture = cu:algonquian
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
@@ -1821,7 +1821,7 @@ je_int_kan = {
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
-					culture = cu:na_caddoan
+					culture = cu:caddoan
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
@@ -1882,7 +1882,7 @@ je_int_lak = {
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
-					culture = cu:na_blackfoot
+					culture = cu:siouan
 				}
 
 				kill_population_percent_in_state = {
@@ -1900,7 +1900,7 @@ je_int_lak = {
 
 				kill_population_percent_in_state = {
 					percent = 0.95
-					culture = cu:na_cree_montagnais
+					culture = cu:cree
 				}
 				set_state_type = incorporated
 			}
@@ -1970,7 +1970,7 @@ je_int_ntd = {
 
 				kill_population_percent_in_state = {
 					percent = 0.95
-					culture = cu:na_caddoan
+					culture = cu:caddoan
 				}
 
 				set_state_type = incorporated
@@ -2019,7 +2019,7 @@ je_int_std = {
 
 				kill_population_percent_in_state = {
 					percent = 0.95
-					culture = cu:na_caddoan
+					culture = cu:caddoan
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
@@ -2076,11 +2076,11 @@ je_int_min = {
 
 				kill_population_percent_in_state = {
 					percent = 0.95
-					culture = cu:na_miami_illinois
+					culture = cu:algonquian
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
-					culture = cu:na_cree_montagnais
+					culture = cu:cree
 				}
 				set_state_type = incorporated
 			}
@@ -2127,7 +2127,7 @@ je_int_iow = {
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
-					culture = cu:na_miami_illinois
+					culture = cu:algonquian
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
@@ -2182,7 +2182,7 @@ je_int_neb = {
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
-					culture = cu:na_caddoan
+					culture = cu:caddoan
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
@@ -2230,7 +2230,7 @@ je_int_tex = {
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
-					culture = cu:na_caddoan
+					culture = cu:caddoan
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
@@ -2364,7 +2364,7 @@ je_int_che = {
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
-					culture = cu:na_eastern_algonquian
+					culture = cu:siouan
 				}
 
 				kill_population_percent_in_state = {
@@ -2416,7 +2416,7 @@ je_int_ohi = {
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
-					culture = cu:na_eastern_algonquian
+					culture = cu:siouan
 				}
 				set_state_type = incorporated
 			}
@@ -2459,11 +2459,11 @@ je_int_mich = {
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
-					culture = cu:na_miami_illinois
+					culture = cu:algonquian
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
-					culture = cu:na_eastern_algonquian
+					culture = cu:siouan
 				}
 				set_state_type = incorporated
 			}
@@ -2506,11 +2506,11 @@ je_int_indiana = {
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
-					culture = cu:na_miami_illinois
+					culture = cu:algonquian
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
-					culture = cu:na_eastern_algonquian
+					culture = cu:siouan
 				}
 				set_state_type = incorporated
 			}
@@ -2553,11 +2553,11 @@ je_int_illi = {
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
-					culture = cu:na_miami_illinois
+					culture = cu:algonquian
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
-					culture = cu:na_eastern_algonquian
+					culture = cu:siouan
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
@@ -2604,7 +2604,7 @@ je_int_wis = {
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
-					culture = cu:na_miami_illinois
+					culture = cu:algonquian
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
@@ -2885,7 +2885,7 @@ je_int_cree = {
 
 				kill_population_percent_in_state = {
 					percent = 0.55
-					culture = cu:na_cree_montagnais
+					culture = cu:cree
 				}
 
 				kill_population_percent_in_state = {
@@ -2901,7 +2901,7 @@ je_int_cree = {
 
 				kill_population_percent_in_state = {
 					percent = 0.55
-					culture = cu:na_cree_montagnais
+					culture = cu:cree
 				}
 				set_state_type = incorporated
 			}
@@ -3032,7 +3032,7 @@ je_int_sali = {
 				}
 				kill_population_percent_in_state = {
 					percent = 0.55
-					culture = cu:na_cree_montagnais
+					culture = cu:cree
 				}
 				set_state_type = incorporated
 			}
@@ -3068,7 +3068,7 @@ je_int_sali = {
 				}
 				kill_population_percent_in_state = {
 					percent = 0.85
-					culture = cu:na_blackfoot
+					culture = cu:siouan
 				}
 				set_state_type = incorporated
 			}
@@ -3120,12 +3120,12 @@ je_int_siou = {
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
-					culture = cu:na_blackfoot
+					culture = cu:siouan
 				}
 
 				kill_population_percent_in_state = {
 					percent = 0.85
-					culture = cu:na_cree_montagnais
+					culture = cu:cree
 				}
 				set_state_type = incorporated
 			}
@@ -3135,11 +3135,11 @@ je_int_siou = {
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
-					culture = cu:na_blackfoot
+					culture = cu:siouan
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95
-					culture = cu:na_cree_montagnais
+					culture = cu:cree
 				}
 				set_state_type = incorporated
 			}
@@ -4390,7 +4390,7 @@ LF_decision_one = {
 	effect = {
 		capital = {
 			create_building = {
-				building = "building_synthetics_plants"
+				building = "building_synthetics_plant"
 				level = 5
 				reserves=1
 			}

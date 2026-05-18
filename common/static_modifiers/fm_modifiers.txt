@@ -1387,7 +1387,7 @@ war_support_artists = {
 war_support_farmers = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
 	war_support_exhastion_reduction_add = -10
-	building_tooling_workshops_throughput_add = -0.1
+	building_tooling_workshop_throughput_add = -0.1
 }
 
 war_support_prayers = {

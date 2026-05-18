@@ -381,7 +381,7 @@ je_corpofm13 = {
 		any_scope_state = {
 			is_capital = yes
 			any_scope_building = {
-				is_building_type = building_arts_academy
+				is_building_type = building_art_academy
 				level > 10
 			}
 		}

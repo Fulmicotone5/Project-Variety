@@ -1,0 +1,8 @@
+heritage_roman = {
+	type = heritage
+	trait_group = heritage_group_european
+}
+heritage_phoenician = {
+	type = heritage
+	trait_group = heritage_group_middle_eastern
+}

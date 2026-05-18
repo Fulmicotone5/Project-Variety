@@ -91,7 +91,7 @@ je_restore_emperor = {
 			has_law_or_variant = law_type:law_oligarchy
 		}
 		scope:armed_forces_leader = {
-			is_ruler = yes
+			is_ruler_of_own_country = yes
 		}
 	}
 	on_complete = {

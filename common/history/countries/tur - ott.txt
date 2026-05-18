@@ -4,7 +4,7 @@
 		add_technology_researched = field_works
 		add_technology_researched = shell_gun
 		add_technology_researched = percussion_cap
-		add_technology_researched = hydraulic_logging_systems
+		
 		add_technology_progress = {
 			technology = egalitarianism
 			progress = 5000

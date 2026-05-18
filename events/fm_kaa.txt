@@ -45,19 +45,19 @@ fm_kaa.2 = {
 		s:STATE_GALICIA = {
 			add_claim = ROOT
 		}
-		s:STATE_CASTILE = {
+		s:STATE_OLD_CASTILE = {
 			add_claim = ROOT
 		}
-		s:STATE_TOLEDO = {
+		s:STATE_NEW_CASTILE = {
 			add_claim = ROOT
 		}
-		s:STATE_BADAJOZ = {
+		s:STATE_EXTREMADURA = {
 			add_claim = ROOT
 		}
-		s:STATE_ANDALUSIA = {
+		s:STATE_LOWER_ANDALUSIA = {
 			add_claim = ROOT
 		}
-		s:STATE_GRANADA = {
+		s:STATE_UPPER_ANDALUSIA = {
 			add_claim = ROOT
 		}
 		ai_chance = {

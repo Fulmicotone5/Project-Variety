@@ -139,7 +139,7 @@
 				size = 4100320
 			}
 			create_pop = {
-				culture = kanauji
+				culture = avadhi
 				size = 300848
 			}
 			create_pop = {
@@ -152,7 +152,7 @@
 				size = 240136
 			}
 			create_pop = {
-				culture = kanauji
+				culture = avadhi
 				religion = sunni
 				size = 344400
 			}
@@ -171,12 +171,12 @@
 				size = 100200
 			}
 			create_pop = {
-				culture = kanauji
+				culture = avadhi
 				pop_type = slaves
 				size = 130000
 			}
 			create_pop = {
-				culture = kanauji
+				culture = avadhi
 				religion = sunni
 				pop_type = slaves
 				size = 40000
@@ -226,11 +226,11 @@
 				size = 43542
 			}
 			create_pop = {
-				culture = kanauji
+				culture = avadhi
 				size = 327548
 			}
 			create_pop = {
-				culture = kanauji
+				culture = avadhi
 				religion = sunni
 				size = 82420
 			}
@@ -240,7 +240,7 @@
 				size = 4092
 			}
 			create_pop = {
-				culture = kanauji
+				culture = avadhi
 				pop_type = slaves
 				size = 13094
 			}
@@ -472,11 +472,11 @@
 				size = 43542
 			}
 			create_pop = {
-				culture = kanauji
+				culture = avadhi
 				size = 327548
 			}
 			create_pop = {
-				culture = kanauji
+				culture = avadhi
 				religion = sunni
 				size = 82420
 			}
@@ -486,7 +486,7 @@
 				size = 4092
 			}
 			create_pop = {
-				culture = kanauji
+				culture = avadhi
 				pop_type = slaves
 				size = 13094
 			}
@@ -505,12 +505,12 @@
 			}
 			create_pop = {
 				pop_type = telegu
-				culture = kanauji
+				culture = avadhi
 				size = 20020
 			}
 			create_pop = {
 				pop_type = telegu
-				culture = kanauji
+				culture = avadhi
 				religion = animist
 				size = 11000
 			}
@@ -525,7 +525,7 @@
 				size = 135037
 			}
 			create_pop = {
-				culture = kanauji
+				culture = avadhi
 				religion = animist
 				size = 1214700
 			}
@@ -541,7 +541,7 @@
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = kanauji
+				culture = avadhi
 				religion = animist
 				size = 50071
 			}

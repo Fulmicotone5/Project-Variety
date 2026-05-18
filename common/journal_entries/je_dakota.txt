@@ -159,7 +159,7 @@ je_anarco_cap = {
 	}
 	complete = {
 		scope:rural_folk_ig_leader = {
-			is_ruler = yes
+			is_ruler_of_own_country = yes
 		}
 	}
 	on_complete = {

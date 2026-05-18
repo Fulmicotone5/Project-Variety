@@ -44,7 +44,7 @@
 			if = {
 				limit = {
 					any_scope_building = {
-						is_building_type = building_artillery_foundries
+						is_building_type = building_artillery_foundry
 						occupancy > 0.1
 						level >= 1
 					}

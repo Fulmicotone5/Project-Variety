@@ -117,7 +117,7 @@ je_charlemagne_legacy = {
 		owns_entire_state_region = STATE_RHINELAND
 		owns_entire_state_region = STATE_ALSACE_LORRAINE
 		scope:armed_forces_leader = {
-			is_ruler = yes
+			is_ruler_of_own_country = yes
 		}
 	}
 	on_complete = {

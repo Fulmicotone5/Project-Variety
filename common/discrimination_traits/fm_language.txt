@@ -1,0 +1,4 @@
+language_phoenician = {
+	type = language
+	trait_group = language_group_semitic
+}

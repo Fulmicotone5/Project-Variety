@@ -401,16 +401,6 @@ dev.4 = { #For released countries
 		control_effects = yes
 		reset_control_modifiers = yes
 		control_mdf_effects = yes
-		if = {
-			limit = {
-				NOT = {
-					has_variable = victoria_universalis_system_on
-				}
-			}
-			set_missionary_cultural_missionary = yes
-			set_point_system = yes
-			religion_passive_bonuses = yes
-		}
 	}
 	option = {
 		name = dev.4.a

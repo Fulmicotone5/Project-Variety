@@ -79,7 +79,7 @@
 			}
 		}
 	}
-	s:STATE_SILESIA = {
+	s:STATE_LOWER_SILESIA = {
 		region_state:BOH = {
 			create_pop = {
 				culture = north_german
@@ -104,6 +104,9 @@
 				size = 396987
 			}
 		}
+	}
+	s:STATE_UPPER_SILESIA = {
+
 		region_state:WRS = {
 			create_pop = {
 				culture = polish
@@ -427,7 +430,7 @@
 			}
 		}
 	}
-	s:STATE_WEST_SLOVAKIA = {
+	s:STATE_SLOVAKIA = {
 		region_state:SLV = {
 			create_pop = {
 				culture = hungarian
@@ -460,7 +463,7 @@
 			}
 		}
 	}
-	s:STATE_EAST_SLOVAKIA = {
+	s:STATE_RUTHENIA = {
 		region_state:SLV = {
 			create_pop = {
 				culture = hungarian
@@ -568,15 +571,11 @@
 			}
 		}
 	}
-	s:STATE_MOLDAVIA = {
+	s:STATE_BUKOVINA = {
 		region_state:MOL = {
 			create_pop = {
 				culture = polish
 				size = 20008
-			}
-			create_pop = {
-				culture = szekely
-				size = 10012
 			}
 			create_pop = {
 				culture = romanian
@@ -587,18 +586,24 @@
 				size = 20004
 			}
 			create_pop = {
+				culture = szekely
+				size = 10012
+			}
+			create_pop = {
 				culture = hungarian
-				size = 11996
+				size = 1986
 			}
 			create_pop = {
 				culture = ukrainian
-				size = 74400
+				size = 144400
 			}
 			create_pop = {
 				culture = south_german
 				size = 32000
 			}
 		}
+	}
+	s:STATE_MOLDAVIA = {
 		region_state:MOL = { # Ballpark estimate: 1,358,409 total for 1836, guessing that its recorded 1859 census marked a 7.77% growth over 1836 or that 1836 is 92.79% of the 1859 census, drawn from a trendline of Transylvanian censuses 1784-1850
 			create_pop = {
 				culture = romanian

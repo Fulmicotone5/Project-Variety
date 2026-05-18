@@ -222,7 +222,10 @@ lotharingia.4 = {
 		s:STATE_EAST_PRUSSIA = {
 			add_claim = c:LOT
 		}
-		s:STATE_SILESIA = {
+		s:STATE_LOWER_SILESIA = {
+			add_claim = c:LOT
+		}
+		s:STATE_UPPER_SILESIA = {
 			add_claim = c:LOT
 		}
 		s:STATE_POMERANIA = {
@@ -682,7 +685,7 @@ lotharingia.8 = {
 		s:STATE_ARAGON = {
 			add_claim = c:LOT
 		}
-		s:STATE_NAVARRA = {
+		s:STATE_BASQUE_COUNTRY = {
 			add_claim = c:LOT
 		}
 	}

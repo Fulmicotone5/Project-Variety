@@ -494,7 +494,7 @@ ASH = {
 	tier = kingdom
 	
 	cultures = { akan }
-	capital = STATE_GHANA
+	capital = STATE_GOLD_COAST
 }
 
 YKA = {
@@ -1167,7 +1167,7 @@ KBU = {
 	
 	religion = animist
 	
-	capital = STATE_GAMBIA
+	capital = STATE_GUINEA
 }
 
 BND = {
@@ -1177,7 +1177,7 @@ BND = {
 	tier = principality
 	
 	cultures = { central_bantu west_africanus }
-	capital = STATE_GAMBIA
+	capital = STATE_GUINEA
 }
 
 SRR = {
@@ -1189,7 +1189,7 @@ SRR = {
 	religion = animist
 	
 	cultures = { west_africanus }
-	capital = STATE_GAMBIA
+	capital = STATE_GUINEA
 }
 
 SSU = {

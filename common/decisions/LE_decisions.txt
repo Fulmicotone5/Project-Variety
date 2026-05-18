@@ -504,38 +504,6 @@ convert_to_isl = {
 	}
 }
 
-research_decision = {
-	is_shown = {
-		NOT = {
-			any_scope_building = {
-				is_building_type = building_research_center
-			}
-		}
-		NOT = {
-			has_variable = bresearchvar
-		}
-	}
-
-	possible = {	
-		always = yes
-	}
-	
-	when_taken = {
-		trigger_event = {
-			id = bresearch.1
-			popup = yes
-		}
-		hidden_effect = {
-			set_variable = {
-				name = bresearchvar
-			}
-		}
-	}
-
-	ai_chance = {
-		value = 0
-	}
-}
 shinto_decision = {
 	is_shown = {
 		exists = c:JAE

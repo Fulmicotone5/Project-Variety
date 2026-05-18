@@ -2,18 +2,18 @@
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 	group = je_group_historical_content
 	complete = {
-				owns_entire_state_region = STATE_ANDALUSIA
-				owns_entire_state_region = STATE_GRANADA
-				owns_entire_state_region = STATE_BADAJOZ
+				owns_entire_state_region = STATE_LOWER_ANDALUSIA
+				owns_entire_state_region = STATE_UPPER_ANDALUSIA
+				owns_entire_state_region = STATE_EXTREMADURA
 				owns_entire_state_region = STATE_VALENCIA
-				owns_entire_state_region = STATE_TOLEDO
+				owns_entire_state_region = STATE_NEW_CASTILE
 			}
 	on_complete = {
 		add_modifier = {
 			name = modifier_marinid
 		}
 		hidden_effect = {
-			s:STATE_ANDALUSIA = {
+			s:STATE_LOWER_ANDALUSIA = {
 				add_homeland = cu:berber
 				add_homeland = cu:maghrebi
 			}
@@ -27,22 +27,22 @@
 				add_homeland = cu:maghrebi
 
 			}
-			s:STATE_CASTILE = {
+			s:STATE_OLD_CASTILE = {
 				add_homeland = cu:berber
 				add_homeland = cu:maghrebi
 
 			}
-			s:STATE_GRANADA = {
+			s:STATE_UPPER_ANDALUSIA = {
 				add_homeland = cu:berber
 				add_homeland = cu:maghrebi
 
 			}
-			s:STATE_TOLEDO = {
+			s:STATE_NEW_CASTILE = {
 				add_homeland = cu:berber
 				add_homeland = cu:maghrebi
 
 			}
-			s:STATE_BADAJOZ = {
+			s:STATE_EXTREMADURA = {
 				add_homeland = cu:berber
 				add_homeland = cu:maghrebi
 

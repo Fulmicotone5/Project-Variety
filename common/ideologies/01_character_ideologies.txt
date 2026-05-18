@@ -6,7 +6,7 @@
 	character_ideology = yes
 	
 	non_interest_group_leader_trigger = {
-		NOT = { has_role = agitator }
+		NOT = { has_role_of_type = agitator }
 	}
 	
 	interest_group_leader_weight = {
@@ -103,7 +103,7 @@ ideology_traditionalist = {
 	non_interest_group_leader_trigger = {
 		# Agitators should have an ideology at odds with current laws
 		NAND = {
-			has_role = agitator
+			has_role_of_type = agitator
 			owner = {
 				has_law = law_type:law_no_womens_rights
 				has_law = law_type:law_state_religion
@@ -132,7 +132,7 @@ ideology_traditionalist = {
 				owner = {
 					any_scope_character = {
 						has_template = RUS_alexander_iii
-						is_ruler = yes
+						is_ruler_of_own_country = yes
 					}
 				}
 			}
@@ -162,7 +162,7 @@ ideology_traditionalist = {
 				owner = {
 					any_scope_character = {
 						has_template = RUS_alexander_iii
-						is_ruler = yes
+						is_ruler_of_own_country = yes
 					}
 				}
 			}
@@ -225,7 +225,7 @@ ideology_traditionalist_minoritarian = {
 			}
 		}
 		NAND = {
-			has_role = agitator
+			has_role_of_type = agitator
 			owner = {
 				has_law = law_type:law_no_womens_rights
 				has_law = law_type:law_state_religion
@@ -253,7 +253,7 @@ ideology_traditionalist_minoritarian = {
 				owner = {
 					any_scope_character = {
 						has_template = RUS_alexander_iii
-						is_ruler = yes
+						is_ruler_of_own_country = yes
 					}
 				}
 			}
@@ -284,7 +284,7 @@ ideology_traditionalist_minoritarian = {
 				owner = {
 					any_scope_character = {
 						has_template = RUS_alexander_iii
-						is_ruler = yes
+						is_ruler_of_own_country = yes
 					}
 				}
 			}
@@ -349,7 +349,7 @@ ideology_nihilist  = {
 	non_interest_group_leader_trigger = {
 		# Agitators should have an ideology at odds with current laws
 		NAND = {
-			has_role = agitator
+			has_role_of_type = agitator
 			owner = {
 				OR = {
 					has_law = law_type:law_presidential_republic
@@ -366,8 +366,8 @@ ideology_nihilist  = {
 				has_law = law_type:law_monarchy
 			}
 			OR = {
-				is_ruler = yes
-				is_heir = yes
+				is_ruler_of_own_country = yes
+				is_heir_of_own_country = yes
 			}
 		}
 		interest_group = {
@@ -486,7 +486,7 @@ ideology_republican_leader = {
 	non_interest_group_leader_trigger = {
 		# Agitators should have an ideology at odds with current laws
 		NAND = {
-			has_role = agitator
+			has_role_of_type = agitator
 			owner = {
 				OR = {
 					has_law = law_type:law_presidential_republic
@@ -502,8 +502,8 @@ ideology_republican_leader = {
 				has_law = law_type:law_monarchy
 			}
 			OR = {
-				is_ruler = yes
-				is_heir = yes
+				is_ruler_of_own_country = yes
+				is_heir_of_own_country = yes
 			}
 		}
 		interest_group = {
@@ -696,7 +696,7 @@ ideology_radical = {
 	non_interest_group_leader_trigger = {
 		# Agitators should have an ideology at odds with current laws
 		NAND = {
-			has_role = agitator
+			has_role_of_type = agitator
 			owner = {
 				OR = {
 					has_law = law_type:law_presidential_republic
@@ -714,8 +714,8 @@ ideology_radical = {
 				has_law = law_type:law_monarchy
 			}
 			OR = {
-				is_ruler = yes
-				is_heir = yes
+				is_ruler_of_own_country = yes
+				is_heir_of_own_country = yes
 			}
 		}
 		interest_group = {
@@ -909,7 +909,7 @@ ideology_reformer = {
 	non_interest_group_leader_trigger = {
 		# Agitators should have an ideology at odds with current laws
 		NAND = {
-			has_role = agitator
+			has_role_of_type = agitator
 			owner = {
 				has_law = law_type:law_cultural_exclusion
 				has_law = law_type:law_compulsory_primary_school
@@ -1045,7 +1045,7 @@ ideology_feminist = {
 	non_interest_group_leader_trigger = {
 		# Agitators should have an ideology at odds with current laws
 		NAND = {
-			has_role = agitator
+			has_role_of_type = agitator
 			owner = {
 				has_law = law_type:law_womens_suffrage
 			}
@@ -1411,7 +1411,7 @@ ideology_pacifist = {
 	}
 	
 	non_interest_group_leader_trigger = { # No pacifist agitators
-		NOT = { has_role = agitator }
+		NOT = { has_role_of_type = agitator }
 	}
 	
 	interest_group_leader_weight = {
@@ -1540,7 +1540,7 @@ ideology_jingoist_leader = {
 	non_interest_group_leader_trigger = {
 		# Agitators should have an ideology at odds with current laws
 		NAND = {
-			has_role = agitator
+			has_role_of_type = agitator
 			owner = {
 				has_law = law_type:law_mass_conscription
 				has_law = law_type:law_colonial_exploitation
@@ -1626,7 +1626,7 @@ ideology_jingoist_leader = {
 				owner = {
 					any_scope_character = {
 						has_template = RUS_alexei_ii
-						is_ruler = yes
+						is_ruler_of_own_country = yes
 					}
 				}
 			}
@@ -1707,7 +1707,7 @@ ideology_royalist = {
 	non_interest_group_leader_trigger = {
 		# Agitators should have an ideology at odds with current laws
 		NAND = {
-			has_role = agitator
+			has_role_of_type = agitator
 			owner = {
 				has_law = law_type:law_monarchy
 			}
@@ -1856,7 +1856,7 @@ ideology_social_democrat = {
 	non_interest_group_leader_trigger = {
 		# Agitator ideologies should disapprove of a current law
 		NAND = {
-			has_role = agitator
+			has_role_of_type = agitator
 			owner = {
 				has_law = law_type:law_universal_suffrage
 				has_law = law_type:law_graduated_taxation
@@ -2045,7 +2045,7 @@ ideology_communist = {
 	non_interest_group_leader_trigger = {
 		# Agitator ideologies should disapprove of a current law
 		NAND = {
-			has_role = agitator
+			has_role_of_type = agitator
 			owner = {
 				has_law = law_type:law_collectivized_agriculture
 				has_law = law_type:law_state_atheism
@@ -2059,8 +2059,8 @@ ideology_communist = {
 				has_law = law_type:law_monarchy
 			}
 			OR = {
-				is_ruler = yes
-				is_heir = yes
+				is_ruler_of_own_country = yes
+				is_heir_of_own_country = yes
 			}
 		}
 		interest_group = { 
@@ -2223,7 +2223,7 @@ ideology_vanguardist = {
 	non_interest_group_leader_trigger = {
 		# Agitator ideologies should disapprove of a current law
 		NAND = {
-			has_role = agitator
+			has_role_of_type = agitator
 			owner = {
 				has_law = law_type:law_collectivized_agriculture
 				has_law = law_type:law_council_republic
@@ -2238,8 +2238,8 @@ ideology_vanguardist = {
 				has_law = law_type:law_monarchy
 			}
 			OR = {
-				is_ruler = yes
-				is_heir = yes
+				is_ruler_of_own_country = yes
+				is_heir_of_own_country = yes
 			}
 		}
 		interest_group = { 
@@ -2451,7 +2451,7 @@ ideology_fascist = {
 	non_interest_group_leader_trigger = {
 		# Agitator ideologies should disapprove of a current law
 		NAND = {
-			has_role = agitator
+			has_role_of_type = agitator
 			owner = {
 				has_law = law_type:law_autocracy
 				has_law = law_type:law_ethnostate
@@ -2717,7 +2717,7 @@ ideology_anarchist = {
 	non_interest_group_leader_trigger = {
 		# Agitator ideologies should disapprove of a current law
 		NAND = {
-			has_role = agitator
+			has_role_of_type = agitator
 			owner = {
 				has_law = law_type:law_anarchy
 				has_law = law_type:law_national_militia
@@ -2732,8 +2732,8 @@ ideology_anarchist = {
 				has_law = law_type:law_monarchy
 			}
 			OR = {
-				is_ruler = yes
-				is_heir = yes
+				is_ruler_of_own_country = yes
+				is_heir_of_own_country = yes
 			}
 		}
 		interest_group = { 
@@ -2858,7 +2858,7 @@ ideology_ethno_nationalist = {
 	non_interest_group_leader_trigger = {
 		# Agitator ideologies should disapprove of a current law
 		NAND = {
-			has_role = agitator
+			has_role_of_type = agitator
 			owner = {
 				has_law = law_type:law_ethnostate
 				has_law = law_type:law_migration_controls
@@ -3012,7 +3012,7 @@ ideology_theocrat = {
 	non_interest_group_leader_trigger = {
 		# Agitator ideologies should disapprove of a current law
 		NAND = {
-			has_role = agitator
+			has_role_of_type = agitator
 			owner = {
 				has_law = law_type:law_theocracy
 				has_law = law_type:law_state_religion
@@ -3168,7 +3168,7 @@ ideology_market_liberal = {
 	non_interest_group_leader_trigger = {
 		# Agitator ideologies should disapprove of a current law
 		NAND = {
-			has_role = agitator
+			has_role_of_type = agitator
 			owner = {
 				has_law = law_type:law_laissez_faire
 				has_law = law_type:law_child_labor_allowed
@@ -3310,7 +3310,7 @@ ideology_market_liberal = {
 				owner = {
 					any_scope_character = {
 						has_template = RUS_alexander_ii
-						is_ruler = yes
+						is_ruler_of_own_country = yes
 					}
 				}
 			}
@@ -3393,7 +3393,7 @@ ideology_luddite = {
 	non_interest_group_leader_trigger = {
 		# Agitator ideologies should disapprove of a current law
 		NAND = {
-			has_role = agitator
+			has_role_of_type = agitator
 			owner = {
 				has_law_or_variant = law_type:law_isolationism
 				has_law = law_type:law_industry_banned
@@ -3507,7 +3507,7 @@ ideology_authoritarian = {
 	non_interest_group_leader_trigger = {
 		# Agitator ideologies should disapprove of a current law
 		NAND = {
-			has_role = agitator
+			has_role_of_type = agitator
 			owner = {
 				has_law = law_type:law_outlawed_dissent
 				has_law = law_type:law_secret_police
@@ -3672,7 +3672,7 @@ ideology_protectionist = {
 	non_interest_group_leader_trigger = {
 		# Agitator ideologies should disapprove of a current law
 		NAND = {
-			has_role = agitator
+			has_role_of_type = agitator
 			owner = {
 				has_law = law_type:law_protectionism
 				has_law = law_type:law_interventionism
@@ -3858,7 +3858,7 @@ ideology_humanitarian = {
 
 	non_interest_group_leader_trigger = {
 		NAND = {
-			has_role = agitator
+			has_role_of_type = agitator
 			owner = {
 				has_law = law_type:law_multicultural
 				has_law = law_type:law_guaranteed_liberties
@@ -4199,7 +4199,7 @@ ideology_positivist = {
 	non_interest_group_leader_trigger = {
 		# Agitators should have an ideology at odds with current laws
 		NAND = {
-			has_role = agitator
+			has_role_of_type = agitator
 			owner = {
 				has_law = law_type:law_appointed_bureaucrats
 				has_law = law_type:law_technocracy
@@ -4213,8 +4213,8 @@ ideology_positivist = {
 				has_law = law_type:law_monarchy
 			}
 			OR = {
-				is_ruler = yes
-				is_heir = yes
+				is_ruler_of_own_country = yes
+				is_heir_of_own_country = yes
 			}
 		}
 		interest_group = {
@@ -4349,7 +4349,7 @@ ideology_land_reformer = {
 	non_interest_group_leader_trigger = {
 		# Agitator ideologies should disapprove of a current law
 		NAND = {
-			has_role = agitator
+			has_role_of_type = agitator
 			owner = {
 				NOT = {
 					has_law = law_type:law_land_based_taxation
@@ -4546,7 +4546,7 @@ ideology_integralist = {
 	non_interest_group_leader_trigger = {
 		# Agitator ideologies should disapprove of a current law
 		NAND = {
-			has_role = agitator
+			has_role_of_type = agitator
 			owner = {
 				has_law = law_type:law_autocracy
 				has_law = law_type:law_cultural_exclusion
@@ -4734,7 +4734,7 @@ ideology_liberal_leader = {
 	non_interest_group_leader_trigger = {
 		# Agitators should have an ideology at odds with current laws
 		NAND = {
-			has_role = agitator
+			has_role_of_type = agitator
 			owner = {
 				OR = {
 					has_law = law_type:law_universal_suffrage
@@ -4778,7 +4778,7 @@ ideology_liberal_leader = {
 				OR = {
 					is_in_government = yes
 					any_scope_character = {
-						is_ruler = yes
+						is_ruler_of_own_country = yes
 						interest_group = root
 					}					
 				}				
@@ -4885,7 +4885,7 @@ ideology_corporatist_leader = {
 	non_interest_group_leader_trigger = {
 		# Agitators should have an ideology at odds with current laws
 		NAND = {
-			has_role = agitator
+			has_role_of_type = agitator
 			owner = {
 				NOT = {
 					has_law = law_type:law_council_republic
@@ -5045,7 +5045,7 @@ ideology_humanitarian_royalist = {
 
 	non_interest_group_leader_trigger = {
 		NAND = {
-			has_role = agitator
+			has_role_of_type = agitator
 			owner = {
 				has_law = law_type:law_monarchy
 				has_law = law_type:law_multicultural
@@ -5309,7 +5309,7 @@ ideology_despotic_utopian = {
 	}
 
 	non_interest_group_leader_trigger = {
-		NOT = { has_role = agitator }
+		NOT = { has_role_of_type = agitator }
 		interest_group = {
 			ideology_despotic_utopian_valid_trigger = yes
 		}
@@ -5445,7 +5445,7 @@ ideology_utilitarian_leader = {
 	non_interest_group_leader_trigger = {
 		# Agitators should have an ideology at odds with current laws
 		NAND = {
-			has_role = agitator
+			has_role_of_type = agitator
 			owner = {
 				OR = {
 					has_law = law_type:law_compulsory_primary_school
@@ -5689,7 +5689,7 @@ ideology_utopian = {
 	non_interest_group_leader_trigger = {
 		# Agitator ideologies should disapprove of a current law
 		NAND = {
-			has_role = agitator
+			has_role_of_type = agitator
 			owner = {
 				has_law = law_type:law_cooperative_ownership
 				has_law = law_type:law_universal_suffrage
@@ -5711,8 +5711,8 @@ ideology_utopian = {
 				has_law = law_type:law_monarchy
 			}
 			OR = {
-				is_ruler = yes
-				is_heir = yes
+				is_ruler_of_own_country = yes
+				is_heir_of_own_country = yes
 			}
 		}
 		interest_group = {
@@ -5835,7 +5835,7 @@ ideology_modernizer_leader = {
 	non_interest_group_leader_trigger = {
 		# Agitators should have an ideology at odds with current laws
 		NAND = {
-			has_role = agitator
+			has_role_of_type = agitator
 			owner = {
 				has_law = law_type:law_protectionism
 				has_law = law_type:law_compulsory_primary_school

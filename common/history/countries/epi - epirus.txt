@@ -1,9 +1,9 @@
 ﻿COUNTRIES = {
 	c:EPY = {
 		effect_starting_technology_tier_3_tech = yes
-		add_technology_researched = hydraulic_logging_systems
-		add_technology_researched = scientific_crop_rotation
-		add_technology_researched = selective_livestock_breeding
+		
+		
+		
 		effect_starting_politics_traditional = yes
 
 		# Laws

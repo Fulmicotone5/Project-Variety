@@ -36,10 +36,10 @@
 			}
 	}
 	complete = {
-		owns_entire_state_region = STATE_ANDALUSIA
-		owns_entire_state_region = STATE_GRANADA
+		owns_entire_state_region = STATE_LOWER_ANDALUSIA
+		owns_entire_state_region = STATE_UPPER_ANDALUSIA
 		owns_entire_state_region = STATE_CATALONIA
-		owns_entire_state_region = STATE_NAVARRA
+		owns_entire_state_region = STATE_BASQUE_COUNTRY
 		OR = {
 			AND = {
 				owns_entire_state_region = STATE_ARAGON
@@ -201,7 +201,7 @@ fm_basq = {
 	}
 	fail = {
 		any_scope_state = {
-			state_region = s:STATE_NAVARRA
+			state_region = s:STATE_BASQUE_COUNTRY
 			turmoil >= 0.4
 		}
 	}

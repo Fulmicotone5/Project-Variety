@@ -2,11 +2,11 @@
 	c:NOS ?= {
 		
 		effect_starting_technology_tier_2_tech = yes
-		add_technology_researched = selective_cultivation_techniques
-		add_technology_researched = cornish_beam_pumping_systems
+		
+		
 		add_technology_researched = civilizing_mission
 		add_technology_researched = quinine
-		add_technology_researched = tropical_agronomy_studies
+		
 		
 		activate_law = law_type:law_presidential_republic
 		activate_law = law_type:law_census_voting

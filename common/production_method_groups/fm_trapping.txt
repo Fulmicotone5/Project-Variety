@@ -1,8 +1,0 @@
-pmg_building_native_trapping = {
-	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
-	production_methods = {
-		fabric_building_native_trapping
-		clothing_focus_building_native_trapping
-		meat_focus_building_native_trapping
-	}
-}

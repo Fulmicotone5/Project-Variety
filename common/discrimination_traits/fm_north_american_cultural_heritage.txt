@@ -1,5 +1,0 @@
-
-
-na_north_american_heritage = {
-	heritage = yes
-}

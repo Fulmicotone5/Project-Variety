@@ -1,0 +1,3 @@
+mediterranean = {
+	type = tradition
+}

@@ -1,79 +1,4 @@
-﻿company_olive = {
-	icon = "gfx/interface/icons/company_icons/fm_company_icons/c_olive.dds"
-	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_farm_rye.dds"
-	
-	flavored_company = yes
-
-	preferred_headquarters = { STATE_EASTERN_THRACE STATE_LAZIO }
-	
-	building_types = {  
-
-		building_vineyard_plantation
-		building_glassworks
-	}
-
-	extension_building_types = {
-		building_livestock_ranch
-	}
-
-	possible_prestige_goods = {
-		prestige_good_olive
-	}
-
-	
-	potential = {
-	}
-	
-	possible = {
-		OR = {
-			country_has_primary_culture = cu:south_roman
-			country_has_primary_culture = cu:greco_roman
-		}
-		any_scope_state = {
-			OR = {
-				region = sr:region_balkans
-				region = sr:region_italy
-			}
-			any_scope_building = {
-				is_building_type = building_vineyard_plantation
-				level >= 5
-			}
-		}
-	}
-	
-	prosperity_modifier = {
-		country_influence_mult = 0.1
-		building_vineyard_plantation_throughput_add = 0.15
-		state_lower_strata_expected_sol_add = -1
-	}
-	ai_will_do = {
-		any_scope_state = {
-			OR = {
-				state_region = s:STATE_EASTERN_THRACE
-				state_region = s:STATE_LAZIO
-			}
-			is_incorporated = yes
-		}
-	}
-
-	ai_construction_targets = {
-		building_vineyard_plantation = {
-			level = 5
-			state_trigger = {
-				OR = {
-					state_region = s:STATE_EASTERN_THRACE
-					state_region = s:STATE_LAZIO
-				}
-				is_incorporated = yes
-			}
-		}
-	}
-
-	
-	ai_weight = {
-		value = 3 # Higher base value for flavored companies
-	}
-}
+﻿
 company_incacomp = {
 	icon = "gfx/interface/icons/company_icons/fm_company_icons/incacomp.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_mining.dds"
@@ -89,7 +14,7 @@ company_incacomp = {
 	extension_building_types = {
 		building_sulfur_mine
 		building_lead_mine
-		building_copper_mine
+		
 	}
 
 	
@@ -149,8 +74,8 @@ company_statera = {
 	}
 	extension_building_types = {
 		building_automotive_industry 
-		building_steel_mills
-		building_copper_mine
+		building_steel_mill
+		
 	}
 	
 	potential = {
@@ -294,14 +219,14 @@ company_venars = {
 	preferred_headquarters = { STATE_VENETIA }
 	
 	building_types = {  
-		building_military_shipyards
+		building_military_shipyard
 		building_arms_industry
-		building_artillery_foundries
-		building_munition_plants
+		building_artillery_foundry
+		building_munition_plant
 	}
 	extension_building_types = {
 		building_port	
-		building_shipyards	
+		building_shipyard	
 	}
 
 	possible_prestige_goods = {
@@ -343,7 +268,7 @@ company_VNA = {
 	building_types = {
 		building_sugar_plantation
 		building_banana_plantation
-		building_copper_mine
+		
 		building_tobacco_plantation
 		building_coffee_plantation
 	}
@@ -441,11 +366,11 @@ company_EIC = {
 
 	building_types = {
 		building_opium_plantation
-		building_spice_plantation
+		
 	}
 
 	extension_building_types = {
-		building_textile_mills
+		building_textile_mill
 		building_sugar_plantation
 	}
 
@@ -547,7 +472,7 @@ company_VOC = {
 	}
 
 	extension_building_types = {
-		building_spice_plantation
+		
 		building_opium_plantation
 	}
 
@@ -631,7 +556,7 @@ icon = "gfx/interface/icons/company_icons/fm_company_icons/denco.dds"
 
 	building_types = {
 		building_silk_plantation
-		building_spice_plantation
+		
 		building_tea_plantation
 		building_dye_plantation
 	}
@@ -658,10 +583,7 @@ icon = "gfx/interface/icons/company_icons/fm_company_icons/denco.dds"
 				state_region = s:STATE_SUZHOU
 			}
 			any_scope_building = {
-				OR = {
-					is_building_type = building_silk_plantation
-					is_building_type = building_spice_plantation
-				}
+				is_building_type = building_silk_plantation
 				level >= 5
 			}
 		}
@@ -685,18 +607,6 @@ icon = "gfx/interface/icons/company_icons/fm_company_icons/denco.dds"
 	}
 
 	ai_construction_targets = {
-		building_spice_plantation = {
-			level = 10
-			state_trigger = {
-				OR = {
-					state_region = s:STATE_SUZHOU
-				state_region = s:STATE_NORTH_SUMATRA
-				state_region = s:STATE_ACEH
-				state_region = s:STATE_SUZHOUS
-				}
-				is_incorporated = yes
-			}
-		}
 		building_silk_plantation = {
 			level = 5
 			state_trigger = {
@@ -805,9 +715,9 @@ company_zarath = {
 	flavored_company = yes
 
 	building_types = {
-		building_paper_mills
+		building_paper_mill
 		building_livestock_ranch
-		building_copper_mine
+		
 	}
 
 	extension_building_types = {
@@ -848,7 +758,7 @@ company_zarath = {
 	}
 
 	ai_construction_targets = {
-		building_paper_mills = {
+		building_paper_mill = {
 			level = 2
 			state_trigger = {
 				is_incorporated = yes
@@ -870,7 +780,7 @@ icon = "gfx/interface/icons/company_icons/fm_company_icons/generalm.dds"
 
 	building_types = {
 		building_motor_industry
-		building_steel_mills
+		building_steel_mill
 	}
 
 	extension_building_types = {
@@ -907,12 +817,6 @@ icon = "gfx/interface/icons/company_icons/fm_company_icons/generalm.dds"
 	}
 
 	ai_construction_targets = {
-		building_spice_plantation = {
-			level = 10
-			state_trigger = {
-				is_incorporated = yes
-			}
-		}
 		building_motor_industry = {
 			level = 3
 			state_trigger = {
@@ -939,7 +843,7 @@ company_OMA = {
 	}
 
 	extension_building_types = {
-		building_spice_plantation
+		building_sugar_plantation
 	}
 
 	possible_prestige_goods = {
@@ -1036,7 +940,6 @@ icon = "gfx/interface/icons/company_icons/fm_company_icons/marinidco.dds"
 
 	building_types = {
 		building_banana_plantation
-		building_spice_plantation
 		building_tobacco_plantation
 		building_coffee_plantation
 		building_dye_plantation
@@ -1058,10 +961,7 @@ icon = "gfx/interface/icons/company_icons/fm_company_icons/marinidco.dds"
 		any_scope_state = {
 			state_region = s:STATE_TRAVANCORE
 			any_scope_building = {
-				OR = {
-					is_building_type = building_spice_plantation
-					is_building_type = building_dye_plantation
-				}
+				is_building_type = building_dye_plantation
 				level >= 3
 			}
 		}
@@ -1079,7 +979,7 @@ icon = "gfx/interface/icons/company_icons/fm_company_icons/marinidco.dds"
 	}
 
 	ai_construction_targets = {
-		building_spice_plantation = {
+		building_dye_plantation = {
 			level = 30
 			state_trigger = {
 				state_region = s:STATE_TRAVANCORE
@@ -1102,16 +1002,12 @@ company_EIC1 = {
 
 	building_types = {
 		building_tea_plantation
-		building_spice_plantation
 	}
 
 	extension_building_types = {
 		building_opium_plantation
 	}
 
-	possible_prestige_goods = {
-		prestige_good_spice
-	}
 
 	potential = {
 		NOR = {
@@ -1146,10 +1042,7 @@ company_EIC1 = {
 				region = sr:region_punjab
 			}
 			any_scope_building = {
-				OR = {
-					is_building_type = building_tea_plantation
-					is_building_type = building_spice_plantation
-				}
+				is_building_type = building_tea_plantation
 				level >= 5
 			}
 			count >= 3
@@ -1164,15 +1057,6 @@ company_EIC1 = {
 		OR = {
 			has_law = law_type:law_mercantilism
 			has_law = law_type:law_protectionism
-		}
-		any_scope_state = {
-			OR = {
-				region = sr:region_madras
-				region = sr:region_bombay
-				region = sr:region_bengal
-				region = sr:region_central_india
-				region = sr:region_punjab
-			}
 		}
 	}
 
@@ -1189,18 +1073,7 @@ company_EIC1 = {
 				}
 			}
 		}
-		building_spice_plantation = {
-			level = 25
-			state_trigger = {
-				OR = {
-					region = sr:region_madras
-				region = sr:region_bombay
-				region = sr:region_bengal
-				region = sr:region_central_india
-				region = sr:region_punjab
-				}
-			}
-		}
+
 	}
 
 	ai_weight = {
@@ -1579,7 +1452,7 @@ company_tungstram = {
 	}
 
 	extension_building_types = {
-		building_paper_mills
+		building_paper_mill
 	}
 
 	possible_prestige_goods = {
@@ -1732,7 +1605,6 @@ royaltrade = {
 	}
 
 	extension_building_types = {
-		building_spice_plantation
 		building_opium_plantation
 		building_silk_plantation
 		building_oil_rig
@@ -1855,7 +1727,7 @@ company_gilbratar_company = {
 
 	flavored_company = yes
 
-	preferred_headquarters = { STATE_GRANADA }
+	preferred_headquarters = { STATE_UPPER_ANDALUSIA }
 
 	building_types = {
 		building_trade_center
@@ -1863,7 +1735,7 @@ company_gilbratar_company = {
 	}
 
 	extension_building_types = {
-		building_military_shipyards
+		building_military_shipyard
 	}
 	possible_prestige_goods = {
 		prestige_good_generic_merchant_marine
@@ -1880,10 +1752,10 @@ company_gilbratar_company = {
 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
 			or = {
 				any_scope_state = {
-				state_region = s:STATE_GRANADA
+				state_region = s:STATE_UPPER_ANDALUSIA
 				}
 				any_scope_state = {
-				state_region = s:STATE_GRANADA
+				state_region = s:STATE_UPPER_ANDALUSIA
 				is_treaty_port = yes
 				}
 			}
@@ -1892,7 +1764,7 @@ company_gilbratar_company = {
 
 	possible = {
 		any_scope_state = {
-			state_region = s:STATE_GRANADA
+			state_region = s:STATE_UPPER_ANDALUSIA
 			any_scope_building = {
 				is_building_type = building_trade_center
 				level >= 5
@@ -1903,8 +1775,8 @@ company_gilbratar_company = {
 			}
 		}
 		OR = {
-			owns_treaty_port_in = STATE_GRANADA
-			owns_entire_state_region = STATE_GRANADA
+			owns_treaty_port_in = STATE_UPPER_ANDALUSIA
+			owns_entire_state_region = STATE_UPPER_ANDALUSIA
 		}
 	}
 
@@ -1915,7 +1787,7 @@ company_gilbratar_company = {
 
 	ai_will_do = {
 		any_scope_state = {
-			state_region = s:STATE_GRANADA
+			state_region = s:STATE_UPPER_ANDALUSIA
 			any_scope_building = {
 				OR = {
 					is_building_type = building_trade_center
@@ -2166,13 +2038,12 @@ company_hadong = {
 		preferred_headquarters = { STATE_TONKIN }
 
 	building_types = {
-		building_textile_mills
+		building_textile_mill
 		building_silk_plantation
 	}
 
 	extension_building_types = {
 		building_cotton_plantation
-		building_spice_plantation
 	}
 
 	possible_prestige_goods = {
@@ -2187,7 +2058,7 @@ company_hadong = {
 		any_scope_state = {
 			state_region = s:STATE_TONKIN
 			any_scope_building = {
-				is_building_type = building_textile_mills
+				is_building_type = building_textile_mill
 				level >= 5
 			}
 		}
@@ -2202,7 +2073,7 @@ company_hadong = {
 		any_scope_state = {
 			state_region = s:STATE_TONKIN
 			any_scope_building = {
-				is_building_type = building_textile_mills
+				is_building_type = building_textile_mill
 				level >= 5
 			}
 		}
@@ -2328,7 +2199,7 @@ company_cubaci = {
 
 	flavored_company = yes
 
-		preferred_headquarters = { STATE_CUBA }
+		preferred_headquarters = { STATE_WESTERN_CUBA }
 
 	building_types = {
 		building_tobacco_plantation
@@ -2350,7 +2221,7 @@ company_cubaci = {
 
 	possible = {
 		any_scope_state = {
-			state_region = s:STATE_CUBA
+			state_region = s:STATE_WESTERN_CUBA
 			any_scope_building = {
 				is_building_type = building_tobacco_plantation
 				level >= 5
@@ -2364,7 +2235,7 @@ company_cubaci = {
 
 	ai_will_do = {
 		any_scope_state = {
-			state_region = s:STATE_CUBA
+			state_region = s:STATE_WESTERN_CUBA
 			any_scope_building = {
 				is_building_type = building_tobacco_plantation
 				level >= 5
@@ -2385,7 +2256,7 @@ company_corona = {
 
 	building_types = {
 		building_glassworks
-		building_furniture_manufacturies
+		building_furniture_manufactury
 	}
 
 	extension_building_types = {
@@ -2412,7 +2283,7 @@ company_corona = {
 
 	prosperity_modifier = {
 		building_glassworks_throughput_add = 0.15
-		building_furniture_manufacturies_throughput_add = 0.1
+		building_furniture_manufactury_throughput_add = 0.1
 	}
 
 	ai_will_do = {
@@ -2600,7 +2471,7 @@ company_fmdk = {
 	}
 
 	extension_building_types = {
-		building_textile_mills
+		building_textile_mill
 	}
 
 	possible_prestige_goods = {
@@ -2648,12 +2519,12 @@ company_inquietaco = {
 		preferred_headquarters = { STATE_EASTERN_THRACE }
 
 	building_types = {
-		building_arts_academy
-		building_paper_mills
+		building_art_academy
+		building_paper_mill
 	}
 
 	extension_building_types = {
-		building_tooling_workshops
+		building_tooling_workshop
 	}
 
 	possible_prestige_goods = {
@@ -2666,21 +2537,21 @@ company_inquietaco = {
 			}
 		any_scope_state = {
 			any_scope_building = {
-				is_building_type = building_arts_academy
+				is_building_type = building_art_academy
 				level >= 4
 			}
 		}
 	}
 
 	prosperity_modifier = {
-		building_arts_academy_throughput_add = 0.1
-		building_paper_mills_throughput_add = 0.05
+		building_art_academy_throughput_add = 0.1
+		building_paper_mill_throughput_add = 0.05
 	}
 
 	ai_will_do = {
 		any_scope_state = {
 			any_scope_building = {
-				is_building_type = building_arts_academy
+				is_building_type = building_art_academy
 				level >= 4
 			}
 		}
@@ -2699,8 +2570,8 @@ company_scandiart = {
 		preferred_headquarters = { STATE_SVEALAND }
 
 	building_types = {
-		building_arts_academy
-		building_tooling_workshops
+		building_art_academy
+		building_tooling_workshop
 	}
 
 	extension_building_types = {
@@ -2717,21 +2588,21 @@ company_scandiart = {
 			}
 		any_scope_state = {
 			any_scope_building = {
-				is_building_type = building_arts_academy
+				is_building_type = building_art_academy
 				level >= 4
 			}
 		}
 	}
 
 	prosperity_modifier = {
-		building_arts_academy_throughput_add = 0.05
-		building_tooling_workshops_throughput_add = 0.05
+		building_art_academy_throughput_add = 0.05
+		building_tooling_workshop_throughput_add = 0.05
 	}
 
 	ai_will_do = {
 		any_scope_state = {
 			any_scope_building = {
-				is_building_type = building_arts_academy
+				is_building_type = building_art_academy
 				level >= 4
 			}
 		}
@@ -2750,11 +2621,11 @@ company_arnoldco = {
 		preferred_headquarters = { STATE_BURGUNDY }
 
 	building_types = {
-		building_arts_academy
+		building_art_academy
 	}
 
 	extension_building_types = {
-		building_paper_mills
+		building_paper_mill
 	}
 
 	possible_prestige_goods = {
@@ -2769,21 +2640,21 @@ company_arnoldco = {
 		any_scope_state = {
 			state_region = s:STATE_BURGUNDY
 			any_scope_building = {
-				is_building_type = building_arts_academy
+				is_building_type = building_art_academy
 				level >= 4
 			}
 		}
 	}
 
 	prosperity_modifier = {
-		building_arts_academy_throughput_add = 0.1
+		building_art_academy_throughput_add = 0.1
 	}
 
 	ai_will_do = {
 		any_scope_state = {
 			state_region = s:STATE_BURGUNDY
 			any_scope_building = {
-				is_building_type = building_arts_academy
+				is_building_type = building_art_academy
 				level >= 4
 			}
 		}

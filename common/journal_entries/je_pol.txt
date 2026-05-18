@@ -89,12 +89,13 @@ je_zapa = {
 	complete = {
 		owns_entire_state_region = STATE_BOHEMIA
 		owns_entire_state_region = STATE_MORAVIA
-		owns_entire_state_region = STATE_WEST_SLOVAKIA
-		owns_entire_state_region = STATE_EAST_SLOVAKIA
+		owns_entire_state_region = STATE_SLOVAKIA
+		owns_entire_state_region = STATE_RUTHENIA
 		owns_entire_state_region = STATE_POSEN
 		owns_entire_state_region = STATE_EAST_PRUSSIA
 		owns_entire_state_region = STATE_WEST_PRUSSIA
-		owns_entire_state_region = STATE_SILESIA
+		owns_entire_state_region = STATE_LOWER_SILESIA
+		owns_entire_state_region = STATE_UPPER_SILESIA
 		has_technology_researched = pan-nationalism
 	}
 	on_complete = {

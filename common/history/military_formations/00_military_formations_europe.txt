@@ -53,12 +53,12 @@
 			name = "Guardia Real"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_TOLEDO
+				state_region = s:STATE_NEW_CASTILE
 				count = 25
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_lancers
-				state_region = s:STATE_CASTILE
+				state_region = s:STATE_OLD_CASTILE
 				count = 20
 			}
 			save_scope_as = dutch_army
@@ -69,7 +69,7 @@
 			name = "Real Armada"
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_BADAJOZ
+				state_region = s:STATE_EXTREMADURA
 				count = 10
 			}
 			combat_unit = {
@@ -595,12 +595,12 @@
 			name = "1st Slovak Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_WEST_SLOVAKIA
+				state_region = s:STATE_SLOVAKIA
 				count = 5
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_EAST_SLOVAKIA
+				state_region = s:STATE_RUTHENIA
 				count = 5
 			}
 			save_scope_as = 1st_slovak_army
@@ -1552,7 +1552,7 @@
 			name = "Navarran Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_NAVARRA
+				state_region = s:STATE_BASQUE_COUNTRY
 				count = 10
 			}
 		}
@@ -1601,12 +1601,12 @@
 			name = "1st Serbian Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_NORTHERN_SERBIA
+				state_region = s:STATE_WESTERN_SERBIA
 				count = 10
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_SOUTHERN_SERBIA
+				state_region = s:STATE_EASTERN_SERBIA
 				count = 10
 			}
 			combat_unit = {

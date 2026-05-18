@@ -308,7 +308,7 @@ state_argentino_standard_of_living_add={
 	}
 }
 
-state_andalusian_standard_of_living_add={
+STATE_LOWER_ANDALUSIAn_standard_of_living_add={
 	decimals=1
 	color=good
 	game_data={

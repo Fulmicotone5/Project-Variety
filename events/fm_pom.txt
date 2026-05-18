@@ -26,7 +26,10 @@ fm_pom.1 = {
 		s:STATE_ANHALT = {
 			add_claim = ROOT
 		}
-		s:STATE_SILESIA = {
+		s:STATE_LOWER_SILESIA = {
+			add_claim = ROOT
+		}
+		s:STATE_UPPER_SILESIA = {
 			add_claim = ROOT
 		}
 		s:STATE_POMERANIA = {
@@ -66,7 +69,10 @@ fm_pom.2 = {
 		s:STATE_ANHALT = {
 			add_claim = ROOT
 		}
-		s:STATE_SILESIA = {
+		s:STATE_LOWER_SILESIA = {
+			add_claim = ROOT
+		}
+		s:STATE_UPPER_SILESIA = {
 			add_claim = ROOT
 		}
 		s:STATE_POMERANIA = {
@@ -129,7 +135,10 @@ fm_pom.3 = {
 		s:STATE_BRUNSWICK = {
 			add_claim = ROOT
 		}
-		s:STATE_SILESIA = {
+		s:STATE_LOWER_SILESIA = {
+			add_claim = ROOT
+		}
+		s:STATE_UPPER_SILESIA = {
 			add_claim = ROOT
 		}
 	}

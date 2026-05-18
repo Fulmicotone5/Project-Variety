@@ -104,7 +104,7 @@
 			if = {
 				limit = {
 					any_scope_state = {
-						state_region = s:STATE_GAMBIA
+						state_region = s:STATE_GUINEA
 						turmoil >= 0.3
 					}
 				}

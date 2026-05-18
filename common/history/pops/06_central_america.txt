@@ -223,7 +223,7 @@
 			}
 		}
 	}
-	s:STATE_CUBA = {
+	s:STATE_WESTERN_CUBA = {
 		region_state:CUB = {
 			# 896400
 			create_pop = {
@@ -242,6 +242,50 @@
 			create_pop = {
 				culture = spanish
 				size = 22004
+			}
+		}
+	}
+	s:STATE_EASTERN_CUBA = { # TODO Here, Caribeño = White. Revise spanish/caribeno ratio to account for mainlanders. Possibly include sepoarate Catalans/Galicians etc.
+		region_state:CUB = {
+			# 896400
+			create_pop = {
+				culture = caribeno
+				size = 78491
+			}
+			create_pop = {
+				culture = afro_caribeno
+				size = 39122
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = afro_caribeno
+				size = 91777
+			}
+			create_pop = {
+				culture = spanish
+				size = 8000
+			}
+		}
+	}
+	s:STATE_CENTRAL_CUBA = { # TODO Here, Caribeño = White. Revise spanish/caribeno ratio to account for mainlanders. Possibly include sepoarate Catalans/Galicians etc.
+		region_state:CUB = {
+			# 896400
+			create_pop = {
+				culture = caribeno
+				size = 100616
+			}
+			create_pop = {
+				culture = afro_caribeno
+				size = 32104
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = afro_caribeno
+				size = 137198
+			}
+			create_pop = {
+				culture = spanish
+				size = 12000
 			}
 		}
 	}

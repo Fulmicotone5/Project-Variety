@@ -26,7 +26,7 @@ agitators_election_events.1 = {
 		NOT = { has_law = law_type:law_single_party_state }
 		in_election_campaign = yes
 		any_scope_character = {
-			has_role = agitator
+			has_role_of_type = agitator
 			NOT = {
 				has_variable = agitator_election_participation
 			}
@@ -101,7 +101,7 @@ agitators_election_events.2 = {
 		NOT = { has_law = law_type:law_single_party_state }
 		in_election_campaign = yes
 		any_scope_character = {
-			has_role = agitator
+			has_role_of_type = agitator
 			NOT = {
 				has_variable = agitator_election_participation
 			}
@@ -175,7 +175,7 @@ agitators_election_events.2 = {
 			}
 		}
 		any_scope_character = {
-			has_role = agitator
+			has_role_of_type = agitator
 			NOT = {
 				this.interest_group = {
 					is_same_interest_group_type = scope:first_agitator.interest_group
@@ -291,7 +291,7 @@ agitators_election_events.2 = {
 		}
 		random_scope_character = {
 			limit = {	
-				has_role = agitator
+				has_role_of_type = agitator
 				NOT = {
 					this.interest_group = {
 						is_same_interest_group_type = scope:agitator_scope.interest_group
@@ -524,7 +524,7 @@ agitators_election_events.3 = {
 		NOT = { has_law = law_type:law_single_party_state }
 		in_election_campaign = yes
 		any_scope_character = {
-			has_role = agitator
+			has_role_of_type = agitator
 			NOT = {
 				has_variable = agitator_election_participation
 			}
@@ -551,7 +551,7 @@ agitators_election_events.3 = {
 		set_variable = preset_ideology
 		random_scope_character = {
 			limit = {
-				has_role = agitator
+				has_role_of_type = agitator
 				OR = {
 					has_socialist_ideology = yes
 					has_ideology = ideology:ideology_radical
@@ -663,7 +663,7 @@ agitators_election_events.4 = {
 			}
 		}
 		any_scope_character = {
-			has_role = agitator
+			has_role_of_type = agitator
 			NOT = {
 				has_variable = agitator_election_participation
 			}
@@ -751,7 +751,7 @@ agitators_election_events.5 = {
 		any_interest_group = {
 			has_party = yes
 			any_scope_character = {	
-				has_role = agitator
+				has_role_of_type = agitator
 				NOT = {
 					has_variable = agitator_election_participation
 				}
@@ -868,7 +868,7 @@ agitators_election_events.6 = {
 		in_election_campaign = yes
 		has_law = law_type:law_womens_suffrage
 		any_scope_character = {
-			has_role = agitator
+			has_role_of_type = agitator
 			NOT = {
 				has_variable = agitator_election_participation
 			}
@@ -918,7 +918,7 @@ agitators_election_events.6 = {
 		set_variable = preset_ideology
 		random_scope_character = {
 			limit = {
-				has_role = agitator
+				has_role_of_type = agitator
 				OR = {
 					law_stance = {
 						law = law_type:law_womens_suffrage
@@ -1002,7 +1002,7 @@ agitators_election_events.7 = {
 		NOT = { has_law = law_type:law_single_party_state }
 		in_election_campaign = yes
 		any_scope_character = {
-			has_role = agitator
+			has_role_of_type = agitator
 			NOT = {
 				has_variable = agitator_election_participation
 			}
@@ -1079,7 +1079,7 @@ agitators_election_events.8 = {
 		NOT = { has_law = law_type:law_single_party_state }
 		in_election_campaign = yes
 		any_scope_character = {
-			has_role = agitator
+			has_role_of_type = agitator
 			NOT = {
 				has_variable = agitator_election_participation
 			}
@@ -1280,7 +1280,7 @@ agitators_election_events.9 = {
 		NOT = { has_law = law_type:law_single_party_state }
 		in_election_campaign = yes
 		any_scope_character = {
-			has_role = agitator
+			has_role_of_type = agitator
 			NOT = {
 				has_variable = agitator_election_participation
 			}
@@ -1327,7 +1327,7 @@ agitators_election_events.9 = {
 		set_variable = preset_ideology
 		random_scope_character = {
 			limit = {
-				has_role = agitator
+				has_role_of_type = agitator
 				OR = {
 					law_stance = {
 						law = law_type:law_census_voting
@@ -1408,7 +1408,7 @@ agitators_election_events.10 = {
 		NOT = { has_law = law_type:law_single_party_state }
 		in_election_campaign = yes
 		any_scope_character = {
-			has_role = agitator
+			has_role_of_type = agitator
 			NOT = {
 				has_variable = agitator_election_participation
 			}
@@ -1509,7 +1509,7 @@ agitators_election_events.11 = {
 		NOT = { has_law = law_type:law_single_party_state }
 		in_election_campaign = yes
 		any_scope_character = {
-			has_role = agitator
+			has_role_of_type = agitator
 			NOT = {
 				has_variable = agitator_election_participation
 			}
@@ -1677,7 +1677,7 @@ agitators_election_events.12 = {
 		NOT = { has_law = law_type:law_single_party_state }
 		in_election_campaign = yes
 		any_scope_character = {
-			has_role = agitator
+			has_role_of_type = agitator
 			NOT = {
 				has_variable = agitator_election_participation
 			}
@@ -1824,7 +1824,7 @@ agitators_election_events.13 = {
 		NOT = { has_law = law_type:law_single_party_state }
 		in_election_campaign = yes
 		any_scope_character = {
-			has_role = agitator
+			has_role_of_type = agitator
 			NOT = {
 				has_variable = agitator_election_participation
 			}
@@ -1967,7 +1967,7 @@ agitators_election_events.14 = {
 		NOT = { has_law = law_type:law_single_party_state }
 		in_election_campaign = yes
 		any_scope_character = {
-			has_role = agitator
+			has_role_of_type = agitator
 			NOT = {
 				has_variable = agitator_election_participation
 			}
@@ -2163,7 +2163,7 @@ agitators_election_events.15 = {
 		NOT = { has_law = law_type:law_single_party_state }
 		in_election_campaign = yes
 		any_scope_character = {
-			has_role = agitator
+			has_role_of_type = agitator
 			NOT = {
 				has_variable = agitator_election_participation
 			}
@@ -2303,7 +2303,7 @@ agitators_election_events.16 = {
 		NOT = { has_law = law_type:law_single_party_state }
 		in_election_campaign = yes
 		any_scope_character = {
-			has_role = agitator
+			has_role_of_type = agitator
 			NOT = {
 				has_variable = agitator_election_participation
 			}
@@ -2434,7 +2434,7 @@ agitators_election_events.16 = {
 					has_ideology = ideology:ideology_anarchist
 					has_ideology = ideology:ideology_vanguardist
 				}
-				is_ruler = no
+				is_ruler_of_own_country = no
 			}
 			random_list = {
 				25 = {
@@ -2508,7 +2508,7 @@ agitators_election_events.17 = {
 		NOT = { has_law = law_type:law_single_party_state }
 		in_election_campaign = yes
 		any_scope_character = {
-			has_role = agitator
+			has_role_of_type = agitator
 			NOT = {
 				has_variable = agitator_election_participation
 			}
@@ -2643,7 +2643,7 @@ agitators_election_events.18 = {
 		NOT = { has_law = law_type:law_single_party_state }
 		in_election_campaign = yes
 		any_scope_character = {
-			has_role = agitator
+			has_role_of_type = agitator
 			NOT = {
 				has_variable = agitator_election_participation
 			}
@@ -2782,7 +2782,7 @@ agitators_election_events.19 = {
 		NOT = { has_law = law_type:law_single_party_state }
 		in_election_campaign = yes
 		any_scope_character = {
-			has_role = agitator
+			has_role_of_type = agitator
 			NOT = {
 				has_variable = agitator_election_participation
 			}
@@ -2936,7 +2936,7 @@ agitators_election_events.20 = {
 		NOT = { has_law = law_type:law_single_party_state }
 		in_election_campaign = yes
 		any_scope_character = {
-			has_role = agitator
+			has_role_of_type = agitator
 			NOT = {
 				has_variable = agitator_election_participation
 			}
@@ -3124,7 +3124,7 @@ agitators_election_events.21 = {
 		NOT = { has_law = law_type:law_single_party_state }
 		in_election_campaign = yes
 		any_scope_character = {
-			has_role = agitator
+			has_role_of_type = agitator
 			NOT = {
 				has_variable = agitator_election_participation
 			}
@@ -3210,7 +3210,7 @@ agitators_election_events.22 = {
 		NOT = { has_law = law_type:law_single_party_state }
 		in_election_campaign = yes
 		any_scope_character = {
-			has_role = agitator
+			has_role_of_type = agitator
 			NOT = {
 				has_variable = agitator_election_participation
 			}
@@ -3306,7 +3306,7 @@ agitators_election_events.23 = {
 		NOT = { has_law = law_type:law_single_party_state }
 		in_election_campaign = yes
 		any_scope_character = {
-			has_role = agitator
+			has_role_of_type = agitator
 			NOT = {
 				has_variable = agitator_election_participation
 			}
@@ -3427,7 +3427,7 @@ agitators_election_events.24 = {
 		NOT = { has_law = law_type:law_single_party_state }
 		in_election_campaign = yes
 		any_scope_character = {
-			has_role = agitator
+			has_role_of_type = agitator
 			NOT = {
 				has_variable = agitator_election_participation
 			}
@@ -3516,7 +3516,7 @@ agitators_election_events.25 = {
 		NOT = { has_law = law_type:law_single_party_state }
 		in_election_campaign = yes
 		any_scope_character = {
-			has_role = agitator
+			has_role_of_type = agitator
 			NOT = {
 				has_variable = agitator_election_participation
 			}
@@ -3639,7 +3639,7 @@ agitators_election_events.26 = {
 		NOT = { has_law = law_type:law_single_party_state }
 		in_election_campaign = yes
 		any_scope_character = {
-			has_role = agitator
+			has_role_of_type = agitator
 			NOT = {
 				has_variable = agitator_election_participation
 			}
@@ -3737,7 +3737,7 @@ agitators_election_events.27 = {
 		NOT = { has_law = law_type:law_single_party_state }
 		in_election_campaign = yes
 		any_scope_character = {
-			has_role = agitator
+			has_role_of_type = agitator
 			NOT = {
 				has_variable = agitator_election_participation
 			}
@@ -3851,7 +3851,7 @@ agitators_election_events.28 = {
 		NOT = { has_law = law_type:law_single_party_state }
 		in_election_campaign = yes
 		any_scope_character = {
-			has_role = agitator
+			has_role_of_type = agitator
 			NOT = {
 				has_variable = agitator_election_participation
 			}
@@ -3949,7 +3949,7 @@ agitators_election_events.29 = {
 		NOT = { has_law = law_type:law_single_party_state }
 		in_election_campaign = yes
 		any_scope_character = {
-			has_role = agitator
+			has_role_of_type = agitator
 			NOT = {
 				has_variable = agitator_election_participation
 			}
@@ -4035,7 +4035,7 @@ agitators_election_events.30 = {
 		NOT = { has_law = law_type:law_single_party_state }
 		in_election_campaign = yes
 		any_scope_character = {
-			has_role = agitator
+			has_role_of_type = agitator
 			NOT = {
 				has_variable = agitator_election_participation
 			}
@@ -4126,7 +4126,7 @@ agitators_election_events.31 = {
 	trigger = {
 		in_election_campaign = yes
 		any_scope_character = {
-			has_role = agitator
+			has_role_of_type = agitator
 			NOT = {
 				has_variable = agitator_election_participation
 			}
@@ -4240,7 +4240,7 @@ agitators_election_events.32 = {
 	trigger = {
 		in_election_campaign = yes
 		any_scope_character = {
-			has_role = agitator
+			has_role_of_type = agitator
 			NOT = {
 				has_variable = agitator_election_participation
 			}
@@ -4399,7 +4399,7 @@ agitators_election_events.33 = {
 	trigger = {
 		in_election_campaign = yes
 		any_scope_character = {
-			has_role = agitator
+			has_role_of_type = agitator
 			NOT = {
 				has_variable = agitator_election_participation
 			}
@@ -4538,7 +4538,7 @@ agitators_election_events.34 = {
 	trigger = {
 		in_election_campaign = yes
 		any_scope_character = {
-			has_role = agitator
+			has_role_of_type = agitator
 			NOT = {
 				has_variable = agitator_election_participation
 			}
@@ -4651,7 +4651,7 @@ agitators_election_events.35 = {
 	trigger = {
 		in_election_campaign = yes
 		any_scope_character = {
-			has_role = agitator
+			has_role_of_type = agitator
 			NOT = {
 				has_variable = agitator_election_participation
 			}
@@ -4863,7 +4863,7 @@ agitators_election_events.36 = {
 	trigger = {
 		in_election_campaign = yes
 		any_scope_character = {
-			has_role = agitator
+			has_role_of_type = agitator
 			NOT = {
 				has_variable = agitator_election_participation
 			}
@@ -4982,7 +4982,7 @@ agitators_election_events.37 = {
 	trigger = {
 		in_election_campaign = yes
 		any_scope_character = {
-			has_role = agitator
+			has_role_of_type = agitator
 			NOT = {
 				has_variable = agitator_election_participation
 			}
@@ -5223,7 +5223,7 @@ agitators_election_events.38 = {
 	trigger = {
 		in_election_campaign = yes
 		any_scope_character = {
-			has_role = agitator
+			has_role_of_type = agitator
 			NOT = {
 				has_variable = agitator_election_participation
 			}
@@ -5381,7 +5381,7 @@ agitators_election_events.39 = {
 	trigger = {
 		in_election_campaign = yes
 		any_scope_character = {
-			has_role = agitator
+			has_role_of_type = agitator
 			NOT = {
 				has_variable = agitator_election_participation
 			}
@@ -5498,7 +5498,7 @@ agitators_election_events.40 = {
 	trigger = {
 		in_election_campaign = yes
 		any_scope_character = {
-			has_role = agitator
+			has_role_of_type = agitator
 			NOT = {
 				has_variable = agitator_election_participation
 			}
@@ -5635,7 +5635,7 @@ agitators_election_events.41 = {
 	trigger = {
 		in_election_campaign = yes
 		any_scope_character = {
-			has_role = agitator
+			has_role_of_type = agitator
 			NOT = {
 				has_variable = agitator_election_participation
 			}
@@ -5763,7 +5763,7 @@ agitators_election_events.42 = {
 	trigger = {
 		in_election_campaign = yes
 		any_scope_character = {
-			has_role = agitator
+			has_role_of_type = agitator
 			NOT = {
 				has_variable = agitator_election_participation
 			}
@@ -5886,7 +5886,7 @@ agitators_election_events.43 = {
 	trigger = {
 		in_election_campaign = yes
 		any_scope_character = {
-			has_role = agitator
+			has_role_of_type = agitator
 			NOT = {
 				has_variable = agitator_election_participation
 			}
@@ -6032,7 +6032,7 @@ agitators_election_events.44 = {
 	trigger = {
 		in_election_campaign = yes
 		any_scope_character = {
-			has_role = agitator
+			has_role_of_type = agitator
 			NOT = {
 				has_variable = agitator_election_participation
 			}
@@ -6084,7 +6084,7 @@ agitators_election_events.44 = {
 				}
 			}
 			NOT = {
-				is_ruler = yes
+				is_ruler_of_own_country = yes
 			}
 		}
 		any_active_party = {
@@ -6144,7 +6144,7 @@ agitators_election_events.44 = {
 					}
 				}
 				NOT = {
-					is_ruler = yes
+					is_ruler_of_own_country = yes
 				}
 			}
 			interest_group = {
@@ -6234,7 +6234,7 @@ agitators_election_events.45 = {
 	trigger = {
 		in_election_campaign = yes
 		any_scope_character = {
-			has_role = agitator
+			has_role_of_type = agitator
 			NOT = {
 				has_variable = agitator_election_participation
 			}
@@ -6358,7 +6358,7 @@ agitators_election_events.46 = {
 	trigger = {
 		in_election_campaign = yes
 		any_scope_character = {
-			has_role = agitator
+			has_role_of_type = agitator
 			NOT = {
 				has_variable = agitator_election_participation
 			}
@@ -6469,7 +6469,7 @@ agitators_election_events.47 = {
 	trigger = {
 		in_election_campaign = yes
 		any_scope_character = {
-			has_role = agitator
+			has_role_of_type = agitator
 			NOT = {
 				has_variable = agitator_election_participation
 			}
@@ -6606,7 +6606,7 @@ agitators_election_events.48 = {
 	trigger = {
 		in_election_campaign = yes
 		any_scope_character = {
-			has_role = agitator
+			has_role_of_type = agitator
 			NOT = {
 				has_variable = agitator_election_participation
 			}
@@ -6713,7 +6713,7 @@ agitators_election_events.48 = {
 			limit = {
 				is_incorporated = yes
 			}
-			start_building_construction = building_barracks
+			start_building_construction = building_barrack
 		}
 		scope:armed_forces_ig = {
 			add_modifier = {
@@ -6747,7 +6747,7 @@ agitators_election_events.49 = {
 	trigger = {
 		in_election_campaign = yes
 		any_scope_character = {
-			has_role = agitator
+			has_role_of_type = agitator
 			NOT = {
 				has_variable = agitator_election_participation
 			}
@@ -6861,7 +6861,7 @@ agitators_election_events.50 = {
 	trigger = {
 		in_election_campaign = yes
 		any_scope_character = {
-			has_role = agitator
+			has_role_of_type = agitator
 			NOT = {
 				has_variable = agitator_election_participation
 			}

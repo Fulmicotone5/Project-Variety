@@ -2140,7 +2140,7 @@ andalusian_standard_of_living_modifier_positive = {
 }
 andalusian_standard_of_living_modifier_negative = {
 	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
-	state_andalusian_standard_of_living_add = 1
+	STATE_LOWER_ANDALUSIAn_standard_of_living_add = 1
 }
 danubian_standard_of_living_modifier_negative = {
 	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"

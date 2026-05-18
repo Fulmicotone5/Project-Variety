@@ -1,8 +1,8 @@
 ﻿COUNTRIES = {
 	c:PR1 = {
 		effect_starting_technology_tier_2_tech = yes
-		add_technology_researched = portable_automatic_firearms
-		add_technology_researched = selective_livestock_breeding
+		
+		
 		effect_starting_politics_conservative = yes
 		add_technology_progress = {
 			technology = nationalism

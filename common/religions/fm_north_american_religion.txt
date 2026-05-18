@@ -1,16 +1,12 @@
 ﻿na_native_american_spirituality = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
-	traits = {
-		na_native_american_spirituality_heritage
-	}
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
+	heritage = heritage_indigenous
 	color = { 237 162 192 }
 }
 
 na_wocekiye = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
-	traits = {
-		na_native_american_spirituality_heritage
-	}
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
+	heritage = heritage_indigenous
 	color = { 65 57 62 }
 }
 

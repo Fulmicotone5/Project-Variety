@@ -89,10 +89,10 @@
 				activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
 			}
 			create_building={
-				building="building_tooling_workshops"
+				building="building_tooling_workshop"
 				add_ownership={
 					building={
-						type="building_tooling_workshops"
+						type="building_tooling_workshop"
 						country="c:MAY"
 						levels=1
 						region="STATE_GUATEMALA"
@@ -271,7 +271,7 @@
 				reserves=1
 			}
 			create_building={
-				building="building_tooling_workshops"
+				building="building_tooling_workshop"
 				add_ownership={
 					country={
 						country="c:NOS"
@@ -293,7 +293,7 @@
 				activate_production_methods={ "pm_simple_organization" "pm_professional_bureaucrats" "pm_secular_bureaucrats" }
 			}
 			create_building={
-				building="building_textile_mills"
+				building="building_textile_mill"
 				add_ownership={
 					country={
 						country="c:NOS"
@@ -390,7 +390,7 @@
 				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_fig_orchards_building_rice_farm" "pm_tools_disabled"  }
 			}
 			create_building={
-				building="building_barracks"
+				building="building_barrack"
 				add_ownership={
 					country={
 						country="c:HAE"
@@ -464,7 +464,7 @@
 				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_fig_orchards_building_rice_farm" "pm_tools_disabled"  }
 			}
 			create_building={
-				building="building_barracks"
+				building="building_barrack"
 				add_ownership={
 					country={
 						country="c:HAE"
@@ -604,7 +604,7 @@
 						type="building_manor_house"
 						country="c:CAS"
 						levels=3
-						region="STATE_TOLEDO"
+						region="STATE_NEW_CASTILE"
 					}
 				}
 				reserves=1
@@ -618,7 +618,7 @@
 						type="building_manor_house"
 						country="c:CAS"
 						levels=2
-						region="STATE_TOLEDO"
+						region="STATE_NEW_CASTILE"
 					}
 				}
 				reserves=1
@@ -631,7 +631,7 @@
 						type="building_manor_house"
 						country="c:CAS"
 						levels=2
-						region="STATE_TOLEDO"
+						region="STATE_NEW_CASTILE"
 					}
 				}
 				reserves=1
@@ -756,7 +756,7 @@
 			}
 		}
 	}
-	s:STATE_CUBA={
+	s:STATE_WESTERN_CUBA={
 		region_state:CUB={
 			create_building={
 				building="building_rice_farm"
@@ -765,7 +765,7 @@
 						type="building_manor_house"
 						country="c:CUB"
 						levels=5
-						region="STATE_CUBA"
+						region="STATE_WESTERN_CUBA"
 					}
 				}
 				reserves=1
@@ -789,13 +789,13 @@
 						type="building_manor_house"
 						country="c:CUB"
 						levels=1
-						region="STATE_CUBA"
+						region="STATE_WESTERN_CUBA"
 					}
 					building={
 						country="c:CAS"
 						levels=2
 						type="building_manor_house"
-						region="STATE_CASTILE"
+						region="STATE_OLD_CASTILE"
 					}
 				}
 				reserves=1
@@ -808,13 +808,13 @@
 						type="building_manor_house"
 						country="c:CAS"
 						levels=2
-						region="STATE_TOLEDO"
+						region="STATE_NEW_CASTILE"
 					}
 					building={
 						type="building_manor_house"
 						country="c:CUB"
 						levels=3
-						region="STATE_CUBA"
+						region="STATE_WESTERN_CUBA"
 					}
 				}
 				reserves=1
@@ -827,20 +827,20 @@
 						type="building_manor_house"
 						country="c:CUB"
 						levels=5
-						region="STATE_CUBA"
+						region="STATE_WESTERN_CUBA"
 					}
 					building={
 						country="c:CAS"
 						levels=5
 						type="building_manor_house"
-						region="STATE_TOLEDO"
+						region="STATE_NEW_CASTILE"
 					}
 				}
 				reserves=1
 				activate_production_methods={ "default_building_sugar_plantation" "pm_road_carts"  }
 			}
 			create_building={
-				building="building_barracks"
+				building="building_barrack"
 				add_ownership={
 					country={
 						country="c:CUB"

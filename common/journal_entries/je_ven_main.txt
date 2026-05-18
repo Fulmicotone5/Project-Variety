@@ -226,7 +226,7 @@ je_venice_mediterranean = {
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	group = je_group_historical_content
 	complete = {
-		owns_treaty_port_in = STATE_GRANADA
+		owns_treaty_port_in = STATE_UPPER_ANDALUSIA
 		has_building = building_suez_canal
 	}
 	on_complete = {
@@ -253,7 +253,7 @@ je_venice_mediterranean_r = {
 	fail = {
 		NOT = {
 			AND = {
-				owns_treaty_port_in = STATE_GRANADA
+				owns_treaty_port_in = STATE_UPPER_ANDALUSIA
 				has_building = building_suez_canal
 			}
 		}
@@ -319,7 +319,7 @@ je_venice_main_r = {
 				owns_treaty_port_in = STATE_AYDIN
 			}
 			owns_entire_state_region = STATE_CAPE_COLONY
-			owns_treaty_port_in = STATE_GRANADA
+			owns_treaty_port_in = STATE_UPPER_ANDALUSIA
 			has_building = building_suez_canal
 			has_building = building_panama_canal
 			OR = {

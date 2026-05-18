@@ -11,7 +11,7 @@
 		s:STATE_CATALONIA = {
 			add_claim = ROOT
 		}
-		s:STATE_NAVARRA = {
+		s:STATE_BASQUE_COUNTRY = {
 			add_claim = ROOT
 		}
 	}
@@ -38,11 +38,11 @@ je_ara_esp = {
 	complete = {
 		owns_entire_state_region = STATE_ASTURIAS
 		owns_entire_state_region = STATE_GALICIA
-		owns_entire_state_region = STATE_CASTILE
-		owns_entire_state_region = STATE_TOLEDO
-		owns_entire_state_region = STATE_BADAJOZ
-		owns_entire_state_region = STATE_ANDALUSIA
-		owns_entire_state_region = STATE_GRANADA
+		owns_entire_state_region = STATE_OLD_CASTILE
+		owns_entire_state_region = STATE_NEW_CASTILE
+		owns_entire_state_region = STATE_EXTREMADURA
+		owns_entire_state_region = STATE_LOWER_ANDALUSIA
+		owns_entire_state_region = STATE_UPPER_ANDALUSIA
 		has_law = law_type:law_monarchy
 	}
 	on_complete = {

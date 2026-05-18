@@ -355,10 +355,10 @@ fm_bavaria.6 = {
 			add_journal_entry = {
 				type = je_carp
 			}
-			s:STATE_WEST_SLOVAKIA = {
+			s:STATE_SLOVAKIA = {
 				add_claim = c:SGF
 			}
-			s:STATE_EAST_SLOVAKIA = {
+			s:STATE_RUTHENIA = {
 				add_claim = c:SGF
 			}
 			s:STATE_BEKES = {

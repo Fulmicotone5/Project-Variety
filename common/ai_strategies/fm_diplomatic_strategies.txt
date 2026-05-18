@@ -1110,7 +1110,7 @@ ai_strategy_unify_inde = {
 								is_homeland = cu:bengali
 								is_homeland = cu:bihari
 								is_homeland = cu:gujarati
-								is_homeland = cu:kanauji
+
 								is_homeland = cu:kannada
 								is_homeland = cu:malayalam
 								is_homeland = cu:marathi
@@ -1144,7 +1144,7 @@ ai_strategy_unify_inde = {
 							is_homeland = cu:bengali
 							is_homeland = cu:bihari
 							is_homeland = cu:gujarati
-							is_homeland = cu:kanauji
+
 							is_homeland = cu:kannada
 							is_homeland = cu:malayalam
 							is_homeland = cu:marathi
@@ -1199,8 +1199,7 @@ ai_strategy_unify_inde = {
 									is_homeland = cu:baluchi
 									is_homeland = cu:bengali
 									is_homeland = cu:bihari
-									is_homeland = cu:gujarati
-									is_homeland = cu:kanauji
+
 									is_homeland = cu:kannada
 									is_homeland = cu:malayalam
 									is_homeland = cu:marathi

@@ -43,13 +43,13 @@ fm_cas.2 = {
 	option = {
 		name = fm_cas.2.a
 		default_option = yes
-		s:STATE_ANDALUSIA = {
+		s:STATE_LOWER_ANDALUSIA = {
 			add_claim = ROOT
 		}
-		s:STATE_GRANADA = {
+		s:STATE_UPPER_ANDALUSIA = {
 			add_claim = ROOT
 		}
-		s:STATE_NAVARRA = {
+		s:STATE_BASQUE_COUNTRY = {
 			add_claim = ROOT
 		}
 		s:STATE_ARAGON = {
@@ -61,7 +61,7 @@ fm_cas.2 = {
 		s:STATE_VALENCIA = {
 			add_claim = ROOT
 		}
-		s:STATE_BALEARES = {
+		s:STATE_BALEARIC_ISLANDS = {
 			add_claim = ROOT
 		}
 		s:STATE_BEIRA = {
@@ -191,7 +191,7 @@ fm_cas.5 = { #basq rev
 	immediate = {
 		random_scope_state = {
 			limit = {
-				state_region = s:STATE_NAVARRA
+				state_region = s:STATE_BASQUE_COUNTRY
 			}
 			save_scope_as = secession_state_bas
 		}

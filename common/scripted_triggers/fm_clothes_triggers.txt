@@ -215,7 +215,7 @@ african_diaspora_pop_clothes_trigger = {
 japanese_imperial_clothes_trigger = {
 	exists = scope:character
 	scope:character = {
-		is_ruler = yes
+		is_ruler_of_own_country = yes
 		exists = home_country
 		home_country = {
 			has_law = law_type:law_monarchy
@@ -254,7 +254,7 @@ japanese_imperial_clothes_trigger = {
 chinese_imperial_clothes_trigger = {
 	exists = scope:character
 	scope:character = {
-		is_ruler = yes
+		is_ruler_of_own_country = yes
 		exists = home_country
 		home_country = {
 			has_law = law_type:law_monarchy
@@ -352,7 +352,7 @@ chinese_court_clothes_trigger = {
 		NOT = {
 			AND = {
 				exists = home_country
-				is_ruler = yes
+				is_ruler_of_own_country = yes
 				culture = {
 					has_discrimination_trait = tai
 					has_discrimination_trait = southeast_asian_heritage
@@ -539,7 +539,7 @@ european_clothes_trigger = {
 				devout_clothes_trigger = no
 				NOT = {
 					has_ideology = ideology:ideology_traditionalist
-					is_ruler = yes
+					is_ruler_of_own_country = yes
 				}
 				owner ?= {
 					has_variable = meiji_restoration_complete
@@ -656,8 +656,8 @@ politician_clothes_trigger = {
 	exists = scope:character
 	scope:character = {
 		AND = {
-			has_role = politician
-			is_ruler = no
+			has_role_of_type = politician
+			is_ruler_of_own_country = no
 		}
 	}
 }
@@ -733,7 +733,7 @@ armed_forces_clothes_trigger = {
 ruler_clothes_trigger = {
 	exists = scope:character
 	scope:character = {
-		is_ruler = yes
+		is_ruler_of_own_country = yes
 	}
 }
 
@@ -741,8 +741,8 @@ military_clothes_trigger = {
 	exists = scope:character
 	scope:character = {
 		OR = {
-			has_role = general
-			has_role = admiral
+			has_role_of_type = general
+			has_role_of_type = admiral
 		}
 	}
 }
@@ -752,8 +752,8 @@ monarchy_clothes_trigger = {
 	scope:character = {
 		exists = owner
 		OR = {
-			is_ruler = yes
-			is_heir = yes
+			is_ruler_of_own_country = yes
+			is_heir_of_own_country = yes
 		}
 		owner = {
 			has_law = law_type:law_monarchy
@@ -765,7 +765,7 @@ republic_clothes_trigger = {
 	exists = scope:character
 	scope:character = {
 		exists = home_country
-		is_ruler = yes
+		is_ruler_of_own_country = yes
 		home_country = {
 			NOT = {
 				has_law = law_type:law_monarchy
@@ -1377,7 +1377,7 @@ struggling_pop_trigger = {
 
 agitator_character_trigger = {
 	scope:character ?= {
-		has_role = agitator
+		has_role_of_type = agitator
 	}
 }
 

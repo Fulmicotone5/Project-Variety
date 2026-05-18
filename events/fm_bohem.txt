@@ -267,13 +267,16 @@ fm_bohem.5 = {
 		add_journal_entry = {
 			type = je_boh_mor
 		}
-		s:STATE_SILESIA = {
+		s:STATE_LOWER_SILESIA = {
 			add_claim = c:BOH
 		}
-		s:STATE_WEST_SLOVAKIA = {
+		s:STATE_UPPER_SILESIA = {
 			add_claim = c:BOH
 		}
-		s:STATE_EAST_SLOVAKIA = {
+		s:STATE_SLOVAKIA = {
+			add_claim = c:BOH
+		}
+		s:STATE_RUTHENIA = {
 			add_claim = c:BOH
 		}
 		s:STATE_WEST_GALICIA = {
@@ -323,10 +326,10 @@ fm_bohem.5 = {
 		add_journal_entry = {
 			type = je_boh_dan
 		}
-		s:STATE_WEST_SLOVAKIA = {
+		s:STATE_SLOVAKIA = {
 			add_claim = c:BOH
 		}
-		s:STATE_EAST_SLOVAKIA = {
+		s:STATE_RUTHENIA = {
 			add_claim = c:BOH
 		}
 		s:STATE_BEKES = {
@@ -448,10 +451,10 @@ fm_bohem.7 = { # integration of Bavaria
 			type = je_carp
 		}
 		hidden_effect = {
-			s:STATE_WEST_SLOVAKIA = {
+			s:STATE_SLOVAKIA = {
 				add_claim = c:BBA
 			}
-			s:STATE_EAST_SLOVAKIA = {
+			s:STATE_RUTHENIA = {
 				add_claim = c:BBA
 			}
 			s:STATE_BEKES = {

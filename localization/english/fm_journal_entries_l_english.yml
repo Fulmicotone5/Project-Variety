@@ -731,7 +731,7 @@ je_bud_main_reason: "The Grand Duchy of [ROOT.GetCountry.GetName] has been a vas
 
  fm_LF: "Stimulate New Industries"
  fm_LF_reason: "#V Although the government generally should refrain from intervening in the economy, there are occasions when providing targeted assistance to stimulate the development of emerging industries is justified. #!"
- LF_decision_one: "Build $building_synthetics_plants$"
+ LF_decision_one: "Build $building_synthetics_plant$"
  LF_decision_one_desc: ""
  LF_decision_two: "Build $building_oil_rig$"
  LF_decision_two_desc: ""

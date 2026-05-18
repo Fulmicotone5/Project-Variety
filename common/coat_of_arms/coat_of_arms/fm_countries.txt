@@ -27190,7 +27190,7 @@ MTY = {
 	}
 }
 
-SC1={ #albion
+S91={ #albion
 	pattern = "pattern_border_of_2.dds"
 	color1 = "white"
 	color2 = "blue"
@@ -27203,7 +27203,7 @@ SC1={ #albion
 		instance = { scale = { 1.25 1.2 } position = { 0.5 0.52 } }		
 	}
 }
-SC1_parl = {
+S91_parl = {
 	pattern = "pattern_solid.tga"
 	color1 = "blue"
 	color2 = "white"
@@ -27220,7 +27220,7 @@ SC1_parl = {
 		color2 = color3
 	}
 }
-SC1_monarchy={
+S91_monarchy={
 	pattern = "pattern_solid.tga"
 	color1 = "yellow"
 	color2 = "red"
@@ -27240,7 +27240,7 @@ SC1_monarchy={
 	}
 }
 
-SC2={ #mann
+S92={ #mann
 	pattern = "pattern_solid.tga"
 	color1 = "blue"
 
@@ -27250,7 +27250,7 @@ SC2={ #mann
 		color2 = "green"
 	}
 }
-SC2_monarchy={
+S92_monarchy={
 	pattern = "pattern_solid.tga"
 	color1 = "blue"
 	color2 = "white"

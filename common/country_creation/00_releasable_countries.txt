@@ -214,7 +214,7 @@ SCN = {
 }
 
 NAV = {
-	states = { STATE_NAVARRA }
+	states = { STATE_BASQUE_COUNTRY }
 	
 	ai_will_do = { always = no }
 }
@@ -515,7 +515,7 @@ BRE = {
 }
 
 CUB = {
-	states = { STATE_CUBA }
+	states = { STATE_WESTERN_CUBA }
 	
 	ai_will_do = { always = no }
 }
@@ -573,9 +573,9 @@ AIN = {
 
 ANL = {
 	states = { 
-		STATE_ANDALUSIA
-		STATE_BADAJOZ
-		STATE_GRANADA
+		STATE_LOWER_ANDALUSIA
+		STATE_EXTREMADURA
+		STATE_UPPER_ANDALUSIA
 	}
 	ai_will_do = { always = no }
 }
@@ -583,8 +583,8 @@ ANL = {
 CAS = {
 	states = { 
 		STATE_ASTURIAS
-		STATE_CASTILE
-		STATE_TOLEDO
+		STATE_OLD_CASTILE
+		STATE_NEW_CASTILE
 	}
 	
 	ai_will_do = { always = no }
@@ -1383,8 +1383,8 @@ POI = {
 }
 GRA = {
 	states = {
-		STATE_ANDALUSIA
-		STATE_GRANADA
+		STATE_LOWER_ANDALUSIA
+		STATE_UPPER_ANDALUSIA
 	}
 	ai_will_do = { always = no }
 }
@@ -2145,7 +2145,7 @@ DFR = {
 
 ASH = {
 	states = {
-		STATE_GHANA
+		STATE_GOLD_COAST
 	}
 	ai_will_do = { always = no }
 }
@@ -2359,7 +2359,7 @@ MAZ = {
 }
 
 SL1 = {
-	states = { STATE_SILESIA }
+	states = { STATE_LOWER_SILESIA STATE_UPPER_SILESIA }
 	
 	ai_will_do = { always = no }
 }

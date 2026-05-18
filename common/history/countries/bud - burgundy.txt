@@ -8,7 +8,7 @@
 		add_technology_researched = egalitarianism
 		add_technology_researched = central_archives
 		add_technology_researched = central_banking
-		add_technology_researched = microbial_fermentation_control
+		
 		set_tax_level = medium
 		
 		add_taxed_goods = g:wine

@@ -205,7 +205,7 @@ jaep.4 = {
 			NOT = { is_owed_obligation_by = ROOT }
 			NOT = { has_war_with = ROOT }
 			any_scope_character = {
-				has_role = general
+				has_role_of_type = general
 				is_busy = no
 			}
 		}
@@ -219,14 +219,14 @@ jaep.4 = {
 				NOT = { is_owed_obligation_by = ROOT }
 				NOT = { has_war_with = ROOT }
 				any_scope_character = {
-					has_role = general
+					has_role_of_type = general
 					is_busy = no
 				}
 			}
 			save_scope_as = military_consultant_country
 			random_scope_character = {
 				limit = {
-					has_role = general
+					has_role_of_type = general
 					is_busy = no
 				}
 				save_scope_as = military_consultant_general
@@ -705,7 +705,7 @@ jaep.8 = {
 	trigger = {
 		has_technology_researched = railways
 		any_scope_state = {
-			has_building = building_barracks
+			has_building = building_barrack
 			NOT = { has_building = building_railway }
 		}
 		NOT = { has_modifier = retained_railway_control }
@@ -714,7 +714,7 @@ jaep.8 = {
 	immediate = {
 		random_scope_state = {
 			limit = {
-				has_building = building_barracks
+				has_building = building_barrack
 				NOT = { has_building = building_railway }
 			}
 			save_scope_as = military_railway_state
@@ -857,7 +857,7 @@ jaep.10 = {
 		NOT = { has_variable = shi_gakko_event }
 		exists = s:STATE_KYUSHU.region_state:JAE
 		s:STATE_KYUSHU.region_state:JAE = {
-			has_building = building_barracks
+			has_building = building_barrack
 		}
 		ig:ig_armed_forces = {
 			ig_approval <= unhappy

@@ -282,7 +282,7 @@ fadm3 = {
 }
 fadm4 = {
 	icon = gfx/interface/ve_national_ideas/local_institution_spread.dds
-	building_arts_academy_throughput_add = 0.2
+	building_art_academy_throughput_add = 0.2
 	building_university_throughput_add = 0.1
 	state_pop_qualifications_mult = 0.1
 	country_tech_spread_mult = 0.3

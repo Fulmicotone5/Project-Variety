@@ -1,235 +1,75 @@
-goods_output_copper_add={
-	decimals=0
-	color=good
-	game_data={
-		ai_value=0
-	}
-}
-goods_input_copper_add={
-	decimals=0
-	color=bad
-	game_data={
-		ai_value=0
-	}
-}
-goods_output_copper_mult={
-	decimals=0
-	color=good
-	percent=yes
-	game_data={
-		ai_value=0
-	}
-}
-building_copper_plantation_throughput_add={
-	decimals=0
-	color=good
-	percent=yes
-	game_data={
-		ai_value=0
-	}
-}
-goods_output_spice_add={
-	decimals=0
-	color=good
-	game_data={
-		ai_value=0
-	}
-}
-goods_input_spice_add={
-	decimals=0
-	color=bad
-	game_data={
-		ai_value=0
-	}
-}
-goods_output_spice_mult={
-	decimals=0
-	color=good
-	percent=yes
-	game_data={
-		ai_value=0
-	}
-}
-building_spice_plantation_throughput_add={
-	decimals=0
-	color=good
-	percent=yes
-	game_data={
-		ai_value=0
-	}
+#aggiunto solo per questo
+gov_cannot_build_economic_buildings_bool = {
+	color = good
+	boolean=yes
 }
 
-goods_output_ammunition_mult={
-	decimals=0
-	color=good
-	percent=yes
-	game_data={
-		ai_value=0
-	}
+fmunexp_bool = {
+	color = good
+	boolean=yes
 }
 
-goods_output_radios_mult={
-	decimals=0
-	color=good
-	percent=yes
-	game_data={
-		ai_value=0
-	}
+cannot_choose_doctrine_bool = {
+	color = good
+	boolean=yes
 }
 
-country_invention_farms_add = {
-    decimals=2
-	color=good
-	percent=no
-	game_data={
-		ai_value=0
-	}
+ control_bool_5 = {
+	color = good
+	boolean=yes
 }
-
-country_invention_groceries_add = {
-    decimals=2
-	color=good
-	game_data={
-		ai_value=0
-	}
+ control_bool_10 = {
+	color = good
+	boolean=yes
 }
-
-country_invention_logging_add = {
-    decimals=2
-	color=good
-	game_data={
-		ai_value=0
-	}
+ control_bool_15 = {
+	color = good
+	boolean=yes
 }
-
-country_invention_textile_add = {
-    decimals=2
-	color=good
-	game_data={
-		ai_value=0
-	}
+ control_bool_20 = {
+	color = good
+	boolean=yes
 }
-
-country_invention_fishing_add = {
-    decimals=2
-	color=good
-	game_data={
-		ai_value=0
-	}
+ control_bool_25 = {
+	color = good
+	boolean=yes
 }
-
-country_invention_furniture_add = {
-    decimals=2
-	color=good
-	game_data={
-		ai_value=0
-	}
+ control_bool_5n = {
+	color = bad
+	boolean=yes
 }
-
-country_invention_paper_add = {
-    decimals=2
-	color=good
-	game_data={
-		ai_value=0
-	}
+ control_bool_10n = {
+	color = bad
+	boolean=yes
 }
-
-country_invention_motor_add = {
-    decimals=2
-	color=good
-	game_data={
-		ai_value=0
-	}
+ control_bool_15n = {
+	color = bad
+	boolean=yes
 }
-
-country_invention_alcohol_add = {
-    decimals=2
-	color=good
-	game_data={
-		ai_value=0
-	}
+ control_bool_20n = {
+	color = bad
+	boolean=yes
 }
-
-country_invention_meat_add = {
-    decimals=2
-	color=good
-	game_data={
-		ai_value=0
-	}
+ control_bool_25n = {
+	color = bad
+	boolean=yes
 }
-
-country_invention_mining_add = {
-    decimals=2
-	color=good
-	game_data={
-		ai_value=0
-	}
+ control_bool_315 = {
+	color = good
+	boolean=yes
 }
-
-country_invention_boats_add = {
-    decimals=2
-	color=good
-	game_data={
-		ai_value=0
-	}
+ control_bool_320 = {
+	color = good
+	boolean=yes
 }
-
-country_invention_glass_add = {
-    decimals=2
-	color=good
-	game_data={
-		ai_value=0
-	}
+ control_bool_318 = {
+	color = good
+	boolean=yes
 }
-
-country_invention_plantations_add = {
-    decimals=2
-	color=good
-	game_data={
-		ai_value=0
-	}
+ control_bool_425 = {
+	color = good
+	boolean=yes
 }
-
-country_invention_explosives_add = {
-    decimals=2
-	color=good
-	game_data={
-		ai_value=0
-	}
-}
-
-country_invention_silk_add = {
-    decimals=2
-	color=good
-	game_data={
-		ai_value=0
-	}
-}
-
-country_invention_steel_add = {
-    decimals=2
-	color=good
-	game_data={
-		ai_value=0
-	}
-}
-
-country_invention_tools_add = {
-    decimals=2
-	color=good
-	game_data={
-		ai_value=0
-	}
-}
-
-country_invention_military_add = {
-    decimals=2
-	color=good
-	game_data={
-		ai_value=0
-	}
-}
-
 war_support_exhastion_reduction_add = {
 	color=bad
 	percent = no

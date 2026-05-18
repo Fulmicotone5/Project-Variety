@@ -1,0 +1,8 @@
+baal_pol = {
+	type = heritage
+	trait_group = heritage_group_eastern
+}
+zorro = {
+	type = heritage
+	trait_group = heritage_group_eastern
+}

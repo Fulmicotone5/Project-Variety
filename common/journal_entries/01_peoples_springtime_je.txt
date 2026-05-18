@@ -111,7 +111,7 @@
 				}
 				any_scope_character = {
 					has_ideology = ideology:ideology_radical
-					has_role = agitator
+					has_role_of_type = agitator
 				}
 			}
 		}
@@ -148,7 +148,7 @@
 							}
 							any_scope_character = {
 								has_ideology = ideology:ideology_radical
-								has_role = agitator
+								has_role_of_type = agitator
 							}
 						}
 					}

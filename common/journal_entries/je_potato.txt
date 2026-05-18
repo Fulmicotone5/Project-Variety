@@ -13,8 +13,8 @@ je_potato_blight = {
 					owner = root
 					any_scope_building = {
 						OR = {
-							has_active_production_method = pm_home_workshops_building_subsistence_farms	
-							has_active_production_method = pm_home_workshops_no_building_subsistence_farms	
+							has_active_production_method = pm_home_workshops_building_subsistence_farm	
+							has_active_production_method = pm_home_workshops_no_building_subsistence_farm	
 						}
 					}
 				}
@@ -34,8 +34,8 @@ je_potato_blight = {
 					owner = root
 					any_scope_building = {
 						OR = {
-							has_active_production_method = pm_home_workshops_building_subsistence_farms	
-							has_active_production_method = pm_home_workshops_no_building_subsistence_farms	
+							has_active_production_method = pm_home_workshops_building_subsistence_farm	
+							has_active_production_method = pm_home_workshops_no_building_subsistence_farm	
 						}
 					}
 				}
@@ -55,8 +55,8 @@ je_potato_blight = {
 					owner = root
 					any_scope_building = {
 						OR = {
-							has_active_production_method = pm_home_workshops_building_subsistence_farms	
-							has_active_production_method = pm_home_workshops_no_building_subsistence_farms	
+							has_active_production_method = pm_home_workshops_building_subsistence_farm	
+							has_active_production_method = pm_home_workshops_no_building_subsistence_farm	
 						}
 					}
 				}
@@ -76,8 +76,8 @@ je_potato_blight = {
 					owner = root
 					any_scope_building = {
 						OR = {
-							has_active_production_method = pm_home_workshops_building_subsistence_farms	
-							has_active_production_method = pm_home_workshops_no_building_subsistence_farms	
+							has_active_production_method = pm_home_workshops_building_subsistence_farm	
+							has_active_production_method = pm_home_workshops_no_building_subsistence_farm	
 						}
 					}
 				}
@@ -97,8 +97,8 @@ je_potato_blight = {
 					owner = root
 					any_scope_building = {
 						OR = {
-							has_active_production_method = pm_home_workshops_building_subsistence_farms	
-							has_active_production_method = pm_home_workshops_no_building_subsistence_farms	
+							has_active_production_method = pm_home_workshops_building_subsistence_farm	
+							has_active_production_method = pm_home_workshops_no_building_subsistence_farm	
 						}
 					}
 				}
@@ -118,8 +118,8 @@ je_potato_blight = {
 					owner = root
 					any_scope_building = {
 						OR = {
-							has_active_production_method = pm_home_workshops_building_subsistence_farms	
-							has_active_production_method = pm_home_workshops_no_building_subsistence_farms	
+							has_active_production_method = pm_home_workshops_building_subsistence_farm	
+							has_active_production_method = pm_home_workshops_no_building_subsistence_farm	
 						}
 					}
 				}
@@ -138,8 +138,8 @@ je_potato_blight = {
 					owner = root
 					any_scope_building = {
 						OR = {
-							has_active_production_method = pm_home_workshops_building_subsistence_farms	
-							has_active_production_method = pm_home_workshops_no_building_subsistence_farms	
+							has_active_production_method = pm_home_workshops_building_subsistence_farm	
+							has_active_production_method = pm_home_workshops_no_building_subsistence_farm	
 						}
 					}
 				}

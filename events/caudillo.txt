@@ -26,7 +26,7 @@ caudillo.1 = {
 			has_ideology = ideology:ideology_caudillismo
 		}
 		any_scope_character = {
-			has_role = general
+			has_role_of_type = general
 		}
 	}
 
@@ -51,7 +51,7 @@ caudillo.1 = {
 		}
 		random_scope_character = {
 			limit = {
-				has_role = general
+				has_role_of_type = general
 			}
 			save_scope_as = general_scope
 		}
@@ -220,18 +220,18 @@ caudillo.4 = {
 		OR = {
 			ig:ig_armed_forces = {
 				leader = {
-					is_ruler = no
+					is_ruler_of_own_country = no
 				}
 			}
 			any_scope_character = {
 				OR = {
-					has_role = general
-					has_role = admiral
+					has_role_of_type = general
+					has_role_of_type = admiral
 				}
 				interest_group = {
 					is_interest_group_type = ig_armed_forces
 				}
-				is_ruler = no
+				is_ruler_of_own_country = no
 			}
 		}
 	}
@@ -247,7 +247,7 @@ caudillo.4 = {
 			limit = {
 				ig:ig_armed_forces = {
 					leader = {
-						is_ruler = no
+						is_ruler_of_own_country = no
 					}
 				}
 			}
@@ -261,25 +261,25 @@ caudillo.4 = {
 			limit = {
 				any_scope_character = {
 					OR = {
-						has_role = general
-						has_role = admiral
+						has_role_of_type = general
+						has_role_of_type = admiral
 					}
 					interest_group = {
 						is_interest_group_type = ig_armed_forces
 					}
-					is_ruler = no
+					is_ruler_of_own_country = no
 				}
 			}
 			random_scope_character = {
 				limit = {
 					OR = {
-						has_role = general
-						has_role = admiral
+						has_role_of_type = general
+						has_role_of_type = admiral
 					}
 					interest_group = {
 						is_interest_group_type = ig_armed_forces
 					}
-					is_ruler = no
+					is_ruler_of_own_country = no
 				}
 				save_scope_as = president_successor_scope
 			}
@@ -569,8 +569,8 @@ caudillo.6 = {
 		has_journal_entry = je_caudillo
 		any_scope_character = {
 			OR = {
-				has_role = general
-				has_role = admiral
+				has_role_of_type = general
+				has_role_of_type = admiral
 			}
 			popularity > interest_group.leader.popularity
 			NOR = {
@@ -578,15 +578,15 @@ caudillo.6 = {
 				has_trait = cautious
 			}
 			NOR = {
-				has_role = politician
-				is_ruler = yes
-				is_heir = yes
+				has_role_of_type = politician
+				is_ruler_of_own_country = yes
+				is_heir_of_own_country = yes
 			}
 			this.interest_group = {
 				leader = {
 					NOR = {
-						has_role = general
-						has_role = admiral
+						has_role_of_type = general
+						has_role_of_type = admiral
 					}
 				}
 			}
@@ -597,8 +597,8 @@ caudillo.6 = {
 		random_scope_character = {
 			limit = {
 				OR = {
-					has_role = general
-					has_role = admiral
+					has_role_of_type = general
+					has_role_of_type = admiral
 				}
 				popularity > interest_group.leader.popularity
 				NOR = {
@@ -606,15 +606,15 @@ caudillo.6 = {
 					has_trait = cautious
 				}
 				NOR = {
-					has_role = politician
-					is_ruler = yes
-					is_heir = yes
+					has_role_of_type = politician
+					is_ruler_of_own_country = yes
+					is_heir_of_own_country = yes
 				}
 				this.interest_group = {
 					leader = {
 						NOR = {
-							has_role = general
-							has_role = admiral
+							has_role_of_type = general
+							has_role_of_type = admiral
 						}
 					}
 				}

@@ -149,16 +149,16 @@ fm_cth.5 = {
 		s:STATE_FEZ = {
 			add_claim = ROOT
 		}
-		s:STATE_ANDALUSIA = {
+		s:STATE_LOWER_ANDALUSIA = {
 			add_claim = ROOT
 		}
-		s:STATE_GRANADA = {
+		s:STATE_UPPER_ANDALUSIA = {
 			add_claim = ROOT
 		}
 		s:STATE_VALENCIA = {
 			add_claim = ROOT
 		}
-		s:STATE_BALEARES = {
+		s:STATE_BALEARIC_ISLANDS = {
 			add_claim = ROOT
 		}
 		set_variable = {

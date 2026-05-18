@@ -23,7 +23,7 @@
 				size = 109765
 			}
 			create_pop = {
-				culture = na_eastern_algonquian
+				culture = siouan
 				size = 67054
 			}
 		}
@@ -53,7 +53,7 @@
 				size = 45765
 			}
 			create_pop = {
-				culture = na_eastern_algonquian
+				culture = siouan
 				size = 67054
 			}
 		}
@@ -83,7 +83,7 @@
 				size = 39765
 			}
 			create_pop = {
-				culture = na_eastern_algonquian
+				culture = siouan
 				size = 129765
 			}
 		}
@@ -113,7 +113,7 @@
 				size = 39765
 			}
 			create_pop = {
-				culture = na_eastern_algonquian
+				culture = siouan
 				size = 67054
 			}
 		}
@@ -148,7 +148,7 @@
 				size = 71432
 			}
 			create_pop = {
-				culture = na_eastern_algonquian
+				culture = siouan
 				size = 8965
 			}
 		}
@@ -175,7 +175,7 @@
 				size = 39765
 			}
 			create_pop = {
-				culture = na_eastern_algonquian
+				culture = siouan
 				size = 117654
 			}
 		}
@@ -205,7 +205,7 @@
 				size = 29765
 			}
 			create_pop = {
-				culture = na_eastern_algonquian
+				culture = siouan
 				size = 67054
 			}
 		}
@@ -235,7 +235,7 @@
 				size = 1765
 			}
 			create_pop = {
-				culture = na_eastern_algonquian
+				culture = siouan
 				size = 20000
 			}
 		}
@@ -256,7 +256,7 @@
 				size = 116
 			}
 			create_pop = {
-				culture = na_eastern_algonquian
+				culture = siouan
 				size = 67054
 			}
 			create_pop = {
@@ -322,7 +322,7 @@
 				size = 88765
 			}
 			create_pop = {
-				culture = na_eastern_algonquian
+				culture = siouan
 				size = 45876
 			}
 		}
@@ -358,7 +358,7 @@
 				size = 67043
 			}
 			create_pop = {
-				culture = na_eastern_algonquian
+				culture = siouan
 				size = 117654
 			}
 		}
@@ -397,7 +397,7 @@
 				size = 96643
 			}
 			create_pop = {
-				culture = na_eastern_algonquian
+				culture = siouan
 				size = 67054
 			}
 		}
@@ -482,7 +482,7 @@
 				size = 39765
 			}
 			create_pop = {
-				culture = na_eastern_algonquian
+				culture = siouan
 				size = 35677
 			}
 		}
@@ -490,7 +490,7 @@
 	s:STATE_PENNSYLVANIA = {
 		region_state:IQS = {
 			create_pop = {
-				culture = na_eastern_algonquian
+				culture = siouan
 				size = 39765
 			}
 			create_pop = {
@@ -522,7 +522,7 @@
 				size = 39765
 			}
 			create_pop = {
-				culture = na_eastern_algonquian
+				culture = siouan
 				size = 87655
 			}
 			create_pop = {
@@ -554,11 +554,11 @@
 	s:STATE_MICHIGAN = {
 		region_state:ONE = {
 			create_pop = {
-				culture = na_miami_illinois
+				culture = algonquian
 				size = 456732
 			}
 			create_pop = {
-				culture = na_eastern_algonquian
+				culture = siouan
 				size = 55643
 			}
 		}
@@ -567,7 +567,7 @@
 	s:STATE_OHIO = {
 		region_state:SWN = {
 			create_pop = {
-				culture = na_eastern_algonquian
+				culture = siouan
 				size = 105493
 			}
 		}
@@ -576,21 +576,21 @@
 	s:STATE_INDIANA = {
 		region_state:SWN = {
 			create_pop = {
-				culture = na_miami_illinois
+				culture = algonquian
 				size = 12877
 			}
 			create_pop = {
-				culture = na_eastern_algonquian
+				culture = siouan
 				size = 45035
 			}
 		}
 		region_state:ONE = {
 			create_pop = {
-				culture = na_eastern_algonquian
+				culture = siouan
 				size = 89543
 			}
 			create_pop = {
-				culture = na_miami_illinois
+				culture = algonquian
 				size = 115854
 			}
 		}
@@ -598,7 +598,7 @@
 	s:STATE_KENTUCKY = {
 		region_state:SWN = {
 			create_pop = {
-				culture = na_eastern_algonquian
+				culture = siouan
 				size = 104231
 			}
 		}
@@ -612,7 +612,7 @@
 	s:STATE_TENNESSEE = {
 		region_state:SWN = {
 			create_pop = {
-				culture = na_eastern_algonquian
+				culture = siouan
 				size = 31965
 			}
 		}
@@ -673,7 +673,7 @@
 	s:STATE_WISCONSIN = {
 		region_state:DKT = {
 			create_pop = {
-				culture = na_miami_illinois
+				culture = algonquian
 				size = 20000
 			}
 			create_pop = {
@@ -683,7 +683,7 @@
 		}
 		region_state:ONE = {
 			create_pop = {
-				culture = na_miami_illinois
+				culture = algonquian
 				size = 180000
 			}
 			create_pop = {
@@ -696,7 +696,7 @@
 	s:STATE_ILLINOIS = {
 		region_state:ONE = {
 			create_pop = {
-				culture = na_miami_illinois
+				culture = algonquian
 				size = 543024
 			}
 		}
@@ -715,14 +715,14 @@
 			}
 
 			create_pop = {
-				culture = na_miami_illinois
+				culture = algonquian
 				size = 45876
 			}
 		}
 		region_state:CRU = {
 
 			create_pop = {
-				culture = na_cree_montagnais
+				culture = cree
 				size = 25876
 			}
 		}
@@ -731,7 +731,7 @@
 	s:STATE_IOWA = {
 		region_state:CAH = {
 			create_pop = {
-				culture = na_miami_illinois
+				culture = algonquian
 				size = 67054
 			}
 			create_pop = {
@@ -752,7 +752,7 @@
 		}
 		region_state:ONE = {
 			create_pop = {
-				culture = na_miami_illinois
+				culture = algonquian
 				size = 21432
 			}
 		}
@@ -765,7 +765,7 @@
 				size = 400000
 			}
 			create_pop = {
-				culture = na_miami_illinois
+				culture = algonquian
 				size = 167054
 			}
 			create_pop = {
@@ -777,13 +777,13 @@
 	s:STATE_ARKANSAS = {
 		region_state:CAD = {
 			create_pop = {
-				culture = na_caddoan
+				culture = caddoan
 				size = 86777
 			}
 		}
 		region_state:CAH = {
 			create_pop = {
-				culture = na_caddoan
+				culture = caddoan
 				size = 67054
 			}
 			create_pop = {
@@ -796,7 +796,7 @@
 	s:STATE_LOUISIANA = {
 		region_state:CAD = {
 			create_pop = {
-				culture = na_caddoan
+				culture = caddoan
 				size = 38232
 			}
 		}
@@ -806,7 +806,7 @@
 				size = 244444
 			}
 			create_pop = {
-				culture = na_caddoan
+				culture = caddoan
 				size = 215643
 			}
 		}
@@ -823,14 +823,14 @@
 				size = 24345
 			}
 			create_pop = {
-				culture = na_caddoan
+				culture = caddoan
 				size = 64000
 			}
 
 		}
 		region_state:CRU = {
 			create_pop = {
-				culture = na_cree_montagnais
+				culture = cree
 				size = 28054
 			}
 
@@ -849,7 +849,7 @@
 			}
 
 			create_pop = {
-				culture = na_caddoan
+				culture = caddoan
 				size = 33764
 			}
 			create_pop = {
@@ -879,19 +879,19 @@
 				size = 129765
 			}
 			create_pop = {
-				culture = na_caddoan
+				culture = caddoan
 				size = 129765
 			}
 		}
 		region_state:CAH = {
 			create_pop = {
-				culture = na_caddoan
+				culture = caddoan
 				size = 129765
 			}
 		}
 		region_state:AT1 = {
 			create_pop = {
-				culture = na_arapahoan
+				culture = siouan
 				size = 129765
 			}
 		}
@@ -900,7 +900,7 @@
 	s:STATE_KANSAS = {
 		region_state:CAH = {
 			create_pop = {
-				culture = na_caddoan
+				culture = caddoan
 				size = 255643
 			}
 			create_pop = {
@@ -923,7 +923,7 @@
 				size = 126000
 			}
 			create_pop = {
-				culture = na_caddoan
+				culture = caddoan
 				size = 67054
 			}
 		}
@@ -933,7 +933,7 @@
 				size = 126000
 			}
 			create_pop = {
-				culture = na_caddoan
+				culture = caddoan
 				size = 321432
 			}
 		}
@@ -960,7 +960,7 @@
 				size = 12000
 			}
 			create_pop = {
-				culture = na_caddoan
+				culture = caddoan
 				size = 255643
 			}
 		}
@@ -974,7 +974,7 @@
 				size = 45876
 			}
 			create_pop = {
-				culture = na_caddoan
+				culture = caddoan
 				size = 45876
 			}
 		}
@@ -1006,7 +1006,7 @@
 	s:STATE_MONTANA = {
 		region_state:BFT = {
 			create_pop = {
-				culture = na_blackfoot
+				culture = siouan
 				size = 850000
 			}
 
@@ -1030,7 +1030,7 @@
 		region_state:CRU = {
 
 			create_pop = {
-				culture = na_cree_montagnais
+				culture = cree
 				size = 13876
 			}
 		}
@@ -1360,7 +1360,7 @@
 		}
 		region_state:VSL = {
 			create_pop = {
-				culture = na_cree_montagnais
+				culture = cree
 				size = 1000
 			}
 			create_pop = {
@@ -1460,11 +1460,11 @@
 	s:STATE_ALBERTA = {
 		region_state:CRU = {
 			create_pop = {
-				culture = na_cree_montagnais
+				culture = cree
 				size = 20643
 			}
 			create_pop = {
-				culture = na_blackfoot
+				culture = siouan
 				size = 9765
 			}
 		}
@@ -1496,7 +1496,7 @@
 		}
 		region_state:BFT = {
 			create_pop = {
-				culture = na_blackfoot
+				culture = siouan
 				size = 2755
 			}
 			create_pop = {
@@ -1508,11 +1508,11 @@
 	s:STATE_SASKATCHEWAN = {
 		region_state:CRU = {
 			create_pop = {
-				culture = na_cree_montagnais
+				culture = cree
 				size = 17000
 			}
 			create_pop = {
-				culture = na_blackfoot
+				culture = siouan
 				size = 7000
 			}
 		}
@@ -1524,7 +1524,7 @@
 				size = 445000
 			}
 			create_pop = {
-				culture = na_cree_montagnais
+				culture = cree
 				size = 29766
 			}
 
@@ -1535,7 +1535,7 @@
 				size = 200
 			}
 			create_pop = {
-				culture = na_cree_montagnais
+				culture = cree
 				size = 9500
 			}
 
@@ -1544,7 +1544,7 @@
 	s:STATE_YUKON_TERRITORY = {
 		region_state:AT2 = {
 			create_pop = {
-				culture = na_cree_montagnais
+				culture = cree
 				size = 2000
 			}
 			create_pop = {

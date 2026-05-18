@@ -1,6 +1,6 @@
 ﻿je_east_rome = {
 	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
-	group = je_group_historical_content
+	group = je_group_crises
 
 	immediate = {
 		ig:ig_devout = {
@@ -42,13 +42,15 @@
 		}
 	}
 	on_complete = {
-		change_tag = BYZ
 		add_primary_culture = cu:greek
 		remove_modifier = modifier_eastrome_one
 		hidden_effect = {
 			trigger_event = {
 				id = fm_east_rome.3
 			}
+		}
+		c:BIZ = {
+			change_tag = BYZ
 		}
 	}
 	fail = {
