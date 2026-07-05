@@ -165,8 +165,8 @@ formation.3 = {
 		every_state_region = {
 			limit = {
 				OR = {
-					region = sr:region_anatolia
-					region = sr:region_balkans
+					is_in_geographic_region = geographic_region_anatolia
+					is_in_geographic_region = geographic_region_balkans
 				}
 				any_scope_state = {
 					NOT = { owner = ROOT }
@@ -252,7 +252,7 @@ formation.5 = {
 			triggered_desc = {
 				desc = formation.5.f
 				trigger = {
-					has_law = law_type:law_monarchy
+					has_law_or_variant = law_type:law_monarchy
 				}
 			}
 			triggered_desc = {
@@ -528,7 +528,7 @@ formation.8 = {
 		unification_claims_effect = yes
 		every_state_region = {
 			limit = {
-				region = sr:region_north_africa
+				is_in_geographic_region = geographic_region_north_africa
 				any_scope_state = {
 					NOT = { owner = ROOT }
 					NOT = { has_claim_by = ROOT }
@@ -856,16 +856,16 @@ formation.14 = {
 			triggered_desc = {
 				desc = formation.14.f
 				trigger = {
-					has_law = law_type:law_monarchy
+					has_law_or_variant = law_type:law_monarchy
 				}
 			}
 			triggered_desc = {
 				desc = formation.14.f2
 				trigger = {
 					OR = {
-						has_law = law_type:law_census_voting
-						has_law = law_type:law_wealth_voting
-						has_law = law_type:law_universal_suffrage
+						has_law_or_variant = law_type:law_census_voting
+						has_law_or_variant = law_type:law_wealth_voting
+						has_law_or_variant = law_type:law_universal_suffrage
 					}
 				}
 			}
@@ -1111,7 +1111,7 @@ formation.18 = {
 		first_valid = {
 			triggered_desc = {
 				trigger = {
-					has_law = law_type:law_monarchy
+					has_law_or_variant = law_type:law_monarchy
 				}
 				desc = formation.18.d_1
 			}
@@ -1119,22 +1119,22 @@ formation.18 = {
 				trigger = {
 					coa_fascist_trigger = yes
 					NOT = {
-						has_law = law_type:law_council_republic
+						has_law_or_variant = law_type:law_council_republic
 					}
 				}
 				desc = formation.18.d_2
 			}
 			triggered_desc = {
 				trigger = {
-					has_law = law_type:law_council_republic
+					has_law_or_variant = law_type:law_council_republic
 				}
 				desc = formation.18.d_3
 			}
 			triggered_desc = {
 				trigger = {
 					OR = {
-						has_law = law_type:law_parliamentary_republic
-						has_law = law_type:law_presidential_republic
+						has_law_or_variant = law_type:law_parliamentary_republic
+						has_law_or_variant = law_type:law_presidential_republic
 					}
 				}
 				desc = formation.18.d_4
@@ -1145,7 +1145,7 @@ formation.18 = {
 		first_valid = {
 			triggered_desc = {
 				trigger = {
-					has_law = law_type:law_monarchy
+					has_law_or_variant = law_type:law_monarchy
 				}
 				desc = formation.18.f_1
 			}
@@ -1153,22 +1153,22 @@ formation.18 = {
 				trigger = {
 					coa_fascist_trigger = yes
 					NOT = {
-						has_law = law_type:law_council_republic
+						has_law_or_variant = law_type:law_council_republic
 					}
 				}
 				desc = formation.18.f_2
 			}
 			triggered_desc = {
 				trigger = {
-					has_law = law_type:law_council_republic
+					has_law_or_variant = law_type:law_council_republic
 				}
 				desc = formation.18.f_3
 			}
 			triggered_desc = {
 				trigger = {
 					OR = {
-						has_law = law_type:law_parliamentary_republic
-						has_law = law_type:law_presidential_republic
+						has_law_or_variant = law_type:law_parliamentary_republic
+						has_law_or_variant = law_type:law_presidential_republic
 					}
 				}
 				desc = formation.18.f_4
@@ -1217,10 +1217,10 @@ formation.18 = {
 	option = {
 		name = formation.18.b
 		trigger = { 
-			has_law = law_type:law_council_republic
+			has_law_or_variant = law_type:law_council_republic
 			NOT = {
 				c:ENG ?= {
-					has_law = law_type:law_council_republic
+					has_law_or_variant = law_type:law_council_republic
 				}
 			}
 		}
@@ -1252,8 +1252,8 @@ formation.18 = {
 		name = formation.18.c
 		trigger = {
 			OR = {
-				has_law = law_type:law_parliamentary_republic
-				has_law = law_type:law_presidential_republic
+				has_law_or_variant = law_type:law_parliamentary_republic
+				has_law_or_variant = law_type:law_presidential_republic
 			}
 			NOT = {
 				coa_fascist_trigger = yes

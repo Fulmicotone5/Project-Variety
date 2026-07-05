@@ -33,7 +33,7 @@
 	}
 	progressbar = yes
 	weight = 10000
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_rum_economy = {
@@ -60,7 +60,7 @@ je_rum_economy = {
 	}
 	transferable = no
 	weight = 5000
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 # Literacy and Universities
@@ -92,7 +92,7 @@ je_rum_education = {
 	}
 	transferable = no
 	weight = 5000
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 # Nationalism
@@ -158,7 +158,7 @@ je_rum_separatism = {
 	}
 	transferable = no
 	weight = 5000
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 	progressbar = yes
 }
 
@@ -202,7 +202,7 @@ je_rum_army = {
 		}
 	}
 	transferable = no
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 	weight = 5000
 }
 
@@ -212,7 +212,7 @@ je_rum_bureaucracy = {
 	group = je_group_historical_content
 	complete = {
 		NOT = {
-			has_law = law_type:law_hereditary_bureaucrats
+			has_law_or_variant = law_type:law_hereditary_bureaucrats
 		}
 		bureaucracy >= 0
 		approaching_bureaucracy_shortage = no
@@ -241,7 +241,7 @@ je_rum_bureaucracy = {
 	}
 	transferable = no
 	weight = 5000
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_rum_rome = {
@@ -274,10 +274,10 @@ je_rum_rome = {
 	}
 	fail = {
 		NOT = {
-			has_law = law_type:law_monarchy
+			has_law_or_variant = law_type:law_monarchy
 		}
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 je_rum_kor = {
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
@@ -313,9 +313,9 @@ je_rum_kor = {
 		owns_entire_state_region = STATE_ABU_DHABI
 
 		OR = {
-			has_law = law_type:law_racial_segregation
-			has_law = law_type:law_cultural_exclusion
-			has_law = law_type:law_multicultural
+			has_law_or_variant = law_type:law_racial_segregation
+			has_law_or_variant = law_type:law_cultural_exclusion
+			has_law_or_variant = law_type:law_multicultural
 		}
 	}
 	on_complete = {
@@ -325,8 +325,8 @@ je_rum_kor = {
 	}
 	fail = {
 		NOT = {
-			has_law = law_type:law_monarchy
+			has_law_or_variant = law_type:law_monarchy
 		}
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }

@@ -27,7 +27,7 @@ kalmar_union = {
 	possible = {
 		exists = c:SCA
 		THIS = c:SCA
-		has_law = law_type:law_monarchy
+		has_law_or_variant = law_type:law_monarchy
 		ruler = {
 			has_culture = cu:danish
 		}
@@ -40,7 +40,7 @@ fennoscandia = {
 	possible = {
 		exists = c:SCA
 		THIS = c:SCA
-		has_law = law_type:law_monarchy
+		has_law_or_variant = law_type:law_monarchy
 		ruler = {
 			has_culture = cu:finnish
 		}
@@ -53,7 +53,7 @@ yellow_prussia = {
 	possible = {
 		exists = c:PRO
 		THIS = c:PRO
-		has_law = law_type:law_anarchy
+		has_law_or_variant = law_type:law_anarchy
 	}
 }
 
@@ -63,7 +63,7 @@ imperial_korea = {
 	possible = {
 		exists = c:KOR
 		THIS = c:KOR
-		has_law = law_type:law_monarchy
+		has_law_or_variant = law_type:law_monarchy
 		has_variable = KOR_korean_empire_declared
 	}
 }
@@ -73,7 +73,7 @@ korea_monarchy_blue = {
 	possible = {
 		exists = c:KOR
 		THIS = c:KOR
-		has_law = law_type:law_monarchy 
+		has_law_or_variant = law_type:law_monarchy 
 		NOT = {
 			has_variable = KOR_korean_empire_declared
 		}
@@ -86,7 +86,7 @@ usa_technate = {
 	possible = {
 		exists = c:USU
 		THIS = c:USU
-		has_law = law_type:law_technocracy
+		has_law_or_variant = law_type:law_technocracy
 	}
 }
 
@@ -96,7 +96,7 @@ usa_monarchy = {
 	possible = {
 		exists = c:USU
 		THIS = c:USU
-		has_law = law_type:law_monarchy
+		has_law_or_variant = law_type:law_monarchy
 	}
 }
 
@@ -106,8 +106,8 @@ ukraine_free_territory = {
 	possible = {
 		exists = c:UKR
 		THIS = c:UKR
-		has_law = law_type:law_council_republic
-		has_law = law_type:law_anarchy
+		has_law_or_variant = law_type:law_council_republic
+		has_law_or_variant = law_type:law_anarchy
 	}
 }
 
@@ -118,9 +118,9 @@ turkish_republic = {
 		exists = c:TOR
 		THIS = c:TOR
 		OR = {
-			has_law = law_type:law_parliamentary_republic
-			has_law = law_type:law_presidential_republic
-			has_law = law_type:law_council_republic
+			has_law_or_variant = law_type:law_parliamentary_republic
+			has_law_or_variant = law_type:law_presidential_republic
+			has_law_or_variant = law_type:law_council_republic
 		}
 	}
 }
@@ -140,7 +140,7 @@ mexican_empire = {
 	possible = {
 		exists = c:MAX
 		THIS = c:MAX
-		has_law = law_type:law_monarchy
+		has_law_or_variant = law_type:law_monarchy
 	}
 }
 
@@ -169,7 +169,7 @@ communist_finland = {
 	possible = {
 		exists = c:FUN
 		THIS = c:FUN
-		has_law = law_type:law_council_republic
+		has_law_or_variant = law_type:law_council_republic
 	}
 }
 
@@ -179,7 +179,7 @@ communist_austria = {
 	possible = {
 		exists = c:OIS
 		THIS = c:OIS
-		has_law = law_type:law_council_republic
+		has_law_or_variant = law_type:law_council_republic
 	}
 }
 
@@ -189,7 +189,7 @@ soviet_red = {
 	possible = {
 		exists = c:RUS
 		THIS = c:RUS
-		has_law = law_type:law_council_republic
+		has_law_or_variant = law_type:law_council_republic
 	}
 }
 
@@ -198,7 +198,7 @@ communist_china = {
 	possible = {
 		exists = c:CHU
 		THIS = c:CHU
-		has_law = law_type:law_council_republic
+		has_law_or_variant = law_type:law_council_republic
 	}
 }
 
@@ -207,7 +207,7 @@ communist_pho = {
 	possible = {
 		exists = c:PHO
 		THIS = c:PHO
-		has_law = law_type:law_council_republic
+		has_law_or_variant = law_type:law_council_republic
 	}
 }
 empire_pho = {
@@ -215,7 +215,7 @@ empire_pho = {
 	possible = {
 		exists = c:PHO
 		THIS = c:PHO
-		has_law = law_type:law_monarchy
+		has_law_or_variant = law_type:law_monarchy
 	}
 }
 
@@ -224,7 +224,7 @@ communist_yuu = {
 	possible = {
 		exists = c:YUU
 		THIS = c:YUU
-		has_law = law_type:law_council_republic
+		has_law_or_variant = law_type:law_council_republic
 	}
 }
 
@@ -234,7 +234,7 @@ han_imperial_china = {
 	possible = {
 		exists = c:CHU
 		THIS = c:CHU
-		has_law = law_type:law_monarchy
+		has_law_or_variant = law_type:law_monarchy
 	}
 }
 
@@ -255,8 +255,8 @@ republican_portugal = {
 		exists = c:PUR
 		THIS = c:PUR
 		OR = {
-			has_law = law_type:law_parliamentary_republic
-			has_law = law_type:law_presidential_republic
+			has_law_or_variant = law_type:law_parliamentary_republic
+			has_law_or_variant = law_type:law_presidential_republic
 		}
 	}
 }
@@ -268,7 +268,7 @@ communist_britain = {
 	possible = {
 		exists = c:UKK
 		THIS = c:UKK
-		has_law = law_type:law_council_republic
+		has_law_or_variant = law_type:law_council_republic
 	}
 }
 
@@ -305,7 +305,7 @@ communist_germany = {
 	possible = {
 		exists = c:GRO
 		THIS = c:GRO
-		has_law = law_type:law_council_republic
+		has_law_or_variant = law_type:law_council_republic
 	}
 }
 
@@ -317,7 +317,7 @@ ddr_germany = {
 		THIS = c:GRO
 		OR = {
 			AND = {
-				has_law = law_type:law_single_party_state
+				has_law_or_variant = law_type:law_single_party_state
 				py:communist_party ?= {
 					any_member = {
 						is_in_government = yes
@@ -326,8 +326,8 @@ ddr_germany = {
 			}
 			AND = {
 				OR = {
-					has_law = law_type:law_autocracy
-					has_law = law_type:law_technocracy
+					has_law_or_variant = law_type:law_autocracy
+					has_law_or_variant = law_type:law_technocracy
 					has_law_or_variant = law_type:law_oligarchy
 				}
 				any_scope_character = {
@@ -342,29 +342,31 @@ ddr_germany = {
 			AND = {
 				is_subject = yes
 				overlord = {
-					has_law = law_type:law_council_republic
+					has_law_or_variant = law_type:law_council_republic
 				}
 			}
 		}
 		OR = {
-			has_law = law_type:law_parliamentary_republic
-			has_law = law_type:law_presidential_republic
+			has_law_or_variant = law_type:law_parliamentary_republic
+			has_law_or_variant = law_type:law_presidential_republic
 		}
 	}
 }
 
-roman_rome = {
-	color = "roman_red"
+puproman_rome = {
+	color = hsv { 0 0.91 0.55  }
 
 	possible = {
-		exists = c:PUP
-		THIS = c:PUP
 		OR = {
-			has_law = law_type:law_parliamentary_republic
-			has_law = law_type:law_presidential_republic
-			has_law = law_type:law_council_republic
-			has_law = law_type:law_anarchy
-			has_law = law_type:law_monarchy
+			c:PUP ?= this
+			was_formed_from = PUP
+		}
+		OR = {
+			has_law_or_variant = law_type:law_parliamentary_republic
+			has_law_or_variant = law_type:law_presidential_republic
+			has_law_or_variant = law_type:law_council_republic
+			has_law_or_variant = law_type:law_anarchy
+			has_law_or_variant = law_type:law_monarchy
 		}
 	}
 }
@@ -375,10 +377,10 @@ republican_france = {
 	possible = {
 		exists = c:FRA
 		THIS = c:FRA
-		NOT = { has_law = law_type:law_autocracy }
+		NOT = { has_law_or_variant = law_type:law_autocracy }
 		OR = {
-			has_law = law_type:law_parliamentary_republic
-			has_law = law_type:law_presidential_republic
+			has_law_or_variant = law_type:law_parliamentary_republic
+			has_law_or_variant = law_type:law_presidential_republic
 		}
 	}
 }
@@ -389,7 +391,7 @@ commune_france = {
 	possible = {
 		exists = c:FRA
 		THIS = c:FRA
-		has_law = law_type:law_council_republic
+		has_law_or_variant = law_type:law_council_republic
 	}
 }
 
@@ -399,7 +401,7 @@ empire_france = {
 	possible = {
 		exists = c:FRA
 		THIS = c:FRA
-		has_law = law_type:law_monarchy
+		has_law_or_variant = law_type:law_monarchy
 		has_variable = bonapartist_restoration_var
 		has_variable = one_true_french_dynasty
 	}
@@ -412,9 +414,9 @@ republican_india = {
 		exists = c:BHT
 		THIS = c:BHT
 		OR = {
-			has_law = law_type:law_parliamentary_republic
-			has_law = law_type:law_presidential_republic
-			has_law = law_type:law_council_republic
+			has_law_or_variant = law_type:law_parliamentary_republic
+			has_law_or_variant = law_type:law_presidential_republic
+			has_law_or_variant = law_type:law_council_republic
 		}
 	}
 }
@@ -426,9 +428,9 @@ republican_hindustan = {
 		exists = c:HND
 		THIS = c:HND
 		OR = {
-			has_law = law_type:law_parliamentary_republic
-			has_law = law_type:law_presidential_republic
-			has_law = law_type:law_council_republic
+			has_law_or_variant = law_type:law_parliamentary_republic
+			has_law_or_variant = law_type:law_presidential_republic
+			has_law_or_variant = law_type:law_council_republic
 		}
 	}
 }
@@ -439,7 +441,7 @@ nihilist_russia = {
 	possible = {
 		exists = c:RUS
 		THIS = c:RUS
-		has_law = law_type:law_state_atheism
+		has_law_or_variant = law_type:law_state_atheism
 		ruler = {
 			has_ideology = ideology:ideology_atheist
 		}
@@ -499,8 +501,8 @@ Imperial_church_comm = {
 		exists = c:ICI
 		THIS = c:ICI
 		OR = {
-		has_law = law_type:law_council_republic
-		has_law = law_type:law_anarchy
+		has_law_or_variant = law_type:law_council_republic
+		has_law_or_variant = law_type:law_anarchy
 		}
 	}
 }
@@ -509,7 +511,7 @@ mannandisles = {
 	possible = {
 		exists = c:S92
 		THIS = c:S92
-		has_law = law_type:law_monarchy
+		has_law_or_variant = law_type:law_monarchy
 	}
 }
 florida_red = {
@@ -518,8 +520,8 @@ florida_red = {
 		exists = c:GRV
 		THIS = c:GRV
 		OR = {
-		has_law = law_type:law_council_republic
-		has_law = law_type:law_anarchy
+		has_law_or_variant = law_type:law_council_republic
+		has_law_or_variant = law_type:law_anarchy
 		}
 	}
 }
@@ -530,8 +532,8 @@ russia_comm= {
 		exists = c:RUI
 		THIS = c:RUI
 		OR = {
-		has_law = law_type:law_council_republic
-		has_law = law_type:law_anarchy
+		has_law_or_variant = law_type:law_council_republic
+		has_law_or_variant = law_type:law_anarchy
 		}
 	}
 }
@@ -542,7 +544,7 @@ persia_mon = {
 		exists = c:SAE
 		THIS = c:SAE
 		OR = {
-		has_law = law_type:law_monarchy
+		has_law_or_variant = law_type:law_monarchy
 		}
 	}
 }
@@ -553,7 +555,7 @@ sassa_mon = {
 		exists = c:TPE
 		THIS = c:TPE
 		OR = {
-		has_law = law_type:law_monarchy
+		has_law_or_variant = law_type:law_monarchy
 		}
 	}
 }
@@ -564,8 +566,8 @@ bba_comm = {
 		exists = c:BBA
 		THIS = c:BBA
 		OR = {
-		has_law = law_type:law_council_republic
-		has_law = law_type:law_anarchy
+		has_law_or_variant = law_type:law_council_republic
+		has_law_or_variant = law_type:law_anarchy
 		}
 	}
 }
@@ -577,8 +579,8 @@ second_rhine_comm = {
 		exists = c:SRC
 		THIS = c:SRC
 		OR = {
-		has_law = law_type:law_council_republic
-		has_law = law_type:law_anarchy
+		has_law_or_variant = law_type:law_council_republic
+		has_law_or_variant = law_type:law_anarchy
 		}
 	}
 }
@@ -589,7 +591,7 @@ itf_communist = {
 	possible = {
 		exists = c:ITF
 		THIS = c:ITF
-		has_law = law_type:law_council_republic
+		has_law_or_variant = law_type:law_council_republic
 	}
 }
 
@@ -600,11 +602,11 @@ hre_republic = {
 		exists = c:URA
 		THIS = c:URA
 		OR = {
-			has_law = law_type:law_parliamentary_republic
-			has_law = law_type:law_presidential_republic
+			has_law_or_variant = law_type:law_parliamentary_republic
+			has_law_or_variant = law_type:law_presidential_republic
 		}
 		NOT = {
-			has_law = law_type:law_technocracy
+			has_law_or_variant = law_type:law_technocracy
 		}
 		NOT = {
 			coa_fascist_trigger = yes
@@ -619,10 +621,10 @@ hre_technate = {
 		exists = c:URA
 		THIS = c:URA
 		OR = {
-			has_law = law_type:law_parliamentary_republic
-			has_law = law_type:law_presidential_republic
+			has_law_or_variant = law_type:law_parliamentary_republic
+			has_law_or_variant = law_type:law_presidential_republic
 		}
-		has_law = law_type:law_technocracy
+		has_law_or_variant = law_type:law_technocracy
 	}
 }
 
@@ -632,7 +634,7 @@ hre_communist = {
 	possible = {
 		exists = c:URA
 		THIS = c:URA
-		has_law = law_type:law_council_republic
+		has_law_or_variant = law_type:law_council_republic
 	}
 }
 
@@ -644,7 +646,7 @@ hre_fascist = {
 		THIS = c:URA
 		coa_fascist_trigger = yes
 		NOT = {
-			has_law = law_type:law_council_republic
+			has_law_or_variant = law_type:law_council_republic
 		}
 	}
 }
@@ -674,8 +676,8 @@ spain_republican = {
 		exists = c:ESP
 		THIS = c:ESP
 		OR = {
-			has_law = law_type:law_parliamentary_republic
-			has_law = law_type:law_presidential_republic
+			has_law_or_variant = law_type:law_parliamentary_republic
+			has_law_or_variant = law_type:law_presidential_republic
 		}
 	}
 }
@@ -697,9 +699,9 @@ brazil_republican = {
 		exists = c:BRZ
 		THIS = c:BRZ
 		OR = {
-			has_law = law_type:law_parliamentary_republic
-			has_law = law_type:law_presidential_republic
-			has_law = law_type:law_council_republic
+			has_law_or_variant = law_type:law_parliamentary_republic
+			has_law_or_variant = law_type:law_presidential_republic
+			has_law_or_variant = law_type:law_council_republic
 		}
 		NOT = {
 			coa_fascist_trigger = yes
@@ -713,6 +715,6 @@ spain_communist = {
 	possible = {
 		exists = c:ESP
 		THIS = c:ESP
-		has_law = law_type:law_council_republic
+		has_law_or_variant = law_type:law_council_republic
 	}
 }

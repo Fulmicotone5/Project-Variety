@@ -28,7 +28,7 @@
 			OR = {
 				is_ai = yes
 				NOT = {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 				}
 			}
 		}
@@ -39,7 +39,7 @@
 		}
 		change_tag = PRO
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 je_ngf_pum = {
 	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
@@ -58,7 +58,7 @@ je_ngf_pum = {
 			}
 			fail = {
 				NOT = {
-					has_law = law_type:law_monarchy
+					has_law_or_variant = law_type:law_monarchy
 				}
 			}
 	on_complete = {
@@ -67,7 +67,7 @@ je_ngf_pum = {
 			id = fm_pom.4
 		}
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_ai_pum = {

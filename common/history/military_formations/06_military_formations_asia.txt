@@ -2,7 +2,7 @@
 	c:COH = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_dnieper
+			hq_region = sr:region_russia
 			name = "Cossack Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -19,7 +19,7 @@
 	c:SAU = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_japan
+			hq_region = sr:region_northeast_asia
 			name = "Shimazu Clan Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -57,26 +57,12 @@
 				count = 5
 			}
 		}
-		create_military_formation = {
-			type = fleet
-			hq_region = sr:region_japan
-			name = "Shimazu Clan Navy"
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_KYUSHU
-				count = 5
-			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_KYUSHU
-				count = 5
-			}
-		}
+
 	}
 	c:SAG = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_japan
+			hq_region = sr:region_northeast_asia
 			name = "Naomasa Clan Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
@@ -103,7 +89,7 @@
 	c:MCH = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_manchuria
+			hq_region = sr:region_northeast_asia
 			name = "Manchurian Standard Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
@@ -120,7 +106,7 @@
 	c:KOR = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_manchuria
+			hq_region = sr:region_northeast_asia
 			name = "Korean Imperial Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -133,20 +119,25 @@
 				count = 40
 			}
 		}
-	}
-	c:JAV = {
 		create_military_formation = {
 			type = fleet
-			hq_region = sr:region_indonesia
-			name = "Koloniale Marine"
-			combat_unit = {
-				# Nothing the size of a frigate
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_EAST_JAVA
-				count = 1
+			hq_region = sr:region_northeast_asia
+			name = "Korean Imperial Fleet"
+
+			ship = {
+				type = ship_type:ship_type_ship_of_the_line
+				state_region = s:STATE_SEOUL
+				count = 2
+			}
+
+			ship = {
+				type = ship_type:ship_type_frigate
+				state_region = s:STATE_SEOUL
+				count = 4
 			}
 		}
 	}
+
 	c:YUN = {
 		create_military_formation = {
 			type = army
@@ -308,7 +299,7 @@
 	c:TIB = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_himalayas
+			hq_region = sr:geographic_region_central_asia
 			name = "Tibetan Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -320,7 +311,7 @@
 	c:XIN = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_central_asia
+			hq_region = sr:geographic_region_central_asia
 			name = "Tibetan Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -417,7 +408,7 @@
 	c:OM1 = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_bombay
+			hq_region = sr:region_south_india
 			name = "Company Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -434,7 +425,7 @@
 	c:OMA = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_persia
+			hq_region = sr:region_greater_persia
 			name = "Royal Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -449,24 +440,25 @@
 		}
 		create_military_formation = {
 			type = fleet
-			hq_region = sr:region_persia
-			name = "Royal Navy"
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_OMAN
-				count = 3
+			hq_region = sr:region_greater_persia
+			name = "Oman Navy"
+
+			ship = {
+				type = ship_type:ship_type_ship_of_the_line
+				count = 1
 			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_LARISTAN
-				count = 3
+
+			ship = {
+				type = ship_type:ship_type_frigate
+				count = 4
 			}
 		}
+
 	}
 	c:SAE = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_persia
+			hq_region = sr:region_greater_persia
 			name = "Persian Royal Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -494,11 +486,26 @@
 				count = 20
 			}
 		}
+		create_military_formation = {
+			type = fleet
+			hq_region = sr:region_greater_persia
+			name = "Sassanid Navy"
+
+			ship = {
+				type = ship_type:ship_type_ship_of_the_line
+				count = 2
+			}
+
+			ship = {
+				type = ship_type:ship_type_frigate
+				count = 3
+			}
+		}
 	}
 	c:TOR ?= {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_anatolia
+			hq_region = sr:region_balkans
 			name = "Ankara Ordusu"
 
 			combat_unit = {
@@ -549,7 +556,7 @@
 
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_anatolia
+			hq_region = sr:region_balkans
 			name = "Konya Ordusu"
 
 			combat_unit = {
@@ -615,7 +622,7 @@
 
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_anatolia
+			hq_region = sr:region_balkans
 			name = Anadolu_Ordusu
 
 			combat_unit = {
@@ -655,40 +662,12 @@
 			}
 		}
 
-		create_military_formation = {
-			type = fleet
-			hq_region = sr:region_anatolia
-			name = Donanmay_Humyn
 
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_KONYA
-				count = 5
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_AYDIN
-				count = 5
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_KONYA
-				count = 5
-			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_ADANA
-				count = 5
-			}
-		}
 	}
 	c:SIU ?= {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_arabic
+			hq_region = sr:geographic_region_arabic
 			name = "Syrian Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -705,7 +684,7 @@
 	c:MAT = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_japan
+			hq_region = sr:region_northeast_asia
 			name = "Matsumae Clan Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
@@ -717,7 +696,7 @@
 	c:YON = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_japan
+			hq_region = sr:region_northeast_asia
 			name = "Uesugi Clan Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
@@ -734,7 +713,7 @@
 	c:MER = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_japan
+			hq_region = sr:region_northeast_asia
 			name = "Nanbu Clan Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
@@ -751,7 +730,7 @@
 	c:ODA = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_japan
+			hq_region = sr:region_northeast_asia
 			name = "Ōkubo Clan Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
@@ -773,7 +752,7 @@
 	c:NUM = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_japan
+			hq_region = sr:region_northeast_asia
 			name = "Yorikatsu Clan Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
@@ -790,7 +769,7 @@
 	c:UTS = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_japan
+			hq_region = sr:region_northeast_asia
 			name = "Utsunomiya Clan Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
@@ -802,7 +781,7 @@
 	c:MTO = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_japan
+			hq_region = sr:region_northeast_asia
 			name = "Tokugawa Clan Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
@@ -824,16 +803,16 @@
 	c:GJO = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_japan
+			hq_region = sr:region_northeast_asia
 			name = "Aoyama Clan Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_CHUBU
+				state_region = s:STATE_TOKAI
 				count = 5
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_CHUBU
+				state_region = s:STATE_TOKAI
 				count = 5
 			}
 		}
@@ -841,11 +820,11 @@
 	c:SAB = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_japan
+			hq_region = sr:region_northeast_asia
 			name = "Manabe Clan Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_CHUBU
+				state_region = s:STATE_TOKAI
 				count = 10
 			}
 		}
@@ -853,21 +832,21 @@
 	c:NAA = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_japan
+			hq_region = sr:region_northeast_asia
 			name = "Makino Clan Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_CHUBU
+				state_region = s:STATE_TOKAI
 				count = 5
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_CHUBU
+				state_region = s:STATE_TOKAI
 				count = 2
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_CHUBU
+				state_region = s:STATE_TOKAI
 				count = 2
 			}
 		}
@@ -875,16 +854,16 @@
 	c:KKW = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_japan
+			hq_region = sr:region_northeast_asia
 			name = "Ōta Clan Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_CHUBU
+				state_region = s:STATE_TOKAI
 				count = 7
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_CHUBU
+				state_region = s:STATE_TOKAI
 				count = 2
 			}
 		}
@@ -892,7 +871,7 @@
 	c:ODU = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_japan
+			hq_region = sr:region_northeast_asia
 			name = "Oda Clan Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
@@ -914,7 +893,7 @@
 	c:IPJ = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_japan
+			hq_region = sr:region_northeast_asia
 			name = "Emperor's Guard"
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
@@ -926,7 +905,7 @@
 	c:TSU = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_japan
+			hq_region = sr:region_northeast_asia
 			name = "Takayuki Clan Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
@@ -938,7 +917,7 @@
 	c:TOK = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_japan
+			hq_region = sr:region_northeast_asia
 			name = "Hachisura Clan Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
@@ -955,7 +934,7 @@
 	c:AWT = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_japan
+			hq_region = sr:region_northeast_asia
 			name = "Inada Clan Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
@@ -967,7 +946,7 @@
 	c:MTY = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_japan
+			hq_region = sr:region_northeast_asia
 			name = "Matsudaira Clan Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
@@ -979,7 +958,7 @@
 	c:HHI = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_japan
+			hq_region = sr:region_northeast_asia
 			name = "Asano Clan Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
@@ -1228,15 +1207,6 @@
 				count = 4
 			}
 		}
-		create_military_formation = {
-			type = fleet
-			hq_region = sr:region_south_china
-			name = "Special Administrative Region's Navy"
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_FORMOSA
-				count = 4
-			}
-		}
+
 	}
 }

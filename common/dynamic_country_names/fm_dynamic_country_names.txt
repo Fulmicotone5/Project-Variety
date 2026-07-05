@@ -61,7 +61,7 @@ DEFAULT = {
 			exists = scope:actor
 			scope:actor ?= {
 				is_secessionist = no
-				has_law = law_type:law_council_republic
+				has_law_or_variant = law_type:law_council_republic
 				any_interest_group = {
 					is_in_government = yes
 					is_strongest_ig_in_government = yes
@@ -86,7 +86,7 @@ DEFAULT = {
 			scope:actor ?= {
 				is_secessionist = no
 				NOT = {
-					has_law = law_type:law_council_republic
+					has_law_or_variant = law_type:law_council_republic
 				}
 				any_interest_group = {
 					is_in_government = yes
@@ -112,7 +112,7 @@ DEFAULT = {
 			scope:actor ?= {
 				is_secessionist = no
 				NOT = {
-					has_law = law_type:law_council_republic
+					has_law_or_variant = law_type:law_council_republic
 				}
 				any_interest_group = {
 					is_in_government = yes
@@ -133,7 +133,7 @@ DEFAULT = {
 			exists = scope:actor
 			scope:actor ?= {
 				is_secessionist = no
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 				any_interest_group = {
 					is_in_government = yes
 					is_strongest_ig_in_government = yes
@@ -153,7 +153,7 @@ DEFAULT = {
 			exists = scope:actor
 			scope:actor ?= {
 				is_secessionist = no
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 				any_interest_group = {
 					is_in_government = yes
 					is_strongest_ig_in_government = yes
@@ -173,7 +173,7 @@ DEFAULT = {
 			exists = scope:actor
 			scope:actor ?= {
 				is_secessionist = no
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 				any_interest_group = {
 					is_in_government = yes
 					is_strongest_ig_in_government = yes
@@ -478,7 +478,7 @@ BBA = {
 		trigger = {
 			exists = scope:actor
 			scope:actor ?= {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 			}
 		}
 	}
@@ -492,8 +492,8 @@ BBA = {
 #			exists = scope:actor
 #			scope:actor ?= {
 #				OR = {
-#					has_law = law_type:law_presidential_republic
-#					has_law = law_type:law_parliamentary_republic
+#					has_law_or_variant = law_type:law_presidential_republic
+#					has_law_or_variant = law_type:law_parliamentary_republic
 #				}
 #			}
 #		}
@@ -508,8 +508,8 @@ GRV = {
 			exists = scope:actor
 			scope:actor ?= {
 				OR = {
-					has_law = law_type:law_presidential_republic
-					has_law = law_type:law_parliamentary_republic
+					has_law_or_variant = law_type:law_presidential_republic
+					has_law_or_variant = law_type:law_parliamentary_republic
 				}
 			}
 		}
@@ -523,7 +523,7 @@ BEM = {
 		trigger = {
 			exists = scope:actor
 			scope:actor ?= {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 			}
 		}
 	}
@@ -537,7 +537,7 @@ KEM = {
 		trigger = {
 			exists = scope:actor
 			scope:actor ?= {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 			}
 		}
 	}
@@ -551,7 +551,7 @@ REM = {
 		trigger = {
 			exists = scope:actor
 			scope:actor ?= {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 			}
 		}
 	}
@@ -628,10 +628,10 @@ SOA = {
 		trigger = {
 			exists = scope:actor
 			scope:actor ?= {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 				OR = {
-					has_law = law_type:law_state_religion
-					has_law = law_type:law_freedom_of_conscience
+					has_law_or_variant = law_type:law_state_religion
+					has_law_or_variant = law_type:law_freedom_of_conscience
 				}
 			}
 		}
@@ -643,7 +643,7 @@ SOA = {
 		trigger = {
 			exists = scope:actor
 			scope:actor ?= {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 			}
 		}
 	}
@@ -659,7 +659,7 @@ RMG = {
 		trigger = {
 			exists = scope:actor
 			scope:actor ?= {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 			}
 		}
 	}
@@ -673,7 +673,7 @@ HKN = {
 		trigger = {
 			exists = scope:actor
 			scope:actor ?= {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 			}
 		}
 	}
@@ -696,7 +696,7 @@ HKV = {
 		trigger = {
 			exists = scope:actor
 			scope:actor ?= {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 			}
 		}
 	}
@@ -719,7 +719,7 @@ JAE = {
 		trigger = {
 			exists = scope:actor
 			scope:actor ?= {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 			}
 		}
 	}
@@ -733,7 +733,7 @@ PI1 = {
 		trigger = {
 			exists = scope:actor
 			scope:actor ?= {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 			}
 		}
 	}
@@ -744,7 +744,7 @@ PI1 = {
 		trigger = {
 			exists = scope:actor
 			scope:actor ?= {
-				has_law = law_type:law_theocracy
+				has_law_or_variant = law_type:law_theocracy
 			}
 		}
 	}
@@ -758,7 +758,7 @@ KBG = {
 		trigger = {
 			exists = scope:actor
 			scope:actor ?= {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 			}
 		}
 	}
@@ -772,7 +772,7 @@ RMP = {
 		trigger = {
 			exists = scope:actor
 			scope:actor ?= {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 			}
 		}
 	}
@@ -784,8 +784,8 @@ RMP = {
 			exists = scope:actor
 			scope:actor ?= {
 				OR = {
-					has_law = law_type:law_presidential_republic
-					has_law = law_type:law_parliamentary_republic
+					has_law_or_variant = law_type:law_presidential_republic
+					has_law_or_variant = law_type:law_parliamentary_republic
 				}
 			}
 		}
@@ -801,8 +801,8 @@ UNL = {
 			exists = scope:actor
 			scope:actor ?= {
 				OR = {
-					has_law = law_type:law_presidential_republic
-					has_law = law_type:law_parliamentary_republic
+					has_law_or_variant = law_type:law_presidential_republic
+					has_law_or_variant = law_type:law_parliamentary_republic
 				}
 			}
 		}
@@ -817,7 +817,7 @@ ESP = {
 		trigger = {
 			exists = scope:actor
 			scope:actor ?= {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 			}
 		}
 	}
@@ -842,7 +842,7 @@ AMC = {
 		trigger = {
 			exists = scope:actor
 			scope:actor ?= {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 			}
 		}
 	}
@@ -901,7 +901,7 @@ BIZ = {
 		trigger = {
 			exists = scope:actor
 			scope:actor ?= {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 			}
 		}
 	}
@@ -916,7 +916,7 @@ YAG = {
 		trigger = {
 			exists = scope:actor
 			scope:actor ?= {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 			}
 		}
 	}
@@ -931,7 +931,7 @@ BYZ = {
 		trigger = {
 			exists = scope:actor
 			scope:actor ?= {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 			}
 		}
 	}
@@ -946,7 +946,7 @@ HAK = {
 		trigger = {
 			exists = scope:actor
 			scope:actor ?= {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 			}
 		}
 	}
@@ -979,7 +979,7 @@ AFS = {
 		trigger = {
 			scope:actor ?= {
 				capital = {
-					region = sr:region_congo
+					is_in_geographic_region = geographic_region_congo_old
 				}
 			}
 		}
@@ -991,7 +991,7 @@ AFS = {
 		trigger = {
 			scope:actor ?= {
 				capital = {
-					region = sr:region_southern_africa
+					is_in_geographic_region = geographic_region_southern_africa_old
 				}
 			}
 		}
@@ -1003,7 +1003,7 @@ AFS = {
 		trigger = {
 			scope:actor ?= {
 				capital = {
-					region = sr:region_zanj
+					is_in_geographic_region = geographic_region_zanj_old
 				}
 			}
 		}
@@ -1015,7 +1015,7 @@ AFS = {
 		trigger = {
 			scope:actor ?= {
 				capital = {
-					region = sr:region_nile_basin
+					is_in_geographic_region = geographic_region_nile_basin_old
 				}
 			}
 		}
@@ -1028,10 +1028,10 @@ AFS = {
 			scope:actor ?= {
 				OR = {
 					capital = {
-						region = sr:region_niger
+						is_in_geographic_region = geographic_region_niger_old
 					}
 					capital = {
-						region = sr:region_senegal
+						is_in_geographic_region = geographic_region_senegal_old
 					}
 				}
 			}
@@ -1044,12 +1044,12 @@ AFS = {
 		trigger = {
 			scope:actor ?= {
 				capital = {
-					region = sr:region_nile_basin
+					is_in_geographic_region = geographic_region_nile_basin_old
 				}
 				any_state = {
 					owner = c:AFS
 					is_capital = yes
-					region = sr:region_north_africa
+					is_in_geographic_region = geographic_region_north_africa_old
 				}
 			}
 		}
@@ -1095,8 +1095,8 @@ CUL = { # Colombia
 					coa_def_republic_flag_trigger = yes
 					scope:actor ?= {
 						OR = {
-							has_law = law_type:law_legacy_slavery
-							has_law = law_type:law_slave_trade
+							has_law_or_variant = law_type:law_legacy_slavery
+							has_law_or_variant = law_type:law_slave_trade
 						}
 					}
 				}
@@ -1119,7 +1119,7 @@ CAS = {
 		trigger = {
 			exists = scope:actor
 			scope:actor ?= {
-				has_law = law_type:law_theocracy
+				has_law_or_variant = law_type:law_theocracy
 			}
 		}
 	}
@@ -1329,7 +1329,7 @@ PHO = {
 		priority = 0
 		trigger = {
 			scope:actor ?= {
-				has_law = law_type:law_council_republic
+				has_law_or_variant = law_type:law_council_republic
 			}
 		}
 	}
@@ -1340,7 +1340,7 @@ PHO = {
 		priority = 0
 		trigger = {
 			scope:actor ?= {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 			}
 		}
 	}
@@ -1354,7 +1354,7 @@ S92 = {
 		priority = 0
 		trigger = {
 			scope:actor ?= {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 			}
 		}
 	}
@@ -1368,7 +1368,7 @@ FL1 = {
 		priority = 0
 		trigger = {
 			scope:actor ?= {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 			}
 		}
 	}
@@ -1381,7 +1381,7 @@ IL1 = {
 		priority = 0
 		trigger = {
 			scope:actor ?= {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 			}
 		}
 	}
@@ -1395,7 +1395,7 @@ AGA = {
 		priority = 0
 		trigger = {
 			scope:actor ?= {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 			}
 		}
 	}
@@ -1409,7 +1409,7 @@ GDL = {
 		priority = 0
 		trigger = {
 			scope:actor ?= {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 			}
 		}
 	}
@@ -1424,7 +1424,7 @@ CHU = {
 		priority = 0
 		trigger = {
 			scope:actor ?= {
-				has_law = law_type:law_council_republic
+				has_law_or_variant = law_type:law_council_republic
 			}
 		}
 	}
@@ -1435,7 +1435,7 @@ CHU = {
 		priority = 0
 		trigger = {
 			scope:actor ?= {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 			}
 		}
 	}
@@ -1594,7 +1594,7 @@ GBI = {
 			exists = scope:actor
 			scope:actor ?= {
 				NOT = {
-					has_law = law_type:law_council_republic
+					has_law_or_variant = law_type:law_council_republic
 				}
 				exists = capital
 				capital = {
@@ -1656,7 +1656,7 @@ UKK = {
 			exists = scope:actor
 			scope:actor ?= {
 				NOT = {
-					has_law = law_type:law_council_republic
+					has_law_or_variant = law_type:law_council_republic
 				}
 				exists = capital
 				capital = {
@@ -1779,7 +1779,7 @@ IDN = {
 		trigger = {
 			exists = scope:actor
 			scope:actor ?= {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 				ruler = {
 					has_culture = cu:javan
 				}
@@ -1795,7 +1795,7 @@ IDN = {
 		trigger = {
 			exists = scope:actor
 			scope:actor ?= {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 				ruler = {
 					OR = {
 						has_culture = cu:malay
@@ -1816,7 +1816,7 @@ FRU = {
 		trigger = {
 			exists = scope:actor
 			scope:actor ?= {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 				has_variable = progress_fra
 			}
 		}
@@ -1829,7 +1829,7 @@ FRU = {
 		trigger = {
 			exists = scope:actor
 			scope:actor ?= {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 				NOT = {
 					has_variable = progress_fra
 				}
@@ -1847,7 +1847,7 @@ FRE = {
 		trigger = {
 			exists = scope:actor
 			scope:actor ?= {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 			}
 		}
 	}
@@ -1860,7 +1860,7 @@ EAF = {
 		trigger = {
 			exists = scope:actor
 			scope:actor ?= {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 			}
 		}
 	}
@@ -1873,7 +1873,7 @@ BF1 = {
 		trigger = {
 			exists = scope:actor
 			scope:actor ?= {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 			}
 		}
 	}
@@ -1886,7 +1886,7 @@ SR1 = {
 		trigger = {
 			exists = scope:actor
 			scope:actor ?= {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 			}
 		}
 	}
@@ -1899,7 +1899,7 @@ BR1 = {
 		trigger = {
 			exists = scope:actor
 			scope:actor ?= {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 			}
 		}
 	}
@@ -1912,7 +1912,7 @@ BR2 = {
 		trigger = {
 			exists = scope:actor
 			scope:actor ?= {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 			}
 		}
 	}
@@ -2039,7 +2039,7 @@ KOR = {
 		trigger = {
 			exists = scope:actor
 			scope:actor ?= {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 			}
 		}
 	}
@@ -2053,7 +2053,7 @@ KOR = {
 			exists = scope:actor
 			scope:actor ?= {
 				has_variable = KOR_korean_empire_declared
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 			}
 		}
 	}
@@ -2452,7 +2452,7 @@ NEA = {
 		trigger = {
 			exists = scope:actor
 			scope:actor ?= {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 			}
 		}
 	}
@@ -2585,7 +2585,7 @@ PUR = {
 		priority = 0
 		trigger = {
 			scope:actor ?= {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 			}
 			OR = {
 				c:NIA ?= {
@@ -2606,7 +2606,7 @@ GPO = {
 		priority = 0
 		trigger = {
 			scope:actor ?= {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 			}
 		}
 	}
@@ -2672,7 +2672,7 @@ UKR = {
 		trigger = {
 			exists = scope:actor
 			scope:actor ?= {
-				has_law = law_type:law_anarchy
+				has_law_or_variant = law_type:law_anarchy
 			}
 		}
 	}
@@ -2692,7 +2692,7 @@ USU = {
 			}
 			NOT = {
 				scope:actor ?= {
-					has_law = law_type:law_technocracy
+					has_law_or_variant = law_type:law_technocracy
 				}
 			}
 		}
@@ -2750,7 +2750,7 @@ USU = {
 		trigger = {
 			coa_def_republic_flag_trigger = yes
 			scope:actor ?= {
-				has_law = law_type:law_technocracy
+				has_law_or_variant = law_type:law_technocracy
 			}
 		}
 	}
@@ -2765,7 +2765,7 @@ SUD = {
 		priority = 0
 		trigger = {
 			scope:actor ?= {
-				has_law = law_type:law_theocracy
+				has_law_or_variant = law_type:law_theocracy
 			}
 		}
 	}
@@ -2777,7 +2777,7 @@ SUD = {
 		priority = 0
 		trigger = {
 			scope:actor ?= {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 			}
 		}
 	}
@@ -2811,7 +2811,7 @@ SCA = {
 		trigger = {
 			exists = scope:actor
 			scope:actor ?= {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 				was_formed_from = DEN
 			}
 		}
@@ -2825,7 +2825,7 @@ SCA = {
 		trigger = {
 			exists = scope:actor
 			scope:actor ?= {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 				ruler = {
 					has_culture = cu:finnish
 				}
@@ -2862,8 +2862,8 @@ ZAI = {
 			exists = scope:actor
 			scope:actor ?= {
 				OR = {
-					has_law = law_type:law_monarchy
-					has_law = law_type:law_theocracy
+					has_law_or_variant = law_type:law_monarchy
+					has_law_or_variant = law_type:law_theocracy
 				}
 			}
 		}
@@ -2951,7 +2951,7 @@ KAZ = {
 			exists = scope:actor
 			scope:actor ?= {
 				NOT = {
-					has_law = law_type:law_monarchy
+					has_law_or_variant = law_type:law_monarchy
 				}
 			}
 			coa_def_independent_trigger = yes
@@ -2966,7 +2966,7 @@ KAZ = {
 		trigger = {
 			exists = scope:actor
 			scope:actor ?= {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 			}
 			coa_def_independent_trigger = yes
 		}
@@ -2982,7 +2982,7 @@ KAZ = {
 			AND = {
 				exists = c:RUS
 				c:RUS = {
-					has_law = law_type:law_monarchy
+					has_law_or_variant = law_type:law_monarchy
 					OR = {
 						has_diplomatic_pact = {
 							who = scope:actor
@@ -3016,8 +3016,8 @@ KAZ = {
 				exists = c:RUS
 				c:RUS = {
 					NOR = {
-						has_law = law_type:law_monarchy
-						has_law = law_type:law_council_republic
+						has_law_or_variant = law_type:law_monarchy
+						has_law_or_variant = law_type:law_council_republic
 					}
 					OR = {
 						has_diplomatic_pact = {
@@ -3076,7 +3076,7 @@ ALD = {
 		trigger = {
 			exists = scope:actor
 			scope:actor ?= {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 				has_variable = algeria_deylik_restored
 			}
 		}
@@ -3116,7 +3116,7 @@ FRA = {
 		trigger = {
 			exists = scope:actor
 			scope:actor ?= {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 				has_variable = bonapartist_restoration_var
 				has_variable = one_true_french_dynasty
 			}
@@ -3131,8 +3131,8 @@ FRA = {
 			exists = scope:actor
 			scope:actor ?= {
 				OR = {
-					has_law = law_type:law_parliamentary_republic
-					has_law = law_type:law_presidential_republic
+					has_law_or_variant = law_type:law_parliamentary_republic
+					has_law_or_variant = law_type:law_presidential_republic
 				}
 			}
 		}
@@ -3145,7 +3145,7 @@ FRA = {
 		trigger = {
 			exists = scope:actor
 			scope:actor ?= {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 				OR = {
 					has_variable = orleanist_restoration_var
 					has_variable = legitimist_restoration_var
@@ -3162,7 +3162,7 @@ FRA = {
 		trigger = {
 			exists = scope:actor
 			scope:actor ?= {
-				has_law = law_type:law_council_republic
+				has_law_or_variant = law_type:law_council_republic
 			}
 		}
 	}
@@ -3178,8 +3178,8 @@ URA = {
 			exists = scope:actor
 			scope:actor ?= {
 				OR = {
-					has_law = law_type:law_monarchy
-					has_law = law_type:law_theocracy
+					has_law_or_variant = law_type:law_monarchy
+					has_law_or_variant = law_type:law_theocracy
 				}
 			}
 		}
@@ -3193,8 +3193,8 @@ URA = {
 			exists = scope:actor
 			scope:actor ?= {
 				OR = {
-					has_law = law_type:law_parliamentary_republic
-					has_law = law_type:law_presidential_republic
+					has_law_or_variant = law_type:law_parliamentary_republic
+					has_law_or_variant = law_type:law_presidential_republic
 				}
 			}
 		}
@@ -3207,7 +3207,7 @@ URA = {
 		trigger = {
 			exists = scope:actor
 			scope:actor ?= {
-				has_law = law_type:law_council_republic
+				has_law_or_variant = law_type:law_council_republic
 			}
 		}
 	}
@@ -3335,7 +3335,7 @@ ARG = {
 			scope:actor ?= {
 				coa_fascist_trigger = yes
 				NOT = {
-					has_law = law_type:law_council_republic
+					has_law_or_variant = law_type:law_council_republic
 				}
 			}
 		}
@@ -3431,7 +3431,7 @@ BOL = {
 		trigger = {
 			exists = scope:actor
 			scope:actor ?= {
-				has_law = law_type:law_multicultural
+				has_law_or_variant = law_type:law_multicultural
 			}
 			coa_def_republic_flag_trigger = yes
 			NOT = {
@@ -3465,7 +3465,7 @@ PLT = {
 				was_formed_from = ARG
 				coa_fascist_trigger = yes
 				NOT = {
-					has_law = law_type:law_council_republic
+					has_law_or_variant = law_type:law_council_republic
 				}
 			}
 		}
@@ -3505,7 +3505,7 @@ SAE = {
 		priority = 1
 		trigger = {
 			scope:actor = {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 			}
 		}
 	}
@@ -3518,7 +3518,7 @@ M01 = {
 		priority = 1
 		trigger = {
 			scope:actor = {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 			}
 		}
 	}
@@ -3529,7 +3529,7 @@ M01 = {
 		priority = 1
 		trigger = {
 			scope:actor = {
-				has_law = law_type:law_theocracy
+				has_law_or_variant = law_type:law_theocracy
 			}
 		}
 	}
@@ -3543,8 +3543,8 @@ M02 = {
 		trigger = {
 			scope:actor = {
 				or = {
-					has_law = law_type:law_monarchy
-					has_law = law_type:law_theocracy
+					has_law_or_variant = law_type:law_monarchy
+					has_law_or_variant = law_type:law_theocracy
 				}
 			}
 		}
@@ -3559,8 +3559,8 @@ SOP = {
 		trigger = {
 			scope:actor = {
 				OR = {
-					has_law = law_type:law_monarchy
-					has_law = law_type:law_theocracy
+					has_law_or_variant = law_type:law_monarchy
+					has_law_or_variant = law_type:law_theocracy
 				}
 			}
 		}
@@ -3573,8 +3573,8 @@ SOP = {
 		trigger = {
 			scope:actor = {
 				OR = {
-					has_law = law_type:law_total_separation
-					has_law = law_type:law_state_atheism
+					has_law_or_variant = law_type:law_total_separation
+					has_law_or_variant = law_type:law_state_atheism
 				}
 			}
 		}
@@ -3588,7 +3588,7 @@ TPE = {
 		priority = 1
 		trigger = {
 			scope:actor = {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 			}
 		}
 	}
@@ -3612,7 +3612,7 @@ AFG = {
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 				was_formed_from = HER
 			}
 		}
@@ -3682,7 +3682,7 @@ RUI = {
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 			}
 		}
 	}
@@ -3694,7 +3694,7 @@ RUI = {
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
-				has_law = law_type:law_council_republic
+				has_law_or_variant = law_type:law_council_republic
 			}
 		}
 	}
@@ -3711,9 +3711,9 @@ DKI = {
 			exists = scope:actor
 			scope:actor ?= {
 				OR = {
-					has_law = law_type:law_parliamentary_republic
-					has_law = law_type:law_presidential_republic
-					has_law = law_type:law_council_republic
+					has_law_or_variant = law_type:law_parliamentary_republic
+					has_law_or_variant = law_type:law_presidential_republic
+					has_law_or_variant = law_type:law_council_republic
 				}
 			}
 		}
@@ -3749,7 +3749,7 @@ CAH = {
 		trigger = {
 			scope:actor = {
 				NOT = {
-					has_law = law_type:law_theocracy
+					has_law_or_variant = law_type:law_theocracy
 				}
 			}
 		}
@@ -3761,7 +3761,7 @@ CAH = {
 		priority = 0
 		trigger = {
 			scope:actor = {
-				has_law = law_type:law_theocracy
+				has_law_or_variant = law_type:law_theocracy
 			}
 		}
 	}

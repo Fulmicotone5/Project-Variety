@@ -11,7 +11,7 @@
 		}
 	}
 	weight = 100
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 fou_eng = {
 	icon ="gfx/interface/icons/event_icons/waving_flag.dds"
@@ -31,7 +31,7 @@ fou_eng = {
 			change_tag = NOA
 		}
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 fou_usa = {
@@ -96,5 +96,5 @@ fou_usa = {
 			change_tag = USU
 		}
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }

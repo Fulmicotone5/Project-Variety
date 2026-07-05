@@ -13,3 +13,85 @@ infamy_pariah = {
 	country_influence_mult = -0.5
 	country_radicals_from_conquest_mult = 2.0
 }
+
+TRY_REPLACE:prestige_ranking = {
+	country_company_throughput_bonus_add = 0.05
+	country_company_construction_efficiency_bonus_add = 0.05
+}
+
+# Scales with a country's prestige rank compared against TOP_PRESTIGE_RANK_BONUS_THRESHOLD
+# Multiplied by 1x if at TOP_PRESTIGE_RANK_BONUS_THRESHOLD, all the way up to TOP_PRESTIGE_RANK_BONUS_SCALE if at rank 1
+TRY_REPLACE:top_prestige_ranking = {
+	country_company_throughput_bonus_add = 0.05
+	country_company_construction_efficiency_bonus_add = 0.05
+}
+
+TRY_REPLACE:military_wages_high = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_military_wages_mult = 0.15
+	interest_group_ig_armed_forces_approval_add = 1
+	unit_morale_recovery_mult = 0.1
+}
+
+TRY_REPLACE:military_wages_very_high = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_military_wages_mult = 0.3
+	interest_group_ig_armed_forces_approval_add = 2
+	unit_morale_recovery_mult = 0.2
+}
+
+state_turmoil = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	state_tax_waste_add = 0.25
+	state_migration_pull_mult = -0.15
+	state_construction_mult = -0.33
+	state_conscription_rate_mult = -0.15
+	building_training_rate_mult = -0.2
+	state_radicals_from_political_movements_mult  = 0.25
+}
+
+# Applied if state is above 'high turmoil' threshold
+state_turmoil_high = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	state_tax_waste_add = 0.5
+	state_migration_pull_mult = -0.25
+	state_construction_mult = -0.5
+	state_conscription_rate_mult = -0.2
+	building_training_rate_mult = -0.35
+	state_radicals_from_political_movements_mult  = 0.4
+}
+
+# Applied if state is above 'extreme turmoil' threshold
+state_turmoil_extreme = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	state_tax_waste_add = 0.75
+	state_migration_pull_mult = -0.5
+	state_construction_mult = -0.75
+	state_conscription_rate_mult = -0.4
+	building_training_rate_mult = -0.5
+	state_radicals_from_political_movements_mult  = 0.6
+}
+
+low_organization_army = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
+	unit_offense_mult = -0.99
+	unit_defense_mult = -0.99
+	unit_morale_recovery_mult = -1
+	unit_recovery_rate_add = -0.99
+}
+
+# scaled by a formation's lack of organization, down to the minimum value set in defines
+low_organization_fleet = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
+	ship_accuracy_mult = -0.99
+	ship_hull_damage_mult = -0.99
+	ship_crew_damage_mult = -0.99
+	ship_blockade_strength_mult = -0.99
+	ship_readiness_gain_mult = -0.99
+	ship_critical_hit_chance_mult = -0.99
+}
+
+blockaded = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+	state_migration_pull_mult = -0.5
+}

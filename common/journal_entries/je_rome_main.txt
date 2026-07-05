@@ -7,8 +7,8 @@
 				state_region = s:STATE_LAZIO
 				turmoil >= 0.20
 			}
-			has_law = law_type:law_parliamentary_republic
-			has_law = law_type:law_presidential_republic
+			has_law_or_variant = law_type:law_parliamentary_republic
+			has_law_or_variant = law_type:law_presidential_republic
 		}
 	}
 	on_complete = {
@@ -36,7 +36,7 @@
 			id = papal_to_rome.4
 		}
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_one_church = {
@@ -59,15 +59,15 @@ je_one_church = {
 	fail = {
 		OR = {
 			NOT = {
-				has_law = law_type:law_theocracy
+				has_law_or_variant = law_type:law_theocracy
 			}
 			NOT = {
-				has_law = law_type:law_state_religion
+				has_law_or_variant = law_type:law_state_religion
 			}
 
 		}
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_restore_emperor = {
@@ -85,9 +85,9 @@ je_restore_emperor = {
 		}
 	}
 	complete = {
-		has_law = law_type:law_monarchy
+		has_law_or_variant = law_type:law_monarchy
 		OR = {
-			has_law = law_type:law_autocracy
+			has_law_or_variant = law_type:law_autocracy
 			has_law_or_variant = law_type:law_oligarchy
 		}
 		scope:armed_forces_leader = {
@@ -109,7 +109,7 @@ je_restore_emperor = {
 			id = papal_to_rome.7
 		}
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_mare_nostrum = {
@@ -122,34 +122,34 @@ je_mare_nostrum = {
 		any_scope_state = {
 			count >= 6
 			AND = {
-				region = sr:region_balkans
+				is_in_geographic_region = geographic_region_balkans
 				owner = ROOT
 			}
 		}
 		any_scope_state = {
 			count >= 2
 			AND = {
-				region = sr:region_anatolia
+				is_in_geographic_region = geographic_region_anatolia
 				owner = ROOT
 			}
 		}
 		any_scope_state = {
 			count >= 10
 			AND = {
-				region = sr:region_italy
+				is_in_geographic_region = geographic_region_italy
 				owner = ROOT
 			}
 		}
 		any_scope_state = {
 			count >= 3
 			AND = {
-				region = sr:region_north_africa
+				is_in_geographic_region = geographic_region_north_africa
 				owner = ROOT
 			}
 		}
-		has_law = law_type:law_monarchy
+		has_law_or_variant = law_type:law_monarchy
 		OR = {
-			has_law = law_type:law_autocracy
+			has_law_or_variant = law_type:law_autocracy
 			has_law_or_variant = law_type:law_oligarchy
 		}
 		has_technology_researched = pan-nationalism
@@ -164,7 +164,7 @@ je_mare_nostrum = {
 			is_character_alive = no
 		}
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_church_ita = {
@@ -180,15 +180,15 @@ je_church_ita = {
 		owns_entire_state_region = STATE_EMILIA
 		owns_entire_state_region = STATE_TUSCANY
 		owns_entire_state_region = STATE_PIEDMONT
-		has_law = law_type:law_theocracy
+		has_law_or_variant = law_type:law_theocracy
 	}
 	fail = {
 		OR = {
 			NOT = {
-				has_law = law_type:law_theocracy
+				has_law_or_variant = law_type:law_theocracy
 			}
 			NOT = {
-				has_law = law_type:law_state_religion
+				has_law_or_variant = law_type:law_state_religion
 			}
 
 		}
@@ -199,7 +199,7 @@ je_church_ita = {
 		}
 		change_tag = ICI
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_ita_pro = {
@@ -241,7 +241,7 @@ je_ita_pro = {
 			}
 		}
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_punic_ro = {
@@ -270,7 +270,7 @@ je_punic_ro = {
 			id = papal_to_rome.11
 		}
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_punic_ro_pho = {
@@ -299,5 +299,5 @@ je_punic_ro_pho = {
 			id = papal_to_rome.11
 		}
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }

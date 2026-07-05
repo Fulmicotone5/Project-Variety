@@ -2,7 +2,7 @@
 	c:PAN = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_persia
+			hq_region = sr:region_greater_persia
 			name = "Fauj-i-Ain"
 
 			combat_unit = {
@@ -58,7 +58,7 @@
 
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_himalayas
+			hq_region = sr:geographic_region_himalayas
 			name = "Fauj-i-Be Qawaid"
 
 			combat_unit = {
@@ -109,7 +109,7 @@
 	c:NIA = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_zanj
+			hq_region = sr:region_east_africa
 			name = "Niassa Company Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -117,19 +117,10 @@
 				count = 5
 			}
 		}
-		create_military_formation = {
-			type = fleet
-			hq_region = sr:region_zanj
-			name = "Niassa Company Navy"
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_MOCAMBIQUE
-				count = 10
-			}
-		}
+
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_congo
+			hq_region = sr:region_equatorial_africa
 			name = "2nd Niassa Company Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -141,7 +132,7 @@
 	c:BER = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_bombay
+			hq_region = sr:region_south_india
 			name = "Baroda Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry

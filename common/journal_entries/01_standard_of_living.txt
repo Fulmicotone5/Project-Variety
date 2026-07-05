@@ -21,8 +21,8 @@
 			}
 		}
 		OR = {
-			has_law = law_type:law_no_social_security
-			has_law = law_type:law_no_health_system
+			has_law_or_variant = law_type:law_no_social_security
+			has_law_or_variant = law_type:law_no_health_system
 		}
 		OR = {
 			has_technology_researched = modern_sewerage
@@ -89,7 +89,7 @@
 
 	weight = 200
 
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 
 	transferable = no
 

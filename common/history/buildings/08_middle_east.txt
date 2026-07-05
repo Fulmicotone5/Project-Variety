@@ -1541,7 +1541,7 @@
 				activate_production_methods={ "default_building_vineyard" "pm_road_carts"  }
 			}
 			create_building={
-				building="building_military_shipyard"
+				building="building_shipyard"
 				add_ownership={
 					country={
 						country="c:TOR"
@@ -1836,7 +1836,7 @@
 				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated" }
 			}
 			create_building={
-				building="building_military_shipyard"
+				building="building_shipyard"
 				add_ownership={
 					country={
 						country="c:TOR"

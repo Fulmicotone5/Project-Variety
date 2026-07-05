@@ -9,29 +9,27 @@
 			AND = {
 				country_is_in_africa = no
 				OR = {
-					has_interest_marker_in_region = sr:region_senegal
-					has_interest_marker_in_region = sr:region_niger
-					has_interest_marker_in_region = sr:region_ethiopia
-					has_interest_marker_in_region = sr:region_zanj
-					has_interest_marker_in_region = sr:region_southern_africa
-					has_interest_marker_in_region = sr:region_congo
+					has_interest_marker_in_region = sr:region_west_africa
+			has_interest_marker_in_region = sr:region_east_africa
+			has_interest_marker_in_region = sr:region_southern_africa
+			has_interest_marker_in_region = sr:region_equatorial_africa
 				}
 			}
 			AND = {
 				country_is_in_india = no
 				OR = {
-					has_interest_marker_in_region = sr:region_madras
-					has_interest_marker_in_region = sr:region_bombay	
-					has_interest_marker_in_region = sr:region_bengal
-					has_interest_marker_in_region = sr:region_punjab	
-					has_interest_marker_in_region = sr:region_central_india	
+					has_interest_marker_in_region = geographic_region_madras
+					has_interest_marker_in_region = geographic_region_bombay	
+					has_interest_marker_in_region = geographic_region_bengal
+					has_interest_marker_in_region = geographic_region_punjab	
+					has_interest_marker_in_region = geographic_region_central_india	
 				}
 			}
 			AND = {
 				country_is_in_southeast_asia = no
 					OR = {
-						has_interest_marker_in_region = sr:region_indonesia
-						has_interest_marker_in_region = sr:region_indochina		
+						has_interest_marker_in_region = geographic_region_indonesia
+						has_interest_marker_in_region = geographic_region_indochina		
 					}
 			}
 		}
@@ -53,49 +51,49 @@
 	immediate = {
 		random_state_region = {
 			limit = {
-				region = sr:region_senegal
+				is_in_geographic_region = geographic_region_senegal
 			}
 			save_scope_as = senegal_region_scope
 		}
 		random_state_region = {
 			limit = {
-				region = sr:region_niger
+				is_in_geographic_region = geographic_region_niger
 			}
 			save_scope_as = niger_region_scope
 		}
 		random_state_region = {
 			limit = {
-				region = sr:region_ethiopia
+				is_in_geographic_region = geographic_region_ethiopia
 			}
 			save_scope_as = ethiopia_region_scope
 		}
 		random_state_region = {
 			limit = {
-				region = sr:region_zanj
+				is_in_geographic_region = geographic_region_zanj
 			}
 			save_scope_as = zanj_region_scope
 		}
 		random_state_region = {
 			limit = {
-				region = sr:region_southern_africa
+				is_in_geographic_region = geographic_region_southern_africa
 			}
 			save_scope_as = southern_africa_region_scope
 		}
 		random_state_region = {
 			limit = {
-				region = sr:region_indonesia
+				is_in_geographic_region = geographic_region_indonesia
 			}
 			save_scope_as = indonesia_region_scope
 		}
 		random_state_region = {
 			limit = {
-				region = sr:region_indochina
+				is_in_geographic_region = geographic_region_indochina
 			}
 			save_scope_as = indochina_region_scope
 		}
 		random_state_region = {
 			limit = {
-				region = sr:region_congo
+				is_in_geographic_region = geographic_region_congo
 			}
 			save_scope_as = congo_region_scope
 		}
@@ -125,5 +123,5 @@
 
 	weight = 100
 
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }

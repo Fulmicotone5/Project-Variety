@@ -1147,16 +1147,51 @@
 			}
 		}
 	}
-	s:STATE_CHUBU = {
+	s:STATE_TOKAI = {
 		region_state:GJO = {
 			create_pop = {
 				culture = japanese
-				size = 2529993
+				size = 1529993
 			}
 			create_pop = {
 				culture = japanese
 				religion = shinto
 				size = 688943
+			}
+		}
+		region_state:ODA = {
+			create_pop = {
+				culture = japanese
+				size = 396584
+			}
+			create_pop = {
+				culture = japanese
+				religion = shinto
+				size = 106493
+			}
+		}
+		region_state:KKW = {
+			create_pop = {
+				culture = japanese
+				size = 1188675
+			}
+			create_pop = {
+				culture = japanese
+				religion = shinto
+				size = 210902
+			}
+		}
+	}
+	s:STATE_HOKUSHINETSU = {
+		region_state:GJO = {
+			create_pop = {
+				culture = japanese
+				size = 1529993
+			}
+			create_pop = {
+				culture = japanese
+				religion = shinto
+				size = 188943
 			}
 		}
 		region_state:SAB = {
@@ -1191,28 +1226,6 @@
 				culture = japanese
 				religion = shinto
 				size = 198345
-			}
-		}
-		region_state:ODA = {
-			create_pop = {
-				culture = japanese
-				size = 396584
-			}
-			create_pop = {
-				culture = japanese
-				religion = shinto
-				size = 106493
-			}
-		}
-		region_state:KKW = {
-			create_pop = {
-				culture = japanese
-				size = 1188675
-			}
-			create_pop = {
-				culture = japanese
-				religion = shinto
-				size = 210902
 			}
 		}
 	}

@@ -19,10 +19,10 @@ slave_revolt.1 = {
 	icon = "gfx/interface/icons/event_icons/event_protest.dds"
 	
 	trigger = {
-		NOT = { has_law = law_type:law_slavery_banned }
+		NOT = { has_law_or_variant = law_type:law_slavery_banned }
 		any_neighbouring_state = {	
 			owner = {
-				has_law = law_type:law_slavery_banned
+				has_law_or_variant = law_type:law_slavery_banned
 				any_scope_state = { 
 					is_coastal = yes
 				}
@@ -46,7 +46,7 @@ slave_revolt.1 = {
 		random_neighbouring_state = {
 			limit = {
 				owner = {
-					has_law = law_type:law_slavery_banned
+					has_law_or_variant = law_type:law_slavery_banned
 					any_scope_state = { 
 						is_coastal = yes
 					}
@@ -146,10 +146,10 @@ slave_revolt.2 = {
 	icon = "gfx/interface/icons/event_icons/event_protest.dds"
 	
 	trigger = {
-		NOT = { has_law = law_type:law_slavery_banned }
+		NOT = { has_law_or_variant = law_type:law_slavery_banned }
 		any_neighbouring_state = {
 			owner = {
-				has_law = law_type:law_slavery_banned
+				has_law_or_variant = law_type:law_slavery_banned
 			}
 		}
 	}
@@ -158,7 +158,7 @@ slave_revolt.2 = {
 		random_neighbouring_state = {
 			limit = {
 				owner = {
-					has_law = law_type:law_slavery_banned
+					has_law_or_variant = law_type:law_slavery_banned
 				}
 			}
 			save_scope_as = neighbor_state
@@ -251,7 +251,7 @@ slave_revolt.3 = {
 	icon = "gfx/interface/icons/event_icons/event_protest.dds"
 	
 	trigger = {
-		NOT = { has_law = law_type:law_slavery_banned }
+		NOT = { has_law_or_variant = law_type:law_slavery_banned }
 		any_scope_pop = {
 			is_pop_type = slaves # slavery can theoretically be on the books without there being any slaves present, but this needs to happen with slave pops
 		}

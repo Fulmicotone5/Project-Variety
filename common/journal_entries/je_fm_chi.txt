@@ -22,7 +22,7 @@
 		}
 	}
 	weight = 100
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 je_chi_shu = {
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
@@ -48,7 +48,7 @@ je_chi_shu = {
 		}
 	}
 	weight = 100
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 je_chi_wei = {
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
@@ -73,5 +73,5 @@ je_chi_wei = {
 		}
 	}
 	weight = 100
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }

@@ -1095,7 +1095,7 @@ CHU = {
 	possible = {
 		has_technology_researched = pan-nationalism
 		country_rank >= rank_value:great_power
-		has_law = law_type:law_cultural_exclusion
+		has_law_or_variant = law_type:law_cultural_exclusion
 	}
 }
 
@@ -1176,7 +1176,7 @@ SCA = {
 
 	possible = {
 		has_technology_researched = pan-nationalism	
-		has_law = law_type:law_racial_segregation
+		has_law_or_variant = law_type:law_racial_segregation
 	}
 }
 

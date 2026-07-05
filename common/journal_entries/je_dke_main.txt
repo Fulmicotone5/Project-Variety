@@ -71,7 +71,7 @@
 		}
 	}
 	weight = 100
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_danelaw = {
@@ -84,7 +84,7 @@ je_danelaw = {
 		owns_entire_state_region = STATE_YORKSHIRE
 		owns_entire_state_region = STATE_MIDLANDS
 		owns_entire_state_region = STATE_EAST_ANGLIA
-		has_law = law_type:law_monarchy
+		has_law_or_variant = law_type:law_monarchy
 	}
 	on_complete = {
 		trigger_event = {
@@ -109,7 +109,7 @@ je_danelaw = {
 			id = fm_dke.3
 		}
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_north_empire = {
@@ -125,7 +125,7 @@ je_north_empire = {
 		owns_entire_state_region = STATE_EASTERN_NORWAY
 		owns_entire_state_region = STATE_NORTHERN_NORWAY
 		owns_entire_state_region = STATE_SCANIA
-		has_law = law_type:law_monarchy
+		has_law_or_variant = law_type:law_monarchy
 	}
 	fail = {
 		custom_tooltip = {
@@ -141,5 +141,5 @@ je_north_empire = {
 			change_tag = HKN
 		}
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }

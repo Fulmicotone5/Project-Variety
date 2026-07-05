@@ -55,7 +55,6 @@
 		trigger_event = {
 			id = fm_jae.1
 		}
-		add_declared_interest = region_japan
 	}
 }
 

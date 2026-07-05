@@ -25,7 +25,7 @@ fm_pop_consolidation.1 = {
 			limit = {
 				is_secessionist = no
 					NOT = {
-						has_law = law_type:law_multicultural
+						has_law_or_variant = law_type:law_multicultural
 					}
 				}
 				ordered_primary_culture = {

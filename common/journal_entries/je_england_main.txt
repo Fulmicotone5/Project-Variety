@@ -16,7 +16,7 @@
 	fail = {
 		OR = {
 			NOT = {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 			}
 			custom_tooltip = {
 				text = eng_auto
@@ -38,7 +38,7 @@
 		}
 	}
 	weight = 100
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_actuni = {
@@ -65,7 +65,7 @@ je_actuni = {
 	fail = {
 		OR = {
 			NOT = {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 			}
 			custom_tooltip = {
 				text = nofmire
@@ -82,7 +82,7 @@ je_actuni = {
 			}
 		}
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_eng_cen = {
@@ -90,12 +90,12 @@ je_eng_cen = {
 	group = je_group_historical_content
 	timeout = 4000
 	complete = {
-		has_law = law_type:law_autocracy
-		has_law = law_type:law_appointed_bureaucrats
-		has_law = law_type:law_professional_army
-		has_law = law_type:law_national_supremacy
+		has_law_or_variant = law_type:law_autocracy
+		has_law_or_variant = law_type:law_appointed_bureaucrats
+		has_law_or_variant = law_type:law_professional_army
+		has_law_or_variant = law_type:law_national_supremacy
 		NOT = {
-			has_law = law_type:law_serfdom
+			has_law_or_variant = law_type:law_serfdom
 		}
 	}
 	on_complete = {
@@ -137,10 +137,10 @@ je_eng_cen = {
 	}
 	fail = {
 		NOT = {
-			has_law = law_type:law_monarchy
+			has_law_or_variant = law_type:law_monarchy
 		}
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_eng_reclaim = {
@@ -151,7 +151,7 @@ je_eng_reclaim = {
 		any_scope_state = {
 			count >= 6
 			AND = {
-				region = sr:region_france
+				is_in_geographic_region = geographic_region_france
 				owner = ROOT
 			}
 		}
@@ -168,10 +168,10 @@ je_eng_reclaim = {
 	}
 	fail = {
 		NOT = {
-			has_law = law_type:law_monarchy
+			has_law_or_variant = law_type:law_monarchy
 		}
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_french_int = {
@@ -180,13 +180,13 @@ je_french_int = {
 	complete = {
 		cultural_acceptance_base = { target = cu:french value >= 40 }
 		OR = {
-			has_law = law_type:law_freedom_of_conscience
-			has_law = law_type:law_total_separation
+			has_law_or_variant = law_type:law_freedom_of_conscience
+			has_law_or_variant = law_type:law_total_separation
 		}
 	}
 	on_complete = {
 		add_primary_culture = cu:french
 	}
 	weight = 100
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }

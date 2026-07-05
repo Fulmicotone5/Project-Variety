@@ -3,7 +3,7 @@
 		## Zurich
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_south_germany
+			hq_region = sr:region_central_europe
 			name = "Zürich City Garrison"
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
@@ -16,7 +16,7 @@
 		## Netherlands
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_rhine
+			hq_region = sr:region_western_europe
 			name = "Dutch Royal Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
@@ -32,24 +32,24 @@
 		}
 		create_military_formation = {
 			type = fleet
-			hq_region = sr:region_rhine
-			name = "Dutch Navy"
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_FRIESLAND
-				count = 5
+			hq_region = sr:region_western_europe
+			name = Koninklijke_Marine
+
+			ship = {
+				type = ship_type:ship_type_ship_of_the_line
+				count = 1
 			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_HOLLAND
-				count = 5
+
+			ship = {
+				type = ship_type:ship_type_frigate
+				count = 6
 			}
 		}
 	}
 	c:CAS = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_iberia
+			hq_region = sr:region_southern_europe
 			name = "Guardia Real"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -58,31 +58,15 @@
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_lancers
-				state_region = s:STATE_OLD_CASTILE
+				state_region = s:STATE_ASTURIAS
 				count = 20
-			}
-			save_scope_as = dutch_army
-		}
-		create_military_formation = {
-			type = fleet
-			hq_region = sr:region_iberia
-			name = "Real Armada"
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_EXTREMADURA
-				count = 10
-			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_GALICIA
-				count = 5
 			}
 		}
 	}
 	c:OIS = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_south_germany
+			hq_region = sr:region_central_europe
 			name = "Austrial Ducal Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -100,7 +84,7 @@
 		##Sweden
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_baltic
+			hq_region = sr:region_northern_europe
 			name = "Swedish Royal Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -117,21 +101,16 @@
 		}
 		create_military_formation = {
 			type = fleet
-			hq_region = sr:region_baltic
-			name = "Royal Navy"
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_GOTALAND
-				count = 5
+			hq_region = sr:region_northern_europe
+			name = Hgsjflottan
+
+			ship = { # Carl XIII, Carl Johan, Försigtigheten, Äran, Dristigheten, Fäderneslandet, Gustaf den Store, Manligheten, Prins Oscar, Wasa
+				type = ship_type:ship_type_ship_of_the_line
+				count = 3
 			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_SVEALAND
-				count = 10
-			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_NORRLAND
+
+			ship = { # Camilla, Euridice, Galathea, Josephine, Af Chapman, Freya
+				type = ship_type:ship_type_frigate
 				count = 5
 			}
 		}
@@ -139,7 +118,7 @@
 	c:DKE = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_baltic
+			hq_region = sr:region_northern_europe
 			name = "Danish Royal Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -156,25 +135,41 @@
 		}
 		create_military_formation = {
 			type = fleet
-			hq_region = sr:region_baltic
-			name = "Royal Navy"
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
+			hq_region = sr:region_northern_europe
+			name = Kongelige_Danske_Marine
+
+			ship = { # Dronning Maria, Waldemar, Frederik VI, Skiold, Danmark
+				type = ship_type:ship_type_ship_of_the_line
 				state_region = s:STATE_ZEALAND
-				count = 15
+				count = 1
 			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
+
+			ship = { # Phœnix
+				type = ship_type:ship_type_ship_of_the_line
 				state_region = s:STATE_JUTLAND
-				count = 10
+				flagship = yes
+				count = 1
+			}
+
+			ship = { # Freia, Rota, Havfruen, Bellona, Najaden, Perlen, Venus, Minerva
+				type = ship_type:ship_type_frigate
+				state_region = s:STATE_ZEALAND
+				count = 2
+			}
+
+			ship = { # Nymphen, Fylla
+				type = ship_type:ship_type_frigate
+				state_region = s:STATE_JUTLAND
+				count = 2
 			}
 		}
+
 	}
 	c:PUR = {
 		##portugal
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_iberia
+			hq_region = sr:region_western_europe
 			name = "Exercito Portugues"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -199,24 +194,22 @@
 		}
 		create_military_formation = {
 			type = fleet
-			hq_region = sr:region_iberia
-			name = "Marinha Real Portuguesa"
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_BEIRA
-				count = 10
+			hq_region = sr:region_southern_europe
+			name = Lisbon_Station
+
+			ship = {
+				type = ship_type:ship_type_ship_of_the_line
+				count = 7
 			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_ESTREMADURA
-				count = 5
+
+			ship = {
+				type = ship_type:ship_type_frigate
+				count = 2
 			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_ALENTEJO
-				count = 10
-			}
+
+			save_scope_as = med_fleet_gbr
 		}
+
 	}
 	c:BIZ = {
 		create_military_formation = {
@@ -248,22 +241,23 @@
 			type = fleet
 			hq_region = sr:region_balkans
 			name = "Roman Navy"
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_EASTERN_THRACE
-				count = 10
+
+			ship = {
+				type = ship_type:ship_type_ship_of_the_line
+				count = 2
 			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_HUDAVENDIGAR
-				count = 5
+
+			ship = {
+				type = ship_type:ship_type_frigate
+				count = 3
 			}
 		}
+
 	}
 	c:HEK ?= {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_north_germany
+			hq_region = sr:region_central_europe
 			name = Kurfrstlich_Hessische_Armee
 
 			combat_unit = {
@@ -289,7 +283,7 @@
 	c:HES ?= {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_north_germany
+			hq_region = sr:region_central_europe
 			name = Groherzoglich_Hessische_Armee
 
 			combat_unit = {
@@ -315,7 +309,7 @@
 	c:NAS ?= {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_north_germany
+			hq_region = sr:region_central_europe
 			name = Herzoglich_Nassauische_Armee
 
 			combat_unit = {
@@ -334,7 +328,7 @@
 	c:HEN ?= {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_north_germany
+			hq_region = sr:region_central_europe
 			name = Kniglich_Hannoversche_Armee
 
 			combat_unit = {
@@ -383,7 +377,7 @@
 	c:BYE = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_belarus
+			hq_region = sr:region_eastern_europe
 			name = "1st Royal Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -405,7 +399,7 @@
 	c:HUN = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_danubia
+			hq_region = sr:region_balkans
 			name = "1st Hungarian Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -434,7 +428,7 @@
 	c:MOL = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_danubia
+			hq_region = sr:region_balkans
 			name = "1st Moldovan Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -452,7 +446,7 @@
 	c:SPO = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_italy
+			hq_region = sr:region_southern_europe
 			name = "Esercito Ducale di Spoleto"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -469,7 +463,7 @@
 	c:NEA = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_italy
+			hq_region = sr:region_southern_europe
 			name = "Esercito dell'Esarca"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -492,7 +486,7 @@
 	c:PUP = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_italy
+			hq_region = sr:region_southern_europe
 			name = "Esercito Papale"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -516,11 +510,21 @@
 			}
 			save_scope_as = 1st_papal_army
 		}
+		create_military_formation = {
+			type = fleet
+			hq_region = sr:region_southern_europe
+			name = Marina_Pontificia
+
+			ship = { # Nothing the size of a frigate
+				type = ship_type:ship_type_frigate
+				count = 2
+			}
+		}
 	}
 	c:HSE = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_occitania
+			hq_region = sr:region_western_europe
 			name = "Swiss Guards"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -533,7 +537,7 @@
 	c:TOU = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_occitania
+			hq_region = sr:region_western_europe
 			name = "Toulouse Ducal Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -543,19 +547,20 @@
 		}
 		create_military_formation = {
 			type = fleet
-			hq_region = sr:region_occitania
-			name = "Toulouse Navy"
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_LANGUEDOC
-				count = 10
+			hq_region = sr:region_southern_europe
+			name = Escadre_de_la_Mditerrane # Slightly anachronistic formation
+
+			ship = {
+				type = ship_type:ship_type_ship_of_the_line
+				count = 1
 			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_LANGUEDOC
-				count = 5
+
+			ship = {
+				type = ship_type:ship_type_frigate
+				count = 3
 			}
 		}
+
 	}
 
 	c:BUL = {
@@ -591,7 +596,7 @@
 	c:SLV = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_danubia
+			hq_region = sr:region_balkans
 			name = "1st Slovak Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -609,7 +614,7 @@
 	c:BAY = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_south_germany
+			hq_region = sr:region_central_europe
 			name = "1st Bayern Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -622,7 +627,7 @@
 	c:FLA = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_rhine
+			hq_region = sr:region_western_europe
 			name = "Flanders Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -642,24 +647,25 @@
 		}
 		create_military_formation = {
 			type = fleet
-			hq_region = sr:region_rhine
-			name = "Flanders Navy"
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_FLANDERS
-				count = 5
+			hq_region = sr:region_western_europe
+			name = Escadre_du_Nord # Somewhat anachronistic formation
+
+			ship = {
+				type = ship_type:ship_type_ship_of_the_line
+				count = 2
 			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_PICARDY
-				count = 5
+
+			ship = {
+				type = ship_type:ship_type_frigate
+				count = 2
 			}
 		}
+
 	}
 	c:LIT = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_belarus
+			hq_region = sr:region_eastern_europe
 			name = "1st Lithuanian Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -672,26 +678,12 @@
 				count = 15
 			}
 		}
-		create_military_formation = {
-			type = fleet
-			hq_region = sr:region_baltic_states
-			name = "Lithuanian Navy"
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_COURLAND
-				count = 5
-			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_RIGA
-				count = 5
-			}
-		}
+
 	}
 	c:LLO = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_south_germany
+			hq_region = sr:region_southern_europe
 			name = "Prima Divisione Lombarda"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -707,16 +699,11 @@
 		}
 		create_military_formation = {
 			type = fleet
-			hq_region = sr:region_south_germany
-			name = "Marina Lombarda"
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_PIEDMONT
-				count = 5
-			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_PIEDMONT
+			hq_region = sr:region_southern_europe
+			name = "Flotta Repubblicana"
+
+			ship = {
+				type = ship_type:ship_type_frigate
 				count = 5
 			}
 		}
@@ -724,7 +711,7 @@
 	c:PUM = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_poland
+			hq_region = sr:region_eastern_europe
 			name = "1st Pommern Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -737,11 +724,23 @@
 				count = 15
 			}
 		}
+		create_military_formation = {
+			type = fleet
+			hq_region = sr:region_central_europe
+			name = "1st Pommern Navy"
+			save_scope_as = fleet_scope_prussian_navypv
+			# Nothing the size of a frigate, but the Prussian Maritime Enterprise operated some armed merchantmen, like the Princess Louise
+		}
+		create_ship = {
+			type = ship_type:ship_type_frigate
+			fleet = scope:fleet_scope_prussian_navypb
+			name = sn_princess_louise
+		}
 	}
 	#c:PR1 = {
 	#	create_military_formation = {
 	#		type = army
-	#		hq_region = sr:region_poland
+	#		hq_region = sr:region_eastern_europe
 	#		name = "1st Prussian Army"
 	#		combat_unit = {
 	#			type = unit_type:combat_unit_type_line_infantry
@@ -758,7 +757,7 @@
 	c:FRU = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_france
+			hq_region = sr:region_central_europe
 			name = "Army of the King"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -771,21 +770,12 @@
 				count = 10
 			}
 		}
-		create_military_formation = {
-			type = fleet
-			hq_region = sr:region_france
-			name = "Royal Navy"
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_POITOU
-				count = 10
-			}
-		}
+
 	}
 	c:BUD = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_france
+			hq_region = sr:region_central_europe
 			name = "Burgundian Royal Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -820,11 +810,11 @@
 	}
 	c:IRE = {
 		create_military_formation = {
-			type = fleet
-			hq_region = sr:region_north_sea_coast
-			name = "1st Irish Fleet"
+			type = army
+			hq_region = sr:region_western_europe
+			name = "1st Irish Army"
 			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
+				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_LEINSTER
 				count = 5
 			}
@@ -834,7 +824,7 @@
 		## Polish Empire
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_poland
+			hq_region = sr:region_eastern_europe
 			name = "Winged Hussars"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -853,7 +843,7 @@
 	c:KRK = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_poland
+			hq_region = sr:region_eastern_europe
 			name = "Krakowian Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -865,7 +855,7 @@
 	c:GAL = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_poland
+			hq_region = sr:region_eastern_europe
 			name = "Galician Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_hussars
@@ -883,7 +873,7 @@
 		## Bohemia
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_south_germany
+			hq_region = sr:region_central_europe
 			name = "Prince Alexander's Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
@@ -901,7 +891,7 @@
 	c:LOT = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_north_germany
+			hq_region = sr:region_central_europe
 			name = "East Frankish Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -930,7 +920,7 @@
 		##England
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_england
+			hq_region = sr:region_western_europe
 			name = "1st English Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -946,31 +936,25 @@
 		}
 		create_military_formation = {
 			type = fleet
-			hq_region = sr:region_england
-			name = "1st English Fleet"
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_HOME_COUNTIES
-				count = 20
+			hq_region = sr:region_western_europe
+			name = Chatham_Station
+
+			ship = {
+				type = ship_type:ship_type_ship_of_the_line
+				count = 1
 			}
-			save_scope_as = 1st_english_fleet
+
+			ship = {
+				type = ship_type:ship_type_frigate
+				count = 4
+			}
 		}
 	}
 	c:SCU = {
 		##High Kingdom
 		create_military_formation = {
-			type = fleet
-			hq_region = sr:region_north_sea_coast
-			name = "1st Scottish Fleet"
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_HIGHLANDS
-				count = 10
-			}
-		}
-		create_military_formation = {
 			type = army
-			hq_region = sr:region_north_sea_coast
+			hq_region = sr:region_western_europe
 			name = "1st Scottish Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -988,7 +972,7 @@
 		## Venetia
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_south_germany
+			hq_region = sr:region_southern_europe
 			name = "Infanteria Veneta"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -996,22 +980,6 @@
 				count = 25
 			}
 			save_scope_as = army_venetia
-		}
-		create_military_formation = {
-			type = fleet
-			hq_region = sr:region_south_germany
-			name = "Armada da Mar"
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_VENETIA
-				count = 10
-			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_VENETIA
-				count = 5
-			}
-			save_scope_as = navy_venetia
 		}
 		create_military_formation = {
 			type = army
@@ -1031,19 +999,20 @@
 		}
 		create_military_formation = {
 			type = fleet
-			hq_region = sr:region_north_china
-			name = "Flotta del Mar Giallo"
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_BEIJING
-				count = 3
+			hq_region = sr:region_southern_europe
+			name = "Marina do Mar"
+
+			ship = {
+				type = ship_type:ship_type_ship_of_the_line
+				state_region = s:STATE_VENETIA
+				count = 5
 			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_ZHILI
-				count = 2
+
+			ship = {
+				type = ship_type:ship_type_frigate
+				state_region = s:STATE_VENETIA
+				count = 5
 			}
-			save_scope_as = navy_venetia
 		}
 	}
 	c:CTH = {
@@ -1064,17 +1033,6 @@
 			}
 			save_scope_as = carthage_army
 		}
-		create_military_formation = {
-			type = fleet
-			hq_region = sr:region_north_africa
-			name = "Carthaginian Navy"
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_SICILY
-				count = 5
-			}
-			save_scope_as = carthage_navy
-		}
 	}
 	c:YUA = {
 		## Yuan pei
@@ -1093,7 +1051,7 @@
 	c:FUN = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_finland
+			hq_region = sr:region_northern_europe
 			name = "Royal Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -1114,19 +1072,13 @@
 		}
 		create_military_formation = {
 			type = fleet
-			hq_region = sr:region_finland
-			name = "1st Finnish Fleet"
-			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_OSTROBOTHNIA
-				count = 5
+			hq_region = sr:region_northern_europe
+			name = Finska_SjEquipaget # Suomen Meriekipaasi - Swedish was the sole offical language of the Grand Duchy in 1836
+
+			ship = { # Nothing the size of a frigate at this point in history
+				type = ship_type:ship_type_frigate
+				count = 4
 			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_UUSIMAA
-				count = 5
-			}
-			save_scope_as = 1st_finnish_fleet
 		}
 	}
 	c:NOV = {
@@ -1150,7 +1102,7 @@
 	c:DPR = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_urals
+			hq_region = sr:region_russia
 			name = "Ducal Garrison"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -1163,7 +1115,7 @@
 	c:POC = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_urals
+			hq_region = sr:region_russia
 			name = "Volga Cossacks"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -1181,7 +1133,7 @@
 	c:KAR = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_urals
+			hq_region = sr:region_russia
 			name = "Royal Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -1199,7 +1151,7 @@
 	c:DON = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_caucasus
+			hq_region = sr:region_russia
 			name = "Don Cossacks"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -1253,7 +1205,7 @@
 	c:WLS = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_england
+			hq_region = sr:region_western_europe
 			name = "Welsh Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -1265,7 +1217,7 @@
 	c:IRE = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_north_sea_coast
+			hq_region = sr:region_western_europe
 			name = "Irish Royal Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -1292,7 +1244,7 @@
 	c:PRI = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_occitania
+			hq_region = sr:region_western_europe
 			name = "Provencal Ducal Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -1300,11 +1252,26 @@
 				count = 25
 			}
 		}
+		create_military_formation = {
+			type = fleet
+			hq_region = sr:region_southern_europe
+			name = Escadre_de_la_Mditerrane # Slightly anachronistic formation
+
+			ship = {
+				type = ship_type:ship_type_ship_of_the_line
+				count = 1
+			}
+
+			ship = {
+				type = ship_type:ship_type_frigate
+				count = 3
+			}
+		}
 	}
 	c:BOU = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_occitania
+			hq_region = sr:region_western_europe
 			name = "Bourbon Ducal Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -1316,7 +1283,7 @@
 	c:DCQ = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_occitania
+			hq_region = sr:region_western_europe
 			name = "Aquitaine Ducal Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -1328,7 +1295,7 @@
 	c:NUR = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_france
+			hq_region = sr:region_central_europe
 			name = "Normandy Ducal Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -1340,7 +1307,7 @@
 	c:STA = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_rhine
+			hq_region = sr:region_western_europe
 			name = "Strasbourg Ducal Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -1352,7 +1319,7 @@
 	c:BRI = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_france
+			hq_region = sr:region_western_europe
 			name = "Brittany Ducal Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -1365,7 +1332,7 @@
 	c:SAV = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_south_germany
+			hq_region = sr:region_western_europe
 			name = "Savoy Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -1377,7 +1344,7 @@
 	c:MUN = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_rhine
+			hq_region = sr:region_western_europe
 			name = "Munster Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -1389,7 +1356,7 @@
 	c:SAA = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_rhine
+			hq_region = sr:region_central_europe
 			name = "Saarbrücken Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -1401,7 +1368,7 @@
 	c:CLN = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_rhine
+			hq_region = sr:region_central_europe
 			name = "Cologne Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -1413,7 +1380,7 @@
 	c:BAD = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_south_germany
+			hq_region = sr:region_central_europe
 			name = "Baden Ducal Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -1425,7 +1392,7 @@
 	c:COB = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_north_germany
+			hq_region = sr:region_central_europe
 			name = "Saxe-Coburg-Gotha Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -1437,7 +1404,7 @@
 	c:MEI = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_north_germany
+			hq_region = sr:region_central_europe
 			name = "Saxe-Meiningen Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -1449,7 +1416,7 @@
 	c:SCW = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_north_germany
+			hq_region = sr:region_central_europe
 			name = "Schwarzburger Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -1461,7 +1428,7 @@
 	c:WEI = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_north_germany
+			hq_region = sr:region_central_europe
 			name = "Saxe-Weimar Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -1473,7 +1440,7 @@
 	c:OLD = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_north_germany
+			hq_region = sr:region_central_europe
 			name = "Oldemburg Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -1485,7 +1452,7 @@
 	c:BRE = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_north_germany
+			hq_region = sr:region_central_europe
 			name = "Bremen Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -1497,7 +1464,7 @@
 	c:HAM = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_north_germany
+			hq_region = sr:region_central_europe
 			name = "Hamburg Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -1509,7 +1476,7 @@
 	c:KAA = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_iberia
+			hq_region = sr:region_southern_europe
 			name = "Ejército Real"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -1524,19 +1491,24 @@
 		}
 		create_military_formation = {
 			type = fleet
-			hq_region = sr:region_iberia
-			name = "Armada Real"
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_VALENCIA
-				count = 10
+			hq_region = sr:region_southern_europe
+			name = Mediterranean_Station
+
+			ship = {
+				type = ship_type:ship_type_ship_of_the_line
+				count = 2
+			}
+
+			ship = {
+				type = ship_type:ship_type_frigate
+				count = 3
 			}
 		}
 	}
 	c:CAT = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_iberia
+			hq_region = sr:region_southern_europe
 			name = "Catalan Ducal Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -1548,7 +1520,7 @@
 	c:NAV = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_iberia
+			hq_region = sr:region_southern_europe
 			name = "Navarran Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry

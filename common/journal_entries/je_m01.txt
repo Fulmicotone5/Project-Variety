@@ -3,13 +3,13 @@ je_m01_main = {
 	group = je_group_historical_content
 	timeout = 7300
 	complete = {
-		has_law = law_type:law_cultural_exclusion
+		has_law_or_variant = law_type:law_cultural_exclusion
 		NOT = {
-			has_law = law_type:law_serfdom
+			has_law_or_variant = law_type:law_serfdom
 		}
 		OR = {
-			has_law = law_type:law_census_voting
-			has_law = law_type:law_landed_voting
+			has_law_or_variant = law_type:law_census_voting
+			has_law_or_variant = law_type:law_landed_voting
 		}
 		custom_tooltip = {
 			text = coptocompletetool
@@ -70,7 +70,7 @@ je_m01_main = {
 		}
 		remove_modifier = m01_mdf
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_coptic_issue = {
@@ -99,14 +99,14 @@ je_coptic_issue = {
 			has_variable = lerevolution
 		}
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_m01_theo = {
 	icon = "gfx/interface/icons/religion_icons/sunni.dds"
 	group = je_group_historical_content
 	complete = {
-		has_law = law_type:law_theocracy
+		has_law_or_variant = law_type:law_theocracy
 		owns_entire_state_region = STATE_HEDJAZ
 	}
 	on_complete = {
@@ -123,7 +123,7 @@ je_m01_theo = {
 			}
 		}
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 je_m01_iraq = {
 	icon = "gfx/interface/icons/religion_icons/sunni.dds"
@@ -151,7 +151,7 @@ je_m01_iraq = {
 			}
 		}
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 je_m01_eth = {
 	icon = "gfx/interface/icons/religion_icons/sunni.dds"
@@ -181,15 +181,15 @@ je_m01_eth = {
 			}
 		}
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 je_m01_abbasids = {
 	icon = "gfx/interface/icons/religion_icons/sunni.dds"
 	group = je_group_historical_content
 	complete = {
 		OR = {
-			has_law = law_type:law_theocracy
-			has_law = law_type:law_monarchy
+			has_law_or_variant = law_type:law_theocracy
+			has_law_or_variant = law_type:law_monarchy
 		}
 		owns_entire_state_region = STATE_DEIR_EZ_ZOR
 		owns_entire_state_region = STATE_BAGHDAD
@@ -203,7 +203,7 @@ je_m01_abbasids = {
 		any_scope_state = {
 			count >= 6
 			AND = {
-				region = sr:region_persia
+				is_in_geographic_region = geographic_region_persia
 				owner = ROOT
 			}
 		}
@@ -213,10 +213,10 @@ je_m01_abbasids = {
 			is_character_alive = no
 		}
 		NOT = {
-			has_law = law_type:law_theocracy
+			has_law_or_variant = law_type:law_theocracy
 		}
 		NOT = {
-			has_law = law_type:law_monarchy
+			has_law_or_variant = law_type:law_monarchy
 		}
 	}
 	on_complete = {
@@ -237,5 +237,5 @@ je_m01_abbasids = {
 				}				
 			}
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }

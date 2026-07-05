@@ -11,7 +11,7 @@ je_buy_salas = {
 		}
 	}
 	weight = 100
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_buy_laho = {
@@ -28,16 +28,16 @@ je_buy_laho = {
 		}
 	}
 	weight = 100
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_yue_dict = {
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 	group = je_group_historical_content
 	complete = {
-		has_law = law_type:law_presidential_republic
+		has_law_or_variant = law_type:law_presidential_republic
 		OR = {
-			has_law = law_type:law_autocracy
+			has_law_or_variant = law_type:law_autocracy
 			has_law_or_variant = law_type:law_oligarchy
 		}
 	}
@@ -64,7 +64,7 @@ je_yue_dict = {
 			has_variable = yua_yua_authpot
 		}
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_yue_laws = {
@@ -112,7 +112,7 @@ je_yue_laws = {
 			remove_modifier = modifier_yua_mos
 		}
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_yue_ass = {
@@ -125,13 +125,13 @@ je_yue_ass = {
 	}
 	fail = {
 		NOT = {
-			has_law = law_type:law_state_atheism
+			has_law_or_variant = law_type:law_state_atheism
 		}
 	}
 	on_fail = {
 		remove_modifier = modifier_yua_int
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_yua_kor = {
@@ -155,7 +155,7 @@ je_yua_kor = {
 		}
 		remove_variable = yua_prot
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_auth_for = {
@@ -182,7 +182,7 @@ je_auth_for = {
 		}
 	}
 	weight = 100
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_ymnyua = {
@@ -215,7 +215,7 @@ je_ymnyua = {
 			}
 		}
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_sshyua = {
@@ -271,5 +271,5 @@ je_sshyua = {
 	}
 	progressbar = yes
 	weight = 9
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }

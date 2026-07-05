@@ -45,18 +45,18 @@
 				count = 5
 			}
 		}
-
 		create_military_formation = {
 			type = fleet
 			hq_region = sr:region_la_plata
-			name = "Marina Repubblicana"
+			name = South_America_Station
 
-			combat_unit = { 
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_BUENOS_AIRES
-				count = 10
+			ship = {
+				type = ship_type:ship_type_frigate
+				count = 5
 			}
 		}
+
+
 
 		create_military_formation = {
 			type = army
@@ -318,8 +318,23 @@
 			}
 		}
 		create_military_formation = {
+			type = fleet
+			hq_region = sr:region_central_america
+			name = "Flotta delle Indie Occidentali"
+
+			ship = {
+				type = ship_type:ship_type_ship_of_the_line
+				count = 2
+			}
+
+			ship = {
+				type = ship_type:ship_type_frigate
+				count = 2
+			}
+		}
+		create_military_formation = {
 			type = army
-			hq_region = sr:region_dixie
+			hq_region = sr:region_atlantic_coast
 			name = "Esercito di Difesa" 
 
 			combat_unit = {
@@ -335,21 +350,6 @@
 				count = 5
 			}
 		}
-		create_military_formation = {
-			type = fleet
-			hq_region = sr:region_dixie
-			name = "Flotta delle Antille"
 
-			combat_unit = { 
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_FLORIDA
-				count = 5
-			}
-			combat_unit = { 
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_MIRANDA
-				count = 5
-			}
-		}
 	}
 }

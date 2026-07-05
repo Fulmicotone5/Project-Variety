@@ -1,0 +1,1545 @@
+﻿# texture = filename								The icon that will show up in the Lens and on the map when this Focus is deployed
+# modifier											The effects this Decree has on its state
+# cost												The cost in AUT to set this Decree on a state (scales with Power Rank)
+# unlocking_technologies							A list of technologies, at least one of which must be known to the country to use this Focus
+# unlocking_laws									A list of laws, at least one which must be active in the country to use this Focus. If the country switches away from all unlocking laws the Focus will be removed
+# country_trigger									A trigger in country context that determines if the Decree is permitted/shown in interface or not; should invalidate the Decree on a weekly basis if found invalid
+# state_trigger										A trigger in state context that determines if the Decree is permitted or not; should invalidate the Decree on a weekly basis if found invalid
+# ai_weight											Scripted value which determines the chance of getting the Decree by AI
+
+REPLACE:decree_road_maintenance = {
+	texture = "gfx/interface/icons/decree/efficient_admin.dds"
+	modifier = {
+		state_tax_capacity_mult = 0.25
+		building_government_administration_throughput_add = 0.2 
+		state_tax_waste_add = -0.1
+		state_bureaucracy_population_base_cost_factor_mult = -0.1
+		state_infrastructure_from_population_add = 1
+		state_infrastructure_from_population_max_add = 20
+	}
+	unlocking_technologies = {
+		centralization
+	}
+	cost = 75
+
+	ai_weight = {
+		value = 25
+
+		if = {
+			limit = {
+				OR = {
+					relative_infrastructure < 1
+					AND = {
+						has_decree = decree_road_maintenance
+						relative_infrastructure < 1.25
+					}
+				}
+
+			}
+			add = 100
+		}
+
+		if = {
+			limit = {
+				OR = {
+					relative_infrastructure < 0.5
+					AND = {
+						has_decree = decree_road_maintenance
+						relative_infrastructure < 0.75
+					}
+				}
+
+			}
+			add = 100
+		}
+
+		if = {
+			limit = {
+				OR = {
+					relative_infrastructure < 0.25
+					AND = {
+						has_decree = decree_road_maintenance
+						relative_infrastructure < 0.5
+					}
+				}
+
+			}
+			add = 100
+		}
+
+		if = {
+			limit = {
+				OR = {
+					relative_infrastructure >= 1.25
+					AND = {
+						has_decree = decree_road_maintenance
+						relative_infrastructure >= 1.5
+					}
+				}
+
+			}
+			multiply = 0
+		}
+
+		# Place instances where content should ignore weights here
+		if = {
+			limit = {
+				scope:country = {
+					has_journal_entry = je_lands_of_anarchy
+				}
+				is_capital = yes
+			}
+			add = 1000
+		}		
+	}
+}
+REPLACE_OR_CREATE:decree_encourage_construction = {
+	texture = "gfx/interface/icons/decree/enc_con.dds"
+	modifier = {
+		building_construction_sector_throughput_add = 0.2
+		state_construction_mult = 0.1
+	}
+
+	unlocking_technologies = { 
+		urbanization
+	}
+	cost = 75
+
+	ai_weight = {
+		value = 25		
+		
+		if = {
+			limit = {
+				OR = {
+					relative_infrastructure < 1 
+					AND = {
+						has_decree = decree_road_maintenance
+						relative_infrastructure < 1.25
+					}
+				}
+			
+			}
+			add = 100
+		}
+
+		if = {
+			limit = {
+				OR = {
+					relative_infrastructure < 0.5
+					AND = {
+						has_decree = decree_road_maintenance
+						relative_infrastructure < 0.75
+					}
+				}
+			
+			}
+			add = 100
+		}
+
+		if = {
+			limit = {
+				OR = {
+					relative_infrastructure < 0.25 
+					AND = {
+						has_decree = decree_road_maintenance
+						relative_infrastructure < 0.5
+					}
+				}
+			
+			}
+			add = 100
+		}		
+		
+		if = {
+			limit = { 
+				OR = {
+					relative_infrastructure >= 1.25
+					AND = {
+						has_decree = decree_road_maintenance
+						relative_infrastructure >= 1.5
+					}
+				}
+			
+			}
+			multiply = 0
+		}			
+	}
+}
+
+REPLACE:decree_violent_suppression = {
+	texture = "gfx/interface/icons/decree/decree_violent_suppression.dds"
+
+	unlocking_technologies = {
+		standing_army
+	}
+
+	country_trigger = {
+		NOT = { has_law_or_variant = law_type:law_guaranteed_liberties }
+	}
+	state_trigger = {
+		turmoil >= 0.25
+
+		#Maybe? Not sure if it would be too punishing with new harvest conditions
+		NOT = { 
+			has_decree = decree_emergency_relief
+		}	
+	}
+
+	modifier = {
+		state_turmoil_effects_mult = -0.6
+		state_mortality_turmoil_mult = 0.02
+		state_radicals_from_political_movements_mult = -0.2
+	}
+	cost = 75
+	
+	ai_weight = {
+		value = 100
+
+		if = {
+			limit = {
+				turmoil >= 0.5
+
+			}
+			add = 100
+		}
+		if = {
+			limit = {
+				turmoil >= 0.75
+
+			}
+			add = 100
+		}
+		if = {
+			limit = {
+				scope:country = {
+					OR = {
+						has_strategy = ai_strategy_egalitarian_agenda
+						has_strategy = ai_strategy_progressive_agenda
+					}
+				}
+			}
+			multiply = 0.5
+		}
+	}
+}
+
+
+REPLACE:decree_emergency_relief = {
+	texture = "gfx/interface/icons/decree/decree_emergency_relief.dds"
+	unlocking_technologies = {
+		centralization
+	}
+
+	modifier = {
+		state_welfare_payments_add = 0.6
+		state_mortality_mult = -0.01
+		state_tax_collection_mult = -0.5
+		state_infrastructure_mult = 0.1
+		state_food_security_add = 0.1
+
+		#state_lower_strata_standard_of_living_add = 1.5
+		#state_peasants_education_access_add = 0.2
+	}
+
+	state_trigger = {
+		AND = {
+			OR = {
+				has_famine = yes
+				custom_tooltip = {
+					text = bd_any_starving_pops_tt
+					any_scope_pop = {
+						is_in_starvation = yes
+					}
+				}
+				devastation > 0.2
+				ROOT.state_region = {
+					OR = {
+						has_harvest_condition = flood
+						has_harvest_condition = wildfire
+						has_harvest_condition = drought
+						has_harvest_condition = disease_outbreak
+						has_harvest_condition = extreme_winds
+						has_harvest_condition = tsunami	
+						has_harvest_condition = potato_blight #VFM
+						has_harvest_condition = potato_blight_strong
+						has_harvest_condition = frost #More Natural Disasters
+						has_harvest_condition = hailstorm
+						has_harvest_condition = locust_swarm
+						has_harvest_condition = heatwave
+						has_harvest_condition = torrential_rains
+					}
+				}	
+			}
+			NOR = { #bd
+				has_decree = decree_violent_hostility
+				has_decree = decree_violent_suppression
+			}
+		}
+	}
+
+	cost = 50
+
+	ai_weight = {
+		value = 0
+
+		if = {
+			limit = {
+				average_sol < average_expected_sol
+			}
+			add = 100
+		}
+		if = {
+			limit = {
+				scope:country = {
+					OR = {
+						has_strategy = ai_strategy_nationalist_agenda
+						has_strategy = ai_strategy_reactionary_agenda
+					}
+				}
+			}
+			multiply = 0.5
+		}
+	}
+}
+
+REPLACE:decree_promote_social_mobility = {
+	texture = "gfx/interface/icons/decree/learning.dds"	
+
+	state_trigger = {
+		NOT = {
+			AND = {
+				owner ?= {
+					OR = {
+						has_law_or_variant = law_type:law_hindu_caste_enforced
+						has_law_or_variant = law_type:law_hindu_caste_codified
+					}
+				}
+				religion_percent_state = {
+					target = rel:hindu
+					value >= 0.3
+				}
+			}
+		}
+	}
+
+	modifier = {
+		state_education_access_add = 0.25
+		state_pop_qualifications_mult = 0.25
+		building_art_academy_throughput_add = 0.2
+		building_university_throughput_add = 0.2
+	} 
+	cost = 75
+	
+	ai_weight = {
+		value = 0
+
+		if = {
+			limit = {
+				literacy_rate < 0.25
+			}
+			add = 75
+		}
+		if = {
+			limit = {
+				literacy_rate < 0.5
+			}
+			add = 75
+		}
+		if = {
+			limit = {
+				literacy_rate < 0.75
+			}
+			add = 50
+		}
+		if = {
+			limit = {
+				scope:country = {
+					OR = {
+						has_strategy = ai_strategy_reactionary_agenda
+						has_strategy = ai_strategy_conservative_agenda
+						has_strategy = ai_strategy_maintain_mandate_of_heaven
+					}
+				}
+			}
+			multiply = 0.5
+		}
+		if = {
+			limit = {
+				scope:country = {
+					OR = {
+						has_strategy = ai_strategy_progressive_agenda
+						has_strategy = ai_strategy_egalitarian_agenda
+					}
+				}
+			}
+			multiply = 1.5
+		}
+
+		# Content overrides
+		if = {
+			limit = {
+				scope:country = {
+					has_journal_entry = je_lands_of_anarchy
+				}
+				is_capital = yes
+			}
+			add = 1000
+		}
+		if = {
+			limit = {
+				scope:country = { has_journal_entry = je_hawaii }
+			}
+			add = 1000
+		}
+		if = {
+			limit = {
+				scope:country = { has_journal_entry = je_portugal_regeneration_institutions }
+				literacy_rate < 0.5
+			}
+			add = 500
+		}
+	}
+}
+
+REPLACE_OR_CREATE:decree_worker_exploitation = {  
+	texture = "gfx/interface/icons/decree/exploiter.dds"		
+	
+	unlocking_technologies = {
+		colonization
+	}
+	
+	country_trigger = {
+		NOT = { has_law_or_variant = law_type:law_guaranteed_liberties }
+		is_player = yes
+	}
+
+	modifier = {
+		state_migration_pull_mult = -0.5
+		building_throughput_add = 0.2
+		state_unincorporated_starting_wages_mult = -0.2
+		building_subsistence_output_mult = -0.33
+		state_laborers_mortality_mult = 0.1
+		state_machinists_mortality_mult = 0.1
+		state_farmers_mortality_mult = 0.1
+		state_slaves_mortality_mult = 0.15
+		state_pop_qualifications_mult = -0.2
+		building_minimum_wage_mult = -0.25
+		building_working_conditions_mult = 0.15
+	}
+	cost = 75
+}
+
+REPLACE:decree_promote_national_values = {
+	texture = "gfx/interface/icons/decree/decree_promote_national_values.dds"
+	unlocking_technologies = {
+		nationalism
+	}
+
+	country_trigger = {
+		NOT = { has_law_or_variant = law_type:law_multicultural }
+	}
+
+	modifier = {
+		state_allow_assimilation_in_homeland_bool = yes # maybe this should be a distinct decree?
+		state_assimilation_mult = 1
+		state_conversion_mult = 1
+		state_radicalism_increases_violent_hostility_mult = 0.4
+		state_radicalism_increases_cultural_erasure_mult = 0.3
+		state_radicalism_increases_open_prejudice_mult = 0.2
+	}
+	cost = 75
+	
+	ai_weight = {
+		value = 0
+
+		if = {
+			limit = {
+				scope:country = {
+					NOR = {
+						has_law_or_variant = law_type:law_multicultural
+						has_law_or_variant = law_type:law_subjecthood
+					}
+				}
+				primary_cultures_percent_state <= 0.9
+			}
+
+			if = { # Colonies
+				limit = {
+					scope:country = {
+						is_not_in_geographic_region = geographic_region_europe
+						any_primary_culture = {
+							has_discrimination_trait_group = heritage_group_european
+						}
+						NOR = {
+							has_government_type = gov_chartered_company
+							c:BIC ?= this
+							c:DEI ?= this
+						}
+					}
+				}
+				add = 300
+			}
+			else_if = {
+				limit = {
+					scope:country = {
+						OR = {
+							has_strategy = ai_strategy_reactionary_agenda
+							has_strategy = ai_strategy_conservative_agenda
+							has_strategy = ai_strategy_maintain_mandate_of_heaven
+						}
+					}
+				}
+				add = 100
+			}
+			else_if = {
+				limit = {
+					scope:country = {
+						has_strategy = ai_strategy_nationalist_agenda
+					}
+				}
+				add = 200
+			}
+
+
+			if = {
+				limit = {
+					primary_cultures_percent_state <= 0.1
+				}
+				multiply = 5.0
+			}
+			else_if = {
+				limit = {
+					primary_cultures_percent_state <= 0.3
+				}
+				multiply = 3.0
+			}
+			else_if = {
+				limit = {
+					primary_cultures_percent_state <= 0.5
+				}
+				multiply = 2.0
+			}
+
+			if = {
+				limit = {
+					is_homeland_of_country_cultures = scope:country
+				}
+				multiply = 5.0
+			}
+		}
+
+		if = {
+			limit = {
+				OR = {
+					NOT = { scope:country = { has_law_or_variant = law_type:law_total_separation } }
+					AND = {
+						scope:country = { is_not_in_geographic_region = geographic_region_africa }
+						is_in_geographic_region = geographic_region_africa
+					}
+				}
+				religion_percent_state = {
+					target = scope:country.religion
+					value <= 0.9
+				}
+			}
+
+			if = {
+				limit = {
+					scope:country = {
+						has_strategy = ai_strategy_conservative_agenda
+					}
+				}
+				add = 50
+			}
+			else_if = {
+				limit = {
+					scope:country = {
+						has_strategy = ai_strategy_reactionary_agenda
+					}
+				}
+				add = 100
+			}
+
+			if = {
+				limit = {
+					scope:country = {
+						OR = {
+							has_law_or_variant = law_type:law_state_religion
+							has_law_or_variant = law_type:law_state_atheism
+						}
+					}
+				}
+				add = 50
+			}
+
+			if = {
+				limit = {
+					religion_percent_state = {
+						target = scope:country.religion
+						value <= 0.1
+					}
+				}
+				multiply = 5.0
+			}
+			else_if = {
+				limit = {
+					religion_percent_state = {
+						target = scope:country.religion
+						value <= 0.3
+					}
+				}
+				multiply = 3.0
+			}
+			else_if = {
+				limit = {
+					religion_percent_state = {
+						target = scope:country.religion
+						value <= 0.5
+					}
+				}
+				multiply = 2.0
+			}
+		}
+
+		if = {
+			limit = {
+				state_population < 100000
+			}
+			multiply = 0
+		}
+		else_if = {
+			limit = {
+				state_population > 300000
+			}
+			multiply = 2.0
+		}
+		else_if = {
+			limit = {
+				scope:country = {
+					OR = {
+						has_law = law_type:law_cultural_exclusion
+						has_law = law_type:law_freedom_of_conscience
+					}
+				}
+			}
+			multiply = 0.5
+		}
+		else_if = {
+			limit = {
+				scope:country = {
+					OR = {
+						has_law = law_type:law_multicultural
+						has_law = law_type:law_total_separation
+					}
+				}
+			}
+			multiply = 0.1
+		}
+
+		if = { # Deliberately placed here since we want the AI to ignore laws for this
+			limit = {
+				scope:country = {
+					has_journal_entry = je_south_american_national_identity
+				}
+			}
+			add = 500
+		}
+		if = {
+			limit = {
+				scope:country = {
+					has_journal_entry = je_vernacular_policy
+					has_variable = chose_assimilation_var
+				}
+				is_homeland_of_country_cultures = scope:country
+			}
+			add = 1000
+		}
+
+		if = {
+			limit = {
+				primary_cultures_percent_state > 0.9
+				religion_percent_state = {
+					target = scope:country.religion
+					value > 0.9
+				}
+			}
+			multiply = 0
+		}
+		else_if = {
+			limit = {
+				primary_cultures_percent_state > 0.5
+				religion_percent_state = {
+					target = scope:country.religion
+					value > 0.5
+				}
+			}
+			multiply = 0.5
+		}
+	}
+}
+
+REPLACE_OR_CREATE:decree_encourage_urban_services = {
+	texture = "gfx/interface/icons/decree/urban_services_decree.dds"
+	unlocking_technologies = {
+		urban_planning
+	}	
+		
+	modifier = {
+		building_trade_center_throughput_add = 0.2  
+		building_group_bg_service_throughput_add = 0.2
+		building_port_throughput_add = 0.2
+		building_railway_throughput_add = 0.2
+		building_power_plant_throughput_add = 0.2 
+	#	state_infrastructure_mult = 0.1
+	}
+	cost = 75
+	
+	ai_weight = {
+		value = 0
+		if = {
+			limit = {
+				any_scope_building = {
+					is_building_group = bg_urban_facilities
+				}
+			}
+			add = 50
+		}
+		if = {
+			limit = {
+				any_scope_building = {
+					is_building_group = bg_urban_facilities
+					count >= 3
+				}				
+			}
+			add = 50
+		}
+		if = {
+			limit = {
+				any_scope_building = {
+					is_building_group = bg_urban_facilities
+					count >= 5
+				}			
+			}
+			add = 50
+		}
+		if = {
+			limit = {
+				scope:country = {
+					has_strategy = ai_strategy_placate_population
+				}
+			}
+			multiply = 1.5
+		}		
+	}
+}
+REPLACE:decree_encourage_manufacturing_industry = {
+	texture = "gfx/interface/icons/decree/decree_encourage_manufacturing_industry.dds"
+	unlocking_technologies = {
+		manufacturies
+	}
+	modifier = {
+		building_group_bg_manufacturing_throughput_add = 0.3
+		building_construction_sector_throughput_add = 0.1
+	}
+	cost = 75
+	
+	ai_weight = {
+		value = 0
+		if = {
+			limit = {
+				any_scope_building = {
+					is_building_group = bg_manufacturing
+				}
+			}
+			add = 50
+		}
+		if = {
+			limit = {
+				any_scope_building = {
+					is_building_group = bg_manufacturing
+					count >= 3
+				}
+			}
+			add = 50
+		}
+		if = {
+			limit = {
+				any_scope_building = {
+					is_building_group = bg_manufacturing
+					count >= 5
+				}
+			}
+			add = 50
+		}
+		if = {
+			limit = {
+				scope:country = {
+					has_strategy = ai_strategy_industrial_expansion
+				}
+			}
+			multiply = 1.5
+		}
+	}
+}
+
+REPLACE:decree_encourage_agricultural_industry = {
+	texture = "gfx/interface/icons/decree/decree_encourage_agricultural_industry.dds"
+	unlocking_technologies = {
+		enclosure
+	}
+	modifier = {
+		building_group_bg_agriculture_throughput_add = 0.2
+		building_group_bg_plantations_throughput_add = 0.2
+		building_group_bg_ranching_throughput_add = 0.2
+	}
+	cost = 75
+	
+	ai_weight = {
+		value = 0
+		if = {
+			limit = {
+				any_scope_building = {
+					OR = {
+						is_building_group = bg_agriculture
+						is_building_group = bg_ranching
+						is_building_group = bg_plantations
+					}
+				}
+			}
+			add = 50
+		}
+		if = {
+			limit = {
+				any_scope_building = {
+					OR = {
+						is_building_group = bg_agriculture
+						is_building_group = bg_ranching
+						is_building_group = bg_plantations
+					}
+					count >= 3
+				}
+			}
+			add = 50
+		}
+		if = {
+			limit = {
+				any_scope_building = {
+					OR = {
+						is_building_group = bg_agriculture
+						is_building_group = bg_ranching
+						is_building_group = bg_plantations
+					}
+					count >= 5
+				}
+			}
+			add = 50
+		}
+		if = {
+			limit = {
+				scope:country = {
+					OR = {
+						has_strategy = ai_strategy_plantation_economy
+						has_strategy = ai_strategy_agricultural_expansion
+					}
+				}
+			}
+			multiply = 1.5
+		}
+	}
+}
+
+REPLACE:decree_encourage_resource_industry = {
+	texture = "gfx/interface/icons/decree/decree_encourage_resource_industry.dds"
+	unlocking_technologies = {
+		shaft_mining
+	}
+	modifier = {
+		building_group_bg_mining_throughput_add = 0.2
+		building_group_bg_logging_throughput_add = 0.2
+		building_group_bg_fishing_throughput_add = 0.2
+		building_group_bg_whaling_throughput_add = 0.2
+		building_group_bg_oil_extraction_throughput_add = 0.2
+		building_group_bg_rubber_throughput_add = 0.2
+	}
+	cost = 75
+	
+	ai_weight = {
+		value = 0
+		if = {
+			limit = {
+				any_scope_building = {
+					OR = {
+						is_building_group = bg_mining
+						is_building_group = bg_logging
+						is_building_group = bg_fishing
+						is_building_group = bg_whaling
+						is_building_group = bg_oil_extraction
+					}
+				}
+			}
+			add = 50
+		}
+		if = {
+			limit = {
+				any_scope_building = {
+					OR = {
+						is_building_group = bg_mining
+						is_building_group = bg_logging
+						is_building_group = bg_fishing
+						is_building_group = bg_whaling
+						is_building_group = bg_oil_extraction
+					}
+					count >= 3
+				}
+			}
+			add = 50
+		}
+		if = {
+			limit = {
+				any_scope_building = {
+					OR = {
+						is_building_group = bg_mining
+						is_building_group = bg_logging
+						is_building_group = bg_fishing
+						is_building_group = bg_whaling
+						is_building_group = bg_oil_extraction
+					}
+					count >= 5
+				}
+			}
+			add = 50
+		}
+		if = {
+			limit = {
+				scope:country = {
+					has_strategy = ai_strategy_resource_expansion
+				}
+			}
+			multiply = 1.5
+		}
+	}
+}
+
+REPLACE:decree_greener_grass_campaign = {
+	texture = "gfx/interface/icons/decree/decree_greener_grass_campaign.dds"
+	state_trigger = {
+		is_isolated_from_market = no
+	}
+	modifier = {
+		state_migration_pull_mult = 0.50
+		state_migration_pull_add = 20
+		state_migration_quota_mult = 0.05
+		state_expected_sol_mult = 0.05
+	}
+	unlocking_technologies = {
+		romanticism
+	}
+	cost = 75
+
+	ai_weight = {
+		value = 0
+		if = {
+			limit = {
+				any_scope_building = {
+					is_subsistence_building = yes
+					occupancy < 0.75
+				}
+			}
+			add = 50
+		}
+		if = {
+			limit = {
+				any_scope_building = {
+					is_subsistence_building = yes
+					occupancy < 0.5
+				}
+			}
+			add = 50
+		}
+		if = {
+			limit = {
+				any_scope_building = {
+					is_subsistence_building = yes
+					occupancy < 0.25
+				}
+			}
+			add = 50
+		}
+		if = {
+			limit = {
+				scope:country = {
+					has_journal_entry = je_the_algerian_departements
+				}
+				state_region = {
+					OR = {
+						this = s:STATE_ORAN
+						this = s:STATE_ALGIERS
+						this = s:STATE_CONSTANTINE
+					}
+				}
+				culture_percent_state = {
+					target = cu:french
+					value <= 0.25 # Bit of a buffer since we need 20%
+				}
+			}
+			add = 500
+		}
+		if = {
+			limit = {
+				is_incorporated = yes
+				any_scope_building = {
+					is_subsistence_building = yes
+					occupancy < 0.9
+				}
+				scope:country = {
+					OR = {
+						has_journal_entry = je_south_america_migration
+						has_journal_entry = je_central_america_migration
+						has_journal_entry = je_american_west_migration
+					}
+				}
+			}
+			add = 500
+		}
+		if = {
+			limit = {
+				is_incorporated = no
+				scope:country = { NOT = { has_law_or_variant = law_type:law_colonial_resettlement } } # Already gives a hefty migration bonus
+			}
+			multiply = 2.0
+		}
+		if = {
+			limit = {
+				state_unemployment_rate >= 0.1
+			}
+			multiply = 0
+		}
+	}
+}
+REPLACE_OR_CREATE:decree_penal_colony = {
+	texture = "gfx/interface/icons/decree/penal.dds"
+	country_trigger = {
+		is_player = yes
+		NOT = { 
+			has_law_or_variant = law_type:law_no_colonial_affairs
+		}
+		# any scope state is under colonization would function well, but increase checks perhaps not worth performance
+	}
+	state_trigger = {
+		is_isolated_from_market = no
+		is_under_colonization = yes
+	}
+	
+	modifier = {
+		state_colony_growth_creation_factor = 0.25 
+		state_colony_growth_speed_mult = 0.1
+		state_non_homeland_colony_growth_speed_mult = 0.1
+		state_migration_pull_mult = -0.5
+		building_throughput_add = -0.05
+		state_radicals_and_loyalists_from_sol_change_mult = 0.1
+		state_turmoil_effects_mult = -0.1
+
+	}
+	unlocking_technologies = { 
+		colonization
+	}
+	cost = 75
+}
+
+REPLACE:decree_enlistment_efforts = {
+	texture = "gfx/interface/icons/decree/decree_enlistment_efforts.dds"
+	modifier = {
+		state_conscription_rate_add = 0.05
+		building_training_rate_mult = 0.50
+	}
+	unlocking_technologies = {
+		mandatory_service
+	}
+	cost = 75
+	
+	ai_weight = {
+		value = 0
+
+		if = {
+			limit = {
+				any_scope_building = {
+					is_building_type = building_barrack
+					count >= 5
+				}
+			}
+			add = 25
+		}
+		if = {
+			limit = {
+				any_scope_building = {
+					is_building_type = building_barrack
+					count >= 10
+				}
+			}
+			add = 50
+		}
+		if = {
+			limit = {
+				any_scope_building = {
+					is_building_type = building_barrack
+					count >= 25
+				}
+			}
+			add = 75
+		}
+
+		if = {
+			limit = {
+				scope:country = {
+					OR = {
+						has_strategy = ai_strategy_unify_germany
+						has_strategy = ai_strategy_unify_italy
+						is_involved_in_journal_entry = je_peru_bolivia
+						has_journal_entry = je_war_of_the_confederation
+					}
+				}
+			}
+			multiply = 5.0
+		}
+
+		if = {
+			limit = {
+				any_scope_building = {
+					is_building_type = building_naval_base
+					count >= 25
+				}
+			}
+			add = 50
+		}
+		if = {
+			limit = {
+				any_scope_building = {
+					is_building_type = building_naval_base
+					count >= 50
+				}
+			}
+			add = 50
+		}
+	}
+}
+
+REPLACE:decree_establish_missions = {
+	texture = "gfx/interface/icons/decree/decree_establish_missions.dds"
+
+	unlocking_technologies = {
+		civilizing_mission
+	}
+
+	unlocking_laws = {
+		law_frontier_colonization
+		law_colonial_exploitation
+		law_colonial_resettlement
+	}
+
+	country_trigger = {
+		NOR = {
+			country_has_state_religion = rel:atheist
+			country_has_state_religion = rel:animist
+		}
+	}
+
+	state_trigger = {
+		is_incorporated = no
+		religion_percent_state = {
+			target = owner.religion
+			value < 0.8
+		}
+		owner ?= {
+			has_strategic_region_interest_tier = {
+				strategic_region = root.region
+				value >= interest_tier_effect_can_establish_missions_min_tier
+			}
+		}
+	}
+
+	modifier = {
+		state_colony_growth_speed_mult = 0.2
+		state_conversion_mult = 0.4
+		state_education_access_add = 0.1
+		state_food_security_add = 0.05
+		state_pop_support_movement_cultural_minority_mult = -0.25
+		state_migration_pull_mult = 0.1
+		state_radicalism_increases_violent_hostility_mult = -0.1
+		state_radicalism_increases_cultural_erasure_mult = -0.1
+		state_radicalism_increases_open_prejudice_mult = -0.1
+	}
+
+	cost = 75
+
+	ai_weight = {
+		value = 0
+
+		if = {
+			limit = {
+				OR = {
+					NOT = { scope:country = { has_law_or_variant = law_type:law_total_separation } }
+					AND = {
+						scope:country = { is_not_in_geographic_region = geographic_region_africa }
+						is_in_geographic_region = geographic_region_africa
+					}
+					scope:country = {
+						country_is_colonial_or_company = yes
+					}
+				}
+				religion_percent_state = {
+					target = scope:country.religion
+					value <= 0.9
+				}
+			}
+
+			if = {
+				limit = {
+					scope:country = {
+						has_strategy = ai_strategy_conservative_agenda
+					}
+				}
+				add = 50
+			}
+			else_if = {
+				limit = {
+					scope:country = {
+						has_strategy = ai_strategy_reactionary_agenda
+					}
+				}
+				add = 100
+			}
+
+			if = {
+				limit = {
+					scope:country = {
+						has_law_or_variant = law_type:law_state_religion
+					}
+				}
+				add = 50
+			}
+
+			if = {
+				limit = {
+					scope:country = {
+						has_journal_entry = je_scramble_for_africa
+					}
+					is_in_geographic_region = geographic_region_africa
+				}
+				add = 150
+
+				if = {
+					limit = {
+						is_under_colonization = yes
+					}
+					add = 150
+				}
+			}
+
+			if = {
+				limit = {
+					religion_percent_state = {
+						target = scope:country.religion
+						value <= 0.1
+					}
+				}
+				multiply = 5.0
+			}
+			else_if = {
+				limit = {
+					religion_percent_state = {
+						target = scope:country.religion
+						value <= 0.3
+					}
+				}
+				multiply = 3.0
+			}
+			else_if = {
+				limit = {
+					religion_percent_state = {
+						target = scope:country.religion
+						value <= 0.5
+					}
+				}
+				multiply = 2.0
+			}
+		}
+
+		if = {
+			limit = {
+				state_population > 300000
+			}
+			multiply = 2.0
+		}
+
+		if = {
+			limit = {
+				scope:country = {
+					OR = {
+						has_law = law_type:law_cultural_exclusion
+						has_law = law_type:law_freedom_of_conscience
+					}
+				}
+			}
+			multiply = 0.5
+		}
+		else_if = {
+			limit = {
+				scope:country = {
+					OR = {
+						has_law = law_type:law_multicultural
+						has_law = law_type:law_total_separation
+					}
+				}
+			}
+			multiply = 0.1
+		}
+
+		if = {
+			limit = {
+				scope:country = {
+					has_journal_entry = je_colonize_korea
+				}
+				is_in_geographic_region = geographic_region_korea
+			}
+			add = 500
+		}
+	}
+}
+
+REPLACE_OR_CREATE:decree_promote_health = {
+	texture = "gfx/interface/icons/decree/health.dds"
+	unlocking_technologies = {
+		pharmaceuticals
+	}		
+	modifier = { 
+		state_mortality_mult = -0.1
+		state_birth_rate_mult = 0.02
+		state_pollution_reduction_health_mult = -0.2
+		building_working_conditions_mult = -0.1
+	}
+	cost = 75
+	
+	ai_weight = {
+		value = 20
+
+		if = {
+			limit = {
+				state_population < 300000
+			}
+			multiply = 0.5
+		}		
+		if = {
+			limit = {
+				scope:country = {
+					OR = {
+						has_strategy = ai_strategy_reactionary_agenda
+						has_strategy = ai_strategy_conservative_agenda
+						has_strategy = ai_strategy_maintain_mandate_of_heaven
+					}
+				}
+			}
+			multiply = 0.5
+		}
+		if = {
+			limit = {
+				scope:country = {
+					OR = {
+						has_strategy = ai_strategy_progressive_agenda
+						has_strategy = ai_strategy_egalitarian_agenda
+					}
+				}
+			}
+			multiply = 1.5
+		}			
+	}
+}
+
+#do events about intelligentsia strenght to compensate for inability to modify here
+#make inverse decree? would be a little weird limited to flat pollution +gov cant will polluting practices in to existence
+REPLACE_OR_CREATE:decree_conservation = {
+	texture = "gfx/interface/icons/decree/conservation_decree.dds"
+	unlocking_technologies = {
+		philosophical_pragmatism
+	}		
+
+	state_trigger = {
+		state_region = {
+			pollution_amount > 75
+		}
+	}
+
+	modifier = {
+		state_pollution_generation_add = -500  #mult doesnt work riiiipppp	
+		state_pollution_reduction_health_mult = -0.20
+		building_throughput_add = -0.05
+	}
+
+	cost = 75
+	
+	ai_weight = 0
+}
+
+REPLACE_OR_CREATE:decree_disenfranchise = {
+	texture = "gfx/interface/icons/decree/civic_suppression_decree.dds"
+	unlocking_technologies = {
+	}		
+
+	country_trigger = {
+		NOT = {
+			has_law = law_type:law_protected_speech 
+		} 
+	}
+
+
+	modifier = {
+		state_pop_pol_str_mult = -0.125
+		state_pop_qualifications_mult = -0.1
+		state_radicalism_increases_violent_hostility_mult = 0.075
+		state_radicalism_increases_cultural_erasure_mult = 0.05
+		state_radicalism_increases_open_prejudice_mult = 0.025
+	}
+	cost = 100
+	
+	ai_weight = 0
+}
+
+#decree_red_tape = {  
+#	texture = "gfx/interface/icons/decree/efficient_admin.dds"
+#	modifier = {
+#		country_company_throughput_bonus_add = 0.1
+#		country_company_construction_efficiency_bonus_add = 0.1
+#	}
+#
+#	unlocking_technologies = { 
+#		corporate_charters
+#	}
+#
+#	valid = {
+#	}
+#
+#	cost = 75
+#
+#	ai_weight = {
+#		value = 0					
+#	}
+#}
+
+REPLACE_OR_CREATE:decree_violent_hostility = {
+	texture = "gfx/interface/icons/decree/violent_hostility_decree.dds"
+	unlocking_technologies = {
+		nationalism
+	}
+
+	country_trigger = {
+		is_player = yes
+		OR = {
+			has_law_or_variant = law_type:law_national_supremacy
+			has_law_or_variant = law_type:law_ethnostate
+		}
+	}
+
+	state_trigger = {
+		NOT = { 
+			has_decree = decree_emergency_relief
+		}
+		custom_tooltip = {
+			text = violent_hostility_decree_eligble_tt
+			owner = {
+				any_primary_culture = {
+					has_homeland = root
+				}
+			}
+			any_scope_culture = {
+				not = {
+					is_primary_culture_of = root.owner 
+					has_homeland = root
+				}
+			}
+		}
+		is_split_state = no
+	}
+
+	modifier = {
+		state_non_homeland_mortality_mult = 0.9
+		state_allow_assimilation_in_homeland_bool = yes
+		state_assimilation_mult = 0.15
+		state_conversion_mult = 0.15
+		state_migration_pull_mult = -0.5
+		state_turmoil_effects_mult = 0.6
+		state_radicals_and_loyalists_from_sol_change_mult = 0.2
+
+		#this approach no longer works without state_accepted_birth_rate_mult
+	#	state_assimilation_mult = 0.15
+	#	state_conversion_mult = 0.15
+	#	state_migration_pull_mult = -0.25
+	#    state_accepted_birth_rate_mult = 6.5
+	#    state_birth_rate_mult = -1
+    #    state_mortality_mult = 8
+	#	state_standard_of_living_add = -2
+	#	state_turmoil_effects_mult = 1
+	}
+	cost = 125
+}
+
+REPLACE_OR_CREATE:decree_bd_grant_autonomy = {
+	texture = "gfx/interface/icons/decree/decree_grant_autonomy.dds"
+
+	country_trigger = {
+		is_player = yes
+		NOR = {
+			has_law_or_variant = law_type:law_ethnostate
+			has_law_or_variant = law_type:law_outlawed_dissent
+		}
+	}
+
+	state_trigger = {
+		NOT = { 
+	#		has_decree = decree_emergency_relief
+		}
+	#	custom_tooltip = {
+	#		text =
+	#		any_scope_culture = {
+	#			not = {
+	#				is_primary_culture_of = root.owner 
+	#			}
+	#			has_homeland = root
+	#		}
+	#	}
+		#is_split_state = no
+		is_incorporated = yes
+		is_capital = no
+	}
+
+	modifier = {
+	#	country_bureaucracy_add = -10 #doesnt work
+
+		state_institution_impact_add = -0.5
+		state_bureaucracy_population_base_cost_factor_mult = -0.5
+		state_tax_collection_mult = -0.5
+		state_assimilation_mult = -0.5
+		state_conversion_mult = -0.5
+
+#		state_infrastructure_mult = -0.125
+		state_conscription_rate_mult = -0.75
+		state_expected_sol_mult = -0.165
+		state_pop_pol_str_mult = -0.33
+#		building_group_bg_manufacturing_throughput_add = -0.05
+		building_group_bg_government_throughput_add = -0.05
+		building_group_bg_military_throughput_add = -0.1
+	#	state_market_access_price_impact = -0.05 
+		building_group_bg_infrastructure_construction_efficiency_add = -0.1
+		building_group_bg_extraction_construction_efficiency_add = -0.1
+		building_group_bg_heavy_industry_construction_efficiency_add = -0.25
+		building_group_bg_light_industry_construction_efficiency_add = -0.15
+		building_group_bg_government_construction_efficiency_add = -0.15
+
+		state_radicalism_increases_violent_hostility_mult = -0.25
+		state_radicalism_increases_cultural_erasure_mult = -0.2
+		state_radicalism_increases_open_prejudice_mult = -0.15
+	}
+	cost = 0 #hmm
+
+	ai_weight = {
+		value = 0			
+	}
+}

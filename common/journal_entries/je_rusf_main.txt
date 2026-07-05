@@ -57,7 +57,7 @@
 			}
 		}
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_rusf_two = {
@@ -92,7 +92,7 @@ je_rusf_two = {
 			change_tag = RUI
 		}
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_ural_rep = {
@@ -125,7 +125,7 @@ je_ural_rep = {
 	}
 	progressbar = yes
 	weight = 10
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_tobolsk_rep = {
@@ -158,7 +158,7 @@ je_tobolsk_rep = {
 	}
 	progressbar = yes
 	weight = 9
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_tomsk_rep = {
@@ -191,7 +191,7 @@ je_tomsk_rep = {
 	}
 	progressbar = yes
 	weight = 10
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_irk_rep = {
@@ -224,7 +224,7 @@ je_irk_rep = {
 	}
 	progressbar = yes
 	weight = 10
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 je_mis_mil = {
 	icon = "gfx/interface/icons/event_icons/event_default.dds"
@@ -256,7 +256,7 @@ je_mis_mil = {
 	}
 	progressbar = yes
 	weight = 10
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 je_mis_ind = {
 	icon = "gfx/interface/icons/event_icons/event_default.dds"
@@ -288,7 +288,7 @@ je_mis_ind = {
 	}
 	progressbar = yes
 	weight = 10
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 je_backward_c = {
 	icon = "gfx/interface/icons/event_icons/event_skull.dds"
@@ -301,7 +301,7 @@ je_backward_c = {
 		}
 		literacy_rate >= 0.3
 		NOT = {
-			has_law = law_type:law_serfdom
+			has_law_or_variant = law_type:law_serfdom
 		}
 		has_technology_researched = railways
 		has_technology_researched = general_staff
@@ -313,5 +313,5 @@ je_backward_c = {
 			id = fm_rusf.12
 		}
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }

@@ -12,7 +12,7 @@
 		OR = {
 			has_export_priority_tariffs = g:grain
 			has_law_or_variant = law_type:law_isolationism
-			has_law = law_type:law_mercantilism
+			has_law_or_variant = law_type:law_mercantilism
 		}
 	}
 
@@ -25,7 +25,7 @@
 		OR = {
 			has_law_or_variant = law_type:law_isolationism
 			AND = {
-				has_law = law_type:law_mercantilism
+				has_law_or_variant = law_type:law_mercantilism
 				has_export_priority_tariffs = g:grain
 			}
 		}
@@ -36,7 +36,7 @@
 	}
 
 	complete = {
-		has_law = law_type:law_free_trade
+		has_law_or_variant = law_type:law_free_trade
 	}
 
 	on_complete = {
@@ -84,5 +84,5 @@
 	timeout = 3650
 
 	weight = 100
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }

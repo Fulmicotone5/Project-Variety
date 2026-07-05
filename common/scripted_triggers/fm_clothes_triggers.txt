@@ -218,7 +218,7 @@ japanese_imperial_clothes_trigger = {
 		is_ruler_of_own_country = yes
 		exists = home_country
 		home_country = {
-			has_law = law_type:law_monarchy
+			has_law_or_variant = law_type:law_monarchy
 		}
 		OR = {
 			AND = {
@@ -257,7 +257,7 @@ chinese_imperial_clothes_trigger = {
 		is_ruler_of_own_country = yes
 		exists = home_country
 		home_country = {
-			has_law = law_type:law_monarchy
+			has_law_or_variant = law_type:law_monarchy
 		}
 		OR = {
 			culture = {
@@ -283,7 +283,7 @@ chinese_manchu_queue_hairstyle_character_trigger = {
 						has_culture = cu:manchu
 					}
 					NOT = {
-						has_law = law_type:law_multicultural
+						has_law_or_variant = law_type:law_multicultural
 					}
 				}
 				culture = {
@@ -322,7 +322,7 @@ chinese_manchu_queue_hairstyle_pops_trigger = {
 						has_culture = cu:manchu
 					}
 					NOT = {
-						has_law = law_type:law_multicultural
+						has_law_or_variant = law_type:law_multicultural
 					}
 				}
 				culture = {
@@ -359,8 +359,8 @@ chinese_court_clothes_trigger = {
 				}
 				home_country = {
 					OR = {
-						has_law = law_type:law_monarchy
-						has_law = law_type:law_theocracy
+						has_law_or_variant = law_type:law_monarchy
+						has_law_or_variant = law_type:law_theocracy
 					}
 				}
 			}
@@ -420,7 +420,7 @@ arabic_fez_trigger = {
 			exists = c:M01
 			c:M01 = this
 			c:M01 = {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 			}
 		}
 	}
@@ -435,14 +435,14 @@ arabic_military_fez_pop_trigger = {
 					exists = c:M01
 					c:M01 = this
 					c:M01 = {
-						has_law = law_type:law_monarchy
+						has_law_or_variant = law_type:law_monarchy
 					}
 				}
 				home_country = {
 					exists = c:TOR
 					c:TOR = this
 					c:TOR = {
-						has_law = law_type:law_monarchy
+						has_law_or_variant = law_type:law_monarchy
 					}
 				}
 
@@ -450,7 +450,7 @@ arabic_military_fez_pop_trigger = {
 					exists = c:MUR
 					c:MUR = this
 					c:MUR = {
-						has_law = law_type:law_monarchy
+						has_law_or_variant = law_type:law_monarchy
 					}
 				}
 			}
@@ -462,14 +462,14 @@ arabic_military_fez_pop_trigger = {
 						exists = c:TOR
 						c:TOR = this
 						c:TOR = {
-							has_law = law_type:law_monarchy
+							has_law_or_variant = law_type:law_monarchy
 						}
 					}
 					home_country = {
 						exists = c:M01
 						c:M01 = this
 						c:M01 = {
-							has_law = law_type:law_monarchy
+							has_law_or_variant = law_type:law_monarchy
 						}
 					}
 				}
@@ -498,14 +498,14 @@ arabic_clothes_trigger = {
 						exists = c:TOR
 						c:TOR = this
 						c:TOR = {
-							has_law = law_type:law_monarchy
+							has_law_or_variant = law_type:law_monarchy
 						}
 					}
 					home_country = {
 						exists = c:M01
 						c:M01 = this
 						c:M01 = {
-							has_law = law_type:law_monarchy
+							has_law_or_variant = law_type:law_monarchy
 						}
 					}
 				}
@@ -756,7 +756,7 @@ monarchy_clothes_trigger = {
 			is_heir_of_own_country = yes
 		}
 		owner = {
-			has_law = law_type:law_monarchy
+			has_law_or_variant = law_type:law_monarchy
 		}
 	}
 }
@@ -768,7 +768,7 @@ republic_clothes_trigger = {
 		is_ruler_of_own_country = yes
 		home_country = {
 			NOT = {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 			}
 		}
 	}
@@ -976,7 +976,7 @@ south_american_clothes_character_trigger = {
 				has_discrimination_trait = iberian_culture_group
 			}
 			NOT = {
-				has_discrimination_trait = roman_culture
+				has_discrimination_trait = heritage_roman
 			}
 		}
 	}
@@ -996,7 +996,7 @@ south_american_clothes_pop_trigger = {
 				has_discrimination_trait = iberian_culture_group
 			}
 			NOT = {
-				has_discrimination_trait = roman_culture
+				has_discrimination_trait = heritage_roman
 			}
 		}
 	}

@@ -7,7 +7,7 @@ je_mon_main = {
 	complete = {
 		owns_entire_state_region = STATE_BEIJING
 		NOT = {
-				 has_law = law_type:law_monarchy
+				 has_law_or_variant = law_type:law_monarchy
 			}
 	}
 	on_complete = {
@@ -15,7 +15,7 @@ je_mon_main = {
 			id = fm_mon.2
 		}
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 je_gelugpa = {
 	texture = "gfx/interface/icons/religion_icons/gelugpa.dds"
@@ -35,5 +35,5 @@ je_gelugpa = {
 			id = fm_mon.1
 		}
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }

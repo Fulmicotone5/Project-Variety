@@ -75,30 +75,28 @@
 			}
 			save_scope_as = soliman_gen
 		}
-
 		create_military_formation = {
 			type = fleet
-			hq_region = sr:region_arabic
+			hq_region = sr:region_nile_basin
 			name = "Mamluk Navy"
 
-		
-			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_LOWER_EGYPT
-				count = 10
+			ship = {
+				type = ship_type:ship_type_ship_of_the_line
+				count = 1
 			}
 
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_LOWER_EGYPT
-				count = 10
+			ship = {
+				type = ship_type:ship_type_frigate
+				count = 5
 			}
 		}
+
+
 	}
 	c:SOK ?= {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_niger
+			hq_region = sr:region_west_africa
 			name = "Sokoto Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -127,7 +125,7 @@
 	c:BYR ?= {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_niger
+			hq_region = sr:region_west_africa
 			name = "Kanem Bornu Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -167,11 +165,26 @@
 				count = 10
 			}
 		}
+		create_military_formation = {
+			type = fleet
+			hq_region = sr:region_southern_europe
+			name = Mediterranean_Station
+
+			ship = {
+				type = ship_type:ship_type_ship_of_the_line
+				count = 2
+			}
+
+			ship = {
+				type = ship_type:ship_type_frigate
+				count = 3
+			}
+		}
 	}
 	c:MU1 ?= {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_niger
+			hq_region = sr:region_west_africa
 			name = "Company Army"
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -182,6 +195,23 @@
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_CEYLON
 				count = 10
+			}
+		}
+		create_military_formation = {
+			type = fleet
+			hq_region = sr:region_west_africa
+			name = "Company Fleet"
+
+			ship = {
+				type = ship_type:ship_type_ship_of_the_line
+				state_region = s:STATE_CEYLON
+				count = 1
+			}
+
+			ship = {
+				type = ship_type:ship_type_frigate
+				state_region = s:STATE_CEYLON
+				count = 9
 			}
 		}
 	}

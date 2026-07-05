@@ -412,19 +412,19 @@ neighbor_events.5 = {
 
 	trigger = {
 		OR = {
-			has_law = law_type:law_outlawed_dissent
-			has_law = law_type:law_censorship
+			has_law_or_variant = law_type:law_outlawed_dissent
+			has_law_or_variant = law_type:law_censorship
 		}
 		any_neighbouring_state = {
 			owner = {
-				has_law = law_type:law_protected_speech
+				has_law_or_variant = law_type:law_protected_speech
 			}
 		}
 	}
 
 	immediate = {
 		save_neighbor_with_state = {
-			CRITERIA = "has_law = law_type:law_protected_speech"
+			CRITERIA = "has_law_or_variant = law_type:law_protected_speech"
 		}
 	}
 
@@ -491,13 +491,13 @@ neighbor_events.6 = {
 	duration = 6
 
 	trigger = {
-		has_law = law_type:law_protected_speech
+		has_law_or_variant = law_type:law_protected_speech
 		any_neighbouring_state = {
 			owner = {
 				is_at_war = no
 				OR = {
-					has_law = law_type:law_outlawed_dissent
-					has_law = law_type:law_censorship
+					has_law_or_variant = law_type:law_outlawed_dissent
+					has_law_or_variant = law_type:law_censorship
 				}
 			}
 		}
@@ -509,8 +509,8 @@ neighbor_events.6 = {
 				owner = {
 					is_at_war = no
 					OR = {
-						has_law = law_type:law_outlawed_dissent
-						has_law = law_type:law_censorship
+						has_law_or_variant = law_type:law_outlawed_dissent
+						has_law_or_variant = law_type:law_censorship
 					}
 				}
 			}

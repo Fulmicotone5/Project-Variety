@@ -161,7 +161,7 @@ fm_kor.3 = {
 		random_scope_state = {
 			limit = {
 				is_incorporated = yes
-				has_building = building_military_shipyard
+				has_building = building_shipyard
 			}
 			save_scope_as = building_state
 		}

@@ -6408,14 +6408,26 @@ STATES = {
 		
 		add_homeland = cu:japanese
 	}
-	s:STATE_CHUBU = {
+	s:STATE_TOKAI = {
 		create_state = {
 			country = c:ODA
 			owned_provinces = { xADE732 }
 		}
 		create_state = {
 			country = c:GJO
-			owned_provinces = { x9B2E00 x4942D2 xC02285 x5E87A1 xB050C0 x205FEB xD12DC5}
+			owned_provinces = { x9B2E00 x4942D2 xC02285 x5E87A1 x205FEB}
+		}
+		create_state = {
+			country = c:KKW
+			owned_provinces = { x31D0C0 x3050C0 x910F25 }
+		}
+		
+		add_homeland = cu:japanese
+	}
+	s:STATE_HOKUSHINETSU = {
+		create_state = {
+			country = c:GJO
+			owned_provinces = { xB050C0 xD12DC5 }
 		}
 		create_state = {
 			country = c:SAB
@@ -6429,11 +6441,7 @@ STATES = {
 			country = c:NAA
 			owned_provinces = { xE76E8F xEF90C0 x779089 }
 		}
-		create_state = {
-			country = c:KKW
-			owned_provinces = { x31D0C0 x3050C0 x910F25 }
-		}
-		
+
 		add_homeland = cu:japanese
 	}
 	s:STATE_KANSAI = {

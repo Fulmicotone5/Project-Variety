@@ -24,7 +24,7 @@
 			id = fm_cth.3
 		}
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 je_cth_main = {
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
@@ -37,7 +37,7 @@ je_cth_main = {
 			id = fm_cth.5
 		}
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_cth_pho = {
@@ -66,5 +66,5 @@ je_cth_pho = {
 			id = fm_cth.7
 		}
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }

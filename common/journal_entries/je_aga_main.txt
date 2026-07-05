@@ -26,7 +26,7 @@
 			remove_modifier = diplomatic_plays_blocked
 		}
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 
 	on_monthly_pulse = {
 		effect = {
@@ -52,13 +52,13 @@ je_aga_reforms = {
 	timeout = 1500
 
 	complete = {
-		has_law = law_type:law_slavery_banned
+		has_law_or_variant = law_type:law_slavery_banned
 		OR = {
 			NOT = {
 				has_law_or_variant = law_type:law_oligarchy
 			}
 			NOT = {
-				has_law = law_type:law_hereditary_bureaucrats
+				has_law_or_variant = law_type:law_hereditary_bureaucrats
 			}
 		}
 	}
@@ -88,7 +88,7 @@ je_aga_reforms = {
 	transferable = yes
 
 	weight = 10000
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_aga_centr = {
@@ -97,17 +97,17 @@ je_aga_centr = {
 	group = je_group_historical_content
 
 	complete = {
-		has_law = law_type:law_secret_police
-		has_law = law_type:law_appointed_bureaucrats
+		has_law_or_variant = law_type:law_secret_police
+		has_law_or_variant = law_type:law_appointed_bureaucrats
 		OR = {
-			has_law = law_type:law_censorship
-			has_law = law_type:law_outlawed_dissent
+			has_law_or_variant = law_type:law_censorship
+			has_law_or_variant = law_type:law_outlawed_dissent
 		}
 
 		OR = {
-			has_law = law_type:law_racial_segregation
-			has_law = law_type:law_cultural_exclusion
-			has_law = law_type:law_multicultural
+			has_law_or_variant = law_type:law_racial_segregation
+			has_law_or_variant = law_type:law_cultural_exclusion
+			has_law_or_variant = law_type:law_multicultural
 		}
 	}
 	fail = {
@@ -130,5 +130,5 @@ je_aga_centr = {
 	transferable = yes
 
 	weight = 10000
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }

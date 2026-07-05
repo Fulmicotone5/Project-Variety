@@ -20,7 +20,7 @@
 	}
 	progressbar = yes
 	weight = 10000
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_atz_tribes = {
@@ -39,7 +39,7 @@ je_atz_tribes = {
 	}
 	transferable = no
 	weight = 5000
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_atz_gold = {
@@ -97,14 +97,14 @@ je_atz_gold = {
 	}
 	transferable = no
 	weight = 5000
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_atz_auto = {
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 	group = je_group_historical_content
 	complete = {
-		has_law = law_type:law_autocracy
+		has_law_or_variant = law_type:law_autocracy
 		owns_entire_state_region = STATE_POTOSI
 		owns_entire_state_region = STATE_TARAPACA
 	}
@@ -117,7 +117,7 @@ je_atz_auto = {
 	}
 	transferable = no
 	weight = 5000
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_atz_army = {
@@ -125,7 +125,7 @@ je_atz_army = {
 	group = je_group_historical_content
 	complete = {
 		NOT = {
-			has_law = law_type:law_peasant_levies
+			has_law_or_variant = law_type:law_peasant_levies
 		}
 		army_size >= 40
 		has_technology_researched = line_infantry
@@ -154,7 +154,7 @@ je_atz_army = {
 	}
 	transferable = no
 	weight = 5000
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_qullasuyu = {
@@ -173,7 +173,7 @@ je_qullasuyu = {
 			add = 1
 		}
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_chinchasuyu = {
@@ -195,5 +195,5 @@ je_chinchasuyu = {
 	}
 	transferable = no
 	weight = 5000
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }

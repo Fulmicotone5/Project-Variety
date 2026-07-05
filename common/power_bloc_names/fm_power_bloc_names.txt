@@ -8,7 +8,7 @@ fm_pb1 = {
 }
 fm_pb11 = {
 	trigger = {
-		has_law = law_type:law_monarchy
+		has_law_or_variant = law_type:law_monarchy
 		any_primary_culture = {
 				has_discrimination_trait = carthagenian
 			}
@@ -83,7 +83,7 @@ fm_pb10 = {
 				has_discrimination_trait = iberian_culture_group
 			}
 	}
-	has_law = law_type:law_monarchy
+	has_law_or_variant = law_type:law_monarchy
 }
 fm_pb11 = {
 	trigger = {
@@ -168,7 +168,7 @@ fm_pb20 = {
 }
 fm_pb201 = {
 	trigger = {
-		has_law = law_type:law_monarchy
+		has_law_or_variant = law_type:law_monarchy
 		any_primary_culture = {
 			this = cu:bulgarian
 		}

@@ -5,7 +5,7 @@
 		c:BAY = {
 			is_subject_of = ROOT
 		}
-		has_law = law_type:law_monarchy
+		has_law_or_variant = law_type:law_monarchy
 	}
 	on_complete = {
 		trigger_event = {
@@ -15,7 +15,7 @@
 	fail = {
 		game_date > 1837.6.1
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_disf_king = {
@@ -24,11 +24,11 @@ je_disf_king = {
 	complete = {
 		cultural_acceptance_base = { target = cu:south_german value >= 40 }
 		OR = {
-			has_law = law_type:law_freedom_of_conscience
-			has_law = law_type:law_total_separation
+			has_law_or_variant = law_type:law_freedom_of_conscience
+			has_law_or_variant = law_type:law_total_separation
 		}
 		NOT = {
-			has_law = law_type:law_serfdom
+			has_law_or_variant = law_type:law_serfdom
 		}
 		owns_entire_state_region = STATE_AUSTRIA
 		owns_entire_state_region = STATE_STYRIA
@@ -45,10 +45,10 @@ je_disf_king = {
 	}
 	fail = {
 		NOT = {
-			has_law = law_type:law_monarchy
+			has_law_or_variant = law_type:law_monarchy
 		}
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_boh_mor = {
@@ -65,10 +65,10 @@ je_boh_mor = {
 		owns_entire_state_region = STATE_DELVIDEK
 		owns_entire_state_region = STATE_AUSTRIA
 		owns_entire_state_region = STATE_STYRIA
-		has_law = law_type:law_ethnostate
+		has_law_or_variant = law_type:law_ethnostate
 		OR = {
-			has_law = law_type:law_freedom_of_conscience
-			has_law = law_type:law_total_separation
+			has_law_or_variant = law_type:law_freedom_of_conscience
+			has_law_or_variant = law_type:law_total_separation
 		}
 	}
 	on_complete = {
@@ -168,7 +168,7 @@ je_boh_mor = {
 			}
 		}
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_boh_dan = {
@@ -186,18 +186,18 @@ je_boh_dan = {
 		owns_entire_state_region = STATE_SOUTHERN_TRANSYLVANIA
 		owns_entire_state_region = STATE_NORTHERN_TRANSYLVANIA
 		NOT = {
-			has_law = law_type:law_serfdom
+			has_law_or_variant = law_type:law_serfdom
 		}
 		OR = {
-			has_law = law_type:law_freedom_of_conscience
-			has_law = law_type:law_total_separation
+			has_law_or_variant = law_type:law_freedom_of_conscience
+			has_law_or_variant = law_type:law_total_separation
 		}
 		cultural_acceptance_base = { target = cu:south_german value >= 40 }
 		has_technology_researched = pan-nationalism
 	}
 	fail = {
 		NOT = {
-			has_law = law_type:law_monarchy
+			has_law_or_variant = law_type:law_monarchy
 		}
 	}
 	on_complete = {
@@ -265,7 +265,7 @@ je_boh_dan = {
 			}
 		}
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_ethno_boh = {
@@ -273,14 +273,14 @@ je_ethno_boh = {
 	group = je_group_historical_content
 	fail = {
 		NOT = {
-			has_law = law_type:law_ethnostate
+			has_law_or_variant = law_type:law_ethnostate
 		}
 	}
 	on_fail = {
 		remove_modifier = modifier_mor_one
 		remove_modifier = modifier_mor_two
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_carp = {
@@ -300,7 +300,7 @@ je_carp = {
 	on_complete = {
 		add_modifier = modifier_carp
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_ari_rev = {
@@ -315,7 +315,7 @@ je_ari_rev = {
 			id = fm_bavaria.4
 		}
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_bav_nat = {
@@ -323,14 +323,14 @@ je_bav_nat = {
 	group = je_group_historical_content
 	complete = {
 		has_technology_researched = nationalism
-		has_law = law_type:law_monarchy
+		has_law_or_variant = law_type:law_monarchy
 	}
 	on_complete = {
 		trigger_event = {
 			id = fm_bavaria.5
 		}
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_sgf = {
@@ -349,7 +349,7 @@ je_sgf = {
 			id = fm_bavaria.6
 		}
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_ger_conf = {
@@ -377,5 +377,5 @@ je_ger_conf = {
 			id = fm_bavaria.7
 		}
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }

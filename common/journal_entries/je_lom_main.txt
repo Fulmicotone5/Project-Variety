@@ -9,7 +9,7 @@
 			id = lombard.2
 		}
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_lom_ita = {
@@ -68,7 +68,7 @@ je_lom_ita = {
 			}
 		}
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_lom_rome = {
@@ -82,5 +82,5 @@ je_lom_rome = {
 			id = lombard.4
 		}
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }

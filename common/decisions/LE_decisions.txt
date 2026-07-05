@@ -17,14 +17,14 @@
 		any_scope_state = {
 			count >= 14
 			AND = {
-				region = sr:region_balkans
+				is_in_geographic_region = geographic_region_balkans_old
 				owner = ROOT
 			}
 		}
 		any_scope_state = {
 			count >= 6
 			AND = {
-				region = sr:region_anatolia
+				is_in_geographic_region = geographic_region_anatolia_old
 				owner = ROOT
 			}
 		}
@@ -32,20 +32,20 @@
 		any_scope_state = {
 			count >= 9
 			AND = {
-				region = sr:region_italy
+				is_in_geographic_region = geographic_region_italy_old
 				owner = ROOT
 			}
 		}
 		any_scope_state = {
 			count >= 4
 			AND = {
-				region = sr:region_north_africa
+				is_in_geographic_region = geographic_region_north_africa_old
 				owner = ROOT
 			}
 		}
-		has_law = law_type:law_monarchy
+		has_law_or_variant = law_type:law_monarchy
 		OR = {
-			has_law = law_type:law_autocracy
+			has_law_or_variant = law_type:law_autocracy
 			has_law_or_variant = law_type:law_oligarchy
 		}
 		has_technology_researched = pan-nationalism
@@ -77,9 +77,9 @@ revive_the_carolingian_empire = {
 		}
 	}
 	possible = {
-		has_law = law_type:law_monarchy
+		has_law_or_variant = law_type:law_monarchy
 		OR = {
-			has_law = law_type:law_autocracy
+			has_law_or_variant = law_type:law_autocracy
 			has_law_or_variant = law_type:law_oligarchy
 		}
 		has_technology_researched = pan-nationalism
@@ -90,42 +90,42 @@ revive_the_carolingian_empire = {
 		any_scope_state = {
 			count >= 8
 			AND = {
-				region = sr:region_north_germany
+				is_in_geographic_region = geographic_region_north_germany_old
 				owner = ROOT
 			}
 		}
 		any_scope_state = {
 			count >= 14
 			AND = {
-				region = sr:region_south_germany
+				is_in_geographic_region = geographic_region_south_germany_old
 				owner = ROOT
 			}
 		}
 		any_scope_state = {
 			count >= 6
 			AND = {
-				region = sr:region_rhine
+				is_in_geographic_region = geographic_region_rhine_old
 				owner = ROOT
 			}
 		}
 		any_scope_state = {
 			count >= 10
 			AND = {
-				region = sr:region_france
+				is_in_geographic_region = geographic_region_france_old
 				owner = ROOT
 			}
 		}
 		any_scope_state = {
 			count >= 4
 			AND = {
-				region = sr:region_italy
+				is_in_geographic_region = geographic_region_italy_old
 				owner = ROOT
 			}
 		}
 		any_scope_state = {
 			count >= 5
 			AND = {
-				region = sr:region_occitania
+				is_in_geographic_region = geographic_region_occitania_old
 				owner = ROOT
 			}
 		}
@@ -515,8 +515,8 @@ shinto_decision = {
 		ig:ig_devout = {
 			is_marginal = no
 		}
-		has_law = law_type:law_monarchy
-		NOT = { has_law = law_type:law_state_religion }
+		has_law_or_variant = law_type:law_monarchy
+		NOT = { has_law_or_variant = law_type:law_state_religion }
 	}
 
 	when_taken = {

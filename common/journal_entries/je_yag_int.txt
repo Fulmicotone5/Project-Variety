@@ -32,7 +32,7 @@
 			id = fm_yag.3
 		}
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 
 	on_monthly_pulse = {
 		effect = {
@@ -92,7 +92,7 @@ je_yag_int_thura = {
 			id = fm_yag.4
 		}
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 
 	on_monthly_pulse = {
 		effect = {
@@ -164,7 +164,7 @@ je_yag_int_nuy = {
 			id = fm_yag.5
 		}
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 
 	on_monthly_pulse = {
 		effect = {
@@ -222,7 +222,7 @@ je_yag_int_nor = {
 			id = fm_yag.6
 		}
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 
 	on_monthly_pulse = {
 		effect = {

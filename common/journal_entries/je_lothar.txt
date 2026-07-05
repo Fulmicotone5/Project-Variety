@@ -46,14 +46,14 @@
 			annex_with_incorporation = c:DKE
 		}
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_a_kingdom_for_ngp = {
 	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
 	group = je_group_historical_content
 	complete = {
-		has_law = law_type:law_monarchy
+		has_law_or_variant = law_type:law_monarchy
 		owns_entire_state_region = STATE_MECKLENBURG
 		owns_entire_state_region = STATE_POMERANIA
 		owns_entire_state_region = STATE_BRANDENBURG
@@ -74,8 +74,8 @@ je_a_kingdom_for_ngp = {
 				state_region = s:STATE_BRANDENBURG
 				turmoil >= 0.3
 			}
-			has_law = law_type:law_parliamentary_republic
-			has_law = law_type:law_presidential_republic
+			has_law_or_variant = law_type:law_parliamentary_republic
+			has_law_or_variant = law_type:law_presidential_republic
 		}
 	}
 	on_fail = {
@@ -83,7 +83,7 @@ je_a_kingdom_for_ngp = {
 			id = lotharingia.11
 		}
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_charlemagne_legacy = {
@@ -101,9 +101,9 @@ je_charlemagne_legacy = {
 		}
 	}
 	complete = {
-		has_law = law_type:law_monarchy
+		has_law_or_variant = law_type:law_monarchy
 		OR = {
-			has_law = law_type:law_autocracy
+			has_law_or_variant = law_type:law_autocracy
 			has_law_or_variant = law_type:law_oligarchy
 		}
 		owns_entire_state_region = STATE_POSEN
@@ -141,16 +141,16 @@ je_charlemagne_legacy = {
 			id = lotharingia.11
 		}
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_gods_chosen_people = {
 	icon = "gfx/interface/icons/event_icons/tutorial_icon.dds"
 	group = je_group_historical_content
 	complete = {
-		has_law = law_type:law_theocracy
-		has_law = law_type:law_state_religion
-		has_law = law_type:law_ethnostate
+		has_law_or_variant = law_type:law_theocracy
+		has_law_or_variant = law_type:law_state_religion
+		has_law_or_variant = law_type:law_ethnostate
 	}
 	on_complete = {
 		trigger_event = {
@@ -159,7 +159,7 @@ je_gods_chosen_people = {
 	}
 	fail = {
 		NOT = {
-			has_law = law_type:law_theocracy
+			has_law_or_variant = law_type:law_theocracy
 		}
 	}
 	on_fail = {
@@ -167,7 +167,7 @@ je_gods_chosen_people = {
 			id = fall_theo.1
 		}
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_our_land = {
@@ -191,7 +191,7 @@ je_our_land = {
 		owns_entire_state_region = STATE_AUSTRIA
 		owns_entire_state_region = STATE_STYRIA
 		owns_entire_state_region = STATE_SLOVENIA
-		has_law = law_type:law_theocracy
+		has_law_or_variant = law_type:law_theocracy
 	}
 	on_complete = {
 		change_tag = AEF
@@ -199,7 +199,7 @@ je_our_land = {
 			id = lotharingia.7
 		}
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_a_divine_mission = {
@@ -208,9 +208,9 @@ je_a_divine_mission = {
 	fail = {
 		NOT = {
 			AND = {
-				has_law = law_type:law_theocracy
-				has_law = law_type:law_state_religion
-				has_law = law_type:law_ethnostate
+				has_law_or_variant = law_type:law_theocracy
+				has_law_or_variant = law_type:law_state_religion
+				has_law_or_variant = law_type:law_ethnostate
 			}
 		}
 	}
@@ -218,16 +218,16 @@ je_a_divine_mission = {
 		remove_modifier = modifier_loth_four
 		remove_modifier = modifier_loth_five
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_restore_the_ce = {
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	group = je_group_historical_content
 	complete = {
-		has_law = law_type:law_monarchy
+		has_law_or_variant = law_type:law_monarchy
 		OR = {
-			has_law = law_type:law_autocracy
+			has_law_or_variant = law_type:law_autocracy
 			has_law_or_variant = law_type:law_oligarchy
 		}
 		has_technology_researched = pan-nationalism
@@ -238,42 +238,42 @@ je_restore_the_ce = {
 		any_scope_state = {
 			count >= 8
 			AND = {
-				region = sr:region_north_germany
+				is_in_geographic_region = geographic_region_north_germany
 				owner = ROOT
 			}
 		}
 		any_scope_state = {
 			count >= 14
 			AND = {
-				region = sr:region_south_germany
+				is_in_geographic_region = geographic_region_south_germany
 				owner = ROOT
 			}
 		}
 		any_scope_state = {
 			count >= 6
 			AND = {
-				region = sr:region_rhine
+				is_in_geographic_region = geographic_region_rhine
 				owner = ROOT
 			}
 		}
 		any_scope_state = {
 			count >= 10
 			AND = {
-				region = sr:region_france
+				is_in_geographic_region = geographic_region_france
 				owner = ROOT
 			}
 		}
 		any_scope_state = {
 			count >= 5
 			AND = {
-				region = sr:region_italy
+				is_in_geographic_region = geographic_region_italy
 				owner = ROOT
 			}
 		}
 		any_scope_state = {
 			count >= 5
 			AND = {
-				region = sr:region_occitania
+				is_in_geographic_region = geographic_region_occitania
 				owner = ROOT
 			}
 		}
@@ -289,7 +289,7 @@ je_restore_the_ce = {
 			is_character_alive = no
 		}
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_ngf = {
@@ -312,7 +312,7 @@ je_ngf = {
 			id = lotharingia.13
 		}
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_german_conf = {
@@ -322,7 +322,7 @@ je_german_conf = {
 		any_scope_state = {
 			count >= 9
 			AND = {
-				region = sr:region_north_germany
+				is_in_geographic_region = geographic_region_north_germany
 				owner = ROOT
 			}
 		}
@@ -344,5 +344,5 @@ je_german_conf = {
 			id = lotharingia.14
 		}
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }

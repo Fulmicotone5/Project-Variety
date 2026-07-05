@@ -300,7 +300,7 @@ fm_yag.7 = {
 		any_scope_state = {
 			count >= 0
 			AND = {
-				region = sr:region_oceania
+				is_in_geographic_region = geographic_region_oceania
 				owner = c:SAU
 			}
 		}

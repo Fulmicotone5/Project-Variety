@@ -353,7 +353,7 @@ AFS = {
         priority = 100
         trigger = {
             exists= c:AFS
-            scope:actor ?= { capital ?= { region = sr:region_congo } }
+            scope:actor ?= { capital ?= { is_in_geographic_region = geographic_region_congo_old } }
         }
     }
     flag_definition = {
@@ -363,7 +363,7 @@ AFS = {
         priority = 100
         trigger = {
             exists= c:AFS
-            scope:actor ?= { capital ?= { region = sr:region_southern_africa } }
+            scope:actor ?= { capital ?= { is_in_geographic_region = geographic_region_southern_africa_old } }
         }
     }
     flag_definition = {
@@ -373,7 +373,7 @@ AFS = {
         priority = 100
         trigger = {
             exists= c:AFS
-            scope:actor ?= { capital ?= { region = sr:region_zanj } }
+            scope:actor ?= { capital ?= { is_in_geographic_region = geographic_region_zanj_old } }
         }
     }
     flag_definition = {
@@ -383,7 +383,7 @@ AFS = {
         priority = 100
         trigger = {
             exists= c:AFS
-            scope:actor ?= { capital ?= { region = sr:region_nile_basin } }
+            scope:actor ?= { capital ?= { is_in_geographic_region = geographic_region_nile_basin_old } }
         }
     }
     flag_definition = {
@@ -396,8 +396,8 @@ AFS = {
             scope:actor ?= {
             	capital ?= {
             		OR = {
-            			region = sr:region_senegal
-            			region = sr:region_niger
+            			is_in_geographic_region = geographic_region_senegal_old
+            			is_in_geographic_region = geographic_region_niger_old
             		} 
             	}
             }
@@ -410,7 +410,7 @@ AFS = {
         priority = 100
         trigger = {
             exists= c:AFS
-            scope:actor ?= { capital ?= { region = sr:region_north_africa } }
+            scope:actor ?= { capital ?= { is_in_geographic_region = geographic_region_north_africa_old } }
         }
     }
 }
@@ -1476,11 +1476,11 @@ BRZ = { # Brazil
 		priority = 20
 		trigger = {
 			scope:actor ?= {
-				has_law = law_type:law_presidential_republic
-				has_law = law_type:law_landed_voting
+				has_law_or_variant = law_type:law_presidential_republic
+				has_law_or_variant = law_type:law_landed_voting
 				OR = {
-					has_law = law_type:law_tenant_farmers
-					has_law = law_type:law_serfdom
+					has_law_or_variant = law_type:law_tenant_farmers
+					has_law_or_variant = law_type:law_serfdom
 				}
 			}
 		}
@@ -2088,7 +2088,7 @@ CHU = { # China
 		priority = 5
 		trigger = { 
 			scope:actor ?= {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 			}
 		}
 	}
@@ -2107,8 +2107,8 @@ CHU = { # China
 		priority = 20
 		trigger = { 
 			scope:actor ?= {
-			has_law = law_type:law_monarchy
-			has_law = law_type:law_autocracy
+			has_law_or_variant = law_type:law_monarchy
+			has_law_or_variant = law_type:law_autocracy
 			}
 		}
 	}	
@@ -2966,7 +2966,7 @@ CAH = { # Cahokia
 		trigger = {
 			exists = scope:actor
 			scope:actor ?= {
-				has_law = law_type:law_theocracy
+				has_law_or_variant = law_type:law_theocracy
 			}
 		}
 	}
@@ -2977,8 +2977,8 @@ CAH = { # Cahokia
 		trigger = {
 			exists = scope:actor
 			scope:actor ?= {
-				has_law = law_type:law_laissez_faire
-				has_law = law_type:law_anarchy
+				has_law_or_variant = law_type:law_laissez_faire
+				has_law_or_variant = law_type:law_anarchy
 			}
 		}
 	}
@@ -3424,7 +3424,7 @@ FRU = { # France
 		coa_with_overlord_canton = FRA_subject			
 		trigger = {	
 			scope:actor ?= {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 			}
 		}
 	}
@@ -3488,7 +3488,7 @@ FRE = { #
 		coa_with_overlord_canton = FRA_subject			
 		trigger = {	
 			scope:actor ?= {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 			}
 		}
 	}
@@ -6901,7 +6901,7 @@ RAA = { # Russia
 		trigger = { 
 			coa_def_communist_flag_trigger = yes
 			scope:actor ?= {
-				has_law = law_type:law_technocracy
+				has_law_or_variant = law_type:law_technocracy
 			}
 		}
 	}
@@ -7364,7 +7364,7 @@ PEU = { # Peru
 		trigger = { 
 			coa_def_republic_flag_trigger = yes
 			scope:actor ?= {
-				has_law = law_type:law_universal_suffrage
+				has_law_or_variant = law_type:law_universal_suffrage
 			}
 		}
 	}	
@@ -7384,7 +7384,7 @@ PEU = { # Peru
 		trigger = {
 			coa_def_republic_flag_trigger = yes
 			scope:actor ?= {
-				NOT = { has_law = law_type:law_universal_suffrage }
+				NOT = { has_law_or_variant = law_type:law_universal_suffrage }
 			}
 		}
 	}	
@@ -7428,7 +7428,7 @@ NPU = { # Peru
 		trigger = { 
 			coa_def_republic_flag_trigger = yes
 			scope:actor ?= {
-				has_law = law_type:law_universal_suffrage
+				has_law_or_variant = law_type:law_universal_suffrage
 			}
 		}
 	}	
@@ -7447,7 +7447,7 @@ NPU = { # Peru
 		trigger = {
 			coa_def_republic_flag_trigger = yes
 			scope:actor ?= {
-				NOT = { has_law = law_type:law_universal_suffrage }
+				NOT = { has_law_or_variant = law_type:law_universal_suffrage }
 			}
 		}
 	}		
@@ -7949,7 +7949,7 @@ RUS = { # Russia
 		trigger = { 
 			coa_def_communist_flag_trigger = yes
 			scope:actor ?= {
-				has_law = law_type:law_technocracy
+				has_law_or_variant = law_type:law_technocracy
 			}
 		}
 	}
@@ -8490,11 +8490,11 @@ ESP = { # Spain
 		trigger = { 
 			exists = scope:actor
 			scope:actor ?= {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 				OR = {
-				has_law = law_type:law_autocracy
+				has_law_or_variant = law_type:law_autocracy
 				has_law_or_variant = law_type:law_oligarchy
-				has_law = law_type:law_landed_voting
+				has_law_or_variant = law_type:law_landed_voting
 				}
 				was_formed_from = KAA
 			}
@@ -9067,7 +9067,7 @@ UKR = { # Ukraine
 		trigger = {
 			exists = scope:actor
 			scope:actor ?= {
-				has_law = law_type:law_anarchy
+				has_law_or_variant = law_type:law_anarchy
 			}
 		}
 	}
@@ -9827,10 +9827,10 @@ URA = {
 		trigger = { 
 			scope:actor ?= {
 				OR = {
-					has_law = law_type:law_presidential_republic
-					has_law = law_type:law_parliamentary_republic
+					has_law_or_variant = law_type:law_presidential_republic
+					has_law_or_variant = law_type:law_parliamentary_republic
 				}
-				has_law = law_type:law_technocracy
+				has_law_or_variant = law_type:law_technocracy
 			}
 		}
 	}
@@ -10077,7 +10077,7 @@ NCR = { # North Carolina
 			game_date < 1862.1.1 
 			NOT = {
 				scope:actor ?= {
-					has_law = law_type:law_slavery_banned
+					has_law_or_variant = law_type:law_slavery_banned
 				}
 			}
 		}
@@ -10089,7 +10089,7 @@ NCR = { # North Carolina
 			game_date >= 1862.1.1 
 			NOT = {
 				scope:actor ?= {
-					has_law = law_type:law_slavery_banned
+					has_law_or_variant = law_type:law_slavery_banned
 				}
 			}
 		}
@@ -10373,7 +10373,7 @@ GRO = { # Germany
 			scope:actor = {
 				OR = {
 					AND = {
-						has_law = law_type:law_single_party_state
+						has_law_or_variant = law_type:law_single_party_state
 						py:communist_party = {
 							any_member = {
 								is_in_government = yes
@@ -10382,8 +10382,8 @@ GRO = { # Germany
 					}
 					AND = {
 						OR = {
-							has_law = law_type:law_autocracy
-							has_law = law_type:law_technocracy
+							has_law_or_variant = law_type:law_autocracy
+							has_law_or_variant = law_type:law_technocracy
 							has_law_or_variant = law_type:law_oligarchy
 						}
 						any_scope_character = {
@@ -10398,13 +10398,13 @@ GRO = { # Germany
 					AND = {
 						is_subject = yes
 						overlord = {
-							has_law = law_type:law_council_republic
+							has_law_or_variant = law_type:law_council_republic
 						}
 					}
 				}
 				OR = {
-					has_law = law_type:law_parliamentary_republic
-					has_law = law_type:law_presidential_republic
+					has_law_or_variant = law_type:law_parliamentary_republic
+					has_law_or_variant = law_type:law_presidential_republic
 				}
 			}
 		}
@@ -10426,7 +10426,7 @@ GRO = { # Germany
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 				was_formed_from = PRO
 			}
 		}
@@ -10561,10 +10561,10 @@ URA = {
 		trigger = { 
 			scope:actor ?= {
 				OR = {
-					has_law = law_type:law_presidential_republic
-					has_law = law_type:law_parliamentary_republic
+					has_law_or_variant = law_type:law_presidential_republic
+					has_law_or_variant = law_type:law_parliamentary_republic
 				}
-				has_law = law_type:law_technocracy
+				has_law_or_variant = law_type:law_technocracy
 			}
 		}
 	}
@@ -10657,11 +10657,11 @@ NGF = { # North Germany
 		trigger = { 
 			exists = scope:actor
 			scope:actor ?= {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 				OR = {
-				has_law = law_type:law_autocracy
+				has_law_or_variant = law_type:law_autocracy
 				has_law_or_variant = law_type:law_oligarchy
-				has_law = law_type:law_landed_voting
+				has_law_or_variant = law_type:law_landed_voting
 				}
 				has_variable = pomvar
 			}
@@ -11299,10 +11299,10 @@ USU = {	# United States of America
 		trigger = { 
 			scope:actor ?= {
 				OR = {
-					has_law = law_type:law_presidential_republic
-					has_law = law_type:law_parliamentary_republic
+					has_law_or_variant = law_type:law_presidential_republic
+					has_law_or_variant = law_type:law_parliamentary_republic
 				}
-				has_law = law_type:law_technocracy
+				has_law_or_variant = law_type:law_technocracy
 			}
 		}
 	}
@@ -12691,8 +12691,8 @@ S91 = { # Scotland
 		trigger = { 
 			scope:actor ?= {
 				OR = {
-					has_law = law_type:law_technocracy
-					has_law = law_type:law_parliamentary_republic
+					has_law_or_variant = law_type:law_technocracy
+					has_law_or_variant = law_type:law_parliamentary_republic
 				}
 			}
 		}

@@ -19,7 +19,7 @@ control_effects = {
 			}
 			if = {
 				limit = {
-					has_law = law_type:law_autocracy
+					has_law_or_variant = law_type:law_autocracy
 				}
 				change_variable = {
 					name = control_var
@@ -31,7 +31,7 @@ control_effects = {
 			}
 			if = {
 				limit = {
-					has_law = law_type:law_single_party_state
+					has_law_or_variant = law_type:law_single_party_state
 				}
 				change_variable = {
 					name = control_var
@@ -43,7 +43,7 @@ control_effects = {
 			}
 			if = {
 				limit = {
-					has_law = law_type:law_technocracy
+					has_law_or_variant = law_type:law_technocracy
 				}
 				change_variable = {
 					name = control_var
@@ -55,7 +55,7 @@ control_effects = {
 			}
 			if = {
 				limit = {
-					has_law = law_type:law_corporate_state
+					has_law_or_variant = law_type:law_corporate_state
 				}
 				change_variable = {
 					name = control_var
@@ -67,7 +67,7 @@ control_effects = {
 			}
 			if = {
 				limit = {
-					has_law = law_type:law_monarchy
+					has_law_or_variant = law_type:law_monarchy
 				}
 				change_variable = {
 					name = control_var
@@ -79,7 +79,7 @@ control_effects = {
 			}
 			if = {
 				limit = {
-					has_law = law_type:law_theocracy
+					has_law_or_variant = law_type:law_theocracy
 				}
 				change_variable = {
 					name = control_var
@@ -91,7 +91,7 @@ control_effects = {
 			}
 			if = {
 				limit = {
-					has_law = law_type:law_interventionism
+					has_law_or_variant = law_type:law_interventionism
 				}
 				change_variable = {
 					name = control_var
@@ -103,7 +103,7 @@ control_effects = {
 			}
 			if = {
 				limit = {
-					has_law = law_type:law_agrarianism
+					has_law_or_variant = law_type:law_agrarianism
 				}
 				change_variable = {
 					name = control_var
@@ -115,7 +115,7 @@ control_effects = {
 			}
 			if = {
 				limit = {
-					has_law = law_type:law_industry_banned
+					has_law_or_variant = law_type:law_industry_banned
 				}
 				change_variable = {
 					name = control_var
@@ -127,7 +127,7 @@ control_effects = {
 			}
 			if = {
 				limit = {
-					has_law = law_type:law_extraction_economy
+					has_law_or_variant = law_type:law_extraction_economy
 				}
 				change_variable = {
 					name = control_var
@@ -139,7 +139,7 @@ control_effects = {
 			}
 			if = {
 				limit = {
-					has_law = law_type:law_command_economy
+					has_law_or_variant = law_type:law_command_economy
 				}
 				change_variable = {
 					name = control_var
@@ -151,7 +151,7 @@ control_effects = {
 			}
 			if = {
 				limit = {
-					has_law = law_type:law_state_capitalism
+					has_law_or_variant = law_type:law_state_capitalism
 				}
 				change_variable = {
 					name = control_var
@@ -175,7 +175,7 @@ control_effects = {
 			}
 			if = {
 				limit = {
-					has_law = law_type:law_landed_voting
+					has_law_or_variant = law_type:law_landed_voting
 				}
 				change_variable = {
 					name = control_var
@@ -256,7 +256,7 @@ control_effects = {
 						institution = institution_home_affairs
 						value = 1
 					}
-					has_law = law_type:law_national_guard
+					has_law_or_variant = law_type:law_national_guard
 					}
 				}
 				change_variable = {
@@ -274,7 +274,7 @@ control_effects = {
 						institution = institution_home_affairs
 						value = 2
 					}
-					has_law = law_type:law_national_guard
+					has_law_or_variant = law_type:law_national_guard
 					}
 				}
 				change_variable = {
@@ -292,7 +292,7 @@ control_effects = {
 						institution = institution_home_affairs
 						value = 3
 					}
-					has_law = law_type:law_national_guard
+					has_law_or_variant = law_type:law_national_guard
 					}
 				}
 				change_variable = {
@@ -310,7 +310,7 @@ control_effects = {
 						institution = institution_home_affairs
 						value = 4
 					}
-					has_law = law_type:law_national_guard
+					has_law_or_variant = law_type:law_national_guard
 					}
 				}
 				change_variable = {
@@ -328,7 +328,7 @@ control_effects = {
 						institution = institution_home_affairs
 						value = 5
 					}
-					has_law = law_type:law_national_guard
+					has_law_or_variant = law_type:law_national_guard
 					}
 				}
 				change_variable = {
@@ -346,7 +346,7 @@ control_effects = {
 						institution = institution_home_affairs
 						value = 1
 					}
-					has_law = law_type:law_secret_police
+					has_law_or_variant = law_type:law_secret_police
 					}
 				}
 				change_variable = {
@@ -364,7 +364,7 @@ control_effects = {
 						institution = institution_home_affairs
 						value = 2
 					}
-					has_law = law_type:law_secret_police
+					has_law_or_variant = law_type:law_secret_police
 					}
 				}
 				change_variable = {
@@ -382,7 +382,7 @@ control_effects = {
 						institution = institution_home_affairs
 						value = 3
 					}
-					has_law = law_type:law_secret_police
+					has_law_or_variant = law_type:law_secret_police
 					}
 				}
 				change_variable = {
@@ -400,7 +400,7 @@ control_effects = {
 						institution = institution_home_affairs
 						value = 4
 					}
-					has_law = law_type:law_secret_police
+					has_law_or_variant = law_type:law_secret_police
 					}
 				}
 				change_variable = {
@@ -418,7 +418,7 @@ control_effects = {
 						institution = institution_home_affairs
 						value = 5
 					}
-					has_law = law_type:law_secret_police
+					has_law_or_variant = law_type:law_secret_police
 					}
 				}
 				change_variable = {
@@ -437,7 +437,7 @@ control_effects = {
 						institution = institution_police
 						value = 1
 					}
-					has_law = law_type:law_local_police
+					has_law_or_variant = law_type:law_local_police
 					}
 				}
 				change_variable = {
@@ -455,7 +455,7 @@ control_effects = {
 						institution = institution_police
 						value = 2
 					}
-					has_law = law_type:law_local_police
+					has_law_or_variant = law_type:law_local_police
 					}
 				}
 				change_variable = {
@@ -473,7 +473,7 @@ control_effects = {
 						institution = institution_police
 						value = 3
 					}
-					has_law = law_type:law_local_police
+					has_law_or_variant = law_type:law_local_police
 					}
 				}
 				change_variable = {
@@ -491,7 +491,7 @@ control_effects = {
 						institution = institution_police
 						value = 4
 					}
-					has_law = law_type:law_local_police
+					has_law_or_variant = law_type:law_local_police
 					}
 				}
 				change_variable = {
@@ -509,7 +509,7 @@ control_effects = {
 						institution = institution_police
 						value = 5
 					}
-					has_law = law_type:law_local_police
+					has_law_or_variant = law_type:law_local_police
 					}
 				}
 				change_variable = {
@@ -527,7 +527,7 @@ control_effects = {
 						institution = institution_police
 						value = 1
 					}
-					has_law = law_type:law_dedicated_police
+					has_law_or_variant = law_type:law_dedicated_police
 					}
 				}
 				change_variable = {
@@ -545,7 +545,7 @@ control_effects = {
 						institution = institution_police
 						value = 2
 					}
-					has_law = law_type:law_dedicated_police
+					has_law_or_variant = law_type:law_dedicated_police
 					}
 				}
 				change_variable = {
@@ -563,7 +563,7 @@ control_effects = {
 						institution = institution_police
 						value = 3
 					}
-					has_law = law_type:law_dedicated_police
+					has_law_or_variant = law_type:law_dedicated_police
 					}
 				}
 				change_variable = {
@@ -581,7 +581,7 @@ control_effects = {
 						institution = institution_police
 						value = 4
 					}
-					has_law = law_type:law_dedicated_police
+					has_law_or_variant = law_type:law_dedicated_police
 					}
 				}
 				change_variable = {
@@ -599,7 +599,7 @@ control_effects = {
 						institution = institution_police
 						value = 5
 					}
-					has_law = law_type:law_dedicated_police
+					has_law_or_variant = law_type:law_dedicated_police
 					}
 				}
 				change_variable = {
@@ -617,7 +617,7 @@ control_effects = {
 						institution = institution_police
 						value = 1
 					}
-					has_law = law_type:law_militarized_police
+					has_law_or_variant = law_type:law_militarized_police
 					}
 				}
 				change_variable = {
@@ -635,7 +635,7 @@ control_effects = {
 						institution = institution_police
 						value = 2
 					}
-					has_law = law_type:law_militarized_police
+					has_law_or_variant = law_type:law_militarized_police
 					}
 				}
 				change_variable = {
@@ -653,7 +653,7 @@ control_effects = {
 						institution = institution_police
 						value = 3
 					}
-					has_law = law_type:law_militarized_police
+					has_law_or_variant = law_type:law_militarized_police
 					}
 				}
 				change_variable = {
@@ -671,7 +671,7 @@ control_effects = {
 						institution = institution_police
 						value = 4
 					}
-					has_law = law_type:law_militarized_police
+					has_law_or_variant = law_type:law_militarized_police
 					}
 				}
 				change_variable = {
@@ -689,7 +689,7 @@ control_effects = {
 						institution = institution_police
 						value = 5
 					}
-					has_law = law_type:law_militarized_police
+					has_law_or_variant = law_type:law_militarized_police
 					}
 				}
 				change_variable = {
@@ -703,7 +703,7 @@ control_effects = {
 
 			if = {
 				limit = {
-					has_law = law_type:law_outlawed_dissent
+					has_law_or_variant = law_type:law_outlawed_dissent
 				}
 				change_variable = {
 					name = control_var
@@ -715,7 +715,7 @@ control_effects = {
 			}
 			if = {
 				limit = {
-					has_law = law_type:law_censorship
+					has_law_or_variant = law_type:law_censorship
 				}
 				change_variable = {
 					name = control_var
@@ -727,7 +727,7 @@ control_effects = {
 			}
 			if = {
 				limit = {
-					has_law = law_type:law_migration_controls
+					has_law_or_variant = law_type:law_migration_controls
 				}
 				change_variable = {
 					name = control_var
@@ -739,7 +739,7 @@ control_effects = {
 			}
 			if = {
 				limit = {
-					has_law = law_type:law_closed_borders
+					has_law_or_variant = law_type:law_closed_borders
 				}
 				change_variable = {
 					name = control_var
@@ -763,7 +763,7 @@ control_effects = {
 			}
 			if = {
 				limit = {
-					has_law = law_type:law_ethnostate
+					has_law_or_variant = law_type:law_ethnostate
 				}
 				change_variable = {
 					name = control_var
@@ -775,7 +775,7 @@ control_effects = {
 			}
 			if = {
 				limit = {
-					has_law = law_type:law_racial_segregation
+					has_law_or_variant = law_type:law_racial_segregation
 				}
 				change_variable = {
 					name = control_var
@@ -787,7 +787,7 @@ control_effects = {
 			}
 			if = {
 				limit = {
-					has_law = law_type:law_cultural_exclusion
+					has_law_or_variant = law_type:law_cultural_exclusion
 				}
 				change_variable = {
 					name = control_var
@@ -799,7 +799,7 @@ control_effects = {
 			}
 			if = {
 				limit = {
-					has_law = law_type:law_multicultural
+					has_law_or_variant = law_type:law_multicultural
 				}
 				change_variable = {
 					name = control_var
@@ -1071,7 +1071,7 @@ control_effects = {
 			}
 			if = {
 				limit = {
-					has_law = law_type:law_anarchy
+					has_law_or_variant = law_type:law_anarchy
 				}
 				change_variable = {
 					name = control_var

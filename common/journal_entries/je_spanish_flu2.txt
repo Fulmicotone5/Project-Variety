@@ -243,7 +243,6 @@ je_spanish_flu2 = {
 				remove_modifier = modifier_bplague8
 			}
 		}
-		}
 		if = {
 			limit = { 
 				has_modifier = modifier_stateof
@@ -313,7 +312,8 @@ je_spanish_flu2 = {
 			name = spanish_flu_over2
 		}
 	}
+}
 
 	weight = 100
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }

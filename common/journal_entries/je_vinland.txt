@@ -43,7 +43,7 @@
 		}
 	}
 	weight = 100
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 king_vin = {
@@ -60,9 +60,9 @@ king_vin = {
 		owns_entire_state_region = STATE_MICHIGAN
 		owns_entire_state_region = STATE_MINNESOTA
 		owns_entire_state_region = STATE_NEW_BRUNSWICK
-		has_law = law_type:law_monarchy
+		has_law_or_variant = law_type:law_monarchy
 		or = {
-			has_law = law_type:law_autocracy
+			has_law_or_variant = law_type:law_autocracy
 			has_law_or_variant = law_type:law_oligarchy
 		}
 		has_technology_researched = pan-nationalism
@@ -75,7 +75,7 @@ king_vin = {
 			change_tag = HKV
 		}
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_north_empire_vin = {
@@ -91,7 +91,7 @@ je_north_empire_vin = {
 		owns_entire_state_region = STATE_HOME_COUNTIES
 		owns_entire_state_region = STATE_WESTERN_NORWAY
 		owns_entire_state_region = STATE_EASTERN_NORWAY
-		has_law = law_type:law_monarchy
+		has_law_or_variant = law_type:law_monarchy
 	}
 	fail = {
 		custom_tooltip = {
@@ -107,5 +107,5 @@ je_north_empire_vin = {
 			change_tag = HKN
 		}
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }

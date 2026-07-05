@@ -11,7 +11,7 @@
 	}
 	fail = {
 		NOT = {
-			has_law = law_type:law_monarchy
+			has_law_or_variant = law_type:law_monarchy
 		}
 	}
 
@@ -49,7 +49,7 @@
 	transferable = yes
 
 	weight = 10000
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_kor_autoc = {
@@ -60,7 +60,7 @@ je_kor_autoc = {
 	complete = {
 		OR = {
 			has_law_or_variant = law_type:law_oligarchy
-			has_law = law_type:law_autocracy
+			has_law_or_variant = law_type:law_autocracy
 		}
 	}
 
@@ -87,7 +87,7 @@ je_kor_autoc = {
 	transferable = yes
 
 	weight = 10000
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_kor_rac = {
@@ -97,8 +97,8 @@ je_kor_rac = {
 
 	complete = {
 		OR = {
-			has_law = law_type:law_local_police
-			has_law = law_type:law_dedicated_police
+			has_law_or_variant = law_type:law_local_police
+			has_law_or_variant = law_type:law_dedicated_police
 		}
 		institution_investment_level = {
 			institution = institution_police
@@ -132,7 +132,7 @@ je_kor_rac = {
 	transferable = yes
 
 	weight = 10000
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_kor_manc = {
@@ -165,7 +165,7 @@ je_kor_manc = {
 	transferable = yes
 
 	weight = 10000
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_kor_age = {
@@ -198,7 +198,7 @@ je_kor_age = {
 	transferable = yes
 
 	weight = 10000
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_kor_navy = {
@@ -223,7 +223,7 @@ je_kor_navy = {
 	transferable = yes
 
 	weight = 10000
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_kor_rail = {
@@ -263,6 +263,6 @@ je_kor_rail = {
 		}
 	}
 	weight = 100
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 

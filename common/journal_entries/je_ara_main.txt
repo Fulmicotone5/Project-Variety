@@ -15,7 +15,7 @@
 			add_claim = ROOT
 		}
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 winds_of_ch_kaa = {
@@ -29,7 +29,7 @@ winds_of_ch_kaa = {
 			id = fm_kaa.2
 		}
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_ara_esp = {
@@ -43,7 +43,7 @@ je_ara_esp = {
 		owns_entire_state_region = STATE_EXTREMADURA
 		owns_entire_state_region = STATE_LOWER_ANDALUSIA
 		owns_entire_state_region = STATE_UPPER_ANDALUSIA
-		has_law = law_type:law_monarchy
+		has_law_or_variant = law_type:law_monarchy
 	}
 	on_complete = {
 		change_tag = ESP
@@ -52,7 +52,7 @@ je_ara_esp = {
 		}
 	}
 	weight = 100
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_ara_occ = {
@@ -64,10 +64,10 @@ je_ara_occ = {
 		owns_entire_state_region = STATE_GUYENNE
 		owns_entire_state_region = STATE_AUVERGNE_LIMOUSIN
 		NOT = {
-			has_law = law_type:law_national_supremacy
+			has_law_or_variant = law_type:law_national_supremacy
 		}
 		NOT = {
-			has_law = law_type:law_ethnostate
+			has_law_or_variant = law_type:law_ethnostate
 		}
 	}
 	on_complete = {
@@ -82,12 +82,12 @@ je_ara_occ = {
 			OR = {
 				is_ai = yes
 				NOT = {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 				}
 			}
 		}
 
 	}
 	weight = 100
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }

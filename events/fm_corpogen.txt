@@ -9,13 +9,13 @@ fm_corpogen.1 = {
 			triggered_desc = {
 				desc = fm_corpogen.1.d
 				trigger = {
-					has_law = law_type:law_corporatocracy
+					has_law_or_variant = law_type:law_corporatocracy
 				}
 			}
 			triggered_desc = {
 				desc = fm_corpogen.1.d2
 				trigger = {
-					has_law = law_type:law_laissez_faire
+					has_law_or_variant = law_type:law_laissez_faire
 				}
 			}
 		}
@@ -34,39 +34,39 @@ fm_corpogen.1 = {
 
 	trigger = {
 		OR = {
-			has_law = law_type:law_laissez_faire
-			has_law = law_type:law_corporatocracy
+			has_law_or_variant = law_type:law_laissez_faire
+			has_law_or_variant = law_type:law_corporatocracy
 		}
 		OR = {
 			NOT = {
-				has_law = law_type:law_consumption_based_taxation
+				has_law_or_variant = law_type:law_consumption_based_taxation
 			}
 			NOT = {
-				has_law = law_type:law_no_womens_rights
+				has_law_or_variant = law_type:law_no_womens_rights
 			}
 			NOT = {
-				has_law = law_type:law_debt_slavery
+				has_law_or_variant = law_type:law_debt_slavery
 			}
 			NOT = {
-				has_law = law_type:law_poor_laws
+				has_law_or_variant = law_type:law_poor_laws
 			}
 			NOT = {
-				has_law = law_type:law_private_health_insurance
+				has_law_or_variant = law_type:law_private_health_insurance
 			}
 			NOT = {
-				has_law = law_type:law_private_schools
+				has_law_or_variant = law_type:law_private_schools
 			}
 			NOT = {
-				has_law = law_type:law_no_migration_controls
+				has_law_or_variant = law_type:law_no_migration_controls
 			}
 			NOT = {
-				has_law = law_type:law_free_trade
+				has_law_or_variant = law_type:law_free_trade
 			}
 			NOT = {
-				has_law = law_type:law_no_workers_rights
+				has_law_or_variant = law_type:law_no_workers_rights
 			}
 			NOT = {
-				has_law = law_type:law_child_labor_allowed
+				has_law_or_variant = law_type:law_child_labor_allowed
 			}
 		}
 		NOT = {
@@ -100,7 +100,7 @@ fm_corpogen.1 = {
 		name = fm_corpogen.1.a
 		trigger = {
 			NOT = {
-				has_law = law_type:law_consumption_based_taxation
+				has_law_or_variant = law_type:law_consumption_based_taxation
 			}
 		}
 		
@@ -113,7 +113,7 @@ fm_corpogen.1 = {
 		name = fm_corpogen.1.a2
 		trigger = {
 			NOT = {
-				has_law = law_type:law_no_womens_rights
+				has_law_or_variant = law_type:law_no_womens_rights
 			}
 		}
 		
@@ -126,8 +126,8 @@ fm_corpogen.1 = {
 		name = fm_corpogen.1.a3
 		trigger = {
 			NOR = {
-				has_law = law_type:law_outlawed_dissent
-				has_law = law_type:law_censorship
+				has_law_or_variant = law_type:law_outlawed_dissent
+				has_law_or_variant = law_type:law_censorship
 			}
 		}
 		
@@ -140,7 +140,7 @@ fm_corpogen.1 = {
 		name = fm_corpogen.1.a4
 		trigger = {
 			NOT = {
-				has_law = law_type:law_debt_slavery
+				has_law_or_variant = law_type:law_debt_slavery
 			}
 		}
 		
@@ -153,7 +153,7 @@ fm_corpogen.1 = {
 		name = fm_corpogen.1.a5
 		trigger = {
 			NOT = {
-				has_law = law_type:law_poor_laws
+				has_law_or_variant = law_type:law_poor_laws
 			}
 		}
 		
@@ -166,7 +166,7 @@ fm_corpogen.1 = {
 		name = fm_corpogen.1.a6
 		trigger = {
 			NOT = {
-				has_law = law_type:law_private_health_insurance
+				has_law_or_variant = law_type:law_private_health_insurance
 			}
 		}
 		
@@ -179,7 +179,7 @@ fm_corpogen.1 = {
 		name = fm_corpogen.1.a7
 		trigger = {
 			NOT = {
-				has_law = law_type:law_private_schools
+				has_law_or_variant = law_type:law_private_schools
 			}
 		}
 		
@@ -192,7 +192,7 @@ fm_corpogen.1 = {
 		name = fm_corpogen.1.a8
 		trigger = {
 			NOT = {
-				has_law = law_type:law_no_migration_controls
+				has_law_or_variant = law_type:law_no_migration_controls
 			}
 		}
 		
@@ -205,7 +205,7 @@ fm_corpogen.1 = {
 		name = fm_corpogen.1.a9
 		trigger = {
 			NOT = {
-				has_law = law_type:law_free_trade
+				has_law_or_variant = law_type:law_free_trade
 			}
 		}
 		
@@ -218,7 +218,7 @@ fm_corpogen.1 = {
 		name = fm_corpogen.1.a10
 		trigger = {
 			NOT = {
-				has_law = law_type:law_child_labor_allowed
+				has_law_or_variant = law_type:law_child_labor_allowed
 			}
 		}
 		
@@ -231,7 +231,7 @@ fm_corpogen.1 = {
 		name = fm_corpogen.1.a11
 		trigger = {
 			NOT = {
-				has_law = law_type:law_no_workers_rights
+				has_law_or_variant = law_type:law_no_workers_rights
 			}
 		}
 		
@@ -268,7 +268,7 @@ fm_corpogen.2 = {
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/invention_icons/corporate_management.dds"
 	trigger = {
-		has_law = law_type:law_corporatocracy
+		has_law_or_variant = law_type:law_corporatocracy
 		is_ai = no
 		NOT = {
 			has_variable = corpofired2
@@ -350,7 +350,7 @@ fm_corpogen.3 = {
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/invention_icons/corporate_management.dds"
 	trigger = {
-		has_law = law_type:law_corporatocracy
+		has_law_or_variant = law_type:law_corporatocracy
 		is_ai = no
 		NOT = {
 			has_variable = corpofired3
@@ -421,12 +421,12 @@ fm_corpogen.4 = {
 	trigger = {
 
 		OR = {
-			has_law = law_type:law_laissez_faire
-			has_law = law_type:law_corporatocracy
+			has_law_or_variant = law_type:law_laissez_faire
+			has_law_or_variant = law_type:law_corporatocracy
 		}
 		is_ai = no
 		NOT = {
-			has_law = law_type:law_free_trade
+			has_law_or_variant = law_type:law_free_trade
 		}
 		NOT = {
 			has_variable = corpofired4
@@ -480,8 +480,8 @@ fm_corpogen.5 = {
 	trigger = {
 
 		OR = {
-			has_law = law_type:law_laissez_faire
-			has_law = law_type:law_corporatocracy
+			has_law_or_variant = law_type:law_laissez_faire
+			has_law_or_variant = law_type:law_corporatocracy
 		}
 		is_ai = no
 		has_technology_researched = socialism
@@ -536,7 +536,7 @@ fm_corpogen.6 = {
 	icon = "gfx/interface/icons/invention_icons/corporate_management.dds"
 	trigger = {
 
-		has_law = law_type:law_laissez_faire
+		has_law_or_variant = law_type:law_laissez_faire
 		is_ai = no
 		NOT = {
 			has_variable = corpofired6
@@ -592,8 +592,8 @@ fm_corpogen.7 = {
 	trigger = {
 
 		OR = {
-			has_law = law_type:law_laissez_faire
-			has_law = law_type:law_corporatocracy
+			has_law_or_variant = law_type:law_laissez_faire
+			has_law_or_variant = law_type:law_corporatocracy
 		}
 		is_ai = no
 		NOT = {
@@ -667,8 +667,8 @@ fm_corpogen.8 = {
 	trigger = {
 
 		OR = {
-			has_law = law_type:law_laissez_faire
-			has_law = law_type:law_corporatocracy
+			has_law_or_variant = law_type:law_laissez_faire
+			has_law_or_variant = law_type:law_corporatocracy
 		}
 		is_ai = no
 		NOT = {
@@ -718,8 +718,8 @@ fm_corpogen.9 = {
 	trigger = {
 
 		OR = {
-			has_law = law_type:law_laissez_faire
-			has_law = law_type:law_corporatocracy
+			has_law_or_variant = law_type:law_laissez_faire
+			has_law_or_variant = law_type:law_corporatocracy
 		}
 		is_ai = no
 		NOT = {

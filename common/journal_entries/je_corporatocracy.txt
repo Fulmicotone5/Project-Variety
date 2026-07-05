@@ -3,7 +3,7 @@ je_corpofm1 = {
 	group = je_group_internal_affairs
 	timeout = 1460
 	complete = {
-		has_law = law_type:law_consumption_based_taxation
+		has_law_or_variant = law_type:law_consumption_based_taxation
 	}
 	on_complete = {
 		remove_modifier = fmcorpo1
@@ -22,14 +22,14 @@ je_corpofm1 = {
 		}
 	}
 
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 je_corpofm2 = {
 	icon = "gfx/interface/icons/invention_icons/corporate_management.dds"
 	group = je_group_internal_affairs
 	timeout = 1460
 	complete = {
-		has_law = law_type:law_no_womens_rights
+		has_law_or_variant = law_type:law_no_womens_rights
 	}
 	on_complete = {
 		remove_modifier = fmcorpo1
@@ -48,7 +48,7 @@ je_corpofm2 = {
 		}
 	}
 
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 je_corpofm3 = {
 	icon = "gfx/interface/icons/invention_icons/corporate_management.dds"
@@ -56,8 +56,8 @@ je_corpofm3 = {
 	timeout = 1460
 	complete = {
 		OR = {
-			has_law = law_type:law_outlawed_dissent
-			has_law = law_type:law_censorship
+			has_law_or_variant = law_type:law_outlawed_dissent
+			has_law_or_variant = law_type:law_censorship
 
 		}
 	}
@@ -78,14 +78,14 @@ je_corpofm3 = {
 		}
 	}
 
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 je_corpofm4 = {
 	icon = "gfx/interface/icons/invention_icons/corporate_management.dds"
 	group = je_group_internal_affairs
 	timeout = 1460
 	complete = {
-		has_law = law_type:law_debt_slavery
+		has_law_or_variant = law_type:law_debt_slavery
 	}
 	on_complete = {
 		remove_modifier = fmcorpo1
@@ -104,14 +104,14 @@ je_corpofm4 = {
 		}
 	}
 
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 je_corpofm5 = {
 	icon = "gfx/interface/icons/invention_icons/corporate_management.dds"
 	group = je_group_internal_affairs
 	timeout = 1460
 	complete = {
-		has_law = law_type:law_poor_laws
+		has_law_or_variant = law_type:law_poor_laws
 	}
 	on_complete = {
 		remove_modifier = fmcorpo1
@@ -130,14 +130,14 @@ je_corpofm5 = {
 		}
 	}
 
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 je_corpofm6 = {
 	icon = "gfx/interface/icons/invention_icons/corporate_management.dds"
 	group = je_group_internal_affairs
 	timeout = 1460
 	complete = {
-		has_law = law_type:law_private_health_insurance
+		has_law_or_variant = law_type:law_private_health_insurance
 	}
 	on_complete = {
 		remove_modifier = fmcorpo1
@@ -156,14 +156,14 @@ je_corpofm6 = {
 		}
 	}
 
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 je_corpofm7 = {
 	icon = "gfx/interface/icons/invention_icons/corporate_management.dds"
 	group = je_group_internal_affairs
 	timeout = 1460
 	complete = {
-		has_law = law_type:law_private_schools
+		has_law_or_variant = law_type:law_private_schools
 	}
 	on_complete = {
 		remove_modifier = fmcorpo1
@@ -182,14 +182,14 @@ je_corpofm7 = {
 		}
 	}
 
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 je_corpofm8 = {
 	icon = "gfx/interface/icons/invention_icons/corporate_management.dds"
 	group = je_group_internal_affairs
 	timeout = 1460
 	complete = {
-		has_law = law_type:law_no_migration_controls
+		has_law_or_variant = law_type:law_no_migration_controls
 	}
 	on_complete = {
 		remove_modifier = fmcorpo1
@@ -208,14 +208,14 @@ je_corpofm8 = {
 		}
 	}
 
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 je_corpofm9 = {
 	icon = "gfx/interface/icons/invention_icons/corporate_management.dds"
 	group = je_group_internal_affairs
 	timeout = 1460
 	complete = {
-		has_law = law_type:law_free_trade
+		has_law_or_variant = law_type:law_free_trade
 	}
 	on_complete = {
 		remove_modifier = fmcorpo1
@@ -234,14 +234,14 @@ je_corpofm9 = {
 		}
 	}
 
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 je_corpofm10 = {
 	icon = "gfx/interface/icons/invention_icons/corporate_management.dds"
 	group = je_group_internal_affairs
 	timeout = 1460
 	complete = {
-		has_law = law_type:law_child_labor_allowed
+		has_law_or_variant = law_type:law_child_labor_allowed
 	}
 	on_complete = {
 		remove_modifier = fmcorpo1
@@ -260,14 +260,14 @@ je_corpofm10 = {
 		}
 	}
 
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 je_corpofm11 = {
 	icon = "gfx/interface/icons/invention_icons/corporate_management.dds"
 	group = je_group_internal_affairs
 	timeout = 1460
 	complete = {
-		has_law = law_type:law_no_workers_rights
+		has_law_or_variant = law_type:law_no_workers_rights
 	}
 	on_complete = {
 		remove_modifier = fmcorpo1
@@ -286,7 +286,7 @@ je_corpofm11 = {
 		}
 	}
 
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 
@@ -312,7 +312,7 @@ je_corpofm12 = {
 	}
 	fail = {
 		NOT = {
-			has_law = law_type:law_corporatocracy
+			has_law_or_variant = law_type:law_corporatocracy
 		}
 	}
 
@@ -365,7 +365,7 @@ je_corpofm12 = {
 	weight = 200
 
 	transferable = no
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 je_corpofm13 = {
 	icon = "gfx/interface/icons/goods_icons/fine_art.dds"
@@ -404,5 +404,5 @@ je_corpofm13 = {
 	weight = 200
 
 	transferable = no
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }

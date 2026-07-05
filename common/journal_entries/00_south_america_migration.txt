@@ -17,12 +17,12 @@
 		is_at_war = no
 		is_subject = no
 		OR = {
-			has_law = law_type:law_racial_segregation
-			has_law = law_type:law_cultural_exclusion
-			has_law = law_type:law_multicultural
+			has_law_or_variant = law_type:law_racial_segregation
+			has_law_or_variant = law_type:law_cultural_exclusion
+			has_law_or_variant = law_type:law_multicultural
 		}
 		NOR = {
-			has_law = law_type:law_closed_borders
+			has_law_or_variant = law_type:law_closed_borders
 			has_law_or_variant = law_type:law_isolationism
 		}
 	}
@@ -140,7 +140,7 @@
 
 	weight = 100
 
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_central_america_migration = {
@@ -151,8 +151,8 @@ je_central_america_migration = {
 	is_shown_when_inactive = {
 		capital = {
 			OR = {
-				region = sr:region_mexico
-				region = sr:region_central_america
+				is_in_geographic_region = geographic_region_mexico
+				is_in_geographic_region = geographic_region_central_america
 			}
 		}
 		any_primary_culture = {
@@ -167,12 +167,12 @@ je_central_america_migration = {
 		is_at_war = no
 		is_subject = no
 		OR = {
-			has_law = law_type:law_racial_segregation
-			has_law = law_type:law_cultural_exclusion
-			has_law = law_type:law_multicultural
+			has_law_or_variant = law_type:law_racial_segregation
+			has_law_or_variant = law_type:law_cultural_exclusion
+			has_law_or_variant = law_type:law_multicultural
 		}
 		NOR = {
-			has_law = law_type:law_closed_borders
+			has_law_or_variant = law_type:law_closed_borders
 			has_law_or_variant = law_type:law_isolationism
 		}
 	}
@@ -190,8 +190,8 @@ je_central_america_migration = {
 			limit = {
 				is_incorporated = yes
 				OR = {
-					region = sr:region_mexico
-					region = sr:region_central_america
+					is_in_geographic_region = geographic_region_mexico
+					is_in_geographic_region = geographic_region_central_america
 				}
 			}
 			ROOT = {
@@ -226,8 +226,8 @@ je_central_america_migration = {
 				limit = {
 					is_incorporated = yes
 					OR = {
-						region = sr:region_mexico
-						region = sr:region_central_america
+						is_in_geographic_region = geographic_region_mexico
+						is_in_geographic_region = geographic_region_central_america
 					}
 				}
 				ROOT = {
@@ -245,8 +245,8 @@ je_central_america_migration = {
 				limit = {
 					is_incorporated = yes
 					OR = {
-						region = sr:region_mexico
-						region = sr:region_central_america
+						is_in_geographic_region = geographic_region_mexico
+						is_in_geographic_region = geographic_region_central_america
 					}
 				}
 				ROOT = {
@@ -293,7 +293,7 @@ je_central_america_migration = {
 
 	weight = 100
 
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_american_west_migration = {
@@ -311,8 +311,8 @@ je_american_west_migration = {
 		}
 		any_scope_state = {
 			OR = {
-				region = sr:region_pacific_coast
-				region = sr:region_great_plains
+				is_in_geographic_region = geographic_region_pacific_coast
+				is_in_geographic_region = geographic_region_great_plains
 			}
 		}
 	}
@@ -323,8 +323,8 @@ je_american_west_migration = {
 		any_scope_state = {
 			is_incorporated = yes
 			OR = {
-				region = sr:region_pacific_coast
-				region = sr:region_great_plains
+				is_in_geographic_region = geographic_region_pacific_coast
+				is_in_geographic_region = geographic_region_great_plains
 			}
 			count >= 3
 		}
@@ -332,12 +332,12 @@ je_american_west_migration = {
 		is_at_war = no
 		is_subject = no
 		OR = {
-			has_law = law_type:law_racial_segregation
-			has_law = law_type:law_cultural_exclusion
-			has_law = law_type:law_multicultural
+			has_law_or_variant = law_type:law_racial_segregation
+			has_law_or_variant = law_type:law_cultural_exclusion
+			has_law_or_variant = law_type:law_multicultural
 		}
 		NOR = {
-			has_law = law_type:law_closed_borders
+			has_law_or_variant = law_type:law_closed_borders
 			has_law_or_variant = law_type:law_isolationism
 		}
 	}
@@ -355,8 +355,8 @@ je_american_west_migration = {
 			limit = {
 				is_incorporated = yes
 				OR = {
-					region = sr:region_pacific_coast
-					region = sr:region_great_plains
+					is_in_geographic_region = geographic_region_pacific_coast
+					is_in_geographic_region = geographic_region_great_plains
 				}
 			}
 			ROOT = {
@@ -391,8 +391,8 @@ je_american_west_migration = {
 				limit = {
 					is_incorporated = yes
 					OR = {
-						region = sr:region_pacific_coast
-						region = sr:region_great_plains
+						is_in_geographic_region = geographic_region_pacific_coast
+						is_in_geographic_region = geographic_region_great_plains
 					}
 				}
 				ROOT = {
@@ -410,8 +410,8 @@ je_american_west_migration = {
 				limit = {
 					is_incorporated = yes
 					OR = {
-						region = sr:region_pacific_coast
-						region = sr:region_great_plains
+						is_in_geographic_region = geographic_region_pacific_coast
+						is_in_geographic_region = geographic_region_great_plains
 					}
 				}
 				ROOT = {
@@ -456,8 +456,8 @@ je_american_west_migration = {
 			NOT = {
 				any_scope_state = {
 					OR = {
-						region = sr:region_pacific_coast
-						region = sr:region_great_plains
+						is_in_geographic_region = geographic_region_pacific_coast
+						is_in_geographic_region = geographic_region_great_plains
 					}
 				}
 			}
@@ -468,5 +468,5 @@ je_american_west_migration = {
 
 	weight = 100
 
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }

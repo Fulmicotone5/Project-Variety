@@ -43,7 +43,7 @@
 	fail = {
 		OR = {
 			NOT = {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 			}
 			owns_entire_state_region = STATE_BREST
 			owns_entire_state_region = STATE_VILNIUS
@@ -81,7 +81,7 @@
 			id = fm_pol.2
 		}
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 je_zapa = {
 	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
@@ -104,5 +104,5 @@ je_zapa = {
 			id = fm_pol.3
 		}
 	}
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }

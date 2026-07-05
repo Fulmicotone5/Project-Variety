@@ -52,7 +52,7 @@
 	progressbar = yes
 
 	weight = 10000
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_jaep_daimyo = {
@@ -64,10 +64,10 @@ je_jaep_daimyo = {
 		ig:ig_landowners = {
 			is_powerful = no
 		}
-		NOT = { has_law = law_type:law_serfdom }
-		NOT = { has_law = law_type:law_hereditary_bureaucrats }
-		NOT = { has_law = law_type:law_local_police }
-		NOT = { has_law = law_type:law_peasant_levies }
+		NOT = { has_law_or_variant = law_type:law_serfdom }
+		NOT = { has_law_or_variant = law_type:law_hereditary_bureaucrats }
+		NOT = { has_law_or_variant = law_type:law_local_police }
+		NOT = { has_law_or_variant = law_type:law_peasant_levies }
 	}
 
 	on_complete = {
@@ -90,7 +90,7 @@ je_jaep_daimyo = {
 
 
 	weight = 10000
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_jaep_economy = {
@@ -133,7 +133,7 @@ je_jaep_economy = {
 
 	transferable = no
 
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 	weight = 5000
 }
 
@@ -200,7 +200,7 @@ je_jaep_army = {
 	transferable = no
 
 	weight = 5000
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_jaep_diplomacy = {
@@ -210,8 +210,8 @@ je_jaep_diplomacy = {
 
 	complete = {
 		NOT = { has_law_or_variant = law_type:law_isolationism }
-		NOT = { has_law = law_type:law_traditionalism }
-		NOT = { has_law = law_type:law_closed_borders }
+		NOT = { has_law_or_variant = law_type:law_traditionalism }
+		NOT = { has_law_or_variant = law_type:law_closed_borders }
 		is_subject = no
 	}
 
@@ -234,5 +234,5 @@ je_jaep_diplomacy = {
 	}
 
 	weight = 10000
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }

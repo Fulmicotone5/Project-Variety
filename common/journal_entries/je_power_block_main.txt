@@ -15,7 +15,7 @@
 		is_power_bloc_leader = no
 	}
 
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_pb_member = {
@@ -37,5 +37,5 @@ je_pb_member = {
 		is_in_power_bloc = no
 	}
 
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }

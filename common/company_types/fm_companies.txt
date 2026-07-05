@@ -25,14 +25,14 @@ company_incacomp = {
 	possible = {
 		country_has_primary_culture = cu:quechua
 		any_scope_state = {
-			region = sr:region_andes
+			is_in_geographic_region = geographic_region_andes_old
 			any_scope_building = {
 				is_building_type = building_gold_mine
 				level >= 6
 			}
 		}
-		has_law = law_type:law_monarchy
-		has_law = law_type:law_command_economy
+		has_law_or_variant = law_type:law_monarchy
+		has_law_or_variant = law_type:law_command_economy
 	}
 	
 	prosperity_modifier = {
@@ -80,20 +80,20 @@ company_statera = {
 	
 	potential = {
 		NOT = {
-			has_law = law_type:law_laissez_faire
+			has_law_or_variant = law_type:law_laissez_faire
 		}
 		NOT = {
-			has_law = law_type:law_cooperative_ownership
+			has_law_or_variant = law_type:law_cooperative_ownership
 		}
 	}
 	
 	attainable = {
 		has_technology_researched = railways
 		NOT = {
-			has_law = law_type:law_laissez_faire
+			has_law_or_variant = law_type:law_laissez_faire
 		}
 		NOT = {
-			has_law = law_type:law_cooperative_ownership
+			has_law_or_variant = law_type:law_cooperative_ownership
 		}
 	}	
 	
@@ -156,20 +156,20 @@ company_stateenergy = {
 	
 	potential = {
 		NOT = {
-			has_law = law_type:law_laissez_faire
+			has_law_or_variant = law_type:law_laissez_faire
 		}
 		NOT = {
-			has_law = law_type:law_cooperative_ownership
+			has_law_or_variant = law_type:law_cooperative_ownership
 		}
 	}
 	
 	attainable = {
 		has_technology_researched = electrical_generation
 		NOT = {
-			has_law = law_type:law_laissez_faire
+			has_law_or_variant = law_type:law_laissez_faire
 		}
 		NOT = {
-			has_law = law_type:law_cooperative_ownership
+			has_law_or_variant = law_type:law_cooperative_ownership
 		}
 	}	
 	
@@ -219,7 +219,7 @@ company_venars = {
 	preferred_headquarters = { STATE_VENETIA }
 	
 	building_types = {  
-		building_military_shipyard
+		building_shipyard
 		building_arms_industry
 		building_artillery_foundry
 		building_munition_plant
@@ -289,14 +289,14 @@ company_VNA = {
 	possible = {
 		country_has_primary_culture = cu:venetian
 		OR = {
-			has_law = law_type:law_mercantilism
-			has_law = law_type:law_protectionism
+			has_law_or_variant = law_type:law_mercantilism
+			has_law_or_variant = law_type:law_protectionism
 		}
 		any_scope_state = {
 			OR = {
-				region = sr:region_dixie
-				region = sr:region_caribbean
-				region = sr:region_gran_colombia
+				is_in_geographic_region = geographic_region_dixie_old
+				is_in_geographic_region = geographic_region_caribbean_old
+				is_in_geographic_region = geographic_region_gran_colombia
 			}
 			any_scope_building = {
 				OR = {
@@ -317,14 +317,14 @@ company_VNA = {
 	ai_will_do = {
 		country_has_primary_culture = cu:venetian
 		OR = {
-			has_law = law_type:law_mercantilism
-			has_law = law_type:law_protectionism
+			has_law_or_variant = law_type:law_mercantilism
+			has_law_or_variant = law_type:law_protectionism
 		}
 		any_scope_state = {
 			OR = {
-				region = sr:region_dixie
-				region = sr:region_caribbean
-				region = sr:region_gran_colombia
+				is_in_geographic_region = geographic_region_dixie_old
+				is_in_geographic_region = geographic_region_caribbean_old
+				is_in_geographic_region = geographic_region_gran_colombia
 			}
 		}
 	}
@@ -334,9 +334,9 @@ company_VNA = {
 			level = 5
 			state_trigger = {
 				OR = {
-				region = sr:region_dixie
-				region = sr:region_caribbean
-				region = sr:region_gran_colombia
+				is_in_geographic_region = geographic_region_dixie_old
+				is_in_geographic_region = geographic_region_caribbean_old
+				is_in_geographic_region = geographic_region_gran_colombia
 				}
 			}
 		}
@@ -344,9 +344,9 @@ company_VNA = {
 			level = 5
 			state_trigger = {
 				OR = {
-				region = sr:region_dixie
-				region = sr:region_caribbean
-				region = sr:region_gran_colombia
+				is_in_geographic_region = geographic_region_dixie_old
+				is_in_geographic_region = geographic_region_caribbean_old
+				is_in_geographic_region = geographic_region_gran_colombia
 				}
 			}
 		}
@@ -384,16 +384,16 @@ company_EIC = {
 	possible = {
 		country_has_primary_culture = cu:portuguese
 		OR = {
-			has_law = law_type:law_mercantilism
-			has_law = law_type:law_protectionism
+			has_law_or_variant = law_type:law_mercantilism
+			has_law_or_variant = law_type:law_protectionism
 		}
 		any_scope_state = {
 			OR = {
-				region = sr:region_madras
-				region = sr:region_bombay
-				region = sr:region_bengal
-				region = sr:region_central_india
-				region = sr:region_punjab
+				is_in_geographic_region = geographic_region_madras_old
+				is_in_geographic_region = geographic_region_bombay_old
+				is_in_geographic_region = geographic_region_bengal_old
+				is_in_geographic_region = geographic_region_central_india_old
+				is_in_geographic_region = geographic_region_punjab_old
 			}
 			any_scope_building = {
 				OR = {
@@ -413,16 +413,16 @@ company_EIC = {
 	ai_will_do = {
 		country_has_primary_culture = cu:portuguese
 		OR = {
-			has_law = law_type:law_mercantilism
-			has_law = law_type:law_protectionism
+			has_law_or_variant = law_type:law_mercantilism
+			has_law_or_variant = law_type:law_protectionism
 		}
 		any_scope_state = {
 			OR = {
-				region = sr:region_madras
-				region = sr:region_bombay
-				region = sr:region_bengal
-				region = sr:region_central_india
-				region = sr:region_punjab
+				is_in_geographic_region = geographic_region_madras_old
+				is_in_geographic_region = geographic_region_bombay_old
+				is_in_geographic_region = geographic_region_bengal_old
+				is_in_geographic_region = geographic_region_central_india_old
+				is_in_geographic_region = geographic_region_punjab_old
 			}
 		}
 	}
@@ -432,11 +432,11 @@ company_EIC = {
 			level = 5
 			state_trigger = {
 				OR = {
-					region = sr:region_madras
-					region = sr:region_bombay
-					region = sr:region_bengal
-					region = sr:region_central_india
-					region = sr:region_punjab
+					is_in_geographic_region = geographic_region_madras_old
+				is_in_geographic_region = geographic_region_bombay_old
+				is_in_geographic_region = geographic_region_bengal_old
+				is_in_geographic_region = geographic_region_central_india_old
+				is_in_geographic_region = geographic_region_punjab_old
 				}
 			}
 		}
@@ -444,11 +444,11 @@ company_EIC = {
 			level = 5
 			state_trigger = {
 				OR = {
-					region = sr:region_madras
-					region = sr:region_bombay
-					region = sr:region_bengal
-					region = sr:region_central_india
-					region = sr:region_punjab
+					is_in_geographic_region = geographic_region_madras_old
+				is_in_geographic_region = geographic_region_bombay_old
+				is_in_geographic_region = geographic_region_bengal_old
+				is_in_geographic_region = geographic_region_central_india_old
+				is_in_geographic_region = geographic_region_punjab_old
 				}
 			}
 		}
@@ -482,13 +482,13 @@ company_VOC = {
 	possible = {
 		country_has_primary_culture = cu:dutch
 		OR = {
-			has_law = law_type:law_mercantilism
-			has_law = law_type:law_protectionism
+			has_law_or_variant = law_type:law_mercantilism
+			has_law_or_variant = law_type:law_protectionism
 		}
 		any_scope_state = {
 			OR = {
-				region = sr:region_south_china
-				region = sr:region_indonesia
+				is_in_geographic_region = geographic_region_south_china_old
+				is_in_geographic_region = geographic_region_indonesia_old
 			}
 			any_scope_building = {
 				OR = {
@@ -509,13 +509,13 @@ company_VOC = {
 	ai_will_do = {
 		c:NED ?= this
 		OR = {
-			has_law = law_type:law_mercantilism
-			has_law = law_type:law_protectionism
+			has_law_or_variant = law_type:law_mercantilism
+			has_law_or_variant = law_type:law_protectionism
 		}
 		any_scope_state = {
 			OR = {
-				region = sr:region_south_china
-				region = sr:region_indonesia
+				is_in_geographic_region = geographic_region_south_china_old
+				is_in_geographic_region = geographic_region_indonesia_old
 			}
 		}
 	}
@@ -525,8 +525,8 @@ company_VOC = {
 			level = 5
 			state_trigger = {
 				OR = {
-					region = sr:region_south_china
-				region = sr:region_indonesia
+					is_in_geographic_region = geographic_region_south_china_old
+				is_in_geographic_region = geographic_region_indonesia_old
 				}
 			}
 		}
@@ -534,8 +534,8 @@ company_VOC = {
 			level = 5
 			state_trigger = {
 				OR = {
-					region = sr:region_south_china
-					region = sr:region_indonesia
+					is_in_geographic_region = geographic_region_south_china_old
+					is_in_geographic_region = geographic_region_indonesia_old
 				}
 			}
 		}
@@ -856,16 +856,16 @@ company_OMA = {
 	possible = {
 		country_has_primary_culture = cu:bedouin
 		OR = {
-			has_law = law_type:law_mercantilism
-			has_law = law_type:law_protectionism
+			has_law_or_variant = law_type:law_mercantilism
+			has_law_or_variant = law_type:law_protectionism
 		}
 		any_scope_state = {
 			OR = {
-				region = sr:region_madras
-				region = sr:region_bombay
-				region = sr:region_bengal
-				region = sr:region_central_india
-				region = sr:region_punjab
+				is_in_geographic_region = geographic_region_madras_old
+				is_in_geographic_region = geographic_region_bombay_old
+				is_in_geographic_region = geographic_region_bengal_old
+				is_in_geographic_region = geographic_region_central_india_old
+				is_in_geographic_region = geographic_region_punjab_old
 			}
 			any_scope_building = {
 				OR = {
@@ -885,16 +885,16 @@ company_OMA = {
 
 	ai_will_do = {
 		OR = {
-			has_law = law_type:law_mercantilism
-			has_law = law_type:law_protectionism
+			has_law_or_variant = law_type:law_mercantilism
+			has_law_or_variant = law_type:law_protectionism
 		}
 		any_scope_state = {
 			OR = {
-				region = sr:region_madras
-				region = sr:region_bombay
-				region = sr:region_bengal
-				region = sr:region_central_india
-				region = sr:region_punjab
+				is_in_geographic_region = geographic_region_madras_old
+				is_in_geographic_region = geographic_region_bombay_old
+				is_in_geographic_region = geographic_region_bengal_old
+				is_in_geographic_region = geographic_region_central_india_old
+				is_in_geographic_region = geographic_region_punjab_old
 			}
 		}
 	}
@@ -904,11 +904,11 @@ company_OMA = {
 			level = 15
 			state_trigger = {
 				OR = {
-					region = sr:region_madras
-					region = sr:region_bombay
-					region = sr:region_bengal
-					region = sr:region_central_india
-					region = sr:region_punjab
+					is_in_geographic_region = geographic_region_madras_old
+				is_in_geographic_region = geographic_region_bombay_old
+				is_in_geographic_region = geographic_region_bengal_old
+				is_in_geographic_region = geographic_region_central_india_old
+				is_in_geographic_region = geographic_region_punjab_old
 				}
 			}
 		}
@@ -916,11 +916,11 @@ company_OMA = {
 			level = 5
 			state_trigger = {
 				OR = {
-					region = sr:region_madras
-					region = sr:region_bombay
-					region = sr:region_bengal
-					region = sr:region_central_india
-					region = sr:region_punjab
+					is_in_geographic_region = geographic_region_madras_old
+				is_in_geographic_region = geographic_region_bombay_old
+				is_in_geographic_region = geographic_region_bengal_old
+				is_in_geographic_region = geographic_region_central_india_old
+				is_in_geographic_region = geographic_region_punjab_old
 				}
 			}
 		}
@@ -1030,16 +1030,16 @@ company_EIC1 = {
 			}
 		has_technology_researched = civilizing_mission
 		OR = {
-			has_law = law_type:law_mercantilism
-			has_law = law_type:law_protectionism
+			has_law_or_variant = law_type:law_mercantilism
+			has_law_or_variant = law_type:law_protectionism
 		}
 		any_scope_state = {
 			OR = {
-				region = sr:region_madras
-				region = sr:region_bombay
-				region = sr:region_bengal
-				region = sr:region_central_india
-				region = sr:region_punjab
+				is_in_geographic_region = geographic_region_madras
+				is_in_geographic_region = geographic_region_bombay
+				is_in_geographic_region = geographic_region_bengal
+				is_in_geographic_region = geographic_region_central_india
+				is_in_geographic_region = geographic_region_punjab
 			}
 			any_scope_building = {
 				is_building_type = building_tea_plantation
@@ -1055,8 +1055,8 @@ company_EIC1 = {
 
 	ai_will_do = {
 		OR = {
-			has_law = law_type:law_mercantilism
-			has_law = law_type:law_protectionism
+			has_law_or_variant = law_type:law_mercantilism
+			has_law_or_variant = law_type:law_protectionism
 		}
 	}
 
@@ -1065,11 +1065,11 @@ company_EIC1 = {
 			level = 5
 			state_trigger = {
 				OR = {
-				region = sr:region_madras
-				region = sr:region_bombay
-				region = sr:region_bengal
-				region = sr:region_central_india
-				region = sr:region_punjab
+				is_in_geographic_region = geographic_region_madras
+				is_in_geographic_region = geographic_region_bombay
+				is_in_geographic_region = geographic_region_bengal
+				is_in_geographic_region = geographic_region_central_india
+				is_in_geographic_region = geographic_region_punjab
 				}
 			}
 		}
@@ -1108,13 +1108,13 @@ company_WIC = {
 
 	possible = {
 		OR = {
-			has_law = law_type:law_mercantilism
-			has_law = law_type:law_protectionism
+			has_law_or_variant = law_type:law_mercantilism
+			has_law_or_variant = law_type:law_protectionism
 		}
 		any_scope_state = {
 			OR = {
-				region = sr:region_gran_colombia
-				region = sr:region_caribbean
+				is_in_geographic_region = geographic_region_gran_colombia
+				is_in_geographic_region = geographic_region_caribbean_old
 			}
 			any_scope_building = {
 				OR = {
@@ -1133,13 +1133,13 @@ company_WIC = {
 
 	ai_will_do = {
 		OR = {
-			has_law = law_type:law_mercantilism
-			has_law = law_type:law_protectionism
+			has_law_or_variant = law_type:law_mercantilism
+			has_law_or_variant = law_type:law_protectionism
 		}
 		any_scope_state = {
 			OR = {
-				region = sr:region_gran_colombia
-				region = sr:region_caribbean
+				is_in_geographic_region = geographic_region_gran_colombia
+				is_in_geographic_region = geographic_region_caribbean
 			}
 		}
 	}
@@ -1149,8 +1149,8 @@ company_WIC = {
 			level = 5
 			state_trigger = {
 				OR = {
-				region = sr:region_gran_colombia
-				region = sr:region_caribbean
+				is_in_geographic_region = geographic_region_gran_colombia
+				is_in_geographic_region = geographic_region_caribbean_old
 				}
 			}
 		}
@@ -1158,8 +1158,8 @@ company_WIC = {
 			level = 15
 			state_trigger = {
 				OR = {
-				region = sr:region_gran_colombia
-				region = sr:region_caribbean
+				is_in_geographic_region = geographic_region_gran_colombia
+				is_in_geographic_region = geographic_region_caribbean_old
 				}
 			}
 		}
@@ -1392,7 +1392,7 @@ company_kikkoman = {
 }
 company_zsolnay = {
 	icon = "gfx/interface/icons/company_icons/fm_company_icons/cozsolnay.dds"
-	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufactering_heavy.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
 
 	flavored_company = yes
 	preferred_headquarters = { STATE_TRANSDANUBIA }
@@ -1441,7 +1441,7 @@ company_zsolnay = {
 }
 company_tungstram = {
 	icon = "gfx/interface/icons/company_icons/fm_company_icons/cotungstram.dds"
-	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufactering_heavy.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
 
 	flavored_company = yes
 	preferred_headquarters = { STATE_CENTRAL_HUNGARY }
@@ -1492,7 +1492,7 @@ company_tungstram = {
 }
 company_dacice = {
 	icon = "gfx/interface/icons/company_icons/fm_company_icons/codacice.dds"
-	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufactering_heavy.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
 
 	flavored_company = yes
 	preferred_headquarters = { STATE_MORAVIA }
@@ -1620,7 +1620,7 @@ royaltrade = {
 
 
 	possible = {
-		has_law = law_type:law_monarchy
+		has_law_or_variant = law_type:law_monarchy
 		any_scope_state = {
 			is_incorporated = yes
 			any_scope_building = {
@@ -1735,7 +1735,7 @@ company_gilbratar_company = {
 	}
 
 	extension_building_types = {
-		building_military_shipyard
+		building_shipyard
 	}
 	possible_prestige_goods = {
 		prestige_good_generic_merchant_marine
@@ -1883,7 +1883,7 @@ company_ETHcoffee = {
 			country_has_primary_culture = cu:somali
 		}
 		any_scope_state = {
-			region = sr:region_ethiopia
+			is_in_geographic_region = geographic_region_ethiopia_old
 			any_scope_building = {
 				OR = {
 					is_building_type = building_tea_plantation
@@ -1940,7 +1940,7 @@ company_BRZcoffee = {
 
 	possible = {
 		any_scope_state = {
-			region = sr:region_brazil
+			is_in_geographic_region = geographic_region_brazil_old
 			any_scope_building = {
 				is_building_type = building_coffee_plantation
 				level >= 5
@@ -1954,7 +1954,7 @@ company_BRZcoffee = {
 
 	ai_will_do = {
 		any_scope_state = {
-			region = sr:region_brazil
+			is_in_geographic_region = geographic_region_brazil_old
 			any_scope_building = {
 				is_building_type = building_coffee_plantation
 				level >= 5
@@ -2031,7 +2031,7 @@ company_zespri = {
 }
 company_hadong = {
 	icon = "gfx/interface/icons/company_icons/fm_company_icons/hadongco.dds"
-	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufactering_light.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
 
 	flavored_company = yes
 
@@ -2139,7 +2139,7 @@ company_manito = {
 }
 company_cocaco = {
 	icon = "gfx/interface/icons/company_icons/fm_company_icons/cocaco.dds"
-	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufactering_light.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
 
 	flavored_company = yes
 
@@ -2249,7 +2249,7 @@ company_cubaci = {
 }
 company_corona = {
 	icon = "gfx/interface/icons/company_icons/fm_company_icons/coronaco.dds"
-	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufactering_heavy.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
 
 	flavored_company = yes
 	preferred_headquarters = { STATE_CUNDINAMARCA }
@@ -2347,7 +2347,7 @@ company_manuelita = {
 }
 company_habeco = {
 	icon = "gfx/interface/icons/company_icons/fm_company_icons/habeco.dds"
-	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufactering_light.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
 
 	flavored_company = yes
 
@@ -2404,7 +2404,7 @@ company_habeco = {
 
 company_kalevko = {
 	icon = "gfx/interface/icons/company_icons/fm_company_icons/kalevco.dds"
-	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufactering_light.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
 
 	flavored_company = yes
 
@@ -2512,7 +2512,7 @@ company_fmdk = {
 }
 company_inquietaco = {
 	icon = "gfx/interface/icons/company_icons/fm_company_icons/inquietaco.dds"
-	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufactering_light.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
 
 	flavored_company = yes
 
@@ -2533,7 +2533,7 @@ company_inquietaco = {
 
 	possible = {
 		any_primary_culture = {
-			has_discrimination_trait = roman_culture
+			has_discrimination_trait = heritage_roman
 			}
 		any_scope_state = {
 			any_scope_building = {
@@ -2563,7 +2563,7 @@ company_inquietaco = {
 }
 company_scandiart = {
 	icon = "gfx/interface/icons/company_icons/fm_company_icons/artcoscandi.dds"
-	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufactering_light.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
 
 	flavored_company = yes
 
@@ -2614,7 +2614,7 @@ company_scandiart = {
 }
 company_arnoldco = {
 	icon = "gfx/interface/icons/company_icons/fm_company_icons/arnoldco.dds"
-	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufactering_light.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
 
 	flavored_company = yes
 
