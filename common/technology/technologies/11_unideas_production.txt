@@ -1,0 +1,1004 @@
+﻿# Farms
+scientific_crop_rotation = {
+	 # Unlocks Four-Course System PM on Rye Farms, Wheat Farms, Rice Farms, Maize Farms, Millet Farms
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/dialectics.dds"
+	category = production
+	
+	
+	 unlocking_technologies = {
+	 	enclosure
+	 }
+
+	ai_weight = {
+		value = 0
+	}
+}
+
+mechanical_harvesting_systems = {
+	 # Unlocks Mechanical Reapers PM on Rye Farms, Wheat Farms, Rice Farms, Maize Farms, Millet Farms
+	era = era_3
+	texture = "gfx/interface/icons/invention_icons/enclosure.dds"
+	category = production
+	
+	
+	 unlocking_technologies = {
+	 	scientific_crop_rotation
+	 }
+
+	ai_weight = {
+		value = 0
+	}
+}
+
+hybrid_grain_cultivation = {
+	 # Unlocks Hybrid Grains PM on Rye Farms, Wheat Farms, Rice Farms, Maize Farms, Millet Farms
+	era = era_4
+	texture = "gfx/interface/icons/decree/decree_encourage_agricultural_industry.dds"
+	category = production
+	
+	
+	 unlocking_technologies = {
+	 	mechanical_harvesting_systems
+	 }
+
+	ai_weight = {
+		value = 0
+	}
+}
+
+motorized_irrigation_systems = {
+	 # Unlocks Motorized Pumps PM on Rye Farms, Wheat Farms, Rice Farms, Maize Farms, Millet Farms
+	era = era_5
+	texture = "gfx/interface/icons/invention_icons/threshing_machine.dds"
+	category = production
+	
+	
+	 unlocking_technologies = {
+	 	mechanical_harvesting_systems
+	 }
+
+	ai_weight = {
+		value = 0
+	}
+}
+
+# Groceries
+mechanical_dough_preparation = {
+	era = era_2
+	texture = "gfx/interface/icons/goods_icons/unused/food.dds"
+	category = production
+	
+
+	ai_weight = {
+		value = 0
+	}
+}
+
+pasteurization_techniques = {
+	era = era_3
+	texture = "gfx/interface/icons/invention_icons/pasteurization.dds"
+	category = production
+
+    unlocking_technologies = {
+	 	mechanical_dough_preparation
+	}
+	
+
+	ai_weight = {
+		value = 0
+	}
+}
+
+industrial_preservatives = {
+	era = era_4
+	texture = "gfx/interface/icons/invention_icons/aniline.dds"
+	category = production
+	unlocking_technologies = {
+	 	pasteurization_techniques
+	}
+
+	ai_weight = {
+		value = 0
+	}
+}
+
+automated_packaging_lines = {
+	era = era_5
+	texture = "gfx/interface/icons/invention_icons/conveyers.dds"
+	category = production
+
+    unlocking_technologies = {
+	 	industrial_preservatives
+	}
+	
+
+	ai_weight = {
+		value = 0
+	}
+}
+
+# Logging
+hydraulic_logging_systems = {
+    era = era_2
+    texture = "gfx/interface/icons/invention_icons/concrete_dockyards.dds"
+    category = production
+    
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+mechanical_band_saw_innovation = {
+    era = era_3
+    texture = "gfx/interface/icons/invention_icons/compression_ignition.dds"
+    category = production
+    unlocking_technologies = {
+	 	hydraulic_logging_systems
+	}
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+timber_preservation_science = {
+    era = era_4
+    texture = "gfx/interface/icons/invention_icons/fractional_distillation.dds"
+    category = production
+    unlocking_technologies = {
+	 	mechanical_band_saw_innovation
+	}
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+mobile_forestry_machinery = {
+    era = era_5
+    texture = "gfx/interface/icons/invention_icons/rotary_valve_engine.dds"
+    category = production
+    unlocking_technologies = {
+	 	timber_preservation_science
+	}
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+# Textile
+coal_tar_dye_processing = {
+    era = era_2
+    texture = "gfx/interface/icons/goods_icons/dye.dds"
+    category = production
+    
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+mechanical_pattern_grading = {
+    era = era_3
+    texture = "gfx/interface/icons/goods_icons/paper.dds"
+    category = production
+    unlocking_technologies = {
+	 	coal_tar_dye_processing
+	}
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+vulcanized_rubber_fasteners = {
+    era = era_4
+    texture = "gfx/interface/icons/invention_icons/art_silk.dds"
+    category = production
+    unlocking_technologies = {
+	 	mechanical_pattern_grading
+	}
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+electrostatic_lint_control = {
+    era = era_5
+    texture = "gfx/interface/icons/invention_icons/concrete_fortifications.dds"
+    category = production
+    unlocking_technologies = {
+	 	vulcanized_rubber_fasteners
+	}
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+
+# Fishing
+pelagic_canning_processes = {
+    era = era_3
+    texture = "gfx/interface/icons/invention_icons/vacuum_canning.dds"
+    category = production
+    
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+bycatch_utilization = {
+    era = era_4
+    texture = "gfx/interface/icons/invention_icons/intensive_agriculture.dds"
+    category = production
+    unlocking_technologies = {
+	 	pelagic_canning_processes
+	}
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+birkeland_eyde_process = {
+    era = era_4
+    texture = "gfx/interface/icons/invention_icons/nitrogen_fixation.dds"
+    category = production
+    unlocking_technologies = {
+	 	bycatch_utilization
+	}
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+hydroacoustic_navigation = {
+    era = era_5
+    texture = "gfx/interface/icons/invention_icons/telephone.dds"
+    category = production
+    unlocking_technologies = {
+	 	birkeland_eyde_process
+	}
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+
+# Furniture
+thonet_bentwood_process = {
+    era = era_2
+    texture = "gfx/interface/icons/invention_icons/watertube_boiler.dds"
+    category = production
+    
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+veneer_lamination_techniques = {
+    era = era_3
+    texture = "gfx/interface/icons/invention_icons/vulcanization.dds"
+    category = production
+    unlocking_technologies = {
+	 	thonet_bentwood_process
+	}
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+synthetic_material_integration = {
+    era = era_5
+    texture = "gfx/interface/icons/invention_icons/art_silk.dds"
+    category = production
+    unlocking_technologies = {
+	 	veneer_lamination_techniques
+	}
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+
+# Paper
+mechanical_papermaking_automation = {
+    era = era_2
+    texture = "gfx/interface/icons/invention_icons/modern_financial_instruments.dds"
+    category = production
+
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+wood_pulp_refinement = {
+    era = era_3
+    texture = "gfx/interface/icons/invention_icons/mass_communication.dds"
+    category = production
+    unlocking_technologies = {
+	 	mechanical_papermaking_automation
+	}
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+industrial_byproduct_utilization = {
+    era = era_4
+    texture = "gfx/interface/icons/invention_icons/aniline.dds"
+    category = production
+    unlocking_technologies = {
+	 	wood_pulp_refinement
+	}
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+synthetic_additives = {
+    era = era_5
+    texture = "gfx/interface/icons/invention_icons/art_silk.dds"
+    category = production
+    unlocking_technologies = {
+	 	industrial_byproduct_utilization
+	}
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+
+# Motor
+high_pressure_steam_engineering = {
+    era = era_2
+    texture = "gfx/interface/icons/invention_icons/nitrogen_fixation.dds"
+    category = production
+    
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+continuous_production_flow = {
+    era = era_3
+    texture = "gfx/interface/icons/invention_icons/electrical_capacitors.dds"
+    category = production
+    unlocking_technologies = {
+	 	high_pressure_steam_engineering
+	}
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+alloy_metallurgy = {
+    era = era_4
+    texture = "gfx/interface/icons/invention_icons/rollers.dds"
+    category = production
+    unlocking_technologies = {
+	 	continuous_production_flow
+	}
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+automated_assembly_systems = {
+    era = era_5
+    texture = "gfx/interface/icons/invention_icons/compression_ignition.dds"
+    category = production
+    unlocking_technologies = {
+	 	alloy_metallurgy
+	}
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+
+# Alcohol
+microbial_fermentation_control = {
+    era = era_3
+    texture = "gfx/interface/icons/invention_icons/aniline.dds"
+    category = production
+    
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+temperature_controlled_aging = {
+    era = era_4
+    texture = "gfx/interface/icons/invention_icons/pasteurization.dds"
+    category = production
+    unlocking_technologies = {
+	 	microbial_fermentation_control
+	}
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+mechanized_harvesting_systems = {
+    era = era_5
+    texture = "gfx/interface/icons/invention_icons/threshing_machine.dds"
+    category = production
+    unlocking_technologies = {
+	 	temperature_controlled_aging
+	}
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+
+# Meat
+selective_livestock_breeding = {
+    era = era_2
+    texture = "gfx/interface/icons/invention_icons/behaviorism.dds"
+    category = production
+    
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+industrial_refrigeration_techniques = {
+    era = era_3
+    texture = "gfx/interface/icons/invention_icons/flash_freezing.dds"
+    category = production
+    unlocking_technologies = {
+	 	selective_livestock_breeding
+	}
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+chemical_meat_preservation = {
+    era = era_4
+    texture = "gfx/interface/icons/invention_icons/antibiotics.dds"
+    category = production
+    unlocking_technologies = {
+	 	industrial_refrigeration_techniques
+	}
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+automated_meatpacking_systems = {
+    era = era_5
+    texture = "gfx/interface/icons/invention_icons/conveyers.dds"
+    category = production
+    unlocking_technologies = {
+	 	chemical_meat_preservation
+	}
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+
+# Mining
+cornish_beam_pumping_systems = {
+    era = era_2
+    texture = "gfx/interface/icons/invention_icons/atmospheric_engine.dds"
+    category = production
+    
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+compressed_air_drill_networks = {
+    era = era_3
+    texture = "gfx/interface/icons/invention_icons/compression_ignition.dds"
+    category = production
+    unlocking_technologies = {
+	 	cornish_beam_pumping_systems
+	}
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+differential_flotation_process = {
+    era = era_4
+    texture = "gfx/interface/icons/invention_icons/steam_turbines.dds"
+    category = production
+    unlocking_technologies = {
+	 	compressed_air_drill_networks
+	}
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+
+# Boats
+hull_caulking_techniques = {
+    era = era_2
+    texture = "gfx/interface/icons/invention_icons/screw_frigate.dds"
+    category = production
+    
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+composite_hull_construction = {
+    era = era_3
+    texture = "gfx/interface/icons/invention_icons/drydock.dds"
+    category = production
+    unlocking_technologies = {
+	 	hull_caulking_techniques
+	}
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+torpedo_boat_development = {
+    era = era_3
+    texture = "gfx/interface/icons/invention_icons/self_propelled_torpedoes.dds"
+    category = production
+    unlocking_technologies = {
+	 	composite_hull_construction
+	}
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+steam_turbine_propulsion = {
+    era = era_4
+    texture = "gfx/interface/icons/invention_icons/submarine.dds"
+    category = production
+    unlocking_technologies = {
+	 	torpedo_boat_development
+	}
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+welded_hull_prefabrication = {
+    era = era_5
+    texture = "gfx/interface/icons/invention_icons/floating_harbor.dds"
+    category = production
+    unlocking_technologies = {
+	 	steam_turbine_propulsion
+	}
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+
+# Glass
+cylinder_glass_process = {
+    era = era_2
+    texture = "gfx/interface/icons/invention_icons/automatic_bottle_blowers.dds"
+    category = production
+    
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+siemens_regenerative_furnace = {
+    era = era_3
+    texture = "gfx/interface/icons/invention_icons/open_hearth_process.dds"
+    category = production
+    unlocking_technologies = {
+	 	cylinder_glass_process
+	}
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+automated_pressed_glass = {
+    era = era_4
+    texture = "gfx/interface/icons/invention_icons/rollers.dds"
+    category = production
+    unlocking_technologies = {
+	 	siemens_regenerative_furnace
+	}
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+float_glass_technique = {
+    era = era_5
+    texture = "gfx/interface/icons/invention_icons/paved_roads.dds"
+    category = production
+    unlocking_technologies = {
+	 	automated_pressed_glass
+	}
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+
+# Explosives
+smokeless_propellant_synthesis = {
+    era = era_3
+    texture = "gfx/interface/icons/invention_icons/intensive_agriculture.dds"
+    category = production
+    
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+tnt_industrialization = {
+    era = era_4
+    texture = "gfx/interface/icons/invention_icons/dynamite.dds"
+    category = production
+    unlocking_technologies = {
+	 	smokeless_propellant_synthesis
+	}
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+ammonium_nitrate_mass_production = {
+    era = era_5
+    texture = "gfx/interface/icons/invention_icons/improved_fertilizer.dds"
+    category = production
+    unlocking_technologies = {
+	 	tnt_industrialization
+	}
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+
+# Silk
+mulberry_hybridization = {
+    era = era_2
+    texture = "gfx/interface/icons/invention_icons/sericulture.dds"
+    category = production
+    
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+synthetic_dye_synthesis = {
+    era = era_3
+    texture = "gfx/interface/icons/goods_icons/dye.dds"
+    category = production
+    unlocking_technologies = {
+	 	mulberry_hybridization
+	}
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+mechanical_reeling_automation = {
+    era = era_4
+    texture = "gfx/interface/icons/invention_icons/rollers.dds"
+    category = production
+    unlocking_technologies = {
+	 	synthetic_dye_synthesis
+	}
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+rayon_production = {
+    era = era_5
+    texture = "gfx/interface/icons/invention_icons/art_silk.dds"
+    category = production
+    unlocking_technologies = {
+	 	mechanical_reeling_automation
+	}
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+
+# Steel
+basic_steel_refining = {
+    era = era_3
+    texture = "gfx/interface/icons/invention_icons/bessemer_process.dds"
+    category = production
+    
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+alloy_steel_integration = {
+    era = era_4
+    texture = "gfx/interface/icons/invention_icons/open_hearth_process.dds"
+    category = production
+    unlocking_technologies = {
+	 	basic_steel_refining
+	}
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+continuous_casting_process = {
+    era = era_5
+    texture = "gfx/interface/icons/invention_icons/electrical_capacitors.dds"
+    category = production
+    unlocking_technologies = {
+	 	alloy_steel_integration
+	}
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+
+# Tools
+steam_driven_mechanization = {
+    era = era_2
+    texture = "gfx/interface/icons/invention_icons/rotary_valve_engine.dds"
+    category = production
+    
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+electroprecision_machining = {
+    era = era_4
+    texture = "gfx/interface/icons/invention_icons/electrical_capacitors.dds"
+    category = production
+    unlocking_technologies = {
+	 	steam_driven_mechanization
+	}
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+high_speed_alloy_synthesis = {
+    era = era_5
+    texture = "gfx/interface/icons/invention_icons/nitrogen_fixation.dds"
+    category = production
+    unlocking_technologies = {
+	 	electroprecision_machining
+	}
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+
+# Military
+
+paper_cartridges_firearms = {
+    era = era_2
+    texture = "gfx/interface/icons/goods_icons/paper.dds"
+    category = production
+    
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+portable_automatic_firearms = {
+    era = era_2
+    texture = "gfx/interface/icons/invention_icons/repeaters.dds"
+    category = production
+    unlocking_technologies = {
+	 	paper_cartridges_firearms
+	}
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+metallic_cartridge_casings = {
+    era = era_3
+    texture = "gfx/interface/icons/goods_icons/ammunition.dds"
+    category = production
+    unlocking_technologies = {
+	 	portable_automatic_firearms
+	}
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+recoil_operated_mechanisms = {
+    era = era_4
+    texture = "gfx/interface/icons/invention_icons/bolt_action_rifles.dds"
+    category = production
+    unlocking_technologies = {
+	 	metallic_cartridge_casings
+	}
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+composite_armor_plating = {
+    era = era_5
+    texture = "gfx/interface/icons/invention_icons/mobile_armor.dds"
+    category = production
+    unlocking_technologies = {
+	 	composite_armor_plating
+	}
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+
+
+
+# Plantations
+selective_cultivation_techniques = {
+    era = era_2
+    texture = "gfx/interface/icons/invention_icons/enclosure.dds"
+    category = production
+    
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+steam_powered_presses = {
+    era = era_2
+    texture = "gfx/interface/icons/invention_icons/rollers.dds"
+    category = production
+    unlocking_technologies = {
+	 	selective_cultivation_techniques
+	}
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+tropical_agronomy_studies = {
+    era = era_3
+    texture = "gfx/interface/icons/invention_icons/dialectics.dds"
+    category = production
+    unlocking_technologies = {
+	 	selective_cultivation_techniques
+	}
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+hydraulic_press_innovations = {
+    era = era_3
+    texture = "gfx/interface/icons/invention_icons/flash_freezing.dds"
+    category = production
+    unlocking_technologies = {
+	 	steam_powered_presses
+	}
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+synthetic_alkaloid_extraction = {
+    era = era_4
+    texture = "gfx/interface/icons/invention_icons/steam_donkey.dds"
+    category = production
+    unlocking_technologies = {
+	 	tropical_agronomy_studies
+	}
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+vacuum_sealing = {
+    era = era_4
+    texture = "gfx/interface/icons/invention_icons/vacuum_canning.dds"
+    category = production
+    unlocking_technologies = {
+	 	hydraulic_press_innovations
+	}
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+photoperiod_control = {
+    era = era_5
+    texture = "gfx/interface/icons/invention_icons/military_statistics.dds"
+    category = production
+    unlocking_technologies = {
+	 	synthetic_alkaloid_extraction
+	}
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+mycorrhizal_inoculation = {
+    era = era_5
+    texture = "gfx/interface/icons/invention_icons/antibiotics.dds"
+    category = production
+    unlocking_technologies = {
+	 	photoperiod_control
+	}
+
+    ai_weight = {
+        value = 0
+    }
+}
