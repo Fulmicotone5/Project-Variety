@@ -23,7 +23,7 @@
 		
 		set_tax_level = high
 
-		add_taxed_goods = g:spice
+
 		add_taxed_goods = g:liquor
 		add_taxed_goods = g:services
 		add_taxed_goods = g:luxury_clothes

@@ -1010,7 +1010,7 @@ venetian={
 	obsessions = {
 		wine
 		
-		spice
+		
 		coffee
 		luxury_clothes
 		luxury_furniture
@@ -1095,7 +1095,7 @@ dutch_colonial={
 		language = language_dutch
 
 	obsessions = {
-		spice
+		
 		coffee
 		tobacco
 	}
@@ -1479,7 +1479,7 @@ burgundian={
 
 	obsessions = {
 		wine luxury_clothes luxury_furniture
-		coffee fine_art fruit spice
+		coffee fine_art fruit 
 	}
 	
 	male_common_first_names={
@@ -2994,7 +2994,7 @@ phoenician={
 	traditions = { mediterranean }
 	obsessions = {
 		
-		spice
+		
 		fruit
 		tobacco
 		coffee
@@ -3703,7 +3703,7 @@ east_bantu={
 		tobacco
 		coffee
 		liquor
-		spice
+		
 	}
 	male_common_first_names={
 		Amadi
